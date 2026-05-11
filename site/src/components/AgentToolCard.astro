@@ -1,0 +1,165 @@
+---
+interface ToolData {
+  id: string;
+  name: string;
+  type: "skill" | "mcp" | "cli" | "workflow";
+  summary: string;
+  description: string;
+  installCommand?: string;
+  installSummary?: string;
+  requirements: string[];
+  primaryUseCases: string[];
+  highlights: string[];
+}
+
+interface Props {
+  tool: ToolData;
+}
+
+const { tool } = Astro.props;
+const useCase = tool.primaryUseCases[0] ?? tool.description;
+const easyStart = tool.installCommand ? "Has install command" : tool.installSummary ? "Needs guided setup" : "Template or workflow";
+---
+
+<a class="agent-tool-card" href={`/item/${tool.id}`}>
+  <div class="card-top">
+    <span class="badge">{tool.type.toUpperCase()}</span>
+    <span class="difficulty">{easyStart}</span>
+  </div>
+
+  <h3>{tool.name}</h3>
+  <p>{tool.summary}</p>
+
+  <div class="meta">
+    {tool.requirements.slice(0, 2).map((item) => <span>{item}</span>)}
+  </div>
+
+  <aside class="hover-preview">
+    <strong>What it helps with</strong>
+    <p>{useCase}</p>
+    {tool.highlights[0] && (
+      <>
+        <strong>Why it is useful</strong>
+        <p>{tool.highlights[0]}</p>
+      </>
+    )}
+  </aside>
+</a>
+
+<style>
+  .agent-tool-card {
+    position: relative;
+    display: grid;
+    gap: 13px;
+    min-height: 220px;
+    padding: 20px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
+      var(--paper);
+    box-shadow: var(--shadow);
+    transition: transform 180ms ease, border-color 180ms ease;
+  }
+
+  .agent-tool-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--line-strong);
+  }
+
+  .card-top,
+  .meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .card-top {
+    justify-content: space-between;
+  }
+
+  .badge,
+  .difficulty,
+  .meta span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 26px;
+    padding: 0 9px;
+    font-size: 11px;
+    border-radius: 999px;
+  }
+
+  .badge {
+    color: var(--sage);
+    font-weight: 700;
+    background: var(--sage-soft);
+    border: 1px solid rgb(167 207 164 / 0.18);
+  }
+
+  .difficulty,
+  .meta span {
+    color: var(--muted);
+    background: rgb(238 244 238 / 0.035);
+    border: 1px solid var(--line);
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+
+  .meta {
+    margin-top: auto;
+  }
+
+  .hover-preview {
+    position: absolute;
+    inset: auto 14px 14px;
+    display: grid;
+    gap: 8px;
+    padding: 16px;
+    opacity: 0;
+    transform: translateY(10px);
+    border: 1px solid var(--line-strong);
+    border-radius: 18px;
+    background: rgb(9 12 11 / 0.92);
+    box-shadow: 0 20px 60px rgb(0 0 0 / 0.38);
+    pointer-events: none;
+    transition: opacity 160ms ease, transform 160ms ease;
+    backdrop-filter: blur(18px);
+  }
+
+  .agent-tool-card:hover .hover-preview {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hover-preview strong {
+    color: var(--sage);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .hover-preview p {
+    color: var(--ink);
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+
+  @media (hover: none) {
+    .hover-preview {
+      position: static;
+      opacity: 1;
+      transform: none;
+      background: rgb(238 244 238 / 0.026);
+    }
+  }
+</style>

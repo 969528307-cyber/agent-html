@@ -1,7 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import AgentSummary from "../../components/AgentSummary.astro";
-import ToolListItem from "../../components/ToolListItem.astro";
+import AgentToolCard from "../../components/AgentToolCard.astro";
+import ArticleCard from "../../components/ArticleCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { sortToolsByNewest } from "../../lib/filters";
 
@@ -16,55 +17,295 @@ export async function getStaticPaths() {
 }
 
 const { agent } = Astro.props;
-const tools = sortToolsByNewest(
+const allTools = sortToolsByNewest(
   (await getCollection("tools")).filter(
     (tool) => tool.data.status === "published" && tool.data.compatibleAgents.includes(agent.data.name),
   ),
 );
+
+const learnArticles = (await getCollection("learn")).filter(
+  (entry) => entry.data.status === "published" && agent.data.relatedLearn.includes(entry.id),
+);
+
+const typeLabels = {
+  skill: "Skills",
+  mcp: "MCPs",
+  cli: "CLI",
+  workflow: "Workflows",
+};
+
+const types = ["skill", "mcp", "cli", "workflow"] as const;
+const byType = Object.fromEntries(types.map((type) => [type, allTools.filter((tool) => tool.data.type === type)]));
+const counts = Object.fromEntries(types.map((type) => [type, byType[type].length]));
+const guideHref = learnArticles[0] ? `/learn/${learnArticles[0].id}` : "/learn/how-to-choose-agent";
 ---
 
 <BaseLayout title={`${agent.data.name} tools - agentk.it`} description={agent.data.summary}>
-  <section class="agent-profile page">
+  <section class="page agent-hero">
     <AgentSummary agent={agent.data} />
-    <section class="tool-panel">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">Compatible tools</div>
-          <h2>{tools.length} tools mapped to {agent.data.name}</h2>
+
+    <aside class="guide-panel">
+      <div class="eyebrow">Agent guide</div>
+      <h2>Use this page as a compatibility map.</h2>
+      <p>
+        Start with the tool type you need, hover a tool to preview what it helps
+        with, then open the detail page for install, config, verification, and
+        source links.
+      </p>
+      <a class="small-button" href={guideHref}>Read the {agent.data.name} guide</a>
+    </aside>
+  </section>
+
+  <section class="section page">
+    <div class="stat-grid">
+      {types.map((type) => (
+        <a class="stat-card" href={`#${type}`}>
+          <span>{counts[type]}</span>
+          <strong>{typeLabels[type]}</strong>
+          <p>{counts[type] === 1 ? "mapped tool" : "mapped tools"}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Browse tools</div>
+        <h2>{allTools.length} compatible tools for {agent.data.name}</h2>
+      </div>
+      <p>
+        Tabs are anchor filters in v1. Search and live sorting can sit on top of
+        this structure later without changing the content model.
+      </p>
+    </div>
+
+    <nav class="type-tabs" aria-label={`${agent.data.name} tool types`}>
+      <a href="#all">All <span>{allTools.length}</span></a>
+      {types.map((type) => <a href={`#${type}`}>{typeLabels[type]} <span>{counts[type]}</span></a>)}
+    </nav>
+  </section>
+
+  <section class="section page tool-section" id="all">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">All compatible tools</div>
+        <h2>Everything mapped to this Agent.</h2>
+      </div>
+    </div>
+    {
+      allTools.length > 0 ? (
+        <div class="tool-grid">
+          {allTools.map((tool) => <AgentToolCard tool={tool.data} />)}
         </div>
+      ) : (
+        <div class="empty-state">
+          <h3>No tools mapped yet.</h3>
+          <p>This Agent page exists, but the candidate pool still needs approved tools for it.</p>
+        </div>
+      )
+    }
+  </section>
+
+  {
+    types.map((type) => (
+      <section class="section page tool-section" id={type}>
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">{typeLabels[type]}</div>
+            <h2>{counts[type]} {typeLabels[type]} for {agent.data.name}</h2>
+          </div>
+        </div>
+        {byType[type].length > 0 ? (
+          <div class="tool-grid">
+            {byType[type].map((tool) => <AgentToolCard tool={tool.data} />)}
+          </div>
+        ) : (
+          <div class="empty-state compact">
+            <h3>No {typeLabels[type]} mapped yet.</h3>
+            <p>Add candidates through GitHub ingestion, then approve them in the internal candidate pool.</p>
+          </div>
+        )}
+      </section>
+    ))
+  }
+
+  <section class="section page learning-section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Deep learning</div>
+        <h2>Understand before installing.</h2>
       </div>
-      <div class="list">
-        {tools.map((tool) => <ToolListItem tool={tool.data} />)}
-      </div>
-    </section>
+      <p>Agent pages should lead users into learning content, but tools remain the main product.</p>
+    </div>
+    <div class="learn-grid">
+      {
+        learnArticles.length > 0 ? (
+          learnArticles.map((article) => (
+            <ArticleCard
+              href={`/learn/${article.id}`}
+              label={`${article.data.topic} · ${article.data.difficulty}`}
+              title={article.data.title}
+              description={article.data.subtitle}
+            />
+          ))
+        ) : (
+          <ArticleCard
+            href="/learn/how-to-choose-agent"
+            label="agent · beginner"
+            title="How to choose an Agent"
+            description="Use this guide as the fallback learning path until this Agent has a dedicated guide."
+          />
+        )
+      }
+    </div>
   </section>
 </BaseLayout>
 
 <style>
-  .agent-profile {
+  .agent-hero {
     display: grid;
-    grid-template-columns: 0.95fr 1.05fr;
+    grid-template-columns: minmax(0, 1fr) 360px;
     gap: 24px;
-    padding: 58px 0;
+    align-items: stretch;
+    padding: 58px 0 10px;
   }
 
-  .tool-panel {
-    padding: 24px;
+  .guide-panel,
+  .stat-card,
+  .empty-state {
     border: 1px solid var(--line);
-    border-radius: 28px;
     background:
-      linear-gradient(180deg, rgb(238 244 238 / 0.035), rgb(238 244 238 / 0.01)),
+      linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
       var(--paper);
+    box-shadow: var(--shadow);
   }
 
-  .list {
+  .guide-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px;
+    border-radius: 28px;
+  }
+
+  .guide-panel p,
+  .section-head p,
+  .empty-state p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .stat-grid {
     display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 14px;
   }
 
-  @media (max-width: 960px) {
-    .agent-profile {
+  .stat-card {
+    min-height: 150px;
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .stat-card:hover {
+    border-color: var(--line-strong);
+  }
+
+  .stat-card span {
+    display: block;
+    color: var(--sage);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+  }
+
+  .stat-card strong {
+    display: block;
+    margin-top: 18px;
+  }
+
+  .stat-card p {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .type-tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgb(238 244 238 / 0.028);
+  }
+
+  .type-tabs a {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    min-height: 38px;
+    padding: 0 14px;
+    color: var(--muted);
+    border-radius: 999px;
+  }
+
+  .type-tabs a:hover {
+    color: var(--ink);
+    background: var(--sage-soft);
+  }
+
+  .type-tabs span {
+    color: var(--sage);
+    font-size: 12px;
+  }
+
+  .tool-section {
+    scroll-margin-top: 120px;
+  }
+
+  .tool-grid,
+  .learn-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .empty-state {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .empty-state.compact {
+    min-height: 130px;
+  }
+
+  .learning-section {
+    padding-bottom: 66px;
+  }
+
+  @media (max-width: 1040px) {
+    .agent-hero,
+    .tool-grid,
+    .learn-grid {
       grid-template-columns: 1fr;
+    }
+
+    .stat-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 620px) {
+    .stat-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .type-tabs {
+      border-radius: 24px;
     }
   }
 </style>
