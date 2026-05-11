@@ -146,7 +146,6 @@
    - Qwen Code
    - Kimi CLI / Kimi Agent
    - CodeGeeX
-   - Lingma / 通义灵码
    - Trae
    - OpenClaw
    - Generic
@@ -247,7 +246,7 @@
 - `/for/qwen-code`
 - `/for/kimi-agent`
 - `/for/codegeex`
-- `/for/lingma`
+- `/for/openclaw`
 - `/for/trae`
 
 ### 目标

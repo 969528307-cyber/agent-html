@@ -66,7 +66,7 @@ const freeDownloads = downloads.slice(0, 3);
   <section class="section page">
     <div class="grid-4">
       <RouteCard href="/tools" kicker="Browse by type" title="Tools" description="Skills, MCPs, CLI tools, and Workflows." />
-      <RouteCard href="/for/codex" kicker="Browse by agent" title="Agents" description="Compatibility pages for Codex, Claude Code, Cursor, and more." />
+      <RouteCard href="/agents" kicker="Browse by agent" title="Agents" description="Compatibility pages for Codex, Claude Code, OpenClaw, Cursor, and more." />
       <RouteCard href="/learn" kicker="Understand" title="Learn" description="Guides, explainers, comparisons, and glossaries." />
       <RouteCard href="/signals" kicker="Editorial" title="Signals" description="English translations and notes from high-quality Chinese AI content." />
     </div>
@@ -86,7 +86,7 @@ const freeDownloads = downloads.slice(0, 3);
       <div class="eyebrow">Browse by agent</div>
       <h2>Use compatibility as a filter.</h2>
       <div class="chip-list">
-        {["Claude Code", "Codex", "Cursor", "Qwen Code", "Kimi Agent", "Trae"].map((agent) => (
+        {["Claude Code", "Codex", "Cursor", "OpenClaw", "Qwen Code", "Kimi Agent", "Trae"].map((agent) => (
           <a href={`/for/${agent.toLowerCase().replaceAll(" ", "-")}`}>{agent}</a>
         ))}
       </div>

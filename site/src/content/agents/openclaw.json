@@ -1,0 +1,18 @@
+{
+  "id": "openclaw",
+  "name": "OpenClaw",
+  "status": "published",
+  "region": "global",
+  "vendor": "OpenClaw",
+  "summary": "An open agent ecosystem entry focused on reusable skills, community workflows, and ClawHub-style extensions.",
+  "bestFor": ["Community skills", "Reusable agent workflows", "Open extension ecosystem"],
+  "interfaceType": ["cli", "web"],
+  "documentationUrl": "https://github.com/openclaw",
+  "supportsMcp": true,
+  "supportsSkills": true,
+  "supportsCli": true,
+  "supportsWorkflows": true,
+  "toolTypes": { "skills": 28, "mcps": 10, "cli": 8, "workflows": 18 },
+  "relatedLearn": ["what-is-agent-skill", "how-to-choose-agent"],
+  "lastChecked": "2026-05-11"
+}

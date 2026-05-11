@@ -31,7 +31,8 @@ v1 的 Agent 兼容页不只覆盖海外主流 Agent，也要覆盖国产 Agent�
 首批建议覆盖：
 
 - Overseas: `Codex`、`Claude Code`、`Cursor`、`Hermes Agent`、`OpenClaw`、`Generic`
-- China: `Qwen Code`、`Kimi CLI / Kimi Agent`、`CodeGeeX`、`Lingma / 通义灵码`、`Trae`
+- China: `Qwen Code`、`Kimi CLI / Kimi Agent`、`CodeGeeX`、`Trae`
+- Open ecosystem: `OpenClaw`
 
 国产 Agent 页面要额外标注：
 
@@ -140,7 +141,7 @@ agent-toolkit-site/
 │   │   │   └── qwen-code.json
 │   │   │   └── kimi-agent.json
 │   │   │   └── codegeex.json
-│   │   │   └── lingma.json
+│   │   │   └── openclaw.json
 │   │   │   └── trae.json
 │   │   ├── learn/
 │   │   │   └── what-is-mcp.mdx
@@ -692,7 +693,7 @@ Local server starts without errors
 
 - [ ] Step 5: 添加 4 个海外 Agent 种子数据。
 
-- [ ] Step 5a: 添加首批国产 Agent 种子数据：Qwen Code、Kimi Agent、CodeGeeX、Lingma、Trae。
+- [ ] Step 5a: 添加首批国产 Agent 种子数据：Qwen Code、Kimi Agent、CodeGeeX、Trae，并加入 OpenClaw。
 
 - [ ] Step 6: 添加 2 篇 Learn 占位内容。
 
@@ -1002,7 +1003,7 @@ All /item/[id] pages generated
 - [ ] Step 5: 添加深度学习入口，例如 `Read the Claude Code guide`。
 
 - [ ] Step 6: 验证 `/for/codex`、`/for/claude-code` 能生成。
-- [ ] Step 7: 验证 `/for/qwen-code`、`/for/kimi-agent`、`/for/codegeex`、`/for/lingma`、`/for/trae` 能生成。
+- [ ] Step 7: 验证 `/for/qwen-code`、`/for/kimi-agent`、`/for/codegeex`、`/for/openclaw`、`/for/trae` 能生成。
 
 ---
 
