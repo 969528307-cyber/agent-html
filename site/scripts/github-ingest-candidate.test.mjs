@@ -2,9 +2,11 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  assertRepoMeetsStarFloor,
   buildCandidateFromRepo,
   detectToolType,
   extractInstallHints,
+  MIN_GITHUB_STARS,
   parseGitHubUrl,
   slugify,
 } from "./github-ingest-candidate.mjs";
@@ -52,6 +54,15 @@ npx -y @example/agent-skill
 
   assert.equal(hints[0].command, "npx -y @example/agent-skill");
   assert.match(hints[1].code, /mcpServers/);
+});
+
+test("rejects GitHub repositories below the minimum star floor", () => {
+  assert.equal(MIN_GITHUB_STARS, 1000);
+  assert.throws(
+    () => assertRepoMeetsStarFloor({ full_name: "example/small-tool", stargazers_count: 999 }),
+    /minimum is 1000/
+  );
+  assert.doesNotThrow(() => assertRepoMeetsStarFloor({ full_name: "example/large-tool", stargazers_count: 1000 }));
 });
 
 test("builds a candidate with GitHub metadata and extracted detail fields", () => {

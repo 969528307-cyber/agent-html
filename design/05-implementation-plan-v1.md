@@ -491,6 +491,9 @@ GitHub ingestion 的最小流程：
 GitHub repo URL
   -> 读取 repo metadata
       - owner / repo / stars / license / topics / default branch / last pushed
+  -> GitHub stars 硬门槛
+      - 低于 1000 stars：停止抓取，不进入 Candidate
+      - 1000 stars 及以上：继续读取文件树、README、SKILL.md
   -> 读取文件树
       - README.md
       - SKILL.md
@@ -539,7 +542,7 @@ v1 推荐先用脚本半自动维护 30-50 个高质量工具，不急着自动�
 
 - 官方 MCP server 列表。
 - 主流 Agent 官方文档。
-- GitHub 高星项目。
+- GitHub 1000 stars 以上项目。
 - 社区中被反复推荐的工具。
 - 自己验证过安装命令的工具。
 

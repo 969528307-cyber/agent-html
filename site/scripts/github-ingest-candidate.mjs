@@ -9,6 +9,8 @@ const githubApiHeaders = {
   ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {}),
 };
 
+export const MIN_GITHUB_STARS = 1000;
+
 export const slugify = (value) =>
   value
     .toLowerCase()
@@ -30,6 +32,15 @@ export const parseGitHubUrl = (url) => {
 };
 
 const includesAny = (text, terms) => terms.some((term) => text.includes(term));
+
+export const assertRepoMeetsStarFloor = (repo) => {
+  const stars = repo.stargazers_count || 0;
+  if (stars < MIN_GITHUB_STARS) {
+    throw new Error(
+      `Repository ${repo.full_name || repo.html_url || repo.name || "unknown"} has ${stars} GitHub stars; minimum is ${MIN_GITHUB_STARS}.`
+    );
+  }
+};
 
 export const detectToolType = ({ topics = [], files = [], readme = "" }) => {
   const topicText = topics.join(" ").toLowerCase();
@@ -227,6 +238,8 @@ const fetchRepoFile = async ({ owner, repo, path }) => {
 const fetchRepoCandidate = async (githubUrl) => {
   const { owner, repo } = parseGitHubUrl(githubUrl);
   const repoData = await fetchJson(`https://api.github.com/repos/${owner}/${repo}`);
+  assertRepoMeetsStarFloor(repoData);
+
   const tree = await fetchJson(`https://api.github.com/repos/${owner}/${repo}/git/trees/${repoData.default_branch}?recursive=1`);
   const files = tree.tree
     .filter((entry) => entry.type === "blob")
