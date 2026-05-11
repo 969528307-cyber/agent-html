@@ -15,6 +15,12 @@ const averageScore = (candidate: (typeof candidates)[number]) => {
   const values = Object.values(candidate.data.reviewScore);
   return values.reduce((sum, score) => sum + score, 0) / values.length;
 };
+
+const formatStars = (stars?: number) => {
+  if (!stars) return "no stars";
+  if (stars >= 1000) return `${(stars / 1000).toFixed(stars >= 10000 ? 0 : 1)}k stars`;
+  return `${stars} stars`;
+};
 ---
 
 <BaseLayout title="Candidate Pool - agentk.it" description="Internal candidate pool for reviewing and publishing content." noindex>
@@ -26,6 +32,10 @@ const averageScore = (candidate: (typeof candidates)[number]) => {
       Every candidate keeps source, score, notes, permission state, and target
       content type visible before it can move into the public site.
     </p>
+    <div class="hero-actions">
+      <a class="small-button" href="#queue">Review candidate queue</a>
+      <code>npm run discover:github -- --limit 20 --dry-run</code>
+    </div>
   </section>
 
   <section class="page stats">
@@ -37,7 +47,20 @@ const averageScore = (candidate: (typeof candidates)[number]) => {
     ))}
   </section>
 
-  <section class="section page candidate-list">
+  <section class="section page help-panel">
+    <div>
+      <div class="eyebrow">How this page works</div>
+      <h2>Click one candidate, inspect evidence, then publish only after approval.</h2>
+    </div>
+    <ol>
+      <li>Open a candidate row below.</li>
+      <li>Check GitHub evidence, README extract, install hints, detected files, score, and permission.</li>
+      <li>Edit its JSON status to <code>reviewing</code> or <code>approved</code> when it is ready.</li>
+      <li>Run the publish command shown on the candidate detail page.</li>
+    </ol>
+  </section>
+
+  <section class="section page candidate-list" id="queue">
     {
       candidates.map((candidate) => (
         <a class="candidate-row" href={`/internal/candidates/${candidate.id}`}>
@@ -46,11 +69,18 @@ const averageScore = (candidate: (typeof candidates)[number]) => {
               <span>{candidate.data.type}</span>
               <span>{candidate.data.status}</span>
               <span>score {averageScore(candidate).toFixed(1)}</span>
+              <span>{candidate.data.proposedToolType ?? "untyped"}</span>
             </div>
             <h2>{candidate.data.title}</h2>
             <p>{candidate.data.summary}</p>
+            <div class="evidence-line">
+              <span>{formatStars(candidate.data.githubMetadata?.stars)}</span>
+              <span>{candidate.data.permissionStatus ?? candidate.data.githubMetadata?.license ?? "permission unknown"}</span>
+              <span>{candidate.data.detectedFiles.length} evidence files</span>
+              <span>{candidate.data.extractedInstall.length} install hints</span>
+            </div>
           </div>
-          <strong>{candidate.data.discoveredFrom}</strong>
+          <strong>Review</strong>
         </a>
       ))
     }
@@ -75,6 +105,23 @@ const averageScore = (candidate: (typeof candidates)[number]) => {
     color: var(--muted);
     font-size: 15px;
     line-height: 1.72;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 22px;
+  }
+
+  .hero-actions code {
+    padding: 10px 12px;
+    color: var(--sage);
+    font-size: 12px;
+    background: rgb(238 244 238 / 0.035);
+    border: 1px solid var(--line);
+    border-radius: 999px;
   }
 
   .stats {
@@ -102,6 +149,35 @@ const averageScore = (candidate: (typeof candidates)[number]) => {
     margin-top: 4px;
     color: var(--muted);
     text-transform: capitalize;
+  }
+
+  .help-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
+    gap: 24px;
+    align-items: start;
+    padding: 24px;
+    margin-top: 26px;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background:
+      radial-gradient(circle at 90% 0%, rgb(167 207 164 / 0.12), transparent 18rem),
+      var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .help-panel ol {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding-left: 20px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .help-panel code {
+    color: var(--sage);
   }
 
   .candidate-list {
@@ -149,13 +225,38 @@ const averageScore = (candidate: (typeof candidates)[number]) => {
   }
 
   .candidate-row strong {
-    color: var(--clay);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    color: #08100b;
     font-size: 12px;
-    text-transform: uppercase;
+    background: var(--sage);
+    border-radius: 999px;
+  }
+
+  .evidence-line {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .evidence-line span {
+    padding: 6px 9px;
+    color: var(--muted);
+    font-size: 11px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+
+  #queue {
+    scroll-margin-top: 120px;
   }
 
   @media (max-width: 760px) {
-    .candidate-row {
+    .candidate-row,
+    .help-panel {
       grid-template-columns: 1fr;
     }
   }

@@ -1,48 +1,157 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const modules = [
+const candidates = await getCollection("candidates");
+const tools = (await getCollection("tools")).filter((tool) => tool.data.status === "published");
+const signals = (await getCollection("signals")).filter((signal) => signal.data.status === "published");
+
+const candidateCount = candidates.length;
+const pendingCount = candidates.filter((candidate) => ["candidate", "reviewing"].includes(candidate.data.status)).length;
+const approvedCount = candidates.filter((candidate) => candidate.data.status === "approved").length;
+const latestCandidate = candidates.sort((a, b) => b.data.discoveredAt.localeCompare(a.data.discoveredAt))[0];
+
+const primaryActions = [
   {
     href: "/internal/candidates",
-    title: "Candidate Pool",
-    body: "Review discovered tools, agents, Learn ideas, Signals, and downloads before publishing.",
+    label: "Open candidate pool",
+    title: "Review and publish candidates",
+    body: "Start here. This is the list of scraped or manually added content waiting for approval.",
   },
   {
     href: "/tools",
+    label: "Check public tools",
     title: "Published Directory",
-    body: "Check what is already visible on the public site before approving duplicates.",
+    body: "Compare a candidate against what is already visible before approving duplicates.",
   },
   {
     href: "/signals",
+    label: "Check public signals",
     title: "Signals Queue",
     body: "Audit translation permissions, source quality, and routing back to tools.",
   },
+];
+
+const stats = [
+  { label: "Total candidates", value: candidateCount },
+  { label: "Need review", value: pendingCount },
+  { label: "Approved", value: approvedCount },
+  { label: "Published tools", value: tools.length },
+  { label: "Signals", value: signals.length },
+];
+
+const commands = [
+  {
+    title: "Preview a GitHub discovery batch",
+    command: "cd /Users/ld/agent-toolkit-site/site\nnpm run discover:github -- --limit 20 --dry-run",
+  },
+  {
+    title: "Create candidate files from discovery",
+    command: "cd /Users/ld/agent-toolkit-site/site\nnpm run discover:github -- --limit 20",
+  },
+  {
+    title: "Publish an approved candidate",
+    command: "cd /Users/ld/agent-toolkit-site/site\nnpm run publish:candidate -- candidate-id",
+  },
+];
+
+const steps = [
+  "Discover or manually add candidates.",
+  "Open the candidate pool and click one item.",
+  "Review source, score, README extract, install hints, detected files, and permission.",
+  "Change candidate status to reviewing or approved in its JSON file.",
+  "Run the publish command shown on the candidate detail page.",
+  "Check the public Tools, Agents, Learn, or Signals page.",
 ];
 ---
 
 <BaseLayout title="Internal - agentk.it" description="Internal editorial workspace for agentk.it." noindex>
   <section class="page internal-hero">
-    <div class="eyebrow">Internal</div>
-    <h1>Editorial control room.</h1>
-    <p>
-      This area stays out of public navigation. It is where candidates become
-      reviewed content before they appear on the public directory.
-    </p>
+    <div>
+      <div class="eyebrow">Internal workspace</div>
+      <h1>Candidate pool control room.</h1>
+      <p>
+        Use this page to collect high-quality sources, review candidates, and
+        publish only the items that deserve to appear on the public site.
+      </p>
+      <div class="hero-actions">
+        <a class="small-button" href="/internal/candidates">Open candidate pool</a>
+        {latestCandidate && <a class="ghost-button" href={`/internal/candidates/${latestCandidate.id}`}>Latest: {latestCandidate.data.title}</a>}
+      </div>
+    </div>
+
+    <aside class="workflow-card">
+      <span>How to use this area</span>
+      <ol>
+        {steps.slice(0, 4).map((step) => <li>{step}</li>)}
+      </ol>
+    </aside>
+  </section>
+
+  <section class="page stat-strip" aria-label="Internal content status">
+    {stats.map((stat) => (
+      <div>
+        <strong>{stat.value}</strong>
+        <span>{stat.label}</span>
+      </div>
+    ))}
   </section>
 
   <section class="section page module-grid">
-    {modules.map((module) => (
-      <a class="module-card" href={module.href}>
-        <span>Open</span>
+    {primaryActions.map((module, index) => (
+      <a class:list={["module-card", { primary: index === 0 }]} href={module.href}>
+        <span>{module.label}</span>
         <h2>{module.title}</h2>
         <p>{module.body}</p>
       </a>
     ))}
   </section>
+
+  <section class="section page command-section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Commands</div>
+        <h2>Use these when you want to add or publish content.</h2>
+      </div>
+      <p>
+        v1 is still static-file based. The UI shows the queue; commands create
+        and publish the JSON files.
+      </p>
+    </div>
+    <div class="command-grid">
+      {commands.map((item) => (
+        <article class="command-card">
+          <h3>{item.title}</h3>
+          <pre><code>{item.command}</code></pre>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section page process-section">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Review flow</div>
+        <h2>Candidate to public page.</h2>
+      </div>
+    </div>
+    <div class="process-list">
+      {steps.map((step, index) => (
+        <div>
+          <strong>{String(index + 1).padStart(2, "0")}</strong>
+          <p>{step}</p>
+        </div>
+      ))}
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
   .internal-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    gap: 22px;
+    align-items: stretch;
     padding: 72px 0 24px;
   }
 
@@ -54,6 +163,83 @@ const modules = [
     line-height: 1.72;
   }
 
+  .hero-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+
+  .ghost-button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 0 14px;
+    color: var(--sage);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+
+  .workflow-card,
+  .module-card,
+  .command-card,
+  .process-list div,
+  .stat-strip div {
+    border: 1px solid var(--line);
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
+      var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .workflow-card {
+    padding: 24px;
+    border-radius: 28px;
+  }
+
+  .workflow-card span {
+    color: var(--sage);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .workflow-card ol {
+    display: grid;
+    gap: 12px;
+    margin: 20px 0 0;
+    padding-left: 20px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .stat-strip {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .stat-strip div {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .stat-strip strong {
+    display: block;
+    color: var(--sage);
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .stat-strip span {
+    display: block;
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
   .module-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -63,14 +249,18 @@ const modules = [
   .module-card {
     min-height: 230px;
     padding: 24px;
-    border: 1px solid var(--line);
     border-radius: 28px;
-    background: var(--paper);
-    box-shadow: var(--shadow);
   }
 
   .module-card:hover {
     border-color: var(--line-strong);
+  }
+
+  .module-card.primary {
+    background:
+      radial-gradient(circle at 80% 0%, rgb(167 207 164 / 0.18), transparent 15rem),
+      var(--paper-soft);
+    border-color: rgb(167 207 164 / 0.32);
   }
 
   .module-card span {
@@ -89,6 +279,75 @@ const modules = [
     color: var(--muted);
     font-size: 14px;
     line-height: 1.7;
+  }
+
+  .command-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .command-card {
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  pre,
+  code {
+    white-space: pre-wrap;
+  }
+
+  pre {
+    margin: 14px 0 0;
+    padding: 14px;
+    overflow: auto;
+    color: var(--sage);
+    font-size: 12px;
+    line-height: 1.55;
+    background: rgb(7 10 9 / 0.62);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+  }
+
+  .process-section {
+    padding-bottom: 70px;
+  }
+
+  .process-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .process-list div {
+    min-height: 130px;
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .process-list strong {
+    color: var(--clay);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+
+  .process-list p {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 1040px) {
+    .internal-hero,
+    .command-grid,
+    .process-list {
+      grid-template-columns: 1fr;
+    }
+
+    .stat-strip {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   @media (max-width: 860px) {
