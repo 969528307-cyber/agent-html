@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+import FilterSidebar from "../../components/FilterSidebar.astro";
+import ToolListItem from "../../components/ToolListItem.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { filterToolsByType, sortToolsByNewest } from "../../lib/filters";
+
+export function getStaticPaths() {
+  return ["skill", "mcp", "cli", "workflow"].map((type) => ({
+    params: { type },
+  }));
+}
+
+const { type } = Astro.params;
+const tools = sortToolsByNewest(filterToolsByType(await getCollection("tools"), type));
+const title = `${type?.toUpperCase()} tools`;
+---
+
+<BaseLayout title={`${title} - agentk.it`} description={`Browse ${type} tools for AI agents.`}>
+  <section class="tools-layout page">
+    <FilterSidebar activeType={type} />
+    <div>
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">/type/{type}</div>
+          <h1>{title}</h1>
+        </div>
+        <p>
+          Type pages focus the directory on one tool format while keeping related
+          agent and category context nearby.
+        </p>
+      </div>
+
+      <div class="list">
+        {tools.map((tool) => <ToolListItem tool={tool.data} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .tools-layout {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 24px;
+    padding: 54px 0;
+  }
+
+  h1 {
+    font-size: clamp(32px, 4vw, 54px);
+  }
+
+  .list {
+    display: grid;
+    gap: 14px;
+  }
+
+  @media (max-width: 960px) {
+    .tools-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

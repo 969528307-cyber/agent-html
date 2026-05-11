@@ -1,0 +1,20 @@
+{
+  "id": "agent-setup-checklist",
+  "name": "Agent Setup Checklist",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Install an agent, connect MCP servers, add skills, and verify the setup.",
+  "description": "A practical workflow for moving from a fresh agent install to a verified working local toolchain.",
+  "category": ["setup", "workflow"],
+  "compatibleAgents": ["Codex", "Claude Code", "Hermes Agent"],
+  "installCommand": "agentkit setup --check",
+  "requirements": ["Agent CLI", "Local project"],
+  "sourceUrl": "https://example.com/agent-setup-checklist",
+  "lastChecked": "2026-05-11",
+  "publishedAt": "2026-05-11",
+  "featured": false,
+  "trendingScore": 64,
+  "relatedLearn": ["how-to-choose-agent"],
+  "relatedSignals": [],
+  "relatedTools": ["context7", "playwright-mcp"]
+}

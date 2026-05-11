@@ -1,0 +1,162 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+const candidates = (await getCollection("candidates")).sort((a, b) =>
+  b.data.discoveredAt.localeCompare(a.data.discoveredAt)
+);
+
+const statusCounts = candidates.reduce<Record<string, number>>((counts, candidate) => {
+  counts[candidate.data.status] = (counts[candidate.data.status] ?? 0) + 1;
+  return counts;
+}, {});
+
+const averageScore = (candidate: (typeof candidates)[number]) => {
+  const values = Object.values(candidate.data.reviewScore);
+  return values.reduce((sum, score) => sum + score, 0) / values.length;
+};
+---
+
+<BaseLayout title="Candidate Pool - agentk.it" description="Internal candidate pool for reviewing and publishing content." noindex>
+  <section class="page pool-hero">
+    <a class="back" href="/internal">Internal home</a>
+    <div class="eyebrow">Candidate Pool</div>
+    <h1>Review first. Publish only what earns it.</h1>
+    <p>
+      Every candidate keeps source, score, notes, permission state, and target
+      content type visible before it can move into the public site.
+    </p>
+  </section>
+
+  <section class="page stats">
+    {Object.entries(statusCounts).map(([status, count]) => (
+      <div>
+        <span>{count}</span>
+        <p>{status}</p>
+      </div>
+    ))}
+  </section>
+
+  <section class="section page candidate-list">
+    {
+      candidates.map((candidate) => (
+        <a class="candidate-row" href={`/internal/candidates/${candidate.id}`}>
+          <div>
+            <div class="row-top">
+              <span>{candidate.data.type}</span>
+              <span>{candidate.data.status}</span>
+              <span>score {averageScore(candidate).toFixed(1)}</span>
+            </div>
+            <h2>{candidate.data.title}</h2>
+            <p>{candidate.data.summary}</p>
+          </div>
+          <strong>{candidate.data.discoveredFrom}</strong>
+        </a>
+      ))
+    }
+  </section>
+</BaseLayout>
+
+<style>
+  .pool-hero {
+    padding: 72px 0 24px;
+  }
+
+  .back {
+    display: inline-flex;
+    margin-bottom: 22px;
+    color: var(--sage);
+    font-size: 13px;
+  }
+
+  .pool-hero p {
+    max-width: 650px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .stats {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+
+  .stats div {
+    min-width: 150px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background: var(--paper);
+  }
+
+  .stats span {
+    color: var(--sage);
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .stats p {
+    margin-top: 4px;
+    color: var(--muted);
+    text-transform: capitalize;
+  }
+
+  .candidate-list {
+    display: grid;
+    gap: 14px;
+  }
+
+  .candidate-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 120px;
+    gap: 18px;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: var(--paper);
+  }
+
+  .candidate-row:hover {
+    border-color: var(--line-strong);
+  }
+
+  .row-top {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+
+  .row-top span {
+    padding: 6px 9px;
+    color: var(--sage);
+    font-size: 11px;
+    font-weight: 700;
+    background: var(--sage-soft);
+    border-radius: 999px;
+    text-transform: uppercase;
+  }
+
+  .candidate-row p {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .candidate-row strong {
+    color: var(--clay);
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 760px) {
+    .candidate-row {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

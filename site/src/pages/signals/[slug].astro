@@ -1,0 +1,146 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ToolListItem from "../../components/ToolListItem.astro";
+
+export async function getStaticPaths() {
+  const signals = (await getCollection("signals")).filter((entry) => entry.data.status === "published");
+  return signals.map((signal) => ({
+    params: { slug: signal.id },
+    props: { signal },
+  }));
+}
+
+const { signal } = Astro.props;
+const { Content } = await render(signal);
+const tools = (await getCollection("tools")).filter((tool) => signal.data.relatedTools.includes(tool.data.id));
+---
+
+<BaseLayout title={`${signal.data.englishTitle} - agentk.it`} description={signal.data.executiveSummary}>
+  <article class="page signal-shell">
+    <a class="back" href="/signals">Back to Signals</a>
+    <div class="eyebrow">{signal.data.sourceName} · {signal.data.permissionStatus}</div>
+    <h1>{signal.data.englishTitle}</h1>
+    <p class="original">{signal.data.originalTitle}</p>
+
+    <div class="meta-panel">
+      <div>
+        <span>Why it matters</span>
+        <p>{signal.data.whyItMatters}</p>
+      </div>
+      <div>
+        <span>Original source</span>
+        <p><a href={signal.data.sourceUrl} target="_blank" rel="noreferrer">{signal.data.sourceUrl}</a></p>
+      </div>
+    </div>
+
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+
+  {
+    tools.length > 0 && (
+      <section class="section page">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Routed tools</div>
+            <h2>Where this idea becomes useful.</h2>
+          </div>
+        </div>
+        <div class="stack">
+          {tools.map((tool) => <ToolListItem tool={tool.data} />)}
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .signal-shell {
+    max-width: 860px;
+    padding: 72px 0 30px;
+  }
+
+  .back {
+    display: inline-flex;
+    margin-bottom: 22px;
+    color: var(--sage);
+    font-size: 13px;
+  }
+
+  .original {
+    max-width: 680px;
+    margin-top: 16px;
+    color: var(--clay);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .meta-panel {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .meta-panel div,
+  .prose {
+    border: 1px solid var(--line);
+    background: var(--paper);
+  }
+
+  .meta-panel div {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .meta-panel span {
+    color: var(--sage);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .meta-panel p {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .meta-panel a {
+    color: var(--sage);
+    overflow-wrap: anywhere;
+  }
+
+  .prose {
+    margin-top: 22px;
+    padding: 28px;
+    color: var(--muted);
+    border-radius: 28px;
+  }
+
+  .prose :global(h2) {
+    margin-top: 30px;
+    color: var(--ink);
+    font-size: 25px;
+  }
+
+  .prose :global(p),
+  .prose :global(li) {
+    font-size: 15px;
+    line-height: 1.78;
+  }
+
+  .stack {
+    display: grid;
+    gap: 14px;
+  }
+
+  @media (max-width: 760px) {
+    .meta-panel {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,19 @@
+{
+  "id": "codex",
+  "name": "Codex",
+  "status": "published",
+  "region": "global",
+  "vendor": "OpenAI",
+  "summary": "A coding-focused agent for local implementation, repository navigation, and structured tool use.",
+  "bestFor": ["Local coding tasks", "Repository automation", "Tool-assisted implementation"],
+  "interfaceType": ["cli", "api"],
+  "documentationUrl": "https://developers.openai.com/codex",
+  "englishDocsUrl": "https://developers.openai.com/codex",
+  "supportsMcp": true,
+  "supportsSkills": true,
+  "supportsCli": true,
+  "supportsWorkflows": true,
+  "toolTypes": { "skills": 42, "mcps": 31, "cli": 12, "workflows": 18 },
+  "relatedLearn": ["how-to-choose-agent"],
+  "lastChecked": "2026-05-11"
+}

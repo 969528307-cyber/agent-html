@@ -1,0 +1,19 @@
+{
+  "id": "trae",
+  "name": "Trae",
+  "status": "published",
+  "region": "china",
+  "vendor": "ByteDance",
+  "summary": "An AI IDE and coding agent product for developer assistance and project workflows.",
+  "bestFor": ["AI IDE workflows", "Project coding", "Chinese developer ecosystem"],
+  "interfaceType": ["ide"],
+  "documentationUrl": "https://www.trae.ai/",
+  "englishDocsUrl": "https://www.trae.ai/",
+  "supportsMcp": true,
+  "supportsSkills": false,
+  "supportsCli": false,
+  "supportsWorkflows": true,
+  "toolTypes": { "skills": 4, "mcps": 8, "cli": 2, "workflows": 10 },
+  "relatedLearn": ["how-to-choose-agent"],
+  "lastChecked": "2026-05-11"
+}

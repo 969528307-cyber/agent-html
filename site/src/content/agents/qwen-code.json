@@ -1,0 +1,19 @@
+{
+  "id": "qwen-code",
+  "name": "Qwen Code",
+  "status": "published",
+  "region": "china",
+  "vendor": "Alibaba Cloud",
+  "summary": "A China-origin coding agent entry focused on Qwen model workflows and developer assistance.",
+  "bestFor": ["Chinese developer ecosystem", "Qwen model workflows", "Code assistance"],
+  "interfaceType": ["cli", "web"],
+  "documentationUrl": "https://qwenlm.github.io/",
+  "englishDocsUrl": "https://qwenlm.github.io/",
+  "supportsMcp": false,
+  "supportsSkills": false,
+  "supportsCli": true,
+  "supportsWorkflows": true,
+  "toolTypes": { "skills": 4, "mcps": 3, "cli": 8, "workflows": 7 },
+  "relatedLearn": ["how-to-choose-agent"],
+  "lastChecked": "2026-05-11"
+}

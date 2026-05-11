@@ -1,0 +1,148 @@
+---
+import { getCollection } from "astro:content";
+import ArticleCard from "../../components/ArticleCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const articles = (await getCollection("learn"))
+  .filter((entry) => entry.data.status === "published")
+  .sort((a, b) => b.data.publishedAt.localeCompare(a.data.publishedAt));
+
+const topicCounts = articles.reduce<Record<string, number>>((counts, article) => {
+  counts[article.data.topic] = (counts[article.data.topic] ?? 0) + 1;
+  return counts;
+}, {});
+---
+
+<BaseLayout
+  title="Learn - agentk.it"
+  description="Short learning pages for MCP, Skills, Agents, Workflows, and practical AI tool setup decisions."
+>
+  <section class="page hero-lite">
+    <div>
+      <div class="eyebrow">Learn</div>
+      <h1>Learn the system before collecting tools.</h1>
+      <p>
+        This section is the explanation layer: MCP, Skills, Agents, Workflows,
+        and the decision paths that help people choose a usable setup.
+      </p>
+    </div>
+    <aside class="panel">
+      <span>{articles.length}</span>
+      <p>published explainers</p>
+    </aside>
+  </section>
+
+  <section class="section page layout">
+    <aside class="sidebar">
+      <div class="eyebrow">Topics</div>
+      {Object.entries(topicCounts).map(([topic, count]) => (
+        <a href={`#${topic}`}>
+          <span>{topic}</span>
+          <strong>{count}</strong>
+        </a>
+      ))}
+    </aside>
+
+    <div class="article-grid">
+      {
+        articles.map((article) => (
+          <ArticleCard
+            href={`/learn/${article.id}`}
+            label={`${article.data.topic} · ${article.data.difficulty}`}
+            title={article.data.title}
+            description={article.data.subtitle}
+          />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-lite {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 28px;
+    align-items: end;
+    padding: 72px 0 24px;
+  }
+
+  .hero-lite p {
+    max-width: 650px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .panel,
+  .sidebar {
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)), var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .panel {
+    padding: 24px;
+    border-radius: 28px;
+  }
+
+  .panel span {
+    display: block;
+    color: var(--sage);
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+  }
+
+  .panel p {
+    margin-top: 6px;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 112px;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .sidebar a {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+  }
+
+  .sidebar strong {
+    color: var(--sage);
+  }
+
+  .article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  @media (max-width: 860px) {
+    .hero-lite,
+    .layout,
+    .article-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+      position: static;
+    }
+  }
+</style>

@@ -1,0 +1,98 @@
+---
+import { getCollection } from "astro:content";
+import ArticleCard from "../../components/ArticleCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const signals = (await getCollection("signals"))
+  .filter((entry) => entry.data.status === "published")
+  .sort((a, b) => b.data.publishedAt.localeCompare(a.data.publishedAt));
+---
+
+<BaseLayout
+  title="Signals - agentk.it"
+  description="English translations and editorial notes from high-quality Chinese AI Agent content."
+>
+  <section class="page hero-lite">
+    <div>
+      <div class="eyebrow">Signals</div>
+      <h1>Translate high-signal Chinese AI content into English.</h1>
+      <p>
+        Signals are not random news posts. Each item should show permission,
+        original source, why it matters, and which tools or agent workflows it
+        changes.
+      </p>
+    </div>
+    <aside class="panel">
+      <span>EN</span>
+      <p>complete translation target</p>
+    </aside>
+  </section>
+
+  <section class="section page">
+    <div class="signal-grid">
+      {
+        signals.map((signal) => (
+          <ArticleCard
+            href={`/signals/${signal.id}`}
+            label={`${signal.data.sourceName} · ${signal.data.permissionStatus}`}
+            tone="clay"
+            title={signal.data.englishTitle}
+            description={signal.data.executiveSummary}
+          />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-lite {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 28px;
+    align-items: end;
+    padding: 72px 0 24px;
+  }
+
+  .hero-lite p {
+    max-width: 680px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .panel {
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgb(211 154 118 / 0.08), rgb(238 244 238 / 0.012)), var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .panel span {
+    display: block;
+    color: var(--clay);
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+  }
+
+  .panel p {
+    margin-top: 6px;
+    color: var(--muted);
+  }
+
+  .signal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  @media (max-width: 860px) {
+    .hero-lite,
+    .signal-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

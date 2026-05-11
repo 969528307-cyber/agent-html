@@ -1,0 +1,129 @@
+---
+interface AgentData {
+  name: string;
+  region: "global" | "china";
+  vendor?: string;
+  summary: string;
+  bestFor: string[];
+  interfaceType: string[];
+  supportsMcp: boolean;
+  supportsSkills: boolean;
+  supportsCli: boolean;
+  supportsWorkflows: boolean;
+  toolTypes: {
+    skills: number;
+    mcps: number;
+    cli: number;
+    workflows: number;
+  };
+}
+
+interface Props {
+  agent: AgentData;
+}
+
+const { agent } = Astro.props;
+const support = [
+  ["MCP", agent.supportsMcp],
+  ["Skills", agent.supportsSkills],
+  ["CLI", agent.supportsCli],
+  ["Workflows", agent.supportsWorkflows],
+];
+---
+
+<article class="profile-card">
+  <div class="eyebrow">/{agent.region} agent</div>
+  <h1>{agent.name}</h1>
+  <p>{agent.summary}</p>
+
+  <div class="meta">
+    {agent.vendor && <span>{agent.vendor}</span>}
+    {agent.interfaceType.map((type) => <span>{type}</span>)}
+  </div>
+
+  <div class="support-grid">
+    {support.map(([label, enabled]) => <span class:list={[{ enabled }]}>{label}</span>)}
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><strong>{agent.toolTypes.skills}</strong><span>Skills</span></div>
+    <div class="stat"><strong>{agent.toolTypes.mcps}</strong><span>MCPs</span></div>
+    <div class="stat"><strong>{agent.toolTypes.cli}</strong><span>CLI</span></div>
+    <div class="stat"><strong>{agent.toolTypes.workflows}</strong><span>Workflows</span></div>
+  </div>
+</article>
+
+<style>
+  .profile-card {
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
+      var(--paper);
+  }
+
+  h1 {
+    font-size: clamp(32px, 4vw, 54px);
+  }
+
+  p {
+    margin-top: 18px;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  .meta,
+  .support-grid {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+
+  .meta span,
+  .support-grid span {
+    padding: 7px 9px;
+    color: var(--muted);
+    font-size: 12px;
+    background: rgb(238 244 238 / 0.035);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+
+  .support-grid span.enabled {
+    color: var(--sage);
+    background: var(--sage-soft);
+    border-color: rgb(167 207 164 / 0.18);
+  }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .stat {
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: rgb(238 244 238 / 0.035);
+  }
+
+  .stat strong {
+    display: block;
+    font-size: 20px;
+  }
+
+  .stat span {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  @media (max-width: 760px) {
+    .stat-row {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

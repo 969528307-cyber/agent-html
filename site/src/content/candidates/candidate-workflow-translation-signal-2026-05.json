@@ -1,0 +1,27 @@
+{
+  "id": "candidate-workflow-translation-signal-2026-05",
+  "type": "signal",
+  "status": "approved",
+  "title": "From prompt libraries to operational workflows",
+  "sourceUrl": "https://example.com/chinese-agent-workflow-post",
+  "sourceName": "Author submitted example",
+  "author": "Example Author",
+  "discoveredAt": "2026-05-11",
+  "lastChecked": "2026-05-11",
+  "discoveredFrom": "submission",
+  "summary": "A Chinese builder essay about moving from prompt libraries to reusable workflows.",
+  "proposedCategory": ["workflow", "agent"],
+  "proposedAgents": ["Codex", "Claude Code"],
+  "permissionStatus": "author_submitted",
+  "reviewScore": {
+    "sourceTrust": 5,
+    "usefulness": 5,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 5,
+    "permission": 5
+  },
+  "reviewNotes": "Author-submitted example can be used for full English translation.",
+  "publishReason": "Strong fit for Signals and workflow-related tooling."
+}

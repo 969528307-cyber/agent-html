@@ -1,0 +1,55 @@
+---
+import { getCollection } from "astro:content";
+import FilterSidebar from "../../components/FilterSidebar.astro";
+import ToolListItem from "../../components/ToolListItem.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPublishedTools, sortToolsByNewest } from "../../lib/filters";
+
+const tools = sortToolsByNewest(getPublishedTools(await getCollection("tools")));
+---
+
+<BaseLayout title="Tools - agentk.it" description="Browse Skills, MCP servers, CLI tools, and Workflows for AI agents.">
+  <section class="tools-layout page">
+    <FilterSidebar activeType="all" />
+    <div>
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">/tools</div>
+          <h1>The unified tool browser.</h1>
+        </div>
+        <p>
+          The core directory for Skills, MCP servers, CLI tools, and Workflows.
+          Filter by type first; category and agent filters come next.
+        </p>
+      </div>
+
+      <div class="list">
+        {tools.map((tool) => <ToolListItem tool={tool.data} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .tools-layout {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 24px;
+    padding: 54px 0;
+  }
+
+  h1 {
+    font-size: clamp(32px, 4vw, 54px);
+  }
+
+  .list {
+    display: grid;
+    gap: 14px;
+  }
+
+  @media (max-width: 960px) {
+    .tools-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

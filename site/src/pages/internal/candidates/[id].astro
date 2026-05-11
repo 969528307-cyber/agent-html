@@ -1,0 +1,231 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const candidates = await getCollection("candidates");
+  return candidates.map((candidate) => ({
+    params: { id: candidate.id },
+    props: { candidate },
+  }));
+}
+
+const { candidate } = Astro.props;
+const scores = Object.entries(candidate.data.reviewScore);
+const average = scores.reduce((sum, [, score]) => sum + score, 0) / scores.length;
+const publishCommand = `npm run publish:candidate -- ${candidate.id}`;
+---
+
+<BaseLayout title={`${candidate.data.title} - Candidate Pool`} description={candidate.data.summary} noindex>
+  <section class="page detail">
+    <a class="back" href="/internal/candidates">Back to candidate pool</a>
+    <div class="eyebrow">{candidate.data.type} · {candidate.data.status}</div>
+    <h1>{candidate.data.title}</h1>
+    <p class="summary">{candidate.data.summary}</p>
+
+    <div class="action-panel">
+      <div>
+        <span>Publish action</span>
+        <p>
+          If this candidate is approved, run the local publish command. The
+          script turns this candidate into the target content collection and
+          keeps the internal page noindexed.
+        </p>
+      </div>
+      <code>{publishCommand}</code>
+    </div>
+  </section>
+
+  <section class="section page detail-grid">
+    <article class="panel">
+      <div class="eyebrow">Source</div>
+      <dl>
+        <div><dt>URL</dt><dd><a href={candidate.data.sourceUrl} target="_blank" rel="noreferrer">{candidate.data.sourceUrl}</a></dd></div>
+        <div><dt>Source</dt><dd>{candidate.data.sourceName ?? "Unknown"}</dd></div>
+        <div><dt>Author</dt><dd>{candidate.data.author ?? "Unknown"}</dd></div>
+        <div><dt>Discovered</dt><dd>{candidate.data.discoveredAt} via {candidate.data.discoveredFrom}</dd></div>
+        <div><dt>Permission</dt><dd>{candidate.data.permissionStatus ?? "not required"}</dd></div>
+      </dl>
+    </article>
+
+    <article class="panel">
+      <div class="eyebrow">Review score</div>
+      <strong class="score">{average.toFixed(1)}</strong>
+      <div class="score-list">
+        {scores.map(([key, value]) => (
+          <div>
+            <span>{key}</span>
+            <meter min="1" max="5" value={value}>{value}</meter>
+            <b>{value}</b>
+          </div>
+        ))}
+      </div>
+    </article>
+
+    <article class="panel wide">
+      <div class="eyebrow">Editorial notes</div>
+      <p>{candidate.data.reviewNotes}</p>
+      {candidate.data.publishReason && <p class="reason">{candidate.data.publishReason}</p>}
+      <div class="tags">
+        {candidate.data.proposedToolType && <span>{candidate.data.proposedToolType}</span>}
+        {candidate.data.proposedCategory?.map((category) => <span>{category}</span>)}
+        {candidate.data.proposedAgents?.map((agent) => <span>{agent}</span>)}
+      </div>
+    </article>
+  </section>
+</BaseLayout>
+
+<style>
+  .detail {
+    padding: 72px 0 24px;
+  }
+
+  .back {
+    display: inline-flex;
+    margin-bottom: 22px;
+    color: var(--sage);
+    font-size: 13px;
+  }
+
+  .summary {
+    max-width: 680px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .action-panel,
+  .panel {
+    border: 1px solid var(--line);
+    background: var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .action-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.5fr);
+    gap: 18px;
+    align-items: center;
+    margin-top: 28px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .action-panel span {
+    color: var(--sage);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .action-panel p {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  code {
+    padding: 14px;
+    overflow: auto;
+    color: var(--sage);
+    background: var(--sage-soft);
+    border: 1px solid rgb(167 207 164 / 0.14);
+    border-radius: 16px;
+  }
+
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .panel {
+    padding: 22px;
+    border-radius: 26px;
+  }
+
+  .wide {
+    grid-column: 1 / -1;
+  }
+
+  dl {
+    display: grid;
+    gap: 14px;
+    margin: 0;
+  }
+
+  dt {
+    color: var(--faint);
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 6px 0 0;
+    color: var(--muted);
+    overflow-wrap: anywhere;
+  }
+
+  dd a {
+    color: var(--sage);
+  }
+
+  .score {
+    display: block;
+    margin: 10px 0 18px;
+    color: var(--sage);
+    font-size: 54px;
+    letter-spacing: -0.06em;
+  }
+
+  .score-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .score-list div {
+    display: grid;
+    grid-template-columns: 1fr 120px 22px;
+    gap: 10px;
+    align-items: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  meter {
+    width: 100%;
+  }
+
+  .panel p {
+    color: var(--muted);
+    line-height: 1.72;
+  }
+
+  .reason {
+    margin-top: 14px;
+    color: var(--clay) !important;
+  }
+
+  .tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+
+  .tags span {
+    padding: 7px 10px;
+    color: var(--sage);
+    background: var(--sage-soft);
+    border-radius: 999px;
+  }
+
+  @media (max-width: 860px) {
+    .action-panel,
+    .detail-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,104 @@
+---
+interface ToolData {
+  name: string;
+  type: string;
+  summary: string;
+  installCommand?: string;
+  compatibleAgents: string[];
+}
+
+interface Props {
+  tool: ToolData;
+}
+
+const { tool } = Astro.props;
+---
+
+<article class="tool-card">
+  <div class="card-top">
+    <h3>{tool.name}</h3>
+    <span class="badge">{tool.type.toUpperCase()}</span>
+  </div>
+  <p>{tool.summary}</p>
+  {tool.installCommand && <code class="command">{tool.installCommand}</code>}
+  <div class="meta">
+    {tool.compatibleAgents.map((agent) => <span>{agent}</span>)}
+  </div>
+</article>
+
+<style>
+  .tool-card {
+    position: relative;
+    display: grid;
+    gap: 16px;
+    min-height: 220px;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
+      var(--paper);
+    box-shadow: var(--shadow);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }
+
+  .tool-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--line-strong);
+    box-shadow: 0 26px 70px rgb(0 0 0 / 0.28);
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 26px;
+    padding: 0 10px;
+    color: var(--ink);
+    font-size: 11px;
+    font-weight: 700;
+    background: var(--sage-soft);
+    border: 1px solid rgb(167 207 164 / 0.18);
+    border-radius: 999px;
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+
+  .command {
+    padding: 10px 12px;
+    overflow: hidden;
+    color: var(--sage);
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: var(--sage-soft);
+    border: 1px solid rgb(167 207 164 / 0.14);
+    border-radius: 14px;
+  }
+
+  .meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+
+  .meta span {
+    padding: 7px 9px;
+    color: var(--muted);
+    font-size: 12px;
+    background: rgb(238 244 238 / 0.035);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+</style>

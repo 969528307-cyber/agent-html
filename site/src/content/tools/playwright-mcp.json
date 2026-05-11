@@ -1,0 +1,22 @@
+{
+  "id": "playwright-mcp",
+  "name": "Playwright MCP",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Automate browsers for testing, screenshots, and UI verification.",
+  "description": "Playwright MCP gives agents a browser automation surface for inspecting pages, reproducing UI issues, and validating local web apps.",
+  "category": ["testing", "browser", "developer-tools"],
+  "compatibleAgents": ["Codex", "Claude Code"],
+  "installCommand": "npx @playwright/mcp@latest",
+  "requirements": ["Node.js", "Browser runtime"],
+  "sourceUrl": "https://github.com/microsoft/playwright-mcp",
+  "repoUrl": "https://github.com/microsoft/playwright-mcp",
+  "license": "Apache-2.0",
+  "lastChecked": "2026-05-11",
+  "publishedAt": "2026-05-11",
+  "featured": true,
+  "trendingScore": 88,
+  "relatedLearn": ["what-is-mcp"],
+  "relatedSignals": [],
+  "relatedTools": ["context7"]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "cursor",
+  "name": "Cursor",
+  "status": "published",
+  "region": "global",
+  "vendor": "Cursor",
+  "summary": "An editor-native AI coding environment for agentic development inside the IDE.",
+  "bestFor": ["Editor workflows", "Rules-based coding", "Pair programming"],
+  "interfaceType": ["ide"],
+  "documentationUrl": "https://docs.cursor.com/",
+  "englishDocsUrl": "https://docs.cursor.com/",
+  "supportsMcp": true,
+  "supportsSkills": false,
+  "supportsCli": false,
+  "supportsWorkflows": true,
+  "toolTypes": { "skills": 12, "mcps": 26, "cli": 4, "workflows": 16 },
+  "relatedLearn": ["how-to-choose-agent"],
+  "lastChecked": "2026-05-11"
+}

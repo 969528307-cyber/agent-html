@@ -1,0 +1,70 @@
+<div class="search-panel">
+  <form class="search-box" action="/search">
+    <input name="q" type="search" placeholder="Search Context7, Playwright, Codex, Claude Code..." />
+    <button class="small-button" type="submit">Search</button>
+  </form>
+  <div class="tabs">
+    <a href="/tools">All</a>
+    <a href="/type/skill">Skills</a>
+    <a href="/type/mcp">MCPs</a>
+    <a href="/type/cli">CLI</a>
+    <a href="/type/workflow">Workflows</a>
+  </div>
+</div>
+
+<style>
+  .search-panel {
+    margin-top: 28px;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background: rgb(17 23 18 / 0.72);
+    box-shadow: var(--shadow);
+  }
+
+  .search-box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 8px 8px 18px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--paper);
+  }
+
+  input {
+    width: 100%;
+    min-height: 40px;
+    color: var(--ink);
+    background: transparent;
+    border: 0;
+    outline: 0;
+  }
+
+  input::placeholder {
+    color: var(--faint);
+  }
+
+  .tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+
+  .tabs a {
+    min-height: 36px;
+    padding: 9px 13px;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 999px;
+  }
+
+  .tabs a:hover {
+    color: var(--ink);
+    background: var(--sage-soft);
+    border-color: rgb(167 207 164 / 0.18);
+  }
+</style>

@@ -1,0 +1,98 @@
+---
+const navItems = [
+  { href: "/", label: "Home" },
+  { href: "/tools", label: "Tools" },
+  { href: "/learn", label: "Learn" },
+  { href: "/signals", label: "Signals" },
+  { href: "/upgrade", label: "Free" },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="topbar page">
+  <a class="brand" href="/" aria-label="agentk.it home">
+    <span class="brand-mark">a</span>
+    <span>agentk.it</span>
+  </a>
+
+  <nav class="nav" aria-label="Primary navigation">
+    {
+      navItems.map((item) => (
+        <a class:list={[{ "is-active": currentPath === item.href }, "nav-link"]} href={item.href}>
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
+
+  <a class="small-button" href="/tools">Browse tools</a>
+</header>
+
+<style>
+  .topbar {
+    position: sticky;
+    top: 16px;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: center;
+    margin: 16px auto 0;
+    padding: 12px 12px 12px 18px;
+    border: 1px solid rgb(238 244 238 / 0.08);
+    border-radius: 999px;
+    background: rgb(17 23 18 / 0.72);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(22px);
+  }
+
+  .brand {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+  }
+
+  .brand-mark {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    color: #08100b;
+    background: var(--sage);
+    border-radius: 999px;
+  }
+
+  .nav {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .nav-link {
+    min-height: 38px;
+    padding: 10px 14px;
+    color: var(--muted);
+    border-radius: 999px;
+  }
+
+  .nav-link:hover,
+  .nav-link.is-active {
+    color: var(--ink);
+    background: var(--sage-soft);
+  }
+
+  @media (max-width: 760px) {
+    .topbar {
+      align-items: stretch;
+      border-radius: 26px;
+      flex-direction: column;
+    }
+
+    .nav {
+      flex-wrap: wrap;
+    }
+  }
+</style>

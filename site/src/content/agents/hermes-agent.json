@@ -1,0 +1,18 @@
+{
+  "id": "hermes-agent",
+  "name": "Hermes Agent",
+  "status": "published",
+  "region": "global",
+  "vendor": "Hermes",
+  "summary": "A workflow-oriented agent concept focused on reusable commands, skills, and local execution.",
+  "bestFor": ["Reusable workflows", "Command packs", "Local automation"],
+  "interfaceType": ["cli"],
+  "documentationUrl": "https://example.com/hermes-agent",
+  "supportsMcp": false,
+  "supportsSkills": true,
+  "supportsCli": true,
+  "supportsWorkflows": true,
+  "toolTypes": { "skills": 30, "mcps": 8, "cli": 14, "workflows": 22 },
+  "relatedLearn": ["what-is-agent-skill"],
+  "lastChecked": "2026-05-11"
+}

@@ -1,0 +1,76 @@
+---
+interface Props {
+  activeType?: string;
+}
+
+const { activeType = "all" } = Astro.props;
+
+const types = [
+  { href: "/tools", label: "All", value: "all" },
+  { href: "/type/skill", label: "Skills", value: "skill" },
+  { href: "/type/mcp", label: "MCPs", value: "mcp" },
+  { href: "/type/cli", label: "CLI", value: "cli" },
+  { href: "/type/workflow", label: "Workflows", value: "workflow" },
+];
+---
+
+<aside class="filter-panel">
+  <h3>Tools</h3>
+  <p>Search and filter the core directory.</p>
+  <div class="filter-group">
+    {
+      types.map((type) => (
+        <a class:list={[{ "is-active": activeType === type.value }]} href={type.href}>
+          {type.label}
+        </a>
+      ))
+    }
+  </div>
+</aside>
+
+<style>
+  .filter-panel {
+    position: sticky;
+    top: 94px;
+    align-self: start;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.035), rgb(238 244 238 / 0.01)),
+      var(--paper);
+  }
+
+  p {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .filter-group {
+    display: grid;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .filter-group a {
+    min-height: 38px;
+    padding: 10px 12px;
+    color: var(--muted);
+    border: 1px solid transparent;
+    border-radius: 12px;
+  }
+
+  .filter-group a.is-active,
+  .filter-group a:hover {
+    color: var(--sage);
+    background: var(--sage-soft);
+  }
+
+  @media (max-width: 960px) {
+    .filter-panel {
+      position: static;
+    }
+  }
+</style>

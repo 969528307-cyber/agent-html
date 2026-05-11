@@ -1,0 +1,102 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const tiers = [
+  {
+    name: "Free",
+    price: "$0",
+    body: "Open directory, public Learn pages, Signals summaries, and selected downloads.",
+  },
+  {
+    name: "Builder",
+    price: "Later",
+    body: "Saved stacks, full checklists, comparison tables, and workflow templates.",
+  },
+  {
+    name: "Team",
+    price: "Later",
+    body: "Internal tool catalogs, review workflow, private candidate pool, and team notes.",
+  },
+];
+---
+
+<BaseLayout title="Free and Upgrade - agentk.it" description="Free resources and future upgrade path for agentk.it.">
+  <section class="page hero-lite">
+    <div>
+      <div class="eyebrow">Free first</div>
+      <h1>Earn trust before asking people to upgrade.</h1>
+      <p>
+        The first release should feel useful without payment: directory pages,
+        learning explainers, translated Signals, and practical downloadable
+        references.
+      </p>
+    </div>
+  </section>
+
+  <section class="section page tier-grid">
+    {tiers.map((tier) => (
+      <article class:list={["tier", { featured: tier.name === "Free" }]}>
+        <span>{tier.price}</span>
+        <h2>{tier.name}</h2>
+        <p>{tier.body}</p>
+      </article>
+    ))}
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-lite {
+    padding: 72px 0 24px;
+  }
+
+  .hero-lite p {
+    max-width: 650px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .tier-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .tier {
+    min-height: 260px;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .tier.featured {
+    border-color: rgb(167 207 164 / 0.36);
+    background: linear-gradient(180deg, rgb(167 207 164 / 0.08), rgb(238 244 238 / 0.012)), var(--paper);
+  }
+
+  .tier span {
+    color: var(--sage);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .tier h2 {
+    margin-top: 42px;
+  }
+
+  .tier p {
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 860px) {
+    .tier-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,18 @@
+{
+  "id": "kimi-agent",
+  "name": "Kimi CLI / Kimi Agent",
+  "status": "published",
+  "region": "china",
+  "vendor": "Moonshot AI",
+  "summary": "A Kimi-oriented agent entry for Chinese long-context research and assistant workflows.",
+  "bestFor": ["Chinese long-context tasks", "Research workflows", "Document-heavy analysis"],
+  "interfaceType": ["web", "cli"],
+  "documentationUrl": "https://www.kimi.com/",
+  "supportsMcp": false,
+  "supportsSkills": false,
+  "supportsCli": true,
+  "supportsWorkflows": true,
+  "toolTypes": { "skills": 3, "mcps": 2, "cli": 5, "workflows": 9 },
+  "relatedLearn": ["how-to-choose-agent"],
+  "lastChecked": "2026-05-11"
+}

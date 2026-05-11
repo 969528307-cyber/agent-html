@@ -1,0 +1,20 @@
+{
+  "id": "repo-review-skill",
+  "name": "Repo Review Skill",
+  "type": "skill",
+  "status": "published",
+  "summary": "Review a codebase for bugs, risks, missing tests, and integration issues.",
+  "description": "A reusable review workflow for agentic coding sessions where the primary output is actionable findings rather than summaries.",
+  "category": ["code-review", "quality"],
+  "compatibleAgents": ["Codex", "Claude Code", "Cursor"],
+  "installCommand": "Add the review skill to your agent skills directory",
+  "requirements": ["Agent with local repository access"],
+  "sourceUrl": "https://github.com/",
+  "lastChecked": "2026-05-11",
+  "publishedAt": "2026-05-11",
+  "featured": true,
+  "trendingScore": 75,
+  "relatedLearn": ["what-is-agent-skill"],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "candidate-context7-2026-05",
+  "type": "tool",
+  "status": "approved",
+  "title": "Context7",
+  "sourceUrl": "https://github.com/upstash/context7",
+  "sourceName": "GitHub",
+  "discoveredAt": "2026-05-11",
+  "lastChecked": "2026-05-11",
+  "discoveredFrom": "github",
+  "summary": "MCP server for fetching current library documentation.",
+  "proposedCategory": ["docs", "developer-tools"],
+  "proposedAgents": ["Codex", "Claude Code", "Cursor"],
+  "proposedToolType": "mcp",
+  "permissionStatus": "open_license",
+  "reviewScore": {
+    "sourceTrust": 5,
+    "usefulness": 5,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 5,
+    "editorialValue": 4,
+    "permission": 5
+  },
+  "reviewNotes": "Official repo found. Install command should be rechecked monthly.",
+  "publishReason": "Useful MCP for grounding coding agents with current docs.",
+  "reviewedBy": "editor",
+  "reviewedAt": "2026-05-11"
+}

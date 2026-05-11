@@ -1,0 +1,20 @@
+{
+  "id": "translation-signal-flow",
+  "name": "Translation Signal Flow",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Curate Chinese AI writing, check permissions, translate, and link related tools.",
+  "description": "An editorial workflow for turning authorized high-quality Chinese AI writing into English Signals for builders.",
+  "category": ["translation", "editorial"],
+  "compatibleAgents": ["Codex", "Claude Code"],
+  "installCommand": "agentkit signals translate",
+  "requirements": ["Source permission", "Editorial review"],
+  "sourceUrl": "https://example.com/translation-signal-flow",
+  "lastChecked": "2026-05-11",
+  "publishedAt": "2026-05-11",
+  "featured": false,
+  "trendingScore": 70,
+  "relatedLearn": [],
+  "relatedSignals": ["workflow-translation-signal"],
+  "relatedTools": []
+}

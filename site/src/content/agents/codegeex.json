@@ -1,0 +1,18 @@
+{
+  "id": "codegeex",
+  "name": "CodeGeeX",
+  "status": "published",
+  "region": "china",
+  "vendor": "Zhipu AI",
+  "summary": "A Chinese coding assistant commonly used through IDE extensions and developer tooling.",
+  "bestFor": ["IDE coding assistance", "Chinese developer teams", "Code completion"],
+  "interfaceType": ["ide"],
+  "documentationUrl": "https://codegeex.cn/",
+  "supportsMcp": false,
+  "supportsSkills": false,
+  "supportsCli": false,
+  "supportsWorkflows": true,
+  "toolTypes": { "skills": 2, "mcps": 1, "cli": 1, "workflows": 6 },
+  "relatedLearn": ["how-to-choose-agent"],
+  "lastChecked": "2026-05-11"
+}

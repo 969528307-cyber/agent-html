@@ -1,0 +1,249 @@
+---
+import { getCollection } from "astro:content";
+import ArticleCard from "../components/ArticleCard.astro";
+import DownloadCard from "../components/DownloadCard.astro";
+import RouteCard from "../components/RouteCard.astro";
+import SearchHero from "../components/SearchHero.astro";
+import ToolCard from "../components/ToolCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const tools = (await getCollection("tools"))
+  .filter((entry) => entry.data.status === "published")
+  .sort((a, b) => Number(b.data.featured) - Number(a.data.featured) || b.data.trendingScore - a.data.trendingScore);
+
+const learnArticles = (await getCollection("learn")).filter((entry) => entry.data.status === "published");
+const signals = (await getCollection("signals")).filter((entry) => entry.data.status === "published");
+const downloads = (await getCollection("downloads")).filter((entry) => entry.data.status === "published");
+
+const featuredTools = tools.slice(0, 3);
+const learnHighlights = learnArticles.slice(0, 3);
+const signalHighlights = signals.slice(0, 3);
+const freeDownloads = downloads.slice(0, 3);
+---
+
+<BaseLayout
+  title="agentk.it - AI Agent Tool Directory"
+  description="Find the right Skills, MCP servers, CLI tools, and Workflows for your AI agent stack."
+>
+  <section class="hero page">
+    <div>
+      <div class="eyebrow">Tool-first agent directory</div>
+      <h1>Find the right tools for your AI agent stack.</h1>
+      <p class="hero-copy">
+        A calm, curated index of Skills, MCP servers, CLI tools, and Workflows.
+        Agent pages help you browse compatibility; Learn and Signals help you
+        understand what matters.
+      </p>
+      <SearchHero />
+    </div>
+
+    <aside class="summary-card">
+      <div class="eyebrow">Why this exists</div>
+      <h3>Less browsing. Better setup decisions.</h3>
+      <p>
+        Every item should answer what it helps with, which agents it supports,
+        how to install it, and what to read next.
+      </p>
+    </aside>
+  </section>
+
+  <section class="section page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Today's additions</div>
+        <h2>New tools, lightly curated.</h2>
+      </div>
+      <p>
+        Only a few items appear on the homepage. The goal is discovery without
+        making the page feel like a spreadsheet.
+      </p>
+    </div>
+    <div class="grid-3">
+      {featuredTools.map((tool) => <ToolCard tool={tool.data} />)}
+    </div>
+  </section>
+
+  <section class="section page">
+    <div class="grid-4">
+      <RouteCard href="/tools" kicker="Browse by type" title="Tools" description="Skills, MCPs, CLI tools, and Workflows." />
+      <RouteCard href="/for/codex" kicker="Browse by agent" title="Agents" description="Compatibility pages for Codex, Claude Code, Cursor, and more." />
+      <RouteCard href="/learn" kicker="Understand" title="Learn" description="Guides, explainers, comparisons, and glossaries." />
+      <RouteCard href="/signals" kicker="Editorial" title="Signals" description="English translations and notes from high-quality Chinese AI content." />
+    </div>
+  </section>
+
+  <section class="section page split">
+    <div class="soft-panel">
+      <div class="eyebrow">Browse by category</div>
+      <h2>Start from the job.</h2>
+      <div class="chip-list">
+        {["Search", "DevOps", "Communication", "Data", "Automation", "Productivity", "Media", "Security"].map((category) => (
+          <a href={`/category/${category.toLowerCase()}`}>{category}</a>
+        ))}
+      </div>
+    </div>
+    <div class="soft-panel">
+      <div class="eyebrow">Browse by agent</div>
+      <h2>Use compatibility as a filter.</h2>
+      <div class="chip-list">
+        {["Claude Code", "Codex", "Cursor", "Qwen Code", "Kimi Agent", "Trae"].map((agent) => (
+          <a href={`/for/${agent.toLowerCase().replaceAll(" ", "-")}`}>{agent}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Learn highlights</div>
+        <h2>Short guides that reduce confusion.</h2>
+      </div>
+      <p>Learning content supports tool choice. It should not replace the directory as the main product.</p>
+    </div>
+    <div class="grid-3">
+      {
+        learnHighlights.map((article) => (
+          <ArticleCard
+            href={`/learn/${article.id}`}
+            label={article.data.topic}
+            title={article.data.title}
+            description={article.data.subtitle}
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section page">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Signals highlights</div>
+        <h2>Translated ideas, routed back to tools.</h2>
+      </div>
+      <p>Signals should show source, summary, why it matters, and related tools.</p>
+    </div>
+    <div class="grid-3">
+      {
+        signalHighlights.map((signal) => (
+          <ArticleCard
+            href={`/signals/${signal.id}`}
+            label={signal.data.permissionStatus}
+            tone="clay"
+            title={signal.data.englishTitle}
+            description={signal.data.executiveSummary}
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section page">
+    <div class="soft-panel">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Free downloads</div>
+          <h2>Useful entry points, not clutter.</h2>
+        </div>
+        <p>Cheatsheets and comparison assets prove quality before any upgrade path.</p>
+      </div>
+      <div class="grid-3">
+        {freeDownloads.map((download) => <DownloadCard download={download.data} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    gap: 34px;
+    align-items: end;
+    padding: 78px 0 38px;
+  }
+
+  .hero-copy {
+    max-width: 620px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15.5px;
+    line-height: 1.72;
+  }
+
+  .summary-card {
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.045), rgb(238 244 238 / 0.012)),
+      var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .summary-card p {
+    margin-top: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 20px;
+  }
+
+  .soft-panel {
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.035), rgb(238 244 238 / 0.01)),
+      var(--paper);
+  }
+
+  .chip-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+
+  .chip-list a {
+    min-height: 44px;
+    padding: 12px 15px;
+    color: var(--ink);
+    background: rgb(238 244 238 / 0.035);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+
+  .chip-list a:hover {
+    color: var(--sage);
+    border-color: var(--line-strong);
+  }
+
+  @media (max-width: 960px) {
+    .hero {
+      grid-template-columns: 1fr;
+    }
+
+    .grid-3,
+    .grid-4,
+    .split {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

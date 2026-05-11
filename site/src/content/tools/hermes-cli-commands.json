@@ -1,0 +1,20 @@
+{
+  "id": "hermes-cli-commands",
+  "name": "Hermes CLI Commands",
+  "type": "cli",
+  "status": "published",
+  "summary": "Reusable command pack for local agent workflows and project tasks.",
+  "description": "A CLI-oriented command reference for teams that want predictable local agent workflows.",
+  "category": ["cli", "workflow"],
+  "compatibleAgents": ["Hermes Agent", "Generic"],
+  "installCommand": "hermes commands sync",
+  "requirements": ["Hermes CLI"],
+  "sourceUrl": "https://example.com/hermes-cli-commands",
+  "lastChecked": "2026-05-11",
+  "publishedAt": "2026-05-11",
+  "featured": false,
+  "trendingScore": 58,
+  "relatedLearn": ["what-is-agent-skill"],
+  "relatedSignals": [],
+  "relatedTools": []
+}

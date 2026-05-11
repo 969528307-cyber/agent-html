@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const modules = [
+  {
+    href: "/internal/candidates",
+    title: "Candidate Pool",
+    body: "Review discovered tools, agents, Learn ideas, Signals, and downloads before publishing.",
+  },
+  {
+    href: "/tools",
+    title: "Published Directory",
+    body: "Check what is already visible on the public site before approving duplicates.",
+  },
+  {
+    href: "/signals",
+    title: "Signals Queue",
+    body: "Audit translation permissions, source quality, and routing back to tools.",
+  },
+];
+---
+
+<BaseLayout title="Internal - agentk.it" description="Internal editorial workspace for agentk.it." noindex>
+  <section class="page internal-hero">
+    <div class="eyebrow">Internal</div>
+    <h1>Editorial control room.</h1>
+    <p>
+      This area stays out of public navigation. It is where candidates become
+      reviewed content before they appear on the public directory.
+    </p>
+  </section>
+
+  <section class="section page module-grid">
+    {modules.map((module) => (
+      <a class="module-card" href={module.href}>
+        <span>Open</span>
+        <h2>{module.title}</h2>
+        <p>{module.body}</p>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
+
+<style>
+  .internal-hero {
+    padding: 72px 0 24px;
+  }
+
+  .internal-hero p {
+    max-width: 650px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .module-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .module-card {
+    min-height: 230px;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background: var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .module-card:hover {
+    border-color: var(--line-strong);
+  }
+
+  .module-card span {
+    color: var(--sage);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .module-card h2 {
+    margin-top: 48px;
+  }
+
+  .module-card p {
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 860px) {
+    .module-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

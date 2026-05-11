@@ -1,0 +1,22 @@
+{
+  "id": "context7",
+  "name": "Context7",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Fetch current library documentation inside agent coding sessions.",
+  "description": "Context7 helps coding agents ground answers in up-to-date library documentation instead of relying only on model memory.",
+  "category": ["docs", "developer-tools"],
+  "compatibleAgents": ["Codex", "Claude Code", "Cursor"],
+  "installCommand": "npx -y @upstash/context7-mcp",
+  "requirements": ["Node.js", "MCP-compatible client"],
+  "sourceUrl": "https://github.com/upstash/context7",
+  "repoUrl": "https://github.com/upstash/context7",
+  "license": "MIT",
+  "lastChecked": "2026-05-11",
+  "publishedAt": "2026-05-11",
+  "featured": true,
+  "trendingScore": 92,
+  "relatedLearn": ["what-is-mcp"],
+  "relatedSignals": [],
+  "relatedTools": ["playwright-mcp"]
+}

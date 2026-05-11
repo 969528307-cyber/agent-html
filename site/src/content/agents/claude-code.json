@@ -1,0 +1,19 @@
+{
+  "id": "claude-code",
+  "name": "Claude Code",
+  "status": "published",
+  "region": "global",
+  "vendor": "Anthropic",
+  "summary": "A terminal-native coding agent with strong long-context repository workflows.",
+  "bestFor": ["Large codebases", "Terminal workflows", "MCP tool use"],
+  "interfaceType": ["cli"],
+  "documentationUrl": "https://docs.anthropic.com/",
+  "englishDocsUrl": "https://docs.anthropic.com/",
+  "supportsMcp": true,
+  "supportsSkills": true,
+  "supportsCli": true,
+  "supportsWorkflows": true,
+  "toolTypes": { "skills": 38, "mcps": 34, "cli": 10, "workflows": 20 },
+  "relatedLearn": ["how-to-choose-agent"],
+  "lastChecked": "2026-05-11"
+}

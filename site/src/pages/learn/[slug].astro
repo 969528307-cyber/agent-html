@@ -1,0 +1,98 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ToolListItem from "../../components/ToolListItem.astro";
+
+export async function getStaticPaths() {
+  const articles = (await getCollection("learn")).filter((entry) => entry.data.status === "published");
+  return articles.map((article) => ({
+    params: { slug: article.id },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+const tools = (await getCollection("tools")).filter((tool) => article.data.relatedTools.includes(tool.data.id));
+---
+
+<BaseLayout title={`${article.data.title} - agentk.it`} description={article.data.subtitle}>
+  <article class="page article-shell">
+    <a class="back" href="/learn">Back to Learn</a>
+    <div class="eyebrow">{article.data.topic} · {article.data.difficulty} · {article.data.readingTime}</div>
+    <h1>{article.data.title}</h1>
+    <p class="dek">{article.data.subtitle}</p>
+
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+
+  {
+    tools.length > 0 && (
+      <section class="section page">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Related tools</div>
+            <h2>Try this with actual tools.</h2>
+          </div>
+        </div>
+        <div class="stack">
+          {tools.map((tool) => <ToolListItem tool={tool.data} />)}
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .article-shell {
+    max-width: 820px;
+    padding: 72px 0 30px;
+  }
+
+  .back {
+    display: inline-flex;
+    margin-bottom: 22px;
+    color: var(--sage);
+    font-size: 13px;
+  }
+
+  .dek {
+    max-width: 680px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .prose {
+    margin-top: 34px;
+    padding: 28px;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background: var(--paper);
+  }
+
+  .prose :global(h2) {
+    margin-top: 30px;
+    color: var(--ink);
+    font-size: 25px;
+  }
+
+  .prose :global(p),
+  .prose :global(li) {
+    font-size: 15px;
+    line-height: 1.78;
+  }
+
+  .prose :global(a) {
+    color: var(--sage);
+  }
+
+  .stack {
+    display: grid;
+    gap: 14px;
+  }
+</style>

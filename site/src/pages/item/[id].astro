@@ -1,0 +1,201 @@
+---
+import { getCollection } from "astro:content";
+import ToolCard from "../../components/ToolCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const tools = await getCollection("tools");
+  return tools
+    .filter((tool) => tool.data.status === "published")
+    .map((tool) => ({
+      params: { id: tool.data.id },
+      props: { tool },
+    }));
+}
+
+const { tool } = Astro.props;
+const allTools = (await getCollection("tools")).filter((entry) => entry.data.status === "published");
+const relatedTools = allTools.filter((entry) => tool.data.relatedTools.includes(entry.data.id)).slice(0, 3);
+---
+
+<BaseLayout title={`${tool.data.name} - agentk.it`} description={tool.data.summary}>
+  <section class="detail page">
+    <div class="breadcrumb"><a href="/tools">Tools</a> / <span>{tool.data.name}</span></div>
+    <div class="detail-grid">
+      <article class="detail-main">
+        <span class="badge">{tool.data.type.toUpperCase()}</span>
+        <h1>{tool.data.name}</h1>
+        <p class="summary">{tool.data.description}</p>
+
+        {tool.data.installCommand && (
+          <section class="detail-block">
+            <h2>Install</h2>
+            <code>{tool.data.installCommand}</code>
+          </section>
+        )}
+
+        <section class="detail-block">
+          <h2>Requirements</h2>
+          <ul>
+            {tool.data.requirements.map((item) => <li>{item}</li>)}
+          </ul>
+        </section>
+
+        <section class="detail-block">
+          <h2>Source</h2>
+          <p><a href={tool.data.sourceUrl}>{tool.data.sourceUrl}</a></p>
+          <p>Last checked: {tool.data.lastChecked}</p>
+        </section>
+      </article>
+
+      <aside class="detail-side">
+        <h3>Compatible agents</h3>
+        <div class="meta">
+          {tool.data.compatibleAgents.map((agent) => <span>{agent}</span>)}
+        </div>
+        <h3>Categories</h3>
+        <div class="meta">
+          {tool.data.category.map((category) => <span>{category}</span>)}
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  {relatedTools.length > 0 && (
+    <section class="section page">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Related tools</div>
+          <h2>Use it with these.</h2>
+        </div>
+      </div>
+      <div class="grid-3">
+        {relatedTools.map((entry) => <ToolCard tool={entry.data} />)}
+      </div>
+    </section>
+  )}
+</BaseLayout>
+
+<style>
+  .detail {
+    padding: 54px 0 24px;
+  }
+
+  .breadcrumb {
+    margin-bottom: 18px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .breadcrumb a:hover,
+  .detail-block a:hover {
+    color: var(--sage);
+  }
+
+  .detail-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 24px;
+  }
+
+  .detail-main,
+  .detail-side {
+    border: 1px solid var(--line);
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
+      var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .detail-main {
+    padding: 28px;
+    border-radius: 28px;
+  }
+
+  .detail-side {
+    align-self: start;
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 26px;
+    padding: 0 10px;
+    color: var(--ink);
+    font-size: 11px;
+    font-weight: 700;
+    background: var(--sage-soft);
+    border: 1px solid rgb(167 207 164 / 0.18);
+    border-radius: 999px;
+  }
+
+  h1 {
+    margin-top: 18px;
+    font-size: clamp(36px, 5vw, 64px);
+  }
+
+  .summary {
+    max-width: 680px;
+    margin-top: 18px;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  .detail-block {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  .detail-block h2 {
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+
+  code {
+    display: block;
+    padding: 14px;
+    overflow: auto;
+    color: var(--sage);
+    background: var(--sage-soft);
+    border: 1px solid rgb(167 207 164 / 0.14);
+    border-radius: 14px;
+  }
+
+  li,
+  .detail-block p {
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 12px 0 22px;
+  }
+
+  .meta span {
+    padding: 7px 9px;
+    color: var(--muted);
+    font-size: 12px;
+    background: rgb(238 244 238 / 0.035);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  @media (max-width: 960px) {
+    .detail-grid,
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

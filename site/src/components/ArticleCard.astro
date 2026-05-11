@@ -1,0 +1,62 @@
+---
+interface Props {
+  href: string;
+  label: string;
+  title: string;
+  description: string;
+  tone?: "default" | "clay";
+}
+
+const { href, label, title, description, tone = "default" } = Astro.props;
+---
+
+<a class="article-card" href={href}>
+  <span class:list={["badge", { clay: tone === "clay" }]}>{label}</span>
+  <h3>{title}</h3>
+  <p>{description}</p>
+</a>
+
+<style>
+  .article-card {
+    display: grid;
+    gap: 13px;
+    min-height: 178px;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
+      var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  .article-card:hover {
+    border-color: var(--line-strong);
+  }
+
+  .badge {
+    display: inline-flex;
+    width: max-content;
+    align-items: center;
+    min-height: 26px;
+    padding: 0 10px;
+    color: var(--ink);
+    font-size: 11px;
+    font-weight: 700;
+    background: var(--sage-soft);
+    border: 1px solid rgb(167 207 164 / 0.18);
+    border-radius: 999px;
+  }
+
+  .badge.clay {
+    color: var(--clay);
+    background: var(--clay-soft);
+    border-color: rgb(211 154 118 / 0.18);
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+</style>

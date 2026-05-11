@@ -1,0 +1,26 @@
+{
+  "id": "candidate-qwen-code-2026-05",
+  "type": "agent",
+  "status": "reviewing",
+  "title": "Qwen Code",
+  "sourceUrl": "https://qwenlm.github.io/",
+  "sourceName": "Official docs",
+  "discoveredAt": "2026-05-11",
+  "lastChecked": "2026-05-11",
+  "discoveredFrom": "manual",
+  "summary": "Candidate profile for Qwen-oriented coding agent workflows.",
+  "proposedCategory": ["agent", "china"],
+  "proposedAgents": ["Qwen Code"],
+  "permissionStatus": "unknown",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 3,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Needs exact official product surface and docs link verification.",
+  "publishReason": "China-origin agents should be represented in compatibility browsing."
+}
