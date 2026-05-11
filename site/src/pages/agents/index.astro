@@ -1,0 +1,140 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const agents = (await getCollection("agents"))
+  .filter((agent) => agent.data.status === "published")
+  .sort((a, b) => a.data.region.localeCompare(b.data.region) || a.data.name.localeCompare(b.data.name));
+
+const tools = (await getCollection("tools")).filter((tool) => tool.data.status === "published");
+const mappedTools = (agent: (typeof agents)[number]) =>
+  tools.filter((tool) => tool.data.compatibleAgents.includes(agent.data.name)).length;
+---
+
+<BaseLayout
+  title="Agents - agentk.it"
+  description="Browse AI agents as compatibility maps for Skills, MCPs, CLI tools, and Workflows."
+>
+  <section class="page agents-hero">
+    <div>
+      <div class="eyebrow">Agents</div>
+      <h1>Choose an agent, then browse the tools it can use.</h1>
+      <p>
+        Agents are not the main content type here. They are compatibility maps:
+        open an Agent page to see its Skills, MCPs, CLI tools, and Workflows.
+      </p>
+    </div>
+  </section>
+
+  <section class="section page agent-grid">
+    {
+      agents.map((agent) => (
+        <a class="agent-card" href={`/for/${agent.data.id}`}>
+          <div class="card-top">
+            <span>{agent.data.region}</span>
+            {agent.data.vendor && <span>{agent.data.vendor}</span>}
+          </div>
+          <h2>{agent.data.name}</h2>
+          <p>{agent.data.summary}</p>
+          <div class="support">
+            {agent.data.supportsSkills && <span>Skills</span>}
+            {agent.data.supportsMcp && <span>MCP</span>}
+            {agent.data.supportsCli && <span>CLI</span>}
+            {agent.data.supportsWorkflows && <span>Workflows</span>}
+          </div>
+          <strong>{mappedTools(agent)} mapped tools</strong>
+        </a>
+      ))
+    }
+  </section>
+</BaseLayout>
+
+<style>
+  .agents-hero {
+    padding: 72px 0 24px;
+  }
+
+  .agents-hero p {
+    max-width: 680px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.72;
+  }
+
+  .agent-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .agent-card {
+    display: grid;
+    gap: 15px;
+    min-height: 280px;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 26px;
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
+      var(--paper);
+    box-shadow: var(--shadow);
+    transition: transform 180ms ease, border-color 180ms ease;
+  }
+
+  .agent-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--line-strong);
+  }
+
+  .card-top,
+  .support {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .card-top span,
+  .support span {
+    padding: 7px 9px;
+    color: var(--muted);
+    font-size: 11px;
+    background: rgb(238 244 238 / 0.035);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+
+  .support span {
+    color: var(--sage);
+    background: var(--sage-soft);
+    border-color: rgb(167 207 164 / 0.18);
+  }
+
+  h2 {
+    margin-top: 14px;
+    font-size: 30px;
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  strong {
+    margin-top: auto;
+    color: var(--sage);
+  }
+
+  @media (max-width: 980px) {
+    .agent-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .agent-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

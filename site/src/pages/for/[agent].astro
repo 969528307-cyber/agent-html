@@ -38,6 +38,7 @@ const types = ["skill", "mcp", "cli", "workflow"] as const;
 const byType = Object.fromEntries(types.map((type) => [type, allTools.filter((tool) => tool.data.type === type)]));
 const counts = Object.fromEntries(types.map((type) => [type, byType[type].length]));
 const guideHref = learnArticles[0] ? `/learn/${learnArticles[0].id}` : "/learn/how-to-choose-agent";
+const guideLabel = learnArticles[0]?.id === "how-to-choose-agent" ? "Read agent selection guide" : `Read the ${agent.data.name} guide`;
 ---
 
 <BaseLayout title={`${agent.data.name} tools - agentk.it`} description={agent.data.summary}>
@@ -52,7 +53,7 @@ const guideHref = learnArticles[0] ? `/learn/${learnArticles[0].id}` : "/learn/h
         with, then open the detail page for install, config, verification, and
         source links.
       </p>
-      <a class="small-button" href={guideHref}>Read the {agent.data.name} guide</a>
+      <a class="small-button" href={guideHref}>{guideLabel}</a>
     </aside>
   </section>
 
