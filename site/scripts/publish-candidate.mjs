@@ -36,6 +36,8 @@ const publishedId = candidate.publishedAs || slugify(candidate.title);
 const today = new Date().toISOString().slice(0, 10);
 
 if (candidate.type === "tool") {
+  const installSteps = candidate.extractedInstall || [];
+  const github = candidate.githubMetadata || {};
   const tool = {
     id: publishedId,
     name: candidate.title,
@@ -45,8 +47,30 @@ if (candidate.type === "tool") {
     description: candidate.publishReason || candidate.summary,
     category: candidate.proposedCategory || ["uncategorized"],
     compatibleAgents: candidate.proposedAgents || [],
+    installCommand: installSteps.find((step) => step.command)?.command,
+    installSummary: installSteps.length > 0 ? "Extracted from the source repository. Review against official docs before publishing broadly." : undefined,
+    installSteps,
+    highlights: candidate.extractedSignals || [],
+    configuration: installSteps.filter((step) => step.code),
+    verificationSteps: [
+      {
+        title: "Review generated candidate",
+        body: "Open the source repository and confirm the extracted install instructions match the current README or SKILL.md before treating this page as production-ready.",
+      },
+    ],
+    securityNotes: [
+      "Generated from source metadata; review commands before running them locally.",
+      "Do not publish secrets found in examples or config snippets.",
+    ],
+    maintenanceNotes: [
+      github.lastPushedAt ? `Source repository last pushed at ${github.lastPushedAt}.` : "Source repository freshness should be checked before publication.",
+    ],
     requirements: [],
     sourceUrl: candidate.sourceUrl,
+    repoUrl: candidate.sourceUrl.includes("github.com") ? candidate.sourceUrl : undefined,
+    license: github.license,
+    stars: github.stars,
+    lastUpdated: github.lastPushedAt,
     lastChecked: candidate.lastChecked || today,
     publishedAt: today,
     featured: false,

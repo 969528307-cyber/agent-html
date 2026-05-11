@@ -306,6 +306,14 @@ interface Signal {
 候选池用于保存“可能值得收录，但还没有审核完成”的资料。正式网页不直接读取 candidate，只有当候选被审核并转换成 `tools`、`signals`、`learn` 或 `downloads` 内容后才会公开显示。
 
 ```ts
+interface ContentStep {
+  title: string;
+  body: string;
+  command?: string;
+  code?: string;
+  codeLanguage?: string;
+}
+
 type CandidateType = "tool" | "signal" | "learn" | "agent" | "download";
 
 type CandidateStatus =
@@ -331,6 +339,21 @@ interface Candidate {
   proposedCategory?: string[];
   proposedAgents?: string[];
   proposedToolType?: "skill" | "mcp" | "cli" | "workflow";
+  githubMetadata?: {
+    owner?: string;
+    repo?: string;
+    fullName?: string;
+    stars: number;
+    license?: string;
+    topics: string[];
+    defaultBranch?: string;
+    lastPushedAt?: string;
+  };
+  detectedFiles?: string[];
+  readmeExtract?: string;
+  skillExtracts?: { path: string; extract: string }[];
+  extractedInstall?: ContentStep[];
+  extractedSignals?: string[];
   permissionStatus?: "full_translation_allowed" | "author_submitted" | "open_license" | "not_allowed" | "unknown";
   reviewScore: {
     sourceTrust: number;
@@ -459,7 +482,57 @@ GitHub / 官方文档 / 包管理器 / 用户提交
   -> 发布为 Tool 内容集合
 ```
 
-v1 推荐先人工维护 30-50 个高质量工具，不急着自动爬全网。
+Skill 和 MCP 应使用同一套 GitHub ingestion，而不是 Skill 只靠手写模板。
+
+GitHub ingestion 的最小流程：
+
+```text
+GitHub repo URL
+  -> 读取 repo metadata
+      - owner / repo / stars / license / topics / default branch / last pushed
+  -> 读取文件树
+      - README.md
+      - SKILL.md
+      - skills/**
+      - package.json
+      - pyproject.toml
+      - .cursor/**
+      - CLAUDE.md / AGENTS.md
+  -> 读取 README
+  -> 类型判断
+      - 存在 SKILL.md / skill topics / agent-skill 文案 -> Skill
+      - 存在 Model Context Protocol / mcpServers / mcp-server topic -> MCP
+      - 有 package bin / CLI 文案 -> CLI
+      - 其他 agent 操作流程 -> Workflow
+  -> 抽取 install / setup / config / usage code blocks
+  -> 识别兼容 Agent
+      - Codex: AGENTS.md / .codex / Codex 文案
+      - Claude Code: CLAUDE.md / .claude / Claude Code 文案
+      - Cursor: .cursor / Cursor Rules / Cursor 文案
+      - Qwen Code: .qwen / Qwen 文案
+      - Generic: SKILL.md / MCP config / 通用说明
+  -> 生成 Candidate
+  -> 内部候选池展示 GitHub evidence、README extract、extracted install hints、detected files
+  -> 人工审核后发布
+```
+
+Skill 需要额外提取：
+
+- `SKILL.md` 正文或 `skills/**/SKILL.md`。
+- README 中的 install / setup / usage / trigger section。
+- 支持的 Agent 和安装位置：Codex skills、Claude skills、Cursor Rules、AGENTS.md、CLAUDE.md、Hermes/OpenClaw 目录。
+- 触发方式：用户如何让 Agent 使用这个 Skill。
+- 验证方式：安装后如何确认 Agent 真的调用了这个 Skill。
+- 安全边界：这个 Skill 是否会运行 shell、读写文件、调用外部 API。
+
+MCP 需要额外提取：
+
+- `mcpServers` 配置块。
+- stdio / HTTP / OAuth / API key 方式。
+- Claude Code / Codex / Cursor / Qwen Code 等客户端的差异配置。
+- MCP tools 列表和权限风险。
+
+v1 推荐先用脚本半自动维护 30-50 个高质量工具，不急着自动爬全网。脚本负责生成 candidate，人负责审核和发布。
 
 优先来源：
 
@@ -468,6 +541,15 @@ v1 推荐先人工维护 30-50 个高质量工具，不急着自动爬全网。
 - GitHub 高星项目。
 - 社区中被反复推荐的工具。
 - 自己验证过安装命令的工具。
+
+本地命令：
+
+```bash
+cd site
+npm run ingest:github -- https://github.com/owner/repo
+npm run ingest:github -- https://github.com/owner/repo -- --dry-run
+npm run test:ingest
+```
 
 ### Signals 获取流程
 

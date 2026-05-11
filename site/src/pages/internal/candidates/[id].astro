@@ -14,6 +14,7 @@ const { candidate } = Astro.props;
 const scores = Object.entries(candidate.data.reviewScore);
 const average = scores.reduce((sum, [, score]) => sum + score, 0) / scores.length;
 const publishCommand = `npm run publish:candidate -- ${candidate.id}`;
+const github = candidate.data.githubMetadata;
 ---
 
 <BaseLayout title={`${candidate.data.title} - Candidate Pool`} description={candidate.data.summary} noindex>
@@ -72,6 +73,77 @@ const publishCommand = `npm run publish:candidate -- ${candidate.id}`;
         {candidate.data.proposedAgents?.map((agent) => <span>{agent}</span>)}
       </div>
     </article>
+
+    {
+      github && (
+        <article class="panel wide">
+          <div class="eyebrow">GitHub evidence</div>
+          <dl class="github-grid">
+            <div><dt>Repository</dt><dd>{github.fullName ?? `${github.owner}/${github.repo}`}</dd></div>
+            <div><dt>Stars</dt><dd>{github.stars}</dd></div>
+            <div><dt>License</dt><dd>{github.license ?? "Unknown"}</dd></div>
+            <div><dt>Default branch</dt><dd>{github.defaultBranch ?? "Unknown"}</dd></div>
+            <div><dt>Last pushed</dt><dd>{github.lastPushedAt ?? "Unknown"}</dd></div>
+            <div><dt>Topics</dt><dd>{github.topics.join(", ") || "None"}</dd></div>
+          </dl>
+        </article>
+      )
+    }
+
+    {
+      candidate.data.readmeExtract && (
+        <article class="panel wide">
+          <div class="eyebrow">README extract</div>
+          <p>{candidate.data.readmeExtract}</p>
+        </article>
+      )
+    }
+
+    {
+      candidate.data.skillExtracts.length > 0 && (
+        <article class="panel wide">
+          <div class="eyebrow">Skill documents</div>
+          <div class="snippet-list">
+            {candidate.data.skillExtracts.map((skill) => (
+              <div>
+                <h3>{skill.path}</h3>
+                <p>{skill.extract}</p>
+              </div>
+            ))}
+          </div>
+        </article>
+      )
+    }
+
+    {
+      candidate.data.extractedInstall.length > 0 && (
+        <article class="panel wide">
+          <div class="eyebrow">Extracted install hints</div>
+          <div class="snippet-list">
+            {candidate.data.extractedInstall.map((hint) => (
+              <div>
+                <h3>{hint.title}</h3>
+                <p>{hint.body}</p>
+                {hint.command && <code>{hint.command}</code>}
+                {hint.code && <pre><code>{hint.code}</code></pre>}
+              </div>
+            ))}
+          </div>
+        </article>
+      )
+    }
+
+    {
+      (candidate.data.detectedFiles.length > 0 || candidate.data.extractedSignals.length > 0) && (
+        <article class="panel wide">
+          <div class="eyebrow">Detected signals</div>
+          <div class="tags">
+            {candidate.data.extractedSignals.map((signal) => <span>{signal}</span>)}
+            {candidate.data.detectedFiles.slice(0, 20).map((file) => <span>{file}</span>)}
+          </div>
+        </article>
+      )
+    }
   </section>
 </BaseLayout>
 
@@ -126,13 +198,25 @@ const publishCommand = `npm run publish:candidate -- ${candidate.id}`;
     line-height: 1.65;
   }
 
+  pre,
   code {
+    display: block;
+    margin-top: 12px;
     padding: 14px;
     overflow: auto;
     color: var(--sage);
+    font-size: 13px;
+    line-height: 1.55;
     background: var(--sage-soft);
     border: 1px solid rgb(167 207 164 / 0.14);
     border-radius: 16px;
+  }
+
+  pre code {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
   }
 
   .detail-grid {
@@ -154,6 +238,10 @@ const publishCommand = `npm run publish:candidate -- ${candidate.id}`;
     display: grid;
     gap: 14px;
     margin: 0;
+  }
+
+  .github-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   dt {
@@ -203,6 +291,22 @@ const publishCommand = `npm run publish:candidate -- ${candidate.id}`;
     line-height: 1.72;
   }
 
+  .snippet-list {
+    display: grid;
+    gap: 14px;
+  }
+
+  .snippet-list div {
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: rgb(238 244 238 / 0.026);
+  }
+
+  .snippet-list h3 {
+    margin-bottom: 8px;
+  }
+
   .reason {
     margin-top: 14px;
     color: var(--clay) !important;
@@ -224,7 +328,8 @@ const publishCommand = `npm run publish:candidate -- ${candidate.id}`;
 
   @media (max-width: 860px) {
     .action-panel,
-    .detail-grid {
+    .detail-grid,
+    .github-grid {
       grid-template-columns: 1fr;
     }
   }

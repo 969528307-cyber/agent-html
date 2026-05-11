@@ -10,7 +10,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "publish:candidate": "node scripts/publish-candidate.mjs"
+    "publish:candidate": "node scripts/publish-candidate.mjs",
+    "ingest:github": "node scripts/github-ingest-candidate.mjs",
+    "test:ingest": "node --test scripts/github-ingest-candidate.test.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.4",

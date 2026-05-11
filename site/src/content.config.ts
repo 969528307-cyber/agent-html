@@ -20,6 +20,17 @@ const agentSetupSchema = z.object({
   steps: z.array(contentStepSchema).default([]),
 });
 
+const githubMetadataSchema = z.object({
+  owner: z.string().optional(),
+  repo: z.string().optional(),
+  fullName: z.string().optional(),
+  stars: z.number().default(0),
+  license: z.string().optional(),
+  topics: z.array(z.string()).default([]),
+  defaultBranch: z.string().optional(),
+  lastPushedAt: z.string().optional(),
+});
+
 const reviewScoreSchema = z.object({
   sourceTrust: z.number().min(1).max(5),
   usefulness: z.number().min(1).max(5),
@@ -173,6 +184,12 @@ const candidates = defineCollection({
     proposedCategory: z.array(z.string()).optional(),
     proposedAgents: z.array(z.string()).optional(),
     proposedToolType: toolTypeSchema.optional(),
+    githubMetadata: githubMetadataSchema.optional(),
+    detectedFiles: z.array(z.string()).default([]),
+    readmeExtract: z.string().optional(),
+    skillExtracts: z.array(z.object({ path: z.string(), extract: z.string() })).default([]),
+    extractedInstall: z.array(contentStepSchema).default([]),
+    extractedSignals: z.array(z.string()).default([]),
     permissionStatus: z
       .enum(["full_translation_allowed", "author_submitted", "open_license", "not_allowed", "unknown"])
       .optional(),
