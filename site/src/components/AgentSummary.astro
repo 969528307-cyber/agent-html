@@ -18,11 +18,25 @@ interface AgentData {
   };
 }
 
-interface Props {
-  agent: AgentData;
+interface ToolCounts {
+  skill: number;
+  mcp: number;
+  cli: number;
+  workflow: number;
 }
 
-const { agent } = Astro.props;
+interface Props {
+  agent: AgentData;
+  counts?: ToolCounts;
+}
+
+const { agent, counts } = Astro.props;
+const toolCounts = counts ?? {
+  skill: agent.toolTypes.skills,
+  mcp: agent.toolTypes.mcps,
+  cli: agent.toolTypes.cli,
+  workflow: agent.toolTypes.workflows,
+};
 const support = [
   ["MCP", agent.supportsMcp],
   ["Skills", agent.supportsSkills],
@@ -46,10 +60,10 @@ const support = [
   </div>
 
   <div class="stat-row">
-    <div class="stat"><strong>{agent.toolTypes.skills}</strong><span>Skills</span></div>
-    <div class="stat"><strong>{agent.toolTypes.mcps}</strong><span>MCPs</span></div>
-    <div class="stat"><strong>{agent.toolTypes.cli}</strong><span>CLI</span></div>
-    <div class="stat"><strong>{agent.toolTypes.workflows}</strong><span>Workflows</span></div>
+    <div class="stat"><strong>{toolCounts.skill}</strong><span>Skills</span></div>
+    <div class="stat"><strong>{toolCounts.mcp}</strong><span>MCPs</span></div>
+    <div class="stat"><strong>{toolCounts.cli}</strong><span>CLI</span></div>
+    <div class="stat"><strong>{toolCounts.workflow}</strong><span>Workflows</span></div>
   </div>
 </article>
 
