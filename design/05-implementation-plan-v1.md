@@ -485,15 +485,26 @@ GitHub / 官方文档 / 包管理器 / 用户提交
 
 Skill 和 MCP 应使用同一套 GitHub ingestion，而不是 Skill 只靠手写模板。
 
+GitHub discovery 的原则：
+
+- 关键词只用于发现候选 repo，不用于最终分类。
+- 最低门槛是 `1000+ stars`；低于该门槛不读取 README、不进入候选池。
+- 发现关键词应保持宽泛，例如 `mcp`、`model context protocol`、`coding agent`、`developer agent`、`llm tools`、`cursor rules`、`claude code`、`codex`、`agents.md`、`workflow automation`、`openclaw`。
+- Skill 不按 `claude skill`、`codex skill`、`agent skill` 这类名字细分；是否适配某个 Agent 必须从文档证据判断。
+- 批量发现只生成 Candidate，不能直接发布正式页面。
+
 GitHub ingestion 的最小流程：
 
 ```text
-GitHub repo URL
+GitHub Search 或 GitHub repo URL
+  -> 宽关键词发现候选 repo
+      - 关键词只负责发现，不负责分类
+      - Search query 必须包含 stars:>=1000 fork:false archived:false
   -> 读取 repo metadata
       - owner / repo / stars / license / topics / default branch / last pushed
   -> GitHub stars 硬门槛
       - 低于 1000 stars：停止抓取，不进入 Candidate
-      - 1000 stars 及以上：继续读取文件树、README、SKILL.md
+      - 1000 stars 及以上：继续读取文件树和证据文档
   -> 读取文件树
       - README.md
       - SKILL.md
@@ -502,9 +513,14 @@ GitHub repo URL
       - pyproject.toml
       - .cursor/**
       - CLAUDE.md / AGENTS.md
-  -> 读取 README
+      - docs/** 中 install / setup / config / usage / mcp / agent / cursor / claude / codex / qwen / workflow 相关文件
+      - examples/** 中 config / mcp / agent / skill / workflow 相关文件
+  -> 分层读取文档
+      - README 只读取开头摘要和关键词附近窗口
+      - 长 docs 不整篇进入候选，只抽 install / setup / config / usage / MCP / Agent / Rule 附近窗口
+      - SKILL.md / AGENTS.md / CLAUDE.md / .cursor rules 作为高优先级证据
   -> 类型判断
-      - 存在 SKILL.md / skill topics / agent-skill 文案 -> Skill
+      - 存在可复用 instruction / rule / prompt / workflow package，且用于安装到 Agent 上下文 -> Skill
       - 存在 Model Context Protocol / mcpServers / mcp-server topic -> MCP
       - 有 package bin / CLI 文案 -> CLI
       - 其他 agent 操作流程 -> Workflow
@@ -515,6 +531,7 @@ GitHub repo URL
       - Cursor: .cursor / Cursor Rules / Cursor 文案
       - Qwen Code: .qwen / Qwen 文案
       - Generic: SKILL.md / MCP config / 通用说明
+      - Generic 不自动等于适配所有 Agent，需要候选池人工确认
   -> 生成 Candidate
   -> 内部候选池展示 GitHub evidence、README extract、extracted install hints、detected files
   -> 人工审核后发布
@@ -550,6 +567,9 @@ v1 推荐先用脚本半自动维护 30-50 个高质量工具，不急着自动�
 
 ```bash
 cd site
+npm run discover:github -- --limit 20 --dry-run
+npm run discover:github -- --limit 20
+npm run discover:github -- --query "developer agent" --query "mcp" --limit 10 --dry-run
 npm run ingest:github -- https://github.com/owner/repo
 npm run ingest:github -- https://github.com/owner/repo -- --dry-run
 npm run test:ingest

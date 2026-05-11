@@ -5,9 +5,11 @@ import {
   assertRepoMeetsStarFloor,
   buildCandidateFromRepo,
   detectToolType,
+  extractRelevantWindows,
   extractInstallHints,
   MIN_GITHUB_STARS,
   parseGitHubUrl,
+  selectEvidenceFiles,
   slugify,
 } from "./github-ingest-candidate.mjs";
 
@@ -63,6 +65,53 @@ test("rejects GitHub repositories below the minimum star floor", () => {
     /minimum is 1000/
   );
   assert.doesNotThrow(() => assertRepoMeetsStarFloor({ full_name: "example/large-tool", stargazers_count: 1000 }));
+});
+
+test("selects only high-signal evidence files from large repository trees", () => {
+  const selected = selectEvidenceFiles([
+    { path: "README.md", size: 90_000 },
+    { path: "docs/getting-started.md", size: 12_000 },
+    { path: "docs/random-brand-story.md", size: 8_000 },
+    { path: "docs/mcp/configuration.md", size: 10_000 },
+    { path: "skills/review/SKILL.md", size: 6_000 },
+    { path: "AGENTS.md", size: 2_000 },
+    { path: "CLAUDE.md", size: 2_000 },
+    { path: ".cursor/rules/agent.mdc", size: 1_000 },
+    { path: "examples/basic/config.json", size: 2_000 },
+    { path: "packages/noisy/package.json", size: 1_000 },
+    { path: "docs/huge-api-reference.md", size: 600_000 },
+  ]);
+
+  assert.deepEqual(selected.map((file) => file.path), [
+    "README.md",
+    "docs/getting-started.md",
+    "docs/mcp/configuration.md",
+    "skills/review/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    ".cursor/rules/agent.mdc",
+    "examples/basic/config.json",
+  ]);
+});
+
+test("extracts bounded evidence windows from long documents", () => {
+  const longDocument = `${"intro ".repeat(2000)}
+## Configuration
+\`\`\`json
+{ "mcpServers": { "docs": { "command": "npx", "args": ["-y", "@example/docs-mcp"] } } }
+\`\`\`
+${"filler ".repeat(2000)}
+## Agent setup
+Copy this instruction into AGENTS.md so Codex knows when to use the tool.
+${"tail ".repeat(2000)}`;
+
+  const windows = extractRelevantWindows(longDocument, { radius: 160, maxWindows: 3 });
+
+  assert.ok(windows.length >= 2);
+  assert.ok(windows.length <= 3);
+  assert.ok(windows.every((window) => window.length <= 360));
+  assert.match(windows.join("\n"), /mcpServers/);
+  assert.match(windows.join("\n"), /AGENTS\.md/);
 });
 
 test("builds a candidate with GitHub metadata and extracted detail fields", () => {

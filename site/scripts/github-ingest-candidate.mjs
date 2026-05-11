@@ -10,6 +10,35 @@ const githubApiHeaders = {
 };
 
 export const MIN_GITHUB_STARS = 1000;
+export const MAX_EVIDENCE_FILE_SIZE = 300_000;
+export const MAX_EVIDENCE_FILES = 40;
+export const MAX_EXTRA_EVIDENCE_DOCS = 8;
+export const README_PREFIX_LIMIT = 12_000;
+
+const evidenceTerms = [
+  "install",
+  "setup",
+  "configuration",
+  "config",
+  "usage",
+  "getting started",
+  "mcp",
+  "mcpservers",
+  "model context protocol",
+  "skill",
+  "agent",
+  "workflow",
+  "prompt",
+  "instruction",
+  "rule",
+  "agents.md",
+  "claude.md",
+  "cursor rules",
+  "codex",
+  "claude code",
+  "qwen",
+  "openclaw",
+];
 
 export const slugify = (value) =>
   value
@@ -32,6 +61,59 @@ export const parseGitHubUrl = (url) => {
 };
 
 const includesAny = (text, terms) => terms.some((term) => text.includes(term));
+
+const normalizeFileEntry = (entry) => (typeof entry === "string" ? { path: entry, size: 0 } : entry);
+
+const isEvidenceFilePath = (path) => {
+  if (/^readme(\.[\w-]+)?$/i.test(path) || /^readme\./i.test(path)) return true;
+  if (/(^|\/)skill\.md$/i.test(path)) return true;
+  if (/(^|\/)(agents|claude)\.md$/i.test(path)) return true;
+  if (/^\.cursor\//i.test(path)) return true;
+  if (/^(package\.json|pyproject\.toml)$/i.test(path)) return true;
+  if (/^docs\//i.test(path) && /(getting-started|quickstart|install|setup|config|configuration|usage|mcp|agent|cursor|claude|codex|qwen|workflow|skill)/i.test(path)) {
+    return true;
+  }
+  if (/^examples\//i.test(path) && /(config|mcp|agent|skill|workflow|cursor|claude|codex|qwen).*\.(md|mdx|json|toml|yaml|yml)$/i.test(path)) {
+    return true;
+  }
+  return false;
+};
+
+export const selectEvidenceFiles = (entries) =>
+  entries
+    .map(normalizeFileEntry)
+    .filter((entry) => entry.path && entry.size <= MAX_EVIDENCE_FILE_SIZE && isEvidenceFilePath(entry.path))
+    .slice(0, MAX_EVIDENCE_FILES);
+
+const escapeRegex = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+export const extractRelevantWindows = (content, { radius = 1200, maxWindows = 8 } = {}) => {
+  if (!content) return [];
+
+  const lower = content.toLowerCase();
+  const matches = [];
+  for (const term of evidenceTerms) {
+    const pattern = new RegExp(escapeRegex(term), "gi");
+    for (const match of lower.matchAll(pattern)) {
+      matches.push(match.index ?? 0);
+    }
+  }
+
+  const windows = [];
+  const seenStarts = [];
+  for (const index of matches.sort((a, b) => a - b)) {
+    const start = Math.max(0, index - radius);
+    if (seenStarts.some((seen) => Math.abs(seen - start) < radius)) continue;
+    const end = Math.min(content.length, index + radius);
+    const prefix = start > 0 ? "..." : "";
+    const suffix = end < content.length ? "..." : "";
+    windows.push(`${prefix}${content.slice(start, end).trim()}${suffix}`);
+    seenStarts.push(start);
+    if (windows.length >= maxWindows) break;
+  }
+
+  return windows;
+};
 
 export const assertRepoMeetsStarFloor = (repo) => {
   const stars = repo.stargazers_count || 0;
@@ -152,9 +234,10 @@ const summarizeReadme = (readme) =>
 
 const summarizeSource = (content) => summarizeReadme(content).slice(0, 520);
 
-export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDocs = [], today }) => {
+export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDocs = [], evidenceDocs = [], today }) => {
   const skillText = skillDocs.map((doc) => doc.content).join("\n\n");
-  const combinedText = `${readme}\n\n${skillText}`;
+  const evidenceText = evidenceDocs.map((doc) => doc.content).join("\n\n");
+  const combinedText = `${readme}\n\n${skillText}\n\n${evidenceText}`;
   const type = detectToolType({ topics: repo.topics || [], files, readme: combinedText });
   const title = repo.name
     .split(/[-_]/)
@@ -235,33 +318,48 @@ const fetchRepoFile = async ({ owner, repo, path }) => {
   return data.encoding === "base64" && data.content ? decodeBase64(data.content) : "";
 };
 
-const fetchRepoCandidate = async (githubUrl) => {
+export const fetchRepoCandidate = async (githubUrl) => {
   const { owner, repo } = parseGitHubUrl(githubUrl);
   const repoData = await fetchJson(`https://api.github.com/repos/${owner}/${repo}`);
   assertRepoMeetsStarFloor(repoData);
 
   const tree = await fetchJson(`https://api.github.com/repos/${owner}/${repo}/git/trees/${repoData.default_branch}?recursive=1`);
-  const files = tree.tree
+  const evidenceFiles = selectEvidenceFiles(
+    tree.tree
     .filter((entry) => entry.type === "blob")
-    .map((entry) => entry.path)
-    .filter((file) => /(^README|SKILL\.md$|package\.json$|pyproject\.toml$|\.md$|\.json$)/i.test(file))
-    .slice(0, 80);
+      .map((entry) => ({ path: entry.path, size: entry.size || 0 }))
+  );
+  const files = evidenceFiles.map((file) => file.path);
 
   const readme = await fetchReadme({ owner, repo });
   const skillDocs = [];
   const skillFiles = files.filter((file) => /(^|\/)SKILL\.md$/i.test(file)).slice(0, 6);
+  const evidenceDocs = [];
+  const extraEvidenceFiles = files
+    .filter((file) => !/(^README|(^|\/)SKILL\.md$)/i.test(file))
+    .slice(0, MAX_EXTRA_EVIDENCE_DOCS);
 
   for (const file of skillFiles) {
     const content = await fetchRepoFile({ owner, repo, path: file });
     if (content) skillDocs.push({ path: file, content });
   }
 
+  for (const file of extraEvidenceFiles) {
+    const content = await fetchRepoFile({ owner, repo, path: file });
+    const windows = extractRelevantWindows(content, { radius: 1200, maxWindows: 4 });
+    if (windows.length > 0) evidenceDocs.push({ path: file, content: windows.join("\n\n") });
+  }
+
+  const readmeEvidence = [
+    readme.slice(0, README_PREFIX_LIMIT),
+    ...extractRelevantWindows(readme, { radius: 1200, maxWindows: 8 }),
+  ].join("\n\n");
   const today = new Date().toISOString().slice(0, 10);
 
-  return buildCandidateFromRepo({ repo: repoData, files, readme, skillDocs, today });
+  return buildCandidateFromRepo({ repo: repoData, files, readme: readmeEvidence, skillDocs, evidenceDocs, today });
 };
 
-const writeJson = async (relativePath, data) => {
+export const writeJson = async (relativePath, data) => {
   const file = new URL(relativePath, root);
   await fs.mkdir(new URL(".", file), { recursive: true });
   await fs.writeFile(file, `${JSON.stringify(data, null, 2)}\n`);
