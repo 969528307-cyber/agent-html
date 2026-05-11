@@ -6,6 +6,20 @@ const statusSchema = z.enum(["draft", "published", "archived"]);
 
 const toolTypeSchema = z.enum(["skill", "mcp", "cli", "workflow"]);
 
+const contentStepSchema = z.object({
+  title: z.string(),
+  body: z.string(),
+  command: z.string().optional(),
+  code: z.string().optional(),
+  codeLanguage: z.string().default("bash"),
+});
+
+const agentSetupSchema = z.object({
+  agent: z.string(),
+  summary: z.string(),
+  steps: z.array(contentStepSchema).default([]),
+});
+
 const reviewScoreSchema = z.object({
   sourceTrust: z.number().min(1).max(5),
   usefulness: z.number().min(1).max(5),
@@ -28,6 +42,17 @@ const tools = defineCollection({
     category: z.array(z.string()),
     compatibleAgents: z.array(z.string()),
     installCommand: z.string().optional(),
+    installSummary: z.string().optional(),
+    installSteps: z.array(contentStepSchema).default([]),
+    agentSetups: z.array(agentSetupSchema).default([]),
+    primaryUseCases: z.array(z.string()).default([]),
+    highlights: z.array(z.string()).default([]),
+    configuration: z.array(contentStepSchema).default([]),
+    verificationSteps: z.array(contentStepSchema).default([]),
+    troubleshooting: z.array(contentStepSchema).default([]),
+    securityNotes: z.array(z.string()).default([]),
+    limitations: z.array(z.string()).default([]),
+    maintenanceNotes: z.array(z.string()).default([]),
     configNotes: z.string().optional(),
     usageExample: z.string().optional(),
     verification: z.string().optional(),

@@ -4,12 +4,141 @@
   "type": "mcp",
   "status": "published",
   "summary": "Automate browsers for testing, screenshots, and UI verification.",
-  "description": "Playwright MCP gives agents a browser automation surface for inspecting pages, reproducing UI issues, and validating local web apps.",
-  "category": ["testing", "browser", "developer-tools"],
-  "compatibleAgents": ["Codex", "Claude Code"],
+  "description": "Playwright MCP exposes browser automation to an AI agent through MCP. It lets agents navigate pages, inspect accessibility snapshots, click controls, fill forms, reproduce UI bugs, and validate local web apps without depending only on screenshots.",
+  "category": ["testing", "browser", "developer-tools", "ui-verification"],
+  "compatibleAgents": ["Codex", "Claude Code", "Cursor", "VS Code", "Windsurf", "Cline"],
   "installCommand": "npx @playwright/mcp@latest",
-  "requirements": ["Node.js", "Browser runtime"],
-  "sourceUrl": "https://github.com/microsoft/playwright-mcp",
+  "installSummary": "Install Playwright MCP by registering an MCP server in your client. The server command is `npx @playwright/mcp@latest`; the exact wrapper depends on whether you use Claude Code, Cursor, VS Code, Codex, or another MCP client.",
+  "installSteps": [
+    {
+      "title": "Add the standard MCP server config",
+      "body": "Most MCP clients can use this standard configuration. Put it in the MCP config location required by your client.",
+      "codeLanguage": "json",
+      "code": "{\n  \"mcpServers\": {\n    \"playwright\": {\n      \"command\": \"npx\",\n      \"args\": [\"@playwright/mcp@latest\"]\n    }\n  }\n}"
+    },
+    {
+      "title": "Choose headed or headless mode",
+      "body": "The default runs headed so you can see what the browser is doing. For CI-like checks or quieter local runs, add `--headless` to the args.",
+      "codeLanguage": "json",
+      "code": "{\n  \"mcpServers\": {\n    \"playwright\": {\n      \"command\": \"npx\",\n      \"args\": [\"@playwright/mcp@latest\", \"--headless\"]\n    }\n  }\n}"
+    },
+    {
+      "title": "Choose browser channel if needed",
+      "body": "Use a specific browser when you are debugging browser-specific UI behavior.",
+      "command": "npx @playwright/mcp@latest --browser=firefox"
+    }
+  ],
+  "agentSetups": [
+    {
+      "agent": "Claude Code",
+      "summary": "Claude Code has a direct MCP add command for Playwright.",
+      "steps": [
+        {
+          "title": "Register server",
+          "body": "Run this once in your terminal, then restart or reload Claude Code if the tool list does not update.",
+          "command": "claude mcp add playwright npx @playwright/mcp@latest"
+        }
+      ]
+    },
+    {
+      "agent": "VS Code",
+      "summary": "VS Code can install through its MCP CLI command.",
+      "steps": [
+        {
+          "title": "Add via VS Code CLI",
+          "body": "This registers the server for VS Code's agent environment.",
+          "command": "code --add-mcp '{\"name\":\"playwright\",\"command\":\"npx\",\"args\":[\"@playwright/mcp@latest\"]}'"
+        }
+      ]
+    },
+    {
+      "agent": "Cursor",
+      "summary": "Cursor supports adding Playwright MCP from Cursor Settings > MCP.",
+      "steps": [
+        {
+          "title": "Add command server",
+          "body": "Use command type and enter `npx @playwright/mcp@latest`, or paste the standard MCP JSON config if editing the config file directly."
+        }
+      ]
+    },
+    {
+      "agent": "Codex",
+      "summary": "Use the standard MCP server configuration for clients that expose custom MCP config. Confirm your Codex environment has `npx` on PATH.",
+      "steps": [
+        {
+          "title": "Add MCP config",
+          "body": "Use the standard config and keep it project-scoped when the browser automation is only needed for one app."
+        }
+      ]
+    }
+  ],
+  "primaryUseCases": [
+    "Ask an agent to verify a local web page after frontend changes.",
+    "Reproduce click, form, navigation, and accessibility issues with a real browser.",
+    "Generate screenshots or UI observations during review.",
+    "Test flows where DOM structure and accessibility roles matter more than pixel-only screenshots."
+  ],
+  "highlights": [
+    "Uses accessibility snapshots, which gives the agent structured element references for reliable interaction.",
+    "Works with local apps and external sites when the client allows browser automation.",
+    "Can run headed for visual debugging or headless for lower-noise verification.",
+    "Useful for frontend QA, docs screenshot checks, and smoke testing flows."
+  ],
+  "configuration": [
+    {
+      "title": "Persistent vs isolated sessions",
+      "body": "Use the default persistent browser profile when login state should survive between sessions. Use isolated mode for repeatable tests where cookies and prior state should not leak into the run.",
+      "command": "npx @playwright/mcp@latest --isolated"
+    },
+    {
+      "title": "Headless mode",
+      "body": "Headless mode is useful for CI-like verification, but headed mode is better while debugging because you can see the browser."
+    }
+  ],
+  "verificationSteps": [
+    {
+      "title": "Open a known test page",
+      "body": "After registering the server, ask your agent to navigate to the Playwright TodoMVC demo and add a few items. The agent should call Playwright MCP browser tools.",
+      "codeLanguage": "text",
+      "code": "Navigate to https://demo.playwright.dev/todomvc and add three todo items."
+    },
+    {
+      "title": "Verify a local app",
+      "body": "Start your local dev server and ask the agent to visit it, inspect the hero, and report layout or accessibility issues.",
+      "codeLanguage": "text",
+      "code": "Open http://127.0.0.1:4321, inspect the homepage, and tell me whether the primary navigation and hero CTA are visible."
+    }
+  ],
+  "troubleshooting": [
+    {
+      "title": "`npx` not found",
+      "body": "GUI apps sometimes start with a different PATH than your terminal. Use an absolute Node/npm path or launch the client from a shell that has Node configured."
+    },
+    {
+      "title": "Browser does not open",
+      "body": "Check whether the client allows MCP tools to launch local processes. If the server starts but browser install is missing, install the needed Playwright browser runtime."
+    },
+    {
+      "title": "Agent clicks the wrong thing",
+      "body": "Ask it to inspect the accessibility snapshot first and interact by role/name instead of visual position."
+    }
+  ],
+  "securityNotes": [
+    "Browser automation can interact with logged-in sessions; avoid pointing it at sensitive accounts unless you intend that.",
+    "Prefer isolated mode when testing untrusted pages.",
+    "Review prompts before asking an agent to operate authenticated admin panels."
+  ],
+  "limitations": [
+    "Not every visual issue is visible from accessibility snapshots; screenshots are still useful for layout polish.",
+    "Some clients require explicit tool approval before browser actions.",
+    "Localhost access depends on the machine and sandbox where the MCP server runs."
+  ],
+  "maintenanceNotes": [
+    "Track the official Playwright MCP docs for changes to CLI flags and client-specific install commands.",
+    "Keep install examples separated by client because users often copy the wrong command into the wrong agent."
+  ],
+  "requirements": ["Node.js", "npx on PATH", "MCP-compatible client", "Browser runtime"],
+  "sourceUrl": "https://playwright.dev/docs/getting-started-mcp",
   "repoUrl": "https://github.com/microsoft/playwright-mcp",
   "license": "Apache-2.0",
   "lastChecked": "2026-05-11",

@@ -4,17 +4,123 @@
   "type": "workflow",
   "status": "published",
   "summary": "Curate Chinese AI writing, check permissions, translate, and link related tools.",
-  "description": "An editorial workflow for turning authorized high-quality Chinese AI writing into English Signals for builders.",
-  "category": ["translation", "editorial"],
-  "compatibleAgents": ["Codex", "Claude Code"],
-  "installCommand": "agentkit signals translate",
-  "requirements": ["Source permission", "Editorial review"],
-  "sourceUrl": "https://example.com/translation-signal-flow",
+  "description": "Translation Signal Flow is the editorial workflow for turning high-quality Chinese AI content into complete English Signals. It is designed to protect source attribution and permission quality while making the translated piece useful to builders through summaries, tool routing, and implementation notes.",
+  "category": ["translation", "editorial", "signals"],
+  "compatibleAgents": ["Codex", "Claude Code", "Editor Workflow"],
+  "installSummary": "This is an editorial workflow, not a software package. Add it to the internal candidate pool process so every translated Signal passes source selection, permission review, full translation, editing, and tool-linking before publication.",
+  "installSteps": [
+    {
+      "title": "Add source to candidate pool",
+      "body": "Create a candidate with original title, source URL, author, discovered date, source channel, short summary, and why it may matter to agent builders."
+    },
+    {
+      "title": "Check permission status",
+      "body": "Decide whether the source allows full translation, author-submitted translation, open-license reuse, summary-only coverage, or rejection. Do not publish full translation if permission is unknown."
+    },
+    {
+      "title": "Translate completely",
+      "body": "For approved sources, translate the full article into English. Keep terminology consistent and preserve technical nuance; do not turn it into a loose summary."
+    },
+    {
+      "title": "Route to tools and learn pages",
+      "body": "Add related tools, agents, and Learn pages so the Signal is not isolated editorial content."
+    }
+  ],
+  "agentSetups": [
+    {
+      "agent": "Codex",
+      "summary": "Use Codex to structure source notes, generate translation drafts, and connect the Signal to existing site content.",
+      "steps": [
+        {
+          "title": "Candidate review",
+          "body": "Ask Codex to score the candidate against source trust, usefulness, agent relevance, verifiability, freshness, editorial value, and permission."
+        },
+        {
+          "title": "Translation pass",
+          "body": "Translate only after permission is approved. Keep a source attribution block and a separate editorial summary."
+        }
+      ]
+    },
+    {
+      "agent": "Claude Code",
+      "summary": "Use Claude Code for long-form translation editing and consistency review.",
+      "steps": [
+        {
+          "title": "Terminology pass",
+          "body": "Ask for a terminology table before final editing when the source includes Chinese AI product names, agent concepts, or workflow vocabulary."
+        }
+      ]
+    }
+  ],
+  "primaryUseCases": [
+    "Turn high-quality Chinese AI Agent writing into complete English content.",
+    "Build an editorial moat instead of publishing generic AI news.",
+    "Create Signals that directly connect to tools, agents, workflows, and Learn pages.",
+    "Maintain permission discipline for translated content."
+  ],
+  "highlights": [
+    "Separates candidate discovery from public publication.",
+    "Makes permission status a required field instead of an afterthought.",
+    "Requires full English translation for approved translation pieces.",
+    "Forces every Signal to explain why it matters and what tools it affects."
+  ],
+  "configuration": [
+    {
+      "title": "Candidate fields",
+      "body": "Every source candidate should include enough metadata to make review possible before translation starts.",
+      "codeLanguage": "json",
+      "code": "{\n  \"type\": \"signal\",\n  \"title\": \"Original source title\",\n  \"sourceUrl\": \"https://...\",\n  \"permissionStatus\": \"unknown\",\n  \"summary\": \"Why this may matter\",\n  \"proposedAgents\": [\"Codex\", \"Qwen Code\"],\n  \"reviewScore\": {}\n}"
+    },
+    {
+      "title": "Publication rule",
+      "body": "Only publish full translations when permission is explicit, author-submitted, or open-license compatible. Otherwise publish a short commentary or reject the candidate."
+    }
+  ],
+  "verificationSteps": [
+    {
+      "title": "Permission gate",
+      "body": "Before publication, verify that permission status is not `unknown` or `not_allowed` for full translation."
+    },
+    {
+      "title": "Completeness check",
+      "body": "Compare the translated section list against the source section list. Missing sections should be intentional and disclosed."
+    },
+    {
+      "title": "Routing check",
+      "body": "Confirm the Signal links to at least one relevant tool, agent, Learn page, or workflow unless it is intentionally exploratory."
+    }
+  ],
+  "troubleshooting": [
+    {
+      "title": "Good content but permission unclear",
+      "body": "Keep it in the candidate pool and publish only a short summary or commentary until permission is confirmed."
+    },
+    {
+      "title": "Translation loses technical meaning",
+      "body": "Add a terminology table and do a second pass focused only on terms, commands, product names, and agent concepts."
+    }
+  ],
+  "securityNotes": [
+    "Do not copy full paid or restricted content without permission.",
+    "Keep source attribution visible on every Signal detail page.",
+    "Record permission evidence in the candidate notes."
+  ],
+  "limitations": [
+    "The workflow depends on human editorial judgment for source quality.",
+    "Full translation may not be legally appropriate for many sources.",
+    "Automated translation still needs technical review."
+  ],
+  "maintenanceNotes": [
+    "Refresh source candidates weekly and prune stale low-score items.",
+    "Keep the permission taxonomy consistent across the candidate pool and Signals pages."
+  ],
+  "requirements": ["Source permission", "Editorial review", "Candidate pool entry", "Human technical review"],
+  "sourceUrl": "https://agentk.it/workflows/translation-signal-flow",
   "lastChecked": "2026-05-11",
   "publishedAt": "2026-05-11",
   "featured": false,
   "trendingScore": 70,
   "relatedLearn": [],
   "relatedSignals": ["workflow-translation-signal"],
-  "relatedTools": []
+  "relatedTools": ["agent-setup-checklist"]
 }

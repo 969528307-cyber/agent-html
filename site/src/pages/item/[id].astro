@@ -16,6 +16,10 @@ export async function getStaticPaths() {
 const { tool } = Astro.props;
 const allTools = (await getCollection("tools")).filter((entry) => entry.data.status === "published");
 const relatedTools = allTools.filter((entry) => tool.data.relatedTools.includes(entry.data.id)).slice(0, 3);
+
+const hasInstall = tool.data.installSteps.length > 0 || tool.data.installCommand;
+const hasConfiguration = tool.data.configuration.length > 0 || tool.data.configNotes || tool.data.usageExample;
+const hasVerification = tool.data.verificationSteps.length > 0 || tool.data.verification;
 ---
 
 <BaseLayout title={`${tool.data.name} - agentk.it`} description={tool.data.summary}>
@@ -27,36 +31,186 @@ const relatedTools = allTools.filter((entry) => tool.data.relatedTools.includes(
         <h1>{tool.data.name}</h1>
         <p class="summary">{tool.data.description}</p>
 
-        {tool.data.installCommand && (
-          <section class="detail-block">
-            <h2>Install</h2>
-            <code>{tool.data.installCommand}</code>
-          </section>
-        )}
+        {
+          tool.data.highlights.length > 0 && (
+            <section class="detail-block compact">
+              <h2>What it gives you</h2>
+              <div class="highlight-grid">
+                {tool.data.highlights.map((item) => <p>{item}</p>)}
+              </div>
+            </section>
+          )
+        }
 
-        <section class="detail-block">
-          <h2>Requirements</h2>
-          <ul>
-            {tool.data.requirements.map((item) => <li>{item}</li>)}
-          </ul>
-        </section>
+        {
+          tool.data.primaryUseCases.length > 0 && (
+            <section class="detail-block">
+              <h2>Best use cases</h2>
+              <ul class="check-list">
+                {tool.data.primaryUseCases.map((item) => <li>{item}</li>)}
+              </ul>
+            </section>
+          )
+        }
 
-        <section class="detail-block">
-          <h2>Source</h2>
-          <p><a href={tool.data.sourceUrl}>{tool.data.sourceUrl}</a></p>
+        {
+          hasInstall && (
+            <section class="detail-block" id="install">
+              <h2>Install</h2>
+              {tool.data.installSummary && <p class="section-copy">{tool.data.installSummary}</p>}
+              {tool.data.installCommand && <code>{tool.data.installCommand}</code>}
+              <div class="step-list">
+                {tool.data.installSteps.map((step, index) => (
+                  <article class="step-card">
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    <div>
+                      <h3>{step.title}</h3>
+                      <p>{step.body}</p>
+                      {step.command && <code>{step.command}</code>}
+                      {step.code && <pre><code>{step.code}</code></pre>}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          )
+        }
+
+        {
+          tool.data.agentSetups.length > 0 && (
+            <section class="detail-block">
+              <h2>Agent-specific setup</h2>
+              <div class="agent-setup-list">
+                {tool.data.agentSetups.map((setup) => (
+                  <article>
+                    <h3>{setup.agent}</h3>
+                    <p>{setup.summary}</p>
+                    {setup.steps.map((step) => (
+                      <div class="mini-step">
+                        <strong>{step.title}</strong>
+                        <p>{step.body}</p>
+                        {step.command && <code>{step.command}</code>}
+                        {step.code && <pre><code>{step.code}</code></pre>}
+                      </div>
+                    ))}
+                  </article>
+                ))}
+              </div>
+            </section>
+          )
+        }
+
+        {
+          hasConfiguration && (
+            <section class="detail-block">
+              <h2>Configuration and usage</h2>
+              {tool.data.configNotes && <p class="section-copy">{tool.data.configNotes}</p>}
+              {tool.data.usageExample && <code>{tool.data.usageExample}</code>}
+              <div class="step-list">
+                {tool.data.configuration.map((step) => (
+                  <article class="step-card no-number">
+                    <div>
+                      <h3>{step.title}</h3>
+                      <p>{step.body}</p>
+                      {step.command && <code>{step.command}</code>}
+                      {step.code && <pre><code>{step.code}</code></pre>}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          )
+        }
+
+        {
+          hasVerification && (
+            <section class="detail-block">
+              <h2>Verify it works</h2>
+              {tool.data.verification && <p class="section-copy">{tool.data.verification}</p>}
+              <div class="step-list">
+                {tool.data.verificationSteps.map((step) => (
+                  <article class="step-card no-number">
+                    <div>
+                      <h3>{step.title}</h3>
+                      <p>{step.body}</p>
+                      {step.command && <code>{step.command}</code>}
+                      {step.code && <pre><code>{step.code}</code></pre>}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          )
+        }
+
+        {
+          tool.data.troubleshooting.length > 0 && (
+            <section class="detail-block">
+              <h2>Troubleshooting</h2>
+              <div class="step-list">
+                {tool.data.troubleshooting.map((step) => (
+                  <article class="step-card no-number">
+                    <div>
+                      <h3>{step.title}</h3>
+                      <p>{step.body}</p>
+                      {step.command && <code>{step.command}</code>}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          )
+        }
+
+        <section class="detail-block source-block">
+          <h2>Source and maintenance</h2>
+          <p><a href={tool.data.sourceUrl} target="_blank" rel="noreferrer">{tool.data.sourceUrl}</a></p>
+          {tool.data.repoUrl && <p><a href={tool.data.repoUrl} target="_blank" rel="noreferrer">{tool.data.repoUrl}</a></p>}
           <p>Last checked: {tool.data.lastChecked}</p>
+          {tool.data.license && <p>License: {tool.data.license}</p>}
+          {tool.data.maintenanceNotes.map((item) => <p>{item}</p>)}
         </section>
       </article>
 
       <aside class="detail-side">
-        <h3>Compatible agents</h3>
-        <div class="meta">
-          {tool.data.compatibleAgents.map((agent) => <span>{agent}</span>)}
+        <div class="side-section">
+          <h3>Compatible agents</h3>
+          <div class="meta">
+            {tool.data.compatibleAgents.map((agent) => <span>{agent}</span>)}
+          </div>
         </div>
-        <h3>Categories</h3>
-        <div class="meta">
-          {tool.data.category.map((category) => <span>{category}</span>)}
+        <div class="side-section">
+          <h3>Categories</h3>
+          <div class="meta">
+            {tool.data.category.map((category) => <span>{category}</span>)}
+          </div>
         </div>
+        <div class="side-section">
+          <h3>Requirements</h3>
+          <ul>
+            {tool.data.requirements.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+        {
+          tool.data.securityNotes.length > 0 && (
+            <div class="side-section">
+              <h3>Security notes</h3>
+              <ul>
+                {tool.data.securityNotes.map((item) => <li>{item}</li>)}
+              </ul>
+            </div>
+          )
+        }
+        {
+          tool.data.limitations.length > 0 && (
+            <div class="side-section">
+              <h3>Limitations</h3>
+              <ul>
+                {tool.data.limitations.map((item) => <li>{item}</li>)}
+              </ul>
+            </div>
+          )
+        }
       </aside>
     </div>
   </section>
@@ -108,11 +262,13 @@ const relatedTools = allTools.filter((entry) => tool.data.relatedTools.includes(
   }
 
   .detail-main {
-    padding: 28px;
+    padding: 30px;
     border-radius: 28px;
   }
 
   .detail-side {
+    position: sticky;
+    top: 112px;
     align-self: start;
     padding: 20px;
     border-radius: 22px;
@@ -136,45 +292,163 @@ const relatedTools = allTools.filter((entry) => tool.data.relatedTools.includes(
     font-size: clamp(36px, 5vw, 64px);
   }
 
-  .summary {
-    max-width: 680px;
-    margin-top: 18px;
+  .summary,
+  .section-copy {
+    max-width: 720px;
     color: var(--muted);
     line-height: 1.75;
   }
 
+  .summary {
+    margin-top: 18px;
+  }
+
+  .section-copy {
+    margin-bottom: 16px;
+  }
+
   .detail-block {
-    margin-top: 28px;
-    padding-top: 24px;
+    margin-top: 34px;
+    padding-top: 28px;
     border-top: 1px solid var(--line);
   }
 
+  .detail-block.compact {
+    padding-top: 0;
+    border-top: 0;
+  }
+
   .detail-block h2 {
-    margin-bottom: 14px;
-    font-size: 22px;
+    margin-bottom: 16px;
+    font-size: 24px;
   }
 
-  code {
-    display: block;
-    padding: 14px;
-    overflow: auto;
-    color: var(--sage);
-    background: var(--sage-soft);
-    border: 1px solid rgb(167 207 164 / 0.14);
-    border-radius: 14px;
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
 
+  .highlight-grid p {
+    padding: 16px;
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.6;
+    background: rgb(238 244 238 / 0.035);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+  }
+
+  .check-list,
+  .side-section ul {
+    display: grid;
+    gap: 10px;
+    padding-left: 18px;
+  }
+
+  .step-list,
+  .agent-setup-list {
+    display: grid;
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+  .step-card,
+  .agent-setup-list article {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 16px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: rgb(238 244 238 / 0.026);
+  }
+
+  .step-card.no-number {
+    grid-template-columns: 1fr;
+  }
+
+  .step-card > span {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    color: #07100a;
+    font-size: 12px;
+    font-weight: 800;
+    background: var(--sage);
+    border-radius: 999px;
+  }
+
+  .step-card h3,
+  .agent-setup-list h3 {
+    margin-bottom: 8px;
+  }
+
+  .step-card p,
+  .agent-setup-list p,
   li,
   .detail-block p {
     color: var(--muted);
     line-height: 1.7;
   }
 
+  code,
+  pre {
+    display: block;
+    margin-top: 12px;
+    padding: 14px;
+    overflow: auto;
+    color: var(--sage);
+    font-size: 13px;
+    line-height: 1.55;
+    background: var(--sage-soft);
+    border: 1px solid rgb(167 207 164 / 0.14);
+    border-radius: 14px;
+  }
+
+  pre code {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+  }
+
+  .agent-setup-list article {
+    grid-template-columns: 1fr;
+  }
+
+  .mini-step {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+  }
+
+  .mini-step strong {
+    color: var(--ink);
+  }
+
+  .source-block a {
+    color: var(--sage);
+    overflow-wrap: anywhere;
+  }
+
+  .side-section {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .side-section:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
   .meta {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    margin: 12px 0 22px;
+    margin: 12px 0 0;
   }
 
   .meta span {
@@ -194,8 +468,13 @@ const relatedTools = allTools.filter((entry) => tool.data.relatedTools.includes(
 
   @media (max-width: 960px) {
     .detail-grid,
-    .grid-3 {
+    .grid-3,
+    .highlight-grid {
       grid-template-columns: 1fr;
+    }
+
+    .detail-side {
+      position: static;
     }
   }
 </style>

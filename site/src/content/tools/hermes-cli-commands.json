@@ -4,17 +4,119 @@
   "type": "cli",
   "status": "published",
   "summary": "Reusable command pack for local agent workflows and project tasks.",
-  "description": "A CLI-oriented command reference for teams that want predictable local agent workflows.",
-  "category": ["cli", "workflow"],
-  "compatibleAgents": ["Hermes Agent", "Generic"],
-  "installCommand": "hermes commands sync",
-  "requirements": ["Hermes CLI"],
-  "sourceUrl": "https://example.com/hermes-cli-commands",
+  "description": "Hermes CLI Commands is a command-pack pattern for teams that want predictable local agent workflows. Instead of asking an agent to invent shell commands every time, you expose a small approved command surface for setup, test, lint, smoke checks, and release routines.",
+  "category": ["cli", "workflow", "team-automation"],
+  "compatibleAgents": ["Hermes Agent", "Generic", "Codex", "Claude Code"],
+  "installSummary": "This entry is a CLI command-pack pattern. Do not treat it as a universal public package install. Add command definitions to the agent or team CLI mechanism you actually use, then verify each command against the local project.",
+  "installSteps": [
+    {
+      "title": "Identify repeatable commands",
+      "body": "Start with commands the agent should run often and safely: install dependencies, run tests, run lint, start local server, smoke test, and collect logs."
+    },
+    {
+      "title": "Create a command registry",
+      "body": "Put the commands in a visible file such as `agent-commands.md`, `AGENTS.md`, or your agent's command-pack format. Each command should include purpose, working directory, required environment, and expected output."
+    },
+    {
+      "title": "Add safety notes",
+      "body": "Mark destructive commands as manual-only. The agent should never run reset, delete, deploy, or database migration commands without explicit user approval."
+    }
+  ],
+  "agentSetups": [
+    {
+      "agent": "Hermes Agent",
+      "summary": "Use Hermes' command or skill mechanism if available in your local setup; otherwise keep the command pack as project documentation.",
+      "steps": [
+        {
+          "title": "Command file",
+          "body": "Create a command file that Hermes can read before task execution. Keep names stable so prompts can reference them."
+        }
+      ]
+    },
+    {
+      "agent": "Codex",
+      "summary": "Codex can use the same command pack when it is referenced in AGENTS.md or project docs.",
+      "steps": [
+        {
+          "title": "Document commands",
+          "body": "Add a section describing exact commands and when to run them.",
+          "codeLanguage": "markdown",
+          "code": "## Project commands\n- Install: `npm install`\n- Check: `npm run astro check`\n- Build: `npm run build`\n- Preview: `npm run dev -- --host 127.0.0.1`"
+        }
+      ]
+    },
+    {
+      "agent": "Claude Code",
+      "summary": "Claude Code users can put the same approved command list in CLAUDE.md.",
+      "steps": [
+        {
+          "title": "Add command policy",
+          "body": "Separate safe read/check commands from commands that require user confirmation."
+        }
+      ]
+    }
+  ],
+  "primaryUseCases": [
+    "Reduce repeated explanation of build, test, and local server commands.",
+    "Give agents a safe operating envelope inside a project.",
+    "Make onboarding smoother for projects with several agent users.",
+    "Convert tribal knowledge into reusable command documentation."
+  ],
+  "highlights": [
+    "Improves reliability because agents reuse known commands instead of guessing.",
+    "Makes destructive or sensitive commands visibly gated.",
+    "Works as a lightweight bridge before building a full custom CLI.",
+    "Pairs with the Agent Setup Checklist for repeatable onboarding."
+  ],
+  "configuration": [
+    {
+      "title": "Command template",
+      "body": "Use one template for each command so the agent can understand when and how to run it.",
+      "codeLanguage": "markdown",
+      "code": "### Command name\nPurpose:\nRun from:\nCommand:\nRequires:\nExpected success signal:\nDo not run when:"
+    }
+  ],
+  "verificationSteps": [
+    {
+      "title": "Run commands manually first",
+      "body": "Before telling an agent to use a command, run it yourself and record the expected successful output."
+    },
+    {
+      "title": "Ask the agent to explain command choice",
+      "body": "For the first few runs, ask the agent to say which registered command it chose and why."
+    }
+  ],
+  "troubleshooting": [
+    {
+      "title": "Agent ignores command pack",
+      "body": "Move the command pack into the instruction file the agent always reads, or explicitly link it in the prompt."
+    },
+    {
+      "title": "Command works for one developer only",
+      "body": "Replace machine-specific paths with project-relative commands and document required environment variables."
+    }
+  ],
+  "securityNotes": [
+    "Never include secrets in command examples.",
+    "Mark deploy, delete, reset, migration, and production commands as approval-required.",
+    "Prefer dry-run commands when available."
+  ],
+  "limitations": [
+    "This is a pattern, not a standardized public Hermes package.",
+    "The command pack needs manual upkeep when project scripts change.",
+    "Agents can still misuse commands if the trigger conditions are vague."
+  ],
+  "maintenanceNotes": [
+    "Recheck the command pack whenever package scripts or local dev tooling changes.",
+    "Delete commands that are no longer safe or used."
+  ],
+  "requirements": ["A project with repeatable local commands", "Agent instruction file or command-pack support"],
+  "sourceUrl": "https://agentk.it/templates/hermes-cli-commands",
   "lastChecked": "2026-05-11",
   "publishedAt": "2026-05-11",
   "featured": false,
   "trendingScore": 58,
   "relatedLearn": ["what-is-agent-skill"],
   "relatedSignals": [],
-  "relatedTools": []
+  "relatedTools": ["agent-setup-checklist"]
 }

@@ -4,11 +4,144 @@
   "type": "mcp",
   "status": "published",
   "summary": "Fetch current library documentation inside agent coding sessions.",
-  "description": "Context7 helps coding agents ground answers in up-to-date library documentation instead of relying only on model memory.",
-  "category": ["docs", "developer-tools"],
-  "compatibleAgents": ["Codex", "Claude Code", "Cursor"],
-  "installCommand": "npx -y @upstash/context7-mcp",
-  "requirements": ["Node.js", "MCP-compatible client"],
+  "description": "Context7 is an MCP server and setup workflow for grounding coding agents in fresh library documentation. It is most useful when the agent is writing framework-specific code, upgrading dependencies, or answering API questions where model memory may be stale.",
+  "category": ["docs", "developer-tools", "mcp-server"],
+  "compatibleAgents": ["Codex", "Claude Code", "Cursor", "Qwen Code", "VS Code", "Windsurf"],
+  "installCommand": "npx ctx7 setup",
+  "installSummary": "The easiest path is Context7's setup command, which authenticates, generates an API key, and configures a supported coding agent. For production or shared setups, use the agent-specific MCP configuration below so the command, API key, and scope are explicit.",
+  "installSteps": [
+    {
+      "title": "Choose setup mode",
+      "body": "Use automatic setup for a personal machine. Use manual MCP configuration when you want to review the exact server command, store the config in a project, or support an agent that is not covered by the wizard.",
+      "command": "npx ctx7 setup"
+    },
+    {
+      "title": "Create or provide an API key",
+      "body": "Context7 recommends an API key for higher rate limits. If you use manual stdio configuration, pass the key to the local server command. If you use remote HTTP, send it as the CONTEXT7_API_KEY header."
+    },
+    {
+      "title": "Add a usage rule",
+      "body": "Add a short rule to your agent instructions so the agent actually calls Context7 for docs-related work instead of only relying on memory.",
+      "codeLanguage": "text",
+      "code": "Always use Context7 when I need library/API documentation, code generation, setup, or configuration steps."
+    }
+  ],
+  "agentSetups": [
+    {
+      "agent": "Codex",
+      "summary": "Use the Codex MCP command or add the same server to `.codex/config.toml` for project-scoped setup.",
+      "steps": [
+        {
+          "title": "CLI setup",
+          "body": "Register Context7 as a local MCP server. Replace YOUR_API_KEY before running.",
+          "command": "codex mcp add context7 -- npx -y @upstash/context7-mcp --api-key YOUR_API_KEY"
+        },
+        {
+          "title": "Manual config",
+          "body": "Use this when you want the config checked into a project or reviewed before enabling.",
+          "codeLanguage": "toml",
+          "code": "[mcp_servers.context7]\ncommand = \"npx\"\nargs = [\"-y\", \"@upstash/context7-mcp\", \"--api-key\", \"YOUR_API_KEY\"]\nstartup_timeout_sec = 20"
+        }
+      ]
+    },
+    {
+      "agent": "Claude Code",
+      "summary": "Claude Code can run Context7 as a user-scoped local MCP server.",
+      "steps": [
+        {
+          "title": "Add MCP server",
+          "body": "Register the server once, then restart or reload Claude Code if it does not appear immediately.",
+          "command": "claude mcp add --scope user context7 -- npx -y @upstash/context7-mcp --api-key YOUR_API_KEY"
+        }
+      ]
+    },
+    {
+      "agent": "Cursor",
+      "summary": "Cursor can use either remote HTTP or local stdio configuration.",
+      "steps": [
+        {
+          "title": "Local server config",
+          "body": "Paste this into Cursor's MCP configuration. Use project scope if the setup should only apply to one repo.",
+          "codeLanguage": "json",
+          "code": "{\n  \"mcpServers\": {\n    \"context7\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@upstash/context7-mcp\", \"--api-key\", \"YOUR_API_KEY\"]\n    }\n  }\n}"
+        }
+      ]
+    },
+    {
+      "agent": "Qwen Code",
+      "summary": "Qwen Code supports adding Context7 through its MCP CLI.",
+      "steps": [
+        {
+          "title": "Add local server",
+          "body": "By default this writes project-scoped configuration; add a user-scope flag if you want it available globally.",
+          "command": "qwen mcp add context7 npx -y @upstash/context7-mcp --api-key YOUR_API_KEY"
+        }
+      ]
+    }
+  ],
+  "primaryUseCases": [
+    "Ask an agent to write code against a library version that changed recently.",
+    "Reduce hallucinated API calls in React, Next.js, Astro, Playwright, database, and SDK work.",
+    "Give coding agents a repeatable way to resolve package documentation without manually pasting docs.",
+    "Add a docs lookup layer to Codex, Claude Code, Cursor, Qwen Code, or another MCP-compatible agent."
+  ],
+  "highlights": [
+    "Works as an MCP server, so the agent can query docs during the task instead of requiring manual copy-paste.",
+    "Supports automatic setup through `ctx7 setup` and explicit manual configuration for stricter teams.",
+    "Can be scoped per user or per project depending on the client.",
+    "Pairs well with review, migration, and dependency-upgrade workflows."
+  ],
+  "configuration": [
+    {
+      "title": "Prefer project-scoped config for teams",
+      "body": "If multiple contributors need the same setup, keep the MCP definition in the project where the agent supports project-level config. Keep secrets out of Git and inject the API key locally."
+    },
+    {
+      "title": "Use a rule to trigger docs lookup",
+      "body": "Without a rule, many agents will not call the MCP server automatically. Put the trigger instruction in CLAUDE.md, Cursor Rules, AGENTS.md, or the equivalent project instruction file."
+    }
+  ],
+  "verificationSteps": [
+    {
+      "title": "Confirm the server is registered",
+      "body": "Open your agent's MCP/server list and check that `context7` appears as enabled. If your client has MCP logs, inspect startup logs for missing `npx`, API key, or timeout errors."
+    },
+    {
+      "title": "Ask a docs-specific question",
+      "body": "Use a prompt that clearly requires current docs, such as asking for the current setup pattern of a library. The agent should call Context7 before answering.",
+      "codeLanguage": "text",
+      "code": "Use Context7 to check the current Astro content collection API, then show the minimal config."
+    }
+  ],
+  "troubleshooting": [
+    {
+      "title": "Agent does not call Context7",
+      "body": "Add a stronger rule in the agent instruction file and explicitly ask it to use Context7 once. Some agents only discover tool behavior after a direct first call."
+    },
+    {
+      "title": "Server fails at startup",
+      "body": "Check that Node.js and `npx` are on PATH for the app that launches the agent, not only for your terminal shell."
+    },
+    {
+      "title": "Rate limit or auth errors",
+      "body": "Generate a fresh API key and confirm it is passed through the correct header or command argument for your transport."
+    }
+  ],
+  "securityNotes": [
+    "Treat the Context7 API key like a secret; do not commit it to shared repository config.",
+    "Prefer explicit project instructions so the agent only uses external docs lookup when useful.",
+    "Review MCP server permissions in clients that support allowlists or per-tool approval."
+  ],
+  "limitations": [
+    "Documentation retrieval quality depends on library coverage and the query the agent sends.",
+    "It does not replace reading migration guides for high-risk upgrades.",
+    "Some clients require restart or reload before new MCP servers appear."
+  ],
+  "maintenanceNotes": [
+    "Recheck the install command monthly because Context7 has both CLI and manual MCP paths.",
+    "Keep examples split by agent; users should not have to translate Claude commands into Codex config themselves."
+  ],
+  "requirements": ["Node.js", "npx on PATH", "MCP-compatible client", "Context7 API key recommended"],
   "sourceUrl": "https://github.com/upstash/context7",
   "repoUrl": "https://github.com/upstash/context7",
   "license": "MIT",
