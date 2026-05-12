@@ -22,8 +22,9 @@ const slugify = (value) =>
 
 const isSkillDocPath = (path = "") => /(^|\/)SKILL\.md$/i.test(path) || /^\.agents\/skills\//i.test(path);
 
-export const filterPublishableInstallSteps = (installSteps = []) =>
-  installSteps.filter((step) => !step.audience || step.audience === "verified_install");
+export const filterPublishableInstallSteps = () => [];
+
+export const filterPublishableConfigurationSteps = () => [];
 
 export const validateCandidateForPublish = (candidate) => {
   if (candidate.type !== "tool" || candidate.proposedToolType === "skill") return;
@@ -63,6 +64,7 @@ const publishCandidate = async (candidateId) => {
 
   if (candidate.type === "tool") {
     const installSteps = filterPublishableInstallSteps(candidate.extractedInstall || []);
+    const configurationSteps = filterPublishableConfigurationSteps(candidate.extractedInstall || []);
     const github = candidate.githubMetadata || {};
     const tool = {
       id: publishedId,
@@ -74,19 +76,14 @@ const publishCandidate = async (candidateId) => {
       category: candidate.proposedCategory || ["uncategorized"],
       compatibleAgents: candidate.proposedAgents || [],
       installCommand: installSteps.find((step) => step.command)?.command,
-      installSummary: installSteps.length > 0 ? "Extracted from the source repository. Review against official docs before publishing broadly." : undefined,
+      installSummary: "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
       installSteps,
       highlights: candidate.extractedSignals || [],
-      configuration: (candidate.extractedInstall || []).filter((step) => step.audience === "configuration" && step.code),
-      verificationSteps: [
-        {
-          title: "Review generated candidate",
-          body: "Open the source repository and confirm the extracted install instructions match the current README or SKILL.md before treating this page as production-ready.",
-        },
-      ],
+      configuration: configurationSteps,
+      verificationSteps: [],
       securityNotes: [
-        "Generated from source metadata; review commands before running them locally.",
-        "Do not publish secrets found in examples or config snippets.",
+        "Generated from source metadata; confirm operational details in the official project before adopting it.",
+        "Review the upstream license, maintenance activity, and issue history before using it in production.",
       ],
       maintenanceNotes: [
         github.lastPushedAt ? `Source repository last pushed at ${github.lastPushedAt}.` : "Source repository freshness should be checked before publication.",

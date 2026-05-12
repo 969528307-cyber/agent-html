@@ -3,7 +3,6 @@ interface ToolData {
   name: string;
   type: string;
   summary: string;
-  installCommand?: string;
   compatibleAgents: string[];
 }
 
@@ -20,7 +19,6 @@ const { tool } = Astro.props;
     <span class="badge">{tool.type.toUpperCase()}</span>
   </div>
   <p>{tool.summary}</p>
-  {tool.installCommand && <code class="command">{tool.installCommand}</code>}
   <div class="meta">
     {tool.compatibleAgents.map((agent) => <span>{agent}</span>)}
   </div>
@@ -72,18 +70,6 @@ const { tool } = Astro.props;
     color: var(--muted);
     font-size: 13.5px;
     line-height: 1.65;
-  }
-
-  .command {
-    padding: 10px 12px;
-    overflow: hidden;
-    color: var(--sage);
-    font-size: 12px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    background: var(--sage-soft);
-    border: 1px solid rgb(167 207 164 / 0.14);
-    border-radius: 14px;
   }
 
   .meta {

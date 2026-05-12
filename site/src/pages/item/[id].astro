@@ -16,10 +16,14 @@ export async function getStaticPaths() {
 const { tool } = Astro.props;
 const allTools = (await getCollection("tools")).filter((entry) => entry.data.status === "published");
 const relatedTools = allTools.filter((entry) => tool.data.relatedTools.includes(entry.data.id)).slice(0, 3);
-
-const hasInstall = tool.data.installSteps.length > 0 || tool.data.installCommand;
-const hasConfiguration = tool.data.configuration.length > 0 || tool.data.configNotes || tool.data.usageExample;
 const hasVerification = tool.data.verificationSteps.length > 0 || tool.data.verification;
+const isGitHubRepo = tool.data.repoUrl?.includes("github.com");
+const showRepoUrl = tool.data.repoUrl && tool.data.repoUrl !== tool.data.sourceUrl;
+const officialLinks = [
+  { label: "Official source", url: tool.data.sourceUrl },
+  ...(showRepoUrl ? [{ label: "GitHub repository", url: tool.data.repoUrl }] : []),
+  ...(isGitHubRepo ? [{ label: "Releases", url: `${tool.data.repoUrl}/releases` }] : []),
+];
 ---
 
 <BaseLayout title={`${tool.data.name} - agentk.it`} description={tool.data.summary}>
@@ -54,22 +58,15 @@ const hasVerification = tool.data.verificationSteps.length > 0 || tool.data.veri
         }
 
         {
-          hasInstall && (
-            <section class="detail-block" id="install">
-              <h2>Install</h2>
-              {tool.data.installSummary && <p class="section-copy">{tool.data.installSummary}</p>}
-              {tool.data.installCommand && <code>{tool.data.installCommand}</code>}
-              <div class="step-list">
-                {tool.data.installSteps.map((step, index) => (
-                  <article class="step-card">
-                    <span>{String(index + 1).padStart(2, "0")}</span>
-                    <div>
-                      <h3>{step.title}</h3>
-                      <p>{step.body}</p>
-                      {step.command && <code>{step.command}</code>}
-                      {step.code && <pre><code>{step.code}</code></pre>}
-                    </div>
-                  </article>
+          officialLinks.length > 0 && (
+            <section class="detail-block official-setup" id="official-setup">
+              <h2>Official setup</h2>
+              <p class="section-copy">
+                Install and configuration commands change often, so this page links to the official source instead of mirroring generated commands.
+              </p>
+              <div class="official-links">
+                {officialLinks.map((link) => (
+                  <a href={link.url} target="_blank" rel="noreferrer">{link.label}</a>
                 ))}
               </div>
             </section>
@@ -93,28 +90,6 @@ const hasVerification = tool.data.verificationSteps.length > 0 || tool.data.veri
                         {step.code && <pre><code>{step.code}</code></pre>}
                       </div>
                     ))}
-                  </article>
-                ))}
-              </div>
-            </section>
-          )
-        }
-
-        {
-          hasConfiguration && (
-            <section class="detail-block">
-              <h2>Configuration and usage</h2>
-              {tool.data.configNotes && <p class="section-copy">{tool.data.configNotes}</p>}
-              {tool.data.usageExample && <code>{tool.data.usageExample}</code>}
-              <div class="step-list">
-                {tool.data.configuration.map((step) => (
-                  <article class="step-card no-number">
-                    <div>
-                      <h3>{step.title}</h3>
-                      <p>{step.body}</p>
-                      {step.command && <code>{step.command}</code>}
-                      {step.code && <pre><code>{step.code}</code></pre>}
-                    </div>
                   </article>
                 ))}
               </div>
@@ -165,7 +140,7 @@ const hasVerification = tool.data.verificationSteps.length > 0 || tool.data.veri
         <section class="detail-block source-block">
           <h2>Source and maintenance</h2>
           <p><a href={tool.data.sourceUrl} target="_blank" rel="noreferrer">{tool.data.sourceUrl}</a></p>
-          {tool.data.repoUrl && <p><a href={tool.data.repoUrl} target="_blank" rel="noreferrer">{tool.data.repoUrl}</a></p>}
+          {showRepoUrl && <p><a href={tool.data.repoUrl} target="_blank" rel="noreferrer">{tool.data.repoUrl}</a></p>}
           <p>Last checked: {tool.data.lastChecked}</p>
           {tool.data.license && <p>License: {tool.data.license}</p>}
           {tool.data.maintenanceNotes.map((item) => <p>{item}</p>)}
@@ -185,12 +160,16 @@ const hasVerification = tool.data.verificationSteps.length > 0 || tool.data.veri
             {tool.data.category.map((category) => <span>{category}</span>)}
           </div>
         </div>
-        <div class="side-section">
-          <h3>Requirements</h3>
-          <ul>
-            {tool.data.requirements.map((item) => <li>{item}</li>)}
-          </ul>
-        </div>
+        {
+          tool.data.requirements.length > 0 && (
+            <div class="side-section">
+              <h3>Requirements</h3>
+              <ul>
+                {tool.data.requirements.map((item) => <li>{item}</li>)}
+              </ul>
+            </div>
+          )
+        }
         {
           tool.data.securityNotes.length > 0 && (
             <div class="side-section">
@@ -431,6 +410,28 @@ const hasVerification = tool.data.verificationSteps.length > 0 || tool.data.veri
   .source-block a {
     color: var(--sage);
     overflow-wrap: anywhere;
+  }
+
+  .official-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .official-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0 16px;
+    color: #07100a;
+    font-weight: 800;
+    background: var(--sage);
+    border-radius: 999px;
+  }
+
+  .official-links a:hover {
+    color: #07100a;
+    transform: translateY(-1px);
   }
 
   .side-section {

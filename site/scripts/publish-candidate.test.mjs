@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { filterPublishableInstallSteps, validateCandidateForPublish } from "./publish-candidate.mjs";
+import { filterPublishableConfigurationSteps, filterPublishableInstallSteps, validateCandidateForPublish } from "./publish-candidate.mjs";
 
 test("blocks non-skill candidates with install hints from nested skill docs", () => {
   assert.throws(
@@ -64,7 +64,7 @@ test("allows skill candidates to publish install hints from SKILL.md", () => {
   );
 });
 
-test("publishes only verified install hints as formal install steps", () => {
+test("does not publish generated install or configuration snippets as public setup steps", () => {
   const installSteps = [
     {
       title: "Install command",
@@ -88,6 +88,10 @@ test("publishes only verified install hints as formal install steps", () => {
 
   assert.deepEqual(
     filterPublishableInstallSteps(installSteps).map((step) => step.command || step.code),
-    ["docker compose up -d"]
+    []
+  );
+  assert.deepEqual(
+    filterPublishableConfigurationSteps(installSteps).map((step) => step.command || step.code),
+    []
   );
 });

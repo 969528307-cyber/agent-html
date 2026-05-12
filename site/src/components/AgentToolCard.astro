@@ -5,8 +5,6 @@ interface ToolData {
   type: "skill" | "mcp" | "cli" | "workflow";
   summary: string;
   description: string;
-  installCommand?: string;
-  installSummary?: string;
   requirements: string[];
   primaryUseCases: string[];
   highlights: string[];
@@ -18,13 +16,13 @@ interface Props {
 
 const { tool } = Astro.props;
 const useCase = tool.primaryUseCases[0] ?? tool.description;
-const easyStart = tool.installCommand ? "Has install command" : tool.installSummary ? "Needs guided setup" : "Template or workflow";
+const setupMode = "Official docs";
 ---
 
 <a class="agent-tool-card" href={`/item/${tool.id}`}>
   <div class="card-top">
     <span class="badge">{tool.type.toUpperCase()}</span>
-    <span class="difficulty">{easyStart}</span>
+    <span class="difficulty">{setupMode}</span>
   </div>
 
   <h3>{tool.name}</h3>

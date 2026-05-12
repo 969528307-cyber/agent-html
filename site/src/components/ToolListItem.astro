@@ -6,7 +6,6 @@ interface ToolData {
   summary: string;
   category: string[];
   compatibleAgents: string[];
-  installCommand?: string;
 }
 
 interface Props {
@@ -28,15 +27,11 @@ const { tool } = Astro.props;
       {tool.compatibleAgents.slice(0, 3).map((agent) => <span>{agent}</span>)}
     </div>
   </div>
-  {tool.installCommand && <code class="command">{tool.installCommand}</code>}
 </article>
 
 <style>
   .list-item {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.42fr);
-    gap: 18px;
-    align-items: center;
+    display: block;
     padding: 18px;
     border: 1px solid var(--line);
     border-radius: 20px;
@@ -90,18 +85,6 @@ const { tool } = Astro.props;
     background: rgb(238 244 238 / 0.035);
     border: 1px solid var(--line);
     border-radius: 999px;
-  }
-
-  .command {
-    padding: 10px 12px;
-    overflow: hidden;
-    color: var(--sage);
-    font-size: 12px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    background: var(--sage-soft);
-    border: 1px solid rgb(167 207 164 / 0.14);
-    border-radius: 14px;
   }
 
   @media (max-width: 760px) {
