@@ -307,6 +307,11 @@ test("classifies developer setup commands separately from user install commands"
     })),
     [
       {
+        command: "docker compose up -d",
+        sourcePath: "docs/install/overview.mdx",
+        audience: "verified_install",
+      },
+      {
         command: "npm start",
         sourcePath: "docs/build-pieces/building-pieces/development-setup.mdx",
         audience: "developer_setup",
@@ -316,13 +321,96 @@ test("classifies developer setup commands separately from user install commands"
         sourcePath: "docs/build-pieces/building-pieces/setup-fork.mdx",
         audience: "developer_setup",
       },
+    ]
+  );
+});
+
+test("prioritizes product install commands over prerequisite tool commands", () => {
+  const candidate = buildCandidateFromRepo({
+    repo: {
+      html_url: "https://github.com/example/cc-switch",
+      name: "cc-switch",
+      full_name: "example/cc-switch",
+      description: "All-in-One assistant manager for Claude Code and Codex.",
+      stargazers_count: 2_000,
+      license: { spdx_id: "MIT" },
+      topics: ["desktop-app", "claude-code"],
+      pushed_at: "2026-05-10T00:00:00Z",
+      default_branch: "main",
+      owner: { login: "example" },
+    },
+    files: ["README.md", "docs/user-manual/en/1-getting-started/1.2-installation.md"],
+    readme: "# CC Switch\n\nAll-in-One assistant manager.",
+    evidenceDocs: [
       {
-        command: "docker compose up -d",
-        sourcePath: "docs/install/overview.mdx",
+        path: "docs/user-manual/en/1-getting-started/1.2-installation.md",
+        content: `# Installation Guide
+
+## Prerequisites
+
+### Install Node.js
+\`\`\`bash
+# Install with Homebrew
+brew install node
+
+# Or use nvm
+nvm install --lts
+\`\`\`
+
+### Install CLI Tools
+\`\`\`bash
+brew install claude-code
+\`\`\`
+
+## macOS
+
+### Option 1: Homebrew (Recommended)
+\`\`\`bash
+# Add tap
+brew tap farion1231/ccswitch
+# Install
+brew install --cask cc-switch
+\`\`\`
+
+Update to the latest version:
+\`\`\`bash
+brew upgrade --cask cc-switch
+\`\`\`
+
+## Verify Installation
+\`\`\`bash
+claude
+\`\`\`
+`,
+      },
+    ],
+    today: "2026-05-11",
+  });
+
+  assert.deepEqual(
+    candidate.extractedInstall.slice(0, 1).map((hint) => ({
+      command: hint.command,
+      code: hint.code,
+      audience: hint.audience,
+      heading: hint.heading,
+    })),
+    [
+      {
+        command: "brew install --cask cc-switch",
+        code: "# Add tap\nbrew tap farion1231/ccswitch\n# Install\nbrew install --cask cc-switch",
         audience: "verified_install",
+        heading: "Installation Guide > macOS > Option 1: Homebrew (Recommended)",
       },
     ]
   );
+  assert.deepEqual(
+    candidate.extractedInstall.filter((hint) => hint.audience === "verified_install").map((hint) => hint.command),
+    ["brew install --cask cc-switch"]
+  );
+  assert.equal(candidate.extractedInstall.find((hint) => hint.command === "brew install node")?.audience, "needs_review");
+  assert.equal(candidate.extractedInstall.find((hint) => hint.command === "brew install claude-code")?.audience, "needs_review");
+  assert.equal(candidate.extractedInstall.find((hint) => hint.command === "brew upgrade --cask cc-switch")?.audience, "needs_review");
+  assert.equal(candidate.extractedInstall.find((hint) => hint.command === "claude")?.audience, "needs_review");
 });
 
 test("prioritizes public install docs over agent instruction files when selecting evidence", () => {

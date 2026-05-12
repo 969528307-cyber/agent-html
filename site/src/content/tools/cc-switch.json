@@ -1,0 +1,101 @@
+{
+  "id": "cc-switch",
+  "name": "Cc Switch",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
+  "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
+  "category": [
+    "mcp",
+    "docs",
+    "search",
+    "workflow"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "installCommand": "brew install --cask cc-switch",
+  "installSummary": "Extracted from the source repository. Review against official docs before publishing broadly.",
+  "installSteps": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
+      "heading": "1.2 Installation Guide > macOS > Option 1: Homebrew (Recommended)",
+      "command": "brew install --cask cc-switch",
+      "code": "# Add tap\nbrew tap farion1231/ccswitch\n\n# Install\nbrew install --cask cc-switch",
+      "codeLanguage": "bash",
+      "audience": "verified_install"
+    }
+  ],
+  "highlights": [
+    "Repository includes skill-related files"
+  ],
+  "configuration": [
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/3-extensions/3.1-mcp.md",
+      "heading": "3.1 MCP Server Management > Transport Types > stdio (Standard I/O)",
+      "code": "{\n  \"command\": \"uvx\",\n  \"args\": [\"mcp-server-fetch\"],\n  \"env\": {}\n}",
+      "codeLanguage": "json",
+      "audience": "configuration"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/3-extensions/3.1-mcp.md",
+      "heading": "3.1 MCP Server Management > Configuration File Formats > Claude (~/.claude.json)",
+      "code": "{\n  \"mcpServers\": {\n    \"mcp-fetch\": {\n      \"command\": \"uvx\",\n      \"args\": [\"mcp-server-fetch\"]\n    }\n  }\n}",
+      "codeLanguage": "json",
+      "audience": "configuration"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/3-extensions/3.1-mcp.md",
+      "heading": "3.1 MCP Server Management > Configuration File Formats > Codex (~/.codex/config.toml)",
+      "code": "[mcp_servers.mcp-fetch]\ncommand = \"uvx\"\nargs = [\"mcp-server-fetch\"]",
+      "codeLanguage": "toml",
+      "audience": "configuration"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/3-extensions/3.1-mcp.md",
+      "heading": "3.1 MCP Server Management > Configuration File Formats > Gemini (~/.gemini/settings.json)",
+      "code": "{\n  \"mcpServers\": {\n    \"mcp-fetch\": {\n      \"command\": \"uvx\",\n      \"args\": [\"mcp-server-fetch\"]\n    }\n  }\n}",
+      "codeLanguage": "json",
+      "audience": "configuration"
+    }
+  ],
+  "verificationSteps": [
+    {
+      "title": "Review generated candidate",
+      "body": "Open the source repository and confirm the extracted install instructions match the current README or SKILL.md before treating this page as production-ready."
+    }
+  ],
+  "securityNotes": [
+    "Generated from source metadata; review commands before running them locally.",
+    "Do not publish secrets found in examples or config snippets."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-11T07:49:39Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/farion1231/cc-switch",
+  "repoUrl": "https://github.com/farion1231/cc-switch",
+  "license": "MIT",
+  "stars": 67620,
+  "lastUpdated": "2026-05-11T07:49:39Z",
+  "lastChecked": "2026-05-12",
+  "publishedAt": "2026-05-12",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

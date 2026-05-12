@@ -178,14 +178,56 @@ const isSkillDocPath = (path = "") => /(^|\/)SKILL\.md$/i.test(path) || /^\.agen
 const isPrimaryInstallDocPath = (path = "") =>
   /^README(\.[\w-]+)?$/i.test(path) ||
   /^README\./i.test(path) ||
-  /^docs\//i.test(path) && /(getting-started|quickstart|install|setup|configuration|config|usage|mcp|model-context-protocol)/i.test(path);
+  /^docs\//i.test(path) &&
+    /(quickstart|install|installation|setup|configuration|config|usage|mcp|model-context-protocol)/i.test(path) &&
+    !/(settings|faq|about|playbook|handbook)/i.test(path);
 
 const isInstallSourceAllowed = ({ path = "", type }) => {
   if (type === "skill") return true;
   return isPrimaryInstallDocPath(path) && !isSkillDocPath(path);
 };
 
-const classifyInstallAudience = ({ code = "", command = "", sourcePath = "", type }) => {
+const executableCommandLines = (code = "") =>
+  code
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line && !line.startsWith("#"));
+
+const choosePrimaryCommand = (code = "") => {
+  const lines = executableCommandLines(code);
+  const preferred = lines.find((line) => /\binstall\b/i.test(line) && !/\btap\b/i.test(line));
+  return preferred || lines[0];
+};
+
+const headingForIndex = (content, index) => {
+  const before = content.slice(0, index).split("\n");
+  const headings = [];
+  let inFence = false;
+  for (const line of before) {
+    if (/^\s*```/.test(line)) {
+      inFence = !inFence;
+      continue;
+    }
+    if (inFence) continue;
+    const match = line.match(/^(#{1,6})\s+(.+?)\s*$/);
+    if (!match) continue;
+    const level = match[1].length;
+    headings[level - 1] = match[2].replace(/[*_`]/g, "").trim();
+    headings.length = level;
+  }
+  return headings.filter(Boolean).join(" > ");
+};
+
+const installHintPriority = (hint) => {
+  const audiencePriority = { verified_install: 0, configuration: 1, needs_review: 2, developer_setup: 3 };
+  const heading = hint.heading || "";
+  const productInstallBonus = /\b(homebrew|recommended|download|installer|quickstart|installation)\b/i.test(heading) ? -2 : 0;
+  const prerequisitePenalty = /\b(prerequisite|requirements?|install cli tools|install node|dependency|dependencies)\b/i.test(heading) ? 4 : 0;
+  const tapPenalty = /\btap\b/i.test(hint.command || "") ? 1 : 0;
+  return (audiencePriority[hint.audience] ?? 2) + productInstallBonus + prerequisitePenalty + tapPenalty;
+};
+
+const classifyInstallAudience = ({ code = "", command = "", sourcePath = "", type, heading = "" }) => {
   if (/mcpServers|servers|command|args|SKILL\.md|CLAUDE\.md|AGENTS\.md|Cursor Rules/i.test(code) && !command) {
     return "configuration";
   }
@@ -194,12 +236,20 @@ const classifyInstallAudience = ({ code = "", command = "", sourcePath = "", typ
 
   const lowerPath = sourcePath.toLowerCase();
   const lowerCommand = command.toLowerCase();
+  const lowerHeading = heading.toLowerCase();
+  if (/\b(upgrade|update|remove|uninstall)\b/.test(lowerCommand) || /\b(verify|verification|launch|first launch)\b/.test(lowerHeading)) {
+    return "needs_review";
+  }
+  if (command && /^(claude|codex|qwen|code|gemini|openclaw|opencode)\b/.test(lowerCommand)) {
+    return "needs_review";
+  }
   if (
     /(build|building|development|developer|contributing|fork|example|sample|test|benchmark|playbook|handbook)/i.test(lowerPath) ||
+    /\b(prerequisite|requirements?|install cli tools|install node|dependency|dependencies)\b/i.test(lowerHeading) ||
     /\b(lint|test|dev|start)\b/.test(lowerCommand) ||
     /your_username|your-org|your_org/i.test(command)
   ) {
-    return "developer_setup";
+    return /\b(prerequisite|requirements?|install cli tools|install node|dependency|dependencies)\b/i.test(lowerHeading) ? "needs_review" : "developer_setup";
   }
 
   if (/^docs\//i.test(sourcePath) || /^README/i.test(sourcePath)) return "verified_install";
@@ -210,28 +260,35 @@ export const extractInstallHints = (readme, { sourcePath = "README.md" } = {}) =
   const hints = [];
   const installWindowPattern = /(install|setup|configuration|usage|mcp|skill)[\s\S]{0,1800}/gi;
   const windows = [...readme.matchAll(installWindowPattern)].map((match) => match[0]);
-  const searchText = windows.length > 0 ? windows.join("\n\n") : readme.slice(0, 5000);
+  const searchText = readme.length <= 50_000 ? readme : windows.length > 0 ? windows.join("\n\n") : readme.slice(0, 5000);
 
   for (const match of searchText.matchAll(codeFencePattern)) {
     const language = match[1] || "text";
     const code = match[2].trim();
     if (!code) continue;
 
-    const firstLine = code.split("\n").find((line) => line.trim() && !line.trim().startsWith("#"))?.trim();
+    const firstLine = choosePrimaryCommand(code);
     const looksCommand = /^(npx|npm|pnpm|yarn|pip|uv|brew|cargo|go install|git clone|docker|docker compose|cp|mkdir|claude|codex|qwen|code)\b/.test(firstLine || "");
     const looksConfig = /mcpServers|servers|command|args|SKILL\.md|CLAUDE\.md|AGENTS\.md|Cursor Rules/i.test(code);
 
     if (!looksCommand && !looksConfig) continue;
 
+    const heading = headingForIndex(searchText, match.index ?? 0);
     hints.push({
       title: looksCommand ? "Install command" : "Configuration snippet",
       body: "Extracted from the repository README. Review before publishing.",
       sourcePath,
-      ...(looksCommand ? { command: firstLine } : { code, codeLanguage: language }),
+      ...(heading ? { heading } : {}),
+      ...(looksCommand
+        ? {
+            command: firstLine,
+            ...(executableCommandLines(code).length > 1 ? { code, codeLanguage: language } : {}),
+          }
+        : { code, codeLanguage: language }),
     });
   }
 
-  return hints.slice(0, 6);
+  return hints.slice(0, 24);
 };
 
 const extractInstallHintsFromSources = (sources, { type }) =>
@@ -242,6 +299,7 @@ const extractInstallHintsFromSources = (sources, { type }) =>
       ...hint,
       audience: classifyInstallAudience({ ...hint, type }),
     }))
+    .sort((a, b) => installHintPriority(a) - installHintPriority(b))
     .slice(0, 6);
 
 const detectAgents = ({ readme = "", files = [] }) => {
@@ -416,6 +474,10 @@ export const fetchRepoCandidate = async (githubUrl) => {
 
   for (const file of extraEvidenceFiles) {
     const content = await fetchRepoFile({ owner, repo, path: file });
+    if (isPrimaryInstallDocPath(file)) {
+      evidenceDocs.push({ path: file, content: content.slice(0, 40_000) });
+      continue;
+    }
     const windows = extractRelevantWindows(content, { radius: 1200, maxWindows: 4 });
     if (windows.length > 0) evidenceDocs.push({ path: file, content: windows.join("\n\n") });
   }

@@ -1,7 +1,7 @@
 {
   "id": "candidate-cc-switch-2026-05-12",
   "type": "tool",
-  "status": "candidate",
+  "status": "approved",
   "title": "Cc Switch",
   "sourceUrl": "https://github.com/farion1231/cc-switch",
   "sourceName": "GitHub",
@@ -13,6 +13,7 @@
   "proposedCategory": [
     "mcp",
     "docs",
+    "search",
     "workflow"
   ],
   "proposedAgents": [
@@ -27,7 +28,7 @@
     "owner": "farion1231",
     "repo": "cc-switch",
     "fullName": "farion1231/cc-switch",
-    "stars": 67597,
+    "stars": 67620,
     "license": "MIT",
     "topics": [
       "ai-tools",
@@ -95,44 +96,55 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
-      "command": "brew install node",
-      "audience": "verified_install"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
-      "command": "brew install claude-code",
-      "audience": "verified_install"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
-      "command": "npm install -g @anthropic-ai/claude-code",
-      "audience": "verified_install"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
-      "command": "brew install codex",
-      "audience": "verified_install"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "sourcePath": "docs/user-manual/en/1-getting-started/1.4-quickstart.md",
-      "command": "claude",
+      "heading": "1.2 Installation Guide > macOS > Option 1: Homebrew (Recommended)",
+      "command": "brew install --cask cc-switch",
+      "code": "# Add tap\nbrew tap farion1231/ccswitch\n\n# Install\nbrew install --cask cc-switch",
+      "codeLanguage": "bash",
       "audience": "verified_install"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/user-manual/en/3-extensions/3.1-mcp.md",
-      "code": "**Requirements**:\n- The corresponding command must be installed (e.g., `uvx`, `npx`)\n- The server program must be in PATH\n\n### http\n\nCommunicates with a remote server via HTTP protocol.",
-      "codeLanguage": "text",
+      "heading": "3.1 MCP Server Management > Transport Types > stdio (Standard I/O)",
+      "code": "{\n  \"command\": \"uvx\",\n  \"args\": [\"mcp-server-fetch\"],\n  \"env\": {}\n}",
+      "codeLanguage": "json",
       "audience": "configuration"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/3-extensions/3.1-mcp.md",
+      "heading": "3.1 MCP Server Management > Configuration File Formats > Claude (~/.claude.json)",
+      "code": "{\n  \"mcpServers\": {\n    \"mcp-fetch\": {\n      \"command\": \"uvx\",\n      \"args\": [\"mcp-server-fetch\"]\n    }\n  }\n}",
+      "codeLanguage": "json",
+      "audience": "configuration"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/3-extensions/3.1-mcp.md",
+      "heading": "3.1 MCP Server Management > Configuration File Formats > Codex (~/.codex/config.toml)",
+      "code": "[mcp_servers.mcp-fetch]\ncommand = \"uvx\"\nargs = [\"mcp-server-fetch\"]",
+      "codeLanguage": "toml",
+      "audience": "configuration"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/3-extensions/3.1-mcp.md",
+      "heading": "3.1 MCP Server Management > Configuration File Formats > Gemini (~/.gemini/settings.json)",
+      "code": "{\n  \"mcpServers\": {\n    \"mcp-fetch\": {\n      \"command\": \"uvx\",\n      \"args\": [\"mcp-server-fetch\"]\n    }\n  }\n}",
+      "codeLanguage": "json",
+      "audience": "configuration"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
+      "heading": "1.2 Installation Guide > macOS > Option 1: Homebrew (Recommended)",
+      "command": "brew upgrade --cask cc-switch",
+      "audience": "needs_review"
     }
   ],
   "extractedSignals": [
@@ -148,5 +160,7 @@
     "permission": 4
   },
   "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
-  "publishReason": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io"
+  "publishReason": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
+  "reviewedAt": "2026-05-12",
+  "reviewedBy": "local-review"
 }

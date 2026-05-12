@@ -77,7 +77,7 @@ const publishCandidate = async (candidateId) => {
       installSummary: installSteps.length > 0 ? "Extracted from the source repository. Review against official docs before publishing broadly." : undefined,
       installSteps,
       highlights: candidate.extractedSignals || [],
-      configuration: installSteps.filter((step) => step.code),
+      configuration: (candidate.extractedInstall || []).filter((step) => step.audience === "configuration" && step.code),
       verificationSteps: [
         {
           title: "Review generated candidate",
