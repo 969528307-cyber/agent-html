@@ -124,10 +124,16 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ candidateId }),
       });
-      const result = await response.json().catch(() => ({}));
+      const rawBody = await response.text();
+      let result: { ok?: boolean; error?: string } = {};
+      try {
+        result = rawBody ? JSON.parse(rawBody) : {};
+      } catch {
+        result = {};
+      }
 
       if (!response.ok || !result.ok) {
-        throw new Error(result.error || "Publish failed.");
+        throw new Error(result.error || "Publish API is not available. Restart npm run dev and try again.");
       }
 
       button.textContent = "Published";
@@ -146,7 +152,7 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
       const status = document.createElement("p");
       status.dataset.publishStatus = "true";
       status.className = "publish-error";
-      status.textContent = error instanceof Error ? error.message : "Publish failed.";
+      status.textContent = error instanceof Error ? error.message : "Publish API is not available. Restart npm run dev and try again.";
       button.after(status);
     }
   };

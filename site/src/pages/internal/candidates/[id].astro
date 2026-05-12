@@ -197,10 +197,16 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ candidateId }),
       });
-      const result = await response.json().catch(() => ({}));
+      const rawBody = await response.text();
+      let result: { ok?: boolean; error?: string } = {};
+      try {
+        result = rawBody ? JSON.parse(rawBody) : {};
+      } catch {
+        result = {};
+      }
 
       if (!response.ok || !result.ok) {
-        throw new Error(result.error || "Publish failed.");
+        throw new Error(result.error || "Publish API is not available. Restart npm run dev and try again.");
       }
 
       publishButton.textContent = "Published";
@@ -213,7 +219,7 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
       publishButton.disabled = false;
       publishButton.textContent = originalText || "Publish now";
       if (resultBox) {
-        resultBox.textContent = error instanceof Error ? error.message : "Publish failed.";
+        resultBox.textContent = error instanceof Error ? error.message : "Publish API is not available. Restart npm run dev and try again.";
         resultBox.classList.add("error");
       }
     }
