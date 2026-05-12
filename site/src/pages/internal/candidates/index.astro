@@ -55,7 +55,7 @@ const formatStars = (stars?: number) => {
     <ol>
       <li>Open a candidate row below.</li>
       <li>Check GitHub evidence, README extract, install hints, detected files, score, and permission.</li>
-      <li>Edit its JSON status to <code>reviewing</code> or <code>approved</code> when it is ready.</li>
+      <li>Use the approve command shown on the detail page when it is ready.</li>
       <li>Run the publish command shown on the candidate detail page.</li>
     </ol>
   </section>
@@ -80,7 +80,7 @@ const formatStars = (stars?: number) => {
               <span>{candidate.data.extractedInstall.length} install hints</span>
             </div>
           </div>
-          <strong>Review</strong>
+          <strong>Review / submit</strong>
         </a>
       ))
     }
@@ -229,6 +229,7 @@ const formatStars = (stars?: number) => {
     align-items: center;
     justify-content: center;
     min-height: 38px;
+    padding: 0 12px;
     color: #08100b;
     font-size: 12px;
     background: var(--sage);

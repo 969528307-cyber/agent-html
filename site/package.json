@@ -10,6 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "approve:candidate": "node scripts/approve-candidate.mjs",
     "publish:candidate": "node scripts/publish-candidate.mjs",
     "discover:github": "node scripts/github-discover-candidates.mjs",
     "ingest:github": "node scripts/github-ingest-candidate.mjs",

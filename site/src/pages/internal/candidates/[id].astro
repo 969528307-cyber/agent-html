@@ -13,8 +13,10 @@ export async function getStaticPaths() {
 const { candidate } = Astro.props;
 const scores = Object.entries(candidate.data.reviewScore);
 const average = scores.reduce((sum, [, score]) => sum + score, 0) / scores.length;
-const publishCommand = `npm run publish:candidate -- ${candidate.id}`;
+const approveCommand = `cd /Users/ld/agent-toolkit-site/site\nnpm run approve:candidate -- ${candidate.id}`;
+const publishCommand = `cd /Users/ld/agent-toolkit-site/site\nnpm run publish:candidate -- ${candidate.id}`;
 const github = candidate.data.githubMetadata;
+const canPublish = ["approved", "reviewing"].includes(candidate.data.status);
 ---
 
 <BaseLayout title={`${candidate.data.title} - Candidate Pool`} description={candidate.data.summary} noindex>
@@ -24,16 +26,41 @@ const github = candidate.data.githubMetadata;
     <h1>{candidate.data.title}</h1>
     <p class="summary">{candidate.data.summary}</p>
 
-    <div class="action-panel">
-      <div>
-        <span>Publish action</span>
-        <p>
-          If this candidate is approved, run the local publish command. The
-          script turns this candidate into the target content collection and
-          keeps the internal page noindexed.
-        </p>
+    <div class="submit-panel">
+      <div class="submit-head">
+        <div>
+          <span>Submit to public site</span>
+          <h2>Approve, then publish.</h2>
+        </div>
+        <a class="small-button" href="#submit-commands">Show commands</a>
       </div>
-      <code>{publishCommand}</code>
+      <div class="submit-steps">
+        <article>
+          <strong>01</strong>
+          <h3>Review evidence</h3>
+          <p>Check source, stars, license or permission, extracted install hints, detected files, and proposed Agent mapping.</p>
+        </article>
+        <article>
+          <strong>02</strong>
+          <h3>Approve candidate</h3>
+          <p>Run the approve command. It marks this candidate as approved and records a local review date.</p>
+        </article>
+        <article>
+          <strong>03</strong>
+          <h3>Publish page</h3>
+          <p>Run the publish command. It creates the public Tool or Agent JSON used by the real site pages.</p>
+        </article>
+      </div>
+      <div class="command-stack" id="submit-commands">
+        <div>
+          <span>Approve command</span>
+          <code>{approveCommand}</code>
+        </div>
+        <div class:list={["publish-command", { locked: !canPublish }]}>
+          <span>{canPublish ? "Publish command" : "Publish command, available after approval"}</span>
+          <code>{publishCommand}</code>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -167,35 +194,85 @@ const github = candidate.data.githubMetadata;
     line-height: 1.72;
   }
 
-  .action-panel,
+  .submit-panel,
   .panel {
     border: 1px solid var(--line);
     background: var(--paper);
     box-shadow: var(--shadow);
   }
 
-  .action-panel {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.5fr);
-    gap: 18px;
-    align-items: center;
+  .submit-panel {
     margin-top: 28px;
-    padding: 20px;
-    border-radius: 24px;
+    padding: 22px;
+    border-radius: 28px;
   }
 
-  .action-panel span {
+  .submit-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .submit-head span,
+  .command-stack span {
     color: var(--sage);
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
   }
 
-  .action-panel p {
+  .submit-head h2 {
     margin-top: 8px;
+  }
+
+  .submit-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 22px;
+  }
+
+  .submit-steps article {
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: rgb(238 244 238 / 0.026);
+  }
+
+  .submit-steps strong {
+    color: var(--clay);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+
+  .submit-steps h3 {
+    margin-top: 18px;
+  }
+
+  .submit-steps p {
+    margin-top: 10px;
     color: var(--muted);
     font-size: 14px;
     line-height: 1.65;
+  }
+
+  .command-stack {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .command-stack div {
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: rgb(7 10 9 / 0.38);
+  }
+
+  .publish-command.locked {
+    opacity: 0.72;
   }
 
   pre,
@@ -327,10 +404,16 @@ const github = candidate.data.githubMetadata;
   }
 
   @media (max-width: 860px) {
-    .action-panel,
+    .submit-head,
+    .submit-steps,
+    .command-stack,
     .detail-grid,
     .github-grid {
       grid-template-columns: 1fr;
+    }
+
+    .submit-head {
+      display: grid;
     }
   }
 </style>
