@@ -22,9 +22,9 @@ const readJsonBody = (request) =>
     request.on('error', reject);
   });
 
-const runNpmScript = (script, candidateId) =>
+const runNpmScript = (script, candidateId, extraArgs = []) =>
   new Promise((resolve, reject) => {
-    const child = spawn('npm', ['run', script, '--', candidateId], {
+    const child = spawn('npm', ['run', script, '--', candidateId, ...extraArgs], {
       cwd: siteRoot,
       env: process.env,
       stdio: ['ignore', 'pipe', 'pipe'],
@@ -71,9 +71,10 @@ const localCandidateActions = () => ({
             return;
           }
 
+          const preflight = await runNpmScript('publish:candidate', candidateId, ['--preflight']);
           const approve = await runNpmScript('approve:candidate', candidateId);
           const publish = await runNpmScript('publish:candidate', candidateId);
-          response.end(JSON.stringify({ ok: true, approve, publish }));
+          response.end(JSON.stringify({ ok: true, preflight, approve, publish }));
         } catch (error) {
           response.statusCode = 500;
           response.end(JSON.stringify({ ok: false, error: error.message }));

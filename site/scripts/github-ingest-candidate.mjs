@@ -155,7 +155,14 @@ export const detectToolType = ({ topics = [], files = [], readme = "" }) => {
 
 const codeFencePattern = /```(\w+)?\n([\s\S]*?)```/g;
 
-export const extractInstallHints = (readme) => {
+const isSkillDocPath = (path = "") => /(^|\/)SKILL\.md$/i.test(path) || /^\.agents\/skills\//i.test(path);
+
+const isInstallSourceAllowed = ({ path = "", type }) => {
+  if (type === "skill") return true;
+  return !isSkillDocPath(path);
+};
+
+export const extractInstallHints = (readme, { sourcePath = "README.md" } = {}) => {
   const hints = [];
   const installWindowPattern = /(install|setup|configuration|usage|mcp|skill)[\s\S]{0,1800}/gi;
   const windows = [...readme.matchAll(installWindowPattern)].map((match) => match[0]);
@@ -167,7 +174,7 @@ export const extractInstallHints = (readme) => {
     if (!code) continue;
 
     const firstLine = code.split("\n").find((line) => line.trim() && !line.trim().startsWith("#"))?.trim();
-    const looksCommand = /^(npx|npm|pnpm|yarn|pip|uv|brew|cargo|go install|git clone|cp|mkdir|claude|codex|qwen|code)\b/.test(firstLine || "");
+    const looksCommand = /^(npx|npm|pnpm|yarn|pip|uv|brew|cargo|go install|git clone|docker|docker compose|cp|mkdir|claude|codex|qwen|code)\b/.test(firstLine || "");
     const looksConfig = /mcpServers|servers|command|args|SKILL\.md|CLAUDE\.md|AGENTS\.md|Cursor Rules/i.test(code);
 
     if (!looksCommand && !looksConfig) continue;
@@ -175,12 +182,19 @@ export const extractInstallHints = (readme) => {
     hints.push({
       title: looksCommand ? "Install command" : "Configuration snippet",
       body: "Extracted from the repository README. Review before publishing.",
+      sourcePath,
       ...(looksCommand ? { command: firstLine } : { code, codeLanguage: language }),
     });
   }
 
   return hints.slice(0, 6);
 };
+
+const extractInstallHintsFromSources = (sources, { type }) =>
+  sources
+    .filter((source) => source.content && isInstallSourceAllowed({ path: source.path, type }))
+    .flatMap((source) => extractInstallHints(source.content, { sourcePath: source.path }))
+    .slice(0, 6);
 
 const detectAgents = ({ readme = "", files = [] }) => {
   const text = `${readme}\n${files.join("\n")}`.toLowerCase();
@@ -246,7 +260,12 @@ export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDoc
     .filter(Boolean)
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(" ");
-  const extractedInstall = extractInstallHints(combinedText);
+  const installSources = [
+    { path: "README.md", content: readme },
+    ...evidenceDocs,
+    ...(type === "skill" ? skillDocs : []),
+  ];
+  const extractedInstall = extractInstallHintsFromSources(installSources, { type });
   const proposedAgents = detectAgents({ readme: combinedText, files });
   const proposedCategory = categorize({ type, topics: repo.topics || [], readme: combinedText });
   const summary = repo.description || summarizeReadme(combinedText) || `GitHub ${type} candidate from ${repo.full_name}.`;

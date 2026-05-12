@@ -170,6 +170,43 @@ test("uses SKILL.md documents when generating skill candidates", () => {
   assert.equal(candidate.extractedInstall[0].command, "cp skills/context/SKILL.md ~/.codex/skills/context/SKILL.md");
 });
 
+test("does not use nested skill docs as install sources for non-skill candidates", () => {
+  const candidate = buildCandidateFromRepo({
+    repo: {
+      html_url: "https://github.com/example/activepieces",
+      name: "activepieces",
+      full_name: "example/activepieces",
+      description: "AI workflow automation with MCP support.",
+      stargazers_count: 22_000,
+      license: { spdx_id: "MIT" },
+      topics: ["mcp", "workflow-automation"],
+      pushed_at: "2026-05-10T00:00:00Z",
+      default_branch: "main",
+      owner: { login: "example" },
+    },
+    files: ["README.md", ".agents/skills/agent-browser/SKILL.md"],
+    readme: "# Activepieces\n\n## Install\n```bash\ndocker compose up\n```\n\nA Model Context Protocol automation platform.",
+    skillDocs: [
+      {
+        path: ".agents/skills/agent-browser/SKILL.md",
+        content:
+          "# Agent Browser\n\n## Install\n```bash\nnpm run lint-dev\n```\n\nConfigure `~/.agent-browser/config.json` and `AGENT_BROWSER_CONFIG`.",
+      },
+    ],
+    today: "2026-05-11",
+  });
+
+  assert.equal(candidate.proposedToolType, "mcp");
+  assert.deepEqual(
+    candidate.extractedInstall.map((hint) => hint.command || hint.code),
+    ["docker compose up"]
+  );
+  assert.deepEqual(
+    candidate.extractedInstall.map((hint) => hint.sourcePath),
+    ["README.md"]
+  );
+});
+
 test("slugifies names for candidate ids", () => {
   assert.equal(slugify("Repo Review Skill!"), "repo-review-skill");
 });
