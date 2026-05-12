@@ -1,0 +1,137 @@
+{
+  "id": "candidate-everything-claude-code-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Everything Claude Code",
+  "sourceUrl": "https://github.com/affaan-m/everything-claude-code",
+  "sourceName": "GitHub",
+  "author": "affaan-m",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+  "proposedCategory": [
+    "mcp",
+    "browser",
+    "docs",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "affaan-m",
+    "repo": "everything-claude-code",
+    "fullName": "affaan-m/everything-claude-code",
+    "stars": 179661,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "developer-tools",
+      "llm",
+      "mcp",
+      "productivity"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T02:56:30Z"
+  },
+  "detectedFiles": [
+    ".agents/skills/agent-introspection-debugging/SKILL.md",
+    ".agents/skills/agent-sort/SKILL.md",
+    ".agents/skills/api-design/SKILL.md",
+    ".agents/skills/article-writing/SKILL.md",
+    ".agents/skills/backend-patterns/SKILL.md",
+    ".agents/skills/brand-voice/SKILL.md",
+    ".agents/skills/bun-runtime/SKILL.md",
+    ".agents/skills/coding-standards/SKILL.md",
+    ".agents/skills/content-engine/SKILL.md",
+    ".agents/skills/crosspost/SKILL.md",
+    ".agents/skills/deep-research/SKILL.md",
+    ".agents/skills/dmux-workflows/SKILL.md",
+    ".agents/skills/documentation-lookup/SKILL.md",
+    ".agents/skills/e2e-testing/SKILL.md",
+    ".agents/skills/eval-harness/SKILL.md",
+    ".agents/skills/everything-claude-code/SKILL.md",
+    ".agents/skills/exa-search/SKILL.md",
+    ".agents/skills/fal-ai-media/SKILL.md",
+    ".agents/skills/frontend-patterns/SKILL.md",
+    ".agents/skills/frontend-slides/SKILL.md",
+    ".agents/skills/investor-materials/SKILL.md",
+    ".agents/skills/investor-outreach/SKILL.md",
+    ".agents/skills/market-research/SKILL.md",
+    ".agents/skills/mcp-server-patterns/SKILL.md",
+    ".agents/skills/mle-workflow/SKILL.md",
+    ".agents/skills/nextjs-turbopack/SKILL.md",
+    ".agents/skills/product-capability/SKILL.md",
+    ".agents/skills/security-review/SKILL.md",
+    ".agents/skills/strategic-compact/SKILL.md",
+    ".agents/skills/tdd-workflow/SKILL.md",
+    ".agents/skills/verification-loop/SKILL.md",
+    ".agents/skills/video-editing/SKILL.md",
+    ".agents/skills/x-api/SKILL.md",
+    ".claude/skills/everything-claude-code/SKILL.md",
+    ".codex/AGENTS.md",
+    ".cursor/hooks.json",
+    ".cursor/hooks/adapter.js",
+    ".cursor/hooks/after-file-edit.js",
+    ".cursor/hooks/after-mcp-execution.js",
+    ".cursor/hooks/after-shell-execution.js"
+  ],
+  "readmeExtract": "Language: English | [Português (Brasil)](docs/pt BR/README.md) | [简体中文](README.zh CN.md) | [繁體中文](docs/zh TW/README.md) | [日本語](docs/ja JP/README.md) | [한국어](docs/ko KR/README.md) | [Türkçe](docs/tr/README.md) | [Русский](docs/ru/README.md) | [Tiếng Việt](docs/vi VN/README.md) Everything Claude Code ![Everything Claude Code — the performance system for AI agent harnesses](assets/hero.png) [![Stars](https://img.shield",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/agent-introspection-debugging/SKILL.md",
+      "extract": "name: agent introspection debugging description: Structured self debugging workflow for AI agent failures using capture, diagnosis, contained recovery, and introspection reports. Agent Introspection Debugging Use this skill when an agent run is failing repeatedly, consuming tokens without progress, looping on the same tools, or drifting away from the intended task. This is a workflow skill, not a hidden runtime. It t"
+    },
+    {
+      "path": ".agents/skills/agent-sort/SKILL.md",
+      "extract": "name: agent sort description: Build an evidence backed ECC install plan for a specific repo by sorting skills, commands, rules, hooks, and extras into DAILY vs LIBRARY buckets using parallel repo aware review passes. Use when ECC should be trimmed to what a project actually needs instead of loading the full bundle. Agent Sort Use this skill when a repo needs a project specific ECC surface instead of the default full "
+    },
+    {
+      "path": ".agents/skills/api-design/SKILL.md",
+      "extract": "name: api design description: REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs. API Design Patterns Conventions and best practices for designing consistent, developer friendly REST APIs. When to Activate Designing new API endpoints Reviewing existing API contracts Adding pagination, filtering, or sorting Impleme"
+    },
+    {
+      "path": ".agents/skills/article-writing/SKILL.md",
+      "extract": "name: article writing description: Write articles, guides, blog posts, tutorials, newsletter issues, and other long form content in a distinctive voice derived from supplied examples or brand guidance. Use when the user wants polished written content longer than a paragraph, especially when voice consistency, structure, and credibility matter. Article Writing Write long form content that sounds like an actual person "
+    },
+    {
+      "path": ".agents/skills/backend-patterns/SKILL.md",
+      "extract": "name: backend patterns description: Backend architecture patterns, API design, database optimization, and server side best practices for Node.js, Express, and Next.js API routes. Backend Development Patterns Backend architecture patterns and best practices for scalable server side applications. When to Activate Designing REST or GraphQL API endpoints Implementing repository, service, or controller layers Optimizing d"
+    },
+    {
+      "path": ".agents/skills/brand-voice/SKILL.md",
+      "extract": "name: brand voice description: Build a source derived writing style profile from real posts, essays, launch notes, docs, or site copy, then reuse that profile across content, outreach, and social workflows. Use when the user wants voice consistency without generic AI writing tropes. Brand Voice Build a durable voice profile from real source material, then use that profile everywhere instead of re deriving style from "
+    }
+  ],
+  "extractedInstall": [
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "### 3. Decide DAILY vs LIBRARY\n\nPromote to `DAILY` when:\n\n- the repo clearly uses the matching stack\n- the component is general enough to help every session\n- the repo already depends on the corresponding runtime or workflow\n\nDemote to `LIBRARY` when:\n\n- the component is off-stack\n- the repo might need it later, but not every day\n- it adds context overhead without immediate relevance\n\n### 4. Build the install plan\n\nTranslate the classification into action:\n\n- DAILY skills -> install or keep in `.claude/skills/`\n- DAILY commands -> keep as explicit shims only if still useful\n- DAILY rules -> install only matching language sets\n- DAILY hooks/scripts -> keep only compatible ones\n- LIBRARY surfaces -> keep accessible through search or `skill-library`\n\nIf the repo already uses selective installs, update that plan instead of creating another system.\n\n### 5. Create the optional library router\n\nIf the project wants a searchable library surface, create:\n\n- `.claude/skills/skill-library/SKILL.md`\n\nThat router should contain:\n\n- a short explanation of DAILY vs LIBRARY\n- grouped trigger keywords\n- where the library references live\n\nDo not duplicate every skill body inside the router.\n\n### 6. Verify the result\n\nAfter the plan is applied, verify:\n\n- every DAILY file exists where expected\n- stale language rules were not left active\n- incompatible hooks were not installed\n- th\n\ninstall actually matches the repo stack\n\nReturn a compact report with:\n\n- DAILY count\n- LIBRARY count\n- removed stale surfaces\n- open questions\n\n## Handoffs\n\nIf the next step is interactive installation or repair, hand off to:\n\n- `configure-ecc`\n\nIf the next step is overlap cleanup or catalog review, hand off to:\n\n- `skill-stocktake`\n\nIf the next step is broader context trimming, hand off to:\n\n- `strategic-compact`\n\n## Output Format\n\nReturn the result in this order:",
+      "codeLanguage": "text"
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+}

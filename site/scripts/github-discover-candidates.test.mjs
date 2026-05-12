@@ -4,6 +4,7 @@ import test from "node:test";
 import {
   buildDiscoveryQueries,
   dedupeSearchItems,
+  getPerQueryLimit,
   parseDiscoverArgs,
 } from "./github-discover-candidates.mjs";
 
@@ -24,6 +25,11 @@ test("dedupes GitHub search items by full repository name", () => {
   ]);
 
   assert.deepEqual(items.map((item) => item.full_name), ["owner/tool", "other/tool"]);
+});
+
+test("splits discovery limits across queries for source diversity", () => {
+  assert.equal(getPerQueryLimit({ limit: 20, queryCount: 13 }), 2);
+  assert.equal(getPerQueryLimit({ limit: 20, queryCount: 2 }), 10);
 });
 
 test("parses discovery CLI flags", () => {

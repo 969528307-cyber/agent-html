@@ -1,0 +1,67 @@
+{
+  "id": "candidate-servers-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Servers",
+  "sourceUrl": "https://github.com/modelcontextprotocol/servers",
+  "sourceName": "GitHub",
+  "author": "modelcontextprotocol",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "Model Context Protocol Servers",
+  "proposedCategory": [
+    "mcp",
+    "browser",
+    "docs",
+    "search",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "modelcontextprotocol",
+    "repo": "servers",
+    "fullName": "modelcontextprotocol/servers",
+    "stars": 85474,
+    "license": "NOASSERTION",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-17T22:59:54Z"
+  },
+  "detectedFiles": [
+    "CLAUDE.md",
+    "README.md",
+    "package.json",
+    "src/everything/AGENTS.md"
+  ],
+  "readmeExtract": "Model Context Protocol servers This repository is a collection of reference implementations for the [Model Context Protocol](https://modelcontextprotocol.io/) (MCP), as well as references to community built servers and additional resources. [!IMPORTANT] If you are looking for a list of MCP servers, you can browse published servers on [the MCP Registry](https://registry.modelcontextprotocol.io/). The repository served",
+  "skillExtracts": [],
+  "extractedInstall": [
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "# Single server\ncd src/<server> && npm ci && npm run build && n...\n\n...n servers",
+      "codeLanguage": "bash"
+    }
+  ],
+  "extractedSignals": [
+    "README mentions Model Context Protocol"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Model Context Protocol Servers"
+}

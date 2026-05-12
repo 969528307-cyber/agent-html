@@ -1,6 +1,8 @@
 import fs from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 
+import "./load-local-env.mjs";
+
 const root = new URL("..", import.meta.url);
 
 const githubApiHeaders = {

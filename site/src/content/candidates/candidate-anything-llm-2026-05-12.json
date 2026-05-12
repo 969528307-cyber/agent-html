@@ -1,0 +1,68 @@
+{
+  "id": "candidate-anything-llm-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Anything Llm",
+  "sourceUrl": "https://github.com/Mintplex-Labs/anything-llm",
+  "sourceName": "GitHub",
+  "author": "Mintplex-Labs",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "The all-in-one AI productivity accelerator. On device and privacy first with no annoying setup or configuration.",
+  "proposedCategory": [
+    "mcp",
+    "docs"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "Mintplex-Labs",
+    "repo": "anything-llm",
+    "fullName": "Mintplex-Labs/anything-llm",
+    "stars": 59897,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "custom-ai-agents",
+      "deepseek",
+      "kimi",
+      "llama3",
+      "llm",
+      "lmstudio",
+      "local-llm",
+      "localai",
+      "mcp",
+      "mcp-servers",
+      "moonshot",
+      "multimodal",
+      "no-code",
+      "ollama",
+      "qwen3",
+      "rag",
+      "vector-database",
+      "web-scraping"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-12T01:07:45Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "<a name=\"readme top\" </a <p align=\"center\" <a href=\"https://anythingllm.com\" <img src=\"https://github.com/Mintplex Labs/anything llm/blob/master/images/wordmark.png?raw=true\" alt=\"AnythingLLM logo\" </a </p <div align='center' <a href=\"https://trendshift.io/repositories/2415\" target=\" blank\" <img src=\"https://trendshift.io/api/badge/repositories/2415\" alt=\"Mintplex Labs%2Fanything llm | Trendshift\" style=\"width: 250px",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 2,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "The all-in-one AI productivity accelerator. On device and privacy first with no annoying setup or configuration."
+}

@@ -1,0 +1,66 @@
+{
+  "id": "candidate-developer-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Developer",
+  "sourceUrl": "https://github.com/smol-ai/developer",
+  "sourceName": "GitHub",
+  "author": "smol-ai",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "the first library to let you embed a developer agent in your own app!",
+  "proposedCategory": [
+    "cli",
+    "docs",
+    "workflow"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "cli",
+  "githubMetadata": {
+    "owner": "smol-ai",
+    "repo": "developer",
+    "fullName": "smol-ai/developer",
+    "stars": 12185,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2024-04-07T07:11:03Z"
+  },
+  "detectedFiles": [
+    "pyproject.toml",
+    "readme.md"
+  ],
+  "readmeExtract": "🐣 smol developer <a href=\"https://app.e2b.dev/agent/smol developer\" target=\" blank\" rel=\"noopener noreferrer\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://app.e2b.dev/api/badge light\" <img alt=\"Deploy agent on e2b button\" src=\"https://app.e2b.dev/api/badge\"/ </picture </a <a href=\"https://github.com/modal labs/devlooper\" <img src=\"https://github.com/smol ai/developer/assets/6764957/6af16d37 ",
+  "skillExtracts": [],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "git clone https://github.com/smol-ai/developer.git"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "and then you can call the API using either the following commands:\n\nTo **create a task** run:",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "git clone https://github.com/smol-ai/developer.git"
+    }
+  ],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "the first library to let you embed a developer agent in your own app!"
+}

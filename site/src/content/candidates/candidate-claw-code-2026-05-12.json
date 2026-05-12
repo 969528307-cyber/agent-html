@@ -1,0 +1,82 @@
+{
+  "id": "candidate-claw-code-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Claw Code",
+  "sourceUrl": "https://github.com/ultraworkers/claw-code",
+  "sourceName": "GitHub",
+  "author": "ultraworkers",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
+  "proposedCategory": [
+    "workflow",
+    "docs"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "proposedToolType": "workflow",
+  "githubMetadata": {
+    "owner": "ultraworkers",
+    "repo": "claw-code",
+    "fullName": "ultraworkers/claw-code",
+    "stars": 191136,
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T14:32:32Z"
+  },
+  "detectedFiles": [
+    "CLAUDE.md",
+    "README.md",
+    "rust/CLAUDE.md"
+  ],
+  "readmeExtract": "Claw Code <p align=\"center\" <a href=\"https://github.com/ultraworkers/claw code\" ultraworkers/claw code</a · <a href=\"./USAGE.md\" Usage</a · <a href=\"./rust/README.md\" Rust workspace</a · <a href=\"./PARITY.md\" Parity</a · <a href=\"./ROADMAP.md\" Roadmap</a · <a href=\"https://discord.gg/5TUQKqFWd\" UltraWorkers Discord</a </p <p align=\"center\" <a href=\"https://star history.com/ ultraworkers/claw code&Date\" <picture <sour",
+  "skillExtracts": [],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "git clone https://github.com/ultraworkers/claw-code"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "git clone https://github.com/ultraworkers/claw-code"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "cargo install --path . --force"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "git clone https://github.com/ultraworkers/claw-code"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "git clone https://github.com/ultraworkers/claw-code"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "cargo --version"
+    }
+  ],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex."
+}

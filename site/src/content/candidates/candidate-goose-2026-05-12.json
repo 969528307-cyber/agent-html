@@ -1,0 +1,122 @@
+{
+  "id": "candidate-goose-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Goose",
+  "sourceUrl": "https://github.com/aaif-goose/goose",
+  "sourceName": "GitHub",
+  "author": "aaif-goose",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+  "proposedCategory": [
+    "mcp",
+    "code-review",
+    "browser",
+    "docs",
+    "workflow",
+    "testing"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "aaif-goose",
+    "repo": "goose",
+    "fullName": "aaif-goose/goose",
+    "stars": 45036,
+    "license": "Apache-2.0",
+    "topics": [
+      "acp",
+      "ai",
+      "ai-agents",
+      "mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T02:02:00Z"
+  },
+  "detectedFiles": [
+    ".agents/skills/code-review/SKILL.md",
+    ".agents/skills/create-app-e2e-test/SKILL.md",
+    ".agents/skills/create-pr/SKILL.md",
+    ".agents/skills/edge-case-finder/SKILL.md",
+    ".cursor/skills/code-review",
+    ".cursor/skills/create-app-e2e-test",
+    ".cursor/skills/create-pr",
+    ".cursor/skills/edge-case-finder",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "documentation/AGENTS.md",
+    "documentation/CLAUDE.md",
+    "examples/mcp-wiki/README.md",
+    "examples/mcp-wiki/pyproject.toml",
+    "ui/goose2/AGENTS.md",
+    "ui/goose2/CLAUDE.md",
+    "ui/goose2/src/shared/ui/AGENTS.md",
+    "ui/goose2/src/shared/ui/CLAUDE.md",
+    "ui/text/AGENTS.md",
+    "ui/text/CLAUDE.md"
+  ],
+  "readmeExtract": "🦆 goose has moved! This project has moved from block/goose to the [Agentic AI Foundation (AAIF)](https://aaif.io/) at the Linux Foundation. Some links and references are still being updated — please bear with us during the transition. <div align=\"center\" goose your native open source AI agent — desktop app, CLI, and API — for code, workflows, and everything in between <p align=\"center\" <a href=\"https://opensource.or",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/code-review/SKILL.md",
+      "extract": "name: code review description: Senior engineer code review focused on catching issues before they become PR comments. Reviews only changed lines, categorizes issues by priority, and fixes them one by one. Includes a focused ui/goose2 refactor quality pass for maintainability, decomposition, layering, type hygiene, duplication, and dead code. Use when the user says \"code review\", \"review my code\", \"review this branch\""
+    },
+    {
+      "path": ".agents/skills/create-app-e2e-test/SKILL.md",
+      "extract": "name: create app e2e test description: Create app e2e tests for the Goose desktop app using the Tauri app test driver. Use when the user wants to generate, write, or verify UI tests that run against the live app. Create App E2E Test You are an AI agent that creates app e2e tests for the Goose desktop app using the Tauri app test driver. Goal Given a test scenario in natural language, you will: 1. Explore the app usin"
+    },
+    {
+      "path": ".agents/skills/create-pr/SKILL.md",
+      "extract": "name: create pr description: Create a GitHub PR from the current branch: handle uncommitted changes, generate a summary, and submit via gh CLI. Use when the user says \"create PR\", \"open PR\", \"submit PR\", \"push PR\", or wants to create a pull request. Create PR Create a GitHub PR from the current branch: handle uncommitted changes, generate a summary, and submit. Step 1: Rebase Reminder Before doing anything else, remi"
+    },
+    {
+      "path": ".agents/skills/edge-case-finder/SKILL.md",
+      "extract": "name: edge case finder description: Analyzes branch changes to find edge cases, error states, and untested user flow paths in UI code. Use when the user says \"find edge cases\", \"what am I missing\", \"edge cases\", \"test my flows\", \"what could go wrong\", or wants to harden a feature before shipping. Edge Case Finder You are a senior QA engineer and UX specialist. Your job is to analyze the code changes on this branch an"
+    }
+  ],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "pnpm test:app-e2e"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "cargo build                   # debug"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "cargo test                   #"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "cargo fmt"
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files",
+    "README mentions Model Context Protocol"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM"
+}

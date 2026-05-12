@@ -1,0 +1,167 @@
+{
+  "id": "candidate-activepieces-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Activepieces",
+  "sourceUrl": "https://github.com/activepieces/activepieces",
+  "sourceName": "GitHub",
+  "author": "activepieces",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+  "proposedCategory": [
+    "mcp",
+    "browser",
+    "docs",
+    "search",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "activepieces",
+    "repo": "activepieces",
+    "fullName": "activepieces/activepieces",
+    "stars": 22149,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-agent",
+      "ai-agent-tools",
+      "ai-agents",
+      "ai-agents-framework",
+      "mcp",
+      "mcp-server",
+      "mcp-tools",
+      "mcps",
+      "n8n-alternative",
+      "no-code-automation",
+      "workflow",
+      "workflow-automation",
+      "workflows"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T00:31:40Z"
+  },
+  "detectedFiles": [
+    ".agents/features/agents.md",
+    ".agents/skills/add-endpoint/SKILL.md",
+    ".agents/skills/add-entity/SKILL.md",
+    ".agents/skills/add-feature/SKILL.md",
+    ".agents/skills/agent-browser/SKILL.md",
+    ".agents/skills/db-migration/SKILL.md",
+    ".agents/skills/design/SKILL.md",
+    ".agents/skills/grill-me/SKILL.md",
+    ".agents/skills/mcp-builder/SKILL.md",
+    ".agents/skills/mintlify/SKILL.md",
+    ".agents/skills/piece-builder/SKILL.md",
+    ".agents/skills/playwright-e2e-testing/SKILL.md",
+    ".agents/skills/ubiquitous-language/SKILL.md",
+    ".cursor/rules/mintlify",
+    ".cursor/skills",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "docs/admin-guide/guides/setup-ai-providers.mdx",
+    "docs/build-pieces/building-pieces/development-setup.mdx",
+    "docs/build-pieces/building-pieces/setup-fork.mdx",
+    "docs/endpoints/git-repos/configure.mdx",
+    "docs/endpoints/pieces/install.mdx",
+    "docs/handbook/engineering/playbooks/connect-claude-to-chrome.mdx",
+    "docs/handbook/engineering/playbooks/setup-betterstack.mdx",
+    "docs/install/architecture/benchmark.mdx",
+    "docs/install/architecture/durable-execution.mdx",
+    "docs/install/architecture/network-security.mdx",
+    "docs/install/architecture/overview.mdx",
+    "docs/install/architecture/piece-syncing.mdx",
+    "docs/install/architecture/sandboxing.mdx",
+    "docs/install/architecture/waitpoints.mdx",
+    "docs/install/architecture/workers.mdx",
+    "docs/install/configuration/breaking-changes.mdx",
+    "docs/install/configuration/environment-variables.mdx",
+    "docs/install/configuration/hardware.mdx",
+    "docs/install/configuration/overview.mdx",
+    "docs/install/configuration/telemetry.mdx",
+    "docs/install/guides/rollback.mdx",
+    "docs/install/guides/separate-workers.mdx"
+  ],
+  "readmeExtract": "<h1 align=\"center\" <a target=\" blank\" href=\"https://activepieces.com\" <img align=\"center\" alt=\"Activepieces\" src=\"https://github.com/activepieces/activepieces/assets/1812998/76c97441 c285 4480 bc75 30a0c73ed340\" style=\"width:100%;\" / </a </h1 <p align=\"center\" <a href=\"/LICENSE\" target=\" blank\" <img src='https://img.shields.io/badge/license MIT green?style=for the badge' / </a &nbsp;<img src='https://img.shields.io/g",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/add-endpoint/SKILL.md",
+      "extract": "name: add endpoint description: \"Use when adding a new API endpoint, route, or HTTP handler. ALWAYS use for new Fastify controller endpoints.\" Add API Endpoint Create endpoint for $ARGUMENTS. Steps 1. Read the pattern : Open packages/server/api/src/app/tables/table/table.controller.ts as reference. 2. Create or update controller using FastifyPluginAsyncZod : 3. Define route config AFTER the controller (not inline): 4"
+    },
+    {
+      "path": ".agents/skills/add-entity/SKILL.md",
+      "extract": "name: add entity description: \"Use when creating a new database table, entity, or data model. ALWAYS use for any new TypeORM EntitySchema creation.\" Add Database Entity Create entity for $ARGUMENTS. Steps 1. Read the pattern : Open packages/server/api/src/app/tables/table/table.entity.ts as reference. 2. Create entity file at packages/server/api/src/app/{module}/{name}.entity.ts : Use EntitySchema (NOT decorators) In"
+    },
+    {
+      "path": ".agents/skills/add-feature/SKILL.md",
+      "extract": "name: add feature description: \"Use when the user asks to add a feature, implement functionality, or build something spanning database, API, and frontend. ALWAYS use for multi layer feature work.\" Add Feature End to End Implement feature described in $ARGUMENTS across the full stack. Step 0: Decide Scope Before writing code, answer: 1. CE, EE, or both? If both → use hooksFactory (CE default + EE override in app.ts ) "
+    },
+    {
+      "path": ".agents/skills/agent-browser/SKILL.md",
+      "extract": "name: agent browser description: Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a form\", \"click a button\", \"take a screenshot\", \"scrape data from a page\", \"test this web app"
+    },
+    {
+      "path": ".agents/skills/db-migration/SKILL.md",
+      "extract": "name: db migration description: Creates TypeORM database migrations for the Activepieces server. Use when the user asks to add a column, create a table, add an index, or make any schema change to the database. Activepieces DB Migration Create TypeORM database migrations for schema changes in the Activepieces server API. Workflow Step 1: DETERMINE THE CHANGE Before generating, identify: Which table(s) are affected Wha"
+    },
+    {
+      "path": ".agents/skills/design/SKILL.md",
+      "extract": "name: activepieces design system description: Design system for Activepieces (open source AI automation platform, \"open source replacement for Zapier\"). Use whenever designing, mocking, or building UI for Activepieces — the web app (flow builder, runs, connections, dashboard), docs, or marketing surfaces. Provides brand purple 8142E3 , Inter type ramp with sm (14px) as body default, Tailwind neutrals, Lucide icons, S"
+    }
+  ],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npm run lint-dev"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "Priority (lowest to highest): `~/.agent-browser/config.json` < `./agent-browser.json` < env vars < CLI flags. Use `--config <path>` or `AGENT_BROWSER_CONFIG` env var for a custom config file (exits with error if missing/invalid). All CLI options map to camelCase keys (e.g., `--executable-path` -> `\"executablePath\"`). Boolean flags accept `true`/`false` values (e.g., `--headed false` overrides config). Extensions from user and project configs are merged, not replaced.\n\n## Deep-Dive Documentation\n\n| Reference | When to Use |\n|-----------|-------------|\n| [references/commands.md](references/commands.md) | Full command reference with all options |\n| [references/snapshot-refs.md](references/snapshot-refs.md) | Ref lifecycle, invalidation rules, troubleshooting |\n| [references/session-management.md](references/session-management.md) | Parallel sessions, state persistence, concurrent scraping |\n| [references/authentication.md](references/authentication.md) | Login flows, OAuth, 2FA handling, state reuse |\n| [references/video-recording.md](references/video-recording.md) | Recording workflows for debugging and documentation |\n| [references/profiling.md](references/profiling.md) | Chrome DevTools profiling for performance analysis |\n| [references/proxy-support.md](references/proxy-support.md) | Proxy configuration, geo-testing, rotating proxies |\n\n## Experimental: Native Mode\n\nagent-browser has an experimental native Rust daemon that communicates with Chrome directly via CDP, bypassing Node.js and Playwright entirely. It is opt-in and not recommended for production use yet.",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "brew install node"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npm start                                       # Setup dev + start all"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npm start                                       # Setup dev + start all"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npm start"
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents"
+}

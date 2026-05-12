@@ -1,0 +1,165 @@
+{
+  "id": "candidate-n8n-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "N8n",
+  "sourceUrl": "https://github.com/n8n-io/n8n",
+  "sourceName": "GitHub",
+  "author": "n8n-io",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "proposedCategory": [
+    "mcp",
+    "code-review",
+    "browser",
+    "docs",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "n8n-io",
+    "repo": "n8n",
+    "fullName": "n8n-io/n8n",
+    "stars": 187491,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "apis",
+      "automation",
+      "cli",
+      "data-flow",
+      "development",
+      "integration-framework",
+      "integrations",
+      "ipaas",
+      "low-code",
+      "low-code-platform",
+      "mcp",
+      "mcp-client",
+      "mcp-server",
+      "n8n",
+      "no-code",
+      "self-hosted",
+      "typescript",
+      "workflow",
+      "workflow-automation"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-12T02:18:42Z"
+  },
+  "detectedFiles": [
+    ".claude/plugins/n8n/skills/community-pr-review/SKILL.md",
+    ".claude/plugins/n8n/skills/content-design/SKILL.md",
+    ".claude/plugins/n8n/skills/conventions/SKILL.md",
+    ".claude/plugins/n8n/skills/create-community-node-lint-rule/SKILL.md",
+    ".claude/plugins/n8n/skills/create-issue/SKILL.md",
+    ".claude/plugins/n8n/skills/create-pr/SKILL.md",
+    ".claude/plugins/n8n/skills/create-skill/SKILL.md",
+    ".claude/plugins/n8n/skills/design-system/SKILL.md",
+    ".claude/plugins/n8n/skills/linear-issue/SKILL.md",
+    ".claude/plugins/n8n/skills/loom-transcript/SKILL.md",
+    ".claude/plugins/n8n/skills/node-add-oauth/SKILL.md",
+    ".claude/plugins/n8n/skills/protect-endpoints/SKILL.md",
+    ".claude/plugins/n8n/skills/reproduce-bug/SKILL.md",
+    ".claude/plugins/n8n/skills/setup-mcps/SKILL.md",
+    ".claude/plugins/n8n/skills/spec-driven-development/SKILL.md",
+    ".github/CLAUDE.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "package.json",
+    "packages/@n8n/agents/AGENTS.md",
+    "packages/@n8n/ai-workflow-builder.ee/AGENTS.md",
+    "packages/@n8n/ai-workflow-builder.ee/CLAUDE.md",
+    "packages/@n8n/cli/skills/n8n-cli/SKILL.md",
+    "packages/@n8n/db/AGENTS.md",
+    "packages/@n8n/instance-ai/CLAUDE.md",
+    "packages/@n8n/node-cli/src/template/templates/shared/default/AGENTS.md",
+    "packages/@n8n/node-cli/src/template/templates/shared/default/CLAUDE.md",
+    "packages/frontend/AGENTS.md",
+    "packages/frontend/CLAUDE.md",
+    "packages/frontend/editor-ui/src/app/stores/workflowDocument/CLAUDE.md",
+    "packages/nodes-base/AGENTS.md",
+    "packages/nodes-base/CLAUDE.md",
+    "packages/testing/janitor/CLAUDE.md",
+    "packages/testing/playwright/AGENTS.md",
+    "packages/testing/playwright/CLAUDE.md"
+  ],
+  "readmeExtract": "![Banner image](https://user images.githubusercontent.com/10284570/173569848 c624317f 42b1 45a6 ab09 f0ea3c247648.png) n8n Secure Workflow Automation for Technical Teams n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no code. With 400+ integrations, native AI capabilities, and a fair code license, n8n lets you build powerful automations while maintaining ful",
+  "skillExtracts": [
+    {
+      "path": ".claude/plugins/n8n/skills/community-pr-review/SKILL.md",
+      "extract": "description: Checks if a community pull request is ready for human review. Verifies CLA signature, PR title format, description completeness, test coverage, and cubic dev ai issues. Use when given a PR number or branch name to review, or when the user says /community pr review, /pr review, or asks to check if a PR is ready for review. allowed tools: Bash(gh: ), Bash(git: ), Read, Glob, Grep Community PR Review Given "
+    },
+    {
+      "path": ".claude/plugins/n8n/skills/content-design/SKILL.md",
+      "extract": "name: n8n:content design description: Product content designer for UI copy. Use when writing, reviewing, or auditing user facing text: button labels, error messages, tooltips, empty states, modal copy, placeholder text, confirmation dialogs, onboarding flows, or i18n strings. Also use when the user says /copy, /content, or /ux copy. allowed tools: Read, Grep, Glob, Edit n8n content design You are a Senior Content Des"
+    },
+    {
+      "path": ".claude/plugins/n8n/skills/conventions/SKILL.md",
+      "extract": "name: n8n:conventions description: Quick reference for n8n patterns. Full docs /AGENTS.md n8n Quick Reference 📚 Full Documentation: General: /AGENTS.md Architecture, commands, workflows Frontend: /packages/frontend/AGENTS.md CSS variables, timing Use this skill when you need quick reminders on critical patterns. Critical Rules (Must Follow) TypeScript: Never any → use unknown Prefer satisfies over as (except tests) "
+    },
+    {
+      "path": ".claude/plugins/n8n/skills/create-community-node-lint-rule/SKILL.md",
+      "extract": "name: n8n:create community node lint rule description: Create new ESLint rules for the @n8n/eslint plugin community nodes package. Use when adding a lint rule, creating a community node lint, or working on eslint plugin community nodes. Guides rule implementation, tests, docs, and plugin registration. Create Community Node Lint Rule Guide for adding new ESLint rules to packages/@n8n/eslint plugin community nodes/ . A"
+    },
+    {
+      "path": ".claude/plugins/n8n/skills/create-issue/SKILL.md",
+      "extract": "name: n8n:create issue description: Create Linear tickets or GitHub issues following n8n conventions. Use when the user asks to create a ticket, file a bug, open an issue, or says /create issue. argument hint: \"[linear|github] <description of the issue \" compatibility: requires: mcp: linear description: Required for creating Linear tickets cli: gh description: Required for creating GitHub issues. Must be authenticate"
+    },
+    {
+      "path": ".claude/plugins/n8n/skills/create-pr/SKILL.md",
+      "extract": "name: n8n:create pr description: Creates GitHub pull requests with properly formatted titles that pass the check pr title CI validation. Use when creating PRs, submitting changes for review, or when the user says /pr or asks to create a pull request. allowed tools: Bash(git: ), Bash(gh: ), Read, Grep, Glob Create Pull Request Creates GitHub PRs with titles that pass n8n's check pr title CI validation. PR Title Format"
+    }
+  ],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npx n8n"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npx n8n"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "**Frontend:**\n- Vue 3 Composition API (`<script setup lang=\"ts\">`)\n- CSS variables (never hardcode px) - see `/packages/frontend/AGENTS.md`\n- All text via i18n (`$t('key')`)\n- `data-testid` for E2E (single value, no spaces)\n\n**Backend:**\n- Controller → Service → Repository\n- Dependency injection via `@n8n/di`\n- Config via `@n8n/config`\n- Zod schemas for validation\n\n**Testing:**\n- Vitest (unit), Playwright (E2E)\n- Mock external dependencies\n- Work from package directory: `pushd packages/cli && pnpm test`\n\n**Database:**\n- SQLite/PostgreSQL only (app DB)\n- Exception: DB nodes (MySQL Node, etc.) can use DB-specific features\n\n**Commands:**",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "6. **Create PR** using gh CLI. Read `.github/pull_request_template.md` as the\n   body structure, then populate each section with actual content before\n   creating the PR:\n   - **Summary**: describe what the PR does and how to test it\n   - **Related tickets**: add the Linear ticket URL (`https://linear.\n\nskills, commands, and agents live in `.claude/plugins/n8n/` and\nare namespaced under `n8n:`. Use `n8n:` prefix when invoking them\n(e.g. `/n8n:create-pr`, `/n8n:plan`, `n8n:developer` agent).\nSee [plugin README](.claude/plugins/n8n/README.md) for structure and details.\n\n## Essential Commands\n\n### Building\nUse `pnpm build` to build all packages. ALWAYS redirect the output...\n\n...### Testing\n- `pnpm test` - Run all tests\n- `pnpm test:affected` - Runs tests based on what has changed since the last\n  commit\n\nRunning a particular test file requires going to the directory of that test\nand running: `pnpm test <test-file>`.\n\nWhen changing directories, use `pushd` to navigate into the directory and\n`popd` to return to the previous directory. When in doubt, use `pwd` to check\nyour current directory.\n\n### Code Quality\n- `pnpm lint` - Lint code\n- `pnpm typecheck` - Run type checks\n\nAlways run lint and typecheck before committing code to ensure quality.\nExecute these commands from within the specific package directory you're\nworking on (e.g., `cd packages/cli && pnpm lint`). Run the full repository\ncheck only when preparing the final PR. When your changes affect type\ndefinitions, interfaces in `@n8n/api-types`, or cross-package dependencies,\nbuild the system before running lint and typecheck.\n\n## Architecture Overview\n\n**Monorepo Structure:** pnpm workspaces with Turbo build orchestration\n\n### Package Structure\n\nThe monorepo is organized into these key packages:\n\n- **`packages/@n8n/api-types`**: Shared TypeScript interfaces between frontend and backend\n- **`packages/workflow`**: Core workflow interfaces and types\n- **`packages/core`**: Workflow execution engine\n- **`packages/cli`**: Express server, REST API, and CLI commands\n- **`packages/editor-ui`**: Vue 3 frontend application\n- **`pack\n\nconfiguration management\n\n## Technology Stack\n\n- **Frontend:** Vue 3 + TypeScript + Vite + Pinia + Storybook UI Library\n- **Backend:** Node.js + TypeScript + Express + TypeORM\n- **Testing:** Jest (unit) + Playwright (E2E)\n- **Database:** TypeORM with SQLite/PostgreSQL support\n- **Code Quality:** Biome (for formatting) + ESLint + lefthook git hooks\n\n### Key Architectural Patterns\n\n1. **Dependency Injection**: Uses `@n8n/di` for IoC container\n2. **Controller-Service-Repository**: Backend follows MVC-like pattern\n3. **Event-Driven**: Internal event...\n\n...nstance-ai`**: \"AI Assistant\" in the UI, \"Instance AI\" in code — AI assistant backend. See its `CLAUDE.md` for architecture docs.\n- **`@n8n/design-system`**: Vue component library for UI consistency\n- **`@n8n/config`**: Centralized configuration management\n\n## Technology Stack\n\n- **Frontend:** Vue 3 + TypeScript + Vite + Pinia + Storybook UI Library\n- **Backend:** Node.js + TypeScript + Express + TypeORM\n- **Testing:** Jest (unit) + Playwright (E2E)\n- **Database:** TypeORM with SQLite/PostgreSQL support\n- **Code Quality:** Biome (for formatting) + ESLint + lefthook git hooks\n\n### Key Architectural Patterns\n\n1. **Dependency Injection**: Uses `@n8n/di` for IoC container\n2. **Controller-Service-Repository**: Backend follows MVC-like pattern\n3. **Event-Driven**: Internal event bus for decoupled communication\n4. **Context-Based Execution**: Different contexts for different node types\n5. **State Management**: Frontend uses Pinia stores\n6. **Design System**: Reusable components and design tokens are centralized in\n   `@n8n/design-system`, where all pure Vue components should be placed to\n   ensure consistency and reusability\n\n## Key Development Patterns\n\n- Each package has isolated build configuration and can be developed independently\n- Hot\n\nskill in reviews\n\n### Testing Guidelines\n- **Always work from within the package directory** when running tests\n- **Mock all external dependencies** in unit tests\n- **Prefer reusing hoisted shared `mock<T>(...)` fixtures** when a typed mock is immutable and used across tests. This rule exists to avoid massive test slowdowns from repeatedly creating nested proxy mocks while preserving the type contract. Avoid replacing these with `as unknown as T` helpers for entities like `User`.\n- **Confirm test cases with user** before writing unit tests\n- **Typecheck is critical before committing** - always run `pnpm typecheck`\n- **When modifying pinia stores**, check for unused computed properties\n\nWhat we use for testing and writing tests:\n- For testing nodes and other backend components, we use Jest for unit tests. Examples can be found in `packages/nodes-base/nodes/**/*test*`.\n- We use `nock` for server mocking\n- For frontend we use...\n\n@AGENTS.md\n\n{\n  \"name\": \"n8n-monorepo\",\n  \"version\": \"2.20.0\",\n  \"private\": true,\n  \"engines\": {\n    \"node\": \">=22.16\",\n    \"pnpm\": \">=10.22.0\"\n  },\n  \"packageManager\": \"pnpm@10.32.1\",\n  \"scripts\": {\n    \"prepare\": \"node scripts/prepare.mjs\",\n    \"preinstall\": \"node scripts/block-npm-install.js\",\n    \"build\": \"turbo run build\",\n    \"build:n8n\": \"node scripts/build-n8n.mjs\",\n    \"build:deploy\": \"node scripts/build-n8n.mjs\",\n    \"build:docker\": \"node scripts/build-n8n.mjs && node scripts/dockerize-n8n.mjs\",\n    \"build:docker:coverage\": \"BUILD_WITH_COVERAGE=true node scripts/build-n8n.mjs && node scripts/dockerize-n8n.mjs\",\n    \"build:docker:scan\": \"node scripts/build-n8n.mjs && node scripts/dockerize-n8n.mjs && node scripts/scan-n8n-image.mjs\",\n    \"build:docker:clean\": \"TURBO_FORCE=true node scripts/build-n8n.mjs && DOCKER_BUILD_NO_CACHE=true DOCKER_BUI\n\nsetup-backend-module\": \"node scripts/ensure-zx.mjs && zx scripts/backend-module/setup.mjs\",\n    \"start\": \"node scripts/os-normalize.mjs --dir packages/cli/bin n8n\",\n    \"test\": \"JEST_JUNIT_CLASSNAME={filepath} turbo run test\",\n    \"test:ci\": \"turbo run test --continue --concurrency=1\",\n    \"test:ci:frontend\": \"turbo run test --continue --filter='./packages/frontend/**'\",\n    \"test:ci:backend\": \"turbo run test --continue --concurrency=1 --filter='!./packages/frontend/**'\",\n    \"test:ci:backend:unit\": \"turbo run test:unit --continue --filter='!./packages/frontend/**'\",\n    \"test:ci:backend:integration\": \"turbo run test:integration --continue --concurrency=1 --filter='!./packages/frontend/**'\",\n    \"test:affected\": \"turbo run test --affected --concurrency=1\",\n    \"test:with:docker\": \"pnpm --filter=n8n-playwright test:container:standard\",\n    \"test:show:report\": \"pnpm --filter=n8n-playwright exec playwright show-report\",\n    \"watch\": \"turbo run watch --concurrency=64\",\n    \"webhook\": \"./packages/cli/bin/n8n webhook\",\n    \"worker\": \"./packages/cli/bin/n8n worker\",\n    \"dev:computer-use\": \"pnpm --filter @n8n/computer-use build && node packages/@n8n/computer-use/dist/cli.js serve\",\n    \"stop:computer-use\": \"lsof -ti :7655 | xargs kill 2>/dev/null; echo 'computer-use...\n\n...i\": \"turbo run test --continue --concurrency=1\",\n    \"test:ci:frontend\": \"turbo run test --continue --filter='./packages/frontend/**'\",\n    \"test:ci:backend\": \"turbo run test --continue --concurrency=1 --filter='!./packages/frontend/**'\",\n    \"test:ci:backend:unit\": \"turbo run test:unit --continue --filter='!./packages/frontend/**'\",\n    \"test:ci:backend:integration\": \"turbo run test:integration --continue --concurrency=1 --filter='!./packages/frontend/**'\",\n    \"test:affected\": \"turbo run test --affected --concu\n\ninstall\": \"7.1.3\",\n      \"pug\": \"^3.0.3\",\n      \"semver\": \"^7.5.4\",\n      \"tar-fs\": \"2.1.4\",\n      \"tslib\": \"^2.6.2\",\n      \"tsconfig-paths\": \"^4.2.0\",\n      \"typescript\": \"catalog:\",\n      \"vue-tsc\": \"^2.2.8\",\n      \"gaxios\": \">=7.1.1\",\n      \"google-gax\": \"^4.3.7\",\n      \"ws\": \">=8.17.1\",\n      \"date-fns\": \"2.30.0\",\n      \"date-fns-tz\": \"2.0.0\",\n      \"form-data\": \"4.0.4\",\n      \"tmp\": \"0.2.4\",\n      \"nodemailer\": \"7.0.11\",\n      \"validator\": \"13.15.26\",\n      \"zod\": \"3.25.67\",\n      \"js-yaml\": \"4.1.1\",\n      \"node-forge\": \"1.4.0\",\n      \"body-parser\": \"2.2.1\",\n      \"glob@10\": \"10.5.0\",\n      \"glob@7\": \"7.2.3\",\n      \"jws@3\": \"3.2.2\",\n      \"jws@4\": \"4.0.1\",\n      \"qs@6\": \"6.14.2\",\n      \"@smithy/config-resolver\": \">=4.4.0\",\n      \"@rudderstack/rudder-sdk-node@<=3.0.0\": \"3.0.0\",\n      \"diff\": \"8.0.3\",\n      \"undici@5\": \"^6.24.0\",\n      \"undici@6\": \"^6.24.0\",\n      \"undici@7\": \"^7.24.0\",\n      \"tar\": \"^7.5.11\",\n      \"ajv@6\": \"6.14.0\",\n      \"ajv@7\": \"8.18.0\",\n      \"ajv@8\": \"8.18.0\",\n      \"bn.js@4\": \"5.2.3\",\n      \"bn.js@5\": \"5.2.3\",\n      \"lodash\": \"4.18.1\",\n      \"lodash-es\": \"4.18.1\",\n      \"word-wrap@<=1.2.4\": \"1.2.4\",\n      \"minimatch@<=5.1.8\": \"5.1.8\",\n      \"minimatch@10...\n\n# AGENTS.md\n\nConventions for the `@n8n/agents` package.\n\n## Code Style\n\n- **No `_` prefix on private properties** — use `private` access modifier\n  without underscore. Write `private name: string`, not `private _name: string`.\n- **Builder pattern with lazy build** — all public primitives use a fluent\n  builder API. **User code never calls `.build()`**. Builders are passed\n  directly to the consuming method (e.g. `agent.tool(myTool)`) which calls\n  `.build()` internally. Agent and Network have `run()`/`stream()` directly\n  on the class, which lazy-build via `ensureBuilt()` on first call. `build()\n\nmcp, memory, message, provider, tool)\n    runtime/            # Serializable runtime shapes (events, message lists)\n    utils/              # JSON typing helpers re-exported with public...\n\n...# Fluent builders and SDK entry points\n    agent.ts            # Agent builder\n    catalog.ts          # Provider catalog fetch\n    eval.ts             # Evaluation primitives\n    evaluate.ts         # Evaluation runner over agents + dataset\n    guardrail.ts        # Guardrail builder\n    mcp-client.ts       # MCP client integration\n    memory.ts           # Memory builder\n    message.ts          # LLM/DB message helpers\n    network.ts          # Network builder\n    provider-tools.ts   # Provider-defined tool factories\n    telemetry.ts        # Telemetry builder (OTel, redaction)\n    tool.ts             # Tool builder\n    verify.ts           # Verification utilities\n  runtime/              # Internal — never exported\n    agent-runtime.ts    # Core agent execution engine (AI SDK)\n    tool-adapter.ts     # Tool execution, branded suspend detection\n    stream.ts           # Streaming helpers\n    model-factory.ts    # Model instantiation\n    memory-store.ts     # Conversation / working-memory persistence hooks\n    working-memory.ts   # In-run working memory\n    message-list.ts     # Message list + serialization for agent loop\n    messages.ts         # Message normalization\n    mcp-connection.ts   # MCP connection lifecycle\n    mcp-tool-resolver.ts\n    run-state.ts        # Run / checkpoint state\n    event-bus.ts        # Internal agent events\n    runtime-helpers.ts\n    title-generation.ts\n    strip-orphaned-tool-messages.ts\n    logger.ts\n  storage/              # Optional persisted memory backends (exported)\n    sqlite-memory.ts\n    postgres-memory.ts\n  workspace/            # Workspace,\n\nMCP connection lifecycle\n    mcp-tool-resolver.ts\n    run-state.ts        # Run / checkpoint state\n    event-bus.ts        # Internal agent events\n    runtime-helpers.ts\n    title-generation.ts\n    strip-orphaned-tool-messages.ts\n    logger.ts\n  storage/              # Optional persisted memory backends (exported)\n    sqlite-memory.ts\n    postgres-memory.ts\n  workspace/            # Workspace, sandbox, filesystem, built-in tools (exported)\n  integrations/         # Optional integrations (exported where applicable)\n    langsmith.ts        # LangSmith telemetry adapter (peer `langsmith`)\n  utils/                # Internal helpers (e.g. Zod utilities); not barrel-exported\nexamples/\n  basic-agent.ts        # Sample snippet; included in format/lint paths\ndocs/\n  agent-runtime-architecture.md  # In-package runtime notes",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "pnpm workflow:mermaid path/to/workflow.json"
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+}

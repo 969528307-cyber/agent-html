@@ -1,0 +1,56 @@
+{
+  "id": "candidate-awesome-mcp-servers-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Mcp Servers",
+  "sourceUrl": "https://github.com/punkpeye/awesome-mcp-servers",
+  "sourceName": "GitHub",
+  "author": "punkpeye",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "A collection of MCP servers.",
+  "proposedCategory": [
+    "mcp",
+    "browser",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "punkpeye",
+    "repo": "awesome-mcp-servers",
+    "fullName": "punkpeye/awesome-mcp-servers",
+    "stars": 86730,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-02T16:08:17Z"
+  },
+  "detectedFiles": [],
+  "readmeExtract": "[![ไทย](https://img.shields.io/badge/Thai Click blue)](README th.md) [![English](https://img.shields.io/badge/English Click yellow)](README.md) [![繁體中文](https://img.shields.io/badge/繁體中文 點擊查看 orange)](README zh TW.md) [![简体中文](https://img.shields.io/badge/简体中文 点击查看 orange)](README zh.md) [![日本語](https://img.shields.io/badge/日本語 クリック 青)](README ja.md) [![한국어](https://img.shields.io/badge/한국어 클릭 yellow)](README ko.md) ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "README mentions Model Context Protocol"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 2,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A collection of MCP servers."
+}

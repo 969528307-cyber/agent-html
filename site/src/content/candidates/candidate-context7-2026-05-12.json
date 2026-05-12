@@ -1,0 +1,141 @@
+{
+  "id": "candidate-context7-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Context7",
+  "sourceUrl": "https://github.com/upstash/context7",
+  "sourceName": "GitHub",
+  "author": "upstash",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+  "proposedCategory": [
+    "mcp",
+    "code-review",
+    "docs",
+    "search",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "upstash",
+    "repo": "context7",
+    "fullName": "upstash/context7",
+    "stars": 55055,
+    "license": "MIT",
+    "topics": [
+      "llm",
+      "mcp",
+      "mcp-server",
+      "vibe-coding"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-11T20:25:06Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agentic-tools/ai-sdk/agents/context7-agent.mdx",
+    "docs/agentic-tools/ai-sdk/getting-started.mdx",
+    "docs/agentic-tools/ai-sdk/tools/query-docs.mdx",
+    "docs/agentic-tools/ai-sdk/tools/resolve-library-id.mdx",
+    "docs/agentic-tools/overview.mdx",
+    "docs/clients/claude-code.mdx",
+    "docs/clients/cursor.mdx",
+    "docs/howto/usage.mdx",
+    "docs/images/clients/claude-code/mcp-details.png",
+    "docs/images/clients/claude-code/mcp-list.png",
+    "docs/images/clients/claude-code/mcp-unauthenticated.png",
+    "docs/images/clients/cursor/logo.png",
+    "docs/images/clients/cursor/mcp-settings.png",
+    "docs/images/clients/cursor/rules.png",
+    "docs/images/dashboard/admin/config-overview.png",
+    "docs/installation.mdx",
+    "docs/sdks/ts/getting-started.mdx",
+    "docs/skills.mdx",
+    "package.json",
+    "plugins/claude/context7/skills/context7-mcp/SKILL.md",
+    "plugins/cursor/context7/skills/context7-mcp/SKILL.md",
+    "skills/context7-cli/SKILL.md",
+    "skills/context7-mcp/SKILL.md",
+    "skills/find-docs/SKILL.md"
+  ],
+  "readmeExtract": "![Cover](https://github.com/upstash/context7/blob/master/public/cover.png?raw=true) [![Install MCP Server](https://cursor.com/deeplink/mcp install dark.svg)](https://cursor.com/en/install mcp?name=context7&config=eyJ1cmwiOiJodHRwczovL21jcC5jb250ZXh0Ny5jb20vbWNwIn0%3D) Context7 Platform Up to date Code Docs For Any Prompt [![Website](https://img.shields.io/badge/Website context7.com blue)](https://context7.com) [![smi",
+  "skillExtracts": [
+    {
+      "path": "plugins/claude/context7/skills/context7-mcp/SKILL.md",
+      "extract": "name: context7 mcp description: This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code generation involving libraries, or mentions of specific frameworks like React, Vue, Next.js, Prisma, Supabase, etc. When the user asks about libraries, frameworks, or needs code examples, use Context7 to fetch current documentation instea"
+    },
+    {
+      "path": "plugins/cursor/context7/skills/context7-mcp/SKILL.md",
+      "extract": "name: context7 mcp description: This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code generation involving libraries, or mentions of specific frameworks like React, Vue, Next.js, Prisma, Supabase, etc. When the user asks about libraries, frameworks, or needs code examples, use Context7 to fetch current documentation instea"
+    },
+    {
+      "path": "skills/context7-cli/SKILL.md",
+      "extract": "name: context7 cli description: Use the ctx7 CLI to fetch library documentation, manage AI coding skills, and configure Context7 MCP. Activate when the user mentions \"ctx7\" or \"context7\", needs current docs for any library, wants to install/search/generate skills, or needs to set up Context7 for their AI coding agent. ctx7 CLI The Context7 CLI does three things: fetches up to date library documentation, manages AI co"
+    },
+    {
+      "path": "skills/context7-mcp/SKILL.md",
+      "extract": "name: context7 mcp description: This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code generation involving libraries, or mentions of specific frameworks like React, Vue, Next.js, Prisma, Supabase, etc. When the user asks about libraries, frameworks, or needs code examples, use Context7 to fetch current documentation instea"
+    },
+    {
+      "path": "skills/find-docs/SKILL.md",
+      "extract": "name: find docs description: Retrieves up to date documentation, API references, and code examples for any developer technology. Use this skill whenever the user asks about a specific library, framework, SDK, CLI tool, or cloud service even for well known ones like React, Next.js, Prisma, Express, Tailwind, Django, or Spring Boot. Your training data may not reflect recent API changes or version updates. Always use fo"
+    }
+  ],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npx ctx7 setup"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npx ctx7 setup"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "Context7 fetches up-to-date code examples and documentation right into your LLM's context. No tab-switching, no hallucinated APIs that don't exist, no outdated code generation.\n\nWorks in two modes:\n\n- **CLI + Skills** — installs a skill that guides your agent to fetch docs using `ctx7` CLI commands (no MCP required)\n- **MCP** — registers a Context7 MCP server so your agent can call documentation tools natively\n\n## Installation\n\n> [!NOTE]\n> **API Key Recommended**: Get a free API key at [context7.com/dashboard](https://context7.com/dashboard) for higher rate limits.\n\nSet up Context7 for your coding agents with a single command:",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "Context7 will automatically match the appropriate version.\n\n### Add a Rule\n\nIf you installed via `ctx7 setup`, a skill is configured automatically...\n\n...CLI with `npm install -g ctx7`, remove that package separately with `npm uninstall -g ctx7`.\n\nTo configure manually, use the Context7 server URL `https://mcp.context7.com/mcp` with your MCP client and pass your API key via the `CONTEXT7_API_KEY` header. See the link below for client-specific setup instructions.\n\n**[Manual Installation / Other Clients →](https://context7.com/docs/resources/all-clients)**\n\n## Important Tips\n\n### Use Library Id\n\nIf you already know exactly which library you want to use, add its Context7 ID to your prompt. That way, Context7 can skip the library-matching step an\n\ninstalled via `ctx7 setup`, a skill is configured automatically that triggers Context7 for library-related questions. To set up a rule manually instead, add one to your coding agent:\n\n- **Cursor**: `Cursor Settings > Rules`\n- **Claude Code**: `CLAUDE.md`\n- Or the equivalent in your coding agent\n\n**Example rule:**",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "## Available Tools\n\n### CLI Commands\n\n- `ctx7 library <name> <query>`: Searches the Context7 index by library name and returns matching libraries with their IDs.\n- `ctx7 docs <libraryId> <query>`: Retrieves documentation for a library using a Context7-compatible library ID (e.g., `/mongodb/docs`, `/vercel/next.js`).\n\n### MCP Tools\n\n- `resolve-library-id`: Resolves a general library name into a Context7-compatible library ID.\n  - `query` (required): The user's question or task (used to rank results by relevance)\n  - `libraryName` (required): The name of the library to search for\n- `query-docs`: Retrieves documentation for a library using a Context7-compatible library ID.\n  - `libraryId` (required): Exact Context7-compatible library ID (e.g., `/mongodb/docs`, `/vercel/next.js`)\n  - `query` (required): The question or task to get relevant documentatio...\n\n...LAUDE.md`\n- Or the equivalent in your coding agent\n\n**Example rule:**",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "## Available Tools\n\n### CLI Commands\n\n- `ctx7 library <name> <query>`: Searches the Context7 index by library name and returns matching libraries with their IDs.\n- `ctx7 docs <libraryId> <query>`: Retrieves documentation for a library using a C\n\nMCP Tools\n\n- `resolve-library-id`: Resolves a general library name into a Context7-compatible library ID.\n  - `query` (required): The user's question or task (used to rank results by relevance)\n  - `libraryName` (required): The name of the library to search for\n- `query-docs`: Retrieves documentation for a library using a Context7-compatible library ID.\n  - `libraryId` (required): Exact Context7-compatible library ID (e.g., `/mongodb/docs`, `/vercel/next.js`)\n  - `query` (required): The question or task to get relevant documentation for\n\n## More Documentation\n\n- [CLI Reference](https://context7.com/docs/clients/cli) - Full CLI documentation\n- [MCP Clients](https://context7.com/docs/resources/all-clients) - Manual MCP installation for 30+ clients\n- [Adding Libraries](https://context7.com/docs/adding-libraries) - Submit your library to Context7\n- [Troubleshooting](https://context7.com/docs/resources/troubleshooting) - Common issues and solutions\n- [API Reference](https://context7.com/docs/api-guide) - REST API documentation\n- [Developer Guide](https://context7.com/docs/resources/developer) - Run Context7 MCP locally\n\n## Disclaimer\n\n1- Context7 projects are community-contributed and while we strive to maintain high quality, we cannot guarantee the accuracy, completeness, or security of all library documentation. Projects listed in Context7 are developed and maintained by their respective owners, not by Context7. If you encounter any suspicious, inappropriate, or potentially harmful content, please use the \"Report\" button on the project page to notify us immediately. We take all reports seriously and will review flagged content promptly to maintain the integrity and safety of our platform. By using Context7, you acknowledge that you do so at your own discretion and risk.\n\n2- T\n\nMCP server’s source code...\n\n...ntributed and while we strive to maintain high quality, we cannot guarantee the accuracy, completeness, or security of all library documentation. Projects listed in Context7 are developed and maintained by their respective owners, not by Context7. If you encounter any suspicious, inappropriate, or potentially harmful content, please use the \"Report\" button on the project page to notify us immediately. We take all reports seriously and will review flagged content promptly to maintain the integrity and safety of our platform. By using Context7, you acknowledge that you do so at your own discretion and risk.\n\n2- This repository hosts the MCP server’s source code. The supporting components — API backend, parsing engine, and crawling engine — are private and not part of this repository.\n\n## 🤝 Connect with Us\n\nStay updated and join our community:\n\n- 📢 Follow us on [X](https://x.com/context7ai) for the latest news and updates\n- 🌐 Visit our [Website](https://context7.com)\n- 💬 Join our [Discord Community](https://upstash.com/discord)\n\n## 📺 Context7 In Media\n\n- [Better Stack: \"Free Tool Makes Cursor 10x Smarter\"](https://youtu.be/52FC3qObp9E)\n- [Cole Medin: \"This is Hands Down the BEST MCP Server for AI Coding Assistants\"](https://www.youtube.com/watch?v=G7gK8H6u7Rs)\n- [Income Stream Surfers: \"Context7 + SequentialThinking MCPs: Is This AGI?\"](https://www.youtube.com/watch?v=-ggvzyLpK6o)\n- [Julian Goldie SEO: \"Context7: New MCP AI Agent Update\"](https://www.youtube.com/watch?v=CTZm6fBYisc)\n- [JeredBlu: \"Context 7 MCP: Get Documentation Instantly + VS Code Setup\"](https://www.youtube.com/watch?v=-ls0D-rtET4)\n- [Income Stream Surfers: \"Context7: The New MCP Server That Will CHANGE AI Coding\"](https://www.youtube.com/watch?v=PS-2Azb-C3M)\n- [AICodeKi\n\nMCP Server Makes CLINE 100X MORE EFFECTIVE!\"](https://www.youtube.com/watch?v=qZfENAPMnyo)\n- [Sean Kochel: \"5 MCP Servers For Vibe Coding Glory (Just Plug-In & Go)\"](https://www.youtube.com/watch?v=LqTQi8qexJM)\n\n## ⭐ Star History\n\n[![Star History Chart](https://api.star-history.com/svg?repos=upstash/context7&type=Date)](https://www.star-history.com/#upstash/context7&Date)\n\n## 📄 License\n\nMIT\n\n---\nname: context7-mcp\ndescription: This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code generation involving libraries, or mentions of specific frameworks like React, Vue, Next.js, Prisma, Supabase, etc.\n---\n\nWhen the user asks about libraries, frameworks, or needs code examples, use Context7 to fetch current documentation instead of relying on training data.\n\n## When to Use This Skill\n\nActivate this skill when the user:\n\n- Asks setup or configuration questions (\"How do I configure Next.js middleware?\")\n- Requests code involving libraries (\"Write a Prisma query for...\")\n- Needs API references (\"What are the Supabase auth methods?\")\n- Mentions specific frameworks (React, Vue, Svelte, Express, Tailwind, etc.)\n\n## How to Fetch Documentation\n\n### Step 1: Resolve the Library ID\n\nCall `resolve-library-id` with:\n\n- `libraryName`: The library name extracted from the user's question\n- `query`: The user's full question (improves relevance ranking)\n\n### Step 2: Select the Best Match\n\nFrom the resolution results, choose based on:\n\n- Exact or closest name match to what the user asked for\n- Higher benchmark scores indicate better documentation quality\n- If the user mentioned a version (e.g., \"React 19\"), prefer version-specific IDs\n\n### Step 3: Fetch the Documentation\n\nCall `query-docs` with:\n\n- `libra\n\nmcp\ndescription: This skill should be used when the user asks about libraries, frameworks, API references, or needs code examples. Activates for setup questions, code generation involving libraries, or mentions of specific frameworks like React, Vue, Next.js, Prisma, Supabase, etc.\n---\n\nWhen the user asks about libraries, frameworks, or needs code examples, use Context7 to fetch current documentation instead of relying on training data.\n\n## When to Use This Skill\n\nActivate this skill when the user:\n\n- Asks setup or configuration questions (\"How do I configure Next.js middleware?\")\n- Requests code involving libraries (\"Write a Prisma query for...\")\n- Needs API references (\"What are the Supabase auth methods?\")\n- Mentions specific frameworks (React, Vue, Svelte, Express, Tailwind, etc.)\n\n## How to Fetch Documentation\n\n### Step 1: Resolve the Library ID\n\nCall `resolve-library-id` with:\n\n- `libraryName`: The library name extracted from the user's question\n- `query`: The user's full question (improves relevance ranking)\n\n### Step 2: Select the Best Match\n\nFrom the resolution results, choose based on:\n\n- Exact or closest name match to what the user asked for\n- Higher benchmark scores indicate better documentation quality\n- If the user mentioned a version (e.g., \"React 19\"), prefer version-specific IDs\n\n### Step 3: Fetch the Documentation\n\nCall `query-docs` with:\n\n- `libraryId`: The selected Context7 library ID (e.g., `/vercel/next.js`)\n- `query`: The user's specific question\n\n### Step 4: Use the Documentation\n\nIncorporate the fetched documentation into your response:\n\n- Answer the user's question using current, accurate information\n- Include relevant code examples from the docs\n- Cite the library version when relevant\n\n## Guidelines\n\n- **Be specific**: Pass the user's full quest\n\nskills, and configure Context7 MCP. Activate when the user mentions \"ctx7\" or \"context7\", needs current docs for any library, wants to install/search/generate skills, or needs to set up Context7 for their AI coding agent.\n---\n\n# ctx7 CLI\n\nThe Context7 CLI does three things: fetches up-to-date library documentation, manages AI coding skills, and sets up Context7 MCP for your editor.\n\nMake sure the CLI is up to date before running commands:",
+      "codeLanguage": "text"
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors"
+}

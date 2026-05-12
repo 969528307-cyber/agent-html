@@ -1,0 +1,121 @@
+{
+  "id": "candidate-scrapling-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Scrapling",
+  "sourceUrl": "https://github.com/D4Vinci/Scrapling",
+  "sourceName": "GitHub",
+  "author": "D4Vinci",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+  "proposedCategory": [
+    "mcp",
+    "browser",
+    "docs",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "D4Vinci",
+    "repo": "Scrapling",
+    "fullName": "D4Vinci/Scrapling",
+    "stars": 48910,
+    "license": "BSD-3-Clause",
+    "topics": [
+      "ai",
+      "ai-scraping",
+      "automation",
+      "crawler",
+      "crawling",
+      "crawling-python",
+      "data",
+      "data-extraction",
+      "mcp",
+      "mcp-server",
+      "playwright",
+      "python",
+      "scraping",
+      "selectors",
+      "stealth",
+      "web-scraper",
+      "web-scraping",
+      "web-scraping-python",
+      "webscraping",
+      "xpath"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T12:41:31Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "agent-skill/Scrapling-Skill/SKILL.md",
+    "docs/ai/mcp-server.md",
+    "docs/api-reference/mcp-server.md",
+    "docs/spiders/getting-started.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<! mcp name: io.github.D4Vinci/Scrapling <h1 align=\"center\" <a href=\"https://scrapling.readthedocs.io\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://raw.githubusercontent.com/D4Vinci/Scrapling/main/docs/assets/cover dark.svg?sanitize=true\" <img alt=\"Scrapling Poster\" src=\"https://raw.githubusercontent.com/D4Vinci/Scrapling/main/docs/assets/cover light.svg?sanitize=true\" </picture </a <br <smal",
+  "skillExtracts": [
+    {
+      "path": "agent-skill/Scrapling-Skill/SKILL.md",
+      "extract": "name: scrapling official description: Scrape web pages using Scrapling with anti bot bypass (like Cloudflare Turnstile), stealth headless browsing, spiders framework, adaptive scraping, and JavaScript rendering. Use when asked to scrape, crawl, or extract data from websites; web fetch fails; the site has anti bot protections; write Python code to scrape/crawl; or write spiders. version: \"0.4.8\" license: Complete term"
+    }
+  ],
+  "extractedInstall": [
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "Usage: scrapling extract [OPTIONS] COMMAND [ARGS]...\n\nCommands:\n  get             Perform a GET request and save the content to a file.\n  post            Perform a POST request and save the content to a file.\n  put        \n\nUsage pattern\n- Choose your output format by changing the file extension. Here are some examples for the `scrapling extract get` command:\n  - Convert the HTML content to Markdown, then save it to the file (great for documentation): `scrapling extract get \"https://blog.example.com\" article.md`\n  - Save the HTML content as it is to the file: `scrapling extract get \"https://example.com\" page.html`\n  - Save a clean version of the text content of the webpage to the file: `scrapling extract get \"https://example.com\" content.txt`\n- Output to a temp file, read it back, then clean up.\n- All commands can use CSS selectors to extract specific parts of the page through `--css-selector` or `-s`.\n\nWhich command to use generally:\n- Use **`get`** with simple websites, blogs, or news articles.\n- Use **`fetch`** with modern web apps, or sites with dynamic content.\n- Use **`stealthy-fetch`** with protected sites, Cloudflare, or anti-bot systems.\n\n> When unsure, start with `get`. If it fails or returns empty content, escalate to `fetch`, then `stealthy-fetch`. The speed of `fetch` and `stealthy-fetch` is nearly the same, so you are not sacrificing anything.\n\n#### Key options (requests)\n\nThose options are shared between the 4 HTTP request commands:\n\n| Option                                     | Input type | Description                                                                                                                                    |\n|:-------------------------------------------|:----------:|:-----------------------------------------------------------------------------------------------------------------------------------------------|\n| -H, --headers                              |    TEXT    | HTTP headers in format \"Key: Value\" (can be used multiple times)                      \n\ninstalled on your device, enable this, and the Fetcher will launch an instance of your browser and use it. (default: False) |\n| --timeout                                |  INTEGER   | Timeout in milliseconds (default: 30000)                                                                                                                 |\n| --wait                                   |  INTEGER   | Additional wait time in milliseconds after page load (default: 0)                                                                                        |\n| -s, --css-selector                       |    TEXT    | CSS selector to extract specific content from the page. It returns all matches.                                                                          |\n| --wait-selector                          |    TEXT    | CSS selector to wait for before proceeding                                                                                                               |\n| --proxy                                  |    TEXT    | Proxy URL in format \"http://username:password@host:port\"                                                                                                 |\n| -H, --extra-headers                      |    TEXT    | Extra headers in format \"Key: Value\" (can be used multiple times)                                                                                        |\n| --dns-over-https / --no-dns-over-https   |    None    | Route DNS through Cloudflare's DoH to prevent DNS leaks when using proxies (default: False)                                                              |\n| --block-ads / --no-block-ads             |    None    | Block requests to ~3,500 known ad and tracker domains (default: False)                                                              \n\nMCP. Here's a quick overview of how to code with scrapling.\n\n### Basic Usage\nHTTP requests with session support",
+      "codeLanguage": "bash"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "pip install \"scrapling[ai]\""
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "\"ScraplingServer\": {\n  \"command\": \"scrapling\",\n  \"args\": [\n    \"mcp\"\n  ]\n}",
+      "codeLanguage": "json"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "{\n  \"mcpServers\": {\n    \"ScraplingServer\": {\n      \"command\": \"scrapling\",\n      \"args\": [\n        \"mcp\"\n      ]\n    }\n  }\n}",
+      "codeLanguage": "json"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "pip install \"scrapling[ai]\""
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "\"ScraplingServer\": {\n  \"command\": \"scrapling\",\n  \"args\": [\n    \"mcp\"\n  ]\n}",
+      "codeLanguage": "json"
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!"
+}

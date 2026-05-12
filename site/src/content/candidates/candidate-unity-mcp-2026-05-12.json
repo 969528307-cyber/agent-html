@@ -1,0 +1,135 @@
+{
+  "id": "candidate-unity-mcp-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Unity Mcp",
+  "sourceUrl": "https://github.com/CoplayDev/unity-mcp",
+  "sourceName": "GitHub",
+  "author": "CoplayDev",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "Unity MCP acts as a bridge, allowing AI assistants (like Claude, Cursor) to interact directly with your Unity Editor via a local MCP (Model Context Protocol) Client. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
+  "proposedCategory": [
+    "mcp",
+    "browser",
+    "docs",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "CoplayDev",
+    "repo": "unity-mcp",
+    "fullName": "CoplayDev/unity-mcp",
+    "stars": 9488,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-integration",
+      "anthropic",
+      "claude",
+      "copilot",
+      "cursor",
+      "game-development",
+      "gamedev",
+      "gemini",
+      "llm",
+      "mcp",
+      "model-context-protocol",
+      "openai",
+      "unity",
+      "unity3d",
+      "videogames"
+    ],
+    "defaultBranch": "beta",
+    "lastPushedAt": "2026-05-05T00:12:37Z"
+  },
+  "detectedFiles": [
+    ".claude/skills/mcp-source/SKILL.md",
+    ".claude/skills/unity-mcp-skill/SKILL.md",
+    "CLAUDE.md",
+    "README.md",
+    "docs/guides/CLI_USAGE.md",
+    "docs/guides/CURSOR_HELP.md",
+    "docs/guides/MCP_CLIENT_CONFIGURATORS.md",
+    "docs/images/unity-mcp-ui-v8.6.png",
+    "docs/images/v5_03_open_mcp_window.png",
+    "docs/migrations/v8_NEW_NETWORKING_SETUP.md",
+    "unity-mcp-skill/SKILL.md"
+  ],
+  "readmeExtract": "<img width=\"676\" height=\"380\" alt=\"MCP for Unity\" src=\"docs/images/logo.png\" / | [English](README.md) | [简体中文](docs/i18n/README zh.md) | | | | Proudly sponsored and maintained by [Coplay](https://www.coplay.dev/?ref=unity mcp) the best AI assistant for Unity. And don't miss [Godot A](https://github.com/hi godot/godot ai)I 🤖, the new free MCP/AI project from the makers of MCP for Unity! [![Discord](https://img.shield",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/mcp-source/SKILL.md",
+      "extract": "name: mcp source description: Switch MCP for Unity package source in connected Unity projects. Use /mcp source [main|beta|branch|local] to swap between upstream releases, your remote branch, or local dev checkout. Switch MCP for Unity Package Source You are switching the com.coplaydev.unity mcp package source in one or more Unity projects. allowed tools Bash, Read, Edit, ReadMcpResourceTool, ListMcpResourcesTool Inst"
+    },
+    {
+      "path": ".claude/skills/unity-mcp-skill/SKILL.md",
+      "extract": "name: unity mcp orchestrator description: Orchestrate Unity Editor via MCP (Model Context Protocol) tools and resources. Use when working with Unity projects through MCP for Unity creating/modifying GameObjects, editing scripts, managing scenes, running tests, or any Unity Editor automation. Provides best practices, tool schemas, and workflow patterns for effective Unity MCP integration. Unity MCP Operator Guide This"
+    },
+    {
+      "path": "unity-mcp-skill/SKILL.md",
+      "extract": "name: unity mcp orchestrator description: Orchestrate Unity Editor via MCP (Model Context Protocol) tools and resources. Use when working with Unity projects through MCP for Unity creating/modifying GameObjects, editing scripts, managing scenes, running tests, or any Unity Editor automation. Provides best practices, tool schemas, and workflow patterns for effective Unity MCP integration. Unity MCP Operator Guide This"
+    }
+  ],
+  "extractedInstall": [
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"url\": \"http://localhost:8080/mcp\"\n    }\n  }\n}",
+      "codeLanguage": "json"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "{\n  \"servers\":\n\nMCP\": {\n      \"type\": \"http\",\n      \"url\": \"http://localhost:8080/mcp\"\n    }\n  }\n}",
+      "codeLanguage": "json"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"command\": \"uvx\",\n      \"args\": [\"--from\", \"mcpforunityserver\", \"mcp-for-unity\", \"--transport\", \"stdio\"]\n    }\n  }\n}",
+      "codeLanguage": "json"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"command\": \"C:/Users/YOUR_USERNAME/AppData/Local/Microsoft/WinGet/Links/uvx.exe\",\n      \"args\": [\"--from\", \"mcpforunityserver\", \"mcp-for-unity\", \"--transport\", \"stdio\"]\n    }\n  }\n}",
+      "codeLanguage": "json"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "{\n  \"servers\": {\n    \"unityMCP\": {\n      \"type\": \"http\",\n      \"url\": \"http://localhost:8080/mcp\"\n    }\n  }\n}",
+      "codeLanguage": "json"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"command\": \"uvx\",\n      \"args\": [\"--from\", \"mcpforunityserver\", \"mcp-for-unity\", \"--transport\", \"stdio\"]\n    }\n  }\n}",
+      "codeLanguage": "json"
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files",
+    "README mentions Model Context Protocol"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Unity MCP acts as a bridge, allowing AI assistants (like Claude, Cursor) to interact directly with your Unity Editor via a local MCP (Model Context Protocol) Client. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity."
+}

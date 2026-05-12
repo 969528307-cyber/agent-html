@@ -1,0 +1,58 @@
+{
+  "id": "candidate-agents-md-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Agents.md",
+  "sourceUrl": "https://github.com/agentsmd/agents.md",
+  "sourceName": "GitHub",
+  "author": "agentsmd",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "AGENTS.md — a simple, open format for guiding coding agents",
+  "proposedCategory": [
+    "cli",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex"
+  ],
+  "proposedToolType": "cli",
+  "githubMetadata": {
+    "owner": "agentsmd",
+    "repo": "agents.md",
+    "fullName": "agentsmd/agents.md",
+    "stars": 21223,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-12T14:26:14Z"
+  },
+  "detectedFiles": [
+    "AGENTS.md",
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "AGENTS.md ![AGENTS.md logo](./public/og.png) [AGENTS.md](https://agents.md) is a simple, open format for guiding coding agents. Think of AGENTS.md as a README for agents: a dedicated, predictable place to provide context and instructions to help AI coding agents work on your project. Below is a minimal example of an AGENTS.md file: Website This repository also includes a basic Next.js website hosted at https://agents",
+  "skillExtracts": [],
+  "extractedInstall": [
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "## Website\n\nThis repository also includes a basic Next.js website hosted at https://agents.md/\nthat explains the project’s goals in a simple way, and featuring some examples.\n\n### Running the app locally\n1. Install dependencies:",
+      "codeLanguage": "text"
+    }
+  ],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "AGENTS.md — a simple, open format for guiding coding agents"
+}

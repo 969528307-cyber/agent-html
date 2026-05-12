@@ -1,0 +1,65 @@
+{
+  "id": "candidate-trendradar-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "TrendRadar",
+  "sourceUrl": "https://github.com/sansan0/TrendRadar",
+  "sourceName": "GitHub",
+  "author": "sansan0",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
+  "proposedCategory": [
+    "mcp",
+    "developer-tools"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "sansan0",
+    "repo": "TrendRadar",
+    "fullName": "sansan0/TrendRadar",
+    "stars": 57341,
+    "license": "GPL-3.0",
+    "topics": [
+      "ai",
+      "bark",
+      "data-analysis",
+      "docker",
+      "hot-news",
+      "llm",
+      "mail",
+      "mcp",
+      "mcp-server",
+      "news",
+      "ntfy",
+      "python",
+      "rss",
+      "trending-topics",
+      "wechat",
+      "wework"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-04-30T02:09:11Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<div align=\"center\" id=\"trendradar\" <a href=\"https://github.com/sansan0/TrendRadar\" title=\"TrendRadar\" <img src=\"/ image/banner.webp\" alt=\"TrendRadar Banner\" width=\"80%\" </a 最快<strong 30秒</strong 部署的热点助手 —— 告别无效刷屏，只看真正关心的新闻资讯 <a href=\"https://trendshift.io/repositories/14726\" target=\" blank\" <img src=\"https://trendshift.io/api/badge/repositories/14726\" alt=\"sansan0%2FTrendRadar | Trendshift\" style=\"width: 250px; heig",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 2,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。"
+}

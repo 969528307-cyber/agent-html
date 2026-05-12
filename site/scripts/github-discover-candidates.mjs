@@ -1,5 +1,6 @@
 import { pathToFileURL } from "node:url";
 
+import "./load-local-env.mjs";
 import { fetchRepoCandidate, MIN_GITHUB_STARS, writeJson } from "./github-ingest-candidate.mjs";
 
 const githubApiHeaders = {
@@ -37,6 +38,8 @@ export const dedupeSearchItems = (items) => {
     return true;
   });
 };
+
+export const getPerQueryLimit = ({ limit, queryCount }) => Math.max(2, Math.ceil(limit / Math.max(1, queryCount)));
 
 export const parseDiscoverArgs = (argv) => {
   const parsed = {
@@ -81,11 +84,13 @@ export const searchRepositories = async (query, { perPage = 20 } = {}) => {
 
 export const discoverRepositories = async ({ queries, limit }) => {
   const found = [];
+  const perQueryLimit = getPerQueryLimit({ limit, queryCount: queries.length });
+
   for (const query of queries) {
-    const items = await searchRepositories(query, { perPage: Math.min(50, limit) });
+    const items = await searchRepositories(query, { perPage: Math.min(50, perQueryLimit) });
     found.push(...items);
-    if (dedupeSearchItems(found).length >= limit) break;
   }
+
   return dedupeSearchItems(found).slice(0, limit);
 };
 

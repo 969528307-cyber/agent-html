@@ -1,0 +1,135 @@
+{
+  "id": "candidate-lobehub-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Lobehub",
+  "sourceUrl": "https://github.com/lobehub/lobehub",
+  "sourceName": "GitHub",
+  "author": "lobehub",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction.",
+  "proposedCategory": [
+    "mcp",
+    "code-review",
+    "browser",
+    "docs",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "lobehub",
+    "repo": "lobehub",
+    "fullName": "lobehub/lobehub",
+    "stars": 76875,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "agent-collaboration",
+      "agent-harness",
+      "ai",
+      "chatgpt",
+      "claude",
+      "deepseek",
+      "gemini",
+      "gpt",
+      "knowledge-base",
+      "mcp",
+      "openai"
+    ],
+    "defaultBranch": "canary",
+    "lastPushedAt": "2026-05-12T02:54:59Z"
+  },
+  "detectedFiles": [
+    ".agents/skills/add-provider-doc/SKILL.md",
+    ".agents/skills/add-setting-env/SKILL.md",
+    ".agents/skills/agent-runtime-hooks/SKILL.md",
+    ".agents/skills/agent-signal/SKILL.md",
+    ".agents/skills/agent-tracing/SKILL.md",
+    ".agents/skills/builtin-tool/SKILL.md",
+    ".agents/skills/chat-sdk/SKILL.md",
+    ".agents/skills/cli-backend-testing/SKILL.md",
+    ".agents/skills/cli/SKILL.md",
+    ".agents/skills/data-fetching/SKILL.md",
+    ".agents/skills/db-migrations/SKILL.md",
+    ".agents/skills/debug-package/SKILL.md",
+    ".agents/skills/desktop/SKILL.md",
+    ".agents/skills/docs-changelog/SKILL.md",
+    ".agents/skills/drizzle/SKILL.md",
+    ".agents/skills/heterogeneous-agent/SKILL.md",
+    ".agents/skills/hotkey/SKILL.md",
+    ".agents/skills/i18n/SKILL.md",
+    ".agents/skills/linear/SKILL.md",
+    ".agents/skills/local-testing/SKILL.md",
+    ".agents/skills/microcopy/SKILL.md",
+    ".agents/skills/modal/SKILL.md",
+    ".agents/skills/pr/SKILL.md",
+    ".agents/skills/project-overview/SKILL.md",
+    ".agents/skills/react/SKILL.md",
+    ".agents/skills/response-compliance/SKILL.md",
+    ".agents/skills/review-checklist/SKILL.md",
+    ".agents/skills/source-command-dedupe/SKILL.md",
+    ".agents/skills/spa-routes/SKILL.md",
+    ".agents/skills/store-data-structures/SKILL.md",
+    ".agents/skills/testing/SKILL.md",
+    ".agents/skills/trpc-router/SKILL.md",
+    ".agents/skills/typescript/SKILL.md",
+    ".agents/skills/upstash-workflow/SKILL.md",
+    ".agents/skills/version-release/SKILL.md",
+    ".agents/skills/zustand/SKILL.md",
+    ".cursor/docs/createStaticStyles_migration_guide.md",
+    ".cursor/skills",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <a name=\"readme top\" </a [![][image banner]][vercel link] LobeHub LobeHub is the ultimate space for work and life: <br/ to find, build, and collaborate with agent teammates that grow with you.<br/ We’re building the world’s largest human–agent co evolving network. English · [简体中文](./README.zh CN.md) · [Official Site][official site] · [Changelog][changelog] · [Documents][docs] · [Blog][blog] · [Fee",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/add-provider-doc/SKILL.md",
+      "extract": "name: add provider doc description: Guide for adding new AI provider documentation. Use when adding documentation for a new AI provider (like OpenAI, Anthropic, etc.), including usage docs, environment variables, Docker config, and image resources. Triggers on provider documentation tasks. disable model invocation: true argument hint: '[provider name]' Adding New AI Provider Documentation Complete workflow for adding"
+    },
+    {
+      "path": ".agents/skills/add-setting-env/SKILL.md",
+      "extract": "name: add setting env description: Guide for adding environment variables to configure user settings. Use when implementing server side environment variables that control default values for user settings. Triggers on env var configuration or setting default value tasks. disable model invocation: true argument hint: '[setting name]' Adding Environment Variable for User Settings Add server side environment variables to"
+    },
+    {
+      "path": ".agents/skills/agent-runtime-hooks/SKILL.md",
+      "extract": "name: agent runtime hooks description: \"Agent runtime lifecycle hooks for observing and intercepting agent execution. Use when adding hooks to agent operations, mocking tool calls, logging step events, handling human intervention, sub agent calls, context compression, or building eval/tracing integrations. Triggers on 'hooks', 'beforeToolCall', 'afterToolCall', 'beforeStep', 'afterStep', 'onComplete', 'onError', 'too"
+    },
+    {
+      "path": ".agents/skills/agent-signal/SKILL.md",
+      "extract": "name: agent signal description: Build or extend LobeHub Agent Signal pipelines for background or quiet agent work driven by event sources, semantic signals, and action handlers. Use when adding a new Agent Signal source, signal or action type, policy, middleware handler, workflow handoff, dedupe or scope behavior, or observability around src/server/services/agentSignal/ , packages/agent signal , or packages/observabi"
+    },
+    {
+      "path": ".agents/skills/agent-tracing/SKILL.md",
+      "extract": "name: agent tracing description: \"Agent tracing CLI for inspecting agent execution snapshots. Use when user mentions 'agent tracing', 'trace', 'snapshot', wants to debug agent execution, inspect LLM calls, view context engine data, or analyze agent steps. Triggers on agent debugging, trace inspection, or execution analysis tasks.\" user invocable: false Agent Tracing CLI Guide @lobechat/agent tracing is a zero config "
+    },
+    {
+      "path": ".agents/skills/builtin-tool/SKILL.md",
+      "extract": "name: builtin tool description: Build a new builtin tool package under packages/builtin tool <name / . Use when adding a new agent callable toolset, designing its API surface (manifest / ApiName / Params / State), implementing the Executor + ExecutionRuntime, building the Inspector / Render / Placeholder / Streaming / Intervention / Portal UI, or wiring a tool into the central registries ( packages/builtin tools/src/"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Repository includes skill-related files",
+    "README mentions Model Context Protocol"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 2,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction."
+}

@@ -1,0 +1,138 @@
+{
+  "id": "candidate-cc-switch-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Cc Switch",
+  "sourceUrl": "https://github.com/farion1231/cc-switch",
+  "sourceName": "GitHub",
+  "author": "farion1231",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
+  "proposedCategory": [
+    "mcp",
+    "docs",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "farion1231",
+    "repo": "cc-switch",
+    "fullName": "farion1231/cc-switch",
+    "stars": 67480,
+    "license": "MIT",
+    "topics": [
+      "ai-tools",
+      "claude-code",
+      "codex",
+      "desktop-app",
+      "hermes",
+      "hermes-agent",
+      "mcp",
+      "minimax",
+      "omo",
+      "open-source",
+      "openclaw",
+      "openclaw-ui",
+      "opencode",
+      "provider-management",
+      "rust",
+      "skills",
+      "skills-management",
+      "tauri",
+      "typescript",
+      "wsl-support"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T07:49:39Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/user-manual/en/1-getting-started/1.1-introduction.md",
+    "docs/user-manual/en/1-getting-started/1.2-installation.md",
+    "docs/user-manual/en/1-getting-started/1.3-interface.md",
+    "docs/user-manual/en/1-getting-started/1.4-quickstart.md",
+    "docs/user-manual/en/1-getting-started/1.5-settings.md",
+    "docs/user-manual/en/2-providers/2.5-usage-query.md",
+    "docs/user-manual/en/3-extensions/3.1-mcp.md",
+    "docs/user-manual/en/3-extensions/3.3-skills.md",
+    "docs/user-manual/en/4-proxy/4.4-usage.md",
+    "docs/user-manual/en/5-faq/5.1-config-files.md",
+    "docs/user-manual/ja/1-getting-started/1.1-introduction.md",
+    "docs/user-manual/ja/1-getting-started/1.2-installation.md",
+    "docs/user-manual/ja/1-getting-started/1.3-interface.md",
+    "docs/user-manual/ja/1-getting-started/1.4-quickstart.md",
+    "docs/user-manual/ja/1-getting-started/1.5-settings.md",
+    "docs/user-manual/ja/2-providers/2.5-usage-query.md",
+    "docs/user-manual/ja/3-extensions/3.1-mcp.md",
+    "docs/user-manual/ja/3-extensions/3.3-skills.md",
+    "docs/user-manual/ja/4-proxy/4.4-usage.md",
+    "docs/user-manual/ja/5-faq/5.1-config-files.md",
+    "docs/user-manual/zh/1-getting-started/1.1-introduction.md",
+    "docs/user-manual/zh/1-getting-started/1.2-installation.md",
+    "docs/user-manual/zh/1-getting-started/1.3-interface.md",
+    "docs/user-manual/zh/1-getting-started/1.4-quickstart.md",
+    "docs/user-manual/zh/1-getting-started/1.5-settings.md",
+    "docs/user-manual/zh/2-providers/2.5-usage-query.md",
+    "docs/user-manual/zh/3-extensions/3.1-mcp.md",
+    "docs/user-manual/zh/3-extensions/3.3-skills.md",
+    "docs/user-manual/zh/4-proxy/4.4-usage.md",
+    "docs/user-manual/zh/5-faq/5.1-config-files.md",
+    "package.json"
+  ],
+  "readmeExtract": "<div align=\"center\" CC Switch The All in One Manager for Claude Code, Codex, Gemini CLI, OpenCode, OpenClaw & Hermes Agent [![Version](https://img.shields.io/github/v/release/farion1231/cc switch?color=blue&label=version)](https://github.com/farion1231/cc switch/releases) [![Platform](https://img.shields.io/badge/platform Windows%20%7C%20macOS%20%7C%20Linux lightgrey.svg)](https://github.com/farion1231/cc switch/rele",
+  "skillExtracts": [],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "brew install node"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "brew install claude-code"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npm install -g @anthropic-ai/claude-code"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "brew install codex"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "brew upgrade --cask cc-switch"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "claude"
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io"
+}

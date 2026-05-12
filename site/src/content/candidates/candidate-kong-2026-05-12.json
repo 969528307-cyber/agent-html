@@ -1,0 +1,68 @@
+{
+  "id": "candidate-kong-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Kong",
+  "sourceUrl": "https://github.com/Kong/kong",
+  "sourceName": "GitHub",
+  "author": "Kong",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "🦍 The API and AI Gateway",
+  "proposedCategory": [
+    "mcp",
+    "docs"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "Kong",
+    "repo": "kong",
+    "fullName": "Kong/kong",
+    "stars": 43362,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai",
+      "ai-gateway",
+      "api-gateway",
+      "api-management",
+      "apis",
+      "artificial-intelligence",
+      "cloud-native",
+      "devops",
+      "kubernetes",
+      "kubernetes-ingress",
+      "kubernetes-ingress-controller",
+      "llm-gateway",
+      "llm-ops",
+      "mcp",
+      "mcp-gateway",
+      "microservice",
+      "microservices",
+      "openai-proxy",
+      "reverse-proxy",
+      "serverless"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-03-27T17:42:51Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "[![][kong logo]][kong url] ![Stars](https://img.shields.io/github/stars/Kong/kong?style=flat square) ![GitHub commit activity](https://img.shields.io/docker/pulls/ /kong?style=flat square) [![Build Status][badge action image]][badge action url] ![Version](https://img.shields.io/github/v/release/Kong/kong?color=green&label=Version&style=flat square) ![License](https://img.shields.io/badge/License Apache%202.0 blue?sty",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 2,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "🦍 The API and AI Gateway"
+}

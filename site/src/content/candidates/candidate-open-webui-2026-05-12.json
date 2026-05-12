@@ -1,0 +1,103 @@
+{
+  "id": "candidate-open-webui-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Open Webui",
+  "sourceUrl": "https://github.com/open-webui/open-webui",
+  "sourceName": "GitHub",
+  "author": "open-webui",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+  "proposedCategory": [
+    "mcp",
+    "browser",
+    "docs",
+    "search"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "open-webui",
+    "repo": "open-webui",
+    "fullName": "open-webui/open-webui",
+    "stars": 136662,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "llm",
+      "llm-ui",
+      "llm-webui",
+      "llms",
+      "mcp",
+      "ollama",
+      "ollama-webui",
+      "open-webui",
+      "openai",
+      "openapi",
+      "rag",
+      "self-hosted",
+      "ui",
+      "webui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T23:47:27Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "Open WebUI 👋 ![GitHub stars](https://img.shields.io/github/stars/open webui/open webui?style=social) ![GitHub forks](https://img.shields.io/github/forks/open webui/open webui?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/open webui/open webui?style=social) ![GitHub repo size](https://img.shields.io/github/repo size/open webui/open webui) ![GitHub language count](https://img.shields.io/githu",
+  "skillExtracts": [],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "pip install open-webui"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart a\n\nSetup**: Install seamlessly using Docker or Kubernetes (kubectl, kustomize or helm) for a hassle-free experience with support for both `:ollama` and `:cuda` tagged images.\n\n- 🤝 **Ollama/OpenAI API Integration**: Effortlessly integrate OpenAI-compatible APIs for versatile conversations alongside Ollama models. Customize the OpenAI API URL to link with **LMStudio, GroqCloud, Mistral, OpenRouter, and more**.\n\n- 🛡️ **Granular Permissions and User Groups**: By allowing administrators to create detailed user roles and permissions, we ensure a secure user environment. This granularity not only enhances security but also allows for customized user experiences, fostering a sense of ownership and responsibility amongst users.\n\n- 📱 **Responsive Design**: Enjoy a seamless experience across Desktop PC, Laptop, and Mobile devices.\n\n- 📱 **Progressive Web App (PWA) for Mobile**: Enjoy a native app-like experience on your mobile device with our PWA, providing offline access on localhost and a seamless user interface.\n\n- ✒️🔢 **Full Markdown and LaTeX Support**: Elevate your LLM experience with comprehensive Markdown and LaTeX capabilities for enriched interaction.\n\n- 🎤📹 **Hands-Free Voice/Vid...\n\n...ranular Permissions and User Groups**: By allowing administrators to create detailed user roles and permissions, we ensure a secure user environment. This granularity not only enhances security but also allows for customized user experiences, fostering a sense of ownership and responsibility amongst users.\n\n- 📱 **Responsive Design**: Enjoy a seamless experience across Desktop PC, Laptop, and Mobile devices.\n\n- 📱 **Progressive Web App (PWA) for Mobile**: Enjoy a native app-like experience on your mobile device with our PWA, providing offline access on localhost and a seamless user interfac\n\nUsage Monitoring** with tools like Langfuse, **Live Translation with LibreTranslate** for multilingual support, **Toxic Message Filtering** and much more.\n\n- 🌟 **Continuous Updates**: We are committed to improving Open WebUI with regular updates, fixes, and new features.\n\nWant to learn more about Open WebUI's features? Check out our [Open WebUI documentation](https://docs.openwebui.com/features) for a comprehensive overview!\n\n---\n\nWe are incredibly grateful for the generous support of our sponsors. Their contributions help us to maintain and improve our project, ensuring we can continue to deliver quality work to our community. Thank you!\n\n## How to Install 🚀\n\n### Installation via Python pip 🐍\n\nOpen WebUI can be installed using pip, the Python package installer. Before proceeding, ensure you're using **Python 3.11** to avoid compatibility issues.\n\n1. **Install Open WebUI**:\n   Open your terminal and run the following command to install Open WebUI:",
+      "codeLanguage": "bash"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "This will start the Open WebUI server, which you can access...\n\n...🌟 **Continuous Updates**: We are committed to improving Open WebUI with regular updates, fixes, and new features.\n\nWant to learn more about Open WebUI's features? Check out our [Open WebUI documentation](https://docs.openwebui.com/features) for a comprehensive overview!\n\n---\n\nWe are incredibly grateful for the generous support of our sponsors. Their contributions help us to maintain and improve our project, ensuring we can continue to deliver quality work to our community. Thank you!\n\n## How to Install 🚀\n\n### Installation via Python pip 🐍\n\nOpen WebUI can be installed using pip, the Python\n\ninstaller. Before proceeding, ensure you're using **Python 3.11** to avoid compatibility issues.\n\n1. **Install Open WebUI**:\n   Open your terminal and run the following command to install Open WebUI:",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "This will start the Open WebUI server, which you can access at [http://localhost:8080](http://localhost:8080)\n\n### Quick Start with Docker 🐳\n\n> [!NOTE]  \n> Please note that for certain Docker environments, additional configurations might be needed. If you encounter any connection issues, our detailed guide on [Open WebUI Documentation](https://docs.openwebui.com/) is ready to assist you.\n\n> [!WARNING]\n> When using Docker to install Open WebUI, make sure to include the `-v open-webui:/app/backend/data` in your Docker command. This step is crucial as it ensures your database is properly mounted and prevents any loss of data.\n\n> [!TIP]  \n> If you wish to utilize Open WebUI with Ollama included or CUDA acceleration, we recommend utilizing our official images tagged with either `:cuda` or `:ollama`. To enable CUDA, you must install the [Nvidia CUDA container toolkit](https://docs.nvidia.com/dgx/nvidia-container-runtime-upgrade/) on your Linux/WSL system.\n\n### Installation with Default Configuration\n\n- **If Ollama is on your computer**, use this command:",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "- **If Ollama is on a Different Server**, use this command:\n\n  To connect to Ollama on another server, change the `OLLAMA_BASE_URL` to the server's URL:\n\n  ``...\n\n...UI wit\n\ninstall the [Nvidia CUDA container toolkit](https://docs.nvidia.com/dgx/nvidia-container-runtime-upgrade/) on your Linux/WSL system.\n\n### Installation with Default Configuration\n\n- **If Ollama is on your computer**, use this command:",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "- **If Ollama is on a Different Server**, use this command:\n\n  To connect to Ollama on another server, change the `OLLAMA_BASE_URL` to the server's URL:",
+      "codeLanguage": "text"
+    }
+  ],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
+}

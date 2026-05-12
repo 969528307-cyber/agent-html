@@ -1,0 +1,74 @@
+{
+  "id": "candidate-claude-code-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Claude Code",
+  "sourceUrl": "https://github.com/yasasbanukaofficial/claude-code",
+  "sourceName": "GitHub",
+  "author": "yasasbanukaofficial",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "🚀 Open source Claude Code CLI source code. Advanced AI Agent for developers. Includes TypeScript codebase for LLM tool-calling, agentic workflows, and terminal UI. Remember this is just the skeleton not the brain itself. Found by Chaofan Shou. ",
+  "proposedCategory": [
+    "mcp",
+    "developer-tools"
+  ],
+  "proposedAgents": [
+    "Claude Code"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "yasasbanukaofficial",
+    "repo": "claude-code",
+    "fullName": "yasasbanukaofficial/claude-code",
+    "stars": 3131,
+    "topics": [
+      "claude-ai",
+      "claude-code",
+      "leaked-claude-code",
+      "leaked-code"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-04T21:25:14Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "Claude Code's Entire Source Code Got Leaked via a Sourcemap in npm, Let's Talk About It PS: This breakdown is also available on [this blog](https://kuber.studio/blog/AI/Claude Code's Entire Source Code Got Leaked via a Sourcemap in npm, Let's Talk About it) with a better reading experience and UX :) Note: There's a non zero chance this repo might be taken down. If you want to play around with it later or archive it y",
+  "skillExtracts": [],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "git clone https://github.com/your-username/claude-leaked.git"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npm install"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "npm run build"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "claude mcp add code-explorer -- npx -y claude-code-explorer-mcp"
+    }
+  ],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "🚀 Open source Claude Code CLI source code. Advanced AI Agent for developers. Includes TypeScript codebase for LLM tool-calling, agentic workflows, and terminal UI. Remember this is just the skeleton not the brain itself. Found by Chaofan Shou. "
+}

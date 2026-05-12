@@ -1,0 +1,132 @@
+{
+  "id": "candidate-mempalace-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Mempalace",
+  "sourceUrl": "https://github.com/MemPalace/mempalace",
+  "sourceName": "GitHub",
+  "author": "MemPalace",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "The best-benchmarked open-source AI memory system. And it's free.",
+  "proposedCategory": [
+    "mcp",
+    "docs",
+    "workflow",
+    "testing"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "MemPalace",
+    "repo": "mempalace",
+    "fullName": "MemPalace/mempalace",
+    "stars": 51972,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "chromadb",
+      "llm",
+      "mcp",
+      "memory",
+      "python"
+    ],
+    "defaultBranch": "develop",
+    "lastPushedAt": "2026-05-11T09:37:13Z"
+  },
+  "detectedFiles": [
+    ".claude-plugin/skills/mempalace/SKILL.md",
+    ".codex-plugin/skills/help/SKILL.md",
+    ".codex-plugin/skills/init/SKILL.md",
+    ".codex-plugin/skills/mine/SKILL.md",
+    ".codex-plugin/skills/search/SKILL.md",
+    ".codex-plugin/skills/status/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "examples/mcp_setup.md",
+    "integrations/openclaw/SKILL.md",
+    "pyproject.toml",
+    "website/concepts/agents.md"
+  ],
+  "readmeExtract": "[!CAUTION] Scam alert. The only official sources for MemPalace are this [GitHub repository](https://github.com/MemPalace/mempalace), the [PyPI package](https://pypi.org/project/mempalace/), and the docs site at [mempalaceofficial.com](https://mempalaceofficial.com) . Any other domain — including mempalace.tech — is an impostor and may distribute malware. Details and timeline: [docs/HISTORY.md](docs/HISTORY.md). [!IMP",
+  "skillExtracts": [
+    {
+      "path": ".claude-plugin/skills/mempalace/SKILL.md",
+      "extract": "name: mempalace description: MemPalace — mine projects and conversations into a searchable memory palace. Use when asked about mempalace, memory palace, mining memories, searching memories, or palace setup. allowed tools: Bash, Read, Write, Edit, Glob, Grep MemPalace A searchable memory palace for AI — mine projects and conversations, then search them semantically. Prerequisites Ensure mempalace is installed: If not "
+    },
+    {
+      "path": ".codex-plugin/skills/help/SKILL.md",
+      "extract": "name: help description: Show MemPalace help — available commands, usage tips, and getting started guidance. allowed tools: Bash, Read MemPalace Help Run the following command and follow the returned instructions step by step:"
+    },
+    {
+      "path": ".codex-plugin/skills/init/SKILL.md",
+      "extract": "name: init description: Initialize a new MemPalace — guided setup for your AI memory palace with ChromaDB backend. allowed tools: Bash, Read, Write, Edit MemPalace Init Run the following command and follow the returned instructions step by step:"
+    },
+    {
+      "path": ".codex-plugin/skills/mine/SKILL.md",
+      "extract": "name: mine description: Mine a project or conversation into your MemPalace — extract and store memories for later retrieval. allowed tools: Bash, Read, Glob, Grep MemPalace Mine Run the following command and follow the returned instructions step by step:"
+    },
+    {
+      "path": ".codex-plugin/skills/search/SKILL.md",
+      "extract": "name: search description: Search your MemPalace — semantic search across all mined memories, projects, and conversations. allowed tools: Bash, Read MemPalace Search Run the following command and follow the returned instructions step by step:"
+    },
+    {
+      "path": ".codex-plugin/skills/status/SKILL.md",
+      "extract": "name: status description: Show MemPalace status — room counts, storage usage, and palace health. allowed tools: Bash, Read MemPalace Status Run the following command and follow the returned instructions step by step:"
+    }
+  ],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "uv tool install mempalace"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "For Claude Code, Gemini CLI, MCP-compatible tools, and local models, see\n[mempalaceofficial.com/guide/getting-started](https://mempalaceofficial.com/guide/getting-started.html).\n\n---\n\n## Benchmarks\n\nAll numbers below are reproducible from this repository with the commands\nin [`benchmarks/BENCHMARKS.md`](benchmarks/BENCHMARKS.md). Full\nper-question result files are committed under `benchmarks/results_*`.\n\n**LongMemEval — retrieval recall (R@5, 500 questions):**\n\n| Mode | R@5 | LLM required |\n|---|---|---|\n| Raw (semantic search, no heuristics, no LLM) | **96.6%** | None |\n| Hybrid v4, held-out 450q (tuned on 50 dev, not seen during training) | **98.4%** | None |\n| Hybrid v4 + LLM rerank (full 500) | ≥99% | Any capable model |\n\nThe raw 96.6% requires no API key, no cloud, and no LLM at any stage. The\nhybrid pipeline adds keyword boosting, temporal-proximity boosting, and\npreference-pattern extraction; the held-out 98.4% is the honest\ngeneralisable figure.\n\nThe rerank pipeline promotes the best candidate out of the top-20\nretrieved sessions using an LLM reader. It works with any reasonably\ncapable model — we have reproduced it with Claude Haiku, Claude Sonnet,\nand minimax-m2.7 \n\ninstall -e \".[dev]\"\n# see benchmarks/README.md for dataset download commands\nuv run python benchmarks/longmemeval_bench.py /path/to/longmemeval_s_cleaned.json",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "uv tool install mempalace   # or: pip install mempalace"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "mempalace instructions <command>",
+      "codeLanguage": "bash"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "uv sync --extra dev   # recommended; or: pip install -e \".[dev]\""
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "uv..."
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "The best-benchmarked open-source AI memory system. And it's free."
+}

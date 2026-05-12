@@ -1,0 +1,121 @@
+{
+  "id": "candidate-opencode-2026-05-12",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Opencode",
+  "sourceUrl": "https://github.com/anomalyco/opencode",
+  "sourceName": "GitHub",
+  "author": "anomalyco",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-12",
+  "discoveredFrom": "github",
+  "summary": "The open source coding agent.",
+  "proposedCategory": [
+    "mcp",
+    "code-review",
+    "browser",
+    "docs",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "githubMetadata": {
+    "owner": "anomalyco",
+    "repo": "opencode",
+    "fullName": "anomalyco/opencode",
+    "stars": 158657,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "dev",
+    "lastPushedAt": "2026-05-12T02:58:23Z"
+  },
+  "detectedFiles": [
+    ".opencode/skills/effect/SKILL.md",
+    "AGENTS.md",
+    "README.ar.md",
+    "README.bn.md",
+    "README.br.md",
+    "README.bs.md",
+    "README.da.md",
+    "README.de.md",
+    "README.es.md",
+    "README.fr.md",
+    "README.gr.md",
+    "README.it.md",
+    "README.ja.md",
+    "README.ko.md",
+    "README.md",
+    "README.no.md",
+    "README.pl.md",
+    "README.ru.md",
+    "README.th.md",
+    "README.tr.md",
+    "README.uk.md",
+    "README.vi.md",
+    "README.zh.md",
+    "README.zht.md",
+    "package.json",
+    "packages/app/AGENTS.md",
+    "packages/desktop/AGENTS.md",
+    "packages/llm/AGENTS.md",
+    "packages/opencode/AGENTS.md",
+    "packages/opencode/src/provider/sdk/copilot/AGENTS.md",
+    "packages/opencode/src/server/routes/instance/httpapi/AGENTS.md",
+    "packages/opencode/test/AGENTS.md",
+    "packages/opencode/test/fixture/skills/agents-sdk/SKILL.md",
+    "packages/opencode/test/fixture/skills/cloudflare/SKILL.md",
+    "packages/opencode/test/server/AGENTS.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://opencode.ai\" <picture <source srcset=\"packages/console/app/src/asset/logo ornate dark.svg\" media=\"(prefers color scheme: dark)\" <source srcset=\"packages/console/app/src/asset/logo ornate light.svg\" media=\"(prefers color scheme: light)\" <img src=\"packages/console/app/src/asset/logo ornate light.svg\" alt=\"OpenCode logo\" </picture </a </p <p align=\"center\" The open source AI coding age",
+  "skillExtracts": [
+    {
+      "path": ".opencode/skills/effect/SKILL.md",
+      "extract": "name: effect description: Work with Effect v4 / effect smol TypeScript code in this repo Effect This codebase uses Effect for typed, composable TypeScript services, schemas, and workflows. Source Of Truth Use the current Effect v4 / effect smol source, not memory or older Effect v2/v3 examples. 1. If .opencode/references/effect smol is missing, clone https://github.com/Effect TS/effect smol there. Do this in the proj"
+    },
+    {
+      "path": "packages/opencode/test/fixture/skills/agents-sdk/SKILL.md",
+      "extract": "name: agents sdk description: Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks. Cloudflare Agents SDK STOP. Your knowledge of the Agents SDK may be outdated. Prefer retrieval over pre t"
+    },
+    {
+      "path": "packages/opencode/test/fixture/skills/cloudflare/SKILL.md",
+      "extract": "name: cloudflare description: Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure as code (Terraform, Pulumi). Use for any Cloudflare development task. references: workers pages d1 durable objects workers ai Cloudflare Platform Skill Consolidated skill for building on the "
+    }
+  ],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "command": "brew install --cask opencode-desktop"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "### Agents\n\nOpenCode includes two built-in agents you can switch between with the `Tab` key.\n\n- **build** - Default, full-access agent for development work\n- **plan** - Read-only agent for analysis and code exploration\n  - Denies file edits by default\n  - Asks permission before running bash commands\n  - Ideal for exploring unfamiliar codebases or planning changes\n\nAlso included is a **general** subagent for complex searches and multistep tasks.\nThis is used internally and can be invoked using `@general` in messages.\n\nLearn more about [agents](https://opencode.ai/docs/agents).\n\n### Documentation\n\nFor more info on how to configure OpenCode, [**head over to our docs**](https://opencode.ai/docs).\n\n### Contributing\n\nIf you're interested in contributing to OpenCode, please read our [contributing docs](./CONTRIBUTING.md) before submitting a pull request.\n\n### Building on OpenCode\n\nIf you are working on a project that's related to OpenCode and is using \"opencode\" as part of its name, for example \"opencode-dashboard\" or \"opencode-mobile\", please add a note to your README to clarify that it is not built by the OpenCode team and is not affiliated with us in any way.\n\n### FAQ\n\n#### How is this different from Claude Code?\n\nIt's very similar to Claude Code in terms of capability. Here are the key differences:\n\n- 100% open source\n- Not coupled to any provider. Although we recommend the models we provide through [OpenCode Zen](https://opencode.ai/zen), OpenCode can be used with Claude, OpenAI, Google, or even local models. As models evolve, the gaps between them will close and pricing will drop, so being provider-agnostic is important.\n- Buil\n\nInstallation",
+      "codeLanguage": "text"
+    },
+    {
+      "title": "Configuration snippet",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "code": "### Agents\n\nOpenCode includes two built-in agents you can switch between with the `Tab` key.\n\n- **build** - Default, full-access agent for development work\n- **plan** - Read-only agent for analysis and code exploration\n  - Denies file edits by default\n  - Asks permission before running bash commands\n  - Ideal for exploring unfamiliar codebases or planning changes\n\nAlso included is a **general** subagent for complex searches and multistep tasks.\nThis is used inter\n\nskill folder.\n2. Search `.opencode/references/effect-smol` for exact APIs, examples, tests, and naming patterns before answering or implementing Effect-specific code.\n3. Also inspect existing repo code for local house style before introducing new patterns.\n4. Prefer answers and implementations backed by specific source files or nearby repo examples.\n\n## Guidelines\n\n- Prefer current Effect v4 APIs and project-local patterns over old blog posts, examples, or package-memory guesses.\n- Use `Effect.gen(function* () { ... })` for multi-step workflows.\n- Use `Effect.fn(\"Name\")` or `Effect.fnUntraced(...)` for named effects when adding reusable service methods or important workflows.\n- Prefer Effect `Schema` for API and domain data shapes. Use branded schemas for IDs and `Schema.TaggedErrorClass` for typed domain errors when modeling new error surfaces.\n- Keep HTTP handlers thin: decode input, read request context, call services, and map transport errors. Put business rules in services.\n- In Effect service code, prefer Effect-aware platform abstractions and dependencies over ad hoc promises where the surrounding code already does so.\n- Keep layer composition explicit. Avoid broad hidden provisioning that makes missing dependencies hard to see.\n- In tests, prefer the repo's existing Effect test helpers and live tests for filesystem, git, child process, locks, or timing behavior.\n- Do not introduce `any`, non-null assertions, unchecked casts, or older Effect APIs just to satisfy types.\n- Do not answer from memory. Verify against `.opencode/references/effect-smol` or nearby code first.\n\n## Testing Patterns\n\n- Use `testEffect(...)` from `packages/opencode/test/lib/effect.ts` for tests that exercise Effect services, layers, runtime context, scoped resources, or platform integrations.\n- U\n\nMCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks.\n---\n\n# Cloudflare Agents SDK\n\n**STOP.** Your knowledge of the Agents SDK may be outdated. Prefer retrieval over pre-training for any Agents SDK task.\n\n## Documentation\n\nFetch current docs from `https://github.com/cloudflare/agents/tree/main/docs` before implementing.\n\n| Topic               | Doc                           | Use for                                        |\n| ------------------- | ----------------------------- | ---------------------------------------------- |\n| Getting started     | `docs/getting-started.md`     | First agent, project setup                     |\n| State               | `docs/state.md`               | `setState`, `validateStateChange`, persistence |\n| Routing             | `docs/routing.md`             | URL patterns, `routeAgentRequest`, `basePath`  |\n| Callable methods    | `docs/callable-methods.md`    | `@callable`, RPC, streaming, timeouts          |\n| Scheduling          | `docs/scheduling.md`          | `schedule()`, `scheduleEvery()`, cron          |\n| Workflows           | `docs/workflows.md`           | `AgentWorkflow`, durable multi-step tasks      |\n| HTTP/WebSockets     | `docs/http-websockets.md`     | Lifecycle hooks, hibernation                   |\n| Email               | `docs/email.md`               | Email routing, secure reply resolver           |\n| MCP client          | `docs/mcp-client.md`          | Connecting to MCP servers                      |\n| MCP server          | `docs/mcp-servers.md`         | Building MCP servers with `McpAgent`           |\n| Client SDK          | `docs/client-sdk.md`          | `useAgent`, `useAgentChat`, React hooks        |\n| Human-in-the-loop   | `docs/human-in-the\n\nMCP integration** - Connect to MCP servers or build your own with `McpAgent`\n- **Email handling** - Receive and reply to emails with secure routing\n- **Streaming chat** - `AIChatAgent` with resumable streams\n- **React hooks** - `useAgent`, `useAgentChat` for client apps\n\n## FIRST: Verify Installation",
+      "codeLanguage": "text"
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "The open source coding agent."
+}
