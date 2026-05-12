@@ -49,22 +49,13 @@ const commands = [
     title: "Create candidate files from discovery",
     command: "cd /Users/ld/agent-toolkit-site/site\nnpm run discover:github -- --limit 20",
   },
-  {
-    title: "Approve a reviewed candidate",
-    command: "cd /Users/ld/agent-toolkit-site/site\nnpm run approve:candidate -- candidate-id",
-  },
-  {
-    title: "Publish an approved candidate",
-    command: "cd /Users/ld/agent-toolkit-site/site\nnpm run publish:candidate -- candidate-id",
-  },
 ];
 
 const steps = [
   "Discover or manually add candidates.",
   "Open the candidate pool and click one item.",
   "Review source, score, README extract, install hints, detected files, and permission.",
-  "Run the approve command shown on the candidate detail page.",
-  "Run the publish command shown on the candidate detail page.",
+  "Click Publish now from the queue or detail page.",
   "Check the public Tools, Agents, Learn, or Signals page.",
 ];
 ---

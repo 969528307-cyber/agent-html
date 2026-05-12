@@ -21,6 +21,18 @@ const formatStars = (stars?: number) => {
   if (stars >= 1000) return `${(stars / 1000).toFixed(stars >= 10000 ? 0 : 1)}k stars`;
   return `${stars} stars`;
 };
+
+const slugify = (value: string) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
+const publicHref = (candidate: (typeof candidates)[number]) => {
+  const publishedId = candidate.data.publishedAs || slugify(candidate.data.title);
+  if (candidate.data.type === "agent") return `/for/${publishedId}`;
+  return `/item/${publishedId}`;
+};
 ---
 
 <BaseLayout title="Candidate Pool - agentk.it" description="Internal candidate pool for reviewing and publishing content." noindex>
@@ -50,21 +62,20 @@ const formatStars = (stars?: number) => {
   <section class="section page help-panel">
     <div>
       <div class="eyebrow">How this page works</div>
-      <h2>Click one candidate, inspect evidence, then publish only after approval.</h2>
+      <h2>Open a candidate if you want to inspect it, or publish directly from the queue.</h2>
     </div>
     <ol>
-      <li>Open a candidate row below.</li>
-      <li>Check GitHub evidence, README extract, install hints, detected files, score, and permission.</li>
-      <li>Use the approve command shown on the detail page when it is ready.</li>
-      <li>Run the publish command shown on the candidate detail page.</li>
+      <li>Click <code>Review</code> to inspect source evidence first.</li>
+      <li>Click <code>Publish now</code> to approve and publish in one action.</li>
+      <li>After publishing, open the public page link shown by the button state.</li>
     </ol>
   </section>
 
   <section class="section page candidate-list" id="queue">
     {
       candidates.map((candidate) => (
-        <a class="candidate-row" href={`/internal/candidates/${candidate.id}`}>
-          <div>
+        <article class="candidate-row" id={candidate.id}>
+          <a class="candidate-main" href={`/internal/candidates/${candidate.id}`}>
             <div class="row-top">
               <span>{candidate.data.type}</span>
               <span>{candidate.data.status}</span>
@@ -79,13 +90,74 @@ const formatStars = (stars?: number) => {
               <span>{candidate.data.detectedFiles.length} evidence files</span>
               <span>{candidate.data.extractedInstall.length} install hints</span>
             </div>
+          </a>
+          <div class="row-actions">
+            <a href={`/internal/candidates/${candidate.id}`}>Review</a>
+            <button
+              class="publish-button"
+              type="button"
+              data-publish-candidate={candidate.id}
+              data-public-href={publicHref(candidate)}
+            >
+              Publish now
+            </button>
           </div>
-          <strong>Review / submit</strong>
-        </a>
+        </article>
       ))
     }
   </section>
 </BaseLayout>
+
+<script>
+  const publishCandidate = async (button: HTMLButtonElement) => {
+    const candidateId = button.dataset.publishCandidate;
+    const publicHref = button.dataset.publicHref;
+    const originalText = button.textContent;
+
+    button.disabled = true;
+    button.textContent = "Publishing...";
+    button.closest(".candidate-row")?.querySelector("[data-publish-status]")?.remove();
+
+    try {
+      const response = await fetch("/internal-api/publish-candidate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ candidateId }),
+      });
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok || !result.ok) {
+        throw new Error(result.error || "Publish failed.");
+      }
+
+      button.textContent = "Published";
+      button.classList.add("published");
+
+      const status = document.createElement("a");
+      status.dataset.publishStatus = "true";
+      status.className = "published-link";
+      if (publicHref) status.href = publicHref;
+      status.textContent = "Open public page";
+      button.after(status);
+    } catch (error) {
+      button.disabled = false;
+      button.textContent = originalText || "Publish now";
+
+      const status = document.createElement("p");
+      status.dataset.publishStatus = "true";
+      status.className = "publish-error";
+      status.textContent = error instanceof Error ? error.message : "Publish failed.";
+      button.after(status);
+    }
+  };
+
+  document.addEventListener("click", (event) => {
+    const button = event.target instanceof Element ? event.target.closest("[data-publish-candidate]") : null;
+    if (!(button instanceof HTMLButtonElement)) return;
+    event.preventDefault();
+    void publishCandidate(button);
+  });
+</script>
 
 <style>
   .pool-hero {
@@ -187,13 +259,17 @@ const formatStars = (stars?: number) => {
 
   .candidate-row {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 120px;
+    grid-template-columns: minmax(0, 1fr) 180px;
     gap: 18px;
     align-items: center;
     padding: 20px;
     border: 1px solid var(--line);
     border-radius: 24px;
     background: var(--paper);
+  }
+
+  .candidate-main {
+    display: block;
   }
 
   .candidate-row:hover {
@@ -224,16 +300,37 @@ const formatStars = (stars?: number) => {
     line-height: 1.65;
   }
 
-  .candidate-row strong {
+  .row-actions {
+    display: grid;
+    gap: 10px;
+  }
+
+  .row-actions a,
+  .publish-button,
+  .published-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-height: 38px;
     padding: 0 12px;
+    border-radius: 999px;
+  }
+
+  .row-actions a {
+    color: var(--sage);
+    border: 1px solid var(--line);
+  }
+
+  .publish-button,
+  .published-link {
     color: #08100b;
     font-size: 12px;
     background: var(--sage);
-    border-radius: 999px;
+    border: 0;
+  }
+
+  .publish-button.published {
+    background: var(--clay);
   }
 
   .evidence-line {
@@ -253,6 +350,12 @@ const formatStars = (stars?: number) => {
 
   #queue {
     scroll-margin-top: 120px;
+  }
+
+  .publish-error {
+    color: var(--clay);
+    font-size: 12px;
+    line-height: 1.4;
   }
 
   @media (max-width: 760px) {

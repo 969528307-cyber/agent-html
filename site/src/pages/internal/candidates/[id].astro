@@ -13,10 +13,14 @@ export async function getStaticPaths() {
 const { candidate } = Astro.props;
 const scores = Object.entries(candidate.data.reviewScore);
 const average = scores.reduce((sum, [, score]) => sum + score, 0) / scores.length;
-const approveCommand = `cd /Users/ld/agent-toolkit-site/site\nnpm run approve:candidate -- ${candidate.id}`;
-const publishCommand = `cd /Users/ld/agent-toolkit-site/site\nnpm run publish:candidate -- ${candidate.id}`;
 const github = candidate.data.githubMetadata;
-const canPublish = ["approved", "reviewing"].includes(candidate.data.status);
+const slugify = (value: string) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+const publishedId = candidate.data.publishedAs || slugify(candidate.data.title);
+const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/item/${publishedId}`;
 ---
 
 <BaseLayout title={`${candidate.data.title} - Candidate Pool`} description={candidate.data.summary} noindex>
@@ -30,9 +34,16 @@ const canPublish = ["approved", "reviewing"].includes(candidate.data.status);
       <div class="submit-head">
         <div>
           <span>Submit to public site</span>
-          <h2>Approve, then publish.</h2>
+          <h2>One click publish.</h2>
         </div>
-        <a class="small-button" href="#submit-commands">Show commands</a>
+        <button
+          class="small-button publish-now"
+          type="button"
+          data-publish-candidate={candidate.id}
+          data-public-href={publicHref}
+        >
+          Publish now
+        </button>
       </div>
       <div class="submit-steps">
         <article>
@@ -42,25 +53,16 @@ const canPublish = ["approved", "reviewing"].includes(candidate.data.status);
         </article>
         <article>
           <strong>02</strong>
-          <h3>Approve candidate</h3>
-          <p>Run the approve command. It marks this candidate as approved and records a local review date.</p>
+          <h3>Click publish</h3>
+          <p>The button approves this candidate and creates the public page in one local action.</p>
         </article>
         <article>
           <strong>03</strong>
-          <h3>Publish page</h3>
-          <p>Run the publish command. It creates the public Tool or Agent JSON used by the real site pages.</p>
+          <h3>Open public page</h3>
+          <p>After publishing succeeds, use the public page link shown here to review the result.</p>
         </article>
       </div>
-      <div class="command-stack" id="submit-commands">
-        <div>
-          <span>Approve command</span>
-          <code>{approveCommand}</code>
-        </div>
-        <div class:list={["publish-command", { locked: !canPublish }]}>
-          <span>{canPublish ? "Publish command" : "Publish command, available after approval"}</span>
-          <code>{publishCommand}</code>
-        </div>
-      </div>
+      <div class="publish-result" data-publish-result></div>
     </div>
   </section>
 
@@ -174,6 +176,50 @@ const canPublish = ["approved", "reviewing"].includes(candidate.data.status);
   </section>
 </BaseLayout>
 
+<script>
+  const publishButton = document.querySelector("[data-publish-candidate]");
+  const resultBox = document.querySelector("[data-publish-result]");
+
+  publishButton?.addEventListener("click", async () => {
+    if (!(publishButton instanceof HTMLButtonElement)) return;
+
+    const candidateId = publishButton.dataset.publishCandidate;
+    const publicHref = publishButton.dataset.publicHref;
+    const originalText = publishButton.textContent;
+
+    publishButton.disabled = true;
+    publishButton.textContent = "Publishing...";
+    if (resultBox) resultBox.textContent = "";
+
+    try {
+      const response = await fetch("/internal-api/publish-candidate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ candidateId }),
+      });
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok || !result.ok) {
+        throw new Error(result.error || "Publish failed.");
+      }
+
+      publishButton.textContent = "Published";
+      publishButton.classList.add("published");
+
+      if (resultBox && publicHref) {
+        resultBox.innerHTML = `<a class="published-link" href="${publicHref}">Open public page</a>`;
+      }
+    } catch (error) {
+      publishButton.disabled = false;
+      publishButton.textContent = originalText || "Publish now";
+      if (resultBox) {
+        resultBox.textContent = error instanceof Error ? error.message : "Publish failed.";
+        resultBox.classList.add("error");
+      }
+    }
+  });
+</script>
+
 <style>
   .detail {
     padding: 72px 0 24px;
@@ -257,22 +303,34 @@ const canPublish = ["approved", "reviewing"].includes(candidate.data.status);
     line-height: 1.65;
   }
 
-  .command-stack {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+  .publish-now {
+    min-width: 150px;
+    border: 0;
+  }
+
+  .publish-now.published {
+    background: var(--clay);
+  }
+
+  .publish-result {
     margin-top: 18px;
+    color: var(--muted);
+    font-size: 14px;
   }
 
-  .command-stack div {
-    padding: 16px;
-    border: 1px solid var(--line);
-    border-radius: 20px;
-    background: rgb(7 10 9 / 0.38);
+  .publish-result.error {
+    color: var(--clay);
   }
 
-  .publish-command.locked {
-    opacity: 0.72;
+  .publish-result :global(.published-link) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 0 14px;
+    color: #08100b;
+    background: var(--sage);
+    border-radius: 999px;
   }
 
   pre,
@@ -406,7 +464,6 @@ const canPublish = ["approved", "reviewing"].includes(candidate.data.status);
   @media (max-width: 860px) {
     .submit-head,
     .submit-steps,
-    .command-stack,
     .detail-grid,
     .github-grid {
       grid-template-columns: 1fr;
