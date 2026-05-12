@@ -18,12 +18,14 @@ export const MAX_EXTRA_EVIDENCE_DOCS = 8;
 export const README_PREFIX_LIMIT = 12_000;
 
 const evidenceTerms = [
-  "install",
-  "setup",
-  "configuration",
-  "config",
+  "benefit",
+  "capability",
+  "feature",
+  "features",
   "usage",
-  "getting started",
+  "use case",
+  "use cases",
+  "overview",
   "mcp",
   "mcpservers",
   "model context protocol",
@@ -68,7 +70,7 @@ const normalizeFileEntry = (entry) => (typeof entry === "string" ? { path: entry
 
 const evidencePriority = (path = "") => {
   if (/^readme(\.[\w-]+)?$/i.test(path) || /^readme\./i.test(path)) return 0;
-  if (/^docs\//i.test(path) && /(getting-started|quickstart|install|setup|configuration|config|usage|mcp|model-context-protocol)/i.test(path)) return 10;
+  if (/^docs\//i.test(path) && isPrimaryCapabilityDocPath(path)) return 10;
   if (/^(package\.json|pyproject\.toml)$/i.test(path)) return 20;
   if (/^examples\//i.test(path)) return 30;
   if (/(^|\/)skill\.md$/i.test(path)) return 40;
@@ -82,7 +84,7 @@ const isEvidenceFilePath = (path) => {
   if (/(^|\/)(agents|claude)\.md$/i.test(path)) return true;
   if (/^\.cursor\//i.test(path)) return true;
   if (/^(package\.json|pyproject\.toml)$/i.test(path)) return true;
-  if (/^docs\//i.test(path) && /(getting-started|quickstart|install|setup|config|configuration|usage|mcp|agent|cursor|claude|codex|qwen|workflow|skill)/i.test(path)) {
+  if (/^docs\//i.test(path) && isPrimaryCapabilityDocPath(path)) {
     return true;
   }
   if (/^examples\//i.test(path) && /(config|mcp|agent|skill|workflow|cursor|claude|codex|qwen).*\.(md|mdx|json|toml|yaml|yml)$/i.test(path)) {
@@ -173,19 +175,9 @@ export const detectToolType = ({ topics = [], files = [], readme = "" }) => {
 
 const codeFencePattern = /```(\w+)?\n([\s\S]*?)```/g;
 
-const isSkillDocPath = (path = "") => /(^|\/)SKILL\.md$/i.test(path) || /^\.agents\/skills\//i.test(path);
-
-const isPrimaryInstallDocPath = (path = "") =>
-  /^README(\.[\w-]+)?$/i.test(path) ||
-  /^README\./i.test(path) ||
-  /^docs\//i.test(path) &&
-    /(quickstart|install|installation|setup|configuration|config|usage|mcp|model-context-protocol)/i.test(path) &&
-    !/(settings|faq|about|playbook|handbook)/i.test(path);
-
-const isInstallSourceAllowed = ({ path = "", type }) => {
-  if (type === "skill") return true;
-  return isPrimaryInstallDocPath(path) && !isSkillDocPath(path);
-};
+const isPrimaryCapabilityDocPath = (path = "") =>
+  /(overview|introduction|feature|features|usage|use-cases?|benefit|capabilit|mcp|model-context-protocol|agent|cursor|claude|codex|qwen|workflow|skill|guide|docs)/i.test(path) &&
+  !/(install|installation|setup|configuration|config|settings|faq|troubleshoot|playbook|handbook|development|contributing)/i.test(path);
 
 const executableCommandLines = (code = "") =>
   code
@@ -216,44 +208,6 @@ const headingForIndex = (content, index) => {
     headings.length = level;
   }
   return headings.filter(Boolean).join(" > ");
-};
-
-const installHintPriority = (hint) => {
-  const audiencePriority = { verified_install: 0, configuration: 1, needs_review: 2, developer_setup: 3 };
-  const heading = hint.heading || "";
-  const productInstallBonus = /\b(homebrew|recommended|download|installer|quickstart|installation)\b/i.test(heading) ? -2 : 0;
-  const prerequisitePenalty = /\b(prerequisite|requirements?|install cli tools|install node|dependency|dependencies)\b/i.test(heading) ? 4 : 0;
-  const tapPenalty = /\btap\b/i.test(hint.command || "") ? 1 : 0;
-  return (audiencePriority[hint.audience] ?? 2) + productInstallBonus + prerequisitePenalty + tapPenalty;
-};
-
-const classifyInstallAudience = ({ code = "", command = "", sourcePath = "", type, heading = "" }) => {
-  if (/mcpServers|servers|command|args|SKILL\.md|CLAUDE\.md|AGENTS\.md|Cursor Rules/i.test(code) && !command) {
-    return "configuration";
-  }
-
-  if (type === "skill") return "verified_install";
-
-  const lowerPath = sourcePath.toLowerCase();
-  const lowerCommand = command.toLowerCase();
-  const lowerHeading = heading.toLowerCase();
-  if (/\b(upgrade|update|remove|uninstall)\b/.test(lowerCommand) || /\b(verify|verification|launch|first launch)\b/.test(lowerHeading)) {
-    return "needs_review";
-  }
-  if (command && /^(claude|codex|qwen|code|gemini|openclaw|opencode)\b/.test(lowerCommand)) {
-    return "needs_review";
-  }
-  if (
-    /(build|building|development|developer|contributing|fork|example|sample|test|benchmark|playbook|handbook)/i.test(lowerPath) ||
-    /\b(prerequisite|requirements?|install cli tools|install node|dependency|dependencies)\b/i.test(lowerHeading) ||
-    /\b(lint|test|dev|start)\b/.test(lowerCommand) ||
-    /your_username|your-org|your_org/i.test(command)
-  ) {
-    return /\b(prerequisite|requirements?|install cli tools|install node|dependency|dependencies)\b/i.test(lowerHeading) ? "needs_review" : "developer_setup";
-  }
-
-  if (/^docs\//i.test(sourcePath) || /^README/i.test(sourcePath)) return "verified_install";
-  return "needs_review";
 };
 
 export const extractInstallHints = (readme, { sourcePath = "README.md" } = {}) => {
@@ -290,17 +244,6 @@ export const extractInstallHints = (readme, { sourcePath = "README.md" } = {}) =
 
   return hints.slice(0, 24);
 };
-
-const extractInstallHintsFromSources = (sources, { type }) =>
-  sources
-    .filter((source) => source.content && isInstallSourceAllowed({ path: source.path, type }))
-    .flatMap((source) => extractInstallHints(source.content, { sourcePath: source.path }))
-    .map((hint) => ({
-      ...hint,
-      audience: classifyInstallAudience({ ...hint, type }),
-    }))
-    .sort((a, b) => installHintPriority(a) - installHintPriority(b))
-    .slice(0, 6);
 
 const detectAgents = ({ readme = "", files = [] }) => {
   const text = `${readme}\n${files.join("\n")}`.toLowerCase();
@@ -340,7 +283,7 @@ const scoreRepo = ({ repo, readme, files, type }) => ({
   sourceTrust: repo.full_name ? 4 : 3,
   usefulness: readme.length > 1000 ? 4 : 3,
   agentRelevance: type === "skill" || type === "mcp" ? 5 : 3,
-  verifiability: extractInstallHints(readme).length > 0 || files.includes("SKILL.md") ? 4 : 2,
+  verifiability: extractCapabilitySignals(readme, { files }).length > 0 ? 4 : 2,
   freshness: repo.pushed_at ? 4 : 3,
   editorialValue: repo.stargazers_count >= 100 ? 4 : 3,
   permission: repo.license?.spdx_id ? 4 : 2,
@@ -356,6 +299,62 @@ const summarizeReadme = (readme) =>
 
 const summarizeSource = (content) => summarizeReadme(content).slice(0, 520);
 
+const capabilityTerms = [
+  "agent",
+  "automation",
+  "automate",
+  "browser",
+  "codex",
+  "claude",
+  "connect",
+  "docs",
+  "documentation",
+  "gemini",
+  "manage",
+  "mcp",
+  "model context protocol",
+  "review",
+  "search",
+  "skill",
+  "summarize",
+  "switch",
+  "tool",
+  "workflow",
+];
+
+const isSetupLine = (line) =>
+  /\b(install|installation|setup|quickstart|configuration|config|prerequisite|requirements?|uninstall|upgrade|update)\b/i.test(line) ||
+  /^(npm|npx|pnpm|yarn|brew|docker|git clone|pip|uv|cargo|go install|cp|mkdir)\b/i.test(line);
+
+export const extractCapabilitySignals = (content = "", { files = [] } = {}) => {
+  const text = content
+    .replace(/```[\s\S]*?```/g, "\n")
+    .replace(/\|/g, " ")
+    .split(/\n|(?<=[.!?])\s+/)
+    .map((line) =>
+      line
+        .replace(/^\s{0,3}#{1,6}\s*/, "")
+        .replace(/^\s*[-*]\s*/, "")
+        .replace(/^\s*\d+[.)]\s*/, "")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        .replace(/[*_`<>]/g, "")
+        .replace(/\s+/g, " ")
+        .trim()
+    )
+    .filter((line) => line.length >= 28 && line.length <= 220)
+    .filter((line) => !isSetupLine(line))
+    .filter((line) => capabilityTerms.some((term) => line.toLowerCase().includes(term)));
+
+  const fileSignals = [
+    ...(files.includes("SKILL.md") ? ["Found root SKILL.md"] : []),
+    ...(files.some((file) => file.toLowerCase().includes("skill")) ? ["Repository includes skill-related files"] : []),
+    ...(files.some((file) => /(^|\/)(agents|claude)\.md$/i.test(file)) ? ["Repository includes agent instruction files"] : []),
+    ...(files.some((file) => /mcp/i.test(file)) ? ["Repository includes MCP-related files"] : []),
+  ];
+
+  return [...new Set([...text, ...fileSignals])].slice(0, 8);
+};
+
 export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDocs = [], evidenceDocs = [], today }) => {
   const skillText = skillDocs.map((doc) => doc.content).join("\n\n");
   const evidenceText = evidenceDocs.map((doc) => doc.content).join("\n\n");
@@ -366,15 +365,10 @@ export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDoc
     .filter(Boolean)
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(" ");
-  const installSources = [
-    { path: "README.md", content: readme },
-    ...evidenceDocs,
-    ...(type === "skill" ? skillDocs : []),
-  ];
-  const extractedInstall = extractInstallHintsFromSources(installSources, { type });
   const proposedAgents = detectAgents({ readme: combinedText, files });
   const proposedCategory = categorize({ type, topics: repo.topics || [], readme: combinedText });
   const summary = repo.description || summarizeReadme(combinedText) || `GitHub ${type} candidate from ${repo.full_name}.`;
+  const extractedSignals = extractCapabilitySignals(combinedText, { files });
 
   return {
     id: `candidate-${slugify(repo.name)}-${today}`,
@@ -408,12 +402,8 @@ export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDoc
       path: doc.path,
       extract: summarizeSource(doc.content),
     })),
-    extractedInstall,
-    extractedSignals: [
-      ...(files.includes("SKILL.md") ? ["Found root SKILL.md"] : []),
-      ...(files.some((file) => file.toLowerCase().includes("skill")) ? ["Repository includes skill-related files"] : []),
-      ...(readme.toLowerCase().includes("model context protocol") ? ["README mentions Model Context Protocol"] : []),
-    ],
+    extractedInstall: [],
+    extractedSignals,
     reviewScore: scoreRepo({ repo, readme: combinedText, files, type }),
     reviewNotes: "Generated from GitHub metadata and README. Human review required before publishing.",
     publishReason: summary,
@@ -474,7 +464,7 @@ export const fetchRepoCandidate = async (githubUrl) => {
 
   for (const file of extraEvidenceFiles) {
     const content = await fetchRepoFile({ owner, repo, path: file });
-    if (isPrimaryInstallDocPath(file)) {
+    if (isPrimaryCapabilityDocPath(file)) {
       evidenceDocs.push({ path: file, content: content.slice(0, 40_000) });
       continue;
     }

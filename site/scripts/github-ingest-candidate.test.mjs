@@ -81,9 +81,10 @@ test("rejects GitHub repositories below the minimum star floor", () => {
 test("selects only high-signal evidence files from large repository trees", () => {
   const selected = selectEvidenceFiles([
     { path: "README.md", size: 90_000 },
-    { path: "docs/getting-started.md", size: 12_000 },
-    { path: "docs/random-brand-story.md", size: 8_000 },
+    { path: "docs/overview.md", size: 12_000 },
+    { path: "docs/features/agent-workflows.md", size: 8_000 },
     { path: "docs/mcp/configuration.md", size: 10_000 },
+    { path: "docs/install/overview.md", size: 8_000 },
     { path: "skills/review/SKILL.md", size: 6_000 },
     { path: "AGENTS.md", size: 2_000 },
     { path: "CLAUDE.md", size: 2_000 },
@@ -95,8 +96,8 @@ test("selects only high-signal evidence files from large repository trees", () =
 
   assert.deepEqual(selected.map((file) => file.path), [
     "README.md",
-    "docs/getting-started.md",
-    "docs/mcp/configuration.md",
+    "docs/features/agent-workflows.md",
+    "docs/overview.md",
     "examples/basic/config.json",
     "skills/review/SKILL.md",
     ".cursor/rules/agent.mdc",
@@ -107,13 +108,11 @@ test("selects only high-signal evidence files from large repository trees", () =
 
 test("extracts bounded evidence windows from long documents", () => {
   const longDocument = `${"intro ".repeat(2000)}
-## Configuration
-\`\`\`json
-{ "mcpServers": { "docs": { "command": "npx", "args": ["-y", "@example/docs-mcp"] } } }
-\`\`\`
+## Features
+The docs MCP helps agents search current documentation and retrieve API examples during coding tasks.
 ${"filler ".repeat(2000)}
-## Agent setup
-Copy this instruction into AGENTS.md so Codex knows when to use the tool.
+## Agent workflow
+Codex can use the tool to answer library questions without manual copy paste.
 ${"tail ".repeat(2000)}`;
 
   const windows = extractRelevantWindows(longDocument, { radius: 160, maxWindows: 3 });
@@ -121,11 +120,11 @@ ${"tail ".repeat(2000)}`;
   assert.ok(windows.length >= 2);
   assert.ok(windows.length <= 3);
   assert.ok(windows.every((window) => window.length <= 360));
-  assert.match(windows.join("\n"), /mcpServers/);
-  assert.match(windows.join("\n"), /AGENTS\.md/);
+  assert.match(windows.join("\n"), /search current documentation/);
+  assert.match(windows.join("\n"), /library questions/);
 });
 
-test("builds a candidate with GitHub metadata and extracted detail fields", () => {
+test("builds a candidate with GitHub metadata and capability signals", () => {
   const candidate = buildCandidateFromRepo({
     repo: {
       html_url: "https://github.com/example/repo-review-skill",
@@ -140,7 +139,7 @@ test("builds a candidate with GitHub metadata and extracted detail fields", () =
       owner: { login: "example" },
     },
     files: ["README.md", "SKILL.md"],
-    readme: "# Repo Review Skill\n\n## Install\n```bash\ncp SKILL.md ~/.codex/skills/repo-review/SKILL.md\n```",
+    readme: "# Repo Review Skill\n\nReview pull requests, summarize risky files, and help agents produce code review notes.\n\n## Install\n```bash\ncp SKILL.md ~/.codex/skills/repo-review/SKILL.md\n```",
     today: "2026-05-11",
   });
 
@@ -148,7 +147,8 @@ test("builds a candidate with GitHub metadata and extracted detail fields", () =
   assert.equal(candidate.proposedToolType, "skill");
   assert.equal(candidate.githubMetadata.stars, 123);
   assert.deepEqual(candidate.detectedFiles, ["README.md", "SKILL.md"]);
-  assert.equal(candidate.extractedInstall[0].command, "cp SKILL.md ~/.codex/skills/repo-review/SKILL.md");
+  assert.deepEqual(candidate.extractedInstall, []);
+  assert.ok(candidate.extractedSignals.some((signal) => /Review pull requests/i.test(signal)));
 });
 
 test("uses SKILL.md documents when generating skill candidates", () => {
@@ -178,10 +178,11 @@ test("uses SKILL.md documents when generating skill candidates", () => {
 
   assert.equal(candidate.proposedToolType, "skill");
   assert.equal(candidate.skillExtracts[0].path, "skills/context/SKILL.md");
-  assert.equal(candidate.extractedInstall[0].command, "cp skills/context/SKILL.md ~/.codex/skills/context/SKILL.md");
+  assert.deepEqual(candidate.extractedInstall, []);
+  assert.ok(candidate.extractedSignals.some((signal) => /Use this agent skill/i.test(signal)));
 });
 
-test("does not use nested skill docs as install sources for non-skill candidates", () => {
+test("does not surface install sources for non-skill candidates", () => {
   const candidate = buildCandidateFromRepo({
     repo: {
       html_url: "https://github.com/example/activepieces",
@@ -208,17 +209,11 @@ test("does not use nested skill docs as install sources for non-skill candidates
   });
 
   assert.equal(candidate.proposedToolType, "workflow");
-  assert.deepEqual(
-    candidate.extractedInstall.map((hint) => hint.command || hint.code),
-    ["docker compose up"]
-  );
-  assert.deepEqual(
-    candidate.extractedInstall.map((hint) => hint.sourcePath),
-    ["README.md"]
-  );
+  assert.deepEqual(candidate.extractedInstall, []);
+  assert.ok(candidate.extractedSignals.some((signal) => /Model Context Protocol automation platform/i.test(signal)));
 });
 
-test("does not use agent instruction files as install sources for non-skill candidates", () => {
+test("does not use agent instruction files as public candidate setup evidence", () => {
   const candidate = buildCandidateFromRepo({
     repo: {
       html_url: "https://github.com/example/workflow-platform",
@@ -256,17 +251,11 @@ test("does not use agent instruction files as install sources for non-skill cand
   });
 
   assert.equal(candidate.proposedToolType, "workflow");
-  assert.deepEqual(
-    candidate.extractedInstall.map((hint) => hint.command),
-    ["docker compose up -d"]
-  );
-  assert.deepEqual(
-    candidate.extractedInstall.map((hint) => hint.sourcePath),
-    ["docs/install/overview.mdx"]
-  );
+  assert.deepEqual(candidate.extractedInstall, []);
+  assert.ok(candidate.extractedSignals.some((signal) => /Model Context Protocol automation platform/i.test(signal)));
 });
 
-test("classifies developer setup commands separately from user install commands", () => {
+test("candidate filter ignores developer setup commands and keeps capability evidence", () => {
   const candidate = buildCandidateFromRepo({
     repo: {
       html_url: "https://github.com/example/activepieces",
@@ -281,7 +270,7 @@ test("classifies developer setup commands separately from user install commands"
       owner: { login: "example" },
     },
     files: ["README.md", "docs/build-pieces/building-pieces/development-setup.mdx", "docs/install/overview.mdx"],
-    readme: "# Activepieces\n\nA Model Context Protocol automation platform.",
+    readme: "# Activepieces\n\nBuild AI agents, automate workflows, and connect apps through MCP support.",
     evidenceDocs: [
       {
         path: "docs/build-pieces/building-pieces/development-setup.mdx",
@@ -299,33 +288,11 @@ test("classifies developer setup commands separately from user install commands"
     today: "2026-05-11",
   });
 
-  assert.deepEqual(
-    candidate.extractedInstall.map((hint) => ({
-      command: hint.command,
-      sourcePath: hint.sourcePath,
-      audience: hint.audience,
-    })),
-    [
-      {
-        command: "docker compose up -d",
-        sourcePath: "docs/install/overview.mdx",
-        audience: "verified_install",
-      },
-      {
-        command: "npm start",
-        sourcePath: "docs/build-pieces/building-pieces/development-setup.mdx",
-        audience: "developer_setup",
-      },
-      {
-        command: "git clone --depth=1 https://github.com/YOUR_USERNAME/activepieces.git",
-        sourcePath: "docs/build-pieces/building-pieces/setup-fork.mdx",
-        audience: "developer_setup",
-      },
-    ]
-  );
+  assert.deepEqual(candidate.extractedInstall, []);
+  assert.ok(candidate.extractedSignals.some((signal) => /automate workflows/i.test(signal)));
 });
 
-test("prioritizes product install commands over prerequisite tool commands", () => {
+test("candidate filter ignores product install commands and keeps feature evidence", () => {
   const candidate = buildCandidateFromRepo({
     repo: {
       html_url: "https://github.com/example/cc-switch",
@@ -340,7 +307,7 @@ test("prioritizes product install commands over prerequisite tool commands", () 
       owner: { login: "example" },
     },
     files: ["README.md", "docs/user-manual/en/1-getting-started/1.2-installation.md"],
-    readme: "# CC Switch\n\nAll-in-One assistant manager.",
+    readme: "# CC Switch\n\nAll-in-One assistant manager for switching Claude Code, Codex, OpenCode, Gemini CLI, and Hermes Agent.",
     evidenceDocs: [
       {
         path: "docs/user-manual/en/1-getting-started/1.2-installation.md",
@@ -387,33 +354,11 @@ claude
     today: "2026-05-11",
   });
 
-  assert.deepEqual(
-    candidate.extractedInstall.slice(0, 1).map((hint) => ({
-      command: hint.command,
-      code: hint.code,
-      audience: hint.audience,
-      heading: hint.heading,
-    })),
-    [
-      {
-        command: "brew install --cask cc-switch",
-        code: "# Add tap\nbrew tap farion1231/ccswitch\n# Install\nbrew install --cask cc-switch",
-        audience: "verified_install",
-        heading: "Installation Guide > macOS > Option 1: Homebrew (Recommended)",
-      },
-    ]
-  );
-  assert.deepEqual(
-    candidate.extractedInstall.filter((hint) => hint.audience === "verified_install").map((hint) => hint.command),
-    ["brew install --cask cc-switch"]
-  );
-  assert.equal(candidate.extractedInstall.find((hint) => hint.command === "brew install node")?.audience, "needs_review");
-  assert.equal(candidate.extractedInstall.find((hint) => hint.command === "brew install claude-code")?.audience, "needs_review");
-  assert.equal(candidate.extractedInstall.find((hint) => hint.command === "brew upgrade --cask cc-switch")?.audience, "needs_review");
-  assert.equal(candidate.extractedInstall.find((hint) => hint.command === "claude")?.audience, "needs_review");
+  assert.deepEqual(candidate.extractedInstall, []);
+  assert.ok(candidate.extractedSignals.some((signal) => /switching Claude Code/i.test(signal)));
 });
 
-test("prioritizes public install docs over agent instruction files when selecting evidence", () => {
+test("prioritizes public capability docs over setup and agent instruction files", () => {
   const selected = selectEvidenceFiles([
     { path: "README.md", size: 90_000 },
     { path: ".agents/features/agents.md", size: 3_000 },
@@ -422,15 +367,16 @@ test("prioritizes public install docs over agent instruction files when selectin
     { path: "AGENTS.md", size: 2_000 },
     { path: "CLAUDE.md", size: 2_000 },
     { path: "docs/install/overview.mdx", size: 8_000 },
-    { path: "docs/getting-started/quickstart.mdx", size: 8_000 },
+    { path: "docs/features/agent-workflows.mdx", size: 8_000 },
+    { path: "docs/usage/model-context-protocol.mdx", size: 8_000 },
     { path: "docs/mcp/configuration.mdx", size: 8_000 },
   ]);
 
   assert.deepEqual(selected.slice(0, 4).map((file) => file.path), [
     "README.md",
-    "docs/getting-started/quickstart.mdx",
-    "docs/install/overview.mdx",
-    "docs/mcp/configuration.mdx",
+    "docs/features/agent-workflows.mdx",
+    "docs/usage/model-context-protocol.mdx",
+    ".agents/skills/tool/SKILL.md",
   ]);
 });
 

@@ -41,8 +41,8 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
     <div class="eyebrow">Candidate Pool</div>
     <h1>Review first. Publish only what earns it.</h1>
     <p>
-      Every candidate keeps source, score, notes, permission state, and target
-      content type visible before it can move into the public site.
+      Every candidate keeps source, score, capability signals, permission state,
+      and target content type visible before it can move into the public site.
     </p>
     <div class="hero-actions">
       <a class="small-button" href="#queue">Review candidate queue</a>
@@ -62,12 +62,12 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
   <section class="section page help-panel">
     <div>
       <div class="eyebrow">How this page works</div>
-      <h2>Open a candidate if you want to inspect it, or publish directly from the queue.</h2>
+      <h2>Open a candidate to inspect what it helps with, or publish directly from the queue.</h2>
     </div>
     <ol>
-      <li>Click <code>Review</code> to inspect source evidence first.</li>
-      <li>Click <code>Publish now</code> to approve and publish in one action.</li>
-      <li>After publishing, open the public page link shown by the button state.</li>
+      <li>Click <code>Review</code> to inspect capability signals, source quality, and official links.</li>
+      <li>Click <code>Publish now</code> when the tool value is clear enough for the public directory.</li>
+      <li>The public page links users back to official setup docs instead of mirroring generated commands.</li>
     </ol>
   </section>
 
@@ -88,7 +88,7 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
               <span>{formatStars(candidate.data.githubMetadata?.stars)}</span>
               <span>{candidate.data.permissionStatus ?? candidate.data.githubMetadata?.license ?? "permission unknown"}</span>
               <span>{candidate.data.detectedFiles.length} evidence files</span>
-              <span>{candidate.data.extractedInstall.length} install hints</span>
+              <span>{candidate.data.extractedSignals.length} capability signals</span>
             </div>
           </a>
           <div class="row-actions">

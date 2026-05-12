@@ -48,8 +48,8 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
       <div class="submit-steps">
         <article>
           <strong>01</strong>
-          <h3>Review evidence</h3>
-          <p>Check source, stars, license or permission, extracted install hints, detected files, and proposed Agent mapping.</p>
+          <h3>Review value</h3>
+          <p>Check source, stars, license or permission, capability signals, detected files, and proposed Agent mapping.</p>
         </article>
         <article>
           <strong>02</strong>
@@ -145,31 +145,9 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
     }
 
     {
-      candidate.data.extractedInstall.length > 0 && (
-        <article class="panel wide">
-          <div class="eyebrow">Extracted install hints</div>
-          <div class="snippet-list">
-            {candidate.data.extractedInstall.map((hint) => (
-              <div>
-                <h3>{hint.title}</h3>
-                <p class="hint-meta">
-                  {hint.audience ?? "needs_review"}
-                  {hint.sourcePath && <> · {hint.sourcePath}</>}
-                </p>
-                <p>{hint.body}</p>
-                {hint.command && <code>{hint.command}</code>}
-                {hint.code && <pre><code>{hint.code}</code></pre>}
-              </div>
-            ))}
-          </div>
-        </article>
-      )
-    }
-
-    {
       (candidate.data.detectedFiles.length > 0 || candidate.data.extractedSignals.length > 0) && (
         <article class="panel wide">
-          <div class="eyebrow">Detected signals</div>
+          <div class="eyebrow">Capability signals</div>
           <div class="tags">
             {candidate.data.extractedSignals.map((signal) => <span>{signal}</span>)}
             {candidate.data.detectedFiles.slice(0, 20).map((file) => <span>{file}</span>)}
