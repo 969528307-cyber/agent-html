@@ -28,7 +28,7 @@
     "owner": "affaan-m",
     "repo": "everything-claude-code",
     "fullName": "affaan-m/everything-claude-code",
-    "stars": 179661,
+    "stars": 179704,
     "license": "MIT",
     "topics": [
       "ai-agents",
@@ -41,7 +41,7 @@
       "productivity"
     ],
     "defaultBranch": "main",
-    "lastPushedAt": "2026-05-12T02:56:30Z"
+    "lastPushedAt": "2026-05-12T03:44:08Z"
   },
   "detectedFiles": [
     ".agents/skills/agent-introspection-debugging/SKILL.md",
@@ -112,14 +112,7 @@
       "extract": "name: brand voice description: Build a source derived writing style profile from real posts, essays, launch notes, docs, or site copy, then reuse that profile across content, outreach, and social workflows. Use when the user wants voice consistency without generic AI writing tropes. Brand Voice Build a durable voice profile from real source material, then use that profile everywhere instead of re deriving style from "
     }
   ],
-  "extractedInstall": [
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "### 3. Decide DAILY vs LIBRARY\n\nPromote to `DAILY` when:\n\n- the repo clearly uses the matching stack\n- the component is general enough to help every session\n- the repo already depends on the corresponding runtime or workflow\n\nDemote to `LIBRARY` when:\n\n- the component is off-stack\n- the repo might need it later, but not every day\n- it adds context overhead without immediate relevance\n\n### 4. Build the install plan\n\nTranslate the classification into action:\n\n- DAILY skills -> install or keep in `.claude/skills/`\n- DAILY commands -> keep as explicit shims only if still useful\n- DAILY rules -> install only matching language sets\n- DAILY hooks/scripts -> keep only compatible ones\n- LIBRARY surfaces -> keep accessible through search or `skill-library`\n\nIf the repo already uses selective installs, update that plan instead of creating another system.\n\n### 5. Create the optional library router\n\nIf the project wants a searchable library surface, create:\n\n- `.claude/skills/skill-library/SKILL.md`\n\nThat router should contain:\n\n- a short explanation of DAILY vs LIBRARY\n- grouped trigger keywords\n- where the library references live\n\nDo not duplicate every skill body inside the router.\n\n### 6. Verify the result\n\nAfter the plan is applied, verify:\n\n- every DAILY file exists where expected\n- stale language rules were not left active\n- incompatible hooks were not installed\n- th\n\ninstall actually matches the repo stack\n\nReturn a compact report with:\n\n- DAILY count\n- LIBRARY count\n- removed stale surfaces\n- open questions\n\n## Handoffs\n\nIf the next step is interactive installation or repair, hand off to:\n\n- `configure-ecc`\n\nIf the next step is overlap cleanup or catalog review, hand off to:\n\n- `skill-stocktake`\n\nIf the next step is broader context trimming, hand off to:\n\n- `strategic-compact`\n\n## Output Format\n\nReturn the result in this order:",
-      "codeLanguage": "text"
-    }
-  ],
+  "extractedInstall": [],
   "extractedSignals": [
     "Repository includes skill-related files"
   ],

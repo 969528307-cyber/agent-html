@@ -27,7 +27,7 @@
     "owner": "Snailclimb",
     "repo": "JavaGuide",
     "fullName": "Snailclimb/JavaGuide",
-    "stars": 155580,
+    "stars": 155582,
     "license": "Apache-2.0",
     "topics": [
       "agent",
@@ -70,35 +70,7 @@
   ],
   "readmeExtract": "推荐在线阅读（体验更好，速度更快）：[javaguide.cn](https://javaguide.cn/) 面试突击版本（只保留重点，附带精美 PDF 下载）：[interview.javaguide.cn](https://interview.javaguide.cn/) <div align=\"center\" [![logo](https://oss.javaguide.cn/github/javaguide/csdn/1c00413c65d1995993bf2b0daf7b4f03.png)](https://github.com/Snailclimb/JavaGuide) [GitHub](https://github.com/Snailclimb/JavaGuide) | [Gitee](https://gitee.com/SnailClimb/JavaGuide) <a href=\"https://trendsh",
   "skillExtracts": [],
-  "extractedInstall": [
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "在你已经知道哪块大概有问题、想让 AI 帮你精确定位的时候，这个功能很实用。\n\n### 实战案例：Spring 事务失效\n\n有一次我写了一个用户认证模块，自测通过就准备提交了。习惯性地先跑了一遍 `/simplify`，它直接帮我找到了 6 个潜在问题，经过确认，确实都是实际存在的问题。\n\n![直接运行 /simplify 命令](https://oss.javaguide.cn/github/javaguide/ai/coding/claudecode/simplify-command-run.png)\n\n![扫描到的问题](https://oss.javaguide.cn/github/javaguide/ai/coding/claudecode/simplify-issues-found.png)\n\n最值得说的是一个 **Spring 事务失效** 的问题。三个 Agent 中有两个独立地从不同角度捕获到了同一个 Bug。\n\n问题代码是这样的——`WatchlistService` 里，外层方法获取 Redis 分布式锁做 double-check，内部调一个 `protected` 方法执行数据库写入：",
-      "codeLanguage": "text"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "### 2. 自定义斜杠命令\n\n对于重复性的复杂任务，可以在 `.claude/commands` 目录中创建 Markdown 模板，将其固化为命令。\n\n- **示例**：创建一个 `/fix-issue $ARGUMENTS` 命令。\n- **效果**：输入 `/fix-issue 1024`，Claude 自动执行：`查看 Issue → 搜索相关代码 → 编写修复 → 运行测试 → 提交 PR` 的全套流程。\n\n### ⭐️ 3. Skills：将重复劳动固化为技能\n\n如果一件事你一天做了两次，就值得把它变成一个 Skill。\n\n一句话：**Skill 是保存下来的工作流，启动时只加载元数据（名称和描述，约 100 个 Token），只有当任务匹配时才会读取完整指令。** 这种“延迟加载”的设计保证了能力可用，又不会挤占上下文窗口。\n\n- **手动调用**：在对话框中输入 `/skill-name`。\n- **自动发现**：Claude 根据 Skill 的描述自动匹配当前任务并激活。\n\nSkill 存放在 `~/.claude/skills/`（用户级）或 `.claude/skills/`（项目级）。一些优秀的社区 Skills：\n\n- **[Superpowers](https://github.com/obra/superpowers)**：TDD + Code Review + 自动计划，把软件工程最佳实践封装为 AI 可执行的技能（推荐首装）。\n- **[Everything Claude Code](https://github.com/affaan-m/everything-claude-code)**：Anthropic 黑客松冠军配置，多 Agent 分工协作，解决上下文腐化问题。\n\n**何时用 Skills vs CLAUDE.md**：简单来说，CLAUDE.md 是“每次都需要的全局上下文”，Skills 是“按需加载的任务指令”。如果一条规则只在特定场景下才需要（如“审查 API 代码时遵循这些规范”），放到 Skills 或 `.claude/rules/` 里；如果每次会话都需要 Claude 知道（如“项目使用 ES Modules”），放 CLAUDE.md。\n\n### ⭐️ 4. Sub-Agent：让主对话保持干净\n\n当 Claude 需要深度调查一个...\n\n---\ntitle: OpenAI Codex 最佳实践指南：提示工程、工具配置与安全策略\ndescription: 综合官方文档与实战经验，系统梳理 OpenAI Codex 云端智能体和 CLI 的提示工程、工具配置、AGENTS.md 分层机制、安全模型与 API 高级特性。\ncategory: AI 编程实战\nhead:\n  - - meta\n    - name: \n\ninstall -g @anthropic-ai/claude-code",
-      "codeLanguage": "text"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "claude"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "npm install -g @anthropic-ai/claude-code"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "npm install -g @anthropic-ai/claude-code"
-    }
-  ],
+  "extractedInstall": [],
   "extractedSignals": [
     "Repository includes skill-related files"
   ],

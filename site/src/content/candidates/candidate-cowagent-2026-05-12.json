@@ -26,7 +26,7 @@
     "owner": "zhayujie",
     "repo": "CowAgent",
     "fullName": "zhayujie/CowAgent",
-    "stars": 44348,
+    "stars": 44351,
     "license": "MIT",
     "topics": [
       "ai",
@@ -106,37 +106,20 @@
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "cp config-template.json config.json"
     },
     {
-      "title": "Configuration snippet",
+      "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
-      "code": "python <base_dir>/scripts/generate.py '<json_args>'",
-      "codeLanguage": "bash"
+      "sourcePath": "docs/en/guide/manual-install.mdx",
+      "command": "git clone https://github.com/zhayujie/CowAgent"
     },
     {
-      "title": "Configuration snippet",
+      "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
-      "code": "</CodeGroup>\n\n## install\n\n安装技能。通过统一的 `install` 命令\n\nSKILL.md 链接）上的技能，无需手动下载和配置。\n\n**从 Cow 技能广场安装（推荐）：**\n\n<CodeGroup>",
-      "codeLanguage": "text"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "</CodeGroup>\n\n支持从 zip / tar.gz 压缩包 URL 安装，解压后自动扫描包含 `SKILL.md` 的目录，支持单个或批量安装。也支持直接从 `SKILL.md` 文件链接安装，会自动解析技能名称和描述。\n\n安装成功后会显示技能名称、描述和来源，例如：",
-      "codeLanguage": "text"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "</CodeGroup>\n\n## info\n\n查看已安装技能的详细信息，包括 `SKILL.md` 内容预览。\n\n<CodeGroup>",
-      "codeLanguage": "text"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "</CodeGroup>\n\n## 技能来源\n\n安装的技能会记录来源信息，可通过 `/skill list` 查看：\n\n| 来源标识 | 说明 |\n| --- | --- |\n| `builtin` | 项目内置技能 |\n| `cowhub` | 从 CowAgent Skill Hub 安装 |\n| `github` | 从 GitHub URL 直接安装 |\n| `clawhub` | 从 ClawHub 安装 |\n| `url` | 从 SKILL.md URL 安装 |\n| `local` | 本地创建的技能 |\n\n---\ntitle: Skill Management\ndescription: Install, uninstall, enable, disable, and manage skills via commands\n---\n\nSkill management commands are used to install, query, and manage CowAgent skills. Use `/skill <subcommand>` in chat or `cow skill <subcommand>` in the terminal.\n\n## list\n\nList installed skills and their status.\n\n<CodeGroup>",
-      "codeLanguage": "text"
+      "sourcePath": "docs/en/guide/manual-install.mdx",
+      "command": "cp config-template.json config.json"
     }
   ],
   "extractedSignals": [

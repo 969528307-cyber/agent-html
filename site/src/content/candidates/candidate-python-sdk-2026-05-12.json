@@ -47,32 +47,38 @@
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "uv init mcp-server-demo"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "uv add \"mcp[cli]\""
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "pip install \"mcp[cli]\""
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "uv run mcp"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "code": "\"\"\"\nFastMCP quickstart example.\n\nRun from the repository root:\n    uv run examples/snippets/servers/fastmcp_quickstart.py\n\"\"\"\n\nfrom mcp.server.fastmcp import FastMCP\n\n# Create an MCP server\nmcp = FastMCP(\"Demo\", json_response=True)\n\n\n# Add an addition tool\n@mcp.tool()\ndef add(a: int, b: int) -> int:\n    \"\"\"Add two numbers\"\"\"\n    return a + b\n\n\n# Add a dynamic greeting resource\n@mcp.resource(\"greeting://{name}\")\ndef get_greeting(name: str) -> str:\n    \"\"\"Get a personalized greeting\"\"\"\n    return f\"Hello, {name}!\"\n\n\n# Add a prompt\n@mcp.prompt()\ndef greet_user(name: str, style: str = \"friendly\") -> str:\n    \"\"\"Generate a greeting prompt\"\"\"\n    styles = {\n        \"friendly\": \"Please write a warm, friendly greeting\",\n        \"formal\": \"Please write a formal, professional greeting\",\n    \n\nmcp.run(transport=\"streamable-http\")",
       "codeLanguage": "python"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "uv run --with mcp examples/snippets/servers/fastmcp_quickstart.py"
     }
   ],

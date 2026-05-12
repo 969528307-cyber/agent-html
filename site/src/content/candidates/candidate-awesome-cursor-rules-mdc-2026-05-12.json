@@ -39,32 +39,38 @@
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "git clone https://github.com/sanjeed5/awesome-cursor-rules-mdc.git"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "uv sync"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "uv run src/generate_mdc_files.py"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "uv run src/generate_mdc_files.py"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "code": "By default, the script will only process libraries that failed in previous runs.\n\n### Command-line Options\n\n- `--test`: Run in test mode (process only one library)\n- `--tag TAG`: Process only libraries with a specific tag\n- `--library LIBRARY`: Process only a specific library\n- `--output OUTPUT_DIR`: Specify output directory for MDC files\n- `--verbose`: Enable verbose logging\n- `--workers N`: Set number of parallel workers\n- `--rate-limit N`: Set API rate limit calls per minute\n- `--regenerate-all`: Process all libraries, including previously completed ones\n\n### Examples",
       "codeLanguage": "text"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "uv run src/generate_mdc_files.py"
     }
   ],

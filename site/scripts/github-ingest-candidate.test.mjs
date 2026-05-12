@@ -207,6 +207,54 @@ test("does not use nested skill docs as install sources for non-skill candidates
   );
 });
 
+test("does not use agent instruction files as install sources for non-skill candidates", () => {
+  const candidate = buildCandidateFromRepo({
+    repo: {
+      html_url: "https://github.com/example/workflow-platform",
+      name: "workflow-platform",
+      full_name: "example/workflow-platform",
+      description: "Workflow automation with MCP support.",
+      stargazers_count: 12_000,
+      license: { spdx_id: "MIT" },
+      topics: ["mcp", "workflow"],
+      pushed_at: "2026-05-10T00:00:00Z",
+      default_branch: "main",
+      owner: { login: "example" },
+    },
+    files: ["README.md", "AGENTS.md", "CLAUDE.md", ".cursor/rules/dev.mdc", "docs/install/overview.mdx"],
+    readme: "# Workflow Platform\n\nA Model Context Protocol automation platform.",
+    evidenceDocs: [
+      {
+        path: "AGENTS.md",
+        content: "## Install\n```bash\nnpm start # internal dev setup\n```",
+      },
+      {
+        path: "CLAUDE.md",
+        content: "## Setup\n```bash\nnpm run lint-dev\n```",
+      },
+      {
+        path: ".cursor/rules/dev.mdc",
+        content: "## Configuration\n```bash\nbrew install node\n```",
+      },
+      {
+        path: "docs/install/overview.mdx",
+        content: "## Install\n```bash\ndocker compose up -d\n```",
+      },
+    ],
+    today: "2026-05-11",
+  });
+
+  assert.equal(candidate.proposedToolType, "mcp");
+  assert.deepEqual(
+    candidate.extractedInstall.map((hint) => hint.command),
+    ["docker compose up -d"]
+  );
+  assert.deepEqual(
+    candidate.extractedInstall.map((hint) => hint.sourcePath),
+    ["docs/install/overview.mdx"]
+  );
+});
+
 test("slugifies names for candidate ids", () => {
   assert.equal(slugify("Repo Review Skill!"), "repo-review-skill");
 });

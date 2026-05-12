@@ -26,7 +26,7 @@
     "owner": "farion1231",
     "repo": "cc-switch",
     "fullName": "farion1231/cc-switch",
-    "stars": 67480,
+    "stars": 67562,
     "license": "MIT",
     "topics": [
       "ai-tools",
@@ -93,32 +93,39 @@
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
       "command": "brew install node"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
       "command": "brew install claude-code"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
       "command": "npm install -g @anthropic-ai/claude-code"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
       "command": "brew install codex"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
-      "command": "brew upgrade --cask cc-switch"
+      "sourcePath": "docs/user-manual/en/1-getting-started/1.4-quickstart.md",
+      "command": "claude"
     },
     {
-      "title": "Install command",
+      "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
-      "command": "claude"
+      "sourcePath": "docs/user-manual/en/3-extensions/3.1-mcp.md",
+      "code": "**Requirements**:\n- The corresponding command must be installed (e.g., `uvx`, `npx`)\n- The server program must be in PATH\n\n### http\n\nCommunicates with a remote server via HTTP protocol.",
+      "codeLanguage": "text"
     }
   ],
   "extractedSignals": [

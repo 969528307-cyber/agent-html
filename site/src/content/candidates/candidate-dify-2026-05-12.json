@@ -27,7 +27,7 @@
     "owner": "langgenius",
     "repo": "dify",
     "fullName": "langgenius/dify",
-    "stars": 141002,
+    "stars": 141012,
     "license": "NOASSERTION",
     "topics": [
       "agent",
@@ -52,7 +52,7 @@
       "workflow"
     ],
     "defaultBranch": "main",
-    "lastPushedAt": "2026-05-12T02:51:34Z"
+    "lastPushedAt": "2026-05-12T03:33:35Z"
   },
   "detectedFiles": [
     ".agents/skills/backend-code-review/SKILL.md",
@@ -99,41 +99,7 @@
       "extract": "name: how to write component description: React/TypeScript component style guide. Use when writing, refactoring, or reviewing React components, especially around props typing, state boundaries, shared local state with Jotai atoms, API types, query/mutation contracts, navigation, memoization, wrappers, and empty state handling. How To Write A Component Use this as the decision guide for React/TypeScript component stru"
     }
   ],
-  "extractedInstall": [
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "# Code Review Summary\n\nFound <X> critical issues need to be fixed:\n\n## 🔴 Critical (Must Fix)\n\n### 1. <brief description of the issue>\n\nFilePath: <path> line <line>\n<relevant code snippet or pointer>\n\n#### Explanation\n\n<detailed explanation and references of the issue>\n\n#### Suggested Fix\n\n1. <brief description of suggested fix>\n2. <code example> (optional, omit if not applicable)\n\n---\n... (repeat for each critical issue) ...\n\nFound <Y> suggestions for improvement:\n\n## 🟡 Suggestions (Should Consider)\n\n### 1. <brief description of the suggestion>\n\nFilePath: <path> line <line>\n<relevant code snippet or pointer>\n\n#### Explanat\n\nSkill\n\nRefactor high-complexity React components in the Dify frontend codebase with the patterns and workflow below.\n\n> **Complexity Threshold**: Components with complexity > 50 (measured by `pnpm analyze-component`) should be refactored before testing.\n\n## Quick Reference\n\n### Commands (run from `web/`)\n\nUse paths relative to `web/` (e.g., `app/components/...`).\nUse `refactor-component` for refactoring prompts and `analyze-component` for testing prompts and metrics.",
-      "codeLanguage": "markdown"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "This command will:\n- Analyze component complexity and features\n- Identify specific refactoring actions needed\n- Generate a prompt for AI assistant (auto-copied to clipboard on macOS)\n- Provide detailed requirements based on detected patterns\n\n### Step 2: Analyze Details",
-      "codeLanguage": "text"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "pnpm test"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "// ✅ Good: One behavior\nit('should disable button when loading', () => {\n  render(<Button loading />)\n  expect(screen.getByRole('button')).toBeDisabled()\n})\n\n// ❌ Bad: Multiple behaviors\nit('should handle loading state', () => {\n  render(<Button loading />)\n  expect(screen.getByRole('button')).toBeDisabled()\n  expect(screen.getByText('Loading...')).toBeInTheDocument()\n  \n\nConfiguration testing\n- `references/common-patterns.md` - Frequently used testing patterns\n- `references/checklist.md` - Test generation checklist and validation steps\n\n## Authoritative References\n\n### Primary Specification (MUST follow)\n\n- **`web/docs/test.md`** - The canonical testing specification. This skill is derived from this document.\n\n### Reference Examples in Codebase\n\n- `web/utils/classnames.spec.ts` - Utility function tests\n- `web/app/components/base/radio/__tests__/index.spec.tsx` - Component tests\n- `web/__mocks__/provider-context.ts` - Mock factory example\n\n### Project Configuration\n\n- `web/vite.config.ts` - Vite/Vitest configuration\n- `web/vitest.setup.ts` - Test environment setup\n- `web/scripts/analyze-component.js` - Component analysis tool\n- Modules are not mocked automatically. Global mocks live in `web/vitest.setup.ts` (for example `react-i18next`, `next/image`); mock other modules like `ky` or `mime` locally in test files.\n\n\n---\nname: how-to-write-component\ndescription: React/TypeScript component style guide. Use when writing, refactoring, or reviewing React components, especially around props typing, state boundaries, shared local state with Jotai atoms, API types, query/mutation contracts, navigation, memoization, wrappers, and empty-state handling.\n---\n\n# How To Write A Component\n\nUse this as the decision guide for React/TypeScript component structure. Existing code is reference material, not automatic precedent; when it conflicts with these rules, adapt the approach instead of reproducing the violation.\n\n## Core Defaults\n\n- Search before adding UI, hooks, helpers, or styling patterns. Reuse existing base components, feature components, hooks, utilities, and design styles when they fit.\n- Group code by feature workflow, route, or ownership area: components, \n\nskill. Prefer v4 utilities, `gap`, `text-size/line-height`, `min-h-dvh`, and avoid deprecated utilities and `@apply`.\n\n## Ownership\n\n- Put local state, queries, mutations, handlers, and derived UI data in the lowest component that uses them. Extract a purpose-built owner component only when the logic has no natural home.\n- Repeated TanStack query calls in sibling components are acceptable when each component independently consumes the data. Do not hoist a query only because it is duplicated; TanStack Query handles deduplication and cache sharing.\n- Hoist state, queries, or callbacks to a parent only when the parent consumes the data, coordinates shared loading/error/empty UI, needs one consistent snapshot, or owns a workflow spanning children.\n- Avoid prop drilling. One pass-through layer is acceptable; repeated forwarding means ownership should move down or into feature-scoped Jotai UI state. Keep server/cache state in query and API data flow.\n- Keep callbacks in a parent only for workflow coordination such as form submission, shared selection, batch behavior, or navigation. Otherwise let the child or row own its action.\n- Prefer uncontrolled DOM state and CSS variables before adding controlled props.\n\n## Components, Props, And Types\n\n- Type component signatures directly; do not use `FC` or `React.FC`.\n- Prefer `function` for top-level components and module helpers. Use arrow functions for local callbacks, handlers, and lambda-style APIs.\n- Prefer named exports. Use default exports only where the framework requires them, such as Next.js route files.\n- Type simple one-off props inline. Use a named `Props` type only when reused, exported, complex, or clearer.\n- Use API-generated or API-returned types at component boundaries. Keep small UI conversion helpers beside the compone\n\nconfigurations\n\n## Backend Workflow\n\n- Read `api/AGENTS.md` for details\n- Run backend CLI commands through `uv run --project api <command>`.\n- Integration tests are CI-only and are not expected to run in the local environment.\n\n## Frontend Workflow\n\n- Read `web/AGENTS.md` for details\n\n## Testing & Quality Practices\n\n- Follow TDD: red → green → refactor.\n- Use `pytest` for backend tests with Arrange-Act-Assert structure.\n- Enforce strong typing; avoid `Any` and prefer explicit type annotations.\n- Write self-documenting code; only add comments that explain intent.\n\n## Language Style\n\n- **Python**: Keep type hints on functions and attributes, and implement relevant special methods (e.g., `__repr__`, `__str__`). Prefer `Type...\n\n# AGENTS.md\n\n## Project Overview\n\nDify is an open-source platform for developing LLM applications with an intuitive interface combining agentic AI workflows, RAG pipelines, agent capabilities, and model management.\n\nThe codebase is split into:\n\n- **Backend API** (`/api`): Python Flask application organized with Domain-Driven Design\n- **Frontend Web** (`/web`): Next.js application using TypeScript and React\n- **Docker deployment** (`/docker`): Containerized deployment configurations\n\n## Backend Workflow\n\n- Read `api/AGENTS.md` for details\n- Run backend CLI commands through `uv run --project api <command>`.\n- Integration tests are CI-only and are not expected to run in the local environment.\n\n## Frontend Workflow\n\n- Read `web/AGENTS.md` for details\n\n## Testing & Quality Practices\n\n- Follow TDD: red → green → refactor.\n- Use `pytest` for backend tests with Arrange-Act-Assert structure.\n- Enforce strong typing; avoid `Any` and prefer explicit type annotations.\n- Write self-documenting code; only add comments that explain intent.\n\n## Language Style\n\n- **Python**: Kee\n\nUsage\n\n- Define DTOs with Pydantic v2 models and forbid extras by default.\n- Use `@field_validator` / `@model_validator` for domain rules.\n\nExample:",
-      "codeLanguage": "typescript"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "pnpm install"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "pnpm -C e2e e2e"
-    }
-  ],
+  "extractedInstall": [],
   "extractedSignals": [
     "Repository includes skill-related files"
   ],

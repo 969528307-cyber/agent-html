@@ -26,7 +26,7 @@
     "owner": "D4Vinci",
     "repo": "Scrapling",
     "fullName": "D4Vinci/Scrapling",
-    "stars": 48910,
+    "stars": 48916,
     "license": "BSD-3-Clause",
     "topics": [
       "ai",
@@ -70,38 +70,42 @@
   ],
   "extractedInstall": [
     {
-      "title": "Configuration snippet",
+      "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
-      "code": "Usage: scrapling extract [OPTIONS] COMMAND [ARGS]...\n\nCommands:\n  get             Perform a GET request and save the content to a file.\n  post            Perform a POST request and save the content to a file.\n  put        \n\nUsage pattern\n- Choose your output format by changing the file extension. Here are some examples for the `scrapling extract get` command:\n  - Convert the HTML content to Markdown, then save it to the file (great for documentation): `scrapling extract get \"https://blog.example.com\" article.md`\n  - Save the HTML content as it is to the file: `scrapling extract get \"https://example.com\" page.html`\n  - Save a clean version of the text content of the webpage to the file: `scrapling extract get \"https://example.com\" content.txt`\n- Output to a temp file, read it back, then clean up.\n- All commands can use CSS selectors to extract specific parts of the page through `--css-selector` or `-s`.\n\nWhich command to use generally:\n- Use **`get`** with simple websites, blogs, or news articles.\n- Use **`fetch`** with modern web apps, or sites with dynamic content.\n- Use **`stealthy-fetch`** with protected sites, Cloudflare, or anti-bot systems.\n\n> When unsure, start with `get`. If it fails or returns empty content, escalate to `fetch`, then `stealthy-fetch`. The speed of `fetch` and `stealthy-fetch` is nearly the same, so you are not sacrificing anything.\n\n#### Key options (requests)\n\nThose options are shared between the 4 HTTP request commands:\n\n| Option                                     | Input type | Description                                                                                                                                    |\n|:-------------------------------------------|:----------:|:-----------------------------------------------------------------------------------------------------------------------------------------------|\n| -H, --headers                              |    TEXT    | HTTP headers in format \"Key: Value\" (can be used multiple times)                      \n\ninstalled on your device, enable this, and the Fetcher will launch an instance of your browser and use it. (default: False) |\n| --timeout                                |  INTEGER   | Timeout in milliseconds (default: 30000)                                                                                                                 |\n| --wait                                   |  INTEGER   | Additional wait time in milliseconds after page load (default: 0)                                                                                        |\n| -s, --css-selector                       |    TEXT    | CSS selector to extract specific content from the page. It returns all matches.                                                                          |\n| --wait-selector                          |    TEXT    | CSS selector to wait for before proceeding                                                                                                               |\n| --proxy                                  |    TEXT    | Proxy URL in format \"http://username:password@host:port\"                                                                                                 |\n| -H, --extra-headers                      |    TEXT    | Extra headers in format \"Key: Value\" (can be used multiple times)                                                                                        |\n| --dns-over-https / --no-dns-over-https   |    None    | Route DNS through Cloudflare's DoH to prevent DNS leaks when using proxies (default: False)                                                              |\n| --block-ads / --no-block-ads             |    None    | Block requests to ~3,500 known ad and tracker domains (default: False)                                                              \n\nMCP. Here's a quick overview of how to code with scrapling.\n\n### Basic Usage\nHTTP requests with session support",
-      "codeLanguage": "bash"
+      "sourcePath": "docs/ai/mcp-server.md",
+      "command": "pip install \"scrapling[ai]\""
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
-      "command": "pip install \"scrapling[ai]\""
+      "sourcePath": "docs/ai/mcp-server.md",
+      "command": "docker pull pyd4vinci/scrapling"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/ai/mcp-server.md",
+      "command": "docker pull ghcr.io/d4vinci/scrapling:latest"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/ai/mcp-server.md",
       "code": "\"ScraplingServer\": {\n  \"command\": \"scrapling\",\n  \"args\": [\n    \"mcp\"\n  ]\n}",
       "codeLanguage": "json"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/ai/mcp-server.md",
       "code": "{\n  \"mcpServers\": {\n    \"ScraplingServer\": {\n      \"command\": \"scrapling\",\n      \"args\": [\n        \"mcp\"\n      ]\n    }\n  }\n}",
       "codeLanguage": "json"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/ai/mcp-server.md",
       "command": "pip install \"scrapling[ai]\""
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "\"ScraplingServer\": {\n  \"command\": \"scrapling\",\n  \"args\": [\n    \"mcp\"\n  ]\n}",
-      "codeLanguage": "json"
     }
   ],
   "extractedSignals": [

@@ -29,7 +29,7 @@
     "owner": "ComposioHQ",
     "repo": "awesome-claude-skills",
     "fullName": "ComposioHQ/awesome-claude-skills",
-    "stars": 59301,
+    "stars": 59315,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -125,18 +125,14 @@
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "claude --plugin-dir ./connect-apps-plugin"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "claude --plugin-dir ./connect-apps-plugin"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "RUBE_MULTI_EXECUTE_TOOL\ntools: [{\n  tool_slug: \"TOOL_SLUG_FROM_SEARCH\",\n  arguments: {/* schema-compliant args from search results */}\n}]\nmemory: {}\nsession_id: \"your_session_id\"",
-      "codeLanguage": "text"
     }
   ],
   "extractedSignals": [

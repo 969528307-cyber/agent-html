@@ -26,11 +26,11 @@
     "owner": "openai",
     "repo": "codex",
     "fullName": "openai/codex",
-    "stars": 81913,
+    "stars": 81929,
     "license": "Apache-2.0",
     "topics": [],
     "defaultBranch": "main",
-    "lastPushedAt": "2026-05-12T02:59:59Z"
+    "lastPushedAt": "2026-05-12T03:40:58Z"
   },
   "detectedFiles": [
     ".codex/skills/babysit-pr/SKILL.md",
@@ -91,26 +91,31 @@
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "npm install -g @openai/codex"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "brew install --cask codex"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "npm install -g @openai/codex"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "brew install --cask codex"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/install.md",
       "command": "git clone https://github.com/openai/codex.git"
     }
   ],

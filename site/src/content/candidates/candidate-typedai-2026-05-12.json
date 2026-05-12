@@ -58,27 +58,32 @@
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "code": "import { PromptTemplate } from \"@langchain/core/prompts\";\nimport { RunnableSequence } from \"@langchain/core/runnables\";\nimport { StringOutputParser } from \"@langchain/core/output_parsers\";\nimport { ChatAnthropic } from \"@langchain/anthropic\";\n\nconst prompt1 = PromptTemplate.fromTemplate(\n  `What is the city {person} is from? Only respond with the name of the city.`\n);\nconst prompt2 = PromptTemplate.fromTemplate(\n  `What country is the city {city} in? Respond in {language}.`\n);\n\nconst model = new ChatAnthropic({});\n\nconst chain = prompt1.pipe(model).pipe(new StringOutputParser());\n\nconst combinedChain = RunnableSequence.from([\n  {\n    city: chain,\n    language: (input) => input.language,\n  },\n  prompt2,\n  model,\n  new StringOutputParser(),\n]);\n\nco\n\nSetup](https://typedai.dev/setup/) | [Observability](https://typedai.dev/observability/) | [Function calling](https://typedai.dev/functions/) | \n[Autonomous AI Agent](https://typedai.dev/autonomous-agents/) | [AI Software Engineer](https://typedai.dev/software-engineer/) | [AI Code reviews](https://typedai.dev/code-review/) |\n[Tools/Integrations](https://typedai.dev/integrations/) | [Roadmap](https://typedai.dev/roadmap/)\n\n---\n\n[Features](#key-features) | [UI Examples](#ui-examples) | [Code examples](#code-examples) | [Contributing](#contributing)\n\nTypedAI is a full-featured platform for developing and running agents, LLM based workflows and chatbots.\n\nIncluded are capable software engineering agents, which have assisted building the platform.\n\n## Key features\n\n- [Advanced Autonomous agents](https://typedai.dev/autonomous-agents)\n- [Software developer agents](https://typedai.dev/software-engineer/)\n- [Pull request code review agent](https://typedai.dev/code-review/)\n- [AI chat interface](https://typedai.dev/chat/)\n- [Slack chatbot](https://typedai.dev/chatbot/)\n- Supports many LLM se...\n\n...- [Slack chatbot](https://typedai.dev/chatbot/)\n- Supports many LLM services - OpenAI, Anthropic (native & Vertex), Gemini, Groq, Fireworks, Together.ai, DeepSeek, Ollama, Cerebras, SambaNova, OpenRouter, X.ai\n- Multi-agent [extend-reasoning implementations](https://github.com/TrafficGuard/typedai/tree/main/src/llm/multi-agent) of the LLM interface\n- Configurable Human-in-the-loop settings\n- [Functional callable tools/integrations](https://typedai.dev/integrations/) (Filesystem, Jira, Slack, Perplexity, Google Cloud, Gitlab, GitHub etc)\n- CLI and Web UI interface\n- Run locally or deployed on the cloud with multi-user/SSO\n- OpenTelemetry based observability\n- Leverages the extensive Python\n\nUsage\n\nTypedAI provides powerful command-line tools for automation and development workflows:",
       "codeLanguage": "typescript"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/POSTGRES_SETUP.md",
       "command": "npm run start:local"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/POSTGRES_SETUP.md",
       "command": "brew install postgresql@16"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/POSTGRES_SETUP.md",
       "command": "brew install postgresql@16"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/docs/setup.md",
       "command": "git clone https://github.com/TrafficGuard/typedai.git"
     }
   ],

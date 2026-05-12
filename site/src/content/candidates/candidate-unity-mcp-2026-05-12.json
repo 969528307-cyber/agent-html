@@ -28,7 +28,7 @@
     "owner": "CoplayDev",
     "repo": "unity-mcp",
     "fullName": "CoplayDev/unity-mcp",
-    "stars": 9488,
+    "stars": 9489,
     "license": "MIT",
     "topics": [
       "ai",
@@ -83,36 +83,42 @@
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"url\": \"http://localhost:8080/mcp\"\n    }\n  }\n}",
       "codeLanguage": "json"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "code": "{\n  \"servers\":\n\nMCP\": {\n      \"type\": \"http\",\n      \"url\": \"http://localhost:8080/mcp\"\n    }\n  }\n}",
       "codeLanguage": "json"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"command\": \"uvx\",\n      \"args\": [\"--from\", \"mcpforunityserver\", \"mcp-for-unity\", \"--transport\", \"stdio\"]\n    }\n  }\n}",
       "codeLanguage": "json"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"command\": \"C:/Users/YOUR_USERNAME/AppData/Local/Microsoft/WinGet/Links/uvx.exe\",\n      \"args\": [\"--from\", \"mcpforunityserver\", \"mcp-for-unity\", \"--transport\", \"stdio\"]\n    }\n  }\n}",
       "codeLanguage": "json"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "code": "{\n  \"servers\": {\n    \"unityMCP\": {\n      \"type\": \"http\",\n      \"url\": \"http://localhost:8080/mcp\"\n    }\n  }\n}",
       "codeLanguage": "json"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"command\": \"uvx\",\n      \"args\": [\"--from\", \"mcpforunityserver\", \"mcp-for-unity\", \"--transport\", \"stdio\"]\n    }\n  }\n}",
       "codeLanguage": "json"
     }

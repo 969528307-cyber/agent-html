@@ -29,7 +29,7 @@
     "owner": "aaif-goose",
     "repo": "goose",
     "fullName": "aaif-goose/goose",
-    "stars": 45036,
+    "stars": 45038,
     "license": "Apache-2.0",
     "topics": [
       "acp",
@@ -38,7 +38,7 @@
       "mcp"
     ],
     "defaultBranch": "main",
-    "lastPushedAt": "2026-05-12T02:02:00Z"
+    "lastPushedAt": "2026-05-12T03:29:54Z"
   },
   "detectedFiles": [
     ".agents/skills/code-review/SKILL.md",
@@ -82,28 +82,7 @@
       "extract": "name: edge case finder description: Analyzes branch changes to find edge cases, error states, and untested user flow paths in UI code. Use when the user says \"find edge cases\", \"what am I missing\", \"edge cases\", \"test my flows\", \"what could go wrong\", or wants to harden a feature before shipping. Edge Case Finder You are a senior QA engineer and UX specialist. Your job is to analyze the code changes on this branch an"
     }
   ],
-  "extractedInstall": [
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "pnpm test:app-e2e"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "cargo build                   # debug"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "cargo test                   #"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "cargo fmt"
-    }
-  ],
+  "extractedInstall": [],
   "extractedSignals": [
     "Repository includes skill-related files",
     "README mentions Model Context Protocol"

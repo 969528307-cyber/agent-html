@@ -23,7 +23,7 @@
     "owner": "jeecgboot",
     "repo": "JeecgBoot",
     "fullName": "jeecgboot/JeecgBoot",
-    "stars": 46187,
+    "stars": 46191,
     "license": "Apache-2.0",
     "topics": [
       "activiti",
@@ -59,14 +59,7 @@
   ],
   "readmeExtract": "中文 | [English](./README.en US.md) | [日本語](./README.ja JP.md) JeecgBoot AI低代码平台 =============== 当前最新版本： 3.9.2（2026 04 30） [![AUR](https://img.shields.io/badge/license Apache%20License%202.0 blue.svg)](https://github.com/jeecgboot/JeecgBoot/blob/master/LICENSE) [![](https://img.shields.io/badge/Author 北京国炬软件 orange.svg)](https://jeecg.com) [![](https://img.shields.io/badge/blog 技术博客 orange.svg)](https://www.toutiao.com",
   "skillExtracts": [],
-  "extractedInstall": [
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "# Full build (tests are skipped by defa\n\nsetup:** Import `db/jeecgboot-mysql-5.7.sql` for the base schema. Flyway handles incremental migrations (scripts organized by date folders like `202512/`).\n\n**Flyway note:** In dev mode, `spring.main.lazy-initialization=true` is enabled for startup speed, which can interfere with Flyway auto-config. Flyway auto-config is explicitly excluded and managed separately.\n\n## Configuration\n\nMain config files are in `jeecg-module-system/jeecg-system-start/src/main/resources/`:\n- `application.yml` — profile selector (active profile set by Maven: dev/test/prod/docker)\n- `application-dev.yml` — development config (port 8080, lazy-init enabled)\n- Dev environment requires: MySQL, Redis. Optional: MongoDB, RabbitMQ\n\nKey config namespace: `jeecg.*` in YAML controls platform features (upload type, firewall settings, AI config, MinIO, shiro excludes, etc.).\n\n## Docker Services (docker-compose.yml)\n\nMySQL (port 13306), Redis, PostgreSQL+pgvector, MongoDB, and the application container (port 8080).\n\n## Online 低代码模块 (jeecg-boot-module-online)\n\nOnline 模块采用**元数据驱动**架构，通过数据库配置表（`onl_cgform_*`）实现运行时 CRUD，无需生成代码。配置存在数据库中而非文件系统，Claude Code 无法直接读取...\n\n# CLAUDE.md\n\nThis file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n## Project Overview\n\nJeecgBoot Vue3 frontend — an enterprise low-code platform built with Vue 3 + Vite 6 + Ant Design Vue 4 + TypeScript. Uses pnpm as package manager. Node 18 or 20+ required (`engines: \"^18 || >=20\"`).\n\n## Common Commands",
-      "codeLanguage": "bash"
-    }
-  ],
+  "extractedInstall": [],
   "extractedSignals": [],
   "reviewScore": {
     "sourceTrust": 4,

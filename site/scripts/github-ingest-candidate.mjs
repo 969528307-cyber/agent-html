@@ -157,9 +157,14 @@ const codeFencePattern = /```(\w+)?\n([\s\S]*?)```/g;
 
 const isSkillDocPath = (path = "") => /(^|\/)SKILL\.md$/i.test(path) || /^\.agents\/skills\//i.test(path);
 
+const isPrimaryInstallDocPath = (path = "") =>
+  /^README(\.[\w-]+)?$/i.test(path) ||
+  /^README\./i.test(path) ||
+  /^docs\//i.test(path) && /(getting-started|quickstart|install|setup|configuration|config|usage|mcp|model-context-protocol)/i.test(path);
+
 const isInstallSourceAllowed = ({ path = "", type }) => {
   if (type === "skill") return true;
-  return !isSkillDocPath(path);
+  return isPrimaryInstallDocPath(path) && !isSkillDocPath(path);
 };
 
 export const extractInstallHints = (readme, { sourcePath = "README.md" } = {}) => {

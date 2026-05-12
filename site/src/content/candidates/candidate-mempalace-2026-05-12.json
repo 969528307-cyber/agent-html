@@ -26,7 +26,7 @@
     "owner": "MemPalace",
     "repo": "mempalace",
     "fullName": "MemPalace/mempalace",
-    "stars": 51972,
+    "stars": 51976,
     "license": "MIT",
     "topics": [
       "ai",
@@ -85,34 +85,15 @@
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "command": "uv tool install mempalace"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
       "code": "For Claude Code, Gemini CLI, MCP-compatible tools, and local models, see\n[mempalaceofficial.com/guide/getting-started](https://mempalaceofficial.com/guide/getting-started.html).\n\n---\n\n## Benchmarks\n\nAll numbers below are reproducible from this repository with the commands\nin [`benchmarks/BENCHMARKS.md`](benchmarks/BENCHMARKS.md). Full\nper-question result files are committed under `benchmarks/results_*`.\n\n**LongMemEval — retrieval recall (R@5, 500 questions):**\n\n| Mode | R@5 | LLM required |\n|---|---|---|\n| Raw (semantic search, no heuristics, no LLM) | **96.6%** | None |\n| Hybrid v4, held-out 450q (tuned on 50 dev, not seen during training) | **98.4%** | None |\n| Hybrid v4 + LLM rerank (full 500) | ≥99% | Any capable model |\n\nThe raw 96.6% requires no API key, no cloud, and no LLM at any stage. The\nhybrid pipeline adds keyword boosting, temporal-proximity boosting, and\npreference-pattern extraction; the held-out 98.4% is the honest\ngeneralisable figure.\n\nThe rerank pipeline promotes the best candidate out of the top-20\nretrieved sessions using an LLM reader. It works with any reasonably\ncapable model — we have reproduced it with Claude Haiku, Claude Sonnet,\nand minimax-m2.7 \n\ninstall -e \".[dev]\"\n# see benchmarks/README.md for dataset download commands\nuv run python benchmarks/longmemeval_bench.py /path/to/longmemeval_s_cleaned.json",
       "codeLanguage": "text"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "uv tool install mempalace   # or: pip install mempalace"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "mempalace instructions <command>",
-      "codeLanguage": "bash"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "uv sync --extra dev   # recommended; or: pip install -e \".[dev]\""
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "uv..."
     }
   ],
   "extractedSignals": [

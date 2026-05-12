@@ -121,33 +121,14 @@
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
-      "command": "npm run lint-dev"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "code": "Priority (lowest to highest): `~/.agent-browser/config.json` < `./agent-browser.json` < env vars < CLI flags. Use `--config <path>` or `AGENT_BROWSER_CONFIG` env var for a custom config file (exits with error if missing/invalid). All CLI options map to camelCase keys (e.g., `--executable-path` -> `\"executablePath\"`). Boolean flags accept `true`/`false` values (e.g., `--headed false` overrides config). Extensions from user and project configs are merged, not replaced.\n\n## Deep-Dive Documentation\n\n| Reference | When to Use |\n|-----------|-------------|\n| [references/commands.md](references/commands.md) | Full command reference with all options |\n| [references/snapshot-refs.md](references/snapshot-refs.md) | Ref lifecycle, invalidation rules, troubleshooting |\n| [references/session-management.md](references/session-management.md) | Parallel sessions, state persistence, concurrent scraping |\n| [references/authentication.md](references/authentication.md) | Login flows, OAuth, 2FA handling, state reuse |\n| [references/video-recording.md](references/video-recording.md) | Recording workflows for debugging and documentation |\n| [references/profiling.md](references/profiling.md) | Chrome DevTools profiling for performance analysis |\n| [references/proxy-support.md](references/proxy-support.md) | Proxy configuration, geo-testing, rotating proxies |\n\n## Experimental: Native Mode\n\nagent-browser has an experimental native Rust daemon that communicates with Chrome directly via CDP, bypassing Node.js and Playwright entirely. It is opt-in and not recommended for production use yet.",
-      "codeLanguage": "text"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "brew install node"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "npm start                                       # Setup dev + start all"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "command": "npm start                                       # Setup dev + start all"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/build-pieces/building-pieces/development-setup.mdx",
       "command": "npm start"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/build-pieces/building-pieces/setup-fork.mdx",
+      "command": "git clone --depth=1 https://github.com/YOUR_USERNAME/activepieces.git"
     }
   ],
   "extractedSignals": [
