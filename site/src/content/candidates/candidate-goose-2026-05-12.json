@@ -25,11 +25,12 @@
     "Generic"
   ],
   "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
   "githubMetadata": {
     "owner": "aaif-goose",
     "repo": "goose",
     "fullName": "aaif-goose/goose",
-    "stars": 45038,
+    "stars": 45039,
     "license": "Apache-2.0",
     "topics": [
       "acp",
@@ -41,6 +42,9 @@
     "lastPushedAt": "2026-05-12T03:29:54Z"
   },
   "detectedFiles": [
+    "README.md",
+    "examples/mcp-wiki/pyproject.toml",
+    "examples/mcp-wiki/README.md",
     ".agents/skills/code-review/SKILL.md",
     ".agents/skills/create-app-e2e-test/SKILL.md",
     ".agents/skills/create-pr/SKILL.md",
@@ -51,11 +55,8 @@
     ".cursor/skills/edge-case-finder",
     "AGENTS.md",
     "CLAUDE.md",
-    "README.md",
     "documentation/AGENTS.md",
     "documentation/CLAUDE.md",
-    "examples/mcp-wiki/README.md",
-    "examples/mcp-wiki/pyproject.toml",
     "ui/goose2/AGENTS.md",
     "ui/goose2/CLAUDE.md",
     "ui/goose2/src/shared/ui/AGENTS.md",

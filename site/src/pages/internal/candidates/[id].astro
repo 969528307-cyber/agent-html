@@ -152,6 +152,10 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
             {candidate.data.extractedInstall.map((hint) => (
               <div>
                 <h3>{hint.title}</h3>
+                <p class="hint-meta">
+                  {hint.audience ?? "needs_review"}
+                  {hint.sourcePath && <> · {hint.sourcePath}</>}
+                </p>
                 <p>{hint.body}</p>
                 {hint.command && <code>{hint.command}</code>}
                 {hint.code && <pre><code>{hint.code}</code></pre>}
@@ -446,6 +450,15 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
 
   .snippet-list h3 {
     margin-bottom: 8px;
+  }
+
+  .hint-meta {
+    margin: 0 0 8px !important;
+    color: var(--sage) !important;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
   .reason {

@@ -22,11 +22,12 @@
     "Generic"
   ],
   "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
   "githubMetadata": {
     "owner": "MemPalace",
     "repo": "mempalace",
     "fullName": "MemPalace/mempalace",
-    "stars": 51976,
+    "stars": 51979,
     "license": "MIT",
     "topics": [
       "ai",
@@ -40,18 +41,18 @@
     "lastPushedAt": "2026-05-11T09:37:13Z"
   },
   "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    "examples/mcp_setup.md",
     ".claude-plugin/skills/mempalace/SKILL.md",
     ".codex-plugin/skills/help/SKILL.md",
     ".codex-plugin/skills/init/SKILL.md",
     ".codex-plugin/skills/mine/SKILL.md",
     ".codex-plugin/skills/search/SKILL.md",
     ".codex-plugin/skills/status/SKILL.md",
+    "integrations/openclaw/SKILL.md",
     "AGENTS.md",
     "CLAUDE.md",
-    "README.md",
-    "examples/mcp_setup.md",
-    "integrations/openclaw/SKILL.md",
-    "pyproject.toml",
     "website/concepts/agents.md"
   ],
   "readmeExtract": "[!CAUTION] Scam alert. The only official sources for MemPalace are this [GitHub repository](https://github.com/MemPalace/mempalace), the [PyPI package](https://pypi.org/project/mempalace/), and the docs site at [mempalaceofficial.com](https://mempalaceofficial.com) . Any other domain — including mempalace.tech — is an impostor and may distribute malware. Details and timeline: [docs/HISTORY.md](docs/HISTORY.md). [!IMP",
@@ -86,14 +87,16 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "uv tool install mempalace"
+      "command": "uv tool install mempalace",
+      "audience": "verified_install"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
       "code": "For Claude Code, Gemini CLI, MCP-compatible tools, and local models, see\n[mempalaceofficial.com/guide/getting-started](https://mempalaceofficial.com/guide/getting-started.html).\n\n---\n\n## Benchmarks\n\nAll numbers below are reproducible from this repository with the commands\nin [`benchmarks/BENCHMARKS.md`](benchmarks/BENCHMARKS.md). Full\nper-question result files are committed under `benchmarks/results_*`.\n\n**LongMemEval — retrieval recall (R@5, 500 questions):**\n\n| Mode | R@5 | LLM required |\n|---|---|---|\n| Raw (semantic search, no heuristics, no LLM) | **96.6%** | None |\n| Hybrid v4, held-out 450q (tuned on 50 dev, not seen during training) | **98.4%** | None |\n| Hybrid v4 + LLM rerank (full 500) | ≥99% | Any capable model |\n\nThe raw 96.6% requires no API key, no cloud, and no LLM at any stage. The\nhybrid pipeline adds keyword boosting, temporal-proximity boosting, and\npreference-pattern extraction; the held-out 98.4% is the honest\ngeneralisable figure.\n\nThe rerank pipeline promotes the best candidate out of the top-20\nretrieved sessions using an LLM reader. It works with any reasonably\ncapable model — we have reproduced it with Claude Haiku, Claude Sonnet,\nand minimax-m2.7 \n\ninstall -e \".[dev]\"\n# see benchmarks/README.md for dataset download commands\nuv run python benchmarks/longmemeval_bench.py /path/to/longmemeval_s_cleaned.json",
-      "codeLanguage": "text"
+      "codeLanguage": "text",
+      "audience": "configuration"
     }
   ],
   "extractedSignals": [

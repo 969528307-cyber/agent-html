@@ -11,25 +11,24 @@
   "discoveredFrom": "github",
   "summary": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
   "proposedCategory": [
-    "skill",
-    "code-review",
-    "browser",
+    "mcp",
     "docs",
     "search",
-    "workflow",
-    "testing"
+    "workflow"
   ],
   "proposedAgents": [
     "Codex",
     "Claude Code",
-    "Generic"
+    "Cursor",
+    "Hermes Agent"
   ],
-  "proposedToolType": "skill",
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
   "githubMetadata": {
     "owner": "openclaw",
     "repo": "openclaw",
     "fullName": "openclaw/openclaw",
-    "stars": 370976,
+    "stars": 370987,
     "license": "MIT",
     "topics": [
       "ai",
@@ -41,120 +40,69 @@
       "personal"
     ],
     "defaultBranch": "main",
-    "lastPushedAt": "2026-05-12T03:49:35Z"
+    "lastPushedAt": "2026-05-12T04:28:53Z"
   },
   "detectedFiles": [
-    ".agents/skills/clawsweeper/SKILL.md",
-    ".agents/skills/crabbox/SKILL.md",
-    ".agents/skills/discord-clawd/SKILL.md",
-    ".agents/skills/gitcrawl/SKILL.md",
-    ".agents/skills/openclaw-debugging/SKILL.md",
-    ".agents/skills/openclaw-docs/SKILL.md",
-    ".agents/skills/openclaw-ghsa-maintainer/SKILL.md",
-    ".agents/skills/openclaw-parallels-smoke/SKILL.md",
-    ".agents/skills/openclaw-pr-maintainer/SKILL.md",
-    ".agents/skills/openclaw-pre-release-plugin-testing/SKILL.md",
-    ".agents/skills/openclaw-qa-testing/SKILL.md",
-    ".agents/skills/openclaw-refactor-docs/SKILL.md",
-    ".agents/skills/openclaw-release-maintainer/SKILL.md",
-    ".agents/skills/openclaw-secret-scanning-maintainer/SKILL.md",
-    ".agents/skills/openclaw-small-bugfix-sweep/SKILL.md",
-    ".agents/skills/openclaw-test-heap-leaks/SKILL.md",
-    ".agents/skills/openclaw-test-performance/SKILL.md",
-    ".agents/skills/openclaw-testing/SKILL.md",
-    ".agents/skills/optimizetests/SKILL.md",
-    ".agents/skills/parallels-discord-roundtrip/SKILL.md",
-    ".agents/skills/security-triage/SKILL.md",
-    ".agents/skills/tag-duplicate-prs-issues/SKILL.md",
-    ".agents/skills/telegram-crabbox-e2e-proof/SKILL.md",
-    "AGENTS.md",
-    "CLAUDE.md",
     "README.md",
     "docs/.generated/config-baseline.sha256",
-    "docs/.i18n/translation-workflow.md",
-    "docs/AGENTS.md",
-    "docs/CLAUDE.md",
-    "docs/assets/showcase/agents-ui.jpg",
-    "docs/assets/showcase/codexmonitor.png",
-    "docs/assets/showcase/wine-cellar-skill.jpg",
-    "docs/cli/agent.md",
-    "docs/cli/agents.md",
     "docs/cli/config.md",
     "docs/cli/configure.md",
     "docs/cli/mcp.md",
     "docs/cli/setup.md",
-    "docs/cli/skills.md"
+    "docs/cli/uninstall.md",
+    "docs/concepts/usage-tracking.md",
+    "docs/gateway/config-agents.md",
+    "docs/gateway/config-channels.md",
+    "docs/gateway/config-tools.md",
+    "docs/gateway/configuration-examples.md",
+    "docs/gateway/configuration-reference.md",
+    "docs/gateway/configuration.md",
+    "docs/install/ansible.md",
+    "docs/install/azure.md",
+    "docs/install/bun.md",
+    "docs/install/clawdock.md",
+    "docs/install/development-channels.md",
+    "docs/install/digitalocean.md",
+    "docs/install/docker-vm-runtime.md",
+    "docs/install/docker.md",
+    "docs/install/exe-dev.md",
+    "docs/install/fly.md",
+    "docs/install/gcp.md",
+    "docs/install/hetzner.md",
+    "docs/install/hostinger.md",
+    "docs/install/index.md",
+    "docs/install/installer.md",
+    "docs/install/kubernetes.md",
+    "docs/install/macos-vm.md",
+    "docs/install/migrating-claude.md",
+    "docs/install/migrating-hermes.md",
+    "docs/install/migrating.md",
+    "docs/install/nix.md",
+    "docs/install/node.md",
+    "docs/install/northflank.mdx",
+    "docs/install/oracle.md",
+    "docs/install/podman.md",
+    "docs/install/railway.mdx"
   ],
   "readmeExtract": "🦞 OpenClaw — Personal AI Assistant <p align=\"center\" <picture <source media=\"(prefers color scheme: light)\" srcset=\"https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw logo text dark.svg\" <img src=\"https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/openclaw logo text.svg\" alt=\"OpenClaw\" width=\"500\" </picture </p <p align=\"center\" <strong EXFOLIATE! EXFOLIATE!</strong </p <",
-  "skillExtracts": [
-    {
-      "path": ".agents/skills/clawsweeper/SKILL.md",
-      "extract": "name: clawsweeper description: \"Use for all ClawSweeper work: OpenClaw issue/PR sweep reports, commit review reports, repair jobs, cloud fix PRs, @clawsweeper maintainer mention commands, trusted ClawSweeper reviewed autofix/automerge, GitHub Actions monitoring, permissions, gates, and manual backfills.\" ClawSweeper ClawSweeper lives at ~/Projects/clawsweeper . It is the one OpenClaw maintenance bot for sweeping, com"
-    },
-    {
-      "path": ".agents/skills/crabbox/SKILL.md",
-      "extract": "name: crabbox description: Use Crabbox for OpenClaw remote Linux validation. Default to Blacksmith Testbox; includes direct Blacksmith and owned AWS/Hetzner fallback notes when Crabbox fails. Crabbox Use Crabbox when OpenClaw needs remote Linux proof for broad tests, CI parity checks, secrets, hosted services, Docker/E2E/package lanes, warmed reusable boxes, sync timing, logs/results, cache inspection, or lease clean"
-    },
-    {
-      "path": ".agents/skills/discord-clawd/SKILL.md",
-      "extract": "name: discord clawd description: Use to talk to the Discord backed OpenClaw agent/session; not for archive search. Discord Clawd Use this when the task is to talk with the Discord backed agent/session, ask it a question, or post through that route. For Discord archive/history/search, use $discrawl instead. Transport Use the OpenClaw relay helper: If the target alias exists, prefer a private ask first: Use publish whe"
-    },
-    {
-      "path": ".agents/skills/gitcrawl/SKILL.md",
-      "extract": "name: gitcrawl description: Use gitcrawl for OpenClaw issue and PR archive search, duplicate discovery, related thread clustering, and local GitHub mirror freshness checks. metadata: openclaw: requires: bins: gitcrawl Gitcrawl Use this skill before live GitHub search when triaging OpenClaw issues or PRs. gitcrawl is the local candidate discovery layer. It is fast, includes open and closed threads, and can surface dup"
-    },
-    {
-      "path": ".agents/skills/openclaw-debugging/SKILL.md",
-      "extract": "name: openclaw debugging description: Debug OpenClaw model, provider, tool surface, code mode, streaming, and live/Crabbox behavior by choosing the right logs, probes, and proof path before changing code. OpenClaw Debugging Use this skill when OpenClaw behavior differs between local tests, live models, providers, code mode, Tool Search, Crabbox, or CI, and the next move should be a debug signal rather than a guess. R"
-    },
-    {
-      "path": ".agents/skills/openclaw-docs/SKILL.md",
-      "extract": "name: openclaw docs description: Write or review high quality OpenClaw developer documentation. dependencies: [] OpenClaw Docs Overview Use this skill when writing, editing, or reviewing OpenClaw developer documentation for APIs, SDKs, CLI tools, integrations, quickstarts, platform guides, or technical product docs. Write documentation that is concise, helpful, and comprehensive: fast for first success, precise for p"
-    }
-  ],
+  "skillExtracts": [],
   "extractedInstall": [
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "npm install -g openclaw@latest"
+      "command": "npm install -g openclaw@latest",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "npm install -g openclaw@latest"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "sourcePath": ".agents/skills/crabbox/SKILL.md",
-      "code": "command -v crabbox\n../crabbox/bin/crabbox --version\npnpm crabbox:run -- --help | sed -n '1,120p'\n../crabbox/bin/crabbox desktop launch --help\n../crabbox/bin/crabbox webvnc --help",
-      "codeLanguage": "sh"
-    },
-    {
-      "title": "Configuration snippet",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "sourcePath": ".agents/skills/crabbox/SKILL.md",
-      "code": "Do not pass `--capture-*`, `--download`, `--checksum`, `--force-sync-large`, or\n`--sync-only` to delegated providers. Also do not pass `--script*` or\n`--fresh-pr` there. Crabbox rejects these because the provider owns sync or\ncommand transport.\n\n## Efficient Bug E2E Verification\n\nUse the smallest Crabbox lane that proves the reported user path, not just the\ntouched code. Aim for one after-fix E2E proof before commenting, closing, or\nopening a PR for a user-visible bug.\n\nPick the lane by symptom:\n\n- Docker/setup/install bug: build a package tarball and run the matching\n  `scripts/e2e/*-docker.sh` or package script. This proves npm packaging,\n  install paths, runtime deps, config writes, and container behavior.\n- Provider/model/auth bug: prefer true live E2E. First source local Mac\n  `~/.profile`, then inject the single needed key into Crabbox if needed. Scrub\n  unrelated provider env vars in the child command so interactive defaults do\n  not drift to another provider. If only a dummy key is used, label the proof\n  narrowly, e.g. \"UI/install path only; live provider auth not exercised.\"\n- Channel delivery bug: use the channel Docker/live lane when available; include\n  setup, config, gateway start, send/receive or agent-turn proof, and redacted\n  logs.\n- Gateway/session/tool bug: prefer an end-to-end CLI or Gateway RPC command that\n  creates real state and inspects the resulting files/API output.\n- Pure parser/config bug: targeted tests may be enough, but still run a\n  Crabbox command when OS, package, Docker, secrets, or service lifecycle could\n  change behavior.\n\nEfficient flow:\n\n1. Reproduce or prove the pre-fix symptom when feasible. If the issue cannot be\n   reproduced, capture the exact c\n\ninstall, Docker setup, onboarding, channel add, gateway start, or\n   agent turn as appropriate.\n4. Record proof as: Testbox id, command, environment shape, redacted secret\n   source, and copied success/failure output.\n5. If the issue says \"cannot reproduce\", ask for the missing config/log fields\n   that would distinguish the tested path from the reporter's path.\n\nKeep it efficient:\n\n- Reuse existing E2E scripts and helper assertions before writing ad hoc shell.\n- Use `--script <file>` or `--script-stdin` for multi-line E2E commands instead\n  of quote-heavy `--shell` strings on direct SSH providers.\n- Use `--fresh-pr <pr>` when validating an upstream PR in isolation from the\n  local dirty tree. Add `--apply-local-patch` only when testing a local fixup on\n  top of that PR.\n- Use one-shot Crabbox for a single proof; use a reusable Testbox only when\n  several commands must share built images, installed packages, or live state.\n- Prefer `OPENCLAW_CURRENT_PACKAGE_TGZ` with Docker/package lanes when testing a\n  candidate tarball; prefer the repo's package helper instead of direct source\n  execution when the bug might be packaging/install related.\n- Keep secrets redacted. It is fine to report key presence, source, and length;\n  never print secret values.\n- Include `--timing-json` on broad or flaky runs when command duration or sync\n  behavior matters.\n\nInteractive CLI/onboarding:\n\n- For full-screen or prompt-heavy CLI flows, run the target command inside tmux\n  on the Crabbox and drive it with `tmux send-keys`; capture proof with\n  `tmux capture-pane`, redacted through `sed`.\n- Prefer deterministic arrow navigation over search typing for Clack-style\n  searchable selects. Raw `send-keys -l openai` may not trigger filtering in a\n  tmux pane; inspect option order locally or on-box and se\n\ninstalls live under that state dir (`npm/node_modules/...`), not under\n  `OPENCLAW_CONFIG_DIR`. Verify downloads by checking the state dir, package\n  lock, and installed package metadata.\n- To test automatic setup installs against local package artifacts, use\n  `OPENCLAW_ALLOW_PLUGIN_INSTALL_OVERRIDES=1` plus\n  `OPENCLAW_PLUGIN_INSTALL_OVERRIDES='{\"plugin-id\":\"npm-pack:/tmp/plugin.tgz\"}'`.\n  Pack with `npm pack`, set an isolated `OPENCLAW_STATE_DIR`, and verify the\n  package under `npm/node_modules`. Overrides are test-only and must not be\n  treated as official/trusted-source installs.\n- For OpenAI/Codex onboarding proof, the useful markers are the UI line\n  `Installed Codex plugin`, `npm/node_modules/@openclaw/codex`, and the\n  package-lock entry showing the bundled `@openai/codex` dependency. A dummy\n  OpenAI-shaped key can prove only UI/install behavior; it is not live auth.\n\n## Reuse And Keepalive\n\nFor most Blacksmith-backed Crabbox calls, one-shot is enough. Use reuse only\nwhen you need multiple manual commands on the same hydrated box.\n\nIf Crabbox returns a reusable id or you intentionally keep a lease:",
-      "codeLanguage": "text"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "sourcePath": ".agents/skills/crabbox/SKILL.md",
-      "command": "pnpm crabbox:run -- --provider blacksmith-testbox --debug --timing-json -- \\"
-    },
-    {
-      "title": "Install command",
-      "body": "Extracted from the repository README. Review before publishing.",
-      "sourcePath": ".agents/skills/crabbox/SKILL.md",
-      "command": "pnpm crabbox:run -- --provider blacksmith-testbox --debug --timing-json -- \\"
+      "command": "npm install -g openclaw@latest",
+      "audience": "verified_install"
     }
   ],
-  "extractedSignals": [
-    "Repository includes skill-related files"
-  ],
+  "extractedSignals": [],
   "reviewScore": {
     "sourceTrust": 4,
     "usefulness": 4,

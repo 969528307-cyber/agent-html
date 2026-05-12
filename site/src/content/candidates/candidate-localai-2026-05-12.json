@@ -13,19 +13,16 @@
   "proposedCategory": [
     "mcp",
     "code-review",
-    "docs",
-    "search",
-    "workflow"
+    "docs"
   ],
   "proposedAgents": [
     "Codex",
     "Claude Code",
-    "Cursor",
     "Qwen Code",
-    "Hermes Agent",
     "Generic"
   ],
   "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
   "githubMetadata": {
     "owner": "mudler",
     "repo": "LocalAI",
@@ -56,13 +53,10 @@
     "lastPushedAt": "2026-05-12T01:33:55Z"
   },
   "detectedFiles": [
-    "AGENTS.md",
-    "CLAUDE.md",
     "README.md",
     "docs/assets/jsconfig.json",
     "docs/content/advanced/advanced-usage.md",
     "docs/content/advanced/model-configuration.md",
-    "docs/content/features/agents.md",
     "docs/content/features/mcp.md",
     "docs/content/getting-started/_index.en.md",
     "docs/content/getting-started/build.md",
@@ -79,7 +73,10 @@
     "docs/content/installation/docker.md",
     "docs/content/installation/kubernetes.md",
     "docs/content/installation/linux.md",
-    "docs/content/installation/macos.md"
+    "docs/content/installation/macos.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "docs/content/features/agents.md"
   ],
   "readmeExtract": "<h1 align=\"center\" <br <img width=\"300\" src=\"./core/http/static/logo.png\" <br <br </h1 <p align=\"center\" <a href=\"https://github.com/go skynet/LocalAI/stargazers\" target=\"blank\" <img src=\"https://img.shields.io/github/stars/go skynet/LocalAI?style=for the badge\" alt=\"LocalAI stars\"/ </a <a href='https://github.com/go skynet/LocalAI/releases' <img src='https://img.shields.io/github/release/go skynet/LocalAI?&label=Lat",
   "skillExtracts": [],
@@ -88,37 +85,43 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "docker run -ti --name local-ai -p 8080:8080 localai/localai:latest"
+      "command": "docker run -ti --name local-ai -p 8080:8080 localai/localai:latest",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "docker run -ti --name local-ai -p 8080:8080 localai/localai:latest"
+      "command": "docker run -ti --name local-ai -p 8080:8080 localai/localai:latest",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "docker run -ti --name local-ai -p 8080:8080 --gpus all localai/localai:latest-gpu-nvidia-cuda-13"
+      "command": "docker run -ti --name local-ai -p 8080:8080 --gpus all localai/localai:latest-gpu-nvidia-cuda-13",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "docker run -ti --name local-ai -p 8080:8080 --device=/dev/kfd --device=/dev/dri --group-add=video localai/localai:latest-gpu-hipblas"
+      "command": "docker run -ti --name local-ai -p 8080:8080 --device=/dev/kfd --device=/dev/dri --group-add=video localai/localai:latest-gpu-hipblas",
+      "audience": "developer_setup"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "docker run -ti --name local-ai -p 8080:8080 --device=/dev/dri/c..."
+      "command": "docker run -ti --name local-ai -p 8080:8080 --device=/dev/dri/c...",
+      "audience": "developer_setup"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "docker run -ti --name local-ai -p 8080:8080 --device=/dev/kfd --device=/dev/dri --group-add=video localai/localai:latest-gpu-hipblas"
+      "command": "docker run -ti --name local-ai -p 8080:8080 --device=/dev/kfd --device=/dev/dri --group-add=video localai/localai:latest-gpu-hipblas",
+      "audience": "developer_setup"
     }
   ],
   "extractedSignals": [

@@ -24,11 +24,12 @@
     "Generic"
   ],
   "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
   "githubMetadata": {
     "owner": "CoplayDev",
     "repo": "unity-mcp",
     "fullName": "CoplayDev/unity-mcp",
-    "stars": 9489,
+    "stars": 9490,
     "license": "MIT",
     "topics": [
       "ai",
@@ -52,17 +53,17 @@
     "lastPushedAt": "2026-05-05T00:12:37Z"
   },
   "detectedFiles": [
-    ".claude/skills/mcp-source/SKILL.md",
-    ".claude/skills/unity-mcp-skill/SKILL.md",
-    "CLAUDE.md",
     "README.md",
     "docs/guides/CLI_USAGE.md",
-    "docs/guides/CURSOR_HELP.md",
     "docs/guides/MCP_CLIENT_CONFIGURATORS.md",
     "docs/images/unity-mcp-ui-v8.6.png",
     "docs/images/v5_03_open_mcp_window.png",
     "docs/migrations/v8_NEW_NETWORKING_SETUP.md",
-    "unity-mcp-skill/SKILL.md"
+    ".claude/skills/mcp-source/SKILL.md",
+    ".claude/skills/unity-mcp-skill/SKILL.md",
+    "unity-mcp-skill/SKILL.md",
+    "CLAUDE.md",
+    "docs/guides/CURSOR_HELP.md"
   ],
   "readmeExtract": "<img width=\"676\" height=\"380\" alt=\"MCP for Unity\" src=\"docs/images/logo.png\" / | [English](README.md) | [简体中文](docs/i18n/README zh.md) | | | | Proudly sponsored and maintained by [Coplay](https://www.coplay.dev/?ref=unity mcp) the best AI assistant for Unity. And don't miss [Godot A](https://github.com/hi godot/godot ai)I 🤖, the new free MCP/AI project from the makers of MCP for Unity! [![Discord](https://img.shield",
   "skillExtracts": [
@@ -85,42 +86,48 @@
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
       "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"url\": \"http://localhost:8080/mcp\"\n    }\n  }\n}",
-      "codeLanguage": "json"
+      "codeLanguage": "json",
+      "audience": "configuration"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
       "code": "{\n  \"servers\":\n\nMCP\": {\n      \"type\": \"http\",\n      \"url\": \"http://localhost:8080/mcp\"\n    }\n  }\n}",
-      "codeLanguage": "json"
+      "codeLanguage": "json",
+      "audience": "configuration"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
       "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"command\": \"uvx\",\n      \"args\": [\"--from\", \"mcpforunityserver\", \"mcp-for-unity\", \"--transport\", \"stdio\"]\n    }\n  }\n}",
-      "codeLanguage": "json"
+      "codeLanguage": "json",
+      "audience": "configuration"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
       "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"command\": \"C:/Users/YOUR_USERNAME/AppData/Local/Microsoft/WinGet/Links/uvx.exe\",\n      \"args\": [\"--from\", \"mcpforunityserver\", \"mcp-for-unity\", \"--transport\", \"stdio\"]\n    }\n  }\n}",
-      "codeLanguage": "json"
+      "codeLanguage": "json",
+      "audience": "configuration"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
       "code": "{\n  \"servers\": {\n    \"unityMCP\": {\n      \"type\": \"http\",\n      \"url\": \"http://localhost:8080/mcp\"\n    }\n  }\n}",
-      "codeLanguage": "json"
+      "codeLanguage": "json",
+      "audience": "configuration"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
       "code": "{\n  \"mcpServers\": {\n    \"unityMCP\": {\n      \"command\": \"uvx\",\n      \"args\": [\"--from\", \"mcpforunityserver\", \"mcp-for-unity\", \"--transport\", \"stdio\"]\n    }\n  }\n}",
-      "codeLanguage": "json"
+      "codeLanguage": "json",
+      "audience": "configuration"
     }
   ],
   "extractedSignals": [

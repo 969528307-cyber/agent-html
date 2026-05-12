@@ -66,6 +66,16 @@ const includesAny = (text, terms) => terms.some((term) => text.includes(term));
 
 const normalizeFileEntry = (entry) => (typeof entry === "string" ? { path: entry, size: 0 } : entry);
 
+const evidencePriority = (path = "") => {
+  if (/^readme(\.[\w-]+)?$/i.test(path) || /^readme\./i.test(path)) return 0;
+  if (/^docs\//i.test(path) && /(getting-started|quickstart|install|setup|configuration|config|usage|mcp|model-context-protocol)/i.test(path)) return 10;
+  if (/^(package\.json|pyproject\.toml)$/i.test(path)) return 20;
+  if (/^examples\//i.test(path)) return 30;
+  if (/(^|\/)skill\.md$/i.test(path)) return 40;
+  if (/(^|\/)(agents|claude)\.md$/i.test(path) || /^\.cursor\//i.test(path)) return 50;
+  return 100;
+};
+
 const isEvidenceFilePath = (path) => {
   if (/^readme(\.[\w-]+)?$/i.test(path) || /^readme\./i.test(path)) return true;
   if (/(^|\/)skill\.md$/i.test(path)) return true;
@@ -85,6 +95,7 @@ export const selectEvidenceFiles = (entries) =>
   entries
     .map(normalizeFileEntry)
     .filter((entry) => entry.path && entry.size <= MAX_EVIDENCE_FILE_SIZE && isEvidenceFilePath(entry.path))
+    .sort((a, b) => evidencePriority(a.path) - evidencePriority(b.path) || a.path.localeCompare(b.path))
     .slice(0, MAX_EVIDENCE_FILES);
 
 const escapeRegex = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -132,6 +143,13 @@ export const detectToolType = ({ topics = [], files = [], readme = "" }) => {
   const readmeText = readme.toLowerCase();
 
   if (
+    includesAny(topicText, ["workflow", "workflow-automation", "no-code-automation", "n8n-alternative"]) ||
+    /\b(workflow automation|automation platform|automate workflows|zapier|n8n alternative|ai workflow)\b/.test(readmeText)
+  ) {
+    return "workflow";
+  }
+
+  if (
     includesAny(topicText, ["mcp", "mcp-server", "model-context-protocol"]) ||
     includesAny(readmeText, ["model context protocol", "mcp server", "\"mcpservers\"", "mcpservers"])
   ) {
@@ -167,6 +185,27 @@ const isInstallSourceAllowed = ({ path = "", type }) => {
   return isPrimaryInstallDocPath(path) && !isSkillDocPath(path);
 };
 
+const classifyInstallAudience = ({ code = "", command = "", sourcePath = "", type }) => {
+  if (/mcpServers|servers|command|args|SKILL\.md|CLAUDE\.md|AGENTS\.md|Cursor Rules/i.test(code) && !command) {
+    return "configuration";
+  }
+
+  if (type === "skill") return "verified_install";
+
+  const lowerPath = sourcePath.toLowerCase();
+  const lowerCommand = command.toLowerCase();
+  if (
+    /(build|building|development|developer|contributing|fork|example|sample|test|benchmark|playbook|handbook)/i.test(lowerPath) ||
+    /\b(lint|test|dev|start)\b/.test(lowerCommand) ||
+    /your_username|your-org|your_org/i.test(command)
+  ) {
+    return "developer_setup";
+  }
+
+  if (/^docs\//i.test(sourcePath) || /^README/i.test(sourcePath)) return "verified_install";
+  return "needs_review";
+};
+
 export const extractInstallHints = (readme, { sourcePath = "README.md" } = {}) => {
   const hints = [];
   const installWindowPattern = /(install|setup|configuration|usage|mcp|skill)[\s\S]{0,1800}/gi;
@@ -199,6 +238,10 @@ const extractInstallHintsFromSources = (sources, { type }) =>
   sources
     .filter((source) => source.content && isInstallSourceAllowed({ path: source.path, type }))
     .flatMap((source) => extractInstallHints(source.content, { sourcePath: source.path }))
+    .map((hint) => ({
+      ...hint,
+      audience: classifyInstallAudience({ ...hint, type }),
+    }))
     .slice(0, 6);
 
 const detectAgents = ({ readme = "", files = [] }) => {
@@ -290,6 +333,7 @@ export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDoc
     proposedCategory,
     proposedAgents,
     proposedToolType: type,
+    crawlerProfile: type,
     githubMetadata: {
       owner: repo.owner?.login,
       repo: repo.name,

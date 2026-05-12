@@ -22,6 +22,7 @@
     "Generic"
   ],
   "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
   "githubMetadata": {
     "owner": "modelcontextprotocol",
     "repo": "python-sdk",
@@ -33,13 +34,13 @@
     "lastPushedAt": "2026-05-08T16:50:38Z"
   },
   "detectedFiles": [
-    "AGENTS.md",
-    "CLAUDE.md",
     "README.md",
     "README.v2.md",
     "docs/installation.md",
+    "pyproject.toml",
     "examples/clients/simple-chatbot/mcp_simple_chatbot/servers_config.json",
-    "pyproject.toml"
+    "AGENTS.md",
+    "CLAUDE.md"
   ],
   "readmeExtract": "MCP Python SDK <div align=\"center\" <strong Python implementation of the Model Context Protocol (MCP)</strong [![PyPI][pypi badge]][pypi url] [![MIT licensed][mit badge]][mit url] [![Python Version][python badge]][python url] [![Documentation][docs badge]][docs url] [![Protocol][protocol badge]][protocol url] [![Specification][spec badge]][spec url] </div <! TODO(v2): Replace this README with README.v2.md when v2 is r",
   "skillExtracts": [],
@@ -48,38 +49,44 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "uv init mcp-server-demo"
+      "command": "uv init mcp-server-demo",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "uv add \"mcp[cli]\""
+      "command": "uv add \"mcp[cli]\"",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "pip install \"mcp[cli]\""
+      "command": "pip install \"mcp[cli]\"",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "uv run mcp"
+      "command": "uv run mcp",
+      "audience": "verified_install"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
       "code": "\"\"\"\nFastMCP quickstart example.\n\nRun from the repository root:\n    uv run examples/snippets/servers/fastmcp_quickstart.py\n\"\"\"\n\nfrom mcp.server.fastmcp import FastMCP\n\n# Create an MCP server\nmcp = FastMCP(\"Demo\", json_response=True)\n\n\n# Add an addition tool\n@mcp.tool()\ndef add(a: int, b: int) -> int:\n    \"\"\"Add two numbers\"\"\"\n    return a + b\n\n\n# Add a dynamic greeting resource\n@mcp.resource(\"greeting://{name}\")\ndef get_greeting(name: str) -> str:\n    \"\"\"Get a personalized greeting\"\"\"\n    return f\"Hello, {name}!\"\n\n\n# Add a prompt\n@mcp.prompt()\ndef greet_user(name: str, style: str = \"friendly\") -> str:\n    \"\"\"Generate a greeting prompt\"\"\"\n    styles = {\n        \"friendly\": \"Please write a warm, friendly greeting\",\n        \"formal\": \"Please write a formal, professional greeting\",\n    \n\nmcp.run(transport=\"streamable-http\")",
-      "codeLanguage": "python"
+      "codeLanguage": "python",
+      "audience": "configuration"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "uv run --with mcp examples/snippets/servers/fastmcp_quickstart.py"
+      "command": "uv run --with mcp examples/snippets/servers/fastmcp_quickstart.py",
+      "audience": "verified_install"
     }
   ],
   "extractedSignals": [

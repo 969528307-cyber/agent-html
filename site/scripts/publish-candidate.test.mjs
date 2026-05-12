@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { validateCandidateForPublish } from "./publish-candidate.mjs";
+import { filterPublishableInstallSteps, validateCandidateForPublish } from "./publish-candidate.mjs";
 
 test("blocks non-skill candidates with install hints from nested skill docs", () => {
   assert.throws(
@@ -61,5 +61,33 @@ test("allows skill candidates to publish install hints from SKILL.md", () => {
         },
       ],
     })
+  );
+});
+
+test("publishes only verified install hints as formal install steps", () => {
+  const installSteps = [
+    {
+      title: "Install command",
+      command: "npm start",
+      sourcePath: "docs/build-pieces/building-pieces/development-setup.mdx",
+      audience: "developer_setup",
+    },
+    {
+      title: "Install command",
+      command: "docker compose up -d",
+      sourcePath: "docs/install/overview.mdx",
+      audience: "verified_install",
+    },
+    {
+      title: "Configuration snippet",
+      code: "{ \"mcpServers\": {} }",
+      sourcePath: "docs/install/overview.mdx",
+      audience: "configuration",
+    },
+  ];
+
+  assert.deepEqual(
+    filterPublishableInstallSteps(installSteps).map((step) => step.command || step.code),
+    ["docker compose up -d"]
   );
 });

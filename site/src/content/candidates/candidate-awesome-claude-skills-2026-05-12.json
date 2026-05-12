@@ -11,11 +11,10 @@
   "discoveredFrom": "github",
   "summary": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
   "proposedCategory": [
-    "mcp",
+    "workflow",
     "code-review",
     "browser",
     "docs",
-    "workflow",
     "testing"
   ],
   "proposedAgents": [
@@ -24,12 +23,13 @@
     "Cursor",
     "Generic"
   ],
-  "proposedToolType": "mcp",
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
   "githubMetadata": {
     "owner": "ComposioHQ",
     "repo": "awesome-claude-skills",
     "fullName": "ComposioHQ/awesome-claude-skills",
-    "stars": 59315,
+    "stars": 59320,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -126,13 +126,15 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "claude --plugin-dir ./connect-apps-plugin"
+      "command": "claude --plugin-dir ./connect-apps-plugin",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "claude --plugin-dir ./connect-apps-plugin"
+      "command": "claude --plugin-dir ./connect-apps-plugin",
+      "audience": "verified_install"
     }
   ],
   "extractedSignals": [
@@ -142,7 +144,7 @@
   "reviewScore": {
     "sourceTrust": 4,
     "usefulness": 4,
-    "agentRelevance": 5,
+    "agentRelevance": 3,
     "verifiability": 4,
     "freshness": 4,
     "editorialValue": 4,

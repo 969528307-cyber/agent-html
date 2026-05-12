@@ -11,24 +11,19 @@
   "discoveredFrom": "github",
   "summary": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
   "proposedCategory": [
-    "mcp",
-    "browser",
-    "docs",
-    "search",
-    "workflow"
+    "workflow",
+    "docs"
   ],
   "proposedAgents": [
-    "Codex",
-    "Claude Code",
-    "Cursor",
-    "Generic"
+    "Cursor"
   ],
-  "proposedToolType": "mcp",
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
   "githubMetadata": {
     "owner": "activepieces",
     "repo": "activepieces",
     "fullName": "activepieces/activepieces",
-    "stars": 22149,
+    "stars": 22151,
     "license": "NOASSERTION",
     "topics": [
       "ai-agent",
@@ -49,30 +44,12 @@
     "lastPushedAt": "2026-05-12T00:31:40Z"
   },
   "detectedFiles": [
-    ".agents/features/agents.md",
-    ".agents/skills/add-endpoint/SKILL.md",
-    ".agents/skills/add-entity/SKILL.md",
-    ".agents/skills/add-feature/SKILL.md",
-    ".agents/skills/agent-browser/SKILL.md",
-    ".agents/skills/db-migration/SKILL.md",
-    ".agents/skills/design/SKILL.md",
-    ".agents/skills/grill-me/SKILL.md",
-    ".agents/skills/mcp-builder/SKILL.md",
-    ".agents/skills/mintlify/SKILL.md",
-    ".agents/skills/piece-builder/SKILL.md",
-    ".agents/skills/playwright-e2e-testing/SKILL.md",
-    ".agents/skills/ubiquitous-language/SKILL.md",
-    ".cursor/rules/mintlify",
-    ".cursor/skills",
-    "AGENTS.md",
-    "CLAUDE.md",
     "README.md",
     "docs/admin-guide/guides/setup-ai-providers.mdx",
     "docs/build-pieces/building-pieces/development-setup.mdx",
     "docs/build-pieces/building-pieces/setup-fork.mdx",
     "docs/endpoints/git-repos/configure.mdx",
     "docs/endpoints/pieces/install.mdx",
-    "docs/handbook/engineering/playbooks/connect-claude-to-chrome.mdx",
     "docs/handbook/engineering/playbooks/setup-betterstack.mdx",
     "docs/install/architecture/benchmark.mdx",
     "docs/install/architecture/durable-execution.mdx",
@@ -88,56 +65,49 @@
     "docs/install/configuration/overview.mdx",
     "docs/install/configuration/telemetry.mdx",
     "docs/install/guides/rollback.mdx",
-    "docs/install/guides/separate-workers.mdx"
+    "docs/install/guides/separate-workers.mdx",
+    "docs/install/guides/setup-app-webhooks.mdx",
+    "docs/install/guides/setup-opentelemetry.mdx",
+    "docs/install/guides/setup-s3.mdx",
+    "docs/install/guides/setup-ssl.mdx",
+    "docs/install/options/aws.mdx",
+    "docs/install/options/docker-compose.mdx",
+    "docs/install/options/docker.mdx",
+    "docs/install/options/easypanel.mdx",
+    "docs/install/options/elestio.mdx",
+    "docs/install/options/gcp.mdx",
+    "docs/install/options/helm.mdx",
+    "docs/install/options/railway.mdx",
+    "docs/install/overview.mdx",
+    "docs/install/troubleshooting/bullboard.mdx",
+    "docs/install/troubleshooting/reset-password.mdx",
+    "docs/install/troubleshooting/truncated-logs.mdx",
+    "docs/install/troubleshooting/websocket-issues.mdx",
+    "docs/mcp/overview.mdx"
   ],
   "readmeExtract": "<h1 align=\"center\" <a target=\" blank\" href=\"https://activepieces.com\" <img align=\"center\" alt=\"Activepieces\" src=\"https://github.com/activepieces/activepieces/assets/1812998/76c97441 c285 4480 bc75 30a0c73ed340\" style=\"width:100%;\" / </a </h1 <p align=\"center\" <a href=\"/LICENSE\" target=\" blank\" <img src='https://img.shields.io/badge/license MIT green?style=for the badge' / </a &nbsp;<img src='https://img.shields.io/g",
-  "skillExtracts": [
-    {
-      "path": ".agents/skills/add-endpoint/SKILL.md",
-      "extract": "name: add endpoint description: \"Use when adding a new API endpoint, route, or HTTP handler. ALWAYS use for new Fastify controller endpoints.\" Add API Endpoint Create endpoint for $ARGUMENTS. Steps 1. Read the pattern : Open packages/server/api/src/app/tables/table/table.controller.ts as reference. 2. Create or update controller using FastifyPluginAsyncZod : 3. Define route config AFTER the controller (not inline): 4"
-    },
-    {
-      "path": ".agents/skills/add-entity/SKILL.md",
-      "extract": "name: add entity description: \"Use when creating a new database table, entity, or data model. ALWAYS use for any new TypeORM EntitySchema creation.\" Add Database Entity Create entity for $ARGUMENTS. Steps 1. Read the pattern : Open packages/server/api/src/app/tables/table/table.entity.ts as reference. 2. Create entity file at packages/server/api/src/app/{module}/{name}.entity.ts : Use EntitySchema (NOT decorators) In"
-    },
-    {
-      "path": ".agents/skills/add-feature/SKILL.md",
-      "extract": "name: add feature description: \"Use when the user asks to add a feature, implement functionality, or build something spanning database, API, and frontend. ALWAYS use for multi layer feature work.\" Add Feature End to End Implement feature described in $ARGUMENTS across the full stack. Step 0: Decide Scope Before writing code, answer: 1. CE, EE, or both? If both → use hooksFactory (CE default + EE override in app.ts ) "
-    },
-    {
-      "path": ".agents/skills/agent-browser/SKILL.md",
-      "extract": "name: agent browser description: Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a form\", \"click a button\", \"take a screenshot\", \"scrape data from a page\", \"test this web app"
-    },
-    {
-      "path": ".agents/skills/db-migration/SKILL.md",
-      "extract": "name: db migration description: Creates TypeORM database migrations for the Activepieces server. Use when the user asks to add a column, create a table, add an index, or make any schema change to the database. Activepieces DB Migration Create TypeORM database migrations for schema changes in the Activepieces server API. Workflow Step 1: DETERMINE THE CHANGE Before generating, identify: Which table(s) are affected Wha"
-    },
-    {
-      "path": ".agents/skills/design/SKILL.md",
-      "extract": "name: activepieces design system description: Design system for Activepieces (open source AI automation platform, \"open source replacement for Zapier\"). Use whenever designing, mocking, or building UI for Activepieces — the web app (flow builder, runs, connections, dashboard), docs, or marketing surfaces. Provides brand purple 8142E3 , Inter type ramp with sm (14px) as body default, Tailwind neutrals, Lucide icons, S"
-    }
-  ],
+  "skillExtracts": [],
   "extractedInstall": [
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/build-pieces/building-pieces/development-setup.mdx",
-      "command": "npm start"
+      "command": "npm start",
+      "audience": "developer_setup"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/build-pieces/building-pieces/setup-fork.mdx",
-      "command": "git clone --depth=1 https://github.com/YOUR_USERNAME/activepieces.git"
+      "command": "git clone --depth=1 https://github.com/YOUR_USERNAME/activepieces.git",
+      "audience": "developer_setup"
     }
   ],
-  "extractedSignals": [
-    "Repository includes skill-related files"
-  ],
+  "extractedSignals": [],
   "reviewScore": {
     "sourceTrust": 4,
     "usefulness": 4,
-    "agentRelevance": 5,
+    "agentRelevance": 3,
     "verifiability": 4,
     "freshness": 4,
     "editorialValue": 4,

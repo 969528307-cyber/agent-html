@@ -12,6 +12,7 @@
   "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
   "proposedCategory": [
     "mcp",
+    "code-review",
     "browser",
     "docs",
     "workflow"
@@ -24,11 +25,12 @@
     "Generic"
   ],
   "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
   "githubMetadata": {
     "owner": "affaan-m",
     "repo": "everything-claude-code",
     "fullName": "affaan-m/everything-claude-code",
-    "stars": 179704,
+    "stars": 179733,
     "license": "MIT",
     "topics": [
       "ai-agents",
@@ -41,9 +43,37 @@
       "productivity"
     ],
     "defaultBranch": "main",
-    "lastPushedAt": "2026-05-12T03:44:08Z"
+    "lastPushedAt": "2026-05-12T04:22:29Z"
   },
   "detectedFiles": [
+    "README.md",
+    "README.zh-CN.md",
+    "docs/fixes/install_hook_wrapper.ps1",
+    "docs/fixes/INSTALL-HOOK-WRAPPER-FIX-20260422.md",
+    "docs/HERMES-SETUP.md",
+    "docs/ja-JP/commands/setup-pm.md",
+    "docs/ja-JP/skills/configure-ecc/SKILL.md",
+    "docs/ko-KR/commands/setup-pm.md",
+    "docs/pt-BR/commands/setup-pm.md",
+    "docs/releases/2.0.0-rc.1/quickstart.md",
+    "docs/SELECTIVE-INSTALL-ARCHITECTURE.md",
+    "docs/SELECTIVE-INSTALL-DESIGN.md",
+    "docs/tr/commands/setup-pm.md",
+    "docs/zh-CN/commands/hookify-configure.md",
+    "docs/zh-CN/commands/setup-pm.md",
+    "docs/zh-CN/skills/configure-ecc/SKILL.md",
+    "docs/zh-CN/skills/mcp-server-patterns/SKILL.md",
+    "docs/zh-TW/commands/setup-pm.md",
+    "package.json",
+    "pyproject.toml",
+    "examples/CLAUDE.md",
+    "examples/django-api-CLAUDE.md",
+    "examples/go-microservice-CLAUDE.md",
+    "examples/harmonyos-app-CLAUDE.md",
+    "examples/laravel-api-CLAUDE.md",
+    "examples/rust-api-CLAUDE.md",
+    "examples/saas-nextjs-CLAUDE.md",
+    "examples/user-CLAUDE.md",
     ".agents/skills/agent-introspection-debugging/SKILL.md",
     ".agents/skills/agent-sort/SKILL.md",
     ".agents/skills/api-design/SKILL.md",
@@ -55,38 +85,22 @@
     ".agents/skills/content-engine/SKILL.md",
     ".agents/skills/crosspost/SKILL.md",
     ".agents/skills/deep-research/SKILL.md",
-    ".agents/skills/dmux-workflows/SKILL.md",
-    ".agents/skills/documentation-lookup/SKILL.md",
-    ".agents/skills/e2e-testing/SKILL.md",
-    ".agents/skills/eval-harness/SKILL.md",
-    ".agents/skills/everything-claude-code/SKILL.md",
-    ".agents/skills/exa-search/SKILL.md",
-    ".agents/skills/fal-ai-media/SKILL.md",
-    ".agents/skills/frontend-patterns/SKILL.md",
-    ".agents/skills/frontend-slides/SKILL.md",
-    ".agents/skills/investor-materials/SKILL.md",
-    ".agents/skills/investor-outreach/SKILL.md",
-    ".agents/skills/market-research/SKILL.md",
-    ".agents/skills/mcp-server-patterns/SKILL.md",
-    ".agents/skills/mle-workflow/SKILL.md",
-    ".agents/skills/nextjs-turbopack/SKILL.md",
-    ".agents/skills/product-capability/SKILL.md",
-    ".agents/skills/security-review/SKILL.md",
-    ".agents/skills/strategic-compact/SKILL.md",
-    ".agents/skills/tdd-workflow/SKILL.md",
-    ".agents/skills/verification-loop/SKILL.md",
-    ".agents/skills/video-editing/SKILL.md",
-    ".agents/skills/x-api/SKILL.md",
-    ".claude/skills/everything-claude-code/SKILL.md",
-    ".codex/AGENTS.md",
-    ".cursor/hooks.json",
-    ".cursor/hooks/adapter.js",
-    ".cursor/hooks/after-file-edit.js",
-    ".cursor/hooks/after-mcp-execution.js",
-    ".cursor/hooks/after-shell-execution.js"
+    ".agents/skills/dmux-workflows/SKILL.md"
   ],
   "readmeExtract": "Language: English | [Português (Brasil)](docs/pt BR/README.md) | [简体中文](README.zh CN.md) | [繁體中文](docs/zh TW/README.md) | [日本語](docs/ja JP/README.md) | [한국어](docs/ko KR/README.md) | [Türkçe](docs/tr/README.md) | [Русский](docs/ru/README.md) | [Tiếng Việt](docs/vi VN/README.md) Everything Claude Code ![Everything Claude Code — the performance system for AI agent harnesses](assets/hero.png) [![Stars](https://img.shield",
   "skillExtracts": [
+    {
+      "path": "docs/ja-JP/skills/configure-ecc/SKILL.md",
+      "extract": "name: configure ecc description: Everything Claude Code のインタラクティブなインストーラー — スキルとルールの選択とインストールをユーザーレベルまたはプロジェクトレベルのディレクトリへガイドし、パスを検証し、必要に応じてインストールされたファイルを最適化します。 Configure Everything Claude Code (ECC) Everything Claude Code プロジェクトのインタラクティブなステップバイステップのインストールウィザードです。 AskUserQuestion を使用してスキルとルールの選択的インストールをユーザーにガイドし、正確性を検証し、最適化を提供します。 起動タイミング ユーザーが \"configure ecc\"、\"install ecc\"、\"setup everything claude code\" などと言った場合 ユーザ"
+    },
+    {
+      "path": "docs/zh-CN/skills/configure-ecc/SKILL.md",
+      "extract": "name: configure ecc description: Everything Claude Code 的交互式安装程序 — 引导用户选择并安装技能和规则到用户级或项目级目录，验证路径，并可选择优化已安装文件。 origin: ECC 配置 Everything Claude Code (ECC) 一个交互式、分步安装向导，用于 Everything Claude Code 项目。使用 AskUserQuestion 引导用户选择性安装技能和规则，然后验证正确性并提供优化。 何时激活 用户说 \"configure ecc\"、\"install ecc\"、\"setup everything claude code\" 或类似表述 用户想要从此项目中选择性安装技能或规则 用户想要验证或修复现有的 ECC 安装 用户想要为其项目优化已安装的技能或规则 先决条件 此技能必须在激活前对 Claude Code 可访问。有两种引导方式："
+    },
+    {
+      "path": "docs/zh-CN/skills/mcp-server-patterns/SKILL.md",
+      "extract": "name: mcp server patterns description: 使用Node/TypeScript SDK构建MCP服务器——工具、资源、提示、Zod验证、stdio与可流式HTTP对比。使用Context7或官方MCP文档获取最新API信息。 origin: ECC MCP 服务器模式 模型上下文协议（MCP）允许 AI 助手调用工具、读取资源和使用来自服务器的提示。在构建或维护 MCP 服务器时使用此技能。SDK API 会演进；请查阅 Context7（查询文档 \"MCP\"）或官方 MCP 文档以获取当前的方法名称和签名。 何时使用 在以下情况时使用：实现新的 MCP 服务器、添加工具或资源、选择 stdio 与 HTTP、升级 SDK，或调试 MCP 注册和传输问题。 工作原理 核心概念 工具 ：模型可以调用的操作（例如搜索、运行命令）。根据 SDK 版本，使用 registerTool() 或 tool("
+    },
     {
       "path": ".agents/skills/agent-introspection-debugging/SKILL.md",
       "extract": "name: agent introspection debugging description: Structured self debugging workflow for AI agent failures using capture, diagnosis, contained recovery, and introspection reports. Agent Introspection Debugging Use this skill when an agent run is failing repeatedly, consuming tokens without progress, looping on the same tools, or drifting away from the intended task. This is a workflow skill, not a hidden runtime. It t"
@@ -98,21 +112,24 @@
     {
       "path": ".agents/skills/api-design/SKILL.md",
       "extract": "name: api design description: REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs. API Design Patterns Conventions and best practices for designing consistent, developer friendly REST APIs. When to Activate Designing new API endpoints Reviewing existing API contracts Adding pagination, filtering, or sorting Impleme"
-    },
-    {
-      "path": ".agents/skills/article-writing/SKILL.md",
-      "extract": "name: article writing description: Write articles, guides, blog posts, tutorials, newsletter issues, and other long form content in a distinctive voice derived from supplied examples or brand guidance. Use when the user wants polished written content longer than a paragraph, especially when voice consistency, structure, and credibility matter. Article Writing Write long form content that sounds like an actual person "
-    },
-    {
-      "path": ".agents/skills/backend-patterns/SKILL.md",
-      "extract": "name: backend patterns description: Backend architecture patterns, API design, database optimization, and server side best practices for Node.js, Express, and Next.js API routes. Backend Development Patterns Backend architecture patterns and best practices for scalable server side applications. When to Activate Designing REST or GraphQL API endpoints Implementing repository, service, or controller layers Optimizing d"
-    },
-    {
-      "path": ".agents/skills/brand-voice/SKILL.md",
-      "extract": "name: brand voice description: Build a source derived writing style profile from real posts, essays, launch notes, docs, or site copy, then reuse that profile across content, outreach, and social workflows. Use when the user wants voice consistency without generic AI writing tropes. Brand Voice Build a durable voice profile from real source material, then use that profile everywhere instead of re deriving style from "
     }
   ],
-  "extractedInstall": [],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/releases/2.0.0-rc.1/quickstart.md",
+      "command": "npm ci",
+      "audience": "verified_install"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "docs/releases/2.0.0-rc.1/quickstart.md",
+      "command": "npm run observability:ready",
+      "audience": "verified_install"
+    }
+  ],
   "extractedSignals": [
     "Repository includes skill-related files"
   ],

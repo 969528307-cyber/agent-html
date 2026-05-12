@@ -17,6 +17,7 @@
   ],
   "proposedAgents": [],
   "proposedToolType": "cli",
+  "crawlerProfile": "cli",
   "githubMetadata": {
     "owner": "smol-ai",
     "repo": "developer",
@@ -28,8 +29,8 @@
     "lastPushedAt": "2024-04-07T07:11:03Z"
   },
   "detectedFiles": [
-    "pyproject.toml",
-    "readme.md"
+    "readme.md",
+    "pyproject.toml"
   ],
   "readmeExtract": "🐣 smol developer <a href=\"https://app.e2b.dev/agent/smol developer\" target=\" blank\" rel=\"noopener noreferrer\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://app.e2b.dev/api/badge light\" <img alt=\"Deploy agent on e2b button\" src=\"https://app.e2b.dev/api/badge\"/ </picture </a <a href=\"https://github.com/modal labs/devlooper\" <img src=\"https://github.com/smol ai/developer/assets/6764957/6af16d37 ",
   "skillExtracts": [],
@@ -38,20 +39,23 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "git clone https://github.com/smol-ai/developer.git"
+      "command": "git clone https://github.com/smol-ai/developer.git",
+      "audience": "verified_install"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
       "code": "and then you can call the API using either the following commands:\n\nTo **create a task** run:",
-      "codeLanguage": "text"
+      "codeLanguage": "text",
+      "audience": "configuration"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "git clone https://github.com/smol-ai/developer.git"
+      "command": "git clone https://github.com/smol-ai/developer.git",
+      "audience": "verified_install"
     }
   ],
   "extractedSignals": [],

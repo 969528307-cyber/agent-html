@@ -11,23 +11,23 @@
   "discoveredFrom": "github",
   "summary": "Production-ready platform for agentic workflow development.",
   "proposedCategory": [
-    "mcp",
+    "workflow",
     "code-review",
     "browser",
-    "docs",
-    "workflow"
+    "docs"
   ],
   "proposedAgents": [
     "Codex",
     "Claude Code",
     "Generic"
   ],
-  "proposedToolType": "mcp",
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
   "githubMetadata": {
     "owner": "langgenius",
     "repo": "dify",
     "fullName": "langgenius/dify",
-    "stars": 141012,
+    "stars": 141020,
     "license": "NOASSERTION",
     "topics": [
       "agent",
@@ -55,6 +55,8 @@
     "lastPushedAt": "2026-05-12T03:33:35Z"
   },
   "detectedFiles": [
+    "README.md",
+    "package.json",
     ".agents/skills/backend-code-review/SKILL.md",
     ".agents/skills/component-refactoring/SKILL.md",
     ".agents/skills/e2e-cucumber-playwright/SKILL.md",
@@ -63,11 +65,9 @@
     ".agents/skills/how-to-write-component/SKILL.md",
     ".agents/skills/tailwind-css-rules/SKILL.md",
     "AGENTS.md",
-    "CLAUDE.md",
-    "README.md",
     "api/AGENTS.md",
+    "CLAUDE.md",
     "e2e/AGENTS.md",
-    "package.json",
     "packages/dify-ui/AGENTS.md",
     "web/AGENTS.md",
     "web/CLAUDE.md"
@@ -106,7 +106,7 @@
   "reviewScore": {
     "sourceTrust": 4,
     "usefulness": 4,
-    "agentRelevance": 5,
+    "agentRelevance": 3,
     "verifiability": 4,
     "freshness": 4,
     "editorialValue": 4,

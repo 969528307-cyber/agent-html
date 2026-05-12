@@ -22,11 +22,12 @@
     "Generic"
   ],
   "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
   "githubMetadata": {
     "owner": "farion1231",
     "repo": "cc-switch",
     "fullName": "farion1231/cc-switch",
-    "stars": 67562,
+    "stars": 67597,
     "license": "MIT",
     "topics": [
       "ai-tools",
@@ -62,7 +63,6 @@
     "docs/user-manual/en/1-getting-started/1.5-settings.md",
     "docs/user-manual/en/2-providers/2.5-usage-query.md",
     "docs/user-manual/en/3-extensions/3.1-mcp.md",
-    "docs/user-manual/en/3-extensions/3.3-skills.md",
     "docs/user-manual/en/4-proxy/4.4-usage.md",
     "docs/user-manual/en/5-faq/5.1-config-files.md",
     "docs/user-manual/ja/1-getting-started/1.1-introduction.md",
@@ -72,7 +72,6 @@
     "docs/user-manual/ja/1-getting-started/1.5-settings.md",
     "docs/user-manual/ja/2-providers/2.5-usage-query.md",
     "docs/user-manual/ja/3-extensions/3.1-mcp.md",
-    "docs/user-manual/ja/3-extensions/3.3-skills.md",
     "docs/user-manual/ja/4-proxy/4.4-usage.md",
     "docs/user-manual/ja/5-faq/5.1-config-files.md",
     "docs/user-manual/zh/1-getting-started/1.1-introduction.md",
@@ -82,10 +81,12 @@
     "docs/user-manual/zh/1-getting-started/1.5-settings.md",
     "docs/user-manual/zh/2-providers/2.5-usage-query.md",
     "docs/user-manual/zh/3-extensions/3.1-mcp.md",
-    "docs/user-manual/zh/3-extensions/3.3-skills.md",
     "docs/user-manual/zh/4-proxy/4.4-usage.md",
     "docs/user-manual/zh/5-faq/5.1-config-files.md",
-    "package.json"
+    "package.json",
+    "docs/user-manual/en/3-extensions/3.3-skills.md",
+    "docs/user-manual/ja/3-extensions/3.3-skills.md",
+    "docs/user-manual/zh/3-extensions/3.3-skills.md"
   ],
   "readmeExtract": "<div align=\"center\" CC Switch The All in One Manager for Claude Code, Codex, Gemini CLI, OpenCode, OpenClaw & Hermes Agent [![Version](https://img.shields.io/github/v/release/farion1231/cc switch?color=blue&label=version)](https://github.com/farion1231/cc switch/releases) [![Platform](https://img.shields.io/badge/platform Windows%20%7C%20macOS%20%7C%20Linux lightgrey.svg)](https://github.com/farion1231/cc switch/rele",
   "skillExtracts": [],
@@ -94,38 +95,44 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
-      "command": "brew install node"
+      "command": "brew install node",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
-      "command": "brew install claude-code"
+      "command": "brew install claude-code",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
-      "command": "npm install -g @anthropic-ai/claude-code"
+      "command": "npm install -g @anthropic-ai/claude-code",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/user-manual/en/1-getting-started/1.2-installation.md",
-      "command": "brew install codex"
+      "command": "brew install codex",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/user-manual/en/1-getting-started/1.4-quickstart.md",
-      "command": "claude"
+      "command": "claude",
+      "audience": "verified_install"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/user-manual/en/3-extensions/3.1-mcp.md",
       "code": "**Requirements**:\n- The corresponding command must be installed (e.g., `uvx`, `npx`)\n- The server program must be in PATH\n\n### http\n\nCommunicates with a remote server via HTTP protocol.",
-      "codeLanguage": "text"
+      "codeLanguage": "text",
+      "audience": "configuration"
     }
   ],
   "extractedSignals": [

@@ -19,18 +19,19 @@
     "Claude Code"
   ],
   "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
   "githubMetadata": {
     "owner": "ultraworkers",
     "repo": "claw-code",
     "fullName": "ultraworkers/claw-code",
-    "stars": 191138,
+    "stars": 191137,
     "topics": [],
     "defaultBranch": "main",
     "lastPushedAt": "2026-05-11T14:32:32Z"
   },
   "detectedFiles": [
-    "CLAUDE.md",
     "README.md",
+    "CLAUDE.md",
     "rust/CLAUDE.md"
   ],
   "readmeExtract": "Claw Code <p align=\"center\" <a href=\"https://github.com/ultraworkers/claw code\" ultraworkers/claw code</a · <a href=\"./USAGE.md\" Usage</a · <a href=\"./rust/README.md\" Rust workspace</a · <a href=\"./PARITY.md\" Parity</a · <a href=\"./ROADMAP.md\" Roadmap</a · <a href=\"https://discord.gg/5TUQKqFWd\" UltraWorkers Discord</a </p <p align=\"center\" <a href=\"https://star history.com/ ultraworkers/claw code&Date\" <picture <sour",
@@ -40,37 +41,43 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "git clone https://github.com/ultraworkers/claw-code"
+      "command": "git clone https://github.com/ultraworkers/claw-code",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "git clone https://github.com/ultraworkers/claw-code"
+      "command": "git clone https://github.com/ultraworkers/claw-code",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "cargo install --path . --force"
+      "command": "cargo install --path . --force",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "git clone https://github.com/ultraworkers/claw-code"
+      "command": "git clone https://github.com/ultraworkers/claw-code",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "git clone https://github.com/ultraworkers/claw-code"
+      "command": "git clone https://github.com/ultraworkers/claw-code",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "cargo --version"
+      "command": "cargo --version",
+      "audience": "verified_install"
     }
   ],
   "extractedSignals": [],

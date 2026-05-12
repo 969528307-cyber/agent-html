@@ -11,23 +11,23 @@
   "discoveredFrom": "github",
   "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
   "proposedCategory": [
-    "mcp",
+    "workflow",
     "code-review",
     "browser",
-    "docs",
-    "workflow"
+    "docs"
   ],
   "proposedAgents": [
     "Codex",
     "Claude Code",
     "Generic"
   ],
-  "proposedToolType": "mcp",
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
   "githubMetadata": {
     "owner": "n8n-io",
     "repo": "n8n",
     "fullName": "n8n-io/n8n",
-    "stars": 187497,
+    "stars": 187505,
     "license": "NOASSERTION",
     "topics": [
       "ai",
@@ -55,6 +55,8 @@
     "lastPushedAt": "2026-05-12T02:18:42Z"
   },
   "detectedFiles": [
+    "README.md",
+    "package.json",
     ".claude/plugins/n8n/skills/community-pr-review/SKILL.md",
     ".claude/plugins/n8n/skills/content-design/SKILL.md",
     ".claude/plugins/n8n/skills/conventions/SKILL.md",
@@ -70,15 +72,13 @@
     ".claude/plugins/n8n/skills/reproduce-bug/SKILL.md",
     ".claude/plugins/n8n/skills/setup-mcps/SKILL.md",
     ".claude/plugins/n8n/skills/spec-driven-development/SKILL.md",
+    "packages/@n8n/cli/skills/n8n-cli/SKILL.md",
     ".github/CLAUDE.md",
     "AGENTS.md",
     "CLAUDE.md",
-    "README.md",
-    "package.json",
     "packages/@n8n/agents/AGENTS.md",
     "packages/@n8n/ai-workflow-builder.ee/AGENTS.md",
     "packages/@n8n/ai-workflow-builder.ee/CLAUDE.md",
-    "packages/@n8n/cli/skills/n8n-cli/SKILL.md",
     "packages/@n8n/db/AGENTS.md",
     "packages/@n8n/instance-ai/CLAUDE.md",
     "packages/@n8n/node-cli/src/template/templates/shared/default/AGENTS.md",
@@ -124,19 +124,22 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "npx n8n"
+      "command": "npx n8n",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "docker volume create n8n_data"
+      "command": "docker volume create n8n_data",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "npx n8n"
+      "command": "npx n8n",
+      "audience": "verified_install"
     }
   ],
   "extractedSignals": [
@@ -145,7 +148,7 @@
   "reviewScore": {
     "sourceTrust": 4,
     "usefulness": 4,
-    "agentRelevance": 5,
+    "agentRelevance": 3,
     "verifiability": 4,
     "freshness": 4,
     "editorialValue": 4,

@@ -42,6 +42,17 @@ test("detects MCP repositories from package metadata and README text", () => {
   );
 });
 
+test("classifies workflow automation platforms separately from MCP servers", () => {
+  assert.equal(
+    detectToolType({
+      topics: ["mcp", "workflow-automation", "n8n-alternative", "no-code-automation"],
+      files: ["README.md", "docs/install/overview.mdx"],
+      readme: "# Activepieces\nAI Agents & MCPs & AI Workflow Automation platform.",
+    }),
+    "workflow"
+  );
+});
+
 test("extracts install hints from README code fences", () => {
   const hints = extractInstallHints(`
 ## Install
@@ -86,11 +97,11 @@ test("selects only high-signal evidence files from large repository trees", () =
     "README.md",
     "docs/getting-started.md",
     "docs/mcp/configuration.md",
+    "examples/basic/config.json",
     "skills/review/SKILL.md",
+    ".cursor/rules/agent.mdc",
     "AGENTS.md",
     "CLAUDE.md",
-    ".cursor/rules/agent.mdc",
-    "examples/basic/config.json",
   ]);
 });
 
@@ -196,7 +207,7 @@ test("does not use nested skill docs as install sources for non-skill candidates
     today: "2026-05-11",
   });
 
-  assert.equal(candidate.proposedToolType, "mcp");
+  assert.equal(candidate.proposedToolType, "workflow");
   assert.deepEqual(
     candidate.extractedInstall.map((hint) => hint.command || hint.code),
     ["docker compose up"]
@@ -244,7 +255,7 @@ test("does not use agent instruction files as install sources for non-skill cand
     today: "2026-05-11",
   });
 
-  assert.equal(candidate.proposedToolType, "mcp");
+  assert.equal(candidate.proposedToolType, "workflow");
   assert.deepEqual(
     candidate.extractedInstall.map((hint) => hint.command),
     ["docker compose up -d"]
@@ -253,6 +264,86 @@ test("does not use agent instruction files as install sources for non-skill cand
     candidate.extractedInstall.map((hint) => hint.sourcePath),
     ["docs/install/overview.mdx"]
   );
+});
+
+test("classifies developer setup commands separately from user install commands", () => {
+  const candidate = buildCandidateFromRepo({
+    repo: {
+      html_url: "https://github.com/example/activepieces",
+      name: "activepieces",
+      full_name: "example/activepieces",
+      description: "Workflow automation with MCP support.",
+      stargazers_count: 22_000,
+      license: { spdx_id: "MIT" },
+      topics: ["mcp", "workflow"],
+      pushed_at: "2026-05-10T00:00:00Z",
+      default_branch: "main",
+      owner: { login: "example" },
+    },
+    files: ["README.md", "docs/build-pieces/building-pieces/development-setup.mdx", "docs/install/overview.mdx"],
+    readme: "# Activepieces\n\nA Model Context Protocol automation platform.",
+    evidenceDocs: [
+      {
+        path: "docs/build-pieces/building-pieces/development-setup.mdx",
+        content: "## Install\n```bash\nnpm start\n```",
+      },
+      {
+        path: "docs/build-pieces/building-pieces/setup-fork.mdx",
+        content: "## Setup fork\n```bash\ngit clone --depth=1 https://github.com/YOUR_USERNAME/activepieces.git\n```",
+      },
+      {
+        path: "docs/install/overview.mdx",
+        content: "## Quickstart\n```bash\ndocker compose up -d\n```",
+      },
+    ],
+    today: "2026-05-11",
+  });
+
+  assert.deepEqual(
+    candidate.extractedInstall.map((hint) => ({
+      command: hint.command,
+      sourcePath: hint.sourcePath,
+      audience: hint.audience,
+    })),
+    [
+      {
+        command: "npm start",
+        sourcePath: "docs/build-pieces/building-pieces/development-setup.mdx",
+        audience: "developer_setup",
+      },
+      {
+        command: "git clone --depth=1 https://github.com/YOUR_USERNAME/activepieces.git",
+        sourcePath: "docs/build-pieces/building-pieces/setup-fork.mdx",
+        audience: "developer_setup",
+      },
+      {
+        command: "docker compose up -d",
+        sourcePath: "docs/install/overview.mdx",
+        audience: "verified_install",
+      },
+    ]
+  );
+});
+
+test("prioritizes public install docs over agent instruction files when selecting evidence", () => {
+  const selected = selectEvidenceFiles([
+    { path: "README.md", size: 90_000 },
+    { path: ".agents/features/agents.md", size: 3_000 },
+    { path: ".agents/skills/tool/SKILL.md", size: 3_000 },
+    { path: ".cursor/rules/dev.mdc", size: 3_000 },
+    { path: "AGENTS.md", size: 2_000 },
+    { path: "CLAUDE.md", size: 2_000 },
+    { path: "docs/install/overview.mdx", size: 8_000 },
+    { path: "docs/getting-started/quickstart.mdx", size: 8_000 },
+    { path: "docs/mcp/configuration.mdx", size: 8_000 },
+  ]);
+
+  assert.deepEqual(selected.slice(0, 4).map((file) => file.path), [
+    "README.md",
+    "docs/getting-started/quickstart.mdx",
+    "docs/install/overview.mdx",
+    "docs/mcp/configuration.mdx",
+  ]);
 });
 
 test("slugifies names for candidate ids", () => {

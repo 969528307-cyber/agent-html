@@ -12,6 +12,8 @@ const contentStepSchema = z.object({
   command: z.string().optional(),
   code: z.string().optional(),
   codeLanguage: z.string().default("bash"),
+  sourcePath: z.string().optional(),
+  audience: z.enum(["verified_install", "developer_setup", "configuration", "needs_review"]).optional(),
 });
 
 const agentSetupSchema = z.object({
@@ -184,6 +186,7 @@ const candidates = defineCollection({
     proposedCategory: z.array(z.string()).optional(),
     proposedAgents: z.array(z.string()).optional(),
     proposedToolType: toolTypeSchema.optional(),
+    crawlerProfile: z.enum(["mcp", "skill", "cli", "workflow"]).optional(),
     githubMetadata: githubMetadataSchema.optional(),
     detectedFiles: z.array(z.string()).default([]),
     readmeExtract: z.string().optional(),

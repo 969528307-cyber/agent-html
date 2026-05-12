@@ -22,11 +22,12 @@
     "Generic"
   ],
   "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
   "githubMetadata": {
     "owner": "D4Vinci",
     "repo": "Scrapling",
     "fullName": "D4Vinci/Scrapling",
-    "stars": 48916,
+    "stars": 48926,
     "license": "BSD-3-Clause",
     "topics": [
       "ai",
@@ -55,11 +56,11 @@
   },
   "detectedFiles": [
     "README.md",
-    "agent-skill/Scrapling-Skill/SKILL.md",
     "docs/ai/mcp-server.md",
     "docs/api-reference/mcp-server.md",
     "docs/spiders/getting-started.md",
-    "pyproject.toml"
+    "pyproject.toml",
+    "agent-skill/Scrapling-Skill/SKILL.md"
   ],
   "readmeExtract": "<! mcp name: io.github.D4Vinci/Scrapling <h1 align=\"center\" <a href=\"https://scrapling.readthedocs.io\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://raw.githubusercontent.com/D4Vinci/Scrapling/main/docs/assets/cover dark.svg?sanitize=true\" <img alt=\"Scrapling Poster\" src=\"https://raw.githubusercontent.com/D4Vinci/Scrapling/main/docs/assets/cover light.svg?sanitize=true\" </picture </a <br <smal",
   "skillExtracts": [
@@ -73,39 +74,45 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/ai/mcp-server.md",
-      "command": "pip install \"scrapling[ai]\""
+      "command": "pip install \"scrapling[ai]\"",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/ai/mcp-server.md",
-      "command": "docker pull pyd4vinci/scrapling"
+      "command": "docker pull pyd4vinci/scrapling",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/ai/mcp-server.md",
-      "command": "docker pull ghcr.io/d4vinci/scrapling:latest"
+      "command": "docker pull ghcr.io/d4vinci/scrapling:latest",
+      "audience": "verified_install"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/ai/mcp-server.md",
       "code": "\"ScraplingServer\": {\n  \"command\": \"scrapling\",\n  \"args\": [\n    \"mcp\"\n  ]\n}",
-      "codeLanguage": "json"
+      "codeLanguage": "json",
+      "audience": "configuration"
     },
     {
       "title": "Configuration snippet",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/ai/mcp-server.md",
       "code": "{\n  \"mcpServers\": {\n    \"ScraplingServer\": {\n      \"command\": \"scrapling\",\n      \"args\": [\n        \"mcp\"\n      ]\n    }\n  }\n}",
-      "codeLanguage": "json"
+      "codeLanguage": "json",
+      "audience": "configuration"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/ai/mcp-server.md",
-      "command": "pip install \"scrapling[ai]\""
+      "command": "pip install \"scrapling[ai]\"",
+      "audience": "verified_install"
     }
   ],
   "extractedSignals": [

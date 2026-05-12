@@ -22,6 +22,9 @@ const slugify = (value) =>
 
 const isSkillDocPath = (path = "") => /(^|\/)SKILL\.md$/i.test(path) || /^\.agents\/skills\//i.test(path);
 
+export const filterPublishableInstallSteps = (installSteps = []) =>
+  installSteps.filter((step) => !step.audience || step.audience === "verified_install");
+
 export const validateCandidateForPublish = (candidate) => {
   if (candidate.type !== "tool" || candidate.proposedToolType === "skill") return;
 
@@ -59,7 +62,7 @@ const publishCandidate = async (candidateId) => {
   const today = new Date().toISOString().slice(0, 10);
 
   if (candidate.type === "tool") {
-    const installSteps = candidate.extractedInstall || [];
+    const installSteps = filterPublishableInstallSteps(candidate.extractedInstall || []);
     const github = candidate.githubMetadata || {};
     const tool = {
       id: publishedId,

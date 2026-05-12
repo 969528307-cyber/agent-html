@@ -18,6 +18,7 @@
     "Claude Code"
   ],
   "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
   "githubMetadata": {
     "owner": "yasasbanukaofficial",
     "repo": "claude-code",
@@ -42,25 +43,29 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "git clone https://github.com/your-username/claude-leaked.git"
+      "command": "git clone https://github.com/your-username/claude-leaked.git",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "npm install"
+      "command": "npm install",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "npm run build"
+      "command": "npm run build",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "claude mcp add code-explorer -- npx -y claude-code-explorer-mcp"
+      "command": "claude mcp add code-explorer -- npx -y claude-code-explorer-mcp",
+      "audience": "verified_install"
     }
   ],
   "extractedSignals": [],

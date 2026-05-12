@@ -22,17 +22,24 @@
     "Generic"
   ],
   "proposedToolType": "skill",
+  "crawlerProfile": "skill",
   "githubMetadata": {
     "owner": "openai",
     "repo": "codex",
     "fullName": "openai/codex",
-    "stars": 81929,
+    "stars": 81937,
     "license": "Apache-2.0",
     "topics": [],
     "defaultBranch": "main",
-    "lastPushedAt": "2026-05-12T03:40:58Z"
+    "lastPushedAt": "2026-05-12T04:23:25Z"
   },
   "detectedFiles": [
+    "README.md",
+    "docs/config.md",
+    "docs/example-config.md",
+    "docs/getting-started.md",
+    "docs/install.md",
+    "package.json",
     ".codex/skills/babysit-pr/SKILL.md",
     ".codex/skills/code-review-breaking-changes/SKILL.md",
     ".codex/skills/code-review-change-size/SKILL.md",
@@ -44,21 +51,15 @@
     ".codex/skills/codex-pr-body/SKILL.md",
     ".codex/skills/remote-tests/SKILL.md",
     ".codex/skills/test-tui/SKILL.md",
-    "AGENTS.md",
-    "README.md",
     "codex-rs/skills/src/assets/samples/imagegen/SKILL.md",
     "codex-rs/skills/src/assets/samples/openai-docs/SKILL.md",
     "codex-rs/skills/src/assets/samples/plugin-creator/SKILL.md",
     "codex-rs/skills/src/assets/samples/skill-creator/SKILL.md",
     "codex-rs/skills/src/assets/samples/skill-installer/SKILL.md",
+    "AGENTS.md",
     "codex-rs/tui/src/bottom_pane/AGENTS.md",
     "docs/agents_md.md",
-    "docs/config.md",
-    "docs/example-config.md",
-    "docs/getting-started.md",
-    "docs/install.md",
-    "docs/skills.md",
-    "package.json"
+    "docs/skills.md"
   ],
   "readmeExtract": "<p align=\"center\" <code npm i g @openai/codex</code <br / or <code brew install cask codex</code </p <p align=\"center\" <strong Codex CLI</strong is a coding agent from OpenAI that runs locally on your computer. <p align=\"center\" <img src=\"https://github.com/openai/codex/blob/main/.github/codex cli splash.png\" alt=\"Codex CLI splash\" width=\"80%\" / </p </br If you want Codex in your code editor (VS Code, Cursor, Windsur",
   "skillExtracts": [
@@ -92,31 +93,36 @@
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "npm install -g @openai/codex"
+      "command": "npm install -g @openai/codex",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "brew install --cask codex"
+      "command": "brew install --cask codex",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "npm install -g @openai/codex"
+      "command": "npm install -g @openai/codex",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "README.md",
-      "command": "brew install --cask codex"
+      "command": "brew install --cask codex",
+      "audience": "verified_install"
     },
     {
       "title": "Install command",
       "body": "Extracted from the repository README. Review before publishing.",
       "sourcePath": "docs/install.md",
-      "command": "git clone https://github.com/openai/codex.git"
+      "command": "git clone https://github.com/openai/codex.git",
+      "audience": "verified_install"
     }
   ],
   "extractedSignals": [

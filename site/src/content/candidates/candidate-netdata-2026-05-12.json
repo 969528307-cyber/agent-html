@@ -11,23 +11,21 @@
   "discoveredFrom": "github",
   "summary": "The fastest path to AI-powered full stack observability, even for lean teams.",
   "proposedCategory": [
-    "mcp",
-    "code-review",
-    "docs",
-    "workflow"
+    "workflow",
+    "docs"
   ],
   "proposedAgents": [
     "Codex",
-    "Claude Code",
     "Cursor",
     "Generic"
   ],
-  "proposedToolType": "mcp",
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
   "githubMetadata": {
     "owner": "netdata",
     "repo": "netdata",
     "fullName": "netdata/netdata",
-    "stars": 78775,
+    "stars": 78774,
     "license": "GPL-3.0",
     "topics": [
       "ai",
@@ -55,24 +53,8 @@
     "lastPushedAt": "2026-05-12T00:34:47Z"
   },
   "detectedFiles": [
-    ".agents/skills/codacy-audit/SKILL.md",
-    ".agents/skills/coverity-audit/SKILL.md",
-    ".agents/skills/graphql-audit/SKILL.md",
-    ".agents/skills/integrations-lifecycle/SKILL.md",
-    ".agents/skills/learn-pr-preview/SKILL.md",
-    ".agents/skills/learn-site-structure/SKILL.md",
-    ".agents/skills/mirror-netdata-repos/SKILL.md",
-    ".agents/skills/pr-reviews/SKILL.md",
-    ".agents/skills/project-snmp-profiles-authoring/SKILL.md",
-    ".agents/skills/project-writing-collectors/SKILL.md",
-    ".agents/skills/query-agent-events/SKILL.md",
-    ".agents/skills/sonarqube-audit/SKILL.md",
-    "AGENTS.md",
-    "CLAUDE.md",
     "README.md",
     "docs/alerts-and-notifications/creating-alerts-with-netdata-alerts-configuration-manager.md",
-    "docs/category-overview-pages/maintenance-operations-on-netdata-agents.md",
-    "docs/developer-and-contributor-corner/build-the-netdata-agent-yourself.md",
     "docs/diagrams/config.puml",
     "docs/diagrams/data_structures/netdata_config.svg",
     "docs/diagrams/data_structures/src/netdata_config.xml",
@@ -80,12 +62,11 @@
     "docs/getting-started-netdata/guide.md",
     "docs/install/windows-release-channels.md",
     "docs/learn/switching-install-types.md",
-    "docs/netdata-agent/backup-and-restore-an-agent.md",
-    "docs/netdata-agent/configuration/README.md",
     "docs/netdata-agent/configuration/anonymous-telemetry-events.md",
     "docs/netdata-agent/configuration/dynamic-configuration.md",
     "docs/netdata-agent/configuration/optimize-the-netdata-agents-performance.md",
     "docs/netdata-agent/configuration/organize-systems-metrics-and-alerts.md",
+    "docs/netdata-agent/configuration/README.md",
     "docs/netdata-agent/configuration/running-the-netdata-agent-behind-a-reverse-proxy/README.md",
     "docs/netdata-agent/configuration/running-the-netdata-agent-behind-a-reverse-proxy/Running-behind-apache.md",
     "docs/netdata-agent/configuration/running-the-netdata-agent-behind-a-reverse-proxy/Running-behind-caddy.md",
@@ -94,33 +75,30 @@
     "docs/netdata-agent/configuration/running-the-netdata-agent-behind-a-reverse-proxy/Running-behind-lighttpd.md",
     "docs/netdata-agent/configuration/running-the-netdata-agent-behind-a-reverse-proxy/Running-behind-nginx.md",
     "docs/netdata-agent/configuration/secure-your-netdata-agent-with-bearer-token.md",
-    "docs/netdata-agent/configuration/using-custom-ca-certificates-with-netdata.md"
+    "docs/netdata-agent/configuration/using-custom-ca-certificates-with-netdata.md",
+    "docs/netdata-agent/configure-netdata-for-cybersecurity-platforms.md",
+    "docs/netdata-ai/mcp/ai-chat-netdata.md",
+    "docs/netdata-ai/mcp/mcp-clients/ai-devops-copilot.md",
+    "docs/netdata-ai/mcp/mcp-clients/claude-code.md",
+    "docs/netdata-ai/mcp/mcp-clients/claude-desktop.md",
+    "docs/netdata-ai/mcp/mcp-clients/codex-cli.md",
+    "docs/netdata-ai/mcp/mcp-clients/crush.md",
+    "docs/netdata-ai/mcp/mcp-clients/cursor.md",
+    "docs/netdata-ai/mcp/mcp-clients/gemini-cli.md",
+    "docs/netdata-ai/mcp/mcp-clients/jetbrains-ides.md",
+    "docs/netdata-ai/mcp/mcp-clients/opencode.md",
+    "docs/netdata-ai/mcp/mcp-clients/vs-code.md",
+    "docs/netdata-ai/mcp/README.md",
+    "docs/network-flows/configuration.md",
+    "docs/network-flows/installation.md",
+    "docs/observability-centralization-points/metrics-centralization-points/configuration.md",
+    ".agents/skills/codacy-audit/SKILL.md"
   ],
   "readmeExtract": "<p align=\"center\" <a href=\"https://www.netdata.cloud gh light mode only\" <img src=\"https://www.netdata.cloud/img/readme images/netdata readme logo light.png\" alt=\"Netdata\" width=\"300\"/ </a <a href=\"https://www.netdata.cloud gh dark mode only\" <img src=\"https://www.netdata.cloud/img/readme images/netdata readme logo dark.png\" alt=\"Netdata\" width=\"300\"/ </a </p <h3 align=\"center\" X Ray Vision for your infrastructure!</",
   "skillExtracts": [
     {
       "path": ".agents/skills/codacy-audit/SKILL.md",
       "extract": "name: codacy audit description: Codacy Cloud workflow for this repository run Codacy's analyzers locally before git push (mirrors what Codacy CI runs), and fetch/cluster Codacy issues for any PR via the v3 API. Use when the user mentions Codacy, \"codacy analysis\", codacy analysis cli , \"codacy issues on PR\", \"fix codacy CI\", \"codacy markdownlint findings\", or any Codacy gate failing on a netdata org PR. Ships scripts"
-    },
-    {
-      "path": ".agents/skills/coverity-audit/SKILL.md",
-      "extract": "name: coverity audit description: Triage Coverity Scan defects (https://scan.coverity.com) for this project — fetch defect lists, fetch per defect details, and apply triage decisions (Bug / FalsePositive / Intentional with severity, action, and a comment). Use when the user asks to \"review Coverity defects\", \"triage Coverity findings\", \"fetch Coverity outstanding\", or anything mentioning Coverity Scan, CIDs, or scan."
-    },
-    {
-      "path": ".agents/skills/graphql-audit/SKILL.md",
-      "extract": "name: graphql audit description: Triage GitHub Code Scanning alerts (CodeQL with security extended suite) for this repository — list open alerts, dismiss as false positive / won't fix / used in tests, query via GitHub REST + GraphQL. Use when the user asks to \"review GitHub security alerts\", \"check CodeQL findings\", \"triage code scanning\", or anything mentioning Code Scanning, CodeQL, security extended, or github.com"
-    },
-    {
-      "path": ".agents/skills/integrations-lifecycle/SKILL.md",
-      "extract": "name: integrations lifecycle description: Authoritative reference for Netdata's integrations pipeline how metadata.yaml drives per integration pages, the COLLECTORS.md / SECRETS.md / SERVICE DISCOVERY.md umbrellas, the integrations.js artifact consumed by the cloud frontend, and per integration .md files committed to the repo. Use when adding/modifying any integration (collector, exporter, agent or cloud notification"
-    },
-    {
-      "path": ".agents/skills/learn-pr-preview/SKILL.md",
-      "extract": "name: learn pr preview description: Use only when the user explicitly asks to build, run, preview, inspect, or validate learn.netdata.cloud locally using the contents of a PR or documentation branch before merge. Do not trigger for ordinary docs edits unless the user asks for a local Learn preview. learn pr preview Build and inspect a local Learn site from a PR's documentation content without dirtying the real Learn "
-    },
-    {
-      "path": ".agents/skills/learn-site-structure/SKILL.md",
-      "extract": "name: learn site structure description: Authoritative reference for how docs in this repo (and 5 other Netdata org repos) become published pages on learn.netdata.cloud . Covers the <repo /docs/.map/map.yaml source of truth (the actual lever filesystem path is irrelevant for routing), the live ingest/ingest.py orchestrator in the learn repo (NOT the legacy ingest.js ), frontmatter injection, slug rules, sidebar autoge"
     }
   ],
   "extractedInstall": [],
@@ -130,7 +108,7 @@
   "reviewScore": {
     "sourceTrust": 4,
     "usefulness": 4,
-    "agentRelevance": 5,
+    "agentRelevance": 3,
     "verifiability": 4,
     "freshness": 4,
     "editorialValue": 4,
