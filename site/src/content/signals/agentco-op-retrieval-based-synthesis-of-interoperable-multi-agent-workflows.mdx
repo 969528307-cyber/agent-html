@@ -1,0 +1,77 @@
+---
+englishTitle: "AgentCo-op: Retrieval-Based Multi-Agent Workflow Synthesis"
+originalTitle: "AgentCo-op: Retrieval-Based Synthesis of Interoperable Multi-Agent Workflows"
+subtitle: "A framework that composes existing agents and tools into auditable workflows without redesign"
+status: "published"
+topic: "agent"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "AgentCo-op retrieves and composes reusable skills, tools, and external agents into executable multi-agent workflows using typed artifact handoffs"
+  - "Bounded self-guided local repair fixes only implicated components when execution fails, avoiding global topology search"
+  - "Achieves best results on 4 of 6 coding, math, and QA benchmarks while reducing per-task cost vs. multi-agent baselines"
+  - "Demonstrates synthesis and search are complementary by importing workflows as structural priors for iterative improvement"
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.20425v1"
+author: "Shuaike Shen"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-19"
+executiveSummary: "AgentCo-op introduces a retrieval-based synthesis framework that dynamically composes existing agents, tools, and skills into multi-agent workflows using typed artifact handoffs. It applies bounded local repair to fix only failing components, achieving strong benchmark results while reducing costs and enabling open-world scientific collaboration without redesigning existing agents."
+signalThesis: "AgentCo-op signals a shift from hand-crafted or search-optimized agent graphs toward retrieval-based, composable workflows that can integrate existing tools and agents without redesign."
+whyItMatters: "For agentk.it users building multi-agent systems, AgentCo-op demonstrates a practical path to composing independently developed agents and tools into auditable workflows without costly global search or redesign. This reduces integration friction and operational costs, making multi-agent orchestration more accessible for real-world scientific and enterprise applications."
+keyTakeaways:
+  - "Retrieval-based synthesis enables composition of existing agents and tools without retraining or redesign"
+  - "Bounded local repair efficiently fixes workflow failures by targeting only implicated components"
+  - "Synthesis and search are complementary: workflows can be imported as priors and iteratively improved"
+  - "AgentCo-op reduces per-task costs while matching or exceeding performance of multi-agent baselines"
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Provides a framework for composing specialized scientific agents (e.g., spatial transcriptomics, gene-set interpretation) into collaborative discovery workflows without building from scratch, accelerating open-ended research."
+  - label: "For Developers"
+    body: "Offers a blueprint for building interoperable multi-agent systems that can dynamically integrate third-party tools and agents, reducing the need for custom integration code and enabling modular agent ecosystems."
+  - label: "For Users"
+    body: "Enables more capable and auditable AI workflows that combine specialized agents for complex tasks, with lower operational costs and transparent execution traces."
+whatToWatchNext:
+  - "Integration of retrieval-based synthesis with reinforcement learning for adaptive workflow optimization"
+  - "Extension to multi-modal artifact handoffs beyond typed data structures"
+  - "Community-driven repositories of reusable agent skills and tool interfaces"
+publishedAt: "2026-05-21"
+---
+
+## Summary
+
+Designing multi-agent workflows for open-ended scientific tasks remains challenging due to the lack of curated training sets, reliable evaluation metrics, and standardized interfaces between existing tools and agents. AgentCo-op addresses this by introducing a retrieval-based synthesis framework that dynamically composes reusable skills, tools, and external agents into executable workflows through typed artifact handoffs. When execution evidence indicates failure, the system applies bounded self-guided local repair to only the implicated components, avoiding expensive global topology search.
+
+The framework is validated through two open-world genomics case studies: coordinating specialized agents for spatial transcriptomics and gene-set interpretation, and building a parallel workflow for cross-modality marker analysis on single-cell multiome data. AgentCo-op also demonstrates that synthesis and search are complementary by importing a searched workflow as a structural prior and improving it through grounded retrieval and local repair. On six coding, math, and question-answering benchmarks, AgentCo-op achieves the best result on four benchmarks and the best average score under a unified backbone setting, while consistently reducing per-task cost relative to multi-agent baselines.
+
+## Key Contributions
+
+- A retrieval-based synthesis framework that composes existing agents, tools, and skills into multi-agent workflows without redesign or global topology search
+- Bounded self-guided local repair mechanism that efficiently fixes workflow failures by targeting only implicated components
+- Typed artifact handoff protocol enabling interoperability between independently developed agents and tools
+- Demonstration of complementarity between synthesis and search: workflows can be imported as structural priors and iteratively improved
+- Empirical validation on 6 benchmarks showing state-of-the-art results on 4 tasks with reduced per-task costs
+- Two open-world genomics case studies demonstrating practical scientific collaboration between specialized agents
+
+## Implications
+
+### For Researchers
+
+AgentCo-op provides a practical framework for composing specialized scientific agents into collaborative discovery workflows without requiring researchers to redesign or retrain existing tools. The typed artifact handoff protocol enables interoperability between independently developed agents, which is critical for open-ended scientific research where standardized interfaces are rare. The bounded local repair mechanism also offers a computationally efficient approach to handling execution failures in complex workflows.
+
+### For Developers
+
+This work offers a blueprint for building modular, interoperable multi-agent systems that can dynamically integrate third-party tools and agents. Developers can leverage retrieval-based synthesis to compose existing components rather than building monolithic agent systems, reducing integration effort and enabling more flexible architectures. The cost reduction demonstrated on benchmarks suggests practical benefits for production deployments.
+
+### For Users
+
+End users benefit from more capable and auditable AI workflows that combine specialized agents for complex tasks. The typed artifact handoff protocol ensures transparent execution traces, while the bounded repair mechanism maintains reliability without excessive computational overhead. The reduced per-task costs make advanced multi-agent capabilities more accessible for real-world applications.
+
+## References
+
+- https://arxiv.org/abs/2605.20425v1

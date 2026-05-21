@@ -30,7 +30,11 @@
     "discover:signals:dry": "node scripts/signals-source-crawler.mjs --dry-run",
     "auto:publish": "node scripts/auto-publish-candidates.mjs --discover",
     "auto:publish:dry": "node scripts/auto-publish-candidates.mjs --discover --dry-run",
-    "test:ingest": "node --test scripts/*.test.mjs"
+    "test:ingest": "node --test scripts/*.test.mjs",
+    "generate:signals": "node scripts/arxiv-signal-generator.mjs",
+    "generate:signals:dry": "node scripts/arxiv-signal-generator.mjs --dry-run",
+    "generate:learn": "node scripts/ecosystem-learn-generator.mjs",
+    "generate:learn:dry": "node scripts/ecosystem-learn-generator.mjs --dry-run"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.4",
