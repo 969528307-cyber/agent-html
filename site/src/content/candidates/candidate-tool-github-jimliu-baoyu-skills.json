@@ -1,0 +1,204 @@
+{
+  "id": "candidate-tool-github-jimliu-baoyu-skills",
+  "type": "tool",
+  "status": "published",
+  "title": "Baoyu Skills",
+  "sourceUrl": "https://github.com/JimLiu/baoyu-skills",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "JimLiu",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "baoyu skills English | [中文](./README.zh.md) Skills shared by Baoyu for improving daily work efficiency with AI Agents (Claude Code, Codex, etc.). Prerequisites Node.js environment installed Ability to run npx bun commands Installation Quick Install (Recommended) Publish to ClawHub / OpenClaw This repository now supports publishing each skills/baoyu directory as an individual ClawHub skill. ClawHub installs skills ind",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "JimLiu",
+    "repo": "baoyu-skills",
+    "fullName": "JimLiu/baoyu-skills",
+    "stars": 18689,
+    "topics": [
+      "agent-skills",
+      "claude-skills",
+      "codex-skills",
+      "openclaw-skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T02:11:02Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh.md",
+    "docs/chrome-profile.md",
+    "docs/comic-style-maintenance.md",
+    "docs/creating-skills.md",
+    "docs/image-generation-tools.md",
+    "docs/image-generation.md",
+    "docs/publishing.md",
+    "docs/testing.md",
+    "docs/user-input-tools.md",
+    "package.json",
+    ".claude/skills/release-skills/SKILL.md",
+    "skills/baoyu-article-illustrator/SKILL.md",
+    "skills/baoyu-comic/SKILL.md",
+    "skills/baoyu-compress-image/SKILL.md",
+    "skills/baoyu-cover-image/SKILL.md",
+    "skills/baoyu-danger-gemini-web/SKILL.md",
+    "skills/baoyu-danger-x-to-markdown/SKILL.md",
+    "skills/baoyu-diagram/SKILL.md",
+    "skills/baoyu-format-markdown/SKILL.md",
+    "skills/baoyu-image-cards/SKILL.md",
+    "skills/baoyu-image-gen/SKILL.md",
+    "skills/baoyu-imagine/SKILL.md",
+    "skills/baoyu-infographic/SKILL.md",
+    "skills/baoyu-markdown-to-html/SKILL.md",
+    "skills/baoyu-post-to-wechat/SKILL.md",
+    "skills/baoyu-post-to-weibo/SKILL.md",
+    "skills/baoyu-post-to-x/SKILL.md",
+    "skills/baoyu-slide-deck/SKILL.md",
+    "skills/baoyu-translate/SKILL.md",
+    "skills/baoyu-url-to-markdown/SKILL.md",
+    "skills/baoyu-wechat-summary/SKILL.md",
+    "skills/baoyu-xhs-images/SKILL.md",
+    "skills/baoyu-youtube-transcript/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "baoyu skills English | [中文](./README.zh.md) Skills shared by Baoyu for improving daily work efficiency with AI Agents (Claude Code, Codex, etc.). Prerequisites Node.js environment installed Ability to run npx bun commands Installation Quick Install (Recommended) Publish to ClawHub / OpenClaw This repository now supports publishing each skills/baoyu directory as an individual ClawHub skill. ClawHub installs skills ind",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/release-skills/SKILL.md",
+      "extract": "name: release skills description: Universal release workflow. Auto detects version files and changelogs. Supports Node.js, Python, Rust, Claude Plugin, GitHub Releases, annotated tags, historical release backfill, and generic projects. Use when user says \"release\", \"发布\", \"new version\", \"bump version\", \"push\", \"推送\", \"release notes\", \"GitHub Release\", or \"回填 Release\". Release Skills Universal release workflow supportin"
+    },
+    {
+      "path": "skills/baoyu-article-illustrator/SKILL.md",
+      "extract": "name: baoyu article illustrator description: Analyzes article structure, identifies positions requiring visual aids, generates illustrations with Type × Style × Palette three dimension approach. Use when user asks to \"illustrate article\", \"add images\", \"generate images for article\", or \"为文章配图\". version: 1.59.0 metadata: openclaw: homepage: https://github.com/JimLiu/baoyu skills baoyu article illustrator Article Illus"
+    },
+    {
+      "path": "skills/baoyu-comic/SKILL.md",
+      "extract": "name: baoyu comic description: Knowledge comic creator supporting multiple art styles and tones. Creates original educational comics with detailed panel layouts and batch capable image generation. Use when user asks to create \"知识漫画\", \"教育漫画\", \"biography comic\", \"tutorial comic\", or \"Logicomix style comic\". version: 1.57.0 metadata: openclaw: homepage: https://github.com/JimLiu/baoyu skills baoyu comic requires: anyBin"
+    },
+    {
+      "path": "skills/baoyu-compress-image/SKILL.md",
+      "extract": "name: baoyu compress image description: Compresses images to WebP (default) or PNG with automatic tool selection. Use when user asks to \"compress image\", \"optimize image\", \"convert to webp\", or reduce image file size. version: 1.56.1 metadata: openclaw: homepage: https://github.com/JimLiu/baoyu skills baoyu compress image requires: anyBins: bun npx Image Compressor Compresses images using best available tool (sips → "
+    },
+    {
+      "path": "skills/baoyu-cover-image/SKILL.md",
+      "extract": "name: baoyu cover image description: Generates article cover images with 5 dimensions (type, palette, rendering, text, mood) combining 11 color palettes and 7 rendering styles. Supports cinematic (2.35:1), widescreen (16:9), and square (1:1) aspects. Use when user asks to \"generate cover image\", \"create article cover\", or \"make cover\". version: 1.56.2 metadata: openclaw: homepage: https://github.com/JimLiu/baoyu skil"
+    },
+    {
+      "path": "skills/baoyu-danger-gemini-web/SKILL.md",
+      "extract": "name: baoyu danger gemini web description: Generates images and text via reverse engineered Gemini Web API. Supports text generation, image generation from prompts, reference images for vision input, and multi turn conversations. Use when other skills need image generation backend, or when user requests \"generate image with Gemini\", \"Gemini text generation\", or needs vision capable AI generation. version: 1.56.1 meta"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Skills shared by Baoyu for improving daily work efficiency with AI Agents (Claude Code, Codex, etc.).",
+    "This repository now supports publishing each skills/baoyu- directory as an individual ClawHub skill.",
+    "ClawHub installs skills individually, not as one marketplace bundle.",
+    "Publishing to ClawHub releases the published skill under MIT-0, per ClawHub's registry rules.",
+    "Run the following command in the Agent:",
+    "Select the baoyu-skills plugin",
+    "The marketplace now exposes a single plugin so each skill is registered exactly once.",
+    "baoyu-skills Content generation, AI backends, and utility tools for daily work efficiency All skills in this repository, organized below as Content Skills, AI Generation Skills, and Utility Skills"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "baoyu skills English | [中文](./README.zh.md) Skills shared by Baoyu for improving daily work efficiency with AI Agents (Claude Code, Codex, etc.). Prerequisites Node.js environment installed Ability to run npx bun commands Installation Quick Install (Recommended) Publish to ClawHub / OpenClaw This repository now supports publishing each skills/baoyu directory as an individual ClawHub skill. ClawHub installs skills ind",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Baoyu Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Skills shared by Baoyu for improving daily work efficiency with AI Agents (Claude Code, Codex, etc.).",
+      "This repository now supports publishing each skills/baoyu- directory as an individual ClawHub skill."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:jimliu/baoyu-skills",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "baoyu-skills",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

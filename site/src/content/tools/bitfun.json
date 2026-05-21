@@ -1,0 +1,78 @@
+{
+  "id": "bitfun",
+  "name": "BitFun",
+  "type": "sdk",
+  "status": "published",
+  "summary": "BitFun is a desktop-grade Agent runtimeand a ready-to-use suite of desktop Agent applications.with built-in Code Agent 、 Cowork Agent、Computer Use. It has memory, personality, and the ability to evolve over time",
+  "description": "BitFun is a desktop-grade Agent runtimeand a ready-to-use suite of desktop Agent applications.with built-in Code Agent 、 Cowork Agent、Computer Use. It has memory, personality, and the ability to evolve over time",
+  "category": [
+    "sdk"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/GCWing/BitFun",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/GCWing/BitFun",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/GCWing/BitFun#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/GCWing/BitFun#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/GCWing/BitFun/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "BitFun is a desktop-grade Agent runtime (Local Agent Runtime) and a ready-to-use suite of desktop Agent applications.",
+    "It is the foundation—a Rust core plus a Tauri shell, with sessions, tools, memory, MCP, LSP, and remote-control protocols built in, designed for long-running use;",
+    "You can use it immediately, or define your own domain Agents on top of it.",
+    "Download and run—no DIY assembly: MCP / LSP / filesystem / terminal / Git / remote SSH are all built in; configure your model and go, without spending time wiring the protocol stack from scratch.",
+    "Deeply customizable, with no gap from a single Markdown file to a full-repo fork: ~90% of domain needs are covered with one .md; missing a tool?",
+    "Have the Code Agent do it inside BitFun—the way you customize it is by using it.",
+    "The Agent works on the desktop; you check progress on the go.",
+    "Self-improving: 97%+ of the code was produced by BitFun’s built-in Code Agent via Vibe Coding, so it naturally fits AI-assisted development."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T10:59:37Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/GCWing/BitFun",
+  "repoUrl": "https://github.com/GCWing/BitFun",
+  "license": "MIT",
+  "stars": 743,
+  "lastUpdated": "2026-05-18T10:59:37Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

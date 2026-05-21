@@ -1,0 +1,159 @@
+{
+  "id": "candidate-drawio-skill-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Drawio Skill",
+  "sourceUrl": "https://github.com/Agents365-ai/drawio-skill",
+  "sourceName": "GitHub",
+  "author": "Agents365-ai",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Generate draw.io diagrams from natural language with 6 presets and a 2-round self-check loop. Exports to PNG/SVG/PDF/JPG.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "Agents365-ai",
+    "repo": "drawio-skill",
+    "fullName": "Agents365-ai/drawio-skill",
+    "stars": 1735,
+    "license": "MIT",
+    "topics": [
+      "agent-skill",
+      "agent-skills",
+      "architecture-diagram",
+      "claude-code",
+      "claude-code-skill",
+      "claude-skills",
+      "diagram",
+      "drawio",
+      "erd",
+      "flowchart",
+      "openclaw",
+      "openclaw-skills",
+      "skill-md",
+      "skillsmp",
+      "uml"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T06:33:35Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.nojekyll",
+    "docs/COMPARISON_CN.md",
+    "docs/COMPARISON.md",
+    "docs/index.html",
+    "docs/STYLE_PRESETS_CN.md",
+    "docs/STYLE_PRESETS.md",
+    "docs/USAGE_CN.md",
+    "docs/USAGE.md",
+    "docs/zh.html",
+    "skills/drawio-skill/SKILL.md"
+  ],
+  "readmeExtract": "drawio skill — From Text to Professional Diagrams [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/Agents365 ai/drawio skill?style=flat&logo=github)](https://github.com/Agents365 ai/drawio skill/stargazers) [![GitHub forks](https://img.shields.io/github/forks/Agents365 ai/drawio skill?style=flat&logo=github)](https://github.com/Agents",
+  "skillExtracts": [
+    {
+      "path": "skills/drawio-skill/SKILL.md",
+      "extract": "name: drawio skill version: 1.5.2 description: Use when the user requests diagrams, flowcharts, architecture diagrams, ER diagrams, UML / sequence / class diagrams, network topology, ML/DL model figures (Transformer/CNN/LSTM), mind maps, or any visualization. Also use proactively when explaining systems with 3+ components, complex data flows, or relationships that benefit from visual representation. Best suited when "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "drawio-skill — From Text to Professional Diagrams",
+    "English · 中文 · 📖 Online Docs",
+    "A skill that turns natural-language descriptions into .drawio XML and exports them to PNG / SVG / PDF / JPG via the native draw.io desktop CLI.",
+    "Works with Claude Code, Cursor, Copilot, OpenClaw, Codex, Hermes, and any agent compatible with the Agent Skills format.",
+    "Clean layout — grid-aligned, spacing scales with diagram size, connectors routed clear of nodes",
+    "The skill is designed to route edges cleanly across different topologies, avoiding lines that cross through shapes:",
+    "E-commerce stack with horizontal and diagonal cross-connections routed via corridors.",
+    "Full walkthrough in docs/USAGE.md."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Generate draw.io diagrams from natural language with 6 presets and a 2-round self-check loop. Exports to PNG/SVG/PDF/JPG.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Drawio Skill is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "drawio-skill — From Text to Professional Diagrams",
+      "English · 中文 · 📖 Online Docs",
+      "A skill that turns natural-language descriptions into .drawio XML and exports them to PNG / SVG / PDF / JPG via the native draw.io desktop CLI."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "drawio-skill",
+  "publishedAt": "2026-05-20"
+}

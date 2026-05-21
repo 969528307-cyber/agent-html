@@ -1,13 +1,13 @@
 {
   "id": "candidate-cowagent-2026-05-12",
   "type": "tool",
-  "status": "candidate",
+  "status": "published",
   "title": "CowAgent",
   "sourceUrl": "https://github.com/zhayujie/CowAgent",
   "sourceName": "GitHub",
   "author": "zhayujie",
   "discoveredAt": "2026-05-12",
-  "lastChecked": "2026-05-12",
+  "lastChecked": "2026-05-21",
   "discoveredFrom": "github",
   "summary": "CowAgent (chatgpt-on-wechat) 是基于大模型的超级AI助理，能主动思考和任务规划、访问操作系统和外部资源、创造和执行Skills、通过长期记忆和知识库不断成长，比OpenClaw更轻量和便捷。同时支持微信、飞书、钉钉、企微、QQ、公众号、网页等接入，可选择DeepSeek/OpenAI/Claude/Gemini/ MiniMax/Qwen/GLM/LinkAI，能处理文本、语音、图片和文件，可快速搭建个人AI助理和企业数字员工。",
   "proposedCategory": [
@@ -15,13 +15,16 @@
     "browser",
     "docs",
     "search",
-    "workflow"
+    "workflow",
+    "agent-app"
   ],
   "proposedAgents": [
     "Claude Code",
     "Cursor",
     "Qwen Code",
-    "Generic"
+    "Generic",
+    "Kimi",
+    "OpenClaw"
   ],
   "proposedToolType": "mcp",
   "crawlerProfile": "mcp",
@@ -96,7 +99,43 @@
     "docs/skills/create.mdx",
     "docs/skills/hub.mdx",
     "docs/skills/image-generation.mdx",
-    "docs/skills/index.mdx"
+    "docs/skills/index.mdx",
+    "docs/channels/dingtalk.mdx",
+    "docs/channels/feishu.mdx",
+    "docs/channels/qq.mdx",
+    "docs/channels/web.mdx",
+    "docs/channels/wechatmp.mdx",
+    "docs/channels/wecom-bot.mdx",
+    "docs/channels/wecom.mdx",
+    "docs/channels/weixin.mdx",
+    "docs/cli/general.mdx",
+    "docs/cli/index.mdx",
+    "docs/cli/memory-knowledge.mdx",
+    "docs/cli/process.mdx",
+    "docs/docs.json",
+    "docs/en/channels/dingtalk.mdx",
+    "docs/en/channels/feishu.mdx",
+    "docs/en/channels/qq.mdx",
+    "docs/en/channels/web.mdx",
+    "docs/en/channels/wechatmp.mdx",
+    "docs/en/channels/wecom-bot.mdx",
+    "docs/en/channels/wecom.mdx",
+    "docs/en/channels/weixin.mdx",
+    "docs/en/cli/general.mdx",
+    "docs/en/cli/index.mdx",
+    "docs/en/cli/memory-knowledge.mdx",
+    "docs/en/cli/process.mdx",
+    "docs/en/guide/quick-start.mdx",
+    "docs/en/intro/architecture.mdx",
+    "docs/en/intro/features.mdx",
+    "docs/en/intro/index.mdx",
+    "docs/en/knowledge/index.mdx",
+    "docs/en/memory/context.mdx",
+    "docs/en/memory/deep-dream.mdx",
+    "docs/en/memory/index.mdx",
+    "docs/en/models/coding-plan.mdx",
+    "docs/en/models/custom.mdx",
+    "docs/en/models/deepseek.mdx"
   ],
   "readmeExtract": "<p align=\"center\" <img src= \"https://github.com/user attachments/assets/eca9a9ec 8534 4615 9e0f 96c5ac1d10a3\" alt=\"CowAgent\" width=\"550\" / </p <p align=\"center\" <a href=\"https://github.com/zhayujie/CowAgent/releases/latest\" <img src=\"https://img.shields.io/github/v/release/zhayujie/CowAgent\" alt=\"Latest release\" </a <a href=\"https://github.com/zhayujie/CowAgent/blob/master/LICENSE\" <img src=\"https://img.shields.io/gi",
   "skillExtracts": [
@@ -161,7 +200,15 @@
     }
   ],
   "extractedSignals": [
-    "Repository includes skill-related files"
+    "Repository includes skill-related files",
+    "CowAgent 是基于大模型的超级 AI 助理，能够主动思考和任务规划、操作计算机和外部资源、创造和执行 Skills、拥有长期记忆和知识库并不断成长，比 OpenClaw 更轻量和便捷。CowAgent 支持灵活切换多种模型，能处理文本、语音、图片、文件等多模态消息，可接入微信、飞书、钉钉、企微智能机器人、QQ、企微自建应用、微信公众号、网页中使用，724小时运行于你的个人电脑或服务器中。",
+    "该项目既是一个可以开箱即用的超级 AI 助理，也是一个支持高扩展的 Agent 框架，可以通过为项目扩展大模型接口、接入渠道、内置工具、Skills 系统来灵活实现各种定制需求。核心能力如下：",
+    "✅ 技能系统： Skills 安装和运行的引擎，支持从 Skill Hub、GitHub 等一键安装技能，或通过对话创造 Skills",
+    "✅ 工具系统： 内置文件读写、终端执行、浏览器操作、定时任务等工具，支持 MCP 协议，通过 Agent 自主调用完成复杂任务",
+    "✅ 多模型支持： 支持 DeepSeek、MiniMax、Claude、Gemini、OpenAI、GLM、Qwen、Doubao、Kimi 等国内外主流模型厂商",
+    "成本与安全：Agent 模式下 Token 使用量高于普通对话模式，请根据效果及成本综合选择模型。Agent 具有访问所在操作系统的能力，请谨慎选择项目部署环境。同时项目也会持续升级安全机制、并降低模型消耗成本。",
+    "CowAgent 项目专注于开源技术开发，不会参与、授权或发行任何加密货币。",
+    "LinkAI 是面向企业和个人的一站式 AI 智能体平台，聚合多模态大模型、知识库、技能、工作流等能力，支持一键接入主流平台并管理，支持 SaaS、私有化部署等多种模式，可免部署在线运行CowAgent 助理。"
   ],
   "reviewScore": {
     "sourceTrust": 4,
@@ -173,5 +220,107 @@
     "permission": 4
   },
   "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
-  "publishReason": "CowAgent (chatgpt-on-wechat) 是基于大模型的超级AI助理，能主动思考和任务规划、访问操作系统和外部资源、创造和执行Skills、通过长期记忆和知识库不断成长，比OpenClaw更轻量和便捷。同时支持微信、飞书、钉钉、企微、QQ、公众号、网页等接入，可选择DeepSeek/OpenAI/Claude/Gemini/ MiniMax/Qwen/GLM/LinkAI，能处理文本、语音、图片和文件，可快速搭建个人AI助理和企业数字员工。"
+  "publishReason": "CowAgent (chatgpt-on-wechat) 是基于大模型的超级AI助理，能主动思考和任务规划、访问操作系统和外部资源、创造和执行Skills、通过长期记忆和知识库不断成长，比OpenClaw更轻量和便捷。同时支持微信、飞书、钉钉、企微、QQ、公众号、网页等接入，可选择DeepSeek/OpenAI/Claude/Gemini/ MiniMax/Qwen/GLM/LinkAI，能处理文本、语音、图片和文件，可快速搭建个人AI助理和企业数字员工。",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "docs",
+      "search",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "docs",
+    "search",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "CowAgent is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with docs workflows.",
+      "Helps with search workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:zhayujie/cowagent",
+  "firstDiscoveredAt": "2026-05-12",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cowagent",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
 }

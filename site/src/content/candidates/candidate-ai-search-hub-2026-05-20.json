@@ -1,0 +1,148 @@
+{
+  "id": "candidate-ai-search-hub-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "AI Search Hub",
+  "sourceUrl": "https://github.com/minsight-ai-info/AI-Search-Hub",
+  "sourceName": "GitHub",
+  "author": "minsight-ai-info",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "One Query. All Search Skill. 聚合 Gemini、Grok、豆包、元宝等平台原生 AI 搜索能力，免费获取科技趋势、行业舆情、热点追踪、旅行规划、日常问题统一接进自己的 Agent 与工作流，指定链接免费爬取",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Kimi",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "minsight-ai-info",
+    "repo": "AI-Search-Hub",
+    "fullName": "minsight-ai-info/AI-Search-Hub",
+    "stars": 1116,
+    "topics": [
+      "ai",
+      "claude-skills",
+      "deep-search",
+      "knowledge-graph",
+      "llm",
+      "multi-agent-systems",
+      "openclaw",
+      "python3",
+      "skill"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-27T07:47:18Z"
+  },
+  "detectedFiles": [
+    "README.en.md",
+    "README.md",
+    "docs/images/minimax.png",
+    "SKILL.md"
+  ],
+  "readmeExtract": "<div align=\"center\" AI Search Hub 一次提问，全域搜索。 [English](README.en.md) [![Repo](https://img.shields.io/badge/Repo GitHub 181717?style=flat square&logo=github)](https://github.com/minsight ai info/AI Search Hub) [![Type](https://img.shields.io/badge/type open source%20skill black?style=flat square)](https://github.com/minsight ai info/AI Search Hub) [![Status](https://img.shields.io/badge/status active success?style=fla",
+  "skillExtracts": [
+    {
+      "path": "SKILL.md",
+      "extract": "name: ai search hub description: Run the AI Search Hub browser automation scripts for Yuanbao, LongCat, Doubao, Qwen, Gemini, Grok, and MiniMax. Use this skill when the user wants to ask one of those sites a prompt, auto start or attach to a Chrome DevTools session on port 9222, seed an isolated debug browser profile from the user's local browser data, detect whether login is required, wait for the user to finish log"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AI Search Hub 是一个开源 Skill，用来把分散在不同 AI 平台里的搜索能力、网页抽取能力，以及它们背后各自公司的原生数据世界，整理成一个可复用的搜索与抽取中枢。",
+    "你不只可以一次提问、全域搜索。给它一个链接，也能直接借力大厂已经打磨好的网页理解、搜索与抽取能力。更重要的是，你可以通过这些 AI 平台去拿微信公众号、抖音、微博等它们更容易触达的数据，再让它们替你完成搜集、清洗、整理，最后统一接进自己的 Agent 与工作流。",
+    "给一个问题，让这些平台替你搜；给一个链接，让这些平台替你抓、替你读、替你清洗整理，再把结果统一回收给你的 Agent。最难拿的数据入口，直接让大厂替你打工。",
+    "📦 统一输出给 Agent / Workflow . 把多平台结果回收到一个可复用出口",
+    "这些平台不是附属补充，而是 AI Search Hub 当前编排的核心搜索入口。",
+    "当前已接入：Gemini / Grok / 豆包 / 元宝 / LongCat / 通义千问 / MiniMax / Kimi",
+    "Gemini . Google-first discovery",
+    "Grok . Real-time social search"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "One Query. All Search Skill. 聚合 Gemini、Grok、豆包、元宝等平台原生 AI 搜索能力，免费获取科技趋势、行业舆情、热点追踪、旅行规划、日常问题统一接进自己的 Agent 与工作流，指定链接免费爬取",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "AI Search Hub is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Relevant to skill.",
+      "AI Search Hub 是一个开源 Skill，用来把分散在不同 AI 平台里的搜索能力、网页抽取能力，以及它们背后各自公司的原生数据世界，整理成一个可复用的搜索与抽取中枢。",
+      "你不只可以一次提问、全域搜索。给它一个链接，也能直接借力大厂已经打磨好的网页理解、搜索与抽取能力。更重要的是，你可以通过这些 AI 平台去拿微信公众号、抖音、微博等它们更容易触达的数据，再让它们替你完成搜集、清洗、整理，最后统一接进自己的 Agent 与工作流。"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ai-search-hub",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "mcp-server-docker",
+  "name": "Mcp Server Docker",
+  "type": "mcp",
+  "status": "published",
+  "summary": "MCP server for Docker",
+  "description": "MCP server for Docker",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ckreiling/mcp-server-docker",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ckreiling/mcp-server-docker",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ckreiling/mcp-server-docker#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ckreiling/mcp-server-docker#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ckreiling/mcp-server-docker/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "An MCP server for managing Docker with natural language!",
+    "📀 Manage persistent data with Docker volumes",
+    "Server administrators: connect to remote Docker engines for e.g.",
+    "On MacOS: ~/Library/Application\\ Support/Claude/claudedesktopconfig.json",
+    "On Windows: %APPDATA%/Claude/claudedesktopconfig.json",
+    "Then add the following to your MCP servers file:",
+    "And then add the following to your MCP servers file:",
+    "Note that we mount the Docker socket as a volume; this ensures the MCP server"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-06-05T02:52:13Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ckreiling/mcp-server-docker",
+  "repoUrl": "https://github.com/ckreiling/mcp-server-docker",
+  "license": "GPL-3.0",
+  "stars": 717,
+  "lastUpdated": "2025-06-05T02:52:13Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

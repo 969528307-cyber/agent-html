@@ -104,5 +104,72 @@
     "permission": 4
   },
   "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
-  "publishReason": "TypeScript AI platform with AI chat, Autonomous agents, Software developer agents, chatbots and more"
+  "publishReason": "TypeScript AI platform with AI chat, Autonomous agents, Software developer agents, chatbots and more",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "monitoring",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "monitoring",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Typedai is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with monitoring workflows.",
+      "Helps with automation workflows.",
+      "Relevant to cli."
+    ],
+    "reasons": [
+      "Capability signals are too thin."
+    ],
+    "riskNotes": []
+  }
 }

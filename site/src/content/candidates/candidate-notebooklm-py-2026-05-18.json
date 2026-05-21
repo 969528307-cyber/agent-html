@@ -1,0 +1,164 @@
+{
+  "id": "candidate-notebooklm-py-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Notebooklm Py",
+  "sourceUrl": "https://github.com/teng-lin/notebooklm-py",
+  "sourceName": "GitHub",
+  "author": "teng-lin",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "teng-lin",
+    "repo": "notebooklm-py",
+    "fullName": "teng-lin/notebooklm-py",
+    "stars": 13468,
+    "license": "MIT",
+    "topics": [
+      "agentic-skill",
+      "api",
+      "claude",
+      "claude-skills",
+      "google-notebooklm",
+      "notebooklm",
+      "notebooklm-api",
+      "notebooklm-skill",
+      "openclaw-skills",
+      "podcast-generator",
+      "python",
+      "python-api",
+      "sdk",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T04:04:56Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/auth-keepalive.md",
+    "docs/cli-exit-codes.md",
+    "docs/cli-reference.md",
+    "docs/examples/bulk-import.py",
+    "docs/examples/chat.py",
+    "docs/examples/notes.py",
+    "docs/examples/quickstart.py",
+    "docs/examples/research-to-podcast.py",
+    "docs/examples/video.py",
+    "docs/python-api.md",
+    "docs/releasing.md",
+    "docs/rpc-reference.md",
+    "docs/stability.md",
+    "pyproject.toml",
+    "SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "notebooklm py <p align=\"left\" <img src=\"https://raw.githubusercontent.com/teng lin/notebooklm py/main/notebooklm py.png\" alt=\"notebooklm py logo\" width=\"128\" </p A Comprehensive NotebookLM Skill & Unofficial Python API. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw. [![PyPI version](https://img.sh",
+  "skillExtracts": [
+    {
+      "path": "SKILL.md",
+      "extract": "name: notebooklm description: Complete API for Google NotebookLM full programmatic access including features not in the web UI. Create notebooks, add sources, generate all artifact types, download in multiple formats. Activates on explicit /notebooklm or intent like \"create a podcast about X\" NotebookLM Automation Complete programmatic access to Google NotebookLM—including capabilities not exposed in the web UI. Crea"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Best for prototypes, research, and personal projects.",
+    "🤖 AI Agent Tools - Integrate NotebookLM into Claude Code, Codex, and other LLM agents.",
+    "📚 Research Automation - Bulk-import sources (URLs, PDFs, YouTube, Google Drive), run web/Drive research queries with auto-import, and extract insights programmatically.",
+    "Build repeatable research pipelines.",
+    "Export to Google Docs/Sheets.",
+    "Python API Application integration, async workflows, custom pipelines",
+    "CLI Shell scripts, quick tasks, CI/CD automation",
+    "Agent Integration Claude Code, Codex, LLM agents, natural language automation"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Notebooklm Py is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "Best for prototypes, research, and personal projects.",
+      "🤖 AI Agent Tools - Integrate NotebookLM into Claude Code, Codex, and other LLM agents."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "notebooklm-py",
+  "publishedAt": "2026-05-18"
+}

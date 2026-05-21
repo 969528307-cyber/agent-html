@@ -1,0 +1,77 @@
+{
+  "id": "klavis",
+  "name": "Klavis",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Klavis AI:  MCP integration platforms that let AI agents use tools reliably at any scale",
+  "description": "Klavis AI:  MCP integration platforms that let AI agents use tools reliably at any scale",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Klavis-AI/klavis",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Klavis-AI/klavis",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Klavis-AI/klavis#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Klavis-AI/klavis#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Klavis-AI/klavis/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Intelligent connectors for your AI agent, optimize context window",
+    "scalable MCP environments for LLM training and RL",
+    "strata add --type stdio playwright npx @playwright/mcp@latest",
+    "from klavis.types import McpServerName",
+    "strata = klavisclient.mcpserver.createstrataserver(",
+    "servers=[McpServerName.GMAIL, McpServerName.SLACK],",
+    "Or use individual MCP servers",
+    "gmail = klavis.mcpserver.createserverinstance("
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T22:40:45Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Klavis-AI/klavis",
+  "repoUrl": "https://github.com/Klavis-AI/klavis",
+  "license": "Apache-2.0",
+  "stars": 5740,
+  "lastUpdated": "2026-05-19T22:40:45Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

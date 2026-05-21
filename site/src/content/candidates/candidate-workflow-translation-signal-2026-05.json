@@ -10,8 +10,14 @@
   "lastChecked": "2026-05-11",
   "discoveredFrom": "submission",
   "summary": "A Chinese builder essay about moving from prompt libraries to reusable workflows.",
-  "proposedCategory": ["workflow", "agent"],
-  "proposedAgents": ["Codex", "Claude Code"],
+  "proposedCategory": [
+    "workflow",
+    "agent"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code"
+  ],
   "permissionStatus": "author_submitted",
   "reviewScore": {
     "sourceTrust": 5,
@@ -23,5 +29,23 @@
     "permission": 5
   },
   "reviewNotes": "Author-submitted example can be used for full English translation.",
-  "publishReason": "Strong fit for Signals and workflow-related tooling."
+  "publishReason": "Strong fit for Signals and workflow-related tooling.",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "From prompt libraries to operational workflows is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to workflow.",
+      "Relevant to agent."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Capability signals are too thin.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  }
 }

@@ -1,148 +1,459 @@
 ---
 import { getCollection } from "astro:content";
-import ArticleCard from "../../components/ArticleCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const articles = (await getCollection("learn"))
   .filter((entry) => entry.data.status === "published")
-  .sort((a, b) => b.data.publishedAt.localeCompare(a.data.publishedAt));
+  .sort((a, b) => a.data.order - b.data.order || b.data.publishedAt.localeCompare(a.data.publishedAt));
 
 const topicCounts = articles.reduce<Record<string, number>>((counts, article) => {
   counts[article.data.topic] = (counts[article.data.topic] ?? 0) + 1;
   return counts;
 }, {});
+
+const pathLabels = {
+  start: "Start here",
+  "use-case": "Choose by goal",
+  "agent-deep-dive": "Agent deep dives",
+  trust: "Trust & selection",
+};
+
+const pathDescriptions = {
+  start: "Learn the vocabulary before collecting tools.",
+  "use-case": "Start from the job you want an agent to do.",
+  "agent-deep-dive": "Understand a specific agent ecosystem before installing extensions.",
+  trust: "Judge source quality, safety, freshness, and official links.",
+};
+
+const pathOrder = ["start", "use-case", "agent-deep-dive", "trust"] as const;
+const articlesByPath = Object.fromEntries(pathOrder.map((path) => [path, articles.filter((article) => article.data.path === path)]));
+const featuredStart = articlesByPath.start[0];
 ---
 
 <BaseLayout
   title="Learn - agentk.it"
   description="Short learning pages for MCP, Skills, Agents, Workflows, and practical AI tool setup decisions."
 >
-  <section class="page hero-lite">
-    <div>
-      <div class="eyebrow">Learn</div>
-      <h1>Learn the system before collecting tools.</h1>
-      <p>
-        This section is the explanation layer: MCP, Skills, Agents, Workflows,
-        and the decision paths that help people choose a usable setup.
-      </p>
-    </div>
-    <aside class="panel">
-      <span>{articles.length}</span>
-      <p>published explainers</p>
-    </aside>
-  </section>
+  <section class="learn page">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="route-chip"><span></span>Learning Field Guides</div>
+        <h1>Learn just enough to choose the right tools.</h1>
+        <p>
+          Learn supports the directory. It explains MCP, Skills, Workflows, agents,
+          and trust checks without turning the product into a heavy course.
+        </p>
+      </div>
 
-  <section class="section page layout">
-    <aside class="sidebar">
-      <div class="eyebrow">Topics</div>
-      {Object.entries(topicCounts).map(([topic, count]) => (
-        <a href={`#${topic}`}>
-          <span>{topic}</span>
-          <strong>{count}</strong>
-        </a>
-      ))}
-    </aside>
+      <aside class="lab-console">
+        <div class="console-head">
+          <span>Guide index</span>
+          <strong>{articles.length} pages</strong>
+        </div>
+        <div class="console-lines">
+          {Object.entries(topicCounts).map(([topic, count]) => (
+            <a href={`#topic-${topic}`}>
+              <span>{topic}</span>
+              <strong>{count}</strong>
+              <p>{count === 1 ? "guide" : "guides"}</p>
+            </a>
+          ))}
+        </div>
+      </aside>
+    </section>
 
-    <div class="article-grid">
-      {
-        articles.map((article) => (
-          <ArticleCard
-            href={`/learn/${article.id}`}
-            label={`${article.data.topic} · ${article.data.difficulty}`}
-            title={article.data.title}
-            description={article.data.subtitle}
-          />
-        ))
-      }
-    </div>
+    {
+      featuredStart && (
+        <section class="start-route">
+          <div class="section-kicker">
+            <span>01</span>
+            <h2>Start with the smallest useful map.</h2>
+            <p>One page should give enough context to make the tool directory feel easier, not slower.</p>
+          </div>
+
+          <a class="feature-card" href={`/learn/${featuredStart.id}`}>
+            <div>
+              <span>{featuredStart.data.topic} · {featuredStart.data.readingTime}</span>
+              <h3>{featuredStart.data.title}</h3>
+              <p>{featuredStart.data.subtitle}</p>
+            </div>
+            <div class="bullet-row">
+              {featuredStart.data.summaryBullets.slice(0, 3).map((item) => <strong>{item}</strong>)}
+            </div>
+          </a>
+        </section>
+      )
+    }
+
+    <section class="guide-section">
+      <div class="section-kicker">
+        <span>02</span>
+        <h2>Browse by learning path.</h2>
+        <p>Short cards, clear context, direct links back into tools and agent pages.</p>
+      </div>
+
+      <div class="path-stack">
+        {
+          pathOrder.map((path) => (
+            articlesByPath[path].length > 0 && (
+              <section class="path-section" id={path}>
+                <div class="path-head">
+                  <div>
+                    <span>{pathLabels[path]}</span>
+                    <h3>{pathDescriptions[path]}</h3>
+                  </div>
+                  <strong>{articlesByPath[path].length} pages</strong>
+                </div>
+                <div class="article-grid">
+                  {articlesByPath[path].map((article) => (
+                    <a class="article-card" href={`/learn/${article.id}`} id={`topic-${article.data.topic}`}>
+                      <span>{article.data.topic} · {article.data.difficulty}</span>
+                      <h4>{article.data.title}</h4>
+                      <p>{article.data.subtitle}</p>
+                      <small>{article.data.readingTime}</small>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            )
+          ))
+        }
+      </div>
+    </section>
   </section>
 </BaseLayout>
 
 <style>
-  .hero-lite {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 260px;
-    gap: 28px;
-    align-items: end;
-    padding: 72px 0 24px;
+  :global(body) {
+    background:
+      radial-gradient(circle at 12% 0%, rgb(134 174 255 / 0.18), transparent 30rem),
+      radial-gradient(circle at 88% 7%, rgb(229 183 106 / 0.13), transparent 28rem),
+      radial-gradient(circle at 60% 86%, rgb(82 220 160 / 0.12), transparent 34rem),
+      #080b10;
   }
 
-  .hero-lite p {
+  .learn {
+    padding: 42px 0 72px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+    gap: 18px;
+  }
+
+  .hero-copy,
+  .lab-console,
+  .feature-card,
+  .path-section,
+  .article-card {
+    border: 1px solid rgb(246 242 234 / 0.11);
+    background:
+      linear-gradient(180deg, rgb(246 242 234 / 0.07), rgb(246 242 234 / 0.026)),
+      rgb(12 17 24 / 0.82);
+    box-shadow: 0 30px 100px rgb(0 0 0 / 0.32);
+    backdrop-filter: blur(30px);
+  }
+
+  .hero-copy {
+    position: relative;
+    min-height: 330px;
+    padding: clamp(28px, 4.4vw, 52px);
+    overflow: hidden;
+    border-radius: 42px;
+  }
+
+  .hero-copy::after {
+    position: absolute;
+    right: -86px;
+    bottom: -140px;
+    width: 350px;
+    height: 350px;
+    content: "";
+    background:
+      radial-gradient(circle at 34% 35%, rgb(246 242 234 / 0.72), transparent 8%),
+      conic-gradient(from 180deg, rgb(134 174 255 / 0.62), rgb(229 183 106 / 0.42), rgb(82 220 160 / 0.46), rgb(134 174 255 / 0.62));
+    border-radius: 44% 56% 50% 50%;
+    opacity: 0.58;
+    filter: blur(4px);
+  }
+
+  .route-chip {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 9px 12px;
+    color: #d9e6ff;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    border: 1px solid rgb(134 174 255 / 0.26);
+    border-radius: 999px;
+    background: rgb(134 174 255 / 0.1);
+  }
+
+  .route-chip span {
+    width: 8px;
+    height: 8px;
+    background: #e5b76a;
+    border-radius: 999px;
+  }
+
+  .hero h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin-top: 24px;
+    color: #f6f2ea;
+    font-size: clamp(44px, 6.4vw, 82px);
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+  }
+
+  .hero p {
+    position: relative;
+    z-index: 1;
     max-width: 650px;
-    margin-top: 18px;
-    color: var(--muted);
-    font-size: 15px;
-    line-height: 1.72;
+    margin-top: 22px;
+    color: #aeb7c8;
+    font-size: 16px;
+    line-height: 1.66;
   }
 
-  .panel,
-  .sidebar {
-    border: 1px solid var(--line);
-    background: linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)), var(--paper);
-    box-shadow: var(--shadow);
-  }
-
-  .panel {
-    padding: 24px;
-    border-radius: 28px;
-  }
-
-  .panel span {
-    display: block;
-    color: var(--sage);
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: -0.06em;
-  }
-
-  .panel p {
-    margin-top: 6px;
-  }
-
-  .layout {
+  .lab-console {
     display: grid;
-    grid-template-columns: 260px minmax(0, 1fr);
     gap: 20px;
-    align-items: start;
+    align-content: space-between;
+    min-height: 330px;
+    padding: 24px;
+    border-radius: 34px;
   }
 
-  .sidebar {
-    position: sticky;
-    top: 112px;
-    display: grid;
-    gap: 10px;
-    padding: 20px;
-    border-radius: 24px;
-  }
-
-  .sidebar a {
+  .console-head {
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    padding: 12px 0;
-    color: var(--muted);
-    border-top: 1px solid var(--line);
+    color: #9aa4b6;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
   }
 
-  .sidebar strong {
-    color: var(--sage);
+  .console-head strong {
+    color: #e5b76a;
+  }
+
+  .console-lines {
+    display: grid;
+    gap: 10px;
+  }
+
+  .console-lines a {
+    display: grid;
+    grid-template-columns: minmax(90px, 1fr) 46px 56px;
+    gap: 10px;
+    align-items: baseline;
+    padding-top: 12px;
+    border-top: 1px solid rgb(246 242 234 / 0.1);
+  }
+
+  .console-lines span,
+  .console-lines p {
+    color: #8c96a7;
+    font-size: 12px;
+  }
+
+  .console-lines strong {
+    color: #f6f2ea;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+  }
+
+  .start-route,
+  .guide-section {
+    margin-top: 44px;
+  }
+
+  .section-kicker {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 0.8fr) minmax(260px, 0.6fr);
+    gap: 18px;
+    align-items: end;
+    margin-bottom: 18px;
+  }
+
+  .section-kicker > span {
+    color: #e5b76a;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+  }
+
+  .section-kicker h2 {
+    color: #f6f2ea;
+    font-size: clamp(26px, 3vw, 42px);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+  }
+
+  .section-kicker p,
+  .feature-card p,
+  .article-card p {
+    color: #9aa4b6;
+    font-size: 14px;
+    line-height: 1.62;
+  }
+
+  .feature-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.55fr);
+    gap: 22px;
+    padding: 24px;
+    border-radius: 32px;
+  }
+
+  .feature-card span,
+  .path-head span,
+  .article-card span,
+  .article-card small {
+    color: #e5b76a;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .feature-card h3 {
+    margin-top: 12px;
+    color: #f6f2ea;
+    font-size: clamp(30px, 4vw, 54px);
+    line-height: 0.95;
+    letter-spacing: -0.07em;
+  }
+
+  .feature-card p {
+    max-width: 720px;
+    margin-top: 14px;
+  }
+
+  .bullet-row {
+    display: grid;
+    gap: 10px;
+  }
+
+  .bullet-row strong {
+    display: block;
+    padding: 12px;
+    color: #bbf2d9;
+    font-size: 13px;
+    font-weight: 800;
+    border: 1px solid rgb(82 220 160 / 0.22);
+    border-radius: 18px;
+    background: rgb(82 220 160 / 0.08);
+  }
+
+  .path-stack {
+    display: grid;
+    gap: 18px;
+  }
+
+  .path-section {
+    padding: 18px;
+    border-radius: 30px;
+    scroll-margin-top: 110px;
+  }
+
+  .path-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 14px;
+  }
+
+  .path-head h3 {
+    max-width: 680px;
+    margin-top: 7px;
+    color: #f6f2ea;
+    font-size: clamp(22px, 2.5vw, 34px);
+    line-height: 1;
+    letter-spacing: -0.052em;
+  }
+
+  .path-head strong {
+    color: #8fb7ff;
+    font-size: 13px;
+    white-space: nowrap;
   }
 
   .article-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
+    gap: 12px;
   }
 
-  @media (max-width: 860px) {
-    .hero-lite,
-    .layout,
+  .article-card {
+    display: grid;
+    min-height: 210px;
+    padding: 18px;
+    border-radius: 24px;
+    box-shadow: none;
+    transition: transform 180ms ease, border-color 180ms ease;
+  }
+
+  .article-card:hover {
+    border-color: rgb(134 174 255 / 0.34);
+    transform: translateY(-3px);
+  }
+
+  .article-card h4 {
+    margin-top: 14px;
+    color: #f6f2ea;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.055em;
+  }
+
+  .article-card p {
+    margin-top: 12px;
+  }
+
+  .article-card small {
+    align-self: end;
+    color: #8fb7ff;
+  }
+
+  @media (max-width: 980px) {
+    .hero,
+    .section-kicker,
+    .feature-card,
     .article-grid {
       grid-template-columns: 1fr;
     }
 
-    .sidebar {
-      position: static;
+    .hero-copy,
+    .lab-console {
+      min-height: auto;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .learn {
+      padding-top: 24px;
+    }
+
+    .hero-copy,
+    .lab-console,
+    .path-section {
+      border-radius: 26px;
+    }
+
+    .console-lines a,
+    .path-head {
+      grid-template-columns: 1fr;
+      flex-direction: column;
     }
   }
 </style>

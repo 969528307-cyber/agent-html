@@ -1,0 +1,161 @@
+{
+  "id": "candidate-tool-github-voltagent-awesome-openclaw-skills",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Openclaw Skills",
+  "sourceUrl": "https://github.com/VoltAgent/awesome-openclaw-skills",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "VoltAgent",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "OpenClaw"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "VoltAgent",
+    "repo": "awesome-openclaw-skills",
+    "fullName": "VoltAgent/awesome-openclaw-skills",
+    "stars": 48906,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "awesome",
+      "awesome-list",
+      "awesome-lists",
+      "clawd",
+      "clawdbot",
+      "clawdbot-skill",
+      "clawdhub",
+      "moltbot",
+      "moltbot-skills",
+      "openclaw",
+      "openclaw-skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T14:20:44Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <a href=\"https://clawskills.sh/\" <img width=\"1500\" height=\"500\" alt=\"social\" src=\"https://github.com/user attachments/assets/a6f310af 8fed 4766 9649 b190575b399d\" / </a <br/ <br/ <div align=\"center\" <strong Discover 5200+ community built OpenClaw skills, organized by category. </strong <br / <br / </div [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Skills Count](https://img.shi",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Discover 5200+ community-built OpenClaw skills, organized by category.",
+    "Skills extend its capabilities, allowing it to interact with external services, automate workflows, and perform specialized tasks.",
+    "Skills in this list are sourced from ClawHub (OpenClaw's public skills registry) and categorized for easier discovery.",
+    "Copy the skill folder to one of these locations:",
+    "You can also paste the skill's GitHub repository link directly into your assistant's chat and ask it to use it.",
+    "OpenClaw's public registry (ClawHub) hosts 13,729 community-built skills as of February 28, 2026.",
+    "This awesome list has 5,211 skills.",
+    "Malicious — identified by security audits published by researchers (excluding VirusTotal) 373",
+    "Discover 5300+ community-built OpenClaw skills, organized by category."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome Openclaw Skills is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Discover 5200+ community-built OpenClaw skills, organized by category.",
+      "Skills extend its capabilities, allowing it to interact with external services, automate workflows, and perform specialized tasks.",
+      "Skills in this list are sourced from ClawHub (OpenClaw's public skills registry) and categorized for easier discovery."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:voltagent/awesome-openclaw-skills",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

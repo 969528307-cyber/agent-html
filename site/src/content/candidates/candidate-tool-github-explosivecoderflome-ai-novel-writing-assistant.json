@@ -1,0 +1,206 @@
+{
+  "id": "candidate-tool-github-explosivecoderflome-ai-novel-writing-assistant",
+  "type": "tool",
+  "status": "published",
+  "title": "AI Novel Writing Assistant",
+  "sourceUrl": "https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "ExplosiveCoderflome",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "面向长篇小说创作的 AI Native 开源系统，用 Agent、世界观、写法引擎、RAG 和整本生产工作流，帮助新手从一句灵感走到完整小说。AI-native engine for end-to-end novel creation — from idea to full chapters, with structured planning, worldbuilding, and agent-driven workflows.",
+  "proposedCategory": [
+    "workflow"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "ExplosiveCoderflome",
+    "repo": "AI-Novel-Writing-Assistant",
+    "fullName": "ExplosiveCoderflome/AI-Novel-Writing-Assistant",
+    "stars": 1289,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-workflow",
+      "ai",
+      "creative-writing",
+      "long-form-fiction",
+      "narrative-engine",
+      "novel-writing",
+      "rag",
+      "story-generation",
+      "worldbuilding",
+      "writing-assistant"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T03:16:32Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/architecture/testing.md",
+    "docs/archive/outdated/auto-director-mvp-migration-plan-2026-04-28.md",
+    "docs/archive/outdated/desktop-plan-2026-04-17.md",
+    "docs/archive/outdated/knowledge-module-plan-implemented-reference.md",
+    "docs/archive/outdated/progress-audit-superseded.md",
+    "docs/archive/outdated/README.md",
+    "docs/archive/project-init-spec.md",
+    "docs/checkpoints/chapter-editor-v2-progress.md",
+    "docs/checkpoints/llm-schema-refactor-checkpoint.md",
+    "docs/checkpoints/prompt-governance-audit-2026-05-08.md",
+    "docs/design/style-engine-boundary-prd-v2.md",
+    "docs/design/style-engine-prompt-compiler-v1.md",
+    "docs/design/style-engine-v1.md",
+    "docs/design/world-management-v2.md",
+    "docs/design/world-story-interface-v1.md",
+    "docs/plans/assistant-ui-plan.md",
+    "docs/plans/auto-director-execution-plane-isolation-plan.md",
+    "docs/plans/chapter-editor-v2-plan.md",
+    "docs/plans/chapter-output-pipeline-optimization-plan.md",
+    "docs/plans/character-resource-ledger-plan.md",
+    "docs/plans/character-system-upgrade-plan.md",
+    "docs/plans/director-mode-module-state-refactor-checklist.md",
+    "docs/plans/prompt-workbench-context-and-step-runtime-plan.md",
+    "docs/README.md",
+    "docs/releases/release-notes.md",
+    "docs/superpowers/plans/2026-04-25-lucky-beta-selective-port.md",
+    "docs/wiki/architecture/image-generation-providers.md",
+    "docs/wiki/architecture/model-selection.md",
+    "docs/wiki/architecture/module-boundaries.md",
+    "docs/wiki/debugging/recurring-failure-modes.md",
+    "docs/wiki/entry-template.md",
+    "docs/wiki/product/beginner-first-novel-completion.md",
+    "docs/wiki/prompts/prompt-registry-and-structured-output.md",
+    "docs/wiki/rag/knowledge-and-context-assembly.md",
+    "docs/wiki/README.md",
+    "docs/wiki/workflows/auto-director-runtime.md",
+    "docs/wiki/workflows/chapter-production-chain.md",
+    "docs/wiki/workflows/creative-hub-boundary.md",
+    "package.json"
+  ],
+  "readmeExtract": "AI 小说创作工作台 / AI Novel Production Engine 一个面向长篇小说创作的 AI Native 开源项目。 当前开发主线： Creative Hub + 自动导演开书 + 整本生产主链 + 写法引擎 ![Monorepo](https://img.shields.io/badge/Monorepo pnpm%20workspace 3C873A) ![Frontend](https://img.shields.io/badge/Frontend React%20%2B%20Vite 61DAFB) ![Backend](https://img.shields.io/badge/Backend Express%20%2B%20Prisma 111827) ![AI](https://img.shields.io/badge/AI LangChain%20%2F%20LangGraph 0EA5E9) !",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "想研究 AI Native Product、Agent Workflow、LangGraph 编排怎样落到真实创作业务。",
+    "Creative Hub 与 Agent Runtime",
+    "系统里已经有了比较明确的 Planner、Tool Registry、Runtime、审批节点、状态卡片和中断恢复链路，说明这个项目现在关注的已经不是“AI 会不会写字”，而是“AI 能不能组织一条真实的创作工作流”。",
+    "前后端已经完成 Monorepo 拆分，适合本地持续开发，也比较适合继续往 Prompt Registry、Workflow Registry 和 Runtime 这条路上扩。",
+    "完整历史更新见 docs/releases/release-notes.md。",
+    "Database Authentication in Qdrant Managed Cloud",
+    "更细的文档分区说明可以看 docs/README.md。",
+    "Creative Hub 负责统一创作中枢与 Agent 运行时体验"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"workflow\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "面向长篇小说创作的 AI Native 开源系统，用 Agent、世界观、写法引擎、RAG 和整本生产工作流，帮助新手从一句灵感走到完整小说。AI-native engine for end-to-end novel creation — from idea to full chapters, with structured planning, worldbuilding, and agent-driven workflows.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "workflow",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "automation",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "workflow",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "automation",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "AI Novel Writing Assistant is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows.",
+      "Relevant to workflow.",
+      "想研究 AI Native Product、Agent Workflow、LangGraph 编排怎样落到真实创作业务。"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:explosivecoderflome/ai-novel-writing-assistant",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ai-novel-writing-assistant",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

@@ -1,0 +1,77 @@
+{
+  "id": "xiaozhi-esp32",
+  "name": "Xiaozhi Esp32",
+  "type": "mcp",
+  "status": "published",
+  "summary": "An MCP-based chatbot | 一个基于MCP的聊天机器人",
+  "description": "An MCP-based chatbot | 一个基于MCP的聊天机器人",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/78/xiaozhi-esp32",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/78/xiaozhi-esp32",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/78/xiaozhi-esp32#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/78/xiaozhi-esp32#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/78/xiaozhi-esp32/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "As a voice interaction entry, the XiaoZhi AI chatbot leverages the AI capabilities of large models like Qwen / DeepSeek, and achieves multi-terminal control via the MCP protocol.",
+    "You can switch to v1 by running git checkout v1.",
+    "Battery display and power management",
+    "Device-side MCP for device control (Speaker, LED, Servo, GPIO, etc.)",
+    "Cloud-side MCP to extend large model capabilities (smart home control, PC desktop operation, knowledge search, email, etc.)",
+    "The firmware connects to the official xiaozhi.me server by default.",
+    "MCP Protocol IoT Control Usage - Learn how to control IoT devices via MCP protocol",
+    "MCP Protocol Interaction Flow - Device-side MCP protocol implementation"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T06:51:48Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/78/xiaozhi-esp32",
+  "repoUrl": "https://github.com/78/xiaozhi-esp32",
+  "license": "MIT",
+  "stars": 26595,
+  "lastUpdated": "2026-05-18T06:51:48Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

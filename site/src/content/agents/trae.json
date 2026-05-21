@@ -4,16 +4,49 @@
   "status": "published",
   "region": "china",
   "vendor": "ByteDance",
-  "summary": "An AI IDE and coding agent product for developer assistance and project workflows.",
-  "bestFor": ["AI IDE workflows", "Project coding", "Chinese developer ecosystem"],
-  "interfaceType": ["ide"],
+  "summary": "ByteDance's AI IDE agent surface for project coding, rules-guided behavior, MCP integrations, and Chinese developer workflows.",
+  "overview": "ByteDance's AI IDE agent surface for project coding, rules-guided behavior, MCP integrations, and Chinese developer workflows.",
+  "bestFor": [
+    "AI IDE workflows",
+    "MCP inside an editor",
+    "Rules-guided project behavior",
+    "Chinese developer ecosystem coverage"
+  ],
+  "strengths": [],
+  "extensionModel": [],
+  "recommendedStacks": [],
+  "limitations": [],
+  "sources": [
+    {
+      "label": "Trae official site",
+      "url": "https://www.trae.ai/",
+      "kind": "official"
+    },
+    {
+      "label": "Trae MCP and rules update",
+      "url": "https://traeide.com/news/6",
+      "kind": "docs"
+    },
+    {
+      "label": "Trae Chinese MCP and rules update",
+      "url": "https://traeide.com/zh/news/6",
+      "kind": "docs"
+    }
+  ],
+  "interfaceType": [
+    "ide"
+  ],
   "documentationUrl": "https://www.trae.ai/",
-  "englishDocsUrl": "https://www.trae.ai/",
   "supportsMcp": true,
   "supportsSkills": false,
   "supportsCli": false,
   "supportsWorkflows": true,
-  "toolTypes": { "skills": 4, "mcps": 8, "cli": 2, "workflows": 10 },
-  "relatedLearn": ["how-to-choose-agent"],
-  "lastChecked": "2026-05-11"
+  "toolTypes": {
+    "skills": 0,
+    "mcps": 0,
+    "cli": 0,
+    "workflows": 0
+  },
+  "relatedLearn": [],
+  "lastChecked": "2026-05-14"
 }

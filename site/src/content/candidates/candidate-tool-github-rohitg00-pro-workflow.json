@@ -1,0 +1,244 @@
+{
+  "id": "candidate-tool-github-rohitg00-pro-workflow",
+  "type": "tool",
+  "status": "published",
+  "title": "Pro Workflow",
+  "sourceUrl": "https://github.com/rohitg00/pro-workflow",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "rohitg00",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Claude Code learns from your corrections: self-correcting memory that compounds over 50+ sessions. Context engineering, parallel worktrees, agent teams, and 17 battle-tested skills.",
+  "proposedCategory": [
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "rohitg00",
+    "repo": "pro-workflow",
+    "fullName": "rohitg00/pro-workflow",
+    "stars": 2138,
+    "topics": [
+      "agent-orchestration",
+      "ai-agents",
+      "ai-coding",
+      "ai-workflow",
+      "claude",
+      "claude-code",
+      "claude-code-plugin",
+      "claude-code-skills",
+      "claude-skills",
+      "codex",
+      "context-engineering",
+      "cursor",
+      "developer-tools",
+      "gemini-cli",
+      "hooks",
+      "productivity",
+      "self-correction",
+      "workflow",
+      "worktrees"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T02:59:40Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agent-teams.md",
+    "docs/cli-cheatsheet.md",
+    "docs/context-engineering.md",
+    "docs/context-loading.md",
+    "docs/cross-agent-workflows.md",
+    "docs/daily-habits.md",
+    "docs/decision-framework.md",
+    "docs/index.html",
+    "docs/infographic.html",
+    "docs/new-features.md",
+    "docs/orchestration-patterns.md",
+    "package.json",
+    "skills/agent-teams/SKILL.md",
+    "skills/auto-setup/SKILL.md",
+    "skills/batch-orchestration/SKILL.md",
+    "skills/bug-capture/SKILL.md",
+    "skills/compact-guard/SKILL.md",
+    "skills/context-engineering/SKILL.md",
+    "skills/context-optimizer/SKILL.md",
+    "skills/cost-tracker/SKILL.md",
+    "skills/deslop/SKILL.md",
+    "skills/file-watcher/SKILL.md",
+    "skills/insights/SKILL.md",
+    "skills/learn-rule/SKILL.md",
+    "skills/llm-council/SKILL.md",
+    "skills/llm-gate/SKILL.md",
+    "skills/mcp-audit/SKILL.md",
+    "skills/module-map/SKILL.md",
+    "skills/orchestrate/SKILL.md",
+    "skills/parallel-worktrees/SKILL.md",
+    "skills/permission-tuner/SKILL.md",
+    "skills/plan-interrogate/SKILL.md",
+    "skills/pro-workflow/SKILL.md",
+    "skills/replay-learnings/SKILL.md",
+    "skills/safe-mode/SKILL.md",
+    "skills/session-handoff/SKILL.md",
+    "skills/smart-commit/SKILL.md",
+    "skills/sprint-status/SKILL.md",
+    "skills/survey-generator/SKILL.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"assets/banner.svg\" alt=\"Pro Workflow\" width=\"100%\"/ </p <p align=\"center\" <a href=\"https://github.com/rohitg00/pro workflow/stargazers\" <img src=\"https://img.shields.io/github/stars/rohitg00/pro workflow?style=for the badge&logo=github&color=D97757&labelColor=1e1e2e\" alt=\"Stars\"/ </a <a href=\"https://www.npmjs.com/package/pro workflow\" <img src=\"https://img.shields.io/npm/v/pro workflow?st",
+  "skillExtracts": [
+    {
+      "path": "skills/agent-teams/SKILL.md",
+      "extract": "name: agent teams description: Coordinate multiple Claude Code sessions as a team — lead + teammates with shared task lists, mailbox messaging, and file lock claiming. Patterns for team sizing, task decomposition, and when to use teams vs sub agents vs worktrees. Agent Teams Coordinate multiple Claude Code sessions working on the same codebase simultaneously. Enable The first session becomes the team lead. Subsequent"
+    },
+    {
+      "path": "skills/auto-setup/SKILL.md",
+      "extract": "name: auto setup description: Auto configure quality gates, hooks, and settings for a new project. Detects project type and sets up appropriate tooling. Use when onboarding a new codebase. Auto Setup Detect project type and configure pro workflow quality gates automatically. Trigger Use when: Starting work on a new project Onboarding to an unfamiliar codebase Setting up CI integration Detection Step 1: Identify Proje"
+    },
+    {
+      "path": "skills/batch-orchestration/SKILL.md",
+      "extract": "name: batch orchestration description: Decompose large scale changes into independent units and spawn parallel agents in isolated worktrees. Use for migrations, refactors, codemods, and any change touching 10+ files with the same pattern. Batch Orchestration The /batch command pattern for large scale parallel changes. How It Works Syntax The instruction should describe the change pattern, not individual files. The ba"
+    },
+    {
+      "path": "skills/bug-capture/SKILL.md",
+      "extract": "name: bug capture description: Capture a user reported defect as a durable GitHub issue written in the project's own domain language. Explores the codebase in parallel for context but never leaks file paths or line numbers into the issue. Use when the user reports a bug conversationally, runs a QA pass, or says \"file an issue\", \"log this as a bug\", \"capture this\". bug capture Turn a conversation into an issue that st"
+    },
+    {
+      "path": "skills/compact-guard/SKILL.md",
+      "extract": "name: compact guard description: Smart context compaction with state preservation. Saves critical files, task progress, and working state before compaction, restores after. Use before manual compact or when auto compact triggers. Compact Guard Protect important context through compaction cycles. Based on Claude Code internals: compaction restores max 5 files with 5K tokens each, within a 50K total budget. Trigger Use"
+    },
+    {
+      "path": "skills/context-engineering/SKILL.md",
+      "extract": "name: context engineering description: Master the four operations of context engineering — Write, Select, Compress, Isolate. Manage token budgets, compaction strategies, and context partitioning to keep AI sessions sharp and efficient. Context Engineering Four operations control everything about how context flows through an AI coding session. Master them and you control the quality of every response. The Four Operati"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Your Claude Code gets smarter every session.",
+    "Self-correcting memory + persistent FTS5-indexed wikis + auto-research loop, all on one SQLite store..",
+    "Correct Claude once &mdash; it never repeats the mistake.",
+    "34 skills &bull; 8 agents &bull; 22 commands &bull; 37 hook scripts across 24 events .",
+    "Works with Claude Code , Cursor , and 32+ agents via SkillKit.",
+    "You correct Claude the same way 50 times.",
+    "You research the same topic in three different sessions because there is nowhere durable for the answers to land.",
+    "Every Claude Code user hits this wall."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Discovered by functional category \"workflow\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Claude Code learns from your corrections: self-correcting memory that compounds over 50+ sessions. Context engineering, parallel worktrees, agent teams, and 17 battle-tested skills.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "workflow",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "workflow",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Pro Workflow is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with memory workflows.",
+      "Relevant to workflow.",
+      "Your Claude Code gets smarter every session."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:rohitg00/pro-workflow",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pro-workflow",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

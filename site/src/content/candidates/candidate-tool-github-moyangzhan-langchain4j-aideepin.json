@@ -1,0 +1,199 @@
+{
+  "id": "candidate-tool-github-moyangzhan-langchain4j-aideepin",
+  "type": "tool",
+  "status": "published",
+  "title": "Langchain4j Aideepin",
+  "sourceUrl": "https://github.com/moyangzhan/langchain4j-aideepin",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "moyangzhan",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "基于AI的工作效率提升工具（聊天、绘画、知识库、工作流、 MCP服务市场、语音输入输出、长期记忆） | Ai-based productivity tools (Chat,Draw,RAG,Workflow,MCP marketplace, ASR,TTS, Long-term memory etc)",
+  "proposedCategory": [
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "moyangzhan",
+    "repo": "langchain4j-aideepin",
+    "fullName": "moyangzhan/langchain4j-aideepin",
+    "stars": 1283,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "ai-workflow",
+      "graphrag",
+      "knowlege-base",
+      "langchain4j",
+      "mcp",
+      "rag"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T12:15:57Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh-CN.md",
+    "docs/cn/architecture.md",
+    "docs/cn/capability-asr.md",
+    "docs/cn/capability-chat.md",
+    "docs/cn/capability-image.md",
+    "docs/cn/capability-tts.md",
+    "docs/cn/index.md",
+    "docs/cn/model-platform-integration.md",
+    "docs/en/architecture.md",
+    "docs/en/capability-asr.md",
+    "docs/en/capability-chat.md",
+    "docs/en/capability-image.md",
+    "docs/en/capability-tts.md",
+    "docs/en/index.md",
+    "docs/en/model-platform-integration.md",
+    "docs/image/README/1691583184761.png",
+    "docs/image/README/1691583329105.png",
+    "docs/image/README/draw_001.png",
+    "docs/image/README/draw_002.png",
+    "docs/image/README/kb_graph_01.png",
+    "docs/image/README/kb_graph_02.png",
+    "docs/image/README/kb01.png",
+    "docs/image/README/kb02.png",
+    "docs/image/README/kbidx.png",
+    "docs/image/README/qq.png",
+    "docs/image/README/search01.jpg"
+  ],
+  "readmeExtract": "Getting Started [🇨🇳 中文文档](README.zh CN.md) | English LangChain4j AIDeepin — Enterprise grade AI application platform. Integrates AI chat, knowledge base (RAG), workflow orchestration, long/short term memory, MCP tools, and more — for rapidly building intelligent business assistants. Demo: [http://www.aideepin.com](http://www.aideepin.com/) Repository Structure | Directory | Description | Docs | |: |: |: | | server/",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Integrates AI chat, knowledge base (RAG), workflow orchestration, long/short-term memory, MCP tools, and more — for rapidly building intelligent business assistants.",
+    "Knowledge Base (RAG) Supports both vector search and knowledge graph retrieval",
+    "AI Workflow Visual editor with conditional branching, parallel execution, and built-in nodes for LLM calls, knowledge base queries, human feedback, and more",
+    "MCP Service Marketplace Integrate MCP services to extend AI with external tools and data sources",
+    "Mango Finder — A local-first desktop app for semantic search across documents, images, and audio files using natural language, with cross-device search support.",
+    "MCP 工具调用：对话中可调用外部工具（如搜索引擎、数据库查询等）",
+    "工作流与对话的关系：用户在对话中可调用工作流，工作流内部可以检索知识库和调用 MCP 工具。",
+    "MCP 是一种标准化的外部工具接入协议，允许 AI 在对话中调用外部服务。",
+    "Open API RESTful API for Characters, Knowledge Bases, and Workflows — generate API keys and integrate with external systems.",
+    "...h vector search and knowledge graph retrieval"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"workflow\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "基于AI的工作效率提升工具（聊天、绘画、知识库、工作流、 MCP服务市场、语音输入输出、长期记忆） | Ai-based productivity tools (Chat,Draw,RAG,Workflow,MCP marketplace, ASR,TTS, Long-term memory etc)",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "workflow",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "automation",
+      "research",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "workflow",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "automation",
+    "research",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Langchain4j Aideepin is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows.",
+      "Helps with memory workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:moyangzhan/langchain4j-aideepin",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "langchain4j-aideepin",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

@@ -1,0 +1,133 @@
+{
+  "id": "candidate-agent-hermes-agent",
+  "type": "agent",
+  "status": "published",
+  "title": "Hermes Agent",
+  "sourceUrl": "https://hermes-agent.nousresearch.com/docs/",
+  "sourceName": "Hermes Agent docs",
+  "sourceRegistryId": "local-agents-library",
+  "sourceRegistry": {
+    "id": "local-agents-library",
+    "name": "Local Agent Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/agents",
+    "acceptRules": [
+      "must_have_documentation_url",
+      "must_have_summary",
+      "must_have_capability_profile"
+    ],
+    "rejectRules": [
+      "missing_official_link",
+      "missing_agent_capability_description"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "Nous Research's open-source, terminal-oriented agent with skills, MCP integration, local execution, and a large Skills Hub ecosystem.",
+  "proposedCategory": [
+    "Terminal agent workflows",
+    "Skill-based automation",
+    "Community skill discovery",
+    "Nous Research ecosystem exploration"
+  ],
+  "proposedAgents": [
+    "hermes-agent"
+  ],
+  "extractedSignals": [
+    "Open-source agent repository: Hermes Agent has an official GitHub repository, making source review and ecosystem tracking possible.",
+    "Skills Hub ecosystem: The Skills Hub organizes hundreds of skills across software development, research, translation, productivity, DevOps, security, and other categories.",
+    "Terminal-first execution model: Hermes is best represented as a CLI-oriented agent where local execution, commands, and skill-driven workflows are central.",
+    "CLI: native",
+    "Skills: native",
+    "MCP: supported"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Agent collector output. Review official docs, GitHub activity, extension model, and ecosystem fit before changing the public Agent page.",
+  "publishedAs": "hermes-agent",
+  "publishedAt": "2026-05-16",
+  "author": "Nous Research",
+  "agentProfile": {
+    "region": "global",
+    "vendor": "Nous Research",
+    "interfaceType": [
+      "cli"
+    ],
+    "supportsMcp": true,
+    "supportsSkills": true,
+    "supportsCli": true,
+    "supportsWorkflows": true,
+    "sourceKinds": [
+      "docs",
+      "github",
+      "docs",
+      "docs"
+    ],
+    "officialLinks": [
+      {
+        "label": "Hermes Agent docs",
+        "url": "https://hermes-agent.nousresearch.com/docs/",
+        "kind": "docs"
+      },
+      {
+        "label": "Hermes Agent GitHub",
+        "url": "https://github.com/nousresearch/hermes-agent",
+        "kind": "github"
+      },
+      {
+        "label": "Hermes Skills Hub",
+        "url": "https://hermes-agent.nousresearch.com/docs/skills/",
+        "kind": "docs"
+      },
+      {
+        "label": "Hermes Agent bundled guide",
+        "url": "https://hermes-agent.nousresearch.com/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-hermes-agent",
+        "kind": "docs"
+      }
+    ]
+  },
+  "canonicalKey": "agent:hermes-agent",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "agent",
+    "primaryType": "agent",
+    "whatIsIt": "Hermes Agent is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to Terminal agent workflows.",
+      "Relevant to Skill-based automation.",
+      "Relevant to Community skill discovery.",
+      "Relevant to Nous Research ecosystem exploration.",
+      "Open-source agent repository: Hermes Agent has an official GitHub repository, making source review and ecosystem tracking possible."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

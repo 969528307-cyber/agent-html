@@ -1,0 +1,136 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const nextPath = Astro.url.searchParams.get("next") || "/internal";
+---
+
+<BaseLayout title="Internal Login - agentk.it" description="Login to the internal candidate pool." noindex>
+  <section class="login-shell page">
+    <article class="login-card">
+      <div class="eyebrow">Internal Access</div>
+      <h1>Candidate pool login.</h1>
+      <p>
+        This protects the local internal review queue and publishing actions.
+        Public pages stay open; candidate review needs a local password.
+      </p>
+
+      <form data-login-form>
+        <input type="hidden" name="next" value={nextPath} />
+        <label>
+          Password
+          <input name="password" type="password" autocomplete="current-password" placeholder="Enter internal password" required />
+        </label>
+        <button class="small-button" type="submit">Login</button>
+      </form>
+
+      <p class="hint">Set <code>INTERNAL_AUTH_PASSWORD</code> in <code>.env.local</code> before sharing this dev server.</p>
+      <p class="result" data-login-result></p>
+    </article>
+  </section>
+</BaseLayout>
+
+<script>
+  const form = document.querySelector("[data-login-form]");
+  const result = document.querySelector("[data-login-result]");
+
+  form?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (!(form instanceof HTMLFormElement)) return;
+
+    const button = form.querySelector("button");
+    if (button instanceof HTMLButtonElement) {
+      button.disabled = true;
+      button.textContent = "Checking...";
+    }
+    if (result) result.textContent = "";
+
+    try {
+      const response = await fetch("/internal-auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+      });
+      const data = await response.json();
+      if (!response.ok || !data.ok) throw new Error(data.error || "Login failed.");
+      window.location.href = data.next || "/internal";
+    } catch (error) {
+      if (button instanceof HTMLButtonElement) {
+        button.disabled = false;
+        button.textContent = "Login";
+      }
+      if (result) result.textContent = error instanceof Error ? error.message : "Login failed.";
+    }
+  });
+</script>
+
+<style>
+  .login-shell {
+    display: grid;
+    place-items: center;
+    min-height: 68vh;
+    padding: 72px 0 32px;
+  }
+
+  .login-card {
+    width: min(100%, 560px);
+    padding: 30px;
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.055), rgb(238 244 238 / 0.018)),
+      var(--paper);
+    box-shadow: var(--shadow);
+  }
+
+  h1 {
+    margin-top: 14px;
+    font-size: clamp(36px, 5vw, 58px);
+  }
+
+  p {
+    margin-top: 16px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  form {
+    display: grid;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  label {
+    display: grid;
+    gap: 8px;
+    color: var(--ink);
+    font-weight: 800;
+  }
+
+  input {
+    min-height: 48px;
+    padding: 0 14px;
+    color: var(--ink);
+    background: rgb(238 244 238 / 0.04);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    outline: 0;
+  }
+
+  input:focus {
+    border-color: var(--line-strong);
+    box-shadow: 0 0 0 4px rgb(167 207 164 / 0.12);
+  }
+
+  .hint {
+    font-size: 13px;
+  }
+
+  code {
+    color: var(--sage);
+  }
+
+  .result {
+    color: #f0b38c;
+    font-weight: 800;
+  }
+</style>

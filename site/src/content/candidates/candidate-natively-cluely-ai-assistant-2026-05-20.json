@@ -1,0 +1,180 @@
+{
+  "id": "candidate-natively-cluely-ai-assistant-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Natively Cluely Ai Assistant",
+  "sourceUrl": "https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant",
+  "sourceName": "GitHub",
+  "author": "Natively-AI-assistant",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Natively - Free open-source AI interview copilot & meeting assistant. The best Cluely alternative, Final Round AI alternative, and Interview Coder alternative. Real-time transcription, undetectable stealth mode, local RAG, BYOK. No subscriptions. No data breaches.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "Natively-AI-assistant",
+    "repo": "natively-cluely-ai-assistant",
+    "fullName": "Natively-AI-assistant/natively-cluely-ai-assistant",
+    "stars": 1249,
+    "license": "AGPL-3.0",
+    "topics": [
+      "ai",
+      "ai-assistant",
+      "cheating",
+      "claude-code",
+      "claude-skills",
+      "cluely",
+      "cluely-alternative",
+      "cluely-clone",
+      "developer-tools",
+      "final-round-ai",
+      "interview",
+      "interviewcoder",
+      "llm",
+      "meeting-assistant",
+      "moltbook",
+      "moltbot",
+      "open-source",
+      "openclaw",
+      "trending",
+      "trending-repositories"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T03:12:29Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/engineering/CLUEly_PARITY_FINAL_INTEGRATION_REPORT.md",
+    "docs/engineering/FINAL_INDIVIDUAL_USER_PARITY_REPORT.md",
+    "docs/engineering/LOCAL_DB_ENCRYPTION_DESIGN.md",
+    "docs/engineering/NATIVELY_CLUELY_PARITY_FIX_LOG.md",
+    "docs/engineering/NATIVELY_CLUELY_PARITY_ROADMAP.md",
+    "docs/engineering/SCREEN_UNDERSTANDING_IMPLEMENTATION_REPORT.md",
+    "docs/engineering/SCREENSHOT_ANALYSIS_CALL_GRAPH.md",
+    "docs/engineering/SCREENSHOT_ANALYSIS_CURRENT_BEHAVIOR.md",
+    "docs/engineering/SCREENSHOT_ANALYSIS_FINAL_ASSESSMENT.md",
+    "docs/engineering/SCREENSHOT_ANALYSIS_PROVIDER_MATRIX.md",
+    "docs/engineering/SCREENSHOT_ANALYSIS_SECURITY_AUDIT.md",
+    "docs/engineering/SCREENSHOT_ANALYSIS_UX_AUDIT.md",
+    "docs/engineering/VISION_FIRST_PIVOT_REPORT.md",
+    "docs/testing/CLUEly_PARITY_E2E_RESULTS.md",
+    "docs/testing/CUSTOM_MODES_E2E_RESULTS.md",
+    "docs/testing/MODES_PROFILE_INTELLIGENCE_BUGFIX_LOG.md",
+    "docs/testing/MODES_PROFILE_INTELLIGENCE_TEST_DATA_SOURCES.md",
+    "docs/testing/MODES_PROFILE_INTELLIGENCE_TEST_PLAN.md",
+    "docs/testing/MODES_PROFILE_INTELLIGENCE_TEST_RESULTS.md",
+    "docs/testing/NOTIFICATION_Mode_Negotiation_FINDING_010.md",
+    "docs/testing/OCR_REALITY_CHECK.md",
+    "docs/testing/SCREEN_OCR_E2E_RESULTS.md",
+    "docs/testing/SCREEN_UNDERSTANDING_E2E_RESULTS.md",
+    "docs/testing/SCREEN_UNDERSTANDING_PERFORMANCE.md",
+    "docs/testing/SCREENSHOT_ANALYSIS_TEST_COVERAGE.md",
+    "docs/testing/TECHNICAL_INTERVIEW_DIRECT_VISION_RESULTS.md",
+    "package.json"
+  ],
+  "readmeExtract": "[Sponsored by Recall AI API for desktop recording](https://docs.recall.ai/docs/desktop sdk?utm source=github&utm medium=sponsorship&utm campaign=evinjohnn natively ai assistant) If you’re looking for a hosted desktop recording API, consider checking out [Recall.ai](https://docs.recall.ai/docs/desktop sdk?utm source=github&utm medium=sponsorship&utm campaign=evinjohnn natively ai assistant), an API that records Zoom, ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AI interview assistant · AI interview copilot · AI interview helper · interview cheating tool · interview AI ·",
+    "Claude Code alternative · Claude Code clone · free Claude Code ·",
+    "Gemini 3.5 assistant · Gemini 3.5 Pro coding · Google Gemini interview tool ·",
+    "Agent Claw alternative · Agent Claw clone · free Agent Claw ·",
+    "agentic coding assistant · AI pair programmer · AI coding copilot ·",
+    "real-time interview AI · live interview assistant · hidden interview tool ·",
+    "open source interview copilot · free interview AI tool · best interview AI 2026\">",
+    "Same overlay, same workflow, same shortcuts."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Natively - Free open-source AI interview copilot & meeting assistant. The best Cluely alternative, Final Round AI alternative, and Interview Coder alternative. Real-time transcription, undetectable stealth mode, local RAG, BYOK. No subscriptions. No data breaches.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "data",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "data",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Natively Cluely Ai Assistant is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with data workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to skill."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "natively-cluely-ai-assistant",
+  "publishedAt": "2026-05-20"
+}

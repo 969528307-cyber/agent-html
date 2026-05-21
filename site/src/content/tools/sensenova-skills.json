@@ -1,0 +1,77 @@
+{
+  "id": "sensenova-skills",
+  "name": "SenseNova Skills",
+  "type": "skill",
+  "status": "published",
+  "summary": "Modular SenseNova skills for building AI-powered office assistants and productivity workflows",
+  "description": "Modular SenseNova skills for building AI-powered office assistants and productivity workflows",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Hermes Agent",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/OpenSenseNova/SenseNova-Skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/OpenSenseNova/SenseNova-Skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/OpenSenseNova/SenseNova-Skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/OpenSenseNova/SenseNova-Skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/OpenSenseNova/SenseNova-Skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The SenseNova model family plugs directly into agent runtimes such as OpenClaw and hermes-agent, with the skills in this repository extending the models with concrete, end-to-end office capabilities.",
+    "In this repository each skill lives in its own directory and declares triggers, capabilities, and execution flow through a SKILL.md file, following the Agent Skills convention.",
+    "The skills cover image generation & visualization, slide-deck (PPT) generation, Excel data analysis, and deep research — usable standalone or composed into end-to-end workflows.",
+    "These skills are designed to run inside an Agent Skills-compatible agent.",
+    "Recommended runtime: pair them with OpenClaw or hermes-agent.",
+    "After it finishes, you may need to manually restart the agent service before the new skills are picked up.",
+    "OpenClaw ~/.openclaw/skills/",
+    "hermes-agent ~/.hermes/skills/"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T04:43:37Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/OpenSenseNova/SenseNova-Skills",
+  "repoUrl": "https://github.com/OpenSenseNova/SenseNova-Skills",
+  "license": "MIT",
+  "stars": 1758,
+  "lastUpdated": "2026-05-15T04:43:37Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

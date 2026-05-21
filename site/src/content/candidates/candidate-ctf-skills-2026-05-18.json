@@ -1,0 +1,178 @@
+{
+  "id": "candidate-ctf-skills-2026-05-18",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Ctf Skills",
+  "sourceUrl": "https://github.com/ljagiello/ctf-skills",
+  "sourceName": "GitHub",
+  "author": "ljagiello",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Agent skills for solving CTF challenges - web exploitation, binary pwn, crypto, reverse engineering, forensics, OSINT, and more",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "ljagiello",
+    "repo": "ctf-skills",
+    "fullName": "ljagiello/ctf-skills",
+    "stars": 2050,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "claude-code-skills",
+      "codex",
+      "codex-cli",
+      "ctf",
+      "ctf-challenges",
+      "ctf-tools",
+      "gemini",
+      "gemini-cli",
+      "opencode",
+      "security"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-01T23:53:33Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    "ctf-ai-ml/SKILL.md",
+    "ctf-crypto/SKILL.md",
+    "ctf-forensics/SKILL.md",
+    "ctf-malware/SKILL.md",
+    "ctf-misc/SKILL.md",
+    "ctf-osint/SKILL.md",
+    "ctf-pwn/SKILL.md",
+    "ctf-reverse/SKILL.md",
+    "ctf-web/SKILL.md",
+    "ctf-writeup/SKILL.md",
+    "solve-challenge/SKILL.md"
+  ],
+  "readmeExtract": "ctf skills [Agent Skills](https://agentskills.io) for solving CTF challenges — web exploitation, binary pwn, crypto, reverse engineering, forensics, OSINT, and more. Works with any tool that supports the Agent Skills spec, including [Claude Code](https://docs.anthropic.com/en/docs/claude code). Installation Run with Friday Studio Want these skills as part of a real workflow — schedules, signals, MCP tools, memory, th",
+  "skillExtracts": [
+    {
+      "path": "ctf-ai-ml/SKILL.md",
+      "extract": "name: ctf ai ml description: Provides AI and machine learning techniques for CTF challenges. Use when attacking ML models, crafting adversarial examples, performing model extraction, prompt injection, membership inference, training data poisoning, fine tuning manipulation, neural network analysis, LoRA adapter exploitation, LLM jailbreaking, or solving AI related puzzles. license: MIT compatibility: Requires filesyst"
+    },
+    {
+      "path": "ctf-crypto/SKILL.md",
+      "extract": "name: ctf crypto description: Provides cryptography attack techniques for CTF challenges. Use when attacking encryption, hashing, signatures, ZKP, PRNG, or mathematical crypto problems involving RSA, AES, ECC, lattices, LWE, CVP, number theory, Coppersmith, Pollard, Wiener, padding oracle, GCM, key derivation, or stream/block cipher weaknesses. license: MIT compatibility: Requires filesystem based agent (Claude Code "
+    },
+    {
+      "path": "ctf-forensics/SKILL.md",
+      "extract": "name: ctf forensics description: Provides digital forensics and signal analysis techniques for CTF challenges. Use when analyzing disk images, memory dumps, event logs, network captures, cryptocurrency transactions, steganography, PDF analysis, Windows registry, Volatility, PCAP, Docker images, coredumps, side channel power traces, DTMF audio spectrograms, packet timing analysis, CD audio disc images, or recovering d"
+    },
+    {
+      "path": "ctf-malware/SKILL.md",
+      "extract": "name: ctf malware description: Provides malware analysis and network traffic techniques for CTF challenges. Use when analyzing obfuscated scripts, malicious packages, custom crypto protocols, C2 traffic, PE/.NET binaries, RC4/AES encrypted communications, YARA rules, shellcode analysis, memory forensics for malware (Volatility malfind, process injection detection), anti analysis techniques (VM/sandbox detection, timi"
+    },
+    {
+      "path": "ctf-misc/SKILL.md",
+      "extract": "name: ctf misc description: Provides miscellaneous CTF challenge techniques for problems that do not cleanly fit the main categories. Use for encoding puzzles, pyjails, bash jails, RF/SDR, DNS oddities, unicode tricks, esoteric languages, QR or audio puzzles, constraint solving, game theory, unusual sandbox escapes, and hybrid logic puzzles. Prefer a more specific skill first when the challenge is mainly web, pwn, re"
+    },
+    {
+      "path": "ctf-osint/SKILL.md",
+      "extract": "name: ctf osint description: Provides open source intelligence techniques for CTF challenges. Use when gathering information from public sources, social media, geolocation, DNS records, username enumeration, reverse image search, Google dorking, Wayback Machine, Tor relays, FEC filings, or identifying unknown data like hashes and coordinates. license: MIT compatibility: Requires filesystem based agent (Claude Code or"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agent Skills for solving CTF challenges — web exploitation, binary pwn, crypto, reverse engineering, forensics, OSINT, and more.",
+    "Works with any tool that supports the Agent Skills spec, including Claude Code.",
+    "Want these skills as part of a real workflow — schedules, signals, MCP tools, memory, the works?",
+    "Friday Studio loads skills into agent context on demand and runs them inside reproducible workspaces that you can trigger from chat, on a cron, or over HTTP.",
+    "Everything runs locally, your data stays on your machine, and every step is logged so you can see exactly what the agent did during a challenge.",
+    "To add these skills to Friday Studio:",
+    "Open Skills in the Studio sidebar and click + Add.",
+    "Import individual skills by reference (e.g."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Agent skills for solving CTF challenges - web exploitation, binary pwn, crypto, reverse engineering, forensics, OSINT, and more",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "security",
+      "coding",
+      "automation",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "security",
+    "coding",
+    "automation",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Ctf Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with security workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with memory workflows."
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  }
+}

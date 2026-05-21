@@ -1,0 +1,76 @@
+{
+  "id": "excel-mcp-server",
+  "name": "Excel Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A Model Context Protocol server for Excel file manipulation",
+  "description": "A Model Context Protocol server for Excel file manipulation",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/haris-musa/excel-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/haris-musa/excel-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/haris-musa/excel-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/haris-musa/excel-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/haris-musa/excel-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A Model Context Protocol (MCP) server that lets you manipulate Excel files without needing Microsoft Excel installed.",
+    "Create, read, and modify Excel workbooks with your AI agent.",
+    "📋 Table Operations: Create and manage Excel tables with custom styling",
+    "🔧 Sheet Management: Copy, rename, delete worksheets with ease",
+    "Streamable HTTP Transport (Recommended for remote connections)",
+    "Streamable HTTP transport connection:",
+    "With these transports, tool filepath values must be relative to that directory (e.g.",
+    "You can also set the FASTMCPPORT environment variable to control the port the server listens on (default is 8017 if not set)."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-12T06:14:45Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/haris-musa/excel-mcp-server",
+  "repoUrl": "https://github.com/haris-musa/excel-mcp-server",
+  "license": "MIT",
+  "stars": 3834,
+  "lastUpdated": "2026-04-12T06:14:45Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

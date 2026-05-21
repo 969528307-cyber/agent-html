@@ -1,0 +1,170 @@
+{
+  "id": "candidate-xiaozhi-esp32-server-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Xiaozhi Esp32 Server",
+  "sourceUrl": "https://github.com/xinnan-tech/xiaozhi-esp32-server",
+  "sourceName": "GitHub",
+  "author": "xinnan-tech",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Qwen Code"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "xinnan-tech",
+    "repo": "xiaozhi-esp32-server",
+    "fullName": "xinnan-tech/xiaozhi-esp32-server",
+    "stars": 9594,
+    "license": "MIT",
+    "topics": [
+      "dify",
+      "esp32",
+      "mcp-server",
+      "xiaozhi",
+      "xiaozhi-ai",
+      "xiaozhi-esp32",
+      "xiaozhi-server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T02:51:01Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/ali-sms-integration.md",
+    "docs/context-provider-integration.md",
+    "docs/contributor_open_letter.md",
+    "docs/Deployment_all.md",
+    "docs/Deployment.md",
+    "docs/dev-ops-integration.md",
+    "docs/digital-human-wakeword.md",
+    "docs/docker-build.md",
+    "docs/docker/nginx.conf",
+    "docs/docker/start.sh",
+    "docs/firmware-build.md",
+    "docs/firmware-setting.md",
+    "docs/fish-speech-integration.md",
+    "docs/homeassistant-integration.md",
+    "docs/huoshan-streamTTS-voice-cloning.md",
+    "docs/images/__init__.py",
+    "docs/images/alisms/sms-01.png",
+    "docs/images/alisms/sms-02.png",
+    "docs/images/alisms/sms-11.png",
+    "docs/images/alisms/sms-21.png",
+    "docs/images/alisms/sms-22.png",
+    "docs/images/alisms/sms-23.png",
+    "docs/images/alisms/sms-24.png",
+    "docs/images/alisms/sms-25.png",
+    "docs/images/alisms/sms-31.png",
+    "docs/images/alisms/sms-32.png",
+    "docs/images/banner2.png",
+    "docs/images/demo0.png",
+    "docs/images/demo1.png",
+    "docs/images/demo14.png",
+    "docs/images/demo2.png",
+    "docs/images/demo4.png",
+    "docs/images/demo6.png",
+    "docs/images/demo8.png",
+    "docs/images/demo9.png",
+    "docs/images/deploy2.png",
+    "docs/images/firmware-setting-ota.png",
+    "docs/images/fishspeech/autodl-02.png",
+    "docs/images/hnlg.jpg"
+  ],
+  "readmeExtract": "[![Banners](docs/images/banner1.png)](https://github.com/xinnan tech/xiaozhi esp32 server) <h1 align=\"center\" 小智后端服务xiaozhi esp32 server</h1 <p align=\"center\" 本项目基于人机共生智能理论和技术研发智能终端软硬件体系<br/ 为开源智能硬件项目 <a href=\"https://github.com/78/xiaozhi esp32\" xiaozhi esp32</a 提供后端服务<br/ 根据<a href=\"https://ccnphfhqs21z.feishu.cn/wiki/M0XiwldO9iJwHikpXD5cEx71nKh\" 小智通信协议</a 使用Python、Java、Vue实现<br/ 支持MQTT+UDP协议、Websocket协议、MCP接入点、声纹识",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "支持MQTT+UDP协议、Websocket协议、MCP接入点、声纹识别、知识库",
+    "工具调用 支持客户端IOT协议、客户MCP协议、服务端MCP协议、MCP接入点协议、自定义工具函数",
+    "指令下发 依托MQTT协议，支持从智控台将MCP指令下发到ESP32设备",
+    "openai 接口调用 阿里百炼、火山引擎、DeepSeek、智谱、Gemini、科大讯飞 智谱、Gemini",
+    "玄凤科技 感谢玄凤科技贡献函数调用框架、MCP通信协议及插件化调用机制的实现代码，通过标准化的指令调度体系与动态扩展能力，显著提升了前端设备(IoT)的交互效率和功能延展性",
+    "它和MCP、记忆有本质的区别：上下文源是强制让小智感知世界的数据；记忆(Mem)是让他知道之前聊了什么内容；MCP(functionc all)是当需要调用某项能力/知识的时候使用调用。",
+    "注意：该功能只是方便小智在唤醒的时候感知事物的状态，而如果想要小智唤醒后实时获取事物的状态，建议在此功能上再结合MCP工具的调用。",
+    "默认情况下，系统的提示词模板文件（data/.agent-base-prompt.txt）中已经预置了 {{ dynamiccontext }} 占位符，您无需手动添加。"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Xiaozhi Esp32 Server is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Relevant to mcp.",
+      "支持MQTT+UDP协议、Websocket协议、MCP接入点、声纹识别、知识库",
+      "工具调用 支持客户端IOT协议、客户MCP协议、服务端MCP协议、MCP接入点协议、自定义工具函数",
+      "指令下发 依托MQTT协议，支持从智控台将MCP指令下发到ESP32设备"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "xiaozhi-esp32-server",
+  "publishedAt": "2026-05-20"
+}

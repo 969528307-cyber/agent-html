@@ -1,0 +1,184 @@
+{
+  "id": "candidate-tool-github-raga-ai-hub-ragaai-catalyst",
+  "type": "tool",
+  "status": "published",
+  "title": "RagaAI Catalyst",
+  "sourceUrl": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "raga-ai-hub",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view ",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "raga-ai-hub",
+    "repo": "RagaAI-Catalyst",
+    "fullName": "raga-ai-hub/RagaAI-Catalyst",
+    "stars": 16157,
+    "license": "Apache-2.0",
+    "topics": [
+      "agentic-ai",
+      "agentic-ai-development",
+      "agentneo",
+      "agents",
+      "ai-agent-monitoring",
+      "ai-application-debugging",
+      "ai-evaluation-tools",
+      "ai-performance-optimization",
+      "ai-tool-interaction-monitoring",
+      "llm-testing",
+      "llm-tracing",
+      "llmops"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-02-11T14:43:33Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agentic_tracing.md",
+    "docs/dataset_management.md",
+    "docs/img/autheticate.gif",
+    "docs/prompt_management.md",
+    "docs/trace_management.md",
+    "pyproject.toml",
+    "examples/openai_agents_sdk/email_data_extraction_agent/README.md",
+    "examples/openai_agents_sdk/youtube_summary_agent/README.md",
+    "examples/smolagents/most_upvoted_paper/README.md"
+  ],
+  "readmeExtract": "RagaAI Catalyst&nbsp; ![GitHub release (latest by date)](https://img.shields.io/github/v/release/raga ai hub/ragaai catalyst) ![GitHub stars](https://img.shields.io/github/stars/raga ai hub/ragaai catalyst?style=social) ![Issues](https://img.shields.io/github/issues/raga ai hub/ragaai catalyst) RagaAI Catalyst is a comprehensive platform designed to enhance the management and optimization of LLM projects. It offers a",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "RagaAI Catalyst is a comprehensive platform designed to enhance the management and optimization of LLM projects.",
+    "It offers a wide range of features, including project management, dataset management, evaluation management, trace management, prompt management, synthetic data generation, and guardrail management.",
+    "Create and manage projects using RagaAI Catalyst:",
+    "Manage datasets efficiently for your projects:",
+    "For more detailed information on Dataset Management, including CSV schema handling and advanced usage, please refer to the Dataset Management documentation.",
+    "Create and manage metric evaluation of your RAG application:",
+    "For more detailed information on Trace Management, please refer to the Trace Management documentation.",
+    "The Agentic Tracing module provides comprehensive monitoring and analysis capabilities for AI agent systems."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view ",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "data",
+      "testing",
+      "monitoring"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "data",
+    "testing",
+    "monitoring"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "Package metadata detected; may expose executable commands.",
+    "General agent-building language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: platform.",
+    "Alternative capabilities: sdk, agent-framework, cli.",
+    "LLM: sdk + [] — It is a Python SDK for agent AI observability, monitoring, and evaluation, not a CLI, agent app, or framework."
+  ],
+  "classificationAlternatives": [
+    "sdk",
+    "agent-framework",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "RagaAI Catalyst is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with data workflows.",
+      "Helps with testing workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to search."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:raga-ai-hub/ragaai-catalyst",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ragaai-catalyst",
+  "publishedAt": "2026-05-18"
+}

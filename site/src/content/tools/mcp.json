@@ -1,0 +1,75 @@
+{
+  "id": "mcp",
+  "name": "Mcp",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser",
+  "description": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/BrowserMCP/mcp",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/BrowserMCP/mcp",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/BrowserMCP/mcp#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/BrowserMCP/mcp#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/BrowserMCP/mcp/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Automate your browser with AI.",
+    "Browser MCP is an MCP server + Chrome extension that allows you to automate your browser using AI applications like VS Code, Claude, Cursor, and Windsurf.",
+    "⚡ Fast: Automation happens locally on your machine, resulting in better performance without network latency.",
+    "🔒 Private: Since automation happens locally, your browser activity stays on your device and isn't sent to remote servers.",
+    "👤 Logged In: Uses your existing browser profile, keeping you logged into all your services.",
+    "🥷🏼 Stealth: Avoids basic bot detection and CAPTCHAs by using your real browser fingerprint.",
+    "This repo contains all the core MCP code for Browser MCP, but currently cannot yet be built on its own due to dependencies on utils and types from the monorepo where it's developed.",
+    "Browser MCP was adapted from the Playwright MCP server in order to automate the user's browser rather than creating new browser instances."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-04-24T21:49:44Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/BrowserMCP/mcp",
+  "repoUrl": "https://github.com/BrowserMCP/mcp",
+  "license": "Apache-2.0",
+  "stars": 6528,
+  "lastUpdated": "2025-04-24T21:49:44Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

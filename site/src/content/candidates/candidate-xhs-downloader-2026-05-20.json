@@ -1,0 +1,145 @@
+{
+  "id": "candidate-xhs-downloader-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "XHS Downloader",
+  "sourceUrl": "https://github.com/JoeanAmier/XHS-Downloader",
+  "sourceName": "GitHub",
+  "author": "JoeanAmier",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "小红书（XiaoHongShu、RedNote）链接提取/作品采集工具：提取账号发布、收藏、点赞、专辑作品链接；提取搜索结果作品、用户链接；采集小红书作品信息；提取小红书作品下载地址；下载小红书作品文件",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "JoeanAmier",
+    "repo": "XHS-Downloader",
+    "fullName": "JoeanAmier/XHS-Downloader",
+    "stars": 11209,
+    "license": "GPL-3.0",
+    "topics": [
+      "api",
+      "docker",
+      "download",
+      "fastapi",
+      "httpx",
+      "javascript",
+      "json",
+      "linux",
+      "macos",
+      "mcp-server",
+      "pyinstaller",
+      "python",
+      "rednote",
+      "server",
+      "sqlite",
+      "tampermonkey",
+      "textual",
+      "userscript",
+      "windows",
+      "xiaohongshu"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-20T01:40:35Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"static/XHS Downloader.png\" alt=\"XHS Downloader\" height=\"256\" width=\"256\" <br <h1 XHS Downloader</h1 <p 简体中文 | <a href=\"README EN.md\" English</a </p <a href=\"https://trendshift.io/repositories/5435\" target=\" blank\" <img src=\"https://trendshift.io/api/badge/repositories/5435\" alt=\"JoeanAmier%2FXHS Downloader | Trendshift\" style=\"width: 250px; height: 55px;\" width=\"250\" height=\"55\"/ </a <br",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "MCP 模式：docker run --name 容器名称(可选) -p 主机端口号:5556 -v xhsdownloadervolume:/app/Volume -it <镜像名称> python main.py mcp",
+    "命令示例：python .\\main.py --browsercookie Chrome --updatesettings",
+    "启动： 运行命令：python .\\main.py mcp",
+    "保持项目程序在后台运行，它将作为服务器，接收用户脚本的指令（TUI、MCP 和 API 模式均支持）",
+    "是否开启用户脚本服务器，用于接收浏览器用户脚本的下载任务（TUI、MCP 和 API 模式生效）",
+    "其他说明：useragent参数获取示例；强烈建议根据实际浏览器信息进行设置！"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "小红书（XiaoHongShu、RedNote）链接提取/作品采集工具：提取账号发布、收藏、点赞、专辑作品链接；提取搜索结果作品、用户链接；采集小红书作品信息；提取小红书作品下载地址；下载小红书作品文件",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "database",
+      "devops"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "database",
+    "devops"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "XHS Downloader is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with database workflows.",
+      "Helps with devops workflows.",
+      "Relevant to mcp.",
+      "MCP 模式：docker run --name 容器名称(可选) -p 主机端口号:5556 -v xhsdownloadervolume:/app/Volume -it <镜像名称> python main.py mcp"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "xhs-downloader",
+  "publishedAt": "2026-05-20"
+}

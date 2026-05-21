@@ -1,0 +1,166 @@
+{
+  "id": "candidate-aider-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Aider",
+  "sourceUrl": "https://github.com/Aider-AI/aider",
+  "sourceName": "GitHub",
+  "author": "Aider-AI",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "aider is AI pair programming in your terminal",
+  "proposedCategory": [
+    "cli",
+    "docs",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Cursor"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "Aider-AI",
+    "repo": "aider",
+    "fullName": "Aider-AI/aider",
+    "stars": 44949,
+    "license": "Apache-2.0",
+    "topics": [
+      "anthropic",
+      "chatgpt",
+      "claude-3",
+      "cli",
+      "command-line",
+      "gemini",
+      "gpt-3",
+      "gpt-35-turbo",
+      "gpt-4",
+      "gpt-4o",
+      "llama",
+      "openai",
+      "sonnet"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-16T00:55:02Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://aider.chat/\" <img src=\"https://aider.chat/assets/logo.svg\" alt=\"Aider Logo\" width=\"300\" </a </p <h1 align=\"center\" AI Pair Programming in Your Terminal </h1 <p align=\"center\" Aider lets you pair program with LLMs to start a new project or build on your existing codebase. </p <p align=\"center\" <img src=\"https://aider.chat/assets/screencast.svg\" alt=\"aider screencast\" </p <p align=\"ce",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Aider works best with Claude 3.7 Sonnet, DeepSeek R1 & Chat V3, OpenAI o1, o3-mini & GPT-4o, but can connect to almost any LLM, including local models.",
+    "Use familiar git tools to easily diff, manage and undo AI changes.",
+    "Add images and web pages to the chat to provide visual context, screenshots, reference docs, etc.",
+    "Aider streamlines copy/pasting code context and edits back and forth with a browser.",
+    "\"Hands down, this is the best AI coding assistant tool so far.\" — IndyDevDan on YouTube",
+    "\"[Aider] changed my daily coding workflows.",
+    "\"Best agent for actual dev work in existing codebases.\" — Nick Dobos on X",
+    "\"Aider is the precision tool of LLM code gen..."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "aider is AI pair programming in your terminal",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 10,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "CLI (word-boundary) or terminal usage language detected.",
+    "GitHub topics explicitly tag as CLI.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: single-tool.",
+    "Alternative capabilities: workflow.",
+    "LLM: cli + [cli] — Aider is a terminal-based AI pair programming CLI tool."
+  ],
+  "classificationAlternatives": [
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Aider is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to cli.",
+      "Relevant to docs."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "aider",
+  "publishedAt": "2026-05-18"
+}

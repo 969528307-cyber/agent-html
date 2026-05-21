@@ -1,0 +1,240 @@
+{
+  "id": "candidate-tool-github-gcwing-bitfun",
+  "type": "tool",
+  "status": "published",
+  "title": "BitFun",
+  "sourceUrl": "https://github.com/GCWing/BitFun",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "GCWing",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "BitFun is a desktop-grade Agent runtimeand a ready-to-use suite of desktop Agent applications.with built-in Code Agent 、 Cowork Agent、Computer Use. It has memory, personality, and the ability to evolve over time",
+  "proposedCategory": [
+    "sdk"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic",
+    "OpenClaw"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "GCWing",
+    "repo": "BitFun",
+    "fullName": "GCWing/BitFun",
+    "stars": 743,
+    "license": "MIT",
+    "topics": [
+      "agent-teams",
+      "agentic",
+      "agentic-os",
+      "agentic-runtime",
+      "ai-coding",
+      "ai-ide",
+      "ai-sdk",
+      "computer-use-agent",
+      "cowork",
+      "openclaw",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T10:59:37Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh-CN.md",
+    "docs/architecture/core-decomposition.md",
+    "docs/architecture/deep-review.md",
+    "docs/features/session-runtime-usage-report-design.md",
+    "docs/plans/core-decomposition-plan.md",
+    "docs/plans/desktop-window-fullscreen-plan.md",
+    "package.json",
+    "MiniApp/Skills/miniapp-dev/SKILL.md",
+    "src/crates/core/builtin_skills/agent-browser/SKILL.md",
+    "src/crates/core/builtin_skills/docx/SKILL.md",
+    "src/crates/core/builtin_skills/find-skills/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-autoplan/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-cso/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-design-consultation/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-design-review/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-document-release/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-investigate/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-office-hours/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-plan-ceo-review/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-plan-design-review/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-plan-eng-review/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-qa-only/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-qa/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-retro/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-review/SKILL.md",
+    "src/crates/core/builtin_skills/gstack-ship/SKILL.md",
+    "src/crates/core/builtin_skills/pdf/SKILL.md",
+    "src/crates/core/builtin_skills/pptx/SKILL.md",
+    "src/crates/core/builtin_skills/writing-skills/SKILL.md",
+    "src/crates/core/builtin_skills/xlsx/SKILL.md",
+    "AGENTS.md",
+    "BitFun-Installer/AGENTS.md",
+    "src/apps/desktop/AGENTS.md",
+    "src/crates/ai-adapters/AGENTS.md",
+    "src/crates/core/AGENTS.md",
+    "src/crates/core/src/agentic/deep_review/AGENTS.md",
+    "src/crates/core/src/agentic/execution/AGENTS.md",
+    "src/crates/product-domains/AGENTS.md",
+    "src/web-ui/AGENTS.md",
+    "src/crates/acp/AGENTS.md",
+    "src/crates/agent-tools/AGENTS.md"
+  ],
+  "readmeExtract": "English [中文](README.zh CN.md) <div align=\"center\" ![BitFun](./png/BitFun title.png) </div <div align=\"center\" [![GitHub release](https://img.shields.io/github/v/release/GCWing/BitFun?style=flat square&color=blue)](https://github.com/GCWing/BitFun/releases) [![Website](https://img.shields.io/badge/Website openbitfun.com 6f42c1?style=flat square)](https://openbitfun.com/) [![License: MIT](https://img.shields.io/badge/L",
+  "skillExtracts": [
+    {
+      "path": "MiniApp/Skills/miniapp-dev/SKILL.md",
+      "extract": "name: miniapp dev description: Develops, maintains, and generates BitFun MiniApps (Zero Dialect Runtime). Use when (1) working on miniapp framework code under src/crates/core/src/miniapp/ or src/web ui/src/app/scenes/miniapps/; or (2) generating / creating / designing a NEW MiniApp for the user — including any request like \"做一个小应用 / 生成 MiniApp / 写个 BitFun 小工具 / 创建 mini app\". Also triggers on MiniApp, miniapps, bridge"
+    },
+    {
+      "path": "src/crates/core/builtin_skills/agent-browser/SKILL.md",
+      "extract": "name: agent browser description: Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a form\", \"click a button\", \"take a screenshot\", \"scrape data from a page\", \"test this web app"
+    },
+    {
+      "path": "src/crates/core/builtin_skills/docx/SKILL.md",
+      "extract": "name: docx description: \"Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of \\\"Word doc\\\", \\\"word document\\\", \\\".docx\\\", or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or repla"
+    },
+    {
+      "path": "src/crates/core/builtin_skills/find-skills/SKILL.md",
+      "extract": "name: find skills description: Discover and install reusable agent skills when users ask for capabilities, workflows, or domain specific help that may already exist as an installable skill. description zh: 当用户询问能力、工作流或领域化需求时，帮助发现并安装可复用的技能，而不是从零实现。 allowed tools: Bash(npx y skills: ), Bash(npx skills: ), Bash(skills: ) Find and Install Skills Use this skill when users ask for capabilities that might already exist as i"
+    },
+    {
+      "path": "src/crates/core/builtin_skills/gstack-autoplan/SKILL.md",
+      "extract": "name: autoplan description: | Auto review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with auto decisions using 6 decision principles. Surfaces taste decisions (close approaches, borderline scope, codex disagreements) at a final approval gate. One command, fully reviewed plan out. Use when asked to \"auto review\", \"autoplan\", \"run all reviews\", \"review this pla"
+    },
+    {
+      "path": "src/crates/core/builtin_skills/gstack-cso/SKILL.md",
+      "extract": "name: cso description: | Chief Security Officer mode. Infrastructure first security audit: secrets archaeology, dependency supply chain, CI/CD pipeline security, LLM/AI security, skill supply chain scanning, plus OWASP Top 10, STRIDE threat modeling, and active verification. Two modes: daily (zero noise, 8/10 confidence gate) and comprehensive (monthly deep scan, 2/10 bar). Trend tracking across audit runs. Use when:"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "BitFun is a desktop-grade Agent runtime (Local Agent Runtime) and a ready-to-use suite of desktop Agent applications.",
+    "It is the foundation—a Rust core plus a Tauri shell, with sessions, tools, memory, MCP, LSP, and remote-control protocols built in, designed for long-running use;",
+    "You can use it immediately, or define your own domain Agents on top of it.",
+    "Download and run—no DIY assembly: MCP / LSP / filesystem / terminal / Git / remote SSH are all built in; configure your model and go, without spending time wiring the protocol stack from scratch.",
+    "Deeply customizable, with no gap from a single Markdown file to a full-repo fork: ~90% of domain needs are covered with one .md; missing a tool?",
+    "Have the Code Agent do it inside BitFun—the way you customize it is by using it.",
+    "The Agent works on the desktop; you check progress on the go.",
+    "Self-improving: 97%+ of the code was produced by BitFun’s built-in Code Agent via Vibe Coding, so it naturally fits AI-assisted development."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"sdk\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "BitFun is a desktop-grade Agent runtimeand a ready-to-use suite of desktop Agent applications.with built-in Code Agent 、 Cowork Agent、Computer Use. It has memory, personality, and the ability to evolve over time",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "sdk",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "memory"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "sdk",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "memory"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "sdk",
+    "whatIsIt": "BitFun is an SDK or library for developers building agent tooling.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with memory workflows.",
+      "Relevant to sdk.",
+      "BitFun is a desktop-grade Agent runtime (Local Agent Runtime) and a ready-to-use suite of desktop Agent applications."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:gcwing/bitfun",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "bitfun",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

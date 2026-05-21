@@ -1,0 +1,158 @@
+{
+  "id": "candidate-tool-github-braincrew-lab-langgraph-mcp-agents",
+  "type": "tool",
+  "status": "published",
+  "title": "Langgraph Mcp Agents",
+  "sourceUrl": "https://github.com/braincrew-lab/langgraph-mcp-agents",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "braincrew-lab",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "LangGraph-powered ReAct agent with Model Context Protocol (MCP) integration. A Streamlit web interface for dynamically configuring, deploying, and interacting with AI agents capable of accessing various data sources and APIs through MCP tools.",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "braincrew-lab",
+    "repo": "langgraph-mcp-agents",
+    "fullName": "braincrew-lab/langgraph-mcp-agents",
+    "stars": 705,
+    "topics": [],
+    "defaultBranch": "master",
+    "lastPushedAt": "2025-04-14T11:00:22Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "LangGraph Agents + MCP [![English](https://img.shields.io/badge/Language English blue)](README.md) [![Korean](https://img.shields.io/badge/Language 한국어 red)](README KOR.md) [![GitHub](https://img.shields.io/badge/GitHub langgraph mcp agents black?logo=github)](https://github.com/teddylee777/langgraph mcp agents) [![License](https://img.shields.io/badge/License MIT green.svg)](https://opensource.org/licenses/MIT) [![P",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "LangChain-MCP-Adapters is a toolkit provided by LangChain AI that enables AI agents to interact with external tools and data sources through the Model Context Protocol (MCP).",
+    "This project provides a user-friendly interface for deploying ReAct agents that can access various data sources and APIs through MCP tools.",
+    "Streamlit Interface: A user-friendly web interface for interacting with LangGraph ReAct Agent with MCP tools",
+    "Tool Management: Add, remove, and configure MCP tools through the UI (Smithery JSON format supported).",
+    "Streaming Responses: View agent responses and tool calls in real-time",
+    "Conversation History: Track and manage conversations with the agent",
+    "The Model Context Protocol (MCP) consists of three main components:",
+    "MCP Host: Programs seeking to access data through MCP, such as Claude Desktop, IDEs, or LangChain/LangGraph."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 2,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "LangGraph-powered ReAct agent with Model Context Protocol (MCP) integration. A Streamlit web interface for dynamically configuring, deploying, and interacting with AI agents capable of accessing various data sources and APIs through MCP tools.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "docs",
+      "data"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "docs",
+    "data"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: app.",
+    "Alternative capabilities: workflow, cli.",
+    "LLM: agent-app + [mcp] — This project provides a Streamlit web interface for dynamically configuring, deploying, and interacting with LangGraph ReAct agents via MCP tools, making it an AI assistant application for end users."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Langgraph Mcp Agents is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with docs workflows.",
+      "Helps with data workflows.",
+      "Relevant to devops.",
+      "LangChain-MCP-Adapters is a toolkit provided by LangChain AI that enables AI agents to interact with external tools and data sources through the Model Context Protocol (MCP)."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:braincrew-lab/langgraph-mcp-agents",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "langgraph-mcp-agents",
+  "publishedAt": "2026-05-18"
+}

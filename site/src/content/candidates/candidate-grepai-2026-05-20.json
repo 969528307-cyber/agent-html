@@ -1,0 +1,180 @@
+{
+  "id": "candidate-grepai-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Grepai",
+  "sourceUrl": "https://github.com/yoanbernabeu/grepai",
+  "sourceName": "GitHub",
+  "author": "yoanbernabeu",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Semantic Search & Call Graphs for AI Agents (100% Local)",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "yoanbernabeu",
+    "repo": "grepai",
+    "fullName": "yoanbernabeu/grepai",
+    "stars": 1688,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "claude-code",
+      "cli",
+      "code-search",
+      "cursor",
+      "developer-tools",
+      "embeddings",
+      "golang",
+      "mcp",
+      "privacy-first",
+      "semantic-search",
+      "vector-search"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T07:44:32Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/package-lock.json",
+    "docs/package.json",
+    "docs/public/favicon.svg",
+    "docs/rpg_technical_report.md",
+    "docs/src/components/content/Badge.astro",
+    "docs/src/components/content/Callout.astro",
+    "docs/src/components/content/Card.astro",
+    "docs/src/components/content/CardGrid.astro",
+    "docs/src/components/content/CodeBlock.astro",
+    "docs/src/components/content/LinkCard.astro",
+    "docs/src/components/content/Steps.astro",
+    "docs/src/components/content/TabItem.astro",
+    "docs/src/components/content/Tabs.astro",
+    "docs/src/components/docs/Breadcrumbs.astro",
+    "docs/src/components/docs/Pagination.astro",
+    "docs/src/components/docs/Sidebar.astro",
+    "docs/src/components/docs/TableOfContents.astro",
+    "docs/src/components/global/CopyCodeButton.astro",
+    "docs/src/components/global/Footer.astro",
+    "docs/src/components/global/Header.astro",
+    "docs/src/components/global/Logo.astro",
+    "docs/src/components/global/Search.astro",
+    "docs/src/components/homepage/HeroAnimated.astro",
+    "docs/src/components/homepage/ProblemSection.astro",
+    "docs/src/components/homepage/TerminalDemo.astro",
+    "docs/src/components/homepage/WorksWithSection.astro",
+    "docs/src/content/blog/benchmark-grepai-vs-grep-claude-code.md",
+    "docs/src/content/blog/introducing-grepai-skills.md",
+    "docs/src/content/blog/multi-project-workspace.md",
+    "docs/src/content/blog/welcome.md",
+    "docs/src/content/docs/backends/embedders.md",
+    "docs/src/content/docs/backends/stores.md",
+    "docs/src/content/docs/commands/.gitkeep",
+    "docs/src/content/docs/commands/grepai_init.md",
+    "docs/src/content/docs/community-tools.md",
+    "docs/src/content/docs/getting-started.md",
+    "docs/src/content/docs/git-worktrees.md",
+    "docs/src/content/docs/hybrid-search.md",
+    "docs/src/content/docs/mcp.md"
+  ],
+  "readmeExtract": "<div align=\"center\" grepai grep for the AI era [![Product Hunt](https://api.producthunt.com/widgets/embed image/v1/featured.svg?post id=1067661&theme=light)](https://www.producthunt.com/products/grepai) [![GitHub stars](https://img.shields.io/github/stars/yoanbernabeu/grepai?style=flat&logo=github)](https://github.com/yoanbernabeu/grepai/stargazers) [![Downloads](https://img.shields.io/github/downloads/yoanbernabeu/g",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Search code by meaning, not just text.",
+    "grepai is a privacy-first CLI for semantic code search.",
+    "Drastically reduces AI agent input tokens by providing relevant context instead of raw search results.",
+    "Search by intent — Ask \"authentication logic\" and find handleUserSession",
+    "AI agent ready — Works with Claude Code, Cursor, Windsurf out of the box",
+    "MCP server — Your AI agent can call grepai directly as a tool",
+    "I am very, very excited about your new tool.\"",
+    "— u/911pleasehold on r/ClaudeAI (280K+ views)"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Semantic Search & Call Graphs for AI Agents (100% Local)",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Grepai is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Search code by meaning, not just text."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "grepai",
+  "publishedAt": "2026-05-20"
+}

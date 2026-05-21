@@ -1,0 +1,203 @@
+{
+  "id": "candidate-tool-github-github-awesome-copilot",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Copilot",
+  "sourceUrl": "https://github.com/github/awesome-copilot",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "github",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "github",
+    "repo": "awesome-copilot",
+    "fullName": "github/awesome-copilot",
+    "stars": 33250,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "agents",
+      "ai",
+      "awesome",
+      "custom-agents",
+      "github-copilot",
+      "hacktoberfest",
+      "prompt-engineering"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T01:26:59Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.gitkeep",
+    "docs/README.agents.md",
+    "docs/README.hooks.md",
+    "docs/README.instructions.md",
+    "docs/README.plugins.md",
+    "docs/README.skills.md",
+    "docs/README.workflows.md",
+    "package.json",
+    "plugins/acreadiness-cockpit/skills/acreadiness-assess/SKILL.md",
+    "plugins/acreadiness-cockpit/skills/acreadiness-generate-instructions/SKILL.md",
+    "plugins/acreadiness-cockpit/skills/acreadiness-policy/SKILL.md",
+    "plugins/ai-team-orchestration/skills/ai-team-orchestration/SKILL.md",
+    "plugins/arize-ax/skills/arize-ai-provider-integration/SKILL.md",
+    "plugins/arize-ax/skills/arize-annotation/SKILL.md",
+    "plugins/arize-ax/skills/arize-dataset/SKILL.md",
+    "plugins/arize-ax/skills/arize-evaluator/SKILL.md",
+    "plugins/arize-ax/skills/arize-experiment/SKILL.md",
+    "plugins/arize-ax/skills/arize-instrumentation/SKILL.md",
+    "plugins/arize-ax/skills/arize-link/SKILL.md",
+    "plugins/arize-ax/skills/arize-prompt-optimization/SKILL.md",
+    "plugins/arize-ax/skills/arize-trace/SKILL.md",
+    "plugins/automate-this/skills/automate-this/SKILL.md",
+    "plugins/awesome-copilot/skills/suggest-awesome-github-copilot-agents/SKILL.md",
+    "plugins/awesome-copilot/skills/suggest-awesome-github-copilot-instructions/SKILL.md",
+    "plugins/awesome-copilot/skills/suggest-awesome-github-copilot-skills/SKILL.md",
+    "plugins/azure-cloud-development/skills/az-cost-optimize/SKILL.md",
+    "plugins/azure-cloud-development/skills/azure-pricing/SKILL.md",
+    "plugins/azure-cloud-development/skills/azure-resource-health-diagnose/SKILL.md",
+    "plugins/azure-cloud-development/skills/import-infrastructure-as-code/SKILL.md",
+    "plugins/clojure-interactive-programming/skills/remember-interactive-programming/SKILL.md",
+    "plugins/cms-development/skills/content-management-systems/SKILL.md",
+    "plugins/cms-development/skills/markdown-to-html/SKILL.md",
+    "plugins/cms-development/skills/quasi-coder/SKILL.md",
+    "plugins/cms-development/skills/web-coder/SKILL.md",
+    "plugins/context-engineering/skills/context-map/SKILL.md",
+    "plugins/context-engineering/skills/refactor-plan/SKILL.md",
+    "plugins/context-engineering/skills/what-context-needed/SKILL.md",
+    "plugins/context-matic/skills/integrate-context-matic/SKILL.md",
+    "plugins/context-matic/skills/onboard-context-matic/SKILL.md"
+  ],
+  "readmeExtract": "🤖 Awesome GitHub Copilot [![Powered by Awesome Copilot](https://img.shields.io/badge/Powered by Awesome Copilot blue?logo=githubcopilot)](https://aka.ms/awesome github copilot) [![GitHub contributors from allcontributors.org](https://img.shields.io/github/all contributors/github/awesome copilot?color=ee8449)]( contributors ) A community created collection of custom agents, instructions, skills, hooks, workflows, and",
+  "skillExtracts": [
+    {
+      "path": "plugins/acreadiness-cockpit/skills/acreadiness-assess/SKILL.md",
+      "extract": "name: acreadiness assess description: 'Run the AgentRC readiness assessment on the current repository and produce a static HTML dashboard at reports/index.html. Wraps npx github:microsoft/agentrc readiness and hands off rendering to the @ai readiness reporter custom agent. Supports policies ( policy) for org specific scoring. Use when asked to assess, audit, or score the AI readiness of a repo.' argument hint: \"[ pol"
+    },
+    {
+      "path": "plugins/acreadiness-cockpit/skills/acreadiness-generate-instructions/SKILL.md",
+      "extract": "name: acreadiness generate instructions description: 'Generate tailored AI agent instruction files via AgentRC instructions command. Produces .github/copilot instructions.md (default, recommended for Copilot in VS Code) plus optional per area .instructions.md files with applyTo globs for monorepos. Use after running /acreadiness assess to close gaps in the AI Tooling pillar.' argument hint: \"[ output .github/copilot "
+    },
+    {
+      "path": "plugins/acreadiness-cockpit/skills/acreadiness-policy/SKILL.md",
+      "extract": "name: acreadiness policy description: 'Help the user pick, write, or apply an AgentRC policy. Policies customise readiness scoring by disabling irrelevant checks, overriding impact/level, setting pass rate thresholds, or chaining org baselines with team overrides. Use when the user asks about strict mode, AI only scoring, custom weights, CI gating, or wants org wide standardisation.' argument hint: \"[show | new <name"
+    },
+    {
+      "path": "plugins/ai-team-orchestration/skills/ai-team-orchestration/SKILL.md",
+      "extract": "name: ai team orchestration description: 'Bootstrap and run a multi agent AI development team. Use when: starting a new software project with AI agents, setting up parallel dev/QA teams, creating sprint plans, writing brainstorm prompts with distinct agent voices, recovering a project workflow, or planning sprints.' AI Team Orchestration When to Use Starting a new project that needs planning, development, testing, an"
+    },
+    {
+      "path": "plugins/arize-ax/skills/arize-ai-provider-integration/SKILL.md",
+      "extract": "name: arize ai provider integration description: Creates, reads, updates, and deletes Arize AI integrations that store LLM provider credentials used by evaluators and other Arize features. Supports any LLM provider (e.g. OpenAI, Anthropic, Azure OpenAI, AWS Bedrock, Vertex AI, Gemini, NVIDIA NIM). Use when the user mentions AI integration, LLM provider credentials, create integration, list integrations, update creden"
+    },
+    {
+      "path": "plugins/arize-ax/skills/arize-annotation/SKILL.md",
+      "extract": "name: arize annotation description: Creates and manages annotation configs (categorical, continuous, freeform label schemas) and annotation queues (human review workflows) on Arize. Applies human annotations to project spans via the Python SDK. Use when the user mentions annotation config, annotation queue, label schema, human feedback, bulk annotate spans, update annotations, labeling queue, annotate record, or huma"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A community-created collection of custom agents, instructions, skills, hooks, workflows, and plugins to supercharge your GitHub Copilot experience.",
+    "The website offers full-text search and filtering across hundreds of resources, plus the Tools section for MCP servers and developer tooling, and the Learning Hub for guides and tutorials.",
+    "Using this collection in an AI agent? A machine-readable llms.txt is available with structured listings of all agents, instructions, and skills.",
+    "🤖 Agents Specialized Copilot agents that integrate with MCP servers All agents →",
+    "🎯 Skills Self-contained folders with instructions and bundled assets All skills →",
+    "🔌 Plugins Curated bundles of agents and skills for specific workflows All plugins →",
+    "🪝 Hooks Automated actions triggered during Copilot agent sessions All hooks →",
+    "⚡ Agentic Workflows AI-powered GitHub Actions automations written in markdown All workflows →"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome Copilot is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "A community-created collection of custom agents, instructions, skills, hooks, workflows, and plugins to supercharge your GitHub Copilot experience.",
+      "The website offers full-text search and filtering across hundreds of resources, plus the Tools section for MCP servers and developer tooling, and the Learning Hub for guides and tutorials.",
+      "Using this collection in an AI agent? A machine-readable llms.txt is available with structured listings of all agents, instructions, and skills."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:github/awesome-copilot",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

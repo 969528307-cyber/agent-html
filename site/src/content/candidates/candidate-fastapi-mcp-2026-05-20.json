@@ -1,0 +1,151 @@
+{
+  "id": "candidate-fastapi-mcp-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Fastapi Mcp",
+  "sourceUrl": "https://github.com/tadata-org/fastapi_mcp",
+  "sourceName": "GitHub",
+  "author": "tadata-org",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "tadata-org",
+    "repo": "fastapi_mcp",
+    "fullName": "tadata-org/fastapi_mcp",
+    "stars": 11870,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "authentication",
+      "authorization",
+      "claude",
+      "cursor",
+      "fastapi",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "mcp-servers",
+      "modelcontextprotocol",
+      "openapi",
+      "windsurf"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-11-24T14:51:54Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/advanced/asgi.mdx",
+    "docs/advanced/auth.mdx",
+    "docs/advanced/deploy.mdx",
+    "docs/advanced/refresh.mdx",
+    "docs/advanced/transport.mdx",
+    "docs/docs.json",
+    "docs/getting-started/best-practices.mdx",
+    "docs/getting-started/quickstart.mdx",
+    "docs/getting-started/welcome.mdx",
+    "docs/media/dark_logo.png",
+    "docs/media/favicon.png",
+    "docs/media/light_logo.png",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://github.com/tadata org/fastapi mcp\" <img src=\"https://github.com/user attachments/assets/7e44e98b a0ba 4aff a68a 4ffee3a6189c\" alt=\"fastapi to mcp\" height=100/ </a </p <div align=\"center\" <span style=\"font size: 0.85em; font weight: normal;\" Built by <a href=\"https://tadata.com\" Tadata</a </span </div <h1 align=\"center\" FastAPI MCP </h1 <div align=\"center\" <a href=\"https://trendshift",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+    "FastAPI-native: Not just another OpenAPI -> MCP converter",
+    "Preserve documentation of all your endpoints, just as it is in Swagger",
+    "Flexible deployment - Mount your MCP server to the same app, or deploy separately",
+    "If you prefer a managed hosted solution check out tadata.com.",
+    "The simplest way to use FastAPI-MCP is to add an MCP server directly to your FastAPI application:",
+    "Your auto-generated MCP server is now available at",
+    "Documentation, Examples and Advanced Usage"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "security"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "security"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Fastapi Mcp is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Relevant to mcp.",
+      "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+      "FastAPI-native: Not just another OpenAPI -> MCP converter",
+      "Preserve documentation of all your endpoints, just as it is in Swagger"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "fastapi-mcp",
+  "publishedAt": "2026-05-20"
+}

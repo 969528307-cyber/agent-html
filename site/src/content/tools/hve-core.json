@@ -1,0 +1,75 @@
+{
+  "id": "hve-core",
+  "name": "Hve Core",
+  "type": "skill",
+  "status": "published",
+  "summary": "A refined collection of Hypervelocity Engineering components (instructions, prompts, agents, and skills) to start your project off right, or upgrade your existing projects to get the most out of all Copilots",
+  "description": "A refined collection of Hypervelocity Engineering components (instructions, prompts, agents, and skills) to start your project off right, or upgrade your existing projects to get the most out of all Copilots",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/microsoft/hve-core",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/microsoft/hve-core",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/microsoft/hve-core#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/microsoft/hve-core#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/microsoft/hve-core/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "description: Hypervelocity Engineering prompt library for GitHub Copilot with convention-driven AI workflows and validated artifacts",
+    "Turn Copilot into a convention-driven engineering workflow (agents follow your repository's standards automatically) that scales from solo developers to enterprise teams.",
+    "Select an agent from the picker (try rpi-agent, task-researcher, or memory) and start a conversation.",
+    "Agents, instructions, and prompts activate automatically once the extension is installed.",
+    "Collections are curated bundles of agents, prompts, instructions, and skills targeting specific workflows or domains.",
+    "The HVE Core extension installs the flagship collection (41 artifacts for RPI (Research → Plan → Implement) workflows).",
+    "HVE Core All Every collection: all agents, prompts, instructions, and skills Individual developers and teams that want the full library",
+    "You can switch to HVE Installer later if you need finer control over which collections are active."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T08:04:20Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/microsoft/hve-core",
+  "repoUrl": "https://github.com/microsoft/hve-core",
+  "license": "MIT",
+  "stars": 1063,
+  "lastUpdated": "2026-05-18T08:04:20Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

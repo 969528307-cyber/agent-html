@@ -1,0 +1,79 @@
+{
+  "id": "understand-anything",
+  "name": "Understand Anything",
+  "type": "skill",
+  "status": "published",
+  "summary": "Graphs that teach > graphs that impress. Turn any code, or knowledge base (Karpathy LLM wiki), into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+  "description": "Graphs that teach > graphs that impress. Turn any code, or knowledge base (Karpathy LLM wiki), into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Lum1104/Understand-Anything",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Lum1104/Understand-Anything",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Lum1104/Understand-Anything#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Lum1104/Understand-Anything#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Lum1104/Understand-Anything/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Turn any codebase, knowledge base, or docs into an interactive knowledge graph you can explore, search, and ask questions about.",
+    "Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+    "Want to skip the reading? Try the live demo in our homepage — a fully interactive dashboard you can pan, zoom, search, and explore right in your browser.",
+    "Navigate your codebase as an interactive knowledge graph — every file, function, and class is a node you can click, search, and explore.",
+    "Switch to the domain view and see how your code maps to real business processes — domains, flows, and steps laid out as a horizontal graph.",
+    "Search \"which parts handle auth?\" and get relevant results across the graph.",
+    "A multi-agent pipeline scans your project, extracts every file, function, class, and dependency, then builds a knowledge graph saved to .understand-anything/knowledge-graph.json.",
+    "Dashboard UI labels, buttons, and tooltips"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T02:13:25Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Lum1104/Understand-Anything",
+  "repoUrl": "https://github.com/Lum1104/Understand-Anything",
+  "license": "MIT",
+  "stars": 15014,
+  "lastUpdated": "2026-05-18T02:13:25Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

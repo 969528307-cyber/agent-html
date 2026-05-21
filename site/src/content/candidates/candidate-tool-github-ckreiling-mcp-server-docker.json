@@ -1,0 +1,157 @@
+{
+  "id": "candidate-tool-github-ckreiling-mcp-server-docker",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp Server Docker",
+  "sourceUrl": "https://github.com/ckreiling/mcp-server-docker",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "ckreiling",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "MCP server for Docker",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "ckreiling",
+    "repo": "mcp-server-docker",
+    "fullName": "ckreiling/mcp-server-docker",
+    "stars": 717,
+    "license": "GPL-3.0",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-06-05T02:52:13Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "🐋 Docker MCP server An MCP server for managing Docker with natural language! 🪩 What can it do? 🚀 Compose containers with natural language 🔍 Introspect & debug running containers 📀 Manage persistent data with Docker volumes ❓ Who is this for? Server administrators: connect to remote Docker engines for e.g. managing a public facing website. Tinkerers: run containers locally and experiment with open source apps sup",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "An MCP server for managing Docker with natural language!",
+    "📀 Manage persistent data with Docker volumes",
+    "Server administrators: connect to remote Docker engines for e.g.",
+    "On MacOS: ~/Library/Application\\ Support/Claude/claudedesktopconfig.json",
+    "On Windows: %APPDATA%/Claude/claudedesktopconfig.json",
+    "Then add the following to your MCP servers file:",
+    "And then add the following to your MCP servers file:",
+    "Note that we mount the Docker socket as a volume; this ensures the MCP server"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "MCP server for Docker",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "data"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "data"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Package metadata detected; may expose executable commands.",
+    "SDK or library language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: sdk, cli.",
+    "LLM: mcp + [mcp] — The project is explicitly described as an MCP server for Docker, exposing Docker management capabilities through the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "sdk",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp Server Docker is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with data workflows.",
+      "Relevant to devops.",
+      "An MCP server for managing Docker with natural language!",
+      "📀 Manage persistent data with Docker volumes"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:ckreiling/mcp-server-docker",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-server-docker",
+  "publishedAt": "2026-05-18"
+}

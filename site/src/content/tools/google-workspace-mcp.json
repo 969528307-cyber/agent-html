@@ -1,0 +1,77 @@
+{
+  "id": "google-workspace-mcp",
+  "name": "Google Workspace Mcp",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace / G Suite MCP Server & CLI Tool",
+  "description": "Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace / G Suite MCP Server & CLI Tool",
+  "category": [
+    "communication"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Full natural language control over Google Calendar, Drive, Gmail, Docs, Sheets, Slides, Forms, Tasks, Contacts, and Chat through all MCP clients, AI assistants and developer tools.",
+    "Includes a full featured CLI & Code Mode for use with tools like Claude Code and Codex!",
+    "The most feature-complete Google Workspace MCP server, it can do things that Google's own tooling and the built in integrations with Claude and ChatGPT can't even dream of.",
+    "With Remote OAuth2.1 multi-user support, fine-grained editing tools and the most extensive coverage of any Google Workspace tool in existance, Workspace MCP is in a different class.",
+    "Offering native OAuth 2.1, stateless mode and external auth server support, it's also the only Workspace MCP you can host for your whole organization centrally & securely!",
+    ". . Interested in a private, managed cloud instance?",
+    "Quick Start · Claude Desktop.",
+    "Claude Code · VS Code · LM Studio"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T15:11:15Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/taylorwilsdon/google_workspace_mcp",
+  "repoUrl": "https://github.com/taylorwilsdon/google_workspace_mcp",
+  "license": "MIT",
+  "stars": 2390,
+  "lastUpdated": "2026-05-12T15:11:15Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,76 @@
+{
+  "id": "amazon-q-developer-cli",
+  "name": "Amazon Q Developer Cli",
+  "type": "mcp",
+  "status": "published",
+  "summary": "✨ Agentic chat experience in your terminal. Build applications using natural language.",
+  "description": "✨ Agentic chat experience in your terminal. Build applications using natural language.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/aws/amazon-q-developer-cli",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/aws/amazon-q-developer-cli",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/aws/amazon-q-developer-cli#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/aws/amazon-q-developer-cli#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/aws/amazon-q-developer-cli/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Before getting started, see our contributing docs.",
+    "docs/ - Contains technical documentation",
+    "└── documentation-writer.json",
+    "WARNING: Agent conflict for my-agent.",
+    "cat > .amazonq/cli-agents/project-helper.json << 'EOF'",
+    "\"description\": \"Helper agent for this specific project\",",
+    "\"tools\": [\"fsread\", \"fswrite\", \"executebash\"],",
+    "cat > ~/.aws/amazonq/cli-agents/general-helper.json << 'EOF'"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-30T17:39:50Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/aws/amazon-q-developer-cli",
+  "repoUrl": "https://github.com/aws/amazon-q-developer-cli",
+  "license": "Apache-2.0",
+  "stars": 1960,
+  "lastUpdated": "2026-04-30T17:39:50Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

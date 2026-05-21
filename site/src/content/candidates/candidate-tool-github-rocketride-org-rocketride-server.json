@@ -1,0 +1,209 @@
+{
+  "id": "candidate-tool-github-rocketride-org-rocketride-server",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Rocketride Server",
+  "sourceUrl": "https://github.com/rocketride-org/rocketride-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "rocketride-org",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "High-performance AI pipeline engine with a C++ core and 50+ Python-extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and agent orchestration, all from your IDE. Includes VS Code extension, TypeScript/Python SDKs, and Docker deployment.",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "rocketride-org",
+    "repo": "rocketride-server",
+    "fullName": "rocketride-org/rocketride-server",
+    "stars": 2974,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "cpp",
+      "data-pipeline",
+      "data-processing",
+      "machine-learning",
+      "mcp",
+      "python",
+      "sdk",
+      "typescript",
+      "vscode-extension"
+    ],
+    "defaultBranch": "develop",
+    "lastPushedAt": "2026-05-15T23:18:26Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/adr/0001-custom-build-system.md",
+    "docs/adr/README.md",
+    "docs/agents/ROCKETRIDE_COMMON_MISTAKES.md",
+    "docs/agents/ROCKETRIDE_COMPONENT_REFERENCE.md",
+    "docs/agents/ROCKETRIDE_OBSERVABILITY.md",
+    "docs/agents/ROCKETRIDE_PIPELINE_RULES.md",
+    "docs/agents/ROCKETRIDE_python_API.md",
+    "docs/agents/ROCKETRIDE_QUICKSTART.md",
+    "docs/agents/ROCKETRIDE_README.md",
+    "docs/agents/ROCKETRIDE_typescript_API.md",
+    "docs/commit-signing.md",
+    "docs/nodes/llm-openai-usage.md",
+    "docs/plans/2026-02-24-oss-security-posture-design.md",
+    "docs/README-apps.md",
+    "docs/README-builder.md",
+    "docs/README-clients.md",
+    "docs/README-engine.md",
+    "docs/README-mcp-client.md",
+    "docs/README-node-testing.md",
+    "docs/README-nodes.md",
+    "docs/README-pre-commit-hooks.md",
+    "docs/README-python-client.md",
+    "docs/README-typescript-client.md",
+    "docs/README-vscode.md",
+    "docs/stubs/AGENTS.md",
+    "docs/stubs/claude-code.md",
+    "docs/stubs/CLAUDE.md",
+    "docs/stubs/copilot-instructions.md",
+    "docs/stubs/cursor.mdc",
+    "docs/stubs/windsurf.md",
+    "package.json",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<div align=\"center\" <a href=\"https://rocketride.org\" <img src=\"https://raw.githubusercontent.com/rocketride org/rocketride server/develop/images/banner root.png\" alt=\"RocketRide\" width=\"100%\" </a <p Open source, developer native AI pipeline tool.<br/ Build, debug, and deploy production AI workflows without leaving your IDE. </p <p <img src=\"https://raw.githubusercontent.com/rocketride org/rocketride server/develop/im",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Open-source, developer-native AI pipeline tool..",
+    "Build, debug, and deploy production AI workflows - without leaving your IDE.",
+    "From real-time data processing to multimodal AI search, RocketRide runs entirely on your own infrastructure.",
+    "Design, test, and ship complex AI workflows from a visual canvas, right where you write code.",
+    "Visual Pipeline Builder Drag, connect, and configure nodes in VS Code — no boilerplate.",
+    "Multi-Agent Workflows Built-in CrewAI and LangChain support.",
+    "Chain agents, share memory across pipeline runs, and manage multi-step reasoning at scale.",
+    "Coding Agent Ready RocketRide auto-detects your coding agent — Claude, Cursor, and more."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "High-performance AI pipeline engine with a C++ core and 50+ Python-extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and agent orchestration, all from your IDE. Includes VS Code extension, TypeScript/Python SDKs, and Docker deployment.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "data",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "data",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 2,
+    "skill": 0,
+    "cli": 5,
+    "workflow": 9,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent instruction file detected alongside CLI signals.",
+    "Workflow/automation/orchestration language detected.",
+    "General agent-building language detected.",
+    "SDK or library language detected.",
+    "Coding agent detected with CLI context.",
+    "Detected scope: boilerplate.",
+    "Alternative capabilities: cli, sdk, agent-framework.",
+    "LLM: workflow + [workflow] — It is an AI pipeline engine for building, debugging, and scaling LLM workflows with a visual canvas and agent orchestration."
+  ],
+  "classificationAlternatives": [
+    "cli",
+    "sdk",
+    "agent-framework"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Rocketride Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with data workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to devops."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:rocketride-org/rocketride-server",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

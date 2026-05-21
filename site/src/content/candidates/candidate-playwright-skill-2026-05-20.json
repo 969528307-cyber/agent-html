@@ -1,0 +1,152 @@
+{
+  "id": "candidate-playwright-skill-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Playwright Skill",
+  "sourceUrl": "https://github.com/lackeyjb/playwright-skill",
+  "sourceName": "GitHub",
+  "author": "lackeyjb",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "lackeyjb",
+    "repo": "playwright-skill",
+    "fullName": "lackeyjb/playwright-skill",
+    "stars": 2647,
+    "license": "MIT",
+    "topics": [
+      "ai-tools",
+      "automation",
+      "browser-automation",
+      "claude",
+      "claude-code",
+      "claude-plugin",
+      "claude-skills",
+      "developer-tools",
+      "e2e-testing",
+      "model-invoked",
+      "nodejs",
+      "playwright",
+      "web-testing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-12-19T16:23:38Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/playwright-skill/SKILL.md"
+  ],
+  "readmeExtract": "Playwright Skill for Claude Code General purpose browser automation as a Claude Skill A [Claude Skill](https://www.anthropic.com/blog/skills) that enables Claude to write and execute any Playwright automation on the fly from simple page tests to complex multi step flows. Packaged as a [Claude Code Plugin](https://docs.claude.com/en/docs/claude code/plugins) for easy installation and distribution. Claude autonomously ",
+  "skillExtracts": [
+    {
+      "path": "skills/playwright-skill/SKILL.md",
+      "extract": "name: playwright skill description: Complete browser automation with Playwright. Auto detects dev servers, writes clean test scripts to /tmp. Test pages, fill forms, take screenshots, check responsive design, validate UX, test login flows, check links, automate any browser task. Use when user wants to test websites, automate browser interactions, validate web functionality, or perform any browser based testing. IMPOR"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Playwright Skill for Claude Code",
+    "General-purpose browser automation as a Claude Skill",
+    "A Claude Skill that enables Claude to write and execute any Playwright automation on-the-fly - from simple page tests to complex multi-step flows.",
+    "Claude autonomously decides when to use this skill based on your browser automation needs, loading only the minimal information required for your specific task.",
+    "Any Automation Task - Claude writes custom code for your specific request, not limited to pre-built scripts",
+    "Visible Browser by Default - See automation in real-time with headless: false",
+    "Progressive Disclosure - Concise SKILL.md with full API reference loaded only when needed",
+    "Safe Cleanup - Smart temp file management without race conditions"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "browser",
+      "coding",
+      "testing",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "browser",
+    "coding",
+    "testing",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Playwright Skill is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with browser workflows.",
+      "Helps with coding workflows.",
+      "Helps with testing workflows.",
+      "Helps with automation workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "playwright-skill",
+  "publishedAt": "2026-05-20"
+}

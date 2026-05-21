@@ -1,0 +1,179 @@
+{
+  "id": "candidate-bifrost-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Bifrost",
+  "sourceUrl": "https://github.com/maximhq/bifrost",
+  "sourceName": "GitHub",
+  "author": "maximhq",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "maximhq",
+    "repo": "bifrost",
+    "fullName": "maximhq/bifrost",
+    "stars": 5069,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-gateway",
+      "gateway",
+      "gateway-services",
+      "generative-ai",
+      "guardrails",
+      "llm",
+      "llm-cost",
+      "llm-gateway",
+      "llm-observability",
+      "llmops",
+      "load-balancing",
+      "mcp-client",
+      "mcp-gateway",
+      "mcp-server",
+      "model-router",
+      "token-management"
+    ],
+    "defaultBranch": "dev",
+    "lastPushedAt": "2026-05-20T03:43:52Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.mintignore",
+    "docs/architecture/core/concurrency.mdx",
+    "docs/architecture/core/mcp.mdx",
+    "docs/architecture/core/plugins.mdx",
+    "docs/architecture/core/providers.mdx",
+    "docs/architecture/core/request-flow.mdx",
+    "docs/architecture/framework/log-store.mdx",
+    "docs/architecture/framework/model-catalog.mdx",
+    "docs/architecture/framework/streaming.mdx",
+    "docs/architecture/framework/vector-store.mdx",
+    "docs/architecture/framework/what-is-framework.mdx",
+    "docs/architecture/plugins/governance.mdx",
+    "docs/architecture/plugins/jsonparser.mdx",
+    "docs/architecture/plugins/logging.mdx",
+    "docs/architecture/plugins/maxim.mdx",
+    "docs/architecture/plugins/mocker.mdx",
+    "docs/architecture/plugins/semantic-cache.mdx",
+    "docs/architecture/plugins/telemetry.mdx",
+    "docs/architecture/README.mdx",
+    "docs/architecture/transports/in-memory-store.mdx",
+    "docs/baseUrlSwitcher.js",
+    "docs/benchmarking/getting-started.mdx",
+    "docs/benchmarking/run-your-own-benchmarks.mdx",
+    "docs/benchmarking/t3.medium.mdx",
+    "docs/benchmarking/t3.xl.mdx",
+    "docs/changelogs/cli-v0.10.0.mdx",
+    "docs/changelogs/cli-v0.10.1.mdx",
+    "docs/changelogs/cli-v0.10.2.mdx",
+    "docs/changelogs/cli-v0.10.3.mdx",
+    "docs/changelogs/ent-v1.3.10.mdx",
+    "docs/changelogs/ent-v1.3.11.mdx",
+    "docs/changelogs/ent-v1.3.12.mdx",
+    "docs/changelogs/ent-v1.3.13.mdx",
+    "docs/changelogs/ent-v1.3.14.mdx",
+    "docs/changelogs/ent-v1.3.15.mdx",
+    "docs/changelogs/ent-v1.3.16.mdx",
+    "docs/changelogs/ent-v1.3.17.mdx",
+    "docs/changelogs/ent-v1.3.18.mdx",
+    "docs/changelogs/ent-v1.3.19.mdx"
+  ],
+  "readmeExtract": "Bifrost AI Gateway [![Go Report Card](https://goreportcard.com/badge/github.com/maximhq/bifrost/core)](https://goreportcard.com/report/github.com/maximhq/bifrost/core) [![Discord badge](https://dcbadge.limes.pink/api/server/https://discord.gg/exN5KAydbU?style=flat)](https://discord.gg/exN5KAydbU) [![codecov](https://codecov.io/gh/maximhq/bifrost/branch/main/graph/badge.svg)](https://codecov.io/gh/maximhq/bifrost) ![D",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Model Context Protocol (MCP) - Enable AI models to use external tools (filesystem, web search, databases)",
+    "Budget Management - Hierarchical cost control with virtual keys, teams, and customer budgets",
+    "Vault Support - Secure API key management with HashiCorp Vault integration",
+    "MCP Integration - External tool calling",
+    "Budget Management - Cost control and governance",
+    "Vault Support - Secure key management",
+    "description: \"Deep dive into Bifrost's advanced concurrency architecture - worker pools, goroutine management, channel-based communication, and resource isolation patterns.\"",
+    "Resource Pooling Object pools with lifecycle management Predictable memory usage, minimal GC"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "monitoring"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "monitoring"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Bifrost is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with monitoring workflows.",
+      "Relevant to mcp.",
+      "Model Context Protocol (MCP) - Enable AI models to use external tools (filesystem, web search, databases)",
+      "Budget Management - Hierarchical cost control with virtual keys, teams, and customer budgets",
+      "Vault Support - Secure API key management with HashiCorp Vault integration"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "bifrost",
+  "publishedAt": "2026-05-20"
+}

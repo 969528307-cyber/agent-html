@@ -1,0 +1,77 @@
+{
+  "id": "tutor-skills",
+  "name": "Tutor Skills",
+  "type": "skill",
+  "status": "published",
+  "summary": "A Claude Code skill that turns PDFs, docs, and codebases into Obsidian study vaults",
+  "description": "A Claude Code skill that turns PDFs, docs, and codebases into Obsidian study vaults",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/bevibing/tutor-skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/bevibing/tutor-skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/bevibing/tutor-skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/bevibing/tutor-skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/bevibing/tutor-skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Two Claude Code skills that turn any knowledge source into an Obsidian StudyVault and then quiz you on it — closing the loop from content to comprehension.",
+    "Skill Command Purpose Input Output",
+    "Requires npx skills — works with Claude Code, Cursor, Windsurf, and more.",
+    "D9 Self-Review Verify against quality checklist",
+    "C9 Self-Review Verify against quality checklist",
+    "Hard-mode review All areas 🟩/🟦 Challenge mastered material",
+    "Claude Code CLI installed and configured",
+    "allowed-tools: Read, Write, Edit, Glob, Grep, Bash, WebFetch"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-02-28T14:41:09Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/bevibing/tutor-skills",
+  "repoUrl": "https://github.com/bevibing/tutor-skills",
+  "license": "MIT",
+  "stars": 884,
+  "lastUpdated": "2026-02-28T14:41:09Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

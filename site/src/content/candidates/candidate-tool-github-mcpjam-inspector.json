@@ -1,0 +1,222 @@
+{
+  "id": "candidate-tool-github-mcpjam-inspector",
+  "type": "tool",
+  "status": "published",
+  "title": "Inspector",
+  "sourceUrl": "https://github.com/MCPJam/inspector",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "MCPJam",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Development platform to debug, chat, inspect, and evaluate MCP servers, MCP apps, and ChatGPT apps.",
+  "proposedCategory": [
+    "communication"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "MCPJam",
+    "repo": "inspector",
+    "fullName": "MCPJam/inspector",
+    "stars": 1940,
+    "license": "NOASSERTION",
+    "topics": [
+      "anthropic",
+      "chatgpt",
+      "cicd",
+      "debugger",
+      "evals",
+      "evaluation",
+      "inspector",
+      "mcp",
+      "mcp-apps",
+      "mcp-clients",
+      "mcp-inspector",
+      "mcp-server",
+      "mcp-tools",
+      "modelcontextprotocol",
+      "oauth",
+      "oauth2",
+      "openai",
+      "openai-apps-sdk",
+      "opensource",
+      "tracing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T06:05:44Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/changelog/overview.mdx",
+    "docs/cli/apps-conformance.mdx",
+    "docs/cli/ci.mdx",
+    "docs/cli/oauth-conformance.mdx",
+    "docs/cli/oauth-login.mdx",
+    "docs/cli/overview.mdx",
+    "docs/cli/reference.mdx",
+    "docs/cli/server-inspection.mdx",
+    "docs/cli/telemetry.mdx",
+    "docs/cli/tools-resources-prompts.mdx",
+    "docs/conversation-export-2025-09-17.md",
+    "docs/docs.json",
+    "docs/getting-started.mdx",
+    "docs/guides/first-chatgpt-app-react.mdx",
+    "docs/guides/first-mcp-app.mdx",
+    "docs/hosted/overview.mdx",
+    "docs/images/cli.png",
+    "docs/images/connection/multiple.png",
+    "docs/images/connection/stdio.png",
+    "docs/images/connection/streamable.png",
+    "docs/images/copy-markdown-menu.png",
+    "docs/images/everything-demo.png",
+    "docs/images/playground/model-selector.png",
+    "docs/images/test-case-detail.png",
+    "docs/index.mdx",
+    "docs/inspector/app-builder.mdx",
+    "docs/inspector/chat.mdx",
+    "docs/inspector/connecting-servers.mdx",
+    "docs/inspector/debugging.mdx",
+    "docs/inspector/docs-server.mdx",
+    "docs/inspector/guided-oauth.mdx",
+    "docs/inspector/launch-from-code.mdx",
+    "docs/inspector/projects.mdx",
+    "docs/inspector/skills.mdx",
+    "docs/inspector/test-cases.mdx",
+    "docs/inspector/tools-prompts-resources.mdx",
+    "docs/inspector/views.mdx",
+    "docs/logo/mcp_jam_dark.png",
+    "docs/logo/mcp_jam_light.png"
+  ],
+  "readmeExtract": "<div align=\"center\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"./mcpjam inspector/client/public/mcp jam dark.png\" <source media=\"(prefers color scheme: light)\" srcset=\"./mcpjam inspector/client/public/mcp jam light.png\" <img width=\"250\" alt=\"MCPJam Inspector V1 logo\" src=\"./mcpjam inspector/client/public/mcp jam light.png\" </picture <br/ www.mcpjam.com [![npm version](https://img.shields.io/npm/v/@",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "MCPJam is the development platform for MCP servers, MCP apps, and ChatGPT apps.",
+    "Chat: Talk to any LLM against your server with full trace visibility into tool calls and context across agent, host app, your server.",
+    "Inspect: Explore your server’s tools, resources, and prompts in one place.",
+    "CLI: Probe servers, run doctor checks, exercise OAuth flows, and list tools/resources/prompts straight from your terminal.",
+    "SDK: Programmatically drive inspections, snapshot server capabilities, and assert on tool/resource shapes from your own tests.",
+    "No more ngrok or ChatGPT/Claude subscription needed.",
+    "MCPJam is the fastest way to iterate on any MCP project.",
+    "Or run MCPJam locally for HTTP/S and local STDIO servers:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Development platform to debug, chat, inspect, and evaluate MCP servers, MCP apps, and ChatGPT apps.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 7,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: knowledge-resource, sdk, cli.",
+    "LLM: cli + [mcp, cli] — It is a developer platform providing a CLI and UI for debugging and inspecting MCP servers."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "sdk",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Inspector is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with media workflows.",
+      "Relevant to communication.",
+      "MCPJam is the development platform for MCP servers, MCP apps, and ChatGPT apps.",
+      "Chat: Talk to any LLM against your server with full trace visibility into tool calls and context across agent, host app, your server."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:mcpjam/inspector",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "inspector",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

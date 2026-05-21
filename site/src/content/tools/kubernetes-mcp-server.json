@@ -1,0 +1,78 @@
+{
+  "id": "kubernetes-mcp-server",
+  "name": "Kubernetes Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Model Context Protocol (MCP) server for Kubernetes and OpenShift",
+  "description": "Model Context Protocol (MCP) server for Kubernetes and OpenShift",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/containers/kubernetes-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/containers/kubernetes-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/containers/kubernetes-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/containers/kubernetes-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/containers/kubernetes-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A powerful and flexible Kubernetes Model Context Protocol (MCP) server implementation with support for Kubernetes and OpenShift.",
+    "🔧 Tekton: Tekton-specific operations that complement generic Kubernetes resource management.",
+    "Unlike other Kubernetes MCP server implementations, this IS NOT just a wrapper around kubectl or helm command-line tools.",
+    "There is NO NEED for external dependencies or tools to be installed on the system.",
+    "Follow the dedicated Claude Code getting started guide in our user documentation.",
+    "If you have npm installed, this is the fastest way to get started with kubernetes-mcp-server on Claude Desktop.",
+    "Open your claudedesktopconfig.json and add the mcp server to the list of mcpServers:",
+    "Goose CLI is the easiest (and cheapest) way to get rolling with artificial intelligence (AI) agents."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T06:33:45Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/containers/kubernetes-mcp-server",
+  "repoUrl": "https://github.com/containers/kubernetes-mcp-server",
+  "license": "Apache-2.0",
+  "stars": 1578,
+  "lastUpdated": "2026-05-12T06:33:45Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,77 @@
+{
+  "id": "toolhive",
+  "name": "Toolhive",
+  "type": "mcp",
+  "status": "published",
+  "summary": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
+  "description": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/stacklok/toolhive",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/stacklok/toolhive",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/stacklok/toolhive#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/stacklok/toolhive#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/stacklok/toolhive/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The open source MCP platform trusted by developers and enterprises",
+    "Run any MCP server securely, instantly, anywhere.",
+    "ToolHive runs every MCP server in an isolated container, enforces identity and access policy per request, and gives platform teams the observability they need to put MCP in production.",
+    "Here are some of the more common use cases for ToolHive:",
+    "Developers. Run MCP servers with more security and more (token) savings",
+    "Platform Engineers. Run MCP on your existing Kubernetes infrastructure",
+    "Enterprises. Self-host MCP servers and stay in control of your data",
+    "Connect Claude Code, Cursor, GitHub Copilot, or your preferred client to MCP servers with a single click or command.. ."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T20:30:19Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/stacklok/toolhive",
+  "repoUrl": "https://github.com/stacklok/toolhive",
+  "license": "Apache-2.0",
+  "stars": 1791,
+  "lastUpdated": "2026-05-12T20:30:19Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-14",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

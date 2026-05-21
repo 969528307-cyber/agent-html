@@ -1,0 +1,76 @@
+{
+  "id": "phantom",
+  "name": "Phantom",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "An AI co-worker with its own computer. Self-evolving, persistent memory, MCP server, secure credential collection, email identity. Built on the Claude Agent SDK.",
+  "description": "An AI co-worker with its own computer. Self-evolving, persistent memory, MCP server, secure credential collection, email identity. Built on the Claude Agent SDK.",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ghostwright/phantom",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ghostwright/phantom",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ghostwright/phantom#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ghostwright/phantom#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ghostwright/phantom/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AI agents today are disposable.",
+    "The agent's workspace is its own.",
+    "It is a co-worker that runs on Slack, has a web chat interface at /chat, has its own email address, creates its own tools, and builds infrastructure without asking for permission.",
+    "Then it registered that API as an MCP tool so it could use it in future sessions and other agents could query it too.",
+    "The agent was honest about what it could not do, then built the capability on the spot.",
+    "The agent is watching its own infrastructure.",
+    "Anthropic (default) - Claude Opus, Sonnet, Haiku",
+    "Roughly 15x cheaper than Claude Opus for comparable coding quality."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-02T04:37:07Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ghostwright/phantom",
+  "repoUrl": "https://github.com/ghostwright/phantom",
+  "license": "Apache-2.0",
+  "stars": 1417,
+  "lastUpdated": "2026-05-02T04:37:07Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

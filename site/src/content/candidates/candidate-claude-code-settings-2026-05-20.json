@@ -1,0 +1,185 @@
+{
+  "id": "candidate-claude-code-settings-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Code Settings",
+  "sourceUrl": "https://github.com/feiskyer/claude-code-settings",
+  "sourceName": "GitHub",
+  "author": "feiskyer",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Claude Code settings, commands and agents for vibe coding",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "feiskyer",
+    "repo": "claude-code-settings",
+    "fullName": "feiskyer/claude-code-settings",
+    "stars": 1515,
+    "license": "MIT",
+    "topics": [
+      "agentic-ai",
+      "agents",
+      "ai",
+      "claude-code",
+      "claude-skills",
+      "codex",
+      "copilot",
+      "kiro",
+      "litellm",
+      "spec-driven-development",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-25T11:09:24Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "plugins/autonomous-skill/skills/autonomous-skill/SKILL.md",
+    "plugins/codex-skill/skills/codex-skill/SKILL.md",
+    "plugins/kiro-skill/skills/kiro-skill/SKILL.md",
+    "plugins/nanobanana-skill/skills/nanobanana-skill/SKILL.md",
+    "plugins/spec-kit-skill/skills/spec-kit-skill/SKILL.md",
+    "plugins/youtube-transcribe-skill/skills/youtube-transcribe-skill/SKILL.md",
+    "skills/autonomous-skill/SKILL.md",
+    "skills/codex-skill/SKILL.md",
+    "skills/command-creator/SKILL.md",
+    "skills/deep-research/SKILL.md",
+    "skills/eureka/SKILL.md",
+    "skills/github-fix-issue/SKILL.md",
+    "skills/github-review-pr/SKILL.md",
+    "skills/gpt-image-skill/SKILL.md",
+    "skills/kiro-skill/SKILL.md",
+    "skills/nanobanana-skill/SKILL.md",
+    "skills/reflection/SKILL.md",
+    "skills/skill-creator/SKILL.md",
+    "skills/spec-kit-skill/SKILL.md",
+    "skills/translate/SKILL.md",
+    "skills/youtube-transcribe-skill/SKILL.md"
+  ],
+  "readmeExtract": "Claude Code Settings/Skills for Vibe Coding A curated collection of Claude Code settings, skills and sub agents designed for enhanced development workflows. This setup includes specialized skills and subagents for feature development (spec driven workflow), code analysis, GitHub integration, and knowledge management. For OpenAI Codex settings, configurations and custom prompts, please refer [feiskyer/codex settings](",
+  "skillExtracts": [
+    {
+      "path": "plugins/autonomous-skill/skills/autonomous-skill/SKILL.md",
+      "extract": "name: autonomous skill description: Execute long running, multi session tasks autonomously using Claude Code headless mode or in session hook based loops. Supports structured task decomposition (for complex projects) and lightweight Ralph style iteration (for TDD, bug fixing, refactoring). Use this skill whenever the user says \"autonomous\", \"long running task\", \"multi session\", \"run this in the background\", \"keep wor"
+    },
+    {
+      "path": "plugins/codex-skill/skills/codex-skill/SKILL.md",
+      "extract": "name: codex skill description: 'Leverage OpenAI Codex/GPT models for autonomous code implementation. Triggers: \"codex\", \"use gpt\", \"gpt 5\", \"let openai\", \"full auto\", \"用codex\", \"让gpt实现\". Use this skill whenever the user wants to delegate coding tasks to OpenAI models, run code reviews via codex, or execute tasks in a sandboxed environment.' allowed tools: Read, Write, Glob, Grep, Task, Bash(cat: ), Bash(ls: ), Bash(t"
+    },
+    {
+      "path": "plugins/kiro-skill/skills/kiro-skill/SKILL.md",
+      "extract": "name: kiro skill description: 'Interactive feature development workflow from idea to implementation. Creates requirements (EARS format), design documents, and task lists. Triggers: \"kiro\", \".kiro/specs/\", \"feature spec\", \"需求文档\", \"设计文档\", \"实现计划\".' allowed tools: Read, Write, Edit, Glob, Grep, Bash(ls: ), Bash(cat: ), Bash(mkdir: ), Bash(touch: ), Task, WebSearch, WebFetch Kiro: Spec Driven Development Workflow An inter"
+    },
+    {
+      "path": "plugins/nanobanana-skill/skills/nanobanana-skill/SKILL.md",
+      "extract": "name: nanobanana skill description: 'Generate or edit images using Google Gemini API via nanobanana. Triggers: \"nanobanana\", \"generate image\", \"create image\", \"edit image\", \"AI drawing\", \"图片生成\", \"AI绘图\", \"图片编辑\", \"生成图片\".' allowed tools: Read, Write, Glob, Grep, Task, Bash(cat: ), Bash(ls: ), Bash(tree: ), Bash(python3: ) Nanobanana Image Generation Skill Generate or edit images using Google Gemini API through the nanob"
+    },
+    {
+      "path": "plugins/spec-kit-skill/skills/spec-kit-skill/SKILL.md",
+      "extract": "name: spec kit skill description: 'GitHub Spec Kit integration for constitution based spec driven development. 7 phase workflow. Triggers: \"spec kit\", \"speckit\", \"constitution\", \"specify\", \".specify/\", \"规格驱动开发\", \"需求规格\".' allowed tools: Read, Write, Edit, Glob, Grep, Bash(specify: ), Bash(ls: ), Bash(cat: ), Bash(grep: ), Bash(mkdir: ), Bash(git: ) Spec Kit: Constitution Based Spec Driven Development Official GitHub S"
+    },
+    {
+      "path": "plugins/youtube-transcribe-skill/skills/youtube-transcribe-skill/SKILL.md",
+      "extract": "name: youtube transcribe skill description: 'Extract subtitles/transcripts from YouTube videos. Triggers: \"youtube transcript\", \"extract subtitles\", \"video captions\", \"视频字幕\", \"字幕提取\", \"YouTube转文字\", \"提取字幕\".' YouTube Transcript Extraction Extract subtitles/transcripts from a YouTube video URL and save them as a local file. Input YouTube URL: $ARGUMENTS Step 1: Verify URL Confirm the input is a valid YouTube URL (support"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Claude Code Settings/Skills for Vibe Coding",
+    "A curated collection of Claude Code settings, skills and sub-agents designed for enhanced development workflows.",
+    "For OpenAI Codex settings, configurations and custom prompts, please refer feiskyer/codex-settings.",
+    "~/.claude/settings.json is not configured via Claude Code Plugin, you'd need to configure it manually.",
+    "ANTHROPICDEFAULTSONNETMODEL: claude-sonnet-4.6",
+    "ANTHROPICDEFAULTOPUSMODEL: claude-opus-4.6",
+    "Skills are reusable capabilities that teach Claude how to complete specific tasks.",
+    "They can be invoked via /skill-name [arguments] or triggered automatically based on context."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Claude Code settings, commands and agents for vibe coding",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Code Settings is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "Claude Code Settings/Skills for Vibe Coding",
+      "A curated collection of Claude Code settings, skills and sub-agents designed for enhanced development workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-code-settings",
+  "publishedAt": "2026-05-20"
+}

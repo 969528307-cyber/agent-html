@@ -1,0 +1,205 @@
+{
+  "id": "candidate-openmetadata-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "OpenMetadata",
+  "sourceUrl": "https://github.com/open-metadata/OpenMetadata",
+  "sourceName": "GitHub",
+  "author": "open-metadata",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team collaboration.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "open-metadata",
+    "repo": "OpenMetadata",
+    "fullName": "open-metadata/OpenMetadata",
+    "stars": 13958,
+    "license": "Apache-2.0",
+    "topics": [
+      "context",
+      "context-layer",
+      "data-catalog",
+      "data-collaboration",
+      "data-contracts",
+      "data-discovery",
+      "data-governance",
+      "data-lineage",
+      "data-observability",
+      "data-profiling",
+      "data-quality",
+      "data-quality-checks",
+      "datadiscovery",
+      "dataengineering",
+      "dataquality",
+      "mcp",
+      "mcp-server",
+      "metadata",
+      "metadata-management",
+      "semantics"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:33:05Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/auto-classification/add-support-for-another-entity.md",
+    "docs/csv-relation-types-plan.md",
+    "docs/impersonation-design.md",
+    "docs/plans/2026-01-27-search-indexing-stats-redesign.md",
+    "docs/streamable-logs.md",
+    "package.json",
+    ".agents/skills/java-checkstyle/SKILL.md",
+    ".agents/skills/ui-checkstyle/SKILL.md",
+    ".claude/skills/java-checkstyle/SKILL.md",
+    ".claude/skills/playwright-validation/SKILL.md",
+    ".claude/skills/playwright/SKILL.md",
+    ".claude/skills/ui-checkstyle/SKILL.md",
+    ".claude/skills/writing-playwright-tests/SKILL.md",
+    "skills/code-review/SKILL.md",
+    "skills/connector-audit/SKILL.md",
+    "skills/connector-building/SKILL.md",
+    "skills/connector-review/SKILL.md",
+    "skills/connector-standards/SKILL.md",
+    "skills/openmetadata-workflow/SKILL.md",
+    "skills/planning/SKILL.md",
+    "skills/pr-checklist/SKILL.md",
+    "skills/systematic-debugging/SKILL.md",
+    "skills/tdd/SKILL.md",
+    "skills/test-enforcement/SKILL.md",
+    "skills/test-locally/SKILL.md",
+    "skills/verification/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "openmetadata-ui-core-components/CLAUDE.md"
+  ],
+  "readmeExtract": "<br / <br / <p align=\"center\" <a href=\"https://open metadata.org\" <img alt=\"Logo\" src=\"https://github.com/open metadata/OpenMetadata/assets/40225091/e794ced8 7220 4393 8efc 3faf93bfb503\" width=\"49%\" </a </p <p align=\"center\" <b Empower your Data Journey with OpenMetadata</b </p <div align=\"center\" ![Commit Activity](https://img.shields.io/github/commit activity/m/open metadata/OpenMetadata?style=for the badge) [![Rel",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/java-checkstyle/SKILL.md",
+      "extract": "name: java checkstyle description: Run mvn spotless:apply to fix Java checkstyle / formatting failures and verify the result. Run after authoring or modifying any .java files, or when CI reports a \"Java checkstyle failed\" / \"Fix Java checkstyle\" issue on a PR. Java Checkstyle / Spotless (Codex agent) OpenMetadata enforces Java formatting via the Spotless Maven plugin. Every CI build runs mvn spotless:check and fails "
+    },
+    {
+      "path": ".agents/skills/ui-checkstyle/SKILL.md",
+      "extract": "name: ui checkstyle description: Run the ESLint + Prettier + organize imports sequence that CI's UI Checkstyle jobs ( lint src , lint playwright , lint core components ) run — on just the files the PR changed — and fail if any file ends up with a diff. Run after authoring or modifying any .ts / .tsx / .js / .jsx / .json under openmetadata ui/src/main/resources/ui/src/ , .../playwright/ , or openmetadata ui core compo"
+    },
+    {
+      "path": ".claude/skills/java-checkstyle/SKILL.md",
+      "extract": "name: java checkstyle description: Run mvn spotless:apply to fix Java checkstyle / formatting failures and verify the result. Invoke after authoring or modifying any .java files, or when CI reports a \"Java checkstyle failed\" or \"Fix Java checkstyle\" issue on a PR. user invocable: true argument hint: \"[ pl <module ] [ check]\" allowed tools: Bash Read Grep Glob Java Checkstyle / Spotless OpenMetadata enforces Java form"
+    },
+    {
+      "path": ".claude/skills/playwright-validation/SKILL.md",
+      "extract": "name: playwright validation description: Use when validating UI changes in a branch require Playwright E2E testing. Reviews branch changes, validates UI with Playwright MCP, and adds missing test cases. Playwright Validation Skill This skill guides you through validating UI changes and ensuring comprehensive Playwright E2E test coverage. When to Use After completing UI feature development Before creating a PR for UI "
+    },
+    {
+      "path": ".claude/skills/playwright/SKILL.md",
+      "extract": "name: playwright test description: Generate robust, zero flakiness Playwright E2E tests following OpenMetadata patterns. Creates comprehensive test files with proper waits, API validation, multi role permissions, and complete entity lifecycle management. user invocable: true Playwright Test Generator OpenMetadata Generate production ready, zero flakiness Playwright tests following OpenMetadata conventions. Usage Quic"
+    },
+    {
+      "path": ".claude/skills/ui-checkstyle/SKILL.md",
+      "extract": "name: ui checkstyle description: Run the exact ESLint + Prettier + organize imports sequence that CI's UI Checkstyle jobs ( lint src , lint playwright , lint core components ) run — on just the files the PR changed — and fail the task if any file ends up with a diff. Invoke after authoring or modifying any .ts , .tsx , .js , .jsx , or .json file under openmetadata ui/src/main/resources/ui/src/ , .../playwright/ , or "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "OpenMetadata is the open platform for building trusted data context and business semantics for humans, AI assistants, and agents.",
+    "With 120+ connectors, open metadata standards, semantic search, APIs, SDKs, and an MCP server, OpenMetadata gives every user and AI system the governed context it needs to discover, understand, trust, and use data.",
+    "AI does not need another raw database connector.",
+    "Automation: Activate Context and Semantics with AI",
+    "MCP: Connect AI Assistants and Agents",
+    "Connecting an AI assistant directly to a database, warehouse, dashboard, or pipeline only gives it raw access to data structures.",
+    "Knowledge Graph — relationships connecting assets, columns, people, teams, policies, lineage, quality, and business concepts.",
+    "Automation — MCP, Semantic Search, APIs, SDKs, events, and workflows that let AI assistants and agents act on governed metadata."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team collaboration.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "coding",
+      "monitoring"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "coding",
+    "monitoring"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "OpenMetadata is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with coding workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to mcp.",
+      "OpenMetadata is the open platform for building trusted data context and business semantics for humans, AI assistants, and agents."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openmetadata",
+  "publishedAt": "2026-05-20"
+}

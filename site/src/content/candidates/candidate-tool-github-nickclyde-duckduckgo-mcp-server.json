@@ -1,0 +1,159 @@
+{
+  "id": "candidate-tool-github-nickclyde-duckduckgo-mcp-server",
+  "type": "tool",
+  "status": "published",
+  "title": "Duckduckgo Mcp Server",
+  "sourceUrl": "https://github.com/nickclyde/duckduckgo-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "nickclyde",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A Model Context Protocol (MCP) server that provides web search capabilities through DuckDuckGo, with additional features for content fetching and parsing.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "nickclyde",
+    "repo": "duckduckgo-mcp-server",
+    "fullName": "nickclyde/duckduckgo-mcp-server",
+    "stars": 1125,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-08T19:22:05Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "DuckDuckGo Search MCP Server [![PyPI version](https://img.shields.io/pypi/v/duckduckgo mcp server)](https://pypi.org/project/duckduckgo mcp server/) [![PyPI downloads](https://img.shields.io/pypi/dm/duckduckgo mcp server)](https://pypi.org/project/duckduckgo mcp server/) [![Python versions](https://img.shields.io/pypi/pyversions/duckduckgo mcp server)](https://pypi.org/project/duckduckgo mcp server/) A Model Context ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "DuckDuckGo Search MCP Server",
+    "A Model Context Protocol (MCP) server that provides web search capabilities through DuckDuckGo, with additional features for content fetching and parsing.",
+    "Web Search: Search DuckDuckGo with advanced rate limiting and result formatting",
+    "Rate Limiting: Built-in protection against rate limits for both search and content fetching",
+    "On macOS: ~/Library/Application Support/Claude/claudedesktopconfig.json",
+    "On Windows: %APPDATA%\\Claude\\claudedesktopconfig.json",
+    "DDGSAFESEARCH: SafeSearch filtering level (optional)",
+    "Add the MCP server: claude mcp add ddg-search uvx duckduckgo-mcp-server"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A Model Context Protocol (MCP) server that provides web search capabilities through DuckDuckGo, with additional features for content fetching and parsing.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Package metadata detected; may expose executable commands.",
+    "SDK or library language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: sdk, cli.",
+    "LLM: mcp + [mcp] — This project is explicitly an MCP server that exposes DuckDuckGo search capabilities via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "sdk",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Duckduckgo Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Relevant to search.",
+      "DuckDuckGo Search MCP Server",
+      "A Model Context Protocol (MCP) server that provides web search capabilities through DuckDuckGo, with additional features for content fetching and parsing.",
+      "Web Search: Search DuckDuckGo with advanced rate limiting and result formatting"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:nickclyde/duckduckgo-mcp-server",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "local-review",
+  "publishedAs": "duckduckgo-mcp-server",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

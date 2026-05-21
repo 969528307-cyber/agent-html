@@ -1,0 +1,77 @@
+{
+  "id": "refact",
+  "name": "Refact",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "AI Agent that handles engineering tasks end-to-end: integrates with developers’ tools, plans, executes, and iterates until it achieves a successful result.",
+  "description": "AI Agent that handles engineering tasks end-to-end: integrates with developers’ tools, plans, executes, and iterates until it achieves a successful result.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/smallcloudai/refact",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/smallcloudai/refact",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/smallcloudai/refact#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/smallcloudai/refact#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/smallcloudai/refact/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Open-source, local-first AI coding assistant for IDE chat, autonomous agent workflows, and tool-powered development.",
+    "Refact runs a local Rust engine (refact-lsp) from your IDE and connects only to the model providers, local runtimes, and integrations you configure.",
+    "It brings together chat, codebase search, autonomous agents, browser automation, and tool integrations while keeping project state, indexes, trajectories, and task data on your machine.",
+    "Bring your own models: connect hosted providers, OpenAI-compatible endpoints, or local runtimes instead of relying on a bundled model service.",
+    "Deep codebase awareness: combine open files, selections, project tree, AST symbols, semantic search, git state, and previous work into useful model context.",
+    "Agent workflows inside the IDE: let the agent inspect files, edit code, run checks, use integrations, and report progress without leaving VS Code or JetBrains.",
+    "Extensible tools: use built-in tools, command-line integrations, browser automation, databases, code hosting integrations, and MCP servers.",
+    "It serves the chat UI, tracks open workspaces, exposes model capability and tool APIs, manages shutdown and background tasks, and keeps project state in local Refact directories."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T14:41:32Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/smallcloudai/refact",
+  "repoUrl": "https://github.com/smallcloudai/refact",
+  "license": "BSD-3-Clause",
+  "stars": 3546,
+  "lastUpdated": "2026-05-15T14:41:32Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

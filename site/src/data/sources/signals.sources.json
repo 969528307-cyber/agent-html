@@ -1,0 +1,60 @@
+[
+  {
+    "id": "local-signals-library",
+    "module": "signals",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "url": "src/content/signals",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "enabled": true,
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  {
+    "id": "signals-official-release-feeds",
+    "module": "signals",
+    "name": "Official Blog and Release Feeds",
+    "type": "rss_or_release",
+    "url": "source-allowlist:signals-official-feeds",
+    "trustLevel": "official",
+    "refreshInterval": "weekly",
+    "enabled": false,
+    "acceptRules": [
+      "must_describe_capability_change",
+      "must_affect_tools_agents_or_workflows"
+    ],
+    "rejectRules": [
+      "marketing_only",
+      "minor_patch_without_ecosystem_signal"
+    ]
+  },
+  {
+    "id": "signals-cn-author-allowlist",
+    "module": "signals",
+    "name": "Chinese High Quality Author Allowlist",
+    "type": "cn_author_allowlist",
+    "url": "source-allowlist:signals-cn-authors",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "enabled": false,
+    "acceptRules": [
+      "must_have_original_chinese_content",
+      "must_have_clear_agent_tool_or_mcp_relevance",
+      "must_be_worth_full_english_translation"
+    ],
+    "rejectRules": [
+      "copied_content",
+      "low_signal_news",
+      "pure_marketing"
+    ]
+  }
+]

@@ -1,0 +1,170 @@
+{
+  "id": "candidate-tool-github-designcomputer-mysql-mcp-server",
+  "type": "tool",
+  "status": "published",
+  "title": "Mysql Mcp Server",
+  "sourceUrl": "https://github.com/designcomputer/mysql_mcp_server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "designcomputer",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A Model Context Protocol (MCP) server that enables secure interaction with MySQL databases",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "designcomputer",
+    "repo": "mysql_mcp_server",
+    "fullName": "designcomputer/mysql_mcp_server",
+    "stars": 1250,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "mcp",
+      "model-context-protocol",
+      "mysql"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-06-05T11:05:28Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "![Tests](https://github.com/designcomputer/mysql mcp server/actions/workflows/test.yml/badge.svg) ![PyPI Downloads](https://img.shields.io/pypi/dm/mysql mcp server) [![smithery badge](https://smithery.ai/badge/mysql mcp server)](https://smithery.ai/server/mysql mcp server) [![MseeP.ai Security Assessment Badge](https://mseep.net/mseep audited.png)](https://mseep.ai/app/designcomputer mysql mcp server) MySQL MCP Serve",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A Model Context Protocol (MCP) implementation that enables secure interaction with MySQL databases.",
+    "Note: MySQL MCP Server is not designed to be used as a standalone server, but rather as a communication protocol implementation between AI applications and MySQL databases.",
+    "Add this to your claudedesktopconfig.json:",
+    "Debugging with MCP Inspector",
+    "While MySQL MCP Server isn't intended to be run standalone or directly from the command line with Python, you can use the MCP Inspector to debug it.",
+    "The MCP Inspector provides a convenient way to test and debug your MCP implementation:",
+    "The MySQL MCP Server is designed to be integrated with AI applications like Claude Desktop and should not be run directly as a standalone Python program.",
+    "This MCP implementation requires database access to function."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A Model Context Protocol (MCP) server that enables secure interaction with MySQL databases",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "database",
+      "security",
+      "testing"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "database",
+    "security",
+    "testing"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 5,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: workflow, cli.",
+    "LLM: mcp + [mcp] — A Model Context Protocol server for MySQL database interaction."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mysql Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with database workflows.",
+      "Helps with security workflows.",
+      "Helps with testing workflows.",
+      "Relevant to data."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:designcomputer/mysql_mcp_server",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mysql-mcp-server",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

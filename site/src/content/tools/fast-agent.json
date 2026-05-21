@@ -1,0 +1,77 @@
+{
+  "id": "fast-agent",
+  "name": "Fast Agent",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Code, Build and Evaluate agents - excellent Model and Skills/MCP/ACP Support",
+  "description": "Code, Build and Evaluate agents - excellent Model and Skills/MCP/ACP Support",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/evalstate/fast-agent",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/evalstate/fast-agent",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/evalstate/fast-agent#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/evalstate/fast-agent#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/evalstate/fast-agent/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Please see for latest documentation.",
+    "fast-agent is a flexible way to interact with LLMs, excellent for use as a Coding Agent, Development Toolkit, Evaluation or Workflow platform.",
+    "To start coding with Hugging Face inference providers or use your OpenAI Codex plan:",
+    "Manage skills with the /skills command, and connect to MCP Servers with /connect.",
+    "The default fast-agent registry contains skills to let you set up LSP, Agent and Tool Hooks, Compaction strategies, Automation and more.",
+    "fast-agent enables you to create and interact with sophisticated multimodal Agents and Workflows in minutes.",
+    "It is the first framework with complete, end-to-end tested MCP Feature support including Sampling and Elicitations.",
+    "The simple declarative syntax lets you concentrate on composing your Prompts and MCP Servers to build effective agents."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T23:53:04Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/evalstate/fast-agent",
+  "repoUrl": "https://github.com/evalstate/fast-agent",
+  "license": "Apache-2.0",
+  "stars": 3783,
+  "lastUpdated": "2026-05-19T23:53:04Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

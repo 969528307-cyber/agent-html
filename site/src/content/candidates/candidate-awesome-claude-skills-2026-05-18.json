@@ -1,0 +1,135 @@
+{
+  "id": "candidate-awesome-claude-skills-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Awesome Claude Skills",
+  "sourceUrl": "https://github.com/travisvn/awesome-claude-skills",
+  "sourceName": "GitHub",
+  "author": "travisvn",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "travisvn",
+    "repo": "awesome-claude-skills",
+    "fullName": "travisvn/awesome-claude-skills",
+    "stars": 12656,
+    "topics": [
+      "agentic-coding",
+      "anthropic",
+      "awesome",
+      "awesome-list",
+      "awesome-lists",
+      "claude",
+      "claude-ai",
+      "claude-code",
+      "claude-desktop",
+      "claude-skills",
+      "claudeskills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-28T19:30:24Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://github.com/travisvn/awesome claude skills\" <img alt=\"Awesome Claude Skills\" src=\"https://pc0o4oduww.ufs.sh/f/crfz5GypRfo0lI4924gMSJKLY6297aVP0zZpilXBvqTbDyrs\"/ </a </p Awesome Claude Skills [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Last Updated](https://img.shields.io/badge/updated Feb%202026 green.svg)]() [![PRs Welcome](https://img.shields.io/badge/PRs welc",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+    "Claude Skills teach Claude how to perform tasks in a repeatable way",
+    "They are specialized folders containing instructions, scripts, and resources that Claude dynamically discovers and loads when relevant to tasks.",
+    "Skills employ a progressive disclosure architecture for efficiency:",
+    "Metadata loading (~100 tokens): Claude scans available Skills to identify relevant matches",
+    "Full instructions (<5k tokens): Load when Claude determines the Skill applies",
+    "This design allows multiple Skills to remain available without overwhelming Claude's context window.",
+    "Browse available skills or upload custom skills"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome Claude Skills is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "Claude Skills teach Claude how to perform tasks in a repeatable way",
+      "They are specialized folders containing instructions, scripts, and resources that Claude dynamically discovers and loads when relevant to tasks."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "awesome-claude-skills",
+  "publishedAt": "2026-05-18"
+}

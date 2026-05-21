@@ -1,0 +1,196 @@
+{
+  "id": "candidate-claude-skills-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Skills",
+  "sourceUrl": "https://github.com/Jeffallan/claude-skills",
+  "sourceName": "GitHub",
+  "author": "Jeffallan",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "66 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "Jeffallan",
+    "repo": "claude-skills",
+    "fullName": "Jeffallan/claude-skills",
+    "stars": 9162,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "claude",
+      "claude-code",
+      "claude-marketplace",
+      "claude-skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-01T15:44:15Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/COMMON_GROUND.md",
+    "docs/ideas/audit-primary-docs.md",
+    "docs/ideas/audit-skill-consistency.md",
+    "docs/ideas/audit-workflow-docs.md",
+    "docs/ideas/documentation-site.md",
+    "docs/prompts/discovery-for-feature-forge.md",
+    "docs/skill-ideas/tarot.md",
+    "docs/skill-ideas/the-fool.md",
+    "docs/SUPPORTED_AGENTS.md",
+    "docs/v0.5.0-narrative.md",
+    "docs/v0.5.0-plan.md",
+    "docs/WORKFLOW_COMMANDS.md",
+    "docs/workflow/common-ground.md",
+    "docs/workflow/discovery-approve.md",
+    "docs/workflow/discovery-create.md",
+    "docs/workflow/discovery-phase.md",
+    "docs/workflow/discovery-synthesize.md",
+    "docs/workflow/execution-complete-ticket.md",
+    "docs/workflow/execution-execute-ticket.md",
+    "docs/workflow/execution-phase.md",
+    "docs/workflow/intake-capture-behavior.md",
+    "docs/workflow/intake-create-system-description.md",
+    "docs/workflow/intake-document-codebase.md",
+    "docs/workflow/intake-phase.md",
+    "docs/workflow/planning-epic-plan.md",
+    "docs/workflow/planning-impl-plan.md",
+    "docs/workflow/planning-phase.md",
+    "docs/workflow/retrospective-complete-epic.md",
+    "docs/workflow/retrospective-phase.md",
+    "docs/workflow/workflow-definition-schema.md",
+    "skills/angular-architect/SKILL.md",
+    "skills/api-designer/SKILL.md",
+    "skills/architecture-designer/SKILL.md",
+    "skills/atlassian-mcp/SKILL.md",
+    "skills/chaos-engineer/SKILL.md",
+    "skills/cli-developer/SKILL.md",
+    "skills/cloud-architect/SKILL.md",
+    "skills/code-documenter/SKILL.md",
+    "skills/code-reviewer/SKILL.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"https://capsule render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,25,27&height=200&section=header&text=Claude%20Skills&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=66%20Skills%20%E2%80%A2%209%20Workflows%20%E2%80%A2%20Built%20for%20Full Stack%20Devs&descSize=20&descAlignY=55\" width=\"100%\"/ </p <p align=\"center\" <a href=\"https://trendshift.io/reposit",
+  "skillExtracts": [
+    {
+      "path": "skills/angular-architect/SKILL.md",
+      "extract": "name: angular architect description: Generates Angular 17+ standalone components, configures advanced routing with lazy loading and guards, implements NgRx state management, applies RxJS patterns, and optimizes bundle performance. Use when building Angular 17+ applications with standalone components or signals, setting up NgRx stores, establishing RxJS reactive patterns, performance tuning, or writing Angular tests f"
+    },
+    {
+      "path": "skills/api-designer/SKILL.md",
+      "extract": "name: api designer description: Use when designing REST or GraphQL APIs, creating OpenAPI specifications, or planning API architecture. Invoke for resource modeling, versioning strategies, pagination patterns, error handling standards. license: MIT metadata: author: https://github.com/Jeffallan version: \"1.1.0\" domain: api architecture triggers: API design, REST API, OpenAPI, API specification, API architecture, reso"
+    },
+    {
+      "path": "skills/architecture-designer/SKILL.md",
+      "extract": "name: architecture designer description: Use when designing new high level system architecture, reviewing existing designs, or making architectural decisions. Invoke to create architecture diagrams, write Architecture Decision Records (ADRs), evaluate technology trade offs, design component interactions, and plan for scalability. Use for system design, architecture review, microservices structuring, ADR authoring, sc"
+    },
+    {
+      "path": "skills/atlassian-mcp/SKILL.md",
+      "extract": "name: atlassian mcp description: Integrates with Atlassian products to manage project tracking and documentation via MCP protocol. Use when querying Jira issues with JQL filters, creating and updating tickets with custom fields, searching or editing Confluence pages with CQL, managing sprints and backlogs, setting up MCP server authentication, syncing documentation, or debugging Atlassian API integrations. license: M"
+    },
+    {
+      "path": "skills/chaos-engineer/SKILL.md",
+      "extract": "name: chaos engineer description: Designs chaos experiments, creates failure injection frameworks, and facilitates game day exercises for distributed systems — producing runbooks, experiment manifests, rollback procedures, and post mortem templates. Use when designing chaos experiments, implementing failure injection frameworks, or conducting game day exercises. Invoke for chaos experiments, resilience testing, blast"
+    },
+    {
+      "path": "skills/cli-developer/SKILL.md",
+      "extract": "name: cli developer description: Use when building CLI tools, implementing argument parsing, or adding interactive prompts. Invoke for parsing flags and subcommands, displaying progress bars and spinners, generating bash/zsh/fish completion scripts, CLI design, shell completions, and cross platform terminal applications using commander, click, typer, or cobra. license: MIT metadata: author: https://github.com/Jeffall"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Full documentation: jeffallan.github.io/claude-skills",
+    "66 specialized skills across 12 categories covering languages, backend/frontend frameworks, infrastructure, APIs, testing, DevOps, security, data/ML, and platform specialists.",
+    "See Skills Guide for the full list, decision trees, and workflow combinations.",
+    "Skills activate automatically based on your request:",
+    "Complex tasks combine multiple skills:",
+    "Surface and validate Claude's hidden assumptions about your project with /common-ground.",
+    "See the Common Ground Guide for full documentation.",
+    "The 9 workflow commands manage epics from discovery through retrospectives, integrating with Jira and Confluence."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "66 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Full documentation: jeffallan.github.io/claude-skills",
+      "66 specialized skills across 12 categories covering languages, backend/frontend frameworks, infrastructure, APIs, testing, DevOps, security, data/ML, and platform specialists.",
+      "See Skills Guide for the full list, decision trees, and workflow combinations."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "claude-skills",
+  "publishedAt": "2026-05-18",
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "local-review"
+}

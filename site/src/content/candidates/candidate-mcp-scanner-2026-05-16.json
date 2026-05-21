@@ -1,0 +1,186 @@
+{
+  "id": "candidate-mcp-scanner-2026-05-16",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp Scanner",
+  "sourceUrl": "https://github.com/cisco-ai-defense/mcp-scanner",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "cisco-ai-defense",
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Scan MCP servers for potential threats & security findings.",
+  "proposedCategory": [
+    "security"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "cisco-ai-defense",
+    "repo": "mcp-scanner",
+    "fullName": "cisco-ai-defense/mcp-scanner",
+    "stars": 924,
+    "license": "Apache-2.0",
+    "topics": [
+      "agents",
+      "ai",
+      "mcp",
+      "security"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T21:02:43Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/api-reference.md",
+    "docs/architecture.md",
+    "docs/authentication.md",
+    "docs/behavioral-scanning.md",
+    "docs/llm-providers.md",
+    "docs/mcp-threats-taxonomy.md",
+    "docs/output-formats.md",
+    "docs/programmatic_exception_handling.md",
+    "docs/programmatic-usage.md",
+    "docs/readiness-scanning.md",
+    "docs/README.md",
+    "docs/static-scanning.md",
+    "docs/virustotal-scanning.md",
+    "docs/vulnerable-package-scanning.md",
+    "pyproject.toml",
+    "claude-code-plugin/skills/security-scan/SKILL.md"
+  ],
+  "readmeExtract": "MCP Scanner [![License](https://img.shields.io/badge/License Apache%202.0 blue.svg)](https://opensource.org/licenses/Apache 2.0) [![Python](https://img.shields.io/badge/python 3.11%2B blue.svg)](https://www.python.org/downloads/) [![PyPI](https://img.shields.io/pypi/v/cisco ai mcp scanner.svg)](https://pypi.org/project/cisco ai mcp scanner/) [![Discord](https://img.shields.io/badge/Discord Join%20Us 7289DA?logo=disco",
+  "skillExtracts": [
+    {
+      "path": "claude-code-plugin/skills/security-scan/SKILL.md",
+      "extract": "name: mcp security scan description: Scans MCP servers, tools, prompts, and resources for security vulnerabilities using YARA rules, LLM analysis, and Cisco AI Defense API. Use this skill when the user wants to check MCP servers for security issues, detect prompt injection, tool poisoning, or analyze MCP configurations for threats. MCP Security Scanning When the user asks to scan MCP servers or check for security iss"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A Python tool for scanning MCP (Model Context Protocol) servers and tools for potential security findings.",
+    "The MCP Scanner combines Cisco AI Defense inspect API, YARA rules and LLM-as-a-judge to detect malicious MCP tools.",
+    "The MCP Scanner provides a comprehensive solution for scanning MCP servers and tools for security findings.",
+    "Multiple Modes: Run scanner as a stand-alone CLI tool or REST API server",
+    "Comprehensive Scanning: Scan MCP tools, prompts, resources, and server instructions for security findings",
+    "Behavioural Code Scanning: Scan Source code of MCP servers for finding threats.",
+    "VirusTotal Binary Scanning: Automatically detect malware in binary files (images, PDFs, executables, archives) bundled with MCP servers using VirusTotal hash lookups.",
+    "Behavioural Code Scanning: Scan Source code of MCP servers for detecting threats."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"security\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Scan MCP servers for potential threats & security findings.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "security"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "security"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 8,
+    "skill": 7,
+    "cli": 8,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, cli.",
+    "LLM: cli + [cli] — This is a command-line tool for scanning MCP servers for security threats."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp Scanner is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Relevant to security.",
+      "A Python tool for scanning MCP (Model Context Protocol) servers and tools for potential security findings.",
+      "The MCP Scanner combines Cisco AI Defense inspect API, YARA rules and LLM-as-a-judge to detect malicious MCP tools.",
+      "The MCP Scanner provides a comprehensive solution for scanning MCP servers and tools for security findings."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:cisco-ai-defense/mcp-scanner",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-16",
+  "reviewedBy": "local-review",
+  "publishedAs": "mcp-scanner",
+  "publishedAt": "2026-05-16",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

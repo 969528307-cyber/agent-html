@@ -1,0 +1,165 @@
+{
+  "id": "candidate-ai-engineering-hub-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Ai Engineering Hub",
+  "sourceUrl": "https://github.com/patchy631/ai-engineering-hub",
+  "sourceName": "GitHub",
+  "author": "patchy631",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "patchy631",
+    "repo": "ai-engineering-hub",
+    "fullName": "patchy631/ai-engineering-hub",
+    "stars": 35131,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "ai",
+      "llms",
+      "machine-learning",
+      "mcp",
+      "rag"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-05T23:11:24Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "hugging-face-skills/skills/brightdata-web-mcp/SKILL.md",
+    "hugging-face-skills/skills/hugging-face-cli/SKILL.md",
+    "hugging-face-skills/skills/hugging-face-datasets/SKILL.md",
+    "hugging-face-skills/skills/hugging-face-evaluation/SKILL.md",
+    "hugging-face-skills/skills/hugging-face-jobs/SKILL.md",
+    "hugging-face-skills/skills/hugging-face-model-trainer/SKILL.md",
+    "hugging-face-skills/skills/hugging-face-paper-publisher/SKILL.md",
+    "hugging-face-skills/skills/hugging-face-tool-builder/SKILL.md",
+    "hugging-face-skills/skills/hugging-face-trackio/SKILL.md",
+    "hugging-face-skills/agents/AGENTS.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://trendshift.io/repositories/12800\" <img src=\"assets/TRENDING BADGE.png\" alt=\"Trending Badge\" style=\"width: 250px; height: 55px;\" width=\"250\" height=\"55\"/ </a </p <p align=\"center\" <img src=\"assets/ai eng hub.gif\" alt=\"AI Engineering Hub Banner\" </p AI Engineering Hub 🚀 Welcome to the AI Engineering Hub your comprehensive resource for learning and building with AI! 🌟 Why This Repo? ",
+  "skillExtracts": [
+    {
+      "path": "hugging-face-skills/skills/brightdata-web-mcp/SKILL.md",
+      "extract": "name: brightdata web mcp description: Search the web, scrape websites, extract structured data from URLs, and automate browsers using Bright Data's Web MCP. Use when fetching live web content, bypassing blocks/CAPTCHAs, getting product data from Amazon/eBay, social media posts, or when standard requests fail. Bright Data Web MCP Use this skill for reliable web access in MCP compatible agents. Handles anti bot measure"
+    },
+    {
+      "path": "hugging-face-skills/skills/hugging-face-cli/SKILL.md",
+      "extract": "name: hugging face cli description: Execute Hugging Face Hub operations using the hf CLI. Use when the user needs to download models/datasets/spaces, upload files to Hub repositories, create repos, manage local cache, or run compute jobs on HF infrastructure. Covers authentication, file transfers, repository creation, cache operations, and cloud compute. Hugging Face CLI The hf CLI provides direct terminal access to "
+    },
+    {
+      "path": "hugging-face-skills/skills/hugging-face-datasets/SKILL.md",
+      "extract": "name: hugging face datasets description: Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining configs/system prompts, streaming row updates, and SQL based dataset querying/transformation. Designed to work alongside HF MCP server for comprehensive dataset workflows. Overview This skill provides tools to manage datasets on the Hugging Face Hub with a focus on creation, configuration, co"
+    },
+    {
+      "path": "hugging-face-skills/skills/hugging-face-evaluation/SKILL.md",
+      "extract": "name: hugging face evaluation description: Add and manage evaluation results in Hugging Face model cards. Supports extracting eval tables from README content, importing scores from Artificial Analysis API, and running custom model evaluations with vLLM/lighteval. Works with the model index metadata format. Overview This skill provides tools to add structured evaluation results to Hugging Face model cards. It supports"
+    },
+    {
+      "path": "hugging-face-skills/skills/hugging-face-jobs/SKILL.md",
+      "extract": "name: hugging face jobs description: This skill should be used when users want to run any workload on Hugging Face Jobs infrastructure. Covers UV scripts, Docker based jobs, hardware selection, cost estimation, authentication with tokens, secrets management, timeout configuration, and result persistence. Designed for general purpose compute workloads including data processing, inference, experiments, batch jobs, and "
+    },
+    {
+      "path": "hugging-face-skills/skills/hugging-face-model-trainer/SKILL.md",
+      "extract": "name: hugging face model trainer description: This skill should be used when users want to train or fine tune language models using TRL (Transformer Reinforcement Learning) on Hugging Face Jobs infrastructure. Covers SFT, DPO, GRPO and reward modeling training methods, plus GGUF conversion for local deployment. Includes guidance on the TRL Jobs package, UV scripts with PEP 723 format, dataset preparation and validati"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "93+ Production-Ready Projects across all skill levels",
+    "In-depth tutorials on LLMs, RAG, Agents, and more",
+    "Real-world AI agent applications",
+    "Whether you're a beginner, practitioner, or researcher, this repo provides resources for all skill levels to experiment and succeed in AI engineering.",
+    "Build Your Skills: Move to Intermediate Projects with agents and complex workflows",
+    "Simple RAG Workflow - Basic RAG with LlamaIndex and Ollama",
+    "Video RAG with Gemini - Chat with videos using Gemini AI",
+    "Multi-component systems, agentic workflows, and advanced features for experienced practitioners."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "tutorial",
+    "useCategory": [
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "tutorial",
+  "useCategory": [
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "mcp",
+    "whatIsIt": "Ai Engineering Hub is an MCP-related tutorial tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with research workflows.",
+      "Relevant to mcp.",
+      "93+ Production-Ready Projects across all skill levels",
+      "In-depth tutorials on LLMs, RAG, Agents, and more",
+      "Real-world AI agent applications"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

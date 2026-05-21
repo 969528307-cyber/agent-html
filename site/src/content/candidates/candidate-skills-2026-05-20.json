@@ -1,0 +1,199 @@
+{
+  "id": "candidate-skills-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Skills",
+  "sourceUrl": "https://github.com/wondelai/skills",
+  "sourceName": "GitHub",
+  "author": "wondelai",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Agent skills for Claude Code and other agentskills.io-compatible agents. See https://developertoolkit.ai for more information about skills in general.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "wondelai",
+    "repo": "skills",
+    "fullName": "wondelai/skills",
+    "stars": 1017,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-skills",
+      "claude-code",
+      "claude-code-marketplace",
+      "claude-code-plugin",
+      "claude-code-skills",
+      "claude-plugins",
+      "claude-skills",
+      "skill-md",
+      "skillsmp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T11:40:40Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "37signals-way/SKILL.md",
+    "blue-ocean-strategy/SKILL.md",
+    "clean-architecture/SKILL.md",
+    "clean-code/SKILL.md",
+    "contagious/SKILL.md",
+    "continuous-discovery/SKILL.md",
+    "cro-methodology/SKILL.md",
+    "crossing-the-chasm/SKILL.md",
+    "ddia-systems/SKILL.md",
+    "design-everyday-things/SKILL.md",
+    "design-sprint/SKILL.md",
+    "domain-driven-design/SKILL.md",
+    "drive-motivation/SKILL.md",
+    "high-perf-browser/SKILL.md",
+    "hooked-ux/SKILL.md",
+    "hundred-million-offers/SKILL.md",
+    "improve-retention/SKILL.md",
+    "influence-psychology/SKILL.md",
+    "inspired-product/SKILL.md",
+    "ios-hig-design/SKILL.md",
+    "jobs-to-be-done/SKILL.md",
+    "lean-startup/SKILL.md",
+    "lean-ux/SKILL.md",
+    "made-to-stick/SKILL.md",
+    "microinteractions/SKILL.md",
+    "mom-test/SKILL.md",
+    "negotiation/SKILL.md",
+    "obviously-awesome/SKILL.md",
+    "one-page-marketing/SKILL.md",
+    "pragmatic-programmer/SKILL.md",
+    "predictable-revenue/SKILL.md",
+    "refactoring-patterns/SKILL.md",
+    "refactoring-ui/SKILL.md",
+    "release-it/SKILL.md",
+    "scorecard-marketing/SKILL.md",
+    "software-design-philosophy/SKILL.md",
+    "storybrand-messaging/SKILL.md",
+    "system-design/SKILL.md",
+    "top-design/SKILL.md"
+  ],
+  "readmeExtract": "Wondel.ai Skills Agent skills for Claude Code and agentskills.io compatible agents. Browse all skills at [skills.wondel.ai](https://skills.wondel.ai/). Installation Via Claude Code Plugin Marketplace Via skills.sh Install via [skills.sh](https://skills.sh): Available Skills | Skill | Description | Based On | | | | | | [jobs to be done](https://skills.wondel.ai/skills/jobs to be done/) | JTBD framework for product inn",
+  "skillExtracts": [
+    {
+      "path": "37signals-way/SKILL.md",
+      "extract": "name: 37signals way description: 'Build lean, opinionated products using the 37signals philosophy from Getting Real, Rework, and Shape Up. Use when the user mentions \"Getting Real\", \"Rework\", \"Shape Up\", \"37signals\", \"Basecamp method\", \"six week cycles\", \"fixed time variable scope\", \"appetite vs estimates\", \"betting table\", \"breadboarding\", \"fat marker sketch\", \"build less\", \"underdo the competition\", or \"opinionated"
+    },
+    {
+      "path": "blue-ocean-strategy/SKILL.md",
+      "extract": "name: blue ocean strategy description: 'Create uncontested market space using value innovation instead of competing head to head. Use when the user mentions \"blue ocean\", \"red ocean\", \"strategy canvas\", \"ERRC framework\", \"value innovation\", \"non customers\", \"buyer utility map\", \"eliminate reduce raise create\", or \"uncontested market\". Also trigger when comparing pricing strategies, exploring new market categories, fi"
+    },
+    {
+      "path": "clean-architecture/SKILL.md",
+      "extract": "name: clean architecture description: 'Structure software around the Dependency Rule: source code dependencies point inward from frameworks to use cases to entities. Use when the user mentions \"architecture layers\", \"dependency rule\", \"ports and adapters\", \"hexagonal architecture\", \"use case boundary\", \"onion architecture\", \"screaming architecture\", or \"framework independence\". Also trigger when decoupling business l"
+    },
+    {
+      "path": "clean-code/SKILL.md",
+      "extract": "name: clean code description: 'Write readable, maintainable code through disciplined naming, small functions, and clean error handling. Use when the user mentions \"code review\", \"naming conventions\", \"function too long\", \"code smells\", \"readable code\", \"boy scout rule\", \"single responsibility\", or \"unit test quality\". Also trigger when reviewing pull requests for readability, refactoring messy functions, debating com"
+    },
+    {
+      "path": "contagious/SKILL.md",
+      "extract": "name: contagious description: 'Engineer word of mouth and virality using the STEPPS framework (Social Currency, Triggers, Emotion, Public, Practical Value, Stories). Use when the user mentions \"go viral\", \"word of mouth\", \"shareable content\", \"social currency\", \"why people share\", \"viral loop\", \"referral program\", or \"organic growth\". Also trigger when designing shareable features, crafting social media campaigns, or"
+    },
+    {
+      "path": "continuous-discovery/SKILL.md",
+      "extract": "name: continuous discovery description: 'Build a weekly cadence of customer touchpoints using Opportunity Solution Trees, assumption mapping, and interview snapshots. Use when the user mentions \"continuous discovery\", \"opportunity solution tree\", \"weekly interviews\", \"assumption testing\", \"discovery habits\", \"product trio\", or \"outcome based roadmap\". Also trigger when setting up regular customer feedback loops, prio"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agent skills for Claude Code and agentskills.io-compatible agents.",
+    "Browse all skills at skills.wondel.ai.",
+    "Via Claude Code Plugin Marketplace",
+    "...ps://skills.wondel.ai/skills/storybrand-messaging/) Clear brand messaging using story structure Donald Miller's \"Building a StoryBrand\"",
+    "...l.ai/skills/crossing-the-chasm/) Technology adoption lifecycle and go-to-market for tech products Geoffrey Moore's \"Crossing the Chasm\"",
+    "...kills.wondel.ai/skills/predictable-revenue/) Outbound sales process and Cold Calling 2.0 methodology Aaron Ross's \"Predictable Revenue\"",
+    "Goal: 10/10. When reviewing or creating product development plans, feature scopes, team processes, or product strategies, rate them 0-10 based on adherence to 37signals principles.",
+    "By building less, you keep the product focused, the codebase manageable, and the team small."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Agent skills for Claude Code and other agentskills.io-compatible agents. See https://developertoolkit.ai for more information about skills in general.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Agent skills for Claude Code and agentskills.io-compatible agents.",
+      "Browse all skills at skills.wondel.ai.",
+      "Via Claude Code Plugin Marketplace"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "skills",
+  "publishedAt": "2026-05-20",
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "local-review"
+}

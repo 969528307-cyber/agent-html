@@ -4,15 +4,55 @@
   "status": "published",
   "region": "global",
   "vendor": "OpenClaw",
-  "summary": "An open agent ecosystem entry focused on reusable skills, community workflows, and ClawHub-style extensions.",
-  "bestFor": ["Community skills", "Reusable agent workflows", "Open extension ecosystem"],
-  "interfaceType": ["cli", "web"],
-  "documentationUrl": "https://github.com/openclaw",
+  "summary": "A high-signal open agent ecosystem centered on local gateway architecture, skills, plugins, tools, MCP, and community extension review.",
+  "overview": "A high-signal open agent ecosystem centered on local gateway architecture, skills, plugins, tools, MCP, and community extension review.",
+  "bestFor": [
+    "Skill-centered automation",
+    "Local/self-managed agent runtime",
+    "Plugin and tool experimentation",
+    "Community extension discovery with review"
+  ],
+  "strengths": [],
+  "extensionModel": [],
+  "recommendedStacks": [],
+  "limitations": [],
+  "sources": [
+    {
+      "label": "OpenClaw skills docs",
+      "url": "https://openclaw.cc/en/tools/skills",
+      "kind": "docs"
+    },
+    {
+      "label": "OpenClaw skills source docs",
+      "url": "https://github.com/openclaw/openclaw/blob/main/docs/tools/skills.md",
+      "kind": "github"
+    },
+    {
+      "label": "OpenClaw tools overview",
+      "url": "https://github.com/openclaw/openclaw/blob/main/docs/tools/index.md",
+      "kind": "github"
+    },
+    {
+      "label": "OpenClaw skills config docs",
+      "url": "https://docs.openclaw.ai/skills-config",
+      "kind": "docs"
+    }
+  ],
+  "interfaceType": [
+    "cli",
+    "web"
+  ],
+  "documentationUrl": "https://openclaw.cc/en/tools/skills",
   "supportsMcp": true,
   "supportsSkills": true,
   "supportsCli": true,
   "supportsWorkflows": true,
-  "toolTypes": { "skills": 28, "mcps": 10, "cli": 8, "workflows": 18 },
-  "relatedLearn": ["what-is-agent-skill", "how-to-choose-agent"],
-  "lastChecked": "2026-05-11"
+  "toolTypes": {
+    "skills": 0,
+    "mcps": 0,
+    "cli": 0,
+    "workflows": 0
+  },
+  "relatedLearn": [],
+  "lastChecked": "2026-05-14"
 }

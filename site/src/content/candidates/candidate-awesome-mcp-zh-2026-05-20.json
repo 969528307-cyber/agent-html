@@ -1,0 +1,130 @@
+{
+  "id": "candidate-awesome-mcp-zh-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome MCP ZH",
+  "sourceUrl": "https://github.com/yzfly/Awesome-MCP-ZH",
+  "sourceName": "GitHub",
+  "author": "yzfly",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "yzfly",
+    "repo": "Awesome-MCP-ZH",
+    "fullName": "yzfly/Awesome-MCP-ZH",
+    "stars": 7110,
+    "license": "MIT",
+    "topics": [
+      "claude",
+      "claude-mcp",
+      "deepseek",
+      "deepseek-mcp",
+      "mcp",
+      "mcp-clients",
+      "mcp-host",
+      "mcp-server",
+      "mcp-servers",
+      "mcp-servers-directory",
+      "mcp-tools",
+      "qwen-mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-31T23:50:33Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "Awesome MCP ZH ![](https://files.mdnice.com/user/43439/48b72eef 4bca 4d2b 86e3 0055a1036ea7.jpg) 欢迎来到 Awesome MCP ZH ，一个专为中文用户打造的 MCP（模型上下文协议）资源合集！ 这里有 MCP 的基础介绍、玩法、客户端、服务器和社区资源，帮你快速上手这个 AI 界的“万能插头”。 [![Join Our Discord Community](https://img.shields.io/badge/🚀%20Join%20Discord%20Community Join%20Now 7289da?style=for the badge&logo=discord&logoColor=white&labelColor=2c2f33)](https://discord.gg/EXT6TpW3) [![简体中文](htt",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "欢迎来到 Awesome-MCP-ZH，一个专为中文用户打造的 MCP（模型上下文协议）资源合集！",
+    "这里有 MCP 的基础介绍、玩法、客户端、服务器和社区资源，帮你快速上手这个 AI 界的“万能插头”。",
+    "如果国内的朋友想免费快速的体验MCP能力，推荐 Cherry Studio（客户端） + 阿里 Qwen (大模型）的组合，优势是免费、操作简单、LLM无需魔法、无需充值。",
+    "LLM 选型我的使用体感是： Claude4.5 > GPT-5 > Gemini-2.5 > Qwen3-Max > DeepSeek",
+    "10分钟搞定高德地图MCP！我用AI解决了约会地点选择难题",
+    "因为Manus爆火的 Claude MCP，90%人的认知可能都是错的",
+    "刚官宣支持MCP，就发布自家Agent协议（A2A），扒一扒Google暗藏的小心思",
+    "MCP 全称 模型上下文协议（Model Context Protocol），由 Anthropic 在 2024 年 11 月推出，是个开源通信标准。简单说，它给 AI 装了个“超级网线”，让 AI 能跟外部工具、数据、系统无缝对接。"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "awesome-list",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "awesome-list",
+  "useCategory": [],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "mcp",
+    "whatIsIt": "Awesome MCP ZH is an MCP-related awesome-list tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "欢迎来到 Awesome-MCP-ZH，一个专为中文用户打造的 MCP（模型上下文协议）资源合集！",
+      "这里有 MCP 的基础介绍、玩法、客户端、服务器和社区资源，帮你快速上手这个 AI 界的“万能插头”。",
+      "如果国内的朋友想免费快速的体验MCP能力，推荐 Cherry Studio（客户端） + 阿里 Qwen (大模型）的组合，优势是免费、操作简单、LLM无需魔法、无需充值。"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

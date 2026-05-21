@@ -91,5 +91,72 @@
     "permission": 2
   },
   "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
-  "publishReason": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex."
+  "publishReason": "The repo is finally unlocked. enjoy the party! The fastest repo in history to surpass 100K stars ⭐. Join Discord: https://discord.gg/5TUQKqFWd Built in Rust using oh-my-codex.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "workflow",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "communication",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "workflow",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "communication",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Claw Code is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to workflow."
+    ],
+    "reasons": [
+      "Capability signals are too thin."
+    ],
+    "riskNotes": []
+  }
 }

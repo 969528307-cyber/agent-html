@@ -1,0 +1,75 @@
+{
+  "id": "agent-governance-toolkit",
+  "name": "Agent Governance Toolkit",
+  "type": "sdk",
+  "status": "published",
+  "summary": "AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.",
+  "description": "AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.",
+  "category": [
+    "security"
+  ],
+  "compatibleAgents": [
+    "Codex"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/microsoft/agent-governance-toolkit",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/microsoft/agent-governance-toolkit",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/microsoft/agent-governance-toolkit#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/microsoft/agent-governance-toolkit#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/microsoft/agent-governance-toolkit/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Public Preview — Microsoft-signed, production-quality releases.",
+    "Runtime governance for AI agents -- deterministic policy enforcement, zero-trust identity, execution sandboxing, and SRE for autonomous agents.",
+    "Covers all 10 OWASP Agentic risks with 13,000+ tests.",
+    "Works with any stack — AWS Bedrock, Google ADK, Azure AI, LangChain, CrewAI, AutoGen, OpenAI Agents, and 20+ more.",
+    "What it does: Sits between your agent framework and the actions agents take.",
+    "Every tool call, resource access, and inter-agent message is evaluated against policy before execution.",
+    "What it doesn't do: This is not a prompt guardrail or content moderation tool.",
+    "It governs agent actions, not LLM inputs/outputs."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T02:03:38Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/microsoft/agent-governance-toolkit",
+  "repoUrl": "https://github.com/microsoft/agent-governance-toolkit",
+  "license": "MIT",
+  "stars": 1572,
+  "lastUpdated": "2026-05-18T02:03:38Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

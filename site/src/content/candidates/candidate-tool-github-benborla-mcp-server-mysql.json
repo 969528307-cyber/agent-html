@@ -1,0 +1,164 @@
+{
+  "id": "candidate-tool-github-benborla-mcp-server-mysql",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp Server Mysql",
+  "sourceUrl": "https://github.com/benborla/mcp-server-mysql",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "benborla",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A Model Context Protocol server that provides read-only access to MySQL databases. This server enables LLMs to inspect database schemas and execute read-only queries.",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "benborla",
+    "repo": "mcp-server-mysql",
+    "fullName": "benborla/mcp-server-mysql",
+    "stars": 1641,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-10T15:55:33Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "MCP Server for MySQL Claude Code Edition 🚀 This is a modified version optimized for Claude Code with SSH tunnel support Original Author: [@benborla29](https://github.com/benborla) Original Repository: [https://github.com/benborla/mcp server mysql](https://github.com/benborla/mcp server mysql) License: MIT MCP Server for MySQL based on NodeJS [![Trust Score](https://archestra.ai/mcp catalog/api/badge/quality/benborla",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "MCP Server for MySQL - Claude Code Edition",
+    "🚀 This is a modified version optimized for Claude Code with SSH tunnel support",
+    "MCP Server for MySQL based on NodeJS",
+    "✅ Claude Code Integration - Optimized for use with Anthropic's Claude Code CLI",
+    "✅ Auto-start/stop Hooks - Automatic tunnel management with Claude start/stop",
+    "Quick Start for Claude Code Users",
+    "Use with Claude: Integrated MCP server works seamlessly with Claude Code",
+    "A Model Context Protocol server that provides access to MySQL databases through SSH tunnels."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A Model Context Protocol server that provides read-only access to MySQL databases. This server enables LLMs to inspect database schemas and execute read-only queries.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "database",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "database",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 5,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: cli.",
+    "LLM: mcp + [mcp] — This is an MCP server providing database access via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp Server Mysql is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with database workflows.",
+      "Helps with coding workflows.",
+      "Relevant to data.",
+      "MCP Server for MySQL - Claude Code Edition"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:benborla/mcp-server-mysql",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-server-mysql",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

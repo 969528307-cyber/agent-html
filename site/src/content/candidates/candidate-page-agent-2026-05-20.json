@@ -1,0 +1,171 @@
+{
+  "id": "candidate-page-agent-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Page Agent",
+  "sourceUrl": "https://github.com/alibaba/page-agent",
+  "sourceName": "GitHub",
+  "author": "alibaba",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "alibaba",
+    "repo": "page-agent",
+    "fullName": "alibaba/page-agent",
+    "stars": 17957,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "ai",
+      "ai-agents",
+      "browser-automation",
+      "javascript",
+      "mcp",
+      "typescript",
+      "web"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T11:40:48Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/CHANGELOG.md",
+    "docs/CODE_OF_CONDUCT.md",
+    "docs/developer-guide.md",
+    "docs/README-zh.md",
+    "docs/SECURITY.md",
+    "docs/terms-and-privacy.md",
+    "package.json",
+    ".agents/skills/git-cleanup/SKILL.md",
+    ".agents/skills/pre-impl-discussion/SKILL.md",
+    ".agents/skills/submit-pr-from-current-changes/SKILL.md",
+    ".agents/skills/update-changelog/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "packages/website/AGENTS.md"
+  ],
+  "readmeExtract": "Page Agent <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://img.alicdn.com/imgextra/i4/O1CN01qKig1P1FnhpFKNdi6 !!6000000000532 2 tps 1280 256.png\" <img alt=\"Page Agent Banner\" src=\"https://img.alicdn.com/imgextra/i1/O1CN01NCMKXj1Gn4tkFTsxf !!6000000000666 2 tps 1280 256.png\" </picture [![License: MIT](https://img.shields.io/badge/License MIT auto.svg)](https://opensource.org/licenses/MIT) [![Type",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/git-cleanup/SKILL.md",
+      "extract": "name: git cleanup description: Clean up local git branches and remotes accumulated from PR reviews. Use when the user asks to clean branches, remove stale remotes, or tidy up the local git state. Git Cleanup Clean local branches (except main and current branch) and non origin remotes. Useful after reviewing multiple PRs that leave behind tracking branches and contributor remotes. Workflow 1. Survey Run these in paral"
+    },
+    {
+      "path": ".agents/skills/pre-impl-discussion/SKILL.md",
+      "extract": "name: pre impl discussion description: \"Conduct a thorough pre implementation discussion before making significant changes. Use when the user wants to discuss, plan, or evaluate a change before implementing it — especially when they say words like 'discuss', 'evaluate', 'plan', or 'let's talk about'.\" argument hint: 'Describe the change to evaluate' Pre Implementation Discussion Facilitate a structured, collaborative"
+    },
+    {
+      "path": ".agents/skills/submit-pr-from-current-changes/SKILL.md",
+      "extract": "name: submit pr from current changes description: 'Create a branch, commit existing local changes, push them, and open a pull request. Use when submitting current work as a PR.' argument hint: 'Short summary of the current changes to submit' user invocable: true Submit PR From Current Changes Turn a working tree diff into a clean branch, commit, and pull request. Hard Rules 1. Follow the PR template exactly. The temp"
+    },
+    {
+      "path": ".agents/skills/update-changelog/SKILL.md",
+      "extract": "name: update changelog description: 'Update docs/CHANGELOG.md from git history, GitHub releases, and code diffs. Use when: writing release notes, syncing the latest changelog entry, summarizing a new tag, or keeping changelog wording concise and consistent.' argument hint: 'Describe the target, for example: latest version only' Update Changelog Update docs/CHANGELOG.md from repository evidence instead of guesswork. W"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The GUI Agent Living in Your Webpage.",
+    "🚀 Demo 📖 Docs 📢 HN Discussion 𝕏 Follow on X",
+    "No need for browser extension / python / headless browser.",
+    "And an MCP Server (Beta) to control it from outside",
+    "Smart Form Filling — Turn 20-click workflows into one sentence.",
+    "Multi-page Agent — Extend your own web agent's reach across browser tabs chrome extension.",
+    "MCP - Allow your agent clients to control your browser.",
+    "Fastest way to try PageAgent with our free Demo LLM:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "media",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "media",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Page Agent is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with media workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "The GUI Agent Living in Your Webpage."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "page-agent",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,168 @@
+{
+  "id": "candidate-kubefwd-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Kubefwd",
+  "sourceUrl": "https://github.com/txn2/kubefwd",
+  "sourceName": "GitHub",
+  "author": "txn2",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Bulk port forwarding Kubernetes services for local development.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "txn2",
+    "repo": "kubefwd",
+    "fullName": "txn2/kubefwd",
+    "stars": 4109,
+    "license": "Apache-2.0",
+    "topics": [
+      "api-rest",
+      "developer-tools",
+      "devops",
+      "devops-tools",
+      "devtools",
+      "k8s",
+      "kubefwd",
+      "kubernetes",
+      "kubernetes-clusters",
+      "kubernetes-namespace",
+      "mcp-server",
+      "networking",
+      "port-forward",
+      "port-forwarding",
+      "proxy"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-20T03:08:58Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/advanced-usage.md",
+    "docs/api-reference.md",
+    "docs/architecture.md",
+    "docs/attributions.md",
+    "docs/comparison.md",
+    "docs/getting-started.md",
+    "docs/images/brand-text-800-blk.png",
+    "docs/images/brand-text-800.png",
+    "docs/images/kubefwd-logo.svg",
+    "docs/images/kubefwd-masthead.jpg",
+    "docs/images/logo_icon.png",
+    "docs/images/tui-120-main-help.png",
+    "docs/images/tui-200-detail-info.png",
+    "docs/images/tui-210-detail-http.png",
+    "docs/index.md",
+    "docs/llms-full.txt",
+    "docs/llms.txt",
+    "docs/mcp-integration.md",
+    "docs/overrides/404.html",
+    "docs/overrides/home.html",
+    "docs/overrides/main.html",
+    "docs/stylesheets/extra.css",
+    "docs/user-guide.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "kubefwd (Kube Forward) ![kubefwd kubernetes bulk port forwarding](kubefwd mast2.jpg) [![CNCF Landscape](https://img.shields.io/badge/CNCF%20Landscape 5699C6?logo=cncf&logoColor=fff)](https://landscape.cncf.io/?item=app definition and development application definition image build kubefwd) [![GitHub license](https://img.shields.io/github/license/txn2/kubefwd.svg)](https://github.com/txn2/kubefwd/blob/master/LICENSE) [",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Documentation Getting Started User Guide API Reference MCP (AI Integration)",
+    "Develop Locally, Connect to Kubernetes",
+    "Just run kubefwd and your application's existing connection strings work.",
+    "Bulk Kubernetes port forwarding with an interactive TUI, unique IPs per service, and automatic reconnection.",
+    "Auto-Reconnect: Reconnects when pods restart or connections drop",
+    "MCP Support: Integration with AI assistants (Claude Code, Cursor)",
+    "Port conflicts Manual management None (unique IPs)",
+    "See Comparison for detailed comparisons with Telepresence, mirrord, and other tools."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Bulk port forwarding Kubernetes services for local development.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Kubefwd is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Documentation Getting Started User Guide API Reference MCP (AI Integration)"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "kubefwd",
+  "publishedAt": "2026-05-20"
+}

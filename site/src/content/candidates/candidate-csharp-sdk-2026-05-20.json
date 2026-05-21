@@ -1,0 +1,169 @@
+{
+  "id": "candidate-csharp-sdk-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Csharp Sdk",
+  "sourceUrl": "https://github.com/modelcontextprotocol/csharp-sdk",
+  "sourceName": "GitHub",
+  "author": "modelcontextprotocol",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "The official C# SDK for Model Context Protocol servers and clients. Maintained in collaboration with Microsoft.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "modelcontextprotocol",
+    "repo": "csharp-sdk",
+    "fullName": "modelcontextprotocol/csharp-sdk",
+    "stars": 4276,
+    "license": "NOASSERTION",
+    "topics": [
+      "csharp",
+      "dotnet",
+      "mcp",
+      "mcp-client",
+      "mcp-server",
+      "modelcontextprotocol"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T21:47:12Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/concepts/cancellation/cancellation.md",
+    "docs/concepts/capabilities/capabilities.md",
+    "docs/concepts/completions/completions.md",
+    "docs/concepts/elicitation/elicitation.md",
+    "docs/concepts/elicitation/samples/client/ElicitationClient.csproj",
+    "docs/concepts/elicitation/samples/client/Program.cs",
+    "docs/concepts/elicitation/samples/server/Elicitation.csproj",
+    "docs/concepts/elicitation/samples/server/Elicitation.http",
+    "docs/concepts/elicitation/samples/server/Program.cs",
+    "docs/concepts/elicitation/samples/server/Tools/InteractiveTools.cs",
+    "docs/concepts/filters.md",
+    "docs/concepts/getting-started.md",
+    "docs/concepts/httpcontext/httpcontext.md",
+    "docs/concepts/httpcontext/samples/HttpContext.csproj",
+    "docs/concepts/httpcontext/samples/HttpContext.http",
+    "docs/concepts/httpcontext/samples/Program.cs",
+    "docs/concepts/httpcontext/samples/Tools/ContextTools.cs",
+    "docs/concepts/httpcontext/samples/TryItOut.ipynb",
+    "docs/concepts/identity/identity.md",
+    "docs/concepts/index.md",
+    "docs/concepts/logging/logging.md",
+    "docs/concepts/logging/samples/client/LoggingClient.csproj",
+    "docs/concepts/logging/samples/client/Program.cs",
+    "docs/concepts/logging/samples/server/Logging.csproj",
+    "docs/concepts/logging/samples/server/Logging.http",
+    "docs/concepts/logging/samples/server/Program.cs",
+    "docs/concepts/logging/samples/server/Tools/LoggingTools.cs",
+    "docs/concepts/pagination/pagination.md",
+    "docs/concepts/ping/ping.md",
+    "docs/concepts/progress/progress.md",
+    "docs/concepts/progress/samples/client/Program.cs",
+    "docs/concepts/progress/samples/client/ProgressClient.csproj",
+    "docs/concepts/progress/samples/server/Program.cs",
+    "docs/concepts/progress/samples/server/Progress.csproj",
+    "docs/concepts/progress/samples/server/Progress.http",
+    "docs/concepts/progress/samples/server/Tools/LongRunningTools.cs",
+    "docs/concepts/prompts/prompts.md",
+    "docs/concepts/resources/resources.md",
+    "docs/concepts/roots/roots.md"
+  ],
+  "readmeExtract": "MCP C SDK [![NuGet version](https://img.shields.io/nuget/v/ModelContextProtocol.svg)](https://www.nuget.org/packages/ModelContextProtocol) The official C SDK for the [Model Context Protocol](https://modelcontextprotocol.io/), enabling .NET applications, services, and libraries to implement and interact with MCP clients and servers. Please visit the [API documentation](https://csharp.sdk.modelcontextprotocol.io/api/Mo",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The official C# SDK for the Model Context Protocol, enabling .NET applications, services, and libraries to implement and interact with MCP clients and servers.",
+    "Please visit the API documentation for more details on available functionality.",
+    "ModelContextProtocol.AspNetCore - The library for HTTP-based MCP servers.",
+    "You can also browse the samples directory and the API documentation for more details on available functionality.",
+    "The Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to Large Language Models (LLMs).",
+    "It enables secure integration between LLMs and various data sources and tools.",
+    "For more information about MCP:",
+    "description: How to cancel in-flight MCP requests using cancellation tokens and notifications."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "The official C# SDK for Model Context Protocol servers and clients. Maintained in collaboration with Microsoft.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Csharp Sdk is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Relevant to mcp.",
+      "The official C# SDK for the Model Context Protocol, enabling .NET applications, services, and libraries to implement and interact with MCP clients and servers.",
+      "Please visit the API documentation for more details on available functionality.",
+      "ModelContextProtocol.AspNetCore - The library for HTTP-based MCP servers."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "csharp-sdk",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,171 @@
+{
+  "id": "candidate-pinme-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Pinme",
+  "sourceUrl": "https://github.com/glitternetwork/pinme",
+  "sourceName": "GitHub",
+  "author": "glitternetwork",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Deploy Your Frontend in a Single Command. Claude Code Skills supported.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "glitternetwork",
+    "repo": "pinme",
+    "fullName": "glitternetwork/pinme",
+    "stars": 3386,
+    "license": "MIT",
+    "topics": [
+      "ai-tools",
+      "claude-code-skill",
+      "claude-skills",
+      "deployment",
+      "deployment-tools",
+      "frontend",
+      "frontend-deployment",
+      "hosting",
+      "serverless",
+      "skills",
+      "static-site",
+      "static-site-deploy",
+      "static-site-hosting",
+      "web-hosting",
+      "zero-configuration"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T07:44:35Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "skills/pinme-auth/SKILL.md",
+    "skills/pinme-email/SKILL.md",
+    "skills/pinme-llm/SKILL.md",
+    "skills/pinme-share/SKILL.md",
+    "skills/pinme/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://pinme.eth.limo/\" <img src=\"https://2egc5b44.pinit.eth.limo/\" height=\"92\" alt=\"PinMe logo\" <h3 align=\"center\" PinMe</h3 </a </p <p align=\"center\" Create and deploy your web in one command. </p PinMe [PinMe](https://pinme.eth.limo/) is a zero config deployment CLI focused on one command creation and deployment for full stack projects. It lets you quickly set up and launch a complete p",
+  "skillExtracts": [
+    {
+      "path": "skills/pinme-auth/SKILL.md",
+      "extract": "name: pinme auth description: Use when a PinMe project (Worker TypeScript) needs to integrate user authentication — creating email/password users, verifying id tokens, querying user info, or listing users via Identity Platform auth proxy APIs. PinMe Worker Auth API Integration Guides how to call PinMe platform's Identity Platform auth proxy APIs in a PinMe Worker (TypeScript). Environment Variables API KEY 和 PROJECT "
+    },
+    {
+      "path": "skills/pinme-email/SKILL.md",
+      "extract": "name: pinme email description: Use this skill when a PinMe project (Worker TypeScript) needs to integrate email sending (send email). Guides AI to generate correct Worker TS code. PinMe Worker Email API Integration Guides how to call PinMe platform's email sending API in a PinMe Worker (TypeScript). Environment Variables The following environment variables are automatically injected when the Worker is created — no ma"
+    },
+    {
+      "path": "skills/pinme-llm/SKILL.md",
+      "extract": "name: pinme llm description: Use this skill when a PinMe project (Worker TypeScript) needs to call OpenRouter backed LLM APIs, including models, chat/completions, streaming, or OpenRouter web search. Guides AI to generate correct Worker TS code. PinMe Worker OpenRouter API Integration Guides how to call PinMe platform's OpenRouter proxy APIs in a PinMe Worker (TypeScript). Workers use the PinMe project API key; they "
+    },
+    {
+      "path": "skills/pinme-share/SKILL.md",
+      "extract": "name: pinme share description: \"Use this skill when the user wants to share, publish, or upload a static result through PinMe, especially by generating a static HTML share page for a PinMe project link, deployed full stack app, Codex conversation summary, report, file, demo, or any 分享/发布/上传分享页 request that should end with pinme upload .\" PinMe Share Create a polished static share artifact, upload it with pinme upload"
+    },
+    {
+      "path": "skills/pinme/SKILL.md",
+      "extract": "name: pinme description: Use this skill when the user mentions \"pinme\", or needs to upload files, store to IPFS, create/publish/deploy websites or full stack services (including frontend pages, backend APIs, database storage, email sending, etc.), or any feature requiring backend database/server support. PinMe Zero config deployment tool: upload static files to IPFS, or create and deploy full stack web projects (Reac"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "What this workflow gives you:",
+    "Upload a static build when you do not need the project workflow",
+    "Prefer the PinMe project workflow when the user wants a frontend plus backend plus database, or when the repo already contains pinme.toml.",
+    "Use this only when the task is just \"publish the built frontend\" and there is no PinMe project workflow involved.",
+    "After creation, the CLI prints the project management URL and suggests pinme save for the next deploy.",
+    "set-appkey is the alternative authentication method for CLI and automation usage.",
+    "pinme login [--env test\\ prod] Login via browser",
+    "This repo includes example projects and docs:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Deploy Your Frontend in a Single Command. Claude Code Skills supported.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Pinme is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "What this workflow gives you:",
+      "Upload a static build when you do not need the project workflow"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pinme",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "gitagent-protocol",
+  "name": "Gitagent Protocol",
+  "type": "skill",
+  "status": "published",
+  "summary": "A framework-agnostic, git-native standard for defining AI agents",
+  "description": "A framework-agnostic, git-native standard for defining AI agents",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/open-gitagent/gitagent-protocol",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/open-gitagent/gitagent-protocol",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/open-gitagent/gitagent-protocol#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/open-gitagent/gitagent-protocol#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/open-gitagent/gitagent-protocol/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "GitAgentProtocol (Open GAP) your repository becomes your agent",
+    "gapman — the GitAgentProtocol (GAP) Manager CLI, published as @open-gitagent/gapman.",
+    "Previously published as @open-gitagent/gitagent.",
+    "GitAgentProtocol (Open GAP) is a framework-agnostic, git-native standard for defining AI agents.",
+    "There's no universal, portable way to define an agent that works across Claude Code, OpenAI, LangChain, CrewAI, and AutoGen.",
+    "Composable — Agents can extend, depend on, and delegate to other agents",
+    "Your repository becomes your agent.",
+    "Drop these files into any git repo and it becomes a portable, framework-agnostic agent definition — everything else (CLI, adapters, patterns) builds on top of it."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T17:09:24Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/open-gitagent/gitagent-protocol",
+  "repoUrl": "https://github.com/open-gitagent/gitagent-protocol",
+  "license": "MIT",
+  "stars": 2784,
+  "lastUpdated": "2026-05-13T17:09:24Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

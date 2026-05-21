@@ -1,0 +1,78 @@
+{
+  "id": "terraform-mcp-server",
+  "name": "Terraform Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.",
+  "description": "The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/hashicorp/terraform-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/hashicorp/terraform-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/hashicorp/terraform-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/hashicorp/terraform-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/hashicorp/terraform-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The Terraform MCP Server is a Model Context Protocol (MCP)",
+    "automation and interaction capabilities for Infrastructure as Code (IaC) development.",
+    "HCP Terraform & Terraform Enterprise Support: Full workspace management, organization/project listing, and private registry access",
+    "OTel metrics for monitoring tool usage: Integration with open telemetry meters to track tool-call volume, latency and failures in Streamable HTTP mode.",
+    "Security Note: At this stage, the MCP server is intended for local use only.",
+    "If using the StreamableHTTP transport, always configure the MCPALLOWEDORIGINS environment variable to restrict access to trusted origins only.",
+    "Security Note: Depending on the query, the MCP server may expose certain Terraform data to the MCP client and LLM.",
+    "Do not use the MCP server with untrusted MCP clients or LLMs."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T02:24:03Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/hashicorp/terraform-mcp-server",
+  "repoUrl": "https://github.com/hashicorp/terraform-mcp-server",
+  "license": "MPL-2.0",
+  "stars": 1369,
+  "lastUpdated": "2026-05-18T02:24:03Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

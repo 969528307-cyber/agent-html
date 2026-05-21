@@ -1,0 +1,182 @@
+{
+  "id": "candidate-tool-github-kardolus-chatgpt-cli",
+  "type": "tool",
+  "status": "published",
+  "title": "Chatgpt Cli",
+  "sourceUrl": "https://github.com/kardolus/chatgpt-cli",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "kardolus",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "ChatGPT CLI is a powerful, multi-provider command-line interface for working with modern LLMs. It supports OpenAI, Azure, Perplexity, LLaMA, and more, with features like streaming, interactive chat, prompt files, image/audio I/O, MCP tool calls, and an experimental agent mode for safe, multi-step automation.",
+  "proposedCategory": [
+    "media"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "kardolus",
+    "repo": "chatgpt-cli",
+    "fullName": "kardolus/chatgpt-cli",
+    "stars": 923,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "azure",
+      "chatgpt",
+      "cli",
+      "go",
+      "golang",
+      "gpt",
+      "language-model",
+      "llama",
+      "mcp-client",
+      "openai",
+      "perplexity"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T01:22:35Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/anthropic_api.md",
+    "docs/apify_api.md",
+    "docs/chatgpt_api.md",
+    "docs/perplexity_api.md",
+    "docs/release_procedures.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "ChatGPT CLI ![Test Workflow](https://github.com/kardolus/chatgpt cli/actions/workflows/test.yml/badge.svg?branch=main) [![Public Backlog](https://img.shields.io/badge/public%20backlog 808080)](https://github.com/users/kardolus/projects/2) ChatGPT CLI is a powerful, multi provider command line interface for working with modern LLMs. It supports OpenAI, Azure, Perplexity, LLaMA, and more, and includes streaming, intera",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Azure, Perplexity, LLaMA, and more, and includes streaming, interactive chat, prompt files, image/audio I/O, MCP tool",
+    "calls, and an experimental agent mode for multi-step tasks with safety and budget controls.",
+    "Agent Mode (ReAct + Plan/Execute)",
+    "Switching Between Configurations with --target",
+    "Thread-based context management: Enjoy seamless conversations with the GPT model with individualized context for",
+    "Agent mode (ReAct + Plan/Execute): Run multi-step tasks that can think, act, and observe using tools like shell,",
+    "Supports both iterative ReAct loops and Plan/Execute workflows, with built-in",
+    "budget limits (time, steps, tokens) and policy enforcement (allowed tools, denied commands, workdir"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"media\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "ChatGPT CLI is a powerful, multi-provider command-line interface for working with modern LLMs. It supports OpenAI, Azure, Perplexity, LLaMA, and more, with features like streaming, interactive chat, prompt files, image/audio I/O, MCP tool calls, and an experimental agent mode for safe, multi-step automation.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "testing",
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "testing",
+    "automation"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 0,
+    "cli": 14,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Repository name indicates CLI tool.",
+    "GitHub topics explicitly tag as CLI.",
+    "Agent instruction file detected alongside CLI signals.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: single-tool.",
+    "Alternative capabilities: workflow, mcp.",
+    "LLM: cli + [mcp, cli, workflow] — The project is a command-line interface for LLMs with MCP support and agent/workflow capabilities."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "mcp"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Chatgpt Cli is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with testing workflows.",
+      "Helps with automation workflows.",
+      "Relevant to media.",
+      "Azure, Perplexity, LLaMA, and more, and includes streaming, interactive chat, prompt files, image/audio I/O, MCP tool"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:kardolus/chatgpt-cli",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "chatgpt-cli",
+  "publishedAt": "2026-05-18"
+}

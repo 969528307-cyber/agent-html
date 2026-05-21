@@ -1,0 +1,77 @@
+{
+  "id": "refly",
+  "name": "Refly",
+  "type": "skill",
+  "status": "published",
+  "summary": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Cursor, Codex & more. Build Clawdbot 🦞· APIs for Lovable · Bots for Slack & Lark/Feishu · Skills are infrastructure, not prompts.",
+  "description": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Cursor, Codex & more. Build Clawdbot 🦞· APIs for Lovable · Bots for Slack & Lark/Feishu · Skills are infrastructure, not prompts.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/refly-ai/refly",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/refly-ai/refly",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/refly-ai/refly#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/refly-ai/refly#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/refly-ai/refly/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Refly — Agent Skills Builder Powered by Vibe Workflow",
+    "APIs for Lovable · Webhooks for Lark/Feishu · Skills for Claude Code · Build Clawdbot",
+    "Refly is the first open-source platform for building stable, atomic, and versioned agent skills.",
+    "Refly Skills is the official executable skill registry for Refly.",
+    "⚡ Run instantly: Execute skills in Refly with one click",
+    "🧩 Reusable infrastructure: Versioned skills, not one-off prompts",
+    "🔌 Export anywhere: Ship skills to Claude Code or deploy as APIs",
+    "🌍 Community-powered: Import, fork, and publish your own skills"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-03-25T14:51:18Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/refly-ai/refly",
+  "repoUrl": "https://github.com/refly-ai/refly",
+  "license": "NOASSERTION",
+  "stars": 7318,
+  "lastUpdated": "2026-03-25T14:51:18Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

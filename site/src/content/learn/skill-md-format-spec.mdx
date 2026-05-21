@@ -1,0 +1,77 @@
+---
+title: "SKILL.md Format Specification — How to Create an Agent Skill"
+subtitle: "Based on the public format from anthropics/skills (136K★) and 51 Skill repos indexed in agentk.it"
+status: "published"
+topic: "skill"
+path: "start"
+order: 9
+difficulty: "beginner"
+readingTime: "5 min"
+summaryBullets:
+  - "SKILL.md is the standard entry file for Agent Skills: YAML frontmatter + Markdown body"
+  - "51 Skill repos are indexed in agentk.it, covering code, design, security, and docs"
+  - "The format originates from anthropics/skills and the Agent Skills specification"
+relatedTools: []
+relatedAgents: ["claude-code", "codex", "hermes-agent", "openclaw"]
+nextReads: ["how-to-judge-agent-skill", "what-is-agent-skill"]
+publishedAt: "2026-05-18"
+---
+
+## What Is SKILL.md
+
+SKILL.md is the standardized description file for an Agent Skill, placed at the repository root. Agents read it to understand what the Skill does, when to trigger it, and what inputs and outputs it expects.
+
+## Basic Format
+
+A minimal working SKILL.md:
+
+```
+---
+name: my-skill
+description: What this skill does in one sentence.
+trigger: When the user asks about X or mentions Y.
+tools: [bash, web_search]
+---
+
+## Instructions
+
+Step-by-step instructions the Agent should follow.
+Use plain English. Be specific about edge cases.
+
+## Examples
+
+- User: "Do X" → Agent: runs step 1, 2, 3
+- User: "Handle Y" → Agent: checks condition, then runs step 4
+```
+
+## Common Fields
+
+- name (required): Unique skill identifier, lowercase-kebab-case
+- description (required): One-sentence description the Agent uses to match user intent
+- trigger (optional): Keywords or scenarios that trigger this Skill
+- tools (optional): List of tools this Skill requires
+- model (optional): Suggested model to use
+
+## Indexed Skill Domain Distribution
+
+The 51 published Skills cover these domains (based on useCategory data):
+
+- Code Review: PR analysis, code quality checks
+- Docs: README generation, API documentation
+- Browser: Web automation, screenshots
+- Search: Information retrieval, research
+- Security: Vulnerability scanning, penetration testing
+- Design: UI generation, design systems
+
+## Reference Repositories
+
+- anthropics/skills (136K★): Official Anthropic Skills collection, the authoritative source for the standard format
+- awesome-claude-skills (60K★): Community-curated Claude Skills resource list
+- agent-skills (43K★): General-purpose Agent Skills collection
+- awesome-openclaw-skills (48K★): OpenClaw ecosystem Skills
+
+All of the above are available on the agentk.it type/skill page.
+
+## Data Sources
+
+Public format from the anthropics/skills repository: github.com/anthropics/skills. agentk.it published Skill data from src/content/tools (type=skill).

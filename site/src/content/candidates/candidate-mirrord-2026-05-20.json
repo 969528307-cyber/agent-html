@@ -1,0 +1,165 @@
+{
+  "id": "candidate-mirrord-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Mirrord",
+  "sourceUrl": "https://github.com/metalbear-co/mirrord",
+  "sourceName": "GitHub",
+  "author": "metalbear-co",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Run local code as if it were a pod in a remote Kubernetes cluster: real env vars, DNS, network, traffic. Used by AI coding agents and developers.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "metalbear-co",
+    "repo": "mirrord",
+    "fullName": "metalbear-co/mirrord",
+    "stars": 5074,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "ai-coding",
+      "api",
+      "backend",
+      "claude-code",
+      "cli",
+      "cloud",
+      "cloud-native",
+      "debug",
+      "developer-tools",
+      "development",
+      "devops",
+      "devtool",
+      "ide",
+      "jetbrains",
+      "kubernetes",
+      "rust",
+      "traffic",
+      "vscode"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:37:52Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "mirrord/agent/AGENTS.md",
+    "mirrord/agent/CLAUDE.md",
+    "mirrord/config/AGENTS.md",
+    "mirrord/config/CLAUDE.md",
+    "mirrord/intproxy/AGENTS.md",
+    "mirrord/intproxy/CLAUDE.md",
+    "mirrord/layer/AGENTS.md",
+    "mirrord/layer/CLAUDE.md",
+    "mirrord/operator/AGENTS.md",
+    "mirrord/operator/CLAUDE.md",
+    "mirrord/protocol/AGENTS.md",
+    "mirrord/protocol/CLAUDE.md"
+  ],
+  "readmeExtract": "<div align=\"center\" ![mirrord logo](./images/logo.svg) </div [![Community Slack](https://img.shields.io/badge/Join e5f7f7?logo=slack&label=Community%20Slack)](https://metalbear.com/slack) [![Github CI](https://github.com/metalbear co/mirrord/actions/workflows/ci.yaml/badge.svg)](https://github.com/metalbear co/mirrord/actions/workflows/ci.yaml) [![License](https://img.shields.io/badge/license MIT green)](https://gith",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "It works the same way for developers and for AI coding agents (Claude Code, Cursor, Codex, Copilot, Windsurf):",
+    "mirrord ships as a VS Code extension, IntelliJ plugin, and CLI tool.",
+    "Using mirrord with AI coding agents",
+    "Click the mirrord icon in the Navigation Toolbar",
+    "The new pod is then used to connect your local process and the impersonated pod: it mirrors incoming traffic from the pod to your process,",
+    "mirrord works first-class with Claude Code, Cursor, Codex CLI, Gemini CLI, and other AI coding agents,",
+    "see metalbear-co/skills or the mirrord for AI Agents page.",
+    "Please take a few minutes to review our Code of Conduct."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Run local code as if it were a pod in a remote Kubernetes cluster: real env vars, DNS, network, traffic. Used by AI coding agents and developers.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "communication",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "communication",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Mirrord is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "It works the same way for developers and for AI coding agents (Claude Code, Cursor, Codex, Copilot, Windsurf):"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mirrord",
+  "publishedAt": "2026-05-20"
+}

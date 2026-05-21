@@ -1,0 +1,177 @@
+{
+  "id": "candidate-muapi-cli-2026-05-16",
+  "type": "tool",
+  "status": "published",
+  "title": "Muapi Cli",
+  "sourceUrl": "https://github.com/SamurAIGPT/muapi-cli",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "SamurAIGPT",
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Official CLI for muapi.ai — generate images, videos & audio from the terminal. MCP server, 14 AI models, npm + pip installable.",
+  "proposedCategory": [
+    "media"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "SamurAIGPT",
+    "repo": "muapi-cli",
+    "fullName": "SamurAIGPT/muapi-cli",
+    "stars": 995,
+    "topics": [
+      "ai",
+      "cli",
+      "generative-ai",
+      "image-generation",
+      "mcp",
+      "muapi",
+      "npm",
+      "python",
+      "video-generation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T19:00:08Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "muapi CLI Official command line interface for [muapi.ai](https://muapi.ai) — generate images, videos, and audio directly from your terminal. Agent first design — every command works for both humans (colored output, tables) and AI agents ( output json , jq filtering, semantic exit codes, MCP server mode). Install Quick Start Commands muapi auth | Command | Description | | | | | muapi auth register email x password y |",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agent-first design — every command works for both humans (colored output, tables) and AI agents (--output-json, --jq filtering, semantic exit codes, MCP server mode).",
+    "muapi docs openapi Fetch the full OpenAPI spec",
+    "muapi docs open Open Swagger UI in browser",
+    "muapi mcp serve Start MCP server (stdio) for AI agents",
+    "muapi supports two MCP transport modes.",
+    "The hosted MCP server at uses the standard Streamable HTTP transport.",
+    "Cursor — add to mcp.json (Cmd+Shift+P → Open MCP settings):",
+    "Windsurf — open Settings → MCP:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Discovered by functional category \"media\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Official CLI for muapi.ai — generate images, videos & audio from the terminal. MCP server, 14 AI models, npm + pip installable.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "security",
+      "communication",
+      "design"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "security",
+    "communication",
+    "design"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 13,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Repository name indicates CLI tool.",
+    "GitHub topics explicitly tag as CLI.",
+    "Package metadata detected; may expose executable commands.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: mcp.",
+    "LLM: cli + [mcp, cli] — The repository is primarily a CLI tool for generating images, videos, and audio from the terminal, with built-in MCP server support."
+  ],
+  "classificationAlternatives": [
+    "mcp"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Muapi Cli is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with security workflows.",
+      "Helps with communication workflows.",
+      "Helps with design workflows.",
+      "Relevant to media."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:samuraigpt/muapi-cli",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-16",
+  "reviewedBy": "local-review",
+  "publishedAs": "muapi-cli",
+  "publishedAt": "2026-05-16",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

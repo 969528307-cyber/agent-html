@@ -1,0 +1,76 @@
+{
+  "id": "evoagentx",
+  "name": "EvoAgentX",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "🚀 EvoAgentX: Building a Self-Evolving Ecosystem of AI Agents",
+  "description": "🚀 EvoAgentX: Building a Self-Evolving Ecosystem of AI Agents",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/EvoAgentX/EvoAgentX",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/EvoAgentX/EvoAgentX",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/EvoAgentX/EvoAgentX#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/EvoAgentX/EvoAgentX#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/EvoAgentX/EvoAgentX/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Building a Self-Evolving Ecosystem of AI Agents",
+    "EvoAgentX is an open-source framework for building, evaluating, and evolving LLM-based agents or agentic workflows in an automated, modular, and goal-driven manner.",
+    "At its core, EvoAgentX enables developers and researchers to move beyond static prompt chaining or manual workflow orchestration.",
+    "It introduces a self-evolving agent ecosystem, where AI agents can be constructed, assessed, and optimized through iterative feedback loops—much like how software is continuously tested and improved.",
+    "🧱 Agent Workflow Autoconstruction",
+    "From a single prompt, EvoAgentX builds structured, multi-agent workflows tailored to the task.",
+    "It integrates automatic evaluators to score agent behavior using task-specific criteria.",
+    "Agents don’t just work—they learn."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T13:33:07Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/EvoAgentX/EvoAgentX",
+  "repoUrl": "https://github.com/EvoAgentX/EvoAgentX",
+  "license": "NOASSERTION",
+  "stars": 3017,
+  "lastUpdated": "2026-05-15T13:33:07Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

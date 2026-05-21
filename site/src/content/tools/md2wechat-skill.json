@@ -1,0 +1,78 @@
+{
+  "id": "md2wechat-skill",
+  "name": "Md2wechat Skill",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Markdown to WeChat CLI | 一键排版发布到微信公众号：支持 40+ 排版样式和专业主题 、AI 配图 、批量发布",
+  "description": "Markdown to WeChat CLI | 一键排版发布到微信公众号：支持 40+ 排版样式和专业主题 、AI 配图 、批量发布",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/geekjourneyx/md2wechat-skill",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/geekjourneyx/md2wechat-skill",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/geekjourneyx/md2wechat-skill#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/geekjourneyx/md2wechat-skill#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/geekjourneyx/md2wechat-skill/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "全流程 CLI，Agent-native — Claude Code · Codex · OpenClaw 原生支持",
+    "快速开始 · 高级排版 · API 解锁 · Agent 支持 · 常见问题",
+    "Agent 集成 无结构约定 JSON envelope、capabilities 端点、discovery 命令",
+    "AI 模式（免费）：生成排版 prompt，由你的 Claude / Codex 继续处理，3 个基础主题。",
+    "如果你想把上面的步骤直接发给 Agent 执行，见 Agent 安装脚本。",
+    "preview 生成本地预览 HTML，不触发任何上传或草稿副作用",
+    "保姆级教程（43 个模块全覆盖）见 docs/LAYOUT.md。",
+    "在 Coding Agent 或自动化脚本中，先执行 discovery 命令，不要靠猜："
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-14T06:18:32Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/geekjourneyx/md2wechat-skill",
+  "repoUrl": "https://github.com/geekjourneyx/md2wechat-skill",
+  "license": "NOASSERTION",
+  "stars": 2274,
+  "lastUpdated": "2026-05-14T06:18:32Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

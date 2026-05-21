@@ -1,0 +1,150 @@
+{
+  "id": "candidate-inkos-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Inkos",
+  "sourceUrl": "https://github.com/Narcooo/inkos",
+  "sourceName": "GitHub",
+  "author": "Narcooo",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Autonomous novel writing AI Agent — agents write, audit, and revise novels with human review gates",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Kimi",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "Narcooo",
+    "repo": "inkos",
+    "fullName": "Narcooo/inkos",
+    "stars": 6261,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent",
+      "ai",
+      "ai-agent",
+      "ai-novel",
+      "ai-writing",
+      "chinese-novel",
+      "cli",
+      "cli-tool",
+      "creative-writing-ai",
+      "novel-ai",
+      "novel-generation",
+      "openclaw"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-19T10:26:45Z"
+  },
+  "detectedFiles": [
+    "README.en.md",
+    "README.ja.md",
+    "README.md",
+    "package.json",
+    "skills/SKILL.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"assets/logo.svg\" width=\"120\" height=\"120\" alt=\"InkOS Logo\" <img src=\"assets/inkos text.svg\" width=\"240\" height=\"65\" alt=\"InkOS\" </p <h1 align=\"center\" Autonomous Novel Writing AI Agent<br <sub 自动化小说写作 AI Agent</sub </h1 <p align=\"center\" <a href=\"https://www.npmjs.com/package/@actalk/inkos\" <img src=\"https://img.shields.io/npm/v/@actalk/inkos.svg?color=cb3837&logo=npm\" alt=\"npm version\" </",
+  "skillExtracts": [
+    {
+      "path": "skills/SKILL.md",
+      "extract": "name: inkos description: Autonomous novel writing CLI agent with web workbench (InkOS Studio) use for creative fiction writing, standalone short fiction packages, cover generation, novel generation, style imitation, chapter continuation/import, EPUB export, AIGC detection, and fan fiction. Native English support with 10 built in English genre profiles (LitRPG, Progression Fantasy, Isekai, Cultivation, System Apocalyp"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Autonomous Novel Writing AI Agent. 自动化小说写作 AI Agent",
+    "AI Agent 自主写小说——写、审、改，全程接管。覆盖玄幻、仙侠、都市、科幻等多种风格，支持续写、番外、同人、仿写等创作形式。人工审核门控确保你始终掌控全局。已发布为 OpenClaw skill。",
+    "欢迎加群反馈问题、提出需求，也欢迎关注项目动态 — 我们的目标是做最强的基于小说的内容生态创作 AI Agent。",
+    "InkOS 已发布为 OpenClaw Skill，可被任何兼容 Agent（Claude Code、OpenClaw 等）直接调用：",
+    "通过 npm 安装或克隆本项目时，skills/SKILL.md 已包含在内，🦞 可直接读取——无需额外从 ClawHub 安装。",
+    "选择服务商，例如 Google Gemini、Moonshot、MiniMax、智谱、百炼或自定义端点。",
+    "--service 会从 provider bank 自动推导 baseUrl、协议和兼容策略；--model 必须属于最终 service，否则会直接报错，避免把 Kimi 模型发到 Gemini 这类错配问题。",
+    "Provider bank 能力表：内置 Google Gemini、Moonshot、MiniMax、智谱、百炼、DeepSeek、硅基流动、PPIO、OpenRouter、Ollama、CodingPlan 等服务的 baseUrl、协议、模型和兼容策略。"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Autonomous novel writing AI Agent — agents write, audit, and revise novels with human review gates",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Inkos is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "Autonomous Novel Writing AI Agent. 自动化小说写作 AI Agent",
+      "AI Agent 自主写小说——写、审、改，全程接管。覆盖玄幻、仙侠、都市、科幻等多种风格，支持续写、番外、同人、仿写等创作形式。人工审核门控确保你始终掌控全局。已发布为 OpenClaw skill。"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "inkos",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,145 @@
+{
+  "id": "candidate-opensrc-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Opensrc",
+  "sourceUrl": "https://github.com/vercel-labs/opensrc",
+  "sourceName": "GitHub",
+  "author": "vercel-labs",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Fetch source code for npm packages to give AI coding agents deeper context",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "vercel-labs",
+    "repo": "opensrc",
+    "fullName": "vercel-labs/opensrc",
+    "stars": 2108,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai",
+      "ai-coding",
+      "cli",
+      "coding-agents",
+      "developer-tools",
+      "llm",
+      "nodejs",
+      "npm",
+      "source-code",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-01T16:17:04Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "skills/opensrc/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "opensrc Give coding agents access to any package's source code. Quick Start opensrc path fetches on first use, then returns the cached path instantly. See the [CLI readme](packages/opensrc/README.md) for full usage. Packages | Package | Description | | | | | [ opensrc ](packages/opensrc) | CLI — fetch and cache source code from npm, PyPI, crates.io, and GitHub | | [ @opensrc/docs ](apps/docs) | Documentation site | D",
+  "skillExtracts": [
+    {
+      "path": "skills/opensrc/SKILL.md",
+      "extract": "name: opensrc description: Fetch dependency source code to give AI agents deeper implementation context. Use when the agent needs to understand how a library works internally, read source code for a package, fetch implementation details for a dependency, or explore how an npm/PyPI/crates.io package is built. Triggers include \"fetch source for\", \"read the source of\", \"how does X work internally\", \"get the implementati"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Give coding agents access to any package's source code.",
+    "@opensrc/docs Documentation site",
+    "description: Fetch dependency source code to give AI agents deeper implementation context.",
+    "Use when the agent needs to understand how a library works internally, read source code for a package, fetch implementation details for a dependency, or explore how an npm/PyPI/crates.io package is built.",
+    "Triggers include \"fetch source for\", \"read the source of\", \"how does X work internally\", \"get the implementation of\", \"opensrc path\", or any task requiring access to dependency source code beyond types and docs.",
+    "allowed-tools: Bash(opensrc:)",
+    "Fetches dependency source code so agents can read implementations, not just types.",
+    "Don't fetch source for simple API usage questions that docs or types can answer."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Fetch source code for npm packages to give AI coding agents deeper context",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Opensrc is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "Give coding agents access to any package's source code.",
+      "@opensrc/docs Documentation site"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "opensrc",
+  "publishedAt": "2026-05-20"
+}

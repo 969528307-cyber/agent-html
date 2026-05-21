@@ -1,0 +1,165 @@
+{
+  "id": "candidate-full-stack-ai-agent-template-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Full Stack Ai Agent Template",
+  "sourceUrl": "https://github.com/vstorm-co/full-stack-ai-agent-template",
+  "sourceName": "GitHub",
+  "author": "vstorm-co",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Full-stack AI app generator — FastAPI + Next.js with AI Agents, RAG, streaming, auth, and 20+ integrations out of the box.",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "vstorm-co",
+    "repo": "full-stack-ai-agent-template",
+    "fullName": "vstorm-co/full-stack-ai-agent-template",
+    "stars": 1280,
+    "license": "MIT",
+    "topics": [
+      "agent-framework",
+      "ai-agent-template",
+      "ai-agents",
+      "crewai",
+      "docker",
+      "fastapi",
+      "full-stack",
+      "langchain",
+      "langgraph",
+      "llm",
+      "nextjs",
+      "postgresql",
+      "pydantic-ai",
+      "pydantic-deep",
+      "python",
+      "rag",
+      "react",
+      "typescript",
+      "vstorm",
+      "websocket"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-16T23:36:01Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/ai-agent.md",
+    "docs/architecture.md",
+    "docs/CHANGELOG.md",
+    "docs/concepts/index.md",
+    "docs/deployment.md",
+    "docs/frontend.md",
+    "docs/getting-help.md",
+    "docs/guides/index.md",
+    "docs/guides/quick-start.md",
+    "docs/includes/abbreviations.md",
+    "docs/index.md",
+    "docs/observability.md",
+    "docs/overrides/main.html",
+    "docs/rag.md",
+    "docs/stylesheets/extra.css",
+    "pyproject.toml",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "template/{{cookiecutter.project_slug}}/AGENTS.md",
+    "template/{{cookiecutter.project_slug}}/CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"https://raw.githubusercontent.com/vstorm co/full stack ai agent template/main/assets/banner.png\" alt=\"Full Stack AI Agent Template\" width=\"100%\" </p <h1 align=\"center\" Full Stack AI Agent Template</h1 <p align=\"center\" <i Production ready FastAPI + Next.js project generator with AI agents, RAG, and 20+ enterprise integrations.</i </p <p align=\"center\" <a href=\" quick start\" Quick Start</a ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Full-Stack AI Agent Template",
+    "Production-ready FastAPI + Next.js project generator with AI agents, RAG, and 20+ enterprise integrations.",
+    "🤖 6 AI Agent Frameworks (PydanticAI, PydanticDeep, LangChain, LangGraph, CrewAI, DeepAgents)",
+    "🔗 Conversation Sharing (direct sharing, public links, admin browser)",
+    "This template is part of a broader open-source ecosystem for production AI agents:",
+    "pydantic-deepagents The modular agent runtime for Python.",
+    "Claude Code-style CLI with Docker sandbox, browser automation, multi-agent teams, and /improve.",
+    "pydantic-ai-shields Drop-in guardrails for Pydantic AI agents."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Full-stack AI app generator — FastAPI + Next.js with AI Agents, RAG, streaming, auth, and 20+ integrations out of the box.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "template",
+    "useCategory": [
+      "devops",
+      "security",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "template",
+  "useCategory": [
+    "devops",
+    "security",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "reject_not_tool",
+  "enrichment": {
+    "decision": "reject_not_tool",
+    "confidence": "high",
+    "publishType": "none",
+    "primaryType": "agent-app",
+    "whatIsIt": "Full Stack Ai Agent Template is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with security workflows.",
+      "Helps with research workflows.",
+      "Relevant to agent-app.",
+      "Full-Stack AI Agent Template"
+    ],
+    "reasons": [
+      "This candidate is a starter, template, or example rather than a durable tool listing."
+    ],
+    "riskNotes": []
+  }
+}

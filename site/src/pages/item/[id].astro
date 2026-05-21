@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import ToolCard from "../../components/ToolCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
@@ -14,468 +13,731 @@ export async function getStaticPaths() {
 }
 
 const { tool } = Astro.props;
+const descriptionIsDuplicate = tool.data.description && tool.data.description === tool.data.summary;
 const allTools = (await getCollection("tools")).filter((entry) => entry.data.status === "published");
 const relatedTools = allTools.filter((entry) => tool.data.relatedTools.includes(entry.data.id)).slice(0, 3);
-const hasVerification = tool.data.verificationSteps.length > 0 || tool.data.verification;
 const isGitHubRepo = tool.data.repoUrl?.includes("github.com");
 const showRepoUrl = tool.data.repoUrl && tool.data.repoUrl !== tool.data.sourceUrl;
-const officialLinks = [
-  { label: "Official source", url: tool.data.sourceUrl },
-  ...(showRepoUrl ? [{ label: "GitHub repository", url: tool.data.repoUrl }] : []),
-  ...(isGitHubRepo ? [{ label: "Releases", url: `${tool.data.repoUrl}/releases` }] : []),
+const officialLinks =
+  tool.data.officialLinks.length > 0
+    ? tool.data.officialLinks
+    : [
+        { label: "Official source", url: tool.data.sourceUrl, kind: "source" },
+        ...(showRepoUrl ? [{ label: "GitHub repository", url: tool.data.repoUrl, kind: "github" }] : []),
+        ...(isGitHubRepo ? [{ label: "Docs / README", url: `${tool.data.repoUrl}#readme`, kind: "docs" }] : []),
+        ...(isGitHubRepo ? [{ label: "Quick start", url: `${tool.data.repoUrl}#readme`, kind: "quickstart" }] : []),
+        ...(isGitHubRepo ? [{ label: "Releases", url: `${tool.data.repoUrl}/releases`, kind: "releases" }] : []),
+      ];
+const trustSignals = [
+  ...(tool.data.stars ? [{ label: "Stars", value: tool.data.stars.toLocaleString() }] : []),
+  { label: "License", value: tool.data.license || "Check source" },
+  { label: "Updated", value: tool.data.lastUpdated || "Check source" },
+  { label: "Checked", value: tool.data.lastChecked },
 ];
+const evidenceNotes = [
+  ...tool.data.maintenanceNotes,
+  ...tool.data.securityNotes,
+  ...tool.data.limitations,
+].slice(0, 6);
 ---
 
 <BaseLayout title={`${tool.data.name} - agentk.it`} description={tool.data.summary}>
-  <section class="detail page">
-    <div class="breadcrumb"><a href="/tools">Tools</a> / <span>{tool.data.name}</span></div>
-    <div class="detail-grid">
-      <article class="detail-main">
-        <span class="badge">{tool.data.type.toUpperCase()}</span>
+  <section class="item-page page">
+    <section class="hero">
+      <div class="hero-copy">
+        <a class="back-link" href="/tools">Back to Tools</a>
+        <div class="route-chip"><span></span>{tool.data.type} · tool profile</div>
         <h1>{tool.data.name}</h1>
-        <p class="summary">{tool.data.description}</p>
-
-        {
-          tool.data.highlights.length > 0 && (
-            <section class="detail-block compact">
-              <h2>What it gives you</h2>
-              <div class="highlight-grid">
-                {tool.data.highlights.map((item) => <p>{item}</p>)}
-              </div>
-            </section>
-          )
-        }
-
-        {
-          tool.data.primaryUseCases.length > 0 && (
-            <section class="detail-block">
-              <h2>Best use cases</h2>
-              <ul class="check-list">
-                {tool.data.primaryUseCases.map((item) => <li>{item}</li>)}
-              </ul>
-            </section>
-          )
-        }
-
-        {
-          officialLinks.length > 0 && (
-            <section class="detail-block official-setup" id="official-setup">
-              <h2>Official setup</h2>
-              <p class="section-copy">
-                Install and configuration commands change often, so this page links to the official source instead of mirroring generated commands.
-              </p>
-              <div class="official-links">
-                {officialLinks.map((link) => (
-                  <a href={link.url} target="_blank" rel="noreferrer">{link.label}</a>
-                ))}
-              </div>
-            </section>
-          )
-        }
-
-        {
-          tool.data.agentSetups.length > 0 && (
-            <section class="detail-block">
-              <h2>Agent-specific setup</h2>
-              <div class="agent-setup-list">
-                {tool.data.agentSetups.map((setup) => (
-                  <article>
-                    <h3>{setup.agent}</h3>
-                    <p>{setup.summary}</p>
-                    {setup.steps.map((step) => (
-                      <div class="mini-step">
-                        <strong>{step.title}</strong>
-                        <p>{step.body}</p>
-                        {step.command && <code>{step.command}</code>}
-                        {step.code && <pre><code>{step.code}</code></pre>}
-                      </div>
-                    ))}
-                  </article>
-                ))}
-              </div>
-            </section>
-          )
-        }
-
-        {
-          hasVerification && (
-            <section class="detail-block">
-              <h2>Verify it works</h2>
-              {tool.data.verification && <p class="section-copy">{tool.data.verification}</p>}
-              <div class="step-list">
-                {tool.data.verificationSteps.map((step) => (
-                  <article class="step-card no-number">
-                    <div>
-                      <h3>{step.title}</h3>
-                      <p>{step.body}</p>
-                      {step.command && <code>{step.command}</code>}
-                      {step.code && <pre><code>{step.code}</code></pre>}
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </section>
-          )
-        }
-
-        {
-          tool.data.troubleshooting.length > 0 && (
-            <section class="detail-block">
-              <h2>Troubleshooting</h2>
-              <div class="step-list">
-                {tool.data.troubleshooting.map((step) => (
-                  <article class="step-card no-number">
-                    <div>
-                      <h3>{step.title}</h3>
-                      <p>{step.body}</p>
-                      {step.command && <code>{step.command}</code>}
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </section>
-          )
-        }
-
-        <section class="detail-block source-block">
-          <h2>Source and maintenance</h2>
-          <p><a href={tool.data.sourceUrl} target="_blank" rel="noreferrer">{tool.data.sourceUrl}</a></p>
-          {showRepoUrl && <p><a href={tool.data.repoUrl} target="_blank" rel="noreferrer">{tool.data.repoUrl}</a></p>}
-          <p>Last checked: {tool.data.lastChecked}</p>
-          {tool.data.license && <p>License: {tool.data.license}</p>}
-          {tool.data.maintenanceNotes.map((item) => <p>{item}</p>)}
-        </section>
-      </article>
-
-      <aside class="detail-side">
-        <div class="side-section">
-          <h3>Compatible agents</h3>
-          <div class="meta">
-            {tool.data.compatibleAgents.map((agent) => <span>{agent}</span>)}
-          </div>
-        </div>
-        <div class="side-section">
-          <h3>Categories</h3>
-          <div class="meta">
-            {tool.data.category.map((category) => <span>{category}</span>)}
-          </div>
-        </div>
-        {
-          tool.data.requirements.length > 0 && (
-            <div class="side-section">
-              <h3>Requirements</h3>
-              <ul>
-                {tool.data.requirements.map((item) => <li>{item}</li>)}
-              </ul>
-            </div>
-          )
-        }
-        {
-          tool.data.securityNotes.length > 0 && (
-            <div class="side-section">
-              <h3>Security notes</h3>
-              <ul>
-                {tool.data.securityNotes.map((item) => <li>{item}</li>)}
-              </ul>
-            </div>
-          )
-        }
-        {
-          tool.data.limitations.length > 0 && (
-            <div class="side-section">
-              <h3>Limitations</h3>
-              <ul>
-                {tool.data.limitations.map((item) => <li>{item}</li>)}
-              </ul>
-            </div>
-          )
-        }
-      </aside>
-    </div>
-  </section>
-
-  {relatedTools.length > 0 && (
-    <section class="section page">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">Related tools</div>
-          <h2>Use it with these.</h2>
+        <p>{tool.data.description || tool.data.summary}</p>
+        <div class="tag-row">
+          {tool.data.category.slice(0, 4).map((category) => <span>{category}</span>)}
+          {tool.data.compatibleAgents.slice(0, 4).map((agent) => <span>{agent}</span>)}
         </div>
       </div>
-      <div class="grid-3">
-        {relatedTools.map((entry) => <ToolCard tool={entry.data} />)}
+
+      <aside class="lab-console">
+        <div class="console-head">
+          <span>Source trust</span>
+          <strong>{tool.data.type.toUpperCase()}</strong>
+        </div>
+        <div class="console-lines">
+          {trustSignals.map((item) => (
+            <div>
+              <span>{item.label}</span>
+              <strong>{item.value}</strong>
+            </div>
+          ))}
+        </div>
+        <a class="source-button" href={tool.data.sourceUrl} target="_blank" rel="noreferrer">Open official source</a>
+      </aside>
+    </section>
+
+    <section class="overview-section">
+      <div class="section-kicker">
+        <span>01</span>
+        <h2>At a glance.</h2>
+        <p>A compact read before the deeper capability notes and official setup links.</p>
+      </div>
+
+      <div class="profile-grid">
+        {!descriptionIsDuplicate && (
+          <article class="profile-card overview">
+            <span>Tool summary</span>
+            <p>{tool.data.summary}</p>
+          </article>
+        )}
+        <article class="profile-card fit-card">
+          <span>Fit snapshot</span>
+          <div class="meta-row">
+            <div>
+              <small>Format</small>
+              <strong>{tool.data.type.toUpperCase()}</strong>
+            </div>
+            <div>
+              <small>Category</small>
+              <strong>{tool.data.category.slice(0, 2).join(" · ") || "Review source"}</strong>
+            </div>
+          </div>
+          <div class="chip-grid compact">
+            {tool.data.compatibleAgents.length > 0
+              ? tool.data.compatibleAgents.slice(0, 4).map((agent) => <strong>{agent}</strong>)
+              : <strong>Review official docs</strong>}
+          </div>
+        </article>
       </div>
     </section>
-  )}
+
+    {
+      tool.data.highlights.length > 0 && (
+        <section class="detail-section">
+          <div class="section-kicker">
+            <span>02</span>
+            <h2>Core features.</h2>
+            <p>Feature cards focus on what the tool helps users do, not generated setup commands.</p>
+          </div>
+          <div class="insight-grid">
+            {tool.data.highlights.map((item, index) => (
+              <article class="insight-card">
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <p>{item}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    {
+      tool.data.primaryUseCases.length > 0 && (
+        <section class="detail-section">
+          <div class="section-kicker">
+            <span>03</span>
+            <h2>Best-fit scenarios.</h2>
+            <p>Use cases are the main reason this belongs in the public directory.</p>
+          </div>
+          <div class="usecase-grid">
+            {tool.data.primaryUseCases.map((item, index) => (
+              <article class="usecase-card">
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <p>{item}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <section class="detail-section">
+      <div class="section-kicker">
+        <span>04</span>
+        <h2>Agent / Skill / MCP / Workflow fit.</h2>
+        <p>This panel keeps technical format separate from the user-facing AI category.</p>
+      </div>
+
+      <div class="fit-grid">
+        <article>
+          <span>Tool type</span>
+          <strong>{tool.data.type.toUpperCase()}</strong>
+        </article>
+        <article>
+          <span>Use categories</span>
+          <strong>{tool.data.category.join(", ") || "Uncategorized"}</strong>
+        </article>
+        <article>
+          <span>Works with</span>
+          <strong>{tool.data.compatibleAgents.join(", ") || "Review official docs"}</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-kicker">
+        <span>05</span>
+        <h2>Official setup path.</h2>
+        <p>Generated install snippets are intentionally not mirrored here because they drift. The page links to source-owned setup docs instead.</p>
+      </div>
+
+      <div class="official-grid">
+        {officialLinks.map((link) => (
+          <a href={link.url} target="_blank" rel="noreferrer">
+            <span>{link.kind}</span>
+            <strong>{link.label}</strong>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {
+      evidenceNotes.length > 0 && (
+        <section class="detail-section">
+          <div class="section-kicker">
+            <span>06</span>
+            <h2>Evidence and adoption notes.</h2>
+            <p>These notes help a user decide whether to investigate the official project further.</p>
+          </div>
+          <div class="note-grid">
+            {evidenceNotes.map((item) => <p>{item}</p>)}
+          </div>
+        </section>
+      )
+    }
+
+    <section class="source-panel">
+      <div>
+        <span>Trusted source</span>
+        <h2>Trace the origin before adopting.</h2>
+      </div>
+      <div class="source-list">
+        <a href={tool.data.sourceUrl} target="_blank" rel="noreferrer">
+          <small>source</small>
+          <strong>{tool.data.sourceUrl}</strong>
+        </a>
+        {showRepoUrl && (
+          <a href={tool.data.repoUrl} target="_blank" rel="noreferrer">
+            <small>repository</small>
+            <strong>{tool.data.repoUrl}</strong>
+          </a>
+        )}
+      </div>
+    </section>
+
+    {
+      relatedTools.length > 0 && (
+        <section class="detail-section">
+          <div class="section-kicker">
+            <span>07</span>
+            <h2>Related tools.</h2>
+            <p>Keep moving through the map by opening adjacent tools.</p>
+          </div>
+          <div class="related-grid">
+            {relatedTools.map((entry) => (
+              <a class="related-card" href={`/item/${entry.data.id}`}>
+                <span>{entry.data.type}</span>
+                <strong>{entry.data.name}</strong>
+                <p>{entry.data.summary}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </section>
 </BaseLayout>
 
 <style>
-  .detail {
-    padding: 54px 0 24px;
-  }
-
-  .breadcrumb {
-    margin-bottom: 18px;
-    color: var(--muted);
-    font-size: 13px;
-  }
-
-  .breadcrumb a:hover,
-  .detail-block a:hover {
-    color: var(--sage);
-  }
-
-  .detail-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px;
-    gap: 24px;
-  }
-
-  .detail-main,
-  .detail-side {
-    border: 1px solid var(--line);
+  :global(body) {
     background:
-      linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
-      var(--paper);
-    box-shadow: var(--shadow);
+      radial-gradient(circle at 12% 0%, rgb(92 124 172 / 0.16), transparent 30rem),
+      radial-gradient(circle at 92% 10%, rgb(198 149 90 / 0.1), transparent 28rem),
+      radial-gradient(circle at 58% 86%, rgb(78 163 132 / 0.09), transparent 34rem),
+      linear-gradient(180deg, #0a0e12 0%, #090c10 48%, #07090c 100%);
   }
 
-  .detail-main {
-    padding: 30px;
-    border-radius: 28px;
+  .item-page {
+    padding: 42px 0 72px;
   }
 
-  .detail-side {
-    position: sticky;
-    top: 112px;
-    align-self: start;
-    padding: 20px;
-    border-radius: 22px;
-  }
-
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    min-height: 26px;
-    padding: 0 10px;
-    color: var(--ink);
-    font-size: 11px;
-    font-weight: 700;
-    background: var(--sage-soft);
-    border: 1px solid rgb(167 207 164 / 0.18);
-    border-radius: 999px;
-  }
-
-  h1 {
-    margin-top: 18px;
-    font-size: clamp(36px, 5vw, 64px);
-  }
-
-  .summary,
-  .section-copy {
-    max-width: 720px;
-    color: var(--muted);
-    line-height: 1.75;
-  }
-
-  .summary {
-    margin-top: 18px;
-  }
-
-  .section-copy {
-    margin-bottom: 16px;
-  }
-
-  .detail-block {
-    margin-top: 34px;
-    padding-top: 28px;
-    border-top: 1px solid var(--line);
-  }
-
-  .detail-block.compact {
-    padding-top: 0;
-    border-top: 0;
-  }
-
-  .detail-block h2 {
-    margin-bottom: 16px;
-    font-size: 24px;
-  }
-
-  .highlight-grid {
+  .hero {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-  }
-
-  .highlight-grid p {
-    padding: 16px;
-    color: var(--ink);
-    font-size: 14px;
-    line-height: 1.6;
-    background: rgb(238 244 238 / 0.035);
-    border: 1px solid var(--line);
-    border-radius: 18px;
-  }
-
-  .check-list,
-  .side-section ul {
-    display: grid;
-    gap: 10px;
-    padding-left: 18px;
-  }
-
-  .step-list,
-  .agent-setup-list {
-    display: grid;
-    gap: 14px;
-    margin-top: 14px;
-  }
-
-  .step-card,
-  .agent-setup-list article {
-    display: grid;
-    grid-template-columns: 48px minmax(0, 1fr);
-    gap: 16px;
-    padding: 18px;
-    border: 1px solid var(--line);
-    border-radius: 20px;
-    background: rgb(238 244 238 / 0.026);
-  }
-
-  .step-card.no-number {
-    grid-template-columns: 1fr;
-  }
-
-  .step-card > span {
-    display: grid;
-    place-items: center;
-    width: 38px;
-    height: 38px;
-    color: #07100a;
-    font-size: 12px;
-    font-weight: 800;
-    background: var(--sage);
-    border-radius: 999px;
-  }
-
-  .step-card h3,
-  .agent-setup-list h3 {
-    margin-bottom: 8px;
-  }
-
-  .step-card p,
-  .agent-setup-list p,
-  li,
-  .detail-block p {
-    color: var(--muted);
-    line-height: 1.7;
-  }
-
-  code,
-  pre {
-    display: block;
-    margin-top: 12px;
-    padding: 14px;
-    overflow: auto;
-    color: var(--sage);
-    font-size: 13px;
-    line-height: 1.55;
-    background: var(--sage-soft);
-    border: 1px solid rgb(167 207 164 / 0.14);
-    border-radius: 14px;
-  }
-
-  pre code {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    border: 0;
-  }
-
-  .agent-setup-list article {
-    grid-template-columns: 1fr;
-  }
-
-  .mini-step {
-    margin-top: 14px;
-    padding-top: 14px;
-    border-top: 1px solid var(--line);
-  }
-
-  .mini-step strong {
-    color: var(--ink);
-  }
-
-  .source-block a {
-    color: var(--sage);
-    overflow-wrap: anywhere;
-  }
-
-  .official-links {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  .official-links a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 42px;
-    padding: 0 16px;
-    color: #07100a;
-    font-weight: 800;
-    background: var(--sage);
-    border-radius: 999px;
-  }
-
-  .official-links a:hover {
-    color: #07100a;
-    transform: translateY(-1px);
-  }
-
-  .side-section {
-    padding-bottom: 18px;
-    margin-bottom: 18px;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .side-section:last-child {
-    margin-bottom: 0;
-    border-bottom: 0;
-  }
-
-  .meta {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin: 12px 0 0;
-  }
-
-  .meta span {
-    padding: 7px 9px;
-    color: var(--muted);
-    font-size: 12px;
-    background: rgb(238 244 238 / 0.035);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-  }
-
-  .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
     gap: 18px;
   }
 
-  @media (max-width: 960px) {
-    .detail-grid,
-    .grid-3,
-    .highlight-grid {
+  .hero-copy,
+  .lab-console,
+  .profile-card,
+  .insight-card,
+  .usecase-card,
+  .fit-grid article,
+  .official-grid a,
+  .note-grid p,
+  .source-panel,
+  .related-card {
+    border: 1px solid rgb(214 205 188 / 0.1);
+    background:
+      linear-gradient(180deg, rgb(235 229 211 / 0.055), rgb(235 229 211 / 0.022)),
+      rgb(16 21 28 / 0.86);
+    box-shadow: 0 24px 80px rgb(0 0 0 / 0.26);
+    backdrop-filter: blur(26px);
+  }
+
+  .hero-copy {
+    position: relative;
+    min-height: 360px;
+    padding: clamp(28px, 4.4vw, 52px);
+    overflow: hidden;
+    border-radius: 42px;
+  }
+
+  .hero-copy::after {
+    position: absolute;
+    right: -90px;
+    bottom: -150px;
+    width: 360px;
+    height: 360px;
+    content: "";
+    background:
+      radial-gradient(circle at 34% 35%, rgb(223 213 190 / 0.38), transparent 8%),
+      conic-gradient(from 180deg, rgb(103 132 180 / 0.38), rgb(205 160 96 / 0.28), rgb(83 163 130 / 0.3), rgb(103 132 180 / 0.38));
+    border-radius: 44% 56% 50% 50%;
+    opacity: 0.46;
+    filter: blur(8px);
+  }
+
+  .back-link {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    margin-bottom: 16px;
+    color: #9bb8df;
+    font-size: 13px;
+  }
+
+  .route-chip {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 9px 12px;
+    color: #cbd9ef;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    border: 1px solid rgb(134 174 255 / 0.26);
+    border-radius: 999px;
+    background: rgb(134 174 255 / 0.1);
+  }
+
+  .route-chip span {
+    width: 8px;
+    height: 8px;
+    background: #e5b76a;
+    border-radius: 999px;
+  }
+
+  .hero h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin-top: 22px;
+    color: #e7e0d2;
+    font-family: var(--sans);
+    font-size: clamp(46px, 6.8vw, 86px);
+    font-weight: 790;
+    line-height: 0.92;
+    letter-spacing: -0.075em;
+  }
+
+  .hero p {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin-top: 22px;
+    color: #a9b0bd;
+    font-size: 15px;
+    line-height: 1.76;
+  }
+
+  .tag-row,
+  .chip-grid {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 22px;
+  }
+
+  .tag-row span,
+  .chip-grid strong {
+    padding: 8px 10px;
+    color: #b9dcc9;
+    font-size: 12px;
+    font-weight: 800;
+    border: 1px solid rgb(82 190 145 / 0.18);
+    border-radius: 999px;
+    background: rgb(82 190 145 / 0.07);
+  }
+
+  .lab-console {
+    display: grid;
+    gap: 20px;
+    align-content: space-between;
+    min-height: 360px;
+    padding: 24px;
+    border-radius: 34px;
+  }
+
+  .console-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: #9199a7;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+  }
+
+  .console-head strong {
+    color: #cda86b;
+  }
+
+  .console-lines {
+    display: grid;
+    gap: 10px;
+  }
+
+  .console-lines div {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 12px;
+    align-items: baseline;
+    padding-top: 12px;
+    border-top: 1px solid rgb(214 205 188 / 0.1);
+  }
+
+  .console-lines span {
+    color: #89919d;
+    font-size: 12px;
+  }
+
+  .console-lines strong {
+    overflow: hidden;
+    color: #ded7c8;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .source-button {
+    display: inline-flex;
+    justify-content: center;
+    padding: 13px 16px;
+    color: #07100c;
+    font-weight: 850;
+    border-radius: 999px;
+    background: #9ac9a4;
+  }
+
+  .overview-section,
+  .detail-section,
+  .source-panel {
+    margin-top: 44px;
+  }
+
+  .section-kicker {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 0.8fr) minmax(260px, 0.6fr);
+    gap: 18px;
+    align-items: end;
+    margin-bottom: 18px;
+  }
+
+  .section-kicker > span,
+  .profile-card > span,
+  .official-grid span,
+  .source-panel span,
+  .source-list small,
+  .related-card span,
+  .usecase-card span,
+  .fit-grid span {
+    color: #cfa96b;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .section-kicker h2,
+  .source-panel h2 {
+    color: #ded7c8;
+    font-family: var(--sans);
+    font-size: clamp(24px, 2.6vw, 36px);
+    font-weight: 760;
+    line-height: 1.05;
+    letter-spacing: -0.055em;
+  }
+
+  .section-kicker p,
+  .profile-card p,
+  .usecase-card p,
+  .note-grid p,
+  .related-card p {
+    color: #989fac;
+    font-size: 14px;
+    line-height: 1.62;
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+    gap: 12px;
+    max-width: 980px;
+  }
+
+  .profile-card {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .profile-card.overview p {
+    max-width: 660px;
+    margin-top: 12px;
+    color: #c7c4ba;
+    font-size: 15px;
+    line-height: 1.62;
+  }
+
+  .fit-card {
+    display: grid;
+    gap: 14px;
+  }
+
+  .meta-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .meta-row div {
+    display: grid;
+    gap: 5px;
+    padding: 12px;
+    border: 1px solid rgb(214 205 188 / 0.08);
+    border-radius: 16px;
+    background: rgb(214 205 188 / 0.025);
+  }
+
+  .meta-row small {
+    color: #858e9b;
+    font-size: 11px;
+    font-weight: 850;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .meta-row strong {
+    overflow: hidden;
+    color: #d8d2c6;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .chip-grid.compact {
+    margin-top: 0;
+  }
+
+  .source-list {
+    display: grid;
+    gap: 9px;
+    margin-top: 14px;
+  }
+
+  .source-list a {
+    display: grid;
+    gap: 5px;
+    padding: 12px;
+    border: 1px solid rgb(214 205 188 / 0.09);
+    border-radius: 16px;
+    background: rgb(214 205 188 / 0.03);
+  }
+
+  .source-list strong {
+    overflow-wrap: anywhere;
+    color: #dcd5c7;
+    font-size: 13px;
+  }
+
+  .usecase-grid,
+  .official-grid,
+  .note-grid,
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .insight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 980px;
+  }
+
+  .insight-card,
+  .usecase-card,
+  .official-grid a,
+  .related-card {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .insight-card {
+    display: grid;
+    grid-template-columns: 54px minmax(0, 1fr);
+    gap: 16px;
+    align-items: start;
+    min-height: unset;
+    padding: 15px 17px;
+    border-color: rgb(218 204 178 / 0.075);
+    background:
+      linear-gradient(90deg, rgb(224 211 185 / 0.045), rgb(104 127 163 / 0.035)),
+      rgb(13 17 22 / 0.76);
+    box-shadow: none;
+    backdrop-filter: blur(18px);
+  }
+
+  .insight-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    margin: 1px 0 0;
+    color: #c6a56a;
+    font-size: 11px;
+    font-weight: 850;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: 1px solid rgb(199 165 106 / 0.18);
+    border-radius: 999px;
+    background: rgb(199 165 106 / 0.055);
+  }
+
+  .insight-card p {
+    margin: 0;
+    max-width: 760px;
+    color: #b9b2a6;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 520;
+    line-height: 1.62;
+    letter-spacing: -0.01em;
+  }
+
+  .official-grid strong,
+  .related-card strong {
+    display: block;
+    color: #d8d2c6;
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 690;
+    line-height: 1.42;
+    letter-spacing: -0.025em;
+  }
+
+  .official-grid strong,
+  .related-card strong {
+    font-size: 17px;
+    line-height: 1.25;
+  }
+
+  .usecase-card p,
+  .related-card p {
+    margin-top: 12px;
+  }
+
+  .fit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .fit-grid article {
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .fit-grid strong {
+    display: block;
+    margin-top: 10px;
+    color: #dcd5c7;
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .official-grid a {
+    display: grid;
+    gap: 8px;
+  }
+
+  .note-grid p {
+    min-height: 130px;
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .source-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(320px, 1fr);
+    gap: 18px;
+    align-items: start;
+    padding: 24px;
+    border-radius: 32px;
+  }
+
+  @media (max-width: 1080px) {
+    .hero,
+    .section-kicker,
+    .profile-grid,
+    .source-panel {
       grid-template-columns: 1fr;
     }
 
-    .detail-side {
-      position: static;
+    .usecase-grid,
+    .official-grid,
+    .note-grid,
+    .related-grid,
+    .fit-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 720px) {
+    .item-page {
+      padding-top: 24px;
+    }
+
+    .hero-copy,
+    .lab-console {
+      min-height: auto;
+      border-radius: 26px;
+    }
+
+    .usecase-grid,
+    .official-grid,
+    .note-grid,
+    .related-grid,
+    .fit-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .insight-card {
+      grid-template-columns: 44px minmax(0, 1fr);
+      gap: 12px;
+      padding: 14px;
     }
   }
 </style>

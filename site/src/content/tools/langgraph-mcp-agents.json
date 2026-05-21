@@ -1,0 +1,74 @@
+{
+  "id": "langgraph-mcp-agents",
+  "name": "Langgraph Mcp Agents",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "LangGraph-powered ReAct agent with Model Context Protocol (MCP) integration. A Streamlit web interface for dynamically configuring, deploying, and interacting with AI agents capable of accessing various data sources and APIs through MCP tools.",
+  "description": "LangGraph-powered ReAct agent with Model Context Protocol (MCP) integration. A Streamlit web interface for dynamically configuring, deploying, and interacting with AI agents capable of accessing various data sources and APIs through MCP tools.",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/braincrew-lab/langgraph-mcp-agents",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/braincrew-lab/langgraph-mcp-agents",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/braincrew-lab/langgraph-mcp-agents#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/braincrew-lab/langgraph-mcp-agents#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/braincrew-lab/langgraph-mcp-agents/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "LangChain-MCP-Adapters is a toolkit provided by LangChain AI that enables AI agents to interact with external tools and data sources through the Model Context Protocol (MCP).",
+    "This project provides a user-friendly interface for deploying ReAct agents that can access various data sources and APIs through MCP tools.",
+    "Streamlit Interface: A user-friendly web interface for interacting with LangGraph ReAct Agent with MCP tools",
+    "Tool Management: Add, remove, and configure MCP tools through the UI (Smithery JSON format supported).",
+    "Streaming Responses: View agent responses and tool calls in real-time",
+    "Conversation History: Track and manage conversations with the agent",
+    "The Model Context Protocol (MCP) consists of three main components:",
+    "MCP Host: Programs seeking to access data through MCP, such as Claude Desktop, IDEs, or LangChain/LangGraph."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-04-14T11:00:22Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/braincrew-lab/langgraph-mcp-agents",
+  "repoUrl": "https://github.com/braincrew-lab/langgraph-mcp-agents",
+  "stars": 705,
+  "lastUpdated": "2025-04-14T11:00:22Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,135 @@
+{
+  "id": "candidate-mcp-server-chart-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp Server Chart",
+  "sourceUrl": "https://github.com/antvis/mcp-server-chart",
+  "sourceName": "GitHub",
+  "author": "antvis",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "🤖 A visualization mcp & skills contains 25+ visual charts using @antvis. Using for chart generation and data analysis.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "antvis",
+    "repo": "mcp-server-chart",
+    "fullName": "antvis/mcp-server-chart",
+    "stars": 4074,
+    "license": "MIT",
+    "topics": [
+      "antv",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "skills",
+      "visualization"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-06T07:58:59Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "MCP Server Chart A Model Context Protocol server for generating charts using [AntV](https://github.com/antvis/). We can use this mcp server for chart generation and data analysis . ![](https://badge.mcpx.dev?type=server \"MCP Server\") [![build](https://github.com/antvis/mcp server chart/actions/workflows/build.yml/badge.svg)](https://github.com/antvis/mcp server chart/actions/workflows/build.yml) [![npm Version](https",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A Model Context Protocol server for generating charts using AntV.",
+    "We can use this mcp server for chart generation and data analysis.",
+    "This is a TypeScript-based MCP server that provides chart generation capabilities.",
+    "It allows you to create various types of charts through MCP tools.",
+    "generatenetworkgraph: Generate a network graph, used to display relationships and connections between nodes.",
+    "The above geographic visualization chart generation tool uses AMap service and currently only supports map generation within China.",
+    "If you are using an AI IDE with skill support (like Claude Code), you can use the chart-visualization skill to automatically select the best chart type and generate visualizations.",
+    "You can add the skill from using:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "🤖 A visualization mcp & skills contains 25+ visual charts using @antvis. Using for chart generation and data analysis.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Mcp Server Chart is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with media workflows.",
+      "Relevant to mcp.",
+      "A Model Context Protocol server for generating charts using AntV.",
+      "We can use this mcp server for chart generation and data analysis."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-server-chart",
+  "publishedAt": "2026-05-20"
+}

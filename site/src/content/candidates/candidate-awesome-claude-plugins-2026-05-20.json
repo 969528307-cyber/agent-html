@@ -1,0 +1,184 @@
+{
+  "id": "candidate-awesome-claude-plugins-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Claude Plugins",
+  "sourceUrl": "https://github.com/ComposioHQ/awesome-claude-plugins",
+  "sourceName": "GitHub",
+  "author": "ComposioHQ",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A curated list of Plugins that let you extend Claude Code with custom commands, agents, hooks, and MCP servers through the plugin system.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "ComposioHQ",
+    "repo": "awesome-claude-plugins",
+    "fullName": "ComposioHQ/awesome-claude-plugins",
+    "stars": 1676,
+    "topics": [
+      "anthropic",
+      "claude-ai",
+      "claude-code",
+      "claude-code-plugin",
+      "claude-code-plugin-marketplace",
+      "claude-code-plugins",
+      "claude-code-plugins-marketplace",
+      "claude-cowork",
+      "claude-desktop",
+      "claude-plugins",
+      "claude-skills",
+      "plugins"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-01T07:08:01Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "artifacts-builder/skills/artifacts-builder/SKILL.md",
+    "canvas-design/skills/canvas-design/SKILL.md",
+    "changelog-generator/skills/changelog-generator/SKILL.md",
+    "developer-growth-analysis/skills/developer-growth-analysis/SKILL.md",
+    "frontend-design/skills/frontend-design/SKILL.md",
+    "mcp-builder/skills/mcp-builder/SKILL.md",
+    "perf/skills/analyzer/SKILL.md",
+    "perf/skills/baseline/SKILL.md",
+    "perf/skills/benchmark/SKILL.md",
+    "perf/skills/code-paths/SKILL.md",
+    "perf/skills/investigation-logger/SKILL.md",
+    "perf/skills/profile/SKILL.md",
+    "perf/skills/theory-tester/SKILL.md",
+    "perf/skills/theory/SKILL.md",
+    "senior-frontend/skills/senior-frontend/SKILL.md",
+    "skill-bus/skills/add-sub/SKILL.md",
+    "skill-bus/skills/help/SKILL.md",
+    "skill-bus/skills/list-subs/SKILL.md",
+    "skill-bus/skills/pause-subs/SKILL.md",
+    "skill-bus/skills/reflecting-on-sessions/SKILL.md",
+    "skill-bus/skills/remove-sub/SKILL.md",
+    "skill-bus/skills/unpause-subs/SKILL.md",
+    "theme-factory/skills/theme-factory/SKILL.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" Awesome Claude Code Plugins</h1 <p align=\"center\" <a href=\"https://dashboard.composio.dev/login?utm source=Github&utm medium=Banner&utm content=AwesomePlugins\" <img width=\"1280\" alt=\"Awesome Claude Plugins\" src=\"./cover image.png\" </a </p <p align=\"center\" <a href=\"https://awesome.re\" <img src=\"https://awesome.re/badge.svg\" alt=\"Awesome\" / </a <a href=\"https://makeapullrequest.com\" <img src=\"https:",
+  "skillExtracts": [
+    {
+      "path": "artifacts-builder/skills/artifacts-builder/SKILL.md",
+      "extract": "name: artifacts builder description: Suite of tools for creating elaborate, multi component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components not for simple single file HTML/JSX artifacts. Artifacts Builder To build powerful frontend claude.ai artifacts, follow these steps: 1. Initial"
+    },
+    {
+      "path": "canvas-design/skills/canvas-design/SKILL.md",
+      "extract": "name: canvas design description: Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations. These are instructions for creating design philosophies aesthetic movements that are then EXPRESS"
+    },
+    {
+      "path": "changelog-generator/skills/changelog-generator/SKILL.md",
+      "extract": "name: changelog generator description: Automatically creates user facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits into clear, customer friendly release notes. Turns hours of manual changelog writing into minutes of automated generation. Changelog Generator This skill transforms technical git commits into polished, user friendly changelogs that y"
+    },
+    {
+      "path": "developer-growth-analysis/skills/developer-growth-analysis/SKILL.md",
+      "extract": "name: developer growth analysis description: Analyzes your recent Claude Code chat history to identify coding patterns, development gaps, and areas for improvement, curates relevant learning resources from HackerNews, and automatically sends a personalized growth report to your Slack DMs. Developer Growth Analysis This skill provides personalized feedback on your recent coding work by analyzing your Claude Code chat "
+    },
+    {
+      "path": "frontend-design/skills/frontend-design/SKILL.md",
+      "extract": "name: frontend design description: Create distinctive, production grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, or applications. Generates creative, polished code that avoids generic AI aesthetics. This skill guides creation of distinctive, production grade frontend interfaces that avoid generic \"AI slop\" aesthetics. Implement real working code w"
+    },
+    {
+      "path": "mcp-builder/skills/mcp-builder/SKILL.md",
+      "extract": "name: mcp builder description: Guide for creating high quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). MCP Server Development Guide Overview To create high quality MCP (Model Context Protocol) servers that enable L"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A curated list of production-ready plugins for Claude Code to supercharge your development workflow.",
+    "Want plugins that do more than generate text? The connect-apps plugin lets Claude send emails, create issues, post to Slack, and take actions across 500+ apps.",
+    "The connect-apps plugin lets Claude perform real actions - send emails, create issues, post to Slack.",
+    "It handles auth and connects to 500+ apps using Composio under the hood.",
+    "Ask Claude to send you a test email.",
+    "If you receive it, Claude is now connected to 500+ apps.",
+    "Claude Plugins are extensions that enhance Claude Code with custom slash commands, specialized agents, hooks, and skills.",
+    "Plugins can be shared across projects and teams, providing consistent tooling and workflows."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A curated list of Plugins that let you extend Claude Code with custom commands, agents, hooks, and MCP servers through the plugin system.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome Claude Plugins is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "A curated list of production-ready plugins for Claude Code to supercharge your development workflow.",
+      "Want plugins that do more than generate text? The connect-apps plugin lets Claude send emails, create issues, post to Slack, and take actions across 500+ apps."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

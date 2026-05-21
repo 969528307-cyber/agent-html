@@ -1,0 +1,76 @@
+{
+  "id": "inspector",
+  "name": "Inspector",
+  "type": "cli",
+  "status": "published",
+  "summary": "Development platform to debug, chat, inspect, and evaluate MCP servers, MCP apps, and ChatGPT apps.",
+  "description": "Development platform to debug, chat, inspect, and evaluate MCP servers, MCP apps, and ChatGPT apps.",
+  "category": [
+    "communication"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/MCPJam/inspector",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/MCPJam/inspector",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/MCPJam/inspector#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/MCPJam/inspector#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/MCPJam/inspector/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "MCPJam is the development platform for MCP servers, MCP apps, and ChatGPT apps.",
+    "Chat: Talk to any LLM against your server with full trace visibility into tool calls and context across agent, host app, your server.",
+    "Inspect: Explore your server’s tools, resources, and prompts in one place.",
+    "CLI: Probe servers, run doctor checks, exercise OAuth flows, and list tools/resources/prompts straight from your terminal.",
+    "SDK: Programmatically drive inspections, snapshot server capabilities, and assert on tool/resource shapes from your own tests.",
+    "No more ngrok or ChatGPT/Claude subscription needed.",
+    "MCPJam is the fastest way to iterate on any MCP project.",
+    "Or run MCPJam locally for HTTP/S and local STDIO servers:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T06:05:44Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/MCPJam/inspector",
+  "repoUrl": "https://github.com/MCPJam/inspector",
+  "license": "NOASSERTION",
+  "stars": 1940,
+  "lastUpdated": "2026-05-13T06:05:44Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

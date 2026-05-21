@@ -1,0 +1,247 @@
+{
+  "id": "candidate-tool-github-agentset-ai-agentset",
+  "type": "tool",
+  "status": "published",
+  "title": "Agentset",
+  "sourceUrl": "https://github.com/agentset-ai/agentset",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "agentset-ai",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "The open-source RAG platform: built-in citations, deep research, 22+ file formats, partitions, MCP server, and more.",
+  "proposedCategory": [
+    "search",
+    "sdk"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "agentset-ai",
+    "repo": "agentset",
+    "fullName": "agentset-ai/agentset",
+    "stars": 1988,
+    "license": "MIT",
+    "topics": [
+      "agentic-rag",
+      "ai",
+      "ai-agents",
+      "ai-sdk",
+      "chatbots",
+      "embeddings",
+      "genai",
+      "llms",
+      "memory",
+      "memory-management",
+      "rag",
+      "vercel-ai-sdk"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-21T18:55:15Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    ".agents/skills/baseline-ui/SKILL.md",
+    ".agents/skills/fixing-accessibility/SKILL.md",
+    ".agents/skills/fixing-metadata/SKILL.md",
+    ".agents/skills/react-email/SKILL.md",
+    ".agents/skills/trigger-dev-tasks/SKILL.md",
+    ".agents/skills/vercel-react-best-practices/SKILL.md",
+    ".agents/skills/vercel-react-best-practices/AGENTS.md",
+    ".cursor/mcp.json",
+    ".cursor/rules/animations.mdc",
+    ".cursor/rules/clean-code.mdc",
+    ".cursor/rules/nextjs.mdc",
+    ".cursor/rules/project-structure.mdc",
+    ".cursor/rules/shadcn.mdc",
+    ".cursor/rules/tailwind.mdc",
+    ".cursor/skills/baseline-ui",
+    ".cursor/skills/fixing-accessibility",
+    ".cursor/skills/fixing-metadata",
+    ".cursor/skills/react-email",
+    ".cursor/skills/trigger-dev-tasks",
+    ".cursor/skills/vercel-react-best-practices"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://agentset.ai\" <img width=\"100\" height=\"100\" alt=\"Agentset Logo\" src=\"https://github.com/user attachments/assets/2dd23f69 c0f0 4c73 91df db529f709f2c\" style=\"border radius: 2px;\" / </a </p <h1 align=\"center\" Agentset</h1 <p align=\"center\" <strong RAG. Optimized for maximum performance.</strong </p <p align=\"center\" <a href=\"https://docs.agentset.ai\" Docs</a · <a href=\"https://github.c",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/baseline-ui/SKILL.md",
+      "extract": "name: baseline ui description: Enforces an opinionated UI baseline to prevent AI generated interface slop. Baseline UI Enforces an opinionated UI baseline to prevent AI generated interface slop. How to use /baseline ui Apply these constraints to any UI work in this conversation. /baseline ui <file Review the file against all constraints below and output: violations (quote the exact line/snippet) why it matters (1 sho"
+    },
+    {
+      "path": ".agents/skills/fixing-accessibility/SKILL.md",
+      "extract": "name: fixing accessibility description: Fix accessibility issues. fixing accessibility Fix accessibility issues. how to use /fixing accessibility Apply these constraints to any UI work in this conversation. /fixing accessibility <file Review the file against all rules below and report: violations (quote the exact line or snippet) why it matters (one short sentence) a concrete fix (code level suggestion) Do not rewrit"
+    },
+    {
+      "path": ".agents/skills/fixing-metadata/SKILL.md",
+      "extract": "name: fixing metadata description: Ship correct, complete metadata. fixing metadata Ship correct, complete metadata. how to use /fixing metadata Apply these constraints to any metadata work in this conversation. /fixing metadata <file Review the file against all rules below and report: violations (quote the exact line or snippet) why it matters (one short sentence) a concrete fix (code level suggestion) Do not introd"
+    },
+    {
+      "path": ".agents/skills/react-email/SKILL.md",
+      "extract": "name: react email description: Create beautiful, responsive HTML emails using React components with React Email. Build transactional emails with modern components, support internationalization, and integrate with email service providers like Resend. Use when creating welcome emails, password resets, notifications, order confirmations, or any HTML email templates. React Email Build and send HTML emails using React com"
+    },
+    {
+      "path": ".agents/skills/trigger-dev-tasks/SKILL.md",
+      "extract": "name: trigger dev tasks description: Use this skill when writing, designing, or optimizing Trigger.dev background tasks and workflows. This includes creating reliable async tasks, implementing AI workflows, setting up scheduled jobs, structuring complex task hierarchies with subtasks, configuring build extensions for tools like ffmpeg or Puppeteer/Playwright, and handling task schemas with Zod validation. allowed too"
+    },
+    {
+      "path": ".agents/skills/vercel-react-best-practices/SKILL.md",
+      "extract": "name: vercel react best practices description: React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements. license: MIT metadata: author: vercel versi"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agentset is the open-source platform to build, evaluate, and ship production-ready RAG and agentic applications.",
+    "It provides end-to-end tooling: ingestion, vector indexing, evaluation/benchmarks, chat playground, hosting, and a developer-friendly API.",
+    "Production hosting with preview links and custom domains",
+    "The fastest way to get started with Agentset.",
+    "If you find Agentset useful, please give the repo a star — it helps a lot!",
+    "Made with ❤️ by the Agentset team.",
+    "Review the file against all constraints below and output:",
+    "Review the file against all rules below and report:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The open-source RAG platform: built-in citations, deep research, 22+ file formats, partitions, MCP server, and more.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "research",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "research",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Agentset is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with research workflows.",
+      "Helps with memory workflows.",
+      "Relevant to search."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:agentset-ai/agentset",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 9,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Agent instruction or rule files detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: knowledge-resource, mcp, workflow.",
+    "LLM: agent-framework + [mcp] — It is an open-source platform for building RAG and agentic applications with end-to-end tooling, including an MCP server."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "mcp",
+    "workflow"
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agentset",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>agentk.it sitemap v1 refined demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #090c0b;
+  --paper: #111712;
+  --paper-soft: #151d18;
+  --ink: #eef4ee;
+  --muted: #9aa69d;
+  --faint: #68746d;
+  --line: #28332d;
+  --line-strong: #3d4c43;
+  --sage: #a7cfa4;
+  --sage-2: #6f9874;
+  --sage-soft: rgb(167 207 164 / 0.13);
+  --clay: #d39a76;
+  --clay-soft: rgb(211 154 118 / 0.14);
+  --gold: #c8a45f;
+  --blue: #86a8b9;
+  --shadow: 0 24px 70px rgb(0 0 0 / 0.24);
+  --display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--sans);
+  background:
+    radial-gradient(circle at 16% 8%, rgb(111 152 116 / 0.22), transparent 25rem),
+    radial-gradient(circle at 88% 0%, rgb(211 154 118 / 0.12), transparent 25rem),
+    linear-gradient(180deg, #0a0e0c, var(--bg) 58%, #070a09);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  width: min(1160px, calc(100vw - 40px));
+  margin: 0 auto;
+}
+
+.topbar {
+  position: sticky;
+  top: 16px;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  margin: 16px auto 0;
+  padding: 12px 12px 12px 18px;
+  border: 1px solid rgb(238 244 238 / 0.08);
+  border-radius: 999px;
+  background: rgb(17 23 18 / 0.72);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(22px);
+}
+
+.brand {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: #08100b;
+  background: var(--sage);
+  border-radius: 999px;
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.nav button,
+.small-button {
+  min-height: 38px;
+  padding: 0 14px;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+}
+
+.nav button:hover,
+.nav button.is-active {
+  color: var(--ink);
+  background: var(--sage-soft);
+}
+
+.small-button {
+  color: #08100b;
+  background: var(--sage);
+}
+
+.view {
+  display: none;
+}
+
+.view.is-active {
+  display: block;
+  animation: fadeUp 420ms ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 34px;
+  align-items: end;
+  padding: 78px 0 38px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  margin-bottom: 16px;
+  color: var(--sage);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 7px;
+  height: 7px;
+  content: "";
+  background: var(--clay);
+  border-radius: 99px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  max-width: 720px;
+  font-family: var(--display);
+  font-size: clamp(40px, 5.6vw, 72px);
+  line-height: 1.03;
+  letter-spacing: -0.06em;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: var(--display);
+  font-size: clamp(25px, 3vw, 38px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  font-weight: 650;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 1.32;
+  letter-spacing: -0.025em;
+}
+
+.hero-copy {
+  max-width: 620px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.72;
+}
+
+.search-panel {
+  margin-top: 28px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgb(17 23 18 / 0.72);
+  box-shadow: var(--shadow);
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 8px 8px 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--paper);
+}
+
+.search-box input {
+  width: 100%;
+  min-height: 40px;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.search-box input::placeholder {
+  color: var(--faint);
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.tab {
+  min-height: 36px;
+  padding: 0 13px;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
+}
+
+.tab:hover,
+.tab.is-active {
+  color: var(--ink);
+  background: var(--sage-soft);
+  border-color: rgb(167 207 164 / 0.18);
+}
+
+.summary-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgb(238 244 238 / 0.045), rgb(238 244 238 / 0.012)),
+    var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.summary-card p {
+  margin-top: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.summary-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.summary-row strong {
+  font-size: 18px;
+}
+
+.summary-row span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+
+.section-head p {
+  max-width: 480px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card,
+.tool-card,
+.route-card,
+.article-card {
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
+    var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.tool-card {
+  position: relative;
+  display: grid;
+  gap: 16px;
+  min-height: 220px;
+  padding: 20px;
+  border-radius: 22px;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--line-strong);
+  box-shadow: 0 26px 70px rgb(0 0 0 / 0.28);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0 10px;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--sage-soft);
+  border: 1px solid rgb(167 207 164 / 0.18);
+  border-radius: 999px;
+}
+
+.badge.clay {
+  color: var(--clay);
+  background: var(--clay-soft);
+  border-color: rgb(211 154 118 / 0.18);
+}
+
+.tool-card p,
+.route-card p,
+.article-card p {
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.meta span {
+  padding: 7px 9px;
+  color: var(--muted);
+  font-size: 12px;
+  background: rgb(238 244 238 / 0.035);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.command {
+  padding: 10px 12px;
+  overflow: hidden;
+  color: var(--sage);
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: var(--sage-soft);
+  border: 1px solid rgb(167 207 164 / 0.14);
+  border-radius: 14px;
+}
+
+.route-card {
+  display: grid;
+  gap: 14px;
+  min-height: 160px;
+  padding: 20px;
+  border-radius: 22px;
+}
+
+.route-card strong {
+  font-family: var(--display);
+  font-size: 23px;
+  letter-spacing: -0.04em;
+}
+
+.route-card small {
+  color: var(--sage);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.soft-panel {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgb(238 244 238 / 0.035), rgb(238 244 238 / 0.01)),
+    var(--paper);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 20px;
+}
+
+.category-list,
+.agent-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.category-list a,
+.agent-list button {
+  min-height: 44px;
+  padding: 0 15px;
+  color: var(--ink);
+  background: rgb(238 244 238 / 0.035);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.category-list a:hover,
+.agent-list button:hover {
+  color: var(--sage);
+  border-color: var(--line-strong);
+}
+
+.article-card {
+  display: grid;
+  gap: 13px;
+  min-height: 178px;
+  padding: 20px;
+  border-radius: 22px;
+}
+
+.article-card time {
+  color: var(--faint);
+  font-size: 12px;
+}
+
+.tools-layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 24px;
+  padding: 54px 0;
+}
+
+.filter-panel {
+  position: sticky;
+  top: 94px;
+  align-self: start;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgb(238 244 238 / 0.035), rgb(238 244 238 / 0.01)),
+    var(--paper);
+}
+
+.filter-panel h3 {
+  margin-bottom: 14px;
+}
+
+.filter-group {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.filter-group button {
+  min-height: 38px;
+  padding: 0 12px;
+  color: var(--muted);
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+.filter-group button.is-active,
+.filter-group button:hover {
+  color: var(--sage);
+  background: var(--sage-soft);
+}
+
+.list {
+  display: grid;
+  gap: 14px;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, rgb(238 244 238 / 0.035), rgb(238 244 238 / 0.012)),
+    var(--paper);
+}
+
+.list-item p {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.agent-profile {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 24px;
+  padding: 58px 0;
+}
+
+.profile-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
+    var(--paper);
+}
+
+.profile-card p {
+  margin-top: 18px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.stat {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgb(238 244 238 / 0.035);
+}
+
+.stat strong {
+  display: block;
+  font-size: 20px;
+}
+
+.stat span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.learn-layout {
+  padding: 58px 0;
+}
+
+.learn-feature {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 24px;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+.large-article {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
+    var(--paper);
+}
+
+.large-article p {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.75;
+}
+
+.signals-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.signal-item {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 24px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgb(238 244 238 / 0.035), rgb(238 244 238 / 0.01)),
+    var(--paper);
+}
+
+.signal-item p {
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.download-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  padding: 50px 0 42px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+
+.empty {
+  padding: 28px;
+  color: var(--muted);
+  border: 1px dashed var(--line-strong);
+  border-radius: 24px;
+  background: rgb(238 244 238 / 0.03);
+}
+
+@media (max-width: 960px) {
+  .page {
+    width: min(100% - 28px, 720px);
+  }
+
+  .topbar,
+  footer {
+    align-items: stretch;
+    border-radius: 26px;
+    flex-direction: column;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .hero,
+  .split,
+  .tools-layout,
+  .agent-profile,
+  .learn-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3,
+  .grid-4,
+  .download-strip,
+  .stat-row {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-panel {
+    position: static;
+  }
+
+  .signal-item {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+<header class="topbar page">
+  <a class="brand" href="#" data-view-link="home" aria-label="agentk.it home">
+    <span class="brand-mark">a</span>
+    <span>agentk.it</span>
+  </a>
+  <nav class="nav" aria-label="Primary navigation">
+    <button class="is-active" data-view-link="home">Home</button>
+    <button data-view-link="tools">Tools</button>
+    <button data-view-link="agents">Agents</button>
+    <button data-view-link="learn">Learn</button>
+    <button data-view-link="signals">Signals</button>
+    <button data-view-link="free">Free</button>
+  </nav>
+  <button class="small-button" data-view-link="tools">Browse tools</button>
+</header>
+
+<main class="page">
+  <section class="view is-active" id="view-home">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Tool-first agent directory</div>
+        <h1>Find the right tools for your AI agent stack.</h1>
+        <p class="hero-copy">A calm, curated index of Skills, MCP servers, CLI tools, and Workflows. Agent pages help you browse compatibility; Learn and Signals help you understand what matters.</p>
+
+        <div class="search-panel">
+          <label class="search-box">
+            <input id="globalSearch" type="search" placeholder="Search Context7, Playwright, Codex, Claude Code...">
+            <button class="small-button" data-view-link="tools">Search</button>
+          </label>
+          <div class="tabs" id="homeTabs">
+            <button class="tab is-active" data-filter="All">All</button>
+            <button class="tab" data-filter="Skill">Skills</button>
+            <button class="tab" data-filter="MCP">MCPs</button>
+            <button class="tab" data-filter="CLI">CLI</button>
+            <button class="tab" data-filter="Workflow">Workflows</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="summary-card">
+        <div class="eyebrow">Why this exists</div>
+        <h3>Less browsing. Better setup decisions.</h3>
+        <p>Every item should answer: what it helps with, which agents it supports, how to install it, and what to read next.</p>
+        <div class="summary-list">
+          <div class="summary-row"><strong>Tools</strong><span>Core product</span></div>
+          <div class="summary-row"><strong>Learn</strong><span>Explanations and guides</span></div>
+          <div class="summary-row"><strong>Signals</strong><span>Translated high-quality Chinese AI writing</span></div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Today's additions</div>
+          <h2>New tools, lightly curated.</h2>
+        </div>
+        <p>Only a few items appear on the homepage. The goal is discovery without making the page feel like a spreadsheet.</p>
+      </div>
+      <div class="grid-3" id="homeTools"></div>
+    </section>
+
+    <section class="section">
+      <div class="grid-4">
+        <a class="route-card" href="#" data-view-link="tools">
+          <small>Browse by type</small>
+          <strong>Tools</strong>
+          <p>Skills, MCPs, CLI tools, and Workflows.</p>
+        </a>
+        <a class="route-card" href="#" data-view-link="agents">
+          <small>Browse by agent</small>
+          <strong>Agents</strong>
+          <p>Compatibility pages for Codex, Claude Code, Cursor, and more.</p>
+        </a>
+        <a class="route-card" href="#" data-view-link="learn">
+          <small>Understand</small>
+          <strong>Learn</strong>
+          <p>Guides, explainers, comparisons, and glossaries.</p>
+        </a>
+        <a class="route-card" href="#" data-view-link="signals">
+          <small>Editorial</small>
+          <strong>Signals</strong>
+          <p>English translations and notes from high-quality Chinese AI content.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="soft-panel">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Browse by category</div>
+            <h2>Start from the job.</h2>
+          </div>
+        </div>
+        <div class="category-list">
+          <a href="#">Search</a>
+          <a href="#">DevOps</a>
+          <a href="#">Communication</a>
+          <a href="#">Data</a>
+          <a href="#">Automation</a>
+          <a href="#">Productivity</a>
+          <a href="#">Media</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+      <div class="soft-panel">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Browse by agent</div>
+            <h2>Use compatibility as a filter.</h2>
+          </div>
+        </div>
+        <div class="agent-list">
+          <button data-view-link="agents">Claude Code</button>
+          <button data-view-link="agents">Codex</button>
+          <button data-view-link="agents">Cursor</button>
+          <button data-view-link="agents">Hermes Agent</button>
+          <button data-view-link="agents">OpenClaw</button>
+          <button data-view-link="agents">Generic</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Learn highlights</div>
+          <h2>Short guides that reduce confusion.</h2>
+        </div>
+        <p>Learning content supports tool choice. It should not replace the directory as the main product.</p>
+      </div>
+      <div class="grid-3">
+        <article class="article-card"><span class="badge">Guide</span><h3>What is MCP?</h3><p>A plain-language explanation of how MCP connects agents to external tools and data.</p></article>
+        <article class="article-card"><span class="badge">Guide</span><h3>What is an Agent Skill?</h3><p>How reusable skills package instructions, workflows, and capabilities for agents.</p></article>
+        <article class="article-card"><span class="badge">Compare</span><h3>How to choose an agent</h3><p>Codex, Claude Code, Cursor, Hermes Agent, and where each is strongest.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Signals highlights</div>
+          <h2>Translated ideas, routed back to tools.</h2>
+        </div>
+        <p>Signals should show editorial taste: source, summary, why it matters, and related tools.</p>
+      </div>
+      <div class="grid-3">
+        <article class="article-card"><time>Signal 01</time><h3>Why Chinese builders are moving from prompts to workflows</h3><p>Full translation plus editor notes and related workflow tools.</p></article>
+        <article class="article-card"><time>Signal 02</time><h3>A practical note on MCP server trust</h3><p>Translated insight connected to verification, permissions, and install safety.</p></article>
+        <article class="article-card"><time>Signal 03</time><h3>Agent IDE habits from high-output teams</h3><p>What changes when teams standardize around skills and reusable commands.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="soft-panel">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Free downloads</div>
+            <h2>Useful entry points, not clutter.</h2>
+          </div>
+          <p>Cheatsheets and comparison assets can collect emails later, but in v1 they should prove quality first.</p>
+        </div>
+        <div class="download-strip">
+          <article class="article-card"><span class="badge clay">PDF</span><h3>MCP Cheatsheet</h3><p>Core concepts, install patterns, and safety checks.</p></article>
+          <article class="article-card"><span class="badge clay">Guide</span><h3>Hermes Commands</h3><p>A short command reference for agent workflows.</p></article>
+          <article class="article-card"><span class="badge clay">Compare</span><h3>Agent Comparison</h3><p>Choose the right agent based on project context.</p></article>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="view" id="view-tools">
+    <div class="tools-layout">
+      <aside class="filter-panel">
+        <h3>Tools</h3>
+        <p style="color:var(--muted);line-height:1.6;">Search and filter the core directory.</p>
+        <div class="filter-group" id="toolFilters">
+          <button class="is-active" data-filter="All">All</button>
+          <button data-filter="Skill">Skills</button>
+          <button data-filter="MCP">MCPs</button>
+          <button data-filter="CLI">CLI</button>
+          <button data-filter="Workflow">Workflows</button>
+        </div>
+      </aside>
+      <section>
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">/tools</div>
+            <h2>The unified tool browser.</h2>
+          </div>
+          <p>In production this page gets category filters, agent filters, sorting, pagination, and item detail links.</p>
+        </div>
+        <div class="list" id="toolList"></div>
+      </section>
+    </div>
+  </section>
+
+  <section class="view" id="view-agents">
+    <div class="agent-profile">
+      <article class="profile-card">
+        <div class="eyebrow">/for/codex</div>
+        <h2>Agent pages are compatibility pages first.</h2>
+        <p>They explain what the agent is, who it is for, and which Skills, MCPs, CLI tools, and Workflows work best with it. Deep learning content links out from here.</p>
+        <div class="stat-row">
+          <div class="stat"><strong>42</strong><span>Skills</span></div>
+          <div class="stat"><strong>31</strong><span>MCPs</span></div>
+          <div class="stat"><strong>12</strong><span>CLI</span></div>
+          <div class="stat"><strong>18</strong><span>Workflows</span></div>
+        </div>
+      </article>
+      <section class="soft-panel">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Hover preview concept</div>
+            <h2>Show what each tool helps you do.</h2>
+          </div>
+        </div>
+        <div class="list" id="agentTools"></div>
+      </section>
+    </div>
+  </section>
+
+  <section class="view" id="view-learn">
+    <div class="learn-layout">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">/learn</div>
+          <h2>Learning paths for tools, protocols, and agents.</h2>
+        </div>
+        <p>Learn is educational support for the directory: explain concepts, compare options, and help users choose.</p>
+      </div>
+      <div class="learn-feature">
+        <article class="large-article">
+          <span class="badge">Start here</span>
+          <h2 style="margin-top:18px;">What is MCP?</h2>
+          <p>Explain MCP through concrete jobs: browser automation, repository access, database queries, and documentation retrieval. Then link directly to relevant tools.</p>
+        </article>
+        <div class="grid-3" style="grid-template-columns:1fr;">
+          <article class="article-card"><span class="badge">Concept</span><h3>What is an Agent Skill?</h3><p>Skills as reusable instructions and packaged workflows.</p></article>
+          <article class="article-card"><span class="badge">Decision</span><h3>Agent Comparison</h3><p>Where Codex, Claude Code, Cursor, and Hermes fit.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="view-signals">
+    <div class="learn-layout">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">/signals</div>
+          <h2>English translations of high-quality AI writing from China.</h2>
+        </div>
+        <p>Each Signal needs source attribution, author context, executive summary, full translation only when allowed, and related tools.</p>
+      </div>
+      <div class="signals-list">
+        <article class="signal-item"><span class="badge clay">Translation</span><div><h3>From prompt libraries to operational workflows</h3><p>Original Chinese title, source, author, permission status, why it matters, and related workflow tools.</p></div></article>
+        <article class="signal-item"><span class="badge clay">Builder note</span><div><h3>How local agent users evaluate MCP trust</h3><p>Summary plus safety implications for install commands, permissions, and official sources.</p></div></article>
+        <article class="signal-item"><span class="badge clay">Digest</span><div><h3>Weekly China AI builder digest</h3><p>Short editorial digest when full translation is not available or not permitted.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="view-free">
+    <div class="learn-layout">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">/upgrade</div>
+          <h2>Free resources that introduce the paid/upgrade path later.</h2>
+        </div>
+        <p>For v1, this can stay simple: downloads, comparison PDFs, and cheatsheets.</p>
+      </div>
+      <div class="download-strip">
+        <article class="article-card"><span class="badge clay">Cheatsheet</span><h3>MCP Cheatsheet</h3><p>A concise PDF for beginners.</p></article>
+        <article class="article-card"><span class="badge clay">Commands</span><h3>Hermes Commands</h3><p>A command reference for reusable workflows.</p></article>
+        <article class="article-card"><span class="badge clay">Comparison</span><h3>Agent Comparison</h3><p>Choose the right agent for your workflow.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>agentk.it sitemap v1 demo</span>
+    <span>Tools first. Learn supports. Signals adds editorial taste.</span>
+  </footer>
+</main>
+
+<script>
+const tools = [
+  {
+    name: "Context7",
+    type: "MCP",
+    description: "Fetch current library documentation inside agent coding sessions.",
+    command: "npx -y @upstash/context7-mcp",
+    agents: ["Codex", "Claude Code", "Cursor"]
+  },
+  {
+    name: "Playwright MCP",
+    type: "MCP",
+    description: "Automate browsers for testing, screenshots, and UI verification.",
+    command: "npx @playwright/mcp@latest",
+    agents: ["Codex", "Claude Code"]
+  },
+  {
+    name: "Repo Review Skill",
+    type: "Skill",
+    description: "Review a codebase for bugs, risks, missing tests, and integration issues.",
+    command: "/review current branch",
+    agents: ["Codex", "Claude Code", "Cursor"]
+  },
+  {
+    name: "Agent Setup Checklist",
+    type: "Workflow",
+    description: "Install an agent, connect MCP servers, add skills, and verify the setup.",
+    command: "agentkit setup --check",
+    agents: ["Codex", "Hermes Agent"]
+  },
+  {
+    name: "Hermes CLI Commands",
+    type: "CLI",
+    description: "Reusable command pack for local agent workflows and project tasks.",
+    command: "hermes commands sync",
+    agents: ["Hermes Agent", "Generic"]
+  },
+  {
+    name: "Translation Signal Flow",
+    type: "Workflow",
+    description: "Curate Chinese AI writing, check permissions, translate, and link related tools.",
+    command: "agentkit signals translate",
+    agents: ["Codex", "Claude Code"]
+  }
+];
+
+let activeFilter = "All";
+const views = document.querySelectorAll(".view");
+const links = document.querySelectorAll("[data-view-link]");
+const searchInput = document.getElementById("globalSearch");
+
+function showView(name) {
+  views.forEach(view => view.classList.toggle("is-active", view.id === `view-${name}`));
+  links.forEach(link => link.classList.toggle("is-active", link.dataset.viewLink === name));
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function matches(tool) {
+  const query = searchInput.value.trim().toLowerCase();
+  const haystack = `${tool.name} ${tool.type} ${tool.description} ${tool.agents.join(" ")}`.toLowerCase();
+  const typeMatch = activeFilter === "All" || tool.type === activeFilter;
+  return typeMatch && (!query || haystack.includes(query));
+}
+
+function toolCard(tool) {
+  return `
+    <article class="tool-card" title="${tool.description}">
+      <div class="card-top">
+        <h3>${tool.name}</h3>
+        <span class="badge">${tool.type}</span>
+      </div>
+      <p>${tool.description}</p>
+      <div class="command">${tool.command}</div>
+      <div class="meta">${tool.agents.map(agent => `<span>${agent}</span>`).join("")}</div>
+    </article>
+  `;
+}
+
+function listItem(tool) {
+  return `
+    <article class="list-item" title="${tool.description}">
+      <div>
+        <div class="card-top">
+          <h3>${tool.name}</h3>
+          <span class="badge">${tool.type}</span>
+        </div>
+        <p>${tool.description}</p>
+        <div class="meta">${tool.agents.map(agent => `<span>${agent}</span>`).join("")}</div>
+      </div>
+      <code class="command">${tool.command}</code>
+    </article>
+  `;
+}
+
+function render() {
+  const filtered = tools.filter(matches);
+  document.getElementById("homeTools").innerHTML = filtered.slice(0, 3).map(toolCard).join("") || `<div class="empty">No matching tools yet.</div>`;
+  document.getElementById("toolList").innerHTML = filtered.map(listItem).join("") || `<div class="empty">No matching tools yet.</div>`;
+  document.getElementById("agentTools").innerHTML = tools.filter(tool => tool.agents.includes("Codex")).slice(0, 4).map(listItem).join("");
+}
+
+links.forEach(link => {
+  link.addEventListener("click", event => {
+    event.preventDefault();
+    showView(link.dataset.viewLink);
+  });
+});
+
+document.querySelectorAll("[data-filter]").forEach(button => {
+  button.addEventListener("click", () => {
+    activeFilter = button.dataset.filter;
+    document.querySelectorAll("[data-filter]").forEach(item => item.classList.toggle("is-active", item.dataset.filter === activeFilter));
+    render();
+  });
+});
+
+searchInput.addEventListener("input", render);
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+{
+  "id": "candidate-seo-geo-claude-skills-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Seo Geo Claude Skills",
+  "sourceUrl": "https://github.com/aaron-he-zhu/seo-geo-claude-skills",
+  "sourceName": "GitHub",
+  "author": "aaron-he-zhu",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "20 SEO & GEO skills for Claude Code, Cursor, Codex, and 35+ AI agents. Keyword research, content writing, technical audits, rank tracking. CORE-EEAT + CITE frameworks.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Kimi",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "aaron-he-zhu",
+    "repo": "seo-geo-claude-skills",
+    "fullName": "aaron-he-zhu/seo-geo-claude-skills",
+    "stars": 1690,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "ai-skills",
+      "claude-code",
+      "claude-skills",
+      "content-optimization",
+      "generative-engine-optimization",
+      "geo",
+      "marketing",
+      "search-engine-optimization",
+      "seo",
+      "seo-tools"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-14T08:11:30Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/README.zh.md",
+    "build/geo-content-optimizer/SKILL.md",
+    "build/meta-tags-optimizer/SKILL.md",
+    "build/schema-markup-generator/SKILL.md",
+    "build/seo-content-writer/SKILL.md",
+    "cross-cutting/content-quality-auditor/SKILL.md",
+    "cross-cutting/domain-authority-auditor/SKILL.md",
+    "cross-cutting/entity-optimizer/SKILL.md",
+    "cross-cutting/memory-management/SKILL.md",
+    "monitor/alert-manager/SKILL.md",
+    "monitor/backlink-analyzer/SKILL.md",
+    "monitor/performance-reporter/SKILL.md",
+    "monitor/rank-tracker/SKILL.md",
+    "optimize/content-refresher/SKILL.md",
+    "optimize/internal-linking-optimizer/SKILL.md",
+    "optimize/on-page-seo-auditor/SKILL.md",
+    "optimize/technical-seo-checker/SKILL.md",
+    "research/competitor-analysis/SKILL.md",
+    "research/content-gap-analysis/SKILL.md",
+    "research/keyword-research/SKILL.md",
+    "research/serp-analysis/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "SEO & GEO Skills Library 20 skills. 20 commands. Plan, audit, and monitor SEO/GEO work. [![GitHub Stars](https://img.shields.io/github/stars/aaron he zhu/seo geo claude skills?style=flat)](https://github.com/aaron he zhu/seo geo claude skills) [![Version](https://img.shields.io/badge/version 9.9.9 orange)](https://github.com/aaron he zhu/seo geo claude skills/blob/main/VERSIONS.md) [![License](https://img.shields.io/",
+  "skillExtracts": [
+    {
+      "path": "build/geo-content-optimizer/SKILL.md",
+      "extract": "name: geo content optimizer description: 'Use when the user asks to \"optimize for AI citations\"; improves citation readiness for ChatGPT, Perplexity, AI Overviews, Gemini, and Claude. AI引用优化/GEO优化/AI搜索' version: \"9.9.9\" license: Apache 2.0 compatibility: \"Claude Code, skills.sh, ClawHub, Vercel Labs, Cursor, Windsurf, Codex CLI, Amp, Gemini CLI, Kimi Code, Qwen Code, CodeBuddy\" homepage: \"https://github.com/aaron he "
+    },
+    {
+      "path": "build/meta-tags-optimizer/SKILL.md",
+      "extract": "name: meta tags optimizer description: 'Use when the user asks to \"optimize meta tags\"; improves titles, descriptions, Open Graph, Twitter cards, and CTR test variants. 标题优化/元描述/CTR' version: \"9.9.9\" license: Apache 2.0 compatibility: \"Claude Code, skills.sh, ClawHub, Vercel Labs, Cursor, Windsurf, Codex CLI, Amp, Gemini CLI, Kimi Code, Qwen Code, CodeBuddy\" homepage: \"https://github.com/aaron he zhu/seo geo claude s"
+    },
+    {
+      "path": "build/schema-markup-generator/SKILL.md",
+      "extract": "name: schema markup generator description: 'Use when the user asks to \"generate schema\"; creates JSON LD for FAQ, HowTo, Article, Product, and LocalBusiness rich result candidates. Schema标记/结构化数据' version: \"9.9.9\" license: Apache 2.0 compatibility: \"Claude Code, skills.sh, ClawHub, Vercel Labs, Cursor, Windsurf, Codex CLI, Amp, Gemini CLI, Kimi Code, Qwen Code, CodeBuddy\" homepage: \"https://github.com/aaron he zhu/se"
+    },
+    {
+      "path": "build/seo-content-writer/SKILL.md",
+      "extract": "name: seo content writer description: 'Use when the user asks to \"write SEO content\"; drafts posts, articles, and landing pages with keywords, headers, snippets, and evidence boundaries. SEO文章写作/内容优化' version: \"9.9.9\" license: Apache 2.0 compatibility: \"Claude Code, skills.sh, ClawHub, Vercel Labs, Cursor, Windsurf, Codex CLI, Amp, Gemini CLI, Kimi Code, Qwen Code, CodeBuddy\" homepage: \"https://github.com/aaron he zh"
+    },
+    {
+      "path": "cross-cutting/content-quality-auditor/SKILL.md",
+      "extract": "name: content quality auditor description: 'Use when auditing content quality, E E A T, publish readiness, or 内容质量/EEAT评分. Runs 80 item CORE EEAT scoring with veto checks and fix plan.' version: \"9.9.9\" license: Apache 2.0 allowed tools: WebFetch compatibility: \"Claude Code, skills.sh, ClawHub, Vercel Labs, Cursor, Windsurf, Codex CLI, Amp, Gemini CLI, Kimi Code, Qwen Code, CodeBuddy\" homepage: \"https://github.com/aa"
+    },
+    {
+      "path": "cross-cutting/domain-authority-auditor/SKILL.md",
+      "extract": "name: domain authority auditor description: 'Use when auditing domain authority, trust, citations, or 域名权威/网站可信度. Runs 40 item CITE scoring with veto checks.' version: \"9.9.9\" license: Apache 2.0 compatibility: \"Claude Code, skills.sh, ClawHub, Vercel Labs, Cursor, Windsurf, Codex CLI, Amp, Gemini CLI, Kimi Code, Qwen Code, CodeBuddy\" homepage: \"https://github.com/aaron he zhu/seo geo claude skills\" when to use: \"Use"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Claude Skills and Commands for Search Engine Optimization (SEO) and Generative Engine Optimization (GEO).",
+    "Skill content is zero-dependency Markdown; Claude Code hooks use a small Bash runner.",
+    "Claude Code /plugin marketplace add aaron-he-zhu/seo-geo-claude-skills",
+    "Amp amp skill add aaron-he-zhu/seo-geo-claude-skills",
+    "skills.sh / generic Agent Skills hosts npx skills add aaron-he-zhu/seo-geo-claude-skills",
+    "Single skill: npx skills add aaron-he-zhu/seo-geo-claude-skills -s keyword-research.",
+    "If your host supports automatic skill routing, try a natural-language request:",
+    "Optional tools are documented in CONNECTORS.md; every skill also works at Tier 1 with user-provided data."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "20 SEO & GEO skills for Claude Code, Cursor, Codex, and 35+ AI agents. Keyword research, content writing, technical audits, rank tracking. CORE-EEAT + CITE frameworks.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Seo Geo Claude Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to skill.",
+      "Claude Skills and Commands for Search Engine Optimization (SEO) and Generative Engine Optimization (GEO)."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "seo-geo-claude-skills",
+  "publishedAt": "2026-05-20"
+}

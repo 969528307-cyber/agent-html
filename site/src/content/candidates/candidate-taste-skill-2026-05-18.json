@@ -1,0 +1,181 @@
+{
+  "id": "candidate-taste-skill-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Taste Skill",
+  "sourceUrl": "https://github.com/Leonxlnx/taste-skill",
+  "sourceName": "GitHub",
+  "author": "Leonxlnx",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop ",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "Leonxlnx",
+    "repo": "taste-skill",
+    "fullName": "Leonxlnx/taste-skill",
+    "stars": 17938,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "ai",
+      "claude",
+      "claude-code",
+      "codex",
+      "coding",
+      "design",
+      "frontend",
+      "lowcode",
+      "nocode",
+      "skill",
+      "skills",
+      "vibecoding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-06T22:05:11Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/brandkit/SKILL.md",
+    "skills/brutalist-skill/SKILL.md",
+    "skills/gpt-tasteskill/SKILL.md",
+    "skills/image-to-code-skill/SKILL.md",
+    "skills/imagegen-frontend-mobile/SKILL.md",
+    "skills/imagegen-frontend-web/SKILL.md",
+    "skills/minimalist-skill/SKILL.md",
+    "skills/output-skill/SKILL.md",
+    "skills/redesign-skill/SKILL.md",
+    "skills/soft-skill/SKILL.md",
+    "skills/stitch-skill/SKILL.md",
+    "skills/taste-skill/SKILL.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"assets/readme banner.png\" alt=\"Taste Skill — Anti slop Agent Skills for premium frontends\" width=\"100%\" / </p Taste Skill <p align=\"center\" <em The Anti Slop Frontend Framework for AI Agents</em </p <p align=\"center\" <a href=\"https://tasteskill.dev\" title=\"Taste Skill — tasteskill.dev\" <img src=\"assets/taste skill logo.webp\" width=\"80\" height=\"80\" alt=\"Taste Skill\" / </a </p <p align=\"cent",
+  "skillExtracts": [
+    {
+      "path": "skills/brandkit/SKILL.md",
+      "extract": "name: brandkit description: Premium brand kit image generation skill for creating high end brand guidelines boards, logo systems, identity decks, and visual world presentations. Trained for minimalist, cinematic, editorial, dark tech, luxury, cultural, security, gaming, developer tool, and consumer app brand systems. Optimized for intentional logo concepting, refined composition, sparse typography, strong symbolic me"
+    },
+    {
+      "path": "skills/brutalist-skill/SKILL.md",
+      "extract": "name: industrial brutalist ui description: Raw mechanical interfaces fusing Swiss typographic print with military terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, analog degradation effects. For data heavy dashboards, portfolios, or editorial sites that need to feel like declassified blueprints. SKILL: Industrial Brutalism & Tactical Telemetry UI 1. Skill Meta Name: Industrial Brutali"
+    },
+    {
+      "path": "skills/gpt-tasteskill/SKILL.md",
+      "extract": "name: gpt taste description: Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python driven true randomization for layout variance, strict AIDA page structure, wide editorial typography (bans 6 line wraps), gapless bento grids, strict GSAP ScrollTriggers (pinning, stacking, scrubbing), inline micro images, and massive section spacing. CORE DIRECTIVE: AWWWARDS LEVEL DESIGN ENGINEERING You are an elite, award winn"
+    },
+    {
+      "path": "skills/image-to-code-skill/SKILL.md",
+      "extract": "name: image to code description: Elite website image to code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then implement the website to match them as closely as possible. In Codex, it must prefer large, readable, section specific images instead of tiny compressed boards, generate fresh standalone images for sections or detail views instead "
+    },
+    {
+      "path": "skills/imagegen-frontend-mobile/SKILL.md",
+      "extract": "name: imagegen frontend mobile description: Elite mobile app image generation skill for creating premium, app native screen concepts and flows. Designed for iOS, Android, and cross platform mobile products. Prioritizes clean hierarchy, comfortably readable text, strong multi screen consistency, controlled color palettes, non generic creative direction, textured surfaces, image led composition, tasteful custom iconogr"
+    },
+    {
+      "path": "skills/imagegen-frontend-web/SKILL.md",
+      "extract": "name: imagegen frontend web description: Elite frontend image direction skill for generating premium, conversion aware website design references. CRITICAL OUTPUT RULE — generate ONE separate horizontal image FOR EVERY section. A landing page with 8 sections produces 8 images. Never compress multiple sections into one image. Enforces composition variety (not always left text / right image), background image freedom, v"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The Anti-Slop Frontend Framework for AI Agents",
+    "This repo also includes image-generation skills for reference boards (web, mobile, brand kits).",
+    "Pair them with ChatGPT Images or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation.",
+    "Taste Skill has no official token, coin, or crypto project.",
+    "Email us at hello@tasteskill.dev",
+    "You can also copy any SKILL.md into your project or paste it into ChatGPT / Codex conversations.",
+    "Each skill does one job; you do not need all of them at once.",
+    "Implementation skills output code."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop ",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Taste Skill is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "The Anti-Slop Frontend Framework for AI Agents"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "taste-skill",
+  "publishedAt": "2026-05-18"
+}

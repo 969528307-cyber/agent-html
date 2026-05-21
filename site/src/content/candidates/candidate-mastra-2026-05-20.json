@@ -1,0 +1,178 @@
+{
+  "id": "candidate-mastra-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Mastra",
+  "sourceUrl": "https://github.com/mastra-ai/mastra",
+  "sourceName": "GitHub",
+  "author": "mastra-ai",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "From the team behind Gatsby, Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "mastra-ai",
+    "repo": "mastra",
+    "fullName": "mastra-ai/mastra",
+    "stars": 24048,
+    "license": "NOASSERTION",
+    "topics": [
+      "agents",
+      "ai",
+      "chatbots",
+      "evals",
+      "javascript",
+      "llm",
+      "mcp",
+      "nextjs",
+      "nodejs",
+      "reactjs",
+      "tts",
+      "typescript",
+      "workflows"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:35:03Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.env.example",
+    "docs/.gitignore",
+    "docs/.prettierignore",
+    "docs/.prettierrc",
+    "docs/.remarkrc.mjs",
+    "docs/.vale.ini",
+    "docs/AGENTS.md",
+    "docs/CHANGELOG.md",
+    "docs/CLAUDE.md",
+    "docs/custom.css",
+    "docs/e2e-learn/.gitignore",
+    "docs/e2e-learn/learn.spec.ts",
+    "docs/feature-versioning.json",
+    "docs/package.json",
+    "docs/prettier-mdx.mjs",
+    "docs/README.md",
+    "docs/scripts/vale-heading-analysis.mjs",
+    "docs/scripts/vale/.gitignore",
+    "docs/scripts/vale/download.mjs",
+    "docs/scripts/validate-frontmatter.ts",
+    "docs/scripts/validate-reference-sidebar-sort.ts",
+    "docs/scripts/validate-sidebar-docs.ts",
+    "docs/src/components/AnnouncementBanner.tsx",
+    "docs/src/components/AudioPlayback.tsx",
+    "docs/src/components/CardItems.tsx",
+    "docs/src/components/cards/card-grid.tsx",
+    "docs/src/components/cards/card-item.tsx",
+    "docs/src/components/cards/card-items-inner.tsx",
+    "docs/src/components/cards/card-items.tsx",
+    "docs/src/components/cards/card-title.tsx",
+    "docs/src/components/cookie/cookie-banner.tsx",
+    "docs/src/components/cookie/cookie-consent.tsx",
+    "docs/src/components/cookie/hubspot-tracker.tsx",
+    "docs/src/components/copy-page-button.tsx",
+    "docs/src/components/copy-page-icons.tsx",
+    "docs/src/components/copy-prompt.tsx",
+    "docs/src/components/custom-search.tsx",
+    "docs/src/components/empty-search.tsx",
+    "docs/src/components/feedback-form.tsx"
+  ],
+  "readmeExtract": "Mastra [![npm version](https://badge.fury.io/js/@mastra%2Fcore.svg)](https://www.npmjs.com/package/@mastra/core) [![CodeQl](https://github.com/mastra ai/mastra/actions/workflows/github code scanning/codeql/badge.svg)](https://github.com/mastra ai/mastra/actions/workflows/github code scanning/codeql) [![GitHub Repo stars](https://img.shields.io/github/stars/mastra ai/mastra)](https://github.com/mastra ai/mastra/starga",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
+    "Model routing - Connect to 40+ providers through one standard interface.",
+    "Use models from OpenAI, Anthropic, Gemini, and more.",
+    "Agents - Build autonomous agents that use LLMs and tools to solve open-ended tasks.",
+    "Agents reason about goals, decide which tools to use, and iterate internally until the model emits a final answer or an optional stopping condition is met.",
+    "Workflows - When you need explicit control over execution, use Mastra's graph-based workflow engine to orchestrate complex multi-step processes.",
+    "Mastra workflows use an intuitive syntax for control flow (.then(), .branch(), .parallel()).",
+    "Human-in-the-loop - Suspend an agent or workflow and await user input or approval before resuming."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "From the team behind Gatsby, Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Mastra is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
+      "Model routing - Connect to 40+ providers through one standard interface.",
+      "Use models from OpenAI, Anthropic, Gemini, and more."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mastra",
+  "publishedAt": "2026-05-20"
+}

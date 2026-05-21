@@ -1,0 +1,273 @@
+{
+  "id": "candidate-tool-github-googleworkspace-cli",
+  "type": "tool",
+  "status": "published",
+  "title": "Cli",
+  "sourceUrl": "https://github.com/googleworkspace/cli",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "googleworkspace",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+  "proposedCategory": [
+    "communication",
+    "skill",
+    "cli"
+  ],
+  "proposedAgents": [
+    "Generic",
+    "OpenClaw"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "googleworkspace",
+    "repo": "cli",
+    "fullName": "googleworkspace/cli",
+    "stars": 26349,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "ai-agent",
+      "automation",
+      "cli",
+      "discovery-api",
+      "gemini-cli-extension",
+      "google-admin",
+      "google-api",
+      "google-calendar",
+      "google-chat",
+      "google-docs",
+      "google-drive",
+      "google-sheets",
+      "google-workspace",
+      "oauth2",
+      "rust"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T16:46:11Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/CODE_OF_CONDUCT.md",
+    "docs/demo.tape",
+    "docs/logo.jpg",
+    "docs/skills.md",
+    "package.json",
+    "skills/gws-admin-reports/SKILL.md",
+    "skills/gws-calendar-agenda/SKILL.md",
+    "skills/gws-calendar-insert/SKILL.md",
+    "skills/gws-calendar/SKILL.md",
+    "skills/gws-chat-send/SKILL.md",
+    "skills/gws-chat/SKILL.md",
+    "skills/gws-classroom/SKILL.md",
+    "skills/gws-docs-write/SKILL.md",
+    "skills/gws-docs/SKILL.md",
+    "skills/gws-drive-upload/SKILL.md",
+    "skills/gws-drive/SKILL.md",
+    "skills/gws-events-renew/SKILL.md",
+    "skills/gws-events-subscribe/SKILL.md",
+    "skills/gws-events/SKILL.md",
+    "skills/gws-forms/SKILL.md",
+    "skills/gws-gmail-forward/SKILL.md",
+    "skills/gws-gmail-read/SKILL.md",
+    "skills/gws-gmail-reply-all/SKILL.md",
+    "skills/gws-gmail-reply/SKILL.md",
+    "skills/gws-gmail-send/SKILL.md",
+    "skills/gws-gmail-triage/SKILL.md",
+    "skills/gws-gmail-watch/SKILL.md",
+    "skills/gws-gmail/SKILL.md",
+    "skills/gws-keep/SKILL.md",
+    "skills/gws-meet/SKILL.md",
+    "skills/gws-modelarmor-create-template/SKILL.md",
+    "skills/gws-modelarmor-sanitize-prompt/SKILL.md",
+    "skills/gws-modelarmor-sanitize-response/SKILL.md",
+    "skills/gws-modelarmor/SKILL.md",
+    "skills/gws-people/SKILL.md",
+    "skills/gws-script-push/SKILL.md",
+    "skills/gws-script/SKILL.md",
+    "skills/gws-shared/SKILL.md",
+    "skills/gws-sheets-append/SKILL.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" gws</h1 One CLI for all of Google Workspace — built for humans and AI agents. <br Drive, Gmail, Calendar, and every Workspace API. Zero boilerplate. Structured JSON output. 40+ agent skills included. [!NOTE] This is not an officially supported Google product. <p <a href=\"https://www.npmjs.com/package/@googleworkspace/cli\" <img src=\"https://img.shields.io/npm/v/@googleworkspace/cli\" alt=\"npm version",
+  "skillExtracts": [
+    {
+      "path": "skills/gws-admin-reports/SKILL.md",
+      "extract": "name: gws admin reports description: \"Google Workspace Admin SDK: Audit logs and usage reports.\" metadata: version: 0.22.5 openclaw: category: \"productivity\" requires: bins: gws cliHelp: \"gws admin reports help\" admin reports (reports v1) PREREQUISITE: Read ../gws shared/SKILL.md for auth, global flags, and security rules. If missing, run gws generate skills to create it. API Resources activities list — Retrieves a l"
+    },
+    {
+      "path": "skills/gws-calendar-agenda/SKILL.md",
+      "extract": "name: gws calendar agenda description: \"Google Calendar: Show upcoming events across all calendars.\" metadata: version: 0.22.5 openclaw: category: \"productivity\" requires: bins: gws cliHelp: \"gws calendar +agenda help\" calendar +agenda PREREQUISITE: Read ../gws shared/SKILL.md for auth, global flags, and security rules. If missing, run gws generate skills to create it. Show upcoming events across all calendars Usage "
+    },
+    {
+      "path": "skills/gws-calendar-insert/SKILL.md",
+      "extract": "name: gws calendar insert description: \"Google Calendar: Create a new event.\" metadata: version: 0.22.5 openclaw: category: \"productivity\" requires: bins: gws cliHelp: \"gws calendar +insert help\" calendar +insert PREREQUISITE: Read ../gws shared/SKILL.md for auth, global flags, and security rules. If missing, run gws generate skills to create it. create a new event Usage Flags | Flag | Required | Default | Descriptio"
+    },
+    {
+      "path": "skills/gws-calendar/SKILL.md",
+      "extract": "name: gws calendar description: \"Google Calendar: Manage calendars and events.\" metadata: version: 0.22.5 openclaw: category: \"productivity\" requires: bins: gws cliHelp: \"gws calendar help\" calendar (v3) PREREQUISITE: Read ../gws shared/SKILL.md for auth, global flags, and security rules. If missing, run gws generate skills to create it. Helper Commands | Command | Description | | | | | [ +insert ](../gws calendar in"
+    },
+    {
+      "path": "skills/gws-chat-send/SKILL.md",
+      "extract": "name: gws chat send description: \"Google Chat: Send a message to a space.\" metadata: version: 0.22.5 openclaw: category: \"productivity\" requires: bins: gws cliHelp: \"gws chat +send help\" chat +send PREREQUISITE: Read ../gws shared/SKILL.md for auth, global flags, and security rules. If missing, run gws generate skills to create it. Send a message to a space Usage Flags | Flag | Required | Default | Description | | | "
+    },
+    {
+      "path": "skills/gws-chat/SKILL.md",
+      "extract": "name: gws chat description: \"Google Chat: Manage Chat spaces and messages.\" metadata: version: 0.22.5 openclaw: category: \"productivity\" requires: bins: gws cliHelp: \"gws chat help\" chat (v1) PREREQUISITE: Read ../gws shared/SKILL.md for auth, global flags, and security rules. If missing, run gws generate skills to create it. Helper Commands | Command | Description | | | | | [ +send ](../gws chat send/SKILL.md) | Sen"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "One CLI for all of Google Workspace — built for humans and AI agents..",
+    "For convenience, you can also use npm to automate downloading the appropriate binary from GitHub Releases:",
+    "For humans — stop writing curl calls against REST docs.",
+    "gws gives you --help on every resource, --dry-run to preview requests, and auto‑pagination.",
+    "For AI agents — every response is structured JSON.",
+    "Pair it with the included agent skills and your LLM can manage Workspace without custom tooling.",
+    "The CLI supports multiple auth workflows so it works on your laptop, in CI, and on a server.",
+    "Browser-assisted auth (human or agent)"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "boilerplate",
+    "useCategory": [
+      "communication",
+      "docs",
+      "productivity",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "boilerplate",
+  "useCategory": [
+    "communication",
+    "docs",
+    "productivity",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "reject_not_tool",
+  "enrichment": {
+    "decision": "reject_not_tool",
+    "confidence": "high",
+    "publishType": "none",
+    "primaryType": "single-tool",
+    "whatIsIt": "Cli is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with docs workflows.",
+      "Helps with productivity workflows.",
+      "Helps with automation workflows.",
+      "Relevant to communication."
+    ],
+    "reasons": [
+      "This candidate is a starter, template, or example rather than a durable tool listing."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:googleworkspace/cli",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 15,
+    "cli": 13,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "GitHub topics tag as skills.",
+    "Skill-collection or agent-rules language in description.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Repository name indicates CLI tool.",
+    "GitHub topics explicitly tag as CLI.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "SDK or library language detected.",
+    "Detected scope: boilerplate.",
+    "Alternative capabilities: cli, workflow, sdk.",
+    "LLM: cli + [cli, skill] — The project's name and description clearly identify it as a command-line tool for Google Workspace, and it includes agent skills but its primary identity is the CLI."
+  ],
+  "classificationAlternatives": [
+    "cli",
+    "workflow",
+    "sdk"
+  ],
+  "publishedAs": "cli",
+  "publishedAt": "2026-05-18",
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "local-review",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

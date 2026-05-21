@@ -1,0 +1,80 @@
+{
+  "id": "nanoclaw",
+  "name": "Nanoclaw",
+  "type": "skill",
+  "status": "published",
+  "summary": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
+  "description": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic",
+    "OpenClaw"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/nanocoai/nanoclaw",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/nanocoai/nanoclaw",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/nanocoai/nanoclaw#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/nanocoai/nanoclaw#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/nanocoai/nanoclaw/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "An AI assistant that runs agents securely in their own containers.",
+    "Claude agents run in their own Linux containers with filesystem isolation, not merely behind permission checks.",
+    "nanoclaw.sh walks you from a fresh machine to a named agent you can message.",
+    "It installs Node, pnpm, and Docker if missing, registers your Anthropic credential with OneCLI, builds the agent container, and pairs your first channel (Telegram, Discord, WhatsApp, or a local CLI).",
+    "If a step fails, Claude Code is invoked automatically to diagnose and resume from where it broke.",
+    "Run the script directly, not from inside a Claude session — the deterministic side needs interactive prompts and real shell I/O for Node/pnpm bootstrap, Docker, OneCLI, and the container build.",
+    "See docs/v1-to-v2-changes.md for what's different and docs/migration-dev.md for development notes.",
+    "If you want to understand the full NanoClaw codebase, just ask Claude Code to walk you through it."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T11:50:35Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/nanocoai/nanoclaw",
+  "repoUrl": "https://github.com/nanocoai/nanoclaw",
+  "license": "MIT",
+  "stars": 28994,
+  "lastUpdated": "2026-05-17T11:50:35Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

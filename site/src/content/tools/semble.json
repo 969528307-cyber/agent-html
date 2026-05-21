@@ -1,0 +1,78 @@
+{
+  "id": "semble",
+  "name": "Semble",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read",
+  "description": "Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/MinishLab/semble",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/MinishLab/semble",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/MinishLab/semble#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/MinishLab/semble#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/MinishLab/semble/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Fast and Accurate Code Search for Agents.",
+    "Semble is a code search library built for agents.",
+    "Indexing and searching a full codebase end-to-end takes under a second, with ~200x faster indexing and ~10x faster queries than a code-specialized transformer, at 99% of its retrieval quality (see benchmarks).",
+    "Run it as an MCP server or call it from the shell via AGENTS.md and any agent (Claude Code, Cursor, Codex, OpenCode, etc.) gets instant access to any repo.",
+    "Your agent queries Semble in natural language (e.g.",
+    "Set it up as an MCP server or via AGENTS.md:",
+    "Add Semble to Claude Code (requires uv):",
+    "Using another agent harness?"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T18:42:13Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/MinishLab/semble",
+  "repoUrl": "https://github.com/MinishLab/semble",
+  "license": "MIT",
+  "stars": 3109,
+  "lastUpdated": "2026-05-19T18:42:13Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

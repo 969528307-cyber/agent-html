@@ -1,0 +1,77 @@
+{
+  "id": "imcp",
+  "name": "IMCP",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A macOS app that provides an MCP server to your Messages, Contacts, Reminders and more",
+  "description": "A macOS app that provides an MCP server to your Messages, Contacts, Reminders and more",
+  "category": [
+    "communication"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mattt/iMCP",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mattt/iMCP",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mattt/iMCP#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mattt/iMCP#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mattt/iMCP/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "iMCP is a macOS app for connecting your digital life with AI.",
+    "It works with [Claude Desktop][claude-app]",
+    "and a [growing list of clients][mcp-clients] that support the",
+    "[Model Context Protocol (MCP)][mcp].",
+    "View and manage calendar events, including creating new events with customizable settings like recurrence, alarms, and availability status.",
+    "Access contact information about yourself and search your contacts by name, phone number, or email address.",
+    "Provides location services including place search, directions, points of interest lookup, travel time estimation, and static map image generation.",
+    "First, download the iMCP app"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-07T13:04:55Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mattt/iMCP",
+  "repoUrl": "https://github.com/mattt/iMCP",
+  "license": "MIT",
+  "stars": 1418,
+  "lastUpdated": "2026-05-07T13:04:55Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

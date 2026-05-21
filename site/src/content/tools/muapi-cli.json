@@ -1,0 +1,77 @@
+{
+  "id": "muapi-cli",
+  "name": "Muapi Cli",
+  "type": "cli",
+  "status": "published",
+  "summary": "Official CLI for muapi.ai — generate images, videos & audio from the terminal. MCP server, 14 AI models, npm + pip installable.",
+  "description": "Official CLI for muapi.ai — generate images, videos & audio from the terminal. MCP server, 14 AI models, npm + pip installable.",
+  "category": [
+    "media"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/SamurAIGPT/muapi-cli",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/SamurAIGPT/muapi-cli",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/SamurAIGPT/muapi-cli#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/SamurAIGPT/muapi-cli#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/SamurAIGPT/muapi-cli/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Agent-first design — every command works for both humans (colored output, tables) and AI agents (--output-json, --jq filtering, semantic exit codes, MCP server mode).",
+    "muapi docs openapi Fetch the full OpenAPI spec",
+    "muapi docs open Open Swagger UI in browser",
+    "muapi mcp serve Start MCP server (stdio) for AI agents",
+    "muapi supports two MCP transport modes.",
+    "The hosted MCP server at uses the standard Streamable HTTP transport.",
+    "Cursor — add to mcp.json (Cmd+Shift+P → Open MCP settings):",
+    "Windsurf — open Settings → MCP:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T19:00:08Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/SamurAIGPT/muapi-cli",
+  "repoUrl": "https://github.com/SamurAIGPT/muapi-cli",
+  "stars": 995,
+  "lastUpdated": "2026-05-15T19:00:08Z",
+  "lastChecked": "2026-05-16",
+  "publishedAt": "2026-05-16",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

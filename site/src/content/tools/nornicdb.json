@@ -1,0 +1,73 @@
+{
+  "id": "nornicdb",
+  "name": "NornicDB",
+  "type": "single-tool",
+  "status": "published",
+  "summary": "Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant's gRPC means you can switch with no changes. Then, adding intelligent features like schemas, managed embeddings, LLM reranking+inferrence, GPU accel, Auto-TLP, Memory Decay, and MCP server.",
+  "description": "Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant's gRPC means you can switch with no changes. Then, adding intelligent features like schemas, managed embeddings, LLM reranking+inferrence, GPU accel, Auto-TLP, Memory Decay, and MCP server.",
+  "category": [
+    "data"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/orneryd/NornicDB",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/orneryd/NornicDB",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/orneryd/NornicDB#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/orneryd/NornicDB#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/orneryd/NornicDB/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "It speaks Neo4j's language through Bolt and Cypher, exposes REST, GraphQL, and gRPC interfaces, and can preserve Qdrant-style client workflows where that helps migration.",
+    "It is built for knowledge systems, agent memory, Graph-RAG, and canonical truth stores where semantic search is only part of the query.",
+    "Built for AI-native workloads: vector search, memory decay, and auto-relationships are first-class features.",
+    "Agent and Graph-RAG systems: replacing a Neo4j + Qdrant + embeddings stack with a single deployment for task tracking, dependency graphs, and retrieval pipelines.",
+    "Translation and evaluation workflows: replacing a document store plus embeddings pipeline with a single deployment for graph-native retrieval and faster aggregation paths.",
+    "Search remains current-state focused: current search paths are intentionally separate from historical MVCC state.",
+    "Hybrid retrieval is where NornicDB is materially different from vector-only stacks: the query shape is vector search followed by graph expansion in the same engine.",
+    "This point is: once vector search plus one-hop traversal stays in low single-digit milliseconds locally, the bottleneck shifts from retrieval logic to deployment topology."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T21:57:34Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/orneryd/NornicDB",
+  "repoUrl": "https://github.com/orneryd/NornicDB",
+  "license": "MIT",
+  "stars": 732,
+  "lastUpdated": "2026-05-15T21:57:34Z",
+  "lastChecked": "2026-05-16",
+  "publishedAt": "2026-05-16",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

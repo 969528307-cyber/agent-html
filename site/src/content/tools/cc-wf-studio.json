@@ -1,0 +1,78 @@
+{
+  "id": "cc-wf-studio",
+  "name": "Cc Wf Studio",
+  "type": "mcp",
+  "status": "published",
+  "summary": "CC Workflow Studio",
+  "description": "CC Workflow Studio",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/breaking-brake/cc-wf-studio",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/breaking-brake/cc-wf-studio",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/breaking-brake/cc-wf-studio#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/breaking-brake/cc-wf-studio#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/breaking-brake/cc-wf-studio/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "CC Workflow Studio speaks both.",
+    "Design workflows on a canvas.",
+    "Export as Markdown your AI agent already understands.",
+    "Agent Export Format Requires",
+    "Claude Code .claude/agents/ .claude/commands/ Claude Code",
+    "GitHub Copilot CLI .github/skills/ Copilot CLI",
+    "OpenAI Codex CLI .codex/skills/ Codex CLI",
+    "Roo Code .roo/skills/ Roo Code"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T13:50:08Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/breaking-brake/cc-wf-studio",
+  "repoUrl": "https://github.com/breaking-brake/cc-wf-studio",
+  "license": "NOASSERTION",
+  "stars": 5005,
+  "lastUpdated": "2026-05-19T13:50:08Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

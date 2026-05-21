@@ -1,0 +1,159 @@
+{
+  "id": "candidate-skills-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Skills",
+  "sourceUrl": "https://github.com/GuDaStudio/skills",
+  "sourceName": "GitHub",
+  "author": "GuDaStudio",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "This repository contains a collection of Agent Skills developed by GudaStudio, enabling seamless collaboration between Claude and other AI models and tools.",
+  "proposedCategory": [
+    "skill",
+    "code-review",
+    "docs",
+    "workflow",
+    "testing"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "GuDaStudio",
+    "repo": "skills",
+    "fullName": "GuDaStudio/skills",
+    "stars": 2010,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-12-23T15:04:12Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/README_EN.md"
+  ],
+  "readmeExtract": "![这是图片](./imgs/title.png) <div align=\"center\" Agent Skills 集合 —— 让 Claude 与多模型/工具无缝协作 [![License: MIT](https://img.shields.io/badge/License MIT blue.svg)](https://opensource.org/licenses/MIT) [![Claude Code](https://img.shields.io/badge/Claude%20Code Compatible green.svg)](https://claude.ai/code) [![Share](https://img.shields.io/badge/share 000000?logo=x&logoColor=white)](https://x.com/intent/tweet?text=GudaCC%20Skil",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agent Skills 集合 —— 让 Claude 与多模型/工具无缝协作",
+    "Agent Skills 是 Anthropic 推出的模块化能力扩展机制，让 LLM 能够按需加载专业领域知识与工作流。本仓库收录了 GudaStudio 开发的 Agent Skills 集合，实现 Claude 与其他 AI 模型、工具的无缝协作。",
+    "collaborating-with-codex 将编码任务委托给 Codex CLI，用于原型开发、调试和代码审查 OpenAI Codex",
+    "collaborating-with-gemini 将编码任务委托给 Gemini CLI，用于原型开发、调试和代码审查 Google Gemini",
+    "Codex CLI (若使用 collaborating-with-codex)",
+    "Gemini CLI (若使用 collaborating-with-gemini)",
+    "--user -User -u 安装到用户级目录 (~/.claude/skills/)",
+    "--project -Project -p 安装到项目级目录 (./.claude/skills/)"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "This repository contains a collection of Agent Skills developed by GudaStudio, enabling seamless collaboration between Claude and other AI models and tools.",
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "testing",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "testing",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 16,
+    "cli": 4,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Repository name indicates skill content.",
+    "Skill-collection or agent-rules language in description.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Agent app or product platform language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: agent-app, cli.",
+    "LLM: skill + [skill] — The repository is explicitly a collection of Agent Skills for Claude, focused on skill files like collaborating-with-codex and collaborating-with-gemini."
+  ],
+  "classificationAlternatives": [
+    "agent-app",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with testing workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "skills",
+  "publishedAt": "2026-05-18",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  }
+}

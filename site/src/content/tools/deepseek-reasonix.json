@@ -1,0 +1,77 @@
+{
+  "id": "deepseek-reasonix",
+  "name": "DeepSeek Reasonix",
+  "type": "cli",
+  "status": "published",
+  "summary": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+  "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A DeepSeek-native AI coding agent for your terminal.",
+    "reasonix / reasonix code [dir] The coding agent.",
+    "reasonix chat Plain chat — no filesystem or shell tools.",
+    "reasonix doctor Health check: Node, API key, MCP wiring.",
+    "Other subcommands (replay · diff · events · stats · index · mcp · prune-sessions) are in reasonix --help and the CLI reference.",
+    "Then connect QQ from inside the session:",
+    "Later /qq connect calls reuse the saved credentials directly.",
+    "Multi-tab, the right-panel shows files the agent has read or edited this session, the same cost / cache / token meters live at the bottom."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:05:38Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/esengine/DeepSeek-Reasonix",
+  "repoUrl": "https://github.com/esengine/DeepSeek-Reasonix",
+  "license": "MIT",
+  "stars": 4728,
+  "lastUpdated": "2026-05-20T03:05:38Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,699 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const tools = (await getCollection("tools")).filter((tool) => tool.data.status === "published");
+const agents = (await getCollection("agents")).filter((agent) => agent.data.status === "published");
+const signals = (await getCollection("signals")).filter((signal) => signal.data.status === "published");
+
+const toolCount = tools.length;
+const agentCount = agents.length;
+const signalCount = signals.length;
+
+const aiCategories = [
+  {
+    title: "AI Coding Tools",
+    accent: "lime",
+    count: 14,
+    summary: "Code review, repo context, terminal helpers, IDE assistants, and developer workflows.",
+    items: ["Repo Analysis", "Code Review", "Terminal Agents", "Test Generation", "Docs"],
+  },
+  {
+    title: "AI Automation Tools",
+    accent: "amber",
+    count: 11,
+    summary: "Workflow automation, agent actions, scheduled jobs, integrations, and browser tasks.",
+    items: ["Workflows", "AI Agents", "Task Automation", "Connectors", "Browser Automation"],
+  },
+  {
+    title: "AI Data & RAG Tools",
+    accent: "blue",
+    count: 9,
+    summary: "Databases, retrieval, vector search, file systems, analytics, and knowledge bases.",
+    items: ["Databases", "Vector Search", "Knowledge Base", "Web Search", "Analytics"],
+  },
+  {
+    title: "AI Productivity Tools",
+    accent: "green",
+    count: 8,
+    summary: "Research, notes, presentations, spreadsheets, writing, and personal assistant tasks.",
+    items: ["Research", "Notes", "Presentations", "Spreadsheets", "Translator"],
+  },
+  {
+    title: "AI Communication Tools",
+    accent: "rose",
+    count: 5,
+    summary: "Email, Slack, calendar, chat, notifications, meeting notes, and support workflows.",
+    items: ["Slack", "Email", "Calendar", "Messaging", "Meeting Notes"],
+  },
+  {
+    title: "AI Security Tools",
+    accent: "violet",
+    count: 4,
+    summary: "Vulnerability scanning, sandboxing, compliance, authentication, and secret detection.",
+    items: ["Vulnerability", "Sandbox", "Auth", "Compliance", "Secrets"],
+  },
+];
+
+const featuredTools = tools.slice(0, 6).map((tool) => tool.data);
+const featuredAgents = agents.slice(0, 6).map((agent) => agent.data);
+
+const pipelineStats = [
+  { label: "Published tools", value: toolCount },
+  { label: "Agent profiles", value: agentCount },
+  { label: "Signals", value: signalCount },
+  { label: "Auto rules", value: 7 },
+];
+---
+
+<BaseLayout
+  title="Figma Style Prototype - agentk.it"
+  description="A visual prototype for the next agentk.it front-end direction."
+  noindex
+>
+  <section class="prototype-shell page">
+    <div class="hero-grid">
+      <article class="hero-card">
+        <div class="proto-badge">Figma style prototype</div>
+        <h1>AI tools, organized by what people are trying to build.</h1>
+        <p>
+          A cleaner Tools-first homepage direction: user-facing AI categories on top,
+          agent compatibility underneath, and MCP / Skill / CLI / Workflow as filters.
+        </p>
+        <div class="hero-actions">
+          <a href="#categories">Explore categories</a>
+          <a class="ghost" href="#pipeline">Auto pipeline</a>
+        </div>
+      </article>
+
+      <aside class="control-card">
+        <div class="panel-top">
+          <span>Directory Health</span>
+          <strong>Live content</strong>
+        </div>
+        <div class="stat-grid">
+          {pipelineStats.map((item) => (
+            <div>
+              <strong>{item.value}</strong>
+              <span>{item.label}</span>
+            </div>
+          ))}
+        </div>
+        <div class="filter-stack">
+          <button>MCP</button>
+          <button>Skill</button>
+          <button>CLI</button>
+          <button>Workflow</button>
+        </div>
+      </aside>
+    </div>
+
+    <section class="prototype-section" id="categories">
+      <div class="section-title">
+        <span>01 / Browse by AI category</span>
+        <h2>Futurepedia-style cards, but tuned for agent tooling.</h2>
+      </div>
+
+      <div class="category-grid">
+        {aiCategories.map((category) => (
+          <article class={`category-card accent-${category.accent}`}>
+            <div class="category-art" aria-hidden="true">
+              <span></span>
+              <i></i>
+            </div>
+            <div>
+              <div class="category-meta">
+                <span>{category.count} tools</span>
+                <span>{category.accent}</span>
+              </div>
+              <h3>{category.title}</h3>
+              <p>{category.summary}</p>
+              <div class="subcategory-list">
+                {category.items.map((item) => <a href="#tools">{item}</a>)}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="prototype-section split" id="tools">
+      <div class="section-title">
+        <span>02 / Tool discovery</span>
+        <h2>Cards show value first, technical type second.</h2>
+      </div>
+
+      <div class="tool-board">
+        <aside class="facet-panel">
+          <span>Filter stack</span>
+          <button class="active">AI Coding Tools</button>
+          <button>MCP Servers</button>
+          <button>Codex compatible</button>
+          <button>Updated recently</button>
+          <button>GitHub verified</button>
+        </aside>
+
+        <div class="tool-list">
+          {featuredTools.map((tool) => (
+            <article class="tool-card">
+              <div>
+                <div class="tool-tags">
+                  <span>{tool.type}</span>
+                  {(tool.category || []).slice(0, 2).map((category) => <span>{category}</span>)}
+                </div>
+                <h3>{tool.name}</h3>
+                <p>{tool.summary}</p>
+              </div>
+              <div class="tool-foot">
+                <span>{tool.stars ? `${tool.stars.toLocaleString()} stars` : "source linked"}</span>
+                <a href={`/item/${tool.id}`}>Open</a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="prototype-section agent-strip">
+      <div class="section-title">
+        <span>03 / Agent compatibility</span>
+        <h2>Agents become the second navigation layer, not the first wall.</h2>
+      </div>
+      <div class="agent-grid">
+        {featuredAgents.map((agent) => (
+          <a class="agent-pill-card" href={`/for/${agent.id}`}>
+            <span>{agent.region}</span>
+            <strong>{agent.name}</strong>
+            <p>{agent.summary}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="prototype-section pipeline" id="pipeline">
+      <div class="section-title">
+        <span>04 / Automated publishing</span>
+        <h2>The candidate pool becomes a control room, not a manual chore.</h2>
+      </div>
+      <div class="pipeline-grid">
+        {["Crawl", "Classify", "Enrich", "Deduplicate", "Auto publish", "Leave risky items"].map((step, index) => (
+          <article>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <strong>{step}</strong>
+            <p>
+              {index === 0 && "Separate collectors for Tools, Agents, Learn, and Signals."}
+              {index === 1 && "Assign AI category, tool type, scope, source trust, and compatibility."}
+              {index === 2 && "Extract what it is, what it helps with, and why it matters."}
+              {index === 3 && "Match source URLs and public slugs before writing pages."}
+              {index === 4 && "Publish only candidates that pass deterministic gates."}
+              {index === 5 && "Risky, stale, or ambiguous items stay visible but unpublished."}
+            </p>
+          </article>
+        ))}
+      </div>
+    </section>
+  </section>
+</BaseLayout>
+
+<style>
+  :global(body) {
+    background:
+      radial-gradient(circle at 12% 8%, rgb(174 229 162 / 0.18), transparent 28rem),
+      radial-gradient(circle at 76% 4%, rgb(96 165 250 / 0.12), transparent 24rem),
+      radial-gradient(circle at 82% 74%, rgb(251 191 36 / 0.08), transparent 28rem),
+      #080b0a;
+  }
+
+  .prototype-shell {
+    padding: 62px 0 90px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+    gap: 18px;
+  }
+
+  .hero-card,
+  .control-card,
+  .category-card,
+  .facet-panel,
+  .tool-card,
+  .agent-pill-card,
+  .pipeline-grid article {
+    border: 1px solid rgb(236 255 235 / 0.1);
+    background:
+      linear-gradient(180deg, rgb(255 255 255 / 0.07), rgb(255 255 255 / 0.025)),
+      rgb(14 18 15 / 0.82);
+    box-shadow: 0 26px 90px rgb(0 0 0 / 0.28);
+    backdrop-filter: blur(28px);
+  }
+
+  .hero-card {
+    position: relative;
+    min-height: 520px;
+    padding: clamp(30px, 6vw, 70px);
+    overflow: hidden;
+    border-radius: 38px;
+  }
+
+  .hero-card::after {
+    position: absolute;
+    right: -90px;
+    bottom: -120px;
+    width: 420px;
+    height: 420px;
+    content: "";
+    background:
+      linear-gradient(135deg, rgb(174 229 162 / 0.28), transparent 54%),
+      conic-gradient(from 120deg, rgb(174 229 162 / 0.5), rgb(96 165 250 / 0.3), rgb(251 191 36 / 0.22), rgb(174 229 162 / 0.5));
+    border-radius: 999px;
+    filter: blur(6px);
+    opacity: 0.85;
+  }
+
+  .proto-badge {
+    display: inline-flex;
+    padding: 9px 13px;
+    color: #d9ffd2;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid rgb(174 229 162 / 0.22);
+    border-radius: 999px;
+    background: rgb(174 229 162 / 0.09);
+  }
+
+  .hero-card h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin-top: 30px;
+    font-family: var(--sans);
+    font-size: clamp(48px, 7vw, 90px);
+    font-weight: 700;
+    line-height: 0.94;
+    letter-spacing: -0.075em;
+  }
+
+  .hero-card p {
+    position: relative;
+    z-index: 1;
+    max-width: 620px;
+    margin-top: 26px;
+    color: #aab8ad;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .hero-actions {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 34px;
+  }
+
+  .hero-actions a,
+  .tool-foot a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 18px;
+    color: #071009;
+    font-weight: 800;
+    border-radius: 999px;
+    background: #b9e8ad;
+  }
+
+  .hero-actions a.ghost {
+    color: #dce8de;
+    border: 1px solid rgb(236 255 235 / 0.12);
+    background: rgb(255 255 255 / 0.05);
+  }
+
+  .control-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 38px;
+  }
+
+  .panel-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    color: #93a298;
+    font-size: 13px;
+  }
+
+  .panel-top strong {
+    color: #dce8de;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 28px 0;
+  }
+
+  .stat-grid div {
+    min-height: 126px;
+    padding: 18px;
+    border: 1px solid rgb(236 255 235 / 0.08);
+    border-radius: 24px;
+    background: rgb(255 255 255 / 0.035);
+  }
+
+  .stat-grid strong {
+    display: block;
+    color: #b9e8ad;
+    font-size: 42px;
+    letter-spacing: -0.06em;
+  }
+
+  .stat-grid span,
+  .filter-stack button,
+  .facet-panel button {
+    color: #9fac9f;
+    font-size: 13px;
+  }
+
+  .filter-stack {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .filter-stack button,
+  .facet-panel button {
+    min-height: 38px;
+    padding: 0 12px;
+    border: 1px solid rgb(236 255 235 / 0.1);
+    border-radius: 999px;
+    background: rgb(255 255 255 / 0.035);
+  }
+
+  .prototype-section {
+    margin-top: 64px;
+  }
+
+  .section-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+    align-items: end;
+    margin-bottom: 18px;
+  }
+
+  .section-title span {
+    color: #b9e8ad;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .section-title h2 {
+    max-width: 640px;
+    font-family: var(--sans);
+    font-size: clamp(30px, 4vw, 56px);
+    font-weight: 750;
+    line-height: 0.98;
+    letter-spacing: -0.065em;
+  }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .category-card {
+    display: grid;
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 24px;
+    min-height: 250px;
+    padding: 22px;
+    overflow: hidden;
+    border-radius: 32px;
+  }
+
+  .category-art {
+    position: relative;
+    min-height: 200px;
+    border-radius: 26px;
+    background: radial-gradient(circle at 50% 42%, var(--accent), transparent 48%), rgb(255 255 255 / 0.035);
+  }
+
+  .category-art span,
+  .category-art i {
+    position: absolute;
+    inset: 34px;
+    display: block;
+    border: 1px solid rgb(255 255 255 / 0.22);
+    border-radius: 38% 62% 58% 42%;
+    background: linear-gradient(135deg, rgb(255 255 255 / 0.24), transparent);
+    transform: rotate(-16deg);
+  }
+
+  .category-art i {
+    inset: 68px 42px 40px 72px;
+    border-radius: 999px;
+    transform: rotate(20deg);
+  }
+
+  .accent-lime { --accent: rgb(174 229 162 / 0.42); }
+  .accent-amber { --accent: rgb(251 191 36 / 0.4); }
+  .accent-blue { --accent: rgb(96 165 250 / 0.38); }
+  .accent-green { --accent: rgb(52 211 153 / 0.34); }
+  .accent-rose { --accent: rgb(251 113 133 / 0.3); }
+  .accent-violet { --accent: rgb(167 139 250 / 0.32); }
+
+  .category-meta,
+  .tool-tags,
+  .tool-foot {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .category-meta span,
+  .tool-tags span {
+    padding: 6px 9px;
+    color: #adc0b1;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 1px solid rgb(236 255 235 / 0.09);
+    border-radius: 999px;
+    background: rgb(255 255 255 / 0.035);
+  }
+
+  .category-card h3 {
+    margin-top: 18px;
+    font-size: 27px;
+    letter-spacing: -0.055em;
+  }
+
+  .category-card p,
+  .tool-card p,
+  .agent-pill-card p,
+  .pipeline-grid p {
+    margin-top: 10px;
+    color: #99a69c;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .subcategory-list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .subcategory-list a {
+    color: #dce8de;
+    font-size: 13px;
+  }
+
+  .tool-board {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .facet-panel {
+    position: sticky;
+    top: 104px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: start;
+    padding: 18px;
+    border-radius: 28px;
+  }
+
+  .facet-panel span {
+    margin-bottom: 8px;
+    color: #e5efe5;
+    font-weight: 800;
+  }
+
+  .facet-panel button {
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+  }
+
+  .facet-panel button.active {
+    color: #071009;
+    background: #b9e8ad;
+  }
+
+  .tool-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .tool-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 230px;
+    padding: 20px;
+    border-radius: 28px;
+  }
+
+  .tool-card h3 {
+    margin-top: 18px;
+    font-size: 22px;
+  }
+
+  .tool-foot {
+    justify-content: space-between;
+    margin-top: 26px;
+    color: #93a298;
+    font-size: 13px;
+  }
+
+  .tool-foot a {
+    min-height: 34px;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  .agent-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .agent-pill-card {
+    min-height: 180px;
+    padding: 20px;
+    border-radius: 28px;
+  }
+
+  .agent-pill-card span {
+    color: #b9e8ad;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .agent-pill-card strong {
+    display: block;
+    margin-top: 22px;
+    font-size: 24px;
+    letter-spacing: -0.05em;
+  }
+
+  .pipeline-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .pipeline-grid article {
+    min-height: 210px;
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .pipeline-grid span {
+    color: #b9e8ad;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .pipeline-grid strong {
+    display: block;
+    margin-top: 38px;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+  }
+
+  @media (max-width: 1060px) {
+    .hero-grid,
+    .category-grid,
+    .tool-board {
+      grid-template-columns: 1fr;
+    }
+
+    .category-card {
+      grid-template-columns: 130px minmax(0, 1fr);
+    }
+
+    .agent-grid,
+    .pipeline-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .facet-panel {
+      position: static;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .prototype-shell {
+      padding-top: 32px;
+    }
+
+    .hero-card {
+      min-height: auto;
+      border-radius: 28px;
+    }
+
+    .control-card,
+    .category-card {
+      border-radius: 28px;
+    }
+
+    .category-card,
+    .tool-list,
+    .agent-grid,
+    .pipeline-grid,
+    .stat-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .category-art {
+      min-height: 150px;
+    }
+
+    .section-title {
+      align-items: start;
+      flex-direction: column;
+    }
+  }
+</style>

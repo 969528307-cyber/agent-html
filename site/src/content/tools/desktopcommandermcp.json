@@ -1,0 +1,77 @@
+{
+  "id": "desktopcommandermcp",
+  "name": "DesktopCommanderMCP",
+  "type": "mcp",
+  "status": "published",
+  "summary": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+  "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+  "category": [
+    "data"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Work with code and text, run processes, and automate tasks, going far beyond other AI editors - while using host client subscriptions instead of API token costs.",
+    "Want a better experience? The Desktop Commander App gives you everything the MCP server does, plus:",
+    "Use any AI model — Claude, GPT-4.5, Gemini 2.5, or any model you prefer",
+    "See file changes live — visual file previews as AI edits your files",
+    "Coming soon — skills system, dictation, background scheduled tasks, and more",
+    "The MCP server below still works great with Claude Desktop and other MCP clients — the app is for those who want a dedicated, polished experience.",
+    "File Preview UI & Markdown Editor",
+    "All of your AI development tools in one place."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-14T14:25:03Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+  "repoUrl": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+  "license": "MIT",
+  "stars": 6055,
+  "lastUpdated": "2026-05-14T14:25:03Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

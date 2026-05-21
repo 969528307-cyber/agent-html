@@ -1,0 +1,75 @@
+{
+  "id": "mcpo",
+  "name": "Mcpo",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A simple, secure MCP-to-OpenAPI proxy server",
+  "description": "A simple, secure MCP-to-OpenAPI proxy server",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/open-webui/mcpo",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/open-webui/mcpo",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/open-webui/mcpo#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/open-webui/mcpo#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/open-webui/mcpo/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Expose any MCP tool as an OpenAPI-compatible HTTP server—instantly.",
+    "mcpo is a dead-simple proxy that takes an MCP server command and makes it accessible via standard RESTful OpenAPI, so your tools \"just work\" with LLM agents and apps expecting OpenAPI servers.",
+    "🤔 Why Use mcpo Instead of Native MCP?",
+    "MCP servers usually speak over raw stdio, which is:",
+    "❌ Incompatible with most tools",
+    "🧩 Missing standard features like docs, auth, error handling, etc.",
+    "mcpo solves all of that—without extra effort:",
+    "✅ Works instantly with OpenAPI tools, SDKs, and UIs"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T20:40:30Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/open-webui/mcpo",
+  "repoUrl": "https://github.com/open-webui/mcpo",
+  "license": "MIT",
+  "stars": 4202,
+  "lastUpdated": "2026-05-17T20:40:30Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,135 @@
+{
+  "id": "candidate-mcp-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp",
+  "sourceUrl": "https://github.com/BrowserMCP/mcp",
+  "sourceName": "GitHub",
+  "author": "BrowserMCP",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Cursor"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "BrowserMCP",
+    "repo": "mcp",
+    "fullName": "BrowserMCP/mcp",
+    "stars": 6528,
+    "license": "Apache-2.0",
+    "topics": [
+      "browser-automation",
+      "browser-extension",
+      "claude",
+      "cursor",
+      "mcp",
+      "mcp-server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-04-24T21:49:44Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "<a href=\"https://browsermcp.io\" <img src=\"./.github/images/banner.png\" alt=\"Browser MCP banner\" </a <h3 align=\"center\" Browser MCP</h3 <p align=\"center\" Automate your browser with AI. <br / <a href=\"https://browsermcp.io\" <strong Website</strong </a • <a href=\"https://docs.browsermcp.io\" <strong Docs</strong </a </p About Browser MCP is an MCP server + Chrome extension that allows you to automate your browser using A",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Automate your browser with AI.",
+    "Browser MCP is an MCP server + Chrome extension that allows you to automate your browser using AI applications like VS Code, Claude, Cursor, and Windsurf.",
+    "⚡ Fast: Automation happens locally on your machine, resulting in better performance without network latency.",
+    "🔒 Private: Since automation happens locally, your browser activity stays on your device and isn't sent to remote servers.",
+    "👤 Logged In: Uses your existing browser profile, keeping you logged into all your services.",
+    "🥷🏼 Stealth: Avoids basic bot detection and CAPTCHAs by using your real browser fingerprint.",
+    "This repo contains all the core MCP code for Browser MCP, but currently cannot yet be built on its own due to dependencies on utils and types from the monorepo where it's developed.",
+    "Browser MCP was adapted from the Playwright MCP server in order to automate the user's browser rather than creating new browser instances."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 2,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "browser",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "browser",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Mcp is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with browser workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "Automate your browser with AI."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp",
+  "publishedAt": "2026-05-20"
+}

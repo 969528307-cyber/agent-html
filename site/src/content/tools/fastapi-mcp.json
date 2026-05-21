@@ -1,0 +1,76 @@
+{
+  "id": "fastapi-mcp",
+  "name": "Fastapi Mcp",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+  "description": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/tadata-org/fastapi_mcp",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/tadata-org/fastapi_mcp",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/tadata-org/fastapi_mcp#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/tadata-org/fastapi_mcp#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/tadata-org/fastapi_mcp/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+    "FastAPI-native: Not just another OpenAPI -> MCP converter",
+    "Preserve documentation of all your endpoints, just as it is in Swagger",
+    "Flexible deployment - Mount your MCP server to the same app, or deploy separately",
+    "If you prefer a managed hosted solution check out tadata.com.",
+    "The simplest way to use FastAPI-MCP is to add an MCP server directly to your FastAPI application:",
+    "Your auto-generated MCP server is now available at",
+    "Documentation, Examples and Advanced Usage"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-11-24T14:51:54Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/tadata-org/fastapi_mcp",
+  "repoUrl": "https://github.com/tadata-org/fastapi_mcp",
+  "license": "MIT",
+  "stars": 11870,
+  "lastUpdated": "2025-11-24T14:51:54Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

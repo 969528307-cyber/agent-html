@@ -1,0 +1,147 @@
+{
+  "id": "candidate-gin-vue-admin-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Gin Vue Admin",
+  "sourceUrl": "https://github.com/flipped-aurora/gin-vue-admin",
+  "sourceName": "GitHub",
+  "author": "flipped-aurora",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "🚀Vite+Vue3+Gin拥有AI辅助的基础开发平台，企业级业务AI+开发解决方案，内置mcp辅助服务，内置skills管理，支持TS和JS混用。它集成了JWT鉴权、权限管理、动态路由、显隐可控组件、分页封装、多点登录拦截、资源权限、上传下载、代码生成器、表单生成器和可配置的导入导出等开发必备功能。",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Cursor"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "flipped-aurora",
+    "repo": "gin-vue-admin",
+    "fullName": "flipped-aurora/gin-vue-admin",
+    "stars": 24691,
+    "license": "Apache-2.0",
+    "topics": [
+      "admin",
+      "ai",
+      "casbin",
+      "claw",
+      "element-ui",
+      "gin",
+      "gin-admin",
+      "gin-vue-admin",
+      "go",
+      "go-admin",
+      "golang",
+      "gorm",
+      "i18n",
+      "jwt",
+      "mcp",
+      "skills",
+      "vibecoding",
+      "vue",
+      "vue-admin",
+      "vue3"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T05:48:18Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/gin-vue-admin.png",
+    "docs/superpowers/specs/2026-04-08-auto-plugin-design.md",
+    ".cursor/rules/project_rules.md"
+  ],
+  "readmeExtract": "<div align=center <img src=\"http://qmplusimg.henrongyi.top/gvalogo.jpg\" width=\"300\" height=\"300\" / </div <div align=center <img src=\"https://img.shields.io/badge/golang 1.20 blue\"/ <img src=\"https://img.shields.io/badge/gin 1.9.1 lightBlue\"/ <img src=\"https://img.shields.io/badge/vue 3.3.4 brightgreen\"/ <img src=\"https://img.shields.io/badge/element plus 2.3.8 green\"/ <img src=\"https://img.shields.io/badge/gorm 1.25.",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "合并代码需要两名维护人员参与：一人进行 review 后 approve，另一人再次 review，通过后即可合并。",
+    "执行上面的命令后，server目录下会出现docs文件夹里的 docs.go, swagger.json, swagger.yaml 三个文件更新，启动go服务之后, 在浏览器输入 即可查看swagger文档",
+    "在工作区配置文件中有go.toolsEnvVars字段，是用于VSCode自身的go工具环境变量。此外在多go版本的系统中，可以通过gopath、go.goroot指定运行版本。",
+    "后端接口路径保持不变，继续兼容现有 /autoCode/ 与 /skills/",
+    "server/mcp 中与独立服务进程管理强绑定的底层基础设施",
+    "若后续需要做到“移除 auto 插件后完全没有 MCP 相关基础设施残留”，再单独做第二轮基础设施下沉",
+    "server/api/v1/system/autocodemcp.go",
+    "server/api/v1/system/aiworkflowsession.go"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "🚀Vite+Vue3+Gin拥有AI辅助的基础开发平台，企业级业务AI+开发解决方案，内置mcp辅助服务，内置skills管理，支持TS和JS混用。它集成了JWT鉴权、权限管理、动态路由、显隐可控组件、分页封装、多点登录拦截、资源权限、上传下载、代码生成器、表单生成器和可配置的导入导出等开发必备功能。",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Gin Vue Admin is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with design workflows.",
+      "Relevant to mcp.",
+      "合并代码需要两名维护人员参与：一人进行 review 后 approve，另一人再次 review，通过后即可合并。",
+      "执行上面的命令后，server目录下会出现docs文件夹里的 docs.go, swagger.json, swagger.yaml 三个文件更新，启动go服务之后, 在浏览器输入 即可查看swagger文档",
+      "在工作区配置文件中有go.toolsEnvVars字段，是用于VSCode自身的go工具环境变量。此外在多go版本的系统中，可以通过gopath、go.goroot指定运行版本。"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "gin-vue-admin",
+  "publishedAt": "2026-05-20"
+}

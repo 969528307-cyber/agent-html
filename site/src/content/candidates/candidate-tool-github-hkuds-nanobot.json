@@ -1,0 +1,223 @@
+{
+  "id": "candidate-tool-github-hkuds-nanobot",
+  "type": "tool",
+  "status": "published",
+  "title": "Nanobot",
+  "sourceUrl": "https://github.com/HKUDS/nanobot",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "HKUDS",
+  "discoveredAt": "2026-05-19",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "\"🐈 nanobot: The Ultra-Lightweight Personal AI Agent\"",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Kimi",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "HKUDS",
+    "repo": "nanobot",
+    "fullName": "HKUDS/nanobot",
+    "stars": 42724,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "anthropic",
+      "chatgpt",
+      "claude",
+      "claude-code",
+      "codex",
+      "llm",
+      "nanobot",
+      "openai",
+      "openclaw"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T17:12:06Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agent-social-network.md",
+    "docs/channel-plugin-guide.md",
+    "docs/chat-apps.md",
+    "docs/chat-commands.md",
+    "docs/cli-reference.md",
+    "docs/deployment.md",
+    "docs/image-generation.md",
+    "docs/memory.md",
+    "docs/multiple-instances.md",
+    "docs/my-tool.md",
+    "docs/openai-api.md",
+    "docs/python-sdk.md",
+    "docs/quick-start.md",
+    "docs/README.md",
+    "docs/websocket.md",
+    "pyproject.toml",
+    "nanobot/skills/clawhub/SKILL.md",
+    "nanobot/skills/cron/SKILL.md",
+    "nanobot/skills/github/SKILL.md",
+    "nanobot/skills/image-generation/SKILL.md",
+    "nanobot/skills/long-goal/SKILL.md",
+    "nanobot/skills/memory/SKILL.md",
+    "nanobot/skills/my/SKILL.md",
+    "nanobot/skills/skill-creator/SKILL.md",
+    "nanobot/skills/summarize/SKILL.md",
+    "nanobot/skills/tmux/SKILL.md",
+    "nanobot/skills/update-setup/SKILL.md",
+    "nanobot/skills/weather/SKILL.md",
+    "CLAUDE.md",
+    "nanobot/templates/AGENTS.md"
+  ],
+  "readmeExtract": "![cover v5 optimized](./images/GitHub README.png) <div align=\"center\" <p <a href=\"https://pypi.org/project/nanobot ai/\" <img src=\"https://img.shields.io/pypi/v/nanobot ai\" alt=\"PyPI\" </a <a href=\"https://pepy.tech/project/nanobot ai\" <img src=\"https://static.pepy.tech/badge/nanobot ai\" alt=\"Downloads\" </a <img src=\"https://img.shields.io/badge/python ≥3.11 blue\" alt=\"Python\" <img src=\"https://img.shields.io/badge/lic",
+  "skillExtracts": [
+    {
+      "path": "nanobot/skills/clawhub/SKILL.md",
+      "extract": "name: clawhub description: Search and install agent skills from ClawHub, the public skill registry. homepage: https://clawhub.ai metadata: {\"nanobot\":{\"emoji\":\"🦞\"}} ClawHub Public skill registry for AI agents. Search by natural language (vector search). When to use Use this skill when the user asks any of: \"find a skill for …\" \"search for skills\" \"install a skill\" \"what skills are available?\" \"update my skills\" Sear"
+    },
+    {
+      "path": "nanobot/skills/cron/SKILL.md",
+      "extract": "name: cron description: Schedule reminders and recurring tasks. Cron Use the cron tool to schedule reminders or recurring tasks. Three Modes 1. Reminder message is sent directly to user 2. Task message is a task description, agent executes and sends result 3. One time runs once at a specific time, then auto deletes Examples Fixed reminder: Dynamic task (agent executes each time): One time scheduled task (compute ISO "
+    },
+    {
+      "path": "nanobot/skills/github/SKILL.md",
+      "extract": "name: github description: \"Interact with GitHub using the gh CLI. Use gh issue , gh pr , gh run , and gh api for issues, PRs, CI runs, and advanced queries.\" metadata: {\"nanobot\":{\"emoji\":\"🐙\",\"requires\":{\"bins\":[\"gh\"]},\"install\":[{\"id\":\"brew\",\"kind\":\"brew\",\"formula\":\"gh\",\"bins\":[\"gh\"],\"label\":\"Install GitHub CLI (brew)\"},{\"id\":\"apt\",\"kind\":\"apt\",\"package\":\"gh\",\"bins\":[\"gh\"],\"label\":\"Install GitHub CLI (apt)\"}]}} Git"
+    },
+    {
+      "path": "nanobot/skills/image-generation/SKILL.md",
+      "extract": "name: image generation description: Generate images and iteratively edit saved image artifacts. Image Generation Use the generate image tool when the user asks you to create, render, draw, design, generate, or edit an image. If the generate image tool is not available in the current tool list, tell the user that image generation is not enabled for this nanobot instance. When To Use Text to image: call generate image "
+    },
+    {
+      "path": "nanobot/skills/long-goal/SKILL.md",
+      "extract": "name: long goal description: Sustained objectives via long task / complete goal — idempotent goal wording, project style modular work, early web/doc research, Runtime Context metadata. Long running objectives ( long task / complete goal ) Use these tools when the user wants multi turn sustained work on one clear objective (same runner, ordinary tools). Not for trivial one shot questions. Start fast long task is a lig"
+    },
+    {
+      "path": "nanobot/skills/memory/SKILL.md",
+      "extract": "name: memory description: Two layer memory system with Dream managed knowledge files. always: true Memory Structure SOUL.md — Bot personality and communication style. Managed by Dream. Do NOT edit. USER.md — User profile and preferences. Managed by Dream. Do NOT edit. memory/MEMORY.md — Long term facts (project context, important events). Managed by Dream. Do NOT edit. memory/history.jsonl — append only JSONL, not lo"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🐈 nanobot is an open-source and ultra-lightweight AI agent in the spirit of OpenClaw, Claude Code, and Codex.",
+    "2026-05-15 🚀 Released v0.2.0 — /goal holds sustained objectives across turns, WebUI now ships inside the wheel, image generation end to end, 5 new providers with fallbackmodels, and a real agent-loop refactor.",
+    "2026-05-13 🧠 Streaming reasoning before answers, automatic backup models, smoother plug-in reconnects.",
+    "2026-05-09 🖼️ Sharper image replay, BYO web-search keys in Settings, Feishu threads routed cleanly.",
+    "2026-05-06 🧩 Tunable tool hint, steadier voice and plug-in startups, schedules and reminders that stick.",
+    "2026-05-05 🛡️ Quiet deny for unknown Telegram chats, Dream cleanup, fuller automation summaries.",
+    "2026-04-28 🌐 Olostep web search, Hugging Face provider, safer workspace-tool interruptions.",
+    "2026-04-25 🧩 askuser choices, macOS LaunchAgent deployment, MSTeams stale-reference cleanup."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-app\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "\"🐈 nanobot: The Ultra-Lightweight Personal AI Agent\"",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "Nanobot is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to agent-app.",
+      "🐈 nanobot is an open-source and ultra-lightweight AI agent in the spirit of OpenClaw, Claude Code, and Codex.",
+      "2026-05-15 🚀 Released v0.2.0 — /goal holds sustained objectives across turns, WebUI now ships inside the wheel, image generation end to end, 5 new providers with fallbackmodels, and a real agent-loop refactor."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:hkuds/nanobot",
+  "firstDiscoveredAt": "2026-05-19",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-19",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nanobot",
+  "publishedAt": "2026-05-19",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

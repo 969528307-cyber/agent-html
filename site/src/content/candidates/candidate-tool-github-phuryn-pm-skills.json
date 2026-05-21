@@ -1,0 +1,209 @@
+{
+  "id": "candidate-tool-github-phuryn-pm-skills",
+  "type": "tool",
+  "status": "published",
+  "title": "Pm Skills",
+  "sourceUrl": "https://github.com/phuryn/pm-skills",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "phuryn",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "phuryn",
+    "repo": "pm-skills",
+    "fullName": "phuryn/pm-skills",
+    "stars": 11354,
+    "license": "MIT",
+    "topics": [
+      "agent-skill-repository",
+      "agent-skills",
+      "agentic-skills",
+      "claude-code-marketplace",
+      "claude-code-plugins",
+      "claude-cowork-plugin",
+      "product-management"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-22T14:30:24Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pm-data-analytics/skills/ab-test-analysis/SKILL.md",
+    "pm-data-analytics/skills/cohort-analysis/SKILL.md",
+    "pm-data-analytics/skills/sql-queries/SKILL.md",
+    "pm-execution/skills/brainstorm-okrs/SKILL.md",
+    "pm-execution/skills/create-prd/SKILL.md",
+    "pm-execution/skills/dummy-dataset/SKILL.md",
+    "pm-execution/skills/job-stories/SKILL.md",
+    "pm-execution/skills/outcome-roadmap/SKILL.md",
+    "pm-execution/skills/pre-mortem/SKILL.md",
+    "pm-execution/skills/prioritization-frameworks/SKILL.md",
+    "pm-execution/skills/release-notes/SKILL.md",
+    "pm-execution/skills/retro/SKILL.md",
+    "pm-execution/skills/sprint-plan/SKILL.md",
+    "pm-execution/skills/stakeholder-map/SKILL.md",
+    "pm-execution/skills/summarize-meeting/SKILL.md",
+    "pm-execution/skills/test-scenarios/SKILL.md",
+    "pm-execution/skills/user-stories/SKILL.md",
+    "pm-execution/skills/wwas/SKILL.md",
+    "pm-go-to-market/skills/beachhead-segment/SKILL.md",
+    "pm-go-to-market/skills/competitive-battlecard/SKILL.md",
+    "pm-go-to-market/skills/growth-loops/SKILL.md",
+    "pm-go-to-market/skills/gtm-motions/SKILL.md",
+    "pm-go-to-market/skills/gtm-strategy/SKILL.md",
+    "pm-go-to-market/skills/ideal-customer-profile/SKILL.md",
+    "pm-market-research/skills/competitor-analysis/SKILL.md",
+    "pm-market-research/skills/customer-journey-map/SKILL.md",
+    "pm-market-research/skills/market-segments/SKILL.md",
+    "pm-market-research/skills/market-sizing/SKILL.md",
+    "pm-market-research/skills/sentiment-analysis/SKILL.md",
+    "pm-market-research/skills/user-personas/SKILL.md",
+    "pm-market-research/skills/user-segmentation/SKILL.md",
+    "pm-marketing-growth/skills/marketing-ideas/SKILL.md",
+    "pm-marketing-growth/skills/north-star-metric/SKILL.md",
+    "pm-marketing-growth/skills/positioning-ideas/SKILL.md",
+    "pm-marketing-growth/skills/product-name/SKILL.md",
+    "pm-marketing-growth/skills/value-prop-statements/SKILL.md",
+    "pm-product-discovery/skills/analyze-feature-requests/SKILL.md",
+    "pm-product-discovery/skills/brainstorm-experiments-existing/SKILL.md",
+    "pm-product-discovery/skills/brainstorm-experiments-new/SKILL.md"
+  ],
+  "readmeExtract": "![GitHub stars](https://img.shields.io/github/stars/phuryn/pm skills) [![License: MIT](https://img.shields.io/badge/License MIT yellow?style=flat square)](https://github.com/phuryn/pm skills/blob/main/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs welcome brightgreen?style=flat square)](https://github.com/phuryn/pm skills/blob/main/CONTRIBUTING.md) PM Skills Marketplace: The AI Operating System for Better ",
+  "skillExtracts": [
+    {
+      "path": "pm-data-analytics/skills/ab-test-analysis/SKILL.md",
+      "extract": "name: ab test analysis description: \"Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance, interpreting split test data, or deciding whether to ship a variant.\" A/B Test Analysis Evaluate A/B test results with statistical rigor and translate findings in"
+    },
+    {
+      "path": "pm-data-analytics/skills/cohort-analysis/SKILL.md",
+      "extract": "name: cohort analysis description: \"Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating churn patterns, or identifying engagement trends.\" Cohort Analysis & Retention Explorer Purpose Analyze user engagement and retention patterns by cohort to identify tr"
+    },
+    {
+      "path": "pm-data-analytics/skills/sql-queries/SKILL.md",
+      "extract": "name: sql queries description: \"Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries.\" SQL Query Generator Purpose Transform natural language requirements into optimized SQL queries"
+    },
+    {
+      "path": "pm-execution/skills/brainstorm-okrs/SKILL.md",
+      "extract": "name: brainstorm okrs description: \"Brainstorm team level OKRs aligned with company objectives — qualitative objectives with measurable key results. Use when setting quarterly OKRs, aligning team goals with company strategy, drafting objectives, or learning how to write effective OKRs.\" Brainstorm Team OKRs Purpose You are a veteran product leader responsible for defining Objectives and Key Results (OKRs) for the tea"
+    },
+    {
+      "path": "pm-execution/skills/create-prd/SKILL.md",
+      "extract": "name: create prd description: \"Create a Product Requirements Document using a comprehensive 8 section template covering problem, objectives, segments, value propositions, solution, and release planning. Use when writing a PRD, documenting product requirements, preparing a feature spec, or reviewing an existing PRD.\" Create a Product Requirements Document Purpose You are an experienced product manager responsible for "
+    },
+    {
+      "path": "pm-execution/skills/dummy-dataset/SKILL.md",
+      "extract": "name: dummy dataset description: \"Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON, SQL, Python script). Use when creating test data, building mock datasets, or generating sample data for development and demos.\" Dummy Dataset Generation Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON,"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "PM Skills Marketplace: The AI Operating System for Better Product Decisions",
+    "65 PM skills and 36 chained workflows across 8 plugins.",
+    "Claude Code, Cowork, and more.",
+    "Designed for Claude Code and Cowork.",
+    "Skills compatible with other AI assistants.",
+    "PM Skills Marketplace gives you structure.",
+    "Each skill encodes a proven PM framework — discovery, assumption mapping, prioritization, strategy — and walks you through it step by step.",
+    "You get the rigor of Teresa Torres, Marty Cagan, and Alberto Savoia built into your daily workflow, not sitting on a bookshelf."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Pm Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "PM Skills Marketplace: The AI Operating System for Better Product Decisions",
+      "65 PM skills and 36 chained workflows across 8 plugins.",
+      "Claude Code, Cowork, and more."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:phuryn/pm-skills",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pm-skills",
+  "publishedAt": "2026-05-18"
+}

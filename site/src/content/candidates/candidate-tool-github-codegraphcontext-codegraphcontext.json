@@ -1,0 +1,213 @@
+{
+  "id": "candidate-tool-github-codegraphcontext-codegraphcontext",
+  "type": "tool",
+  "status": "published",
+  "title": "CodeGraphContext",
+  "sourceUrl": "https://github.com/CodeGraphContext/CodeGraphContext",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "CodeGraphContext",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "An MCP server plus a CLI tool that indexes local code into a graph database to provide context to AI assistants.",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "CodeGraphContext",
+    "repo": "CodeGraphContext",
+    "fullName": "CodeGraphContext/CodeGraphContext",
+    "stars": 3235,
+    "license": "MIT",
+    "topics": [
+      "hacktoberfest2025",
+      "social-winter-of-code"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T22:20:33Z"
+  },
+  "detectedFiles": [
+    "README.kor.md",
+    "README.md",
+    "README.ru-RU.md",
+    "README.uk.md",
+    "README.zh-CN.md",
+    "docs/BUNDLE_ARCHITECTURE.md",
+    "docs/BUNDLE_BUGFIXES.md",
+    "docs/BUNDLE_IMPLEMENTATION.md",
+    "docs/BUNDLE_QUICKREF.md",
+    "docs/BUNDLE_SUMMARY.md",
+    "docs/BUNDLES.md",
+    "docs/CLI_COMPLETE_REFERENCE.md",
+    "docs/custom_theme/main.html",
+    "docs/docs/agent_skill_codegraphcontext.md",
+    "docs/docs/architecture.md",
+    "docs/docs/assets/logo.png",
+    "docs/docs/concepts/architecture.md",
+    "docs/docs/concepts/backends.md",
+    "docs/docs/concepts/graph-model.md",
+    "docs/docs/concepts/how_it_works.md",
+    "docs/docs/getting-started/prerequisites.md",
+    "docs/docs/getting-started/quickstart.md",
+    "docs/docs/guides/bundles.md",
+    "docs/docs/guides/ci_cd.md",
+    "docs/docs/guides/contexts.md",
+    "docs/docs/guides/indexing.md",
+    "docs/docs/guides/mcp_guide.md",
+    "docs/docs/guides/multi-repo.md",
+    "docs/docs/guides/onboarding.md",
+    "docs/docs/guides/visualization.md",
+    "docs/docs/images/1.png",
+    "docs/docs/images/12.png",
+    "docs/docs/images/13.png",
+    "docs/docs/images/14.png",
+    "docs/docs/images/16.png",
+    "docs/docs/images/2.png",
+    "docs/docs/images/20.png",
+    "docs/docs/images/21.png",
+    "docs/docs/images/22.png",
+    "docs/docs/images/23.png"
+  ],
+  "readmeExtract": "🏗️ CodeGraphContext (CGC) Turn code repositories into a queryable graph for AI agents. 🌐 Languages: 🇬🇧 [English](README.md) 🇨🇳 [中文](README.zh CN.md) 🇰🇷 [한국어](README.kor.md) 🇺🇦 [Українська](README.uk.md) 🇷🇺 [Русский](README.ru RU.md) 🇯🇵 日本語 (Soon) 🇪🇸 Español (Soon) 🌍 Help translate CodeGraphContext to your language by raising an issue & PR on https://github.com/Shashankss1205/CodeGraphContext/issues! ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Turn code repositories into a queryable graph for AI agents.",
+    "A powerful MCP server and CLI toolkit that indexes local code into a graph database to provide context to AI assistants and developers.",
+    "Use it as a standalone CLI for comprehensive code analysis or connect it to your favorite AI IDE via MCP for AI-powered code understanding.",
+    "Use natural language to query complex call-chains via MCP.",
+    "Dual Mode: Works as a standalone CLI toolkit for developers and as an MCP server for AI agents.",
+    "Quick Search: Live-search through the graph to find specific symbols",
+    "...query complex call-chains via MCP.",
+    "│ Automated Weekly Releases │",
+    "Use Case Desktop, IDE, Local development Custom research projects Specialized Unix development Enterprise, Massive graphs",
+    "...Dual Mode: Works as a standalone CLI toolkit for developers and as an MCP server for AI agents."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "An MCP server plus a CLI tool that indexes local code into a graph database to provide context to AI assistants.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "docs",
+      "database",
+      "coding",
+      "translation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "docs",
+    "database",
+    "coding",
+    "translation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 7,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Agent app or product platform language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: knowledge-resource, mcp, cli.",
+    "LLM: mcp + [mcp, cli] — It is an MCP server and CLI tool for indexing code into a graph database for AI context."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "mcp",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "CodeGraphContext is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with docs workflows.",
+      "Helps with database workflows.",
+      "Helps with coding workflows.",
+      "Helps with translation workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:codegraphcontext/codegraphcontext",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "local-review",
+  "publishedAs": "codegraphcontext",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

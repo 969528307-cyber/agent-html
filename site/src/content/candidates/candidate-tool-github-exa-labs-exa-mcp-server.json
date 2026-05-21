@@ -1,0 +1,180 @@
+{
+  "id": "candidate-tool-github-exa-labs-exa-mcp-server",
+  "type": "tool",
+  "status": "published",
+  "title": "Exa Mcp Server",
+  "sourceUrl": "https://github.com/exa-labs/exa-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "exa-labs",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Exa MCP for web search and web crawling!",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "exa-labs",
+    "repo": "exa-mcp-server",
+    "fullName": "exa-labs/exa-mcp-server",
+    "stars": 4419,
+    "license": "MIT",
+    "topics": [
+      "code-search",
+      "codesearch",
+      "crawling",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "web-search",
+      "websearch"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T17:23:37Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "skills/search/SKILL.md"
+  ],
+  "readmeExtract": "Exa MCP Server [![Install in Cursor](https://img.shields.io/badge/Install in Cursor 000000?style=flat square&logoColor=white)](https://cursor.com/en/install mcp?name=exa&config=eyJuYW1lIjoiZXhhIiwidHlwZSI6Imh0dHAiLCJ1cmwiOiJodHRwczovL21jcC5leGEuYWkvbWNwIn0=) [![Install in VS Code](https://img.shields.io/badge/Install in VS Code 0098FF?style=flat square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redire",
+  "skillExtracts": [
+    {
+      "path": "skills/search/SKILL.md",
+      "extract": "name: search description: \"Deep research powered by Exa. Use for lead generation, literature reviews, deep dives, competitive analysis, or any query where one search falls short, including phrases like 'research this', 'find everything about', 'find me all', or 'deep dive on'.\" Exa Research Orchestrator You are the orchestrator. Your job: understand the query, plan the work, dispatch subagents with the right context,"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Connect AI assistants to Exa's search capabilities: web search, code search, and company research.",
+    "Full Documentation npm Package Get Your Exa API Key",
+    "Connect to Exa's hosted MCP server:",
+    "Open Claude Desktop Settings (or Customize) and go to Connectors",
+    "Search for Exa in the directory",
+    "Claude will now have access to Exa's search tools.",
+    "Open the MCP Store panel (from the \"...\" dropdown in the side panel), then add a custom server with:",
+    "Add to ~/.codeium/windsurf/mcpconfig.json:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Exa MCP for web search and web crawling!",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 7,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent app or product platform language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, agent-app, cli.",
+    "LLM: mcp + [mcp] — The repository is explicitly an MCP server for Exa's web search and crawling capabilities, exposing tools via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "agent-app",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Exa Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with coding workflows.",
+      "Relevant to search.",
+      "Connect AI assistants to Exa's search capabilities: web search, code search, and company research.",
+      "Full Documentation npm Package Get Your Exa API Key"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:exa-labs/exa-mcp-server",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "exa-mcp-server",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

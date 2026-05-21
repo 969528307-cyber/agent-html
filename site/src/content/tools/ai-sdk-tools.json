@@ -1,0 +1,72 @@
+{
+  "id": "ai-sdk-tools",
+  "name": "Ai Sdk Tools",
+  "type": "sdk",
+  "status": "published",
+  "summary": "Essential utilities for building production-ready AI applications with Vercel AI SDK. State management, debugging, structured streaming, intelligent agents, and caching.",
+  "description": "Essential utilities for building production-ready AI applications with Vercel AI SDK. State management, debugging, structured streaming, intelligent agents, and caching.",
+  "category": [
+    "sdk"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/midday-ai/ai-sdk-tools",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/midday-ai/ai-sdk-tools",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/midday-ai/ai-sdk-tools#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/midday-ai/ai-sdk-tools#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/midday-ai/ai-sdk-tools/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "State management, debugging, structured streaming, intelligent agents, caching, and persistent memory.",
+    "AI chat state management that eliminates prop drilling.",
+    "Development tools for debugging AI applications.",
+    "Inspect tool calls, messages, and execution flow directly in your app.",
+    "Stream structured, type-safe artifacts from AI tools to React components.",
+    "Multi-agent orchestration with automatic handoffs and routing.",
+    "Build intelligent workflows with specialized agents for any AI provider.",
+    "Universal caching for AI SDK tools."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-12-25T14:20:13Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/midday-ai/ai-sdk-tools",
+  "repoUrl": "https://github.com/midday-ai/ai-sdk-tools",
+  "stars": 2059,
+  "lastUpdated": "2025-12-25T14:20:13Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

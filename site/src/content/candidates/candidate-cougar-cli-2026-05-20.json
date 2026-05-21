@@ -1,0 +1,113 @@
+{
+  "id": "candidate-cougar-cli-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Cougar CLI",
+  "sourceUrl": "https://github.com/dulikaifazr/Cougar-CLI",
+  "sourceName": "GitHub",
+  "author": "dulikaifazr",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Cougar CLI - An AI programming agent for the command line",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "dulikaifazr",
+    "repo": "Cougar-CLI",
+    "fullName": "dulikaifazr/Cougar-CLI",
+    "stars": 1201,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "cli",
+      "coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-01-02T22:41:55Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "Cougar CLI An AI powered programming assistant for the command line LLM providers Supported model providers: OpenRouter OpenAI Claude 智谱（Zhipu） Any provider compatible with the OpenAI API standard Start (from source) 1. Download the source code 2. Install dependencies 3. Build 4. Start the CLI Windows notes We fixed multiple Windows compatibility issues during dependency installation and runtime (including issues rel",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 3,
+    "verifiability": 2,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Cougar CLI - An AI programming agent for the command line",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "productivity",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "productivity",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Cougar CLI is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with productivity workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli."
+    ],
+    "reasons": [
+      "Capability signals are too thin."
+    ],
+    "riskNotes": []
+  }
+}

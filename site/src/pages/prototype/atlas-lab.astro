@@ -1,0 +1,766 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const tools = (await getCollection("tools")).filter((tool) => tool.data.status === "published");
+const agents = (await getCollection("agents")).filter((agent) => agent.data.status === "published");
+const signals = (await getCollection("signals")).filter((signal) => signal.data.status === "published");
+
+const featuredTools = tools.slice(0, 8).map((tool) => tool.data);
+const featuredAgents = agents.slice(0, 8).map((agent) => agent.data);
+const featuredSignal = signals[0]?.data;
+
+const categories = [
+  {
+    title: "AI Coding Tools",
+    count: 18,
+    tone: "blue",
+    sub: ["Repo analysis", "Code review", "Terminal agents", "IDE workflows"],
+  },
+  {
+    title: "AI Automation Tools",
+    count: 16,
+    tone: "amber",
+    sub: ["Workflows", "Connectors", "Browser tasks", "Scheduled jobs"],
+  },
+  {
+    title: "AI Data & RAG Tools",
+    count: 12,
+    tone: "green",
+    sub: ["Databases", "Vector search", "Knowledge base", "Web retrieval"],
+  },
+  {
+    title: "AI Security Tools",
+    count: 7,
+    tone: "rose",
+    sub: ["Scanning", "Sandbox", "Auth", "Compliance"],
+  },
+];
+
+const pipeline = [
+  { label: "crawl", value: "4 modules", detail: "Tools / Agents / Learn / Signals" },
+  { label: "quality", value: "700+ stars", detail: "GitHub floor for tool discovery" },
+  { label: "freshness", value: "548 days", detail: "Maintenance window" },
+  { label: "publish", value: "auto", detail: "Only deterministic ready items" },
+];
+---
+
+<BaseLayout title="AI Atlas + Technical Lab - agentk.it" description="A focused visual prototype for the agentk.it front-end redesign." noindex>
+  <section class="atlas-page page">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="route-chip">
+          <span></span>
+          AI Atlas + Technical Lab
+        </div>
+        <h1>Find agent-native AI tools by category, then verify the stack.</h1>
+        <p>
+          The front door is simple: browse by AI task. The second layer is technical:
+          MCP, Skill, CLI, Workflow, compatible agents, source trust, stars, and freshness.
+        </p>
+        <div class="search-panel">
+          <span>Search tools, agents, workflows...</span>
+          <button>Browse AI categories</button>
+        </div>
+      </div>
+
+      <aside class="lab-console">
+        <div class="console-head">
+          <span>Live publishing console</span>
+          <strong>Rules active</strong>
+        </div>
+        <div class="console-lines">
+          {pipeline.map((item) => (
+            <div>
+              <span>{item.label}</span>
+              <strong>{item.value}</strong>
+              <p>{item.detail}</p>
+            </div>
+          ))}
+        </div>
+      </aside>
+    </section>
+
+    <section class="overview-rail">
+      {pipeline.map((item) => (
+        <article>
+          <span>{item.label}</span>
+          <strong>{item.value}</strong>
+          <p>{item.detail}</p>
+        </article>
+      ))}
+    </section>
+
+    <section class="category-section">
+      <div class="section-kicker">
+        <span>01</span>
+        <h2>AI categories as the main navigation.</h2>
+        <p>MCP / Skill / CLI / Workflow stay visible, but they move into filters and evidence panels.</p>
+      </div>
+
+      <div class="atlas-grid compact">
+        {categories.map((category) => (
+          <article class={`atlas-card tone-${category.tone}`}>
+            <div class="orb" aria-hidden="true"></div>
+            <div class="card-content">
+              <div class="count">{category.count} tools</div>
+              <h3>{category.title}</h3>
+              <div class="subgrid">
+                {category.sub.map((item) => <a href="#tools">{item}</a>)}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="tool-section" id="tools">
+      <div class="section-kicker">
+        <span>02</span>
+        <h2>Tool cards become evidence cards.</h2>
+        <p>Every card shows what it does, what type it is, and whether the source looks trustworthy.</p>
+      </div>
+
+      <div class="tool-shell">
+        <aside class="filters">
+          <strong>Refine</strong>
+          <button class="active">AI Coding Tools</button>
+          <button>MCP</button>
+          <button>Skill</button>
+          <button>CLI</button>
+          <button>Workflow</button>
+          <button>Codex compatible</button>
+          <button>GitHub verified</button>
+        </aside>
+
+        <div class="evidence-list">
+          {featuredTools.slice(0, 5).map((tool) => (
+            <article class="evidence-card">
+              <div class="card-main">
+                <div class="tags">
+                  <span>{tool.type}</span>
+                  {(tool.category || []).slice(0, 2).map((category) => <span>{category}</span>)}
+                </div>
+                <h3>{tool.name}</h3>
+                <p>{tool.summary}</p>
+              </div>
+              <div class="metrics">
+                <div>
+                  <strong>{tool.stars ? tool.stars.toLocaleString() : "linked"}</strong>
+                  <span>stars</span>
+                </div>
+                <div>
+                  <strong>{tool.license || "source"}</strong>
+                  <span>license</span>
+                </div>
+                <a href={`/item/${tool.id}`}>Open</a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="agent-section">
+      <div class="section-kicker">
+        <span>03</span>
+        <h2>Agent compatibility feels like a product matrix.</h2>
+        <p>Agents are still important, but the user reaches them after choosing a task or tool category.</p>
+      </div>
+
+      <div class="agent-matrix">
+        {featuredAgents.slice(0, 6).map((agent) => (
+          <a href={`/for/${agent.id}`}>
+            <span>{agent.region}</span>
+            <strong>{agent.name}</strong>
+            <p>{agent.summary}</p>
+            <div>
+              {agent.supportsMcp && <i>MCP</i>}
+              {agent.supportsSkills && <i>Skills</i>}
+              {agent.supportsCli && <i>CLI</i>}
+              {agent.supportsWorkflows && <i>Workflows</i>}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="bottom-grid">
+      <article class="signal-card">
+        <span>Signals</span>
+        <h2>{featuredSignal?.englishTitle || "Signals become market intelligence."}</h2>
+        <p>{featuredSignal?.executiveSummary || "Curated source-backed signals explain why an ecosystem shift matters."}</p>
+      </article>
+
+      <article class="automation-card">
+        <span>Automation</span>
+        <h2>Candidate pool becomes mostly invisible.</h2>
+        <p>
+          High-confidence candidates publish automatically. The internal page becomes a control room
+          for exceptions, not a daily manual publishing queue.
+        </p>
+      </article>
+    </section>
+  </section>
+</BaseLayout>
+
+<style>
+  :global(body) {
+    background:
+      radial-gradient(circle at 12% 0%, rgb(134 174 255 / 0.2), transparent 30rem),
+      radial-gradient(circle at 90% 8%, rgb(229 183 106 / 0.14), transparent 28rem),
+      radial-gradient(circle at 60% 86%, rgb(80 220 160 / 0.12), transparent 34rem),
+      #080b10;
+  }
+
+  .atlas-page {
+    padding: 42px 0 68px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+    gap: 18px;
+    min-height: auto;
+  }
+
+  .hero-copy,
+  .lab-console,
+  .atlas-card,
+  .filters,
+  .evidence-card,
+  .agent-matrix a,
+  .signal-card,
+  .automation-card {
+    border: 1px solid rgb(246 242 234 / 0.11);
+    background:
+      linear-gradient(180deg, rgb(246 242 234 / 0.07), rgb(246 242 234 / 0.026)),
+      rgb(12 17 24 / 0.82);
+    box-shadow: 0 30px 100px rgb(0 0 0 / 0.32);
+    backdrop-filter: blur(30px);
+  }
+
+  .hero-copy {
+    position: relative;
+    padding: clamp(28px, 4.4vw, 52px);
+    overflow: hidden;
+    border-radius: 42px;
+  }
+
+  .hero-copy::after {
+    position: absolute;
+    right: -80px;
+    bottom: -130px;
+    width: 360px;
+    height: 360px;
+    content: "";
+    background:
+      radial-gradient(circle at 34% 35%, rgb(246 242 234 / 0.7), transparent 8%),
+      conic-gradient(from 180deg, rgb(134 174 255 / 0.65), rgb(229 183 106 / 0.42), rgb(82 220 160 / 0.46), rgb(134 174 255 / 0.65));
+    border-radius: 42% 58% 48% 52%;
+    filter: blur(4px);
+    opacity: 0.72;
+  }
+
+  .route-chip {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 9px 12px;
+    color: #d9e6ff;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    border: 1px solid rgb(134 174 255 / 0.26);
+    border-radius: 999px;
+    background: rgb(134 174 255 / 0.1);
+  }
+
+  .route-chip span {
+    width: 8px;
+    height: 8px;
+    background: #e5b76a;
+    border-radius: 999px;
+  }
+
+  .hero h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin-top: 26px;
+    font-family: var(--sans);
+    font-size: clamp(42px, 5.7vw, 74px);
+    font-weight: 790;
+    line-height: 0.9;
+    letter-spacing: -0.082em;
+  }
+
+  .hero-copy p {
+    position: relative;
+    z-index: 1;
+    max-width: 590px;
+    margin-top: 20px;
+    color: #b1b8c7;
+    font-size: 15px;
+    line-height: 1.68;
+  }
+
+  .search-panel {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    max-width: 620px;
+    margin-top: 26px;
+    padding: 10px;
+    border: 1px solid rgb(246 242 234 / 0.12);
+    border-radius: 999px;
+    background: rgb(246 242 234 / 0.08);
+  }
+
+  .search-panel span {
+    padding-left: 14px;
+    color: #8f98aa;
+    font-size: 14px;
+  }
+
+  .search-panel button,
+  .metrics a {
+    min-height: 44px;
+    padding: 0 18px;
+    color: #0a0e13;
+    font-weight: 850;
+    border: 0;
+    border-radius: 999px;
+    background: #e5b76a;
+  }
+
+  .lab-console {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+    border-radius: 42px;
+  }
+
+  .console-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: #8f98aa;
+    font-size: 13px;
+  }
+
+  .console-head strong,
+  .section-kicker h2,
+  .atlas-card h3,
+  .evidence-card h3,
+  .agent-matrix strong,
+  .bottom-grid h2 {
+    color: #f6f2ea;
+  }
+
+  .console-lines {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .console-lines div {
+    padding: 14px;
+    border: 1px solid rgb(134 174 255 / 0.14);
+    border-radius: 24px;
+    background:
+      linear-gradient(90deg, rgb(134 174 255 / 0.08), transparent),
+      rgb(246 242 234 / 0.035);
+  }
+
+  .console-lines span,
+  .section-kicker span,
+  .bottom-grid > article > span {
+    color: #8fb7ff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .console-lines strong {
+    display: block;
+    margin-top: 8px;
+    color: #e5b76a;
+    font-size: 23px;
+    letter-spacing: -0.06em;
+  }
+
+  .console-lines p,
+  .section-kicker p,
+  .atlas-card a,
+  .evidence-card p,
+  .agent-matrix p,
+  .bottom-grid p {
+    color: #9aa4b6;
+  }
+
+  .console-lines p {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+
+  .overview-rail {
+    display: none;
+  }
+
+  .category-section,
+  .tool-section,
+  .agent-section,
+  .bottom-grid {
+    margin-top: 44px;
+  }
+
+  .section-kicker {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 0.9fr) minmax(240px, 0.55fr);
+    gap: 18px;
+    align-items: end;
+    margin-bottom: 16px;
+  }
+
+  .section-kicker h2 {
+    font-family: var(--sans);
+    font-size: clamp(28px, 3.6vw, 44px);
+    font-weight: 780;
+    line-height: 0.96;
+    letter-spacing: -0.075em;
+  }
+
+  .section-kicker p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .atlas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .atlas-card {
+    position: relative;
+    min-height: 230px;
+    padding: 16px;
+    overflow: hidden;
+    border-radius: 32px;
+  }
+
+  .orb {
+    position: absolute;
+    inset: 14px 14px auto;
+    height: 96px;
+    border-radius: 20px;
+    background:
+      radial-gradient(circle at 52% 48%, var(--tone), transparent 46%),
+      linear-gradient(135deg, rgb(246 242 234 / 0.16), transparent),
+      rgb(246 242 234 / 0.045);
+  }
+
+  .orb::before,
+  .orb::after {
+    position: absolute;
+    content: "";
+    border: 1px solid rgb(246 242 234 / 0.2);
+    border-radius: 999px;
+  }
+
+  .orb::before {
+    inset: 22px;
+  }
+
+  .orb::after {
+    inset: 43px 34px 24px 54px;
+    background: rgb(246 242 234 / 0.12);
+  }
+
+  .tone-blue { --tone: rgb(134 174 255 / 0.56); }
+  .tone-amber { --tone: rgb(229 183 106 / 0.52); }
+  .tone-green { --tone: rgb(82 220 160 / 0.44); }
+  .tone-rose { --tone: rgb(248 113 113 / 0.38); }
+
+  .card-content {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
+
+  .count,
+  .tags span,
+  .agent-matrix i {
+    display: inline-flex;
+    padding: 7px 9px;
+    color: #c8d0dd;
+    font-size: 11px;
+    font-weight: 850;
+    text-transform: uppercase;
+    border: 1px solid rgb(246 242 234 / 0.1);
+    border-radius: 999px;
+    background: rgb(246 242 234 / 0.05);
+  }
+
+  .atlas-card h3 {
+    margin-top: 12px;
+    font-size: 21px;
+    letter-spacing: -0.06em;
+  }
+
+  .subgrid {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .atlas-card a {
+    color: #cdd5e3;
+    font-size: 12px;
+  }
+
+  .tool-shell {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .filters {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: start;
+    padding: 18px;
+    border-radius: 28px;
+  }
+
+  .filters strong {
+    margin-bottom: 6px;
+  }
+
+  .filters button {
+    min-height: 40px;
+    padding: 0 12px;
+    color: #aab4c4;
+    text-align: left;
+    border: 1px solid rgb(246 242 234 / 0.09);
+    border-radius: 999px;
+    background: rgb(246 242 234 / 0.035);
+  }
+
+  .filters button.active {
+    color: #0a0e13;
+    background: #8fb7ff;
+  }
+
+  .evidence-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .evidence-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .evidence-card h3 {
+    margin-top: 12px;
+    font-size: 21px;
+    letter-spacing: -0.055em;
+  }
+
+  .evidence-card p {
+    max-width: 760px;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.55;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    align-content: center;
+  }
+
+  .metrics div {
+    padding: 11px;
+    border: 1px solid rgb(246 242 234 / 0.08);
+    border-radius: 18px;
+    background: rgb(246 242 234 / 0.035);
+  }
+
+  .metrics strong {
+    display: block;
+    color: #e5b76a;
+    font-size: 17px;
+    letter-spacing: -0.04em;
+  }
+
+  .metrics span {
+    color: #8f98aa;
+    font-size: 12px;
+  }
+
+  .metrics a {
+    grid-column: 1 / -1;
+  }
+
+  .agent-matrix {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .agent-matrix a {
+    min-height: 176px;
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .agent-matrix a > span {
+    color: #8fb7ff;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .agent-matrix strong {
+    display: block;
+    margin-top: 16px;
+    font-size: 21px;
+    letter-spacing: -0.06em;
+  }
+
+  .agent-matrix p {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.52;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .agent-matrix div {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .bottom-grid article {
+    min-height: 220px;
+    padding: 22px;
+    border-radius: 28px;
+  }
+
+  .bottom-grid h2 {
+    margin-top: 16px;
+    font-family: var(--sans);
+    font-size: clamp(24px, 3vw, 36px);
+    line-height: 1;
+    letter-spacing: -0.07em;
+  }
+
+  .bottom-grid p {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .signal-card {
+    background:
+      radial-gradient(circle at 85% 20%, rgb(229 183 106 / 0.18), transparent 18rem),
+      rgb(12 17 24 / 0.82);
+  }
+
+  .automation-card {
+    background:
+      linear-gradient(transparent 35px, rgb(134 174 255 / 0.055) 36px),
+      linear-gradient(90deg, transparent 35px, rgb(134 174 255 / 0.055) 36px),
+      rgb(12 17 24 / 0.82);
+    background-size: 36px 36px;
+  }
+
+  @media (max-width: 1100px) {
+    .hero,
+    .tool-shell,
+    .bottom-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .atlas-grid,
+    .agent-matrix {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .filters {
+      position: static;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .atlas-page {
+      padding-top: 28px;
+    }
+
+    .hero-copy,
+    .lab-console,
+    .atlas-card,
+    .evidence-card,
+    .agent-matrix a,
+    .bottom-grid article {
+      border-radius: 26px;
+    }
+
+    .hero,
+    .atlas-grid,
+    .agent-matrix,
+    .evidence-card,
+    .metrics,
+    .section-kicker {
+      grid-template-columns: 1fr;
+    }
+
+    .search-panel {
+      align-items: stretch;
+      border-radius: 24px;
+      flex-direction: column;
+    }
+
+    .search-panel span {
+      padding: 12px 12px 0;
+    }
+  }
+</style>

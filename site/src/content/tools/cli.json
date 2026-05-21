@@ -1,0 +1,78 @@
+{
+  "id": "cli",
+  "name": "Cli",
+  "type": "cli",
+  "status": "published",
+  "summary": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.",
+  "description": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.",
+  "category": [
+    "productivity"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/larksuite/cli",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/larksuite/cli",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/larksuite/cli#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/larksuite/cli#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/larksuite/cli/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents.",
+    "Covers core business domains including Messenger, Docs, Base, Sheets, Slides, Calendar, Mail, Tasks, Meetings, Markdown, and more, with 200+ commands and 24 AI Agent Skills.",
+    "Wide Coverage — 17 business domains, 200+ curated commands, 24 AI Agent Skills",
+    "AI-Friendly & Optimized — Every command is tested with real Agents, featuring concise parameters, smart defaults, and structured output to maximize Agent call success rates",
+    "💬 Messenger Send/reply messages, create and manage group chats, view chat history & threads, search messages, download media",
+    "📁 Drive Upload and download files, search docs & wiki, manage comments",
+    "📊 Base Create and manage tables, fields, records, views, dashboards, workflows, forms, roles & permissions, data aggregation & analytics",
+    "🖼️ Slides Create and manage presentations, read presentation content, and add or remove slides"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T10:03:54Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/larksuite/cli",
+  "repoUrl": "https://github.com/larksuite/cli",
+  "license": "MIT",
+  "stars": 11480,
+  "lastUpdated": "2026-05-18T10:03:54Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,79 @@
+{
+  "id": "code-review-graph",
+  "name": "Code Review Graph",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks.",
+  "description": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/tirth8205/code-review-graph",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/tirth8205/code-review-graph",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/tirth8205/code-review-graph#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/tirth8205/code-review-graph#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/tirth8205/code-review-graph/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AI coding tools re-read your entire codebase on every task.",
+    "code-review-graph fixes that.",
+    "It builds a structural map of your code with Tree-sitter, tracks changes incrementally, and gives your AI assistant precise context via MCP so it reads only what matters.",
+    "Restart your editor/tool after installing.",
+    "The graph cuts through the noise — 27,700+ files excluded from review context, only ~15 files actually read.",
+    "All numbers come from the automated evaluation runner against 6 real open-source repositories (13 commits total).",
+    "Reproduce with code-review-graph eval --all.",
+    "Why express shows <1x: For single-file changes in small packages, the graph context (metadata, edges, review guidance) can exceed the raw file size."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-16T13:11:25Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/tirth8205/code-review-graph",
+  "repoUrl": "https://github.com/tirth8205/code-review-graph",
+  "license": "MIT",
+  "stars": 16932,
+  "lastUpdated": "2026-05-16T13:11:25Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

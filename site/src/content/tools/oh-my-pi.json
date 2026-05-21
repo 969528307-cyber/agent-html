@@ -1,0 +1,79 @@
+{
+  "id": "oh-my-pi",
+  "name": "Oh My Pi",
+  "type": "mcp",
+  "status": "published",
+  "summary": "⌥  AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+  "description": "⌥  AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Kimi"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/can1357/oh-my-pi#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/can1357/oh-my-pi#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/can1357/oh-my-pi/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A coding agent with the IDE wired in.",
+    "The most capable agent surface that ships.",
+    "40+ providers · 32 built-in tools · 13 lsp ops · 27 dap ops · ~27k lines of Rust core.",
+    "Reads that summarize files instead of dumping their content.",
+    "Searches that return instantly.",
+    "Gemini 3 Flash +5 pp Over strreplace — beats Google's own best attempt at the format.",
+    "read : summarized snippets · ideal defaults · selector hit rate",
+    "search : fastest in the west"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T19:55:36Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/can1357/oh-my-pi",
+  "repoUrl": "https://github.com/can1357/oh-my-pi",
+  "license": "MIT",
+  "stars": 5098,
+  "lastUpdated": "2026-05-19T19:55:36Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

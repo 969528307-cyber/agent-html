@@ -1,0 +1,78 @@
+{
+  "id": "nacos",
+  "name": "Nacos",
+  "type": "mcp",
+  "status": "published",
+  "summary": "an easy-to-use dynamic service discovery, configuration and service management platform for building AI cloud native applications.",
+  "description": "an easy-to-use dynamic service discovery, configuration and service management platform for building AI cloud native applications.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/alibaba/nacos",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/alibaba/nacos",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/alibaba/nacos#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/alibaba/nacos#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/alibaba/nacos/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Service and MetaData Management",
+    "You can view the full documentation from the Nacos website.",
+    "Review the existing pull request.",
+    "translation on documentation",
+    "nacos-group is the repository that hosts the eco tools for Nacos, such as SDK, synchronization tool, etc.",
+    "Gitter: Nacos's IM tool for community messaging, collaboration and discovery.",
+    "This skill should be used when the user is looking for functionality that might exist as an installable skill in Nacos.",
+    "Also supports uploading and publishing skills for team sharing."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:13:00Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/alibaba/nacos",
+  "repoUrl": "https://github.com/alibaba/nacos",
+  "license": "Apache-2.0",
+  "stars": 32959,
+  "lastUpdated": "2026-05-20T03:13:00Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

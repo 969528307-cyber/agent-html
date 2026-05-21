@@ -1,0 +1,128 @@
+{
+  "id": "candidate-mcp-chinese-getting-started-guide-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "MCP Chinese Getting Started Guide",
+  "sourceUrl": "https://github.com/liaokongVFX/MCP-Chinese-Getting-Started-Guide",
+  "sourceName": "GitHub",
+  "author": "liaokongVFX",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Model Context Protocol(MCP) 编程极速入门",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "liaokongVFX",
+    "repo": "MCP-Chinese-Getting-Started-Guide",
+    "fullName": "liaokongVFX/MCP-Chinese-Getting-Started-Guide",
+    "stars": 3498,
+    "topics": [
+      "ai",
+      "deepseek",
+      "mcp",
+      "mcp-server",
+      "modelcontextprotocol"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-04-23T14:06:41Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "Model Context Protocol(MCP) 编程极速入门 [TOC] 简介 模型上下文协议（MCP）是一个创新的开源协议，它重新定义了大语言模型（LLM）与外部世界的互动方式。MCP 提供了一种标准化方法，使任意大语言模型能够轻松连接各种数据源和工具，实现信息的无缝访问和处理。MCP 就像是 AI 应用程序的 USB C 接口，为 AI 模型提供了一种标准化的方式来连接不同的数据源和工具。 ![image 20250223214308430](.assets/image 20250223214308430.png) MCP 有以下几个核心功能： Resources 资源 Prompts 提示词 Tools 工具 Sampling 采样 Roots 根目录 Transports 传输层 因为大部分功能其实都是服务于 Claude 客户端的，本文更希望编写的 MCP 服务器服务与通用大语言模型，所以本文将会主要以“工具”",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Model Context Protocol(MCP) 编程极速入门",
+    "模型上下文协议（MCP）是一个创新的开源协议，它重新定义了大语言模型（LLM）与外部世界的互动方式。MCP 提供了一种标准化方法，使任意大语言模型能够轻松连接各种数据源和工具，实现信息的无缝访问和处理。MCP 就像是 AI 应用程序的 USB-C 接口，为 AI 模型提供了一种标准化的方式来连接不同的数据源和工具。",
+    "因为大部分功能其实都是服务于 Claude 客户端的，本文更希望编写的 MCP 服务器服务与通用大语言模型，所以本文将会主要以“工具”为重点，其他功能会放到最后进行简单讲解。",
+    "其中 MCP 的传输层支持了 2 种协议的实现：stdio（标准输入/输出）和 SSE（服务器发送事件），因为 stdio 更为常用，所以本文会以 stdio 为例进行讲解。",
+    "然后我们来创建一个叫 websearch.py 文件，来实现我们的服务。MCP 为我们提供了2个对象：mcp.server.FastMCP 和 mcp.server.Server，mcp.server.FastMCP 是更高层的封装，我们这里就来使用它。",
+    "实现执行的方法非常简单，MCP 为我们提供了一个 @mcp.tool() 我们只需要将实现函数用这个装饰器装饰即可。函数名称将作为工具名称，参数将作为工具参数，并通过注释来描述工具与参数，以及返回值。",
+    "此时，我们就完成了 MCP 服务端的编写。下面，我们来使用官方提供的 Inspector 可视化工具来调试我们的服务器。",
+    "然后，我们打开这个地址，点击左侧的 Connect 按钮，即可连接我们刚写的服务。然后我们切换到 Tools 栏中，点击 List Tools 按钮即可看到我们刚写的工具，我们就可以开始进行调试啦。"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 2,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Model Context Protocol(MCP) 编程极速入门",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "MCP Chinese Getting Started Guide is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Relevant to mcp.",
+      "Model Context Protocol(MCP) 编程极速入门",
+      "模型上下文协议（MCP）是一个创新的开源协议，它重新定义了大语言模型（LLM）与外部世界的互动方式。MCP 提供了一种标准化方法，使任意大语言模型能够轻松连接各种数据源和工具，实现信息的无缝访问和处理。MCP 就像是 AI 应用程序的 USB-C 接口，为 AI 模型提供了一种标准化的方式来连接不同的数据源和工具。",
+      "因为大部分功能其实都是服务于 Claude 客户端的，本文更希望编写的 MCP 服务器服务与通用大语言模型，所以本文将会主要以“工具”为重点，其他功能会放到最后进行简单讲解。"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-chinese-getting-started-guide",
+  "publishedAt": "2026-05-20"
+}

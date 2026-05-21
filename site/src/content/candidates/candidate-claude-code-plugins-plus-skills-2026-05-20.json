@@ -1,0 +1,211 @@
+{
+  "id": "candidate-claude-code-plugins-plus-skills-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Code Plugins Plus Skills",
+  "sourceUrl": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+  "sourceName": "GitHub",
+  "author": "jeremylongshore",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "425 plugins, 2,810 skills, 200 agents for Claude Code. Open-source marketplace at tonsofskills.com with the ccpi CLI package manager.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "jeremylongshore",
+    "repo": "claude-code-plugins-plus-skills",
+    "fullName": "jeremylongshore/claude-code-plugins-plus-skills",
+    "stars": 2212,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "ai-agents",
+      "anthropic",
+      "automation",
+      "claude-code",
+      "claude-code-plugins",
+      "developer-tools",
+      "devops",
+      "llm",
+      "marketplace",
+      "mcp",
+      "plugin-marketplace",
+      "plugin-system",
+      "saas",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:50:19Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/zcf-integration.md",
+    "package.json",
+    "backups/plugin-enhancements/plugin-backups/access-control-auditor_20251019_122343/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/access-control-auditor_20251019_132521/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/access-control-auditor_20251019_234232/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/accessibility-test-scanner_20251019_150952/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/accessibility-test-scanner_20251020_003753/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/ai-ethics-validator_20251019_182858/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/ai-ethics-validator_20251020_022321/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/ai-ml-engineering-pack_20251019_161259/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/ai-ml-engineering-pack_20251020_011030/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/ai-sdk-agents_20251019_193634/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/ai-sdk-agents_20251020_025914/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/alerting-rule-creator_20251020_073021/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/anomaly-detection-system_20251019_190036/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/anomaly-detection-system_20251020_023958/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/ansible-playbook-creator_20251020_070359/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/api-fuzzer_20251019_154030/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/api-fuzzer_20251020_005259/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/api-test-automation_20251019_150625/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/api-test-automation_20251020_003558/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/apm-dashboard-creator_20251020_073211/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/application-profiler_20251020_075450/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/authentication-validator_20251019_141929/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/authentication-validator_20251020_001153/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/auto-scaling-configurator_20251020_065356/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/automl-pipeline-builder_20251019_194050/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/automl-pipeline-builder_20251020_030140/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/backup-strategy-implementor_20251020_065147/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/bottleneck-detector_20251020_072140/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/browser-compatibility-tester_20251019_151328/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/browser-compatibility-tester_20251020_003947/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/cache-performance-optimizer_20251020_071752/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/capacity-planning-analyzer_20251020_074147/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/chaos-engineering-toolkit_20251019_155039/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/chaos-engineering-toolkit_20251020_005832/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/ci-cd-pipeline-builder_20251020_065941/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/classification-model-builder_20251019_192232/skills/skill-adapter/SKILL.md",
+    "backups/plugin-enhancements/plugin-backups/classification-model-builder_20251020_025141/skills/skill-adapter/SKILL.md"
+  ],
+  "readmeExtract": "Tons of Skills — Claude Code Plugins Marketplace [![Release](https://img.shields.io/badge/release v4.30.0 green)](https://github.com/jeremylongshore/claude code plugins plus skills/releases/tag/v4.30.0) [![CLI](https://img.shields.io/badge/CLI ccpi blueviolet?logo=npm)](https://www.npmjs.com/package/@intentsolutionsio/ccpi) [![Plugins](https://img.shields.io/badge/plugins 425 blue)](https://tonsofskills.com/explore) ",
+  "skillExtracts": [
+    {
+      "path": "backups/plugin-enhancements/plugin-backups/access-control-auditor_20251019_122343/skills/skill-adapter/SKILL.md",
+      "extract": "name: Auditing Access Control description: | This skill enables Claude to audit access control implementations in various systems. It uses the access control auditor plugin to identify potential vulnerabilities and misconfigurations related to access control. Use this skill when the user asks to \"audit access control\", \"check permissions\", \"assess access rights\", or requests a \"security review\" focused on access mana"
+    },
+    {
+      "path": "backups/plugin-enhancements/plugin-backups/access-control-auditor_20251019_132521/skills/skill-adapter/SKILL.md",
+      "extract": "name: Auditing Access Control description: | This skill enables Claude to audit access control implementations in various systems. It uses the access control auditor plugin to identify potential vulnerabilities and misconfigurations related to access control. Use this skill when the user asks to \"audit access control\", \"check permissions\", \"assess access rights\", or requests a \"security review\" focused on access mana"
+    },
+    {
+      "path": "backups/plugin-enhancements/plugin-backups/access-control-auditor_20251019_234232/skills/skill-adapter/SKILL.md",
+      "extract": "name: Auditing Access Control description: | This skill enables Claude to audit access control implementations in various systems. It uses the access control auditor plugin to identify potential vulnerabilities and misconfigurations related to access control. Use this skill when the user asks to \"audit access control\", \"check permissions\", \"assess access rights\", or requests a \"security review\" focused on access mana"
+    },
+    {
+      "path": "backups/plugin-enhancements/plugin-backups/accessibility-test-scanner_20251019_150952/skills/skill-adapter/SKILL.md",
+      "extract": "name: Scanning for Accessibility Issues description: | This skill enables Claude to perform comprehensive accessibility audits. It uses the accessibility test scanner plugin to identify WCAG 2.1/2.2 compliance issues, validate ARIA attributes, check keyboard navigation, and assess screen reader compatibility. Use this skill when the user requests an accessibility scan, audit, or compliance check, or when terms like \""
+    },
+    {
+      "path": "backups/plugin-enhancements/plugin-backups/accessibility-test-scanner_20251020_003753/skills/skill-adapter/SKILL.md",
+      "extract": "name: Scanning for Accessibility Issues description: | This skill enables Claude to perform comprehensive accessibility audits. It uses the accessibility test scanner plugin to identify WCAG 2.1/2.2 compliance issues, validate ARIA attributes, check keyboard navigation, and assess screen reader compatibility. Use this skill when the user requests an accessibility scan, audit, or compliance check, or when terms like \""
+    },
+    {
+      "path": "backups/plugin-enhancements/plugin-backups/ai-ethics-validator_20251019_182858/skills/skill-adapter/SKILL.md",
+      "extract": "name: Validating AI Ethics and Fairness description: | This skill enables Claude to validate the ethical implications and fairness of AI/ML models and datasets. It is triggered when the user requests an ethics review, fairness assessment, or bias detection for an AI system. The skill uses the ai ethics validator plugin to analyze models, datasets, and code for potential biases and ethical concerns. It provides report"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Tons of Skills — Claude Code Plugins Marketplace",
+    "Or use Claude's built-in command:",
+    "Killer Skill of the Week — automate by Kobiton Inc.",
+    "Kobiton's automate plugin gives Claude Code, Cursor, Codex, and Gemini CLI direct access to the Kobiton real-device cloud via remote MCP.",
+    "Previous picks: skyvern, code-cleanup, web-analytics, token-optimizer, executive-assistant-skills, skill-creator, cursor-pack, crypto-portfolio-tracker.",
+    "See all at tonsofskills.com.",
+    "Option 2: Claude Built-in Commands",
+    "Run /plugin marketplace remove claude-code-plugins and re-add with the command above to switch to the new slug."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "425 plugins, 2,810 skills, 200 agents for Claude Code. Open-source marketplace at tonsofskills.com with the ccpi CLI package manager.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Claude Code Plugins Plus Skills is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "Tons of Skills — Claude Code Plugins Marketplace"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-code-plugins-plus-skills",
+  "publishedAt": "2026-05-20"
+}

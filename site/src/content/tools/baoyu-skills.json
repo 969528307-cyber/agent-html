@@ -1,0 +1,78 @@
+{
+  "id": "baoyu-skills",
+  "name": "Baoyu Skills",
+  "type": "skill",
+  "status": "published",
+  "summary": "baoyu skills English | [中文](./README.zh.md) Skills shared by Baoyu for improving daily work efficiency with AI Agents (Claude Code, Codex, etc.). Prerequisites Node.js environment installed Ability to run npx bun commands Installation Quick Install (Recommended) Publish to ClawHub / OpenClaw This repository now supports publishing each skills/baoyu directory as an individual ClawHub skill. ClawHub installs skills ind",
+  "description": "baoyu skills English | [中文](./README.zh.md) Skills shared by Baoyu for improving daily work efficiency with AI Agents (Claude Code, Codex, etc.). Prerequisites Node.js environment installed Ability to run npx bun commands Installation Quick Install (Recommended) Publish to ClawHub / OpenClaw This repository now supports publishing each skills/baoyu directory as an individual ClawHub skill. ClawHub installs skills ind",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Hermes Agent",
+    "Generic",
+    "OpenClaw"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/JimLiu/baoyu-skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/JimLiu/baoyu-skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/JimLiu/baoyu-skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/JimLiu/baoyu-skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/JimLiu/baoyu-skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Skills shared by Baoyu for improving daily work efficiency with AI Agents (Claude Code, Codex, etc.).",
+    "This repository now supports publishing each skills/baoyu- directory as an individual ClawHub skill.",
+    "ClawHub installs skills individually, not as one marketplace bundle.",
+    "Publishing to ClawHub releases the published skill under MIT-0, per ClawHub's registry rules.",
+    "Run the following command in the Agent:",
+    "Select the baoyu-skills plugin",
+    "The marketplace now exposes a single plugin so each skill is registered exactly once.",
+    "baoyu-skills Content generation, AI backends, and utility tools for daily work efficiency All skills in this repository, organized below as Content Skills, AI Generation Skills, and Utility Skills"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T02:11:02Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/JimLiu/baoyu-skills",
+  "repoUrl": "https://github.com/JimLiu/baoyu-skills",
+  "stars": 18689,
+  "lastUpdated": "2026-05-18T02:11:02Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

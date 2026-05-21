@@ -1,0 +1,81 @@
+{
+  "id": "seo-geo-claude-skills",
+  "name": "Seo Geo Claude Skills",
+  "type": "skill",
+  "status": "published",
+  "summary": "20 SEO & GEO skills for Claude Code, Cursor, Codex, and 35+ AI agents. Keyword research, content writing, technical audits, rank tracking. CORE-EEAT + CITE frameworks.",
+  "description": "20 SEO & GEO skills for Claude Code, Cursor, Codex, and 35+ AI agents. Keyword research, content writing, technical audits, rank tracking. CORE-EEAT + CITE frameworks.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Kimi",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/aaron-he-zhu/seo-geo-claude-skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/aaron-he-zhu/seo-geo-claude-skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/aaron-he-zhu/seo-geo-claude-skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/aaron-he-zhu/seo-geo-claude-skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/aaron-he-zhu/seo-geo-claude-skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Claude Skills and Commands for Search Engine Optimization (SEO) and Generative Engine Optimization (GEO).",
+    "Skill content is zero-dependency Markdown; Claude Code hooks use a small Bash runner.",
+    "Claude Code /plugin marketplace add aaron-he-zhu/seo-geo-claude-skills",
+    "Amp amp skill add aaron-he-zhu/seo-geo-claude-skills",
+    "skills.sh / generic Agent Skills hosts npx skills add aaron-he-zhu/seo-geo-claude-skills",
+    "Single skill: npx skills add aaron-he-zhu/seo-geo-claude-skills -s keyword-research.",
+    "If your host supports automatic skill routing, try a natural-language request:",
+    "Optional tools are documented in CONNECTORS.md; every skill also works at Tier 1 with user-provided data."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-14T08:11:30Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/aaron-he-zhu/seo-geo-claude-skills",
+  "repoUrl": "https://github.com/aaron-he-zhu/seo-geo-claude-skills",
+  "license": "Apache-2.0",
+  "stars": 1690,
+  "lastUpdated": "2026-05-14T08:11:30Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

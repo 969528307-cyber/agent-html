@@ -1,0 +1,156 @@
+{
+  "id": "candidate-tool-github-cloudflare-mcp-server-cloudflare",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp Server Cloudflare",
+  "sourceUrl": "https://github.com/cloudflare/mcp-server-cloudflare",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "cloudflare",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Cloudflare MCP Server Model Context Protocol (MCP) is a [new, standardized protocol](https://modelcontextprotocol.io/introduction) for managing context between large language models (LLMs) and external systems. In this repository, you can find several MCP servers allowing you to connect to Cloudflare's service from an MCP client (e.g. Cursor, Claude) and use natural language to accomplish tasks through your Cloudflar",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "cloudflare",
+    "repo": "mcp-server-cloudflare",
+    "fullName": "cloudflare/mcp-server-cloudflare",
+    "stars": 3754,
+    "license": "Apache-2.0",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-30T14:50:05Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "Cloudflare MCP Server Model Context Protocol (MCP) is a [new, standardized protocol](https://modelcontextprotocol.io/introduction) for managing context between large language models (LLMs) and external systems. In this repository, you can find several MCP servers allowing you to connect to Cloudflare's service from an MCP client (e.g. Cursor, Claude) and use natural language to accomplish tasks through your Cloudflar",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Model Context Protocol (MCP) is a new, standardized protocol for managing context between large language models (LLMs) and external systems.",
+    "In this repository, you can find several MCP servers allowing you to connect to Cloudflare's service from an MCP client (e.g.",
+    "Cursor, Claude) and use natural language to accomplish tasks through your Cloudflare account.",
+    "These MCP servers allow your MCP Client to read configurations from your account, process information, make suggestions based on data, and even make those suggested changes for you.",
+    "They support both the streamable-http transport via /mcp and the sse transport (deprecated) via /sse.",
+    "Documentation server Get up to date reference information on Cloudflare",
+    "Workers Builds server Get insights and manage your Cloudflare Workers Builds",
+    "Browser rendering server Fetch web pages, convert them to markdown and take screenshots"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Cloudflare MCP Server Model Context Protocol (MCP) is a [new, standardized protocol](https://modelcontextprotocol.io/introduction) for managing context between large language models (LLMs) and external systems. In this repository, you can find several MCP servers allowing you to connect to Cloudflare's service from an MCP client (e.g. Cursor, Claude) and use natural language to accomplish tasks through your Cloudflar",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Package metadata detected; may expose executable commands.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: cli.",
+    "LLM: mcp + [mcp] — The repository is explicitly an MCP server for Cloudflare services, implementing the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp Server Cloudflare is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Relevant to devops.",
+      "Model Context Protocol (MCP) is a new, standardized protocol for managing context between large language models (LLMs) and external systems.",
+      "In this repository, you can find several MCP servers allowing you to connect to Cloudflare's service from an MCP client (e.g."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:cloudflare/mcp-server-cloudflare",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-server-cloudflare",
+  "publishedAt": "2026-05-18"
+}

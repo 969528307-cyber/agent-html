@@ -1,0 +1,202 @@
+{
+  "id": "candidate-gitagent-protocol-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Gitagent Protocol",
+  "sourceUrl": "https://github.com/open-gitagent/gitagent-protocol",
+  "sourceName": "GitHub",
+  "author": "open-gitagent",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A framework-agnostic, git-native standard for defining AI agents",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "open-gitagent",
+    "repo": "gitagent-protocol",
+    "fullName": "open-gitagent/gitagent-protocol",
+    "stars": 2784,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "agent-skills",
+      "agents",
+      "assistant",
+      "claude-code",
+      "gitagent",
+      "open-standard",
+      "openclaw",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T17:09:24Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/adapters/gemini.md",
+    "docs/comparison.md",
+    "docs/regulated-industries.md",
+    "package.json",
+    "examples/financial-agent/agent.yaml",
+    "examples/full/agent.yaml",
+    "examples/full/AGENTS.md",
+    "examples/full/agents/fact-checker/agent.yaml",
+    "examples/full/agents/fact-checker/DUTIES.md",
+    "examples/full/agents/fact-checker/SOUL.md",
+    "examples/full/config/default.yaml",
+    "examples/full/config/production.yaml",
+    "examples/full/skills/document-review/SKILL.md",
+    "examples/full/skills/regulatory-analysis/SKILL.md",
+    "examples/full/workflows/regulatory-review.yaml",
+    "examples/gitagent-helper/agent.yaml",
+    "examples/gitagent-helper/knowledge/command-reference.md",
+    "examples/gitagent-helper/knowledge/index.yaml",
+    "examples/gitagent-helper/README.md",
+    "examples/gitagent-helper/RULES.md",
+    "examples/gitagent-helper/skills/create-agent/SKILL.md",
+    "examples/gitagent-helper/skills/export-agent/SKILL.md",
+    "examples/gitagent-helper/skills/get-started/SKILL.md",
+    "examples/gitagent-helper/skills/manage-skills/SKILL.md",
+    "examples/gitagent-helper/skills/run-agent/SKILL.md",
+    "examples/gitagent-helper/SOUL.md",
+    "examples/jason-my-claw-is-the-law-deebee-4567b4/agent.yaml",
+    "examples/jason-my-claw-is-the-law-deebee-4567b4/skills/compute-ladder/SKILL.md",
+    "examples/jason-my-claw-is-the-law-deebee-4567b4/skills/narco-check/SKILL.md",
+    "examples/jason-my-claw-is-the-law-deebee-4567b4/skills/packet-factory/SKILL.md",
+    "examples/jason-my-claw-is-the-law-deebee-4567b4/workflows/clawlaw-architecture.md",
+    "examples/llm-wiki/agent.yaml",
+    "examples/llm-wiki/skills/wiki-ingest/SKILL.md",
+    "examples/llm-wiki/skills/wiki-lint/SKILL.md",
+    "examples/llm-wiki/skills/wiki-query/SKILL.md",
+    "examples/lyzr-agent/agent.yaml",
+    "examples/lyzr-agent/PROMPT.md",
+    "examples/lyzr-agent/README.md",
+    "examples/lyzr-agent/RULES.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"banner.png\" alt=\"gitagent banner\" width=\"700\" / </p GitAgentProtocol (Open GAP) | your repository becomes your agent gapman — the GitAgentProtocol (GAP) Manager CLI, published as [ @open gitagent/gapman ](https://www.npmjs.com/package/@open gitagent/gapman). Previously published as @open gitagent/gitagent . [![npm version](https://img.shields.io/npm/v/@open gitagent/gapman)](https://www.np",
+  "skillExtracts": [
+    {
+      "path": "examples/full/skills/document-review/SKILL.md",
+      "extract": "name: document review description: \"Reviews financial documents (prospectuses, ADVs, marketing materials) for FINRA 2210 compliance, required disclosures, and balanced presentation. Use when reviewing financial statements, audit documents, regulatory filings, or when the user mentions compliance checks, financial audits, or document verification.\" license: proprietary allowed tools: search regulations generate report"
+    },
+    {
+      "path": "examples/full/skills/regulatory-analysis/SKILL.md",
+      "extract": "name: regulatory analysis description: \"Analyzes documents and processes against FINRA, SEC, Federal Reserve, and CFPB regulatory frameworks. Identifies compliance gaps, classifies findings by severity, and recommends remediation. Use when performing compliance audits, regulatory reviews, gap analyses, or verifying policy adherence to financial regulations.\" license: proprietary allowed tools: search regulations meta"
+    },
+    {
+      "path": "examples/gitagent-helper/skills/create-agent/SKILL.md",
+      "extract": "name: create agent description: \"Creates and configures agent.yaml files, writes SOUL.md personality definitions, and sets up agent directory structures with skills, tools, and knowledge. Use when the user wants to configure an agent, create agent.yaml, write SOUL.md, set up agent directory structure, or customize agent settings.\" license: MIT metadata: author: gitagent version: \"1.0.0\" category: authoring Create & C"
+    },
+    {
+      "path": "examples/gitagent-helper/skills/export-agent/SKILL.md",
+      "extract": "name: export agent description: \"Converts agent definitions between frameworks — exports to Claude Code, OpenAI, CrewAI, Lyzr, and GitHub Models formats, and imports from Claude, Cursor, and CrewAI projects. Use when the user wants to convert an agent, migrate to another framework, export to LangChain/AutoGen/CrewAI, or import from existing automation tools.\" license: MIT metadata: author: gitagent version: \"1.0.0\" c"
+    },
+    {
+      "path": "examples/gitagent-helper/skills/get-started/SKILL.md",
+      "extract": "name: get started description: \"Guides installation of gitagent and creation of first agent with scaffolding, configuration, and validation. Use when the user is new to gitagent, asks how to get started, wants to install gitagent, set up their first agent, or says 'how do I start?'\" license: MIT metadata: author: gitagent version: \"1.0.0\" category: onboarding Get Started with gitagent When to Use When a user is new t"
+    },
+    {
+      "path": "examples/gitagent-helper/skills/manage-skills/SKILL.md",
+      "extract": "name: manage skills description: \"Searches the SkillsMP registry, installs skills locally or globally, creates custom skills with SKILL.md frontmatter, and manages the skill lifecycle. Use when the user wants to find skills, add new capabilities, install a skill, browse available skills, create a custom skill, or manage the skills system.\" license: MIT metadata: author: gitagent version: \"1.0.0\" category: skills Mana"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "GitAgentProtocol (Open GAP) your repository becomes your agent",
+    "gapman — the GitAgentProtocol (GAP) Manager CLI, published as @open-gitagent/gapman.",
+    "Previously published as @open-gitagent/gitagent.",
+    "GitAgentProtocol (Open GAP) is a framework-agnostic, git-native standard for defining AI agents.",
+    "There's no universal, portable way to define an agent that works across Claude Code, OpenAI, LangChain, CrewAI, and AutoGen.",
+    "Composable — Agents can extend, depend on, and delegate to other agents",
+    "Your repository becomes your agent.",
+    "Drop these files into any git repo and it becomes a portable, framework-agnostic agent definition — everything else (CLI, adapters, patterns) builds on top of it."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A framework-agnostic, git-native standard for defining AI agents",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Gitagent Protocol is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "GitAgentProtocol (Open GAP) your repository becomes your agent",
+      "gapman — the GitAgentProtocol (GAP) Manager CLI, published as @open-gitagent/gapman.",
+      "Previously published as @open-gitagent/gitagent."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "gitagent-protocol",
+  "publishedAt": "2026-05-20"
+}

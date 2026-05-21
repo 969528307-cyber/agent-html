@@ -1,0 +1,170 @@
+{
+  "id": "candidate-tool-github-e2b-dev-awesome-ai-sdks",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Ai Sdks",
+  "sourceUrl": "https://github.com/e2b-dev/awesome-ai-sdks",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "e2b-dev",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A database of SDKs, frameworks, libraries, and tools for creating, monitoring, debugging and deploying autonomous AI agents",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "e2b-dev",
+    "repo": "awesome-ai-sdks",
+    "fullName": "e2b-dev/awesome-ai-sdks",
+    "stars": 1176,
+    "topics": [
+      "agent",
+      "agentops",
+      "agents",
+      "ai",
+      "ai-agents",
+      "awesome",
+      "awesome-list",
+      "chatgpt",
+      "e2b",
+      "framework",
+      "langchain",
+      "llama-index",
+      "llm",
+      "llmops",
+      "openai",
+      "sdk",
+      "tools",
+      "vercel"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-02-26T10:07:19Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" :gift: Awesome SDKs For AI Agents <p align=\"center\" <a href=\"https://discord.gg/U7KEcGErtQ\" target=\" blank\" <img src=\"https://img.shields.io/static/v1?label=Join&message=%20discord!&color=mediumslateblue\" </a <a href=\"https://twitter.com/e2b\" target=\" blank\" <img src=\"https://img.shields.io/twitter/follow/e2b.svg?logo=twitter\" </a </p </h1 <img src=\"/assets/visual.png\" width=\"100%\" alt=\"SDKs Repo V",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    ":gift: Awesome SDKs For AI Agents",
+    "Welcome to our list of AI agents SDKs.",
+    "A database of SDKs, frameworks, libraries, and tools for creating, monitoring, debugging and deploying autonomous AI agents",
+    "E2b is building an operation system of AI agents - that is, a set of tools, environments, SDKs and APIs.",
+    "E2b is agnostic to your tech stack and aims to work with any tooling for building AI agents.",
+    "Join Twitter community for AI agents",
+    "Want to discuss anything about AI agents?",
+    "Check out also our database of AI agents."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 2,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A database of SDKs, frameworks, libraries, and tools for creating, monitoring, debugging and deploying autonomous AI agents",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "awesome-list",
+    "useCategory": [
+      "data",
+      "database",
+      "monitoring"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "awesome-list",
+  "useCategory": [
+    "data",
+    "database",
+    "monitoring"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: awesome-list.",
+    "Alternative capabilities: sdk.",
+    "LLM: knowledge-resource + [] — This repository is an awesome list / curated database of SDKs, frameworks, libraries, and tools for AI agents, not a functional tool or framework itself."
+  ],
+  "classificationAlternatives": [
+    "sdk"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "single-tool",
+    "whatIsIt": "Awesome Ai Sdks is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with database workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to data.",
+      ":gift: Awesome SDKs For AI Agents"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:e2b-dev/awesome-ai-sdks",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ]
+}

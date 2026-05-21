@@ -1,0 +1,78 @@
+{
+  "id": "openmetadata",
+  "name": "OpenMetadata",
+  "type": "mcp",
+  "status": "published",
+  "summary": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team collaboration.",
+  "description": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team collaboration.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/open-metadata/OpenMetadata",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/open-metadata/OpenMetadata",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/open-metadata/OpenMetadata#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/open-metadata/OpenMetadata#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/open-metadata/OpenMetadata/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "OpenMetadata is the open platform for building trusted data context and business semantics for humans, AI assistants, and agents.",
+    "With 120+ connectors, open metadata standards, semantic search, APIs, SDKs, and an MCP server, OpenMetadata gives every user and AI system the governed context it needs to discover, understand, trust, and use data.",
+    "AI does not need another raw database connector.",
+    "Automation: Activate Context and Semantics with AI",
+    "MCP: Connect AI Assistants and Agents",
+    "Connecting an AI assistant directly to a database, warehouse, dashboard, or pipeline only gives it raw access to data structures.",
+    "Knowledge Graph — relationships connecting assets, columns, people, teams, policies, lineage, quality, and business concepts.",
+    "Automation — MCP, Semantic Search, APIs, SDKs, events, and workflows that let AI assistants and agents act on governed metadata."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:33:05Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/open-metadata/OpenMetadata",
+  "repoUrl": "https://github.com/open-metadata/OpenMetadata",
+  "license": "Apache-2.0",
+  "stars": 13958,
+  "lastUpdated": "2026-05-20T03:33:05Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

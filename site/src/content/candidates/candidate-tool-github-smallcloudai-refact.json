@@ -1,0 +1,216 @@
+{
+  "id": "candidate-tool-github-smallcloudai-refact",
+  "type": "tool",
+  "status": "published",
+  "title": "Refact",
+  "sourceUrl": "https://github.com/smallcloudai/refact",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "smallcloudai",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "AI Agent that handles engineering tasks end-to-end: integrates with developers’ tools, plans, executes, and iterates until it achieves a successful result.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Qwen Code"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "smallcloudai",
+    "repo": "refact",
+    "fullName": "smallcloudai/refact",
+    "stars": 3546,
+    "license": "BSD-3-Clause",
+    "topics": [
+      "ai-agent",
+      "developer-tools",
+      "enterprise",
+      "fine-tuning",
+      "on-prem",
+      "open-source",
+      "rag",
+      "self-hosted",
+      "swe-bench",
+      "vscode"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T14:41:32Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.astro/types.d.ts",
+    "docs/BROWSER_MODE.md",
+    "docs/Dockerfile",
+    "docs/nginx.conf",
+    "docs/package.json",
+    "docs/public/.keep",
+    "docs/public/assets/byok_1.png",
+    "docs/public/assets/byok_2.png",
+    "docs/public/favicon.svg",
+    "docs/public/og.jpg",
+    "docs/public/videos/Auto_Apply.mp4",
+    "docs/public/videos/Switch_To_The_Agent.mp4",
+    "docs/README.md",
+    "docs/src/assets/3-party-apis.png",
+    "docs/src/assets/Access_Control.png",
+    "docs/src/assets/active-license.png",
+    "docs/src/assets/admin_console.png",
+    "docs/src/assets/api-keys-link.png",
+    "docs/src/assets/assign_role_first.png",
+    "docs/src/assets/assign_role_second.png",
+    "docs/src/assets/assign-models-loras.png",
+    "docs/src/assets/ast_vecdb.png",
+    "docs/src/assets/chat-commands.png",
+    "docs/src/assets/client_secret.png",
+    "docs/src/assets/clients.png",
+    "docs/src/assets/create_client.png",
+    "docs/src/assets/custom_command.png",
+    "docs/src/assets/edit_byok.png",
+    "docs/src/assets/Edit_User.png",
+    "docs/src/assets/enterprise-advanced.png",
+    "docs/src/assets/enterprise-dashboard.png",
+    "docs/src/assets/enterprise-deploy.png",
+    "docs/src/assets/enterprise-finetune.png",
+    "docs/src/assets/enterprise-login.png",
+    "docs/src/assets/enterprise-refact-users-create.png",
+    "docs/src/assets/enterprise-refact-users-retrieve-api-key.png",
+    "docs/src/assets/enterprise-users.png",
+    "docs/src/assets/ft_create.png",
+    "docs/src/assets/ft_data.png"
+  ],
+  "readmeExtract": "<a name=\"readme top\" </a <div align=\"center\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://docs.refact.ai/ astro/logo dark.CCzD55EA.svg\" <source media=\"(prefers color scheme: light)\" srcset=\"https://docs.refact.ai/ astro/logo light.CblxRz3x.svg\" <img alt=\"Refact logo\" src=\"https://docs.refact.ai/ astro/logo dark.CCzD55EA.svg\" width=\"200\" </picture <h1 align=\"center\" Refact</h1 <p align=\"center",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Open-source, local-first AI coding assistant for IDE chat, autonomous agent workflows, and tool-powered development.",
+    "Refact runs a local Rust engine (refact-lsp) from your IDE and connects only to the model providers, local runtimes, and integrations you configure.",
+    "It brings together chat, codebase search, autonomous agents, browser automation, and tool integrations while keeping project state, indexes, trajectories, and task data on your machine.",
+    "Bring your own models: connect hosted providers, OpenAI-compatible endpoints, or local runtimes instead of relying on a bundled model service.",
+    "Deep codebase awareness: combine open files, selections, project tree, AST symbols, semantic search, git state, and previous work into useful model context.",
+    "Agent workflows inside the IDE: let the agent inspect files, edit code, run checks, use integrations, and report progress without leaving VS Code or JetBrains.",
+    "Extensible tools: use built-in tools, command-line integrations, browser automation, databases, code hosting integrations, and MCP servers.",
+    "It serves the chat UI, tracks open workspaces, exposes model capability and tool APIs, manages shutdown and background tasks, and keeps project state in local Refact directories."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "AI Agent that handles engineering tasks end-to-end: integrates with developers’ tools, plans, executes, and iterates until it achieves a successful result.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "media",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "media",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 4,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: workflow, cli.",
+    "LLM: agent-app + [mcp] — Refact is a full-featured AI coding assistant with an IDE interface and autonomous agent workflows, compatible with MCP servers for tool integration."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Refact is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:smallcloudai/refact",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "refact",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

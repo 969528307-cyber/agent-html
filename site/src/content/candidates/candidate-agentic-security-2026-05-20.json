@@ -1,0 +1,157 @@
+{
+  "id": "candidate-agentic-security-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Agentic Security",
+  "sourceUrl": "https://github.com/msoedov/agentic_security",
+  "sourceName": "GitHub",
+  "author": "msoedov",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Agentic LLM Vulnerability Scanner / AI red teaming kit 🧪",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "msoedov",
+    "repo": "agentic_security",
+    "fullName": "msoedov/agentic_security",
+    "stars": 1875,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-framework",
+      "agent-security",
+      "ai-red-team",
+      "llm-evaluation",
+      "llm-evaluation-framework",
+      "llm-fuzzer",
+      "llm-fuzzer-aggregator",
+      "llm-fuzzing",
+      "llm-guardrails",
+      "llm-jailbreaks",
+      "llm-scanner",
+      "llm-security",
+      "llm-vulnerabilities",
+      "prompt-testing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-14T17:25:09Z"
+  },
+  "detectedFiles": [
+    "Readme.md",
+    "docs/abstractions.md",
+    "docs/api_reference.md",
+    "docs/ci_cd.md",
+    "docs/datasets.md",
+    "docs/design.md",
+    "docs/external_module.md",
+    "docs/getting_started.md",
+    "docs/http_spec.md",
+    "docs/image_generation.md",
+    "docs/index.md",
+    "docs/operator.md",
+    "docs/optimizer.md",
+    "docs/probe_actor.md",
+    "docs/probe_data.md",
+    "docs/quickstart.md",
+    "docs/refusal_classifier_plugins.md",
+    "docs/rl_model.md",
+    "docs/stenography.md",
+    "docs/stylesheets/extra.css",
+    "docs/vercel.sh",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<p align=\"center\" <h1 align=\"center\" Agentic Security</h1 <p align=\"center\" An open source vulnerability scanner for Agent Workflows and Large Language Models (LLMs)<br / Protecting AI systems from jailbreaks, fuzzing, and multimodal attacks.<br / <a href=\"https://agentic security.vercel.app\" Explore the docs »</a · <a href=\"https://github.com/msoedov/agentic security/issues\" Report a Bug »</a </p </p <p align=\"cente",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "An open-source vulnerability scanner for Agent Workflows and Large Language Models (LLMs).",
+    "Agentic Security equips you with powerful tools to safeguard LLMs against emerging threats.",
+    "Seamlessly connect to LLM APIs and push their limits with high-volume, real-world attack scenarios.",
+    "Why It Matters: These features help developers, researchers, and security teams proactively identify and mitigate risks in AI systems, ensuring safer and more reliable deployments.",
+    "Agentic Security uses plain text HTTP spec like:",
+    "To add your own dataset you can place one or multiples csv files with prompt column, this data will be loaded on agenticsecurity startup",
+    "Add new metadata to agenticsecurity.probedata.REGISTRY",
+    "2024-04-13 13:21:31.157 INFO agenticsecurity.probedata.data:loadlocalcsv:273 - Found 1 CSV files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Agentic LLM Vulnerability Scanner / AI red teaming kit 🧪",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "security",
+      "testing"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "security",
+    "testing"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "Agentic Security is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with security workflows.",
+      "Helps with testing workflows.",
+      "Relevant to agent-framework.",
+      "An open-source vulnerability scanner for Agent Workflows and Large Language Models (LLMs)."
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  }
+}

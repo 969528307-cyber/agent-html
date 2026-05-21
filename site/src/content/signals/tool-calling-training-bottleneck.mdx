@@ -1,0 +1,59 @@
+---
+englishTitle: "The Tool-Calling Training Gap: FireFly and EnvFactory Attack the Bottleneck"
+originalTitle: "Firefly: Illuminating Large-Scale Verified Tool-Call Data Generation from Real APIs"
+subtitle: "Two new papers tackle the hardest problem in agent development: generating verified training data for tool-using LLMs"
+status: "published"
+topic: "agent"
+path: "start"
+order: 12
+difficulty: "advanced"
+readingTime: "4 min"
+summaryBullets:
+  - "Tool-calling agent training is bottlenecked by lack of verified execution environments"
+  - "FireFly generates verified tool-call data from real APIs, not synthetic environments"
+  - "EnvFactory scales tool-use training via executable environment synthesis and robust RL"
+  - "Both papers directly relevant to MCP server and agent framework developers"
+relatedTools: []
+relatedAgents: ["claude-code", "codex", "openclaw"]
+nextReads: ["agent-feature-matrix-2026", "mcp-server-selection-guide"]
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.17558"
+author: "Yuxuan Lu, Ziyi Wang, Yingzhou Lu"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-17"
+executiveSummary: "Training LLMs to reliably call tools remains a bottleneck. Two new papers present complementary solutions: FireFly generates verified tool-call trajectories from real APIs with ground-truth outcomes, while EnvFactory synthesizes executable environments and uses reinforcement learning to scale agent training. Together they address the core data problem that limits tool-using agent reliability."
+signalThesis: "The next leap in agent reliability won't come from better models — it will come from verified tool-call training data at scale."
+whyItMatters: "Every tool indexed in agentk.it — whether MCP server, CLI tool, or workflow — depends on the agent's ability to call it correctly. The quality of tool-calling directly determines whether these tools are useful or dangerous."
+keyTakeaways:
+  - "FireFly uses real APIs (not synthetic mocks) to generate training data with verifiable labels"
+  - "EnvFactory introduces Agentic RL: agents learn tool use through reinforcement in executable environments"
+  - "Combined, these approaches could produce agents that reliably call tools in production"
+  - "OpenAPI-to-MCP conversion (600 endpoints) now has validation tooling via multi-agent LLM systems"
+ecosystemImpact:
+  - label: "MCP Server Developers"
+    body: "Your API documentation quality directly affects tool-call training data quality"
+  - label: "Agent Framework Teams"
+    body: "FireFly's approach could be integrated into agent fine-tuning pipelines"
+whatToWatchNext:
+  - "Whether FireFly or EnvFactory release open-source implementations"
+  - "Integration of these training methods into major agent frameworks (LangChain, CrewAI)"
+publishedAt: "2026-05-19"
+---
+
+## The Bottleneck
+
+Training an LLM to reliably call tools requires massive amounts of trajectory data — sequences of agent actions, tool calls, and outcomes. But generating this data at scale faces two problems: synthetic environments don't match real API behavior, and tasks generated without ground-truth outcomes can't be verified.
+
+## FireFly: Verified Data from Real APIs
+
+Yuxuan Lu et al. present FireFly, a pipeline that generates verified tool-call data directly from real APIs. Unlike approaches that simulate tool environments, FireFly connects to actual APIs, executes tool calls, and records the outcomes. Each trajectory has a verifiable label — the tool call either succeeded or failed against the real API.
+
+## EnvFactory: Scaling via Reinforcement Learning
+
+Minrui Xu et al. tackle the scaling problem from a different angle. EnvFactory synthesizes executable environments and uses Agentic Reinforcement Learning (Agentic RL) to train agents. The key insight: agents learn more robustly when they can explore and fail in safe environments, rather than being trained on static demonstration data.
+
+## Why This Matters for the Ecosystem
+
+The 204 tools indexed in agentk.it only deliver value if agents can call them reliably. Papers like FireFly and EnvFactory represent the infrastructure layer that will make tool-calling agents production-ready. Combined with MCP as the standard protocol, we're seeing the full stack emerge: protocol standardization (MCP), security enforcement (MCP Proxy/ADR), and training infrastructure (FireFly/EnvFactory).
+
+Sources: [FireFly (arXiv:2605.17558)](https://arxiv.org/abs/2605.17558), [EnvFactory (arXiv:2605.18703)](https://arxiv.org/abs/2605.18703), [OpenAPI→MCP (arXiv:2605.14312)](https://arxiv.org/abs/2605.14312)

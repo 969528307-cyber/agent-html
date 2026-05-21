@@ -1,0 +1,108 @@
+{
+  "id": "candidate-learn-codex-vs-claude-code-vs-cursor",
+  "type": "learn",
+  "status": "published",
+  "title": "Codex vs Claude Code vs Cursor",
+  "sourceUrl": "https://agentk.it/learn/codex-vs-claude-code-vs-cursor",
+  "sourceName": "agentk.it Learn library",
+  "sourceRegistryId": "local-learn-library",
+  "sourceRegistry": {
+    "id": "local-learn-library",
+    "name": "Local Learn Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/learn",
+    "acceptRules": [
+      "must_have_topic",
+      "must_have_teaching_angle",
+      "must_link_related_tools_or_agents_when_possible"
+    ],
+    "rejectRules": [
+      "thin_summary_only",
+      "no_learning_outcome"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "How to compare the three common coding-agent surfaces.",
+  "proposedCategory": [
+    "agent",
+    "agent-deep-dive"
+  ],
+  "proposedAgents": [
+    "codex",
+    "claude-code",
+    "cursor"
+  ],
+  "extractedSignals": [
+    "How to compare the three common coding-agent surfaces.",
+    "Codex is strongest as a repository-first local coding loop.",
+    "Claude Code is strong for terminal workflows",
+    "MCP"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Learn collector output. Review teaching angle, examples, related tools, and whether this should remain Learn content rather than a Tool or Signal.",
+  "publishedAs": "codex-vs-claude-code-vs-cursor",
+  "publishedAt": "2026-05-16",
+  "learnProfile": {
+    "topic": "agent",
+    "path": "agent-deep-dive",
+    "difficulty": "beginner",
+    "readingTime": "9 min",
+    "relatedTools": [
+      "codex",
+      "repo-review-skill",
+      "context7",
+      "playwright-mcp"
+    ],
+    "relatedAgents": [
+      "codex",
+      "claude-code",
+      "cursor"
+    ]
+  },
+  "canonicalKey": "learn:title:codex vs claude code vs cursor",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "learn",
+    "primaryType": "learn",
+    "whatIsIt": "Codex vs Claude Code vs Cursor is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to agent.",
+      "Relevant to agent-deep-dive.",
+      "How to compare the three common coding-agent surfaces.",
+      "Codex is strongest as a repository-first local coding loop.",
+      "Claude Code is strong for terminal workflows"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

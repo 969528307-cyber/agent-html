@@ -1,0 +1,149 @@
+{
+  "id": "candidate-claude-code-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Code",
+  "sourceUrl": "https://github.com/codeaashu/claude-code",
+  "sourceName": "GitHub",
+  "author": "codeaashu",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "codeaashu",
+    "repo": "claude-code",
+    "fullName": "codeaashu/claude-code",
+    "stars": 2664,
+    "license": "NOASSERTION",
+    "topics": [
+      "claude",
+      "claude-ai",
+      "claude-code",
+      "claude-code-leaked",
+      "claude-code-skill",
+      "claude-desktop",
+      "claude-leak",
+      "claude-skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-22T07:08:37Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/architecture.md",
+    "docs/bridge.md",
+    "docs/commands.md",
+    "docs/exploration-guide.md",
+    "docs/subsystems.md",
+    "docs/tools.md",
+    "package.json",
+    "Skill.md"
+  ],
+  "readmeExtract": "<div align=\"center\" Claude Code — Leaked Source The full source code of Anthropic's Claude Code CLI, leaked on March 31, 2026 [![TypeScript](https://img.shields.io/badge/TypeScript 512K%2B lines 3178C6?logo=typescript&logoColor=white)]( tech stack) [![Bun](https://img.shields.io/badge/Runtime Bun f472b6?logo=bun&logoColor=white)]( tech stack) [![React + Ink](https://img.shields.io/badge/UI React %2B Ink 61DAFB?logo=r",
+  "skillExtracts": [
+    {
+      "path": "Skill.md",
+      "extract": "name: claude code skill description: Development conventions and architecture guide for the Claude Code CLI repository. Claude Code — Repository Skill Project Overview Claude Code is Anthropic's CLI tool for interacting with Claude from the terminal. It supports file editing, shell commands, git workflows, code review, multi agent coordination, IDE integration (VS Code, JetBrains), and Model Context Protocol (MCP). C"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The full source code of Anthropic's Claude Code CLI, leaked on March 31, 2026",
+    "Chaofan Shou (@Friedrice) discovered that the published npm package for Claude Code included a .map file referencing the full, unobfuscated TypeScript source — downloadable as a zip from Anthropic's R2 storage bucket.",
+    "\"Claude code source code has been leaked via a map file in their npm registry!\"",
+    "Claude Code is Anthropic's official CLI tool for interacting with Claude directly from the terminal — editing files, running commands, searching codebases, managing git workflows, and more.",
+    "For in-depth guides, see the docs/ directory:",
+    "Architecture Core pipeline, startup sequence, state management, rendering, data flow",
+    "Tools Reference Complete catalog of all ~40 agent tools with categories and permission model",
+    "Subsystems Guide Deep dives into Bridge, MCP, Permissions, Plugins, Skills, Tasks, Memory, Voice"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Code is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "The full source code of Anthropic's Claude Code CLI, leaked on March 31, 2026",
+      "Chaofan Shou (@Friedrice) discovered that the published npm package for Claude Code included a .map file referencing the full, unobfuscated TypeScript source — downloadable as a zip from Anthropic's R2 storage bucket."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-code",
+  "publishedAt": "2026-05-20"
+}

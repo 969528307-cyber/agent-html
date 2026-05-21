@@ -1,0 +1,109 @@
+{
+  "id": "candidate-learn-skill-vs-mcp-vs-workflow",
+  "type": "learn",
+  "status": "published",
+  "title": "Skill vs MCP vs Workflow",
+  "sourceUrl": "https://agentk.it/learn/skill-vs-mcp-vs-workflow",
+  "sourceName": "agentk.it Learn library",
+  "sourceRegistryId": "local-learn-library",
+  "sourceRegistry": {
+    "id": "local-learn-library",
+    "name": "Local Learn Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/learn",
+    "acceptRules": [
+      "must_have_topic",
+      "must_have_teaching_angle",
+      "must_link_related_tools_or_agents_when_possible"
+    ],
+    "rejectRules": [
+      "thin_summary_only",
+      "no_learning_outcome"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "Three extension types that solve different problems.",
+  "proposedCategory": [
+    "glossary",
+    "start"
+  ],
+  "proposedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "openclaw"
+  ],
+  "extractedSignals": [
+    "Three extension types that solve different problems.",
+    "Do not classify by marketing words. Classify by function: Skill equals method",
+    "MCP equals capability",
+    "Workflow equals sequence."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Learn collector output. Review teaching angle, examples, related tools, and whether this should remain Learn content rather than a Tool or Signal.",
+  "publishedAs": "skill-vs-mcp-vs-workflow",
+  "publishedAt": "2026-05-16",
+  "learnProfile": {
+    "topic": "glossary",
+    "path": "start",
+    "difficulty": "beginner",
+    "readingTime": "11 min",
+    "relatedTools": [
+      "repo-review-skill",
+      "context7",
+      "activepieces"
+    ],
+    "relatedAgents": [
+      "codex",
+      "claude-code",
+      "cursor",
+      "openclaw"
+    ]
+  },
+  "canonicalKey": "learn:title:skill vs mcp vs workflow",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "learn",
+    "primaryType": "learn",
+    "whatIsIt": "Skill vs MCP vs Workflow is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to glossary.",
+      "Relevant to start.",
+      "Three extension types that solve different problems.",
+      "Do not classify by marketing words. Classify by function: Skill equals method",
+      "MCP equals capability"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

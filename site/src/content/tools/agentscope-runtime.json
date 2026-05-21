@@ -1,0 +1,75 @@
+{
+  "id": "agentscope-runtime",
+  "name": "Agentscope Runtime",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "A production-ready runtime framework for agent apps with secure tool sandboxing, Agent-as-a-Service APIs, scalable deployment, full-stack observability, and broad framework compatibility.",
+  "description": "A production-ready runtime framework for agent apps with secure tool sandboxing, Agent-as-a-Service APIs, scalable deployment, full-stack observability, and broad framework compatibility.",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/agentscope-ai/agentscope-runtime",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/agentscope-ai/agentscope-runtime",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/agentscope-ai/agentscope-runtime#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/agentscope-ai/agentscope-runtime#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/agentscope-ai/agentscope-runtime/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AgentScope Runtime: A Production-grade Runtime for Agent Applications",
+    "Tool Sandboxing — tool call runs inside a hardened sandbox",
+    "Agent-as-a-Service (AaaS) APIs — expose agents as streaming, production-ready APIs",
+    "Framework compatibility with mainstream agent frameworks",
+    "I want to run an agent app in 5 minutes: Quick Start (Agent App example) → verify with curl (SSE streaming)",
+    "I want production deployment / expose APIs: Quick Start (Agent App example) → Quick Start (Deployment example) → Guides",
+    "Learn the three-stage AgentApp development pattern: init / query / shutdown.",
+    "Agent App Example: How to build a streaming (SSE) Agent-as-a-Service API"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-24T03:27:08Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/agentscope-ai/agentscope-runtime",
+  "repoUrl": "https://github.com/agentscope-ai/agentscope-runtime",
+  "license": "Apache-2.0",
+  "stars": 787,
+  "lastUpdated": "2026-04-24T03:27:08Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

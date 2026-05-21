@@ -1,0 +1,213 @@
+{
+  "id": "candidate-tool-github-cherryhq-cherry-studio",
+  "type": "tool",
+  "status": "published",
+  "title": "Cherry Studio",
+  "sourceUrl": "https://github.com/CherryHQ/cherry-studio",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "CherryHQ",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
+  "proposedCategory": [
+    "skill",
+    "agent-app"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "CherryHQ",
+    "repo": "cherry-studio",
+    "fullName": "CherryHQ/cherry-studio",
+    "stars": 45866,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent-skills",
+      "ai-agent",
+      "awesome-skills",
+      "claude-code",
+      "codex",
+      "deepseek",
+      "hermes-agent",
+      "openclaw",
+      "skills",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T11:37:45Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/assets/images/i18n/demo-1.png",
+    "docs/assets/images/i18n/demo-2.png",
+    "docs/assets/images/i18n/demo-3.png",
+    "docs/en/guides/ai-core-architecture.md",
+    "docs/en/guides/branching-strategy.md",
+    "docs/en/guides/i18n.md",
+    "docs/en/guides/logging.md",
+    "docs/en/guides/test-plan.md",
+    "docs/en/references/app-upgrade.md",
+    "docs/en/references/components/code-block-view.md",
+    "docs/en/references/components/image-preview.md",
+    "docs/en/references/feishu-notify.md",
+    "docs/en/references/fuzzy-search.md",
+    "docs/README.md",
+    "docs/zh/guides/ai-core-architecture.md",
+    "docs/zh/guides/branching-strategy.md",
+    "docs/zh/guides/i18n.md",
+    "docs/zh/guides/logging.md",
+    "docs/zh/guides/memory.md",
+    "docs/zh/guides/middleware.md",
+    "docs/zh/guides/sponsor.md",
+    "docs/zh/guides/test-plan.md",
+    "docs/zh/README.md",
+    "docs/zh/references/app-upgrade.md",
+    "docs/zh/references/cherryclaw/channels.md",
+    "docs/zh/references/cherryclaw/mcp-claw.md",
+    "docs/zh/references/cherryclaw/overview.md",
+    "docs/zh/references/cherryclaw/scheduler.md",
+    "docs/zh/references/code-execution.md",
+    "docs/zh/references/components/code-block-view.md",
+    "docs/zh/references/components/image-preview.md",
+    "docs/zh/references/database.md",
+    "docs/zh/references/feishu-notify.md",
+    "docs/zh/references/fuzzy-search.md",
+    "docs/zh/references/lan-transfer-protocol.md",
+    "docs/zh/references/message-system.md",
+    "docs/zh/references/services.md",
+    "package.json",
+    ".agents/skills/cherry-pr-test/SKILL.md"
+  ],
+  "readmeExtract": "<div align=\"right\" <details <summary 🌐 Language</summary <div <div align=\"right\" <p <a href=\"https://openaitx.github.io/view.html?user=CherryHQ&project=cherry studio&lang=en\" English</a </p <p <a href=\"https://openaitx.github.io/view.html?user=CherryHQ&project=cherry studio&lang=zh CN\" 简体中文</a </p <p <a href=\"https://openaitx.github.io/view.html?user=CherryHQ&project=cherry studio&lang=zh TW\" 繁體中文</a </p <p <a href=",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/cherry-pr-test/SKILL.md",
+      "extract": "name: cherry pr test description: Test Cherry Studio PRs by checking out the branch, launching the Electron app in debug mode, and running interactive UI tests via CDP. Cherry Studio PR Test Automated PR testing workflow for Cherry Studio. Checks out a PR, launches the Electron app with Chrome DevTools Protocol, connects agent browser, and runs interactive UI + code review tests. Prerequisites gh CLI installed and au"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "☁️ Major LLM Cloud Services: OpenAI, Gemini, Anthropic, and more",
+    "🔗 AI Web Service Integration: Claude, Perplexity, Poe, and others",
+    "☁️ WebDAV File Management and Backup",
+    "Practical Tools Integration:",
+    "🔍 Global Search Functionality",
+    "⚙️ MCP(Model Context Protocol) Server",
+    "Deep Research with advanced research capabilities",
+    "MCP Marketplace for Model Context Protocol ecosystem"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Cherry Studio is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Relevant to agent-app.",
+      "☁️ Major LLM Cloud Services: OpenAI, Gemini, Anthropic, and more",
+      "🔗 AI Web Service Integration: Claude, Perplexity, Poe, and others"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:cherryhq/cherry-studio",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cherry-studio",
+  "publishedAt": "2026-05-18"
+}

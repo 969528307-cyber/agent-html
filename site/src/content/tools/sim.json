@@ -1,0 +1,77 @@
+{
+  "id": "sim",
+  "name": "Sim",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Build, deploy, and orchestrate AI agents. Sim is the central intelligence layer for your AI workforce.",
+  "description": "Build, deploy, and orchestrate AI agents. Sim is the central intelligence layer for your AI workforce.",
+  "category": [
+    "workflow"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/simstudioai/sim",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/simstudioai/sim",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/simstudioai/sim#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/simstudioai/sim#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/simstudioai/sim/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The open-source platform to build AI agents and run your agentic workforce.",
+    "Connect 1,000+ integrations and LLMs to orchestrate agentic workflows.",
+    "Design agent workflows visually on a canvas—connect agents, tools, and blocks, then run them instantly.",
+    "Upload documents to a vector store and let agents answer questions grounded in your specific content.",
+    "Copilot is a Sim-managed service.",
+    "State Management: Zustand, TanStack Query",
+    "Use when working on apps/sim/blocks/blocks/{service}.ts or aligning a block with its tools.",
+    "Hard Rule: No Guessed Tool Outputs"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T00:16:56Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/simstudioai/sim",
+  "repoUrl": "https://github.com/simstudioai/sim",
+  "license": "Apache-2.0",
+  "stars": 28508,
+  "lastUpdated": "2026-05-18T00:16:56Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

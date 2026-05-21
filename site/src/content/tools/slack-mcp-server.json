@@ -1,0 +1,76 @@
+{
+  "id": "slack-mcp-server",
+  "name": "Slack Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
+  "description": "The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic.",
+  "category": [
+    "communication"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/korotovsky/slack-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/korotovsky/slack-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/korotovsky/slack-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/korotovsky/slack-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/korotovsky/slack-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Model Context Protocol (MCP) server for Slack Workspaces.",
+    "This feature-rich Slack MCP Server has:",
+    "Search Messages: Search messages in channels, threads, and DMs using various filters like date, user, and content.",
+    "Safe Message Posting: The conversationsaddmessage tool is disabled by default for safety.",
+    "Stdio/SSE/HTTP Transports & Proxy Support: Use the server with any MCP client that supports Stdio, SSE or HTTP transports, and configure it to route outgoing requests through a proxy if needed.",
+    "To enable, set the SLACKMCPADDMESSAGETOOL environment variable.",
+    "Search messages in a public channel, private channel, or direct message (DM, or IM) conversation using filters.",
+    "All filters are optional, if not provided then searchquery is required."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-30T17:16:40Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/korotovsky/slack-mcp-server",
+  "repoUrl": "https://github.com/korotovsky/slack-mcp-server",
+  "license": "MIT",
+  "stars": 1593,
+  "lastUpdated": "2026-04-30T17:16:40Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-14",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

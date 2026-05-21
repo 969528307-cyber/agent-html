@@ -1,0 +1,112 @@
+{
+  "id": "candidate-signal-qwenpaw-packages-personal-agents-around-skills-channels-memory-and-safety",
+  "type": "signal",
+  "status": "published",
+  "title": "QwenPaw packages personal agents around skills, channels, memory, and safety",
+  "sourceUrl": "https://github.com/agentscope-ai/QwenPaw/blob/main/README_zh.md",
+  "sourceName": "AgentScope / QwenPaw GitHub",
+  "sourceRegistryId": "local-signals-library",
+  "sourceRegistry": {
+    "id": "local-signals-library",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/signals",
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "QwenPaw is a China-origin personal AI assistant that emphasizes local or cloud deployment, skills, multi-agent collaboration, multi-channel access, memory, and safety controls.",
+  "proposedCategory": [
+    "signal"
+  ],
+  "proposedAgents": [
+    "qwen-code"
+  ],
+  "extractedSignals": [
+    "QwenPaw is a useful Signal because it packages the personal-agent idea as an operating system of skills, channels, memory, permissions, and collaboration rather than a simple chatbot.",
+    "QwenPaw is a China-origin personal AI assistant that emphasizes local or cloud deployment, skills, multi-agent collaboration, multi-channel access, memory, and safety controls.",
+    "QwenPaw is a useful Signal because it packages the personal-agent idea as an operating system of skills",
+    "channels",
+    "memory",
+    "This gives agentk.it a concrete China-origin example for the Agent and Skill categories: a personal assistant that can be extended through skills, connected to communication channels, and deployed under user control.",
+    "QwenPaw positions itself as a personal AI assistant that can run locally or in the cloud.",
+    "Skills are the extension unit: built-in skills cover scheduling, document processing, news digest, and custom capabilities.",
+    "The project emphasizes multi-agent collaboration, where independent agents can communicate through collaboration skills."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Signals collector output. Review source quality, translation value, ecosystem implication, and whether this belongs as a Signal rather than Learn content.",
+  "publishedAs": "qwenpaw-packages-personal-agents-around-skills-channels-memory-and-safety",
+  "publishedAt": "2026-05-16",
+  "author": "AgentScope-AI",
+  "permissionStatus": "open_license",
+  "signalProfile": {
+    "sourceName": "AgentScope / QwenPaw GitHub",
+    "originalPublishedAt": "2026-04-12",
+    "permissionStatus": "open_license",
+    "translationMode": "full_english_translation",
+    "relatedTools": [
+      "agent-setup-checklist",
+      "translation-signal-flow"
+    ],
+    "relatedAgents": [
+      "qwen-code"
+    ],
+    "relatedLearn": [
+      "what-is-agent-skill",
+      "china-origin-agents-qwen-kimi-trae-codegeex"
+    ]
+  },
+  "canonicalKey": "signal:url:https://github.com/agentscope-ai/qwenpaw/blob/main/readme_zh.md:title:qwenpaw packages personal agents around skills channels memory and safety",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "QwenPaw packages personal agents around skills, channels, memory, and safety is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to signal.",
+      "QwenPaw is a useful Signal because it packages the personal-agent idea as an operating system of skills, channels, memory, permissions, and collaboration rather than a simple chatbot.",
+      "QwenPaw is a China-origin personal AI assistant that emphasizes local or cloud deployment, skills, multi-agent collaboration, multi-channel access, memory, and safety controls.",
+      "QwenPaw is a useful Signal because it packages the personal-agent idea as an operating system of skills"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  }
+}

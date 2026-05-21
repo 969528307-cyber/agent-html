@@ -1,0 +1,189 @@
+{
+  "id": "candidate-tool-github-zhulinsen-daily-stock-analysis",
+  "type": "tool",
+  "status": "published",
+  "title": "Daily Stock Analysis",
+  "sourceUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "ZhuLinsen",
+  "discoveredAt": "2026-05-19",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "LLM驱动的 A/H/美股智能分析：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "ZhuLinsen",
+    "repo": "daily_stock_analysis",
+    "fullName": "ZhuLinsen/daily_stock_analysis",
+    "stars": 37070,
+    "license": "MIT",
+    "topics": [
+      "a-stock",
+      "ai-agent",
+      "aigc",
+      "llm",
+      "quant",
+      "quantitative-finance",
+      "quantitative-trading"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T21:20:05Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/alerts.md",
+    "docs/architecture/api_spec.json",
+    "docs/assets/alipay.jpg",
+    "docs/assets/dapan_2026-01-13_22-14-52.png",
+    "docs/assets/dsa_vi/banner.png",
+    "docs/assets/dsa_vi/darklogo.ico",
+    "docs/assets/dsa_vi/darklogo.iconset/icon_128x128.png",
+    "docs/assets/dsa_vi/darklogo.iconset/icon_128x128@2x.png",
+    "docs/assets/dsa_vi/darklogo.iconset/icon_16x16.png",
+    "docs/assets/dsa_vi/darklogo.iconset/icon_16x16@2x.png",
+    "docs/assets/dsa_vi/darklogo.iconset/icon_256x256.png",
+    "docs/assets/dsa_vi/darklogo.iconset/icon_256x256@2x.png",
+    "docs/assets/dsa_vi/darklogo.iconset/icon_32x32.png",
+    "docs/assets/dsa_vi/darklogo.iconset/icon_32x32@2x.png",
+    "docs/assets/dsa_vi/darklogo.iconset/icon_512x512.png",
+    "docs/assets/dsa_vi/darklogo.iconset/icon_64x64.png",
+    "docs/assets/dsa_vi/dsa_logo.ai",
+    "docs/assets/dsa_vi/gen_icons.py",
+    "docs/assets/dsa_vi/lightlogo.ico",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_128x128.png",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_128x128@2x.png",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_16x16.png",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_16x16@2x.png",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_256x256.png",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_256x256@2x.png",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_32x32.png",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_32x32@2x.png",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_512x512.png",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_512x512@2x.png",
+    "docs/assets/dsa_vi/lightlogo.iconset/icon_64x64.png",
+    "docs/assets/dsa_vi/lightlogo.png",
+    "docs/assets/fastapi_server.png",
+    "docs/assets/issue-1200-ntfy-curl-smoke.png",
+    "docs/assets/issue-1200-ntfy-ios-smoke.png",
+    "docs/assets/issue-1202-p3-web-alert-center.png",
+    "docs/assets/ko-fi.png",
+    "docs/assets/sample.png",
+    "docs/assets/wechatpay.jpg",
+    "docs/assets/xiaohongshu_tick.jpg",
+    "docs/assets/alert-center-p5-web.png"
+  ],
+  "readmeExtract": "<div align=\"center\" 📈 股票智能分析系统 [![GitHub stars](https://img.shields.io/github/stars/ZhuLinsen/daily stock analysis?style=social)](https://github.com/ZhuLinsen/daily stock analysis/stargazers) [![CI](https://github.com/ZhuLinsen/daily stock analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/ZhuLinsen/daily stock analysis/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License MIT",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agent 策略问股 多轮追问，支持均线、缠论、波浪、趋势、热点、事件、成长、预期等 15 种内置策略，覆盖 Web/Bot/API",
+    "AI 模型 Anspire、AIHubMix、Gemini、OpenAI 兼容、DeepSeek、通义千问、Claude、Ollama 本地模型等",
+    "GEMINIAPIKEY Google Gemini API Key 可选",
+    "ANTHROPICAPIKEY Anthropic Claude API Key 可选",
+    "ANSPIREAPIKEYS Anspire AI Search：中文内容特别优化，适合 A 股新闻和舆情检索；同一 Key 可复用为 Anspire 大模型 推荐",
+    "BRAVEAPIKEYS Brave Search：隐私优先，美股资讯补强 可选",
+    "Actions 标签 → I understand my workflows, go ahead and enable them",
+    "Actions → 每日股票分析 → Run workflow → Run workflow"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-app\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "LLM驱动的 A/H/美股智能分析：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "Daily Stock Analysis is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Agent 策略问股 多轮追问，支持均线、缠论、波浪、趋势、热点、事件、成长、预期等 15 种内置策略，覆盖 Web/Bot/API",
+      "AI 模型 Anspire、AIHubMix、Gemini、OpenAI 兼容、DeepSeek、通义千问、Claude、Ollama 本地模型等",
+      "GEMINIAPIKEY Google Gemini API Key 可选"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:zhulinsen/daily_stock_analysis",
+  "firstDiscoveredAt": "2026-05-19",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-19",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "daily-stock-analysis",
+  "publishedAt": "2026-05-19",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

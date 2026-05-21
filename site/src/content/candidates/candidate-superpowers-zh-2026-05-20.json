@@ -1,0 +1,210 @@
+{
+  "id": "candidate-superpowers-zh-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Superpowers Zh",
+  "sourceUrl": "https://github.com/jnMetaCode/superpowers-zh",
+  "sourceName": "GitHub",
+  "author": "jnMetaCode",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "🦸 AI 编程超能力 · 中文增强版 — superpowers（116k+ ⭐）完整汉化 + 6 个中国原创 skills，让 Claude Code / Copilot CLI / Hermes Agent / Cursor / Windsurf / Kiro / Gemini CLI 等 16 款 AI 编程工具真正会干活",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "Trae",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "jnMetaCode",
+    "repo": "superpowers-zh",
+    "fullName": "jnMetaCode/superpowers-zh",
+    "stars": 3490,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "agentic-coding",
+      "ai-coding",
+      "chinese",
+      "claude-code",
+      "code-review",
+      "cursor",
+      "gemini-cli",
+      "kiro",
+      "mcp",
+      "npm-package",
+      "prompt-engineering",
+      "skills",
+      "superpowers",
+      "tdd",
+      "trae"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T16:40:33Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/assets/demo.tape",
+    "docs/assets/RECORDING-GUIDE.md",
+    "docs/README.aider.md",
+    "docs/README.antigravity.md",
+    "docs/README.codex.md",
+    "docs/README.deerflow.md",
+    "docs/README.gemini-cli.md",
+    "docs/README.hermes.md",
+    "docs/README.kiro.md",
+    "docs/README.openclaw.md",
+    "docs/README.opencode.md",
+    "docs/README.qwen.md",
+    "docs/README.trae.md",
+    "docs/README.vscode.md",
+    "docs/README.windsurf.md",
+    "package.json",
+    "skills/brainstorming/SKILL.md",
+    "skills/chinese-code-review/SKILL.md",
+    "skills/chinese-commit-conventions/SKILL.md",
+    "skills/chinese-documentation/SKILL.md",
+    "skills/chinese-git-workflow/SKILL.md",
+    "skills/dispatching-parallel-agents/SKILL.md",
+    "skills/executing-plans/SKILL.md",
+    "skills/finishing-a-development-branch/SKILL.md",
+    "skills/mcp-builder/SKILL.md",
+    "skills/receiving-code-review/SKILL.md",
+    "skills/requesting-code-review/SKILL.md",
+    "skills/subagent-driven-development/SKILL.md",
+    "skills/systematic-debugging/SKILL.md",
+    "skills/test-driven-development/SKILL.md",
+    "skills/using-git-worktrees/SKILL.md",
+    "skills/using-superpowers/SKILL.md",
+    "skills/verification-before-completion/SKILL.md",
+    "skills/workflow-runner/SKILL.md",
+    "skills/writing-plans/SKILL.md",
+    "skills/writing-skills/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "superpowers zh（AI 编程超能力 · 中文增强版） 🌐 简体中文 | [English (upstream)](https://github.com/obra/superpowers) 🦸 superpowers（159k+ ⭐）完整汉化 + 4 个中国原创 skills — 让 Claude Code / Copilot CLI / Hermes Agent / Cursor / Windsurf / Kiro / Gemini CLI 等 17 款 AI 编程工具 真正会干活。从头脑风暴到代码审查，从 TDD 到调试，每个 skill 都是经过实战验证的工作方法论。 Chinese community edition of [superpowers](https://github.com/obra/superpowers) — 20 skills across 16 AI coding tools, inc",
+  "skillExtracts": [
+    {
+      "path": "skills/brainstorming/SKILL.md",
+      "extract": "name: brainstorming description: \"在任何创造性工作之前必须使用此技能——创建功能、构建组件、添加功能或修改行为。在实现之前先探索用户意图、需求和设计。\" 头脑风暴：将想法转化为设计 通过自然的协作对话，帮助将想法转化为完整的设计和规格说明。 首先了解当前项目的上下文，然后逐一提问来完善想法。一旦你理解了要构建的内容，就展示设计方案并获得用户批准。 <HARD GATE 在你展示设计方案并获得用户批准之前，不要调用任何实现技能、编写任何代码、搭建任何项目或采取任何实现行动。这适用于所有项目，无论看起来多简单。 </HARD GATE 反模式：\"这个太简单了，不需要设计\" 每个项目都要经过这个流程。一个待办事项列表、一个单函数工具、一个配置变更——全都需要。\"简单\"的项目恰恰是未经检验的假设造成最多浪费的地方。设计可以很简短（对于真正简单的项目几句话就够了），但你必须展示出来并获得批准。 检查清单 "
+    },
+    {
+      "path": "skills/chinese-code-review/SKILL.md",
+      "extract": "name: chinese code review description: 中文 review 沟通参考——话术模板、分级标注（必须修复/建议修改/仅供参考）、国内团队常见反模式应对。仅在用户显式 /chinese code review 时调用，不要根据上下文自动触发。 中文代码审查规范 概述 国内团队做 Code Review 常遇到两个极端：要么过度客气导致关键问题被放过，要么照搬西方直白风格让同事下不来台。本技能帮你找到平衡点—— 既不回避问题，又让人愿意接受反馈 。 核心原则： 用\"建议\"代替\"命令\"，用\"提问\"代替\"否定\"，但绝不因为面子而放过 bug。 审查反馈的表达方式 用建议代替命令 | 避免（命令式） | 推荐（建议式） | | | | | 你必须改成 X | 建议考虑用 X，因为 Y | | 这里写错了 | 这里可能存在一个问题，是否考虑过 Z 的情况？ | | 不要用这个方法 | 这个方法在 A 场景下"
+    },
+    {
+      "path": "skills/chinese-commit-conventions/SKILL.md",
+      "extract": "name: chinese commit conventions description: 中文 commit 与 changelog 配置参考——Conventional Commits 中文适配、commitlint/husky/commitizen 中文模板、conventional changelog 中文配置。仅在用户显式 /chinese commit conventions 时调用，不要根据上下文自动触发。 中文 Git 提交规范 1. Conventional Commits 中文适配 基于 Conventional Commits 1.0.0 规范，针对中文团队的实际使用习惯进行适配。 类型（type）定义 | 类型 | 说明 | 示例场景 | | | | | | feat | 新功能 | 添加用户注册模块 | | fix | 修复缺陷 | 修复登录页白屏问题 | | docs | 文档变更 | 更新 API "
+    },
+    {
+      "path": "skills/chinese-documentation/SKILL.md",
+      "extract": "name: chinese documentation description: 中文文档排版参考——中英文空格、全半角标点、术语保留、链接格式、中文文案排版指北约定。仅在用户显式 /chinese documentation 时调用，不要根据上下文自动触发。 中文技术文档写作规范 概述 中文技术文档最常见的问题不是内容不够，而是 读起来别扭 ——中英文挤在一起没有空格、全角半角混用、一股机翻味。本技能提供一套完整的中文技术文档写作规范，让你的文档 专业、好读、不出戏 。 核心原则： 排版服务于阅读体验，规范服务于一致性，内容服务于读者。 参考标准： [中文文案排版指北](https://github.com/sparanoid/chinese copywriting guidelines) 中文排版规范 空格 中英文之间加空格： 中文与数字之间加空格： 数字与单位之间加空格： 例外：度数、百分比等不加空格： 链接前后加空格： "
+    },
+    {
+      "path": "skills/chinese-git-workflow/SKILL.md",
+      "extract": "name: chinese git workflow description: 国内 Git 平台配置参考——Gitee、Coding.net、极狐 GitLab、CNB 的 SSH/HTTPS/凭据/CI 接入差异与镜像同步配置。仅在用户显式 /chinese git workflow 时调用，不要根据上下文自动触发。 国内 Git 工作流规范 概述 国内团队用 Git 经常踩的坑：GitHub 访问不稳定、CI/CD 方案照搬国外水土不服、commit message 中英混杂没有规范。本技能提供一套 完整适配国内平台和团队习惯的 Git 工作流 。 核心原则： 工作流服务于团队效率，不是为了流程而流程。选适合团队规模的，别硬套大厂方案。 国内 Git 平台适配 平台对比 | 特性 | Gitee | Coding.net | 极狐 GitLab | CNB | GitHub | | | | | | | | | 国内访问 |"
+    },
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "extract": "name: dispatching parallel agents description: 当面对 2 个以上可以独立进行、无共享状态或顺序依赖的任务时使用 并行分派智能体 概述 你将任务委派给具有隔离上下文的专用智能体。通过精心设计它们的指令和上下文，确保它们专注并成功完成任务。它们不应继承你的会话上下文或历史记录——你要精确构造它们所需的一切。这样也能为你自己保留用于协调工作的上下文。 当你遇到多个不相关的失败（不同的测试文件、不同的子系统、不同的 bug），逐一排查会浪费时间。每个排查都是独立的，可以并行进行。 核心原则： 每个独立问题域分派一个智能体，让它们并发工作。 何时使用 适用场景： 3 个以上测试文件因不同根因失败 多个子系统独立出现故障 每个问题无需其他问题的上下文即可理解 排查之间无共享状态 不适用场景： 失败是相关的（修复一个可能修复其他的） 需要理解完整的系统状态 智能体之间会互相干扰 模式 1. 识别"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🦸 superpowers（159k+ ⭐）完整汉化 + 4 个中国原创 skills — 让 Claude Code / Copilot CLI / Hermes Agent / Cursor / Windsurf / Kiro / Gemini CLI 等 17 款 AI 编程工具真正会干活。从头脑风暴到代码审查，从 TDD 到调试，每个 skill 都是经过实战验证的工作方法论。",
+    "Chinese community edition of superpowers — 20 skills across 16 AI coding tools, including full translations and China-specific development skills.",
+    "📦 翻译 Skills 🇨🇳 中国特色 Skills 🤖 支持工具",
+    "14 6 Claude Code / Copilot CLI / Hermes Agent / Cursor / Windsurf / Kiro / Gemini CLI / Codex / Aider / Trae / VS Code (Copilot) / DeerFlow / OpenCode / OpenClaw / Qwen Code / Antigravity / Claw Code",
+    "superpowers 是目前最火的 AI 编程 skills 框架（159k+ stars），为 AI 编程工具提供系统化的工作方法论。",
+    "superpowers-zh 在完整翻译的基础上，新增了面向中国开发者的特色 skills。",
+    "📦 Skills 总数 14 20（14 翻译 + 4 国产原创 + 2 上游历史保留）",
+    "🤖 支持工具 6 款：Claude Code / Cursor / Codex / OpenCode / Copilot CLI / Gemini CLI 17 款：上述 6 款 + Hermes Agent / Trae / Kiro / Qwen Code（通义灵码）/ OpenClaw / Claw Code / Antigravity / DeerFlow / VS Code / Windsurf / Aider"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "🦸 AI 编程超能力 · 中文增强版 — superpowers（116k+ ⭐）完整汉化 + 6 个中国原创 skills，让 Claude Code / Copilot CLI / Hermes Agent / Cursor / Windsurf / Kiro / Gemini CLI 等 16 款 AI 编程工具真正会干活",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Superpowers Zh is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "🦸 superpowers（159k+ ⭐）完整汉化 + 4 个中国原创 skills — 让 Claude Code / Copilot CLI / Hermes Agent / Cursor / Windsurf / Kiro / Gemini CLI 等 17 款 AI 编程工具真正会干活。从头脑风暴到代码审查，从 TDD 到调试，每个 skill 都是经过实战验证的工作方法论。",
+      "Chinese community edition of superpowers — 20 skills across 16 AI coding tools, including full translations and China-specific development skills.",
+      "📦 翻译 Skills 🇨🇳 中国特色 Skills 🤖 支持工具"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "superpowers-zh",
+  "publishedAt": "2026-05-20"
+}

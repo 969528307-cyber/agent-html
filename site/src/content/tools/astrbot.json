@@ -1,0 +1,76 @@
+{
+  "id": "astrbot",
+  "name": "AstrBot",
+  "type": "mcp",
+  "status": "published",
+  "summary": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
+  "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Kimi"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/AstrBotDevs/AstrBot",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/AstrBotDevs/AstrBot#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/AstrBotDevs/AstrBot#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/AstrBotDevs/AstrBot/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AstrBot is an open-source all-in-one Agent chatbot platform that integrates with mainstream instant messaging apps.",
+    "✨ AI LLM Conversations, Multimodal, Agent, MCP, Skills, Knowledge Base, Persona Settings, Auto Context Compression.",
+    "🤖 Supports integration with Dify, Alibaba Cloud Bailian, Coze, and other agent platforms.",
+    "🛡️ Agent Sandbox for isolated, safe execution of code, shell calls, and session-level resource reuse.",
+    "🌈 Web ChatUI Support with built-in agent sandbox and web search.",
+    "🚀 General Agentic Capabilities",
+    "The --python 3.12 option ensures that uv creates the tool environment with Python 3.12.",
+    "Please refer to the official documentation: Deploy AstrBot with Docker."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T13:55:36Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/AstrBotDevs/AstrBot",
+  "repoUrl": "https://github.com/AstrBotDevs/AstrBot",
+  "license": "AGPL-3.0",
+  "stars": 32617,
+  "lastUpdated": "2026-05-19T13:55:36Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

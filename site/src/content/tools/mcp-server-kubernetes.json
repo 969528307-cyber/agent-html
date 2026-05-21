@@ -1,0 +1,77 @@
+{
+  "id": "mcp-server-kubernetes",
+  "name": "Mcp Server Kubernetes",
+  "type": "mcp",
+  "status": "published",
+  "summary": "MCP Server for kubernetes management commands",
+  "description": "MCP Server for kubernetes management commands",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Flux159/mcp-server-kubernetes",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Flux159/mcp-server-kubernetes",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Flux159/mcp-server-kubernetes#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Flux159/mcp-server-kubernetes#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Flux159/mcp-server-kubernetes/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "MCP Server that can connect to a Kubernetes cluster and manage it.",
+    "Before using this MCP server with any tool, make sure you have:",
+    "You can verify your connection by running kubectl get pods in a terminal to ensure you can connect to your cluster without credential issues.",
+    "Add the MCP server to Claude Code using the built-in command:",
+    "This will automatically configure the server in your Claude Code MCP settings.",
+    "Claude Desktop Connector via mcpb",
+    "MCP Server Kubernetes is also available as a mcpb (formerly dxt) extension.",
+    "In Claude Desktop, go to Settings (Cmd+, on Mac) -> Extensions -> Browse Extensions and scroll to find mcp-server-kubernetes in the modal."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-03T03:51:36Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Flux159/mcp-server-kubernetes",
+  "repoUrl": "https://github.com/Flux159/mcp-server-kubernetes",
+  "license": "MIT",
+  "stars": 1390,
+  "lastUpdated": "2026-05-03T03:51:36Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

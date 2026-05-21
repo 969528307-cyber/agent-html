@@ -1,0 +1,77 @@
+{
+  "id": "n8n",
+  "name": "N8n",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/n8n-io/n8n",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/n8n-io/n8n",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/n8n-io/n8n#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/n8n-io/n8n#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/n8n-io/n8n/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "n8n - Secure Workflow Automation for Technical Teams",
+    "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code.",
+    "With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.",
+    "AI-Native Platform: Build AI agent workflows based on LangChain with your own data and models",
+    "Our community forum is the place to get support and connect with other users:",
+    "Additional information about the license model can be found in the docs.",
+    "Want to shape the future of automation?",
+    "'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T08:54:15Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/n8n-io/n8n",
+  "repoUrl": "https://github.com/n8n-io/n8n",
+  "license": "NOASSERTION",
+  "stars": 187663,
+  "lastUpdated": "2026-05-13T08:54:15Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

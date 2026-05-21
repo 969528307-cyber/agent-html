@@ -1,0 +1,77 @@
+{
+  "id": "mastra",
+  "name": "Mastra",
+  "type": "mcp",
+  "status": "published",
+  "summary": "From the team behind Gatsby, Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
+  "description": "From the team behind Gatsby, Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mastra-ai/mastra",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mastra-ai/mastra",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mastra-ai/mastra#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mastra-ai/mastra#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mastra-ai/mastra/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
+    "Model routing - Connect to 40+ providers through one standard interface.",
+    "Use models from OpenAI, Anthropic, Gemini, and more.",
+    "Agents - Build autonomous agents that use LLMs and tools to solve open-ended tasks.",
+    "Agents reason about goals, decide which tools to use, and iterate internally until the model emits a final answer or an optional stopping condition is met.",
+    "Workflows - When you need explicit control over execution, use Mastra's graph-based workflow engine to orchestrate complex multi-step processes.",
+    "Mastra workflows use an intuitive syntax for control flow (.then(), .branch(), .parallel()).",
+    "Human-in-the-loop - Suspend an agent or workflow and await user input or approval before resuming."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:35:03Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mastra-ai/mastra",
+  "repoUrl": "https://github.com/mastra-ai/mastra",
+  "license": "NOASSERTION",
+  "stars": 24048,
+  "lastUpdated": "2026-05-20T03:35:03Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

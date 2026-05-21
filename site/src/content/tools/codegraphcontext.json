@@ -1,0 +1,78 @@
+{
+  "id": "codegraphcontext",
+  "name": "CodeGraphContext",
+  "type": "mcp",
+  "status": "published",
+  "summary": "An MCP server plus a CLI tool that indexes local code into a graph database to provide context to AI assistants.",
+  "description": "An MCP server plus a CLI tool that indexes local code into a graph database to provide context to AI assistants.",
+  "category": [
+    "data"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/CodeGraphContext/CodeGraphContext",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/CodeGraphContext/CodeGraphContext",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/CodeGraphContext/CodeGraphContext#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/CodeGraphContext/CodeGraphContext#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/CodeGraphContext/CodeGraphContext/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Turn code repositories into a queryable graph for AI agents.",
+    "A powerful MCP server and CLI toolkit that indexes local code into a graph database to provide context to AI assistants and developers.",
+    "Use it as a standalone CLI for comprehensive code analysis or connect it to your favorite AI IDE via MCP for AI-powered code understanding.",
+    "Use natural language to query complex call-chains via MCP.",
+    "Dual Mode: Works as a standalone CLI toolkit for developers and as an MCP server for AI agents.",
+    "Quick Search: Live-search through the graph to find specific symbols",
+    "...query complex call-chains via MCP.",
+    "│ Automated Weekly Releases │"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T22:20:33Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/CodeGraphContext/CodeGraphContext",
+  "repoUrl": "https://github.com/CodeGraphContext/CodeGraphContext",
+  "license": "MIT",
+  "stars": 3235,
+  "lastUpdated": "2026-05-12T22:20:33Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

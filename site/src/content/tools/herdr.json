@@ -1,0 +1,80 @@
+{
+  "id": "herdr",
+  "name": "Herdr",
+  "type": "cli",
+  "status": "published",
+  "summary": "agent multiplexer that lives in your terminal.",
+  "description": "agent multiplexer that lives in your terminal.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "Kimi",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ogulcancelik/herdr",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ogulcancelik/herdr",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ogulcancelik/herdr#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ogulcancelik/herdr#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ogulcancelik/herdr/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "agent multiplexer that lives in your terminal.",
+    "every agent at a glance: blocked, working, done.",
+    "detach and reattach, agents keep running.",
+    "you see the agent's own terminal, not someone's interpretation of it.",
+    "run an agent in the root pane",
+    "tmux gives you persistence and panes, but it was built before agents existed.",
+    "gui managers show agent state, but they make you leave your terminal and use their wrapped view.",
+    "herdr is persistence and awareness in one tool that stays out of your way."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T01:37:06Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ogulcancelik/herdr",
+  "repoUrl": "https://github.com/ogulcancelik/herdr",
+  "license": "AGPL-3.0",
+  "stars": 1698,
+  "lastUpdated": "2026-05-20T01:37:06Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

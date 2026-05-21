@@ -1,0 +1,190 @@
+{
+  "id": "candidate-code-review-graph-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Code Review Graph",
+  "sourceUrl": "https://github.com/tirth8205/code-review-graph",
+  "sourceName": "GitHub",
+  "author": "tirth8205",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "tirth8205",
+    "repo": "code-review-graph",
+    "fullName": "tirth8205/code-review-graph",
+    "stars": 16932,
+    "license": "MIT",
+    "topics": [
+      "ai-coding",
+      "claude",
+      "claude-code",
+      "code-review",
+      "graphrag",
+      "incremental",
+      "knowledge-graph",
+      "llm",
+      "mcp",
+      "python",
+      "static-analysis",
+      "tree-sitter"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-16T13:11:25Z"
+  },
+  "detectedFiles": [
+    "README.hi-IN.md",
+    "README.ja-JP.md",
+    "README.ko-KR.md",
+    "README.md",
+    "README.zh-CN.md",
+    "docs/architecture.md",
+    "docs/COMMANDS.md",
+    "docs/FEATURES.md",
+    "docs/INDEX.md",
+    "docs/LEGAL.md",
+    "docs/LLM-OPTIMIZED-REFERENCE.md",
+    "docs/ROADMAP.md",
+    "docs/schema.md",
+    "docs/USAGE.md",
+    "pyproject.toml",
+    "skills/build-graph/SKILL.md",
+    "skills/debug-issue/SKILL.md",
+    "skills/explore-codebase/SKILL.md",
+    "skills/refactor-safely/SKILL.md",
+    "skills/review-changes/SKILL.md",
+    "skills/review-delta/SKILL.md",
+    "skills/review-pr/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" code review graph</h1 <p align=\"center\" <strong Stop burning tokens. Start reviewing smarter.</strong </p <p align=\"center\" <a href=\"README.md\" English</a | <a href=\"README.zh CN.md\" 简体中文</a | <a href=\"README.ja JP.md\" 日本語</a | <a href=\"README.ko KR.md\" 한국어</a | <a href=\"README.hi IN.md\" हिन्दी</a </p <p align=\"center\" <a href=\"https://pypi.org/project/code review graph/\" <img src=\"https://img.shie",
+  "skillExtracts": [
+    {
+      "path": "skills/build-graph/SKILL.md",
+      "extract": "name: build graph description: Build or update the code review knowledge graph. Run this first to initialize, or let hooks keep it updated automatically. argument hint: \"[full]\" Build Graph Build or incrementally update the persistent code knowledge graph for this repository. Steps 1. Check graph status by calling the list graph stats tool MCP tool. If the graph has never been built (last updated is null), proceed wi"
+    },
+    {
+      "path": "skills/debug-issue/SKILL.md",
+      "extract": "name: Debug Issue description: Systematically debug issues using graph powered code navigation Debug Issue Use the knowledge graph to systematically trace and debug issues. Steps 1. Use semantic search nodes to find code related to the issue. 2. Use query graph with callers of and callees of to trace call chains. 3. Use get flow to see full execution paths through suspected areas. 4. Run detect changes to check if re"
+    },
+    {
+      "path": "skills/explore-codebase/SKILL.md",
+      "extract": "name: Explore Codebase description: Navigate and understand codebase structure using the knowledge graph Explore Codebase Use the code review graph MCP tools to explore and understand the codebase. Steps 1. Run list graph stats to see overall codebase metrics. 2. Run get architecture overview for high level community structure. 3. Use list communities to find major modules, then get community for details. 4. Use sema"
+    },
+    {
+      "path": "skills/refactor-safely/SKILL.md",
+      "extract": "name: Refactor Safely description: Plan and execute safe refactoring using dependency analysis Refactor Safely Use the knowledge graph to plan and execute refactoring with confidence. Steps 1. Use refactor tool with mode=\"suggest\" for community driven refactoring suggestions. 2. Use refactor tool with mode=\"dead code\" to find unreferenced code. 3. For renames, use refactor tool with mode=\"rename\" to preview all affec"
+    },
+    {
+      "path": "skills/review-changes/SKILL.md",
+      "extract": "name: Review Changes description: Perform a structured code review using change detection and impact Review Changes Perform a thorough, risk aware code review using the knowledge graph. Steps 1. Run detect changes to get risk scored change analysis. 2. Run get affected flows to find impacted execution paths. 3. For each high risk function, run query graph with pattern=\"tests for\" to check test coverage. 4. Run get im"
+    },
+    {
+      "path": "skills/review-delta/SKILL.md",
+      "extract": "name: review delta description: Review only changes since last commit using impact analysis. Token efficient delta review with automatic blast radius detection. argument hint: \"[file or function name]\" Review Delta Perform a focused, token efficient code review of only the changed code and its blast radius. Token optimization: Before starting, call get docs section tool(section name=\"review delta\") for the optimized "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AI coding tools re-read your entire codebase on every task.",
+    "code-review-graph fixes that.",
+    "It builds a structural map of your code with Tree-sitter, tracks changes incrementally, and gives your AI assistant precise context via MCP so it reads only what matters.",
+    "Restart your editor/tool after installing.",
+    "The graph cuts through the noise — 27,700+ files excluded from review context, only ~15 files actually read.",
+    "All numbers come from the automated evaluation runner against 6 real open-source repositories (13 commits total).",
+    "Reproduce with code-review-graph eval --all.",
+    "Why express shows <1x: For single-file changes in small packages, the graph context (metadata, edges, review guidance) can exceed the raw file size."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Local knowledge graph for Claude Code. Builds a persistent map of your codebase so Claude reads only what matters — 6.8× fewer tokens on reviews and up to 49× on daily coding tasks.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Code Review Graph is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "AI coding tools re-read your entire codebase on every task.",
+      "code-review-graph fixes that."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "code-review-graph",
+  "publishedAt": "2026-05-20"
+}

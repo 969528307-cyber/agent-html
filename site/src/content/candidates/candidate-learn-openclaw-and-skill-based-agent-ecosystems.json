@@ -1,0 +1,107 @@
+{
+  "id": "candidate-learn-openclaw-and-skill-based-agent-ecosystems",
+  "type": "learn",
+  "status": "published",
+  "title": "OpenClaw and Skill-based Agent Ecosystems",
+  "sourceUrl": "https://agentk.it/learn/openclaw-and-skill-based-agent-ecosystems",
+  "sourceName": "agentk.it Learn library",
+  "sourceRegistryId": "local-learn-library",
+  "sourceRegistry": {
+    "id": "local-learn-library",
+    "name": "Local Learn Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/learn",
+    "acceptRules": [
+      "must_have_topic",
+      "must_have_teaching_angle",
+      "must_link_related_tools_or_agents_when_possible"
+    ],
+    "rejectRules": [
+      "thin_summary_only",
+      "no_learning_outcome"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "Why skill/plugin ecosystems need stronger trust and compatibility mapping.",
+  "proposedCategory": [
+    "agent",
+    "agent-deep-dive"
+  ],
+  "proposedAgents": [
+    "openclaw",
+    "codex",
+    "claude-code"
+  ],
+  "extractedSignals": [
+    "Why skill/plugin ecosystems need stronger trust and compatibility mapping.",
+    "Skill ecosystems are powerful because they package reusable behavior.",
+    "Plugins and tools expand the trust boundary.",
+    "Open ecosystems need careful review before public recommendation."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Learn collector output. Review teaching angle, examples, related tools, and whether this should remain Learn content rather than a Tool or Signal.",
+  "publishedAs": "openclaw-and-skill-based-agent-ecosystems",
+  "publishedAt": "2026-05-16",
+  "learnProfile": {
+    "topic": "agent",
+    "path": "agent-deep-dive",
+    "difficulty": "intermediate",
+    "readingTime": "8 min",
+    "relatedTools": [
+      "antigravity-awesome-skills",
+      "repo-review-skill",
+      "playwright-mcp"
+    ],
+    "relatedAgents": [
+      "openclaw",
+      "codex",
+      "claude-code"
+    ]
+  },
+  "canonicalKey": "learn:title:openclaw and skill based agent ecosystems",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "learn",
+    "primaryType": "learn",
+    "whatIsIt": "OpenClaw and Skill-based Agent Ecosystems is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to agent.",
+      "Relevant to agent-deep-dive.",
+      "Why skill/plugin ecosystems need stronger trust and compatibility mapping.",
+      "Skill ecosystems are powerful because they package reusable behavior.",
+      "Plugins and tools expand the trust boundary."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

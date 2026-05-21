@@ -1,0 +1,77 @@
+{
+  "id": "dify",
+  "name": "Dify",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Production-ready platform for agentic workflow development.",
+  "description": "Production-ready platform for agentic workflow development.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/langgenius/dify",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/langgenius/dify",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/langgenius/dify#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/langgenius/dify#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/langgenius/dify/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "After running, you can access the Dify dashboard in your browser at and start the initialization process.",
+    "Build and test powerful AI workflows on a visual canvas, leveraging all the following features and beyond.",
+    "You can define agents based on LLM Function Calling or ReAct, and add pre-built or custom tools for the agent.",
+    "Dify provides 50+ built-in tools for AI agents, such as Google Search, DALL·E, Stable Diffusion and WolframAlpha.",
+    "Use our documentation for further references and more in-depth instructions.",
+    "Dify provides 50+ built-in tools for AI agents, such as Google Search, DALL·E, Stable Diff...",
+    "...libaba Cloud with Alibaba Cloud Data Management",
+    "description: Review backend code for quality, security, maintainability, and best practices based on established checklist rules."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-16T02:01:40Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/langgenius/dify",
+  "repoUrl": "https://github.com/langgenius/dify",
+  "license": "NOASSERTION",
+  "stars": 141522,
+  "lastUpdated": "2026-05-16T02:01:40Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

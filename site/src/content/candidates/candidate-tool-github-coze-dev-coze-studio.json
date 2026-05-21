@@ -1,0 +1,194 @@
+{
+  "id": "candidate-tool-github-coze-dev-coze-studio",
+  "type": "tool",
+  "status": "published",
+  "title": "Coze Studio",
+  "sourceUrl": "https://github.com/coze-dev/coze-studio",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "coze-dev",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "An AI agent development platform with all-in-one visual tools, simplifying agent creation, debugging, and deployment like never before. Coze your way to AI Agent creation.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Qwen Code"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "coze-dev",
+    "repo": "coze-studio",
+    "fullName": "coze-dev/coze-studio",
+    "stars": 20757,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agent-platform",
+      "ai-plugins",
+      "chatbot",
+      "chatbot-framework",
+      "coze",
+      "coze-platform",
+      "generative-ai",
+      "go",
+      "kouzi",
+      "low-code-ai",
+      "multimodel-ai",
+      "no-code",
+      "rag",
+      "studio",
+      "typescript",
+      "workflow"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-20T09:20:44Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh_CN.md",
+    "docs/.gitkeep",
+    "docs/nats-eventbus-integration-guide-en.md",
+    "docs/nats-eventbus-integration-guide.md",
+    "docs/oceanbase-integration-guide-en.md",
+    "docs/oceanbase-integration-guide.md",
+    "docs/pulsar-eventbus-integration-guide-en.md",
+    "docs/pulsar-eventbus-integration-guide.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "![Image](https://p9 arcosite.byteimg.com/tos cn i goo7wpa0wc/943f576df3424fa98580c2ad18946719~tplv goo7wpa0wc image.image) <div align=\"center\" <p <a href=\" what is coze studio\" Coze Studio</a • <a href=\" feature list\" Feature list</a • <a href=\" quickstart\" Quickstart</a • <a href=\" developer guide\" Developer Guide</a </p <p <img alt=\"License\" src=\"https://img.shields.io/badge/license apache2.0 blue.svg\" <img alt=\"Go",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Coze Studio is an all-in-one AI agent development tool.",
+    "Providing the latest large models and tools, various development modes and frameworks, Coze Studio offers the most convenient AI agent development environment, from development to deployment.",
+    "Provides all core technologies needed for AI agent development: prompt, RAG, plugin, workflow, enabling developers to focus on creating the core value of AI.",
+    "It is a one-stop visual development tool for AI Agents that makes creating, debugging, and deploying AI Agents unprecedentedly simple.",
+    "Coze Studio aims to lower the threshold for AI agent development and application, encouraging community co-construction and sharing for deeper exploration and practice in the AI field.",
+    "Model service Manage the model list, integrate services such as OpenAI and Volcengine",
+    "Build agent Build, publish, and manage agent . Support configuring workflows, knowledge bases, and other resources",
+    "Build apps Create and publish apps . Build business logic through workflows"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "An AI agent development platform with all-in-one visual tools, simplifying agent creation, debugging, and deployment like never before. Coze your way to AI Agent creation.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "devops",
+      "media",
+      "coding",
+      "automation",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "devops",
+    "media",
+    "coding",
+    "automation",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: platform.",
+    "Alternative capabilities: knowledge-resource, workflow.",
+    "LLM: agent-app + [workflow] — Coze Studio is a visual AI agent development platform with IDE-like features for building, debugging, and deploying agents, making it an agent-app."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Coze Studio is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with devops workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:coze-dev/coze-studio",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "coze-studio",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,187 @@
+{
+  "id": "candidate-x-cmd-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "X Cmd",
+  "sourceUrl": "https://github.com/x-cmd/x-cmd",
+  "sourceName": "GitHub",
+  "author": "x-cmd",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Shell Superpowers for AI Agents.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "x-cmd",
+    "repo": "x-cmd",
+    "fullName": "x-cmd/x-cmd",
+    "stars": 4398,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "ai",
+      "bash",
+      "cli",
+      "cloud",
+      "shell",
+      "zsh"
+    ],
+    "defaultBranch": "X",
+    "lastPushedAt": "2026-05-20T00:16:47Z"
+  },
+  "detectedFiles": [
+    "README.cn.md",
+    "README.md",
+    "mod/advise/lib/spec/SKILL.md",
+    "mod/arp/SKILL.md",
+    "mod/ccal/SKILL.md",
+    "mod/cpu/SKILL.md",
+    "mod/df/SKILL.md",
+    "mod/dns/SKILL.md",
+    "mod/font/SKILL.md",
+    "mod/kev/SKILL.md",
+    "mod/last/SKILL.md",
+    "mod/lsof/SKILL.md",
+    "mod/mankier/SKILL.md",
+    "mod/nets/SKILL.md",
+    "mod/ohmyposh/SKILL.md",
+    "mod/osv/SKILL.md",
+    "mod/ps/SKILL.md",
+    "mod/route/SKILL.md",
+    "mod/scorecard/SKILL.md",
+    "mod/shodan/SKILL.md",
+    "mod/skill/lib/x-cmd-skill/SKILL.md",
+    "mod/smart/SKILL.md",
+    "mod/starship/SKILL.md",
+    "mod/theme/SKILL.md",
+    "mod/tping/SKILL.md",
+    "mod/uname/SKILL.md",
+    "mod/uptime/SKILL.md",
+    "mod/claw/lib/data/workspace/hb/AGENTS.md",
+    "mod/claw/lib/data/workspace/msg/AGENTS.md"
+  ],
+  "readmeExtract": "English | [中文](README.cn.md) | [Source Code](https://github.com/x cmd/x cmd/tree/main/mod) ⭐ <a target=\" blank\" href=\"https://x cmd.com/v\" <img align=\"right\" alt=\"x cmd version\" src=\"https://img.shields.io/github/v/release/x cmd/x cmd?label=latest&labelColor=107fbc&color=107fbc\" </a <p align=\"center\" <a target=\" blank\" href=\"https://x cmd.com/\" <img src=\"https://user images.githubusercontent.com/40693636/218274071 92",
+  "skillExtracts": [
+    {
+      "path": "mod/arp/SKILL.md",
+      "extract": "name: x arp description: | Display ARP cache table with MAC vendor lookup and suspicious entry detection. Supports CSV, TSV, and TUI output. Dependency : This is an x cmd module. Install x cmd first (see x cmd skill for installation options). see x cmd skill for installation. license: Apache 2.0 compatibility: POSIX Shell metadata: author: Li Junhao version: \"1.0.0\" category: x cmd extension tags: [x cmd, network, ar"
+    },
+    {
+      "path": "mod/ccal/SKILL.md",
+      "extract": "name: ccal description: Chinese Calendar with Lunar Solar Conversion Overview ccal is a Chinese calendar module that provides: Gregorian and lunar calendar conversion Solar terms (节气) Traditional Chinese holidays Almanac guidance (黄历宜忌) Heavenly Stems and Earthly Branches (干支) Six day cycle (六曜) Duty star (值星) AI Agent Usage Output Modes | Mode | Command | Use Case | | | | | | YML (default in pipe) | x ccal info <dat"
+    },
+    {
+      "path": "mod/cpu/SKILL.md",
+      "extract": "name: x cpu description: | Display CPU information and detect system endianness. Shows model, cores, frequency, vendor, cache size. Dependency : This is an x cmd module. Install x cmd first (see x cmd skill for installation options). see x cmd skill for installation. license: Apache 2.0 compatibility: POSIX Shell metadata: author: Li Junhao version: \"1.0.0\" category: x cmd extension tags: [x cmd, system, cpu, hardwar"
+    },
+    {
+      "path": "mod/df/SKILL.md",
+      "extract": "name: x df description: | Enhanced df combining disk usage and mount info. Supports CSV, TSV, and TUI with filesystem type detection. Dependency : This is an x cmd module. Install x cmd first (see x cmd skill for installation options). license: Apache 2.0 compatibility: POSIX Shell metadata: author: Li Junhao version: \"1.0.2\" category: x cmd extension tags: [x cmd, system, df, disk, storage] x df Disk Free Space View"
+    },
+    {
+      "path": "mod/dns/SKILL.md",
+      "extract": "name: x dns description: | DNS configuration management utilities. View current DNS settings, list available DNS servers, and refresh DNS cache on the system. Dependency : This is an x cmd module. Install x cmd first (see x cmd skill for installation options). see x cmd skill for installation. license: Apache 2.0 compatibility: POSIX Shell metadata: author: Li Junhao version: \"1.0.0\" category: x cmd extension tags: ["
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Shell Superpowers for AI Agents",
+    "X-CMD (pronounced as \"X Command\") is a modern toolkit for POSIX shell (bash, zsh, ash, dash) — designed to make shell as powerful as Python's standard library.",
+    "With just shell + curl, access OpenAI, Gemini, DeepSeek, Zhipu, MiniMax.",
+    "Our pure-shell agent — under 2MB — delivers capabilities comparable to OpenClaw and Claude Code.",
+    "Optimized for Agents — After 5 years, we discovered shell's sweet spot: AI agents.",
+    "Where network latency and LLM throughput dominate, shell's flexibility, native system integration, and tool-chaining shine.",
+    "600+ CLI tools (like WebAssembly)",
+    "x <tool> or x env use <tool>"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Shell Superpowers for AI Agents.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "devops",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "devops",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "X Cmd is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "Shell Superpowers for AI Agents"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "x-cmd",
+  "publishedAt": "2026-05-20"
+}

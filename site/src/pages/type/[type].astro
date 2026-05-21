@@ -1,63 +1,439 @@
 ---
 import { getCollection } from "astro:content";
-import FilterSidebar from "../../components/FilterSidebar.astro";
-import ToolListItem from "../../components/ToolListItem.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { filterToolsByType, sortToolsByNewest } from "../../lib/filters";
 
 export function getStaticPaths() {
-  return ["skill", "mcp", "cli", "workflow"].map((type) => ({
+  return ["skill", "mcp", "cli", "workflow", "agent-app", "agent-framework", "sdk"].map((type) => ({
     params: { type },
   }));
 }
 
 const { type } = Astro.params;
-const tools = sortToolsByNewest(filterToolsByType(await getCollection("tools"), type));
+const tools = sortToolsByNewest(filterToolsByType(await getCollection("tools"), type)).map((tool) => tool.data);
+
+// ── Pagination ──
+const perPage = 20;
+const page = Math.max(1, Number(Astro.url.searchParams.get("page")) || 1);
+const totalPages = Math.ceil(tools.length / perPage);
+const pageTools = tools.slice((page - 1) * perPage, page * perPage);
+
+const allTools = (await getCollection("tools")).filter((tool) => tool.data.status === "published").map((tool) => tool.data);
+const typeCounts = allTools.reduce<Record<string, number>>((counts, tool) => {
+  counts[tool.type] = (counts[tool.type] ?? 0) + 1;
+  return counts;
+}, {});
 const title = `${type?.toUpperCase()} tools`;
+const typeCopy = {
+  mcp: "MCP servers expose external systems to agents. Use this page to compare source quality, categories, and compatible agent surfaces.",
+  skill: "Skills package repeatable agent capabilities. Use this page to inspect what each skill helps with before opening the source.",
+  cli: "CLI tools run from terminal or developer workflows. Use this page to compare command-line agent tooling without leaving the directory.",
+  workflow: "Workflows connect multi-step automation, agent actions, and operational routines. Use this page to find automation-oriented tools.",
+};
 ---
 
 <BaseLayout title={`${title} - agentk.it`} description={`Browse ${type} tools for AI agents.`}>
-  <section class="tools-layout page">
-    <FilterSidebar activeType={type} />
-    <div>
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">/type/{type}</div>
-          <h1>{title}</h1>
-        </div>
-        <p>
-          Type pages focus the directory on one tool format while keeping related
-          agent and category context nearby.
-        </p>
+  <section class="tools-page page">
+    <section class="tools-hero compact">
+      <div>
+        <div class="route-chip"><span></span>/type/{type}</div>
+        <h1>{title}</h1>
+        <p>{typeCopy[type as keyof typeof typeCopy] ?? "Browse one technical tool format with source and compatibility context."}</p>
       </div>
+      <aside class="type-stats">
+        {["mcp", "skill", "cli", "workflow", "agent-app", "agent-framework", "sdk"].map((item) => (
+          <a class={item === type ? "active" : ""} href={`/type/${item}`}>
+            <strong>{typeCounts[item] ?? 0}</strong>
+            <span>{item}</span>
+          </a>
+        ))}
+      </aside>
+    </section>
 
-      <div class="list">
-        {tools.map((tool) => <ToolListItem tool={tool.data} />)}
+    <section class="tool-shell">
+      <aside class="filters">
+        <strong>Refine tools</strong>
+        <a href="/tools">All tools</a>
+        <a class={type === "mcp" ? "active" : ""} href="/type/mcp">MCP servers</a>
+        <a class={type === "skill" ? "active" : ""} href="/type/skill">Skills</a>
+        <a class={type === "cli" ? "active" : ""} href="/type/cli">CLI tools</a>
+        <a class={type === "workflow" ? "active" : ""} href="/type/workflow">Workflows</a>
+        <a class={type === "agent-app" ? "active" : ""} href="/type/agent-app">Agent Apps</a>
+        <a class={type === "agent-framework" ? "active" : ""} href="/type/agent-framework">Frameworks</a>
+        <a class={type === "sdk" ? "active" : ""} href="/type/sdk">SDKs</a>
+        <a href="/agents">Agent compatibility</a>
+        <a href="/signals">Source signals</a>
+      </aside>
+
+      <div class="tool-list">
+        {pageTools.map((tool) => (
+          <article class="tool-row">
+            <div class="tool-main">
+              <div class="tags">
+                <span>{tool.type}</span>
+                {(tool.category || []).slice(0, 3).map((category) => <span>{category}</span>)}
+              </div>
+              <h2><a href={`/item/${tool.id}`}>{tool.name}</a></h2>
+              <p>{tool.summary}</p>
+              <div class="agent-line">
+                {(tool.compatibleAgents || []).slice(0, 4).map((agent) => <span>{agent}</span>)}
+              </div>
+            </div>
+            <div class="metrics">
+              <div>
+                <strong>{tool.stars ? tool.stars.toLocaleString() : "linked"}</strong>
+                <span>stars</span>
+              </div>
+              <div>
+                <strong>{tool.license || "source"}</strong>
+                <span>license</span>
+              </div>
+              <div>
+                <strong>{tool.lastUpdated ? "fresh" : "source"}</strong>
+                <span>status</span>
+              </div>
+              <a href={`/item/${tool.id}`}>Open</a>
+            </div>
+          </article>
+        ))}
       </div>
-    </div>
+    </section>
+
+    {totalPages > 1 && (
+      <nav class="pagination">
+        {page > 1 && <a href={`?page=${page - 1}`}>← Previous</a>}
+        {Array.from({ length: totalPages }, (_, i) => i + 1)
+          .filter(n => n === 1 || n === totalPages || Math.abs(n - page) <= 2)
+          .map((n, i, arr) => (
+            <>
+              {i > 0 && arr[i - 1] !== n - 1 && <span>…</span>}
+              <a class:list={[{ active: n === page }]} href={`?page=${n === 1 ? '' : n}`}>
+                {n}
+              </a>
+            </>
+          ))}
+        {page < totalPages && <a href={`?page=${page + 1}`}>Next →</a>}
+      </nav>
+    )}
+  </section>
   </section>
 </BaseLayout>
 
 <style>
-  .tools-layout {
+  :global(body) {
+    background:
+      radial-gradient(circle at 12% 0%, rgb(134 174 255 / 0.18), transparent 30rem),
+      radial-gradient(circle at 90% 8%, rgb(229 183 106 / 0.13), transparent 28rem),
+      radial-gradient(circle at 58% 86%, rgb(80 220 160 / 0.1), transparent 34rem),
+      #080b10;
+  }
+
+  .tools-page {
+    padding: 42px 0 72px;
+  }
+
+  .tools-hero {
     display: grid;
-    grid-template-columns: 250px minmax(0, 1fr);
-    gap: 24px;
-    padding: 54px 0;
+    grid-template-columns: minmax(0, 1fr) 390px;
+    gap: 18px;
+    align-items: stretch;
+  }
+
+  .tools-hero.compact > div {
+    padding: clamp(24px, 3.2vw, 38px);
+  }
+
+  .tools-hero > div,
+  .type-stats,
+  .filters,
+  .tool-row {
+    border: 1px solid rgb(246 242 234 / 0.11);
+    background:
+      linear-gradient(180deg, rgb(246 242 234 / 0.07), rgb(246 242 234 / 0.026)),
+      rgb(12 17 24 / 0.82);
+    box-shadow: 0 30px 100px rgb(0 0 0 / 0.32);
+    backdrop-filter: blur(30px);
+  }
+
+  .tools-hero > div {
+    border-radius: 36px;
+  }
+
+  .route-chip {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 9px 12px;
+    color: #d9e6ff;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    border: 1px solid rgb(134 174 255 / 0.26);
+    border-radius: 999px;
+    background: rgb(134 174 255 / 0.1);
+  }
+
+  .route-chip span {
+    width: 8px;
+    height: 8px;
+    background: #e5b76a;
+    border-radius: 999px;
   }
 
   h1 {
-    font-size: clamp(32px, 4vw, 54px);
+    max-width: 850px;
+    margin-top: 20px;
+    color: #f6f2ea;
+    font-family: var(--sans);
+    font-size: clamp(36px, 4.8vw, 64px);
+    font-weight: 790;
+    line-height: 0.94;
+    letter-spacing: -0.08em;
   }
 
-  .list {
+  .tools-hero p {
+    max-width: 680px;
+    margin-top: 16px;
+    color: #b1b8c7;
+    font-size: 15px;
+    line-height: 1.66;
+  }
+
+  .type-stats {
     display: grid;
-    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding: 18px;
+    border-radius: 36px;
   }
 
-  @media (max-width: 960px) {
-    .tools-layout {
+  .type-stats a {
+    min-height: 105px;
+    padding: 15px;
+    border: 1px solid rgb(134 174 255 / 0.14);
+    border-radius: 22px;
+    background: rgb(246 242 234 / 0.035);
+  }
+
+  .type-stats a.active {
+    border-color: rgb(229 183 106 / 0.36);
+    background: rgb(229 183 106 / 0.08);
+  }
+
+  .type-stats strong {
+    display: block;
+    color: #e5b76a;
+    font-size: 32px;
+    letter-spacing: -0.07em;
+  }
+
+  .type-stats span {
+    color: #9aa4b6;
+    text-transform: uppercase;
+  }
+
+  .tool-shell {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 16px;
+    margin-top: 22px;
+  }
+
+  .filters {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: start;
+    padding: 18px;
+    border-radius: 28px;
+  }
+
+  .filters strong {
+    margin-bottom: 6px;
+    color: #f6f2ea;
+  }
+
+  .filters a {
+    min-height: 40px;
+    padding: 11px 12px;
+    color: #aab4c4;
+    border: 1px solid rgb(246 242 234 / 0.09);
+    border-radius: 999px;
+    background: rgb(246 242 234 / 0.035);
+  }
+
+  .filters a.active {
+    color: #0a0e13;
+    background: #8fb7ff;
+  }
+
+  .tool-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .tool-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 270px;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .tags,
+  .agent-line {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .tags span,
+  .agent-line span {
+    display: inline-flex;
+    padding: 7px 9px;
+    color: #c8d0dd;
+    font-size: 11px;
+    font-weight: 850;
+    text-transform: uppercase;
+    border: 1px solid rgb(246 242 234 / 0.1);
+    border-radius: 999px;
+    background: rgb(246 242 234 / 0.05);
+  }
+
+  .tool-row h2 {
+    margin-top: 12px;
+    color: #f6f2ea;
+    font-family: var(--sans);
+    font-size: 22px;
+    letter-spacing: -0.055em;
+  }
+
+  .tool-row h2 a:hover {
+    color: #8fb7ff;
+  }
+
+  .tool-row p {
+    display: -webkit-box;
+    margin-top: 8px;
+    overflow: hidden;
+    color: #9aa4b6;
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .agent-line {
+    margin-top: 12px;
+  }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    align-content: center;
+  }
+
+  .metrics div {
+    padding: 10px;
+    border: 1px solid rgb(246 242 234 / 0.08);
+    border-radius: 16px;
+    background: rgb(246 242 234 / 0.035);
+  }
+
+  .metrics strong {
+    display: block;
+    overflow: hidden;
+    color: #e5b76a;
+    font-size: 15px;
+    letter-spacing: -0.035em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .metrics span {
+    color: #8f98aa;
+    font-size: 11px;
+  }
+
+  .metrics a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / -1;
+    min-height: 40px;
+    color: #0a0e13;
+    font-weight: 850;
+    border-radius: 999px;
+    background: #e5b76a;
+  }
+
+  @media (max-width: 1100px) {
+    .tools-hero,
+    .tool-shell {
       grid-template-columns: 1fr;
     }
+
+    .filters {
+      position: static;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .tools-page {
+      padding-top: 28px;
+    }
+
+    .tools-hero > div,
+    .type-stats,
+    .tool-row,
+    .filters {
+      border-radius: 26px;
+    }
+
+    .tool-row,
+    .metrics {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .pagination a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0 10px;
+    color: #aab4c4;
+    border: 1px solid rgb(246 242 234 / 0.1);
+    border-radius: 12px;
+    background: rgb(246 242 234 / 0.04);
+  }
+
+  .pagination a.active {
+    color: #0a0e13;
+    background: #e5b76a;
+    border-color: #e5b76a;
+  }
+
+  .pagination a:hover:not(.active) {
+    border-color: rgb(134 174 255 / 0.3);
+  }
+
+  .pagination span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 4px;
+    color: #5a6377;
   }
 </style>

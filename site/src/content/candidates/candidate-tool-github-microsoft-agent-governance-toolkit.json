@@ -1,0 +1,206 @@
+{
+  "id": "candidate-tool-github-microsoft-agent-governance-toolkit",
+  "type": "tool",
+  "status": "published",
+  "title": "Agent Governance Toolkit",
+  "sourceUrl": "https://github.com/microsoft/agent-governance-toolkit",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "microsoft",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.",
+  "proposedCategory": [
+    "security"
+  ],
+  "proposedAgents": [
+    "Codex"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "microsoft",
+    "repo": "agent-governance-toolkit",
+    "fullName": "microsoft/agent-governance-toolkit",
+    "stars": 1572,
+    "license": "MIT",
+    "topics": [
+      "agent-framework",
+      "ai-agents",
+      "ai-safety",
+      "compliance",
+      "governance",
+      "microsoft",
+      "owasp",
+      "policy-engine",
+      "python",
+      "security",
+      "trust",
+      "zero-trust"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T02:03:38Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/a365-agt-reference-architecture.md",
+    "docs/ADOPTERS.md",
+    "docs/adr/0000-template.md",
+    "docs/adr/0001-use-ed25519-for-agent-identity.md",
+    "docs/adr/0002-use-four-execution-rings-for-runtime-privilege.md",
+    "docs/adr/0003-keep-iatp-handshake-within-200ms.md",
+    "docs/adr/0004-keep-policy-evaluation-deterministic.md",
+    "docs/adr/0005-add-liveness-attestation-to-trust-handshake.md",
+    "docs/adr/0006-constitutional-constraint-layer-as-community-extension.md",
+    "docs/adr/0007-external-jwks-federation-for-cross-org-identity.md",
+    "docs/adr/0008-cross-org-policy-federation.md",
+    "docs/adr/0009-rfc-9334-rats-architecture-alignment.md",
+    "docs/adr/0010-tee-keystore-sevsnp-attestation.md",
+    "docs/adr/0011-additive-policy-check-contract.md",
+    "docs/adr/0012-cost-governance-observability-policies.md",
+    "docs/adr/0013-fail-closed-on-policy-evaluation-errors.md",
+    "docs/adr/0014-parent-deny-rules-immutable-in-merge.md",
+    "docs/adr/0015-pluggable-external-policy-backends.md",
+    "docs/adr/0016-trust-ceiling-propagation-for-delegation.md",
+    "docs/adr/index.md",
+    "docs/adr/README.md",
+    "docs/AGENTS.md",
+    "docs/ARCHITECTURE.md",
+    "docs/assets/agent-governance-toolkit.svg",
+    "docs/assets/readme-banner.svg",
+    "docs/BENCHMARKS.md",
+    "docs/benchmarks/charts/latency_comparison.png",
+    "docs/benchmarks/charts/overhead_breakdown.png",
+    "docs/benchmarks/governance-overhead.md",
+    "docs/case-studies/sample-ecommerce-customer-service.md",
+    "docs/case-studies/sample-financial-trading-compliance.md",
+    "docs/case-studies/sample-healthcare-prior-authorization.md",
+    "docs/case-studies/TEMPLATE.md",
+    "docs/COMMUNITY.md",
+    "docs/COMPARISON.md",
+    "docs/compliance/atf-conformance-assessment.md",
+    "docs/compliance/cis-controls-v81-mapping.md",
+    "docs/compliance/data-provenance-model.md",
+    "docs/compliance/eu-ai-act-checklist.md"
+  ],
+  "readmeExtract": "🌍 [English](/README.md) | [日本語](./docs/i18n/README.ja.md) | [简体中文](./docs/i18n/README.zh CN.md) | [한국어](./docs/i18n/README.ko.md) ![Agent Governance Toolkit](docs/assets/readme banner.svg) Agent Governance Toolkit <p align=\"center\" <strong 📖 <a href=\"https://microsoft.github.io/agent governance toolkit\" Documentation Site</a · 🚀 <a href=\" get started in 90 seconds\" Quick Start</a · 📦 <a href=\"https://pypi.org/pro",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Public Preview — Microsoft-signed, production-quality releases.",
+    "Runtime governance for AI agents -- deterministic policy enforcement, zero-trust identity, execution sandboxing, and SRE for autonomous agents.",
+    "Covers all 10 OWASP Agentic risks with 13,000+ tests.",
+    "Works with any stack — AWS Bedrock, Google ADK, Azure AI, LangChain, CrewAI, AutoGen, OpenAI Agents, and 20+ more.",
+    "What it does: Sits between your agent framework and the actions agents take.",
+    "Every tool call, resource access, and inter-agent message is evaluated against policy before execution.",
+    "What it doesn't do: This is not a prompt guardrail or content moderation tool.",
+    "It governs agent actions, not LLM inputs/outputs."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"security\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "security",
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "security",
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 6,
+    "agent-framework": 8,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Workflow/automation/orchestration language detected.",
+    "Agent framework language detected.",
+    "Detected scope: framework.",
+    "Alternative capabilities: workflow.",
+    "LLM: sdk + [] — The repository provides a runtime governance library (SDK) for AI agent policy enforcement, not a CLI, workflow, or MCP server."
+  ],
+  "classificationAlternatives": [
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Agent Governance Toolkit is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with docs workflows.",
+      "Relevant to security.",
+      "Public Preview — Microsoft-signed, production-quality releases.",
+      "Runtime governance for AI agents -- deterministic policy enforcement, zero-trust identity, execution sandboxing, and SRE for autonomous agents."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:microsoft/agent-governance-toolkit",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-governance-toolkit",
+  "publishedAt": "2026-05-18"
+}

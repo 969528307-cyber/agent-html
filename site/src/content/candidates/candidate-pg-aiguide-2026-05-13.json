@@ -1,0 +1,227 @@
+{
+  "id": "candidate-pg-aiguide-2026-05-13",
+  "type": "tool",
+  "status": "published",
+  "title": "Pg Aiguide",
+  "sourceUrl": "https://github.com/timescale/pg-aiguide",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "timescale",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate better PostgreSQL code.",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "timescale",
+    "repo": "pg-aiguide",
+    "fullName": "timescale/pg-aiguide",
+    "stars": 1723,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "ai-coding",
+      "claude-code-plugin",
+      "claude-code-plugins",
+      "claude-code-plugins-marketplace",
+      "claude-marketplace",
+      "claude-plugin",
+      "claude-skills",
+      "docs",
+      "documentation",
+      "mcp",
+      "mcp-server",
+      "postgres",
+      "postgresql",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T19:13:48Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "skills/design-postgis-tables/SKILL.md",
+    "skills/design-postgres-tables/SKILL.md",
+    "skills/find-hypertable-candidates/SKILL.md",
+    "skills/migrate-postgres-tables-to-hypertables/SKILL.md",
+    "skills/pgvector-semantic-search/SKILL.md",
+    "skills/postgres-hybrid-text-search/SKILL.md",
+    "skills/postgres/SKILL.md",
+    "skills/setup-timescaledb-hypertables/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "pg aiguide AI optimized PostgreSQL expertise for coding assistants pg aiguide helps AI coding tools write dramatically better PostgreSQL code. It provides: Semantic search across the official PostgreSQL manual (version aware) AI optimized “skills” — curated, opinionated Postgres best practices used automatically by AI agents Extension ecosystem docs , starting with TimescaleDB, with more coming soon Use it as: Agent ",
+  "skillExtracts": [
+    {
+      "path": "skills/design-postgis-tables/SKILL.md",
+      "extract": "name: design postgis tables description: Comprehensive PostGIS spatial table design reference covering geometry types, coordinate systems, spatial indexing, and performance patterns for location based applications license: Apache 2.0 compatibility: Requires PostgreSQL 15+ with the PostGIS extension metadata: author: tigerdata PostGIS Spatial Table Design Before You Start (5 Questions) 1. What is the geographic scope "
+    },
+    {
+      "path": "skills/design-postgres-tables/SKILL.md",
+      "extract": "name: design postgres tables description: | Use this skill for general PostgreSQL table design. Trigger when user asks to: Design PostgreSQL tables, schemas, or data models when creating new tables and when modifying existing ones. Choose data types, constraints, or indexes for PostgreSQL Create user tables, order tables, reference tables, or JSONB schemas Understand PostgreSQL best practices for normalization, const"
+    },
+    {
+      "path": "skills/find-hypertable-candidates/SKILL.md",
+      "extract": "name: find hypertable candidates description: | Use this skill to analyze an existing PostgreSQL database and identify which tables should be converted to Timescale/TimescaleDB hypertables. Trigger when user asks to: Analyze database tables for hypertable conversion potential Identify time series or event tables in an existing schema Evaluate if a table would benefit from Timescale/TimescaleDB Audit PostgreSQL tables"
+    },
+    {
+      "path": "skills/migrate-postgres-tables-to-hypertables/SKILL.md",
+      "extract": "name: migrate postgres tables to hypertables description: | Use this skill to migrate identified PostgreSQL tables to Timescale/TimescaleDB hypertables with optimal configuration and validation. Trigger when user asks to: Migrate or convert PostgreSQL tables to hypertables Execute hypertable migration with minimal downtime Plan blue green migration for large tables Validate hypertable migration success Configure comp"
+    },
+    {
+      "path": "skills/pgvector-semantic-search/SKILL.md",
+      "extract": "name: pgvector semantic search description: | Use this skill for setting up vector similarity search with pgvector for AI/ML embeddings, RAG applications, or semantic search. Trigger when user asks to: Store or search vector embeddings in PostgreSQL Set up semantic search, similarity search, or nearest neighbor search Create HNSW or IVFFlat indexes for vectors Implement RAG (Retrieval Augmented Generation) with Postg"
+    },
+    {
+      "path": "skills/postgres-hybrid-text-search/SKILL.md",
+      "extract": "name: postgres hybrid text search description: | Use this skill to implement hybrid search combining BM25 keyword search with semantic vector search using Reciprocal Rank Fusion (RRF). Trigger when user asks to: Combine keyword and semantic search Implement hybrid search or multi modal retrieval Use BM25/pg textsearch with pgvector together Implement RRF (Reciprocal Rank Fusion) for search Build search that handles b"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "pg-aiguide helps AI coding tools write dramatically better PostgreSQL code.",
+    "Semantic search across the official PostgreSQL manual (version-aware)",
+    "AI-optimized “skills” — curated, opinionated Postgres best practices used automatically by AI agents",
+    "Extension ecosystem docs, starting with TimescaleDB, with more coming soon",
+    "Agent Skills via npx skills — works with Claude Code, Cursor, Codex, Gemini CLI, and 40+ other agents",
+    "a public MCP server that can be used with any AI coding agent, or",
+    "a Claude Code plugin optimized for use with Claude's native skill support.",
+    "AI coding tools often generate Postgres code that is:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate better PostgreSQL code.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "search",
+      "docs",
+      "database",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "search",
+    "docs",
+    "database",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 15,
+    "cli": 7,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "GitHub topics tag as skills.",
+    "Skill-collection or agent-rules language in description.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Coding agent detected with CLI context.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: mcp, cli, knowledge-resource.",
+    "LLM: mcp + [mcp, skill] — It provides an MCP server to expose PostgreSQL skills and documentation to AI coding agents, also packaged as Claude skills."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "cli",
+    "knowledge-resource"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Pg Aiguide is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with database workflows.",
+      "Helps with coding workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:timescale/pg-aiguide",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pg-aiguide",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

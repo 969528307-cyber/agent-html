@@ -1,0 +1,182 @@
+{
+  "id": "candidate-babysitter-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Babysitter",
+  "sourceUrl": "https://github.com/a5c-ai/babysitter",
+  "sourceName": "GitHub",
+  "author": "a5c-ai",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Babysitter enforces obedience on agentic workforces and enables them to manage extremely complex tasks and workflows through deterministic, hallucination-free self-orchestration",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "a5c-ai",
+    "repo": "babysitter",
+    "fullName": "a5c-ai/babysitter",
+    "stars": 792,
+    "license": "MIT",
+    "topics": [
+      "agent-orchestration",
+      "agent-skills",
+      "agentic-ai",
+      "agentic-workflow",
+      "ai-agents",
+      "ai-automation",
+      "babysitter",
+      "claude-code",
+      "claude-code-skills",
+      "claude-skills",
+      "codex-plugin",
+      "codex-skills",
+      "trustworthy-ai",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T19:07:22Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/articles/Hybrid Agentic Systems_ Two-loops Control Plane Guide.md",
+    "docs/assimilation/harness/claude-code-integration.md",
+    "docs/assimilation/harness/generic-harness-guide.md",
+    "docs/cli-examples.md",
+    "docs/plugins.md",
+    "docs/plugins/cli-reference.md",
+    "docs/plugins/marketplace-format.md",
+    "docs/plugins/migration-guide.md",
+    "docs/plugins/plugin-author-guide.md",
+    "docs/reference/babysitter_cli_surface_spec.md",
+    "docs/reference/COMMANDS_AND_HOOKS_VERIFICATION_2026-01-20.md",
+    "docs/reference/ERROR_CODES.md",
+    "docs/reference/GENERALIZED_HOOK_SYSTEM_IMPLEMENTATION.md",
+    "docs/reference/GETTING_STARTED.md",
+    "docs/reference/HOOK_DRIVEN_ORCHESTRATION.md",
+    "docs/reference/HOOK_ORCHESTRATION_EXAMPLES.md",
+    "docs/reference/HOOK_ORCHESTRATION_SUMMARY.md",
+    "docs/reference/IN_SESSION_LOOP_MECHANISM.md",
+    "docs/reference/LEGACY_AUTO_RUN_REMOVAL_2026-01-19.md",
+    "docs/reference/NATIVE_HOOKS_INTEGRATION_2026-01-19.md",
+    "docs/reference/PACKAGING_PROCESSES_WITH_SKILLS.md",
+    "docs/reference/PROCESS_EXAMPLES_WITH_AGENT_SKILL_INVOCATION.md",
+    "docs/reference/PROCESS_PACKAGING_IMPLEMENTATION_2026-01-20.md",
+    "docs/reference/PROCESS_SELECTION.md",
+    "docs/reference/STANDARD_PROCESS_LIBRARY_2026-01-20.md",
+    "docs/release-pipeline.md",
+    "docs/run-history-insights.md",
+    "docs/user-guide/01-discovery-analysis.md",
+    "docs/user-guide/02-audience-personas.md",
+    "docs/user-guide/03-information-architecture.md",
+    "docs/user-guide/BEST-PRACTICES.md",
+    "docs/user-guide/features/architecture-overview.md",
+    "docs/user-guide/features/best-practices.md",
+    "docs/user-guide/features/breakpoints.md",
+    "docs/user-guide/features/hooks.md",
+    "docs/user-guide/features/journal-system.md",
+    "docs/user-guide/features/parallel-execution.md",
+    "docs/user-guide/features/process-definitions.md",
+    "docs/user-guide/features/process-library.md"
+  ],
+  "readmeExtract": "<div align=\"center\" Babysitter https://a5c.ai [![npm version](https://img.shields.io/npm/v/@a5c ai/babysitter sdk.svg)](https://www.npmjs.com/package/@a5c ai/babysitter sdk) [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub issues](https://img.shields.io/github/issues/a5c ai/babysitter.svg)](https://github.com/a5c ai/babysitter/issues) [![GitHub star",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Enforce obedience to agentic workforces.",
+    "Manage extremely complex workflows through deterministic, hallucination-free self-orchestration.",
+    "Getting Started Documentation Community",
+    "Babysitter enforces obedience to agentic workforces, enabling them to manage extremely complex tasks and workflows through deterministic, hallucination-free self-orchestration.",
+    "Define your workflow in code - Babysitter enforces every step, ensures quality gates pass before progression, requires human approval at breakpoints, and records every decision in an immutable journal.",
+    "Your agents do exactly what the process permits, nothing more.",
+    "Claude Code: Latest version (docs)",
+    "Restart Claude Code, then type /skills to verify \"babysit\" appears."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Babysitter enforces obedience on agentic workforces and enables them to manage extremely complex tasks and workflows through deterministic, hallucination-free self-orchestration",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Babysitter is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "Enforce obedience to agentic workforces.",
+      "Manage extremely complex workflows through deterministic, hallucination-free self-orchestration."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "babysitter",
+  "publishedAt": "2026-05-20"
+}

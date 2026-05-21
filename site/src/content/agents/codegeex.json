@@ -4,15 +4,104 @@
   "status": "published",
   "region": "china",
   "vendor": "Zhipu AI",
-  "summary": "A Chinese coding assistant commonly used through IDE extensions and developer tooling.",
-  "bestFor": ["IDE coding assistance", "Chinese developer teams", "Code completion"],
-  "interfaceType": ["ide"],
+  "summary": "A China-origin IDE coding assistant focused on completion, explanation, and editor-side developer assistance.",
+  "bestFor": [
+    "IDE coding assistance",
+    "Chinese developer teams",
+    "Code completion and explanation",
+    "Multilingual code generation"
+  ],
+  "interfaceType": [
+    "ide"
+  ],
   "documentationUrl": "https://codegeex.cn/",
   "supportsMcp": false,
   "supportsSkills": false,
   "supportsCli": false,
   "supportsWorkflows": true,
-  "toolTypes": { "skills": 2, "mcps": 1, "cli": 1, "workflows": 6 },
-  "relatedLearn": ["how-to-choose-agent"],
-  "lastChecked": "2026-05-11"
+  "toolTypes": {
+    "skills": 2,
+    "mcps": 1,
+    "cli": 1,
+    "workflows": 6
+  },
+  "relatedLearn": [
+    "how-to-choose-agent"
+  ],
+  "lastChecked": "2026-05-12",
+  "overview": "CodeGeeX is represented on agentk.it as a current China-origin IDE coding assistant, with evidence anchored to the official product site rather than stale historical repositories. Its role is editor-side assistance: code completion, explanation, translation, and everyday development support for Chinese-language teams. It should not be described as a full autonomous agent, MCP ecosystem, or skill runtime unless current official sources prove those capabilities.",
+  "strengths": [
+    {
+      "title": "IDE coding assistance",
+      "body": "Most useful for code completion, generation, explanation, and everyday developer assistance inside editor workflows."
+    },
+    {
+      "title": "Chinese developer fit",
+      "body": "Relevant for Chinese-language developer teams and users who want domestic AI coding tooling coverage."
+    },
+    {
+      "title": "Current product evidence only",
+      "body": "The page should rely on the live official product surface for current capabilities, not old research repositories that have not been maintained recently."
+    },
+    {
+      "title": "Assistant rather than orchestration layer",
+      "body": "The safest positioning is an IDE assistant category, which avoids overstating unsupported MCP, skills, or autonomous workflow claims."
+    }
+  ],
+  "extensionModel": [
+    {
+      "label": "IDE",
+      "status": "native",
+      "body": "Treat IDE integration as the primary public surface for CodeGeeX recommendations.",
+      "sourceUrl": "https://codegeex.cn/"
+    },
+    {
+      "label": "Official product surface",
+      "status": "native",
+      "body": "Use the current official CodeGeeX product site as the evidence source for public capability descriptions.",
+      "sourceUrl": "https://codegeex.cn/"
+    },
+    {
+      "label": "MCP",
+      "status": "unknown",
+      "body": "No MCP compatibility should be shown unless a current official source or reviewed candidate proves it."
+    },
+    {
+      "label": "Skills",
+      "status": "unknown",
+      "body": "Do not map general agent skills to CodeGeeX without source evidence."
+    }
+  ],
+  "recommendedStacks": [
+    {
+      "title": "IDE assistant baseline",
+      "body": "Use CodeGeeX pages to collect editor productivity workflows, code-completion notes, and Chinese-language adoption material.",
+      "toolIds": []
+    },
+    {
+      "title": "Signals candidate source",
+      "body": "High-quality Chinese articles about CodeGeeX can feed the translation candidate pool after permission review.",
+      "toolIds": [
+        "translation-signal-flow"
+      ]
+    },
+    {
+      "title": "Domestic AI coding comparison",
+      "body": "Use CodeGeeX as one comparison point against Qwen Code, Kimi Code, and Trae when users evaluate China-origin coding tools.",
+      "toolIds": []
+    }
+  ],
+  "limitations": [
+    "Do not overstate MCP, skill, CLI, or autonomous-agent support without official evidence.",
+    "Do not use the older THUDM CodeGeeX GitHub repository as current compatibility evidence because it has not been maintained recently.",
+    "Installation details should link to official pages instead of being mirrored.",
+    "Because the main surface is IDE assistance, compatibility mapping should not imply the same workflow depth as terminal agents."
+  ],
+  "sources": [
+    {
+      "label": "CodeGeeX official site",
+      "url": "https://codegeex.cn/",
+      "kind": "official"
+    }
+  ]
 }

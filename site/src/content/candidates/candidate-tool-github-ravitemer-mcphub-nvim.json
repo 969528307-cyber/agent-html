@@ -1,0 +1,176 @@
+{
+  "id": "candidate-tool-github-ravitemer-mcphub-nvim",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcphub.nvim",
+  "sourceUrl": "https://github.com/ravitemer/mcphub.nvim",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "ravitemer",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "An MCP client for Neovim that seamlessly integrates MCP servers into your editing workflow with an intuitive interface for managing, testing, and using MCP servers with your favorite chat plugins.",
+  "proposedCategory": [
+    "communication"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "ravitemer",
+    "repo": "mcphub.nvim",
+    "fullName": "ravitemer/mcphub.nvim",
+    "stars": 1766,
+    "license": "MIT",
+    "topics": [
+      "avante",
+      "chatgpt",
+      "chatplugin",
+      "claude-ai",
+      "codecompanion",
+      "llm",
+      "mcp",
+      "mcp-client",
+      "mcp-hub",
+      "mcp-server",
+      "mcp-servers",
+      "model-context-protocol",
+      "neovim",
+      "neovim-plugin",
+      "nvim",
+      "nvim-plugin"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-01-18T10:00:29Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<div align=\"center\" markdown=\"1\" <sup Special thanks to:</sup <br <br <a href=\"https://www.warp.dev/mcp hub nvim\" <img alt=\"Warp sponsorship\" src=\"https://github.com/user attachments/assets/fae9c70d 51de 43fa af65 c82228ba67f9\" </a [The Intelligent Terminal](https://www.warp.dev/mcp hub nvim) [Run mcphub.nvim in Warp today](https://www.warp.dev/mcp hub nvim)<br </div <hr <div align=\"center\" markdown=\"1\" <h1 <img widt",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Run mcphub.nvim in Warp today.",
+    "MCP Hub is a MCP client for neovim that seamlessly integrates MCP (Model Context Protocol) servers into your editing workflow.",
+    "It provides an intuitive interface for managing, testing, and using MCP servers with your favorite chat plugins.",
+    "🔔 Tool List Changed ✅ Real-time updates",
+    "Avante.nvim ✅ Tools, resources, resourceTemplates, prompts(as slashcommands)",
+    "CodeCompanion.nvim ✅ Tools, resources, templates, prompts (as slashcommands), 🖼 image responses",
+    "CopilotChat.nvim ✅ Tools, resources, function calling support",
+    "Server Discovery ✅ Browse from verified MCP servers"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "An MCP client for Neovim that seamlessly integrates MCP servers into your editing workflow with an intuitive interface for managing, testing, and using MCP servers with your favorite chat plugins.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "testing",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "testing",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: workflow.",
+    "LLM: single-tool + [mcp] — It is an MCP client for Neovim, a single-purpose plugin that integrates MCP servers into the editor, but not a full agent application or standalone CLI."
+  ],
+  "classificationAlternatives": [
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcphub.nvim is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with testing workflows.",
+      "Helps with automation workflows.",
+      "Relevant to communication.",
+      "Run mcphub.nvim in Warp today."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:ravitemer/mcphub.nvim",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-14",
+  "reviewedBy": "local-review",
+  "publishedAs": "mcphub-nvim",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

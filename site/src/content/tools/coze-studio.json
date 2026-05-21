@@ -1,0 +1,76 @@
+{
+  "id": "coze-studio",
+  "name": "Coze Studio",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "An AI agent development platform with all-in-one visual tools, simplifying agent creation, debugging, and deployment like never before. Coze your way to AI Agent creation.",
+  "description": "An AI agent development platform with all-in-one visual tools, simplifying agent creation, debugging, and deployment like never before. Coze your way to AI Agent creation.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/coze-dev/coze-studio",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/coze-dev/coze-studio",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/coze-dev/coze-studio#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/coze-dev/coze-studio#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/coze-dev/coze-studio/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Coze Studio is an all-in-one AI agent development tool.",
+    "Providing the latest large models and tools, various development modes and frameworks, Coze Studio offers the most convenient AI agent development environment, from development to deployment.",
+    "Provides all core technologies needed for AI agent development: prompt, RAG, plugin, workflow, enabling developers to focus on creating the core value of AI.",
+    "It is a one-stop visual development tool for AI Agents that makes creating, debugging, and deploying AI Agents unprecedentedly simple.",
+    "Coze Studio aims to lower the threshold for AI agent development and application, encouraging community co-construction and sharing for deeper exploration and practice in the AI field.",
+    "Model service Manage the model list, integrate services such as OpenAI and Volcengine",
+    "Build agent Build, publish, and manage agent . Support configuring workflows, knowledge bases, and other resources",
+    "Build apps Create and publish apps . Build business logic through workflows"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-20T09:20:44Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/coze-dev/coze-studio",
+  "repoUrl": "https://github.com/coze-dev/coze-studio",
+  "license": "Apache-2.0",
+  "stars": 20757,
+  "lastUpdated": "2026-04-20T09:20:44Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

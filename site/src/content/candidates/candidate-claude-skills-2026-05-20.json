@@ -1,0 +1,204 @@
+{
+  "id": "candidate-claude-skills-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Skills",
+  "sourceUrl": "https://github.com/jezweb/claude-skills",
+  "sourceName": "GitHub",
+  "author": "jezweb",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Skills for Claude Code CLI such as full stack dev Cloudflare, React, Tailwind v4, and AI integrations.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "jezweb",
+    "repo": "claude-skills",
+    "fullName": "jezweb/claude-skills",
+    "stars": 789,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "anthropic",
+      "automation",
+      "claude-code",
+      "claude-skills",
+      "cloudflare",
+      "devtools",
+      "productivity",
+      "react",
+      "skills",
+      "tailwind",
+      "vite"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T14:29:05Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "plugins/cloudflare/skills/cloudflare-api/SKILL.md",
+    "plugins/cloudflare/skills/cloudflare-worker-builder/SKILL.md",
+    "plugins/cloudflare/skills/d1-drizzle-schema/SKILL.md",
+    "plugins/cloudflare/skills/d1-migration/SKILL.md",
+    "plugins/cloudflare/skills/db-seed/SKILL.md",
+    "plugins/cloudflare/skills/hono-api-scaffolder/SKILL.md",
+    "plugins/cloudflare/skills/tanstack-start/SKILL.md",
+    "plugins/cloudflare/skills/vite-flare-starter/SKILL.md",
+    "plugins/design-assets/skills/ai-image-generator/SKILL.md",
+    "plugins/design-assets/skills/color-palette/SKILL.md",
+    "plugins/design-assets/skills/favicon-gen/SKILL.md",
+    "plugins/design-assets/skills/icon-set-generator/SKILL.md",
+    "plugins/design-assets/skills/image-processing/SKILL.md",
+    "plugins/dev-tools/skills/app-docs/SKILL.md",
+    "plugins/dev-tools/skills/brains-trust/SKILL.md",
+    "plugins/dev-tools/skills/codex-review/SKILL.md",
+    "plugins/dev-tools/skills/deep-research/SKILL.md",
+    "plugins/dev-tools/skills/fork-discipline/SKILL.md",
+    "plugins/dev-tools/skills/git-workflow/SKILL.md",
+    "plugins/dev-tools/skills/github-release/SKILL.md",
+    "plugins/dev-tools/skills/onboarding-ux/SKILL.md",
+    "plugins/dev-tools/skills/project-docs/SKILL.md",
+    "plugins/dev-tools/skills/project-health/SKILL.md",
+    "plugins/dev-tools/skills/responsiveness-check/SKILL.md",
+    "plugins/dev-tools/skills/roadmap/SKILL.md",
+    "plugins/dev-tools/skills/team-update/SKILL.md",
+    "plugins/dev-tools/skills/ux-audit/SKILL.md",
+    "plugins/dev-tools/skills/ux-compare/SKILL.md",
+    "plugins/dev-tools/skills/ux-extract/SKILL.md",
+    "plugins/dev-tools/skills/vitest/SKILL.md",
+    "plugins/frontend/skills/design-loop/SKILL.md",
+    "plugins/frontend/skills/design-review/SKILL.md",
+    "plugins/frontend/skills/design-system/SKILL.md",
+    "plugins/frontend/skills/landing-page/SKILL.md",
+    "plugins/frontend/skills/product-showcase/SKILL.md",
+    "plugins/frontend/skills/react-native/SKILL.md",
+    "plugins/frontend/skills/react-patterns/SKILL.md",
+    "plugins/frontend/skills/shadcn-ui/SKILL.md",
+    "plugins/frontend/skills/tailwind-theme-builder/SKILL.md"
+  ],
+  "readmeExtract": "Claude Code Skills [![MIT License](https://img.shields.io/badge/license MIT blue.svg)](LICENSE) Production workflow skills for [Claude Code](https://claude.com/claude code). Each skill guides Claude through a recipe to produce tangible output — scaffolded projects, generated assets, professional documents, deployed services. 10 plugins. 60 skills. Every one produces something. Quick Start Then just ask Claude what yo",
+  "skillExtracts": [
+    {
+      "path": "plugins/cloudflare/skills/cloudflare-api/SKILL.md",
+      "extract": "name: cloudflare api description: \"Hit the Cloudflare REST API directly for operations that wrangler and MCP can't handle well. Bulk DNS, custom hostnames, email routing, cache purge, WAF rules, redirect rules, zone settings, Worker routes, D1 cross database queries, R2 bulk operations, KV bulk read/write, Vectorize queries, Queues, and fleet wide resource audits. Produces curl commands or scripts. Triggers: 'cloudfl"
+    },
+    {
+      "path": "plugins/cloudflare/skills/cloudflare-worker-builder/SKILL.md",
+      "extract": "name: cloudflare worker builder description: \"Scaffold and deploy Cloudflare Workers with Hono routing, Vite plugin, and Static Assets. Describe project, scaffold structure, configure bindings, deploy. Use whenever the user wants to create a Worker project, set up Hono on Cloudflare, configure D1 / R2 / KV / Queues bindings, or troubleshoot Worker export syntax, API route conflicts, HMR issues, or deployment failures"
+    },
+    {
+      "path": "plugins/cloudflare/skills/d1-drizzle-schema/SKILL.md",
+      "extract": "name: d1 drizzle schema description: \"Generate Drizzle ORM schemas for Cloudflare D1 databases with correct D1 specific patterns. Produces schema files, migration commands, type exports, and DATABASE SCHEMA.md documentation. Handles D1 quirks: foreign keys always enforced, no native BOOLEAN/DATETIME types, 100 bound parameter limit, JSON stored as TEXT. Use when creating a new database, adding tables, or scaffolding "
+    },
+    {
+      "path": "plugins/cloudflare/skills/d1-migration/SKILL.md",
+      "extract": "name: d1 migration description: \"Cloudflare D1 migration workflow: generate with Drizzle, inspect SQL for gotchas, apply to local and remote, fix stuck migrations, handle partial failures. Use when running migrations, fixing migration errors, or setting up D1 schemas.\" compatibility: claude code only D1 Migration Workflow Guided workflow for Cloudflare D1 database migrations using Drizzle ORM. Standard Migration Flow"
+    },
+    {
+      "path": "plugins/cloudflare/skills/db-seed/SKILL.md",
+      "extract": "name: db seed description: \"Generate database seed scripts with realistic sample data. Reads Drizzle schemas or SQL migrations, respects foreign key ordering, produces idempotent TypeScript or SQL seed files. Handles D1 batch limits, unique constraints, and domain appropriate data. Use when populating dev/demo/test databases. Triggers: 'seed database', 'seed data', 'sample data', 'populate database', 'db seed', 'test"
+    },
+    {
+      "path": "plugins/cloudflare/skills/hono-api-scaffolder/SKILL.md",
+      "extract": "name: hono api scaffolder description: \"Scaffold Hono API routes for Cloudflare Workers. Produces route files, middleware, typed bindings, Zod validation, error handling, and API ENDPOINTS.md documentation. Use after a project is set up with cloudflare worker builder or vite flare starter, when you need to add API routes, create endpoints, or generate API documentation.\" compatibility: claude code only Hono API Scaff"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Production workflow skills for Claude Code.",
+    "Each skill guides Claude through a recipe to produce tangible output — scaffolded projects, generated assets, professional documents, deployed services.",
+    "Then just ask Claude what you need — installed skills trigger automatically from natural language.",
+    "Full skill list with trigger phrases",
+    "design-review \"design review\", \"does this look good\", \"visual review\"",
+    "google-apps-script \"apps script\", \"google sheets automation\"",
+    "elevenlabs-agents \"elevenlabs agent\", \"voice agent\"",
+    "mcp-builder \"build mcp server\", \"fastmcp\""
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Skills for Claude Code CLI such as full stack dev Cloudflare, React, Tailwind v4, and AI integrations.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "Production workflow skills for Claude Code.",
+      "Each skill guides Claude through a recipe to produce tangible output — scaffolded projects, generated assets, professional documents, deployed services."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "claude-skills",
+  "publishedAt": "2026-05-20",
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "local-review"
+}

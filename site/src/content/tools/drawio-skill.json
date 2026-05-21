@@ -1,0 +1,80 @@
+{
+  "id": "drawio-skill",
+  "name": "Drawio Skill",
+  "type": "skill",
+  "status": "published",
+  "summary": "Generate draw.io diagrams from natural language with 6 presets and a 2-round self-check loop. Exports to PNG/SVG/PDF/JPG.",
+  "description": "Generate draw.io diagrams from natural language with 6 presets and a 2-round self-check loop. Exports to PNG/SVG/PDF/JPG.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Agents365-ai/drawio-skill",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Agents365-ai/drawio-skill",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Agents365-ai/drawio-skill#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Agents365-ai/drawio-skill#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Agents365-ai/drawio-skill/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "drawio-skill — From Text to Professional Diagrams",
+    "English · 中文 · 📖 Online Docs",
+    "A skill that turns natural-language descriptions into .drawio XML and exports them to PNG / SVG / PDF / JPG via the native draw.io desktop CLI.",
+    "Works with Claude Code, Cursor, Copilot, OpenClaw, Codex, Hermes, and any agent compatible with the Agent Skills format.",
+    "Clean layout — grid-aligned, spacing scales with diagram size, connectors routed clear of nodes",
+    "The skill is designed to route edges cleanly across different topologies, avoiding lines that cross through shapes:",
+    "E-commerce stack with horizontal and diagonal cross-connections routed via corridors.",
+    "Full walkthrough in docs/USAGE.md."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T06:33:35Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Agents365-ai/drawio-skill",
+  "repoUrl": "https://github.com/Agents365-ai/drawio-skill",
+  "license": "MIT",
+  "stars": 1735,
+  "lastUpdated": "2026-05-19T06:33:35Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

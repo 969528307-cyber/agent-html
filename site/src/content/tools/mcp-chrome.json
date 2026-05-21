@@ -1,0 +1,78 @@
+{
+  "id": "mcp-chrome",
+  "name": "Mcp Chrome",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Chrome MCP Server is a Chrome extension-based Model Context Protocol (MCP) server that exposes your Chrome browser functionality to AI assistants like Claude, enabling complex browser automation, content analysis, and semantic search.",
+  "description": "Chrome MCP Server is a Chrome extension-based Model Context Protocol (MCP) server that exposes your Chrome browser functionality to AI assistants like Claude, enabling complex browser automation, content analysis, and semantic search.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/hangwin/mcp-chrome",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/hangwin/mcp-chrome",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/hangwin/mcp-chrome#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/hangwin/mcp-chrome#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/hangwin/mcp-chrome/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "🌟 Turn your Chrome browser into your intelligent assistant - Let AI take control of your browser, transforming it into a powerful AI-controlled automation tool.",
+    "📖 Documentation: English 中文",
+    "🎯 What is Chrome MCP Server?",
+    "A New Visual Editor for Claude Code & Codex, for more detail here: VisualEditor",
+    "😁 Chatbot/Model Agnostic: Let any LLM or chatbot client or agent you prefer automate your browser",
+    "⭐️ Use Your Original Browser: Seamlessly integrate with your existing browser environment (your configurations, login states, etc.)",
+    "💻 Fully Local: Pure local MCP server ensuring user privacy",
+    "🚄 Streamable HTTP: Streamable HTTP connection method"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-01-06T13:05:39Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/hangwin/mcp-chrome",
+  "repoUrl": "https://github.com/hangwin/mcp-chrome",
+  "license": "MIT",
+  "stars": 11639,
+  "lastUpdated": "2026-01-06T13:05:39Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

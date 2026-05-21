@@ -1,0 +1,216 @@
+{
+  "id": "candidate-tool-github-sickn33-antigravity-awesome-skills",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Antigravity Awesome Skills",
+  "sourceUrl": "https://github.com/sickn33/antigravity-awesome-skills",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "sickn33",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Installable GitHub library of 1,400+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes installer CLI, bundles, workflows, and official/community skill collections.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "sickn33",
+    "repo": "antigravity-awesome-skills",
+    "fullName": "sickn33/antigravity-awesome-skills",
+    "stars": 37880,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "agentic-skills",
+      "ai-agent-skills",
+      "ai-agents",
+      "ai-coding",
+      "ai-workflows",
+      "antigravity",
+      "antigravity-skills",
+      "claude-code",
+      "claude-code-skills",
+      "codex-cli",
+      "codex-skills",
+      "cursor",
+      "cursor-skills",
+      "developer-tools",
+      "gemini-cli",
+      "gemini-skills",
+      "kiro",
+      "mcp",
+      "skill-library"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T08:24:49Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/AUDIT.md",
+    "docs/BUNDLES.md",
+    "docs/CATEGORIZATION_IMPLEMENTATION.md",
+    "docs/CI_DRIFT_FIX.md",
+    "docs/COMMUNITY_GUIDELINES.md",
+    "docs/contributors/community-guidelines.md",
+    "docs/contributors/examples.md",
+    "docs/contributors/quality-bar.md",
+    "docs/contributors/security-guardrails.md",
+    "docs/contributors/skill-anatomy.md",
+    "docs/contributors/skill-template.md",
+    "docs/DATE_TRACKING_IMPLEMENTATION.md",
+    "docs/EXAMPLES.md",
+    "docs/GETTING_STARTED.md",
+    "docs/integrations/jetski-cortex.md",
+    "docs/integrations/jetski-gemini-loader/loader.mjs",
+    "docs/integrations/jetski-gemini-loader/package.json",
+    "docs/integrations/jetski-gemini-loader/README.md",
+    "docs/KIRO_INTEGRATION.md",
+    "docs/maintainers/audit.md",
+    "docs/maintainers/categorization-implementation.md",
+    "docs/maintainers/ci-drift-fix.md",
+    "docs/maintainers/date-tracking-implementation.md",
+    "docs/maintainers/merge-batch.md",
+    "docs/maintainers/merging-prs.md",
+    "docs/maintainers/release-notes-7.2.0.md",
+    "docs/maintainers/release-process.md",
+    "docs/maintainers/repo-growth-seo.md",
+    "docs/maintainers/rollback-procedure.md",
+    "docs/maintainers/security-findings-triage-2026-03-15.csv",
+    "docs/maintainers/security-findings-triage-2026-03-15.md",
+    "docs/maintainers/security-findings-triage-2026-03-18-addendum.md",
+    "docs/maintainers/security-findings-triage-2026-03-29-addendum.md",
+    "docs/maintainers/security-findings-triage-2026-03-29-refresh.csv",
+    "docs/maintainers/security-findings-triage-2026-03-29-refresh.md",
+    "docs/maintainers/skills-date-tracking.md",
+    "docs/maintainers/skills-import-2026-03-21.md",
+    "docs/maintainers/skills-update-guide.md",
+    "docs/maintainers/smart-auto-categorization.md"
+  ],
+  "readmeExtract": "<! registry sync: version=11.3.0; skills=1460; stars=37665; updated at=2026 05 16T07:52:13+00:00 🌌 Antigravity Awesome Skills: 1,460+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More Installable GitHub library of 1,460+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and other AI coding assistants. Antigravity Awesome Skills is an installable GitHub library and npm insta",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🌌 Antigravity Awesome Skills: 1,460+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More",
+    "Installable GitHub library of 1,460+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and other AI coding assistants.",
+    "Antigravity Awesome Skills is an installable GitHub library and npm installer for reusable SKILL.md playbooks.",
+    "It is designed for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, Kiro, OpenCode, GitHub Copilot, and other AI coding assistants that benefit from structured operating instructions.",
+    "Installable, not just inspirational: use npx antigravity-awesome-skills to put skills where your tool expects them.",
+    "Built for major agent workflows: Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, Kiro, OpenCode, Copilot, and more.",
+    "Broad coverage with real utility: 1,460+ skills across development, testing, security, infrastructure, product, and marketing.",
+    "Faster onboarding: bundles and workflows reduce the time from \"I found this repo\" to \"I used my first skill\".",
+    "🌌 Antigravity Awesome Skills: 1,462+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More",
+    "Installable GitHub library of 1,462+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and other AI coding assistants.",
+    "Broad coverage with real utility: 1,462+ skills across development, testing, security, infrastructure, product, and marketing."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Installable GitHub library of 1,400+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes installer CLI, bundles, workflows, and official/community skill collections.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Antigravity Awesome Skills is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "🌌 Antigravity Awesome Skills: 1,460+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More",
+      "Installable GitHub library of 1,460+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and other AI coding assistants.",
+      "Antigravity Awesome Skills is an installable GitHub library and npm installer for reusable SKILL.md playbooks."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:sickn33/antigravity-awesome-skills",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

@@ -1,0 +1,149 @@
+{
+  "id": "candidate-coderunner-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Coderunner",
+  "sourceUrl": "https://github.com/instavm/coderunner",
+  "sourceName": "GitHub",
+  "author": "instavm",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A local sandbox for your AI agents",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "instavm",
+    "repo": "coderunner",
+    "fullName": "instavm/coderunner",
+    "stars": 825,
+    "license": "Apache-2.0",
+    "topics": [
+      "anthropic",
+      "apple",
+      "apple-container",
+      "claude-code",
+      "claude-skills",
+      "containerization",
+      "gemini-cli",
+      "llm",
+      "llmstudio",
+      "mcp",
+      "openai"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-16T20:48:26Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "examples/claude_desktop/claude_desktop_config_with_filesystem.example.json",
+    "examples/claude_desktop/claude_desktop_config.example.json",
+    "skills/public/image-crop-rotate/SKILL.md",
+    "skills/public/pdf-text-replace/SKILL.md"
+  ],
+  "readmeExtract": "<div align=\"center\" [![Start](https://img.shields.io/github/stars/instavm/coderunner?color=yellow&style=flat&label=%E2%AD%90%20stars)](https://github.com/instavm/coderunner/stargazers) [![License](http://img.shields.io/:license Apache%202.0 green.svg?style=flat)](https://github.com/instavm/coderunner/blob/master/LICENSE) </div CodeRunner: A local sandbox for your AI agents CodeRunner helps you sandbox your AI agents ",
+  "skillExtracts": [
+    {
+      "path": "skills/public/image-crop-rotate/SKILL.md",
+      "extract": "name: image crop rotate description: Image processing skill for cropping images to 50% from center and rotating them 90 degrees clockwise. This skill should be used when users request image cropping to center, image rotation, or both operations combined on image files. Image Crop and Rotate Overview This skill provides functionality to crop images to 50% of their original size from the center and rotate them 90 degre"
+    },
+    {
+      "path": "skills/public/pdf-text-replace/SKILL.md",
+      "extract": "name: pdf text replace description: Replace text in fillable PDF forms by updating form field values. This skill should be used when users need to update names, addresses, dates, or other text in PDF form fields. PDF Text Replace Skill Replace text in fillable PDF forms by updating form field values. Description This skill allows you to search and replace text in PDF files that have fillable form fields. It scans all"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "CodeRunner: A local sandbox for your AI agents",
+    "CodeRunner helps you sandbox your AI agents and its actions inside a sandbox.",
+    "Key use case: You can run multiple Claude Code or AI agents in our sandbox without any fear of data loss and exfilteration.",
+    "Run Claude Code inside a Sandbox",
+    "MCP server will be available at:",
+    "Configure Claude Desktop to use CodeRunner as an MCP server:",
+    "Start using CodeRunner in Claude:",
+    "You can now ask Claude to execute code, and it will run safely in the sandbox!"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A local sandbox for your AI agents",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Coderunner is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "CodeRunner: A local sandbox for your AI agents",
+      "CodeRunner helps you sandbox your AI agents and its actions inside a sandbox.",
+      "Key use case: You can run multiple Claude Code or AI agents in our sandbox without any fear of data loss and exfilteration."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "coderunner",
+  "publishedAt": "2026-05-20"
+}

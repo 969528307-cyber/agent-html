@@ -1,0 +1,133 @@
+{
+  "id": "candidate-agent-cursor",
+  "type": "agent",
+  "status": "published",
+  "title": "Cursor",
+  "sourceUrl": "https://docs.cursor.com/",
+  "sourceName": "Cursor Rules",
+  "sourceRegistryId": "local-agents-library",
+  "sourceRegistry": {
+    "id": "local-agents-library",
+    "name": "Local Agent Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/agents",
+    "acceptRules": [
+      "must_have_documentation_url",
+      "must_have_summary",
+      "must_have_capability_profile"
+    ],
+    "rejectRules": [
+      "missing_official_link",
+      "missing_agent_capability_description"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "An editor-first AI coding environment with agentic IDE workflows, rules, memories, MCP, and cursor-agent CLI support.",
+  "proposedCategory": [
+    "IDE-native coding",
+    "Rules-based project guidance",
+    "Pair programming and refactoring",
+    "MCP inside editor workflows"
+  ],
+  "proposedAgents": [
+    "cursor"
+  ],
+  "extractedSignals": [
+    "Editor-native interaction: Useful when the user wants agent help while staying in the same environment used to read, edit, navigate, and review code.",
+    "Rules and memories: Cursor Rules, User Rules, and memories provide persistent context that can shape agent behavior across files and projects.",
+    "MCP across editor and CLI: Cursor documents MCP support for external tools and data sources, with CLI support for cursor-agent as well.",
+    "Rules: native",
+    "MCP: native",
+    "CLI: supported"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Agent collector output. Review official docs, GitHub activity, extension model, and ecosystem fit before changing the public Agent page.",
+  "publishedAs": "cursor",
+  "publishedAt": "2026-05-16",
+  "author": "Cursor",
+  "agentProfile": {
+    "region": "global",
+    "vendor": "Cursor",
+    "interfaceType": [
+      "ide"
+    ],
+    "supportsMcp": true,
+    "supportsSkills": false,
+    "supportsCli": false,
+    "supportsWorkflows": true,
+    "sourceKinds": [
+      "docs",
+      "docs",
+      "docs",
+      "official"
+    ],
+    "officialLinks": [
+      {
+        "label": "Cursor Rules",
+        "url": "https://docs.cursor.com/context/rules",
+        "kind": "docs"
+      },
+      {
+        "label": "Cursor MCP",
+        "url": "https://docs.cursor.com/context/model-context-protocol",
+        "kind": "docs"
+      },
+      {
+        "label": "Cursor CLI MCP",
+        "url": "https://docs.cursor.com/cli/mcp",
+        "kind": "docs"
+      },
+      {
+        "label": "Cursor CLI",
+        "url": "https://cursor.com/en-US/cli",
+        "kind": "official"
+      }
+    ]
+  },
+  "canonicalKey": "agent:cursor",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "agent",
+    "primaryType": "agent",
+    "whatIsIt": "Cursor is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to IDE-native coding.",
+      "Relevant to Rules-based project guidance.",
+      "Relevant to Pair programming and refactoring.",
+      "Relevant to MCP inside editor workflows.",
+      "Editor-native interaction: Useful when the user wants agent help while staying in the same environment used to read, edit, navigate, and review code."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

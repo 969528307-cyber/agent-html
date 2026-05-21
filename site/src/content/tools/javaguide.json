@@ -1,0 +1,74 @@
+{
+  "id": "javaguide",
+  "name": "JavaGuide",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+  "description": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+  "category": [
+    "mcp",
+    "code-review",
+    "docs",
+    "workflow"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Snailclimb/JavaGuide",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Snailclimb/JavaGuide",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Snailclimb/JavaGuide#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Snailclimb/JavaGuide#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Snailclimb/JavaGuide/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Repository includes skill-related files"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-11T20:24:44Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Snailclimb/JavaGuide",
+  "repoUrl": "https://github.com/Snailclimb/JavaGuide",
+  "license": "Apache-2.0",
+  "stars": 155582,
+  "lastUpdated": "2026-05-11T20:24:44Z",
+  "lastChecked": "2026-05-12",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

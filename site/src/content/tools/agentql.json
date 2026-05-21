@@ -1,0 +1,73 @@
+{
+  "id": "agentql",
+  "name": "Agentql",
+  "type": "sdk",
+  "status": "published",
+  "summary": "AgentQL is a suite of tools for connecting your AI to the web. Featuring a query language and Playwright integrations for interacting with elements and extracting data quickly, precisely, and at scale. Includes REST API, Python and JavaScript SDKs, browser debugger.",
+  "description": "AgentQL is a suite of tools for connecting your AI to the web. Featuring a query language and Playwright integrations for interacting with elements and extracting data quickly, precisely, and at scale. Includes REST API, Python and JavaScript SDKs, browser debugger.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/tinyfish-io/agentql",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/tinyfish-io/agentql",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/tinyfish-io/agentql#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/tinyfish-io/agentql#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/tinyfish-io/agentql/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AgentQL connects LLMs and AI agents to the entire web",
+    "AgentQL is a suite of tools for extracting data and automating workflows on live web sites featuring an AI-powered query language, Python and JavaScript SDKs, a browser-based debugger, and a REST API endpoint.",
+    "AgentQL's natural language selectors find elements intuitively based on the content of the web page and work across similar web sites, self-healing as UI changes over time.",
+    "Playwright AgentQL's Python SDK and JavaScript SDK seamlessly integrates with Playwright for advanced automation and testing.",
+    "Python SDK for running automation and scraping scripts with AgentQL queries in Python.",
+    "JavaScript SDK for running automation and scraping scripts with AgentQL queries in JavaScript.",
+    "Integrations with agent frameworks and automation tools like Langchain and Zapier and our MCP server.",
+    "Debugger Browser Extension lets you debug and finesse queries in real-time on live sites."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T06:01:45Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/tinyfish-io/agentql",
+  "repoUrl": "https://github.com/tinyfish-io/agentql",
+  "license": "MIT",
+  "stars": 1364,
+  "lastUpdated": "2026-05-12T06:01:45Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

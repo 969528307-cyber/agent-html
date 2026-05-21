@@ -1,0 +1,179 @@
+{
+  "id": "candidate-tool-github-aas-ee-open-websearch",
+  "type": "tool",
+  "status": "published",
+  "title": "Open WebSearch",
+  "sourceUrl": "https://github.com/Aas-ee/open-webSearch",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "Aas-ee",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Multi-engine MCP server, CLI, and local daemon for agent web search and content retrieval — skill-guided workflows, no API keys.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "Aas-ee",
+    "repo": "open-webSearch",
+    "fullName": "Aas-ee/open-webSearch",
+    "stars": 1205,
+    "license": "Apache-2.0",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-08T05:34:14Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/architecture/cli-json-protocol.md",
+    "docs/architecture/core-runtime-adapters.md",
+    "docs/architecture/local-http-adapter.md",
+    "docs/architecture/overview.md",
+    "docs/http-api.md",
+    "package.json",
+    "skills/open-websearch-maintainer/SKILL.md",
+    "skills/open-websearch/SKILL.md"
+  ],
+  "readmeExtract": "<div align=\"center\" Open WebSearch [![ModelScope](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Aas ee/3af09e0f4c7821fb2e9acb96483a5ff0/raw/badge.json&color=%23de5a16)](https://www.modelscope.cn/mcp/servers/Aasee1/open webSearch) [![Trust Score](https://archestra.ai/mcp catalog/api/badge/quality/Aas ee/open webSearch)](https://archestra.ai/mcp catalog/aas ee open websearch) [![smithery badge]",
+  "skillExtracts": [
+    {
+      "path": "skills/open-websearch-maintainer/SKILL.md",
+      "extract": "name: open websearch maintainer description: Maintain and extend the open websearch MCP server. Trigger when changing search engines, proxy or TLS behavior, tool registration, live parsing behavior, or compatibility and regression behavior inside this repository. version: 1.2.0 version note: Routes changes by surface area, keeps scope tight, preserves shared networking and tool contracts, and treats current repositor"
+    },
+    {
+      "path": "skills/open-websearch/SKILL.md",
+      "extract": "name: open websearch description: Single entry skill for open websearch setup and focused live retrieval, preferring local CLI/daemon paths while remaining compatible with workspace exposed MCP tools. version: 1.4.0 version note: Prefer local CLI/daemon onboarding and retrieval when available, while preserving MCP compatible setup, activation, and focused web research guidance. allowed tools: search fetchWebContent f"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "open-websearch provides an MCP server, CLI, and local daemon, and can also be paired with skill-guided agent workflows for live web search and content retrieval without API keys.",
+    "Web search using multi-engine results",
+    "Configurable number of results per search",
+    "Customizable default search engine",
+    "Best when you want to connect open-websearch to Claude Desktop, Cherry Studio, Cursor, or another MCP client.",
+    "Best when you want a reusable long-lived local HTTP service exposing status, GET /health, and POST /search / POST /fetch-.",
+    "Start it explicitly with open-websearch serve and check it with open-websearch status.",
+    "A skill does not replace MCP, CLI, or the local daemon; it typically works together with the CLI and/or local daemon to help an agent discover, activate, and use the smallest working path."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Multi-engine MCP server, CLI, and local daemon for agent web search and content retrieval — skill-guided workflows, no API keys.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 7,
+    "cli": 8,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: agent-app, knowledge-resource, mcp.",
+    "LLM: mcp + [mcp, cli] — The project is primarily an MCP server for web search with CLI and daemon capabilities."
+  ],
+  "classificationAlternatives": [
+    "agent-app",
+    "knowledge-resource",
+    "mcp"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Open WebSearch is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Relevant to search.",
+      "open-websearch provides an MCP server, CLI, and local daemon, and can also be paired with skill-guided agent workflows for live web search and content retrieval without API keys.",
+      "Web search using multi-engine results",
+      "Configurable number of results per search"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:aas-ee/open-websearch",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "open-websearch",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,163 @@
+{
+  "id": "candidate-director-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Director",
+  "sourceUrl": "https://github.com/video-db/Director",
+  "sourceName": "GitHub",
+  "author": "video-db",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "AI video agents framework for next-gen video interactions and workflows.",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "video-db",
+    "repo": "Director",
+    "fullName": "video-db/Director",
+    "stars": 1381,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "ai-agents",
+      "framework",
+      "llm",
+      "openai",
+      "rag",
+      "search",
+      "text-to-video",
+      "video-editing",
+      "video-processing",
+      "videodb"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-01-23T15:34:16Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agents/interface.md",
+    "docs/assets/favicon.png",
+    "docs/assets/logo.png",
+    "docs/CNAME",
+    "docs/concepts/overview.md",
+    "docs/core/reasoning.md",
+    "docs/core/session.md",
+    "docs/database/interface.md",
+    "docs/database/sqlite.md",
+    "docs/get_started/railway.md",
+    "docs/get_started/render.md",
+    "docs/hooks/copyright.py",
+    "docs/index.md",
+    "docs/llm/anthropic.md",
+    "docs/llm/googleai.md",
+    "docs/llm/interface.md",
+    "docs/llm/openai.md",
+    "docs/overrides/main.html",
+    "docs/README.md",
+    "docs/releases/notes.md",
+    "docs/server/api.md",
+    "docs/server/initialization.md",
+    "docs/server/socketio.md",
+    "docs/stylesheets/extra.css",
+    "docs/utilities/exceptions.md"
+  ],
+  "readmeExtract": "<! PROJECT SHIELDS <! Reference links are enclosed in brackets [ ] instead of parentheses ( ). https://www.markdownguide.org/basic syntax/ reference style links [![Stargazers][stars shield]][stars url] [![Issues][issues shield]][issues url] [![Website][website shield]][website url] [![Discord][discord shield]][discord url] <! PROJECT LOGO <img src=\"https://github.com/user attachments/assets/78f5eead d390 4b0b a8bc 00",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Framework to build video agents that can reason through complex video tasks like search, editing, compilation, generation etc & instantly stream the results.",
+    "It is a framework to build video agents that can reason through complex video tasks like search, editing, compilation, generation etc & instantly stream the results.",
+    "Summarize videos in seconds.",
+    "Search for specific moments.",
+    "Built with flexibility in mind, Director is perfect for developers, creators, and teams looking to harness AI to simplify media workflows and unlock new possibilities.",
+    "🤖 20+ pre-built video agents that you can customize to",
+    "Search and index your media library.",
+    "Easily add new agents and tools to your workflow."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "AI video agents framework for next-gen video interactions and workflows.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "media",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "media",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "Director is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with media workflows.",
+      "Helps with research workflows.",
+      "Relevant to agent-app.",
+      "Framework to build video agents that can reason through complex video tasks like search, editing, compilation, generation etc & instantly stream the results."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "director",
+  "publishedAt": "2026-05-20"
+}

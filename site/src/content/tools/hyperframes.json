@@ -1,0 +1,77 @@
+{
+  "id": "hyperframes",
+  "name": "Hyperframes",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Write HTML. Render video. Built for agents.",
+  "description": "Write HTML. Render video. Built for agents.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/heygen-com/hyperframes#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/heygen-com/hyperframes#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/heygen-com/hyperframes/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Hyperframes is an open-source video rendering framework that lets you create, preview, and render HTML-based video compositions — with first-class support for AI agents.",
+    "Option 1: With an AI coding agent (recommended)",
+    "This teaches your agent (Claude Code, Cursor, Gemini CLI, Codex) how to write correct compositions, GSAP timelines, Tailwind v4 browser-runtime styles, and first-party adapter animations.",
+    "For Claude Design, open docs/guides/claude-design-hyperframes.md on GitHub and click the download button (↓) to save it, then attach the file to your Claude Design chat.",
+    "It produces a valid first draft; refine in any AI coding agent.",
+    "See the Claude Design guide.",
+    "For Claude Code, the repo also ships a Claude Code plugin manifest: test it locally with claude --plugin-dir ..",
+    "Copy any of these into your agent to get started."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T02:17:55Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/heygen-com/hyperframes",
+  "repoUrl": "https://github.com/heygen-com/hyperframes",
+  "license": "Apache-2.0",
+  "stars": 19747,
+  "lastUpdated": "2026-05-20T02:17:55Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

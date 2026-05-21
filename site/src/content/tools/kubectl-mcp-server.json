@@ -1,0 +1,78 @@
+{
+  "id": "kubectl-mcp-server",
+  "name": "Kubectl Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Published in CNCF Landscape: A MCP server for Kubernetes.",
+  "description": "Published in CNCF Landscape: A MCP server for Kubernetes.",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/rohitg00/kubectl-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/rohitg00/kubectl-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/rohitg00/kubectl-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/rohitg00/kubectl-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/rohitg00/kubectl-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Debug crashed pods, optimize costs, deploy applications, audit security, manage Helm charts, and visualize dashboards, all through natural language..",
+    "Network connectivity diagnostics with DNS resolution",
+    "253 powerful tools 8 workflow prompts 8 data resources Works with all major AI assistants",
+    "🚀 Stop context-switching - Manage Kubernetes directly from your AI assistant conversations",
+    "🌐 Universal compatibility - Works with Claude, Cursor, Windsurf, Copilot, and 15+ other AI tools",
+    "📊 Visual insights - Interactive dashboards and browser automation for web-based tools",
+    "☸️ Production-grade - Deploy in-cluster with kMCP, 216 passing tests, active maintenance",
+    "From debugging crashed pods to optimizing cluster costs, kubectl-mcp-server is your AI-powered DevOps companion."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-08T22:37:48Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/rohitg00/kubectl-mcp-server",
+  "repoUrl": "https://github.com/rohitg00/kubectl-mcp-server",
+  "license": "MIT",
+  "stars": 887,
+  "lastUpdated": "2026-04-08T22:37:48Z",
+  "lastChecked": "2026-05-16",
+  "publishedAt": "2026-05-16",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

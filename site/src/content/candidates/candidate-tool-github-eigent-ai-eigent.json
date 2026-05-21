@@ -1,0 +1,236 @@
+{
+  "id": "candidate-tool-github-eigent-ai-eigent",
+  "type": "tool",
+  "status": "published",
+  "title": "Eigent",
+  "sourceUrl": "https://github.com/eigent-ai/eigent",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "eigent-ai",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Eigent: The Open Source Cowork Desktop to Unlock Your Exceptional Productivity. Local and Free Alternative to Claude Cowork.",
+  "proposedCategory": [
+    "agent-framework",
+    "skill"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Qwen Code",
+    "Generic",
+    "Kimi"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "eigent-ai",
+    "repo": "eigent",
+    "fullName": "eigent-ai/eigent",
+    "stars": 14044,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-framework",
+      "agent-skills",
+      "agentic-ai",
+      "agentic-workflow",
+      "claude-cowork",
+      "claude-cowork-alternative",
+      "claude-cowork-free",
+      "desktop-agent",
+      "multi-agent-systems"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T12:53:54Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/core/agent-skills.md",
+    "docs/core/concepts.md",
+    "docs/core/models/byok.md",
+    "docs/core/models/ernie.md",
+    "docs/core/models/gemini.md",
+    "docs/core/models/kimi.md",
+    "docs/core/models/local-model.md",
+    "docs/core/models/minimax.md",
+    "docs/core/models/sambanova.md",
+    "docs/core/tools.md",
+    "docs/core/workers.md",
+    "docs/core/workforce.md",
+    "docs/docs.json",
+    "docs/get_started/quick_start.md",
+    "docs/get_started/welcome.md",
+    "docs/images/agent_skills_example_skills_04.mp4",
+    "docs/images/agent_skills_skill01.mp4",
+    "docs/images/agent_skills_skill02.mp4",
+    "docs/images/agent_skills_skill03.mp4",
+    "docs/images/byok_1.png",
+    "docs/images/ernie.png",
+    "docs/images/favicon.png",
+    "docs/images/gemini.png",
+    "docs/images/kimi.png",
+    "docs/images/logo_black.png",
+    "docs/images/logo_white.png",
+    "docs/images/logo-dark.png",
+    "docs/images/logo-light.png",
+    "docs/images/minimax.png",
+    "docs/images/model_setting.png",
+    "docs/images/sambanova.png",
+    "docs/README.md",
+    "package.json",
+    "resources/example-skills/docx/SKILL.md",
+    "resources/example-skills/pdf/SKILL.md",
+    "resources/example-skills/pptx/SKILL.md",
+    "resources/example-skills/skill-creator/SKILL.md",
+    "resources/example-skills/skill-security-auditor/SKILL.md",
+    "resources/example-skills/xlsx/SKILL.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <a name=\"readme top\" </a [![][image head]][eigent site] [![][image seperator]][eigent site] Eigent: The Open Source Cowork Desktop to Unlock Your Exceptional Productivity <! SHIELD GROUP [![][download shield]][eigent download] [![][github star]][eigent github] [![][social x shield]][social x link] [![][discord image]][discord url]<br [![Reddit][reddit image]][reddit url] [![Wechat][wechat image]][",
+  "skillExtracts": [
+    {
+      "path": "resources/example-skills/docx/SKILL.md",
+      "extract": "name: docx description: \"Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of \\\"Word doc\\\", \\\"word document\\\", \\\".docx\\\", or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or repla"
+    },
+    {
+      "path": "resources/example-skills/pdf/SKILL.md",
+      "extract": "name: pdf description: Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file"
+    },
+    {
+      "path": "resources/example-skills/pptx/SKILL.md",
+      "extract": "name: pptx description: \"Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; work"
+    },
+    {
+      "path": "resources/example-skills/skill-creator/SKILL.md",
+      "extract": "name: skill creator description: Guide for creating effective skills. Use when creating a new skill or updating an existing skill that extends agent capabilities with specialized knowledge, workflows, or tool integrations. license: Proprietary. LICENSE.txt has complete terms Skill Creator This skill provides guidance for creating effective skills. About Skills Skills are modular, self contained packages that extend a"
+    },
+    {
+      "path": "resources/example-skills/skill-security-auditor/SKILL.md",
+      "extract": "name: skill security auditor description: \"Security auditing for code, configs, and infrastructure. Use when the user wants to audit or improve security: scan for vulnerabilities (SQL injection, XSS, command injection, path traversal), detect hardcoded secrets and credentials, review auth and authorization, check dependencies for known CVEs, audit config files for insecure defaults, or generate security reports. Trig"
+    },
+    {
+      "path": "resources/example-skills/xlsx/SKILL.md",
+      "extract": "name: xlsx description: \"Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger esp"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "English · Português · 简体中文 · 日本語 · [Official Site][eigent-site] · [Documents][docs-site] · [Feedback][github-issue-link]",
+    "Eigent is the open source Cowork desktop application, empowering you to build, manage, and deploy a custom AI workforce that can turn your most complex workflows into automated tasks.",
+    "As a leading open-source Cowork product, Eigent brings together the best of open-source collaboration and AI-powered automation.",
+    "Built on [CAMEL-AI][camel-site]'s acclaimed open-source project, our system introduces a Multi-Agent Workforce that boosts productivity through parallel execution, customization, and privacy protection.",
+    "⭐ 100% Open Source - 🥇 Local Deployment - 🏆 MCP Integration",
+    "✅ Multi-Agent Coordination - Handle complex multi-agent workflows",
+    "⚡ Quick Start (Cloud-Connected)",
+    "🔌 MCP Tools Integration (MCP)"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-framework\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Eigent: The Open Source Cowork Desktop to Unlock Your Exceptional Productivity. Local and Free Alternative to Claude Cowork.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "media",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "media",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "Eigent is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-framework.",
+      "Relevant to skill."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:eigent-ai/eigent",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "eigent",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

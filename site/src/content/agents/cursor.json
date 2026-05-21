@@ -4,16 +4,126 @@
   "status": "published",
   "region": "global",
   "vendor": "Cursor",
-  "summary": "An editor-native AI coding environment for agentic development inside the IDE.",
-  "bestFor": ["Editor workflows", "Rules-based coding", "Pair programming"],
-  "interfaceType": ["ide"],
+  "summary": "An editor-first AI coding environment with agentic IDE workflows, rules, memories, MCP, and cursor-agent CLI support.",
+  "bestFor": [
+    "IDE-native coding",
+    "Rules-based project guidance",
+    "Pair programming and refactoring",
+    "MCP inside editor workflows"
+  ],
+  "interfaceType": [
+    "ide"
+  ],
   "documentationUrl": "https://docs.cursor.com/",
   "englishDocsUrl": "https://docs.cursor.com/",
   "supportsMcp": true,
   "supportsSkills": false,
   "supportsCli": false,
   "supportsWorkflows": true,
-  "toolTypes": { "skills": 12, "mcps": 26, "cli": 4, "workflows": 16 },
-  "relatedLearn": ["how-to-choose-agent"],
-  "lastChecked": "2026-05-11"
+  "toolTypes": {
+    "skills": 12,
+    "mcps": 26,
+    "cli": 4,
+    "workflows": 16
+  },
+  "relatedLearn": [
+    "how-to-choose-agent"
+  ],
+  "lastChecked": "2026-05-12",
+  "overview": "Cursor is an AI-native code editor and agent environment where the main interaction happens inside the IDE, with cursor-agent extending some workflows into the terminal. It should be described as an editor-first Agent: project rules, memories, MCP configuration, code navigation, and inline editing are more important than a standalone skill marketplace. Its value on agentk.it is helping users decide when an IDE-native agent beats a terminal-first agent.",
+  "strengths": [
+    {
+      "title": "Editor-native interaction",
+      "body": "Useful when the user wants agent help while staying in the same environment used to read, edit, navigate, and review code."
+    },
+    {
+      "title": "Rules and memories",
+      "body": "Cursor Rules, User Rules, and memories provide persistent context that can shape agent behavior across files and projects."
+    },
+    {
+      "title": "MCP across editor and CLI",
+      "body": "Cursor documents MCP support for external tools and data sources, with CLI support for cursor-agent as well."
+    },
+    {
+      "title": "Lower switching cost",
+      "body": "The IDE-first surface is good for developers who want fast iteration, codebase navigation, and agent assistance without leaving the editor."
+    }
+  ],
+  "extensionModel": [
+    {
+      "label": "Rules",
+      "status": "native",
+      "body": "Rules are Cursor's main reusable-instruction layer for controlling behavior at user and project scope.",
+      "sourceUrl": "https://docs.cursor.com/context/rules"
+    },
+    {
+      "label": "MCP",
+      "status": "native",
+      "body": "Cursor supports MCP for external tools, resources, prompts, and roots.",
+      "sourceUrl": "https://docs.cursor.com/context/model-context-protocol"
+    },
+    {
+      "label": "CLI",
+      "status": "supported",
+      "body": "cursor-agent can run from the terminal and use MCP servers configured for the workflow.",
+      "sourceUrl": "https://docs.cursor.com/cli/mcp"
+    },
+    {
+      "label": "Workflow",
+      "status": "supported",
+      "body": "Workflow content usually appears as rules, prompts, project conventions, and tool combinations rather than as a single skill format."
+    }
+  ],
+  "recommendedStacks": [
+    {
+      "title": "Project rules baseline",
+      "body": "Use Cursor with reviewed rule packs and repository-specific guidance for consistent code generation and review behavior.",
+      "toolIds": [
+        "repo-review-skill"
+      ]
+    },
+    {
+      "title": "Editor plus external context",
+      "body": "Pair Cursor with MCP tools for documentation lookup, browser verification, database context, or product-system access.",
+      "toolIds": [
+        "context7",
+        "playwright-mcp"
+      ]
+    },
+    {
+      "title": "IDE-first adoption path",
+      "body": "Recommend Cursor when teams want agentic coding but prefer editor interaction over command-line sessions.",
+      "toolIds": [
+        "agent-setup-checklist"
+      ]
+    }
+  ],
+  "limitations": [
+    "Cursor rules are powerful but can become stale or overly broad if teams do not curate them.",
+    "Do not treat every generic skill or prompt pack as Cursor-compatible unless it explicitly maps to rules, MCP, or cursor-agent usage.",
+    "Editor support and cursor-agent CLI support should be labeled separately.",
+    "Community rule repositories need review before being recommended publicly."
+  ],
+  "sources": [
+    {
+      "label": "Cursor Rules",
+      "url": "https://docs.cursor.com/context/rules",
+      "kind": "docs"
+    },
+    {
+      "label": "Cursor MCP",
+      "url": "https://docs.cursor.com/context/model-context-protocol",
+      "kind": "docs"
+    },
+    {
+      "label": "Cursor CLI MCP",
+      "url": "https://docs.cursor.com/cli/mcp",
+      "kind": "docs"
+    },
+    {
+      "label": "Cursor CLI",
+      "url": "https://cursor.com/en-US/cli",
+      "kind": "official"
+    }
+  ]
 }

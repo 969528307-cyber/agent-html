@@ -4,6 +4,12 @@ interface AgentData {
   region: "global" | "china";
   vendor?: string;
   summary: string;
+  documentationUrl: string;
+  sources: {
+    label: string;
+    url: string;
+    kind: "official" | "docs" | "github" | "quickstart" | "release" | "community";
+  }[];
   bestFor: string[];
   interfaceType: string[];
   supportsMcp: boolean;
@@ -17,6 +23,8 @@ interface AgentData {
     workflows: number;
   };
 }
+
+type SourceLink = AgentData["sources"][number];
 
 interface ToolCounts {
   skill: number;
@@ -43,6 +51,19 @@ const support = [
   ["CLI", agent.supportsCli],
   ["Workflows", agent.supportsWorkflows],
 ];
+const sourceLinks = agent.sources ?? [];
+const primaryOfficial = sourceLinks.find((source) => source.kind === "official") ?? {
+  label: "Official docs",
+  url: agent.documentationUrl,
+  kind: "official" as const,
+};
+const primaryLinks = [
+  primaryOfficial,
+  sourceLinks.find((source) => source.kind === "github"),
+  sourceLinks.find((source) => source.kind === "docs"),
+  sourceLinks.find((source) => source.kind === "quickstart"),
+].filter((source): source is SourceLink => Boolean(source))
+  .filter((source, index, links) => links.findIndex((item) => item.url === source.url) === index);
 ---
 
 <article class="profile-card">
@@ -57,6 +78,15 @@ const support = [
 
   <div class="support-grid">
     {support.map(([label, enabled]) => <span class:list={[{ enabled }]}>{label}</span>)}
+  </div>
+
+  <div class="official-links" aria-label={`${agent.name} official links`}>
+    {primaryLinks.map((source) => (
+      <a href={source.url} target="_blank" rel="noreferrer">
+        <span>{source.kind}</span>
+        <strong>{source.label}</strong>
+      </a>
+    ))}
   </div>
 
   <div class="stat-row">
@@ -88,7 +118,8 @@ const support = [
   }
 
   .meta,
-  .support-grid {
+  .support-grid,
+  .official-links {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
@@ -109,6 +140,39 @@ const support = [
     color: var(--sage);
     background: var(--sage-soft);
     border-color: rgb(167 207 164 / 0.18);
+  }
+
+  .official-links {
+    margin-top: 22px;
+  }
+
+  .official-links a {
+    display: grid;
+    gap: 3px;
+    min-width: 138px;
+    padding: 12px 13px;
+    border: 1px solid rgb(159 189 155 / 0.22);
+    border-radius: 16px;
+    background: rgb(159 189 155 / 0.08);
+  }
+
+  .official-links a:hover {
+    border-color: rgb(159 189 155 / 0.42);
+    background: rgb(159 189 155 / 0.12);
+  }
+
+  .official-links span {
+    color: var(--sage);
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .official-links strong {
+    color: var(--ink);
+    font-size: 13px;
+    line-height: 1.3;
   }
 
   .stat-row {

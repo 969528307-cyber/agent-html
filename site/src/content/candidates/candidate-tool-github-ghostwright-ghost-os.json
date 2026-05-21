@@ -1,0 +1,172 @@
+{
+  "id": "candidate-tool-github-ghostwright-ghost-os",
+  "type": "tool",
+  "status": "published",
+  "title": "Ghost Os",
+  "sourceUrl": "https://github.com/ghostwright/ghost-os",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "ghostwright",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Full computer-use for AI agents. Self-learning workflows. Native macOS. No screenshots required.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "ghostwright",
+    "repo": "ghost-os",
+    "fullName": "ghostwright/ghost-os",
+    "stars": 1452,
+    "license": "MIT",
+    "topics": [
+      "accessibility",
+      "ai-agents",
+      "automation",
+      "claude-code",
+      "computer-use",
+      "llm-tools",
+      "macos",
+      "mcp",
+      "recipes",
+      "swift"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-23T22:41:44Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/progress.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"logo animated.svg\" width=\"160\" alt=\"Ghost OS\" &nbsp;&nbsp;&nbsp;&nbsp; <a href=\"https://github.com/ghostwright/shadow\" <img src=\"https://raw.githubusercontent.com/ghostwright/shadow/main/logo animated.svg\" width=\"160\" alt=\"Shadow\" </a &nbsp;&nbsp;&nbsp;&nbsp; <a href=\"https://github.com/ghostwright/specter\" <img src=\"https://raw.githubusercontent.com/ghostwright/specter/main/logo animated.",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Full computer-use for AI agents.",
+    "Your AI agent can write code, run tests, search files.",
+    "Ghost OS gives AI agents eyes and hands.",
+    "Deploy persistent AI agents to dedicated VMs in 90 seconds.",
+    "AI agents that earn your trust.",
+    "Ghost OS gives AI agents eyes and hands on your Mac.",
+    "The user performs the task manually (clicking, typing, switching apps).",
+    "Claude synthesizes the raw observation into a parameterized, replayable recipe."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Full computer-use for AI agents. Self-learning workflows. Native macOS. No screenshots required.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 3,
+    "cli": 5,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Agent instruction file detected alongside CLI signals.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: app.",
+    "Alternative capabilities: mcp, cli.",
+    "LLM: agent-framework + [mcp, skill, cli, workflow] — Ghost OS is a framework enabling AI agents to achieve full computer use on macOS with self-learning workflows, supporting MCP and recipe-based skills."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Ghost Os is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation.",
+      "Full computer-use for AI agents.",
+      "Your AI agent can write code, run tests, search files."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:ghostwright/ghost-os",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ghost-os",
+  "publishedAt": "2026-05-18"
+}

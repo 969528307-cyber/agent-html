@@ -1,0 +1,77 @@
+{
+  "id": "claude-codex-bridge",
+  "name": "Claude Codex Bridge",
+  "type": "cli",
+  "status": "published",
+  "summary": "Visible multi-agent CLI teams for Claude, Codex, Gemini, OpenCode, and Droid with project memory and tmux supervision",
+  "description": "Visible multi-agent CLI teams for Claude, Codex, Gemini, OpenCode, and Droid with project memory and tmux supervision",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/SeemSeam/claude_codex_bridge",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/SeemSeam/claude_codex_bridge",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/SeemSeam/claude_codex_bridge#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/SeemSeam/claude_codex_bridge#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/SeemSeam/claude_codex_bridge/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "CCB - Agent CLI Hub and Teams",
+    "One command for all required CLI operations and management",
+    "Start, attach, recover, supervise, and operate Claude, Codex, Gemini, OpenCode, and Droid from one terminal workspace.",
+    "one project entry point for all supported CLI agents",
+    "one place to manage startup, restore, attach, and shutdown",
+    "one consistent runtime flow instead of per-tool ad hoc handling",
+    "Agents can sense and communicate with each other",
+    "Named agents can discover each other, use /ask, broadcast updates, and delegate work without copy/paste."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T08:11:23Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/SeemSeam/claude_codex_bridge",
+  "repoUrl": "https://github.com/SeemSeam/claude_codex_bridge",
+  "license": "NOASSERTION",
+  "stars": 2718,
+  "lastUpdated": "2026-05-19T08:11:23Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

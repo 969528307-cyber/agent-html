@@ -1,0 +1,207 @@
+{
+  "id": "candidate-tool-github-continuedev-continue",
+  "type": "tool",
+  "status": "published",
+  "title": "Continue",
+  "sourceUrl": "https://github.com/continuedev/continue",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "continuedev",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "⏩ Source-controlled AI checks, enforceable in CI. Powered by the open-source Continue CLI",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "continuedev",
+    "repo": "continue",
+    "fullName": "continuedev/continue",
+    "stars": 33250,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "ai",
+      "cli",
+      "developer-tools",
+      "jetbrains-plugin",
+      "llm",
+      "open-source",
+      "vs-code-extenstion"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T07:16:22Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.prettierignore",
+    "docs/agents/create-and-edit.mdx",
+    "docs/agents/intro.mdx",
+    "docs/agents/overview.mdx",
+    "docs/autocomplete/how-to-use-it.mdx",
+    "docs/c15t-cookie-banner.js",
+    "docs/chat/how-to-use-it.mdx",
+    "docs/checks/best-practices.mdx",
+    "docs/checks/generating-checks.mdx",
+    "docs/checks/iterating.mdx",
+    "docs/checks/quickstart.mdx",
+    "docs/checks/reference.mdx",
+    "docs/checks/running-in-ci.mdx",
+    "docs/checks/running-locally.mdx",
+    "docs/cli/headless-mode.mdx",
+    "docs/cli/quickstart.mdx",
+    "docs/cli/tool-permissions.mdx",
+    "docs/cli/tui-mode.mdx",
+    "docs/custom.css",
+    "docs/customize/custom-providers.mdx",
+    "docs/customize/deep-dives/_apply.mdx",
+    "docs/customize/deep-dives/_category_.json",
+    "docs/customize/deep-dives/autocomplete.mdx",
+    "docs/customize/deep-dives/custom-providers.mdx",
+    "docs/customize/deep-dives/mcp.mdx",
+    "docs/customize/deep-dives/model-capabilities.mdx",
+    "docs/customize/deep-dives/prompts.mdx",
+    "docs/customize/deep-dives/rules.mdx",
+    "docs/customize/deep-dives/rules.mdx.backup",
+    "docs/customize/mcp-tools.mdx",
+    "docs/customize/model-providers/_category_.json",
+    "docs/customize/model-providers/assets/tetrate-get-api-key.png",
+    "docs/customize/model-providers/assets/tetrate-remix.png",
+    "docs/customize/model-providers/assets/tetrate-sign-in.png",
+    "docs/customize/model-providers/more/_category_.json",
+    "docs/customize/model-providers/more/asksage.mdx",
+    "docs/customize/model-providers/more/cerebras.mdx",
+    "docs/customize/model-providers/more/clawrouter.mdx",
+    "docs/customize/model-providers/more/cloudflare.mdx"
+  ],
+  "readmeExtract": "<div align=\"center\" </div <h1 align=\"center\" Continue</h1 <div align=\"center\" <a target=\" blank\" href=\"https://opensource.org/licenses/Apache 2.0\" style=\"background:none\" <img src=\"https://img.shields.io/badge/License Apache 2.0 blue.svg\" style=\"height: 22px;\" / </a <a target=\" blank\" href=\"https://docs.continue.dev\" style=\"background:none\" <img src=\"https://img.shields.io/badge/Continue docs %23BE1B55.svg?logo=data:",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Paste this into your coding agent of choice:",
+    "Continue runs agents on every pull request as GitHub status checks.",
+    "Each agent is a markdown file in your repo at .continue/checks/.",
+    "Here is an example that performs a security review:",
+    "title: \"Create and Edit Cloud Agents\"",
+    "description: \"Build custom AI workflows for your Cloud Agents with prompts, rules, and tools through the Continue Mission Control interface\"",
+    "You can only create and edit AI Agents in the Continue Mission Control web interface.",
+    "Navigate to the New Agent page."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"cli\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "⏩ Source-controlled AI checks, enforceable in CI. Powered by the open-source Continue CLI",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "data",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "data",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Continue is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with data workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "Paste this into your coding agent of choice:"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:continuedev/continue",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "continue",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

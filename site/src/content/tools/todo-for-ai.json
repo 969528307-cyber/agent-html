@@ -1,0 +1,76 @@
+{
+  "id": "todo-for-ai",
+  "name": "Todo For Ai",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "🤖 A comprehensive task management system specifically designed for AI assistants. Supports project management, task tracking, team collaboration, and seamless AI integration through MCP (Model Context Protocol). Built with modern tech stack including React, Flask, and Docker. Try it now at https://todo4ai.org/",
+  "description": "🤖 A comprehensive task management system specifically designed for AI assistants. Supports project management, task tracking, team collaboration, and seamless AI integration through MCP (Model Context Protocol). Built with modern tech stack including React, Flask, and Docker. Try it now at https://todo4ai.org/",
+  "category": [
+    "productivity"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/todo-for-ai/todo-for-ai",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/todo-for-ai/todo-for-ai",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/todo-for-ai/todo-for-ai#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/todo-for-ai/todo-for-ai#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/todo-for-ai/todo-for-ai/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Todo for AI bridges the gap between AI assistants and human productivity workflows.",
+    "Unlike traditional task management tools, our system is built from the ground up to work seamlessly with AI agents through the Model Context Protocol (MCP).",
+    "🔗 Native AI Integration: First-class support for AI assistants through MCP, enabling natural language task management",
+    "🔄 Seamless Workflow: Bridge between AI capabilities and human oversight with intelligent task delegation",
+    "🌐 Universal Compatibility: Works with Claude, GPT, and other AI assistants through standardized MCP protocol",
+    "⚡ Real-time Collaboration: Instant synchronization between AI agents and human team members",
+    "Developers integrating AI assistants into their workflows",
+    "Product Managers coordinating between AI agents and human teams"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-03-30T14:25:46Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/todo-for-ai/todo-for-ai",
+  "repoUrl": "https://github.com/todo-for-ai/todo-for-ai",
+  "license": "Apache-2.0",
+  "stars": 1165,
+  "lastUpdated": "2026-03-30T14:25:46Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

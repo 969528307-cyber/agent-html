@@ -1,0 +1,78 @@
+{
+  "id": "nexent",
+  "name": "Nexent",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes.",
+  "description": "Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ModelEngine-Group/nexent",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ModelEngine-Group/nexent",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ModelEngine-Group/nexent#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ModelEngine-Group/nexent#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ModelEngine-Group/nexent/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Nexent is a zero-code platform for auto-generating production-grade AI agents, built on Harness Engineering principles.",
+    "Nexent provides a comprehensive feature set for building powerful AI agents:",
+    "⚙️ Multi-Model Integration OpenAI-compatible with any provider, full LLM/Embedding/VLM/STT/TTS coverage, supports domestic model switching",
+    "🤝 A2A Agent Collaboration Agent-to-Agent protocol enables seamless multi-agent cooperation and distributed workflows",
+    "🧠 Layered Memory Mechanism Two-tier memory (user-level + user-agent-level) for persistent context across conversations",
+    "📝 Progressive Skill Disclosure Dynamically loads Skill into context, maximizing context window efficiency",
+    "🔧 MCP Tool Ecosystem Plug-and-play extension system with custom development and third-party MCP service support",
+    "🌐 Internet Knowledge Integration Multi-source search blending real-time information with private data"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T02:54:55Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ModelEngine-Group/nexent",
+  "repoUrl": "https://github.com/ModelEngine-Group/nexent",
+  "license": "MIT",
+  "stars": 4537,
+  "lastUpdated": "2026-05-18T02:54:55Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

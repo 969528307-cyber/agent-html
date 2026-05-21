@@ -1,0 +1,243 @@
+{
+  "id": "candidate-tool-github-foryourhealth111-pixel-vibe-skills",
+  "type": "tool",
+  "status": "published",
+  "title": "Vibe Skills",
+  "sourceUrl": "https://github.com/foryourhealth111-pixel/Vibe-Skills",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "foryourhealth111-pixel",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Vibe-Skills is an all-in-one AI skills package. It seamlessly integrates expert-level capabilities and context management into a general-purpose skills package， enabling any AI agent to instantly upgrade its functionality—eliminating the friction of fragmented tools and complex harnesses.",
+  "proposedCategory": [
+    "automation",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic",
+    "OpenClaw"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "foryourhealth111-pixel",
+    "repo": "Vibe-Skills",
+    "fullName": "foryourhealth111-pixel/Vibe-Skills",
+    "stars": 2116,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-framework",
+      "agent-skills",
+      "agentic-coding",
+      "ai-agents",
+      "ai-scientist",
+      "ai-skills",
+      "ai-workflow",
+      "automation",
+      "claude-code",
+      "codex",
+      "context-engineering",
+      "developer-tools",
+      "llm",
+      "multi-agent",
+      "prompt-engineering",
+      "skills",
+      "vibe-coding",
+      "vibecoding",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-08T04:21:24Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh.md",
+    "docs/adaptive-routing-eval-governance.md",
+    "docs/architecture.md",
+    "docs/architecture/automation-plane.md",
+    "docs/architecture/dependency-rules.md",
+    "docs/architecture/legacy-topology-audit.md",
+    "docs/architecture/target-architecture.md",
+    "docs/archive/README.md",
+    "docs/archive/releases/README.md",
+    "docs/archive/releases/wave15-18-release-packet.md",
+    "docs/archive/reports/hard-migration-batch-a-report.md",
+    "docs/archive/reports/hard-migration-batch-a2-report.md",
+    "docs/archive/reports/hard-migration-batch-cd-pruning-report.md",
+    "docs/archive/reports/hard-migration-batch-e-alias-whitelist-audit.md",
+    "docs/archive/reports/hard-migration-batch-e-final-cleanup-report.md",
+    "docs/archive/reports/heartbeat-unified-vibe-entry-recheck-2026-02-27.md",
+    "docs/archive/reports/README.md",
+    "docs/archive/reports/soft-migration-batch-b-expansion-report.md",
+    "docs/archive/root-docs/compatibility-matrix.md",
+    "docs/archive/root-docs/deployment.md",
+    "docs/archive/root-docs/pilot-scenarios-and-eval.md",
+    "docs/archive/root-docs/README.md",
+    "docs/archive/root-docs/skills-consolidation-roadmap.md",
+    "docs/archive/root-docs/watch-lane-remaining-value-cases.md",
+    "docs/archive/root-docs/watch-portfolio-rationalization.md",
+    "docs/archive/root-docs/wave15-18-execution-backlog.md",
+    "docs/archive/root-docs/wave15-18-verification-spec.md",
+    "docs/archive/status/README.md",
+    "docs/assets/readme-poster-hero-cn.svg",
+    "docs/assets/readme-poster-hero-en.svg",
+    "docs/assets/vibeskills-octopus-mark.svg",
+    "docs/brand/github-branding-copy.md",
+    "docs/candidate-quality-board-governance.md",
+    "docs/capability-dedup-graph-governance.md",
+    "docs/capability-lifecycle-governance.md",
+    "docs/CODEX_ECOSYSTEM_MAINTENANCE_PRINCIPLES.md",
+    "docs/connector-admission-governance.md",
+    "docs/connector-sandbox-simulation-governance.md",
+    "docs/continuous-value-extraction-operations.md"
+  ],
+  "readmeExtract": "<div align=\"right\" <b 🇬🇧 English</b &nbsp;|&nbsp; <a href=\"./README.zh.md\" 🇨🇳 中文</a </div <br/ <div align=\"center\" <a href=\"https://github.com/foryourhealth111 pixel/Vibe Skills\" <img src=\"https://readme typing svg.demolab.com?font=Fira+Code&weight=700&size=45&pause=1000&color=7B61FF&center=true&vCenter=true&width=700&height=100&lines=Vibe+Skills;Super+Skill+Harness;Agent+Orchestration+Layer\" alt=\"VibeSkills Typi",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Give your AI agent a real working rhythm",
+    "It is built to grow, so future domain Skills can plug into the same workflow instead of making every field start from scratch.",
+    "VibeSkills helps the agent move from idea to plan, from plan to work, and from work to verified delivery.",
+    "That is the Super Skill idea: not more buttons, but a better way for AI to get things done.",
+    "skills.orchestrate() -> expert Skills by phase",
+    "🧠 Planning · 🛠️ Engineering · 🤖 AI · 🔬 Research · 🎨 Creation",
+    "Harness The workflow layer around your AI agent.",
+    "It decides the next step, calls the right Skills, checks the work, and saves useful context."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Vibe-Skills is an all-in-one AI skills package. It seamlessly integrates expert-level capabilities and context management into a general-purpose skills package， enabling any AI agent to instantly upgrade its functionality—eliminating the friction of fragmented tools and complex harnesses.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Vibe Skills is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation.",
+      "Relevant to workflow."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:foryourhealth111-pixel/vibe-skills",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 8,
+    "cli": 0,
+    "workflow": 9,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Repository name indicates skill content.",
+    "GitHub topics tag as skills.",
+    "Workflow/automation/orchestration language detected.",
+    "General agent-building language detected.",
+    "Detected scope: single-tool.",
+    "Alternative capabilities: skill, agent-framework.",
+    "LLM: skill + [skill, workflow] — This project is a comprehensive skills package that provides expert-level capabilities and context management, orchestrated into a workflow for AI agents."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "agent-framework"
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "vibe-skills",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

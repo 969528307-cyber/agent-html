@@ -1,0 +1,206 @@
+{
+  "id": "candidate-tool-github-opencoworkai-open-cowork",
+  "type": "tool",
+  "status": "published",
+  "title": "Open Cowork",
+  "sourceUrl": "https://github.com/OpenCoworkAI/open-cowork",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "OpenCoworkAI",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Open-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills — with sandbox isolation, multi-model support, and Feishu/Slack integration.",
+  "proposedCategory": [
+    "communication"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "OpenCoworkAI",
+    "repo": "open-cowork",
+    "fullName": "OpenCoworkAI/open-cowork",
+    "stars": 1352,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "ai-coding",
+      "ai-tools",
+      "anthropic",
+      "claude-code",
+      "coding-agent",
+      "computer-use",
+      "desktop-app",
+      "electron",
+      "mcp",
+      "multi-model",
+      "open-cowork",
+      "sandbox",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T00:54:01Z"
+  },
+  "detectedFiles": [
+    "readme.md",
+    "docs/memory-live-smoke-checklist.md",
+    "package.json",
+    ".claude/skills/docx/SKILL.md",
+    ".claude/skills/pdf/SKILL.md",
+    ".claude/skills/pptx/SKILL.md",
+    ".claude/skills/skill-creator/SKILL.md",
+    ".claude/skills/xlsx/SKILL.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"resources/logo.png\" alt=\"Open Cowork Logo\" width=\"280\" / </p <h1 align=\"center\" 🚀 Open Cowork: Your Personal AI Agent Desktop App</h1 <p align=\"center\" • Open Source Claude Cowork • One Click Install </p <p align=\"center\" <a href=\"./README zh.md\" 中文文档</a • <a href=\" features\" Features</a • <a href=\" demo\" Demo</a • <a href=\" installation\" Downloads</a • <a href=\" quick start\" Quick Start<",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/docx/SKILL.md",
+      "extract": "name: docx description: \"Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When Claude needs to work with professional documents (.docx files) for: (1) Creating new documents, (2) Modifying or editing content, (3) Working with tracked changes, (4) Adding comments, or any other document tasks\" license: Proprietary. LICENSE.t"
+    },
+    {
+      "path": ".claude/skills/pdf/SKILL.md",
+      "extract": "name: pdf description: Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude needs to fill in a PDF form or programmatically process, generate, or analyze PDF documents at scale. license: Proprietary. LICENSE.txt has complete terms PDF Processing Guide Overview This guide covers essential PDF processing operations using P"
+    },
+    {
+      "path": ".claude/skills/pptx/SKILL.md",
+      "extract": "name: pptx description: \"Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing content, (3) Working with layouts, (4) Adding comments or speaker notes, or any other presentation tasks\" license: Proprietary. LICENSE.txt has complete terms PPTX creation, editing, and analysis Overview Create, edit, or analyz"
+    },
+    {
+      "path": ".claude/skills/skill-creator/SKILL.md",
+      "extract": "name: skill creator description: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations. license: Complete terms in LICENSE.txt Skill Creator This skill provides guidance for creating effective skills. About Skills Skills are modular, self contained"
+    },
+    {
+      "path": ".claude/skills/xlsx/SKILL.md",
+      "extract": "name: xlsx description: \"Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs to work with spreadsheets (.xlsx, .xlsm, .csv, .tsv, etc) for: (1) Creating new spreadsheets with formulas and formatting, (2) Reading or analyzing data, (3) Modify existing spreadsheets while preserving formulas, (4) Data analysis and visualizat"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🚀 Open Cowork: Your Personal AI Agent Desktop App",
+    "Open Cowork is a free, open-source AI agent desktop application for Windows and macOS.",
+    "Open Cowork is the open-source implementation of Claude Cowork, designed to make AI-powered desktop automation accessible to everyone.",
+    "Open Cowork is an open-source implementation of Claude Cowork, with one-click installers for Windows and macOS—no coding required.",
+    "Disclaimer: Open Cowork is an AI collaboration tool.",
+    "MCP & Skills Remote Control GUI Operation",
+    "Flexible Model Support: Supports Claude, OpenAI-compatible APIs, and Chinese models like GLM, MiniMax, Kimi.",
+    "Remote Control: Connect to collaboration platforms like Feishu (Lark) and other remote services to automate workflows and cross-platform operations."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Open-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills — with sandbox isolation, multi-model support, and Feishu/Slack integration.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 12,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "GitHub topics tag as skills.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: knowledge-resource, workflow, mcp.",
+    "LLM: agent-app + [mcp, skill] — Open Cowork is a desktop AI agent application that integrates MCP and skills, providing a GUI for AI-powered automation."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "workflow",
+    "mcp"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Open Cowork is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to communication.",
+      "🚀 Open Cowork: Your Personal AI Agent Desktop App"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:opencoworkai/open-cowork",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "open-cowork",
+  "publishedAt": "2026-05-18"
+}

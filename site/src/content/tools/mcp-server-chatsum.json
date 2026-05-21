@@ -1,0 +1,74 @@
+{
+  "id": "mcp-server-chatsum",
+  "name": "Mcp Server Chatsum",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Query and Summarize your chat messages.",
+  "description": "Query and Summarize your chat messages.",
+  "category": [
+    "communication"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/chatmcp/mcp-server-chatsum",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/chatmcp/mcp-server-chatsum",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/chatmcp/mcp-server-chatsum#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/chatmcp/mcp-server-chatsum#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/chatmcp/mcp-server-chatsum/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "This MCP Server is used to summarize your chat messages.",
+    "Summarize chat messages based on the query prompt",
+    "On MacOS: ~/Library/Application Support/Claude/claudedesktopconfig.json",
+    "On Windows: %APPDATA%/Claude/claudedesktopconfig.json",
+    "Since MCP servers communicate over stdio, debugging can be challenging.",
+    "We recommend using the MCP Inspector, which is available as a package script:",
+    "The Inspector will provide a URL to access debugging tools in your browser.",
+    "\"args\": [\"path-to/mcp-server-chatsum/build/index.js\"]..."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2024-12-04T02:58:20Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/chatmcp/mcp-server-chatsum",
+  "repoUrl": "https://github.com/chatmcp/mcp-server-chatsum",
+  "stars": 1034,
+  "lastUpdated": "2024-12-04T02:58:20Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

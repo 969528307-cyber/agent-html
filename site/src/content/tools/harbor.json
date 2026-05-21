@@ -1,0 +1,77 @@
+{
+  "id": "harbor",
+  "name": "Harbor",
+  "type": "cli",
+  "status": "published",
+  "summary": "Stop configuring your AI stack. Start using it. One command brings a complete pre-wired LLM stack with hundreds of services to explore.",
+  "description": "Stop configuring your AI stack. Start using it. One command brings a complete pre-wired LLM stack with hundreds of services to explore.",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Qwen Code",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/av/harbor",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/av/harbor",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/av/harbor#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/av/harbor#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/av/harbor/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "v0.4.14 - Bifrost AI gateway and SurfSense research workspace, Harbor CLI sidecar integrations, and Unsloth Studio portability fixes",
+    "v0.4.8 - Solo CLI and ROS MCP Server services, MiniMax cloud provider, extensive documentation updates",
+    "Maintainers: regenerate docs",
+    "Run the docs workflow from the Harbor repo root with:",
+    "Check out the wiki repo as a sibling directory at ../harbor.wiki, because the docs script copies the generated wiki pages there.",
+    "The docs script shells out to harbor run boost uv run ... to rebuild the Boost-generated pages, so Docker is required even when Harbor falls back to a containerized Deno runtime.",
+    "This workflow updates docs/, syncs the sibling wiki checkout, refreshes the app docs copy, and rewrites the generated package READMEs.",
+    "Enjoy the benefits of MCP ecosystem, extend it to your use-cases."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-10T23:06:37Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/av/harbor",
+  "repoUrl": "https://github.com/av/harbor",
+  "license": "Apache-2.0",
+  "stars": 2932,
+  "lastUpdated": "2026-05-10T23:06:37Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

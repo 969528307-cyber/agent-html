@@ -1,0 +1,163 @@
+{
+  "id": "candidate-tool-github-mattt-imcp",
+  "type": "tool",
+  "status": "published",
+  "title": "IMCP",
+  "sourceUrl": "https://github.com/mattt/iMCP",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "mattt",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A macOS app that provides an MCP server to your Messages, Contacts, Reminders and more",
+  "proposedCategory": [
+    "communication"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "mattt",
+    "repo": "iMCP",
+    "fullName": "mattt/iMCP",
+    "stars": 1418,
+    "license": "MIT",
+    "topics": [
+      "macos",
+      "mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-07T13:04:55Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    ".cursor/rules/ignore-sourcekit-warnings.mdc"
+  ],
+  "readmeExtract": "<picture <source media=\"(prefers color scheme: dark)\" srcset=\"Assets/hero dark.svg\" <source media=\"(prefers color scheme: light)\" srcset=\"Assets/hero light.svg\" <img alt=\"iMCP\" </picture iMCP is a macOS app for connecting your digital life with AI. It works with [Claude Desktop][claude app] and a [growing list of clients][mcp clients] that support the [Model Context Protocol (MCP)][mcp]. Capabilities <table <tr <th <",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "iMCP is a macOS app for connecting your digital life with AI.",
+    "It works with [Claude Desktop][claude-app]",
+    "and a [growing list of clients][mcp-clients] that support the",
+    "[Model Context Protocol (MCP)][mcp].",
+    "View and manage calendar events, including creating new events with customizable settings like recurrence, alarms, and availability status.",
+    "Access contact information about yourself and search your contacts by name, phone number, or email address.",
+    "Provides location services including place search, directions, points of interest lookup, travel time estimation, and static map image generation.",
+    "First, download the iMCP app"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A macOS app that provides an MCP server to your Messages, Contacts, Reminders and more",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 2,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Agent instruction or rule files detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: skill.",
+    "LLM: mcp + [mcp] — iMCP is a macOS app that provides an MCP server for accessing Messages, Contacts, Reminders, and other personal data, making it a Model Context Protocol server."
+  ],
+  "classificationAlternatives": [
+    "skill"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "IMCP is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with media workflows.",
+      "Relevant to communication.",
+      "iMCP is a macOS app for connecting your digital life with AI.",
+      "It works with [Claude Desktop][claude-app]"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:mattt/imcp",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "local-review",
+  "publishedAs": "imcp",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

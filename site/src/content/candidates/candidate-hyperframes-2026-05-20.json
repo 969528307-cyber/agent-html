@@ -1,0 +1,178 @@
+{
+  "id": "candidate-hyperframes-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Hyperframes",
+  "sourceUrl": "https://github.com/heygen-com/hyperframes",
+  "sourceName": "GitHub",
+  "author": "heygen-com",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Write HTML. Render video. Built for agents.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "heygen-com",
+    "repo": "hyperframes",
+    "fullName": "heygen-com/hyperframes",
+    "stars": 19747,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai",
+      "animation",
+      "ffmpeg",
+      "framework",
+      "gsap",
+      "html",
+      "mcp",
+      "puppeteer",
+      "rendering",
+      "typescript",
+      "video"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T02:17:55Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/catalog/blocks/app-showcase.mdx",
+    "docs/catalog/blocks/apple-money-count.mdx",
+    "docs/catalog/blocks/blue-sweater-intro-video.mdx",
+    "docs/catalog/blocks/chromatic-radial-split.mdx",
+    "docs/catalog/blocks/cinematic-zoom.mdx",
+    "docs/catalog/blocks/cross-warp-morph.mdx",
+    "docs/catalog/blocks/data-chart.mdx",
+    "docs/catalog/blocks/domain-warp-dissolve.mdx",
+    "docs/catalog/blocks/flash-through-white.mdx",
+    "docs/catalog/blocks/flowchart.mdx",
+    "docs/catalog/blocks/glitch.mdx",
+    "docs/catalog/blocks/gravitational-lens.mdx",
+    "docs/catalog/blocks/instagram-follow.mdx",
+    "docs/catalog/blocks/light-leak.mdx",
+    "docs/catalog/blocks/logo-outro.mdx",
+    "docs/catalog/blocks/macos-notification.mdx",
+    "docs/catalog/blocks/north-korea-locked-down.mdx",
+    "docs/catalog/blocks/nyc-paris-flight.mdx",
+    "docs/catalog/blocks/reddit-post.mdx",
+    "docs/catalog/blocks/ridged-burn.mdx",
+    "docs/catalog/blocks/ripple-waves.mdx",
+    "docs/catalog/blocks/sdf-iris.mdx",
+    "docs/catalog/blocks/spain-map.mdx",
+    "docs/catalog/blocks/spotify-card.mdx",
+    "docs/catalog/blocks/swirl-vortex.mdx",
+    "docs/catalog/blocks/thermal-distortion.mdx",
+    "docs/catalog/blocks/tiktok-follow.mdx",
+    "docs/catalog/blocks/transitions-3d.mdx",
+    "docs/catalog/blocks/transitions-blur.mdx",
+    "docs/catalog/blocks/transitions-cover.mdx",
+    "docs/catalog/blocks/transitions-destruction.mdx",
+    "docs/catalog/blocks/transitions-dissolve.mdx",
+    "docs/catalog/blocks/transitions-distortion.mdx",
+    "docs/catalog/blocks/transitions-grid.mdx",
+    "docs/catalog/blocks/transitions-light.mdx",
+    "docs/catalog/blocks/transitions-mechanical.mdx",
+    "docs/catalog/blocks/transitions-other.mdx",
+    "docs/catalog/blocks/transitions-push.mdx",
+    "docs/catalog/blocks/transitions-radial.mdx"
+  ],
+  "readmeExtract": "<p align=\"center\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"docs/logo/dark.svg\" <source media=\"(prefers color scheme: light)\" srcset=\"docs/logo/light.svg\" <img alt=\"HyperFrames\" src=\"docs/logo/light.svg\" width=\"300\" </picture </p <p align=\"center\" <a href=\"https://www.npmjs.com/package/hyperframes\" <img src=\"https://img.shields.io/npm/v/hyperframes.svg?style=flat\" alt=\"npm version\" </a <a href=\"ht",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Hyperframes is an open-source video rendering framework that lets you create, preview, and render HTML-based video compositions — with first-class support for AI agents.",
+    "Option 1: With an AI coding agent (recommended)",
+    "This teaches your agent (Claude Code, Cursor, Gemini CLI, Codex) how to write correct compositions, GSAP timelines, Tailwind v4 browser-runtime styles, and first-party adapter animations.",
+    "For Claude Design, open docs/guides/claude-design-hyperframes.md on GitHub and click the download button (↓) to save it, then attach the file to your Claude Design chat.",
+    "It produces a valid first draft; refine in any AI coding agent.",
+    "See the Claude Design guide.",
+    "For Claude Code, the repo also ships a Claude Code plugin manifest: test it locally with claude --plugin-dir ..",
+    "Copy any of these into your agent to get started."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Write HTML. Render video. Built for agents.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Hyperframes is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Relevant to mcp.",
+      "Hyperframes is an open-source video rendering framework that lets you create, preview, and render HTML-based video compositions — with first-class support for AI agents.",
+      "Option 1: With an AI coding agent (recommended)"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "hyperframes",
+  "publishedAt": "2026-05-20"
+}

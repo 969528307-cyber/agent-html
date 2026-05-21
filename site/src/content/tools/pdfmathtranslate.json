@@ -1,0 +1,76 @@
+{
+  "id": "pdfmathtranslate",
+  "name": "PDFMathTranslate",
+  "type": "mcp",
+  "status": "published",
+  "summary": "[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero",
+  "description": "[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/PDFMathTranslate/PDFMathTranslate#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/PDFMathTranslate/PDFMathTranslate#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/PDFMathTranslate/PDFMathTranslate/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Warp, built for coding with multiple AI agents",
+    "🤖 Provides commandline tool, interactive user interface, and Docker",
+    "[May 9, 2025] pdf2zh 2.0 Preview Version #586: The Windows ZIP file and Docker image are now available.",
+    "If your browser has not been started automatically, goto",
+    "See documentation for GUI for more details.",
+    "2.5 Reference manager: Zotero Plugin",
+    "The current program relies on the AI model (wybxc/DocLayout-YOLO-DocStructBench-onnx), and some users are unable to download it due to these network issues.",
+    "--mcp Enable MCP STDIO mode pdf2zh --mcp"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T17:03:15Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+  "repoUrl": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+  "license": "AGPL-3.0",
+  "stars": 33870,
+  "lastUpdated": "2026-05-12T17:03:15Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,185 @@
+{
+  "id": "candidate-claude-code-tools-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Code Tools",
+  "sourceUrl": "https://github.com/pchalasani/claude-code-tools",
+  "sourceName": "GitHub",
+  "author": "pchalasani",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Practical productivity tools for Claude Code, Codex-CLI, and similar CLI coding agents.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "pchalasani",
+    "repo": "claude-code-tools",
+    "fullName": "pchalasani/claude-code-tools",
+    "stars": 1794,
+    "license": "MIT",
+    "topics": [
+      "claude-code",
+      "cli",
+      "cli-agent",
+      "code-agent",
+      "codex",
+      "codex-cli",
+      "context",
+      "llm",
+      "tmux"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T23:43:36Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/claude-code-tmux-tutorials.md",
+    "docs/dot-zshrc.md",
+    "docs/find-claude-session.md",
+    "docs/intercom-spec.md",
+    "docs/lmsh.md",
+    "docs/msg-phase-a-plan.md",
+    "docs/msg-plan-v2.md",
+    "docs/tmux-cli-instructions.md",
+    "docs/vault-documentation.md",
+    "pyproject.toml",
+    "plugins/aichat/skills/recover-context/SKILL.md",
+    "plugins/aichat/skills/session-search/SKILL.md",
+    "plugins/langroid/skills/add-pattern/SKILL.md",
+    "plugins/langroid/skills/patterns/SKILL.md",
+    "plugins/msg/skills/msg/SKILL.md",
+    "plugins/tmux-cli/skills/tmux-cli/SKILL.md",
+    "plugins/voice/skills/voice-update/SKILL.md",
+    "plugins/workflow/skills/code-walk-thru/SKILL.md",
+    "plugins/workflow/skills/log-work/SKILL.md",
+    "plugins/workflow/skills/make-issue-spec/SKILL.md",
+    "plugins/workflow/skills/socratic-quiz/SKILL.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <a href=\"https://pchalasani.github.io/claude code tools/\" <img src=\"assets/logo nyc subway.png\" alt=\"CLAUDE CODE TOOLS\" width=\"500\"/ </a CLI tools, skills, agents, hooks, and plugins for enhancing productivity with Claude Code and other coding agents. [![Documentation](https://img.shields.io/badge/%F0%9F%93%96 documentation blue)](https://pchalasani.github.io/claude code tools/) [![aichat search](",
+  "skillExtracts": [
+    {
+      "path": "plugins/aichat/skills/recover-context/SKILL.md",
+      "extract": "name: recover context description: Extract full context of the last task from the most recent parent session shown in the session lineage. Strategically uses sub agents to avoid bloating your own context. recover context Use this skill to extract context from a parent session when a session lineage is present (shown in the first user message of this conversation). Instructions 1. Identify the most recent parent sessi"
+    },
+    {
+      "path": "plugins/aichat/skills/session-search/SKILL.md",
+      "extract": "name: session search description: For CLI agents WITHOUT subagent support (e.g., Codex CLI). Search previous code agent sessions for specific work, decisions, or code patterns. If you are Claude Code: Do NOT use this skill directly. Use the session searcher subagent via the Task tool instead it handles this more efficiently without polluting your context. session search Search and find previous code agent sessions (C"
+    },
+    {
+      "path": "plugins/langroid/skills/add-pattern/SKILL.md",
+      "extract": "name: add pattern description: Use this skill when you learn one or more design pattern(s) in the Langroid (multi) agent framework, and want to make a note for future reference for yourself. Use this either autonomously, or when asked by the user to record a new pattern. add pattern Instructions When you learn a new Langroid design pattern, do the following: 1. Add an entry in the sibling patterns/SKILL.md file in th"
+    },
+    {
+      "path": "plugins/langroid/skills/patterns/SKILL.md",
+      "extract": "name: patterns description: Design patterns for the Langroid multi agent LLM framework. Covers agent configuration, tools, task control, and integrations. Langroid Patterns Instructions Below is an INDEX of design patterns organized by category. Each item describes WHAT you might want to implement, followed by a REFERENCE to a document with a complete code example. Scan this index to find patterns matching your needs"
+    },
+    {
+      "path": "plugins/msg/skills/msg/SKILL.md",
+      "extract": "description: Inter agent communication via the msg CLI. Use this when you need to send messages to other agent sessions, read incoming messages, or coordinate with other agents in tmux panes. msg: Inter Agent Communication You can communicate with other coding agent sessions (Claude Code or Codex CLI) using the msg CLI tool. Registration Before sending or receiving messages, register yourself: This auto detects your "
+    },
+    {
+      "path": "plugins/tmux-cli/skills/tmux-cli/SKILL.md",
+      "extract": "name: tmux cli description: CLI utility to communicate with other CLI Agents or Scripts in other tmux panes; use it only when user asks you to communicate with other CLI Agents or Scripts in other tmux panes. tmux cli Instructions Use the tmux cli command to communicate with other CLI Agents or Scripts in other tmux panes. Do tmux cli help to see how to use it! This command depends on installing the claude code tools"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "CLI tools, skills, agents, hooks, and plugins for enhancing productivity with Claude Code and other coding agents.",
+    "The search engine (aichat search) requires a",
+    "for hooks, skills, and agents:",
+    "For current documentation, visit the",
+    "See aichat in the full documentation.",
+    "tmux-cli — Terminal Automation",
+    "See tmux-cli in the full documentation.",
+    "See Voice in the full documentation."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Practical productivity tools for Claude Code, Codex-CLI, and similar CLI coding agents.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Claude Code Tools is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "CLI tools, skills, agents, hooks, and plugins for enhancing productivity with Claude Code and other coding agents."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-code-tools",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "hacker-podcast",
+  "name": "Hacker Podcast",
+  "type": "workflow",
+  "status": "published",
+  "summary": "一个基于 AI 的 Hacker News 中文播客项目，每天自动抓取 Hacker News 热门文章，通过 AI 生成中文总结并转换为播客内容。",
+  "description": "一个基于 AI 的 Hacker News 中文播客项目，每天自动抓取 Hacker News 热门文章，通过 AI 生成中文总结并转换为播客内容。",
+  "category": [
+    "workflow"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/miantiao-me/hacker-podcast",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/miantiao-me/hacker-podcast",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/miantiao-me/hacker-podcast#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/miantiao-me/hacker-podcast#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/miantiao-me/hacker-podcast/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "记得恢复注释：wrangler.jsonc 中的 workflows 相关配置",
+    "workflow/ # 工作流引擎 (抓取、AI 摘要、TTS)",
+    "├── index.ts # HackerNewsWorkflow 入口",
+    "worker/wrangler.jsonc # Worker Cloudflare 配置 (含 cron、Browser Rendering)",
+    "// try-catch + console.error，workflow 步骤配合重试",
+    "Repository includes agent instruction files"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-09T11:18:23Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/miantiao-me/hacker-podcast",
+  "repoUrl": "https://github.com/miantiao-me/hacker-podcast",
+  "license": "AGPL-3.0",
+  "stars": 2527,
+  "lastUpdated": "2026-05-09T11:18:23Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

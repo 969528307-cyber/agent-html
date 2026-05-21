@@ -1,0 +1,172 @@
+{
+  "id": "candidate-web-quality-skills-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Web Quality Skills",
+  "sourceUrl": "https://github.com/addyosmani/web-quality-skills",
+  "sourceName": "GitHub",
+  "author": "addyosmani",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Agent Skills for optimizing web quality based on Lighthouse and Core Web Vitals.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "addyosmani",
+    "repo": "web-quality-skills",
+    "fullName": "addyosmani/web-quality-skills",
+    "stars": 1964,
+    "license": "MIT",
+    "topics": [
+      "accessibility",
+      "agent-skills",
+      "claude-skills",
+      "core-web-vitals",
+      "lighthouse",
+      "skills",
+      "testing",
+      "web-performance"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-09T22:25:48Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/accessibility/SKILL.md",
+    "skills/best-practices/SKILL.md",
+    "skills/core-web-vitals/SKILL.md",
+    "skills/performance/SKILL.md",
+    "skills/seo/SKILL.md",
+    "skills/web-quality-audit/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Web Quality Skills An (unofficial) comprehensive collection of [Agent Skills](https://agentskills.io/) for optimizing web projects based on [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) guidelines and Core Web Vitals best practices. Stack agnostic. Works with any framework: React, Vue, Angular, Svelte, Next.js, Nuxt, Astro, plain HTML, and more. Why web quality skills? While interface gu",
+  "skillExtracts": [
+    {
+      "path": "skills/accessibility/SKILL.md",
+      "extract": "name: accessibility description: Audit and improve web accessibility following WCAG 2.2 guidelines. Use when asked to \"improve accessibility\", \"a11y audit\", \"WCAG compliance\", \"screen reader support\", \"keyboard navigation\", or \"make accessible\". license: MIT metadata: author: web quality skills version: \"1.1\" Accessibility (a11y) Comprehensive accessibility guidelines based on WCAG 2.2 and Lighthouse accessibility au"
+    },
+    {
+      "path": "skills/best-practices/SKILL.md",
+      "extract": "name: best practices description: Apply modern web development best practices for security, compatibility, and code quality. Use when asked to \"apply best practices\", \"security audit\", \"modernize code\", \"code quality review\", or \"check for vulnerabilities\". license: MIT metadata: author: web quality skills version: \"1.0\" Best practices Modern web development standards based on Lighthouse best practices audits. Covers"
+    },
+    {
+      "path": "skills/core-web-vitals/SKILL.md",
+      "extract": "name: core web vitals description: Optimize Core Web Vitals (LCP, INP, CLS) for better page experience and search ranking. Use when asked to \"improve Core Web Vitals\", \"fix LCP\", \"reduce CLS\", \"optimize INP\", \"page experience optimization\", or \"fix layout shifts\". license: MIT metadata: author: web quality skills version: \"1.0\" Core Web Vitals optimization Targeted optimization for the three Core Web Vitals metrics t"
+    },
+    {
+      "path": "skills/performance/SKILL.md",
+      "extract": "name: performance description: Optimize web performance for faster loading and better user experience. Use when asked to \"speed up my site\", \"optimize performance\", \"reduce load time\", \"fix slow loading\", \"improve page speed\", or \"performance audit\". license: MIT metadata: author: web quality skills version: \"1.0\" Performance optimization Deep performance optimization based on Lighthouse performance audits. Focuses o"
+    },
+    {
+      "path": "skills/seo/SKILL.md",
+      "extract": "name: seo description: Optimize for search engine visibility and ranking. Use when asked to \"improve SEO\", \"optimize for search\", \"fix meta tags\", \"add structured data\", \"sitemap optimization\", or \"search engine optimization\". license: MIT metadata: author: web quality skills version: \"1.0\" SEO optimization Search engine optimization based on Lighthouse SEO audits and Google Search guidelines. Focus on technical SEO,"
+    },
+    {
+      "path": "skills/web-quality-audit/SKILL.md",
+      "extract": "name: web quality audit description: Comprehensive web quality audit covering performance, accessibility, SEO, and best practices. Use when asked to \"audit my site\", \"review web quality\", \"run lighthouse audit\", \"check page quality\", or \"optimize my website\". license: MIT metadata: author: web quality skills version: \"1.0\" Web quality audit Comprehensive quality review based on Google Lighthouse audits. Covers Perfor"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "An (unofficial) comprehensive collection of Agent Skills for optimizing web projects based on Google Lighthouse guidelines and Core Web Vitals best practices.",
+    "While interface guidelines tell you what to build, Web Quality Skills tell you how to build it performantly, accessibly, and optimally for search engines.",
+    "These skills encode the collective wisdom from:",
+    "web-quality-audit Comprehensive quality review across all categories \"Audit my site\", \"Review this for quality\", \"Check web quality\"",
+    "accessibility WCAG compliance, screen reader support, keyboard navigation \"Improve accessibility\", \"WCAG audit\", \"a11y review\"",
+    "seo Search engine optimization, crawlability, structured data \"Optimize for SEO\", \"Improve search ranking\", \"Fix meta tags\"",
+    "best-practices Security, modern APIs, code quality patterns \"Apply best practices\", \"Security audit\", \"Code quality review\"",
+    "Whether you're using OpenCode, Claude Code, Codex, or Cursor, the add-skill tool makes it simple to extend your agent's capabilities with specialized instruction sets."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Agent Skills for optimizing web quality based on Lighthouse and Core Web Vitals.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "testing"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "testing"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Web Quality Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with testing workflows.",
+      "Relevant to skill.",
+      "An (unofficial) comprehensive collection of Agent Skills for optimizing web projects based on Google Lighthouse guidelines and Core Web Vitals best practices."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "web-quality-skills",
+  "publishedAt": "2026-05-20"
+}

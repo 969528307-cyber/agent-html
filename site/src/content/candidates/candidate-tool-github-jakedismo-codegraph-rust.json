@@ -1,0 +1,213 @@
+{
+  "id": "candidate-tool-github-jakedismo-codegraph-rust",
+  "type": "tool",
+  "status": "published",
+  "title": "Codegraph Rust",
+  "sourceUrl": "https://github.com/Jakedismo/codegraph-rust",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "Jakedismo",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "100% Rust implementation of code graphRAG with blazing fast AST+FastML parsing, surrealDB backend and advanced agentic code analysis tools through MCP for efficient code agent context management",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "Jakedismo",
+    "repo": "codegraph-rust",
+    "fullName": "Jakedismo/codegraph-rust",
+    "stars": 730,
+    "topics": [
+      "agents",
+      "ai-agents",
+      "ai-coding",
+      "claude-code",
+      "code-search",
+      "codex",
+      "coding-agent",
+      "context-engine",
+      "cursor",
+      "gemini-cli",
+      "graphrag",
+      "rag",
+      "rust",
+      "search-engines",
+      "semantic-search",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-12-20T02:24:45Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/AGENT_PROMPT_TIERS.md",
+    "docs/AI_PROVIDERS.md",
+    "docs/architecture/agent-context-gathering-flow.html",
+    "docs/architecture/codegraph-architecture.html",
+    "docs/architecture/indexing-analyzers.md",
+    "docs/assets/banner.png",
+    "docs/assets/footer.jpg",
+    "docs/crates/codegraph-ai/README.md",
+    "docs/crates/codegraph-cache/README.md",
+    "docs/crates/codegraph-concurrent/README.md",
+    "docs/crates/codegraph-core/README.md",
+    "docs/crates/codegraph-graph/README.md",
+    "docs/crates/codegraph-mcp-autoagents/README.md",
+    "docs/crates/codegraph-mcp-core/README.md",
+    "docs/crates/codegraph-mcp-daemon/README.md",
+    "docs/crates/codegraph-mcp-rig/README.md",
+    "docs/crates/codegraph-mcp-server/README.md",
+    "docs/crates/codegraph-mcp-tools/README.md",
+    "docs/crates/codegraph-mcp/README.md",
+    "docs/crates/codegraph-parser/README.md",
+    "docs/crates/codegraph-vector/README.md",
+    "docs/crates/codegraph-zerocopy/README.md",
+    "docs/DEBUG_LOGGING.md",
+    "docs/README.md",
+    "docs/specifications/indexing_tiers.spec.md",
+    "docs/specifications/lsp_enrichment_throughput.spec.md",
+    "docs/specifications/mcp_initial_instructions_prompt_name.spec.md",
+    "docs/specifications/module_linking_rust.spec.md",
+    "docs/specifications/remove_codegraph_cache.spec.md",
+    "docs/SUPPORTED_LANGUAGES.md",
+    "docs/TESTING.md",
+    "docs/USAGE_GUIDE.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "![CodeGraph](docs/assets/banner.png) CodeGraph Your codebase, understood. CodeGraph transforms your entire codebase into a semantically searchable knowledge graph that AI agents can actually reason about—not just grep through. Ready to get started? Jump to the [Installation Guide](docs/INSTALLATION GUIDE.md) for step by step setup instructions. Already set up? See the [Usage Guide](docs/USAGE GUIDE.md) for tips on ge",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "CodeGraph transforms your entire codebase into a semantically searchable knowledge graph that AI agents can actually reason about—not just grep through.",
+    "Most semantic search tools create embeddings and call it a day.",
+    "When you search, you don't just get \"similar code\"—you get code with its relationships intact.",
+    "Document/spec nodes linked to backticked symbols in README.md, docs//.md, and schema//.surql",
+    "balanced LSP symbols + docs/enrichment + module linking Good agentic results without full cost",
+    "fast: disables build context, LSP, enrichment, module linking, dataflow, docs/contracts, and architecture; filters out Uses/References edges.",
+    "balanced: enables build context, LSP symbols, enrichment, module linking, and docs/contracts; filters out References edges.",
+    "When the tier enables LSP (balanced/full), indexing fails fast if required external tools are missing."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "100% Rust implementation of code graphRAG with blazing fast AST+FastML parsing, surrealDB backend and advanced agentic code analysis tools through MCP for efficient code agent context management",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "coding",
+      "research"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 8,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: single-tool.",
+    "Alternative capabilities: mcp, cli.",
+    "LLM: mcp + [mcp, cli] — This project is a Rust-based code graphRAG implementation that exposes its capabilities via the Model Context Protocol for AI agent context management."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Codegraph Rust is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to search."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:jakedismo/codegraph-rust",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "codegraph-rust",
+  "publishedAt": "2026-05-18"
+}

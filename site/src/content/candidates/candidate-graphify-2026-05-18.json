@@ -1,0 +1,188 @@
+{
+  "id": "candidate-graphify-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Graphify",
+  "sourceUrl": "https://github.com/safishamsi/graphify",
+  "sourceName": "GitHub",
+  "author": "safishamsi",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "safishamsi",
+    "repo": "graphify",
+    "fullName": "safishamsi/graphify",
+    "stars": 48982,
+    "license": "MIT",
+    "topics": [
+      "antigravity",
+      "claude-code",
+      "codex",
+      "gemini",
+      "graphrag",
+      "knowledge-graph",
+      "leiden",
+      "openclaw",
+      "rag",
+      "skills",
+      "tree-sitter"
+    ],
+    "defaultBranch": "v8",
+    "lastPushedAt": "2026-05-18T11:09:39Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/docker-mcp-sqlite.md",
+    "docs/how-it-works.md",
+    "docs/logo-icon.svg",
+    "docs/logo-text.svg",
+    "docs/superpowers/plans/2026-05-04-incremental-updates-dedup.md",
+    "docs/superpowers/specs/2026-05-04-incremental-updates-dedup-design.md",
+    "docs/translations/README.ar-SA.md",
+    "docs/translations/README.cs-CZ.md",
+    "docs/translations/README.da-DK.md",
+    "docs/translations/README.de-DE.md",
+    "docs/translations/README.el-GR.md",
+    "docs/translations/README.es-ES.md",
+    "docs/translations/README.fi-FI.md",
+    "docs/translations/README.fr-FR.md",
+    "docs/translations/README.hi-IN.md",
+    "docs/translations/README.hu-HU.md",
+    "docs/translations/README.id-ID.md",
+    "docs/translations/README.it-IT.md",
+    "docs/translations/README.ja-JP.md",
+    "docs/translations/README.ko-KR.md",
+    "docs/translations/README.nl-NL.md",
+    "docs/translations/README.no-NO.md",
+    "docs/translations/README.pl-PL.md",
+    "docs/translations/README.pt-BR.md",
+    "docs/translations/README.ro-RO.md",
+    "docs/translations/README.ru-RU.md",
+    "docs/translations/README.sv-SE.md",
+    "docs/translations/README.th-TH.md",
+    "docs/translations/README.tr-TR.md",
+    "docs/translations/README.uk-UA.md",
+    "docs/translations/README.vi-VN.md",
+    "docs/translations/README.zh-CN.md",
+    "docs/translations/README.zh-TW.md",
+    "pyproject.toml",
+    "graphify/skill.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://graphifylabs.ai\" <img src=\"https://raw.githubusercontent.com/safishamsi/graphify/v4/docs/logo text.svg\" width=\"260\" height=\"64\" alt=\"Graphify\"/ </a </p <p align=\"center\" 🇺🇸 <a href=\"README.md\" English</a | 🇨🇳 <a href=\"docs/translations/README.zh CN.md\" 简体中文</a | 🇯🇵 <a href=\"docs/translations/README.ja JP.md\" 日本語</a | 🇰🇷 <a href=\"docs/translations/README.ko KR.md\" 한국어</a | 🇩",
+  "skillExtracts": [
+    {
+      "path": "graphify/skill.md",
+      "extract": "name: graphify description: \"any input (code, docs, papers, images, videos) to knowledge graph. Use when user asks any question about a codebase, documents, or project content especially if graphify out/ exists, treat the question as a /graphify query.\" trigger: /graphify /graphify Turn any folder of files into a navigable knowledge graph with community detection, an honest audit trail, and three outputs: interactive"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Type /graphify in your AI coding assistant and it maps your entire project — code, docs, PDFs, images, videos — into a knowledge graph you can query instead of grepping through files.",
+    "Works in Claude Code, Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, VS Code Copilot Chat, Aider, OpenClaw, Factory Droid, Trae, Hermes, Kimi Code, Kiro, Pi, and Google Antigravity.",
+    "Step 2 — register the skill with your AI assistant:",
+    "Codex uses $graphify instead of /graphify.",
+    "On platforms that support payload-bearing hooks (Claude Code, Gemini CLI), a hook fires automatically before search-style tool calls and nudges your assistant toward the graph path.",
+    "On the others (Codex, OpenCode, Cursor, etc.), the persistent instruction files (AGENTS.md, .cursor/rules/, etc.) provide the same query-first guidance.",
+    "GRAPHREPORT.md is still available for broad architecture review.",
+    "God nodes — the most-connected concepts in your project."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "database",
+      "devops",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "database",
+    "devops",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Graphify is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with database workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "graphify",
+  "publishedAt": "2026-05-18"
+}

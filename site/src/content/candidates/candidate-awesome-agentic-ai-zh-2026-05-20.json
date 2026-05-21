@@ -1,0 +1,171 @@
+{
+  "id": "candidate-awesome-agentic-ai-zh-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Agentic Ai Zh",
+  "sourceUrl": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+  "sourceName": "GitHub",
+  "author": "WenyuChiou",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A structured, trilingual (繁中 / 简中 / English) learning roadmap for agentic AI — from LLM basics to multi-agent systems. 8 stages · 145+ curated projects · hands-on exercises. 中文 AI agent 學習地圖。",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "Kimi",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "WenyuChiou",
+    "repo": "awesome-agentic-ai-zh",
+    "fullName": "WenyuChiou/awesome-agentic-ai-zh",
+    "stars": 1578,
+    "license": "MIT",
+    "topics": [
+      "agentic-ai",
+      "ai-agents",
+      "awesome-list",
+      "claude-code",
+      "claude-skills",
+      "cli",
+      "learning-roadmap",
+      "llm-agents",
+      "mcp",
+      "model-context-protocol",
+      "trilingual",
+      "tutorial"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T15:45:57Z"
+  },
+  "detectedFiles": [
+    "README.en.md",
+    "README.md",
+    "README.zh-Hans.md",
+    "docs/HOW_TO_USE.md",
+    "docs/TESTING_PLAN.md",
+    "examples/stage-4/01-same-agent-two-frameworks/README.en.md",
+    "examples/stage-4/01-same-agent-two-frameworks/README.md",
+    "examples/stage-4/01-same-agent-two-frameworks/README.zh-Hans.md",
+    "examples/stage-4/02-multi-agent-roles/README.en.md",
+    "examples/stage-4/02-multi-agent-roles/README.md",
+    "examples/stage-4/02-multi-agent-roles/README.zh-Hans.md",
+    "examples/stage-4/03-graph-workflow/README.en.md",
+    "examples/stage-4/03-graph-workflow/README.md",
+    "examples/stage-4/03-graph-workflow/README.zh-Hans.md",
+    "examples/stage-4/05-typed-agent/README.en.md",
+    "examples/stage-4/05-typed-agent/README.md",
+    "examples/stage-4/05-typed-agent/README.zh-Hans.md",
+    "examples/stage-5/tool-calling-tutor/SKILL.md",
+    "examples/stage-5/tool-calling-tutor/translations/SKILL.en.md",
+    "examples/stage-5/tool-calling-tutor/translations/SKILL.zh-Hans.md",
+    "examples/stage-7/01-multi-agent-debate/README.en.md",
+    "examples/stage-7/01-multi-agent-debate/README.md",
+    "examples/stage-7/01-multi-agent-debate/README.zh-Hans.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<div align=\"right\" <strong 繁體中文</strong | <a href=\"./README.zh Hans.md\" 简体中文</a | <a href=\"./README.en.md\" English</a </div <div align=\"center\" ![AI Agent 學習路徑](resources/diagrams/banner.png) awesome agentic ai zh 🤖 AI Agent 學習地圖 — 從基本 LLM 概念到自己打造多 agent 系統 <p <em <b 學習路線圖 + 145+ 資源 curation + 簡單 illustrative 案例</b <br/ 結構化 8 階段、從「LLM 是什麼、token 怎麼算」走到 multi agent 編排、Computer Use / Browser Use / Sandbox</em </p [![Li",
+  "skillExtracts": [
+    {
+      "path": "examples/stage-5/tool-calling-tutor/SKILL.md",
+      "extract": "name: tool calling tutor description: When the user is building a tool calling agent and gets stuck — \"為什麼 LLM 不呼叫我的 tool\", \"我這 schema 哪裡寫壞\", \"tool 被呼叫但 args 不對\", \"ReAct loop 跑不停\", \"the LLM won't call my tool\", \"help me design a function schema\", \"debug this tool use behavior\". Walks them through a 4 branch diagnostic + 5 step schema design walkthrough, with references to bad/good schema A/B and SDK diff cheatsheet. "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🤖 AI Agent 學習地圖 — 從基本 LLM 概念到自己打造多 agent 系統",
+    "學習路線圖 + 145+ 資源 curation + 簡單 illustrative 案例 . 結構化 8 階段、從「LLM 是什麼、token 怎麼算」走到 multi-agent 編排、Computer Use / Browser Use / Sandbox",
+    "本 repo 角色定位：學習路線圖 + 145+ 資源 curation + 簡單 illustrative 案例——三件事為核心、幫想學 AI / AI agent 的人從「不知道從哪開始」走到「能設計多 agent 系統」。",
+    "資源 curation 每階段精選 145+ 個 project（含星等、適合誰、教什麼、怎麼跑），加上中文 AI 生態(DeepSeek / Zhipu / Kimi 等)MCP / Skill 完整 catalog 145+ projects、62 MCP/Skill",
+    "走完整條路線，你會從「LLM 使用者」進階到「agent 系統建構者」——能看懂 framework 在做什麼、能設計多 agent 協作、能寫自己的 MCP server。",
+    "🚀 第一次接觸 AI agent / 沒寫過 code？",
+    "🗺️ 兩條學習路徑 — Track A（CLI Power User）給「想 USE 現成 CLI agent」的人；Track B（Agent Builder）給「想 BUILD 自己 agent」的人。共用 Stage 0-2 基礎",
+    "🛠️ 基礎動手練習 — 每階段附 1-5 個 illustrative 練習（題目 + dual-path SDK 對照 + success criteria）。定位是基礎入門 + 路線確認——chapter-length 深度練習見對應 stage 的 hello-agents / Anthropic Cookbook callout"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A structured, trilingual (繁中 / 简中 / English) learning roadmap for agentic AI — from LLM basics to multi-agent systems. 8 stages · 145+ curated projects · hands-on exercises. 中文 AI agent 學習地圖。",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "awesome-list",
+    "useCategory": [
+      "docs",
+      "browser",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "awesome-list",
+  "useCategory": [
+    "docs",
+    "browser",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "mcp",
+    "whatIsIt": "Awesome Agentic Ai Zh is an MCP-related awesome-list tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with browser workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "🤖 AI Agent 學習地圖 — 從基本 LLM 概念到自己打造多 agent 系統"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "id": "candidate-herdr-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Herdr",
+  "sourceUrl": "https://github.com/ogulcancelik/herdr",
+  "sourceName": "GitHub",
+  "author": "ogulcancelik",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "agent multiplexer that lives in your terminal.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "Kimi",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "ogulcancelik",
+    "repo": "herdr",
+    "fullName": "ogulcancelik/herdr",
+    "stars": 1698,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent",
+      "agent-orchestration",
+      "ai",
+      "ai-agents",
+      "claude-code",
+      "cli",
+      "codex",
+      "coding-agents",
+      "developer-tools",
+      "devtools",
+      "multiplexer",
+      "rust",
+      "terminal",
+      "terminal-multiplexer",
+      "terminal-ui",
+      "tmux",
+      "tui",
+      "workspace-manager"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-20T01:37:06Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/next/CHANGELOG.md",
+    "docs/next/README.md",
+    "docs/next/website/src/content/docs/agent-skill.mdx",
+    "docs/next/website/src/content/docs/agents.mdx",
+    "docs/next/website/src/content/docs/cli-reference.mdx",
+    "docs/next/website/src/content/docs/concepts.mdx",
+    "docs/next/website/src/content/docs/how-to-work.mdx",
+    "docs/next/website/src/content/docs/index.mdx",
+    "docs/next/website/src/content/docs/integrations.mdx",
+    "docs/next/website/src/content/docs/persistence-remote.mdx",
+    "docs/next/website/src/content/docs/quick-start.mdx",
+    "docs/next/website/src/content/docs/socket-api.mdx",
+    "SKILL.md",
+    "vendor/libghostty-vt/.agents/skills/writing-commit-messages/SKILL.md",
+    "AGENTS.md",
+    "vendor/libghostty-vt/AGENTS.md",
+    "vendor/libghostty-vt/src/benchmark/AGENTS.md",
+    "vendor/libghostty-vt/src/inspector/AGENTS.md",
+    "vendor/libghostty-vt/src/terminal/c/AGENTS.md"
+  ],
+  "readmeExtract": "herdr <p align=\"center\" <img src=\"assets/logo.png\" alt=\"herdr\" width=\"100\" / </p <p align=\"center\" <a href=\"https://herdr.dev\" herdr.dev</a · <a href=\" install\" install</a · <a href=\" quick start\" quick start</a · <a href=\" supported agents\" supported agents</a · <a href=\"https://herdr.dev/docs/integrations/\" integrations</a · <a href=\"https://herdr.dev/docs/configuration/\" configuration</a · <a href=\"https://herdr.d",
+  "skillExtracts": [
+    {
+      "path": "SKILL.md",
+      "extract": "name: herdr description: \"Control herdr from inside it. Manage workspaces and tabs, split panes, spawn agents, read output, and wait for state changes — all via CLI commands that talk to the running herdr instance over a local unix socket. Use when running inside herdr (HERDR ENV=1).\" herdr — agent skill before using this skill, check that HERDR ENV=1 . if it is not set to 1 , say you are not running inside a herdr m"
+    },
+    {
+      "path": "vendor/libghostty-vt/.agents/skills/writing-commit-messages/SKILL.md",
+      "extract": "name: writing commit messages description: Writes Git commit messages. Activates when the user asks to write a commit message, draft a commit message, or similar. Writing Commit Messages Write commit messages that follow commit style guidelines for the project. Format Rules Subject line Subsystem prefix : Use a short, lowercase identifier for the area of code changed (e.g., terminal , vt , lib , config , font ). Dete"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "agent multiplexer that lives in your terminal.",
+    "every agent at a glance: blocked, working, done.",
+    "detach and reattach, agents keep running.",
+    "you see the agent's own terminal, not someone's interpretation of it.",
+    "run an agent in the root pane",
+    "tmux gives you persistence and panes, but it was built before agents existed.",
+    "gui managers show agent state, but they make you leave your terminal and use their wrapped view.",
+    "herdr is persistence and awareness in one tool that stays out of your way."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "agent multiplexer that lives in your terminal.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "communication",
+      "coding",
+      "automation",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "communication",
+    "coding",
+    "automation",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Herdr is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with design workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "herdr",
+  "publishedAt": "2026-05-20"
+}

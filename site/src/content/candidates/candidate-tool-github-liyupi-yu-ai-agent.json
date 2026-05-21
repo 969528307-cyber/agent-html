@@ -1,0 +1,164 @@
+{
+  "id": "candidate-tool-github-liyupi-yu-ai-agent",
+  "type": "tool",
+  "status": "published",
+  "title": "Yu Ai Agent",
+  "sourceUrl": "https://github.com/liyupi/yu-ai-agent",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "liyupi",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "编程导航 2025 年 AI 开发实战新项目，基于 Spring Boot 3 + Java 21 + Spring AI 构建 AI 恋爱大师应用和 ReAct 模式自主规划智能体YuManus，覆盖 AI 大模型接入、Spring AI 核心特性、Prompt 工程和优化、RAG 检索增强、向量数据库、Tool Calling 工具调用、MCP 模型上下文协议、AI Agent 开发（Manas Java 实现）、Cursor AI 工具等核心知识。用一套教程将程序员必知必会的 AI 技术一网打尽，帮你成为 AI 时代企业的香饽饽，给你的简历和求职大幅增加竞争力。",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Cursor"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "liyupi",
+    "repo": "yu-ai-agent",
+    "fullName": "liyupi/yu-ai-agent",
+    "stars": 2270,
+    "topics": [
+      "ai",
+      "ai-model",
+      "backend",
+      "frontend",
+      "java",
+      "langchain4j",
+      "mcp",
+      "rag",
+      "spring-ai",
+      "springboot",
+      "springmvc",
+      "vector-database"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-01-07T05:47:52Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "AI 超级智能体项目 作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah) 本项目为教学项目，提供完整视频教程 + 文字教程 + 简历写法 + 面试题解 + 答疑服务，帮你提升项目能力，给简历增加亮点！ ⭐️ 加入项目系列学习：[加入编程导航](https://www.codefather.cn/vip) 项目介绍 视频介绍：https://www.bilibili.com/video/BV1UoLezKEbm 这是一套以 AI 开发实战 为核心的项目教程，将通过开发 AI 恋爱大师应用 + 拥有自主规划能力的超级智能体 ，带大家掌握新时代程序员必知必会的 AI 核心概念、AI 实用工具、AI 编程技术、AI 框架原理、AI 调优技巧，大幅增加求职的竞争力！ ![](https://pic.yupi.icu/1/8052592c 97ce",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AI 恋爱大师应用 可以依赖 AI 大模型解决用户的情感问题，支持多轮对话、基于自定义知识库进行问答、自主调用工具和 MCP 服务完成任务，比如调用地图服务获取附近地点并制定约会计划。",
+    "项目中，我们将开发一个 AI 恋爱大师应用、一个拥有自主规划能力的超级智能体，以及一系列工具和 MCP 服务。",
+    "AI 恋爱大师应用：用户在恋爱过程中难免遇到各种难题，让 AI 为用户提供贴心情感指导。支持多轮对话、对话记忆持久化、RAG 知识库检索、工具调用、MCP 服务调用。",
+    "第三方接口：如 SearchAPI / Pexels API",
+    "Spring AI MCP 开发实战 - 图片搜索 MCP"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "编程导航 2025 年 AI 开发实战新项目，基于 Spring Boot 3 + Java 21 + Spring AI 构建 AI 恋爱大师应用和 ReAct 模式自主规划智能体YuManus，覆盖 AI 大模型接入、Spring AI 核心特性、Prompt 工程和优化、RAG 检索增强、向量数据库、Tool Calling 工具调用、MCP 模型上下文协议、AI Agent 开发（Manas Java 实现）、Cursor AI 工具等核心知识。用一套教程将程序员必知必会的 AI 技术一网打尽，帮你成为 AI 时代企业的香饽饽，给你的简历和求职大幅增加竞争力。",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "database",
+      "media",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "database",
+    "media",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Detected scope: single-tool.",
+    "No strong alternative capability detected.",
+    "LLM: agent-app + [mcp] — This project is a full-stack AI agent application for end users (AI love master and autonomous agent), not an MCP server, skill set, or CLI tool."
+  ],
+  "classificationAlternatives": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Yu Ai Agent is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with database workflows.",
+      "Helps with media workflows.",
+      "Helps with research workflows.",
+      "Relevant to search."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:liyupi/yu-ai-agent",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "yu-ai-agent",
+  "publishedAt": "2026-05-18"
+}

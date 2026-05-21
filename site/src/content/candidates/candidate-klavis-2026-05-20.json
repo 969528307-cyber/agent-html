@@ -1,0 +1,181 @@
+{
+  "id": "candidate-klavis-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Klavis",
+  "sourceUrl": "https://github.com/Klavis-AI/klavis",
+  "sourceName": "GitHub",
+  "author": "Klavis-AI",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Klavis AI:  MCP integration platforms that let AI agents use tools reliably at any scale",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "Klavis-AI",
+    "repo": "klavis",
+    "fullName": "Klavis-AI/klavis",
+    "stars": 5740,
+    "license": "Apache-2.0",
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "api",
+      "developer-tools",
+      "discord",
+      "function-calling",
+      "integration",
+      "llm",
+      "mcp",
+      "mcp-client",
+      "mcp-server",
+      "oauth2",
+      "open-source"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T22:40:45Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.gitignore",
+    "docs/ai-platform-integration/agno.mdx",
+    "docs/ai-platform-integration/claude.mdx",
+    "docs/ai-platform-integration/cohere.mdx",
+    "docs/ai-platform-integration/crewai.mdx",
+    "docs/ai-platform-integration/fireworks-ai.mdx",
+    "docs/ai-platform-integration/gemini.mdx",
+    "docs/ai-platform-integration/google-adk.mdx",
+    "docs/ai-platform-integration/langchain.mdx",
+    "docs/ai-platform-integration/llamaindex.mdx",
+    "docs/ai-platform-integration/mastra.mdx",
+    "docs/ai-platform-integration/mistral.mdx",
+    "docs/ai-platform-integration/openai.mdx",
+    "docs/ai-platform-integration/overview.mdx",
+    "docs/ai-platform-integration/together-ai.mdx",
+    "docs/api-reference/api_key.mdx",
+    "docs/api-reference/authentication.mdx",
+    "docs/api-reference/introduction.mdx",
+    "docs/api-reference/local-sandbox/acquire.mdx",
+    "docs/api-reference/local-sandbox/dump.mdx",
+    "docs/api-reference/local-sandbox/get.mdx",
+    "docs/api-reference/local-sandbox/initialize.mdx",
+    "docs/api-reference/local-sandbox/list.mdx",
+    "docs/api-reference/local-sandbox/release.mdx",
+    "docs/api-reference/local-sandbox/reset.mdx",
+    "docs/api-reference/local-sandbox/upload-url.mdx",
+    "docs/api-reference/mcp-server/call-tool.mdx",
+    "docs/api-reference/mcp-server/create-a-self-hosted-mcp-server-instance.mdx",
+    "docs/api-reference/mcp-server/create-a-server-instance.mdx",
+    "docs/api-reference/mcp-server/delete-a-server-instance.mdx",
+    "docs/api-reference/mcp-server/delete-auth-data-for-a-server-instance.mdx",
+    "docs/api-reference/mcp-server/delete-instance_auth.mdx",
+    "docs/api-reference/mcp-server/get-all-servers.mdx",
+    "docs/api-reference/mcp-server/get-instance_auth.mdx",
+    "docs/api-reference/mcp-server/get-server-instance.mdx",
+    "docs/api-reference/mcp-server/get-tools.mdx",
+    "docs/api-reference/mcp-server/list-raw-actions.mdx",
+    "docs/api-reference/mcp-server/list-tools.mdx",
+    "docs/api-reference/mcp-server/set-instance_auth.mdx"
+  ],
+  "readmeExtract": "<div align=\"center\" <picture <img src=\"./docs/images/logo/cover.png\" width=\"100%\" </picture </div <div align=\"center\" [![Documentation](https://img.shields.io/badge/Documentation 📖 green)](https://www.klavis.ai/docs) [![Website](https://img.shields.io/badge/Website 🌐 purple)](https://www.klavis.ai) [![Discord](https://img.shields.io/badge/Discord Join 7289DA?logo=discord&logoColor=white)](https://discord.gg/p7TuTEc",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Intelligent connectors for your AI agent, optimize context window",
+    "scalable MCP environments for LLM training and RL",
+    "strata add --type stdio playwright npx @playwright/mcp@latest",
+    "from klavis.types import McpServerName",
+    "strata = klavisclient.mcpserver.createstrataserver(",
+    "servers=[McpServerName.GMAIL, McpServerName.SLACK],",
+    "Or use individual MCP servers",
+    "gmail = klavis.mcpserver.createserverinstance("
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Klavis AI:  MCP integration platforms that let AI agents use tools reliably at any scale",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Klavis is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Intelligent connectors for your AI agent, optimize context window",
+      "scalable MCP environments for LLM training and RL"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "klavis",
+  "publishedAt": "2026-05-20"
+}

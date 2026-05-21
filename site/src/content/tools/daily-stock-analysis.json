@@ -1,0 +1,73 @@
+{
+  "id": "daily-stock-analysis",
+  "name": "Daily Stock Analysis",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "LLM驱动的 A/H/美股智能分析：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.",
+  "description": "LLM驱动的 A/H/美股智能分析：多数据源行情 + 实时新闻 + LLM决策仪表盘 + 多渠道推送，零成本定时运行，纯白嫖. LLM-powered stock analysis system for A/H/US markets.",
+  "category": [
+    "agent-app"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Agent 策略问股 多轮追问，支持均线、缠论、波浪、趋势、热点、事件、成长、预期等 15 种内置策略，覆盖 Web/Bot/API",
+    "AI 模型 Anspire、AIHubMix、Gemini、OpenAI 兼容、DeepSeek、通义千问、Claude、Ollama 本地模型等",
+    "GEMINIAPIKEY Google Gemini API Key 可选",
+    "ANTHROPICAPIKEY Anthropic Claude API Key 可选",
+    "ANSPIREAPIKEYS Anspire AI Search：中文内容特别优化，适合 A 股新闻和舆情检索；同一 Key 可复用为 Anspire 大模型 推荐",
+    "BRAVEAPIKEYS Brave Search：隐私优先，美股资讯补强 可选",
+    "Actions 标签 → I understand my workflows, go ahead and enable them",
+    "Actions → 每日股票分析 → Run workflow → Run workflow"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T21:20:05Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
+  "repoUrl": "https://github.com/ZhuLinsen/daily_stock_analysis",
+  "license": "MIT",
+  "stars": 37070,
+  "lastUpdated": "2026-05-18T21:20:05Z",
+  "lastChecked": "2026-05-19",
+  "publishedAt": "2026-05-19",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

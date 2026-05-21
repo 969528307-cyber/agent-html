@@ -4,16 +4,122 @@
   "status": "published",
   "region": "global",
   "vendor": "OpenAI",
-  "summary": "A coding-focused agent for local implementation, repository navigation, and structured tool use.",
-  "bestFor": ["Local coding tasks", "Repository automation", "Tool-assisted implementation"],
-  "interfaceType": ["cli", "api"],
+  "summary": "OpenAI's coding agent for repository implementation, review, verification, and tool-assisted engineering work.",
+  "bestFor": [
+    "Repository implementation",
+    "Code review and verification",
+    "Tool-assisted engineering workflows",
+    "Team coding standards"
+  ],
+  "interfaceType": [
+    "cli",
+    "api"
+  ],
   "documentationUrl": "https://developers.openai.com/codex",
   "englishDocsUrl": "https://developers.openai.com/codex",
   "supportsMcp": true,
   "supportsSkills": true,
   "supportsCli": true,
   "supportsWorkflows": true,
-  "toolTypes": { "skills": 42, "mcps": 31, "cli": 12, "workflows": 18 },
-  "relatedLearn": ["how-to-choose-agent"],
-  "lastChecked": "2026-05-11"
+  "toolTypes": {
+    "skills": 42,
+    "mcps": 31,
+    "cli": 12,
+    "workflows": 18
+  },
+  "relatedLearn": [
+    "how-to-choose-agent"
+  ],
+  "lastChecked": "2026-05-12",
+  "overview": "Codex is OpenAI's coding agent for software engineering workflows that require repository understanding, code edits, command execution, review, and verification. On agentk.it it should be treated as a serious implementation agent rather than a general chat assistant: the important question is how it works with local project context, skills, MCP tools, CLI sessions, pull requests, and team operating rules.",
+  "strengths": [
+    {
+      "title": "Repository-first implementation",
+      "body": "Codex is strongest when the task depends on reading a real codebase, making scoped edits, running checks, and explaining the resulting diff."
+    },
+    {
+      "title": "Local evidence loop",
+      "body": "The agent can keep work grounded in terminal output, file contents, tests, and build results instead of relying only on conversational memory."
+    },
+    {
+      "title": "Skills and project conventions",
+      "body": "Repeatable workflows can be encoded through skills, AGENTS.md-style guidance, and repository-specific instructions so teams do not re-explain the same standards."
+    },
+    {
+      "title": "Reviewable engineering output",
+      "body": "Codex fits workflows where changes must be inspected, tested, summarized, and handed back with clear assumptions and remaining risks."
+    }
+  ],
+  "extensionModel": [
+    {
+      "label": "CLI",
+      "status": "native",
+      "body": "Best treated as a terminal and local-project agent where command output, filesystem state, and edits are part of the normal loop.",
+      "sourceUrl": "https://github.com/openai/codex"
+    },
+    {
+      "label": "Skills",
+      "status": "supported",
+      "body": "Skills are the right layer for reusable agent behavior such as code review, debugging, documentation, browser checks, or repo-specific workflows.",
+      "sourceUrl": "https://openai.com/codex"
+    },
+    {
+      "label": "MCP",
+      "status": "supported",
+      "body": "MCP servers should be mapped as external capability providers for docs, data, browser automation, project systems, and internal APIs."
+    },
+    {
+      "label": "Workflow",
+      "status": "supported",
+      "body": "Strong for repeatable engineering loops such as inspect-plan-edit-test-review, migration checklists, PR preparation, and release verification."
+    }
+  ],
+  "recommendedStacks": [
+    {
+      "title": "Implementation and verification loop",
+      "body": "Use Codex with repo-review and browser/test tools when the output must be changed code plus evidence that it works.",
+      "toolIds": [
+        "codex",
+        "repo-review-skill",
+        "playwright-mcp"
+      ]
+    },
+    {
+      "title": "Docs-aware coding",
+      "body": "Pair Codex with current documentation tools when library behavior, API versions, or framework details are easy to get wrong.",
+      "toolIds": [
+        "context7"
+      ]
+    },
+    {
+      "title": "Team standards workflow",
+      "body": "Use skills and project instructions to enforce review style, testing expectations, and release discipline across repeated sessions.",
+      "toolIds": [
+        "agent-setup-checklist"
+      ]
+    }
+  ],
+  "limitations": [
+    "Do not mirror generated install commands on public pages; link users to official setup and current docs.",
+    "Local coding agents can edit files and run commands, so permissions, secrets, and destructive actions need explicit guardrails.",
+    "A published compatibility claim should come from official docs, a source repository, or an approved candidate review, not from inference alone.",
+    "Codex is best represented as an engineering workflow surface, not as a generic chatbot replacement."
+  ],
+  "sources": [
+    {
+      "label": "OpenAI Codex product page",
+      "url": "https://openai.com/codex",
+      "kind": "official"
+    },
+    {
+      "label": "Codex GitHub repository",
+      "url": "https://github.com/openai/codex",
+      "kind": "github"
+    },
+    {
+      "label": "Codex CLI getting started",
+      "url": "https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started",
+      "kind": "quickstart"
+    }
+  ]
 }

@@ -1,9 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import AgentSummary from "../../components/AgentSummary.astro";
-import AgentToolCard from "../../components/AgentToolCard.astro";
-import ArticleCard from "../../components/ArticleCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { agentMatchesTool } from "../../lib/agent-compatibility.mjs";
 import { sortToolsByNewest } from "../../lib/filters";
 
 export async function getStaticPaths() {
@@ -17,12 +15,8 @@ export async function getStaticPaths() {
 }
 
 const { agent } = Astro.props;
-const allTools = sortToolsByNewest(
-  (await getCollection("tools")).filter(
-    (tool) => tool.data.status === "published" && tool.data.compatibleAgents.includes(agent.data.name),
-  ),
-);
-
+const publishedTools = (await getCollection("tools")).filter((tool) => tool.data.status === "published");
+const allTools = sortToolsByNewest(publishedTools.filter((tool) => agentMatchesTool(agent.data, tool.data)));
 const learnArticles = (await getCollection("learn")).filter(
   (entry) => entry.data.status === "published" && agent.data.relatedLearn.includes(entry.id),
 );
@@ -35,223 +29,638 @@ const typeLabels = {
 };
 
 const types = ["skill", "mcp", "cli", "workflow"] as const;
-const byType = {
-  skill: allTools.filter((tool) => tool.data.type === "skill"),
-  mcp: allTools.filter((tool) => tool.data.type === "mcp"),
-  cli: allTools.filter((tool) => tool.data.type === "cli"),
-  workflow: allTools.filter((tool) => tool.data.type === "workflow"),
-};
 const counts = {
-  skill: byType.skill.length,
-  mcp: byType.mcp.length,
-  cli: byType.cli.length,
-  workflow: byType.workflow.length,
+  skill: allTools.filter((tool) => tool.data.type === "skill").length,
+  mcp: allTools.filter((tool) => tool.data.type === "mcp").length,
+  cli: allTools.filter((tool) => tool.data.type === "cli").length,
+  workflow: allTools.filter((tool) => tool.data.type === "workflow").length,
 };
+const statusLabels = {
+  native: "Native",
+  supported: "Supported",
+  partial: "Partial",
+  not_supported: "Not supported",
+  unknown: "Unknown",
+};
+const sourceItems =
+  agent.data.sources.length > 0
+    ? agent.data.sources
+    : [
+        {
+          label: "Official documentation",
+          url: agent.data.documentationUrl,
+          kind: "official",
+        },
+      ];
 const guideHref = learnArticles[0] ? `/learn/${learnArticles[0].id}` : "/learn/how-to-choose-agent";
 const guideLabel = learnArticles[0]?.id === "how-to-choose-agent" ? "Read agent selection guide" : `Read the ${agent.data.name} guide`;
+const stackTools = (toolIds: string[]) => publishedTools.filter((tool) => toolIds.includes(tool.data.id));
 ---
 
 <BaseLayout title={`${agent.data.name} tools - agentk.it`} description={agent.data.summary}>
-  <section class="page agent-hero">
-    <AgentSummary agent={agent.data} counts={counts} />
-
-    <aside class="guide-panel">
-      <div class="eyebrow">Agent guide</div>
-      <h2>Use this page as a compatibility map.</h2>
-      <p>
-        Start with the tool type you need, hover a tool to preview what it helps
-        with, then open the detail page for install, config, verification, and
-        source links.
-      </p>
-      <a class="small-button" href={guideHref}>{guideLabel}</a>
-    </aside>
-  </section>
-
-  <section class="section page">
-    <div class="stat-grid">
-      {types.map((type) => (
-        <a class="stat-card" href={`#${type}`}>
-          <span>{counts[type]}</span>
-          <strong>{typeLabels[type]}</strong>
-          <p>{counts[type] === 1 ? "mapped tool" : "mapped tools"}</p>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="section page">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Browse tools</div>
-        <h2>{allTools.length} compatible tools for {agent.data.name}</h2>
+  <section class="agent-page page">
+    <section class="hero">
+      <div class="hero-copy">
+        <a class="back-link" href="/agents">Back to Agents</a>
+        <div class="route-chip"><span></span>{agent.data.region} agent</div>
+        <h1>{agent.data.name}</h1>
+        <p>{agent.data.summary}</p>
+        <div class="support-row">
+          {agent.data.vendor && <span>{agent.data.vendor}</span>}
+          {agent.data.interfaceType.map((item) => <span>{item}</span>)}
+        </div>
       </div>
-      <p>
-        Tabs are anchor filters in v1. Search and live sorting can sit on top of
-        this structure later without changing the content model.
-      </p>
-    </div>
 
-    <nav class="type-tabs" aria-label={`${agent.data.name} tool types`}>
-      <a href="#all">All <span>{allTools.length}</span></a>
-      {types.map((type) => <a href={`#${type}`}>{typeLabels[type]} <span>{counts[type]}</span></a>)}
-    </nav>
-  </section>
+      <aside class="lab-console">
+        <div class="console-head">
+          <span>Compatibility map</span>
+          <strong>{allTools.length} tools</strong>
+        </div>
+        <div class="console-lines">
+          {types.map((type) => (
+            <a href={`#${type}`}>
+              <span>{typeLabels[type]}</span>
+              <strong>{counts[type]}</strong>
+              <p>{counts[type] === 1 ? "mapped tool" : "mapped tools"}</p>
+            </a>
+          ))}
+        </div>
+        <a class="guide-button" href={guideHref}>{guideLabel}</a>
+      </aside>
+    </section>
 
-  <section class="section page tool-section" id="all">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">All compatible tools</div>
-        <h2>Everything mapped to this Agent.</h2>
+    <section class="overview-section">
+      <div class="section-kicker">
+        <span>01</span>
+        <h2>Agent profile and official evidence.</h2>
+        <p>Use this first to understand what the agent is good at before checking compatible tools.</p>
       </div>
-    </div>
+
+      <div class="profile-grid">
+        <article class="profile-card overview">
+          <span>What this agent is</span>
+          <p>{agent.data.overview ?? agent.data.summary}</p>
+        </article>
+
+        <article class="profile-card">
+          <span>Best for</span>
+          <div class="chip-grid">
+            {agent.data.bestFor.map((item) => <strong>{item}</strong>)}
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <span>Official links</span>
+          <div class="source-list">
+            {sourceItems.map((source) => (
+              <a href={source.url} target="_blank" rel="noreferrer">
+                <small>{source.kind}</small>
+                <strong>{source.label}</strong>
+              </a>
+            ))}
+          </div>
+          <p class="checked">Last checked: {agent.data.lastChecked}</p>
+        </article>
+      </div>
+    </section>
+
     {
-      allTools.length > 0 ? (
-        <div class="tool-grid">
-          {allTools.map((tool) => <AgentToolCard tool={tool.data} />)}
-        </div>
-      ) : (
-        <div class="empty-state">
-          <h3>No tools mapped yet.</h3>
-          <p>This Agent page exists, but the candidate pool still needs approved tools for it.</p>
-        </div>
+      agent.data.strengths.length > 0 && (
+        <section class="detail-section">
+          <div class="section-kicker">
+            <span>02</span>
+            <h2>Where {agent.data.name} is strongest.</h2>
+            <p>Short, rigorous notes for deciding whether this agent belongs in your stack.</p>
+          </div>
+
+          <div class="insight-grid">
+            {agent.data.strengths.map((item) => (
+              <article class="insight-card">
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
       )
     }
-  </section>
 
-  {
-    types.map((type) => (
-      <section class="section page tool-section" id={type}>
-        <div class="section-head">
-          <div>
-            <div class="eyebrow">{typeLabels[type]}</div>
-            <h2>{counts[type]} {typeLabels[type]} for {agent.data.name}</h2>
+    {
+      agent.data.extensionModel.length > 0 && (
+        <section class="detail-section">
+          <div class="section-kicker">
+            <span>03</span>
+            <h2>How it connects to tools.</h2>
+            <p>MCP, Skills, CLI, and Workflow support are treated as compatibility claims with sources.</p>
           </div>
-        </div>
-        {byType[type].length > 0 ? (
-          <div class="tool-grid">
-            {byType[type].map((tool) => <AgentToolCard tool={tool.data} />)}
-          </div>
-        ) : (
-          <div class="empty-state compact">
-            <h3>No {typeLabels[type]} mapped yet.</h3>
-            <p>Add candidates through GitHub ingestion, then approve them in the internal candidate pool.</p>
-          </div>
-        )}
-      </section>
-    ))
-  }
 
-  <section class="section page learning-section">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Deep learning</div>
-        <h2>Understand before installing.</h2>
+          <div class="extension-list">
+            {agent.data.extensionModel.map((item) => (
+              <a class="extension-row" href={item.sourceUrl ?? agent.data.documentationUrl} target="_blank" rel="noreferrer">
+                <span>{item.label}</span>
+                <strong class={`status-${item.status}`}>{statusLabels[item.status]}</strong>
+                <p>{item.body}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <section class="tool-section" id="all">
+      <div class="section-kicker">
+        <span>04</span>
+        <h2>Compatible tools mapped to {agent.data.name}.</h2>
+        <p>Open the item page for what it does, source links, stars, license, freshness, and compatibility context.</p>
       </div>
-      <p>Agent pages should lead users into learning content, but tools remain the main product.</p>
-    </div>
-    <div class="learn-grid">
+
+      <nav class="type-tabs" aria-label={`${agent.data.name} tool types`}>
+        <a href="#all">All <span>{allTools.length}</span></a>
+        {types.map((type) => <span>{typeLabels[type]} <span>{counts[type]}</span></span>)}
+      </nav>
+
       {
-        learnArticles.length > 0 ? (
-          learnArticles.map((article) => (
-            <ArticleCard
-              href={`/learn/${article.id}`}
-              label={`${article.data.topic} · ${article.data.difficulty}`}
-              title={article.data.title}
-              description={article.data.subtitle}
-            />
-          ))
+        allTools.length > 0 ? (
+          <div class="evidence-list">
+            {allTools.map((tool) => (
+              <article class="evidence-card">
+                <div class="card-main">
+                  <div class="tags">
+                    <span>{tool.data.type}</span>
+                    {(tool.data.category || []).slice(0, 2).map((category) => <span>{category}</span>)}
+                  </div>
+                  <h3>{tool.data.name}</h3>
+                  <p>{tool.data.summary}</p>
+                </div>
+                <div class="metrics">
+                  <div>
+                    <strong>{tool.data.stars ? tool.data.stars.toLocaleString() : "linked"}</strong>
+                    <span>stars</span>
+                  </div>
+                  <div>
+                    <strong>{tool.data.license || "source"}</strong>
+                    <span>license</span>
+                  </div>
+                  <a href={`/item/${tool.data.id}`}>Open</a>
+                </div>
+              </article>
+            ))}
+          </div>
         ) : (
-          <ArticleCard
-            href="/learn/how-to-choose-agent"
-            label="agent · beginner"
-            title="How to choose an Agent"
-            description="Use this guide as the fallback learning path until this Agent has a dedicated guide."
-          />
+          <div class="empty-state">
+            <h3>No mapped tools yet.</h3>
+            <p>This Agent has a profile, but the public tool collection does not yet include approved compatible tools.</p>
+          </div>
         )
       }
-    </div>
+    </section>
+
+    {
+      agent.data.recommendedStacks.length > 0 && (
+        <section class="detail-section">
+          <div class="section-kicker">
+            <span>05</span>
+            <h2>Recommended stacks.</h2>
+            <p>Practical combinations that connect this Agent with tools already in the directory.</p>
+          </div>
+
+          <div class="stack-grid">
+            {agent.data.recommendedStacks.map((stack) => {
+              const mappedStackTools = stackTools(stack.toolIds);
+              return (
+                <article class="stack-card">
+                  <h3>{stack.title}</h3>
+                  <p>{stack.body}</p>
+                  {mappedStackTools.length > 0 && (
+                    <div class="stack-tools">
+                      {mappedStackTools.map((tool) => <a href={`/item/${tool.data.id}`}>{tool.data.name}</a>)}
+                    </div>
+                  )}
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )
+    }
+
+    {
+      (agent.data.limitations.length > 0 || learnArticles.length > 0) && (
+        <section class="bottom-grid">
+          {agent.data.limitations.length > 0 && (
+            <article class="profile-card">
+              <span>Watchouts</span>
+              <ul>
+                {agent.data.limitations.map((item) => <li>{item}</li>)}
+              </ul>
+            </article>
+          )}
+
+          <article class="profile-card">
+            <span>Deep learning</span>
+            <div class="source-list">
+              {learnArticles.length > 0 ? (
+                learnArticles.map((article) => (
+                  <a href={`/learn/${article.id}`}>
+                    <small>{article.data.topic}</small>
+                    <strong>{article.data.title}</strong>
+                  </a>
+                ))
+              ) : (
+                <a href="/learn/how-to-choose-agent">
+                  <small>agent</small>
+                  <strong>How to choose an Agent</strong>
+                </a>
+              )}
+            </div>
+          </article>
+        </section>
+      )
+    }
   </section>
 </BaseLayout>
 
 <style>
-  .agent-hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 360px;
-    gap: 24px;
-    align-items: stretch;
-    padding: 58px 0 10px;
-  }
-
-  .guide-panel,
-  .stat-card,
-  .empty-state {
-    border: 1px solid var(--line);
+  :global(body) {
     background:
-      linear-gradient(180deg, rgb(238 244 238 / 0.04), rgb(238 244 238 / 0.012)),
-      var(--paper);
-    box-shadow: var(--shadow);
+      radial-gradient(circle at 12% 0%, rgb(134 174 255 / 0.18), transparent 30rem),
+      radial-gradient(circle at 92% 8%, rgb(229 183 106 / 0.13), transparent 28rem),
+      radial-gradient(circle at 58% 88%, rgb(82 220 160 / 0.12), transparent 34rem),
+      #080b10;
   }
 
-  .guide-panel {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 24px;
-    border-radius: 28px;
+  .agent-page {
+    padding: 42px 0 72px;
   }
 
-  .guide-panel p,
-  .section-head p,
-  .empty-state p {
-    color: var(--muted);
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .stat-grid {
+  .hero {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+    gap: 18px;
+  }
+
+  .hero-copy,
+  .lab-console,
+  .profile-card,
+  .insight-card,
+  .extension-row,
+  .evidence-card,
+  .compact-card,
+  .stack-card,
+  .empty-state {
+    border: 1px solid rgb(246 242 234 / 0.11);
+    background:
+      linear-gradient(180deg, rgb(246 242 234 / 0.07), rgb(246 242 234 / 0.026)),
+      rgb(12 17 24 / 0.82);
+    box-shadow: 0 30px 100px rgb(0 0 0 / 0.32);
+    backdrop-filter: blur(30px);
+  }
+
+  .hero-copy {
+    position: relative;
+    min-height: 350px;
+    padding: clamp(28px, 4.4vw, 52px);
+    overflow: hidden;
+    border-radius: 42px;
+  }
+
+  .hero-copy::after {
+    position: absolute;
+    right: -78px;
+    bottom: -135px;
+    width: 350px;
+    height: 350px;
+    content: "";
+    background:
+      radial-gradient(circle at 34% 35%, rgb(246 242 234 / 0.72), transparent 8%),
+      conic-gradient(from 180deg, rgb(134 174 255 / 0.62), rgb(229 183 106 / 0.42), rgb(82 220 160 / 0.46), rgb(134 174 255 / 0.62));
+    border-radius: 44% 56% 50% 50%;
+    opacity: 0.58;
+    filter: blur(4px);
+  }
+
+  .back-link {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    margin-bottom: 16px;
+    color: #8fb7ff;
+    font-size: 13px;
+  }
+
+  .route-chip {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 9px 12px;
+    color: #d9e6ff;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    border: 1px solid rgb(134 174 255 / 0.26);
+    border-radius: 999px;
+    background: rgb(134 174 255 / 0.1);
+  }
+
+  .route-chip span {
+    width: 8px;
+    height: 8px;
+    background: #e5b76a;
+    border-radius: 999px;
+  }
+
+  .hero h1 {
+    position: relative;
+    z-index: 1;
+    margin-top: 22px;
+    color: #f6f2ea;
+    font-size: clamp(58px, 9vw, 116px);
+    line-height: 0.82;
+    letter-spacing: -0.09em;
+  }
+
+  .hero p {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    margin-top: 22px;
+    color: #aeb7c8;
+    font-size: 16px;
+    line-height: 1.66;
+  }
+
+  .support-row,
+  .chip-grid,
+  .stack-tools,
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .support-row {
+    position: relative;
+    z-index: 1;
+    margin-top: 22px;
+  }
+
+  .support-row span,
+  .chip-grid strong,
+  .tags span,
+  .stack-tools a {
+    padding: 8px 10px;
+    color: #bbf2d9;
+    font-size: 12px;
+    font-weight: 800;
+    border: 1px solid rgb(82 220 160 / 0.22);
+    border-radius: 999px;
+    background: rgb(82 220 160 / 0.08);
+  }
+
+  .lab-console {
+    display: grid;
+    gap: 20px;
+    align-content: space-between;
+    min-height: 350px;
+    padding: 24px;
+    border-radius: 34px;
+  }
+
+  .console-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: #9aa4b6;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+  }
+
+  .console-head strong {
+    color: #e5b76a;
+  }
+
+  .console-lines {
+    display: grid;
+    gap: 10px;
+  }
+
+  .console-lines a {
+    display: grid;
+    grid-template-columns: 82px 54px minmax(0, 1fr);
+    gap: 10px;
+    align-items: baseline;
+    padding-top: 12px;
+    border-top: 1px solid rgb(246 242 234 / 0.1);
+  }
+
+  .console-lines span,
+  .console-lines p {
+    color: #8c96a7;
+    font-size: 12px;
+  }
+
+  .console-lines strong {
+    color: #f6f2ea;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+  }
+
+  .guide-button {
+    display: inline-flex;
+    justify-content: center;
+    padding: 13px 16px;
+    color: #06100b;
+    font-weight: 850;
+    border-radius: 999px;
+    background: #a9d8b0;
+  }
+
+  .overview-section,
+  .detail-section,
+  .tool-section,
+  .type-section,
+  .bottom-grid {
+    margin-top: 44px;
+  }
+
+  .section-kicker {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 0.8fr) minmax(260px, 0.6fr);
+    gap: 18px;
+    align-items: end;
+    margin-bottom: 18px;
+  }
+
+  .section-kicker > span,
+  .profile-card > span,
+  .mini-head span,
+  .compact-card span,
+  .source-list small {
+    color: #e5b76a;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .section-kicker h2 {
+    color: #f6f2ea;
+    font-size: clamp(26px, 3vw, 42px);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+  }
+
+  .section-kicker p,
+  .profile-card p,
+  .profile-card li,
+  .insight-card p,
+  .extension-row p,
+  .evidence-card p,
+  .compact-card p,
+  .stack-card p,
+  .empty-state p {
+    color: #9aa4b6;
+    font-size: 14px;
+    line-height: 1.62;
+  }
+
+  .profile-grid,
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(250px, 0.8fr) minmax(280px, 0.9fr);
     gap: 14px;
   }
 
-  .stat-card {
-    min-height: 150px;
+  .bottom-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile-card {
+    padding: 22px;
+    border-radius: 28px;
+  }
+
+  .profile-card.overview p {
+    color: #d6deeb;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .profile-card p,
+  .profile-card ul,
+  .source-list {
+    margin-top: 14px;
+  }
+
+  .profile-card ul {
+    display: grid;
+    gap: 10px;
+    padding-left: 18px;
+  }
+
+  .source-list {
+    display: grid;
+    gap: 9px;
+  }
+
+  .source-list a {
+    display: grid;
+    gap: 5px;
+    padding: 12px;
+    border: 1px solid rgb(246 242 234 / 0.1);
+    border-radius: 16px;
+    background: rgb(246 242 234 / 0.035);
+  }
+
+  .source-list strong {
+    color: #f6f2ea;
+    font-size: 13px;
+  }
+
+  .checked {
+    color: #8c96a7;
+    font-size: 12px;
+  }
+
+  .insight-grid,
+  .stack-grid,
+  .compact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .insight-card,
+  .stack-card,
+  .compact-card {
     padding: 20px;
+    border-radius: 24px;
+  }
+
+  .insight-card h3,
+  .stack-card h3,
+  .compact-card strong,
+  .empty-state h3 {
+    display: block;
+    color: #f6f2ea;
+    font-size: 20px;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+  }
+
+  .insight-card p,
+  .stack-card p,
+  .compact-card p,
+  .empty-state p {
+    margin-top: 10px;
+  }
+
+  .extension-list,
+  .evidence-list {
+    display: grid;
+    gap: 12px;
+  }
+
+  .extension-row {
+    display: grid;
+    grid-template-columns: 150px 120px minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+    padding: 18px;
     border-radius: 22px;
   }
 
-  .stat-card:hover {
-    border-color: var(--line-strong);
-  }
-
-  .stat-card span {
-    display: block;
-    color: var(--sage);
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: -0.06em;
-  }
-
-  .stat-card strong {
-    display: block;
-    margin-top: 18px;
-  }
-
-  .stat-card p {
-    margin-top: 6px;
-    color: var(--muted);
+  .extension-row > span,
+  .extension-row strong {
+    color: #8fb7ff;
     font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .extension-row strong.status-native,
+  .extension-row strong.status-supported {
+    color: #52dca0;
+  }
+
+  .extension-row strong.status-partial {
+    color: #e5b76a;
   }
 
   .type-tabs {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
-    padding: 10px;
-    border: 1px solid var(--line);
+    margin-bottom: 14px;
+    padding: 9px;
+    border: 1px solid rgb(246 242 234 / 0.1);
     border-radius: 999px;
-    background: rgb(238 244 238 / 0.028);
+    background: rgb(246 242 234 / 0.035);
   }
 
   .type-tabs a {
@@ -260,58 +669,133 @@ const guideLabel = learnArticles[0]?.id === "how-to-choose-agent" ? "Read agent 
     align-items: center;
     min-height: 38px;
     padding: 0 14px;
-    color: var(--muted);
+    color: #b7c0ce;
     border-radius: 999px;
   }
 
   .type-tabs a:hover {
-    color: var(--ink);
-    background: var(--sage-soft);
+    color: #f6f2ea;
+    background: rgb(134 174 255 / 0.12);
   }
 
   .type-tabs span {
-    color: var(--sage);
-    font-size: 12px;
+    color: #8fb7ff;
   }
 
-  .tool-section {
-    scroll-margin-top: 120px;
-  }
-
-  .tool-grid,
-  .learn-grid {
+  .evidence-card {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr) 310px;
     gap: 16px;
+    align-items: stretch;
+    padding: 18px;
+    border-radius: 26px;
+  }
+
+  .evidence-card h3 {
+    margin-top: 12px;
+    color: #f6f2ea;
+    font-size: clamp(26px, 3vw, 40px);
+    line-height: 0.96;
+    letter-spacing: -0.06em;
+  }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) auto;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .metrics div,
+  .metrics a {
+    display: grid;
+    align-content: center;
+    min-height: 82px;
+    padding: 12px;
+    border: 1px solid rgb(246 242 234 / 0.1);
+    border-radius: 18px;
+    background: rgb(246 242 234 / 0.035);
+  }
+
+  .metrics strong {
+    max-width: 110px;
+    overflow: hidden;
+    color: #f6f2ea;
+    font-size: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .metrics span {
+    color: #8c96a7;
+    font-size: 11px;
+  }
+
+  .metrics a {
+    min-width: 76px;
+    color: #06100b;
+    font-weight: 850;
+    text-align: center;
+    background: #a9d8b0;
+  }
+
+  .mini-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .mini-head strong {
+    color: #8fb7ff;
+  }
+
+  .stack-tools {
+    margin-top: 16px;
   }
 
   .empty-state {
-    padding: 24px;
+    padding: 22px;
     border-radius: 24px;
   }
 
   .empty-state.compact {
-    min-height: 130px;
+    box-shadow: none;
   }
 
-  .learning-section {
-    padding-bottom: 66px;
-  }
-
-  @media (max-width: 1040px) {
-    .agent-hero,
-    .tool-grid,
-    .learn-grid {
+  @media (max-width: 1080px) {
+    .hero,
+    .section-kicker,
+    .profile-grid,
+    .bottom-grid,
+    .evidence-card {
       grid-template-columns: 1fr;
     }
 
-    .stat-grid {
+    .insight-grid,
+    .stack-grid,
+    .compact-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
-  @media (max-width: 620px) {
-    .stat-grid {
+  @media (max-width: 720px) {
+    .agent-page {
+      padding-top: 24px;
+    }
+
+    .hero-copy,
+    .lab-console {
+      min-height: auto;
+      border-radius: 26px;
+    }
+
+    .console-lines a,
+    .extension-row,
+    .metrics,
+    .insight-grid,
+    .stack-grid,
+    .compact-grid {
       grid-template-columns: 1fr;
     }
 

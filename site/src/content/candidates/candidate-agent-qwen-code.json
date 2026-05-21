@@ -1,0 +1,126 @@
+{
+  "id": "candidate-agent-qwen-code",
+  "type": "agent",
+  "status": "published",
+  "title": "Qwen Code",
+  "sourceUrl": "https://qwenlm.github.io/qwen-code-docs/",
+  "sourceName": "Qwen Code GitHub",
+  "sourceRegistryId": "local-agents-library",
+  "sourceRegistry": {
+    "id": "local-agents-library",
+    "name": "Local Agent Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/agents",
+    "acceptRules": [
+      "must_have_documentation_url",
+      "must_have_summary",
+      "must_have_capability_profile"
+    ],
+    "rejectRules": [
+      "missing_official_link",
+      "missing_agent_capability_description"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "Alibaba Qwen's open-source coding-agent and agent-framework path for CLI coding, MCP-connected tools, function calling, and Qwen-native workflows.",
+  "proposedCategory": [
+    "Qwen-based coding workflows",
+    "Open-source CLI agent exploration",
+    "MCP-connected Qwen tools",
+    "Chinese and bilingual developer teams"
+  ],
+  "proposedAgents": [
+    "qwen-code"
+  ],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Agent collector output. Review official docs, GitHub activity, extension model, and ecosystem fit before changing the public Agent page.",
+  "publishedAs": "qwen-code",
+  "publishedAt": "2026-05-16",
+  "author": "Alibaba Cloud / Qwen",
+  "agentProfile": {
+    "region": "china",
+    "vendor": "Alibaba Cloud / Qwen",
+    "interfaceType": [
+      "cli"
+    ],
+    "supportsMcp": true,
+    "supportsSkills": false,
+    "supportsCli": true,
+    "supportsWorkflows": true,
+    "sourceKinds": [
+      "github",
+      "docs",
+      "github",
+      "docs"
+    ],
+    "officialLinks": [
+      {
+        "label": "Qwen Code GitHub",
+        "url": "https://github.com/QwenLM/qwen-code",
+        "kind": "github"
+      },
+      {
+        "label": "Qwen Code MCP docs",
+        "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/mcp/",
+        "kind": "docs"
+      },
+      {
+        "label": "Qwen-Agent GitHub",
+        "url": "https://github.com/QwenLM/Qwen-Agent",
+        "kind": "github"
+      },
+      {
+        "label": "Qwen-Agent features",
+        "url": "https://qwenlm.github.io/Qwen-Agent/en/guide/get_started/features/",
+        "kind": "docs"
+      }
+    ]
+  },
+  "canonicalKey": "agent:qwen-code",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "agent",
+    "primaryType": "agent",
+    "whatIsIt": "Qwen Code is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to Qwen-based coding workflows.",
+      "Relevant to Open-source CLI agent exploration.",
+      "Relevant to MCP-connected Qwen tools.",
+      "Relevant to Chinese and bilingual developer teams."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Capability signals are too thin.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

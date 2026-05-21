@@ -1,0 +1,205 @@
+{
+  "id": "candidate-nanoclaw-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Nanoclaw",
+  "sourceUrl": "https://github.com/nanocoai/nanoclaw",
+  "sourceName": "GitHub",
+  "author": "nanocoai",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "nanocoai",
+    "repo": "nanoclaw",
+    "fullName": "nanocoai/nanoclaw",
+    "stars": 28994,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "ai-assistant",
+      "claude-code",
+      "claude-skills",
+      "openclaw"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T11:50:35Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agent-runner-details.md",
+    "docs/api-details.md",
+    "docs/APPLE-CONTAINER-NETWORKING.md",
+    "docs/architecture-diagram.html",
+    "docs/architecture-diagram.md",
+    "docs/architecture.md",
+    "docs/BRANCH-FORK-MAINTENANCE.md",
+    "docs/build-and-runtime.md",
+    "docs/db-central.md",
+    "docs/db-session.md",
+    "docs/db.md",
+    "docs/docker-sandboxes.md",
+    "docs/isolation-model.md",
+    "docs/migration-dev.md",
+    "docs/ollama.md",
+    "docs/README.md",
+    "docs/REQUIREMENTS.md",
+    "docs/SDK_DEEP_DIVE.md",
+    "docs/SECURITY.md",
+    "docs/skills-as-branches.md",
+    "docs/SPEC.md",
+    "docs/v1-to-v2-changes.md",
+    "package.json",
+    ".claude/skills/add-atomic-chat-tool/SKILL.md",
+    ".claude/skills/add-codex/SKILL.md",
+    ".claude/skills/add-dashboard/SKILL.md",
+    ".claude/skills/add-deltachat/SKILL.md",
+    ".claude/skills/add-discord/SKILL.md",
+    ".claude/skills/add-emacs/SKILL.md",
+    ".claude/skills/add-gcal-tool/SKILL.md",
+    ".claude/skills/add-gchat/SKILL.md",
+    ".claude/skills/add-github/SKILL.md",
+    ".claude/skills/add-gmail-tool/SKILL.md",
+    ".claude/skills/add-imessage/SKILL.md",
+    ".claude/skills/add-karpathy-llm-wiki/SKILL.md",
+    ".claude/skills/add-linear/SKILL.md",
+    ".claude/skills/add-macos-statusbar/SKILL.md",
+    ".claude/skills/add-matrix/SKILL.md",
+    ".claude/skills/add-mnemon/SKILL.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"assets/nanoclaw logo.png\" alt=\"NanoClaw\" width=\"400\" </p <p align=\"center\" An AI assistant that runs agents securely in their own containers. Lightweight, built to be easily understood and completely customized for your needs. </p <p align=\"center\" <a href=\"https://nanoclaw.dev\" nanoclaw.dev</a &nbsp; • &nbsp; <a href=\"https://docs.nanoclaw.dev\" docs</a &nbsp; • &nbsp; <a href=\"README zh.m",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/add-atomic-chat-tool/SKILL.md",
+      "extract": "name: add atomic chat tool description: Add Atomic Chat MCP server so the container agent can call local models served by the Atomic Chat desktop app via its OpenAI compatible API. Add Atomic Chat Integration This skill adds a stdio based MCP server that exposes models running in the local [Atomic Chat](https://github.com/AtomicBot ai/Atomic Chat) desktop app as tools for the container agent. Claude remains the orche"
+    },
+    {
+      "path": ".claude/skills/add-codex/SKILL.md",
+      "extract": "name: add codex description: Use Codex (CLI + AppServer) as the full agent provider — planning, tool orchestration, native compaction, MCP tools, session resume — in place of the Claude Agent SDK. ChatGPT subscription or OPENAI API KEY. Per group via agent provider. Distinct from using OpenAI as an MCP tool (where Claude remains the planner). Codex agent provider NanoClaw runs agents in a long lived poll loop inside "
+    },
+    {
+      "path": ".claude/skills/add-dashboard/SKILL.md",
+      "extract": "name: add dashboard description: Add a monitoring dashboard to NanoClaw. Installs @nanoco/nanoclaw dashboard and a pusher that sends periodic JSON snapshots. /add dashboard — NanoClaw Dashboard Adds a local monitoring dashboard showing agent groups, sessions, channels, users, token usage, context windows, message activity, and real time logs. Architecture Steps 1. Install the npm package 2. Copy the pusher module Cop"
+    },
+    {
+      "path": ".claude/skills/add-deltachat/SKILL.md",
+      "extract": "name: add deltachat description: Add DeltaChat channel integration via @deltachat/stdio rpc server. Native adapter — no Chat SDK bridge. Email based messaging with end to end encryption. Add DeltaChat Channel The adapter drives the @deltachat/stdio rpc server JSON RPC subprocess directly — pure Node.js against the DeltaChat core library. Messages are delivered over email with Autocrypt/OpenPGP encryption. Install Pre"
+    },
+    {
+      "path": ".claude/skills/add-discord/SKILL.md",
+      "extract": "name: add discord description: Add Discord bot channel integration via Chat SDK. Add Discord Channel Adds Discord bot support via the Chat SDK bridge. Install NanoClaw doesn't ship channels in trunk. This skill copies the Discord adapter in from the channels branch. Pre flight (idempotent) Skip to Credentials if all of these are already in place: src/channels/discord.ts exists src/channels/index.ts contains import '."
+    },
+    {
+      "path": ".claude/skills/add-emacs/SKILL.md",
+      "extract": "name: add emacs description: Add Emacs as a channel. Opens an interactive chat buffer and org mode integration so you can talk to NanoClaw from within Emacs (Doom, Spacemacs, or vanilla). Local HTTP bridge — no bot token or external service needed. Add Emacs Channel Adds Emacs support via a local HTTP bridge. Works with Doom Emacs, Spacemacs, and vanilla Emacs 27.1+. What you can do with this Ask while coding — open "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "An AI assistant that runs agents securely in their own containers.",
+    "Claude agents run in their own Linux containers with filesystem isolation, not merely behind permission checks.",
+    "nanoclaw.sh walks you from a fresh machine to a named agent you can message.",
+    "It installs Node, pnpm, and Docker if missing, registers your Anthropic credential with OneCLI, builds the agent container, and pairs your first channel (Telegram, Discord, WhatsApp, or a local CLI).",
+    "If a step fails, Claude Code is invoked automatically to diagnose and resume from where it broke.",
+    "Run the script directly, not from inside a Claude session — the deterministic side needs interactive prompts and real shell I/O for Node/pnpm bootstrap, Docker, OneCLI, and the container build.",
+    "See docs/v1-to-v2-changes.md for what's different and docs/migration-dev.md for development notes.",
+    "If you want to understand the full NanoClaw codebase, just ask Claude Code to walk you through it."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "security",
+      "communication",
+      "coding",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "security",
+    "communication",
+    "coding",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Nanoclaw is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with security workflows.",
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Helps with memory workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nanoclaw",
+  "publishedAt": "2026-05-18"
+}

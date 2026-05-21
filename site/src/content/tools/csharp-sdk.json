@@ -1,0 +1,75 @@
+{
+  "id": "csharp-sdk",
+  "name": "Csharp Sdk",
+  "type": "mcp",
+  "status": "published",
+  "summary": "The official C# SDK for Model Context Protocol servers and clients. Maintained in collaboration with Microsoft.",
+  "description": "The official C# SDK for Model Context Protocol servers and clients. Maintained in collaboration with Microsoft.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/modelcontextprotocol/csharp-sdk",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/modelcontextprotocol/csharp-sdk",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/modelcontextprotocol/csharp-sdk#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/modelcontextprotocol/csharp-sdk#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/modelcontextprotocol/csharp-sdk/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The official C# SDK for the Model Context Protocol, enabling .NET applications, services, and libraries to implement and interact with MCP clients and servers.",
+    "Please visit the API documentation for more details on available functionality.",
+    "ModelContextProtocol.AspNetCore - The library for HTTP-based MCP servers.",
+    "You can also browse the samples directory and the API documentation for more details on available functionality.",
+    "The Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to Large Language Models (LLMs).",
+    "It enables secure integration between LLMs and various data sources and tools.",
+    "For more information about MCP:",
+    "description: How to cancel in-flight MCP requests using cancellation tokens and notifications."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T21:47:12Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/modelcontextprotocol/csharp-sdk",
+  "repoUrl": "https://github.com/modelcontextprotocol/csharp-sdk",
+  "license": "NOASSERTION",
+  "stars": 4276,
+  "lastUpdated": "2026-05-19T21:47:12Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

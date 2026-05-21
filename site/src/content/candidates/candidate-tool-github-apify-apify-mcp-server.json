@@ -1,0 +1,201 @@
+{
+  "id": "candidate-tool-github-apify-apify-mcp-server",
+  "type": "tool",
+  "status": "published",
+  "title": "Apify Mcp Server",
+  "sourceUrl": "https://github.com/apify/apify-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "apify",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.",
+  "proposedCategory": [
+    "media",
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "apify",
+    "repo": "apify-mcp-server",
+    "fullName": "apify/apify-mcp-server",
+    "stars": 1209,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "ai",
+      "mcp",
+      "mcp-server"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-13T07:46:18Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/apify_mcp_server_dark_background.png",
+    "docs/apify_mcp_server_white_background.png",
+    "docs/apify-logo-claude-desktop.png",
+    "docs/apify-logo.png",
+    "docs/apify-logo.svg",
+    "docs/apify-mcp-server.png",
+    "docs/claude-code-tools.json",
+    "docs/claude-desktop.png",
+    "docs/mcp-clients.png",
+    "package.json",
+    "pyproject.toml",
+    ".claude/skills/bug-triage/SKILL.md",
+    ".claude/skills/dig/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" <a href=\"https://mcp.apify.com\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://raw.githubusercontent.com/apify/apify mcp server/refs/heads/master/docs/apify mcp server dark background.png\" <img alt=\"Apify MCP Server\" src=\"https://raw.githubusercontent.com/apify/apify mcp server/refs/heads/master/docs/apify mcp server white background.png\" width=\"500\" </picture </a <br <small ",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/bug-triage/SKILL.md",
+      "extract": "name: bug triage description: Triage open GitHub bug issues for Apify MCP server. Fetches issues, analyzes root causes, drafts developer to developer responses, and posts after user approval. Use when handling user bug reports, responding to issues, or cleaning up stale bugs. argument hint: \"[issue numbers] [ label <label ] [ all]\" allowed tools: [Read, Glob, Grep, Bash, WebFetch, Agent] Bug Triage Triage open bug is"
+    },
+    {
+      "path": ".claude/skills/dig/SKILL.md",
+      "extract": "name: dig description: Explore, analyze, plan, or spec features for the Apify MCP server. Adapts to what the user asks — from quick code exploration to full GitHub issue specs. Use when the user asks to explore code, understand behavior, plan a change, design a feature, or create an issue spec. argument hint: \"<your request [ sdk <path ] [ ext apps <path ] [ internal <path ]\" allowed tools: [Read, Glob, Grep, Bash, W"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "It supports OAuth, allowing you to connect from clients like Claude.ai or Visual Studio Code using just the URL.",
+    "🚀 Use the hosted Apify MCP Server!",
+    "For the best experience, connect your AI assistant to our hosted server at",
+    "💰 The server also supports agentic payments via x402 and Skyfire, allowing AI agents to pay for Actor runs without an API token.",
+    "Apify MCP Server is compatible with Claude Code, Claude.ai, Cursor, VS Code and any client that adheres to the Model Context Protocol.",
+    "🌐 Introducing Apify MCP Server",
+    "🛠️ Tools, resources, and prompts",
+    "The Apify MCP Server allows an AI assistant to use any Apify Actor as a tool to perform a specific task."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"media\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "automation",
+      "search",
+      "docs",
+      "data"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "automation",
+    "search",
+    "docs",
+    "data"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 7,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent app or product platform language detected.",
+    "SDK or library language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, agent-app, sdk.",
+    "LLM: mcp + [mcp] — The project is explicitly an MCP server that exposes Apify Actors as tools via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "agent-app",
+    "sdk"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Apify Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with automation workflows.",
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with data workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:apify/apify-mcp-server",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "apify-mcp-server",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

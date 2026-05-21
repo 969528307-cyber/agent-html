@@ -1,0 +1,169 @@
+{
+  "id": "candidate-ai-website-cloner-template-2026-05-18",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Ai Website Cloner Template",
+  "sourceUrl": "https://github.com/JCodesMore/ai-website-cloner-template",
+  "sourceName": "GitHub",
+  "author": "JCodesMore",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Clone any website with one command using AI coding agents",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "JCodesMore",
+    "repo": "ai-website-cloner-template",
+    "fullName": "JCodesMore/ai-website-cloner-template",
+    "stars": 15000,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "ai-tools",
+      "automation",
+      "boilerplate",
+      "claude",
+      "claude-code",
+      "clone",
+      "developer-tools",
+      "nextjs",
+      "react",
+      "reverse-engineering",
+      "shadcn-ui",
+      "skills",
+      "tailwindcss",
+      "template",
+      "typescript",
+      "web-scraping",
+      "website-clone"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-07T09:11:26Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/design-references/.gitkeep",
+    "docs/research/INSPECTION_GUIDE.md",
+    "package.json",
+    ".claude/skills/clone-website/SKILL.md",
+    ".codex/skills/clone-website/SKILL.md",
+    ".github/skills/clone-website/SKILL.md",
+    ".cursor/commands/clone-website.md",
+    ".cursor/rules/project.mdc",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "AI Website Cloner Template <a href=\"https://github.com/JCodesMore/ai website cloner template/blob/master/LICENSE\" <img src=\"https://img.shields.io/badge/license MIT blue\" alt=\"MIT License\" / </a <a href=\"https://github.com/JCodesMore/ai website cloner template/stargazers\" <img src=\"https://img.shields.io/github/stars/JCodesMore/ai website cloner template?style=flat\" alt=\"Stars\" / </a <a href=\"https://discord.gg/hrTSX",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/clone-website/SKILL.md",
+      "extract": "name: clone website description: Reverse engineer and clone one or more websites in one shot — extracts assets, CSS, and content section by section and proactively dispatches parallel builder agents in worktrees as it goes. Use this whenever the user wants to clone, replicate, rebuild, reverse engineer, or copy any website. Also triggers on phrases like \"make a copy of this site\", \"rebuild this page\", \"pixel perfect "
+    },
+    {
+      "path": ".codex/skills/clone-website/SKILL.md",
+      "extract": "name: clone website description: Reverse engineer and clone one or more websites in one shot — extracts assets, CSS, and content section by section and proactively dispatches parallel builder agents in worktrees as it goes. Use this whenever the user wants to clone, replicate, rebuild, reverse engineer, or copy any website. Also triggers on phrases like \"make a copy of this site\", \"rebuild this page\", \"pixel perfect "
+    },
+    {
+      "path": ".github/skills/clone-website/SKILL.md",
+      "extract": "name: clone website description: Reverse engineer and clone one or more websites in one shot — extracts assets, CSS, and content section by section and proactively dispatches parallel builder agents in worktrees as it goes. Use this whenever the user wants to clone, replicate, rebuild, reverse engineer, or copy any website. Also triggers on phrases like \"make a copy of this site\", \"rebuild this page\", \"pixel perfect "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents.",
+    "Recommended: Claude Code with Opus 4.7 for best results — but works with a variety of AI coding agents.",
+    "Point it at a URL, run /clone-website, and your AI agent will inspect the site, extract design tokens and assets, write component specs, and dispatch parallel builders to reconstruct every section.",
+    "Start your AI agent — Claude Code recommended:",
+    "Open AGENTS.md for project instructions — most agents pick it up automatically.",
+    "Claude Code Recommended — Opus 4.7",
+    "An AI coding agent (see Supported Platforms)",
+    "The /clone-website skill runs a multi-phase pipeline:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Clone any website with one command using AI coding agents",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "template",
+    "useCategory": [
+      "coding",
+      "automation",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "template",
+  "useCategory": [
+    "coding",
+    "automation",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "reject_not_tool",
+  "enrichment": {
+    "decision": "reject_not_tool",
+    "confidence": "high",
+    "publishType": "none",
+    "primaryType": "skill",
+    "whatIsIt": "Ai Website Cloner Template is a skill-oriented template resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents."
+    ],
+    "reasons": [
+      "This candidate is a starter, template, or example rather than a durable tool listing."
+    ],
+    "riskNotes": []
+  }
+}

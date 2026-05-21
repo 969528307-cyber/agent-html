@@ -1,13 +1,13 @@
 {
   "id": "candidate-scrapling-2026-05-12",
   "type": "tool",
-  "status": "candidate",
+  "status": "published",
   "title": "Scrapling",
   "sourceUrl": "https://github.com/D4Vinci/Scrapling",
   "sourceName": "GitHub",
   "author": "D4Vinci",
   "discoveredAt": "2026-05-12",
-  "lastChecked": "2026-05-12",
+  "lastChecked": "2026-05-21",
   "discoveredFrom": "github",
   "summary": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
   "proposedCategory": [
@@ -19,7 +19,8 @@
   "proposedAgents": [
     "Claude Code",
     "Cursor",
-    "Generic"
+    "Generic",
+    "OpenClaw"
   ],
   "proposedToolType": "mcp",
   "crawlerProfile": "mcp",
@@ -60,7 +61,44 @@
     "docs/api-reference/mcp-server.md",
     "docs/spiders/getting-started.md",
     "pyproject.toml",
-    "agent-skill/Scrapling-Skill/SKILL.md"
+    "agent-skill/Scrapling-Skill/SKILL.md",
+    "docs/api-reference/custom-types.md",
+    "docs/api-reference/fetchers.md",
+    "docs/api-reference/proxy-rotation.md",
+    "docs/api-reference/response.md",
+    "docs/api-reference/selector.md",
+    "docs/api-reference/spiders.md",
+    "docs/assets/cover_dark.png",
+    "docs/assets/cover_dark.svg",
+    "docs/assets/cover_light.png",
+    "docs/assets/cover_light.svg",
+    "docs/assets/favicon.ico",
+    "docs/assets/logo.png",
+    "docs/assets/spider_architecture.png",
+    "docs/benchmarks.md",
+    "docs/cli/extract-commands.md",
+    "docs/cli/interactive-shell.md",
+    "docs/cli/overview.md",
+    "docs/donate.md",
+    "docs/fetching/choosing.md",
+    "docs/fetching/dynamic.md",
+    "docs/fetching/static.md",
+    "docs/fetching/stealthy.md",
+    "docs/index.md",
+    "docs/overrides/main.html",
+    "docs/overview.md",
+    "docs/parsing/adaptive.md",
+    "docs/parsing/main_classes.md",
+    "docs/parsing/selection.md",
+    "docs/README_AR.md",
+    "docs/README_CN.md",
+    "docs/README_DE.md",
+    "docs/README_ES.md",
+    "docs/README_FR.md",
+    "docs/README_JP.md",
+    "docs/README_KR.md",
+    "docs/README_PT_BR.md",
+    "docs/README_RU.md"
   ],
   "readmeExtract": "<! mcp name: io.github.D4Vinci/Scrapling <h1 align=\"center\" <a href=\"https://scrapling.readthedocs.io\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://raw.githubusercontent.com/D4Vinci/Scrapling/main/docs/assets/cover dark.svg?sanitize=true\" <img alt=\"Scrapling Poster\" src=\"https://raw.githubusercontent.com/D4Vinci/Scrapling/main/docs/assets/cover light.svg?sanitize=true\" </picture </a <br <smal",
   "skillExtracts": [
@@ -116,7 +154,15 @@
     }
   ],
   "extractedSignals": [
-    "Repository includes skill-related files"
+    "Repository includes skill-related files",
+    "Make requests from anywhere, collect data, and enjoy fast connections with our premium proxies.\" style=\"max-height:60px;\">",
+    "Simple API calls, no browser automation required.",
+    "Scraping browser with fully spoofed Chromium, residential IPs, auto CAPTCHA solving, and anti-bot bypass.",
+    "MCP and N8N integrations are available.",
+    ". Also offers DISCOUNTED AI models - Claude, GPT, GEMINI & more up to 71% off.",
+    "Global IP coverage, high anonymity, smart rotation, and reliable performance for automation and data extraction.",
+    "PetroSky VPS - cloud servers built for nonstop automation.",
+    "Read a full review of Scrapling on The Web Scraping Club (Nov 2025), the #1 newsletter dedicated to Web Scraping."
   ],
   "reviewScore": {
     "sourceTrust": 4,
@@ -128,5 +174,113 @@
     "permission": 4
   },
   "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
-  "publishReason": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!"
+  "publishReason": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "docs",
+      "search",
+      "data",
+      "media",
+      "testing",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "docs",
+    "search",
+    "data",
+    "media",
+    "testing",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Scrapling is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with docs workflows.",
+      "Helps with search workflows.",
+      "Helps with data workflows.",
+      "Helps with media workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:d4vinci/scrapling",
+  "firstDiscoveredAt": "2026-05-12",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "scrapling",
+  "publishedAt": "2026-05-18"
 }

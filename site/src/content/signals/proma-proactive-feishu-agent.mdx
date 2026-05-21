@@ -1,0 +1,92 @@
+---
+englishTitle: "Feishu-Native AI Agent: Proma Brings Proactive Agents to Chinese Workplace"
+originalTitle: "把最丝滑的通用 Agent 体验带进你的工作流，为 100x 专业用户而生的未来产品"
+sourceName: "GitHub — ErlichLiu/Proma"
+sourceUrl: "https://github.com/ErlichLiu/Proma"
+author: "ErlichLiu"
+originalPublishedAt: "2026-05-01"
+permissionStatus: "open_license"
+executiveSummary: "Proma is an open-source proactive AI agent built on the Claude Agent SDK, designed to live inside Feishu (Lark) group chats. It demonstrates a new paradigm where agents aren't summoned — they proactively participate in conversations, suggest actions, and complete multi-step workflows. With native Feishu integration and flexible model provider support, it's a blueprint for how Chinese workplace agents will operate."
+signalThesis: "The next phase of AI agents in China is proactive participation in workplace communication platforms — agents that read context, initiate actions, and collaborate in group chats, not just respond to @mentions."
+whyItMatters: "Proma shifts the agent paradigm from reactive (user asks → agent responds) to proactive (agent observes context → agent suggests or acts). Built on Claude Agent SDK but deployable with any model provider, it shows Chinese developers building on Western agent infrastructure but adapting it for Chinese workplace tools. Feishu-native architecture means the agent lives where Chinese professionals already work."
+keyTakeaways:
+  - "Proactive agent paradigm: agent observes group chat context and initiates actions without being explicitly called."
+  - "Built on Claude Agent SDK as a reference implementation, but model-agnostic in deployment."
+  - "Native Feishu integration — the agent exists as a group chat member, not an external service."
+  - "Open-source reference for how agent SDKs can be embedded into Chinese workplace platforms."
+  - "Represents the shift from 'tool-calling agents' to 'ambient agents' that participate in ongoing work."
+ecosystemImpact:
+  - label: "Agent interaction paradigm"
+    body: "Proactive agents represent the next evolution beyond reactive chatbots — agents that understand context and initiate work."
+  - label: "Chinese workplace integration"
+    body: "Feishu-native architecture shows the path for embedding agents directly into Chinese professional workflows."
+  - label: "Claude Agent SDK adoption"
+    body: "Demonstrates Western agent infrastructure being used as building blocks for China-specific agent applications."
+whatToWatchNext:
+  - "Will proactive agents become the default mode for Chinese workplace AI?"
+  - "How will WeCom and DingTalk respond with their own agent SDKs?"
+  - "Will agent proactivity raise concerns about automation ethics and user consent?"
+relatedTools: []
+relatedAgents:
+  - "codex"
+  - "claude-code"
+relatedLearn:
+  - "what-is-agent-skill"
+  - "how-to-choose-agent"
+publishedAt: "2026-05-18"
+---
+
+## Full English Translation
+
+### Proma: The Smoothest Universal Agent Experience, Built for 100x Professional Users
+
+Proma is an open-source project that brings proactive AI agents into Feishu (Lark) group chats. Built on the Claude Agent SDK, it demonstrates a complete reference implementation for embedding agent capabilities into Chinese workplace communication platforms.
+
+#### What Makes Proma Different
+
+**Proactive Rather Than Reactive**
+Traditional chatbots wait for a user to @mention them. Proma reads group chat context continuously and decides when to contribute — suggesting actions, surfacing relevant information, or offering to complete tasks. This "ambient agent" model means the agent becomes a persistent team member rather than an occasional tool.
+
+**Claude Agent SDK Foundation**
+The project uses Anthropic's Claude Agent SDK as its agent runtime, demonstrating how Western agent infrastructure can be adapted for Chinese deployment scenarios. The SDK provides the reasoning, tool-use, and multi-step execution capabilities, while Proma adds the Feishu integration layer.
+
+**Model-Agnostic Architecture**
+While built on Claude Agent SDK, Proma supports flexible model provider configuration — users can switch between Claude, Qwen, DeepSeek, or any compatible model provider. This is critical for Chinese deployments where model availability and cost considerations differ from Western markets.
+
+**Native Feishu Integration**
+The agent appears as a regular group chat member in Feishu:
+- Reads and understands ongoing conversations
+- Responds to natural language requests
+- Proactively suggests actions based on context
+- Can be configured with different personas and capabilities
+- Supports multi-turn, multi-participant conversations
+
+#### Proactive Agent Architecture
+
+The proactive agent loop works as follows:
+
+1. **Context Collection**: The agent continuously monitors group chat messages and builds an understanding of the ongoing discussion context.
+2. **Relevance Assessment**: An internal scoring mechanism evaluates whether the agent should contribute based on the conversation topic, its configured capabilities, and conversation dynamics.
+3. **Action Generation**: When the threshold is met, the agent formulates a response or action — this could be answering a question, suggesting a workflow, or offering to execute a task.
+4. **Execution**: The agent uses its tool set to complete requested actions, reporting results back in the chat thread.
+5. **Learning**: Over time, the agent adapts its proactivity threshold based on user feedback and interaction patterns.
+
+#### Deployment Model
+
+Proma is designed for self-hosting:
+- Deploy the agent service on your own infrastructure
+- Connect to Feishu via the official API
+- Configure model providers through environment variables
+- Manage agent behavior through configuration files
+
+This self-hosted model addresses Chinese enterprise concerns about data security and infrastructure control while providing the convenience of a chat-native agent experience.
+
+#### Significance for the Ecosystem
+
+Proma represents a convergence of several important trends:
+- Western agent infrastructure (Claude Agent SDK) being adapted for Chinese platforms
+- The shift from reactive chatbots to proactive ambient agents
+- Open-source implementations that enterprises can self-host
+- Native integration with Chinese workplace communication tools
+
+As Feishu, WeCom, and DingTalk compete for enterprise messaging dominance, the platform that best supports agent integration may gain a significant advantage.

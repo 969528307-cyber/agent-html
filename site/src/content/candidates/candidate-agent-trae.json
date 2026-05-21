@@ -1,0 +1,120 @@
+{
+  "id": "candidate-agent-trae",
+  "type": "agent",
+  "status": "published",
+  "title": "Trae",
+  "sourceUrl": "https://www.trae.ai/",
+  "sourceName": "Trae official site",
+  "sourceRegistryId": "local-agents-library",
+  "sourceRegistry": {
+    "id": "local-agents-library",
+    "name": "Local Agent Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/agents",
+    "acceptRules": [
+      "must_have_documentation_url",
+      "must_have_summary",
+      "must_have_capability_profile"
+    ],
+    "rejectRules": [
+      "missing_official_link",
+      "missing_agent_capability_description"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "ByteDance's AI IDE agent surface for project coding, rules-guided behavior, MCP integrations, and Chinese developer workflows.",
+  "proposedCategory": [
+    "AI IDE workflows",
+    "MCP inside an editor",
+    "Rules-guided project behavior",
+    "Chinese developer ecosystem coverage"
+  ],
+  "proposedAgents": [
+    "trae"
+  ],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Agent collector output. Review official docs, GitHub activity, extension model, and ecosystem fit before changing the public Agent page.",
+  "publishedAs": "trae",
+  "publishedAt": "2026-05-16",
+  "author": "ByteDance",
+  "agentProfile": {
+    "region": "china",
+    "vendor": "ByteDance",
+    "interfaceType": [
+      "ide"
+    ],
+    "supportsMcp": true,
+    "supportsSkills": false,
+    "supportsCli": false,
+    "supportsWorkflows": true,
+    "sourceKinds": [
+      "official",
+      "docs",
+      "docs"
+    ],
+    "officialLinks": [
+      {
+        "label": "Trae official site",
+        "url": "https://www.trae.ai/",
+        "kind": "official"
+      },
+      {
+        "label": "Trae MCP and rules update",
+        "url": "https://traeide.com/news/6",
+        "kind": "docs"
+      },
+      {
+        "label": "Trae Chinese MCP and rules update",
+        "url": "https://traeide.com/zh/news/6",
+        "kind": "docs"
+      }
+    ]
+  },
+  "canonicalKey": "agent:trae",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "agent",
+    "primaryType": "agent",
+    "whatIsIt": "Trae is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to AI IDE workflows.",
+      "Relevant to MCP inside an editor.",
+      "Relevant to Rules-guided project behavior.",
+      "Relevant to Chinese developer ecosystem coverage."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Capability signals are too thin.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

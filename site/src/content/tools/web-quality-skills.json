@@ -1,0 +1,78 @@
+{
+  "id": "web-quality-skills",
+  "name": "Web Quality Skills",
+  "type": "skill",
+  "status": "published",
+  "summary": "Agent Skills for optimizing web quality based on Lighthouse and Core Web Vitals.",
+  "description": "Agent Skills for optimizing web quality based on Lighthouse and Core Web Vitals.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/addyosmani/web-quality-skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/addyosmani/web-quality-skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/addyosmani/web-quality-skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/addyosmani/web-quality-skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/addyosmani/web-quality-skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "An (unofficial) comprehensive collection of Agent Skills for optimizing web projects based on Google Lighthouse guidelines and Core Web Vitals best practices.",
+    "While interface guidelines tell you what to build, Web Quality Skills tell you how to build it performantly, accessibly, and optimally for search engines.",
+    "These skills encode the collective wisdom from:",
+    "web-quality-audit Comprehensive quality review across all categories \"Audit my site\", \"Review this for quality\", \"Check web quality\"",
+    "accessibility WCAG compliance, screen reader support, keyboard navigation \"Improve accessibility\", \"WCAG audit\", \"a11y review\"",
+    "seo Search engine optimization, crawlability, structured data \"Optimize for SEO\", \"Improve search ranking\", \"Fix meta tags\"",
+    "best-practices Security, modern APIs, code quality patterns \"Apply best practices\", \"Security audit\", \"Code quality review\"",
+    "Whether you're using OpenCode, Claude Code, Codex, or Cursor, the add-skill tool makes it simple to extend your agent's capabilities with specialized instruction sets."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-09T22:25:48Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/addyosmani/web-quality-skills",
+  "repoUrl": "https://github.com/addyosmani/web-quality-skills",
+  "license": "MIT",
+  "stars": 1964,
+  "lastUpdated": "2026-05-09T22:25:48Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

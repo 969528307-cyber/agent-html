@@ -1,0 +1,107 @@
+{
+  "id": "candidate-signal-mcp-trust-signal",
+  "type": "signal",
+  "status": "published",
+  "title": "Qwen-Agent turns MCP into a first-class agent framework capability",
+  "sourceUrl": "https://github.com/QwenLM/Qwen-Agent",
+  "sourceName": "QwenLM / Qwen-Agent GitHub",
+  "sourceRegistryId": "local-signals-library",
+  "sourceRegistry": {
+    "id": "local-signals-library",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/signals",
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "Qwen-Agent presents MCP as part of a broader agent framework that also includes function calling, code interpreter, RAG, GUI apps, and model-service integration.",
+  "proposedCategory": [
+    "signal"
+  ],
+  "proposedAgents": [
+    "qwen-code"
+  ],
+  "extractedSignals": [
+    "Qwen-Agent is a stronger Signal than a single MCP server because it shows MCP moving into full agent frameworks: model service, tool use, memory/planning assumptions, RAG, and application examples in one stack.",
+    "For agentk.it, this is evidence that China-origin agent ecosystems should not be evaluated only as chat products or coding assistants. Some of them are framework layers that can host MCP, code execution, retrieval, and custom agent applications.",
+    "Qwen-Agent is positioned as a framework for LLM applications built around instruction following, tool use, planning, and memory capabilities.",
+    "The official installation path exposes MCP as an optional capability alongside GUI, RAG, and Code Interpreter extras.",
+    "Its examples matter because they connect Qwen models to practical agent applications rather than only model inference."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Signals collector output. Review source quality, translation value, ecosystem implication, and whether this belongs as a Signal rather than Learn content.",
+  "publishedAs": "mcp-trust-signal",
+  "publishedAt": "2026-05-16",
+  "author": "QwenLM",
+  "permissionStatus": "open_license",
+  "signalProfile": {
+    "sourceName": "QwenLM / Qwen-Agent GitHub",
+    "originalPublishedAt": "2026-03-04",
+    "permissionStatus": "open_license",
+    "translationMode": "full_english_translation",
+    "relatedTools": [
+      "servers",
+      "context7"
+    ],
+    "relatedAgents": [
+      "qwen-code"
+    ],
+    "relatedLearn": [
+      "what-is-mcp"
+    ]
+  },
+  "canonicalKey": "signal:url:https://github.com/qwenlm/qwen-agent:title:qwen agent turns mcp into first class agent framework capability",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "Qwen-Agent turns MCP into a first-class agent framework capability is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to signal.",
+      "Qwen-Agent is a stronger Signal than a single MCP server because it shows MCP moving into full agent frameworks: model service, tool use, memory/planning assumptions, RAG, and application examples in one stack.",
+      "For agentk.it, this is evidence that China-origin agent ecosystems should not be evaluated only as chat products or coding assistants. Some of them are framework layers that can host MCP, code execution, retrieval, and custom agent applications.",
+      "Qwen-Agent is positioned as a framework for LLM applications built around instruction following, tool use, planning, and memory capabilities."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

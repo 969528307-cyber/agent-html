@@ -1,0 +1,168 @@
+{
+  "id": "candidate-tool-github-miromindai-mirothinker",
+  "type": "tool",
+  "status": "published",
+  "title": "MiroThinker",
+  "sourceUrl": "https://github.com/MiroMindAI/MiroThinker",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "MiroMindAI",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "MiroThinker is a deep research agent optimized for complex research and prediction tasks. Our latest models, MiroThinker-1.7, achieves 74.0 and 75.3 on the BrowseComp and BrowseComp Zh, respectively.",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "proposedAgents": [
+    "Qwen Code",
+    "Kimi"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "MiroMindAI",
+    "repo": "MiroThinker",
+    "fullName": "MiroMindAI/MiroThinker",
+    "stars": 8161,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "browsecomp",
+      "deep-research",
+      "futurex",
+      "gaia",
+      "hle",
+      "research-agent",
+      "search-agent",
+      "xbench"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-25T05:23:54Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"assets/mirothinker logo.png\" width=\"55%\" alt=\"MiroThinker\" / </div <br <div align=\"center\" [![MODEL](https://img.shields.io/badge/Model FFD21E?style=for the badge&logo=huggingface&logoColor=white)](https://huggingface.co/collections/miromind ai/mirothinker 17) [![REPORT](https://img.shields.io/badge/Report B31B1B?style=for the badge&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2603",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "MiroThinker: A deep research agent optimized for research and prediction.",
+    "Our proprietary agent MiroThinker-H1 achieves leading performance on BrowseComp and BrowseComp-ZH among open-source and commercial models.",
+    "\\[2026-01-23\\] 🎉 We have brought two important updates to MiroThinker online: (a) Core Research Report Generation: Deep Research online reports now support generation, preview, and sharing.",
+    "MiroThinker will continue to be maintained and iteratively upgraded, with the goal of becoming the best Research Agent you'll ever use!",
+    "\\[2026-01-05\\] 🎉🎉 We release MiroThinker-v1.5, a series of open-source deep research agents optimized for financial prediction.",
+    "MiroThinker-v1.5-235B scores 39.2% on HLE-Text, 69.8% on BrowseComp, 71.5% on BrowseComp-ZH, and 80.8% on GAIA-Val-165, setting a new state-of-the-art among search agents.",
+    "Introducing interactive scaling as a third dimension of performance improvement, MiroThinker v1.0 supports 256K context window and up to 600 tool calls per task.",
+    "\\[2025-09-11\\] MiroThinker-72B-Preview ranked 4th in this week's FutureX benchmark."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-framework\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "MiroThinker is a deep research agent optimized for complex research and prediction tasks. Our latest models, MiroThinker-1.7, achieves 74.0 and 75.3 on the BrowseComp and BrowseComp Zh, respectively.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "MiroThinker is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with research workflows.",
+      "Relevant to agent-framework.",
+      "MiroThinker: A deep research agent optimized for research and prediction.",
+      "Our proprietary agent MiroThinker-H1 achieves leading performance on BrowseComp and BrowseComp-ZH among open-source and commercial models."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:miromindai/mirothinker",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mirothinker",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

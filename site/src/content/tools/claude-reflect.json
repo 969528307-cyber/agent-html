@@ -1,0 +1,78 @@
+{
+  "id": "claude-reflect",
+  "name": "Claude Reflect",
+  "type": "skill",
+  "status": "published",
+  "summary": "A self-learning system for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.",
+  "description": "A self-learning system for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/BayramAnnakov/claude-reflect",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/BayramAnnakov/claude-reflect",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/BayramAnnakov/claude-reflect#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/BayramAnnakov/claude-reflect#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/BayramAnnakov/claude-reflect/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A self-learning system for Claude Code that captures corrections and discovers workflow patterns — turning them into permanent memory and reusable skills.",
+    "When you correct Claude (\"no, use gpt-5.1 not gpt-5\"), it remembers forever.",
+    "Discover Workflow Patterns (NEW in v2)",
+    "Example: You've asked \"review my productivity\" 12 times → suggests creating /daily-review",
+    "Permanent Memory Corrections sync to CLAUDE.md — Claude remembers across sessions",
+    "Skill Discovery Finds repeating patterns in your history → generates commands",
+    "Skill Improvement Corrections during /deploy improve the deploy skill itself",
+    "/reflect Process queued learnings with human review"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-03-16T19:41:15Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/BayramAnnakov/claude-reflect",
+  "repoUrl": "https://github.com/BayramAnnakov/claude-reflect",
+  "license": "MIT",
+  "stars": 1039,
+  "lastUpdated": "2026-03-16T19:41:15Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

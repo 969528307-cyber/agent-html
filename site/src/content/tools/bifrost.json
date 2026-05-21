@@ -1,0 +1,75 @@
+{
+  "id": "bifrost",
+  "name": "Bifrost",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS.",
+  "description": "Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/maximhq/bifrost",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/maximhq/bifrost",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/maximhq/bifrost#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/maximhq/bifrost#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/maximhq/bifrost/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Model Context Protocol (MCP) - Enable AI models to use external tools (filesystem, web search, databases)",
+    "Budget Management - Hierarchical cost control with virtual keys, teams, and customer budgets",
+    "Vault Support - Secure API key management with HashiCorp Vault integration",
+    "MCP Integration - External tool calling",
+    "Budget Management - Cost control and governance",
+    "Vault Support - Secure key management",
+    "description: \"Deep dive into Bifrost's advanced concurrency architecture - worker pools, goroutine management, channel-based communication, and resource isolation patterns.\"",
+    "Resource Pooling Object pools with lifecycle management Predictable memory usage, minimal GC"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:43:52Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/maximhq/bifrost",
+  "repoUrl": "https://github.com/maximhq/bifrost",
+  "license": "Apache-2.0",
+  "stars": 5069,
+  "lastUpdated": "2026-05-20T03:43:52Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

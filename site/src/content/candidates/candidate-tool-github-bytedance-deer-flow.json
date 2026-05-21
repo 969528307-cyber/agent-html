@@ -1,0 +1,244 @@
+{
+  "id": "candidate-tool-github-bytedance-deer-flow",
+  "type": "tool",
+  "status": "published",
+  "title": "Deer Flow",
+  "sourceUrl": "https://github.com/bytedance/deer-flow",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "bytedance",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+  "proposedCategory": [
+    "communication"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "bytedance",
+    "repo": "deer-flow",
+    "fullName": "bytedance/deer-flow",
+    "stars": 68333,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agentic",
+      "agentic-framework",
+      "agentic-workflow",
+      "ai",
+      "ai-agents",
+      "deep-research",
+      "harness",
+      "langchain",
+      "langgraph",
+      "langmanus",
+      "llm",
+      "multi-agent",
+      "nodejs",
+      "podcast",
+      "python",
+      "superagent",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T12:03:23Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/CODE_CHANGE_SUMMARY_BY_FILE.md",
+    "docs/plans/2026-04-01-langfuse-tracing.md",
+    "docs/pr-evidence/session-skill-manage-e2e-20260406-202745.png",
+    "docs/pr-evidence/skill-manage-e2e-20260406-194030.png",
+    "docs/SKILL_NAME_CONFLICT_FIX.md",
+    "docs/superpowers/plans/2026-04-10-event-store-history.md",
+    "docs/superpowers/specs/2026-04-11-runjournal-history-evaluation.md",
+    "docs/superpowers/specs/2026-04-11-summarize-marker-design.md",
+    ".agent/skills/smoke-test/SKILL.md",
+    "skills/public/academic-paper-review/SKILL.md",
+    "skills/public/bootstrap/SKILL.md",
+    "skills/public/chart-visualization/SKILL.md",
+    "skills/public/claude-to-deerflow/SKILL.md",
+    "skills/public/code-documentation/SKILL.md",
+    "skills/public/consulting-analysis/SKILL.md",
+    "skills/public/data-analysis/SKILL.md",
+    "skills/public/deep-research/SKILL.md",
+    "skills/public/find-skills/SKILL.md",
+    "skills/public/frontend-design/SKILL.md",
+    "skills/public/github-deep-research/SKILL.md",
+    "skills/public/image-generation/SKILL.md",
+    "skills/public/newsletter-generation/SKILL.md",
+    "skills/public/podcast-generation/SKILL.md",
+    "skills/public/ppt-generation/SKILL.md",
+    "skills/public/skill-creator/SKILL.md",
+    "skills/public/surprise-me/SKILL.md",
+    "skills/public/systematic-literature-review/SKILL.md",
+    "skills/public/vercel-deploy-claimable/SKILL.md",
+    "skills/public/video-generation/SKILL.md",
+    "skills/public/web-design-guidelines/SKILL.md",
+    "backend/AGENTS.md",
+    "backend/CLAUDE.md",
+    "frontend/AGENTS.md",
+    "frontend/CLAUDE.md"
+  ],
+  "readmeExtract": "🦌 DeerFlow 2.0 English | [中文](./README zh.md) | [日本語](./README ja.md) | [Français](./README fr.md) | [Русский](./README ru.md) [![Python](https://img.shields.io/badge/Python 3.12%2B 3776AB?logo=python&logoColor=white)](./backend/pyproject.toml) [![Node.js](https://img.shields.io/badge/Node.js 22%2B 339933?logo=node.js&logoColor=white)](./Makefile) [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)",
+  "skillExtracts": [
+    {
+      "path": ".agent/skills/smoke-test/SKILL.md",
+      "extract": "name: smoke test description: End to end smoke test skill for DeerFlow. Guides through: 1) Pulling latest code, 2) Docker OR Local installation and deployment (user preference, default to Local if Docker network issues), 3) Service availability verification, 4) Health check, 5) Final test report. Use when the user says \"run smoke test\", \"smoke test deployment\", \"verify installation\", \"test service availability\", \"end"
+    },
+    {
+      "path": "skills/public/academic-paper-review/SKILL.md",
+      "extract": "name: academic paper review description: Use this skill when the user requests to review, analyze, critique, or summarize academic papers, research articles, preprints, or scientific publications. Supports comprehensive structured reviews covering methodology assessment, contribution evaluation, literature positioning, and constructive feedback generation. Trigger on queries involving paper URLs, uploaded PDFs, arXiv"
+    },
+    {
+      "path": "skills/public/bootstrap/SKILL.md",
+      "extract": "name: bootstrap description: Generate a personalized SOUL.md through a warm, adaptive onboarding conversation. Trigger when the user wants to create, set up, or initialize their AI partner's identity — e.g., \"create my SOUL.md\", \"bootstrap my agent\", \"set up my AI partner\", \"define who you are\", \"let's do onboarding\", \"personalize this AI\", \"make you mine\", or when a SOUL.md is missing. Also trigger for updates: \"upd"
+    },
+    {
+      "path": "skills/public/chart-visualization/SKILL.md",
+      "extract": "name: chart visualization description: This skill should be used when the user wants to visualize data. It intelligently selects the most suitable chart type from 26 available options, extracts parameters based on detailed specifications, and generates a chart image using a JavaScript script. compatibility: nodejs: \" =18.0.0\" Chart Visualization Skill This skill provides a comprehensive workflow for transforming data"
+    },
+    {
+      "path": "skills/public/claude-to-deerflow/SKILL.md",
+      "extract": "name: claude to deerflow description: \"Interact with DeerFlow AI agent platform via its HTTP API. Use this skill when the user wants to send messages or questions to DeerFlow for research/analysis, start a DeerFlow conversation thread, check DeerFlow status or health, list available models/skills/agents in DeerFlow, manage DeerFlow memory, upload files to DeerFlow threads, or delegate complex research tasks to DeerFl"
+    },
+    {
+      "path": "skills/public/code-documentation/SKILL.md",
+      "extract": "name: code documentation description: Use this skill when the user requests to generate, create, or improve documentation for code, APIs, libraries, repositories, or software projects. Supports README generation, API reference documentation, inline code comments, architecture documentation, changelog generation, and developer guides. Trigger on requests like \"document this code\", \"create a README\", \"generate API docs"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "DeerFlow (Deep Exploration and Efficient Research Flow) is an open-source super agent harness that orchestrates sub-agents, memory, and sandboxes to do almost anything — powered by extensible skills.",
+    "If you're looking for the original Deep Research framework, it's maintained on the 1.x branch — contributions there are still welcome.",
+    "DeerFlow has newly integrated the intelligent search and crawling toolset independently developed by BytePlus--InfoQuest (supports free online experience)",
+    "From Deep Research to Super Agent Harness",
+    "That prompt is intended for coding agents.",
+    "This launches an interactive wizard that guides you through choosing an LLM provider, optional web search, and execution/safety preferences such as sandbox mode, bash access, and file-write tools.",
+    "The wizard also lets you configure an optional web search provider, or skip it for now.",
+    "For Qwen-style reasoning models, DeerFlow toggles reasoning with extrabody.chattemplatekwargs.enablethinking and preserves vLLM's non-standard reasoning field across multi-turn tool-call conversations."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "docs",
+      "automation",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "docs",
+    "automation",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 10,
+    "cli": 3,
+    "workflow": 9,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Workflow/automation/orchestration language detected.",
+    "General agent-building language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: knowledge-resource, workflow, agent-framework.",
+    "LLM: agent-framework + [skill, workflow, cli] — Primarily an open-source super agent harness framework for building and orchestrating multi-agent systems with long-horizon tasks."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "workflow",
+    "agent-framework"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Deer Flow is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with docs workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows.",
+      "Relevant to communication."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:bytedance/deer-flow",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "deer-flow",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,207 @@
+{
+  "id": "candidate-tool-github-microsoft-agent-framework",
+  "type": "tool",
+  "status": "published",
+  "title": "Agent Framework",
+  "sourceUrl": "https://github.com/microsoft/agent-framework",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "microsoft",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "microsoft",
+    "repo": "agent-framework",
+    "fullName": "microsoft/agent-framework",
+    "stars": 10517,
+    "license": "MIT",
+    "topics": [
+      "agent-framework",
+      "agentic-ai",
+      "agents",
+      "ai",
+      "dotnet",
+      "multi-agent",
+      "orchestration",
+      "python",
+      "sdk",
+      "workflows"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T12:07:40Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/assets/readme-banner.png",
+    "docs/decisions/0001-agent-run-response.md",
+    "docs/decisions/0002-agent-tools.md",
+    "docs/decisions/0003-agent-opentelemetry-instrumentation.md",
+    "docs/decisions/0004-foundry-sdk-extensions.md",
+    "docs/decisions/0005-python-naming-conventions.md",
+    "docs/decisions/0006-userapproval.md",
+    "docs/decisions/0007-agent-filtering-middleware.md",
+    "docs/decisions/0008-python-subpackages.md",
+    "docs/decisions/0009-support-long-running-operations.md",
+    "docs/decisions/0010-ag-ui-support.md",
+    "docs/decisions/0011-create-get-agent-api.md",
+    "docs/decisions/0012-python-typeddict-options.md",
+    "docs/decisions/0013-python-get-response-simplification.md",
+    "docs/decisions/0014-feature-collections.md",
+    "docs/decisions/0015-agent-run-context.md",
+    "docs/decisions/0016-python-context-middleware.md",
+    "docs/decisions/0016-structured-output.md",
+    "docs/decisions/0017-agent-additional-properties.md",
+    "docs/decisions/0018-agentthread-serialization.md",
+    "docs/decisions/0019-python-context-compaction-strategy.md",
+    "docs/decisions/0020-foundry-agent-type-naming.md",
+    "docs/decisions/0021-agent-skills-design.md",
+    "docs/decisions/0021-provider-leading-clients.md",
+    "docs/decisions/0022-chat-history-persistence-consistency.md",
+    "docs/decisions/0023-foundry-evals-integration.md",
+    "docs/decisions/0024-codeact-integration.md",
+    "docs/decisions/0024-prompt-injection-defense.md",
+    "docs/decisions/0025-foundry-toolbox-support.md",
+    "docs/decisions/0026-hosted-session-identity-context.md",
+    "docs/decisions/adr-short-template.md",
+    "docs/decisions/adr-template.md",
+    "docs/decisions/README.md",
+    "docs/features/code_act/dotnet-implementation.md",
+    "docs/features/code_act/python-implementation.md",
+    "docs/features/durable-agents/AGENTS.md",
+    "docs/features/durable-agents/durable-agents-ttl.md",
+    "docs/features/durable-agents/README.md",
+    "docs/features/FIDES_IMPLEMENTATION_SUMMARY.md"
+  ],
+  "readmeExtract": "![Microsoft Agent Framework](docs/assets/readme banner.png) Welcome to Microsoft Agent Framework! [![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/b5zjErwbQM?style=flat)](https://discord.gg/b5zjErwbQM) [![MS Learn Documentation](https://img.shields.io/badge/MS%20Learn Documentation blue)](https://learn.microsoft.com/en us/agent framework/) [![PyPI](https://img.shields.io/pypi/v/agent framework)](ht",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Welcome to Microsoft Agent Framework!",
+    "Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python.",
+    "Microsoft Agent Framework is built for teams taking agents from prototype to production.",
+    "Watch the full Agent Framework introduction (30 min)",
+    "are building agents and workflows you expect to run in production,",
+    "Multiple Agent Provider Support: Support for various LLM providers with more being added continuously",
+    "Python workflows .NET workflows",
+    "Foundry Hosted Agents (new): Deploy and host your agents to Foundry-hosted infrastructure with just 2 additional lines of code"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-framework\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "Agent Framework is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-framework.",
+      "Welcome to Microsoft Agent Framework!",
+      "Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:microsoft/agent-framework",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-framework",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

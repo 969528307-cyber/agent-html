@@ -1,0 +1,76 @@
+{
+  "id": "gemini-cli",
+  "name": "Gemini Cli",
+  "type": "mcp",
+  "status": "published",
+  "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+  "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+  "category": [
+    "mcp",
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/google-gemini/gemini-cli#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/google-gemini/gemini-cli#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/google-gemini/gemini-cli/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Gemini CLI is an open-source AI agent that brings the power of Gemini directly",
+    "It provides lightweight access to Gemini, giving you the",
+    "Learn all about Gemini CLI in our documentation.",
+    "🧠 Powerful Gemini 3 models: Access to improved reasoning and 1M token",
+    "🔧 Built-in tools: Google Search grounding, file operations, shell",
+    "🔌 Extensible: MCP (Model Context Protocol) support for custom",
+    "New preview releases will be published each week at UTC 23:59 on Tuesdays.",
+    "will be the full promotion of last week's preview release + any bug fixes"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T23:28:44Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/google-gemini/gemini-cli",
+  "repoUrl": "https://github.com/google-gemini/gemini-cli",
+  "license": "Apache-2.0",
+  "stars": 104215,
+  "lastUpdated": "2026-05-17T23:28:44Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

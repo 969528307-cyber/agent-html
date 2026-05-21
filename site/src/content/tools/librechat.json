@@ -1,0 +1,79 @@
+{
+  "id": "librechat",
+  "name": "LibreChat",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Enhanced ChatGPT Clone: Features Agents, MCP, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active.",
+  "description": "Enhanced ChatGPT Clone: Features Agents, MCP, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/danny-avila/LibreChat#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/danny-avila/LibreChat#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/danny-avila/LibreChat/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Anthropic (Claude), AWS Bedrock, OpenAI, Azure OpenAI, Google, Vertex AI, OpenAI Responses API (incl.",
+    "🔦 Agents & Tools Integration:",
+    "Agent Marketplace: Discover and deploy community-built agents",
+    "Collaborative Sharing: Share agents with specific users and groups",
+    "Flexible & Extensible: Use MCP Servers, tools, file search, code execution, and more",
+    "Skills: Create reusable SKILL.md instruction bundles for manual, automatic, or always-on agent workflows",
+    "Subagents: Delegate focused work to isolated child agent runs with their own context windows",
+    "Model Context Protocol (MCP) Support for Tools"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:18:41Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/danny-avila/LibreChat",
+  "repoUrl": "https://github.com/danny-avila/LibreChat",
+  "license": "MIT",
+  "stars": 37212,
+  "lastUpdated": "2026-05-20T03:18:41Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

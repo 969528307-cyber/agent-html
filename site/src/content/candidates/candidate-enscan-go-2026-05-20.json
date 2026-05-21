@@ -1,0 +1,136 @@
+{
+  "id": "candidate-enscan-go-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "ENScan GO",
+  "sourceUrl": "https://github.com/wgpsec/ENScan_GO",
+  "sourceName": "GitHub",
+  "author": "wgpsec",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。支持MCP接入",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "wgpsec",
+    "repo": "ENScan_GO",
+    "fullName": "wgpsec/ENScan_GO",
+    "stars": 4398,
+    "license": "Apache-2.0",
+    "topics": [
+      "app",
+      "cyber-security",
+      "cybersecurity",
+      "icp",
+      "mcp",
+      "mcp-server",
+      "red-team",
+      "redteam",
+      "redteam-tools"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-03-30T08:44:13Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://github.com/wgpsec/ENScan GO\" <img src=\"README/logo.png\" alt=\"Logo\" width=\"80\" height=\"80\" </a <h3 align=\"center\" ENScan Go</h3 <p align=\"center\" 剑指HW/SRC，解决在HW/SRC场景下遇到的各种针对国内企业信息收集难题 <br / <br / <a href=\"https://github.com/wgpsec/ENScan GO/stargazers\" <img alt=\"GitHub stars\" src=\"https://img.shields.io/github/stars/wgpsec/ENScan GO\"/ </a <a href=\"https://github.com/wgpsec/ENScan GO",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+    "ENScanGO is an enterprise information gathering tool for security researchers and penetration testers (HW/SRC scenarios in China).",
+    "ENScan interface: Core enterprise search with AdvanceFilter(), GetCompanyBaseInfoById(), GetInfoByPage(), GetENMap()",
+    "DeepSearchTask: Recursive company relationship search",
+    "runner/enscan.go: Core search/filter logic, deep search implementation",
+    "runner/mcpServer.go: MCP server for AI agent integration",
+    "Deep search fields: invest, branch, holds, supplier",
+    "advancefilter - Search companies"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。支持MCP接入",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "security"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "security"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "ENScan GO is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with security workflows.",
+      "Relevant to mcp.",
+      "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+      "ENScanGO is an enterprise information gathering tool for security researchers and penetration testers (HW/SRC scenarios in China)."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "enscan-go",
+  "publishedAt": "2026-05-20"
+}

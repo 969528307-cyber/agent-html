@@ -1,0 +1,165 @@
+{
+  "id": "candidate-supabase-mcp-server-2026-05-16",
+  "type": "tool",
+  "status": "published",
+  "title": "Supabase Mcp Server",
+  "sourceUrl": "https://github.com/alexander-zuev/supabase-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "alexander-zuev",
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Query MCP enables end-to-end management of Supabase via chat interface: read & write query executions, management API support, automatic migration versioning, access to logs and much more.",
+  "proposedCategory": [
+    "communication"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "alexander-zuev",
+    "repo": "supabase-mcp-server",
+    "fullName": "alexander-zuev/supabase-mcp-server",
+    "stars": 821,
+    "license": "Apache-2.0",
+    "topics": [
+      "cursor",
+      "model-context-protocol",
+      "supabase",
+      "windsurf"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-08T18:00:45Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "Query | MCP server for Supabase 🌅 More than 17k installs via pypi and close to 30k downloads on Smithery.ai — in short, this was fun! 🥳 Thanks to everyone who has been using this server for the past few months, and I hope it was useful for you. Since Supabase has released their own [official MCP server](https://github.com/supabase community/supabase mcp), I've decided to no longer actively maintain this one. The of",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Query MCP server for Supabase",
+    "Since Supabase has released their own official MCP server,",
+    "The official MCP server is as feature-rich, and many more",
+    "Query MCP is an open-source MCP server that lets your IDE safely run SQL, manage schema changes, call the Supabase Management API, and use Auth Admin SDK — all with built-in safety controls.",
+    "💻 Compatible with Cursor, Windsurf, Cline and other MCP clients supporting stdio protocol",
+    "🔄 Robust transaction handling for both direct and pooled database connections",
+    "💻 Manage your Supabase projects with Supabase Management API",
+    "🧑‍💻 Manage users with Supabase Auth Admin methods via Python SDK"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Query MCP enables end-to-end management of Supabase via chat interface: read & write query executions, management API support, automatic migration versioning, access to logs and much more.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "monitoring"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "monitoring"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 4,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Package metadata detected; may expose executable commands.",
+    "SDK or library language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: sdk, cli.",
+    "LLM: mcp + [mcp, cli] — This project is explicitly an MCP server for Supabase, designed to be used with MCP-compatible clients via stdio."
+  ],
+  "classificationAlternatives": [
+    "sdk",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Supabase Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to communication.",
+      "Query MCP server for Supabase",
+      "Since Supabase has released their own official MCP server,"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:alexander-zuev/supabase-mcp-server",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-16",
+  "reviewedBy": "local-review",
+  "publishedAs": "supabase-mcp-server",
+  "publishedAt": "2026-05-16",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

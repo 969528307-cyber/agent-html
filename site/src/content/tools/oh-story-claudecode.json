@@ -1,0 +1,77 @@
+{
+  "id": "oh-story-claudecode",
+  "name": "Oh Story Claudecode",
+  "type": "skill",
+  "status": "published",
+  "summary": "网文/小说写作 skill 包，覆盖长篇与短篇网络小说的扫榜、拆文、写作、去AI味、封面图全流程",
+  "description": "网文/小说写作 skill 包，覆盖长篇与短篇网络小说的扫榜、拆文、写作、去AI味、封面图全流程",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/worldwonderer/oh-story-claudecode",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/worldwonderer/oh-story-claudecode",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/worldwonderer/oh-story-claudecode#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/worldwonderer/oh-story-claudecode#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/worldwonderer/oh-story-claudecode/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "网文写作 skill 包，覆盖长篇与短篇网络小说的扫榜、拆文、写作、去AI味、封面图全流程。适配 Claude Code、OpenClaw。",
+    "方式一 直接告诉 Claude Code / OpenClaw：",
+    "story /story /网文 工具箱路由 · 模糊意图自动分发到对应 skill",
+    "story-review /story-review /审查 多视角审查 · 4 Agent 多视角审稿 + 番茄/起点/知乎评分标准",
+    "browser-cdp /browser-cdp 浏览器操控 · CDP 协议复用登录态抓取数据",
+    "「沈栀现在什么状态」→ 自动 spawn story-explorer agent",
+    "写作 skill 内部通过 7 个专业 Agent 协作，各司其职：",
+    "story-researcher Sonnet 资料研究 · CDP 搜索+正文提取、多源交叉验证、结构化参考文件输出"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T01:43:54Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/worldwonderer/oh-story-claudecode",
+  "repoUrl": "https://github.com/worldwonderer/oh-story-claudecode",
+  "license": "MIT",
+  "stars": 1280,
+  "lastUpdated": "2026-05-20T01:43:54Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

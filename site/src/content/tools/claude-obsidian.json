@@ -1,0 +1,78 @@
+{
+  "id": "claude-obsidian",
+  "name": "Claude Obsidian",
+  "type": "skill",
+  "status": "published",
+  "summary": "Claude + Obsidian knowledge companion. Persistent, compounding wiki vault based on Karpathy's LLM Wiki pattern. /wiki /save /autoresearch",
+  "description": "Claude + Obsidian knowledge companion. Persistent, compounding wiki vault based on Karpathy's LLM Wiki pattern. /wiki /save /autoresearch",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/AgriciDaniel/claude-obsidian/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Claude + Obsidian knowledge companion.",
+    "Optional DragonScale Memory extension (log folds, deterministic page addresses, semantic tiling lint, boundary-first autoresearch).",
+    "Claude reads them, extracts entities and concepts, updates cross-references, and files everything into a structured Obsidian vault.",
+    "Claude reads the hot cache (recent context), scans the index, drills into relevant pages, and synthesizes an answer.",
+    "Claude finds orphans, dead links, stale claims, and missing cross-references.",
+    "At the end of every session, Claude updates a hot cache.",
+    "claude-obsidian is a knowledge engine - it creates, organizes, maintains, and evolves your notes autonomously.",
+    "Capability claude-obsidian Smart Connections Copilot"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-24T10:21:48Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/AgriciDaniel/claude-obsidian",
+  "repoUrl": "https://github.com/AgriciDaniel/claude-obsidian",
+  "license": "MIT",
+  "stars": 5213,
+  "lastUpdated": "2026-04-24T10:21:48Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -2,11 +2,14 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  assertRepoIsFresh,
   assertRepoMeetsStarFloor,
   buildCandidateFromRepo,
   detectToolType,
+  extractCapabilitySignals,
   extractRelevantWindows,
   extractInstallHints,
+  MAX_REPO_STALENESS_DAYS,
   MIN_GITHUB_STARS,
   parseGitHubUrl,
   selectEvidenceFiles,
@@ -42,6 +45,17 @@ test("detects MCP repositories from package metadata and README text", () => {
   );
 });
 
+test("detects coding agents that run in the terminal as CLI tools", () => {
+  assert.equal(
+    detectToolType({
+      topics: [],
+      files: ["README.md", "package.json", ".codex/skills/code-review/SKILL.md"],
+      readme: "# Codex CLI\nCodex is a coding agent that runs locally in your terminal.",
+    }),
+    "cli"
+  );
+});
+
 test("classifies workflow automation platforms separately from MCP servers", () => {
   assert.equal(
     detectToolType({
@@ -70,12 +84,30 @@ npx -y @example/agent-skill
 });
 
 test("rejects GitHub repositories below the minimum star floor", () => {
-  assert.equal(MIN_GITHUB_STARS, 1000);
+  assert.equal(MIN_GITHUB_STARS, 700);
   assert.throws(
-    () => assertRepoMeetsStarFloor({ full_name: "example/small-tool", stargazers_count: 999 }),
-    /minimum is 1000/
+    () => assertRepoMeetsStarFloor({ full_name: "example/small-tool", stargazers_count: 699 }),
+    /minimum is 700/
   );
-  assert.doesNotThrow(() => assertRepoMeetsStarFloor({ full_name: "example/large-tool", stargazers_count: 1000 }));
+  assert.doesNotThrow(() => assertRepoMeetsStarFloor({ full_name: "example/large-tool", stargazers_count: 700 }));
+});
+
+test("rejects GitHub repositories outside the maintenance freshness window", () => {
+  assert.equal(MAX_REPO_STALENESS_DAYS, 548);
+  assert.throws(
+    () =>
+      assertRepoIsFresh(
+        { full_name: "example/stale-tool", pushed_at: "2024-04-01T00:00:00Z" },
+        { today: new Date("2026-05-12T00:00:00Z") }
+      ),
+    /maximum allowed staleness is 548 days/
+  );
+  assert.doesNotThrow(() =>
+    assertRepoIsFresh(
+      { full_name: "example/current-tool", pushed_at: "2025-01-15T00:00:00Z" },
+      { today: new Date("2026-05-12T00:00:00Z") }
+    )
+  );
 });
 
 test("selects only high-signal evidence files from large repository trees", () => {
@@ -149,6 +181,67 @@ test("builds a candidate with GitHub metadata and capability signals", () => {
   assert.deepEqual(candidate.detectedFiles, ["README.md", "SKILL.md"]);
   assert.deepEqual(candidate.extractedInstall, []);
   assert.ok(candidate.extractedSignals.some((signal) => /Review pull requests/i.test(signal)));
+});
+
+test("cleans HTML badges and images out of capability signals", () => {
+  const signals = extractCapabilitySignals(`
+<p align="center"><strong>Codex CLI</strong> is a coding agent from OpenAI that runs locally on your computer.</p>
+<img src="https://github.com/openai/codex/blob/main/.github/splash.png" alt="Codex CLI splash" />
+<a href="https://example.com?utm_source=github"><img width="1280" height="640" alt="banner" src="cover.png"></a>
+If you want the desktop app experience, run <code>codex app</code> or visit <a href="https://chatgpt.com/codex">the Codex App page</a>.
+`);
+
+  assert.deepEqual(signals, [
+    "Codex CLI is a coding agent from OpenAI that runs locally on your computer.",
+    "If you want the desktop app experience, run codex app or visit the Codex App page.",
+  ]);
+});
+
+test("records the discovery profile separately from detected tool type", () => {
+  const candidate = buildCandidateFromRepo({
+    crawlerProfile: "mcp",
+    repo: {
+      html_url: "https://github.com/example/workflow-platform",
+      name: "workflow-platform",
+      full_name: "example/workflow-platform",
+      description: "Workflow automation with MCP support.",
+      stargazers_count: 12_000,
+      license: { spdx_id: "MIT" },
+      topics: ["mcp", "workflow-automation"],
+      pushed_at: "2026-05-10T00:00:00Z",
+      default_branch: "main",
+      owner: { login: "example" },
+    },
+    files: ["README.md"],
+    readme: "# Workflow Platform\n\nBuild agents, automate workflows, and connect apps through MCP support.",
+    today: "2026-05-11",
+  });
+
+  assert.equal(candidate.proposedToolType, "workflow");
+  assert.equal(candidate.crawlerProfile, "mcp");
+});
+
+test("keeps OpenClaw style coding agents in CLI classification even when MCP is mentioned", () => {
+  assert.equal(
+    detectToolType({
+      topics: ["mcp", "coding-agent"],
+      files: ["README.md", "package.json"],
+      readme: "# OpenClaw\nOpenClaw is a coding agent CLI for terminal workflows with MCP integrations.",
+    }),
+    "cli"
+  );
+});
+
+test("classifies agentic skill libraries as skills even when workflows are mentioned", () => {
+  assert.equal(
+    detectToolType({
+      topics: ["awesome-list", "skills"],
+      files: ["README.md", "skills/review/SKILL.md"],
+      readme:
+        "Installable GitHub library of agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, and reusable SKILL.md playbooks for workflow planning.",
+    }),
+    "skill"
+  );
 });
 
 test("uses SKILL.md documents when generating skill candidates", () => {

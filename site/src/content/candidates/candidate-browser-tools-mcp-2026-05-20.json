@@ -1,0 +1,138 @@
+{
+  "id": "candidate-browser-tools-mcp-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Browser Tools Mcp",
+  "sourceUrl": "https://github.com/AgentDeskAI/browser-tools-mcp",
+  "sourceName": "GitHub",
+  "author": "AgentDeskAI",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Monitor browser logs directly from Cursor and other MCP compatible IDEs.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "AgentDeskAI",
+    "repo": "browser-tools-mcp",
+    "fullName": "AgentDeskAI/browser-tools-mcp",
+    "stars": 7211,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "anthropic",
+      "cursor",
+      "mcp",
+      "mcp-server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-18T06:11:12Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/mcp-docs.md",
+    "docs/mcp.md"
+  ],
+  "readmeExtract": "THIS PROJECT IS NO LONGER ACTIVE PLEASE USE A DIFFERENT SOLUTION FOR THIS. BrowserTools MCP Make your AI tools 10x more aware and capable of interacting with your browser This application is a powerful browser monitoring and interaction tool that enables AI powered applications via Anthropic's Model Context Protocol (MCP) to capture and analyze browser data through a Chrome extension. Read our [docs](https://browsert",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Make your AI tools 10x more aware and capable of interacting with your browser",
+    "This application is a powerful browser monitoring and interaction tool that enables AI-powered applications via Anthropic's Model Context Protocol (MCP) to capture and analyze browser data through a Chrome extension.",
+    "You can now enable \"Allow Auto-Paste into Cursor\" within the DevTools panel.",
+    "Screenshots will be automatically pasted into Cursor (just make sure to focus/click into the Agent input field in Cursor, otherwise it won't work!)",
+    "Integrated a suite of SEO, performance, accessibility, and best practice analysis tools via Lighthouse",
+    "Added Debugger Mode as a tool which executes all debugging tools in a particular sequence, along with a prompt to improve reasoning",
+    "Added Audit Mode as a tool to execute all auditing tools in a particular sequence",
+    "Resolved Windows connectivity issues"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Monitor browser logs directly from Cursor and other MCP compatible IDEs.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "browser",
+      "data",
+      "monitoring"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "browser",
+    "data",
+    "monitoring"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Browser Tools Mcp is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with browser workflows.",
+      "Helps with data workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to mcp."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "browser-tools-mcp",
+  "publishedAt": "2026-05-20"
+}

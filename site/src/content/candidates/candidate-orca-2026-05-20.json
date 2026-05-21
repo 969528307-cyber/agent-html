@@ -1,0 +1,196 @@
+{
+  "id": "candidate-orca-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Orca",
+  "sourceUrl": "https://github.com/stablyai/orca",
+  "sourceName": "GitHub",
+  "author": "stablyai",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Orca is the next-gen IDE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "Kimi",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "stablyai",
+    "repo": "orca",
+    "fullName": "stablyai/orca",
+    "stars": 2847,
+    "license": "MIT",
+    "topics": [
+      "ade",
+      "claude-code",
+      "cli",
+      "codex",
+      "cursor-agent",
+      "ghostty",
+      "ide",
+      "mobile-app",
+      "opencode",
+      "orchestration",
+      "parallel-agents",
+      "pi",
+      "terminal",
+      "worktrees"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:49:48Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/assets/annotate-ai-diff.gif",
+    "docs/assets/claude-logo.svg",
+    "docs/assets/droid-logo.svg",
+    "docs/assets/feature-wall/annotate-diff.gif",
+    "docs/assets/feature-wall/annotate-diff.jpg",
+    "docs/assets/feature-wall/cli-agents.gif",
+    "docs/assets/feature-wall/cli-agents.jpg",
+    "docs/assets/feature-wall/codex-accounts.jpg",
+    "docs/assets/feature-wall/design-mode.jpg",
+    "docs/assets/feature-wall/file-drag.jpg",
+    "docs/assets/feature-wall/github-linear.jpg",
+    "docs/assets/feature-wall/keyboard-native.jpg",
+    "docs/assets/feature-wall/markdown-editor.jpg",
+    "docs/assets/feature-wall/mobile-companion-app-showcase.jpg",
+    "docs/assets/feature-wall/orca-cli.jpg",
+    "docs/assets/feature-wall/parallel-worktrees.jpg",
+    "docs/assets/feature-wall/split-screen.jpg",
+    "docs/assets/feature-wall/ssh-worktrees.jpg",
+    "docs/assets/feature-wall/terminal-splits.gif",
+    "docs/assets/feature-wall/terminal-splits.jpg",
+    "docs/assets/issue-1920/fix.png",
+    "docs/assets/issue-1920/reproduction.png",
+    "docs/persist-tree-view-source-control.md",
+    "docs/readme/README.es.md",
+    "docs/readme/README.ja.md",
+    "docs/readme/README.ko.md",
+    "docs/readme/README.zh-CN.md",
+    "docs/reference/README.md",
+    "docs/STYLEGUIDE.md",
+    "docs/worktree-delete-preflight.md",
+    "package.json",
+    "skills/computer-use/SKILL.md",
+    "skills/orca-cli/SKILL.md",
+    "skills/orchestration/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "tests/e2e/AGENTS.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" <a href=\"https://onOrca.dev\" <img src=\"resources/build/icon.png\" alt=\"Orca\" width=\"64\" valign=\"middle\" / </a Orca </h1 <p align=\"center\" <img src=\"https://img.shields.io/badge/Platform macOS%20%7C%20Windows%20%7C%20Linux blue?style=for the badge\" alt=\"Supported Platforms\" / <a href=\"https://discord.gg/fzjDKHxv8Q\" <img src=\"https://img.shields.io/badge/Discord Join 5865F2?style=for the badge&logo=di",
+  "skillExtracts": [
+    {
+      "path": "skills/computer-use/SKILL.md",
+      "extract": "name: computer use description: Use Orca's computer use CLI to inspect and control local desktop apps through accessibility trees, screenshots, and safe UI actions. Use when an agent needs to list desktop apps, get an app state, read visible UI, click, type, press keys, scroll, drag, set values, or perform app accessibility actions. Triggers include \"computer use\", \"orca computer\", \"list apps\", \"get app state\", \"read"
+    },
+    {
+      "path": "skills/orca-cli/SKILL.md",
+      "extract": "name: orca cli description: Use the orca CLI to drive a running Orca editor — manage Orca worktrees; create and manage scheduled automations; create, read, and run shell commands in Orca managed terminals; and automate Orca's built in browser (snapshot/click/fill/screenshot/tabs). Use this instead of raw git worktree , ad hoc shell PTYs, or Playwright whenever the task touches Orca state. Coding agents inside an Orca"
+    },
+    {
+      "path": "skills/orchestration/SKILL.md",
+      "extract": "name: orchestration description: Use orca orchestration when coordinating multiple AI agents through Orca: pass context, instructions, questions, findings, reviews, handoffs, or structured results between agents; delegate subtasks; dispatch work; track task DAGs; wait for worker done/escalation; or run coordinator loops and decision gates. This is the right skill for semantic agent to agent communication. Boundary wi"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Run Claude Code, Codex, Grok, Antigravity, or OpenCode side-by-side across repos — each in its own worktree, tracked in one place..",
+    "Orca supports any CLI agent (not just this list).",
+    "No login required — Bring your own Claude Code, Codex, Grok, or Antigravity subscription.",
+    "Spin up and switch instantly.",
+    "Multi-agent terminals — Run multiple AI agents side-by-side in tabs and panes.",
+    "Built-in source control — Review AI-generated diffs, make quick edits, and commit without leaving Orca.",
+    "SSH support — Connect to remote machines and run agents on them directly from Orca.",
+    "Notifications — Know when an agent finishes or needs attention."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Orca is the next-gen IDE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Orca is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to cli.",
+      "Run Claude Code, Codex, Grok, Antigravity, or OpenCode side-by-side across repos — each in its own worktree, tracked in one place..",
+      "Orca supports any CLI agent (not just this list)."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "orca",
+  "publishedAt": "2026-05-20"
+}

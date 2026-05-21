@@ -1,0 +1,188 @@
+{
+  "id": "candidate-nanoresearch-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "NanoResearch",
+  "sourceUrl": "https://github.com/OpenRaiser/NanoResearch",
+  "sourceName": "GitHub",
+  "author": "OpenRaiser",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "🦞+🔬 NanoResearch: The Autonomous AI Research Assistant",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "OpenRaiser",
+    "repo": "NanoResearch",
+    "fullName": "OpenRaiser/NanoResearch",
+    "stars": 1180,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "agents",
+      "ai",
+      "ai-agents",
+      "ai-scientist",
+      "artificial-intelligence",
+      "autonomous-agents",
+      "autonomous-research",
+      "autoresearch",
+      "claude-code",
+      "claude-skills",
+      "nanobot",
+      "openclaw"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T13:35:59Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    "skills/nanoresearch-experiment/SKILL.md",
+    "skills/nanoresearch-ideation/SKILL.md",
+    "skills/nanoresearch-planning/SKILL.md",
+    "skills/nanoresearch-writing/SKILL.md",
+    "skills/vendor-ai-research/0-autoresearch-skill/SKILL.md",
+    "skills/vendor-ai-research/academic-plotting/SKILL.md",
+    "skills/vendor-ai-research/accelerate/SKILL.md",
+    "skills/vendor-ai-research/brainstorming-research-ideas/SKILL.md",
+    "skills/vendor-ai-research/creative-thinking-for-research/SKILL.md",
+    "skills/vendor-ai-research/lm-evaluation-harness/SKILL.md",
+    "skills/vendor-ai-research/ml-paper-writing/SKILL.md",
+    "skills/vendor-ai-research/ml-training-recipes/SKILL.md",
+    "skills/vendor-ai-research/peft/SKILL.md",
+    "skills/vendor-ai-research/ray-data/SKILL.md",
+    "skills/vendor-ai-research/skypilot/SKILL.md",
+    "skills/vendor-ai-research/unsloth/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<a id=\"top\" </a <div align=\"center\" <div style=\"margin: 20px 0;\" <img src=\"imgs/logo.png\" alt=\"NanoResearch Logo\" width=\"500\" style=\"border radius: 20px;\" </div NanoResearch <p <a href=\"README.md\" <img src=\"https://img.shields.io/badge/🇨🇳 中文 1a1a2e?style=for the badge\" alt=\"中文\" </a <a href=\"README en.md\" <img src=\"https://img.shields.io/badge/🇺🇸 English 1a1a2e?style=for the badge\" alt=\"English\" </a </p 端到端自主 AI 科",
+  "skillExtracts": [
+    {
+      "path": "skills/nanoresearch-experiment/SKILL.md",
+      "extract": "name: nanoresearch experiment description: Generate a Python code skeleton from an experiment blueprint version: 0.1.0 Experiment Skill Purpose Take the experiment blueprint and produce a runnable Python code skeleton that implements the proposed method, baselines, training loops, evaluation harness, and ablation configurations. Tools Required None. This skill operates entirely through LLM code generation based on th"
+    },
+    {
+      "path": "skills/nanoresearch-ideation/SKILL.md",
+      "extract": "name: nanoresearch ideation description: Search academic literature and generate research hypotheses version: 0.1.0 Ideation Skill Purpose Search arXiv and Semantic Scholar for papers related to a research topic, perform gap analysis, and generate novel hypotheses. Tools Required search arxiv : Search arXiv for papers search semantic scholar : Search Semantic Scholar for papers and citations Input topic : The researc"
+    },
+    {
+      "path": "skills/nanoresearch-planning/SKILL.md",
+      "extract": "name: nanoresearch planning description: Produce an experiment blueprint from a research hypothesis version: 0.1.0 Planning Skill Purpose Take the selected hypothesis from ideation and produce a detailed experiment blueprint specifying datasets, baselines, evaluation metrics, and ablation groups. Tools Required None. This skill operates entirely through LLM reasoning over the ideation output. Input ideation output : "
+    },
+    {
+      "path": "skills/nanoresearch-writing/SKILL.md",
+      "extract": "name: nanoresearch writing description: Draft a LaTeX research paper from all previous stage outputs version: 0.1.0 Writing Skill Purpose Take all previous outputs (ideation, planning, experiment results) and produce a complete LaTeX paper draft with figures, tables, and bibliography. Tools Required generate latex : Generate and assemble LaTeX source files for each paper section compile pdf : Compile the LaTeX source"
+    },
+    {
+      "path": "skills/vendor-ai-research/0-autoresearch-skill/SKILL.md",
+      "extract": "name: autoresearch description: Orchestrates end to end autonomous AI research projects using a two loop architecture. The inner loop runs rapid experiment iterations with clear optimization targets. The outer loop synthesizes results, identifies patterns, and steers research direction. Routes to domain specific skills for execution, supports continuous agent operation via Claude Code /loop and OpenClaw heartbeat, an"
+    },
+    {
+      "path": "skills/vendor-ai-research/academic-plotting/SKILL.md",
+      "extract": "name: academic plotting description: Generates publication quality figures for ML papers from research context. Given a paper section or description, extracts system components and relationships to generate architecture diagrams via Gemini. Given experiment results or data, auto selects chart type and generates data driven figures via matplotlib/seaborn. Use when creating any figure for a conference paper. version: 1"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🔬 NanoResearch 真正运行计算实验——它不仅生成代码，还能将代码提交到 GPU 集群执行训练，收集真实实验结果，生成论文配图，最终输出一篇有实验数据支撑的完整 LaTeX 论文。论文中的每一个数据、表格、图表都来自实际运行的实验结果，而非 LLM 编造。",
+    "以下为 NanoResearch 自动生成论文中的真实配图，所有数据、曲线、表格均来自实际运行的实验结果，非 LLM 虚构。",
+    "NanoResearch 命令行（CLI） 提供 TUI 全屏界面 与 传统流式日志 两种呈现方式。下方为 CLI 端 TUI 主题与界面 演示视频（配色切换与布局优化）。其他入口（如 Claude Code、飞书机器人）见文档对应章节。",
+    "不再反复调试失败的实验、手动整理数据、从零写论文——. NanoResearch 将完整科研流程自动化，让你专注于真正的研究创新。",
+    "REVIEW 审稿与修订 自动审阅各章节，检测问题并修订",
+    "EXECUTION 阶段是 NanoResearch 的核心差异化能力：",
+    "环境变量覆盖：NANORESEARCHBASEURL / NANORESEARCHAPIKEY / NANORESEARCHTIMEOUT",
+    "evo 是 NanoResearch 的自进化流水线，面向个性化科研自动化。它围绕技能演化、记忆演化和反馈驱动的 planner / router 适配运行，让系统在多轮研究中复用经验并逐步贴合用户偏好。"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "🦞+🔬 NanoResearch: The Autonomous AI Research Assistant",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "NanoResearch is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to skill.",
+      "🔬 NanoResearch 真正运行计算实验——它不仅生成代码，还能将代码提交到 GPU 集群执行训练，收集真实实验结果，生成论文配图，最终输出一篇有实验数据支撑的完整 LaTeX 论文。论文中的每一个数据、表格、图表都来自实际运行的实验结果，而非 LLM 编造。"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nanoresearch",
+  "publishedAt": "2026-05-20"
+}

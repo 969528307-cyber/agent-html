@@ -1,0 +1,207 @@
+{
+  "id": "candidate-tool-github-chromedevtools-chrome-devtools-mcp",
+  "type": "tool",
+  "status": "published",
+  "title": "Chrome Devtools Mcp",
+  "sourceUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "ChromeDevTools",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Chrome DevTools for coding agents",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "ChromeDevTools",
+    "repo": "chrome-devtools-mcp",
+    "fullName": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 39897,
+    "license": "Apache-2.0",
+    "topics": [
+      "browser",
+      "chrome",
+      "chrome-devtools",
+      "debugging",
+      "devtools",
+      "mcp",
+      "mcp-server",
+      "puppeteer"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T11:04:46Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/cli.md",
+    "docs/debugging-android.md",
+    "docs/design-principles.md",
+    "docs/slim-tool-reference.md",
+    "docs/third-party-developer-tools.md",
+    "docs/tool-reference.md",
+    "package.json",
+    "skills/a11y-debugging/SKILL.md",
+    "skills/chrome-devtools-cli/SKILL.md",
+    "skills/chrome-devtools/SKILL.md",
+    "skills/debug-optimize-lcp/SKILL.md",
+    "skills/memory-leak-debugging/SKILL.md",
+    "skills/troubleshooting/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "Chrome DevTools for agents [![npm chrome devtools mcp package](https://img.shields.io/npm/v/chrome devtools mcp.svg)](https://npmjs.org/package/chrome devtools mcp) Chrome DevTools for agents ( chrome devtools mcp ) lets your coding agent (such as Gemini, Claude, Cursor or Copilot) control and inspect a live Chrome browser. It acts as a Model Context Protocol (MCP) server, giving your AI coding assistant access to th",
+  "skillExtracts": [
+    {
+      "path": "skills/a11y-debugging/SKILL.md",
+      "extract": "name: a11y debugging description: Uses Chrome DevTools MCP for accessibility (a11y) debugging and auditing based on web.dev guidelines. Use when testing semantic HTML, ARIA labels, focus states, keyboard navigation, tap targets, and color contrast. Core Concepts Accessibility Tree vs DOM : Visually hiding an element (e.g., CSS opacity: 0 ) behaves differently for screen readers than display: none or aria hidden=\"true"
+    },
+    {
+      "path": "skills/chrome-devtools-cli/SKILL.md",
+      "extract": "name: chrome devtools cli description: Use this skill to write shell scripts or run shell commands to automate tasks in the browser or otherwise use Chrome DevTools via CLI. The chrome devtools mcp CLI lets you interact with the browser from your terminal. Setup Note: If this is your very first time using the CLI, see [references/installation.md](references/installation.md) for setup. Installation is a one time prere"
+    },
+    {
+      "path": "skills/chrome-devtools/SKILL.md",
+      "extract": "name: chrome devtools description: Uses Chrome DevTools via MCP for efficient debugging, troubleshooting and browser automation. Use when debugging web pages, automating browser interactions, analyzing performance, or inspecting network requests. This skill does not apply to slim mode (MCP configuration). Core Concepts Browser lifecycle : Browser starts automatically on first tool call using a persistent Chrome profi"
+    },
+    {
+      "path": "skills/debug-optimize-lcp/SKILL.md",
+      "extract": "name: debug optimize lcp description: Guides debugging and optimizing Largest Contentful Paint (LCP) using Chrome DevTools MCP tools. Use this skill whenever the user asks about LCP performance, slow page loads, Core Web Vitals optimization, or wants to understand why their page's main content takes too long to appear. Also use when the user mentions \"largest contentful paint\", \"page load speed\", \"CWV\", or wants to i"
+    },
+    {
+      "path": "skills/memory-leak-debugging/SKILL.md",
+      "extract": "name: memory leak debugging description: Diagnoses and resolves memory leaks in JavaScript/Node.js applications. Use when a user reports high memory usage, OOM errors, or wants to analyze heapsnapshots or run memory leak detection tools like memlab. Memory Leak Debugging This skill provides expert guidance and workflows for finding, diagnosing, and fixing memory leaks in JavaScript and Node.js applications. Core Prin"
+    },
+    {
+      "path": "skills/troubleshooting/SKILL.md",
+      "extract": "name: troubleshooting description: Uses Chrome DevTools MCP and documentation to troubleshoot connection and target issues. Trigger this skill when list pages, new page, or navigate page fail, or when the server initialization fails. Troubleshooting Wizard You are acting as a troubleshooting wizard to help the user configure and fix their Chrome DevTools MCP server setup. When this skill is triggered (e.g., because l"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Chrome DevTools for agents (chrome-devtools-mcp) lets your coding agent (such as Gemini, Claude, Cursor or Copilot)",
+    "control and inspect a live Chrome browser.",
+    "(MCP) server, giving your AI coding assistant access to the full power of",
+    "Chrome DevTools for reliable automation, in-depth debugging, and performance analysis.",
+    "A CLI is also provided for use without MCP.",
+    "Tool reference Changelog Contributing Troubleshooting Design Principles",
+    "Advanced browser debugging: Analyze network requests, take screenshots and",
+    "check browser console messages (with source-mapped stack traces)."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"mcp\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Chrome DevTools for coding agents",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Chrome Devtools Mcp is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Chrome DevTools for agents (chrome-devtools-mcp) lets your coding agent (such as Gemini, Claude, Cursor or Copilot)",
+      "control and inspect a live Chrome browser."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:chromedevtools/chrome-devtools-mcp",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "chrome-devtools-mcp",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

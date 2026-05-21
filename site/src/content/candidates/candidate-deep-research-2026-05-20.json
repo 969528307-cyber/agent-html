@@ -1,0 +1,143 @@
+{
+  "id": "candidate-deep-research-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Deep Research",
+  "sourceUrl": "https://github.com/u14app/deep-research",
+  "sourceName": "GitHub",
+  "author": "u14app",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Use any LLMs (Large Language Models) for Deep Research. Support SSE API and MCP server.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "u14app",
+    "repo": "deep-research",
+    "fullName": "u14app/deep-research",
+    "stars": 4587,
+    "license": "MIT",
+    "topics": [
+      "anthropic",
+      "deep-research",
+      "deep-research-api",
+      "deepresearch",
+      "deepseek",
+      "gemini",
+      "grok",
+      "mcp-server",
+      "ollama",
+      "openai"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-22T08:03:13Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/deep-research-api-doc.md",
+    "docs/How-to-deploy-to-Cloudflare-Pages.md",
+    "package.json",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <h1 Deep Research</h1 ![GitHub deployments](https://img.shields.io/github/deployments/u14app/gemini next chat/Production) ![GitHub Release](https://img.shields.io/github/v/release/u14app/deep research) ![Docker Image Size](https://img.shields.io/docker/image size/xiangfa/deep research/latest) ![Docker Pulls](https://img.shields.io/docker/pulls/xiangfa/deep research) [![License: MIT](https://img.sh",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Lightning-Fast Deep Research Report",
+    "Deep Research uses a variety of powerful AI models to generate in-depth research reports in just a few minutes.",
+    "It leverages advanced \"Thinking\" and \"Task\" models, combined with an internet connection, to provide fast and insightful analysis on a variety of topics.",
+    "Rapid Deep Research: Generates comprehensive research reports in about 2 minutes, significantly accelerating your research process.",
+    "Privacy-Focused: Your data remains private and secure, as all data is stored locally on your browser.",
+    "Support for Multi-LLM: Supports a variety of mainstream large language models, including Gemini, OpenAI, Anthropic, Deepseek, Grok, Mistral, Azure OpenAI, any OpenAI Compatible LLMs, OpenRouter, Ollama, etc.",
+    "Support Web Search: Supports search engines such as Searxng, Tavily, Firecrawl, Exa, Bocha, Brave, etc., allowing LLMs that do not support search to use the web search function more conveniently.",
+    "Support switching research models."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Use any LLMs (Large Language Models) for Deep Research. Support SSE API and MCP server.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "media",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "media",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Deep Research is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with media workflows.",
+      "Helps with research workflows.",
+      "Relevant to mcp.",
+      "Lightning-Fast Deep Research Report"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "deep-research",
+  "publishedAt": "2026-05-20"
+}

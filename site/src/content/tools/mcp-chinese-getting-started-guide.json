@@ -1,0 +1,74 @@
+{
+  "id": "mcp-chinese-getting-started-guide",
+  "name": "MCP Chinese Getting Started Guide",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Model Context Protocol(MCP) 编程极速入门",
+  "description": "Model Context Protocol(MCP) 编程极速入门",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/liaokongVFX/MCP-Chinese-Getting-Started-Guide",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/liaokongVFX/MCP-Chinese-Getting-Started-Guide",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/liaokongVFX/MCP-Chinese-Getting-Started-Guide#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/liaokongVFX/MCP-Chinese-Getting-Started-Guide#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/liaokongVFX/MCP-Chinese-Getting-Started-Guide/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Model Context Protocol(MCP) 编程极速入门",
+    "模型上下文协议（MCP）是一个创新的开源协议，它重新定义了大语言模型（LLM）与外部世界的互动方式。MCP 提供了一种标准化方法，使任意大语言模型能够轻松连接各种数据源和工具，实现信息的无缝访问和处理。MCP 就像是 AI 应用程序的 USB-C 接口，为 AI 模型提供了一种标准化的方式来连接不同的数据源和工具。",
+    "因为大部分功能其实都是服务于 Claude 客户端的，本文更希望编写的 MCP 服务器服务与通用大语言模型，所以本文将会主要以“工具”为重点，其他功能会放到最后进行简单讲解。",
+    "其中 MCP 的传输层支持了 2 种协议的实现：stdio（标准输入/输出）和 SSE（服务器发送事件），因为 stdio 更为常用，所以本文会以 stdio 为例进行讲解。",
+    "然后我们来创建一个叫 websearch.py 文件，来实现我们的服务。MCP 为我们提供了2个对象：mcp.server.FastMCP 和 mcp.server.Server，mcp.server.FastMCP 是更高层的封装，我们这里就来使用它。",
+    "实现执行的方法非常简单，MCP 为我们提供了一个 @mcp.tool() 我们只需要将实现函数用这个装饰器装饰即可。函数名称将作为工具名称，参数将作为工具参数，并通过注释来描述工具与参数，以及返回值。",
+    "此时，我们就完成了 MCP 服务端的编写。下面，我们来使用官方提供的 Inspector 可视化工具来调试我们的服务器。",
+    "然后，我们打开这个地址，点击左侧的 Connect 按钮，即可连接我们刚写的服务。然后我们切换到 Tools 栏中，点击 List Tools 按钮即可看到我们刚写的工具，我们就可以开始进行调试啦。"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-04-23T14:06:41Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/liaokongVFX/MCP-Chinese-Getting-Started-Guide",
+  "repoUrl": "https://github.com/liaokongVFX/MCP-Chinese-Getting-Started-Guide",
+  "stars": 3498,
+  "lastUpdated": "2025-04-23T14:06:41Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

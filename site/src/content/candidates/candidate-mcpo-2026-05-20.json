@@ -1,0 +1,130 @@
+{
+  "id": "candidate-mcpo-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcpo",
+  "sourceUrl": "https://github.com/open-webui/mcpo",
+  "sourceName": "GitHub",
+  "author": "open-webui",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A simple, secure MCP-to-OpenAPI proxy server",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "open-webui",
+    "repo": "mcpo",
+    "fullName": "open-webui/mcpo",
+    "stars": 4202,
+    "license": "MIT",
+    "topics": [
+      "mcp",
+      "mcp-server",
+      "mcp-to-openapi",
+      "open-webui",
+      "openapi"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T20:40:30Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "⚡️ mcpo Expose any MCP tool as an OpenAPI compatible HTTP server—instantly. mcpo is a dead simple proxy that takes an MCP server command and makes it accessible via standard RESTful OpenAPI, so your tools \"just work\" with LLM agents and apps expecting OpenAPI servers. No custom protocol. No glue code. No hassle. 🤔 Why Use mcpo Instead of Native MCP? MCP servers usually speak over raw stdio, which is: 🔓 Inherently i",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Expose any MCP tool as an OpenAPI-compatible HTTP server—instantly.",
+    "mcpo is a dead-simple proxy that takes an MCP server command and makes it accessible via standard RESTful OpenAPI, so your tools \"just work\" with LLM agents and apps expecting OpenAPI servers.",
+    "🤔 Why Use mcpo Instead of Native MCP?",
+    "MCP servers usually speak over raw stdio, which is:",
+    "❌ Incompatible with most tools",
+    "🧩 Missing standard features like docs, auth, error handling, etc.",
+    "mcpo solves all of that—without extra effort:",
+    "✅ Works instantly with OpenAPI tools, SDKs, and UIs"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A simple, secure MCP-to-OpenAPI proxy server",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Mcpo is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Expose any MCP tool as an OpenAPI-compatible HTTP server—instantly.",
+      "mcpo is a dead-simple proxy that takes an MCP server command and makes it accessible via standard RESTful OpenAPI, so your tools \"just work\" with LLM agents and apps expecting OpenAPI servers.",
+      "🤔 Why Use mcpo Instead of Native MCP?"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcpo",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "nx",
+  "name": "Nx",
+  "type": "cli",
+  "status": "published",
+  "summary": "The Monorepo Platform that amplifies both developers and AI agents. Nx optimizes your builds, scales your CI, and fixes failed PRs automatically. Ship in half the time.",
+  "description": "The Monorepo Platform that amplifies both developers and AI agents. Nx optimizes your builds, scales your CI, and fixes failed PRs automatically. Ship in half the time.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/nrwl/nx",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/nrwl/nx",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/nrwl/nx#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/nrwl/nx#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/nrwl/nx/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Docs &bull; Changelog &bull; Blog &bull; Courses &bull; YouTube",
+    "AI-native tooling - The Nx CLI is optimized for autonomous AI agents so they get the context they need and can operate just like a human.",
+    "Polyglot plugin system - Optional plugins auto-discover tasks, configure cache inputs/outputs, and scaffold code based on your actual tooling.",
+    "Integrated CI solution - Connect Nx to your CI provider (GitHub Actions, GitLab, Azure, etc.) to enable remote caching, task distribution across machines, affected-only runs, and automatic e2e test splitting.",
+    "Self-healing CI - An AI agent on your CI pipeline that detects failures, analyzes root cause, proposes a fix, and verifies it automatically.",
+    "Local agents connect to CI via MCP to autonomously detect and fix failures.",
+    "ZackDeRose AgentEnder nartc nixallover",
+    "\"analyze-docs\": \"node tools/scripts/analyze-docs.mjs\","
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T12:08:35Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/nrwl/nx",
+  "repoUrl": "https://github.com/nrwl/nx",
+  "license": "MIT",
+  "stars": 28725,
+  "lastUpdated": "2026-05-18T12:08:35Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

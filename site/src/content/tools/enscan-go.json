@@ -1,0 +1,75 @@
+{
+  "id": "enscan-go",
+  "name": "ENScan GO",
+  "type": "mcp",
+  "status": "published",
+  "summary": "一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。支持MCP接入",
+  "description": "一款基于各大企业信息API的工具，解决在遇到的各种针对国内企业信息收集难题。一键收集控股公司ICP备案、APP、小程序、微信公众号等信息聚合导出。支持MCP接入",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/wgpsec/ENScan_GO",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/wgpsec/ENScan_GO",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/wgpsec/ENScan_GO#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/wgpsec/ENScan_GO#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/wgpsec/ENScan_GO/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+    "ENScanGO is an enterprise information gathering tool for security researchers and penetration testers (HW/SRC scenarios in China).",
+    "ENScan interface: Core enterprise search with AdvanceFilter(), GetCompanyBaseInfoById(), GetInfoByPage(), GetENMap()",
+    "DeepSearchTask: Recursive company relationship search",
+    "runner/enscan.go: Core search/filter logic, deep search implementation",
+    "runner/mcpServer.go: MCP server for AI agent integration",
+    "Deep search fields: invest, branch, holds, supplier",
+    "advancefilter - Search companies"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-03-30T08:44:13Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/wgpsec/ENScan_GO",
+  "repoUrl": "https://github.com/wgpsec/ENScan_GO",
+  "license": "Apache-2.0",
+  "stars": 4398,
+  "lastUpdated": "2026-03-30T08:44:13Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

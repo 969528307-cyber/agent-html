@@ -1,0 +1,168 @@
+{
+  "id": "candidate-tool-github-aws-bedrock-agentcore-sdk-python",
+  "type": "tool",
+  "status": "published",
+  "title": "Bedrock Agentcore Sdk Python",
+  "sourceUrl": "https://github.com/aws/bedrock-agentcore-sdk-python",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "aws",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Python SDK for transforming any AI agent into a production-ready application. Framework-agnostic primitives for runtime, memory, authentication, and tools with AWS-managed infrastructure.",
+  "proposedCategory": [
+    "security"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "aws",
+    "repo": "bedrock-agentcore-sdk-python",
+    "fullName": "aws/bedrock-agentcore-sdk-python",
+    "stars": 706,
+    "license": "Apache-2.0",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-16T21:12:55Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/examples/a2a_protocol_examples.md",
+    "docs/examples/agent_runtime_client_examples.md",
+    "docs/proposals/ag-ui-protocol-support.md",
+    "pyproject.toml",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <div <a href=\"https://aws.amazon.com/bedrock/agentcore/\" <img width=\"150\" height=\"150\" alt=\"image\" src=\"https://github.com/user attachments/assets/b8b9456d c9e2 45e1 ac5b 760f21f1ac18\" / </a </div <h1 Bedrock AgentCore SDK </h1 <h2 Deploy your local AI agent to Bedrock AgentCore with zero infrastructure </h2 <div align=\"center\" <a href=\"https://github.com/aws/bedrock agentcore sdk python/graphs/co",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Deploy your local AI agent to Bedrock AgentCore with zero infrastructure",
+    "Amazon Bedrock AgentCore enables you to deploy and operate highly effective agents securely, at scale using any framework and model.",
+    "With Amazon Bedrock AgentCore, developers can accelerate AI agents into production with the scale, reliability, and security, critical to real-world deployment.",
+    "AgentCore provides tools and capabilities to make agents more effective and capable, purpose-built infrastructure to securely scale agents, and controls to operate trustworthy agents.",
+    "Amazon Bedrock AgentCore services are composable and work with popular open-source frameworks and any model, so you don’t have to choose between open-source flexibility and enterprise-grade security and reliability.",
+    "🚀 From Local Development to Bedrock AgentCore",
+    "What you get with Bedrock AgentCore:",
+    "✅ Keep your agent logic - Works with Strands, LangGraph, CrewAI, Autogen, or custom frameworks"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"security\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Python SDK for transforming any AI agent into a production-ready application. Framework-agnostic primitives for runtime, memory, authentication, and tools with AWS-managed infrastructure.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "security",
+      "devops",
+      "media",
+      "memory"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "security",
+    "devops",
+    "media",
+    "memory"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: sdk-library.",
+    "Alternative capabilities: workflow, sdk, cli.",
+    "LLM: sdk + [] — This repository is explicitly named as a Python SDK for Bedrock AgentCore, providing library primitives for deploying agents."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "sdk",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Bedrock Agentcore Sdk Python is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with devops workflows.",
+      "Helps with media workflows.",
+      "Helps with memory workflows.",
+      "Relevant to security."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:aws/bedrock-agentcore-sdk-python",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "bedrock-agentcore-sdk-python",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "playwright-skill",
+  "name": "Playwright Skill",
+  "type": "skill",
+  "status": "published",
+  "summary": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.",
+  "description": "Claude Code Skill for browser automation with Playwright. Model-invoked - Claude autonomously writes and executes custom automation for testing and validation.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/lackeyjb/playwright-skill",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/lackeyjb/playwright-skill",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/lackeyjb/playwright-skill#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/lackeyjb/playwright-skill#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/lackeyjb/playwright-skill/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Playwright Skill for Claude Code",
+    "General-purpose browser automation as a Claude Skill",
+    "A Claude Skill that enables Claude to write and execute any Playwright automation on-the-fly - from simple page tests to complex multi-step flows.",
+    "Claude autonomously decides when to use this skill based on your browser automation needs, loading only the minimal information required for your specific task.",
+    "Any Automation Task - Claude writes custom code for your specific request, not limited to pre-built scripts",
+    "Visible Browser by Default - See automation in real-time with headless: false",
+    "Progressive Disclosure - Concise SKILL.md with full API reference loaded only when needed",
+    "Safe Cleanup - Smart temp file management without race conditions"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-12-19T16:23:38Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/lackeyjb/playwright-skill",
+  "repoUrl": "https://github.com/lackeyjb/playwright-skill",
+  "license": "MIT",
+  "stars": 2647,
+  "lastUpdated": "2025-12-19T16:23:38Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

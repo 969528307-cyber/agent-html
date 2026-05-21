@@ -1,0 +1,78 @@
+{
+  "id": "babysitter",
+  "name": "Babysitter",
+  "type": "skill",
+  "status": "published",
+  "summary": "Babysitter enforces obedience on agentic workforces and enables them to manage extremely complex tasks and workflows through deterministic, hallucination-free self-orchestration",
+  "description": "Babysitter enforces obedience on agentic workforces and enables them to manage extremely complex tasks and workflows through deterministic, hallucination-free self-orchestration",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/a5c-ai/babysitter",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/a5c-ai/babysitter",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/a5c-ai/babysitter#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/a5c-ai/babysitter#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/a5c-ai/babysitter/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Enforce obedience to agentic workforces.",
+    "Manage extremely complex workflows through deterministic, hallucination-free self-orchestration.",
+    "Getting Started Documentation Community",
+    "Babysitter enforces obedience to agentic workforces, enabling them to manage extremely complex tasks and workflows through deterministic, hallucination-free self-orchestration.",
+    "Define your workflow in code - Babysitter enforces every step, ensures quality gates pass before progression, requires human approval at breakpoints, and records every decision in an immutable journal.",
+    "Your agents do exactly what the process permits, nothing more.",
+    "Claude Code: Latest version (docs)",
+    "Restart Claude Code, then type /skills to verify \"babysit\" appears."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T19:07:22Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/a5c-ai/babysitter",
+  "repoUrl": "https://github.com/a5c-ai/babysitter",
+  "license": "MIT",
+  "stars": 792,
+  "lastUpdated": "2026-05-19T19:07:22Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,20 +1,22 @@
 {
   "id": "candidate-trendradar-2026-05-12",
   "type": "tool",
-  "status": "candidate",
+  "status": "published",
   "title": "TrendRadar",
   "sourceUrl": "https://github.com/sansan0/TrendRadar",
   "sourceName": "GitHub",
   "author": "sansan0",
   "discoveredAt": "2026-05-12",
-  "lastChecked": "2026-05-12",
+  "lastChecked": "2026-05-21",
   "discoveredFrom": "github",
   "summary": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
   "proposedCategory": [
     "mcp",
     "developer-tools"
   ],
-  "proposedAgents": [],
+  "proposedAgents": [
+    "Cursor"
+  ],
   "proposedToolType": "mcp",
   "crawlerProfile": "mcp",
   "githubMetadata": {
@@ -46,12 +48,25 @@
   },
   "detectedFiles": [
     "README.md",
-    "pyproject.toml"
+    "pyproject.toml",
+    "docs/assets/script.js",
+    "docs/assets/style.css",
+    "docs/assets/weixin.webp",
+    "docs/index.html"
   ],
   "readmeExtract": "<div align=\"center\" id=\"trendradar\" <a href=\"https://github.com/sansan0/TrendRadar\" title=\"TrendRadar\" <img src=\"/ image/banner.webp\" alt=\"TrendRadar Banner\" width=\"80%\" </a 最快<strong 30秒</strong 部署的热点助手 —— 告别无效刷屏，只看真正关心的新闻资讯 <a href=\"https://trendshift.io/repositories/14726\" target=\" blank\" <img src=\"https://trendshift.io/api/badge/repositories/14726\" alt=\"sansan0%2FTrendRadar | Trendshift\" style=\"width: 250px; heig",
   "skillExtracts": [],
   "extractedInstall": [],
-  "extractedSignals": [],
+  "extractedSignals": [
+    "Rw 10 2025.11.17 这 agent 做的牛逼啊,兄弟",
+    "和 mcp 功能一样, 这个小工具我也不新开一个仓库维护了, 反正纯前端, 都搁一起吧",
+    "推荐工作流：searchnews(query=\"关键词\", includeurl=True) → readarticle(url=...) 读取正文",
+    "文档更新：README-MCP-FAQ.md 和 README-MCP-FAQ-EN.md 新增 Q19-Q20 文章读取相关说明",
+    "2026/01/10 - mcp-v3.0.0~v3.1.5",
+    "MCP Resources：新增 4 个资源（platforms、rss-feeds、available-dates、keywords）",
+    "新增 checkversion 工具：支持同时检查 TrendRadar 和 MCP Server 版本更新",
+    "Gemini: gemini/gemini-2.5-flash"
+  ],
   "reviewScore": {
     "sourceTrust": 4,
     "usefulness": 4,
@@ -62,5 +77,109 @@
     "permission": 4
   },
   "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
-  "publishReason": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。"
+  "publishReason": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "devops",
+      "communication",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "devops",
+    "communication",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "TrendRadar is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with devops workflows.",
+      "Helps with communication workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:sansan0/trendradar",
+  "firstDiscoveredAt": "2026-05-12",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "trendradar",
+  "publishedAt": "2026-05-18"
 }

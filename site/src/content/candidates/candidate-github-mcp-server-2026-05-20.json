@@ -1,0 +1,140 @@
+{
+  "id": "candidate-github-mcp-server-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Github Mcp Server",
+  "sourceUrl": "https://github.com/github/github-mcp-server",
+  "sourceName": "GitHub",
+  "author": "github",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "GitHub's official MCP Server",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "github",
+    "repo": "github-mcp-server",
+    "fullName": "github/github-mcp-server",
+    "stars": 29984,
+    "license": "MIT",
+    "topics": [
+      "github",
+      "mcp",
+      "mcp-server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T17:40:20Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/error-handling.md",
+    "docs/host-integration.md",
+    "docs/insiders-features.md",
+    "docs/policies-and-governance.md",
+    "docs/remote-server.md",
+    "docs/scope-filtering.md",
+    "docs/streamable-http.md",
+    "docs/testing.md",
+    "docs/tool-renaming.md",
+    "docs/toolsets-and-icons.md"
+  ],
+  "readmeExtract": "[![Go Report Card](https://goreportcard.com/badge/github.com/github/github mcp server)](https://goreportcard.com/report/github.com/github/github mcp server) GitHub MCP Server The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natur",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The GitHub MCP Server connects AI tools directly to GitHub's platform.",
+    "This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows.",
+    "Repository Management: Browse and query code, search files, analyze commits, and understand project structure across any repository you have access to.",
+    "Let AI help triage bugs, review code changes, and maintain project boards.",
+    "CI/CD & Workflow Intelligence: Monitor GitHub Actions workflow runs, analyze build failures, manage releases, and get insights into your development pipeline.",
+    "Code Analysis: Examine security findings, review Dependabot alerts, understand code patterns, and get comprehensive insights into your codebase.",
+    "Team Collaboration: Access discussions, manage notifications, analyze team activity, and streamline processes for your team.",
+    "Built for developers who want to connect their AI tools to GitHub context and capabilities, from simple natural language queries to complex multi-step agent workflows."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "GitHub's official MCP Server",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Github Mcp Server is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "The GitHub MCP Server connects AI tools directly to GitHub's platform.",
+      "This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows.",
+      "Repository Management: Browse and query code, search files, analyze commits, and understand project structure across any repository you have access to."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "github-mcp-server",
+  "publishedAt": "2026-05-20"
+}

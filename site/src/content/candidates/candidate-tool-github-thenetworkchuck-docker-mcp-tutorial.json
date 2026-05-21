@@ -1,0 +1,158 @@
+{
+  "id": "candidate-tool-github-thenetworkchuck-docker-mcp-tutorial",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Docker Mcp Tutorial",
+  "sourceUrl": "https://github.com/theNetworkChuck/docker-mcp-tutorial",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "theNetworkChuck",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Complete tutorial materials for building MCP servers with Docker - from NetworkChuck's video",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "theNetworkChuck",
+    "repo": "docker-mcp-tutorial",
+    "fullName": "theNetworkChuck/docker-mcp-tutorial",
+    "stars": 1487,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-09-12T15:21:49Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/custom-servers.md",
+    "docs/docker-gateway.md"
+  ],
+  "readmeExtract": "🚀 Docker MCP Tutorial Build AI Tools with Docker [![NetworkChuck](https://img.shields.io/badge/NetworkChuck YouTube red)](https://youtube.com/@NetworkChuck) [![Docker](https://img.shields.io/badge/Docker Desktop blue)](https://www.docker.com/products/docker desktop/) [![MCP](https://img.shields.io/badge/MCP Protocol green)](https://modelcontextprotocol.io/) Learn how to build and deploy MCP (Model Context Protocol) ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🚀 Docker MCP Tutorial - Build AI Tools with Docker",
+    "Learn how to build and deploy MCP (Model Context Protocol) servers using Docker!",
+    "This repository contains everything from the NetworkChuck Docker MCP video tutorial, including complete examples, templates, and step-by-step guides.",
+    "Get your first MCP server running in under 5 minutes:",
+    "Dice Roller - Fun D&D dice rolling MCP server with all files ready to run",
+    "NetworkChuck's custom prompt that generates complete MCP servers from simple descriptions.",
+    "📖 Comprehensive Documentation",
+    "How to build custom MCP servers"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Complete tutorial materials for building MCP servers with Docker - from NetworkChuck's video",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "tutorial",
+    "useCategory": [
+      "devops",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "tutorial",
+  "useCategory": [
+    "devops",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tutorial.",
+    "Alternative capabilities: mcp.",
+    "LLM: knowledge-resource + [mcp] — This repository is a tutorial and documentation collection for building MCP servers with Docker, making it an educational resource rather than a functional tool or service."
+  ],
+  "classificationAlternatives": [
+    "mcp"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "single-tool",
+    "whatIsIt": "Docker Mcp Tutorial is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with media workflows.",
+      "Relevant to devops.",
+      "🚀 Docker MCP Tutorial - Build AI Tools with Docker",
+      "Learn how to build and deploy MCP (Model Context Protocol) servers using Docker!"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:thenetworkchuck/docker-mcp-tutorial",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

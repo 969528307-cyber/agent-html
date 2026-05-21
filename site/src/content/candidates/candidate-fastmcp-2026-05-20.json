@@ -1,0 +1,175 @@
+{
+  "id": "candidate-fastmcp-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Fastmcp",
+  "sourceUrl": "https://github.com/PrefectHQ/fastmcp",
+  "sourceName": "GitHub",
+  "author": "PrefectHQ",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "PrefectHQ",
+    "repo": "fastmcp",
+    "fullName": "PrefectHQ/fastmcp",
+    "stars": 25224,
+    "license": "Apache-2.0",
+    "topics": [
+      "agents",
+      "fastmcp",
+      "llms",
+      "mcp",
+      "mcp-clients",
+      "mcp-servers",
+      "mcp-tools",
+      "model-context-protocol",
+      "python"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T03:14:06Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.ccignore",
+    "docs/.cursor/rules/mintlify.mdc",
+    "docs/apps/architecture.mdx",
+    "docs/apps/demos/bar-chart.html",
+    "docs/apps/demos/bar-chart.py",
+    "docs/apps/demos/contacts.html",
+    "docs/apps/demos/contacts.py",
+    "docs/apps/demos/dashboard.html",
+    "docs/apps/demos/dashboard.py",
+    "docs/apps/demos/data-table.html",
+    "docs/apps/demos/data-table.py",
+    "docs/apps/demos/hitchhikers.html",
+    "docs/apps/demos/hitchhikers.py",
+    "docs/apps/demos/pie-chart.html",
+    "docs/apps/demos/pie-chart.py",
+    "docs/apps/demos/reactive.html",
+    "docs/apps/demos/reactive.py",
+    "docs/apps/demos/team-directory-reactive.html",
+    "docs/apps/demos/team-directory-reactive.py",
+    "docs/apps/demos/team-directory.html",
+    "docs/apps/demos/team-directory.py",
+    "docs/apps/examples.mdx",
+    "docs/apps/fastmcp-app.mdx",
+    "docs/apps/generative.mdx",
+    "docs/apps/images/app-chart.png",
+    "docs/apps/images/app-datatable.png",
+    "docs/apps/images/app-greet.png",
+    "docs/apps/images/app-overview.png",
+    "docs/apps/low-level.mdx",
+    "docs/apps/overview.mdx",
+    "docs/apps/prefab.mdx",
+    "docs/apps/providers/approval.mdx",
+    "docs/apps/providers/choice.mdx",
+    "docs/apps/providers/file-upload.mdx",
+    "docs/apps/providers/form.mdx",
+    "docs/apps/quickstart.mdx",
+    "docs/assets/brand/blue-logo.png",
+    "docs/assets/brand/f-watercolor-waves-dark.png",
+    "docs/assets/brand/f-watercolor-waves.png"
+  ],
+  "readmeExtract": "<div align=\"center\" <! omit in toc <picture <source width=\"550\" media=\"(prefers color scheme: dark)\" srcset=\"https://raw.githubusercontent.com/PrefectHQ/fastmcp/main/docs/assets/brand/f watercolor waves 4 dark.png\" <source width=\"550\" media=\"(prefers color scheme: light)\" srcset=\"https://raw.githubusercontent.com/PrefectHQ/fastmcp/main/docs/assets/brand/f watercolor waves 4.png\" <img width=\"550\" alt=\"FastMCP Logo\" sr",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The Model Context Protocol (MCP) connects LLMs to tools and data.",
+    "FastMCP gives you everything you need to go from prototype to production:",
+    "Building an effective MCP application is harder than it looks.",
+    "Declare a tool with a Python function, and the schema, validation, and documentation are generated automatically.",
+    "Connect to a server with a URL, and transport negotiation, authentication, and protocol lifecycle are managed for you.",
+    "You focus on your logic, and the MCP part just works: with FastMCP, best practices are built in.",
+    "That's why FastMCP is the standard framework for working with MCP. FastMCP 1.0 was incorporated into the official MCP Python SDK in 2024.",
+    "Today, the actively maintained standalone project is downloaded a million times a day, and some version of FastMCP powers 70% of MCP servers across all languages."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Fastmcp is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Relevant to mcp.",
+      "The Model Context Protocol (MCP) connects LLMs to tools and data.",
+      "FastMCP gives you everything you need to go from prototype to production:"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "fastmcp",
+  "publishedAt": "2026-05-20"
+}

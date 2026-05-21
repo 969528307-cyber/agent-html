@@ -1,0 +1,78 @@
+{
+  "id": "apify-mcp-server",
+  "name": "Apify Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.",
+  "description": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.",
+  "category": [
+    "media"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/apify/apify-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/apify/apify-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/apify/apify-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/apify/apify-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/apify/apify-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "It supports OAuth, allowing you to connect from clients like Claude.ai or Visual Studio Code using just the URL.",
+    "🚀 Use the hosted Apify MCP Server!",
+    "For the best experience, connect your AI assistant to our hosted server at",
+    "💰 The server also supports agentic payments via x402 and Skyfire, allowing AI agents to pay for Actor runs without an API token.",
+    "Apify MCP Server is compatible with Claude Code, Claude.ai, Cursor, VS Code and any client that adheres to the Model Context Protocol.",
+    "🌐 Introducing Apify MCP Server",
+    "🛠️ Tools, resources, and prompts",
+    "The Apify MCP Server allows an AI assistant to use any Apify Actor as a tool to perform a specific task."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T07:46:18Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/apify/apify-mcp-server",
+  "repoUrl": "https://github.com/apify/apify-mcp-server",
+  "license": "MIT",
+  "stars": 1209,
+  "lastUpdated": "2026-05-13T07:46:18Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

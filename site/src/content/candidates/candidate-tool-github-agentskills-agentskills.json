@@ -1,0 +1,175 @@
+{
+  "id": "candidate-tool-github-agentskills-agentskills",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Agentskills",
+  "sourceUrl": "https://github.com/agentskills/agentskills",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "agentskills",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Specification and documentation for Agent Skills",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "agentskills",
+    "repo": "agentskills",
+    "fullName": "agentskills/agentskills",
+    "stars": 18825,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-22T15:19:45Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/CLAUDE.md",
+    "docs/client-implementation/adding-skills-support.mdx",
+    "docs/clients.mdx",
+    "docs/docs.json",
+    "docs/favicon.svg",
+    "docs/home.mdx",
+    "docs/images/logos/agentman/agentman-wordmark-dark.svg",
+    "docs/images/logos/agentman/agentman-wordmark-light.svg",
+    "docs/images/logos/amp/amp-logo-dark.svg",
+    "docs/images/logos/amp/amp-logo-light.svg",
+    "docs/images/logos/autohand/autohand-dark.svg",
+    "docs/images/logos/autohand/autohand-light.svg",
+    "docs/images/logos/block/block-lockup_black.svg",
+    "docs/images/logos/block/block-lockup_white.svg",
+    "docs/images/logos/claude-ai/Claude-logo-Ivory.svg",
+    "docs/images/logos/claude-ai/Claude-logo-One-color.svg",
+    "docs/images/logos/claude-ai/Claude-logo-Slate.svg",
+    "docs/images/logos/claude-code/Claude-Code-logo-Ivory.svg",
+    "docs/images/logos/claude-code/Claude-Code-logo-One-color.svg",
+    "docs/images/logos/claude-code/Claude-Code-logo-Slate.svg",
+    "docs/images/logos/command-code/command-code-logo-for-dark.svg",
+    "docs/images/logos/command-code/command-code-logo-for-light.svg",
+    "docs/images/logos/cursor/LOCKUP_HORIZONTAL_2D_DARK.svg",
+    "docs/images/logos/cursor/LOCKUP_HORIZONTAL_2D_LIGHT.svg",
+    "docs/images/logos/databricks/databricks-logo-dark.svg",
+    "docs/images/logos/databricks/databricks-logo-light.svg",
+    "docs/images/logos/emdash/emdash-logo-dark.svg",
+    "docs/images/logos/emdash/emdash-logo-light.svg",
+    "docs/images/logos/factory/factory-logo-dark.svg",
+    "docs/images/logos/factory/factory-logo-light.svg",
+    "docs/images/logos/fast-agent/fast-agent-dark.svg",
+    "docs/images/logos/fast-agent/fast-agent-light.svg",
+    "docs/images/logos/firebender/firebender-wordmark-dark.svg",
+    "docs/images/logos/firebender/firebender-wordmark-light.svg",
+    "docs/images/logos/gemini-cli/gemini-cli-logo_dark.svg",
+    "docs/images/logos/gemini-cli/gemini-cli-logo_light.svg",
+    "docs/images/logos/github/GitHub_Lockup_Dark.svg",
+    "docs/images/logos/github/GitHub_Lockup_Light.svg",
+    "docs/images/logos/google-ai-edge-gallery/google-ai-edge-gallery-dark.svg"
+  ],
+  "readmeExtract": "Agent Skills [Agent Skills](https://agentskills.io) are a simple, open format for giving agents new capabilities and expertise. Skills are folders of instructions, scripts, and resources that agents can discover and use to perform better at specific tasks. Write once, use everywhere. Getting Started [Documentation](https://agentskills.io) — Guides and tutorials [Specification](https://agentskills.io/specification) — ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agent Skills are a simple, open format for giving agents new capabilities and expertise.",
+    "Skills are folders of instructions, scripts, and resources that agents can discover and use to perform better at specific tasks.",
+    "Documentation — Guides and tutorials",
+    "Example Skills — See what's possible",
+    "This repo contains the specification, documentation, and reference SDK.",
+    "Also see a list of example skills here.",
+    "Agent Skills is an open format maintained by Anthropic and open to contributions from the community.",
+    "Documentation is licensed under CC-BY-4.0."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Specification and documentation for Agent Skills",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "tutorial",
+    "useCategory": [
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "tutorial",
+  "useCategory": [
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Agentskills is a skill-oriented tutorial resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Relevant to skill.",
+      "Agent Skills are a simple, open format for giving agents new capabilities and expertise.",
+      "Skills are folders of instructions, scripts, and resources that agents can discover and use to perform better at specific tasks.",
+      "Documentation — Guides and tutorials"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:agentskills/agentskills",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

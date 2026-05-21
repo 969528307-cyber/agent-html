@@ -1,0 +1,78 @@
+{
+  "id": "officecli",
+  "name": "OfficeCLI",
+  "type": "skill",
+  "status": "published",
+  "summary": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+  "description": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/iOfficeAI/OfficeCLI#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/iOfficeAI/OfficeCLI#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/iOfficeAI/OfficeCLI/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "OfficeCLI is the world's first and the best Office suite designed for AI agents.",
+    "Give any AI agent full control over Word, Excel, and PowerPoint — in one line of code.",
+    "Built-in agent-friendly rendering engine — agents can see what they create, no Office required.",
+    "All documents above were created entirely by AI agents using OfficeCLI — no templates, no manual editing.",
+    "For AI Agents — Get Started in One Line",
+    "This copies the binary to your PATH and installs the officecli skill into every AI coding agent it detects — Claude Code, Cursor, Windsurf, GitHub Copilot, and more.",
+    "Every add, set, or remove command you run will refresh the preview in real time.",
+    "Keep experimenting — the browser is your live feedback loop."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T17:53:57Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/iOfficeAI/OfficeCLI",
+  "repoUrl": "https://github.com/iOfficeAI/OfficeCLI",
+  "license": "Apache-2.0",
+  "stars": 4679,
+  "lastUpdated": "2026-05-19T17:53:57Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

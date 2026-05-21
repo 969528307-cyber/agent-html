@@ -1,0 +1,78 @@
+{
+  "id": "crabtalk",
+  "name": "Crabtalk",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "Agents daemon that hides nothing",
+  "description": "Agents daemon that hides nothing",
+  "category": [
+    "agent-app"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/crabtalk/crabtalk",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/crabtalk/crabtalk",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/crabtalk/crabtalk#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/crabtalk/crabtalk#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/crabtalk/crabtalk/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Agent daemon. Runs agents, dispatches tools, connects to MCP servers.",
+    "The daemon ships with built-in tools (shell, task delegation, memory),",
+    "MCP server integration, and skills (Markdown prompt files).",
+    "Apps are agent-powered experiences and standalone services",
+    "built on top of the daemon — independent binaries that connect via",
+    "Ownership is necessary for an open agent ecosystem.",
+    "A configured agent is one where you picked from",
+    "An owned agent is one where you decided what's on the menu."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T09:09:00Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/crabtalk/crabtalk",
+  "repoUrl": "https://github.com/crabtalk/crabtalk",
+  "license": "MIT",
+  "stars": 701,
+  "lastUpdated": "2026-05-19T09:09:00Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

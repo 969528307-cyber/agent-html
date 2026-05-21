@@ -1,0 +1,76 @@
+{
+  "id": "unla",
+  "name": "Unla",
+  "type": "mcp",
+  "status": "published",
+  "summary": "🧩 MCP Gateway - A lightweight gateway service that instantly transforms existing MCP Servers and APIs into MCP servers with zero code changes. Features Docker deployment and management UI, requiring no infrastructure modifications.",
+  "description": "🧩 MCP Gateway - A lightweight gateway service that instantly transforms existing MCP Servers and APIs into MCP servers with zero code changes. Features Docker deployment and management UI, requiring no infrastructure modifications.",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/AmoyLab/Unla",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/AmoyLab/Unla",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/AmoyLab/Unla#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/AmoyLab/Unla#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/AmoyLab/Unla/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "🚀 Instantly transform your existing MCP Servers and APIs into MCP endpoints — without changing a line of code.",
+    "Due to the fast iteration, documentation updates may sometimes lag behind.",
+    "If you encounter any issues, feel free to search or ask for help via Discord or Issues ❤️",
+    "Click \"Add MCP Server\" in the web interface",
+    "Configure your MCP Client with the /sse or /mcp suffix URLs to start using it.",
+    "The MCP Chat page in the web interface",
+    "Your own MCP Client (recommended)",
+    "[x] Support for converting RESTful APIs to MCP Server — Client → MCP Gateway → APIs"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-22T07:50:58Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/AmoyLab/Unla",
+  "repoUrl": "https://github.com/AmoyLab/Unla",
+  "license": "MIT",
+  "stars": 2110,
+  "lastUpdated": "2026-04-22T07:50:58Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

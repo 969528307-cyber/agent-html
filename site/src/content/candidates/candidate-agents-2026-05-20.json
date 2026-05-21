@@ -1,0 +1,166 @@
+{
+  "id": "candidate-agents-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Agents",
+  "sourceUrl": "https://github.com/inkeep/agents",
+  "sourceName": "GitHub",
+  "author": "inkeep",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Create AI Agents in a No-Code Visual Builder or TypeScript SDK with full 2-way sync. For shipping AI assistants and multi-agent AI workflows.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "inkeep",
+    "repo": "agents",
+    "fullName": "inkeep/agents",
+    "stars": 1150,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "agent-builder",
+      "agent-framework",
+      "agents-sdk",
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "aiagentframework",
+      "developer-sdk",
+      "inkeep",
+      "llms",
+      "low-code",
+      "mcp",
+      "mcp-server",
+      "mulit-agent",
+      "no-code",
+      "self-hosted",
+      "typescript",
+      "workflow",
+      "workflows"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T02:41:01Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "agents-cookbook/template-projects/activities-planner-advanced/skills/structured-itinerary-responses/SKILL.md",
+    "agents-cookbook/template-projects/activities-planner-advanced/skills/weather-safety-guardrails/SKILL.md",
+    ".cursor/worktrees.json",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Inkeep Agents Build AI Agents with a No Code Visual Builder or TypeScript SDK . Agents can be edited in either with full 2 way sync , so technical and non technical teams can create and manage Agents in one platform. Get started with the [docs](https://docs.inkeep.com) or [1 minute quick start](https://docs.inkeep.com/get started/quick start). Two ways to build No Code Visual Builder A drag and drop canvas so any tea",
+  "skillExtracts": [
+    {
+      "path": "agents-cookbook/template-projects/activities-planner-advanced/skills/structured-itinerary-responses/SKILL.md",
+      "extract": "name: \"structured itinerary responses\" description: \"Present time aware itineraries with clear actions and citations\" metadata: author: example org version: \"1.0\" Start with a one sentence summary tailored to the user’s location and weather window. Provide 3–5 time blocked suggestions with clear actions, durations, and required items; highlight indoor pivots when weather shifts. End with a concise checklist plus sour"
+    },
+    {
+      "path": "agents-cookbook/template-projects/activities-planner-advanced/skills/weather-safety-guardrails/SKILL.md",
+      "extract": "name: \"weather safety guardrails\" description: \"Keep activity suggestions safe and respect local conditions\" metadata: author: example org version: \"1.0\" Avoid outdoor or risky activities when storms, extreme temperatures, or hazardous air quality are present. Offer indoor or low exposure alternatives when precipitation probability exceeds 40% or heat index is above 32°C/90°F. Remind users to check local advisories a"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Build AI Agents with a No-Code Visual Builder or TypeScript SDK.",
+    "Agents can be edited in either with full 2-way sync, so technical and non-technical teams can create and manage Agents in one platform.",
+    "Get started with the docs or 1-minute quick start.",
+    "A drag-and-drop canvas so any team can create and own the Agents they care about.",
+    "A code-first framework so engineering teams can build with typesafety, intellisense, CI/CD, and the tools they expect.",
+    "The Visual Builder and TypeScript SDK are fully interoperable: technical and non-technical teams can edit and manage Agents in either format and collaborate with others at any time.",
+    "Inkeep Agents can operate as real-time AI Chat Assistants, for example:",
+    "a customer experience agent for help centers, technical docs, or in-app experiences"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Create AI Agents in a No-Code Visual Builder or TypeScript SDK with full 2-way sync. For shipping AI assistants and multi-agent AI workflows.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Agents is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "Build AI Agents with a No-Code Visual Builder or TypeScript SDK."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "agents",
+  "publishedAt": "2026-05-20",
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "local-review"
+}

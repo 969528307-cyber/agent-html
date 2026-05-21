@@ -1,0 +1,198 @@
+{
+  "id": "candidate-tool-github-bytedance-ui-tars-desktop",
+  "type": "tool",
+  "status": "published",
+  "title": "UI TARS Desktop",
+  "sourceUrl": "https://github.com/bytedance/UI-TARS-desktop",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "bytedance",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "bytedance",
+    "repo": "UI-TARS-desktop",
+    "fullName": "bytedance/UI-TARS-desktop",
+    "stars": 34556,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agent-tars",
+      "browser-use",
+      "computer-use",
+      "cowork",
+      "gui-agent",
+      "gui-operator",
+      "mcp",
+      "mcp-server",
+      "multimodal",
+      "tars",
+      "ui-tars",
+      "vision",
+      "vlm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T02:55:49Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh-CN.md",
+    "docs/archive-1.0/deployment.md",
+    "docs/archive-1.0/images/download-report.png",
+    "docs/archive-1.0/images/import-preset-from-local.png",
+    "docs/archive-1.0/images/import-preset-from-remote.png",
+    "docs/archive-1.0/images/mac_app.png",
+    "docs/archive-1.0/images/mac_broken.png",
+    "docs/archive-1.0/images/mac_permission.png",
+    "docs/archive-1.0/images/setting.png",
+    "docs/archive-1.0/images/upload-report-success.png",
+    "docs/archive-1.0/images/utio-flow.png",
+    "docs/archive-1.0/preset.md",
+    "docs/archive-1.0/quick-start.md",
+    "docs/archive-1.0/README.md",
+    "docs/archive-1.0/sdk.md",
+    "docs/archive-1.0/setting.md",
+    "docs/deployment.md",
+    "docs/preset.md",
+    "docs/quick-start.md",
+    "docs/sdk.md",
+    "docs/setting.md",
+    "package.json",
+    "examples/gui-agent-2.0/package.json",
+    "examples/gui-agent-2.0/quick-start-for-agent.md",
+    "examples/gui-agent-2.0/README.md",
+    "examples/gui-agent-2.0/tsconfig.json",
+    "examples/operator-browserbase/tsconfig.json"
+  ],
+  "readmeExtract": "<picture <img alt=\"Agent TARS Banner\" src=\"./images/tars.png\" </picture <br/ Introduction English | [简体中文](./README.zh CN.md) [![](https://trendshift.io/api/badge/repositories/13584)](https://trendshift.io/repositories/13584) <b TARS<sup \\ </sup </b is a Multimodal AI Agent stack, currently shipping two projects: [Agent TARS]( agent tars) and [UI TARS desktop]( ui tars desktop): <table <thead <tr <th width=\"50%\" alig",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "TARS \\ is a Multimodal AI Agent stack, currently shipping two projects: Agent TARS and UI-TARS-desktop:",
+    "Agent TARS is a general multimodal AI Agent stack, it brings the power of GUI Agent and Vision into your terminal, computer, browser and product.",
+    "It aims to provide a workflow that is closer to human-like task completion through cutting-edge multimodal LLMs and seamless integration with various real-world MCP tools.",
+    "UI-TARS Desktop is a desktop application that provides a native GUI Agent based on the UI-TARS model.",
+    "remote computer as well as browser operators.",
+    "\\[2025-11-05\\] 🎉 We're excited to announce the release of Agent TARS CLI v0.3.0!",
+    "Additionally, it features exclusive support for AIO agent Sandbox as isolated all-in-one tools execution environment.",
+    "\\[2025-04-17\\] - 🎉 We're thrilled to announce the release of new UI-TARS Desktop application v0.1.0, featuring a redesigned Agent UI."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"mcp\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "browser",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "browser",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "UI TARS Desktop is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with browser workflows.",
+      "Helps with design workflows.",
+      "Relevant to mcp.",
+      "TARS \\ is a Multimodal AI Agent stack, currently shipping two projects: Agent TARS and UI-TARS-desktop:"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:bytedance/ui-tars-desktop",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ui-tars-desktop",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

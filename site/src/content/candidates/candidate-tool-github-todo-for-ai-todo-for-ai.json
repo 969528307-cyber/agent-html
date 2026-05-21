@@ -1,0 +1,179 @@
+{
+  "id": "candidate-tool-github-todo-for-ai-todo-for-ai",
+  "type": "tool",
+  "status": "published",
+  "title": "Todo For Ai",
+  "sourceUrl": "https://github.com/todo-for-ai/todo-for-ai",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "todo-for-ai",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "🤖 A comprehensive task management system specifically designed for AI assistants. Supports project management, task tracking, team collaboration, and seamless AI integration through MCP (Model Context Protocol). Built with modern tech stack including React, Flask, and Docker. Try it now at https://todo4ai.org/",
+  "proposedCategory": [
+    "productivity"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "todo-for-ai",
+    "repo": "todo-for-ai",
+    "fullName": "todo-for-ai/todo-for-ai",
+    "stars": 1165,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-coding-tools",
+      "cursor",
+      "kiro",
+      "todo4ai",
+      "trae",
+      "windsurf"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-30T14:25:46Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/API.md",
+    "docs/database-design.md",
+    "docs/images/dashboard-preview.png",
+    "docs/images/README.md",
+    "docs/images/task-management.png",
+    "docs/MCP_PRIVATE_DEPLOYMENT.md",
+    "docs/MCP_TEST_CASES.md",
+    "docs/Milkdown-react-doc.md",
+    "docs/PRIVATE_DEPLOYMENT.md",
+    "docs/QUICK_DEPLOY.md",
+    "docs/USER_GUIDE.md"
+  ],
+  "readmeExtract": "Todo for AI [![GitHub stars](https://img.shields.io/github/stars/todo for ai/todo for ai?style=flat square)](https://github.com/todo for ai/todo for ai/stargazers) [![GitHub license](https://img.shields.io/github/license/todo for ai/todo for ai?style=flat square)](https://github.com/todo for ai/todo for ai/blob/main/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/todo for ai/todo for ai?style=flat squ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Todo for AI bridges the gap between AI assistants and human productivity workflows.",
+    "Unlike traditional task management tools, our system is built from the ground up to work seamlessly with AI agents through the Model Context Protocol (MCP).",
+    "🔗 Native AI Integration: First-class support for AI assistants through MCP, enabling natural language task management",
+    "🔄 Seamless Workflow: Bridge between AI capabilities and human oversight with intelligent task delegation",
+    "🌐 Universal Compatibility: Works with Claude, GPT, and other AI assistants through standardized MCP protocol",
+    "⚡ Real-time Collaboration: Instant synchronization between AI agents and human team members",
+    "Developers integrating AI assistants into their workflows",
+    "Product Managers coordinating between AI agents and human teams"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"productivity\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "🤖 A comprehensive task management system specifically designed for AI assistants. Supports project management, task tracking, team collaboration, and seamless AI integration through MCP (Model Context Protocol). Built with modern tech stack including React, Flask, and Docker. Try it now at https://todo4ai.org/",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "productivity",
+      "devops",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "productivity",
+    "devops",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "Detected scope: single-tool.",
+    "Alternative capabilities: mcp, workflow.",
+    "LLM: agent-app + [mcp] — It is a full-stack web application for task management with native MCP support for AI assistant integration."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Todo For Ai is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with productivity workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Relevant to productivity.",
+      "Todo for AI bridges the gap between AI assistants and human productivity workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:todo-for-ai/todo-for-ai",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "todo-for-ai",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

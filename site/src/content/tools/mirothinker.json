@@ -1,0 +1,75 @@
+{
+  "id": "mirothinker",
+  "name": "MiroThinker",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "MiroThinker is a deep research agent optimized for complex research and prediction tasks. Our latest models, MiroThinker-1.7, achieves 74.0 and 75.3 on the BrowseComp and BrowseComp Zh, respectively.",
+  "description": "MiroThinker is a deep research agent optimized for complex research and prediction tasks. Our latest models, MiroThinker-1.7, achieves 74.0 and 75.3 on the BrowseComp and BrowseComp Zh, respectively.",
+  "category": [
+    "agent-framework"
+  ],
+  "compatibleAgents": [
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/MiroMindAI/MiroThinker",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/MiroMindAI/MiroThinker",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/MiroMindAI/MiroThinker#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/MiroMindAI/MiroThinker#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/MiroMindAI/MiroThinker/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "MiroThinker: A deep research agent optimized for research and prediction.",
+    "Our proprietary agent MiroThinker-H1 achieves leading performance on BrowseComp and BrowseComp-ZH among open-source and commercial models.",
+    "\\[2026-01-23\\] 🎉 We have brought two important updates to MiroThinker online: (a) Core Research Report Generation: Deep Research online reports now support generation, preview, and sharing.",
+    "MiroThinker will continue to be maintained and iteratively upgraded, with the goal of becoming the best Research Agent you'll ever use!",
+    "\\[2026-01-05\\] 🎉🎉 We release MiroThinker-v1.5, a series of open-source deep research agents optimized for financial prediction.",
+    "MiroThinker-v1.5-235B scores 39.2% on HLE-Text, 69.8% on BrowseComp, 71.5% on BrowseComp-ZH, and 80.8% on GAIA-Val-165, setting a new state-of-the-art among search agents.",
+    "Introducing interactive scaling as a third dimension of performance improvement, MiroThinker v1.0 supports 256K context window and up to 600 tool calls per task.",
+    "\\[2025-09-11\\] MiroThinker-72B-Preview ranked 4th in this week's FutureX benchmark."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-25T05:23:54Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/MiroMindAI/MiroThinker",
+  "repoUrl": "https://github.com/MiroMindAI/MiroThinker",
+  "license": "Apache-2.0",
+  "stars": 8161,
+  "lastUpdated": "2026-04-25T05:23:54Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,75 @@
+{
+  "id": "openoutreach",
+  "name": "OpenOutreach",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "Linkedin Automation Tool: Describe your product. Define your target market. The AI finds the leads for you.",
+  "description": "Linkedin Automation Tool: Describe your product. Define your target market. The AI finds the leads for you.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Claude Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/eracle/OpenOutreach",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/eracle/OpenOutreach",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/eracle/OpenOutreach#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/eracle/OpenOutreach#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/eracle/OpenOutreach/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "OpenOutreach is a self-hosted, open-source LinkedIn automation tool for B2B lead generation.",
+    "Unlike other tools, you don't need a list of profiles to contact — you describe your product and your target market, and the system autonomously discovers, qualifies, and contacts the right people.",
+    "The AI generates LinkedIn search queries to discover candidate profiles",
+    "Qualified leads are automatically contacted, and an AI agent manages multi-turn follow-up conversations",
+    "Perfect for founders, sales teams, and agencies who want powerful automation without account bans or subscription lock-in.",
+    "Once the container is running, open in your browser to watch the browser live (noVNC).",
+    "Alternatively, connect a native VNC client to localhost:5900.",
+    "Don't want to manage Docker and VPNs?"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T23:17:12Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/eracle/OpenOutreach",
+  "repoUrl": "https://github.com/eracle/OpenOutreach",
+  "license": "NOASSERTION",
+  "stars": 1816,
+  "lastUpdated": "2026-05-15T23:17:12Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

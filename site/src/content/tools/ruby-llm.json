@@ -1,0 +1,75 @@
+{
+  "id": "ruby-llm",
+  "name": "Ruby Llm",
+  "type": "sdk",
+  "status": "published",
+  "summary": "One beautiful Ruby API for OpenAI, Anthropic, Gemini, Bedrock, Azure, OpenRouter, DeepSeek, Ollama, VertexAI, Perplexity, Mistral, xAI, GPUStack & OpenAI compatible APIs. Agents, Chat, Vision, Audio, PDF, Images, Embeddings, Tools, Streaming & Rails integration.",
+  "description": "One beautiful Ruby API for OpenAI, Anthropic, Gemini, Bedrock, Azure, OpenRouter, DeepSeek, Ollama, VertexAI, Perplexity, Mistral, xAI, GPUStack & OpenAI compatible APIs. Agents, Chat, Vision, Audio, PDF, Images, Embeddings, Tools, Streaming & Rails integration.",
+  "category": [
+    "communication"
+  ],
+  "compatibleAgents": [
+    "Codex"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/crmne/ruby_llm",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/crmne/ruby_llm",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/crmne/ruby_llm#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/crmne/ruby_llm#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/crmne/ruby_llm/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "One beautiful Ruby API for GPT, Claude, Gemini, and more.",
+    "Build chatbots, AI agents, RAG applications.",
+    "Same interface whether you're using GPT, Claude, or your local Ollama.",
+    "Tools: Let AI call your Ruby methods",
+    "Agents: Reusable assistants with RubyLLM::Agent",
+    "Providers: OpenAI, xAI, Anthropic, Gemini, VertexAI, Bedrock, DeepSeek, Mistral, Ollama, OpenRouter, Perplexity, GPUStack, and any OpenAI-compatible API",
+    "class WeatherAssistant < RubyLLM::Agent",
+    "instructions \"Be concise and always use tools for weather.\""
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T20:09:02Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/crmne/ruby_llm",
+  "repoUrl": "https://github.com/crmne/ruby_llm",
+  "license": "MIT",
+  "stars": 3925,
+  "lastUpdated": "2026-05-12T20:09:02Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

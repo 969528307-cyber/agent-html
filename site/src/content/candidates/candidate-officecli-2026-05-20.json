@@ -1,0 +1,170 @@
+{
+  "id": "candidate-officecli-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "OfficeCLI",
+  "sourceUrl": "https://github.com/iOfficeAI/OfficeCLI",
+  "sourceName": "GitHub",
+  "author": "iOfficeAI",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "iOfficeAI",
+    "repo": "OfficeCLI",
+    "fullName": "iOfficeAI/OfficeCLI",
+    "stars": 4679,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "ai",
+      "cli",
+      "office",
+      "openclaw",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T17:53:57Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/plugin-protocol.md",
+    "SKILL.md",
+    "skills/morph-ppt-3d/SKILL.md",
+    "skills/morph-ppt/SKILL.md",
+    "skills/officecli-academic-paper/SKILL.md",
+    "skills/officecli-data-dashboard/SKILL.md",
+    "skills/officecli-docx/SKILL.md",
+    "skills/officecli-financial-model/SKILL.md",
+    "skills/officecli-pitch-deck/SKILL.md",
+    "skills/officecli-pptx/SKILL.md",
+    "skills/officecli-word-form/SKILL.md",
+    "skills/officecli-xlsx/SKILL.md"
+  ],
+  "readmeExtract": "OfficeCLI OfficeCLI is the world's first and the best Office suite designed for AI agents. Give any AI agent full control over Word, Excel, and PowerPoint — in one line of code. Open source. Single binary. No Office installation. No dependencies. Works everywhere. Built in agent friendly rendering engine — agents can see what they create, no Office required. Render .docx / .xlsx / .pptx to HTML or PNG, closing the re",
+  "skillExtracts": [
+    {
+      "path": "SKILL.md",
+      "extract": "name: officecli description: Create, analyze, proofread, and modify Office documents (.docx, .xlsx, .pptx) using the officecli CLI tool. Use when the user wants to create, inspect, check formatting, find issues, add charts, or modify Office documents. officecli AI friendly CLI for .docx, .xlsx, .pptx. Single binary, no dependencies, no Office installation needed. Install If officecli is not installed: Verify with off"
+    },
+    {
+      "path": "skills/morph-ppt-3d/SKILL.md",
+      "extract": "name: morph ppt 3d description: 3D Morph PPT — extends morph ppt with GLB model insertion, cinematographic camera, model content layout, and enriched visual design system. Morph PPT — 3D Extension This skill extends morph ppt . All morph ppt rules (naming, ghosting, design, verification) apply in full. This file covers 3D specific additions and an enriched design system combining morph ppt aesthetics with concrete co"
+    },
+    {
+      "path": "skills/morph-ppt/SKILL.md",
+      "extract": "name: morph ppt description: \"Use this skill when the user wants a .pptx with smooth cross slide animation — PowerPoint Morph transitions, Keynote style continuous motion, shapes that grow / move / rotate as the slide advances. Trigger on: 'morph', 'morph transition', 'smooth transition', 'continuous animation across slides', 'Keynote style transition', 'animated slide sequence', 'shape continuity across slides'. Out"
+    },
+    {
+      "path": "skills/officecli-academic-paper/SKILL.md",
+      "extract": "name: officecli academic paper description: \"Use this skill to build academic style .docx output: journal / conference / thesis chapters carrying formal citation style (APA, Chicago, IEEE, MLA), numbered equations, figure & table cross references, footnotes/endnotes, bibliography, or multi column journal layout. Trigger on: 'research paper', 'journal paper', 'conference paper', 'manuscript', 'thesis', 'APA', 'MLA', '"
+    },
+    {
+      "path": "skills/officecli-data-dashboard/SKILL.md",
+      "extract": "name: officecli data dashboard description: \"Use this skill to build a multi element Excel dashboard — Dashboard sheet on open, multiple formula driven KPI cards, multiple charts, sparklines, and conditional formatting — from CSV or tabular input. Trigger on: 'dashboard', 'KPI dashboard', 'analytics dashboard', 'executive dashboard', 'metrics dashboard', 'CSV to dashboard', 'data visualization'. Output is a single .x"
+    },
+    {
+      "path": "skills/officecli-docx/SKILL.md",
+      "extract": "name: officecli docx description: \"Use this skill any time a .docx file is involved as input, output, or both. This includes: creating Word documents, reports, letters, memos, or proposals; reading, parsing, or extracting text from any .docx file; editing, modifying, or updating existing documents; working with templates, tracked changes, comments, headers/footers, or tables of contents. Trigger whenever the user men"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "OfficeCLI is the world's first and the best Office suite designed for AI agents.",
+    "Give any AI agent full control over Word, Excel, and PowerPoint — in one line of code.",
+    "Built-in agent-friendly rendering engine — agents can see what they create, no Office required.",
+    "All documents above were created entirely by AI agents using OfficeCLI — no templates, no manual editing.",
+    "For AI Agents — Get Started in One Line",
+    "This copies the binary to your PATH and installs the officecli skill into every AI coding agent it detects — Claude Code, Cursor, Windsurf, GitHub Copilot, and more.",
+    "Every add, set, or remove command you run will refresh the preview in real time.",
+    "Keep experimenting — the browser is your live feedback loop."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "OfficeCLI is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "OfficeCLI is the world's first and the best Office suite designed for AI agents.",
+      "Give any AI agent full control over Word, Excel, and PowerPoint — in one line of code.",
+      "Built-in agent-friendly rendering engine — agents can see what they create, no Office required."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "officecli",
+  "publishedAt": "2026-05-20"
+}

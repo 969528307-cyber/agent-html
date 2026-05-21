@@ -1,0 +1,180 @@
+{
+  "id": "candidate-tool-github-firerpa-lamda",
+  "type": "tool",
+  "status": "published",
+  "title": "Lamda",
+  "sourceUrl": "https://github.com/firerpa/lamda",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "firerpa",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": " The most powerful Android RPA agent framework, next generation mobile automation.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "firerpa",
+    "repo": "lamda",
+    "fullName": "firerpa/lamda",
+    "stars": 7785,
+    "license": "MIT",
+    "topics": [
+      "adb",
+      "agents",
+      "ai",
+      "android",
+      "appium",
+      "automation",
+      "dynamic-analysis",
+      "frida",
+      "magisk",
+      "mcp",
+      "mcp-server",
+      "mobile-security",
+      "pentesting",
+      "remote-control",
+      "reverse-engineering",
+      "security",
+      "uiautomation",
+      "uiautomator2",
+      "workflow",
+      "xposed"
+    ],
+    "defaultBranch": "9.0",
+    "lastPushedAt": "2026-03-24T01:53:06Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "FIRERPA Android ｜ AI Powered Automation <img src=\"image/logo.svg\" alt=\"FIRERPA\" width=\"200\" align=\"right\" / <p <img src=\"https://img.shields.io/badge/python 3.6+ blue.svg?logo=python&labelColor=yellow\" / <img src=\"https://img.shields.io/badge/android 6.0+ blue.svg?logo=android&labelColor=white\" / <img src=\"https://img.shields.io/badge/root%20require red.svg?logo=android&labelColor=black\" / <img src=\"https://img.shiel",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "FIRERPA Android ｜ AI-Powered Automation",
+    "An all-in-one next-gen Android automation framework blending robust on-device services with AI-ready agents and extensible tool-calling capabilities.",
+    "Documentation 使用文档 TELEGRAM llms.txt llms-full.txt",
+    "FIRERPA is a lightweight, on-device Android automation stack with no external dependencies.",
+    "FIRERPA delivers stable automation across Android 6.0 to 16, including emulators and cloud phones.",
+    "The Python SDK mirrors the full surface and provides higher-level helpers to build reliable automation quickly."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": " The most powerful Android RPA agent framework, next generation mobile automation.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "security",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "security",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 9,
+    "agent-framework": 8,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent framework language detected.",
+    "SDK or library language detected.",
+    "Detected scope: framework.",
+    "Alternative capabilities: agent-framework, workflow, sdk.",
+    "LLM: agent-framework + [mcp, workflow] — Described as an Android RPA agent framework and MCP server with workflow capabilities, not a standalone CLI or single-purpose tool."
+  ],
+  "classificationAlternatives": [
+    "agent-framework",
+    "workflow",
+    "sdk"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Lamda is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with security workflows.",
+      "Helps with media workflows.",
+      "Relevant to automation.",
+      "FIRERPA Android ｜ AI-Powered Automation"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:firerpa/lamda",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "lamda",
+  "publishedAt": "2026-05-18"
+}

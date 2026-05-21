@@ -1,0 +1,76 @@
+{
+  "id": "agent-framework",
+  "name": "Agent Framework",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
+  "description": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
+  "category": [
+    "agent-framework"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/microsoft/agent-framework",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/microsoft/agent-framework",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/microsoft/agent-framework#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/microsoft/agent-framework#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/microsoft/agent-framework/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Welcome to Microsoft Agent Framework!",
+    "Microsoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python.",
+    "Microsoft Agent Framework is built for teams taking agents from prototype to production.",
+    "Watch the full Agent Framework introduction (30 min)",
+    "are building agents and workflows you expect to run in production,",
+    "Multiple Agent Provider Support: Support for various LLM providers with more being added continuously",
+    "Python workflows .NET workflows",
+    "Foundry Hosted Agents (new): Deploy and host your agents to Foundry-hosted infrastructure with just 2 additional lines of code"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T12:07:40Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/microsoft/agent-framework",
+  "repoUrl": "https://github.com/microsoft/agent-framework",
+  "license": "MIT",
+  "stars": 10517,
+  "lastUpdated": "2026-05-18T12:07:40Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

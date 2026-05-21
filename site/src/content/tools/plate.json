@@ -1,0 +1,77 @@
+{
+  "id": "plate",
+  "name": "Plate",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Rich-text editor with AI and shadcn/ui",
+  "description": "Rich-text editor with AI and shadcn/ui",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/udecode/plate",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/udecode/plate",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/udecode/plate#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/udecode/plate#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/udecode/plate/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "You can learn more about Plate by checking out our documentation.",
+    "This is the Plate-specific reduction of the Compound Engineering agent tree.",
+    "skiller-lock.json for what Plate actually installed from EveryInc/compound-engineering-plugin",
+    ".agents/rules/task.mdc for the default task lane",
+    ".agents/rules/major-task.mdc for the heavyweight architecture/comparison lane",
+    ".agents/rules/agent-browser-issue.mdc for the browser parity escalation",
+    ".agents/AGENTS.md for explicit exclusions",
+    "adversarial-document-reviewer"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T04:41:34Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/udecode/plate",
+  "repoUrl": "https://github.com/udecode/plate",
+  "license": "NOASSERTION",
+  "stars": 16275,
+  "lastUpdated": "2026-05-18T04:41:34Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

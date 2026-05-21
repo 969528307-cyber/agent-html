@@ -1,0 +1,223 @@
+{
+  "id": "candidate-tool-github-larksuite-cli",
+  "type": "tool",
+  "status": "published",
+  "title": "Cli",
+  "sourceUrl": "https://github.com/larksuite/cli",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "larksuite",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.",
+  "proposedCategory": [
+    "productivity"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "larksuite",
+    "repo": "cli",
+    "fullName": "larksuite/cli",
+    "stars": 11480,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T10:03:54Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh.md",
+    "package.json",
+    "scripts/skill-format-check/tests/bad-skill-no-frontmatter/SKILL.md",
+    "scripts/skill-format-check/tests/bad-skill-unclosed-frontmatter/SKILL.md",
+    "scripts/skill-format-check/tests/bad-skill/SKILL.md",
+    "scripts/skill-format-check/tests/good-skill-complex/SKILL.md",
+    "scripts/skill-format-check/tests/good-skill-minimal/SKILL.md",
+    "scripts/skill-format-check/tests/good-skill/SKILL.md",
+    "skills/lark-approval/SKILL.md",
+    "skills/lark-attendance/SKILL.md",
+    "skills/lark-base/SKILL.md",
+    "skills/lark-calendar/SKILL.md",
+    "skills/lark-contact/SKILL.md",
+    "skills/lark-doc/SKILL.md",
+    "skills/lark-drive/SKILL.md",
+    "skills/lark-event/SKILL.md",
+    "skills/lark-im/SKILL.md",
+    "skills/lark-mail/SKILL.md",
+    "skills/lark-markdown/SKILL.md",
+    "skills/lark-minutes/SKILL.md",
+    "skills/lark-okr/SKILL.md",
+    "skills/lark-openapi-explorer/SKILL.md",
+    "skills/lark-shared/SKILL.md",
+    "skills/lark-sheets/SKILL.md",
+    "skills/lark-skill-maker/SKILL.md",
+    "skills/lark-slides/SKILL.md",
+    "skills/lark-task/SKILL.md",
+    "skills/lark-vc-agent/SKILL.md",
+    "skills/lark-vc/SKILL.md",
+    "skills/lark-whiteboard/SKILL.md",
+    "skills/lark-wiki/SKILL.md",
+    "skills/lark-workflow-meeting-summary/SKILL.md",
+    "skills/lark-workflow-standup-report/SKILL.md",
+    "tests/cli_e2e/cli-e2e-testcase-writer/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "lark cli [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](https://opensource.org/licenses/MIT) [![Go Version](https://img.shields.io/badge/go %3E%3D1.23 blue.svg)](https://go.dev/) [![npm version](https://img.shields.io/npm/v/@larksuite/cli.svg)](https://www.npmjs.com/package/@larksuite/cli) [中文版](./README.zh.md) | [English](./README.md) The official [Lark/Feishu](https://www.larksuite.com/) CLI",
+  "skillExtracts": [
+    {
+      "path": "scripts/skill-format-check/tests/bad-skill-no-frontmatter/SKILL.md",
+      "extract": "No Frontmatter Skill This skill completely lacks a YAML frontmatter."
+    },
+    {
+      "path": "scripts/skill-format-check/tests/bad-skill-unclosed-frontmatter/SKILL.md",
+      "extract": "name: bad skill unclosed version: 1.0.0 description: \"This skill has an unclosed frontmatter block.\" metadata: {} Unclosed Frontmatter Skill This frontmatter does not have a closing block."
+    },
+    {
+      "path": "scripts/skill-format-check/tests/bad-skill/SKILL.md",
+      "extract": "version: 1.0.0 metadata: {} Bad Skill This skill is missing required fields like name and description."
+    },
+    {
+      "path": "scripts/skill-format-check/tests/good-skill-complex/SKILL.md",
+      "extract": "name: good skill complex version: 2.5.1 beta description: A very complex description that spans multiple lines and contains weird chars: !@ $%^& () metadata: requires: bins: [\"lark cli\", \"node\"] cliHelp: \"lark cli something help\" customField: \"customValue\" Complex Skill This skill has a complex frontmatter block."
+    },
+    {
+      "path": "scripts/skill-format-check/tests/good-skill-minimal/SKILL.md",
+      "extract": "name: good skill minimal version: 0.1.0 description: Minimal valid description metadata: {} Minimal Skill This has the bare minimum required fields."
+    },
+    {
+      "path": "scripts/skill-format-check/tests/good-skill/SKILL.md",
+      "extract": "name: good skill version: 1.0.0 description: \"This is a properly formatted skill.\" metadata: requires: bins: [\"lark cli\"] Good Skill This skill follows all the formatting rules."
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents.",
+    "Covers core business domains including Messenger, Docs, Base, Sheets, Slides, Calendar, Mail, Tasks, Meetings, Markdown, and more, with 200+ commands and 24 AI Agent Skills.",
+    "Wide Coverage — 17 business domains, 200+ curated commands, 24 AI Agent Skills",
+    "AI-Friendly & Optimized — Every command is tested with real Agents, featuring concise parameters, smart defaults, and structured output to maximize Agent call success rates",
+    "💬 Messenger Send/reply messages, create and manage group chats, view chat history & threads, search messages, download media",
+    "📁 Drive Upload and download files, search docs & wiki, manage comments",
+    "📊 Base Create and manage tables, fields, records, views, dashboards, workflows, forms, roles & permissions, data aggregation & analytics",
+    "🖼️ Slides Create and manage presentations, read presentation content, and add or remove slides"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"productivity\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents. Covers core business domains including Messenger, Docs, Base, Sheets, Calendar, Mail, Tasks, Meetings, and more, with 200+ commands and 20+ AI Agent Skills.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "productivity",
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "productivity",
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 10,
+    "cli": 13,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Skill-collection or agent-rules language in description.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Repository name indicates CLI tool.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent instruction file detected alongside CLI signals.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: cli, workflow.",
+    "LLM: cli + [cli] — This project is explicitly a command-line interface tool for Lark/Feishu, with 200+ commands and AI Agent Skills built-in."
+  ],
+  "classificationAlternatives": [
+    "cli",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Cli is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with productivity workflows.",
+      "Helps with docs workflows.",
+      "Relevant to productivity.",
+      "The official Lark/Feishu CLI tool, maintained by the larksuite team — built for humans and AI Agents.",
+      "Covers core business domains including Messenger, Docs, Base, Sheets, Slides, Calendar, Mail, Tasks, Meetings, Markdown, and more, with 200+ commands and 24 AI Agent Skills."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:larksuite/cli",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cli",
+  "publishedAt": "2026-05-18"
+}

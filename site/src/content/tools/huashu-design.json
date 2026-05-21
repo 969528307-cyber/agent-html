@@ -1,0 +1,79 @@
+{
+  "id": "huashu-design",
+  "name": "Huashu Design",
+  "type": "skill",
+  "status": "published",
+  "summary": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
+  "description": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/alchaincyf/huashu-design",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/alchaincyf/huashu-design",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/alchaincyf/huashu-design#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/alchaincyf/huashu-design#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/alchaincyf/huashu-design/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Say one sentence to your agent — Claude Code, Cursor, Codex, OpenClaw, Hermes all work.",
+    "Give the skill your brand assets (logo, colors, UI screenshots) and it reads your brand's voice; give it nothing and the built-in 20 design vocabularies still keep you out of AI slop territory.",
+    "Every animation in this README was made by huashu-design itself. No Figma, no After Effects — just a sentence + skill run.",
+    "📣 Now MIT-licensed. As of 2026-05-14 this skill is fully open-source under the MIT License — free for personal and commercial use, no authorization required.",
+    "Claude Design](#vs-claude-design)",
+    "📖 Note for English readers: this skill is built by a Chinese-speaking developer.",
+    "The skill's agent prompts (SKILL.md, references/.md) are in Chinese but the agent is bilingual — works fine with English tasks.",
+    "📖 致中文读者：这个 skill 由花叔（@AlchainHust）开发。一句话能让 agent 在 3–30 分钟内交付产品发布动画 / 可点击 App 原型 / 可编辑 PPT / 印刷级信息图。完整中文介绍见 README.zh.md。"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-14T15:11:53Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/alchaincyf/huashu-design",
+  "repoUrl": "https://github.com/alchaincyf/huashu-design",
+  "license": "MIT",
+  "stars": 14161,
+  "lastUpdated": "2026-05-14T15:11:53Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

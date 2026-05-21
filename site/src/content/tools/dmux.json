@@ -1,0 +1,78 @@
+{
+  "id": "dmux",
+  "name": "Dmux",
+  "type": "cli",
+  "status": "published",
+  "summary": "A dev agent multiplexer for git worktrees and coding agents.",
+  "description": "A dev agent multiplexer for git worktrees and coding agents.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/standardagents/dmux",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/standardagents/dmux",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/standardagents/dmux#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/standardagents/dmux#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/standardagents/dmux/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Parallel agents with tmux and worktrees",
+    "Manage multiple AI coding agents in isolated git worktrees..",
+    "Press n to create a new pane, type a prompt, pick one or more agents (or none for a plain terminal), and dmux handles the rest &mdash; worktree, branch, and agent launch.",
+    "Every pane gets its own git worktree and branch so agents work in complete isolation.",
+    "Worktree isolation &mdash; each pane is a full working copy, no conflicts between agents",
+    "Agent support &mdash; Claude Code, Codex, OpenCode, Cline CLI, Gemini CLI, Qwen CLI, Amp CLI, pi CLI, Cursor CLI, Copilot CLI, and Crush CLI",
+    "Goal launches &mdash; optionally start supported agents in goal mode from the initial prompt",
+    "Multi-select launches &mdash; choose any combination of enabled agents per prompt"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T19:10:42Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/standardagents/dmux",
+  "repoUrl": "https://github.com/standardagents/dmux",
+  "license": "MIT",
+  "stars": 1570,
+  "lastUpdated": "2026-05-13T19:10:42Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

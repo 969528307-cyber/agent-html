@@ -1,0 +1,232 @@
+{
+  "id": "candidate-tool-github-othmanadi-planning-with-files",
+  "type": "tool",
+  "status": "published",
+  "title": "Planning With Files",
+  "sourceUrl": "https://github.com/OthmanAdi/planning-with-files",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "OthmanAdi",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Claude Code skill implementing Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "OthmanAdi",
+    "repo": "planning-with-files",
+    "fullName": "OthmanAdi/planning-with-files",
+    "stars": 21549,
+    "license": "MIT",
+    "topics": [
+      "adal",
+      "agent-skills",
+      "antigravity",
+      "claude",
+      "claude-code",
+      "claude-skills",
+      "copilot",
+      "copilot-skills",
+      "hermes",
+      "hermes-agent",
+      "hermes-skill",
+      "kilocode",
+      "manus",
+      "mastra",
+      "openclaw",
+      "openclaw-skills",
+      "pi",
+      "pi-agent",
+      "planning"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-16T08:29:04Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/adal.md",
+    "docs/antigravity.md",
+    "docs/article-v2.md",
+    "docs/article.md",
+    "docs/boxlite.md",
+    "docs/codebuddy.md",
+    "docs/codex.md",
+    "docs/continue.md",
+    "docs/copilot.md",
+    "docs/cursor.md",
+    "docs/evals.md",
+    "docs/factory.md",
+    "docs/gemini.md",
+    "docs/hermes.md",
+    "docs/kilocode.md",
+    "docs/kiro.md",
+    "docs/mastra.md",
+    "docs/openclaw.md",
+    "docs/opencode.md",
+    "docs/pi-agent.md",
+    "docs/quickstart.md",
+    "docs/windows.md",
+    "docs/workflow.md",
+    ".codebuddy/skills/planning-with-files/SKILL.md",
+    ".codex/skills/planning-with-files/SKILL.md",
+    ".continue/skills/planning-with-files/SKILL.md",
+    ".cursor/skills/planning-with-files/SKILL.md",
+    ".factory/skills/planning-with-files/SKILL.md",
+    ".gemini/skills/planning-with-files/SKILL.md",
+    ".hermes/skills/planning-with-files/SKILL.md",
+    ".kiro/skills/planning-with-files/SKILL.md",
+    ".mastracode/skills/planning-with-files/SKILL.md",
+    ".opencode/skills/planning-with-files/SKILL.md",
+    ".pi/skills/planning-with-files/SKILL.md",
+    "skills/planning-with-files-ar/SKILL.md",
+    "skills/planning-with-files-de/SKILL.md",
+    "skills/planning-with-files-es/SKILL.md",
+    "skills/planning-with-files-zh/SKILL.md",
+    "skills/planning-with-files-zht/SKILL.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"media/banner.png\" alt=\"planning with files\" width=\"100%\" </div Planning with Files Work like Manus — the AI agent company Meta acquired for $2 billion . [![Benchmark](https://img.shields.io/badge/Benchmark 96.7%25 pass rate brightgreen)](docs/evals.md) [![A/B Verified](https://img.shields.io/badge/A%2FB Blind 3%2F3 wins brightgreen)](docs/evals.md) [![SkillCheck Validated](https://img.sh",
+  "skillExtracts": [
+    {
+      "path": ".codebuddy/skills/planning-with-files/SKILL.md",
+      "extract": "name: planning with files description: Implements Manus style file based planning to organize and track progress on complex tasks. Creates task plan.md, findings.md, and progress.md. Use when asked to plan out, break down, or organize a multi step project, research task, or any work requiring 5+ tool calls. Supports automatic session recovery after /clear. user invocable: true allowed tools: \"Read Write Edit Bash Glo"
+    },
+    {
+      "path": ".codex/skills/planning-with-files/SKILL.md",
+      "extract": "name: planning with files description: Implements Manus style file based planning to organize and track progress on complex tasks. Creates task plan.md, findings.md, and progress.md. Use when asked to plan out, break down, or organize a multi step project, research task, or any work requiring 5+ tool calls. Supports automatic session recovery after /clear. user invocable: true allowed tools: \"Read Write Edit Bash Glo"
+    },
+    {
+      "path": ".continue/skills/planning-with-files/SKILL.md",
+      "extract": "name: planning with files description: Implements Manus style file based planning to organize and track progress on complex tasks. Creates task plan.md, findings.md, and progress.md. Use when asked to plan out, break down, or organize a multi step project, research task, or any work requiring 5+ tool calls. Supports automatic session recovery after /clear. metadata: version: \"2.34.0\" Planning with Files Work like Man"
+    },
+    {
+      "path": ".cursor/skills/planning-with-files/SKILL.md",
+      "extract": "name: planning with files description: Implements Manus style file based planning to organize and track progress on complex tasks. Creates task plan.md, findings.md, and progress.md. Use when asked to plan out, break down, or organize a multi step project, research task, or any work requiring 5+ tool calls. Supports automatic session recovery after /clear. user invocable: true allowed tools: \"Read Write Edit Bash Glo"
+    },
+    {
+      "path": ".factory/skills/planning-with-files/SKILL.md",
+      "extract": "name: planning with files description: Implements Manus style file based planning to organize and track progress on complex tasks. Creates task plan.md, findings.md, and progress.md. Use when asked to plan out, break down, or organize a multi step project, research task, or any work requiring 5+ tool calls. Supports automatic session recovery after /clear. user invocable: true allowed tools: \"Read Write Edit Bash Glo"
+    },
+    {
+      "path": ".gemini/skills/planning-with-files/SKILL.md",
+      "extract": "name: planning with files description: Implements Manus style file based planning to organize and track progress on complex tasks. Creates task plan.md, findings.md, and progress.md. Use when asked to plan out, break down, or organize a multi step project, research task, or any work requiring 5+ tool calls. Supports automatic session recovery after /clear. metadata: version: \"2.34.0\" hooks: \"Configured in .gemini/set"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Work like Manus — the AI agent company Meta acquired for $2 billion.",
+    "To everyone who starred, forked, and shared this skill — thank you.",
+    "If this skill helps you work smarter, that's all I wanted.",
+    "devis @st01cs Interview-first workflow, /devis:intv and /devis:impl commands, guaranteed activation",
+    "plan-cascade @Taoidle Multi-level task orchestration, parallel execution, multi-agent collaboration",
+    "agentfund-skill @RioTheGreat-ai Crowdfunding for AI agents with milestone-based escrow on Base",
+    "openclaw-github-repo-commander @wd041216-bit 7-stage GitHub repo audit, optimization, and cleanup workflow for OpenClaw",
+    "lincolnwan/Planning-with-files-copilot-agent Entire Copilot agent repo built around the planning-with-files skill"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Claude Code skill implementing Manus-style persistent markdown planning — the workflow pattern behind the $2B acquisition.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "media",
+      "coding",
+      "automation",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "media",
+    "coding",
+    "automation",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Planning With Files is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:othmanadi/planning-with-files",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "planning-with-files",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

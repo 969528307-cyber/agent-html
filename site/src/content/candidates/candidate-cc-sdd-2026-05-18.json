@@ -1,0 +1,206 @@
+{
+  "id": "candidate-cc-sdd-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Cc Sdd",
+  "sourceUrl": "https://github.com/gotalab/cc-sdd",
+  "sourceName": "GitHub",
+  "author": "gotalab",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Turn approved specs into long-running autonomous implementation. A minimal, adaptable SDD harness with Agent Skills for Claude Code, Codex, Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "gotalab",
+    "repo": "cc-sdd",
+    "fullName": "gotalab/cc-sdd",
+    "stars": 3363,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "codex",
+      "cursor",
+      "gemini-cli",
+      "github-copilot",
+      "kiro",
+      "opencode",
+      "sdd",
+      "spec-driven-development",
+      "steering",
+      "subagents"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T16:03:51Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/guides/claude-subagents.md",
+    "docs/guides/command-reference.md",
+    "docs/guides/customization-guide.md",
+    "docs/guides/ja/claude-subagents.md",
+    "docs/guides/ja/command-reference.md",
+    "docs/guides/ja/customization-guide.md",
+    "docs/guides/ja/migration-guide.md",
+    "docs/guides/ja/skill-reference.md",
+    "docs/guides/ja/spec-driven.md",
+    "docs/guides/ja/why-cc-sdd.md",
+    "docs/guides/migration-guide.md",
+    "docs/guides/skill-reference.md",
+    "docs/guides/spec-driven.md",
+    "docs/guides/why-cc-sdd.md",
+    "docs/README.md",
+    "docs/README/README_en.md",
+    "docs/README/README_ja.md",
+    "docs/README/README_zh-TW.md",
+    "docs/RELEASE_NOTES/RELEASE_NOTES_en.md",
+    "docs/RELEASE_NOTES/RELEASE_NOTES_ja.md",
+    ".agents/skills/cc-sdd-new-agent/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-debug/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-discovery/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-impl/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-review/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-spec-batch/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-spec-design/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-spec-init/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-spec-quick/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-spec-requirements/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-spec-status/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-spec-tasks/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-steering-custom/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-steering/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-validate-design/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-validate-gap/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-validate-impl/SKILL.md",
+    "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-verify-completion/SKILL.md",
+    "tools/cc-sdd/templates/agents/claude-code-skills/skills/kiro-debug/SKILL.md"
+  ],
+  "readmeExtract": "cc sdd: Long running spec driven implementation for AI coding agents <! npm badges [![npm version](https://img.shields.io/npm/v/cc sdd?logo=npm)](https://www.npmjs.com/package/cc sdd?activeTab=readme) [![install size](https://packagephobia.com/badge?p=cc sdd)](https://packagephobia.com/result?p=cc sdd) [![license: MIT](https://img.shields.io/badge/license MIT green.svg)](./LICENSE) <div align=\"center\" style=\"font siz",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/cc-sdd-new-agent/SKILL.md",
+      "extract": "name: cc sdd new agent description: Add or extend coding agent support in cc sdd by executing the SOP in docs/cc sdd/sop new agent.md end to end. Use when introducing a new agent, adding a subagent capable variant, or evaluating migration of an existing supported agent to skills based templates. CC SDD New Agent Integration Goal Add a production ready agent integration to tools/cc sdd with complete research, implemen"
+    },
+    {
+      "path": "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-debug/SKILL.md",
+      "extract": "name: kiro debug description: Investigate implementation failures using root cause first debugging. Use when an implementer is blocked, verification fails, or repeated remediation does not converge. kiro debug <background information This skill is for fresh context root cause investigation. It combines local evidence, runtime/config inspection, and external documentation or issue research when available. It is not a "
+    },
+    {
+      "path": "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-discovery/SKILL.md",
+      "extract": "name: kiro discovery description: Entry point for new work. Determines the best action path or work decomposition (update existing spec, create new spec, mixed decomposition, or no spec needed) and refines ideas through structured dialogue. Discovery <background information Success Criteria : Correct action path or work decomposition identified based on existing project state User's intent clarified through questions"
+    },
+    {
+      "path": "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-impl/SKILL.md",
+      "extract": "name: kiro impl description: Implement approved tasks using TDD with subagent dispatch. Runs all pending tasks autonomously or selected tasks manually. kiro impl Skill <background information You operate in two modes: Autonomous mode (no task numbers): Dispatch a fresh sub agent per task, with independent review after each Manual mode (task numbers provided): Execute selected tasks directly in the main context Succes"
+    },
+    {
+      "path": "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-review/SKILL.md",
+      "extract": "name: kiro review description: Review a task implementation against approved specs, task boundaries, and verification evidence. Use after an implementer finishes a task, after remediation, or before accepting a task as complete. kiro review <background information This skill performs task local adversarial review. It verifies that the implementation is real, complete, bounded, aligned with approved requirements and d"
+    },
+    {
+      "path": "tools/cc-sdd/templates/agents/antigravity-skills/skills/kiro-spec-batch/SKILL.md",
+      "extract": "name: kiro spec batch description: Create complete specs (requirements, design, tasks) for all features in roadmap.md using parallel sub agent dispatch by dependency wave. Spec Batch <background information Success Criteria : All features have complete spec files (spec.json, requirements.md, design.md, tasks.md) Dependency ordering respected (upstream specs complete before downstream) Independent features processed i"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "cc-sdd: Long-running spec-driven implementation for AI coding agents",
+    "Works across 8 AI coding agents, with the same 17-skill set on each.",
+    "👻 Kiro-inspired. Similar spec-driven, agentic SDLC style as Kiro IDE.",
+    "cc-sdd v3.0 is a rework around Agent Skills and long-running autonomous implementation.",
+    "Review and validation look for boundary violations, not just style issues.",
+    "/kiro-spec-batch for multi-spec initiatives. Turn a roadmap into multiple specs in parallel, with cross-spec review to catch contradictions, duplicated responsibilities, and interface mismatches.",
+    "Claude Code and Codex are stable; Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity are in beta.",
+    "No external dependencies; subagents are spawned through each platform's native primitive."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Turn approved specs into long-running autonomous implementation. A minimal, adaptable SDD harness with Agent Skills for Claude Code, Codex, Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Cc Sdd is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "cc-sdd: Long-running spec-driven implementation for AI coding agents",
+      "Works across 8 AI coding agents, with the same 17-skill set on each."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cc-sdd",
+  "publishedAt": "2026-05-18"
+}

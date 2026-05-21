@@ -1,0 +1,77 @@
+{
+  "id": "gearboy",
+  "name": "Gearboy",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Game Boy / Game Boy Color / Super Game Boy emulator, debugger and embedded MCP server for macOS, Windows, Linux, BSD and RetroArch.",
+  "description": "Game Boy / Game Boy Color / Super Game Boy emulator, debugger and embedded MCP server for macOS, Windows, Linux, BSD and RetroArch.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/drhelius/Gearboy",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/drhelius/Gearboy",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/drhelius/Gearboy#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/drhelius/Gearboy#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/drhelius/Gearboy/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Gearboy is an accurate, cross-platform Game Boy / Game Boy Color / Super Game Boy emulator written in C++ that runs on Windows, macOS, Linux, BSD and RetroArch, with an embedded MCP server for debugging and tooling.",
+    "Save states with preview and rewind support.",
+    "MCP server for AI-assisted debugging with GitHub Copilot, Claude, Codex and similar, exposing tools for execution control, memory inspection, hardware status, rewind and more.",
+    "Gearboy includes a Model Context Protocol (MCP) server that enables AI-assisted debugging through AI agents like GitHub Copilot, Claude, Codex and similar.",
+    "The server provides tools for execution control, memory inspection, breakpoints, disassembly, hardware status, and more.",
+    "Gearboy provides Agent Skills that teach AI assistants how to effectively use the emulator for specific tasks:",
+    "gearboy-debugging — Game debugging, code tracing, breakpoint management, hardware inspection, and reverse engineering.",
+    "gearboy-romhacking — Cheat creation, memory searching, ROM data modification, text translation, and game patching."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T21:56:21Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/drhelius/Gearboy",
+  "repoUrl": "https://github.com/drhelius/Gearboy",
+  "license": "GPL-3.0",
+  "stars": 1131,
+  "lastUpdated": "2026-05-17T21:56:21Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

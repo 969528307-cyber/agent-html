@@ -1,0 +1,81 @@
+{
+  "id": "orca",
+  "name": "Orca",
+  "type": "cli",
+  "status": "published",
+  "summary": "Orca is the next-gen IDE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+  "description": "Orca is the next-gen IDE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "Kimi",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/stablyai/orca",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/stablyai/orca",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/stablyai/orca#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/stablyai/orca#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/stablyai/orca/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Run Claude Code, Codex, Grok, Antigravity, or OpenCode side-by-side across repos — each in its own worktree, tracked in one place..",
+    "Orca supports any CLI agent (not just this list).",
+    "No login required — Bring your own Claude Code, Codex, Grok, or Antigravity subscription.",
+    "Spin up and switch instantly.",
+    "Multi-agent terminals — Run multiple AI agents side-by-side in tabs and panes.",
+    "Built-in source control — Review AI-generated diffs, make quick edits, and commit without leaving Orca.",
+    "SSH support — Connect to remote machines and run agents on them directly from Orca.",
+    "Notifications — Know when an agent finishes or needs attention."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:49:48Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/stablyai/orca",
+  "repoUrl": "https://github.com/stablyai/orca",
+  "license": "MIT",
+  "stars": 2847,
+  "lastUpdated": "2026-05-20T03:49:48Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

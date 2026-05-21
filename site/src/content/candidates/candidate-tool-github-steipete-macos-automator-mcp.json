@@ -1,0 +1,182 @@
+{
+  "id": "candidate-tool-github-steipete-macos-automator-mcp",
+  "type": "tool",
+  "status": "published",
+  "title": "Macos Automator Mcp",
+  "sourceUrl": "https://github.com/steipete/macos-automator-mcp",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "steipete",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "An MCP server to run AppleScript and JXA (JavaScript for Automation) to macOS.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "steipete",
+    "repo": "macos-automator-mcp",
+    "fullName": "steipete/macos-automator-mcp",
+    "stars": 799,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T03:47:01Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/applescript_beep.md",
+    "docs/applescript_calendar_operations.md",
+    "docs/applescript_choose_from_list.md",
+    "docs/applescript_clipboard.md",
+    "docs/applescript_display_dialog.md",
+    "docs/applescript_finder_operations.md",
+    "docs/applescript_kill_process_on_port.md",
+    "docs/applescript_macos_version.md",
+    "docs/applescript_network_operations.md",
+    "docs/applescript_safari_url_operations.md",
+    "docs/applescript_system_appearance.md",
+    "docs/applescript_terminal_commands.md",
+    "docs/automation-permissions-example.png",
+    "docs/debugging_applescript.md",
+    "docs/E2E_TESTING_STRATEGIES.md",
+    "docs/kb_validation.md",
+    "docs/spec.md",
+    "package.json",
+    ".cursor/rules/agent.mdc",
+    ".cursor/rules/mcp-inspector.mdc",
+    ".cursor/rules/safari.mdc",
+    ".cursor/safari.mdc",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "macOS Automator MCP 🤖 Your Friendly Neighborhood RoboScripter™ ![macOS Automator MCP Server](assets/logo.png) 🎯 Mission Control: Teaching Robots to Click Buttons Since 2024 Welcome to the automated future where your Mac finally does what you tell it to! This Model Context Protocol (MCP) server transforms your AI assistant into a silicon based intern who actually knows AppleScript and JavaScript for Automation (JXA)",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "macOS Automator MCP 🤖 - Your Friendly Neighborhood RoboScripter™",
+    "Welcome to the automated future where your Mac finally does what you tell it to!",
+    "This Model Context Protocol (MCP) server transforms your AI assistant into a silicon-based intern who actually knows AppleScript and JavaScript for Automation (JXA).",
+    "Our knowledge base contains over 200 pre-programmed automation sequences, loaded faster than you can say \"Hey Siri, why don't you work like this?\"",
+    "Remote Control Reality: Execute AppleScript/JXA scripts via MCP - it's like having a tiny robot inside your Mac!",
+    "Knowledge Base of Power: 200+ pre-built automation recipes.",
+    "AI Workflow Integration: Connect your Mac to the AI revolution.",
+    "⚠️ CRITICAL: Permission to Automate (Your Mac's Trust Issues):"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "An MCP server to run AppleScript and JXA (JavaScript for Automation) to macOS.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 2,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Agent instruction or rule files detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: mcp, workflow, skill.",
+    "LLM: mcp + [mcp] — This project is explicitly an MCP server that exposes macOS automation capabilities (AppleScript/JXA) to AI agents via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "workflow",
+    "skill"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Macos Automator Mcp is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Relevant to automation.",
+      "macOS Automator MCP 🤖 - Your Friendly Neighborhood RoboScripter™",
+      "Welcome to the automated future where your Mac finally does what you tell it to!",
+      "This Model Context Protocol (MCP) server transforms your AI assistant into a silicon-based intern who actually knows AppleScript and JavaScript for Automation (JXA)."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:steipete/macos-automator-mcp",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "macos-automator-mcp",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "mcp-scanner",
+  "name": "Mcp Scanner",
+  "type": "cli",
+  "status": "published",
+  "summary": "Scan MCP servers for potential threats & security findings.",
+  "description": "Scan MCP servers for potential threats & security findings.",
+  "category": [
+    "security"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/cisco-ai-defense/mcp-scanner",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/cisco-ai-defense/mcp-scanner",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/cisco-ai-defense/mcp-scanner#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/cisco-ai-defense/mcp-scanner#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/cisco-ai-defense/mcp-scanner/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A Python tool for scanning MCP (Model Context Protocol) servers and tools for potential security findings.",
+    "The MCP Scanner combines Cisco AI Defense inspect API, YARA rules and LLM-as-a-judge to detect malicious MCP tools.",
+    "The MCP Scanner provides a comprehensive solution for scanning MCP servers and tools for security findings.",
+    "Multiple Modes: Run scanner as a stand-alone CLI tool or REST API server",
+    "Comprehensive Scanning: Scan MCP tools, prompts, resources, and server instructions for security findings",
+    "Behavioural Code Scanning: Scan Source code of MCP servers for finding threats.",
+    "VirusTotal Binary Scanning: Automatically detect malware in binary files (images, PDFs, executables, archives) bundled with MCP servers using VirusTotal hash lookups.",
+    "Behavioural Code Scanning: Scan Source code of MCP servers for detecting threats."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T21:02:43Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/cisco-ai-defense/mcp-scanner",
+  "repoUrl": "https://github.com/cisco-ai-defense/mcp-scanner",
+  "license": "Apache-2.0",
+  "stars": 924,
+  "lastUpdated": "2026-05-13T21:02:43Z",
+  "lastChecked": "2026-05-16",
+  "publishedAt": "2026-05-16",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

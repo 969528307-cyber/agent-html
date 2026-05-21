@@ -1,0 +1,176 @@
+{
+  "id": "candidate-mcp-for-beginners-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Mcp For Beginners",
+  "sourceUrl": "https://github.com/microsoft/mcp-for-beginners",
+  "sourceName": "GitHub",
+  "author": "microsoft",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "microsoft",
+    "repo": "mcp-for-beginners",
+    "fullName": "microsoft/mcp-for-beginners",
+    "stars": 16147,
+    "license": "MIT",
+    "topics": [
+      "csharp",
+      "java",
+      "javascript",
+      "javascript-applications",
+      "mcp",
+      "mcp-client",
+      "mcp-security",
+      "mcp-server",
+      "model",
+      "model-context-protocol",
+      "modelcontextprotocol",
+      "python",
+      "rust",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T20:20:57Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "AGENTS.md",
+    "translations/ar/AGENTS.md",
+    "translations/bg/AGENTS.md",
+    "translations/bn/AGENTS.md",
+    "translations/cs/AGENTS.md",
+    "translations/da/AGENTS.md",
+    "translations/de/AGENTS.md",
+    "translations/el/AGENTS.md",
+    "translations/en/AGENTS.md",
+    "translations/es/AGENTS.md",
+    "translations/et/AGENTS.md",
+    "translations/fa/AGENTS.md",
+    "translations/fi/AGENTS.md",
+    "translations/fr/AGENTS.md",
+    "translations/he/AGENTS.md",
+    "translations/hi/AGENTS.md",
+    "translations/hr/AGENTS.md",
+    "translations/hu/AGENTS.md",
+    "translations/id/AGENTS.md",
+    "translations/it/AGENTS.md",
+    "translations/ja/AGENTS.md",
+    "translations/km/AGENTS.md",
+    "translations/kn/AGENTS.md",
+    "translations/ko/AGENTS.md",
+    "translations/lt/AGENTS.md",
+    "translations/ml/AGENTS.md",
+    "translations/mr/AGENTS.md",
+    "translations/ms/AGENTS.md",
+    "translations/my/AGENTS.md",
+    "translations/ne/AGENTS.md",
+    "translations/nl/AGENTS.md",
+    "translations/no/AGENTS.md",
+    "translations/pa/AGENTS.md",
+    "translations/pcm/AGENTS.md",
+    "translations/pl/AGENTS.md",
+    "translations/pt-BR/AGENTS.md",
+    "translations/pt-PT/AGENTS.md",
+    "translations/ro/AGENTS.md",
+    "translations/ru/AGENTS.md"
+  ],
+  "readmeExtract": "![MCP for beginners](./images/mcp beginners.png) [![GitHub contributors](https://img.shields.io/github/contributors/microsoft/mcp for beginners.svg)](https://GitHub.com/microsoft/mcp for beginners/graphs/contributors) [![GitHub issues](https://img.shields.io/github/issues/microsoft/mcp for beginners.svg)](https://GitHub.com/microsoft/mcp for beginners/issues) [![GitHub pull requests](https://img.shields.io/github/iss",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Supported via GitHub Action (Automated & Always Up-to-Date)",
+    "🚀 Model Context Protocol (MCP) Curriculum for Beginners",
+    "Learn MCP with Hands-on Code Examples in C#, Java, JavaScript, Rust, Python, and TypeScript",
+    "🧠 Overview of the Model Context Protocol Curriculum",
+    "Welcome to your journey into the Model Context Protocol!",
+    "If you've ever wondered how AI applications communicate with different tools and services, you're about to discover the elegant solution that's transforming how developers build intelligent systems.",
+    "Think of MCP as a universal translator for AI applications - just like how USB ports let you connect any device to your computer, MCP lets AI models connect to any tool or service in a standardized way.",
+    "Whether you're building your first chatbot or working on complex AI workflows, understanding MCP will give you the power to create more capable and flexible applications."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "tutorial",
+    "useCategory": [
+      "security",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "tutorial",
+  "useCategory": [
+    "security",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "mcp",
+    "whatIsIt": "Mcp For Beginners is an MCP-related tutorial tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "Supported via GitHub Action (Automated & Always Up-to-Date)",
+      "🚀 Model Context Protocol (MCP) Curriculum for Beginners"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

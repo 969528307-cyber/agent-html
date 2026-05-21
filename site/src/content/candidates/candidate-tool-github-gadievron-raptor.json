@@ -1,0 +1,216 @@
+{
+  "id": "candidate-tool-github-gadievron-raptor",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Raptor",
+  "sourceUrl": "https://github.com/gadievron/raptor",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "gadievron",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Raptor turns Claude Code into a general-purpose AI offensive/defensive security agent. By using Claude.md and creating rules, sub-agents, and skills, and orchestrating security tool usage, we configure the agent for adversarial thinking, and perform research or attack/defense operations.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "gadievron",
+    "repo": "raptor",
+    "fullName": "gadievron/raptor",
+    "stars": 2552,
+    "license": "NOASSERTION",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T17:26:38Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/ARCHITECTURE.md",
+    "docs/CLAUDE_CODE_QUICKSTART.md",
+    "docs/CLAUDE_CODE_USAGE.md",
+    "docs/crash-analysis.md",
+    "docs/DATAFLOW_VALIDATION_SUMMARY.md",
+    "docs/DEPENDENCIES.md",
+    "docs/design-inventory-metadata.md",
+    "docs/exploit-feasibility.md",
+    "docs/exploitability-validation-integration.md",
+    "docs/EXTENDING_LAUNCHER.md",
+    "docs/FUZZING_QUICKSTART.md",
+    "docs/PYTHON_CLI.md",
+    "docs/README.md",
+    "docs/sandbox.md",
+    "docs/security/agent-capability-matrix.md",
+    "docs/security/prompt-injection-audit.md",
+    "docs/security/prompt-injection-research.md",
+    "docs/VISUAL_DESIGN.md",
+    ".claude/skills/code-understanding/SKILL.md",
+    ".claude/skills/crash-analysis/function-tracing/SKILL.md",
+    ".claude/skills/crash-analysis/gcov-coverage/SKILL.md",
+    ".claude/skills/crash-analysis/line-execution-checker/SKILL.md",
+    ".claude/skills/crash-analysis/rr-debugger/SKILL.md",
+    ".claude/skills/exploitability-validation/SKILL.md",
+    ".claude/skills/oss-forensics/github-archive/SKILL.md",
+    ".claude/skills/oss-forensics/github-commit-recovery/SKILL.md",
+    ".claude/skills/oss-forensics/github-evidence-kit/SKILL.md",
+    ".claude/skills/oss-forensics/github-wayback-recovery/SKILL.md",
+    ".claude/skills/oss-forensics/orchestration/SKILL.md",
+    "CLAUDE.md",
+    "core/sage/CLAUDE.md"
+  ],
+  "readmeExtract": "<a href=\"https://smithery.ai/skills?ns=gadievron&utm source=github&utm medium=badge\" <img src=\"https://smithery.ai/badge/skills/gadievron\" </a <a href=\"https://github.com/gadievron/raptor/actions/workflows/github code scanning/codeql\" <img src=\"https://github.com/gadievron/raptor/actions/workflows/github code scanning/codeql/badge.svg\" </a Authors: Gadi Evron, Daniel Cuthbert, Thomas Dullien (Halvar Flake), Michael B",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/code-understanding/SKILL.md",
+      "extract": "name: code understanding description: Provides adversarial code comprehension for security research, mapping architecture, tracing data flows, and hunting vulnerability variants to build ground truth understanding before or alongside static analysis. user invocable: false Code Understanding Skill You are a deep thinker. This gives you adversarial code comprehension for that allows you to be an even more epic security"
+    },
+    {
+      "path": ".claude/skills/crash-analysis/function-tracing/SKILL.md",
+      "extract": "name: Function Call Tracing description: Instrument C/C++ with finstrument functions for execution tracing and Perfetto visualisation user invocable: false version: 1.0 author: Claude tags: tracing profiling instrumentation perfetto Function Call Tracing Purpose Trace all function calls in C/C++ programs with per thread logs and Perfetto visualization. Components 1. Instrumentation Library (trace instrument.c) Captur"
+    },
+    {
+      "path": ".claude/skills/crash-analysis/gcov-coverage/SKILL.md",
+      "extract": "name: Code Coverage with gcov description: Add gcov code coverage instrumentation to C/C++ projects user invocable: false version: 1.0 author: Claude tags: coverage gcov testing Code Coverage with gcov Purpose Instrument C/C++ programs with gcov to measure test coverage. How It Works Build with Coverage Run Program Generate Reports Text report: HTML report: Coverage Flags coverage (shorthand for fprofile arcs ftest c"
+    },
+    {
+      "path": ".claude/skills/crash-analysis/line-execution-checker/SKILL.md",
+      "extract": "name: Line Execution Checker description: Check if specific lines were executed using gcov data user invocable: false version: 1.0 author: Claude tags: coverage gcov testing Line Execution Checker Purpose Fast tool to check if specific source lines were executed during test runs. Tool: line checker Build Usage Output Exit Codes 0: All lines executed 1: One or more lines NOT executed 2: Error Prerequisites Coverage da"
+    },
+    {
+      "path": ".claude/skills/crash-analysis/rr-debugger/SKILL.md",
+      "extract": "name: rr debugger description: Deterministic debugging with rr record replay. Use when debugging crashes, ASAN faults, or when reverse execution is needed. Provides reverse next, reverse step, reverse continue commands and crash trace extraction. user invocable: false rr Deterministic Debugger rr provides deterministic record replay debugging with full reverse execution capabilities. Core Workflow 1. Record : rr reco"
+    },
+    {
+      "path": ".claude/skills/exploitability-validation/SKILL.md",
+      "extract": "name: exploitability validation description: Multi stage pipeline for validating that vulnerability findings are real, reachable, and exploitable, preventing wasted effort on hallucinated findings, dead code paths, or findings with unrealistic preconditions. user invocable: false Exploitability Validation Skill A multi stage pipeline for validating that vulnerability findings are real, reachable, and exploitable. Pur"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "RAPTOR is an autonomous security research framework built on top of Claude Code (but not tied to it -- you can plug in your own analysis layer too).",
+    "It chains together static analysis, binary analysis, LLM-powered vulnerability validation, exploit generation, and patch writing into a single workflow you can run against a codebase or binary.",
+    "It starts from the Microsoft Python 3.12 devcontainer and adds static analysis, fuzzing, and browser automation tooling.",
+    "/agentic Full autonomous workflow: scan, validate, exploit, patch Stable",
+    "/agentic then runs Semgrep and CodeQL, deduplicates findings, and dispatches each one for validation using the exploitation-validator methodology:",
+    "Stage A: is the pattern actually a vulnerability, or is the tool pattern-matching noise?",
+    "The orchestration layer is always Claude Code.",
+    "The CLAUDE.md, skills, and commands all run as Claude Code instructions."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Raptor turns Claude Code into a general-purpose AI offensive/defensive security agent. By using Claude.md and creating rules, sub-agents, and skills, and orchestrating security tool usage, we configure the agent for adversarial thinking, and perform research or attack/defense operations.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "security",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "security",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 12,
+    "cli": 3,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Agent instruction or rule files detected.",
+    "Workflow/automation/orchestration language detected.",
+    "SDK or library language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: workflow, sdk.",
+    "LLM: skill + [skill, cli, workflow] — The repository provides CLAUDE.md, rules, and skills to configure Claude Code as a security agent, making its primary content agent skill files."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "sdk"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Raptor is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with security workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to automation."
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  },
+  "canonicalKey": "tool:github:gadievron/raptor",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ]
+}

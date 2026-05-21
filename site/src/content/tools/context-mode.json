@@ -1,0 +1,79 @@
+{
+  "id": "context-mode",
+  "name": "Context Mode",
+  "type": "skill",
+  "status": "published",
+  "summary": "Context window optimization for AI coding agents. Sandboxes tool output, 98% reduction. 15 platforms",
+  "description": "Context window optimization for AI coding agents. Sandboxes tool output, 98% reduction. 15 platforms",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mksglu/context-mode",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mksglu/context-mode",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mksglu/context-mode#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mksglu/context-mode#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mksglu/context-mode/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Every MCP tool call dumps raw data into your context window.",
+    "And when the agent compacts the conversation to free space, it forgets which files it was editing, what tasks are in progress, and what you last asked for.",
+    "On top of that, the agent wastes output tokens on filler, pleasantries, and verbose explanations — burning context from both sides.",
+    "Context Mode is an MCP server that solves all four sides of this problem:",
+    "Context Saving — Sandbox tools keep raw data out of the context window.",
+    "When the conversation compacts, context-mode doesn't dump this data back into context — it indexes events into FTS5 and retrieves only what's relevant via BM25 search.",
+    "Instead of reading 50 files into context to count functions, the agent writes a script that does the counting and console.log()s only the result.",
+    "One script replaces ten tool calls and saves 100x context."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T09:42:24Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mksglu/context-mode",
+  "repoUrl": "https://github.com/mksglu/context-mode",
+  "license": "NOASSERTION",
+  "stars": 15043,
+  "lastUpdated": "2026-05-18T09:42:24Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

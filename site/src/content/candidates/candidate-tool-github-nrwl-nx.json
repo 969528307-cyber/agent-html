@@ -1,0 +1,211 @@
+{
+  "id": "candidate-tool-github-nrwl-nx",
+  "type": "tool",
+  "status": "published",
+  "title": "Nx",
+  "sourceUrl": "https://github.com/nrwl/nx",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "nrwl",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "The Monorepo Platform that amplifies both developers and AI agents. Nx optimizes your builds, scales your CI, and fixes failed PRs automatically. Ship in half the time.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Cursor"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "nrwl",
+    "repo": "nx",
+    "fullName": "nrwl/nx",
+    "stars": 28725,
+    "license": "MIT",
+    "topics": [
+      "angular",
+      "build",
+      "build-system",
+      "build-tool",
+      "building-tool",
+      "cli",
+      "cypress",
+      "hacktoberfest",
+      "javascript",
+      "monorepo",
+      "nextjs",
+      "nodejs",
+      "nx",
+      "nx-workspaces",
+      "react",
+      "storybook",
+      "typescript"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-18T12:08:35Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "examples/angular-rspack/appshell-css/tsconfig.app.json",
+    "examples/angular-rspack/appshell-css/tsconfig.editor.json",
+    "examples/angular-rspack/appshell-css/tsconfig.json",
+    "examples/angular-rspack/csr-css-assets/tsconfig.app.json",
+    "examples/angular-rspack/csr-css-assets/tsconfig.editor.json",
+    "examples/angular-rspack/csr-css-assets/tsconfig.json",
+    "examples/angular-rspack/csr-css/tsconfig.app.json",
+    "examples/angular-rspack/csr-css/tsconfig.editor.json",
+    "examples/angular-rspack/csr-css/tsconfig.json",
+    "examples/angular-rspack/csr-i18n/tsconfig.app.json",
+    "examples/angular-rspack/csr-i18n/tsconfig.editor.json",
+    "examples/angular-rspack/csr-i18n/tsconfig.json",
+    "examples/angular-rspack/csr-scss/tsconfig.app.json",
+    "examples/angular-rspack/csr-scss/tsconfig.editor.json",
+    "examples/angular-rspack/csr-scss/tsconfig.json",
+    "examples/angular-rspack/csr-tailwind/tsconfig.app.json",
+    "examples/angular-rspack/csr-tailwind/tsconfig.editor.json",
+    "examples/angular-rspack/csr-tailwind/tsconfig.json",
+    "examples/angular-rspack/module-federation/host/tsconfig.app.json",
+    "examples/angular-rspack/module-federation/host/tsconfig.editor.json",
+    "examples/angular-rspack/module-federation/host/tsconfig.json",
+    "examples/angular-rspack/module-federation/remote/tsconfig.app.json",
+    "examples/angular-rspack/module-federation/remote/tsconfig.editor.json",
+    "examples/angular-rspack/module-federation/remote/tsconfig.json",
+    "examples/angular-rspack/ssg-css/tsconfig.app.json",
+    "examples/angular-rspack/ssg-css/tsconfig.editor.json",
+    "examples/angular-rspack/ssg-css/tsconfig.json",
+    "examples/angular-rspack/ssr-css/tsconfig.app.json",
+    "examples/angular-rspack/ssr-css/tsconfig.editor.json",
+    "examples/angular-rspack/ssr-css/tsconfig.json",
+    "examples/angular-rspack/tsconfig.base.json",
+    "examples/angular-rspack/zoneless-csr-css/tsconfig.app.json",
+    "examples/angular-rspack/zoneless-csr-css/tsconfig.editor.json",
+    "examples/angular-rspack/zoneless-csr-css/tsconfig.json",
+    "examples/angular-rspack/zoneless-csr-i18n/tsconfig.app.json",
+    "examples/angular-rspack/zoneless-csr-i18n/tsconfig.editor.json",
+    "examples/angular-rspack/zoneless-csr-i18n/tsconfig.json",
+    "examples/angular-rspack/zoneless-ssg-css/tsconfig.app.json"
+  ],
+  "readmeExtract": "<div align=\"center\" <p <picture <source media=\"(prefers color scheme: dark)\" srcset=\"images/nx logo light.svg\" <img src=\"images/nx logo.svg\" alt=\"Nx Logo\" width=\"140\" </picture </p <h1 align=\"center\" Smart Monorepos · Fast Builds</h1 <p <a href=\"https://www.npmjs.com/package/nx\" <img src=\"https://img.shields.io/npm/v/nx.svg?style=for the badge\" alt=\"NPM Version\" </a <a href=\"https://github.com/nrwl/nx\" <img src=\"http",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Docs &bull; Changelog &bull; Blog &bull; Courses &bull; YouTube",
+    "AI-native tooling - The Nx CLI is optimized for autonomous AI agents so they get the context they need and can operate just like a human.",
+    "Polyglot plugin system - Optional plugins auto-discover tasks, configure cache inputs/outputs, and scaffold code based on your actual tooling.",
+    "Integrated CI solution - Connect Nx to your CI provider (GitHub Actions, GitLab, Azure, etc.) to enable remote caching, task distribution across machines, affected-only runs, and automatic e2e test splitting.",
+    "Self-healing CI - An AI agent on your CI pipeline that detects failures, analyzes root cause, proposes a fix, and verifies it automatically.",
+    "Local agents connect to CI via MCP to autonomously detect and fix failures.",
+    "ZackDeRose AgentEnder nartc nixallover",
+    "\"analyze-docs\": \"node tools/scripts/analyze-docs.mjs\","
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"cli\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The Monorepo Platform that amplifies both developers and AI agents. Nx optimizes your builds, scales your CI, and fixes failed PRs automatically. Ship in half the time.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Nx is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Relevant to cli.",
+      "Docs &bull; Changelog &bull; Blog &bull; Courses &bull; YouTube",
+      "AI-native tooling - The Nx CLI is optimized for autonomous AI agents so they get the context they need and can operate just like a human.",
+      "Polyglot plugin system - Optional plugins auto-discover tasks, configure cache inputs/outputs, and scaffold code based on your actual tooling."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:nrwl/nx",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nx",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

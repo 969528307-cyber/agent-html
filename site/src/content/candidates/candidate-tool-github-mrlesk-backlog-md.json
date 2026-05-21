@@ -1,0 +1,183 @@
+{
+  "id": "candidate-tool-github-mrlesk-backlog-md",
+  "type": "tool",
+  "status": "published",
+  "title": "Backlog.md",
+  "sourceUrl": "https://github.com/MrLesk/Backlog.md",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "MrLesk",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Backlog.md - A tool for managing project collaboration between humans and AI Agents in a git ecosystem",
+  "proposedCategory": [
+    "productivity"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "MrLesk",
+    "repo": "Backlog.md",
+    "fullName": "MrLesk/Backlog.md",
+    "stars": 5578,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "management",
+      "markdown",
+      "project",
+      "task-manager",
+      "tasks"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-07T21:29:07Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    ".codex/skills/backlog-technical-project-manager/SKILL.md",
+    ".codex/skills/context-hunter/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" Backlog.md</h1 <p align=\"center\" Markdown‑native Task Manager &amp; Kanban visualizer for any Git repository</p <p align=\"center\" <code npm i g backlog.md</code or <code bun add g backlog.md</code or <code brew install backlog md</code or <code nix run github:MrLesk/Backlog.md</code </p ![Backlog demo GIF using: backlog board](./.github/backlog v1.40.gif) Backlog.md turns any folder with a Git repo",
+  "skillExtracts": [
+    {
+      "path": ".codex/skills/backlog-technical-project-manager/SKILL.md",
+      "extract": "name: backlog technical project manager description: Technical project management for Backlog.md workstreams using coordinated sub agents. Use only when the user explicitly asks Codex to take over one or more existing Backlog.md tasks (for example: \"act as TPM\", \"coordinate these tasks\", \"delegate to sub agents\"). Orchestrate planning, implementation, and finalization; manage dependencies and overlapping code areas; "
+    },
+    {
+      "path": ".codex/skills/context-hunter/SKILL.md",
+      "extract": "name: context hunter description: MUST run before any code implementation task. Classifies complexity, discovers local conventions, finds reusable patterns, and prevents blind coding. Invoke this skill before writing or modifying code. Context Hunter Before writing code, run a focused discovery loop. Do not load everything. Find the right files. Complexity Gate Classify task complexity first: L0 (trivial) : typos, re"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Markdown‑native Task Manager & Kanban visualizer for any Git repository",
+    "Built for spec‑driven AI development — structure your tasks so AI agents deliver predictable results.",
+    "📝 Markdown-native tasks -- manage every issue as a plain .md file",
+    "🤖 AI-Ready -- Works with Claude Code, Gemini CLI, Codex, Kiro & any other MCP or CLI compatible AI assistants",
+    "🌐 Modern web interface -- backlog browser launches a sleek web UI for visual task management",
+    "🔍 Powerful search -- fuzzy search across tasks, docs & decisions with backlog search",
+    "🔒 100 % private & offline -- backlog lives entirely inside your repo and you can manage everything locally",
+    "The init wizard will ask how you want to connect AI tools:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"productivity\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Backlog.md - A tool for managing project collaboration between humans and AI Agents in a git ecosystem",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "productivity",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "productivity",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 3,
+    "skill": 7,
+    "cli": 10,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent instruction file detected alongside CLI signals.",
+    "Agent app or product platform language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: cli, agent-app.",
+    "LLM: cli + [cli, mcp] — Backlog.md is primarily a command-line task manager that integrates with AI agents via CLI and MCP interfaces."
+  ],
+  "classificationAlternatives": [
+    "cli",
+    "agent-app"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Backlog.md is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with productivity workflows.",
+      "Helps with coding workflows.",
+      "Relevant to productivity.",
+      "Markdown‑native Task Manager & Kanban visualizer for any Git repository",
+      "Built for spec‑driven AI development — structure your tasks so AI agents deliver predictable results."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:mrlesk/backlog.md",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "backlog-md",
+  "publishedAt": "2026-05-18"
+}

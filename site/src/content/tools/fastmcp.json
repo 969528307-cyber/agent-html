@@ -1,0 +1,76 @@
+{
+  "id": "fastmcp",
+  "name": "Fastmcp",
+  "type": "mcp",
+  "status": "published",
+  "summary": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+  "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/PrefectHQ/fastmcp#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/PrefectHQ/fastmcp#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/PrefectHQ/fastmcp/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The Model Context Protocol (MCP) connects LLMs to tools and data.",
+    "FastMCP gives you everything you need to go from prototype to production:",
+    "Building an effective MCP application is harder than it looks.",
+    "Declare a tool with a Python function, and the schema, validation, and documentation are generated automatically.",
+    "Connect to a server with a URL, and transport negotiation, authentication, and protocol lifecycle are managed for you.",
+    "You focus on your logic, and the MCP part just works: with FastMCP, best practices are built in.",
+    "That's why FastMCP is the standard framework for working with MCP. FastMCP 1.0 was incorporated into the official MCP Python SDK in 2024.",
+    "Today, the actively maintained standalone project is downloaded a million times a day, and some version of FastMCP powers 70% of MCP servers across all languages."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T03:14:06Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/PrefectHQ/fastmcp",
+  "repoUrl": "https://github.com/PrefectHQ/fastmcp",
+  "license": "Apache-2.0",
+  "stars": 25224,
+  "lastUpdated": "2026-05-19T03:14:06Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

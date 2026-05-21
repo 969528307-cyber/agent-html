@@ -1,0 +1,78 @@
+{
+  "id": "claude-code-plugins-plus-skills",
+  "name": "Claude Code Plugins Plus Skills",
+  "type": "mcp",
+  "status": "published",
+  "summary": "425 plugins, 2,810 skills, 200 agents for Claude Code. Open-source marketplace at tonsofskills.com with the ccpi CLI package manager.",
+  "description": "425 plugins, 2,810 skills, 200 agents for Claude Code. Open-source marketplace at tonsofskills.com with the ccpi CLI package manager.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Tons of Skills — Claude Code Plugins Marketplace",
+    "Or use Claude's built-in command:",
+    "Killer Skill of the Week — automate by Kobiton Inc.",
+    "Kobiton's automate plugin gives Claude Code, Cursor, Codex, and Gemini CLI direct access to the Kobiton real-device cloud via remote MCP.",
+    "Previous picks: skyvern, code-cleanup, web-analytics, token-optimizer, executive-assistant-skills, skill-creator, cursor-pack, crypto-portfolio-tracker.",
+    "See all at tonsofskills.com.",
+    "Option 2: Claude Built-in Commands",
+    "Run /plugin marketplace remove claude-code-plugins and re-add with the command above to switch to the new slug."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:50:19Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+  "repoUrl": "https://github.com/jeremylongshore/claude-code-plugins-plus-skills",
+  "license": "MIT",
+  "stars": 2212,
+  "lastUpdated": "2026-05-20T03:50:19Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

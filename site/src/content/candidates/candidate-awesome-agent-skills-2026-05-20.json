@@ -1,0 +1,148 @@
+{
+  "id": "candidate-awesome-agent-skills-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Agent Skills",
+  "sourceUrl": "https://github.com/heilcheng/awesome-agent-skills",
+  "sourceName": "GitHub",
+  "author": "heilcheng",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Tutorials, Guides and Agent Skills Directories",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "heilcheng",
+    "repo": "awesome-agent-skills",
+    "fullName": "heilcheng/awesome-agent-skills",
+    "stars": 4928,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "ai-development",
+      "anthropic",
+      "automation",
+      "awesome",
+      "awesome-list",
+      "claude",
+      "codex",
+      "github-copilot",
+      "llm",
+      "mcp",
+      "openai",
+      "productivity",
+      "skill-md",
+      "vscode"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-05T20:39:24Z"
+  },
+  "detectedFiles": [
+    "README.es.md",
+    "README.ja.md",
+    "README.ko.md",
+    "README.md",
+    "README.zh-CN.md",
+    "README.zh-TW.md"
+  ],
+  "readmeExtract": "Agent Skill Index [English](README.md) | [繁體中文](README.zh TW.md) | [简体中文](README.zh CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) [![Agent Skill Index Banner](assets/banner.png)](https://agent skill.co) 🌐 Browse the live directory at [agent skill.co](https://agent skill.co) Maintained by [Hailey Cheng (Cheng Hei Lam)](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.c",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🌐 Browse the live directory at agent-skill.co",
+    "Never heard of \"agent skills\" before?",
+    "This is a community-curated list of simple text files that teach AI assistants (like Claude, Copilot, or Codex) how to do new things on demand, without retraining.",
+    "Unlike bulk-generated skill repositories, this collection focuses on real-world Agent Skills created and used by actual engineering teams.",
+    "Compatible with Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copilot, Windsurf, and more.",
+    "Step 1: Pick a skill from the directory below (or browse at agent-skill.co)",
+    "Step 2: Load it into your AI agent:",
+    "Claude.ai: paste the raw SKILL.md URL in a new conversation"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Tutorials, Guides and Agent Skills Directories",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "awesome-list",
+    "useCategory": [
+      "docs",
+      "communication",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "awesome-list",
+  "useCategory": [
+    "docs",
+    "communication",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "mcp",
+    "whatIsIt": "Awesome Agent Skills is an MCP-related awesome-list tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with communication workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "🌐 Browse the live directory at agent-skill.co"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

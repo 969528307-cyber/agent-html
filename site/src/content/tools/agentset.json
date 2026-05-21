@@ -1,0 +1,77 @@
+{
+  "id": "agentset",
+  "name": "Agentset",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "The open-source RAG platform: built-in citations, deep research, 22+ file formats, partitions, MCP server, and more.",
+  "description": "The open-source RAG platform: built-in citations, deep research, 22+ file formats, partitions, MCP server, and more.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/agentset-ai/agentset",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/agentset-ai/agentset",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/agentset-ai/agentset#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/agentset-ai/agentset#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/agentset-ai/agentset/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Agentset is the open-source platform to build, evaluate, and ship production-ready RAG and agentic applications.",
+    "It provides end-to-end tooling: ingestion, vector indexing, evaluation/benchmarks, chat playground, hosting, and a developer-friendly API.",
+    "Production hosting with preview links and custom domains",
+    "The fastest way to get started with Agentset.",
+    "If you find Agentset useful, please give the repo a star — it helps a lot!",
+    "Made with ❤️ by the Agentset team.",
+    "Review the file against all constraints below and output:",
+    "Review the file against all rules below and report:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-21T18:55:15Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/agentset-ai/agentset",
+  "repoUrl": "https://github.com/agentset-ai/agentset",
+  "license": "MIT",
+  "stars": 1988,
+  "lastUpdated": "2026-04-21T18:55:15Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

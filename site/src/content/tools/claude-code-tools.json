@@ -1,0 +1,77 @@
+{
+  "id": "claude-code-tools",
+  "name": "Claude Code Tools",
+  "type": "cli",
+  "status": "published",
+  "summary": "Practical productivity tools for Claude Code, Codex-CLI, and similar CLI coding agents.",
+  "description": "Practical productivity tools for Claude Code, Codex-CLI, and similar CLI coding agents.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/pchalasani/claude-code-tools",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/pchalasani/claude-code-tools",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/pchalasani/claude-code-tools#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/pchalasani/claude-code-tools#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/pchalasani/claude-code-tools/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "CLI tools, skills, agents, hooks, and plugins for enhancing productivity with Claude Code and other coding agents.",
+    "The search engine (aichat search) requires a",
+    "for hooks, skills, and agents:",
+    "For current documentation, visit the",
+    "See aichat in the full documentation.",
+    "tmux-cli — Terminal Automation",
+    "See tmux-cli in the full documentation.",
+    "See Voice in the full documentation."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T23:43:36Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/pchalasani/claude-code-tools",
+  "repoUrl": "https://github.com/pchalasani/claude-code-tools",
+  "license": "MIT",
+  "stars": 1794,
+  "lastUpdated": "2026-05-17T23:43:36Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

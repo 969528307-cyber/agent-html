@@ -1,0 +1,166 @@
+{
+  "id": "candidate-tool-github-microsoft-foundry-local",
+  "type": "tool",
+  "status": "published",
+  "title": "Foundry Local",
+  "sourceUrl": "https://github.com/microsoft/Foundry-Local",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "microsoft",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "<div align=\"center\" <picture align=\"center\" <source media=\"(prefers color scheme: dark)\" srcset=\"media/icons/foundry local white.svg\" <source media=\"(prefers color scheme: light)\" srcset=\"media/icons/foundry local black.svg\" <img alt=\"Foundry Local icon.\" src=\"media/icons/foundry local black.svg\" height=\"100\" style=\"max width: 100%;\" </picture <div id=\"user content toc\" <ul align=\"center\" style=\"list style: none;\" <s",
+  "proposedCategory": [
+    "sdk"
+  ],
+  "proposedAgents": [
+    "Qwen Code"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "microsoft",
+    "repo": "Foundry-Local",
+    "fullName": "microsoft/Foundry-Local",
+    "stars": 2288,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-sdk",
+      "chat-completions",
+      "foundry-local",
+      "gpu-acceleration",
+      "local-ai",
+      "microsoft",
+      "on-device-inference",
+      "onnx-runtime",
+      "speech-to-text",
+      "whisper"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T09:11:36Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/README.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <picture align=\"center\" <source media=\"(prefers color scheme: dark)\" srcset=\"media/icons/foundry local white.svg\" <source media=\"(prefers color scheme: light)\" srcset=\"media/icons/foundry local black.svg\" <img alt=\"Foundry Local icon.\" src=\"media/icons/foundry local black.svg\" height=\"100\" style=\"max width: 100%;\" </picture <div id=\"user content toc\" <ul align=\"center\" style=\"list style: none;\" <s",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Download Documentation Discord",
+    "Lightweight runtime — The runtime handles model acquisition, hardware acceleration, model management, and inference (via ONNX Runtime).",
+    "Smart model management — Foundry Local handles the full lifecycle of models on end-user devices.",
+    "Optional local server — An OpenAI-compatible web server for serving models to multiple processes, integrating with tools like LangChain, or experimenting through REST calls.",
+    "A single FoundryLocalManager can manage both chat and audio models simultaneously.",
+    "C# 12 Native chat, audio transcription, tool calling, model management, web server, tutorials",
+    "JavaScript 12 Native chat, audio, Electron app, Copilot SDK, LangChain, tool calling, tutorials",
+    "Python 9 Chat completions, audio transcription, LangChain, tool calling, tutorials"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"sdk\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "<div align=\"center\" <picture align=\"center\" <source media=\"(prefers color scheme: dark)\" srcset=\"media/icons/foundry local white.svg\" <source media=\"(prefers color scheme: light)\" srcset=\"media/icons/foundry local black.svg\" <img alt=\"Foundry Local icon.\" src=\"media/icons/foundry local black.svg\" height=\"100\" style=\"max width: 100%;\" </picture <div id=\"user content toc\" <ul align=\"center\" style=\"list style: none;\" <s",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "sdk",
+    "scope": "single-tool",
+    "useCategory": [
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "sdk",
+  "scope": "single-tool",
+  "useCategory": [
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "sdk",
+    "whatIsIt": "Foundry Local is an SDK or library for developers building agent tooling.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Relevant to sdk.",
+      "Download Documentation Discord",
+      "Lightweight runtime — The runtime handles model acquisition, hardware acceleration, model management, and inference (via ONNX Runtime).",
+      "Smart model management — Foundry Local handles the full lifecycle of models on end-user devices."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:microsoft/foundry-local",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "foundry-local",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

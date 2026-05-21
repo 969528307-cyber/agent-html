@@ -1,0 +1,78 @@
+{
+  "id": "x-cmd",
+  "name": "X Cmd",
+  "type": "cli",
+  "status": "published",
+  "summary": "Shell Superpowers for AI Agents.",
+  "description": "Shell Superpowers for AI Agents.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/x-cmd/x-cmd",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/x-cmd/x-cmd",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/x-cmd/x-cmd#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/x-cmd/x-cmd#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/x-cmd/x-cmd/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Shell Superpowers for AI Agents",
+    "X-CMD (pronounced as \"X Command\") is a modern toolkit for POSIX shell (bash, zsh, ash, dash) — designed to make shell as powerful as Python's standard library.",
+    "With just shell + curl, access OpenAI, Gemini, DeepSeek, Zhipu, MiniMax.",
+    "Our pure-shell agent — under 2MB — delivers capabilities comparable to OpenClaw and Claude Code.",
+    "Optimized for Agents — After 5 years, we discovered shell's sweet spot: AI agents.",
+    "Where network latency and LLM throughput dominate, shell's flexibility, native system integration, and tool-chaining shine.",
+    "600+ CLI tools (like WebAssembly)",
+    "x <tool> or x env use <tool>"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T00:16:47Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/x-cmd/x-cmd",
+  "repoUrl": "https://github.com/x-cmd/x-cmd",
+  "license": "Apache-2.0",
+  "stars": 4398,
+  "lastUpdated": "2026-05-20T00:16:47Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

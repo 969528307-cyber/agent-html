@@ -1,0 +1,170 @@
+{
+  "id": "candidate-tool-github-flux159-mcp-server-kubernetes",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp Server Kubernetes",
+  "sourceUrl": "https://github.com/Flux159/mcp-server-kubernetes",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "Flux159",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "MCP Server for kubernetes management commands",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "Flux159",
+    "repo": "mcp-server-kubernetes",
+    "fullName": "Flux159/mcp-server-kubernetes",
+    "stars": 1390,
+    "license": "MIT",
+    "topics": [
+      "infrastructure",
+      "kubernetes",
+      "mcp",
+      "server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-03T03:51:36Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/helm-template-apply.md",
+    "docs/node-management.md",
+    "docs/OBSERVABILITY.md",
+    "docs/pod-cleanup.md",
+    "package.json",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "MCP Server Kubernetes [![CI](https://github.com/Flux159/mcp server kubernetes/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/mcp server kubernetes/actions/workflows/ci.yml) [![Language](https://img.shields.io/github/languages/top/Flux159/mcp server kubernetes)](https://github.com/yourusername/mcp server kubernetes) [![Bun](https://img.shields.io/badge/runtime bun orange)](https://bun.sh) [![Kube",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "MCP Server that can connect to a Kubernetes cluster and manage it.",
+    "Before using this MCP server with any tool, make sure you have:",
+    "You can verify your connection by running kubectl get pods in a terminal to ensure you can connect to your cluster without credential issues.",
+    "Add the MCP server to Claude Code using the built-in command:",
+    "This will automatically configure the server in your Claude Code MCP settings.",
+    "Claude Desktop Connector via mcpb",
+    "MCP Server Kubernetes is also available as a mcpb (formerly dxt) extension.",
+    "In Claude Desktop, go to Settings (Cmd+, on Mac) -> Extensions -> Browse Extensions and scroll to find mcp-server-kubernetes in the modal."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "MCP Server for kubernetes management commands",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: workflow, cli.",
+    "LLM: mcp + [mcp] — This is an MCP server for Kubernetes management, as indicated by its name, description, and topics."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp Server Kubernetes is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Relevant to devops.",
+      "MCP Server that can connect to a Kubernetes cluster and manage it.",
+      "Before using this MCP server with any tool, make sure you have:",
+      "You can verify your connection by running kubectl get pods in a terminal to ensure you can connect to your cluster without credential issues."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:flux159/mcp-server-kubernetes",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-server-kubernetes",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

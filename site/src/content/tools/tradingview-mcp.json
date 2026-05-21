@@ -1,0 +1,76 @@
+{
+  "id": "tradingview-mcp",
+  "name": "Tradingview Mcp",
+  "type": "mcp",
+  "status": "published",
+  "summary": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation",
+  "description": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/tradesdontlie/tradingview-mcp",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/tradesdontlie/tradingview-mcp",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/tradesdontlie/tradingview-mcp#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/tradesdontlie/tradingview-mcp#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/tradesdontlie/tradingview-mcp/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Connects Claude Code to your locally running TradingView app via Chrome DevTools Protocol for AI-assisted chart analysis, Pine Script development, and workflow automation.",
+    "This tool is not affiliated with, endorsed by, or associated with TradingView Inc. It interacts with your locally running TradingView Desktop application via Chrome DevTools Protocol.",
+    "Review the Disclaimer before use.",
+    "Requires a valid TradingView subscription. This tool does not bypass or circumvent any TradingView paywall or access control.",
+    "All data processing occurs locally on your machine. No TradingView data is transmitted, stored, or redistributed externally by this tool.",
+    "This tool accesses undocumented internal TradingView APIs via the Electron debug interface.",
+    "This tool does not connect to TradingView's servers, modify any TradingView files, or intercept any network traffic.",
+    "Connect to TradingView's servers or APIs"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-04T00:27:04Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/tradesdontlie/tradingview-mcp",
+  "repoUrl": "https://github.com/tradesdontlie/tradingview-mcp",
+  "license": "NOASSERTION",
+  "stars": 2803,
+  "lastUpdated": "2026-04-04T00:27:04Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,76 @@
+{
+  "id": "continuous-claude-v3",
+  "name": "Continuous Claude V3",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Context management for Claude Code. Hooks maintain state via ledgers and handoffs. MCP execution without context pollution. Agent orchestration with isolated context windows.",
+  "description": "Context management for Claude Code. Hooks maintain state via ledgers and handoffs. MCP execution without context pollution. Agent orchestration with isolated context windows.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/parcadei/Continuous-Claude-v3",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/parcadei/Continuous-Claude-v3",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/parcadei/Continuous-Claude-v3#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/parcadei/Continuous-Claude-v3#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/parcadei/Continuous-Claude-v3/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A persistent, learning, multi-agent development environment built on Claude Code",
+    "Continuous Claude transforms Claude Code into a continuously learning system that maintains context across sessions, orchestrates specialized agents, and eliminates wasting tokens through intelligent code analysis.",
+    "Claude Code has a compaction problem: when context fills up, the system compacts your conversation, losing nuanced understanding and decisions made during the session.",
+    "Continuous Claude solves this with:",
+    "Complex tasks need coordination Meta-skills orchestrate agent workflows",
+    "Repeating workflows manually 109 skills with natural language triggers",
+    "Continuous because Claude maintains state across sessions.",
+    "An agent is five things: Prompt + Tools + Context + Memory + Model."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-01-26T15:27:49Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/parcadei/Continuous-Claude-v3",
+  "repoUrl": "https://github.com/parcadei/Continuous-Claude-v3",
+  "license": "MIT",
+  "stars": 3777,
+  "lastUpdated": "2026-01-26T15:27:49Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

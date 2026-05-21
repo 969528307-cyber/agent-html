@@ -4,16 +4,18 @@ import test from "node:test";
 import {
   buildDiscoveryQueries,
   dedupeSearchItems,
+  discoveryProfiles,
   getPerQueryLimit,
   parseDiscoverArgs,
+  runCli,
 } from "./github-discover-candidates.mjs";
 
-test("builds broad discovery queries with the 1000 star floor", () => {
-  const queries = buildDiscoveryQueries(["mcp", "coding agent"]);
+test("builds broad discovery queries with the 700 star floor", () => {
+  const queries = buildDiscoveryQueries(["mcp", "coding agent"], { pushedSince: "2024-11-12" });
 
   assert.deepEqual(queries, [
-    "mcp stars:>=1000 fork:false archived:false",
-    "\"coding agent\" stars:>=1000 fork:false archived:false",
+    "mcp stars:>=700 pushed:>=2024-11-12 fork:false archived:false",
+    "\"coding agent\" stars:>=700 pushed:>=2024-11-12 fork:false archived:false",
   ]);
 });
 
@@ -33,9 +35,27 @@ test("splits discovery limits across queries for source diversity", () => {
 });
 
 test("parses discovery CLI flags", () => {
-  const args = parseDiscoverArgs(["--limit", "12", "--dry-run", "--query", "agent workflow", "--query", "mcp"]);
+  const args = parseDiscoverArgs(["--limit", "12", "--dry-run", "--profile", "mcp", "--query", "agent workflow", "--query", "mcp"]);
 
   assert.equal(args.limit, 12);
   assert.equal(args.dryRun, true);
+  assert.equal(args.profile, "mcp");
   assert.deepEqual(args.queries, ["agent workflow", "mcp"]);
+});
+
+test("defines separate discovery profiles by public site category", () => {
+  assert.deepEqual(Object.keys(discoveryProfiles), ["mcp", "skill", "cli", "workflow"]);
+  assert.ok(discoveryProfiles.mcp.every((term) => /mcp|model context protocol/i.test(term)));
+  assert.ok(discoveryProfiles.cli.some((term) => /cli|terminal/i.test(term)));
+});
+
+test("rejects unknown discovery profiles", () => {
+  assert.throws(() => parseDiscoverArgs(["--profile", "unknown"]), /--profile must be one of/);
+});
+
+test("disables the legacy broad GitHub discovery CLI", async () => {
+  await assert.rejects(
+    () => runCli(),
+    /deprecated.*discover:tools/i
+  );
 });

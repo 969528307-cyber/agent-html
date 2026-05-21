@@ -1,0 +1,78 @@
+{
+  "id": "agents",
+  "name": "Agents",
+  "type": "skill",
+  "status": "published",
+  "summary": "Intelligent automation and multi-agent orchestration for Claude Code",
+  "description": "Intelligent automation and multi-agent orchestration for Claude Code",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/wshobson/agents",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/wshobson/agents",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/wshobson/agents#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/wshobson/agents#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/wshobson/agents/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Claude Code Plugins: Orchestration and Automation",
+    "🎯 Agent Skills Enabled — 153 specialized skills extend Claude's capabilities across plugins with progressive disclosure",
+    "A comprehensive production-ready system combining 185 specialized AI agents, 16 multi-agent workflow orchestrators, 153 agent skills, and 100 commands organized into 80 focused, single-purpose plugins for Claude Code.",
+    "This unified repository provides everything needed for intelligent automation and multi-agent orchestration across modern software development:",
+    "185 Specialized Agents - Domain experts with deep knowledge across architecture, languages, infrastructure, quality, data/AI, documentation, business operations, and SEO",
+    "153 Agent Skills - Modular knowledge packages with progressive disclosure for specialized expertise",
+    "16 Workflow Orchestrators - Multi-agent coordination systems for complex operations like full-stack development, security hardening, ML pipelines, and incident response",
+    "Comprehensive Tooling: 100 commands including test generation, scaffolding, and security scanning"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T00:46:43Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/wshobson/agents",
+  "repoUrl": "https://github.com/wshobson/agents",
+  "license": "MIT",
+  "stars": 35582,
+  "lastUpdated": "2026-05-17T00:46:43Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

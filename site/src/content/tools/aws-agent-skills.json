@@ -1,0 +1,77 @@
+{
+  "id": "aws-agent-skills",
+  "name": "Aws Agent Skills",
+  "type": "skill",
+  "status": "published",
+  "summary": "AWS Skills for Agents",
+  "description": "AWS Skills for Agents",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/itsmostafa/aws-agent-skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/itsmostafa/aws-agent-skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/itsmostafa/aws-agent-skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/itsmostafa/aws-agent-skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/itsmostafa/aws-agent-skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Supercharge Claude Code with AWS cloud engineering skills across 18 core AWS services.",
+    "AWS Agent Skills equips Claude Code (and Codex) with deep expertise across 18 AWS domains, enabling automated cloud engineering support from IaC templates to debugging guidance and security best practices.",
+    "Automatically checks AWS documentation for updates on a weekly basis to ensure skills stay current with AWS service changes.",
+    "AWS MCP is great for live docs and API calls, but AWS Agent Skills is designed for reasoning first.",
+    "It gives AI Agents a curated, LLM-optimized AWS knowledge base with real-world patterns, edge cases, and best practices, without streaming large docs or schemas.",
+    "Because the skills are local and pre compressed, it is far more token efficient, keeps the context window small and predictable, and avoids MCP infrastructure, latency, and expanded credential exposure.",
+    "iam Identity and Access Management - users, roles, policies, permissions",
+    "step-functions Workflow orchestration - state machines, error handling"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T10:27:09Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/itsmostafa/aws-agent-skills",
+  "repoUrl": "https://github.com/itsmostafa/aws-agent-skills",
+  "license": "MIT",
+  "stars": 1102,
+  "lastUpdated": "2026-05-18T10:27:09Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

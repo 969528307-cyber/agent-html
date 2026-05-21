@@ -1,0 +1,171 @@
+{
+  "id": "candidate-tool-github-mongodb-js-mongodb-mcp-server",
+  "type": "tool",
+  "status": "published",
+  "title": "Mongodb Mcp Server",
+  "sourceUrl": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "mongodb-js",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters.",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "mongodb-js",
+    "repo": "mongodb-mcp-server",
+    "fullName": "mongodb-js/mongodb-mcp-server",
+    "stars": 1021,
+    "license": "Apache-2.0",
+    "topics": [
+      "mcp",
+      "mcp-server",
+      "mongodb",
+      "mongodb-atlas",
+      "mongodb-database"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T08:39:29Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "[![Install in VS Code](https://img.shields.io/badge/VS Code Install Server 0098FF?logo=data:image/svg%2bxml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNDggNDgiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik00NC45OTkgMTAuODd2MjYuMjFjMCAxLjAzLS41OSAxLjk3LTEuNTEgMi40Mi0yLjY4IDEuMjktOCAzLjg1LTguMzUgNC4wMS0uMTMuMDctLjM4LjItLjY3LjMxLjM1LS42LjUzLTEuMy41My0yLjAyVjYuM",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A Model Context Protocol server for interacting with MongoDB Databases and MongoDB Atlas.",
+    "A MongoDB connection string or Atlas API credentials, the Server will not start unless configured.",
+    "Service Accounts Atlas API credentials are required to use the Atlas tools.",
+    "If you have a MongoDB connection string, you can use it directly to connect to your MongoDB instance.",
+    "You can pass your connection string via environment variables, make sure to use a valid username and password.",
+    "NOTE: The connection string can be configured to connect to any MongoDB cluster, whether it's a local instance or an Atlas cluster.",
+    "Connection String via environment variables in the MCP file example",
+    "Atlas API credentials via environment variables in the MCP file example"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "database",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "database",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: workflow, cli.",
+    "LLM: mcp + [mcp] — This is an MCP server for MongoDB, as stated in its name and description."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mongodb Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with database workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to data."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:mongodb-js/mongodb-mcp-server",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-14",
+  "reviewedBy": "local-review",
+  "publishedAs": "mongodb-mcp-server",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

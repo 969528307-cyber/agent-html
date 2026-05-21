@@ -1,0 +1,212 @@
+---
+import { getCollection } from "astro:content";
+import ToolListItem from "../components/ToolListItem.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { sortToolsByNewest } from "../lib/filters";
+
+const query = Astro.url.searchParams.get("q")?.trim().toLowerCase() || "";
+const tools = sortToolsByNewest((await getCollection("tools")).filter((tool) => tool.data.status === "published"));
+const results = query
+  ? tools.filter((tool) => {
+      const haystack = [
+        tool.data.name,
+        tool.data.summary,
+        tool.data.description,
+        tool.data.type,
+        ...tool.data.category,
+        ...tool.data.compatibleAgents,
+      ]
+        .join(" ")
+        .toLowerCase();
+      return haystack.includes(query);
+    })
+  : tools;
+---
+
+<BaseLayout title="Search tools - agentk.it" description="Search the agentk.it tool directory.">
+  <section class="search-page page">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="route-chip"><span></span>/search</div>
+        <h1>Search the tool directory.</h1>
+        <p>Static v1 search filters published tool metadata by name, type, category, summary, and compatible Agent.</p>
+        <form class="search-box" action="/search">
+          <input name="q" type="search" value={query} placeholder="Search MCP servers, Skills, Workflows, Agents..." />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <aside class="lab-console">
+        <span>{query ? "Matches" : "Published"}</span>
+        <strong>{results.length}</strong>
+        <p>{query ? `for "${query}"` : "tools indexed"}</p>
+      </aside>
+    </section>
+
+    <div class="list">
+      {results.map((tool) => <ToolListItem tool={tool.data} />)}
+      {
+        results.length === 0 && (
+          <div class="empty-state">
+            <h2>No published tools matched.</h2>
+            <p>Try a broader term, or review the internal candidate pool for unpublished matches.</p>
+          </div>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  :global(body) {
+    background:
+      radial-gradient(circle at 12% 0%, rgb(134 174 255 / 0.18), transparent 30rem),
+      radial-gradient(circle at 90% 8%, rgb(229 183 106 / 0.14), transparent 28rem),
+      radial-gradient(circle at 60% 86%, rgb(82 220 160 / 0.12), transparent 34rem),
+      #080b10;
+  }
+
+  .search-page {
+    padding: 42px 0 72px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 18px;
+    margin-bottom: 22px;
+  }
+
+  .hero-copy,
+  .lab-console,
+  .empty-state {
+    border: 1px solid rgb(246 242 234 / 0.11);
+    background:
+      linear-gradient(180deg, rgb(246 242 234 / 0.07), rgb(246 242 234 / 0.026)),
+      rgb(12 17 24 / 0.82);
+    box-shadow: 0 30px 100px rgb(0 0 0 / 0.28);
+    backdrop-filter: blur(30px);
+  }
+
+  .hero-copy {
+    padding: clamp(26px, 4vw, 44px);
+    border-radius: 36px;
+  }
+
+  .route-chip {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 9px 12px;
+    color: #d9e6ff;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    border: 1px solid rgb(134 174 255 / 0.26);
+    border-radius: 999px;
+    background: rgb(134 174 255 / 0.1);
+  }
+
+  .route-chip span {
+    width: 8px;
+    height: 8px;
+    background: #e5b76a;
+    border-radius: 999px;
+  }
+
+  h1 {
+    margin-top: 20px;
+    color: #f6f2ea;
+    font-size: clamp(44px, 6vw, 80px);
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+  }
+
+  .hero-copy p,
+  .lab-console p,
+  .empty-state p {
+    max-width: 620px;
+    margin-top: 16px;
+    color: #9aa4b6;
+    font-size: 15px;
+    line-height: 1.62;
+  }
+
+  .search-box {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    margin-top: 22px;
+    padding: 8px 8px 8px 18px;
+    border: 1px solid rgb(246 242 234 / 0.12);
+    border-radius: 999px;
+    background: rgb(246 242 234 / 0.06);
+  }
+
+  input {
+    min-height: 44px;
+    color: #f6f2ea;
+    background: transparent;
+    border: 0;
+    outline: 0;
+  }
+
+  input::placeholder {
+    color: #788393;
+  }
+
+  button {
+    min-height: 44px;
+    padding: 0 18px;
+    color: #06100b;
+    font-weight: 850;
+    border: 0;
+    border-radius: 999px;
+    background: #a9d8b0;
+  }
+
+  .lab-console {
+    display: grid;
+    align-content: center;
+    padding: 24px;
+    border-radius: 32px;
+  }
+
+  .lab-console span {
+    color: #e5b76a;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .lab-console strong {
+    display: block;
+    margin-top: 10px;
+    color: #f6f2ea;
+    font-size: 56px;
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+  }
+
+  .list {
+    display: grid;
+    gap: 14px;
+  }
+
+  .empty-state {
+    padding: 24px;
+    border-radius: 26px;
+  }
+
+  .empty-state h2 {
+    color: #f6f2ea;
+  }
+
+  @media (max-width: 860px) {
+    .hero,
+    .search-box {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

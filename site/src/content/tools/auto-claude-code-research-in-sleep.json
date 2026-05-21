@@ -1,0 +1,82 @@
+{
+  "id": "auto-claude-code-research-in-sleep",
+  "name": "Auto Claude Code Research In Sleep",
+  "type": "mcp",
+  "status": "published",
+  "summary": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.",
+  "description": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Kimi",
+    "OpenClaw",
+    "Trae",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Auto-claude-code-research-in-sleep (ARIS ⚔️🌙)",
+    "💡 Use ARIS as a skill-based workflow in Claude Code / Codex CLI / Cursor / Trae / Antigravity / GitHub Copilot CLI / OpenClaw, or get the full experience with the standalone CLI — enjoy any way you like!",
+    "What matters is the research workflow — take it wherever you go.",
+    "🤖 AI agents: Read AGENTGUIDE.md instead — structured for LLM consumption, not human browsing.",
+    "📖 Preview from the Diffusion Foundations cheat sheet — every tutorial in ARIS-in-AI-Offer follows the same three-pillar structure (foundations / interview Q&A / runnable code).",
+    "v0.4.11 (2026-05-18) — Skills bundle refresh + sync infrastructure.",
+    "The embedded skills set in the v0.4.10 binary had fallen behind main (~6 of 56 main skills/ commits had been cherry-picked); v0.4.11 syncs the full set and ships sync infrastructure so the gap can't silently reopen.",
+    "Bundle: 65→74 user-facing skills, 34→49 helper resources."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T02:23:22Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+  "repoUrl": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+  "license": "MIT",
+  "stars": 10083,
+  "lastUpdated": "2026-05-20T02:23:22Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

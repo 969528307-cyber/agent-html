@@ -1,0 +1,218 @@
+{
+  "id": "candidate-tool-github-ibm-mcp-context-forge",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Mcp Context Forge",
+  "sourceUrl": "https://github.com/IBM/mcp-context-forge",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "IBM",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and management. Optimizes Agent & Tool calling, and supports plugins.",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "IBM",
+    "repo": "mcp-context-forge",
+    "fullName": "IBM/mcp-context-forge",
+    "stars": 3720,
+    "license": "Apache-2.0",
+    "topics": [
+      "agents",
+      "ai",
+      "api-gateway",
+      "asyncio",
+      "authentication-middleware",
+      "devops",
+      "docker",
+      "fastapi",
+      "federation",
+      "gateway",
+      "generative-ai",
+      "jwt",
+      "kubernetes",
+      "llm-agents",
+      "mcp",
+      "model-context-protocol",
+      "observability",
+      "prompt-engineering",
+      "python",
+      "tools"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T09:53:41Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.gitignore",
+    "docs/AGENTS.md",
+    "docs/architecture-plugin-multi-tenancy.md",
+    "docs/base.yml",
+    "docs/CSP_INLINE_HANDLERS_MIGRATION.md",
+    "docs/docs/.pages",
+    "docs/docs/api/.pages",
+    "docs/docs/api/cancellation.md",
+    "docs/docs/api/plugin-bindings-api.md",
+    "docs/docs/architecture/.pages",
+    "docs/docs/architecture/adr/.pages",
+    "docs/docs/architecture/adr/001-adopt-fastapi-pydantic.md",
+    "docs/docs/architecture/adr/002-use-async-sqlalchemy-orm.md",
+    "docs/docs/architecture/adr/003-expose-multi-transport-endpoints.md",
+    "docs/docs/architecture/adr/004-combine-jwt-and-basic-auth.md",
+    "docs/docs/architecture/adr/005-structured-json-logging.md",
+    "docs/docs/architecture/adr/005-vscode-devcontainer-support.md",
+    "docs/docs/architecture/adr/006-gateway-tool-rate-limiting.md",
+    "docs/docs/architecture/adr/007-pluggable-cache-backend.md",
+    "docs/docs/architecture/adr/008-federation-discovery.md",
+    "docs/docs/architecture/adr/009-built-in-health-checks.md",
+    "docs/docs/architecture/adr/010-observability-prometheus.md",
+    "docs/docs/architecture/adr/011-tool-federation.md",
+    "docs/docs/architecture/adr/012-dropdown-ui-tool-selection.md",
+    "docs/docs/architecture/adr/013-APIs-for-server-connection-strings.md",
+    "docs/docs/architecture/adr/014-security-headers-cors-middleware.md",
+    "docs/docs/architecture/adr/015-well-known-uri-handler.md",
+    "docs/docs/architecture/adr/016-plugin-framework-ai-middleware.md",
+    "docs/docs/architecture/adr/017-adopt-orjson-json-serialization.md",
+    "docs/docs/architecture/adr/018-built-in-response-compression.md",
+    "docs/docs/architecture/adr/019-modular-architecture-split.md",
+    "docs/docs/architecture/adr/020-multi-format-packaging-strategy.md",
+    "docs/docs/architecture/adr/021-built-in-proxy-vs-service-mesh.md",
+    "docs/docs/architecture/adr/022-elicitation-passthrough-implementation.md",
+    "docs/docs/architecture/adr/023-one-time-authentication-servers.md",
+    "docs/docs/architecture/adr/024-uvicorn-standard-extras.md",
+    "docs/docs/architecture/adr/025-granian-http-server.md",
+    "docs/docs/architecture/adr/026-hiredis-redis-parser.md",
+    "docs/docs/architecture/adr/027-migrate-psycopg3.md"
+  ],
+  "readmeExtract": "ContextForge An open source registry and proxy that federates MCP, A2A, and REST/gRPC APIs with centralized governance, discovery, and observability. Optimizes Agent & Tool calling, and supports plugins. ![ContextForge Banner](docs/docs/images/contextforge logo horizontal black.png) <! === CI / Security / Build Badges === [![Build Python Package](https://github.com/IBM/mcp context forge/actions/workflows/python packa",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "An open source registry and proxy that federates MCP, A2A, and REST/gRPC APIs with centralized governance, discovery, and observability.",
+    "Optimizes Agent & Tool calling, and supports plugins.",
+    "ContextForge is an open source registry and proxy that federates tools, agents, and APIs into one clean endpoint for your AI clients.",
+    "Tools Gateway — MCP, REST, gRPC-to-MCP translation, and TOON compression",
+    "Agent Gateway — A2A protocol, OpenAI-compatible and Anthropic agent routing",
+    "It runs as a fully compliant MCP server, deployable via PyPI or Docker, and scales to multi-cluster environments on Kubernetes with Redis-backed federation and caching.",
+    "Full Documentation Complete guides, tutorials, API reference",
+    "ContextForge is an open source registry and proxy that federates any Model Context Protocol (MCP) server, A2A server, or REST/gRPC API, providing centralized governance, discovery, and observability."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and management. Optimizes Agent & Tool calling, and supports plugins.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "docs",
+      "security",
+      "monitoring"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "docs",
+    "security",
+    "monitoring"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tutorial.",
+    "Alternative capabilities: knowledge-resource, workflow.",
+    "LLM: mcp + [mcp] — It is an open source registry and proxy that federates MCP, A2A, and REST/gRPC APIs as a unified MCP server."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp Context Forge is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with docs workflows.",
+      "Helps with security workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to devops."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:ibm/mcp-context-forge",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ]
+}

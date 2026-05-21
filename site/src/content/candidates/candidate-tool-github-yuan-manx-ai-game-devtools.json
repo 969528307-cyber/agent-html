@@ -1,0 +1,166 @@
+{
+  "id": "candidate-tool-github-yuan-manx-ai-game-devtools",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Ai Game Devtools",
+  "sourceUrl": "https://github.com/Yuan-ManX/ai-game-devtools",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "Yuan-ManX",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Your AI Game Dev Hub. The ultimate resource hub for AI-powered game development tools. Discover cutting-edge LLMs, World Model, Agent, Code, Image, Texture, Shader, 3D Model, Animation, Video, Audio, Music, Singing Voice and Analytics. 🔥",
+  "proposedCategory": [
+    "media"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "Yuan-ManX",
+    "repo": "ai-game-devtools",
+    "fullName": "Yuan-ManX/ai-game-devtools",
+    "stars": 1179,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "ai-game-development",
+      "ai-game-engine",
+      "ai-platform",
+      "ai-toolkit",
+      "aigc",
+      "artificial-intelligence",
+      "awesome-list",
+      "deep-learning",
+      "game-ai",
+      "game-development",
+      "game-engine",
+      "mechine-learing",
+      "unity",
+      "world-models"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-30T03:12:10Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"./assets/AI Game DevTools.png\" alt=\"AI Game DevTools\" AI Game DevTools (AI GDT) 🎮 Your AI Game Dev Hub. 🚀 The ultimate resource hub for AI powered game development tools. Discover cutting edge LLMs, World Model, Agent, Code, Image, Texture, Shader, 3D Model, Animation, Video, Audio, Music, Singing Voice and Analytics. 🔥 ![Version](https://img.shields.io/badge/version 1.0.0 blue) ![Lic",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AI Game DevTools (AI-GDT) 🎮",
+    "The ultimate resource hub for AI-powered game development tools.",
+    "Discover cutting-edge LLMs, World Model, Agent, Code, Image, Texture, Shader, 3D Model, Animation, Video, Audio, Music, Singing Voice and Analytics.",
+    "AgentGPT 🤖 Assemble, configure, and deploy autonomous AI Agents in your browser.",
+    "AIOS LLM Agent Operating System.",
+    "AI Scientist The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery.",
+    "Assistant CLI A comfortable CLI tool to use ChatGPT service🔥 Tool",
+    "BabyAGI This Python script is an example of an AI-powered task management system."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"media\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Your AI Game Dev Hub. The ultimate resource hub for AI-powered game development tools. Discover cutting-edge LLMs, World Model, Agent, Code, Image, Texture, Shader, 3D Model, Animation, Video, Audio, Music, Singing Voice and Analytics. 🔥",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "data",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "data",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 4,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: single-tool.",
+    "Alternative capabilities: cli.",
+    "LLM: knowledge-resource + [] — This repository is an awesome-list hub curating AI tools for game development, not a functional tool or framework."
+  ],
+  "classificationAlternatives": [
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Ai Game Devtools is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with data workflows.",
+      "Helps with coding workflows.",
+      "Relevant to media.",
+      "AI Game DevTools (AI-GDT) 🎮"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:yuan-manx/ai-game-devtools",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ]
+}

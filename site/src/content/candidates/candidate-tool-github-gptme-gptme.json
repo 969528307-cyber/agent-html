@@ -1,0 +1,219 @@
+{
+  "id": "candidate-tool-github-gptme-gptme",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Gptme",
+  "sourceUrl": "https://github.com/gptme/gptme",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "gptme",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Your agent in your terminal, equipped with local tools: writes code, uses the terminal, browses the web. Make your own persistent autonomous agent on top!",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "gptme",
+    "repo": "gptme",
+    "fullName": "gptme/gptme",
+    "stars": 4302,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agents",
+      "ai-agents",
+      "ai-assistant",
+      "anthropic",
+      "chatbot",
+      "chatgpt",
+      "cli",
+      "code-generation",
+      "llamacpp",
+      "llm",
+      "llm-agent",
+      "llm-apps",
+      "openai",
+      "openrouter",
+      "rag"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-18T04:48:36Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/_static/custom.css",
+    "docs/acp.rst",
+    "docs/agent/verifier-profile.md",
+    "docs/agents.rst",
+    "docs/alternatives.rst",
+    "docs/api.rst",
+    "docs/arewetiny.rst",
+    "docs/automation.rst",
+    "docs/automation/example_activity_summary.rst",
+    "docs/automation/example_code_review.rst",
+    "docs/bot.md",
+    "docs/building.rst",
+    "docs/changelog.rst",
+    "docs/cli.rst",
+    "docs/commands.rst",
+    "docs/computer-use-warning.rst",
+    "docs/concepts.rst",
+    "docs/conf.py",
+    "docs/custom_tool.rst",
+    "docs/custom-providers.md",
+    "docs/demos.rst",
+    "docs/design/elicitation.md",
+    "docs/design/hook-based-confirmations.md",
+    "docs/evals.rst",
+    "docs/examples.rst",
+    "docs/features.rst",
+    "docs/finetuning.md",
+    "docs/getting-started.rst",
+    "docs/glossary.md",
+    "docs/hooks.rst",
+    "docs/index.rst",
+    "docs/lessons.rst",
+    "docs/lessons/EXAMPLES.md",
+    "docs/lessons/README.md",
+    "docs/lessons/TESTING.md",
+    "docs/lessons/tools/browser.md",
+    "docs/lessons/tools/patch.md",
+    "docs/lessons/tools/python.md",
+    "docs/lessons/tools/shell.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"https://gptme.org/media/logo.png\" width=150 / </p <h1 align=\"center\" gptme</h1 <p align=\"center\" <i /ʤiː piː tiː miː/</i <br <sub <a href=\"https://gptme.org/docs/misc/acronyms.html\" what does it stand for?</a </sub </p <! Links <p align=\"center\" <a href=\"https://gptme.org/docs/getting started.html\" Getting Started</a • <a href=\"https://gptme.org/downloads/\" Downloads</a • <a href=\"https://",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "📜 A personal AI agent that runs anywhere a terminal runs — your laptop,",
+    "vision, and everything else an agent needs..",
+    "A great coding agent, but general-purpose enough to assist in all kinds of knowledge-work.",
+    "A capable alternative to Claude Code,",
+    "Codex, Cursor, and Warp — one of the first agent CLIs (Spring 2023), still in very",
+    "🔌 Extensibility: Plugins, Skills & Lessons",
+    "Coming soon - gptme.ai service for running agents in the cloud; gptme desktop app for easy local use.",
+    "2026-01 - gptme-agent-template v0.4: Bob reaches 1700+ autonomous sessions, autonomous run loops, enhanced context generation"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Your agent in your terminal, equipped with local tools: writes code, uses the terminal, browses the web. Make your own persistent autonomous agent on top!",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "media",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "media",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 11,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "CLI (word-boundary) or terminal usage language detected.",
+    "GitHub topics explicitly tag as CLI.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Coding agent detected with CLI context.",
+    "Detected scope: template.",
+    "Alternative capabilities: knowledge-resource.",
+    "LLM: cli + [cli] — This project is a personal AI agent that runs as a command-line interface in the terminal, similar to other agent CLIs like Aider and Claude Code."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Gptme is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:gptme/gptme",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

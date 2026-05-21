@@ -1,0 +1,191 @@
+{
+  "id": "candidate-everywhere-2026-05-13",
+  "type": "tool",
+  "status": "published",
+  "title": "Everywhere",
+  "sourceUrl": "https://github.com/Sylinko/Everywhere",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "Sylinko",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Context-aware AI assistant for your desktop. Ready to respond intelligently, seamlessly integrating multiple LLMs and MCP tools.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Cursor"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "Sylinko",
+    "repo": "Everywhere",
+    "fullName": "Sylinko/Everywhere",
+    "stars": 5945,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "ai",
+      "avalonia",
+      "chat",
+      "claude",
+      "cowork",
+      "deepseek",
+      "gemini",
+      "llm",
+      "mcp",
+      "ollama",
+      "openai",
+      "rag",
+      "ui-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T06:36:28Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/build.md",
+    "docs/patches.md",
+    "docs/ScreenPicker/01-The-Hacky-Foundation.md",
+    "docs/ScreenPicker/02-The-Search-For-Scoped-ElementFromPoint.md",
+    "docs/ScreenPicker/03-Implementation-And-New-Architecture.md",
+    "docs/ScreenPicker/04-The-Overlay-Occlusion-Problem.md",
+    "docs/StrategyEngine/01-Overview.md",
+    "docs/StrategyEngine/02-CoreConcepts.md",
+    "docs/StrategyEngine/03-MatchingSystem.md",
+    "docs/StrategyEngine/04-Preprocessors.md"
+  ],
+  "readmeExtract": "<a id=\"readme top\" </a <a href=\"https://github.com/Sylinko/Everywhere/blob/main/README zh cn.md\" 前往中文版本 »</a <div align=\"center\" <img src=\"https://raw.githubusercontent.com/Sylinko/Everywhere/refs/heads/main/img/banner.webp\" alt=\"Banner\"/ <h1 Every moment, Every place. Your AI <code Everywhere</code </h1 <div <a href=\"https://trendshift.io/repositories/15106\" target=\" blank\" <img src=\"https://trendshift.io/api/badge/",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Unlike traditional AI tools, Everywhere instantly perceives and understands anything on your screen.",
+    "No need for screenshots, copying, or switching apps—just press a shortcut key to get the help you need right where you are, delivering seamless AI assistant support.",
+    "Encounter a foreign word while researching literature?",
+    "Highlight it or just bring up Everywhere against the text, tell it to \"Translate to Chinese\", and see an immediate translation without opening a secondary translation tool.",
+    "Select the relevant text, bring up Everywhere , ask \"Is this true?\", and Everywhere will quickly search and verify the reliability of the information.",
+    "• Everything Fast Search (Windows) .",
+    "👁️ Broad Context Awareness: In addition to supporting traditional screen multi-modality, we have deeply integrated underlying accessibility APIs and UI automation technologies.",
+    "🧠 Scenario Invocation & Strategy Engine: 🚧 The original intention was to completely end the workflow that disrupts your working rhythm."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Context-aware AI assistant for your desktop. Ready to respond intelligently, seamlessly integrating multiple LLMs and MCP tools.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "coding",
+      "automation",
+      "research",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "coding",
+    "automation",
+    "research",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "Detected scope: app.",
+    "Alternative capabilities: workflow, mcp.",
+    "LLM: agent-app + [mcp] — This is a desktop AI assistant application with a full UI that integrates multiple LLMs and MCP tools for context-aware interaction."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "mcp"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Everywhere is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:sylinko/everywhere",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "everywhere",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

@@ -1,0 +1,196 @@
+{
+  "id": "candidate-marketingskills-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Marketingskills",
+  "sourceUrl": "https://github.com/coreyhaines31/marketingskills",
+  "sourceName": "GitHub",
+  "author": "coreyhaines31",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "coreyhaines31",
+    "repo": "marketingskills",
+    "fullName": "coreyhaines31/marketingskills",
+    "stars": 29271,
+    "license": "MIT",
+    "topics": [
+      "claude",
+      "codex",
+      "marketing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-14T05:13:16Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/ab-testing/SKILL.md",
+    "skills/ad-creative/SKILL.md",
+    "skills/ads/SKILL.md",
+    "skills/ai-seo/SKILL.md",
+    "skills/analytics/SKILL.md",
+    "skills/aso/SKILL.md",
+    "skills/churn-prevention/SKILL.md",
+    "skills/co-marketing/SKILL.md",
+    "skills/cold-email/SKILL.md",
+    "skills/community-marketing/SKILL.md",
+    "skills/competitor-profiling/SKILL.md",
+    "skills/competitors/SKILL.md",
+    "skills/content-strategy/SKILL.md",
+    "skills/copy-editing/SKILL.md",
+    "skills/copywriting/SKILL.md",
+    "skills/cro/SKILL.md",
+    "skills/customer-research/SKILL.md",
+    "skills/directory-submissions/SKILL.md",
+    "skills/emails/SKILL.md",
+    "skills/free-tools/SKILL.md",
+    "skills/image/SKILL.md",
+    "skills/launch/SKILL.md",
+    "skills/lead-magnets/SKILL.md",
+    "skills/marketing-ideas/SKILL.md",
+    "skills/marketing-psychology/SKILL.md",
+    "skills/onboarding/SKILL.md",
+    "skills/paywalls/SKILL.md",
+    "skills/popups/SKILL.md",
+    "skills/pricing/SKILL.md",
+    "skills/product-marketing/SKILL.md",
+    "skills/programmatic-seo/SKILL.md",
+    "skills/referrals/SKILL.md",
+    "skills/revops/SKILL.md",
+    "skills/sales-enablement/SKILL.md",
+    "skills/schema/SKILL.md",
+    "skills/seo-audit/SKILL.md",
+    "skills/signup/SKILL.md",
+    "skills/site-architecture/SKILL.md",
+    "skills/social/SKILL.md"
+  ],
+  "readmeExtract": "Marketing Skills for AI Agents A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io). Built by [Corey Haines](https://core",
+  "skillExtracts": [
+    {
+      "path": "skills/ab-testing/SKILL.md",
+      "extract": "name: ab testing description: When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program. Also use when the user mentions \"A/B test,\" \"split test,\" \"experiment,\" \"test this change,\" \"variant copy,\" \"multivariate test,\" \"hypothesis,\" \"should I test this,\" \"which version is better,\" \"test two versions,\" \"statistical significance,\" \"how long should I run this t"
+    },
+    {
+      "path": "skills/ad-creative/SKILL.md",
+      "extract": "name: ad creative description: \"When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' 'ad performance optimization,' 'write me some ads,' 'Facebook ad"
+    },
+    {
+      "path": "skills/ads/SKILL.md",
+      "extract": "name: ads description: \"When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X, or other ad platforms. Also use when the user mentions 'PPC,' 'paid media,' 'ROAS,' 'CPA,' 'ad campaign,' 'retargeting,' 'audience targeting,' 'Google Ads,' 'Facebook ads,' 'LinkedIn ads,' 'ad budget,' 'cost per click,' 'ad spend,' or 'should I run ads.' Use this for campaign"
+    },
+    {
+      "path": "skills/ai-seo/SKILL.md",
+      "extract": "name: ai seo description: \"When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'LLM optimization,' 'AI Overviews,' 'optimize for ChatGPT,' 'optimize for Perplexity,' 'AI citations,' 'AI visibility,' 'zero click search,' 'how do"
+    },
+    {
+      "path": "skills/analytics/SKILL.md",
+      "extract": "name: analytics description: When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions \"set up tracking,\" \"GA4,\" \"Google Analytics,\" \"conversion tracking,\" \"event tracking,\" \"UTM parameters,\" \"tag manager,\" \"GTM,\" \"analytics implementation,\" \"tracking plan,\" \"how do I measure this,\" \"track conversions,\" \"attribution,\" \"Mixpanel,\" \"Segment,\" \"are my events fir"
+    },
+    {
+      "path": "skills/aso/SKILL.md",
+      "extract": "name: aso description: \"When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO audit,' 'app store optimization,' 'optimize my app listing,' 'improve app visibility,' 'app store ranking,' 'audit my listing,' 'why aren't people downloading my app,' 'improve my app conversion,' 'keyword optimization for app,' or 'compare my app to competitors.' Use when the use"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Marketing Skills for AI Agents",
+    "A collection of AI agent skills focused on marketing tasks.",
+    "Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering.",
+    "Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the Agent Skills spec.",
+    "Want an autonomous AI agent that uses these skills to be your CMO?",
+    "New to the terminal and coding agents?",
+    "Contributions welcome! Found a way to improve a skill or have a new one to add?",
+    "Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Marketingskills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Marketing Skills for AI Agents",
+      "A collection of AI agent skills focused on marketing tasks."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "marketingskills",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "kubesphere",
+  "name": "Kubesphere",
+  "type": "skill",
+  "status": "published",
+  "summary": "The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management ⎈ 🖥 ☁️",
+  "description": "The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management ⎈ 🖥 ☁️",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/kubesphere/kubesphere",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/kubesphere/kubesphere",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/kubesphere/kubesphere#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/kubesphere/kubesphere#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/kubesphere/kubesphere/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management",
+    "KubeSphere is a distributed operating system for cloud-native application management,",
+    "full-stack automated IT operation and streamlined DevOps workflows.",
+    "out-of-the-box managed cluster service.",
+    "🔗 Kubernetes Multi-cluster Management",
+    "Provide a centralized control plane to manage multiple Kubernetes clusters, and support the ability to propagate an app to multiple K8s clusters across different cloud providers.",
+    "Provide fine-grained traffic management, observability and tracing for distributed microservice applications, provides visualization for traffic topology.",
+    "Provide an App Store for Helm-based applications, and offer application lifecycle management on Kubernetes platform."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-06T07:16:53Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/kubesphere/kubesphere",
+  "repoUrl": "https://github.com/kubesphere/kubesphere",
+  "license": "NOASSERTION",
+  "stars": 16934,
+  "lastUpdated": "2026-05-06T07:16:53Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

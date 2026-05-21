@@ -1,0 +1,75 @@
+{
+  "id": "osworld",
+  "name": "OSWorld",
+  "type": "cli",
+  "status": "published",
+  "summary": "[NeurIPS 2024] OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+  "description": "[NeurIPS 2024] OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Kimi"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/xlang-ai/OSWorld",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/xlang-ai/OSWorld",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/xlang-ai/OSWorld#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/xlang-ai/OSWorld#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/xlang-ai/OSWorld/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "If you wish to run the baseline agent used in our paper, you can execute the following command as an example under the GPT-4o pure-screenshot setting:",
+    "Parallel execution (example showing switching provider to docker)",
+    "The results, which include screenshots, actions, and video recordings of the agent's task completion, will be saved in the ./results (or other resultdir you specified) directory in this case.",
+    "For manual verification and examination of specific benchmark tasks, you can use the manual examination tool:",
+    "Please start by reading through the agent interface and the environment interface.",
+    "Correctly implement the agent interface and import your customized version in the run.py (for single-threaded execution) or scripts/python/runmultienv.py / scripts/python/runmultienvxxx.py (for parallel execution) file.",
+    "Afterward, you can execute a command similar to the one in the previous section to run the benchmark on your agent.",
+    "title={OSWorld: Benchmarking Multimodal Agents..."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T14:12:41Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/xlang-ai/OSWorld",
+  "repoUrl": "https://github.com/xlang-ai/OSWorld",
+  "license": "Apache-2.0",
+  "stars": 2859,
+  "lastUpdated": "2026-05-19T14:12:41Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

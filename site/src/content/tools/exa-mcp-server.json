@@ -1,0 +1,78 @@
+{
+  "id": "exa-mcp-server",
+  "name": "Exa Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Exa MCP for web search and web crawling!",
+  "description": "Exa MCP for web search and web crawling!",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/exa-labs/exa-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/exa-labs/exa-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/exa-labs/exa-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/exa-labs/exa-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/exa-labs/exa-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Connect AI assistants to Exa's search capabilities: web search, code search, and company research.",
+    "Full Documentation npm Package Get Your Exa API Key",
+    "Connect to Exa's hosted MCP server:",
+    "Open Claude Desktop Settings (or Customize) and go to Connectors",
+    "Search for Exa in the directory",
+    "Claude will now have access to Exa's search tools.",
+    "Open the MCP Store panel (from the \"...\" dropdown in the side panel), then add a custom server with:",
+    "Add to ~/.codeium/windsurf/mcpconfig.json:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-11T17:23:37Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/exa-labs/exa-mcp-server",
+  "repoUrl": "https://github.com/exa-labs/exa-mcp-server",
+  "license": "MIT",
+  "stars": 4419,
+  "lastUpdated": "2026-05-11T17:23:37Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

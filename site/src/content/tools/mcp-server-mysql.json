@@ -1,0 +1,78 @@
+{
+  "id": "mcp-server-mysql",
+  "name": "Mcp Server Mysql",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A Model Context Protocol server that provides read-only access to MySQL databases. This server enables LLMs to inspect database schemas and execute read-only queries.",
+  "description": "A Model Context Protocol server that provides read-only access to MySQL databases. This server enables LLMs to inspect database schemas and execute read-only queries.",
+  "category": [
+    "data"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/benborla/mcp-server-mysql",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/benborla/mcp-server-mysql",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/benborla/mcp-server-mysql#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/benborla/mcp-server-mysql#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/benborla/mcp-server-mysql/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "MCP Server for MySQL - Claude Code Edition",
+    "🚀 This is a modified version optimized for Claude Code with SSH tunnel support",
+    "MCP Server for MySQL based on NodeJS",
+    "✅ Claude Code Integration - Optimized for use with Anthropic's Claude Code CLI",
+    "✅ Auto-start/stop Hooks - Automatic tunnel management with Claude start/stop",
+    "Quick Start for Claude Code Users",
+    "Use with Claude: Integrated MCP server works seamlessly with Claude Code",
+    "A Model Context Protocol server that provides access to MySQL databases through SSH tunnels."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-03-10T15:55:33Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/benborla/mcp-server-mysql",
+  "repoUrl": "https://github.com/benborla/mcp-server-mysql",
+  "license": "MIT",
+  "stars": 1641,
+  "lastUpdated": "2026-03-10T15:55:33Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

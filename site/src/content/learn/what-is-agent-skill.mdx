@@ -1,15 +1,86 @@
 ---
 title: "What is an Agent Skill?"
-subtitle: "How reusable skills package instructions, workflows, and operational knowledge."
+subtitle: "How reusable skills package instructions, workflows, and operating knowledge."
 status: "published"
 topic: "skill"
+path: "start"
+order: 3
 difficulty: "beginner"
-readingTime: "5 min"
-relatedTools: ["repo-review-skill"]
-relatedAgents: ["codex", "claude-code", "hermes-agent"]
+readingTime: "10 min"
+summaryBullets:
+  - "A skill is reusable operating knowledge, not just a prompt."
+  - "Good skills describe when to use them and how to work."
+  - "Skill compatibility depends on the Agent and the file format."
+coreIdea: "A Skill is the method layer. It does not give the Agent a new external tool; it teaches the Agent a repeatable way to reason, inspect, decide, and produce output."
+useWhen:
+  - "The task requires repeatable judgment: code review, debugging, planning, translation, research synthesis, release checks, or security review."
+  - "You want the Agent to follow a consistent method every time instead of improvising from a one-off prompt."
+  - "The team has standards that should travel with the repository or workspace."
+avoidWhen:
+  - "The Agent needs live external data or actions; use MCP or another tool integration instead."
+  - "The instruction is too vague to test, such as 'write better code' or 'be smarter'."
+  - "The Skill claims compatibility with many Agents but does not document how each Agent loads it."
+checklist:
+  - label: "Does it have a trigger?"
+    body: "A useful Skill says when to use it. The trigger can be a task type, file pattern, workflow stage, or user intent."
+  - label: "Does it define a method?"
+    body: "Look for concrete steps: inspect sources, compare behavior, run checks, classify findings, or produce a specific output."
+  - label: "Does it define quality?"
+    body: "Good Skills describe what the answer should contain and what mistakes to avoid."
+  - label: "Is compatibility documented?"
+    body: "Check whether it is for Codex, Claude Code, Cursor, OpenClaw, or another Agent. Similar ideas are not the same as compatible formats."
+examples:
+  - title: "Code review Skill"
+    body: "The Skill tells the Agent to focus on regressions, missing tests, risky migrations, and file-level findings before writing a summary."
+    toolIds: ["repo-review-skill"]
+    agentIds: ["codex", "claude-code", "cursor"]
+  - title: "Skill library"
+    body: "A curated Skill repository can be useful, but it needs review because large collections often mix strong workflows with vague prompt packs."
+    toolIds: ["antigravity-awesome-skills"]
+    agentIds: ["openclaw", "codex", "claude-code"]
+mistakes:
+  - "Calling every prompt a Skill. A Skill should package a reusable method, not just a clever sentence."
+  - "Assuming a Claude Skill automatically works in Codex, Cursor, OpenClaw, or Qwen Code."
+  - "Publishing huge Skill collections without reviewing source quality, license, and compatibility."
+nextStep: "Use the checklist on one candidate Skill before publishing it: trigger, method, quality standard, compatibility, and source trust."
+relatedTools: ["repo-review-skill", "antigravity-awesome-skills"]
+relatedAgents: ["codex", "claude-code", "hermes-agent", "openclaw"]
+nextReads: ["how-to-judge-agent-skill", "skill-vs-mcp-vs-workflow"]
 publishedAt: "2026-05-11"
 ---
 
-An agent skill is a reusable package of instructions and workflow knowledge. Skills help agents behave consistently across tasks: reviewing code, debugging systematically, writing plans, or running release checks.
+An Agent Skill is a reusable package of instructions and workflow knowledge. It helps an Agent behave consistently across repeated tasks.
 
-Skills are most valuable when they encode a repeatable way of working rather than a one-off prompt.
+## The problem Skills solve
+
+Without a Skill, users repeat the same instructions over and over:
+
+"Review this PR carefully."  
+"Focus on regressions."  
+"Do not give me generic feedback."  
+"Mention tests."  
+"Use file references."
+
+A Skill turns that repeated instruction into a reusable operating procedure.
+
+## The mental model
+
+A Skill should answer three questions:
+
+- When should the Agent use this?
+- What steps should the Agent follow?
+- What does good output look like?
+
+If a Skill cannot answer those questions, it is probably a prompt snippet rather than a teaching artifact.
+
+## Skills are especially useful for judgment work
+
+Skills shine when the Agent needs judgment, not just access. A browser MCP can open a page. A debugging Skill can tell the Agent how to investigate a bug without guessing. A translation Skill can define tone, terminology, and review checks.
+
+The best setups combine both: a Skill defines the method, and tools provide the evidence.
+
+## Compatibility needs evidence
+
+Skill ecosystems are not identical. Some use `SKILL.md`. Some use rules. Some use slash commands or project memory.
+
+For public recommendations, agentk.it should only show compatibility when the source documents it or a reviewer has verified it.

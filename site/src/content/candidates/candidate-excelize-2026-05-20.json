@@ -1,0 +1,138 @@
+{
+  "id": "candidate-excelize-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Excelize",
+  "sourceUrl": "https://github.com/qax-os/excelize",
+  "sourceName": "GitHub",
+  "author": "qax-os",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Go language library for reading and writing Microsoft Excel™ (XLAM / XLSM / XLSX / XLTM / XLTX) spreadsheets",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "qax-os",
+    "repo": "excelize",
+    "fullName": "qax-os/excelize",
+    "stars": 20594,
+    "license": "BSD-3-Clause",
+    "topics": [
+      "agent",
+      "ai",
+      "analytics",
+      "chart",
+      "ecma-376",
+      "excel",
+      "excelize",
+      "formula",
+      "go",
+      "mcp",
+      "microsoft",
+      "office",
+      "ooxml",
+      "spreadsheet",
+      "statistics",
+      "table",
+      "vba",
+      "visualization",
+      "xlsx",
+      "xml"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-16T07:10:03Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img width=\"650\" src=\"./excelize.svg\" alt=\"Excelize logo\" </p <p align=\"center\" <a href=\"https://github.com/xuri/excelize/actions/workflows/go.yml\" <img src=\"https://github.com/xuri/excelize/actions/workflows/go.yml/badge.svg\" alt=\"Build Status\" </a <a href=\"https://codecov.io/gh/qax os/excelize\" <img src=\"https://codecov.io/gh/qax os/excelize/branch/master/graph/badge.svg\" alt=\"Code Coverage\" </a <",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The full docs can be seen using go's built-in documentation tool, or online at go.dev and docs reference.",
+    "With Excelize chart generation and management is as easy as a few lines of code."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Go language library for reading and writing Microsoft Excel™ (XLAM / XLSM / XLSX / XLTM / XLTX) spreadsheets",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Excelize is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "The full docs can be seen using go's built-in documentation tool, or online at go.dev and docs reference.",
+      "With Excelize chart generation and management is as easy as a few lines of code."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "excelize",
+  "publishedAt": "2026-05-20"
+}

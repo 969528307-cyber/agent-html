@@ -1,0 +1,77 @@
+{
+  "id": "imsg",
+  "name": "Imsg",
+  "type": "cli",
+  "status": "published",
+  "summary": "CLI for Apple's Messages.app so your agent can send and receive text messages/iMessages.",
+  "description": "CLI for Apple's Messages.app so your agent can send and receive text messages/iMessages.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/openclaw/imsg",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/openclaw/imsg",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/openclaw/imsg#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/openclaw/imsg#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/openclaw/imsg/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "and JSON-RPC surfaces designed for agents, scripts, and long-running",
+    "its public AppleScript automation surface.",
+    "receipts, typing indicators, edit/unsend, group management, rich sends) are",
+    "preview against a chat.db copied from macOS.",
+    "Local-first reads. Chats, history, attachments, and search query",
+    "Built for agents. Stable JSON-RPC over stdio, deterministic JSON",
+    "Linux read-only preview. Inspect a copied Messages database from a Linux",
+    "Automation permission for Messages.app when using send or react."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-16T15:24:37Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/openclaw/imsg",
+  "repoUrl": "https://github.com/openclaw/imsg",
+  "license": "MIT",
+  "stars": 1123,
+  "lastUpdated": "2026-05-16T15:24:37Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

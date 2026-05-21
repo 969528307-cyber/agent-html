@@ -1,0 +1,79 @@
+{
+  "id": "tirith",
+  "name": "Tirith",
+  "type": "cli",
+  "status": "published",
+  "summary": "Terminal security for developers and AI agents. Intercepts homograph URLs, pipe-to-shell, ANSI injection, obfuscated payloads, data exfiltration, and malicious AI skills/configs before they execute.",
+  "description": "Terminal security for developers and AI agents. Intercepts homograph URLs, pipe-to-shell, ANSI injection, obfuscated payloads, data exfiltration, and malicious AI skills/configs before they execute.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/sheeki03/tirith",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/sheeki03/tirith",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/sheeki03/tirith#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/sheeki03/tirith#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/sheeki03/tirith/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Your browser would catch this.",
+    "Website Docs SKILL.md Changelog",
+    "Browsers solved this years ago.",
+    "Malicious skill file — caught on scan:",
+    "Post-compromise behavior Process memory scraping (/proc//mem), Docker remote privilege escalation, credential file sweeps — calibrated against TeamPCP and UNC1069 post-compromise tooling",
+    "Cloaking detection Server-side cloaking (bot vs browser), clipboard hidden content, PDF hidden text",
+    "Team PCP / UNC1069 tooling ongoing Post-compromise credential sweeps, /proc//mem scraping, Docker privilege escalation",
+    "Package-name extraction currently covers language ecosystems (pip, npm/yarn/pnpm/bun, cargo, gem, go, composer, dotnet, mvn/gradle), not distro-level package managers (apt / dnf / yum / pacman)."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T08:04:09Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/sheeki03/tirith",
+  "repoUrl": "https://github.com/sheeki03/tirith",
+  "license": "AGPL-3.0",
+  "stars": 2346,
+  "lastUpdated": "2026-05-19T08:04:09Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

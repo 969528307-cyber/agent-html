@@ -1,0 +1,192 @@
+{
+  "id": "candidate-tool-github-kimsungwhee-apple-docs-mcp",
+  "type": "tool",
+  "status": "published",
+  "title": "Apple Docs Mcp",
+  "sourceUrl": "https://github.com/kimsungwhee/apple-docs-mcp",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "kimsungwhee",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit docs, WWDC videos, Swift/Objective-C APIs & code examples in Claude, Cursor & AI assistants",
+  "proposedCategory": [
+    "media"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "kimsungwhee",
+    "repo": "apple-docs-mcp",
+    "fullName": "kimsungwhee/apple-docs-mcp",
+    "stars": 1255,
+    "license": "MIT",
+    "topics": [
+      "ai-assistant",
+      "api-documentation",
+      "apple",
+      "apple-developer-docs-mcp",
+      "apple-developer-documentation",
+      "apple-docs-mcp",
+      "apple-documentation",
+      "claude",
+      "claude-code",
+      "cursor",
+      "documentation",
+      "ios-development",
+      "macos-development",
+      "mcp",
+      "model-context-protocol",
+      "objective-c",
+      "swift",
+      "swift-mcp",
+      "swiftui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-17T02:39:50Z"
+  },
+  "detectedFiles": [
+    "README.ja.md",
+    "README.ko.md",
+    "README.md",
+    "README.zh-CN.md",
+    "package.json"
+  ],
+  "readmeExtract": "Apple Docs MCP Apple Developer Documentation Model Context Protocol Server [![npm version](https://badge.fury.io/js/@kimsungwhee%2Fapple docs mcp.svg)](https://badge.fury.io/js/@kimsungwhee%2Fapple docs mcp) [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](https://opensource.org/licenses/MIT) Apple Developer Documentation MCP Server Access Apple's official developer docs, frameworks, APIs, Swift",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Apple Docs MCP - Apple Developer Documentation Model Context Protocol Server",
+    "Apple Developer Documentation MCP Server - Access Apple's official developer docs, frameworks, APIs, SwiftUI, UIKit, and WWDC videos through Model Context Protocol.",
+    "Search iOS, macOS, watchOS, tvOS, and visionOS documentation with AI-powered natural language queries.",
+    "Get instant access to Swift/Objective-C code examples, API references, and technical guides directly in Claude, Cursor, or any MCP-compatible AI assistant.",
+    "🔍 Smart Search: Intelligent search across Apple Developer Documentation for SwiftUI, UIKit, Foundation, CoreData, ARKit, and more",
+    "📚 Complete Documentation Access: Full access to Apple's JSON API for Swift, Objective-C, and framework documentation",
+    "📰 Documentation Updates: Track WWDC 2024/2025 announcements, iOS 26, macOS 26, and latest SDK releases",
+    "🎥 WWDC Video Library: Search WWDC 2014-2025 sessions with transcripts, Swift/SwiftUI code examples, and resources"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"media\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "MCP server for Apple Developer Documentation - Search iOS/macOS/SwiftUI/UIKit docs, WWDC videos, Swift/Objective-C APIs & code examples in Claude, Cursor & AI assistants",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "search",
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "search",
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent app or product platform language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: agent-app, knowledge-resource, sdk.",
+    "LLM: mcp + [mcp] — The project is explicitly an MCP server for Apple Developer Documentation, providing tools to AI assistants via Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "agent-app",
+    "knowledge-resource",
+    "sdk"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Apple Docs Mcp is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to media."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:kimsungwhee/apple-docs-mcp",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "apple-docs-mcp",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

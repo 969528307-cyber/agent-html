@@ -1,0 +1,162 @@
+{
+  "id": "candidate-tool-github-jarrodwatts-claude-hud",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Claude Hud",
+  "sourceUrl": "https://github.com/jarrodwatts/claude-hud",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "jarrodwatts",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
+  "proposedCategory": [
+    "productivity"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "jarrodwatts",
+    "repo": "claude-hud",
+    "fullName": "jarrodwatts/claude-hud",
+    "stars": 23091,
+    "license": "MIT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "claude-code",
+      "cli",
+      "plugin",
+      "statusline",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-16T21:32:25Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh.md",
+    "package.json",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Claude HUD A Claude Code plugin that shows what's happening — context usage, active tools, running agents, and todo progress. Always visible below your input. [![License](https://img.shields.io/github/license/jarrodwatts/claude hud?v=2)](LICENSE) [![Stars](https://img.shields.io/github/stars/jarrodwatts/claude hud)](https://github.com/jarrodwatts/claude hud/stargazers) ![Claude HUD in action](claude hud preview 5 2.p",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A Claude Code plugin that shows what's happening — context usage, active tools, running agents, and todo progress.",
+    "Inside a Claude Code instance, run the following commands:",
+    "This is a Claude Code platform limitation.",
+    "Claude HUD gives you better insights into what's happening in your Claude Code session.",
+    "Tool activity Watch Claude read, edit, and search files as it happens",
+    "Agent tracking See which subagents are running and what they're doing",
+    "Optional lines (enable via /claude-hud:configure)",
+    "Claude HUD uses Claude Code's native statusline API — no separate window, no tmux required, works in any terminal."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"productivity\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and todo progress",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "productivity",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "productivity",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 9,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "CLI (word-boundary) or terminal usage language detected.",
+    "GitHub topics explicitly tag as CLI.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent instruction file detected alongside CLI signals.",
+    "Detected scope: platform.",
+    "No strong alternative capability detected.",
+    "LLM: single-tool + [] — This is a plugin for Claude Code that adds a HUD display; it is not a standalone CLI, MCP server, skill, or agent framework."
+  ],
+  "classificationAlternatives": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Claude Hud is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with productivity workflows.",
+      "Helps with coding workflows.",
+      "Relevant to productivity.",
+      "A Claude Code plugin that shows what's happening — context usage, active tools, running agents, and todo progress.",
+      "Inside a Claude Code instance, run the following commands:"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:jarrodwatts/claude-hud",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ]
+}

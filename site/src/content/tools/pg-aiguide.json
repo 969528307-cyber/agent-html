@@ -1,0 +1,78 @@
+{
+  "id": "pg-aiguide",
+  "name": "Pg Aiguide",
+  "type": "mcp",
+  "status": "published",
+  "summary": "MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate better PostgreSQL code.",
+  "description": "MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate better PostgreSQL code.",
+  "category": [
+    "data"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/timescale/pg-aiguide",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/timescale/pg-aiguide",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/timescale/pg-aiguide#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/timescale/pg-aiguide#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/timescale/pg-aiguide/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "pg-aiguide helps AI coding tools write dramatically better PostgreSQL code.",
+    "Semantic search across the official PostgreSQL manual (version-aware)",
+    "AI-optimized “skills” — curated, opinionated Postgres best practices used automatically by AI agents",
+    "Extension ecosystem docs, starting with TimescaleDB, with more coming soon",
+    "Agent Skills via npx skills — works with Claude Code, Cursor, Codex, Gemini CLI, and 40+ other agents",
+    "a public MCP server that can be used with any AI coding agent, or",
+    "a Claude Code plugin optimized for use with Claude's native skill support.",
+    "AI coding tools often generate Postgres code that is:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T19:13:48Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/timescale/pg-aiguide",
+  "repoUrl": "https://github.com/timescale/pg-aiguide",
+  "license": "Apache-2.0",
+  "stars": 1723,
+  "lastUpdated": "2026-05-12T19:13:48Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

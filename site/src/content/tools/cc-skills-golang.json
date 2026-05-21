@@ -1,0 +1,82 @@
+{
+  "id": "cc-skills-golang",
+  "name": "Cc Skills Golang",
+  "type": "skill",
+  "status": "published",
+  "summary": "🧑‍🎨 A collection of Golang agentic skills that works",
+  "description": "🧑‍🎨 A collection of Golang agentic skills that works",
+  "category": [
+    "skill",
+    "code-review",
+    "docs",
+    "workflow",
+    "testing"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/samber/cc-skills-golang",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/samber/cc-skills-golang",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/samber/cc-skills-golang#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/samber/cc-skills-golang#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/samber/cc-skills-golang/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Agent Skills for production-ready Golang projects",
+    "AI agent skills are reusable instruction sets that extend your coding assistant with domain-specific expertise, loaded on demand so they don't bloat your context.",
+    "This repository covers Go-specific skills only (language, testing, security, observability, etc.); for dev workflow skills (git conventions, CI/CD, PR reviews) you'll want to add a separate skills plugin.",
+    "For generic skills, please visit cc-skills.",
+    "[!IMPORTANT] Bootstrapped with Claude Code by distilling my Go project commits.",
+    "Edited, tested, reviewed and reworked by a human.",
+    "No AI slop here. AI-made skills are useless.",
+    "Copy skills into the cross-client discovery directory:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T17:04:26Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/samber/cc-skills-golang",
+  "repoUrl": "https://github.com/samber/cc-skills-golang",
+  "license": "MIT",
+  "stars": 1715,
+  "lastUpdated": "2026-05-15T17:04:26Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

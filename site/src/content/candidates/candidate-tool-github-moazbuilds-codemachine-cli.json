@@ -1,0 +1,179 @@
+{
+  "id": "candidate-tool-github-moazbuilds-codemachine-cli",
+  "type": "tool",
+  "status": "published",
+  "title": "CodeMachine CLI",
+  "sourceUrl": "https://github.com/moazbuilds/CodeMachine-CLI",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "moazbuilds",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "CodeMachine is an open-source tool that orchestrates AI coding agents into repeatable, long-running workflows. ⚡️",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "moazbuilds",
+    "repo": "CodeMachine-CLI",
+    "fullName": "moazbuilds/CodeMachine-CLI",
+    "stars": 2485,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai",
+      "automation",
+      "cli",
+      "cli-tool",
+      "code-generation",
+      "developer-tools",
+      "generative-ai",
+      "multi-agent-systems",
+      "orchestration",
+      "scaffolding",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-02-25T21:09:41Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"https://raw.githubusercontent.com/moazbuilds/CodeMachine CLI/main/images/banner.png\" alt=\"CodeMachine Banner\" width=\"100%\" </p <p align=\"center\" <code npm i g codemachine</code </p <p align=\"center\" <strong CodeMachine is an open source tool that orchestrates AI coding agents into repeatable, long running workflows. ⚡️<br </p </strong Every time you use an AI coding agent, you're running a",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "CodeMachine is an open-source tool that orchestrates AI coding agents into repeatable, long-running workflows.",
+    "Every time you use an AI coding agent, you're running a workflow.",
+    "You research, design, code, review.",
+    "The workflow lives in your head. You guide the agent through it, step by step, session by session.",
+    "You manage when to clear context, when to push forward, when to loop back.",
+    "CodeMachine lets you capture that workflow and run it again.",
+    "CodeMachine is an orchestration layer that runs AI coding CLIs through structured workflows.",
+    "You define the workflow once, and CodeMachine handles execution, context passing, and agent coordination."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "CodeMachine is an open-source tool that orchestrates AI coding agents into repeatable, long-running workflows. ⚡️",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 15,
+    "workflow": 9,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Repository name indicates CLI tool.",
+    "GitHub topics explicitly tag as CLI.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "General agent-building language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Coding agent detected with CLI context.",
+    "Detected scope: single-tool.",
+    "Alternative capabilities: knowledge-resource, workflow, agent-framework.",
+    "LLM: cli + [cli, workflow] — The project is a CLI tool that orchestrates AI coding agents into repeatable long-running workflows."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "workflow",
+    "agent-framework"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "CodeMachine CLI is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation.",
+      "CodeMachine is an open-source tool that orchestrates AI coding agents into repeatable, long-running workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:moazbuilds/codemachine-cli",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "codemachine-cli",
+  "publishedAt": "2026-05-18"
+}

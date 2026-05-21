@@ -1,0 +1,196 @@
+{
+  "id": "candidate-context-mode-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Context Mode",
+  "sourceUrl": "https://github.com/mksglu/context-mode",
+  "sourceName": "GitHub",
+  "author": "mksglu",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Context window optimization for AI coding agents. Sandboxes tool output, 98% reduction. 15 platforms",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "mksglu",
+    "repo": "context-mode",
+    "fullName": "mksglu/context-mode",
+    "stars": 15043,
+    "license": "NOASSERTION",
+    "topics": [
+      "antigravity",
+      "claude",
+      "claude-code",
+      "claude-code-hooks",
+      "claude-code-plugins",
+      "claude-code-skill",
+      "codex",
+      "codex-cli",
+      "context-mode",
+      "copilot",
+      "cursor-plugin",
+      "kiro",
+      "mcp",
+      "mcp-server",
+      "mcp-tools",
+      "openclaw",
+      "opencode",
+      "pi-agent",
+      "skills",
+      "zed-extension"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T09:42:24Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/adapters/openclaw.md",
+    "docs/adr/0001-sessiondb-multi-writer.md",
+    "docs/jetbrains-copilot.md",
+    "docs/llms-full.txt",
+    "docs/llms.txt",
+    "docs/platform-support.md",
+    "docs/UPSTREAM-CREDITS.md",
+    "package.json",
+    ".claude/skills/context-mode-ops/SKILL.md",
+    "skills/context-mode/SKILL.md",
+    "skills/ctx-doctor/SKILL.md",
+    "skills/ctx-insight/SKILL.md",
+    "skills/ctx-purge/SKILL.md",
+    "skills/ctx-stats/SKILL.md",
+    "skills/ctx-upgrade/SKILL.md",
+    "CLAUDE.md",
+    "configs/claude-code/CLAUDE.md",
+    "configs/codex/AGENTS.md",
+    "configs/kilo/AGENTS.md",
+    "configs/openclaw/AGENTS.md",
+    "configs/opencode/AGENTS.md",
+    "configs/pi/AGENTS.md",
+    "configs/zed/AGENTS.md"
+  ],
+  "readmeExtract": "Context Mode The other half of the context problem. [![users](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmksglu%2Fcontext mode%40main%2Fstats.json&query=%24.message&label=users&color=brightgreen)](https://www.npmjs.com/package/context mode) [![npm](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fmksglu%2Fcontext mode%40main%2Fstats.json&quer",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/context-mode-ops/SKILL.md",
+      "extract": "name: context mode ops description: Manage context mode GitHub issues, PRs, releases, and marketing with parallel subagent army. Orchestrates 10 20 dynamic agents per task. Use when triaging issues, reviewing PRs, releasing versions, writing LinkedIn posts, announcing releases, fixing bugs, merging contributions, validating ENV vars, testing adapters, or syncing branches. OWNER OPERATING DIRECTIVE — ABSOLUTE, NON NEG"
+    },
+    {
+      "path": "skills/context-mode/SKILL.md",
+      "extract": "name: context mode description: | Use context mode tools (ctx execute, ctx execute file) instead of Bash/cat when processing large outputs. Triggers: \"analyze logs\", \"summarize output\", \"process data\", \"parse JSON\", \"filter results\", \"extract errors\", \"check build output\", \"analyze dependencies\", \"process API response\", \"large file analysis\", \"page snapshot\", \"browser snapshot\", \"DOM structure\", \"inspect page\", \"acce"
+    },
+    {
+      "path": "skills/ctx-doctor/SKILL.md",
+      "extract": "name: ctx doctor description: | Run context mode diagnostics. Checks runtimes, hooks, FTS5, plugin registration, npm and marketplace versions. Trigger: /context mode:ctx doctor user invocable: true Context Mode Doctor Run diagnostics and display results directly in the conversation. Instructions 1. Call the ctx doctor MCP tool directly. It runs all checks server side and returns a plain text status report. 2. Display"
+    },
+    {
+      "path": "skills/ctx-insight/SKILL.md",
+      "extract": "name: ctx insight description: | Open the context mode Insight analytics dashboard in the browser. Shows personal metrics: session activity, tool usage, error rate, parallel work patterns, project focus, and actionable insights. First run installs dependencies (~30s). Subsequent runs open instantly. Trigger: /context mode:ctx insight user invocable: true Context Mode Insight Open the personal analytics dashboard in t"
+    },
+    {
+      "path": "skills/ctx-purge/SKILL.md",
+      "extract": "name: ctx purge description: | Purge the context mode knowledge base. Permanently deletes all indexed content and resets session stats. This is destructive and cannot be undone. Trigger: /context mode:ctx purge user invocable: true Context Mode Purge Permanently deletes session data for this project. Two scopes are supported (issue 520): Project scope ( scope: \"project\" ): wipes EVERYTHING — knowledge base, all sessi"
+    },
+    {
+      "path": "skills/ctx-stats/SKILL.md",
+      "extract": "name: ctx stats description: | Show how much context window context mode saved this session. Displays token consumption, context savings ratio, and per tool breakdown. Read only — shows stats only, no reset capability. To wipe the knowledge base entirely, use ctx purge instead. Trigger: /context mode:ctx stats user invocable: true Context Mode Stats Show context savings for the current session. Instructions 1. Call t"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Every MCP tool call dumps raw data into your context window.",
+    "And when the agent compacts the conversation to free space, it forgets which files it was editing, what tasks are in progress, and what you last asked for.",
+    "On top of that, the agent wastes output tokens on filler, pleasantries, and verbose explanations — burning context from both sides.",
+    "Context Mode is an MCP server that solves all four sides of this problem:",
+    "Context Saving — Sandbox tools keep raw data out of the context window.",
+    "When the conversation compacts, context-mode doesn't dump this data back into context — it indexes events into FTS5 and retrieves only what's relevant via BM25 search.",
+    "Instead of reading 50 files into context to count functions, the agent writes a script that does the counting and console.log()s only the result.",
+    "One script replaces ten tool calls and saves 100x context."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Context window optimization for AI coding agents. Sandboxes tool output, 98% reduction. 15 platforms",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Context Mode is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Every MCP tool call dumps raw data into your context window.",
+      "And when the agent compacts the conversation to free space, it forgets which files it was editing, what tasks are in progress, and what you last asked for.",
+      "On top of that, the agent wastes output tokens on filler, pleasantries, and verbose explanations — burning context from both sides."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "context-mode",
+  "publishedAt": "2026-05-18"
+}

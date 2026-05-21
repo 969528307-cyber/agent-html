@@ -1,0 +1,181 @@
+{
+  "id": "candidate-agent-of-empires-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Agent Of Empires",
+  "sourceUrl": "https://github.com/njbrake/agent-of-empires",
+  "sourceName": "GitHub",
+  "author": "njbrake",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Manage multiple Claude Code, OpenCode agents from either TUI or Web for easy access on mobile. Also supports Mistral Vibe, Codex CLI, Gemini CLI, Pi.dev, Copilot CLI, Factory Droid Coding. Uses tmux and git worktrees.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "njbrake",
+    "repo": "agent-of-empires",
+    "fullName": "njbrake/agent-of-empires",
+    "stars": 2315,
+    "license": "MIT",
+    "topics": [
+      "ai-coding",
+      "claude",
+      "claude-code",
+      "cli",
+      "codex",
+      "cursor",
+      "factory-droid-cli",
+      "gemini",
+      "gemini-cli",
+      "github-copilot-cli",
+      "hermes-agent",
+      "llm",
+      "mistral-vibe",
+      "opencode",
+      "orchestrator",
+      "pi",
+      "terminal",
+      "tmux",
+      "vibe",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T22:52:02Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/api.md",
+    "docs/assets/tui.png",
+    "docs/cli/reference.md",
+    "docs/cockpit.md",
+    "docs/cockpit/multi-agent.md",
+    "docs/guides/agent-override.md",
+    "docs/guides/apple-containers.md",
+    "docs/guides/batch-issues.sh",
+    "docs/guides/diff-view.md",
+    "docs/guides/multi-repo-workspaces.md",
+    "docs/guides/podman.md",
+    "docs/guides/remote-phone-access.md",
+    "docs/guides/sandbox.md",
+    "docs/guides/session-resume.md",
+    "docs/guides/tmux-status-bar.md",
+    "docs/guides/tool-sessions.md",
+    "docs/guides/web-dashboard.md",
+    "docs/guides/workflow.md",
+    "docs/guides/worktrees.md",
+    "docs/index.md",
+    "docs/push-notifications.md",
+    "docs/quick-start.md",
+    "docs/sounds.md",
+    "contrib/openclaw-skill/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"assets/logo.png\" alt=\"Agent of Empires\" width=\"128\" <h1 align=\"center\" Agent of Empires (AoE)</h1 <p align=\"center\" <a href=\"https://trendshift.io/repositories/22434\" target=\" blank\" <img src=\"https://trendshift.io/api/badge/repositories/22434\" alt=\"njbrake%2Fagent of empires | Trendshift\" style=\"width: 250px; height: 55px;\" width=\"250\" height=\"55\"/ </a </p <p align=\"center\" <a href=\"https",
+  "skillExtracts": [
+    {
+      "path": "contrib/openclaw-skill/SKILL.md",
+      "extract": "name: aoe description: Manage AI coding agent sessions via Agent of Empires (aoe) metadata: openclaw: requires: bins: aoe tmux homepage: https://github.com/njbrake/agent of empires Agent of Empires (aoe) Skill Use aoe to create, manage, and monitor AI coding agent sessions (Claude Code, Codex, OpenCode, etc.) in tmux. Prefer aoe over raw tmux commands for agent management. When to use this skill Launching one or more"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A session manager for AI coding agents on Linux and macOS.",
+    "Use it from the terminal (TUI) or from any browser (web dashboard).",
+    "Run multiple AI agents in parallel across different branches of your codebase, each in its own isolated session with optional Docker sandboxing.",
+    "Access your agents from your laptop, phone, or tablet.",
+    "Running one AI agent is easy.",
+    "Multi-agent support: Claude Code, OpenCode, Mistral Vibe, Codex CLI, Gemini CLI, Cursor CLI, Copilot CLI, Pi.dev, Factory Droid, Hermes, Kiro CLI, and Qwen Code",
+    "TUI app: visual interface to create, monitor, and manage sessions",
+    "Web app (Beta, stabilization in progress): create, monitor, and control your agents from any browser, installable as a PWA (guide)"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Manage multiple Claude Code, OpenCode agents from either TUI or Web for easy access on mobile. Also supports Mistral Vibe, Codex CLI, Gemini CLI, Pi.dev, Copilot CLI, Factory Droid Coding. Uses tmux and git worktrees.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Agent Of Empires is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "A session manager for AI coding agents on Linux and macOS.",
+      "Use it from the terminal (TUI) or from any browser (web dashboard).",
+      "Run multiple AI agents in parallel across different branches of your codebase, each in its own isolated session with optional Docker sandboxing."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-of-empires",
+  "publishedAt": "2026-05-20"
+}

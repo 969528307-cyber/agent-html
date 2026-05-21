@@ -1,0 +1,141 @@
+{
+  "id": "candidate-claude-reflect-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Reflect",
+  "sourceUrl": "https://github.com/BayramAnnakov/claude-reflect",
+  "sourceName": "GitHub",
+  "author": "BayramAnnakov",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A self-learning system for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "BayramAnnakov",
+    "repo": "claude-reflect",
+    "fullName": "BayramAnnakov/claude-reflect",
+    "stars": 1039,
+    "license": "MIT",
+    "topics": [
+      "claude-code",
+      "claude-skills",
+      "memory",
+      "productivity",
+      "self-learning"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-16T19:41:15Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "claude reflect [![GitHub stars](https://img.shields.io/github/stars/BayramAnnakov/claude reflect?style=flat square)](https://github.com/BayramAnnakov/claude reflect/stargazers) [![Version](https://img.shields.io/badge/version 2.6.0 blue?style=flat square)](https://github.com/BayramAnnakov/claude reflect/releases) [![License: MIT](https://img.shields.io/badge/License MIT green?style=flat square)](https://opensource.or",
+  "skillExtracts": [
+    {
+      "path": "SKILL.md",
+      "extract": "name: claude reflect description: Self learning system that captures corrections during sessions and reminds users to run /reflect to update CLAUDE.md. Use when discussing learnings, corrections, or when the user mentions remembering something for future sessions. Claude Reflect Self Learning System A two stage system that helps Claude Code learn from user corrections. How It Works Stage 1: Capture (Automatic) Hooks "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A self-learning system for Claude Code that captures corrections and discovers workflow patterns — turning them into permanent memory and reusable skills.",
+    "When you correct Claude (\"no, use gpt-5.1 not gpt-5\"), it remembers forever.",
+    "Discover Workflow Patterns (NEW in v2)",
+    "Example: You've asked \"review my productivity\" 12 times → suggests creating /daily-review",
+    "Permanent Memory Corrections sync to CLAUDE.md — Claude remembers across sessions",
+    "Skill Discovery Finds repeating patterns in your history → generates commands",
+    "Skill Improvement Corrections during /deploy improve the deploy skill itself",
+    "/reflect Process queued learnings with human review"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A self-learning system for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Reflect is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with memory workflows.",
+      "Relevant to skill.",
+      "A self-learning system for Claude Code that captures corrections and discovers workflow patterns — turning them into permanent memory and reusable skills.",
+      "When you correct Claude (\"no, use gpt-5.1 not gpt-5\"), it remembers forever."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-reflect",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,191 @@
+{
+  "id": "candidate-claude-red-2026-05-18",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Claude Red",
+  "sourceUrl": "https://github.com/SnailSploit/Claude-Red",
+  "sourceName": "GitHub",
+  "author": "SnailSploit",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "SnailSploit",
+    "repo": "Claude-Red",
+    "fullName": "SnailSploit/Claude-Red",
+    "stars": 1293,
+    "license": "MIT",
+    "topics": [
+      "claude-ai",
+      "claude-pt",
+      "claude-skills",
+      "redteam",
+      "redteam-tools",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-08T16:05:21Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "Skills/active-directory/offensive-active-directory/SKILL.md",
+    "Skills/ai/offensive-ai-security/SKILL.md",
+    "Skills/auth/offensive-jwt/SKILL.md",
+    "Skills/auth/offensive-oauth/SKILL.md",
+    "Skills/cloud/offensive-cloud/SKILL.md",
+    "Skills/exploit-dev/offensive-exploit-dev-course/SKILL.md",
+    "Skills/exploit-dev/offensive-exploit-development/SKILL.md",
+    "Skills/exploit-dev/offensive-mitigations/SKILL.md",
+    "Skills/exploit-dev/offensive-toctou/SKILL.md",
+    "Skills/fuzzing/offensive-bug-identification/SKILL.md",
+    "Skills/fuzzing/offensive-fuzzing-course/SKILL.md",
+    "Skills/fuzzing/offensive-fuzzing/SKILL.md",
+    "Skills/fuzzing/offensive-vuln-classes/SKILL.md",
+    "Skills/infrastructure/offensive-advanced-redteam/SKILL.md",
+    "Skills/infrastructure/offensive-edr-evasion/SKILL.md",
+    "Skills/infrastructure/offensive-initial-access/SKILL.md",
+    "Skills/infrastructure/offensive-keylogger-arch/SKILL.md",
+    "Skills/infrastructure/offensive-shellcode/SKILL.md",
+    "Skills/iot/offensive-iot/SKILL.md",
+    "Skills/mobile/offensive-mobile/SKILL.md",
+    "Skills/recon/offensive-osint-methodology/SKILL.md",
+    "Skills/recon/offensive-osint/SKILL.md",
+    "Skills/utility/offensive-fast-checking/SKILL.md",
+    "Skills/utility/offensive-reporting/SKILL.md",
+    "Skills/web/offensive-business-logic/SKILL.md",
+    "Skills/web/offensive-deserialization/SKILL.md",
+    "Skills/web/offensive-file-upload/SKILL.md",
+    "Skills/web/offensive-graphql/SKILL.md",
+    "Skills/web/offensive-idor/SKILL.md",
+    "Skills/web/offensive-open-redirect/SKILL.md",
+    "Skills/web/offensive-parameter-pollution/SKILL.md",
+    "Skills/web/offensive-race-condition/SKILL.md",
+    "Skills/web/offensive-rce/SKILL.md",
+    "Skills/web/offensive-request-smuggling/SKILL.md",
+    "Skills/web/offensive-sqli/SKILL.md",
+    "Skills/web/offensive-ssrf/SKILL.md",
+    "Skills/web/offensive-ssti/SKILL.md",
+    "Skills/web/offensive-waf-bypass/SKILL.md",
+    "Skills/web/offensive-xss/SKILL.md"
+  ],
+  "readmeExtract": "![claude red banner](/assets/banner.png) <div align=\"center\" claude red Offensive security skills for Claude — drop in SKILL.md files that turn Claude into a context aware red team operator. [![License: MIT](https://img.shields.io/badge/license MIT blue.svg)](LICENSE) [![Skills](https://img.shields.io/badge/skills 58 red.svg)]( skill index) [![Categories](https://img.shields.io/badge/categories 13 orange.svg)]( categ",
+  "skillExtracts": [
+    {
+      "path": "Skills/active-directory/offensive-active-directory/SKILL.md",
+      "extract": "name: offensive active directory description: \"Active Directory attack methodology for internal network red team engagements. Covers reconnaissance (BloodHound, PowerView, ADExplorer), credential abuse (Kerberoasting, ASREProasting, NTLM relay, LLMNR/NBT NS poisoning), privilege escalation (ACL abuse, GPO abuse, unconstrained/constrained delegation), lateral movement (Pass the Hash, Pass the Ticket, Overpass the Hash"
+    },
+    {
+      "path": "Skills/ai/offensive-ai-security/SKILL.md",
+      "extract": "SKILL: AI Pentest Metadata Skill Name : ai security Folder : offensive ai security Source : https://github.com/SnailSploit/offensive checklist/blob/main/ai.md Description AI/LLM security offensive checklist: prompt injection, jailbreaking, model extraction, training data poisoning, adversarial inputs, LLM assisted attack automation, and AI system reconnaissance. Use when assessing AI/ML systems, red teaming LLMs, or "
+    },
+    {
+      "path": "Skills/auth/offensive-jwt/SKILL.md",
+      "extract": "name: offensive jwt description: \"JWT attack methodology for penetration testers. Covers algorithm confusion (alg:none, RS256→HS256), weak HMAC secret brute force, kid parameter injection (SQLi, path traversal), jku/x5u/jwk header injection, JWKS cache poisoning, JWS/JWE confusion, timing attacks, and mobile JWT storage extraction. Use when testing JWT based authentication, hunting auth bypass via token manipulation,"
+    },
+    {
+      "path": "Skills/auth/offensive-oauth/SKILL.md",
+      "extract": "SKILL: OAuth Security Testing Metadata Skill Name : oauth attacks Folder : offensive oauth Source : https://github.com/SnailSploit/offensive checklist/blob/main/oauth.md Description OAuth 2.0 attack checklist: authorization code interception, redirect uri bypass, CSRF on OAuth flow, state parameter abuse, open redirector chaining, token leakage via Referer, PKCE bypass, and scope escalation. Use when testing OAuth im"
+    },
+    {
+      "path": "Skills/cloud/offensive-cloud/SKILL.md",
+      "extract": "name: offensive cloud description: \"Cloud security attack methodology covering AWS, Azure, and GCP. Includes credential harvesting (IMDS, ~/.aws, env vars, leaked CI secrets, instance roles), enumeration with cloud specific tools (pacu, ScoutSuite, Prowler, ROADtools, gcp enum), privilege escalation paths (IAM PassRole, AssumeRole chains, Lambda/Functions privilege flips, Azure Owner on self, GCP serviceAccountTokenC"
+    },
+    {
+      "path": "Skills/exploit-dev/offensive-exploit-dev-course/SKILL.md",
+      "extract": "SKILL: Exploit Development Metadata Skill Name : exploit dev curriculum Folder : offensive exploit dev course Source : https://github.com/SnailSploit/offensive checklist/blob/main/course.md Description Full exploit development course roadmap and syllabus: weekly topics, recommended reading, lab setup, and learning path from vulnerability classes through advanced exploitation. Use to structure exploit dev training or "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Offensive security skills for Claude — drop-in SKILL.md files that turn Claude into a context-aware red team operator.",
+    "Built by SnailSploit — GenAI Security Research.",
+    "Fuzzing & Vulnerability Research",
+    "claude-red is a curated library of offensive security skills for the Claude Skills system.",
+    "Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to ADCS abuse.",
+    "Drop a skill into your Claude environment and it behaves like a specialist: it knows the techniques, the tooling, the edge cases, and the escalation paths.",
+    "Skills load on demand based on conversational triggers — you don't pay context for skills you aren't using.",
+    "Use it for: authorized red team engagements, bug bounty triage, security research, CTF preparation, training operators, and exploring attack surfaces methodically."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "security"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "security"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Red is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Relevant to skill.",
+      "Offensive security skills for Claude — drop-in SKILL.md files that turn Claude into a context-aware red team operator.",
+      "Built by SnailSploit — GenAI Security Research.",
+      "Fuzzing & Vulnerability Research"
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  }
+}

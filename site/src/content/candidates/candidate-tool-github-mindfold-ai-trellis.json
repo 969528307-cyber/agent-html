@@ -1,0 +1,232 @@
+{
+  "id": "candidate-tool-github-mindfold-ai-trellis",
+  "type": "tool",
+  "status": "published",
+  "title": "Trellis",
+  "sourceUrl": "https://github.com/mindfold-ai/Trellis",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "mindfold-ai",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "The best agent harness.",
+  "proposedCategory": [
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic",
+    "OpenClaw"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "mindfold-ai",
+    "repo": "Trellis",
+    "fullName": "mindfold-ai/Trellis",
+    "stars": 8014,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agentic-coding",
+      "ai-workflow",
+      "claudecode",
+      "codex",
+      "harness"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T03:39:10Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    ".agents/skills/contribute/SKILL.md",
+    ".agents/skills/first-principles-thinking/SKILL.md",
+    ".agents/skills/python-design/SKILL.md",
+    ".agents/skills/trellis-before-dev/SKILL.md",
+    ".agents/skills/trellis-brainstorm/SKILL.md",
+    ".agents/skills/trellis-break-loop/SKILL.md",
+    ".agents/skills/trellis-check/SKILL.md",
+    ".agents/skills/trellis-continue/SKILL.md",
+    ".agents/skills/trellis-finish-work/SKILL.md",
+    ".agents/skills/trellis-meta/SKILL.md",
+    ".agents/skills/trellis-start/SKILL.md",
+    ".agents/skills/trellis-update-spec/SKILL.md",
+    ".claude/skills/contribute/SKILL.md",
+    ".claude/skills/first-principles-thinking/SKILL.md",
+    ".claude/skills/python-design/SKILL.md",
+    ".claude/skills/trellis-before-dev/SKILL.md",
+    ".claude/skills/trellis-brainstorm/SKILL.md",
+    ".claude/skills/trellis-break-loop/SKILL.md",
+    ".claude/skills/trellis-check/SKILL.md",
+    ".claude/skills/trellis-meta/SKILL.md",
+    ".claude/skills/trellis-update-spec/SKILL.md",
+    ".cursor/skills/trellis-before-dev/SKILL.md",
+    ".cursor/skills/trellis-brainstorm/SKILL.md",
+    ".cursor/skills/trellis-break-loop/SKILL.md",
+    ".cursor/skills/trellis-check/SKILL.md",
+    ".cursor/skills/trellis-meta/SKILL.md",
+    ".cursor/skills/trellis-update-spec/SKILL.md",
+    ".opencode/skills/trellis-before-dev/SKILL.md",
+    ".opencode/skills/trellis-brainstorm/SKILL.md",
+    ".opencode/skills/trellis-break-loop/SKILL.md",
+    ".opencode/skills/trellis-check/SKILL.md",
+    ".opencode/skills/trellis-meta/SKILL.md",
+    ".opencode/skills/trellis-update-spec/SKILL.md",
+    ".pi/skills/trellis-before-dev/SKILL.md",
+    ".pi/skills/trellis-brainstorm/SKILL.md",
+    ".pi/skills/trellis-break-loop/SKILL.md",
+    ".pi/skills/trellis-check/SKILL.md",
+    ".pi/skills/trellis-meta/SKILL.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <picture <source srcset=\"assets/trellis.png\" media=\"(prefers color scheme: dark)\" <source srcset=\"assets/trellis.png\" media=\"(prefers color scheme: light)\" <img src=\"assets/trellis.png\" alt=\"Trellis Logo\" width=\"500\" style=\"image rendering: webkit optimize contrast; image rendering: crisp edges;\" </picture </p <p align=\"center\" <strong Make AI coding reliable at team scale.</strong <br/ <sub A team ",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/contribute/SKILL.md",
+      "extract": "name: contribute description: \"Guide for contributing to Trellis documentation and marketplace. Covers adding spec templates, marketplace skills, documentation pages, and submitting PRs across both the Trellis main repo and docs repo. Use when someone wants to add a new spec template, add a new skill to the marketplace, add or update documentation pages, or submit a PR to this project.\" Contributing to Trellis Contri"
+    },
+    {
+      "path": ".agents/skills/first-principles-thinking/SKILL.md",
+      "extract": "name: first principles thinking description: Systematic first principles thinking for any problem domain. Use when the user says \"analyze from first principles\", \"第一性原理\", \"从根本分析\", \"从零开始思考\", \"think from scratch\", \"question this design\", \"is this the right approach\", \"challenge assumptions\", \"挑战假设\", \"为什么要这样做\", \"有没有更好的方案\", \"why are we doing it this way\", or needs to evaluate decisions, designs, or strategies without rel"
+    },
+    {
+      "path": ".agents/skills/python-design/SKILL.md",
+      "extract": "name: python design description: \"Python design patterns for CLI scripts and utilities — type first development, deep modules, complexity management, and red flags. Use when reading, writing, reviewing, or refactoring Python files, especially in .trellis/scripts/ or any CLI/scripting context. Also activate when planning module structure, deciding where to put new code, or doing code review.\" Python Design for CLI Scr"
+    },
+    {
+      "path": ".agents/skills/trellis-before-dev/SKILL.md",
+      "extract": "name: trellis before dev description: \"Discovers and injects project specific coding guidelines from .trellis/spec/ before implementation begins. Reads spec indexes, pre development checklists, and shared thinking guides for the target package. Use when starting a new coding task, before writing any code, switching to a different package, or needing to refresh project conventions and standards.\" Read the relevant dev"
+    },
+    {
+      "path": ".agents/skills/trellis-brainstorm/SKILL.md",
+      "extract": "name: trellis brainstorm description: \"Guides collaborative requirements discovery before implementation. Creates task directory, seeds PRD, asks high value questions one at a time, researches technical choices, and converges on MVP scope. Use when requirements are unclear, there are multiple valid approaches, or the user describes a new feature or complex task.\" Brainstorm Requirements Discovery (AI Coding Enhanced)"
+    },
+    {
+      "path": ".agents/skills/trellis-break-loop/SKILL.md",
+      "extract": "name: trellis break loop description: \"Deep bug analysis to break the fix forget repeat cycle. Analyzes root cause category, why fixes failed, prevention mechanisms, and captures knowledge into specs. Use after fixing a bug to prevent the same class of bugs.\" Break the Loop Deep Bug Analysis When debug is complete, use this for deep analysis to break the \"fix bug forget repeat\" cycle. Analysis Framework Analyze the b"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Task-centered workflow Keep PRDs, implementation context, review context, and task status in .trellis/tasks/ so AI work stays structured.",
+    "Team-shared standards Specs live in the repo, so one person's hard-won workflow or rule can benefit the whole team.",
+    "Trellis runs a 4-phase loop with auto-invoked skills and sub-agents:",
+    "Research-heavy items go to a trellis-research sub-agent.",
+    "The result is curated specs + research files referenced from implement.jsonl / check.jsonl.",
+    "Implement — a trellis-implement sub-agent writes code from the PRD with the curated context auto-injected, no git commit.",
+    "Verify — a trellis-check sub-agent reviews the diff against specs and runs lint, type-check, and tests, self-fixing where it can.",
+    "See the workflow in practice Real-World Scenarios"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"workflow\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The best agent harness.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "workflow",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "workflow",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Trellis is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to workflow.",
+      "Task-centered workflow Keep PRDs, implementation context, review context, and task status in .trellis/tasks/ so AI work stays structured."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:mindfold-ai/trellis",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "trellis",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

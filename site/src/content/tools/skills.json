@@ -1,0 +1,80 @@
+{
+  "id": "skills",
+  "name": "Skills",
+  "type": "skill",
+  "status": "published",
+  "summary": "This repository contains a collection of Agent Skills developed by GudaStudio, enabling seamless collaboration between Claude and other AI models and tools.",
+  "description": "This repository contains a collection of Agent Skills developed by GudaStudio, enabling seamless collaboration between Claude and other AI models and tools.",
+  "category": [
+    "skill",
+    "code-review",
+    "docs",
+    "workflow",
+    "testing"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/GuDaStudio/skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/GuDaStudio/skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/GuDaStudio/skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/GuDaStudio/skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/GuDaStudio/skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Agent Skills 集合 —— 让 Claude 与多模型/工具无缝协作",
+    "Agent Skills 是 Anthropic 推出的模块化能力扩展机制，让 LLM 能够按需加载专业领域知识与工作流。本仓库收录了 GudaStudio 开发的 Agent Skills 集合，实现 Claude 与其他 AI 模型、工具的无缝协作。",
+    "collaborating-with-codex 将编码任务委托给 Codex CLI，用于原型开发、调试和代码审查 OpenAI Codex",
+    "collaborating-with-gemini 将编码任务委托给 Gemini CLI，用于原型开发、调试和代码审查 Google Gemini",
+    "Codex CLI (若使用 collaborating-with-codex)",
+    "Gemini CLI (若使用 collaborating-with-gemini)",
+    "--user -User -u 安装到用户级目录 (~/.claude/skills/)",
+    "--project -Project -p 安装到项目级目录 (./.claude/skills/)"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-12-23T15:04:12Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/GuDaStudio/skills",
+  "repoUrl": "https://github.com/GuDaStudio/skills",
+  "license": "MIT",
+  "stars": 2010,
+  "lastUpdated": "2025-12-23T15:04:12Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

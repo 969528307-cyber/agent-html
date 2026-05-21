@@ -1,0 +1,77 @@
+{
+  "id": "keeper-sh",
+  "name": "Keeper.sh",
+  "type": "single-tool",
+  "status": "published",
+  "summary": "Calendar sync tool & universal calendar MCP server. Aggregate, sync and control calendars on Google, Outlook, Office 365, iCloud, CalDAV or ICS.",
+  "description": "Calendar sync tool & universal calendar MCP server. Aggregate, sync and control calendars on Google, Outlook, Office 365, iCloud, CalDAV or ICS.",
+  "category": [
+    "productivity"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ridafkih/keeper.sh",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ridafkih/keeper.sh",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ridafkih/keeper.sh#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ridafkih/keeper.sh#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ridafkih/keeper.sh/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Keeper is a simple & open-source calendar syncing tool.",
+    "MCP (Model Context Protocol) server for AI agent calendar access",
+    "You need to generate a local root certificate authority and trust it so your browser accepts the certificate.",
+    "This starts PostgreSQL, Redis, and a Caddy reverse proxy via Docker Compose, along with the API, web, MCP, and cron services locally.",
+    "MCP 3001 Proxied by Web at /mcp",
+    "DATABASEURL api, cron, worker, mcp PostgreSQL connection URL.. . e.g.",
+    "REDISURL api, cron, worker Redis connection URL.",
+    "BETTERAUTHURL api, mcp The base URL used for auth redirects.. . e.g."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-10T03:16:24Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ridafkih/keeper.sh",
+  "repoUrl": "https://github.com/ridafkih/keeper.sh",
+  "license": "AGPL-3.0",
+  "stars": 1065,
+  "lastUpdated": "2026-04-10T03:16:24Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

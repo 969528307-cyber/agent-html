@@ -1,0 +1,76 @@
+{
+  "id": "mongodb-mcp-server",
+  "name": "Mongodb Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters.",
+  "description": "A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters.",
+  "category": [
+    "data"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A Model Context Protocol server for interacting with MongoDB Databases and MongoDB Atlas.",
+    "A MongoDB connection string or Atlas API credentials, the Server will not start unless configured.",
+    "Service Accounts Atlas API credentials are required to use the Atlas tools.",
+    "If you have a MongoDB connection string, you can use it directly to connect to your MongoDB instance.",
+    "You can pass your connection string via environment variables, make sure to use a valid username and password.",
+    "NOTE: The connection string can be configured to connect to any MongoDB cluster, whether it's a local instance or an Atlas cluster.",
+    "Connection String via environment variables in the MCP file example",
+    "Atlas API credentials via environment variables in the MCP file example"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T08:39:29Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "repoUrl": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "license": "Apache-2.0",
+  "stars": 1021,
+  "lastUpdated": "2026-05-13T08:39:29Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-14",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,75 @@
+{
+  "id": "sandbox",
+  "name": "Sandbox",
+  "type": "mcp",
+  "status": "published",
+  "summary": "All-in-One Sandbox for AI Agents that combines Browser, Shell, File, MCP and VSCode Server in a single Docker container.",
+  "description": "All-in-One Sandbox for AI Agents that combines Browser, Shell, File, MCP and VSCode Server in a single Docker container.",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/agent-infra/sandbox",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/agent-infra/sandbox",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/agent-infra/sandbox#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/agent-infra/sandbox#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/agent-infra/sandbox/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AIO Sandbox - All-in-One Agent Sandbox Environment",
+    "🌐 Browser 💻 Terminal 📁 File 🔧 VSCode 📊 Jupyter 🤖 MCP",
+    "Use a specific version in the format agent-infra/sandbox:${version}, for example, to use version 1.0.0.150:",
+    "AIO Sandbox is an all-in-one agent sandbox environment that combines Browser, Shell, File, MCP operations, and VSCode Server in a single Docker container.",
+    "Built on cloud-native lightweight sandbox technology, it provides a unified, secure execution environment for AI agents and developers.",
+    "Traditional sandboxes are single-purpose (browser, code, or shell), making file sharing and functional coordination extremely challenging.",
+    "✅ Unified File System - Files downloaded in browser are instantly available in Shell/File operations",
+    "✅ Agent-Ready - MCP-compatible APIs for seamless AI agent integration"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-10T03:28:44Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/agent-infra/sandbox",
+  "repoUrl": "https://github.com/agent-infra/sandbox",
+  "license": "Apache-2.0",
+  "stars": 4657,
+  "lastUpdated": "2026-04-10T03:28:44Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

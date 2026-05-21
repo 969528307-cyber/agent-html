@@ -1,0 +1,78 @@
+{
+  "id": "scientific-agent-skills",
+  "name": "Scientific Agent Skills",
+  "type": "skill",
+  "status": "published",
+  "summary": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
+  "description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "🔔 Claude Scientific Skills is now Scientific Agent Skills. Same skills, broader compatibility — now works with any AI agent that supports the open Agent Skills standard, not just Claude.",
+    "New: K-Dense BYOK — A free, open-source AI co-scientist that runs on your desktop, powered by Scientific Agent Skills.",
+    "Bring your own API keys, pick from 40+ models, and get a full research workspace with web search, file handling, 100+ scientific databases, and access to all 135 skills in this repo.",
+    "Works with Cursor, Claude Code, Codex, and more.",
+    "Transform your AI agent into a research assistant capable of executing complex multi-step scientific workflows across biology, chemistry, medicine, and beyond.",
+    "These skills enable your AI agent to seamlessly work with specialized scientific libraries, databases, and tools across multiple scientific domains.",
+    "While the agent can use any Python package or API on its own, these explicitly defined skills provide curated documentation and examples that make it significantly stronger and more reliable for the workflows below:",
+    "🏥 Clinical Research & Precision Medicine - Clinical trials, pharmacogenomics, variant interpretation, drug safety, clinical decision support, treatment planning"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T11:39:15Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "repoUrl": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "license": "MIT",
+  "stars": 24152,
+  "lastUpdated": "2026-05-18T11:39:15Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

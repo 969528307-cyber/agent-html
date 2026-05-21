@@ -1,0 +1,76 @@
+{
+  "id": "blades",
+  "name": "Blades",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Blades is a Go-based multimodal AI Agent framework.",
+  "description": "Blades is a Go-based multimodal AI Agent framework.",
+  "category": [
+    "workflow"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/go-kratos/blades",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/go-kratos/blades",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/go-kratos/blades#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/go-kratos/blades#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/go-kratos/blades/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Blades is a multimodal AI Agent framework for the Go language, supporting custom models, tools, memory, middleware, etc.",
+    "Blades leverages the characteristics of the Go language to provide a flexible and efficient AI Agent solution.",
+    "Middleware Ecosystem: Drawing inspiration from Kratos's middleware design philosophy, features like Observability and Guardrails can be easily integrated into AI Agents.",
+    "Highly Extensible: Achieves a high degree of decoupling and extensibility through unified interfaces and pluggable components, facilitating the integration of different LLM models and external tools.",
+    "These components work together to build the intelligent behavior of the Agent:",
+    "Agent: The core unit that executes tasks, capable of invoking models and tools.",
+    "Chain: Connects multiple Agents or other Chains to form complex workflows.",
+    "ModelProvider: A pluggable LLM interface, allowing you to easily switch and integrate different language model services (such as OpenAI, etc.)."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T13:56:21Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/go-kratos/blades",
+  "repoUrl": "https://github.com/go-kratos/blades",
+  "license": "MIT",
+  "stars": 775,
+  "lastUpdated": "2026-05-18T13:56:21Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

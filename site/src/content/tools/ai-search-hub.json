@@ -1,0 +1,80 @@
+{
+  "id": "ai-search-hub",
+  "name": "AI Search Hub",
+  "type": "skill",
+  "status": "published",
+  "summary": "One Query. All Search Skill. 聚合 Gemini、Grok、豆包、元宝等平台原生 AI 搜索能力，免费获取科技趋势、行业舆情、热点追踪、旅行规划、日常问题统一接进自己的 Agent 与工作流，指定链接免费爬取",
+  "description": "One Query. All Search Skill. 聚合 Gemini、Grok、豆包、元宝等平台原生 AI 搜索能力，免费获取科技趋势、行业舆情、热点追踪、旅行规划、日常问题统一接进自己的 Agent 与工作流，指定链接免费爬取",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Kimi",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/minsight-ai-info/AI-Search-Hub",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/minsight-ai-info/AI-Search-Hub",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/minsight-ai-info/AI-Search-Hub#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/minsight-ai-info/AI-Search-Hub#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/minsight-ai-info/AI-Search-Hub/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AI Search Hub 是一个开源 Skill，用来把分散在不同 AI 平台里的搜索能力、网页抽取能力，以及它们背后各自公司的原生数据世界，整理成一个可复用的搜索与抽取中枢。",
+    "你不只可以一次提问、全域搜索。给它一个链接，也能直接借力大厂已经打磨好的网页理解、搜索与抽取能力。更重要的是，你可以通过这些 AI 平台去拿微信公众号、抖音、微博等它们更容易触达的数据，再让它们替你完成搜集、清洗、整理，最后统一接进自己的 Agent 与工作流。",
+    "给一个问题，让这些平台替你搜；给一个链接，让这些平台替你抓、替你读、替你清洗整理，再把结果统一回收给你的 Agent。最难拿的数据入口，直接让大厂替你打工。",
+    "📦 统一输出给 Agent / Workflow . 把多平台结果回收到一个可复用出口",
+    "这些平台不是附属补充，而是 AI Search Hub 当前编排的核心搜索入口。",
+    "当前已接入：Gemini / Grok / 豆包 / 元宝 / LongCat / 通义千问 / MiniMax / Kimi",
+    "Gemini . Google-first discovery",
+    "Grok . Real-time social search"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-27T07:47:18Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/minsight-ai-info/AI-Search-Hub",
+  "repoUrl": "https://github.com/minsight-ai-info/AI-Search-Hub",
+  "stars": 1116,
+  "lastUpdated": "2026-04-27T07:47:18Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

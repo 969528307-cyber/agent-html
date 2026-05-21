@@ -1,0 +1,133 @@
+{
+  "id": "candidate-agent-claude-code",
+  "type": "agent",
+  "status": "published",
+  "title": "Claude Code",
+  "sourceUrl": "https://docs.anthropic.com/",
+  "sourceName": "Claude Code feature overview",
+  "sourceRegistryId": "local-agents-library",
+  "sourceRegistry": {
+    "id": "local-agents-library",
+    "name": "Local Agent Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/agents",
+    "acceptRules": [
+      "must_have_documentation_url",
+      "must_have_summary",
+      "must_have_capability_profile"
+    ],
+    "rejectRules": [
+      "missing_official_link",
+      "missing_agent_capability_description"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "Anthropic's terminal-native coding agent for large repositories, MCP-connected tools, skills, hooks, and team workflows.",
+  "proposedCategory": [
+    "Large repository work",
+    "Terminal-native development",
+    "MCP and tool-connected coding",
+    "Team-shared agent workflows"
+  ],
+  "proposedAgents": [
+    "claude-code"
+  ],
+  "extractedSignals": [
+    "Large-codebase navigation: A strong fit when the agent must understand project structure, modify files, and reason across a long-running coding session.",
+    "MCP-connected tool use: Claude Code documents MCP as a first-class way to connect external tools, prompts, authenticated services, and data sources.",
+    "Reusable workflow surfaces: Slash commands, skills, hooks, subagents, and plugins give teams several ways to package repeatable engineering behavior.",
+    "MCP: native",
+    "Skills: native",
+    "Hooks: native"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Agent collector output. Review official docs, GitHub activity, extension model, and ecosystem fit before changing the public Agent page.",
+  "publishedAs": "claude-code",
+  "publishedAt": "2026-05-16",
+  "author": "Anthropic",
+  "agentProfile": {
+    "region": "global",
+    "vendor": "Anthropic",
+    "interfaceType": [
+      "cli"
+    ],
+    "supportsMcp": true,
+    "supportsSkills": true,
+    "supportsCli": true,
+    "supportsWorkflows": true,
+    "sourceKinds": [
+      "docs",
+      "docs",
+      "docs",
+      "docs"
+    ],
+    "officialLinks": [
+      {
+        "label": "Claude Code feature overview",
+        "url": "https://code.claude.com/docs/en/features-overview",
+        "kind": "docs"
+      },
+      {
+        "label": "Claude Code MCP docs",
+        "url": "https://docs.anthropic.com/en/docs/claude-code/mcp",
+        "kind": "docs"
+      },
+      {
+        "label": "Claude Code slash commands",
+        "url": "https://docs.claude.com/en/docs/claude-code/slash-commands",
+        "kind": "docs"
+      },
+      {
+        "label": "Claude Code hooks",
+        "url": "https://docs.claude.com/en/docs/claude-code/hooks",
+        "kind": "docs"
+      }
+    ]
+  },
+  "canonicalKey": "agent:claude-code",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "agent",
+    "primaryType": "agent",
+    "whatIsIt": "Claude Code is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to Large repository work.",
+      "Relevant to Terminal-native development.",
+      "Relevant to MCP and tool-connected coding.",
+      "Relevant to Team-shared agent workflows.",
+      "Large-codebase navigation: A strong fit when the agent must understand project structure, modify files, and reason across a long-running coding session."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

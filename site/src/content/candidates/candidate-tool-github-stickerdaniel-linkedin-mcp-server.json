@@ -1,0 +1,192 @@
+{
+  "id": "candidate-tool-github-stickerdaniel-linkedin-mcp-server",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Linkedin Mcp Server",
+  "sourceUrl": "https://github.com/stickerdaniel/linkedin-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "stickerdaniel",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Open-source MCP server for LinkedIn. Give Claude and any MCP-compatible AI assistant access to profiles, companies, jobs, and messages.",
+  "proposedCategory": [
+    "communication"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "stickerdaniel",
+    "repo": "linkedin-mcp-server",
+    "fullName": "stickerdaniel/linkedin-mcp-server",
+    "stars": 1871,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "anthropic",
+      "chatgpt",
+      "chatgpt-desktop",
+      "claude",
+      "claude-ai",
+      "claude-code",
+      "claude-desktop",
+      "desktop-extension",
+      "dxt",
+      "linkedin",
+      "linkedin-api",
+      "linkedin-mcp",
+      "linkedin-profile-scraper",
+      "linkedin-scraper",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "python"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T21:35:01Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/docker-hub.md",
+    "pyproject.toml",
+    ".agents/skills/triage-reviews/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "LinkedIn MCP Server <p align=\"left\" <a href=\"https://pypi.org/project/linkedin scraper mcp/\" target=\" blank\" <img src=\"https://img.shields.io/pypi/v/linkedin scraper mcp?color=blue\" alt=\"PyPI\" </a <a href=\"https://github.com/stickerdaniel/linkedin mcp server/actions/workflows/ci.yml\" target=\" blank\" <img src=\"https://github.com/stickerdaniel/linkedin mcp server/actions/workflows/ci.yml/badge.svg?branch=main\" alt=\"CI ",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/triage-reviews/SKILL.md",
+      "extract": "name: triage reviews description: Fetch PR review comments, verify each against real code/docs, fix valid issues, commit and push disable model invocation: true argument hint: '[PR number]' Triage PR Review Comments Fetch all review comments on the current PR, verify each finding against real code, fix valid issues, and push. Phase 1: Gather Comments 1. Determine the PR number: Use $ARGUMENTS if provided Otherwise: g"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Through this LinkedIn MCP server, AI assistants like Claude can connect to your LinkedIn.",
+    "Access profiles and companies, search for jobs, or get job details.",
+    "This tool controls a real browser session; it doesn't exploit undocumented APIs or bypass authentication.",
+    "That said, LinkedIn's TOS prohibit automated tools.",
+    "So far, no users have been banned for using this MCP.",
+    "What if my agents execute too many actions?",
+    "LinkedIn may send you a warning about automated tool usage.",
+    "If that happens, reduce your automation volume."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Open-source MCP server for LinkedIn. Give Claude and any MCP-compatible AI assistant access to profiles, companies, jobs, and messages.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 7,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, agent-app, workflow.",
+    "LLM: mcp + [mcp] — The project is explicitly named 'linkedin-mcp-server' and described as an MCP server for LinkedIn, exposing LinkedIn capabilities via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "agent-app",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Linkedin Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Relevant to communication.",
+      "Through this LinkedIn MCP server, AI assistants like Claude can connect to your LinkedIn.",
+      "Access profiles and companies, search for jobs, or get job details."
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  },
+  "canonicalKey": "tool:github:stickerdaniel/linkedin-mcp-server",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

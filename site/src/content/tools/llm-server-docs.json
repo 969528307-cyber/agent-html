@@ -1,0 +1,73 @@
+{
+  "id": "llm-server-docs",
+  "name": "Llm Server Docs",
+  "type": "knowledge-resource",
+  "status": "published",
+  "summary": "End-to-end documentation to set up your own local & fully private LLM server on Debian. Equipped with chat, web search, RAG, model management, MCP servers, image generation, and TTS.",
+  "description": "End-to-end documentation to set up your own local & fully private LLM server on Debian. Equipped with chat, web search, RAG, model management, MCP servers, image generation, and TTS.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/varunvasudeva1/llm-server-docs",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/varunvasudeva1/llm-server-docs",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/varunvasudeva1/llm-server-docs#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/varunvasudeva1/llm-server-docs#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/varunvasudeva1/llm-server-docs/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "TL;DR: End-to-end documentation to set up your own local & fully private LLM server on Debian.",
+    "Equipped with chat, web search, RAG, model management, MCP servers, image generation, and TTS, along with steps for configuring SSH, firewall, and secure remote access via Tailscale.",
+    "MCP Proxy Server (mcp-proxy, MCPJungle)",
+    "VS Code/Claude Desktop Integration",
+    "Standard protocols (OpenAI-compatibility, MCPs, etc.) help with this a lot and, in this guide, they are always preferred over bundled solutions.",
+    "Create a bootable USB using a tool like Rufus for Windows or Balena Etcher for MacOS.",
+    "For a more detailed guide on installing Debian, refer to the official documentation.",
+    "First, we'll switch to root and grant our user permission to run commands with sudo."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-03-02T04:13:58Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/varunvasudeva1/llm-server-docs",
+  "repoUrl": "https://github.com/varunvasudeva1/llm-server-docs",
+  "license": "MIT",
+  "stars": 768,
+  "lastUpdated": "2026-03-02T04:13:58Z",
+  "lastChecked": "2026-05-16",
+  "publishedAt": "2026-05-16",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

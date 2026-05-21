@@ -1,97 +1,353 @@
 ---
 import { getCollection } from "astro:content";
-import ArticleCard from "../../components/ArticleCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const signals = (await getCollection("signals"))
   .filter((entry) => entry.data.status === "published")
   .sort((a, b) => b.data.publishedAt.localeCompare(a.data.publishedAt));
+
+const permissionCounts = signals.reduce<Record<string, number>>((counts, signal) => {
+  counts[signal.data.permissionStatus] = (counts[signal.data.permissionStatus] ?? 0) + 1;
+  return counts;
+}, {});
 ---
 
 <BaseLayout
   title="Signals - agentk.it"
   description="English translations and editorial notes from high-quality Chinese AI Agent content."
 >
-  <section class="page hero-lite">
-    <div>
-      <div class="eyebrow">Signals</div>
-      <h1>Translate high-signal Chinese AI content into English.</h1>
-      <p>
-        Signals are not random news posts. Each item should show permission,
-        original source, why it matters, and which tools or agent workflows it
-        changes.
-      </p>
-    </div>
-    <aside class="panel">
-      <span>EN</span>
-      <p>complete translation target</p>
-    </aside>
-  </section>
+  <section class="signals page">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="route-chip"><span></span>English Signals Desk</div>
+        <h1>Translate high-signal Chinese AI content into English.</h1>
+        <p>
+          Signals connect ecosystem movement back to tools and agents: source,
+          thesis, why it matters, related objects, and an English reading layer.
+        </p>
+      </div>
 
-  <section class="section page">
-    <div class="signal-grid">
-      {
-        signals.map((signal) => (
-          <ArticleCard
-            href={`/signals/${signal.id}`}
-            label={`${signal.data.sourceName} · ${signal.data.permissionStatus}`}
-            tone="clay"
-            title={signal.data.englishTitle}
-            description={signal.data.executiveSummary}
-          />
-        ))
-      }
-    </div>
+      <aside class="lab-console">
+        <div class="console-head">
+          <span>Translation desk</span>
+          <strong>{signals.length} signals</strong>
+        </div>
+        <div class="console-lines">
+          {Object.entries(permissionCounts).map(([status, count]) => (
+            <div>
+              <span>{status.replaceAll("_", " ")}</span>
+              <strong>{count}</strong>
+              <p>{count === 1 ? "entry" : "entries"}</p>
+            </div>
+          ))}
+        </div>
+      </aside>
+    </section>
+
+    <section class="signal-section">
+      <div class="section-kicker">
+        <span>01</span>
+        <h2>Read signals as ecosystem evidence.</h2>
+        <p>Each card gives the source, permission posture, thesis, and links into affected tools or agents.</p>
+      </div>
+
+      <div class="signal-grid">
+        {
+          signals.map((signal) => (
+            <a class="signal-card" href={`/signals/${signal.id}`}>
+              <div class="tags">
+                <span>{signal.data.sourceName}</span>
+                <span>{signal.data.permissionStatus.replaceAll("_", " ")}</span>
+              </div>
+              <h2>{signal.data.englishTitle}</h2>
+              <p>{signal.data.executiveSummary}</p>
+              <div class="metrics">
+                <span>{signal.data.publishedAt}</span>
+                <strong>{signal.data.relatedTools.length} tools · {signal.data.relatedAgents.length} agents</strong>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </section>
   </section>
 </BaseLayout>
 
 <style>
-  .hero-lite {
+  :global(body) {
+    background:
+      radial-gradient(circle at 12% 0%, rgb(134 174 255 / 0.18), transparent 30rem),
+      radial-gradient(circle at 88% 7%, rgb(229 183 106 / 0.16), transparent 28rem),
+      radial-gradient(circle at 60% 86%, rgb(82 220 160 / 0.1), transparent 34rem),
+      #080b10;
+  }
+
+  .signals {
+    padding: 42px 0 72px;
+  }
+
+  .hero {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 280px;
-    gap: 28px;
-    align-items: end;
-    padding: 72px 0 24px;
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+    gap: 18px;
   }
 
-  .hero-lite p {
-    max-width: 680px;
-    margin-top: 18px;
-    color: var(--muted);
-    font-size: 15px;
-    line-height: 1.72;
+  .hero-copy,
+  .lab-console,
+  .signal-card {
+    border: 1px solid rgb(246 242 234 / 0.11);
+    background:
+      linear-gradient(180deg, rgb(246 242 234 / 0.07), rgb(246 242 234 / 0.026)),
+      rgb(12 17 24 / 0.82);
+    box-shadow: 0 30px 100px rgb(0 0 0 / 0.32);
+    backdrop-filter: blur(30px);
   }
 
-  .panel {
+  .hero-copy {
+    position: relative;
+    min-height: 330px;
+    padding: clamp(28px, 4.4vw, 52px);
+    overflow: hidden;
+    border-radius: 42px;
+  }
+
+  .hero-copy::after {
+    position: absolute;
+    right: -90px;
+    bottom: -150px;
+    width: 360px;
+    height: 360px;
+    content: "";
+    background:
+      radial-gradient(circle at 34% 35%, rgb(246 242 234 / 0.72), transparent 8%),
+      conic-gradient(from 180deg, rgb(229 183 106 / 0.6), rgb(134 174 255 / 0.44), rgb(82 220 160 / 0.36), rgb(229 183 106 / 0.6));
+    border-radius: 44% 56% 50% 50%;
+    opacity: 0.58;
+    filter: blur(4px);
+  }
+
+  .route-chip {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 9px 12px;
+    color: #fff0d0;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    border: 1px solid rgb(229 183 106 / 0.3);
+    border-radius: 999px;
+    background: rgb(229 183 106 / 0.1);
+  }
+
+  .route-chip span {
+    width: 8px;
+    height: 8px;
+    background: #8fb7ff;
+    border-radius: 999px;
+  }
+
+  .hero h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin-top: 24px;
+    color: #f6f2ea;
+    font-size: clamp(44px, 6.4vw, 82px);
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+  }
+
+  .hero p {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin-top: 22px;
+    color: #aeb7c8;
+    font-size: 16px;
+    line-height: 1.66;
+  }
+
+  .lab-console {
+    display: grid;
+    gap: 20px;
+    align-content: space-between;
+    min-height: 330px;
     padding: 24px;
-    border: 1px solid var(--line);
-    border-radius: 28px;
-    background: linear-gradient(180deg, rgb(211 154 118 / 0.08), rgb(238 244 238 / 0.012)), var(--paper);
-    box-shadow: var(--shadow);
+    border-radius: 34px;
   }
 
-  .panel span {
-    display: block;
-    color: var(--clay);
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: -0.06em;
+  .console-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: #9aa4b6;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
   }
 
-  .panel p {
-    margin-top: 6px;
-    color: var(--muted);
+  .console-head strong {
+    color: #e5b76a;
+  }
+
+  .console-lines {
+    display: grid;
+    gap: 10px;
+  }
+
+  .console-lines div {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 46px 56px;
+    gap: 10px;
+    align-items: baseline;
+    padding-top: 12px;
+    border-top: 1px solid rgb(246 242 234 / 0.1);
+  }
+
+  .console-lines span,
+  .console-lines p {
+    color: #8c96a7;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+
+  .console-lines strong {
+    color: #f6f2ea;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+  }
+
+  .signal-section {
+    margin-top: 44px;
+  }
+
+  .section-kicker {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 0.8fr) minmax(260px, 0.6fr);
+    gap: 18px;
+    align-items: end;
+    margin-bottom: 18px;
+  }
+
+  .section-kicker > span {
+    color: #e5b76a;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+  }
+
+  .section-kicker h2 {
+    color: #f6f2ea;
+    font-size: clamp(26px, 3vw, 42px);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+  }
+
+  .section-kicker p,
+  .signal-card p {
+    color: #9aa4b6;
+    font-size: 14px;
+    line-height: 1.62;
   }
 
   .signal-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
+    gap: 14px;
   }
 
-  @media (max-width: 860px) {
-    .hero-lite,
+  .signal-card {
+    display: grid;
+    min-height: 320px;
+    padding: 22px;
+    border-radius: 30px;
+    transition: transform 180ms ease, border-color 180ms ease;
+  }
+
+  .signal-card:hover {
+    border-color: rgb(229 183 106 / 0.36);
+    transform: translateY(-3px);
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tags span {
+    padding: 8px 10px;
+    color: #fff0d0;
+    font-size: 11px;
+    font-weight: 850;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: 1px solid rgb(229 183 106 / 0.22);
+    border-radius: 999px;
+    background: rgb(229 183 106 / 0.08);
+  }
+
+  .signal-card h2 {
+    margin-top: 28px;
+    color: #f6f2ea;
+    font-size: clamp(30px, 4vw, 54px);
+    line-height: 0.94;
+    letter-spacing: -0.07em;
+  }
+
+  .signal-card p {
+    margin-top: 16px;
+  }
+
+  .metrics {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-self: end;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgb(246 242 234 / 0.1);
+  }
+
+  .metrics span,
+  .metrics strong {
+    color: #8c96a7;
+    font-size: 12px;
+  }
+
+  .metrics strong {
+    color: #8fb7ff;
+  }
+
+  @media (max-width: 980px) {
+    .hero,
+    .section-kicker,
     .signal-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-copy,
+    .lab-console {
+      min-height: auto;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .signals {
+      padding-top: 24px;
+    }
+
+    .hero-copy,
+    .lab-console,
+    .signal-card {
+      border-radius: 26px;
+    }
+
+    .console-lines div {
       grid-template-columns: 1fr;
     }
   }

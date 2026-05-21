@@ -1,0 +1,165 @@
+{
+  "id": "candidate-tool-github-chatmcp-mcp-server-chatsum",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp Server Chatsum",
+  "sourceUrl": "https://github.com/chatmcp/mcp-server-chatsum",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "chatmcp",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Query and Summarize your chat messages.",
+  "proposedCategory": [
+    "communication"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "chatmcp",
+    "repo": "mcp-server-chatsum",
+    "fullName": "chatmcp/mcp-server-chatsum",
+    "stars": 1034,
+    "topics": [
+      "chatbot",
+      "chatsum",
+      "mcp-server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2024-12-04T02:58:20Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "mcp server chatsum This MCP Server is used to summarize your chat messages. [中文说明](README CN.md) ![preview](./preview.png) Before you start move to [chatbot](./chatbot) directory, follow the [README](./chatbot/README.md) to setup the chat database. start chatbot to save your chat messages. Features Resources Tools query chat messages Query chat messages Query chat messages with given parameters Summarize chat message",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "This MCP Server is used to summarize your chat messages.",
+    "Summarize chat messages based on the query prompt",
+    "On MacOS: ~/Library/Application Support/Claude/claudedesktopconfig.json",
+    "On Windows: %APPDATA%/Claude/claudedesktopconfig.json",
+    "Since MCP servers communicate over stdio, debugging can be challenging.",
+    "We recommend using the MCP Inspector, which is available as a package script:",
+    "The Inspector will provide a URL to access debugging tools in your browser.",
+    "\"args\": [\"path-to/mcp-server-chatsum/build/index.js\"]..."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 2,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Query and Summarize your chat messages.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "docs",
+      "database"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "docs",
+    "database"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "SDK or library language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: sdk, cli.",
+    "LLM: mcp + [mcp] — This project is explicitly described as an MCP server that provides chat message summarization via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "sdk",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp Server Chatsum is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with docs workflows.",
+      "Helps with database workflows.",
+      "Relevant to communication.",
+      "This MCP Server is used to summarize your chat messages."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:chatmcp/mcp-server-chatsum",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-server-chatsum",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

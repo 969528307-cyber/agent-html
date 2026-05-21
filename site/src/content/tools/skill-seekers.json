@@ -1,0 +1,78 @@
+{
+  "id": "skill-seekers",
+  "name": "Skill Seekers",
+  "type": "skill",
+  "status": "published",
+  "summary": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection",
+  "description": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "🌐 Visit SkillSeekersWeb.com - Browse 24+ preset configs, share your configs, and access complete documentation!",
+    "Skill Seekers is a multi-repo project.",
+    "SkillSeekers Core CLI & MCP server (this repo) PyPI",
+    "skillseekersweb Website & documentation Live",
+    "skill-seekers-action GitHub Action for CI/CD",
+    "skill-seekers-plugin Claude Code plugin",
+    "homebrew-skill-seekers Homebrew tap for macOS",
+    "Skill Seekers is the universal preprocessing layer that sits between raw documentation and every AI system that consumes it."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T18:33:19Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/yusufkaraaslan/Skill_Seekers",
+  "repoUrl": "https://github.com/yusufkaraaslan/Skill_Seekers",
+  "license": "MIT",
+  "stars": 13608,
+  "lastUpdated": "2026-05-17T18:33:19Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

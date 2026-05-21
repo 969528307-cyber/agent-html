@@ -1,0 +1,78 @@
+{
+  "id": "career-ops",
+  "name": "Career Ops",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+  "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+  "category": [
+    "agent-app"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/santifer/career-ops",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/santifer/career-ops",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/santifer/career-ops#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/santifer/career-ops#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/santifer/career-ops/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Career-Ops turns any AI coding CLI into a full job search command center.",
+    "Processes in batch -- evaluate 10+ offers in parallel with sub-agents",
+    "Important: This is NOT a spray-and-pray tool. Career-ops is a filter -- it helps you find the few offers worth your time out of hundreds.",
+    "Always review before submitting.",
+    "Career-ops is agentic: Claude Code navigates career pages with Playwright, evaluates fit by reasoning about your CV vs the job description (not keyword matching), and adapts your resume per listing.",
+    "6-Block Evaluation Role summary, CV match, level strategy, comp research, personalization, interview prep (STAR+R)",
+    "Portal Scanner 45+ companies pre-configured (Anthropic, OpenAI, ElevenLabs, Retool, n8n...) + custom queries across Ashby, Greenhouse, Lever, Wellfound",
+    "Batch Processing Parallel evaluation with claude -p workers"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T01:34:36Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/santifer/career-ops",
+  "repoUrl": "https://github.com/santifer/career-ops",
+  "license": "MIT",
+  "stars": 45275,
+  "lastUpdated": "2026-05-18T01:34:36Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

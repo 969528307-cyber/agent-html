@@ -1,0 +1,190 @@
+{
+  "id": "candidate-tool-github-eracle-openoutreach",
+  "type": "tool",
+  "status": "published",
+  "title": "OpenOutreach",
+  "sourceUrl": "https://github.com/eracle/OpenOutreach",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "eracle",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Linkedin Automation Tool: Describe your product. Define your target market. The AI finds the leads for you.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Claude Code"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "eracle",
+    "repo": "OpenOutreach",
+    "fullName": "eracle/OpenOutreach",
+    "stars": 1816,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "agentic",
+      "automated-outreach",
+      "automation",
+      "bot",
+      "chromium-browser",
+      "linkedin",
+      "linkedin-automation",
+      "linkedin-bot",
+      "linkedinbot",
+      "llm",
+      "marketing",
+      "marketing-automation",
+      "marketing-outreach",
+      "outreach",
+      "playwright",
+      "playwright-stealth",
+      "scraper",
+      "scraping"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T23:17:12Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/architecture.md",
+    "docs/default_campaign.md",
+    "docs/docker.md",
+    "docs/follow_up_agent.md",
+    "docs/GDPR_ROADMAP.md",
+    "docs/logo.png",
+    "docs/playwright-linkedin-roadmap.md",
+    "docs/profile_lifecycle.md",
+    "docs/remove_profile_dict.md",
+    "docs/template-variables.md",
+    "docs/templating.md",
+    "docs/testing.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "![OpenOutreach Logo](docs/logo.png) Describe your product. Define your target market. The AI finds the leads for you. <div align=\"center\" [![GitHub stars](https://img.shields.io/github/stars/eracle/OpenOutreach.svg?style=flat square&logo=github)](https://github.com/eracle/OpenOutreach/stargazers) [![GitHub forks](https://img.shields.io/github/forks/eracle/OpenOutreach.svg?style=flat square&logo=github)](https://githu",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "OpenOutreach is a self-hosted, open-source LinkedIn automation tool for B2B lead generation.",
+    "Unlike other tools, you don't need a list of profiles to contact — you describe your product and your target market, and the system autonomously discovers, qualifies, and contacts the right people.",
+    "The AI generates LinkedIn search queries to discover candidate profiles",
+    "Qualified leads are automatically contacted, and an AI agent manages multi-turn follow-up conversations",
+    "Perfect for founders, sales teams, and agencies who want powerful automation without account bans or subscription lock-in.",
+    "Once the container is running, open in your browser to watch the browser live (noVNC).",
+    "Alternatively, connect a native VNC client to localhost:5900.",
+    "Don't want to manage Docker and VPNs?"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Linkedin Automation Tool: Describe your product. Define your target market. The AI finds the leads for you.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "docs",
+      "browser",
+      "communication",
+      "testing"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "docs",
+    "browser",
+    "communication",
+    "testing"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 2,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Agent instruction file detected alongside CLI signals.",
+    "Detected scope: single-tool.",
+    "No strong alternative capability detected.",
+    "LLM: agent-app + [] — It is a self-hosted AI agent application for automated LinkedIn outreach and lead generation, with no support for MCP, skills, CLI, or workflow interfaces."
+  ],
+  "classificationAlternatives": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "OpenOutreach is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with docs workflows.",
+      "Helps with browser workflows.",
+      "Helps with communication workflows.",
+      "Helps with testing workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:eracle/openoutreach",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openoutreach",
+  "publishedAt": "2026-05-18"
+}

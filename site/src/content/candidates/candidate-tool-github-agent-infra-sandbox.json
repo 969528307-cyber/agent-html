@@ -1,0 +1,173 @@
+{
+  "id": "candidate-tool-github-agent-infra-sandbox",
+  "type": "tool",
+  "status": "published",
+  "title": "Sandbox",
+  "sourceUrl": "https://github.com/agent-infra/sandbox",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "agent-infra",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "All-in-One Sandbox for AI Agents that combines Browser, Shell, File, MCP and VSCode Server in a single Docker container.",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "agent-infra",
+    "repo": "sandbox",
+    "fullName": "agent-infra/sandbox",
+    "stars": 4657,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "all-in-one",
+      "browser",
+      "filesystem",
+      "mcp",
+      "sandbox",
+      "shell"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-10T03:28:44Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "examples/langgraph-deepagents-integration/pyproject.toml",
+    "examples/langgraph-deepagents-integration/README.md"
+  ],
+  "readmeExtract": "AIO Sandbox All in One Agent Sandbox Environment <p align=\"center\" <img src=\"./website/docs/public/aio icon.png\" alt=\"logo\" width=\"200\"/ </p <p align=\"center\" <strong 🌐 Browser | 💻 Terminal | 📁 File | 🔧 VSCode | 📊 Jupyter | 🤖 MCP</strong </p <div align=\"center\" <p 🌐 <a href=\"https://sandbox.agent infra.com/\" Website</a &nbsp&nbsp | &nbsp&nbsp🔌 <a href=\"https://sandbox.agent infra.com/api\" API</a &nbsp&nbsp | ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AIO Sandbox - All-in-One Agent Sandbox Environment",
+    "🌐 Browser 💻 Terminal 📁 File 🔧 VSCode 📊 Jupyter 🤖 MCP",
+    "Use a specific version in the format agent-infra/sandbox:${version}, for example, to use version 1.0.0.150:",
+    "AIO Sandbox is an all-in-one agent sandbox environment that combines Browser, Shell, File, MCP operations, and VSCode Server in a single Docker container.",
+    "Built on cloud-native lightweight sandbox technology, it provides a unified, secure execution environment for AI agents and developers.",
+    "Traditional sandboxes are single-purpose (browser, code, or shell), making file sharing and functional coordination extremely challenging.",
+    "✅ Unified File System - Files downloaded in browser are instantly available in Shell/File operations",
+    "✅ Agent-Ready - MCP-compatible APIs for seamless AI agent integration"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "All-in-One Sandbox for AI Agents that combines Browser, Shell, File, MCP and VSCode Server in a single Docker container.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "docs",
+      "browser"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "docs",
+    "browser"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 0,
+    "cli": 4,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: single-tool.",
+    "Alternative capabilities: workflow, mcp, cli.",
+    "LLM: mcp + [mcp, cli] — Provides an all-in-one sandbox with MCP-compatible APIs and shell access for AI agents"
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "mcp",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Sandbox is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with docs workflows.",
+      "Helps with browser workflows.",
+      "Relevant to devops.",
+      "AIO Sandbox - All-in-One Agent Sandbox Environment"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:agent-infra/sandbox",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "sandbox",
+  "publishedAt": "2026-05-18"
+}

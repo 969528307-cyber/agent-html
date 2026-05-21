@@ -1,0 +1,168 @@
+{
+  "id": "candidate-agentscope-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Agentscope",
+  "sourceUrl": "https://github.com/agentscope-ai/agentscope",
+  "sourceName": "GitHub",
+  "author": "agentscope-ai",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Build and run agents you can see, understand and trust.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Qwen Code"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "agentscope-ai",
+    "repo": "agentscope",
+    "fullName": "agentscope-ai/agentscope",
+    "stars": 25388,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "chatbot",
+      "large-language-models",
+      "llm",
+      "llm-agent",
+      "mcp",
+      "multi-agent",
+      "multi-modal",
+      "react-agent"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T05:06:06Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/changelog.md",
+    "docs/NEWS_zh.md",
+    "docs/NEWS.md",
+    "docs/roadmap.md",
+    "docs/tutorial/_static/css/gallery.css",
+    "docs/tutorial/_static/images/embedding_cache.png",
+    "docs/tutorial/_static/images/evaluation.png",
+    "docs/tutorial/_static/images/handoffs.png",
+    "docs/tutorial/_static/images/logo.png",
+    "docs/tutorial/_static/images/logo.svg",
+    "docs/tutorial/_static/images/sequential_hook.png",
+    "docs/tutorial/_static/images/studio_home.webp",
+    "docs/tutorial/_static/images/studio_project.webp",
+    "docs/tutorial/_static/images/studio_run.webp",
+    "docs/tutorial/_static/images/studio_tracing.webp",
+    "docs/tutorial/_static/language_switch.js",
+    "docs/tutorial/_templates/components/language-switch.html",
+    "docs/tutorial/_templates/module.rst_t",
+    "docs/tutorial/_templates/package.rst_t",
+    "docs/tutorial/_templates/page.html",
+    "docs/tutorial/_templates/sidebar/navigation.html",
+    "docs/tutorial/en/build.sh",
+    "docs/tutorial/en/conf.py",
+    "docs/tutorial/en/index.rst",
+    "docs/tutorial/en/make.bat",
+    "docs/tutorial/en/Makefile",
+    "docs/tutorial/en/src/quickstart_agent.py",
+    "docs/tutorial/en/src/quickstart_key_concept.py",
+    "docs/tutorial/en/src/quickstart_message.py",
+    "docs/tutorial/en/src/README.md",
+    "docs/tutorial/en/src/task_a2a.py",
+    "docs/tutorial/en/src/task_agent_skill.py",
+    "docs/tutorial/en/src/task_agent.py",
+    "docs/tutorial/en/src/task_embedding.py",
+    "docs/tutorial/en/src/task_eval_openjudge.py",
+    "docs/tutorial/en/src/task_eval.py",
+    "docs/tutorial/en/src/task_hook.py",
+    "docs/tutorial/en/src/task_long_term_memory.py",
+    "docs/tutorial/en/src/task_mcp.py"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"https://img.alicdn.com/imgextra/i1/O1CN01nTg6w21NqT5qFKH1u !!6000000001621 55 tps 550 550.svg\" alt=\"AgentScope Logo\" width=\"200\" / </p <span align=\"center\" [ 中文主页 ](https://github.com/agentscope ai/agentscope/blob/main/README zh.md) | [ Tutorial ](https://doc.agentscope.io/) | [ Roadmap (Jan 2026 ) ](https://github.com/agentscope ai/agentscope/blob/main/docs/roadmap.md) | [ FAQ ](https://d",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AgentScope is a production-ready, easy-to-use agent framework with essential abstractions that work with rising model capability and built-in support for finetuning.",
+    "We design for increasingly agentic LLMs.",
+    "Our approach leverages the models' reasoning and tool use abilities",
+    "Simple: start building your agents in 5 minutes with built-in ReAct agent, tools, skills, human-in-the-loop steering, memory, planning, realtime voice, evaluation and model finetuning",
+    "Extensible: large number of ecosystem integrations for tools, memory and observability; built-in support for MCP and A2A; message hub for flexible multi-agent orchestration and workflows",
+    "Production-ready: deploy and serve your agents locally, as serverless in the cloud, or on your K8s cluster with built-in OTel support",
+    "[2026-04] COMM: AgentScope 2.0 is on the way.",
+    "[2026-02] FEAT: Realtime Voice Agent support."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Build and run agents you can see, understand and trust.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "tutorial",
+    "useCategory": [
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "tutorial",
+  "useCategory": [
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "mcp",
+    "whatIsIt": "Agentscope is an MCP-related tutorial tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Relevant to mcp.",
+      "AgentScope is a production-ready, easy-to-use agent framework with essential abstractions that work with rising model capability and built-in support for finetuning.",
+      "We design for increasingly agentic LLMs.",
+      "Our approach leverages the models' reasoning and tool use abilities"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

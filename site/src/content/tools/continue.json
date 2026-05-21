@@ -1,0 +1,76 @@
+{
+  "id": "continue",
+  "name": "Continue",
+  "type": "cli",
+  "status": "published",
+  "summary": "⏩ Source-controlled AI checks, enforceable in CI. Powered by the open-source Continue CLI",
+  "description": "⏩ Source-controlled AI checks, enforceable in CI. Powered by the open-source Continue CLI",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/continuedev/continue",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/continuedev/continue",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/continuedev/continue#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/continuedev/continue#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/continuedev/continue/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Paste this into your coding agent of choice:",
+    "Continue runs agents on every pull request as GitHub status checks.",
+    "Each agent is a markdown file in your repo at .continue/checks/.",
+    "Here is an example that performs a security review:",
+    "title: \"Create and Edit Cloud Agents\"",
+    "description: \"Build custom AI workflows for your Cloud Agents with prompts, rules, and tools through the Continue Mission Control interface\"",
+    "You can only create and edit AI Agents in the Continue Mission Control web interface.",
+    "Navigate to the New Agent page."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T07:16:22Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/continuedev/continue",
+  "repoUrl": "https://github.com/continuedev/continue",
+  "license": "Apache-2.0",
+  "stars": 33250,
+  "lastUpdated": "2026-05-18T07:16:22Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

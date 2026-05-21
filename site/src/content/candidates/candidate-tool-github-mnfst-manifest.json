@@ -1,0 +1,181 @@
+{
+  "id": "candidate-tool-github-mnfst-manifest",
+  "type": "tool",
+  "status": "published",
+  "title": "Manifest",
+  "sourceUrl": "https://github.com/mnfst/manifest",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "mnfst",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Smart Model Routing for Agents. Cut Costs up to 70% 🦚",
+  "proposedCategory": [
+    "sdk"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Qwen Code",
+    "Hermes Agent",
+    "Kimi",
+    "OpenClaw"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "mnfst",
+    "repo": "manifest",
+    "fullName": "mnfst/manifest",
+    "stars": 6535,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-",
+      "ai-sdk",
+      "antrhopic",
+      "byok",
+      "cheap",
+      "cost-optimization",
+      "cost-tracking",
+      "gateway",
+      "hermes-agent",
+      "llm-observability",
+      "llm-router",
+      "open-source",
+      "openai-api",
+      "openclaw",
+      "personal-ai",
+      "token-tracking"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T08:21:23Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "CLAUDE.md",
+    "docs/model-parameters-schema.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://raw.githubusercontent.com/mnfst/manifest/HEAD/.github/assets/logo white.svg\" / <source media=\"(prefers color scheme: light)\" srcset=\"https://raw.githubusercontent.com/mnfst/manifest/HEAD/.github/assets/logo dark.svg\" / <img src=\"https://raw.githubusercontent.com/mnfst/manifest/HEAD/.github/assets/logo dark.svg\" alt=\"Manifest\" heig",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Manifest is a smart model router for agents and AI applications that redirects each query to the right model, saving up to 70% in AI costs.",
+    "Manifest connects to 300+ models across 16 providers plus any custom provider (OpenAI/Anthropic compatible).",
+    "Anthropic ✅ ✅ Claude Max / Pro claude-opus-4-7, claude-sonnet-4-6, claude-haiku-4-5",
+    "Google ✅ — gemini-2.5-pro, gemini-2.5-flash, gemini-2.0-flash",
+    "MiniMax ✅ ✅ MiniMax Coding Plan minimax-m2, abab7-chat-preview",
+    "\"description\": \"Open-source observability for AI agents — track costs, tokens, messages, and performance\",",
+    "\"packageManager\": \"npm@10.9.2\",",
+    "Manifest is a smart model router for AI agents."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"sdk\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Smart Model Routing for Agents. Cut Costs up to 70% 🦚",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "sdk",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "monitoring"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "sdk",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "monitoring"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "sdk",
+    "whatIsIt": "Manifest is an SDK or library for developers building agent tooling.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to sdk.",
+      "Manifest is a smart model router for agents and AI applications that redirects each query to the right model, saving up to 70% in AI costs.",
+      "Manifest connects to 300+ models across 16 providers plus any custom provider (OpenAI/Anthropic compatible)."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:mnfst/manifest",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "manifest",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

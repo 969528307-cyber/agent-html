@@ -1,0 +1,153 @@
+{
+  "id": "candidate-tool-github-steven-tey-novel",
+  "type": "tool",
+  "status": "published",
+  "title": "Novel",
+  "sourceUrl": "https://github.com/steven-tey/novel",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "steven-tey",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Notion-style WYSIWYG editor with AI-powered autocompletion.",
+  "proposedCategory": [
+    "sdk"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "steven-tey",
+    "repo": "novel",
+    "fullName": "steven-tey/novel",
+    "stars": 16271,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-sdk",
+      "chatgpt",
+      "nextjs",
+      "notion",
+      "openai",
+      "prosemirror",
+      "tiptap",
+      "vercel"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-01-18T14:26:33Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "<a href=\"https://novel.sh\" <img alt=\"Novel is a Notion style WYSIWYG editor with AI powered autocompletions.\" src=\"https://novel.sh/opengraph image.png\" <h1 align=\"center\" Novel</h1 </a <p align=\"center\" An open source Notion style WYSIWYG editor with AI powered autocompletions. </p <p align=\"center\" <a href=\"https://news.ycombinator.com/item?id=36360789\" <img src=\"https://img.shields.io/badge/Hacker%20News 369 %23FF",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "\"packageManager\": \"pnpm@9.5.0\","
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 2,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"sdk\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Notion-style WYSIWYG editor with AI-powered autocompletion.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "sdk",
+    "scope": "single-tool",
+    "useCategory": [
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "sdk",
+  "scope": "single-tool",
+  "useCategory": [
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "sdk",
+    "whatIsIt": "Novel is an SDK or library for developers building agent tooling.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Relevant to sdk.",
+      "\"packageManager\": \"pnpm@9.5.0\","
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:steven-tey/novel",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "novel",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

@@ -1,0 +1,179 @@
+{
+  "id": "candidate-tool-github-iflytek-astron-rpa",
+  "type": "tool",
+  "status": "published",
+  "title": "Astron Rpa",
+  "sourceUrl": "https://github.com/iflytek/astron-rpa",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "iflytek",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Agent-ready RPA suite with out-of-the-box automation tools. Built for individuals and enterprises.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "iflytek",
+    "repo": "astron-rpa",
+    "fullName": "iflytek/astron-rpa",
+    "stars": 5398,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "ai",
+      "astron",
+      "automation",
+      "enterprise",
+      "iflytek-astron",
+      "llm",
+      "low-code",
+      "mcp",
+      "no-code",
+      "python",
+      "rpa"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-21T03:15:03Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh.md",
+    "docs/devel/en-US/README.md",
+    "docs/devel/zh-CN/README.md",
+    "docs/images/browser-plugin.png",
+    "docs/images/front-back.png",
+    "docs/images/icon_128px.png",
+    "docs/images/icon.png",
+    "docs/images/WeCom_Group.png"
+  ],
+  "readmeExtract": "AstronRPA <div align=\"center\" ![AstronRPA Logo](./docs/images/icon 128px.png) 🤖 Pioneering Open Source Enterprise RPA Desktop Application <p align=\"center\" <a href=\"https://www.iflyrpa.com\" Astron RPA Official Site</a · <a href=\"./BUILD GUIDE.md\" Deployment Guide</a · <a href=\"https://www.iflyrpa.com/docs/\" User Documentation</a · <a href=\"./FAQ.md\" FAQ</a </p [![License](https://img.shields.io/badge/license Open%20",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AstronRPA is an enterprise-grade Robotic Process Automation (RPA) desktop application.",
+    "Through a visual designer, it supports low-code/no-code development, enabling users to rapidly build workflows and automate desktop software and web pages.",
+    "Astron Agent is the native Agent platform supported by this project.",
+    "🛠️ Comprehensive Automation Support: Comprehensive coverage of Windows desktop applications and web page automation.",
+    "Supports common office software like WPS and Office, financial and ERP systems like Kingdee and YonYou, and various browsers like IE, Edge, and Chrome, enabling end-to-end cross-application automation.",
+    "Build a complete enterprise automation management ecosystem with process security, permission control, and cross-team collaboration.",
+    "Quickly build automation workflows through intuitive drag-and-drop methods, reducing development barriers, improving development efficiency, and enabling business users to participate in automation creation.",
+    "🤖 Native Agent Empowerment: Deep integration with Astron Agent platform supporting bi-directional calls between automation processes and AI agents with capability fusion."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Agent-ready RPA suite with out-of-the-box automation tools. Built for individuals and enterprises.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "docs",
+      "devops",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "docs",
+    "devops",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: platform.",
+    "Alternative capabilities: workflow, mcp.",
+    "LLM: agent-app + [mcp, workflow] — It is an enterprise RPA desktop application with a visual designer for workflow automation and native agent platform integration, supporting MCP and workflow orchestration."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "mcp"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Astron Rpa is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with docs workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:iflytek/astron-rpa",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "astron-rpa",
+  "publishedAt": "2026-05-18"
+}

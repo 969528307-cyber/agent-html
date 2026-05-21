@@ -1,0 +1,139 @@
+{
+  "id": "candidate-figma-context-mcp-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Figma Context MCP",
+  "sourceUrl": "https://github.com/GLips/Figma-Context-MCP",
+  "sourceName": "GitHub",
+  "author": "GLips",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "GLips",
+    "repo": "Figma-Context-MCP",
+    "fullName": "GLips/Figma-Context-MCP",
+    "stars": 14805,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "cursor",
+      "figma",
+      "mcp",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-30T00:17:20Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<a href=\"https://www.framelink.ai/?utm source=github&utm medium=referral&utm campaign=readme\" target=\" blank\" rel=\"noopener\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://www.framelink.ai/github/HeaderDark.png\" / <img alt=\"Framelink\" src=\"https://www.framelink.ai/github/HeaderLight.png\" / </picture </a <div align=\"center\" <h1 Framelink MCP for Figma</h1 <h3 Give your coding agent access to you",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Give your coding agent access to your Figma data.. Implement designs in any framework in one-shot.",
+    "Give Cursor and other AI-powered coding tools access to your Figma files with this Model Context Protocol server.",
+    "This MCP server is specifically designed for use with Cursor.",
+    "If you need more information on how to configure the Framelink MCP for Figma, see the Framelink docs.",
+    "The Framelink MCP for Figma is simple but powerful.",
+    "\"name\": \"figma-developer-mcp\",",
+    "\"mcpName\": \"io.github.GLips/Figma-Context-MCP\",",
+    "\"description\": \"Give your coding agent access to your Figma data."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "media",
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "media",
+    "coding",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Figma Context MCP is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to mcp."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "figma-context-mcp",
+  "publishedAt": "2026-05-20"
+}

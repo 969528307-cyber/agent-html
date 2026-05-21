@@ -1,0 +1,77 @@
+{
+  "id": "mirrord",
+  "name": "Mirrord",
+  "type": "skill",
+  "status": "published",
+  "summary": "Run local code as if it were a pod in a remote Kubernetes cluster: real env vars, DNS, network, traffic. Used by AI coding agents and developers.",
+  "description": "Run local code as if it were a pod in a remote Kubernetes cluster: real env vars, DNS, network, traffic. Used by AI coding agents and developers.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/metalbear-co/mirrord",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/metalbear-co/mirrord",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/metalbear-co/mirrord#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/metalbear-co/mirrord#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/metalbear-co/mirrord/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "It works the same way for developers and for AI coding agents (Claude Code, Cursor, Codex, Copilot, Windsurf):",
+    "mirrord ships as a VS Code extension, IntelliJ plugin, and CLI tool.",
+    "Using mirrord with AI coding agents",
+    "Click the mirrord icon in the Navigation Toolbar",
+    "The new pod is then used to connect your local process and the impersonated pod: it mirrors incoming traffic from the pod to your process,",
+    "mirrord works first-class with Claude Code, Cursor, Codex CLI, Gemini CLI, and other AI coding agents,",
+    "see metalbear-co/skills or the mirrord for AI Agents page.",
+    "Please take a few minutes to review our Code of Conduct."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:37:52Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/metalbear-co/mirrord",
+  "repoUrl": "https://github.com/metalbear-co/mirrord",
+  "license": "MIT",
+  "stars": 5074,
+  "lastUpdated": "2026-05-20T03:37:52Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

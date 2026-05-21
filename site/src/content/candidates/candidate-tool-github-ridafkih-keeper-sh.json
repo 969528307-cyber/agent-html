@@ -1,0 +1,187 @@
+{
+  "id": "candidate-tool-github-ridafkih-keeper-sh",
+  "type": "tool",
+  "status": "published",
+  "title": "Keeper.sh",
+  "sourceUrl": "https://github.com/ridafkih/keeper.sh",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "ridafkih",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Calendar sync tool & universal calendar MCP server. Aggregate, sync and control calendars on Google, Outlook, Office 365, iCloud, CalDAV or ICS.",
+  "proposedCategory": [
+    "productivity"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "ridafkih",
+    "repo": "keeper.sh",
+    "fullName": "ridafkih/keeper.sh",
+    "stars": 1065,
+    "license": "AGPL-3.0",
+    "topics": [
+      "bun",
+      "caldav",
+      "calendar",
+      "calendar-sync",
+      "google-calendar",
+      "ical",
+      "icloud",
+      "ics",
+      "mcp",
+      "mcp-server",
+      "nextjs",
+      "open-source",
+      "outlook",
+      "self-hosted",
+      "sync",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-10T03:16:24Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    ".claude/skills/react-best-practices/SKILL.md",
+    ".claude/skills/react-best-practices/AGENTS.md"
+  ],
+  "readmeExtract": "![](./applications/web/public/open graph.png) About Keeper is a simple & open source calendar syncing tool. It allows you to pull events from remotely hosted iCal or ICS links, and push them to one or many calendars so the time slots can align across them all. Features Aggregating calendar events from remote sources Event content agnostic syncing engine Push aggregate events to one or more calendars MCP (Model Contex",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/react-best-practices/SKILL.md",
+      "extract": "name: vercel react best practices description: React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements. Vercel React Best Practices Comprehensive p"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Keeper is a simple & open-source calendar syncing tool.",
+    "MCP (Model Context Protocol) server for AI agent calendar access",
+    "You need to generate a local root certificate authority and trust it so your browser accepts the certificate.",
+    "This starts PostgreSQL, Redis, and a Caddy reverse proxy via Docker Compose, along with the API, web, MCP, and cron services locally.",
+    "MCP 3001 Proxied by Web at /mcp",
+    "DATABASEURL api, cron, worker, mcp PostgreSQL connection URL.. . e.g.",
+    "REDISURL api, cron, worker Redis connection URL.",
+    "BETTERAUTHURL api, mcp The base URL used for auth redirects.. . e.g."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"productivity\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Calendar sync tool & universal calendar MCP server. Aggregate, sync and control calendars on Google, Outlook, Office 365, iCloud, CalDAV or ICS.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "productivity"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "productivity"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 7,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, knowledge-resource, workflow.",
+    "LLM: single-tool + [mcp] — Primarily a calendar sync tool, but also provides an MCP server for AI agents."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "knowledge-resource",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Keeper.sh is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with productivity workflows.",
+      "Relevant to productivity.",
+      "Keeper is a simple & open-source calendar syncing tool.",
+      "MCP (Model Context Protocol) server for AI agent calendar access",
+      "You need to generate a local root certificate authority and trust it so your browser accepts the certificate."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:ridafkih/keeper.sh",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "keeper-sh",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

@@ -1,0 +1,78 @@
+{
+  "id": "ruflo",
+  "name": "Ruflo",
+  "type": "mcp",
+  "status": "published",
+  "summary": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
+  "description": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
+  "category": [
+    "mcp",
+    "agent-app"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ruvnet/ruflo",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ruvnet/ruflo",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ruvnet/ruflo#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ruvnet/ruflo#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ruvnet/ruflo/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Multi-agent AI orchestration for Claude Code",
+    "Orchestrate 100+ specialized AI agents across machines, teams, and trust boundaries.",
+    "Ruflo adds coordinated swarms, self-learning memory, federated comms, and enterprise security to Claude Code — so agents don't just run, they collaborate.",
+    "Claude Flow is now Ruflo — named by rUv, who loves Rust, flow states, and building things that feel inevitable.",
+    "Underneath, powered by Cognitum.One agentic architecture, running a supercharged Rust based AI engine, embeddings, memory, and plugin system.",
+    "New to Ruflo? You don't need to learn 314 MCP tools or 26 CLI commands.",
+    "After init, just use Claude Code normally -- the hooks system automatically routes tasks, learns from successful patterns, and coordinates agents in the background.",
+    "What it gives you Slash commands + a few skills + agent definitions per-plugin Full Ruflo loop — 98 agents, 60+ commands, 30 skills, MCP server, hooks, daemon"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T07:22:38Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ruvnet/ruflo",
+  "repoUrl": "https://github.com/ruvnet/ruflo",
+  "license": "MIT",
+  "stars": 52582,
+  "lastUpdated": "2026-05-18T07:22:38Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

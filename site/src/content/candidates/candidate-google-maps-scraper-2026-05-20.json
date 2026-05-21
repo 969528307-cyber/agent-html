@@ -1,0 +1,149 @@
+{
+  "id": "candidate-google-maps-scraper-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Google Maps Scraper",
+  "sourceUrl": "https://github.com/gosom/google-maps-scraper",
+  "sourceName": "GitHub",
+  "author": "gosom",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "scrape data  from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "gosom",
+    "repo": "google-maps-scraper",
+    "fullName": "gosom/google-maps-scraper",
+    "stars": 4101,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "claude-skills",
+      "codex-skills",
+      "distributed-scraper",
+      "distributed-scraping",
+      "golang",
+      "google-maps",
+      "google-maps-scraping",
+      "web-scraper",
+      "web-scraping"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-01T04:33:35Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/proxies.md",
+    "docs/recipes.md",
+    "docs/saas.md",
+    "skills/google-maps-scraper/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "Google Maps Scraper <p align=\"center\" <a href=\"https://github.com/gosom/google maps scraper/stargazers\" <img src=\"https://img.shields.io/github/stars/gosom/google maps scraper?style=social\" alt=\"GitHub Stars\" </a <a href=\"https://github.com/gosom/google maps scraper/network/members\" <img src=\"https://img.shields.io/github/forks/gosom/google maps scraper?style=social\" alt=\"GitHub Forks\" </a <a href=\"https://twitter.co",
+  "skillExtracts": [
+    {
+      "path": "skills/google-maps-scraper/SKILL.md",
+      "extract": "name: google maps scraper description: Free and open source Google Maps scraper using Docker. Use when the user wants to find businesses, extract leads, emails, reviews, or ratings from Google Maps. Triggers on requests like \"find all <business type in <city \", \"scrape Google Maps for <keyword \", \"get leads from Google Maps\". Keywords: google maps, scrape, business, leads, restaurants, shops, places, reviews, ratings"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Extract Google Maps business leads, emails, reviews, phone numbers, websites, ratings, coordinates, and more with a free open-source CLI, Web UI, REST API, and optional self-hosted platform.",
+    "Use it for lead generation, local business research, sales prospecting, data enrichment, or developer automation.",
+    "Ask an AI coding agent to run a scrape AI Agent Skill",
+    "Run a browser UI locally Web UI",
+    "Automate scraping from your app REST API",
+    "Follow common workflows Recipes",
+    "Chrome extension that extracts emails, social profiles, phone numbers, reviews & more.",
+    "SerpApi - Google Maps API and 30+ search engine APIs"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "scrape data  from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "communication"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "communication"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Google Maps Scraper is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with communication workflows.",
+      "Relevant to skill.",
+      "Extract Google Maps business leads, emails, reviews, phone numbers, websites, ratings, coordinates, and more with a free open-source CLI, Web UI, REST API, and optional self-hosted platform.",
+      "Use it for lead generation, local business research, sales prospecting, data enrichment, or developer automation."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "google-maps-scraper",
+  "publishedAt": "2026-05-20"
+}

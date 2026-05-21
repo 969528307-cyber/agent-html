@@ -1,0 +1,201 @@
+{
+  "id": "candidate-tool-github-refly-ai-refly",
+  "type": "tool",
+  "status": "published",
+  "title": "Refly",
+  "sourceUrl": "https://github.com/refly-ai/refly",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "refly-ai",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Cursor, Codex & more. Build Clawdbot 🦞· APIs for Lovable · Bots for Slack & Lark/Feishu · Skills are infrastructure, not prompts.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "refly-ai",
+    "repo": "refly",
+    "fullName": "refly-ai/refly",
+    "stars": 7318,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "automation",
+      "claude",
+      "clawdbot",
+      "codex",
+      "cursor",
+      "lark-bot",
+      "lovable",
+      "n8n-alternative",
+      "skills",
+      "skills-builder",
+      "slack",
+      "slack-bot",
+      "vibe-coding",
+      "vibe-workflow",
+      "workflow"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-25T14:51:18Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.vitepress/theme/custom.css",
+    "docs/.vitepress/theme/index.ts",
+    "docs/.vitepress/theme/Layout.vue",
+    "docs/community-version/self-deploy/index.md",
+    "docs/en/about/privacy-policy.md",
+    "docs/en/about/terms-of-service.md",
+    "docs/en/changelog/v0.1.1.md",
+    "docs/en/changelog/v0.1.2.md",
+    "docs/en/changelog/v0.10.0.md",
+    "docs/en/changelog/v0.2.0.md",
+    "docs/en/changelog/v0.2.1.md",
+    "docs/en/changelog/v0.2.2.md",
+    "docs/en/changelog/v0.2.3.md",
+    "docs/en/changelog/v0.2.4.md",
+    "docs/en/changelog/v0.3.0.md",
+    "docs/en/changelog/v0.4.0.md",
+    "docs/en/changelog/v0.4.1.md",
+    "docs/en/changelog/v0.4.2.md",
+    "docs/en/changelog/v0.5.0.md",
+    "docs/en/changelog/v0.6.0.md",
+    "docs/en/changelog/v0.7.0.md",
+    "docs/en/changelog/v0.7.1.md",
+    "docs/en/changelog/v0.8.0.md",
+    "docs/en/changelog/v0.9.0.md",
+    "docs/en/changelog/v1.1.0.md",
+    "docs/en/community/contact-us.md",
+    "docs/en/guide/api/openapi.md",
+    "docs/en/guide/api/webhook.md",
+    "docs/index.md",
+    "docs/package.json",
+    "docs/pnpm-lock.yaml",
+    "docs/public/favicon.ico",
+    "docs/public/images/add-model-1.webp",
+    "docs/public/images/add-model-2.webp",
+    "docs/public/images/add-provider-1.webp",
+    "docs/public/images/add-provider-2.webp",
+    "docs/public/images/lark-qrcode.webp",
+    "docs/public/images/refly-cover.webp",
+    "docs/public/images/refly-platforms.webp"
+  ],
+  "readmeExtract": "<img width=\"2880\" height=\"1620\" alt=\"the first open source agent skills builder\" src=\"https://github.com/user attachments/assets/2609adbb c8db 4ca4 8404 12eb32d19cf1\" / Refly — Agent Skills Builder Powered by Vibe Workflow <p align=\"right\" <a href=\"README.md\" <u English</u </a · <a href=\"README CN.md\" <u 中文</u </a </p <p align=\"center\" <a href=\"https://github.com/refly ai/refly\" <img src=\"https://img.shields.io/githu",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Refly — Agent Skills Builder Powered by Vibe Workflow",
+    "APIs for Lovable · Webhooks for Lark/Feishu · Skills for Claude Code · Build Clawdbot",
+    "Refly is the first open-source platform for building stable, atomic, and versioned agent skills.",
+    "Refly Skills is the official executable skill registry for Refly.",
+    "⚡ Run instantly: Execute skills in Refly with one click",
+    "🧩 Reusable infrastructure: Versioned skills, not one-off prompts",
+    "🔌 Export anywhere: Ship skills to Claude Code or deploy as APIs",
+    "🌍 Community-powered: Import, fork, and publish your own skills"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Cursor, Codex & more. Build Clawdbot 🦞· APIs for Lovable · Bots for Slack & Lark/Feishu · Skills are infrastructure, not prompts.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "devops",
+      "communication",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "devops",
+    "communication",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Refly is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with devops workflows.",
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:refly-ai/refly",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "refly",
+  "publishedAt": "2026-05-18"
+}

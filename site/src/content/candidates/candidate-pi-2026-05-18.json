@@ -1,0 +1,204 @@
+{
+  "id": "candidate-pi-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Pi",
+  "sourceUrl": "https://github.com/earendil-works/pi",
+  "sourceName": "GitHub",
+  "author": "earendil-works",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+  "proposedCategory": [
+    "cli",
+    "code-review",
+    "docs",
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "earendil-works",
+    "repo": "pi",
+    "fullName": "earendil-works/pi",
+    "stars": 50864,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T00:02:08Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "packages/coding-agent/examples/extensions/dynamic-resources/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills-collision/first/calendar/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills-collision/second/calendar/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/consecutive-hyphens/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/disable-model-invocation/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/invalid-name-chars/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/invalid-yaml/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/long-name/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/missing-description/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/multiline-description/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/name-mismatch/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/nested/child-skill/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/no-frontmatter/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/root-skill-preferred/nested-child/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/root-skill-preferred/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/unknown-field/SKILL.md",
+    "packages/coding-agent/test/fixtures/skills/valid-skill/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://pi.dev\" <img alt=\"pi logo\" src=\"https://pi.dev/logo auto.svg\" width=\"128\" </a </p <p align=\"center\" <a href=\"https://discord.com/invite/3cU7Bz4UPx\" <img alt=\"Discord\" src=\"https://img.shields.io/badge/discord community 5865F2?style=flat square&logo=discord&logoColor=white\" / </a </p <p align=\"center\" <a href=\"https://pi.dev\" pi.dev</a domain graciously donated by <br / <br / <a href",
+  "skillExtracts": [
+    {
+      "path": "packages/coding-agent/examples/extensions/dynamic-resources/SKILL.md",
+      "extract": "name: dynamic resources description: Example skill loaded from resources discover Dynamic Resources Skill This skill is provided by the dynamic resources extension."
+    },
+    {
+      "path": "packages/coding-agent/test/fixtures/skills-collision/first/calendar/SKILL.md",
+      "extract": "name: calendar description: First calendar skill. Calendar (First) This is the first calendar skill."
+    },
+    {
+      "path": "packages/coding-agent/test/fixtures/skills-collision/second/calendar/SKILL.md",
+      "extract": "name: calendar description: Second calendar skill. Calendar (Second) This is the second calendar skill."
+    },
+    {
+      "path": "packages/coding-agent/test/fixtures/skills/consecutive-hyphens/SKILL.md",
+      "extract": "name: bad name description: A skill with consecutive hyphens in the name. Consecutive Hyphens This skill has consecutive hyphens in its name."
+    },
+    {
+      "path": "packages/coding-agent/test/fixtures/skills/disable-model-invocation/SKILL.md",
+      "extract": "name: disable model invocation description: A skill that cannot be invoked by the model. disable model invocation: true Manual Only Skill This skill can only be invoked via /skill:disable model invocation."
+    },
+    {
+      "path": "packages/coding-agent/test/fixtures/skills/invalid-name-chars/SKILL.md",
+      "extract": "name: Invalid Name description: A skill with invalid characters in the name. Invalid Name This skill has uppercase and underscore in the name."
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Maintainers review auto-closed issues daily.",
+    "This is the home of the pi agent harness project including our self extensible coding agent.",
+    "@earendil-works/pi-coding-agent: Interactive coding agent CLI",
+    "@earendil-works/pi-agent-core: Agent runtime with tool calling and state management",
+    "Read the documentation, but you can also ask the agent to explain itself",
+    "Share your OSS coding agent sessions",
+    "If you use pi or other coding agents for open source work, please share your sessions.",
+    "Public OSS session data helps improve coding agents with real-world tasks, tool use, failures, and fixes instead of toy benchmarks."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "communication",
+      "coding",
+      "automation",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "communication",
+    "coding",
+    "automation",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 7,
+    "cli": 12,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent instruction file detected alongside CLI signals.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Coding agent detected with CLI context.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, knowledge-resource.",
+    "LLM: agent-framework + [cli] — This repository provides a comprehensive AI agent toolkit with a coding agent CLI, agent runtime, and UI libraries, functioning as an agent framework."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "knowledge-resource"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Pi is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with design workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "local-review",
+  "publishedAs": "pi",
+  "publishedAt": "2026-05-18"
+}

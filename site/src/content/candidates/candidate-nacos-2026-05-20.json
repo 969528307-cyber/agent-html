@@ -1,0 +1,151 @@
+{
+  "id": "candidate-nacos-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Nacos",
+  "sourceUrl": "https://github.com/alibaba/nacos",
+  "sourceName": "GitHub",
+  "author": "alibaba",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "an easy-to-use dynamic service discovery, configuration and service management platform for building AI cloud native applications.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "alibaba",
+    "repo": "nacos",
+    "fullName": "alibaba/nacos",
+    "stars": 32959,
+    "license": "Apache-2.0",
+    "topics": [
+      "a2a-registry",
+      "agent",
+      "ai-registry",
+      "configuration-management",
+      "distributed-configuration",
+      "dubbo",
+      "istio",
+      "kubernetes",
+      "mcp",
+      "mcp-management",
+      "mcp-registry",
+      "microservices",
+      "nacos",
+      "prompt",
+      "skills",
+      "spring-cloud"
+    ],
+    "defaultBranch": "develop",
+    "lastPushedAt": "2026-05-20T03:13:00Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/nacos-skill-registry/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<img src=\"doc/Nacos Logo.png\" width=\"50%\" syt height=\"50%\" / Nacos: Dynamic Na ming and Co nfiguration S ervice [![Gitter](https://badges.gitter.im/alibaba/nacos.svg)](https://gitter.im/alibaba/nacos?utm source=badge&utm medium=badge&utm campaign=pr badge) [![License](https://img.shields.io/badge/license Apache%202 4EB1BA.svg)](https://www.apache.org/licenses/LICENSE 2.0.html) [![CI](https://github.com/alibaba/nacos/",
+  "skillExtracts": [
+    {
+      "path": "skills/nacos-skill-registry/SKILL.md",
+      "extract": "name: nacos skill registry description: Helps users discover and install AI skills from a team's Nacos server when they ask questions like \"how do I do X\", \"I want to X\", \"help me with X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill in Nacos. Also suppo"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Service and MetaData Management",
+    "You can view the full documentation from the Nacos website.",
+    "Review the existing pull request.",
+    "translation on documentation",
+    "nacos-group is the repository that hosts the eco tools for Nacos, such as SDK, synchronization tool, etc.",
+    "Gitter: Nacos's IM tool for community messaging, collaboration and discovery.",
+    "This skill should be used when the user is looking for functionality that might exist as an installable skill in Nacos.",
+    "Also supports uploading and publishing skills for team sharing."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "an easy-to-use dynamic service discovery, configuration and service management platform for building AI cloud native applications.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Nacos is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Relevant to mcp.",
+      "Service and MetaData Management",
+      "You can view the full documentation from the Nacos website.",
+      "Review the existing pull request."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nacos",
+  "publishedAt": "2026-05-20"
+}

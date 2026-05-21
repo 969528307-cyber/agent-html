@@ -1,0 +1,81 @@
+{
+  "id": "opencode",
+  "name": "Opencode",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "The open source coding agent.",
+  "description": "The open source coding agent.",
+  "category": [
+    "cli",
+    "code-review",
+    "browser",
+    "docs",
+    "workflow"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/anomalyco/opencode",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/anomalyco/opencode",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/anomalyco/opencode#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/anomalyco/opencode#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/anomalyco/opencode/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The open source AI coding agent.",
+    "OpenCode includes two built-in agents you can switch between with the Tab key.",
+    "build - Default, full-access agent for development work",
+    "plan - Read-only agent for analysis and code exploration",
+    "Also included is a general subagent for complex searches and multistep tasks.",
+    "For more info on how to configure OpenCode, head over to our docs.",
+    "If you're interested in contributing to OpenCode, please read our contributing docs before submitting a pull request.",
+    "This codebase uses Effect for typed, composable TypeScript services, schemas, and workflows."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T03:32:11Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/anomalyco/opencode",
+  "repoUrl": "https://github.com/anomalyco/opencode",
+  "license": "MIT",
+  "stars": 161784,
+  "lastUpdated": "2026-05-18T03:32:11Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

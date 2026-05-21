@@ -1,0 +1,128 @@
+{
+  "id": "candidate-agent-codex",
+  "type": "agent",
+  "status": "published",
+  "title": "Codex",
+  "sourceUrl": "https://developers.openai.com/codex",
+  "sourceName": "OpenAI Codex product page",
+  "sourceRegistryId": "local-agents-library",
+  "sourceRegistry": {
+    "id": "local-agents-library",
+    "name": "Local Agent Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/agents",
+    "acceptRules": [
+      "must_have_documentation_url",
+      "must_have_summary",
+      "must_have_capability_profile"
+    ],
+    "rejectRules": [
+      "missing_official_link",
+      "missing_agent_capability_description"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "OpenAI's coding agent for repository implementation, review, verification, and tool-assisted engineering work.",
+  "proposedCategory": [
+    "Repository implementation",
+    "Code review and verification",
+    "Tool-assisted engineering workflows",
+    "Team coding standards"
+  ],
+  "proposedAgents": [
+    "codex"
+  ],
+  "extractedSignals": [
+    "Repository-first implementation: Codex is strongest when the task depends on reading a real codebase, making scoped edits, running checks, and explaining the resulting diff.",
+    "Local evidence loop: The agent can keep work grounded in terminal output, file contents, tests, and build results instead of relying only on conversational memory.",
+    "Skills and project conventions: Repeatable workflows can be encoded through skills, AGENTS.md-style guidance, and repository-specific instructions so teams do not re-explain the same standards.",
+    "CLI: native",
+    "Skills: supported",
+    "MCP: supported"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Agent collector output. Review official docs, GitHub activity, extension model, and ecosystem fit before changing the public Agent page.",
+  "publishedAs": "codex",
+  "publishedAt": "2026-05-16",
+  "author": "OpenAI",
+  "agentProfile": {
+    "region": "global",
+    "vendor": "OpenAI",
+    "interfaceType": [
+      "cli",
+      "api"
+    ],
+    "supportsMcp": true,
+    "supportsSkills": true,
+    "supportsCli": true,
+    "supportsWorkflows": true,
+    "sourceKinds": [
+      "official",
+      "github",
+      "quickstart"
+    ],
+    "officialLinks": [
+      {
+        "label": "OpenAI Codex product page",
+        "url": "https://openai.com/codex",
+        "kind": "official"
+      },
+      {
+        "label": "Codex GitHub repository",
+        "url": "https://github.com/openai/codex",
+        "kind": "github"
+      },
+      {
+        "label": "Codex CLI getting started",
+        "url": "https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started",
+        "kind": "quickstart"
+      }
+    ]
+  },
+  "canonicalKey": "agent:codex",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "agent",
+    "primaryType": "agent",
+    "whatIsIt": "Codex is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to Repository implementation.",
+      "Relevant to Code review and verification.",
+      "Relevant to Tool-assisted engineering workflows.",
+      "Relevant to Team coding standards.",
+      "Repository-first implementation: Codex is strongest when the task depends on reading a real codebase, making scoped edits, running checks, and explaining the resulting diff."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

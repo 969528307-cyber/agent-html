@@ -14,14 +14,38 @@ export async function getStaticPaths() {
 const { signal } = Astro.props;
 const { Content } = await render(signal);
 const tools = (await getCollection("tools")).filter((tool) => signal.data.relatedTools.includes(tool.data.id));
+const agents = (await getCollection("agents")).filter((agent) => signal.data.relatedAgents.includes(agent.data.id));
+const learn = (await getCollection("learn")).filter((entry) => signal.data.relatedLearn.includes(entry.id));
+const sourceRows = [
+  ["Original title", signal.data.originalTitle],
+  ["Source", signal.data.sourceName],
+  ["Author", signal.data.author],
+  ["Original date", signal.data.originalPublishedAt],
+  ["Permission", signal.data.permissionStatus],
+  ["Published", signal.data.publishedAt],
+].filter((row): row is [string, string] => Boolean(row[1]));
 ---
 
 <BaseLayout title={`${signal.data.englishTitle} - agentk.it`} description={signal.data.executiveSummary}>
   <article class="page signal-shell">
     <a class="back" href="/signals">Back to Signals</a>
-    <div class="eyebrow">{signal.data.sourceName} · {signal.data.permissionStatus}</div>
-    <h1>{signal.data.englishTitle}</h1>
-    <p class="original">{signal.data.originalTitle}</p>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">{signal.data.sourceName} · analysis signal</div>
+        <h1>{signal.data.englishTitle}</h1>
+        <p class="original">{signal.data.originalTitle}</p>
+      </div>
+      <aside class="signal-card">
+        <span>Translation mode</span>
+        <strong>Full English</strong>
+        <p>{signal.data.permissionStatus.replaceAll("_", " ")}</p>
+      </aside>
+    </div>
+
+    <section class="thesis-panel">
+      <span>Signal thesis</span>
+      <p>{signal.data.signalThesis || signal.data.executiveSummary}</p>
+    </section>
 
     <div class="meta-panel">
       <div>
@@ -34,22 +58,110 @@ const tools = (await getCollection("tools")).filter((tool) => signal.data.relate
       </div>
     </div>
 
-    <div class="prose">
-      <Content />
-    </div>
+    {
+      signal.data.keyTakeaways.length > 0 && (
+        <section class="analysis-block">
+          <div class="block-head">
+            <span>Key takeaways</span>
+            <h2>Read this first.</h2>
+          </div>
+          <ol class="takeaways">
+            {signal.data.keyTakeaways.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ol>
+        </section>
+      )
+    }
+
+    {
+      signal.data.ecosystemImpact.length > 0 && (
+        <section class="analysis-block">
+          <div class="block-head">
+            <span>Ecosystem impact</span>
+            <h2>Where this changes the map.</h2>
+          </div>
+          <div class="impact-grid">
+            {signal.data.ecosystemImpact.map((item) => (
+              <article>
+                <span>{item.label}</span>
+                <p>{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <section class="translation-block">
+      <div class="block-head">
+        <span>Full English translation</span>
+        <h2>Translated text.</h2>
+      </div>
+      <div class="prose">
+        <Content />
+      </div>
+    </section>
+
+    {
+      signal.data.whatToWatchNext.length > 0 && (
+        <section class="analysis-block">
+          <div class="block-head">
+            <span>What to watch next</span>
+            <h2>Follow-up signals.</h2>
+          </div>
+          <ul class="watch-list">
+            {signal.data.whatToWatchNext.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <section class="source-panel">
+      <div class="block-head">
+        <span>Source and permission</span>
+        <h2>Trace the origin.</h2>
+      </div>
+      <dl>
+        {sourceRows.map(([label, value]) => (
+          <>
+            <dt>{label}</dt>
+            <dd>{value}</dd>
+          </>
+        ))}
+        <dt>Source URL</dt>
+        <dd><a href={signal.data.sourceUrl} target="_blank" rel="noreferrer">{signal.data.sourceUrl}</a></dd>
+      </dl>
+    </section>
   </article>
 
   {
-    tools.length > 0 && (
+    (tools.length > 0 || agents.length > 0 || learn.length > 0) && (
       <section class="section page">
         <div class="section-head">
           <div>
-            <div class="eyebrow">Routed tools</div>
-            <h2>Where this idea becomes useful.</h2>
+            <div class="eyebrow">Connected map</div>
+            <h2>Tools, agents, and concepts affected.</h2>
           </div>
         </div>
         <div class="stack">
           {tools.map((tool) => <ToolListItem tool={tool.data} />)}
+          {agents.map((agent) => (
+            <a class="map-link" href={`/for/${agent.id}`}>
+              <span>Agent</span>
+              <strong>{agent.data.name}</strong>
+              <p>{agent.data.summary}</p>
+            </a>
+          ))}
+          {learn.map((entry) => (
+            <a class="map-link" href={`/learn/${entry.id}`}>
+              <span>Learn</span>
+              <strong>{entry.data.title}</strong>
+              <p>{entry.data.subtitle}</p>
+            </a>
+          ))}
         </div>
       </section>
     )
@@ -57,80 +169,224 @@ const tools = (await getCollection("tools")).filter((tool) => signal.data.relate
 </BaseLayout>
 
 <style>
+  :global(body) {
+    background:
+      radial-gradient(circle at 12% 0%, rgb(134 174 255 / 0.18), transparent 30rem),
+      radial-gradient(circle at 88% 7%, rgb(229 183 106 / 0.16), transparent 28rem),
+      radial-gradient(circle at 60% 86%, rgb(82 220 160 / 0.1), transparent 34rem),
+      #080b10;
+  }
+
   .signal-shell {
-    max-width: 860px;
-    padding: 72px 0 30px;
+    max-width: 1040px;
+    padding: 52px 0 30px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 18px;
+    align-items: end;
   }
 
   .back {
     display: inline-flex;
-    margin-bottom: 22px;
-    color: var(--sage);
+    margin-bottom: 18px;
+    color: #8fb7ff;
     font-size: 13px;
   }
 
+  .hero-grid h1 {
+    color: #f6f2ea;
+    font-size: clamp(48px, 7vw, 92px);
+    line-height: 0.9;
+    letter-spacing: -0.085em;
+  }
+
   .original {
-    max-width: 680px;
+    max-width: 720px;
     margin-top: 16px;
-    color: var(--clay);
+    color: #e5b76a;
     font-size: 15px;
     line-height: 1.65;
+  }
+
+  .signal-card,
+  .thesis-panel,
+  .analysis-block,
+  .translation-block,
+  .source-panel,
+  .meta-panel div,
+  .impact-grid article,
+  .map-link {
+    border: 1px solid rgb(246 242 234 / 0.11);
+    background:
+      linear-gradient(180deg, rgb(246 242 234 / 0.07), rgb(246 242 234 / 0.026)),
+      rgb(12 17 24 / 0.82);
+    box-shadow: 0 30px 100px rgb(0 0 0 / 0.28);
+    backdrop-filter: blur(30px);
+  }
+
+  .signal-card {
+    padding: 20px;
+    border-radius: 28px;
+  }
+
+  .signal-card span,
+  .thesis-panel span,
+  .block-head span,
+  .impact-grid span,
+  .meta-panel span,
+  .source-panel dt,
+  .map-link span {
+    color: #e5b76a;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .signal-card strong {
+    display: block;
+    margin-top: 10px;
+    color: #f6f2ea;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
+
+  .signal-card p {
+    margin-top: 6px;
+    color: #aeb7c8;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+
+  .thesis-panel {
+    margin-top: 30px;
+    padding: 28px;
+    border-radius: 32px;
+    border-color: rgb(229 183 106 / 0.22);
+  }
+
+  .thesis-panel p {
+    max-width: 900px;
+    margin-top: 12px;
+    color: #f6f2ea;
+    font-size: clamp(24px, 3vw, 40px);
+    line-height: 1.13;
+    letter-spacing: -0.055em;
   }
 
   .meta-panel {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
-    margin-top: 28px;
-  }
-
-  .meta-panel div,
-  .prose {
-    border: 1px solid var(--line);
-    background: var(--paper);
+    margin-top: 22px;
   }
 
   .meta-panel div {
     padding: 18px;
-    border-radius: 22px;
-  }
-
-  .meta-panel span {
-    color: var(--sage);
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
+    border-radius: 24px;
+    box-shadow: none;
   }
 
   .meta-panel p {
     margin-top: 10px;
-    color: var(--muted);
+    color: #aeb7c8;
     font-size: 13px;
     line-height: 1.65;
   }
 
-  .meta-panel a {
-    color: var(--sage);
+  .meta-panel a,
+  .source-panel a {
+    color: #8fb7ff;
     overflow-wrap: anywhere;
   }
 
-  .prose {
+  .analysis-block,
+  .translation-block,
+  .source-panel {
     margin-top: 22px;
     padding: 28px;
-    color: var(--muted);
-    border-radius: 28px;
+    border-radius: 32px;
+  }
+
+  .block-head h2 {
+    margin-top: 8px;
+    color: #f6f2ea;
+    font-size: clamp(28px, 4vw, 46px);
+    line-height: 0.98;
+    letter-spacing: -0.06em;
+  }
+
+  .takeaways,
+  .watch-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 20px;
+    padding-left: 22px;
+    color: #aeb7c8;
+  }
+
+  .takeaways li,
+  .watch-list li {
+    padding-left: 8px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .impact-grid article {
+    padding: 18px;
+    border-radius: 24px;
+    box-shadow: none;
+  }
+
+  .impact-grid p {
+    margin-top: 10px;
+    color: #aeb7c8;
+    font-size: 14px;
+    line-height: 1.68;
+  }
+
+  .prose {
+    margin-top: 20px;
+    color: #aeb7c8;
   }
 
   .prose :global(h2) {
     margin-top: 30px;
-    color: var(--ink);
-    font-size: 25px;
+    color: #f6f2ea;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.045em;
   }
 
   .prose :global(p),
   .prose :global(li) {
-    font-size: 15px;
-    line-height: 1.78;
+    max-width: 820px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+
+  .source-panel dl {
+    display: grid;
+    grid-template-columns: 160px minmax(0, 1fr);
+    gap: 12px 18px;
+    margin-top: 20px;
+  }
+
+  .source-panel dd {
+    color: #aeb7c8;
+    font-size: 14px;
+    overflow-wrap: anywhere;
   }
 
   .stack {
@@ -138,9 +394,37 @@ const tools = (await getCollection("tools")).filter((tool) => signal.data.relate
     gap: 14px;
   }
 
+  .map-link {
+    display: grid;
+    gap: 8px;
+    padding: 18px;
+    border-radius: 24px;
+    box-shadow: none;
+  }
+
+  .map-link strong {
+    color: #f6f2ea;
+    font-size: 20px;
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+  }
+
+  .map-link p {
+    color: #aeb7c8;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
   @media (max-width: 760px) {
-    .meta-panel {
+    .hero-grid,
+    .meta-panel,
+    .impact-grid,
+    .source-panel dl {
       grid-template-columns: 1fr;
+    }
+
+    .hero-grid h1 {
+      font-size: clamp(42px, 13vw, 64px);
     }
   }
 </style>

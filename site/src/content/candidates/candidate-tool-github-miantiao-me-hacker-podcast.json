@@ -1,0 +1,165 @@
+{
+  "id": "candidate-tool-github-miantiao-me-hacker-podcast",
+  "type": "tool",
+  "status": "published",
+  "title": "Hacker Podcast",
+  "sourceUrl": "https://github.com/miantiao-me/hacker-podcast",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "miantiao-me",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "一个基于 AI 的 Hacker News 中文播客项目，每天自动抓取 Hacker News 热门文章，通过 AI 生成中文总结并转换为播客内容。",
+  "proposedCategory": [
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "miantiao-me",
+    "repo": "hacker-podcast",
+    "fullName": "miantiao-me/hacker-podcast",
+    "stars": 2527,
+    "license": "AGPL-3.0",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-workflow",
+      "cloudflare",
+      "cloudflare-workers",
+      "cloudflare-workflows",
+      "hacker-news",
+      "nextjs"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-09T11:18:23Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Agili 的 Hacker Podcast 一个基于 AI 的 Hacker News 中文播客项目，每天自动抓取 Hacker News 热门文章，通过 AI 生成中文总结并转换为播客内容。 [<img src=\"https://devin.ai/assets/deepwiki badge.png\" alt=\"DeepWiki\" height=\"20\"/ ](https://deepwiki.com/miantiao me/hacker podcast) 预览地址: <https://hacker podcast.agi.li 订阅地址: [RSS](https://hacker podcast.agi.li/rss.xml) | [Apple Podcasts](https://podcasts.apple.com/us/podcast/Hacker Podcast/id1809638204) | [YouTube](ht",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "记得恢复注释：wrangler.jsonc 中的 workflows 相关配置",
+    "workflow/ # 工作流引擎 (抓取、AI 摘要、TTS)",
+    "├── index.ts # HackerNewsWorkflow 入口",
+    "worker/wrangler.jsonc # Worker Cloudflare 配置 (含 cron、Browser Rendering)",
+    "// try-catch + console.error，workflow 步骤配合重试",
+    "Repository includes agent instruction files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"workflow\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "一个基于 AI 的 Hacker News 中文播客项目，每天自动抓取 Hacker News 热门文章，通过 AI 生成中文总结并转换为播客内容。",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "workflow",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "workflow",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Hacker Podcast is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Relevant to workflow.",
+      "记得恢复注释：wrangler.jsonc 中的 workflows 相关配置",
+      "workflow/ # 工作流引擎 (抓取、AI 摘要、TTS)",
+      "├── index.ts # HackerNewsWorkflow 入口"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:miantiao-me/hacker-podcast",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "hacker-podcast",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

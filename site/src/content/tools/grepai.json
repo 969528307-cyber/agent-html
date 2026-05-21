@@ -1,0 +1,76 @@
+{
+  "id": "grepai",
+  "name": "Grepai",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Semantic Search & Call Graphs for AI Agents (100% Local)",
+  "description": "Semantic Search & Call Graphs for AI Agents (100% Local)",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/yoanbernabeu/grepai",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/yoanbernabeu/grepai",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/yoanbernabeu/grepai#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/yoanbernabeu/grepai#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/yoanbernabeu/grepai/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Search code by meaning, not just text.",
+    "grepai is a privacy-first CLI for semantic code search.",
+    "Drastically reduces AI agent input tokens by providing relevant context instead of raw search results.",
+    "Search by intent — Ask \"authentication logic\" and find handleUserSession",
+    "AI agent ready — Works with Claude Code, Cursor, Windsurf out of the box",
+    "MCP server — Your AI agent can call grepai directly as a tool",
+    "I am very, very excited about your new tool.\"",
+    "— u/911pleasehold on r/ClaudeAI (280K+ views)"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T07:44:32Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/yoanbernabeu/grepai",
+  "repoUrl": "https://github.com/yoanbernabeu/grepai",
+  "license": "MIT",
+  "stars": 1688,
+  "lastUpdated": "2026-05-18T07:44:32Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

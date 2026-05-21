@@ -1,0 +1,208 @@
+{
+  "id": "candidate-tool-github-santifer-career-ops",
+  "type": "tool",
+  "status": "published",
+  "title": "Career Ops",
+  "sourceUrl": "https://github.com/santifer/career-ops",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "santifer",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Qwen Code",
+    "Generic",
+    "Kimi"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "santifer",
+    "repo": "career-ops",
+    "fullName": "santifer/career-ops",
+    "stars": 45275,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "anthropic",
+      "automation",
+      "career",
+      "claude",
+      "claude-code",
+      "cli",
+      "golang",
+      "interview-prep",
+      "job-search",
+      "open-source",
+      "resume"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T01:34:36Z"
+  },
+  "detectedFiles": [
+    "README.cn.md",
+    "README.es.md",
+    "README.ja.md",
+    "README.ko-KR.md",
+    "README.md",
+    "README.pt-BR.md",
+    "README.ru.md",
+    "README.zh-TW.md",
+    "docs/ARCHITECTURE.md",
+    "docs/CUSTOMIZATION.md",
+    "docs/SCRIPTS.md",
+    "package.json",
+    ".agents/skills/career-ops/SKILL.md",
+    ".claude/skills/career-ops/SKILL.md",
+    ".qwen/skills/career-ops/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Career Ops [English](README.md) | [Español](README.es.md) | [Português (Brasil)](README.pt BR.md) | [한국어](README.ko KR.md) | [日本語](README.ja.md) | [Русский](README.ru.md) | [简体中文](README.cn.md) | [繁體中文](README.zh TW.md) <p align=\"center\" <a href=\"https://x.com/santifer\" <img src=\"docs/hero banner.jpg\" alt=\"Career Ops — Multi Agent Job Search System\" width=\"800\" </a </p <p align=\"center\" <em I spent months applying to",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/career-ops/SKILL.md",
+      "extract": "name: career ops description: AI job search command center evaluate offers, generate CVs, scan portals, track applications arguments: mode Claude Code specific user invocable: true argument hint: \"[scan | deep | pdf | oferta | ofertas | apply | batch | tracker | pipeline | contacto | training | project | interview prep | update]\" license: MIT career ops Router Mode Routing Determine the mode from $mode : | Input | Mo"
+    },
+    {
+      "path": ".claude/skills/career-ops/SKILL.md",
+      "extract": "name: career ops description: AI job search command center evaluate offers, generate CVs, scan portals, track applications arguments: mode Claude Code specific user invocable: true argument hint: \"[scan | deep | pdf | oferta | ofertas | apply | batch | tracker | pipeline | contacto | training | project | interview prep | update]\" license: MIT career ops Router Mode Routing Determine the mode from $mode : | Input | Mo"
+    },
+    {
+      "path": ".qwen/skills/career-ops/SKILL.md",
+      "extract": "name: career ops description: AI job search command center evaluate offers, generate CVs, scan portals, track applications arguments: mode Claude Code specific user invocable: true argument hint: \"[scan | deep | pdf | oferta | ofertas | apply | batch | tracker | pipeline | contacto | training | project | interview prep | update]\" license: MIT career ops Router Mode Routing Determine the mode from $mode : | Input | Mo"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Career-Ops turns any AI coding CLI into a full job search command center.",
+    "Processes in batch -- evaluate 10+ offers in parallel with sub-agents",
+    "Important: This is NOT a spray-and-pray tool. Career-ops is a filter -- it helps you find the few offers worth your time out of hundreds.",
+    "Always review before submitting.",
+    "Career-ops is agentic: Claude Code navigates career pages with Playwright, evaluates fit by reasoning about your CV vs the job description (not keyword matching), and adapts your resume per listing.",
+    "6-Block Evaluation Role summary, CV match, level strategy, comp research, personalization, interview prep (STAR+R)",
+    "Portal Scanner 45+ companies pre-configured (Anthropic, OpenAI, ElevenLabs, Retool, n8n...) + custom queries across Ashby, Greenhouse, Lever, Wellfound",
+    "Batch Processing Parallel evaluation with claude -p workers"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-app\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "media",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "media",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "Career Ops is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:santifer/career-ops",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "career-ops",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

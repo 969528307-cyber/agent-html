@@ -1,0 +1,76 @@
+{
+  "id": "hexstrike-ai",
+  "name": "Hexstrike Ai",
+  "type": "mcp",
+  "status": "published",
+  "summary": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
+  "description": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
+  "category": [
+    "security"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/0x4m4/hexstrike-ai",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/0x4m4/hexstrike-ai",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/0x4m4/hexstrike-ai#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/0x4m4/hexstrike-ai#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/0x4m4/hexstrike-ai/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "HexStrike AI MCP Agents v6.0",
+    "AI-Powered MCP Cybersecurity Automation Platform",
+    "Advanced AI-powered penetration testing MCP framework with 150+ security tools and 12+ autonomous AI agents",
+    "HexStrike AI MCP v6.0 features a multi-agent architecture with autonomous AI agents, intelligent decision-making, and vulnerability intelligence.",
+    "AI Agent Connection - Claude, GPT, or other MCP-compatible agents connect via FastMCP protocol",
+    "Autonomous Execution - AI agents execute comprehensive security assessments",
+    "Claude Desktop Integration or Cursor",
+    "150+ Professional Security Tools:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-27T08:56:07Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/0x4m4/hexstrike-ai",
+  "repoUrl": "https://github.com/0x4m4/hexstrike-ai",
+  "license": "MIT",
+  "stars": 8706,
+  "lastUpdated": "2026-04-27T08:56:07Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-14",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

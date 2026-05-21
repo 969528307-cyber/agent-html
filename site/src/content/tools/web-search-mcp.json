@@ -1,0 +1,76 @@
+{
+  "id": "web-search-mcp",
+  "name": "Web Search Mcp",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A simple, locally hosted Web Search MCP server for use with Local LLMs",
+  "description": "A simple, locally hosted Web Search MCP server for use with Local LLMs",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mrkrsl/web-search-mcp",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mrkrsl/web-search-mcp",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mrkrsl/web-search-mcp#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mrkrsl/web-search-mcp#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mrkrsl/web-search-mcp/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Web Search MCP Server for use with Local LLMs",
+    "A TypeScript MCP (Model Context Protocol) server that provides comprehensive web search capabilities using direct connections (no API keys required) with multiple tools for different use cases.",
+    "Multi-Engine Web Search: Prioritises Bing > Brave > DuckDuckGo for optimal reliability and performance",
+    "Full Page Content Extraction: Fetches and extracts complete page content from search results",
+    "Multiple Search Tools: Three specialised tools for different use cases",
+    "Smart Request Strategy: Switches between playwright browesrs and fast axios requests to ensure results are returned",
+    "The server provides three specialised tools for different web search needs:",
+    "When a comprehensive search is requested, the server uses an optimised search strategy:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-08-08T19:58:47Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mrkrsl/web-search-mcp",
+  "repoUrl": "https://github.com/mrkrsl/web-search-mcp",
+  "license": "MIT",
+  "stars": 860,
+  "lastUpdated": "2025-08-08T19:58:47Z",
+  "lastChecked": "2026-05-16",
+  "publishedAt": "2026-05-16",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

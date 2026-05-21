@@ -1,0 +1,143 @@
+{
+  "id": "candidate-kratos-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Kratos",
+  "sourceUrl": "https://github.com/go-kratos/kratos",
+  "sourceName": "GitHub",
+  "author": "go-kratos",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Your ultimate Go microservices framework for the cloud-native era.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "go-kratos",
+    "repo": "kratos",
+    "fullName": "go-kratos/kratos",
+    "stars": 25682,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "architecture",
+      "cloud-native",
+      "framework",
+      "generate",
+      "go",
+      "golang",
+      "grpc",
+      "http",
+      "kratos",
+      "mcp",
+      "microservice",
+      "microservices",
+      "protobuf"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T04:17:17Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/design/kratos-v2.md",
+    "docs/images/alipay.png",
+    "docs/images/kratos-large.png",
+    "docs/images/kratos.png",
+    "docs/README.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://go kratos.dev/\" target=\" blank\" <img src=\"https://github.com/go kratos/kratos/blob/main/docs/images/kratos large.png?raw=true\" </a </p <p align=\"center\" <a href=\"https://github.com/go kratos/kratos/actions\" <img src=\"https://github.com/go kratos/kratos/workflows/Go/badge.svg\" alt=\"Build Status\" </a <a href=\"https://pkg.go.dev/github.com/go kratos/kratos/v2\" <img src=\"https://pkg.go.",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Registry interface able to be connected with various other centralized registries through plug-ins.",
+    "Kratos is accessible, powerful, and provides tools required for large, robust applications.",
+    "Kratos has the most extensive and thorough documentation and example library of all modern web application frameworks, making it a breeze to get started with the framework.",
+    "Additionally, for each programmer, Kratos is also an ideal one learning warehouse for many aspects of microservices to enrich their experiences and skills.",
+    "Toolchain: Includes an extensive toolchain, such as the code generation of cache, the lint tool, and so forth.",
+    "Use a browser to open and visit: The kratos program is running!",
+    "If you need more, please visit the kratos documentation.",
+    "The contribution guide can be found in the Kratos documentation."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Your ultimate Go microservices framework for the cloud-native era.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "devops"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "devops"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Kratos is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with devops workflows.",
+      "Relevant to mcp.",
+      "Registry interface able to be connected with various other centralized registries through plug-ins.",
+      "Kratos is accessible, powerful, and provides tools required for large, robust applications."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "kratos",
+  "publishedAt": "2026-05-20"
+}

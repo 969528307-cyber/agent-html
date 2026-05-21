@@ -1,0 +1,75 @@
+{
+  "id": "verl-agent",
+  "name": "Verl Agent",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "verl-agent is an extension of veRL, designed for training LLM/VLM agents via RL. verl-agent is also the official code for paper \"Group-in-Group Policy Optimization for LLM Agent Training\"",
+  "description": "verl-agent is an extension of veRL, designed for training LLM/VLM agents via RL. verl-agent is also the official code for paper \"Group-in-Group Policy Optimization for LLM Agent Training\"",
+  "category": [
+    "agent-framework"
+  ],
+  "compatibleAgents": [
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/langfengQ/verl-agent",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/langfengQ/verl-agent",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/langfengQ/verl-agent#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/langfengQ/verl-agent#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/langfengQ/verl-agent/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Group-in-Group Policy Optimization for LLM Agent Training",
+    "verl-agent is an extension of veRL, specifically designed for training large language model (LLM) agents via reinforcement learning (RL).",
+    "This design makes verl-agent highly scalable for very long-horizon, multi-turn RL training (e.g., tasks in ALFWorld can require up to 50 steps to complete).",
+    "verl-agent provides a diverse set of RL algorithms (including our new algorithm GiGPO) and a rich suite of agent environments, enabling the development of reasoning agents in both visual and text-based tasks.",
+    "MAS]( which supports stable end-to-end RL post-training of multi-agent LLM systems!",
+    "[2025.09] verl-agent-style training pipeline is now supported by OpenManus-RL!",
+    "[2025.08] Add Search-R1 experiments and similarity-based GiGPO!",
+    "Check out GiGPO's superior performance in Search-R1 experiments here."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-02-27T05:29:25Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/langfengQ/verl-agent",
+  "repoUrl": "https://github.com/langfengQ/verl-agent",
+  "license": "Apache-2.0",
+  "stars": 1908,
+  "lastUpdated": "2026-02-27T05:29:25Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

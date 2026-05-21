@@ -1,0 +1,76 @@
+{
+  "id": "supabase-mcp-server",
+  "name": "Supabase Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Query MCP enables end-to-end management of Supabase via chat interface: read & write query executions, management API support, automatic migration versioning, access to logs and much more.",
+  "description": "Query MCP enables end-to-end management of Supabase via chat interface: read & write query executions, management API support, automatic migration versioning, access to logs and much more.",
+  "category": [
+    "communication"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/alexander-zuev/supabase-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/alexander-zuev/supabase-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/alexander-zuev/supabase-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/alexander-zuev/supabase-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/alexander-zuev/supabase-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Query MCP server for Supabase",
+    "Since Supabase has released their own official MCP server,",
+    "The official MCP server is as feature-rich, and many more",
+    "Query MCP is an open-source MCP server that lets your IDE safely run SQL, manage schema changes, call the Supabase Management API, and use Auth Admin SDK — all with built-in safety controls.",
+    "💻 Compatible with Cursor, Windsurf, Cline and other MCP clients supporting stdio protocol",
+    "🔄 Robust transaction handling for both direct and pooled database connections",
+    "💻 Manage your Supabase projects with Supabase Management API",
+    "🧑‍💻 Manage users with Supabase Auth Admin methods via Python SDK"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-08T18:00:45Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/alexander-zuev/supabase-mcp-server",
+  "repoUrl": "https://github.com/alexander-zuev/supabase-mcp-server",
+  "license": "Apache-2.0",
+  "stars": 821,
+  "lastUpdated": "2026-05-08T18:00:45Z",
+  "lastChecked": "2026-05-16",
+  "publishedAt": "2026-05-16",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

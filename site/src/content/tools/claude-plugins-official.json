@@ -1,0 +1,75 @@
+{
+  "id": "claude-plugins-official",
+  "name": "Claude Plugins Official",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+  "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/anthropics/claude-plugins-official#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/anthropics/claude-plugins-official#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/anthropics/claude-plugins-official/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Claude Code Plugins Directory",
+    "A curated directory of high-quality plugins for Claude Code.",
+    "Anthropic does not control what MCP servers, files, or other software are included in plugins and cannot verify that they will work as intended or that they won't change.",
+    "Plugins can be installed directly from this marketplace via Claude Code's plugin system.",
+    "For more information on developing Claude Code plugins, see the official documentation.",
+    "description: Manage Discord channel access — approve pairings, edit allowlists, set DM/group policy.",
+    "/discord:access — Discord Channel Access Management",
+    "This skill only acts on requests typed by the user in their terminal"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T00:54:19Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/anthropics/claude-plugins-official",
+  "repoUrl": "https://github.com/anthropics/claude-plugins-official",
+  "stars": 20299,
+  "lastUpdated": "2026-05-20T00:54:19Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

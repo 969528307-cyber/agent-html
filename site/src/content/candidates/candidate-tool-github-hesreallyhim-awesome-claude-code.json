@@ -1,0 +1,207 @@
+{
+  "id": "candidate-tool-github-hesreallyhim-awesome-claude-code",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Claude Code",
+  "sourceUrl": "https://github.com/hesreallyhim/awesome-claude-code",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "hesreallyhim",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications, and plugins for Claude Code by Anthropic",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "hesreallyhim",
+    "repo": "awesome-claude-code",
+    "fullName": "hesreallyhim/awesome-claude-code",
+    "stars": 44117,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "agentic-code",
+      "agentic-coding",
+      "ai-workflow-optimization",
+      "ai-workflows",
+      "anthropic",
+      "anthropic-claude",
+      "awesome",
+      "awesome-claude-code",
+      "awesome-list",
+      "awesome-lists",
+      "awesome-resources",
+      "claude",
+      "claude-code",
+      "coding-agent",
+      "coding-agents",
+      "coding-assistant",
+      "coding-assistants",
+      "llm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-27T14:40:18Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/CODE_OF_CONDUCT.md",
+    "docs/COOLDOWN.md",
+    "docs/HOW_IT_LOOKS.md",
+    "docs/HOW_IT_WORKS.md",
+    "docs/README-GENERATION.md",
+    "docs/REPO_TICKER.md",
+    "docs/SECURITY.md",
+    "docs/TESTING.md",
+    "pyproject.toml",
+    "resources/claude.md-files/AI-IntelliJ-Plugin/CLAUDE.md",
+    "resources/claude.md-files/AVS-Vibe-Developer-Guide/CLAUDE.md",
+    "resources/claude.md-files/AWS-MCP-Server/CLAUDE.md",
+    "resources/claude.md-files/Basic-Memory/CLAUDE.md",
+    "resources/claude.md-files/claude-code-mcp-enhanced/CLAUDE.md",
+    "resources/claude.md-files/Comm/CLAUDE.md",
+    "resources/claude.md-files/Course-Builder/CLAUDE.md",
+    "resources/claude.md-files/Cursor-Tools/CLAUDE.md",
+    "resources/claude.md-files/DroidconKotlin/CLAUDE.md",
+    "resources/claude.md-files/EDSL/CLAUDE.md",
+    "resources/claude.md-files/Giselle/CLAUDE.md",
+    "resources/claude.md-files/Guitar/CLAUDE.md",
+    "resources/claude.md-files/JSBeeb/CLAUDE.md",
+    "resources/claude.md-files/Lamoom-Python/CLAUDE.md",
+    "resources/claude.md-files/LangGraphJS/CLAUDE.md",
+    "resources/claude.md-files/Network-Chronicles/CLAUDE.md",
+    "resources/claude.md-files/Note-Companion/CLAUDE.md",
+    "resources/claude.md-files/Pareto-Mac/CLAUDE.md",
+    "resources/claude.md-files/Perplexity-MCP/CLAUDE.md",
+    "resources/claude.md-files/SG-Cars-Trends-Backend/CLAUDE.md",
+    "resources/claude.md-files/SPy/CLAUDE.md",
+    "resources/claude.md-files/TPL/CLAUDE.md",
+    "resources/official-documentation/Anthropic-Quickstarts/CLAUDE.md"
+  ],
+  "readmeExtract": "Awesome Claude Code <em A delightfully curated collection of the finest of resources for the most excellent of agents, Claude Code, by Anthropic PBC. Contains high quality skills, agents, hooks, status lines, orchestrators, developer tooling, and all the latest features that the Claude Code team continue to ship. Suitable for beginners and veterans, with an emphasis on code quality, security, and originality.</em <br",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A delightfully curated collection of the finest of resources for the most excellent of agents, Claude Code, by Anthropic PBC.",
+    "Contains high quality skills, agents, hooks, status lines, orchestrators, developer tooling, and all the latest features that the Claude Code team continue to ship.",
+    "Him: Claude have you got any ideas?",
+    "Claude: Just hit me up on Telegram, I'll sort it out.",
+    "All complaints will be reviewed and investigated promptly and fairly.",
+    "Alas, the CLI does not presently supopport the creation of issues using issue templates, which carry the labels that are used to manage the processing of issues.",
+    "First of all, it's direspectful to Claude, who is supposed to be the star of the show; second of all, it is extremely obvious, and embarrassing.",
+    "Why I Decided to Turn Awesome Claude Code into \"90's MySpace Aesthetic\""
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A curated list of awesome skills, hooks, slash-commands, agent orchestrators, applications, and plugins for Claude Code by Anthropic",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "security",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "security",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome Claude Code is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "A delightfully curated collection of the finest of resources for the most excellent of agents, Claude Code, by Anthropic PBC."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:hesreallyhim/awesome-claude-code",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

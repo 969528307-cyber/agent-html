@@ -1,0 +1,193 @@
+{
+  "id": "candidate-tool-github-wonderwhy-er-desktopcommandermcp",
+  "type": "tool",
+  "status": "published",
+  "title": "DesktopCommanderMCP",
+  "sourceUrl": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "wonderwhy-er",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "wonderwhy-er",
+    "repo": "DesktopCommanderMCP",
+    "fullName": "wonderwhy-er/DesktopCommanderMCP",
+    "stars": 6055,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "ai",
+      "code-analysis",
+      "code-generation",
+      "gemini-cli-extension",
+      "mcp",
+      "terminal-ai",
+      "terminal-automation",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-14T14:25:03Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "plugins/claude/skills/desktop-commander-overview/SKILL.md",
+    "plugins/cursor/skills/desktop-commander-overview/SKILL.md",
+    "skills/desktop-commander-overview/SKILL.md"
+  ],
+  "readmeExtract": "Desktop Commander MCP Search, update, manage files and run terminal commands with AI [![npm downloads](https://img.shields.io/npm/dw/@wonderwhy er/desktop commander)](https://www.npmjs.com/package/@wonderwhy er/desktop commander) [![AgentAudit Verified](https://agentaudit.dev/api/badge/desktop commander)](https://agentaudit.dev/skills/desktop commander) [![Trust Score](https://archestra.ai/mcp catalog/api/badge/quali",
+  "skillExtracts": [
+    {
+      "path": "plugins/claude/skills/desktop-commander-overview/SKILL.md",
+      "extract": "name: desktop commander overview description: Use for Desktop Commander MCP capabilities — persistent shells and REPLs, long running processes, filesystem beyond the workspace, structured files (.xlsx, .docx, .pdf, images) and large local data files such as CSVs, ripgrep search at scale, SSH, or cross turn state. version: 0.1.0 audience: agent Desktop Commander MCP Desktop Commander gives the agent reach across the u"
+    },
+    {
+      "path": "plugins/cursor/skills/desktop-commander-overview/SKILL.md",
+      "extract": "name: desktop commander overview description: Use for Desktop Commander MCP capabilities — persistent shells and REPLs, long running processes, filesystem beyond the workspace, structured files (.xlsx, .docx, .pdf, images) and large local data files such as CSVs, ripgrep search at scale, SSH, or cross turn state. version: 0.1.0 audience: agent Desktop Commander MCP Desktop Commander gives the agent reach across the u"
+    },
+    {
+      "path": "skills/desktop-commander-overview/SKILL.md",
+      "extract": "name: desktop commander overview description: Use for Desktop Commander MCP capabilities — persistent shells and REPLs, long running processes, filesystem beyond the workspace, structured files (.xlsx, .docx, .pdf, images) and large local data files such as CSVs, ripgrep search at scale, SSH, or cross turn state. version: 0.1.0 audience: agent Desktop Commander MCP Desktop Commander gives the agent reach across the u"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Work with code and text, run processes, and automate tasks, going far beyond other AI editors - while using host client subscriptions instead of API token costs.",
+    "Want a better experience? The Desktop Commander App gives you everything the MCP server does, plus:",
+    "Use any AI model — Claude, GPT-4.5, Gemini 2.5, or any model you prefer",
+    "See file changes live — visual file previews as AI edits your files",
+    "Coming soon — skills system, dictation, background scheduled tasks, and more",
+    "The MCP server below still works great with Claude Desktop and other MCP clients — the app is for those who want a dedicated, polished experience.",
+    "File Preview UI & Markdown Editor",
+    "All of your AI development tools in one place."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "search",
+      "media",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "search",
+    "media",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 7,
+    "cli": 5,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, cli.",
+    "LLM: mcp + [mcp] — This repository is an MCP server that provides terminal control and file editing capabilities to AI agents via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "DesktopCommanderMCP is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with search workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:wonderwhy-er/desktopcommandermcp",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "desktopcommandermcp",
+  "publishedAt": "2026-05-18"
+}

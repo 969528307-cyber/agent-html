@@ -1,0 +1,76 @@
+{
+  "id": "rill",
+  "name": "Rill",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "The fastest business intelligence tool for humans and agents.",
+  "description": "The fastest business intelligence tool for humans and agents.",
+  "category": [
+    "data"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/rilldata/rill",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/rilldata/rill",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/rilldata/rill#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/rilldata/rill#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/rilldata/rill/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Agent-first, human-friendly business intelligence",
+    "Rill is the fastest BI tool for humans and agents, powered by OLAP engines like ClickHouse and DuckDB.",
+    "Scaffold a project with agent context",
+    "Build with agents — BI-as-code (YAML + SQL) means coding agents like Claude Code and Cursor can author projects, dashboards, and security policies end-to-end",
+    "Explore with agents — Conversational BI lets business users query metrics in natural language; the MCP server connects AI agents directly to your semantic layer",
+    "Embeddable — Dashboards, APIs, and agent interfaces you can ship in your product",
+    "Connectors — S3, GCS, databases, and 20+ sources",
+    "OLAP Engines — Managed ClickHouse or DuckDB included, or connect an external engine (ClickHouse Cloud, Druid, Pinot, MotherDuck)"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T09:20:55Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/rilldata/rill",
+  "repoUrl": "https://github.com/rilldata/rill",
+  "license": "Apache-2.0",
+  "stars": 2625,
+  "lastUpdated": "2026-05-18T09:20:55Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

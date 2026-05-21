@@ -1,0 +1,175 @@
+{
+  "id": "candidate-httprunner-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Httprunner",
+  "sourceUrl": "https://github.com/httprunner/httprunner",
+  "sourceName": "GitHub",
+  "author": "httprunner",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "HttpRunner 是一款开源的 API/UI 测试框架，简单易用，功能强大，具有丰富的插件化机制和高度的可扩展能力。",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "httprunner",
+    "repo": "httprunner",
+    "fullName": "httprunner/httprunner",
+    "stars": 4277,
+    "license": "Apache-2.0",
+    "topics": [
+      "adb",
+      "agent-tars",
+      "mcp-server",
+      "mcphost",
+      "testing",
+      "ui-tars",
+      "ui-testing",
+      "uiautomator2",
+      "wda",
+      "webdriveragent"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2025-12-11T16:50:50Z"
+  },
+  "detectedFiles": [
+    "README.en.md",
+    "README.md",
+    "docs/architecture.md",
+    "docs/assets/hogwarts.png",
+    "docs/assets/qrcode.jpg",
+    "docs/assets/sentry-logo-black.svg",
+    "docs/builtin.md",
+    "docs/CHANGELOG.md",
+    "docs/cmd/hrp_adb_devices.md",
+    "docs/cmd/hrp_adb_screencap.md",
+    "docs/cmd/hrp_adb.md",
+    "docs/cmd/hrp_boom_curl.md",
+    "docs/cmd/hrp_boom.md",
+    "docs/cmd/hrp_build.md",
+    "docs/cmd/hrp_convert_curl.md",
+    "docs/cmd/hrp_convert.md",
+    "docs/cmd/hrp_curl.md",
+    "docs/cmd/hrp_ios_apps.md",
+    "docs/cmd/hrp_ios_devices.md",
+    "docs/cmd/hrp_ios_mount.md",
+    "docs/cmd/hrp_ios_ps.md",
+    "docs/cmd/hrp_ios_reboot.md",
+    "docs/cmd/hrp_ios_tunnel.md",
+    "docs/cmd/hrp_ios_xctest.md",
+    "docs/cmd/hrp_ios.md",
+    "docs/cmd/hrp_mcp-server.md",
+    "docs/cmd/hrp_mcphost.md",
+    "docs/cmd/hrp_pytest.md",
+    "docs/cmd/hrp_report.md",
+    "docs/cmd/hrp_run_curl.md",
+    "docs/cmd/hrp_run.md",
+    "docs/cmd/hrp_server.md",
+    "docs/cmd/hrp_startproject.md",
+    "docs/cmd/hrp_wiki.md",
+    "docs/cmd/hrp.md",
+    "docs/dev-instruct.md",
+    "docs/parameters.md",
+    "docs/summary-structure.md",
+    "docs/uixt/ai-service.md",
+    "docs/uixt/devices.md"
+  ],
+  "readmeExtract": "HttpRunner [![Github Actions](https://github.com/httprunner/httprunner/actions/workflows/unittest.yml/badge.svg)](https://github.com/httprunner/httprunner/actions) [![codecov](https://codecov.io/gh/httprunner/httprunner/branch/master/graph/badge.svg)](https://codecov.io/gh/httprunner/httprunner) [![Go Reference](https://pkg.go.dev/badge/github.com/httprunner/httprunner.svg)](https://pkg.go.dev/github.com/httprunner/h",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "在 2022 年，HttpRunner 开始新增支持 UI 自动化测试，当前已经支持了 Android/iOS/Harmony/Browser 多种系统平台，并在 v5 版本融入了大模型技术，成长成为了一款通用的智能自动化测试框架。",
+    "UI Automation: Android/iOS/Harmony/Browser",
+    "adb simple utils for android device management",
+    "ios simple utils for ios device management",
+    "mcp-server Start MCP server for UI automation",
+    "mcphost Start a chat session to interact with MCP tools",
+    "├── mcphost/ # MCP (Model Context Protocol) 主机模块",
+    "M[mcphost/] --> N[AI Models]"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "HttpRunner 是一款开源的 API/UI 测试框架，简单易用，功能强大，具有丰富的插件化机制和高度的可扩展能力。",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "testing",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "testing",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Httprunner is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with testing workflows.",
+      "Helps with design workflows.",
+      "Relevant to mcp.",
+      "在 2022 年，HttpRunner 开始新增支持 UI 自动化测试，当前已经支持了 Android/iOS/Harmony/Browser 多种系统平台，并在 v5 版本融入了大模型技术，成长成为了一款通用的智能自动化测试框架。",
+      "UI Automation: Android/iOS/Harmony/Browser"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "httprunner",
+  "publishedAt": "2026-05-20"
+}

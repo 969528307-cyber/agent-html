@@ -1,0 +1,223 @@
+{
+  "id": "candidate-tool-github-kubesphere-kubesphere",
+  "type": "tool",
+  "status": "published",
+  "title": "Kubesphere",
+  "sourceUrl": "https://github.com/kubesphere/kubesphere",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "kubesphere",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management ⎈ 🖥 ☁️",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "kubesphere",
+    "repo": "kubesphere",
+    "fullName": "kubesphere/kubesphere",
+    "stars": 16934,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "cloud-native",
+      "cncf",
+      "devops",
+      "ebpf",
+      "hacktoberfest",
+      "kubernetes",
+      "kubesphere",
+      "llm",
+      "multi-cluster",
+      "multi-tenancy",
+      "observability",
+      "servicemesh",
+      "skills",
+      "skills-sh",
+      "skillsmp"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-06T07:16:53Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/build-multiarch-images.md",
+    "docs/images/arch.png",
+    "docs/images/architecture.png",
+    "docs/images/devops-api.png",
+    "docs/images/ks-workflow.png",
+    "docs/images/kubesphere-logging-fluentbit.png",
+    "docs/images/kubesphere-logging-overview.png",
+    "docs/images/kubesphere-logo.png",
+    "docs/images/kubesphere-monitoring-architecture.png",
+    "docs/images/logo.png",
+    "docs/images/roadmap-2.0.2-en.png",
+    "docs/images/roadmap-2.0.2-zh.png",
+    "docs/images/s2i_arch.png",
+    "docs/powered-by-kubesphere.md",
+    "docs/roadmap.md",
+    "skills/frontend-forge-fi-operations/SKILL.md",
+    "skills/frontend-integration-yaml/SKILL.md",
+    "skills/kubesphere-cluster-management/SKILL.md",
+    "skills/kubesphere-core/SKILL.md",
+    "skills/kubesphere-devops-argocd/SKILL.md",
+    "skills/kubesphere-devops-credentials/SKILL.md",
+    "skills/kubesphere-devops-jenkins/SKILL.md",
+    "skills/kubesphere-devops-overview/SKILL.md",
+    "skills/kubesphere-devops-pipeline/SKILL.md",
+    "skills/kubesphere-devops-tenant/SKILL.md",
+    "skills/kubesphere-extension-management/SKILL.md",
+    "skills/kubesphere-fluid/SKILL.md",
+    "skills/kubesphere-multi-tenant-management/SKILL.md",
+    "skills/kubesphere-network-extension-operations/SKILL.md",
+    "skills/kubesphere-openkruise/SKILL.md",
+    "skills/kubesphere-volcano/SKILL.md",
+    "skills/nodegroup/SKILL.md",
+    "skills/opensearch/SKILL.md",
+    "skills/vector/SKILL.md",
+    "skills/whizard-auditing/SKILL.md",
+    "skills/whizard-events/SKILL.md",
+    "skills/whizard-logging/SKILL.md",
+    "skills/whizard-notification/SKILL.md",
+    "skills/whizard-telemetry-ruler/SKILL.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://kubesphere.io/\" <img src=\"docs/images/kubesphere icon.gif\" alt=\"banner\" width=\"200px\" </a </p <p align=\"center\" <b The container platform tailored for <i Kubernetes multi cloud, datacenter, and edge</i management</b </p <p align=center <a href=\"https://goreportcard.com/report/github.com/kubesphere/kubesphere\" <img src=\"https://goreportcard.com/badge/github.com/kubesphere/kubesphere\"",
+  "skillExtracts": [
+    {
+      "path": "skills/frontend-forge-fi-operations/SKILL.md",
+      "extract": "name: frontend forge fi operations description: Operate FrontendIntegration resources and the frontend forge extension. Use when Codex needs to create a FrontendIntegration from FrontendIntegration YAML, update or patch FI lifecycle state, inspect or troubleshoot FI build output, or create, enable, disable, uninstall, and inspect the frontend forge extension through its InstallPlan and extension resources. Frontend F"
+    },
+    {
+      "path": "skills/frontend-integration-yaml/SKILL.md",
+      "extract": "name: frontend integration yaml description: Generate canonical FrontendIntegration YAML from a simplified single menu authoring model for frontend forge. Frontend Integration YAML Generate submit ready FrontendIntegration YAML from a simplified authoring model with one menu and one or more pages. When to Use generate FrontendIntegration YAML create a quick integration YAML from a CRD create an iframe based FrontendI"
+    },
+    {
+      "path": "skills/kubesphere-cluster-management/SKILL.md",
+      "extract": "name: kubesphere cluster management description: KubeSphere cluster query Skill (read only). Use when user requests to view cluster list, cluster status, cluster details, or cluster version info. Do not perform any write operations (create, delete, update). Use KubeSphere Console for management operations. KubeSphere Cluster Query ⚠️ Security : Read only only. Never use kubectl to create, update, or delete cluster re"
+    },
+    {
+      "path": "skills/kubesphere-core/SKILL.md",
+      "extract": "name: kubesphere core description: KubeSphere central controller Skill. Routes to specific Skills based on user requests: multi cluster management (kubesphere cluster management), multi tenant management (kubesphere multi tenant management), extension management (kubesphere extension management). Also provides core architecture, API routing, and API utilities. KubeSphere Core Overview KubeSphere is a distributed oper"
+    },
+    {
+      "path": "skills/kubesphere-devops-argocd/SKILL.md",
+      "extract": "name: kubesphere devops argocd description: Use when configuring ArgoCD in KubeSphere DevOps, including GitOps deployments, application management, SSO setup, or troubleshooting ArgoCD issues KubeSphere DevOps ArgoCD Configuration Overview KubeSphere DevOps includes ArgoCD v2.11.7 as a bundled subchart for GitOps continuous deployment. ArgoCD follows the declarative GitOps pattern, automatically syncing application s"
+    },
+    {
+      "path": "skills/kubesphere-devops-credentials/SKILL.md",
+      "extract": "name: kubesphere devops credentials description: Use when managing credentials in KubeSphere DevOps, including repository credentials, kubeconfig, and API tokens KubeSphere DevOps Credentials Overview Credentials in KubeSphere DevOps are Kubernetes Secrets with specific labels and annotations. They are synced to Jenkins for use in pipelines. Supported types include SSH keys, username/password, and secret tokens. When"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management",
+    "KubeSphere is a distributed operating system for cloud-native application management,",
+    "full-stack automated IT operation and streamlined DevOps workflows.",
+    "out-of-the-box managed cluster service.",
+    "🔗 Kubernetes Multi-cluster Management",
+    "Provide a centralized control plane to manage multiple Kubernetes clusters, and support the ability to propagate an app to multiple K8s clusters across different cloud providers.",
+    "Provide fine-grained traffic management, observability and tracing for distributed microservice applications, provides visualization for traffic topology.",
+    "Provide an App Store for Helm-based applications, and offer application lifecycle management on Kubernetes platform."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management ⎈ 🖥 ☁️",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "devops",
+      "monitoring"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "devops",
+    "monitoring"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Kubesphere is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with devops workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to skill.",
+      "The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:kubesphere/kubesphere",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "kubesphere",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

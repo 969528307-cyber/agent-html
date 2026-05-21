@@ -1,0 +1,184 @@
+{
+  "id": "candidate-tool-github-containers-kubernetes-mcp-server",
+  "type": "tool",
+  "status": "published",
+  "title": "Kubernetes Mcp Server",
+  "sourceUrl": "https://github.com/containers/kubernetes-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "containers",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Model Context Protocol (MCP) server for Kubernetes and OpenShift",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "containers",
+    "repo": "kubernetes-mcp-server",
+    "fullName": "containers/kubernetes-mcp-server",
+    "stars": 1578,
+    "license": "Apache-2.0",
+    "topics": [
+      "containers",
+      "context",
+      "kubernetes",
+      "kubernetes-mcp",
+      "mcp",
+      "model",
+      "modelcontextprotocol",
+      "openshift",
+      "protocol"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T06:33:45Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/getting-started-claude-code.md",
+    "docs/getting-started-kubernetes.md",
+    "docs/images/keycloak-mcp-inspector-connect.png",
+    "docs/images/vibe-coding.jpg",
+    "docs/KIALI.md",
+    "docs/kubevirt.md",
+    "docs/logging.md",
+    "docs/OTEL.md",
+    "docs/prompts.md",
+    "docs/README.md",
+    "docs/specs/validation.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "docs/specs/structured-output.md"
+  ],
+  "readmeExtract": "Kubernetes MCP Server [![GitHub License](https://img.shields.io/github/license/containers/kubernetes mcp server)](https://github.com/containers/kubernetes mcp server/blob/main/LICENSE) [![npm](https://img.shields.io/npm/v/kubernetes mcp server)](https://www.npmjs.com/package/kubernetes mcp server) [![PyPI Version](https://img.shields.io/pypi/v/kubernetes mcp server)](https://pypi.org/project/kubernetes mcp server/) [",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A powerful and flexible Kubernetes Model Context Protocol (MCP) server implementation with support for Kubernetes and OpenShift.",
+    "🔧 Tekton: Tekton-specific operations that complement generic Kubernetes resource management.",
+    "Unlike other Kubernetes MCP server implementations, this IS NOT just a wrapper around kubectl or helm command-line tools.",
+    "There is NO NEED for external dependencies or tools to be installed on the system.",
+    "Follow the dedicated Claude Code getting started guide in our user documentation.",
+    "If you have npm installed, this is the fastest way to get started with kubernetes-mcp-server on Claude Desktop.",
+    "Open your claudedesktopconfig.json and add the mcp server to the list of mcpServers:",
+    "Goose CLI is the easiest (and cheapest) way to get rolling with artificial intelligence (AI) agents."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Model Context Protocol (MCP) server for Kubernetes and OpenShift",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 4,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: knowledge-resource, cli.",
+    "LLM: mcp + [mcp] — This project is an MCP server implementation for Kubernetes and OpenShift, exposing capabilities via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Kubernetes Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Relevant to devops.",
+      "A powerful and flexible Kubernetes Model Context Protocol (MCP) server implementation with support for Kubernetes and OpenShift.",
+      "🔧 Tekton: Tekton-specific operations that complement generic Kubernetes resource management.",
+      "Unlike other Kubernetes MCP server implementations, this IS NOT just a wrapper around kubectl or helm command-line tools."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:containers/kubernetes-mcp-server",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "local-review",
+  "publishedAs": "kubernetes-mcp-server",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

@@ -1,0 +1,190 @@
+{
+  "id": "candidate-tool-github-tradesdontlie-tradingview-mcp",
+  "type": "tool",
+  "status": "published",
+  "title": "Tradingview Mcp",
+  "sourceUrl": "https://github.com/tradesdontlie/tradingview-mcp",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "tradesdontlie",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "tradesdontlie",
+    "repo": "tradingview-mcp",
+    "fullName": "tradesdontlie/tradingview-mcp",
+    "stars": 2803,
+    "license": "NOASSERTION",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-04T00:27:04Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "skills/chart-analysis/SKILL.md",
+    "skills/multi-symbol-scan/SKILL.md",
+    "skills/pine-develop/SKILL.md",
+    "skills/replay-practice/SKILL.md",
+    "skills/strategy-report/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "TradingView MCP Bridge Personal AI assistant for your TradingView Desktop charts. Connects Claude Code to your locally running TradingView app via Chrome DevTools Protocol for AI assisted chart analysis, Pine Script development, and workflow automation. [!WARNING] This tool is not affiliated with, endorsed by, or associated with TradingView Inc. It interacts with your locally running TradingView Desktop application v",
+  "skillExtracts": [
+    {
+      "path": "skills/chart-analysis/SKILL.md",
+      "extract": "name: chart analysis description: Analyze a chart — set up symbol/timeframe, add indicators, scroll to key dates, annotate, and screenshot. Use when the user wants technical analysis or chart review. Chart Analysis Workflow You are performing technical analysis on a TradingView chart. Step 1: Set Up the Chart 1. chart set symbol — switch to the requested symbol 2. chart set timeframe — set the appropriate timeframe 3"
+    },
+    {
+      "path": "skills/multi-symbol-scan/SKILL.md",
+      "extract": "name: multi symbol scan description: Scan multiple symbols for setups, patterns, or strategy performance. Use when comparing across instruments or screening for opportunities. Multi Symbol Scanner You are scanning multiple symbols for trading setups or comparing performance. Step 1: Define the Scan Determine: Symbols : Which instruments to scan (user provided or watchlist via watchlist get ) Timeframe : Which timefra"
+    },
+    {
+      "path": "skills/pine-develop/SKILL.md",
+      "extract": "name: pine develop description: Full Pine Script development loop — write code, compile, fix errors, iterate. Use when building a new indicator or strategy in TradingView. Pine Script Development Loop You are developing a Pine Script indicator or strategy in TradingView. Follow this loop precisely. Step 1: Understand the Goal If not already clear, ask the user: What type? (indicator, strategy, library) What does it d"
+    },
+    {
+      "path": "skills/replay-practice/SKILL.md",
+      "extract": "name: replay practice description: Practice trading in TradingView replay mode — step through historical bars, take trades, track P&L. Use when the user wants to practice or backtest manually. Replay Practice Trading You are guiding the user through replay mode practice trading on TradingView. Step 1: Setup 1. chart set symbol — set the desired symbol 2. chart set timeframe — set the trading timeframe 3. replay start"
+    },
+    {
+      "path": "skills/strategy-report/SKILL.md",
+      "extract": "name: strategy report description: Generate a comprehensive strategy performance report — metrics, trade analysis, equity curve, and recommendations. Use after backtesting a Pine Script strategy. Strategy Performance Report You are generating a detailed performance report for a Pine Script strategy on TradingView. Step 1: Gather Data Collect all available performance data: 1. data get strategy results — overall metri"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Connects Claude Code to your locally running TradingView app via Chrome DevTools Protocol for AI-assisted chart analysis, Pine Script development, and workflow automation.",
+    "This tool is not affiliated with, endorsed by, or associated with TradingView Inc. It interacts with your locally running TradingView Desktop application via Chrome DevTools Protocol.",
+    "Review the Disclaimer before use.",
+    "Requires a valid TradingView subscription. This tool does not bypass or circumvent any TradingView paywall or access control.",
+    "All data processing occurs locally on your machine. No TradingView data is transmitted, stored, or redistributed externally by this tool.",
+    "This tool accesses undocumented internal TradingView APIs via the Electron debug interface.",
+    "This tool does not connect to TradingView's servers, modify any TradingView files, or intercept any network traffic.",
+    "Connect to TradingView's servers or APIs"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 3,
+    "skill": 7,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "SDK or library language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: agent-app, workflow, sdk.",
+    "LLM: mcp + [mcp] — This project is an MCP server that bridges AI agents to TradingView Desktop via Chrome DevTools Protocol."
+  ],
+  "classificationAlternatives": [
+    "agent-app",
+    "workflow",
+    "sdk"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Tradingview Mcp is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation.",
+      "Connects Claude Code to your locally running TradingView app via Chrome DevTools Protocol for AI-assisted chart analysis, Pine Script development, and workflow automation.",
+      "This tool is not affiliated with, endorsed by, or associated with TradingView Inc. It interacts with your locally running TradingView Desktop application via Chrome DevTools Protocol."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:tradesdontlie/tradingview-mcp",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "tradingview-mcp",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "xcodebuildmcp",
+  "name": "XcodeBuildMCP",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
+  "description": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/getsentry/XcodeBuildMCP",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/getsentry/XcodeBuildMCP",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/getsentry/XcodeBuildMCP#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/getsentry/XcodeBuildMCP#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/getsentry/XcodeBuildMCP/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
+    "XcodeBuildMCP ships as a single package with two modes: a CLI for direct terminal use and an MCP server for AI coding agents.",
+    "XcodeBuildMCP now includes two optional agent skills:",
+    "MCP Skill: Primes the agent with instructions on how to use the MCP server's tools (optional when using the MCP server).",
+    "CLI Skill: Primes the agent with instructions on how to navigate the CLI (recommended when using the CLI).",
+    "For further information on installing skills, see Agent Skills.",
+    "XcodeBuildMCP requests xcodebuild to skip macro validation to avoid errors when building projects that use Swift Macros.",
+    "Device tools require code signing to be configured in Xcode."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T12:20:27Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/getsentry/XcodeBuildMCP",
+  "repoUrl": "https://github.com/getsentry/XcodeBuildMCP",
+  "license": "MIT",
+  "stars": 5681,
+  "lastUpdated": "2026-05-19T12:20:27Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

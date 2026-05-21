@@ -1,0 +1,78 @@
+{
+  "id": "trellis",
+  "name": "Trellis",
+  "type": "workflow",
+  "status": "published",
+  "summary": "The best agent harness.",
+  "description": "The best agent harness.",
+  "category": [
+    "workflow"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mindfold-ai/Trellis",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mindfold-ai/Trellis",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mindfold-ai/Trellis#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mindfold-ai/Trellis#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mindfold-ai/Trellis/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Task-centered workflow Keep PRDs, implementation context, review context, and task status in .trellis/tasks/ so AI work stays structured.",
+    "Team-shared standards Specs live in the repo, so one person's hard-won workflow or rule can benefit the whole team.",
+    "Trellis runs a 4-phase loop with auto-invoked skills and sub-agents:",
+    "Research-heavy items go to a trellis-research sub-agent.",
+    "The result is curated specs + research files referenced from implement.jsonl / check.jsonl.",
+    "Implement — a trellis-implement sub-agent writes code from the PRD with the curated context auto-injected, no git commit.",
+    "Verify — a trellis-check sub-agent reviews the diff against specs and runs lint, type-check, and tests, self-fixing where it can.",
+    "See the workflow in practice Real-World Scenarios"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T03:39:10Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mindfold-ai/Trellis",
+  "repoUrl": "https://github.com/mindfold-ai/Trellis",
+  "license": "AGPL-3.0",
+  "stars": 8014,
+  "lastUpdated": "2026-05-18T03:39:10Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

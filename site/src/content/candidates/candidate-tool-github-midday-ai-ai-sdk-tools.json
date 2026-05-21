@@ -1,0 +1,154 @@
+{
+  "id": "candidate-tool-github-midday-ai-ai-sdk-tools",
+  "type": "tool",
+  "status": "published",
+  "title": "Ai Sdk Tools",
+  "sourceUrl": "https://github.com/midday-ai/ai-sdk-tools",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "midday-ai",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Essential utilities for building production-ready AI applications with Vercel AI SDK. State management, debugging, structured streaming, intelligent agents, and caching.",
+  "proposedCategory": [
+    "sdk"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "midday-ai",
+    "repo": "ai-sdk-tools",
+    "fullName": "midday-ai/ai-sdk-tools",
+    "stars": 2059,
+    "topics": [
+      "ai-sdk"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-12-25T14:20:13Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "AI SDK Tools ![AI SDK Tools](image.png) ⚠️ Active Development Notice This package is currently in active development and breaking changes may occur between versions. We recommend pinning to specific versions in production environments and staying updated with our changelog. Essential utilities for building production ready AI applications with Vercel AI SDK. State management, debugging, structured streaming, intellig",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "State management, debugging, structured streaming, intelligent agents, caching, and persistent memory.",
+    "AI chat state management that eliminates prop drilling.",
+    "Development tools for debugging AI applications.",
+    "Inspect tool calls, messages, and execution flow directly in your app.",
+    "Stream structured, type-safe artifacts from AI tools to React components.",
+    "Multi-agent orchestration with automatic handoffs and routing.",
+    "Build intelligent workflows with specialized agents for any AI provider.",
+    "Universal caching for AI SDK tools."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Discovered by functional category \"sdk\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Essential utilities for building production-ready AI applications with Vercel AI SDK. State management, debugging, structured streaming, intelligent agents, and caching.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "sdk",
+    "scope": "single-tool",
+    "useCategory": [
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "sdk",
+  "scope": "single-tool",
+  "useCategory": [
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "sdk",
+    "whatIsIt": "Ai Sdk Tools is an SDK or library for developers building agent tooling.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Relevant to sdk.",
+      "State management, debugging, structured streaming, intelligent agents, caching, and persistent memory.",
+      "AI chat state management that eliminates prop drilling.",
+      "Development tools for debugging AI applications."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:midday-ai/ai-sdk-tools",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ai-sdk-tools",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

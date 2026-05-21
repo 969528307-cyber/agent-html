@@ -1,0 +1,184 @@
+{
+  "id": "candidate-tool-github-rulego-rulego",
+  "type": "tool",
+  "status": "published",
+  "title": "Rulego",
+  "sourceUrl": "https://github.com/rulego/rulego",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "rulego",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "⛓️RuleGo is a lightweight, high-performance, embedded, next-generation component orchestration rule engine framework for Go.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "rulego",
+    "repo": "rulego",
+    "fullName": "rulego/rulego",
+    "stars": 1505,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai",
+      "automation",
+      "data-flow",
+      "edge-computing",
+      "go",
+      "intergrations",
+      "iot",
+      "ipaas",
+      "low-code",
+      "low-code-framework",
+      "mcp",
+      "mcp-client",
+      "mcp-server",
+      "rule-engine",
+      "rulego",
+      "workflow",
+      "workflow-automation",
+      "workflow-engine"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-23T09:42:39Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "RuleGo [![GoDoc](https://pkg.go.dev/badge/github.com/rulego/rulego)](https://pkg.go.dev/github.com/rulego/rulego) [![Go Report](https://goreportcard.com/badge/github.com/rulego/rulego)](https://goreportcard.com/report/github.com/rulego/rulego) [![codecov](https://codecov.io/gh/rulego/rulego/graph/badge.svg?token=G6XCGY7KVN)](https://codecov.io/gh/rulego/rulego) [![test](https://github.com/rulego/rulego/workflows/test",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Official Website Docs Contribution Guide",
+    "It has a wide range of application potential in low-code, business code orchestration, data integration, workflows, large model intelligent agents, edge computing, automation, IoT, and other scenarios.",
+    "Workflow Orchestration: Supports dynamic orchestration of rule chain components, replacing or adding business logic without restarting the application.",
+    "Built-in Components: Includes a large number of components such as Message Type Switch, JavaScript Switch, JavaScript Filter, JavaScript Transformer, HTTP Push, MQTT Push, Send Email, Log Recording, etc.",
+    "Application Integration: Use RuleGo as glue to connect various systems or protocols, such as SSH, webhook, Kafka, message queues, databases, ChatGPT, third-party application systems.",
+    "Highly Customized Business: Decouple highly customized or frequently changing business and manage it with RuleGo rule chains.",
+    "Automation: For example, CI/CD systems, process automation systems, marketing automation systems.",
+    "Rule Engine Instance Management:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "⛓️RuleGo is a lightweight, high-performance, embedded, next-generation component orchestration rule engine framework for Go.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "data",
+      "media",
+      "coding",
+      "testing",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "data",
+    "media",
+    "coding",
+    "testing",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: platform.",
+    "Alternative capabilities: knowledge-resource, workflow.",
+    "LLM: sdk + [mcp, workflow] — RuleGo is a lightweight Go framework for component orchestration and rule engine workflows, with built-in MCP support and integration capabilities."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Rulego is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with data workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with testing workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:rulego/rulego",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "rulego",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

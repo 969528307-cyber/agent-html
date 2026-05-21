@@ -1,0 +1,77 @@
+{
+  "id": "dstack",
+  "name": "Dstack",
+  "type": "skill",
+  "status": "published",
+  "summary": "Vendor-agnostic orchestration for training, inference and agentic workloads across NVIDIA, AMD, TPU, and Tenstorrent on clouds, Kubernetes, and bare metal.",
+  "description": "Vendor-agnostic orchestration for training, inference and agentic workloads across NVIDIA, AMD, TPU, and Tenstorrent on clouds, Kubernetes, and bare metal.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/dstackai/dstack",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/dstackai/dstack",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/dstackai/dstack#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/dstackai/dstack#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/dstackai/dstack/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "It streamlines development, training, and inference, and is compatible with any hardware, open-source tools, and frameworks.",
+    "[2026/02] dstack 0.20.8: Skills",
+    "AI agents like Claude, Codex, and Cursor can now create and manage fleets and submit workloads on your behalf.",
+    "dstack automatically manages provisioning, job queuing, auto-scaling, networking, volumes, run failures,",
+    "$ npx skills add dstackai/dstack",
+    "Connection issues: Verify server status, check authentication, ensure network access to backends",
+    "Docs sources are in mkdocs/docs/ with extra contributor notes in contributing/.md.",
+    "Use attribute docstrings without leading newline."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T21:36:37Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/dstackai/dstack",
+  "repoUrl": "https://github.com/dstackai/dstack",
+  "license": "MPL-2.0",
+  "stars": 2140,
+  "lastUpdated": "2026-05-19T21:36:37Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

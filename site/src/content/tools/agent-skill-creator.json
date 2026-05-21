@@ -1,0 +1,77 @@
+{
+  "id": "agent-skill-creator",
+  "name": "Agent Skill Creator",
+  "type": "skill",
+  "status": "published",
+  "summary": "Turn any workflow into reusable AI agent skills that install on 14+ tools — Claude Code, Copilot, Cursor, Windsurf, Codex, Gemini, Kiro, and more. One SKILL.md, every platform.",
+  "description": "Turn any workflow into reusable AI agent skills that install on 14+ tools — Claude Code, Copilot, Cursor, Windsurf, Codex, Gemini, Kiro, and more. One SKILL.md, every platform.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/FrancyJGLisboa/agent-skill-creator#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/FrancyJGLisboa/agent-skill-creator#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/FrancyJGLisboa/agent-skill-creator/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Turn any workflow into reusable AI agent software that installs on 14+ tools — no spec writing, no prompt engineering, no coding required.",
+    "Every AI coding tool — Claude Code, GitHub Copilot, Cursor, Windsurf, Codex, Gemini, Kiro, and more — starts from zero.",
+    "So every person re-explains the same workflows in every conversation.",
+    "Agent skills fix this. A skill is structured knowledge your agent loads automatically — like installing an app.",
+    "The catch: building a proper skill requires understanding the spec format, writing clear prompt instructions, designing how information loads progressively, writing functional code, and getting activation keywords right.",
+    "Even simple skills take multiple rounds of iteration to get right.",
+    "Option A — One-liner (installs to all detected tools):",
+    "This clones to ~/.agents/skills/agent-skill-creator and symlinks to every detected global platform (Claude Code, Gemini CLI, Goose, OpenCode, Copilot)."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-03-26T10:29:53Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "repoUrl": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "stars": 943,
+  "lastUpdated": "2026-03-26T10:29:53Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

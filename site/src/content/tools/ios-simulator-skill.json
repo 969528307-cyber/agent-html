@@ -1,0 +1,76 @@
+{
+  "id": "ios-simulator-skill",
+  "name": "Ios Simulator Skill",
+  "type": "mcp",
+  "status": "published",
+  "summary": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps. I mainly use it as an xcodebuild wrapper to save context.",
+  "description": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps. I mainly use it as an xcodebuild wrapper to save context.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/conorluddy/ios-simulator-skill",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/conorluddy/ios-simulator-skill",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/conorluddy/ios-simulator-skill#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/conorluddy/ios-simulator-skill#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/conorluddy/ios-simulator-skill/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "iOS Simulator Skill for Claude Code",
+    "Production-ready skill for building, testing, and automating iOS apps.",
+    "22 scripts optimized for both human developers and AI agents.",
+    "Xcode Build + Simulator Automation",
+    "This skill covers both sides of iOS development:",
+    "If you only need Xcode build tooling without the simulator scripts, see the plugin version: xclaude-plugin",
+    "The skill loads automatically.",
+    "This keeps agent conversations focused — no walls of build output unless you ask for them."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-16T11:23:11Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/conorluddy/ios-simulator-skill",
+  "repoUrl": "https://github.com/conorluddy/ios-simulator-skill",
+  "license": "MIT",
+  "stars": 1015,
+  "lastUpdated": "2026-05-16T11:23:11Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,284 @@
+{
+  "id": "candidate-tool-github-n8n-io-n8n",
+  "type": "tool",
+  "status": "published",
+  "title": "N8n",
+  "sourceUrl": "https://github.com/n8n-io/n8n",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "n8n-io",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "proposedCategory": [
+    "automation",
+    "workflow",
+    "code-review",
+    "browser",
+    "docs",
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "n8n-io",
+    "repo": "n8n",
+    "fullName": "n8n-io/n8n",
+    "stars": 187663,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "apis",
+      "automation",
+      "cli",
+      "data-flow",
+      "development",
+      "integration-framework",
+      "integrations",
+      "ipaas",
+      "low-code",
+      "low-code-platform",
+      "mcp",
+      "mcp-client",
+      "mcp-server",
+      "n8n",
+      "no-code",
+      "self-hosted",
+      "typescript",
+      "workflow",
+      "workflow-automation"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-13T08:54:15Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    ".claude/plugins/n8n/skills/community-pr-review/SKILL.md",
+    ".claude/plugins/n8n/skills/content-design/SKILL.md",
+    ".claude/plugins/n8n/skills/conventions/SKILL.md",
+    ".claude/plugins/n8n/skills/create-community-node-lint-rule/SKILL.md",
+    ".claude/plugins/n8n/skills/create-issue/SKILL.md",
+    ".claude/plugins/n8n/skills/create-pr/SKILL.md",
+    ".claude/plugins/n8n/skills/create-skill/SKILL.md",
+    ".claude/plugins/n8n/skills/design-system/SKILL.md",
+    ".claude/plugins/n8n/skills/linear-issue/SKILL.md",
+    ".claude/plugins/n8n/skills/loom-transcript/SKILL.md",
+    ".claude/plugins/n8n/skills/node-add-oauth/SKILL.md",
+    ".claude/plugins/n8n/skills/protect-endpoints/SKILL.md",
+    ".claude/plugins/n8n/skills/reproduce-bug/SKILL.md",
+    ".claude/plugins/n8n/skills/setup-mcps/SKILL.md",
+    ".claude/plugins/n8n/skills/spec-driven-development/SKILL.md",
+    "packages/@n8n/cli/skills/n8n-cli/SKILL.md",
+    ".github/CLAUDE.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "packages/@n8n/agents/AGENTS.md",
+    "packages/@n8n/ai-workflow-builder.ee/AGENTS.md",
+    "packages/@n8n/ai-workflow-builder.ee/CLAUDE.md",
+    "packages/@n8n/db/AGENTS.md",
+    "packages/@n8n/instance-ai/CLAUDE.md",
+    "packages/@n8n/node-cli/src/template/templates/shared/default/AGENTS.md",
+    "packages/@n8n/node-cli/src/template/templates/shared/default/CLAUDE.md",
+    "packages/frontend/AGENTS.md",
+    "packages/frontend/CLAUDE.md",
+    "packages/frontend/editor-ui/src/app/stores/workflowDocument/CLAUDE.md",
+    "packages/nodes-base/AGENTS.md",
+    "packages/nodes-base/CLAUDE.md",
+    "packages/testing/janitor/CLAUDE.md",
+    "packages/testing/playwright/AGENTS.md",
+    "packages/testing/playwright/CLAUDE.md",
+    ".claude/plugins/n8n/skills/setup-experiment/SKILL.md",
+    ".claude/plugins/n8n/skills/experiments/SKILL.md"
+  ],
+  "readmeExtract": "![Banner image](https://user images.githubusercontent.com/10284570/173569848 c624317f 42b1 45a6 ab09 f0ea3c247648.png) n8n Secure Workflow Automation for Technical Teams n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no code. With 400+ integrations, native AI capabilities, and a fair code license, n8n lets you build powerful automations while maintaining ful",
+  "skillExtracts": [
+    {
+      "path": ".claude/plugins/n8n/skills/community-pr-review/SKILL.md",
+      "extract": "description: Checks if a community pull request is ready for human review. Verifies CLA signature, PR title format, description completeness, test coverage, and cubic dev ai issues. Use when given a PR number or branch name to review, or when the user says /community pr review, /pr review, or asks to check if a PR is ready for review. allowed tools: Bash(gh: ), Bash(git: ), Read, Glob, Grep Community PR Review Given "
+    },
+    {
+      "path": ".claude/plugins/n8n/skills/content-design/SKILL.md",
+      "extract": "name: n8n:content design description: Product content designer for UI copy. Use when writing, reviewing, or auditing user facing text: button labels, error messages, tooltips, empty states, modal copy, placeholder text, confirmation dialogs, onboarding flows, or i18n strings. Also use when the user says /copy, /content, or /ux copy. allowed tools: Read, Grep, Glob, Edit n8n content design You are a Senior Content Des"
+    },
+    {
+      "path": ".claude/plugins/n8n/skills/conventions/SKILL.md",
+      "extract": "name: n8n:conventions description: Quick reference for n8n patterns. Full docs /AGENTS.md n8n Quick Reference 📚 Full Documentation: General: /AGENTS.md Architecture, commands, workflows Frontend: /packages/frontend/AGENTS.md CSS variables, timing Use this skill when you need quick reminders on critical patterns. Critical Rules (Must Follow) TypeScript: Never any → use unknown Prefer satisfies over as (except tests) "
+    },
+    {
+      "path": ".claude/plugins/n8n/skills/create-community-node-lint-rule/SKILL.md",
+      "extract": "name: n8n:create community node lint rule description: Create new ESLint rules for the @n8n/eslint plugin community nodes package. Use when adding a lint rule, creating a community node lint, or working on eslint plugin community nodes. Guides rule implementation, tests, docs, and plugin registration. Create Community Node Lint Rule Guide for adding new ESLint rules to packages/@n8n/eslint plugin community nodes/ . A"
+    },
+    {
+      "path": ".claude/plugins/n8n/skills/create-issue/SKILL.md",
+      "extract": "name: n8n:create issue description: Create Linear tickets or GitHub issues following n8n conventions. Use when the user asks to create a ticket, file a bug, open an issue, or says /create issue. argument hint: \"[linear|github] <description of the issue \" compatibility: requires: mcp: linear description: Required for creating Linear tickets cli: gh description: Required for creating GitHub issues. Must be authenticate"
+    },
+    {
+      "path": ".claude/plugins/n8n/skills/create-pr/SKILL.md",
+      "extract": "name: n8n:create pr description: Creates GitHub pull requests with properly formatted titles that pass the check pr title CI validation. Use when creating PRs, submitting changes for review, or when the user says /pr or asks to create a pull request. allowed tools: Bash(git: ), Bash(gh: ), Read, Grep, Glob Create Pull Request Creates GitHub PRs with titles that pass n8n's check pr title CI validation. PR Title Format"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "n8n - Secure Workflow Automation for Technical Teams",
+    "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code.",
+    "With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.",
+    "AI-Native Platform: Build AI agent workflows based on LangChain with your own data and models",
+    "Our community forum is the place to get support and connect with other users:",
+    "Additional information about the license model can be found in the docs.",
+    "Want to shape the future of automation?",
+    "'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with.",
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "browser",
+      "docs",
+      "data",
+      "devops",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "browser",
+    "docs",
+    "data",
+    "devops",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "N8n is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with browser workflows.",
+      "Helps with docs workflows.",
+      "Helps with data workflows.",
+      "Helps with devops workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:n8n-io/n8n",
+  "firstDiscoveredAt": "2026-05-12",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 9,
+    "cli": 7,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Agent instruction or rule files detected.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "GitHub topics explicitly tag as CLI.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: mcp, cli, knowledge-resource.",
+    "LLM: workflow + [mcp, workflow] — n8n is primarily a workflow automation platform with native AI and MCP support, enabling multi-step orchestration and AI agent integration."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "cli",
+    "knowledge-resource"
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "n8n",
+  "publishedAt": "2026-05-15"
+}

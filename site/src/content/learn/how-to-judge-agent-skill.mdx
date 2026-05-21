@@ -1,0 +1,42 @@
+---
+title: "How to Judge an Agent Skill"
+subtitle: "What makes a Skill useful, portable, and safe enough to recommend."
+status: "published"
+topic: "skill"
+path: "use-case"
+order: 21
+difficulty: "intermediate"
+readingTime: "8 min"
+summaryBullets:
+  - "Good Skills have clear triggers and output standards."
+  - "Compatibility must be documented, not guessed."
+  - "Avoid vague prompt packs that do not describe real workflows."
+relatedTools: ["repo-review-skill", "antigravity-awesome-skills"]
+relatedAgents: ["codex", "claude-code", "openclaw", "cursor"]
+nextReads: ["openclaw-and-skill-based-agent-ecosystems", "official-docs-vs-generated-install-commands"]
+publishedAt: "2026-05-12"
+---
+
+A good Agent Skill is more than a nice prompt. It should encode a reliable way of working.
+
+## Look for a clear trigger
+
+The Skill should explain when to use it. A skill for "code review" is better if it says whether it is for pull requests, migrations, security review, test review, or release checks.
+
+## Look for a method
+
+Useful Skills include a method the Agent can follow. The method might tell the Agent to inspect files first, identify risks, run tests, compare behavior, or produce findings in a specific order.
+
+## Look for an output standard
+
+A Skill should make the final answer more predictable. It might require severity labels, file references, concise summaries, or a verification section.
+
+## Check compatibility
+
+Skill repositories often mention Claude Code, Codex, Cursor, Gemini CLI, OpenClaw, or another Agent. Do not assume a Skill works everywhere just because the idea is portable.
+
+On agentk.it, compatibility should be based on official docs, explicit repository claims, or reviewed candidate evidence.
+
+## Avoid low-signal packs
+
+Be careful with huge prompt collections that do not explain source, maintenance, license, or real usage. They may still be useful, but they should enter the candidate pool before becoming public recommendations.

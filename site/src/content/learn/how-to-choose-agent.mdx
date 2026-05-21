@@ -1,13 +1,50 @@
 ---
 title: "How to Choose an Agent"
-subtitle: "A decision guide for Codex, Claude Code, Cursor, Hermes Agent, and China-origin agents."
+subtitle: "Pick the right work surface before you compare tools."
 status: "published"
 topic: "agent"
+path: "start"
+order: 5
 difficulty: "beginner"
 readingTime: "8 min"
+summaryBullets:
+  - "Start with where the work happens: terminal, IDE, web, API, or enterprise."
+  - "Separate the Agent from the tools it can use."
+  - "Choose by workflow fit, not brand familiarity."
 relatedTools: ["agent-setup-checklist"]
 relatedAgents: ["codex", "claude-code", "cursor", "qwen-code", "kimi-agent", "trae"]
+nextReads: ["skill-vs-mcp-vs-workflow", "codex-vs-claude-code-vs-cursor"]
 publishedAt: "2026-05-11"
 ---
 
-Choose an agent by the work surface first: terminal, IDE, web, API, or enterprise environment. Then check which tools it supports, whether it can use MCP, and whether your team needs English or Chinese ecosystem support.
+Choose the Agent by the work surface first. A terminal agent, an IDE agent, and a web research agent may all use AI, but they solve different jobs.
+
+## Start with the surface
+
+Use a terminal-first agent when the work depends on files, commands, tests, and local project state. Codex and Claude Code are examples of this category.
+
+Use an IDE-first agent when the work should stay inside the editor. Cursor, Trae, and CodeGeeX fit this pattern more naturally.
+
+Use a web-first agent when the task is research, document work, or long-context synthesis. Kimi is closer to this path, even when it also has coding-related surfaces.
+
+## Then check extension support
+
+The second question is not "which model is smartest?" It is "what can this Agent connect to?"
+
+MCP matters when the Agent needs external tools, APIs, databases, browsers, or documentation lookup. Skills and rules matter when the Agent needs repeatable behavior. Workflows matter when the Agent should follow a predictable multi-step process.
+
+## Do not treat every tool as compatible
+
+Compatibility should be explicit. If a Skill repository only documents Claude Code, do not assume it works in Codex. If an MCP server only shows Cursor setup, treat other Agent support as unverified until you review the docs or test it.
+
+## A practical shortlist
+
+Choose Codex when you want local implementation loops with repository inspection, edits, and verification.
+
+Choose Claude Code when your team wants a terminal coding agent with strong project-memory, slash-command, and MCP workflows.
+
+Choose Cursor when the editor is the main surface and rules are central to how the assistant should behave.
+
+Choose OpenClaw when you want to explore a broader skill/plugin agent ecosystem and are willing to review extension trust carefully.
+
+Choose Qwen Code, Kimi, Trae, or CodeGeeX when China-origin tooling, Chinese-language workflows, or local ecosystem fit matters.

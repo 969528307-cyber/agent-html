@@ -4,15 +4,116 @@
   "status": "published",
   "region": "china",
   "vendor": "Moonshot AI",
-  "summary": "A Kimi-oriented agent entry for Chinese long-context research and assistant workflows.",
-  "bestFor": ["Chinese long-context tasks", "Research workflows", "Document-heavy analysis"],
-  "interfaceType": ["web", "cli"],
+  "summary": "Moonshot AI's Kimi agent surface for long-context research, document-heavy workflows, and Kimi Code CLI development tasks.",
+  "bestFor": [
+    "Long-context research",
+    "Document-heavy analysis",
+    "Chinese and bilingual workflows",
+    "Kimi Code CLI exploration"
+  ],
+  "interfaceType": [
+    "web",
+    "cli"
+  ],
   "documentationUrl": "https://www.kimi.com/",
   "supportsMcp": false,
   "supportsSkills": false,
   "supportsCli": true,
   "supportsWorkflows": true,
-  "toolTypes": { "skills": 3, "mcps": 2, "cli": 5, "workflows": 9 },
-  "relatedLearn": ["how-to-choose-agent"],
-  "lastChecked": "2026-05-11"
+  "toolTypes": {
+    "skills": 3,
+    "mcps": 2,
+    "cli": 5,
+    "workflows": 9
+  },
+  "relatedLearn": [
+    "how-to-choose-agent"
+  ],
+  "lastChecked": "2026-05-12",
+  "overview": "Kimi CLI / Kimi Agent should be described as multiple Moonshot AI surfaces under one Agent category: Kimi web for long-context research and document workflows, Kimi Agent for task execution and planning, and Kimi Code CLI for developer-facing terminal workflows. Its value on agentk.it is not generic coding alone; it is the combination of long-context Chinese/English research, document analysis, and a growing coding-agent path that needs careful separation from the chat product.",
+  "strengths": [
+    {
+      "title": "Long-context orientation",
+      "body": "Kimi is strongly associated with long-context reading, research, document understanding, and multi-step information work."
+    },
+    {
+      "title": "Agent and research product surface",
+      "body": "Kimi's public help materials describe agent-style workflows for planning and completing tasks such as research, website generation, slides, and document work."
+    },
+    {
+      "title": "Kimi Code CLI path",
+      "body": "Kimi Code CLI is the developer-facing path and should be tracked separately from the general Kimi chat or web agent experience."
+    },
+    {
+      "title": "China-origin content fit",
+      "body": "Kimi is especially relevant for Chinese high-quality content discovery, translation review, and bilingual developer knowledge workflows."
+    }
+  ],
+  "extensionModel": [
+    {
+      "label": "CLI",
+      "status": "supported",
+      "body": "Kimi Code CLI is the relevant surface for terminal-based coding-agent workflows.",
+      "sourceUrl": "https://github.com/MoonshotAI/kimi-cli"
+    },
+    {
+      "label": "ACP",
+      "status": "supported",
+      "body": "Kimi CLI documents an ACP agent server mode, which matters for integration with compatible clients.",
+      "sourceUrl": "https://github.com/MoonshotAI/kimi-cli"
+    },
+    {
+      "label": "Workflow",
+      "status": "native",
+      "body": "Kimi is strongest for long-context research, document workflows, and task planning rather than only repository coding.",
+      "sourceUrl": "https://www.kimi.com/help/getting-started/overview"
+    },
+    {
+      "label": "Skills",
+      "status": "unknown",
+      "body": "Do not assume a stable SKILL.md-compatible ecosystem unless official Kimi Code docs or a reviewed source documents it."
+    }
+  ],
+  "recommendedStacks": [
+    {
+      "title": "Research-to-signal workflow",
+      "body": "Use Kimi as a research and translation candidate source, then route publishable material through Signals review.",
+      "toolIds": [
+        "translation-signal-flow"
+      ]
+    },
+    {
+      "title": "Kimi Code developer path",
+      "body": "Track CLI, ACP mode, and editor/terminal integrations separately from the general Kimi web product.",
+      "toolIds": []
+    },
+    {
+      "title": "Document analysis path",
+      "body": "Use Kimi-related learning content for long-document reasoning and bilingual research workflows before recommending tool integrations.",
+      "toolIds": []
+    }
+  ],
+  "limitations": [
+    "Kimi web agent, Kimi Code CLI, Kimi Agent, and Moonshot API are different surfaces and should not be merged into one compatibility claim.",
+    "Official English documentation may lag Chinese product updates, so last-checked dates matter.",
+    "Third-party Kimi CLI guides should remain candidate-only unless official or repository-backed.",
+    "Do not show install commands unless they are clearly official and current; prefer official links."
+  ],
+  "sources": [
+    {
+      "label": "Kimi overview",
+      "url": "https://www.kimi.com/help/getting-started/overview",
+      "kind": "official"
+    },
+    {
+      "label": "Kimi CLI GitHub",
+      "url": "https://github.com/MoonshotAI/kimi-cli",
+      "kind": "github"
+    },
+    {
+      "label": "Kimi CLI docs",
+      "url": "https://moonshotai.github.io/kimi-cli/en/customization/wire-mode.html",
+      "kind": "docs"
+    }
+  ]
 }

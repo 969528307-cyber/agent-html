@@ -1,0 +1,115 @@
+{
+  "id": "candidate-agent-codegeex",
+  "type": "agent",
+  "status": "published",
+  "title": "CodeGeeX",
+  "sourceUrl": "https://codegeex.cn/",
+  "sourceName": "CodeGeeX official site",
+  "sourceRegistryId": "local-agents-library",
+  "sourceRegistry": {
+    "id": "local-agents-library",
+    "name": "Local Agent Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/agents",
+    "acceptRules": [
+      "must_have_documentation_url",
+      "must_have_summary",
+      "must_have_capability_profile"
+    ],
+    "rejectRules": [
+      "missing_official_link",
+      "missing_agent_capability_description"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "A China-origin IDE coding assistant focused on completion, explanation, and editor-side developer assistance.",
+  "proposedCategory": [
+    "IDE coding assistance",
+    "Chinese developer teams",
+    "Code completion and explanation",
+    "Multilingual code generation"
+  ],
+  "proposedAgents": [
+    "codegeex"
+  ],
+  "extractedSignals": [
+    "IDE coding assistance: Most useful for code completion, generation, explanation, and everyday developer assistance inside editor workflows.",
+    "Chinese developer fit: Relevant for Chinese-language developer teams and users who want domestic AI coding tooling coverage.",
+    "Current product evidence only: The page should rely on the live official product surface for current capabilities, not old research repositories that have not been maintained recently.",
+    "IDE: native",
+    "Official product surface: native",
+    "MCP: unknown"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Agent collector output. Review official docs, GitHub activity, extension model, and ecosystem fit before changing the public Agent page.",
+  "publishedAs": "codegeex",
+  "publishedAt": "2026-05-16",
+  "author": "Zhipu AI",
+  "agentProfile": {
+    "region": "china",
+    "vendor": "Zhipu AI",
+    "interfaceType": [
+      "ide"
+    ],
+    "supportsMcp": false,
+    "supportsSkills": false,
+    "supportsCli": false,
+    "supportsWorkflows": true,
+    "sourceKinds": [
+      "official"
+    ],
+    "officialLinks": [
+      {
+        "label": "CodeGeeX official site",
+        "url": "https://codegeex.cn/",
+        "kind": "official"
+      }
+    ]
+  },
+  "canonicalKey": "agent:codegeex",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "agent",
+    "primaryType": "agent",
+    "whatIsIt": "CodeGeeX is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to IDE coding assistance.",
+      "Relevant to Chinese developer teams.",
+      "Relevant to Code completion and explanation.",
+      "Relevant to Multilingual code generation.",
+      "IDE coding assistance: Most useful for code completion, generation, explanation, and everyday developer assistance inside editor workflows."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

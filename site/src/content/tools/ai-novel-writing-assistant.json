@@ -1,0 +1,73 @@
+{
+  "id": "ai-novel-writing-assistant",
+  "name": "AI Novel Writing Assistant",
+  "type": "workflow",
+  "status": "published",
+  "summary": "面向长篇小说创作的 AI Native 开源系统，用 Agent、世界观、写法引擎、RAG 和整本生产工作流，帮助新手从一句灵感走到完整小说。AI-native engine for end-to-end novel creation — from idea to full chapters, with structured planning, worldbuilding, and agent-driven workflows.",
+  "description": "面向长篇小说创作的 AI Native 开源系统，用 Agent、世界观、写法引擎、RAG 和整本生产工作流，帮助新手从一句灵感走到完整小说。AI-native engine for end-to-end novel creation — from idea to full chapters, with structured planning, worldbuilding, and agent-driven workflows.",
+  "category": [
+    "workflow"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "想研究 AI Native Product、Agent Workflow、LangGraph 编排怎样落到真实创作业务。",
+    "Creative Hub 与 Agent Runtime",
+    "系统里已经有了比较明确的 Planner、Tool Registry、Runtime、审批节点、状态卡片和中断恢复链路，说明这个项目现在关注的已经不是“AI 会不会写字”，而是“AI 能不能组织一条真实的创作工作流”。",
+    "前后端已经完成 Monorepo 拆分，适合本地持续开发，也比较适合继续往 Prompt Registry、Workflow Registry 和 Runtime 这条路上扩。",
+    "完整历史更新见 docs/releases/release-notes.md。",
+    "Database Authentication in Qdrant Managed Cloud",
+    "更细的文档分区说明可以看 docs/README.md。",
+    "Creative Hub 负责统一创作中枢与 Agent 运行时体验"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T03:16:32Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant",
+  "repoUrl": "https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant",
+  "license": "NOASSERTION",
+  "stars": 1289,
+  "lastUpdated": "2026-05-18T03:16:32Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

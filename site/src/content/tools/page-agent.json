@@ -1,0 +1,79 @@
+{
+  "id": "page-agent",
+  "name": "Page Agent",
+  "type": "mcp",
+  "status": "published",
+  "summary": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+  "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/alibaba/page-agent",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/alibaba/page-agent",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/alibaba/page-agent#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/alibaba/page-agent#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/alibaba/page-agent/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The GUI Agent Living in Your Webpage.",
+    "🚀 Demo 📖 Docs 📢 HN Discussion 𝕏 Follow on X",
+    "No need for browser extension / python / headless browser.",
+    "And an MCP Server (Beta) to control it from outside",
+    "Smart Form Filling — Turn 20-click workflows into one sentence.",
+    "Multi-page Agent — Extend your own web agent's reach across browser tabs chrome extension.",
+    "MCP - Allow your agent clients to control your browser.",
+    "Fastest way to try PageAgent with our free Demo LLM:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-11T11:40:48Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/alibaba/page-agent",
+  "repoUrl": "https://github.com/alibaba/page-agent",
+  "license": "MIT",
+  "stars": 17957,
+  "lastUpdated": "2026-05-11T11:40:48Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

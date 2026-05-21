@@ -1,0 +1,144 @@
+{
+  "id": "candidate-ai-guide-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Ai Guide",
+  "sourceUrl": "https://github.com/liyupi/ai-guide",
+  "sourceName": "GitHub",
+  "author": "liyupi",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程，分享 OpenClaw 保姆级教程、大模型玩法（DeepSeek / GPT / Gemini / Claude）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills / RAG / MCP / A2A）、AI 编程教程（Harness Engineering）、AI 工具用法（Cursor / Claude Code / TRAE / Codex / Copilot）、AI 开发框架教程（Spring AI / LangChain）、AI 产品变现指南，帮你快速掌握 AI 技术，走在时代前沿。本项目为开源文档，已升级为鱼皮 AI 导航网站",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "liyupi",
+    "repo": "ai-guide",
+    "fullName": "liyupi/ai-guide",
+    "stars": 14068,
+    "topics": [
+      "ai",
+      "algorithm",
+      "artificial-intelligence",
+      "chatgpt",
+      "claude",
+      "cursor",
+      "deep-learning",
+      "deepseek",
+      "gemini",
+      "generative-ai",
+      "gpt",
+      "llm",
+      "mcp",
+      "openai",
+      "python",
+      "rag",
+      "vibe-coding",
+      "vibecoding",
+      "vue",
+      "vuepress"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-30T15:25:20Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"https://pic.yupi.icu/1/vibe%252520coding%252520show%2525E5%2525A4%2525A7 20260113165845170.jpeg\" alt=\"Vibe Coding\" width=\"600\"/ </p <h1 align=\"center\" 🐟 鱼皮的 AI 知识库</h1 <p align=\"center\" <b 完全免费开放的 AI 知识共享平台 | 减少信息差，让每个人都能享受技术红利</b </p <p align=\"center\" <a href=\"https://ai.codefather.cn\" <img src=\"https://img.shields.io/badge/🌐 在线阅读 ai.codefather.cn blue?style=for the badge\" alt=\"在线阅读\"/ <",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "编程学习：为想深入学习编程的同学准备的进阶内容，包括学习路线、知识百科、资源大全、MCP 开发、面试刷题等",
+    "进阶技术 Claude Code 神级技巧 ｜ 用 AI 手搓 Claude Code ｜ MCP 服务开发",
+    "Claude 4 炸裂发布！凭什么敢称宇宙最强编程 AI？",
+    "开源 AI 编程工具能干掉 Claude Code？OpenCode 体验实测！",
+    "[Gemini CLI 首测，免费开源很香，但坑点很多！]("
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程，分享 OpenClaw 保姆级教程、大模型玩法（DeepSeek / GPT / Gemini / Claude）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills / RAG / MCP / A2A）、AI 编程教程（Harness Engineering）、AI 工具用法（Cursor / Claude Code / TRAE / Codex / Copilot）、AI 开发框架教程（Spring AI / LangChain）、AI 产品变现指南，帮你快速掌握 AI 技术，走在时代前沿。本项目为开源文档，已升级为鱼皮 AI 导航网站",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Ai Guide is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to skill.",
+      "编程学习：为想深入学习编程的同学准备的进阶内容，包括学习路线、知识百科、资源大全、MCP 开发、面试刷题等",
+      "进阶技术 Claude Code 神级技巧 ｜ 用 AI 手搓 Claude Code ｜ MCP 服务开发"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ai-guide",
+  "publishedAt": "2026-05-18"
+}

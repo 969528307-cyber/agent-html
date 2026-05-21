@@ -1,0 +1,150 @@
+{
+  "id": "candidate-ida-pro-mcp-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Ida Pro Mcp",
+  "sourceUrl": "https://github.com/mrexodia/ida-pro-mcp",
+  "sourceName": "GitHub",
+  "author": "mrexodia",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Trae",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "mrexodia",
+    "repo": "ida-pro-mcp",
+    "fullName": "mrexodia/ida-pro-mcp",
+    "stars": 8667,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "aiagent",
+      "binary-analysis",
+      "ida-plugin",
+      "ida-pro",
+      "mcp",
+      "mcp-server",
+      "modelcontextprotocol",
+      "reverse-engineering"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-14T21:23:31Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    "skills/idapython/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "IDA Pro MCP Simple [MCP Server](https://modelcontextprotocol.io/introduction) to allow vibe reversing in IDA Pro. https://github.com/user attachments/assets/6ebeaa92 a9db 43fa b756 eececce2aca0 The binaries and prompt for the video are available in the [mcp reversing dataset](https://github.com/mrexodia/mcp reversing dataset) repository. Prerequisites [Python](https://www.python.org/downloads/) ( 3.11 or higher ) Use",
+  "skillExtracts": [
+    {
+      "path": "skills/idapython/SKILL.md",
+      "extract": "name: idapython description: IDA Pro Python scripting for reverse engineering. Use when writing IDAPython scripts, analyzing binaries, working with IDA's API for disassembly, decompilation (Hex Rays), type systems, cross references, functions, segments, or any IDA database manipulation. Covers ida modules (50+), idautils iterators, and common patterns. IDAPython Use modern ida modules. Avoid legacy idc module. Module"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Simple MCP Server to allow vibe reversing in IDA Pro.",
+    "The binaries and prompt for the video are available in the mcp-reversing-dataset repository.",
+    "Use idapyswitch to switch to the newest Python version",
+    "Supported MCP Client (pick one you like)",
+    "Note: the MCP plugin is no longer recommended and will eventually be deprecated.",
+    "If you want to configure the MCP server manually from the IDA GUI:",
+    "Some clients (like Claude) run in the background and need to be quit from the tray icon.",
+    "Large Language Models (LLMs) are powerful tools, but they can sometimes struggle with complex mathematical calculations or exhibit \"hallucinations\" (making up facts)."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Ida Pro Mcp is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Simple MCP Server to allow vibe reversing in IDA Pro."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ida-pro-mcp",
+  "publishedAt": "2026-05-20"
+}

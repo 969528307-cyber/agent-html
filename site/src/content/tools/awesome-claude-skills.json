@@ -1,0 +1,75 @@
+{
+  "id": "awesome-claude-skills",
+  "name": "Awesome Claude Skills",
+  "type": "skill",
+  "status": "published",
+  "summary": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code",
+  "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/travisvn/awesome-claude-skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/travisvn/awesome-claude-skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/travisvn/awesome-claude-skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/travisvn/awesome-claude-skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/travisvn/awesome-claude-skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+    "Claude Skills teach Claude how to perform tasks in a repeatable way",
+    "They are specialized folders containing instructions, scripts, and resources that Claude dynamically discovers and loads when relevant to tasks.",
+    "Skills employ a progressive disclosure architecture for efficiency:",
+    "Metadata loading (~100 tokens): Claude scans available Skills to identify relevant matches",
+    "Full instructions (<5k tokens): Load when Claude determines the Skill applies",
+    "This design allows multiple Skills to remain available without overwhelming Claude's context window.",
+    "Browse available skills or upload custom skills"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-28T19:30:24Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/travisvn/awesome-claude-skills",
+  "repoUrl": "https://github.com/travisvn/awesome-claude-skills",
+  "stars": 12656,
+  "lastUpdated": "2026-04-28T19:30:24Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

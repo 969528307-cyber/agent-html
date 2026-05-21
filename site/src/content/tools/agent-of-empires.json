@@ -1,0 +1,81 @@
+{
+  "id": "agent-of-empires",
+  "name": "Agent Of Empires",
+  "type": "cli",
+  "status": "published",
+  "summary": "Manage multiple Claude Code, OpenCode agents from either TUI or Web for easy access on mobile. Also supports Mistral Vibe, Codex CLI, Gemini CLI, Pi.dev, Copilot CLI, Factory Droid Coding. Uses tmux and git worktrees.",
+  "description": "Manage multiple Claude Code, OpenCode agents from either TUI or Web for easy access on mobile. Also supports Mistral Vibe, Codex CLI, Gemini CLI, Pi.dev, Copilot CLI, Factory Droid Coding. Uses tmux and git worktrees.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/njbrake/agent-of-empires",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/njbrake/agent-of-empires",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/njbrake/agent-of-empires#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/njbrake/agent-of-empires#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/njbrake/agent-of-empires/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A session manager for AI coding agents on Linux and macOS.",
+    "Use it from the terminal (TUI) or from any browser (web dashboard).",
+    "Run multiple AI agents in parallel across different branches of your codebase, each in its own isolated session with optional Docker sandboxing.",
+    "Access your agents from your laptop, phone, or tablet.",
+    "Running one AI agent is easy.",
+    "Multi-agent support: Claude Code, OpenCode, Mistral Vibe, Codex CLI, Gemini CLI, Cursor CLI, Copilot CLI, Pi.dev, Factory Droid, Hermes, Kiro CLI, and Qwen Code",
+    "TUI app: visual interface to create, monitor, and manage sessions",
+    "Web app (Beta, stabilization in progress): create, monitor, and control your agents from any browser, installable as a PWA (guide)"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T22:52:02Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/njbrake/agent-of-empires",
+  "repoUrl": "https://github.com/njbrake/agent-of-empires",
+  "license": "MIT",
+  "stars": 2315,
+  "lastUpdated": "2026-05-19T22:52:02Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

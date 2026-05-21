@@ -1,0 +1,77 @@
+{
+  "id": "codemachine-cli",
+  "name": "CodeMachine CLI",
+  "type": "cli",
+  "status": "published",
+  "summary": "CodeMachine is an open-source tool that orchestrates AI coding agents into repeatable, long-running workflows. ⚡️",
+  "description": "CodeMachine is an open-source tool that orchestrates AI coding agents into repeatable, long-running workflows. ⚡️",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/moazbuilds/CodeMachine-CLI",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/moazbuilds/CodeMachine-CLI",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/moazbuilds/CodeMachine-CLI#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/moazbuilds/CodeMachine-CLI#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/moazbuilds/CodeMachine-CLI/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "CodeMachine is an open-source tool that orchestrates AI coding agents into repeatable, long-running workflows.",
+    "Every time you use an AI coding agent, you're running a workflow.",
+    "You research, design, code, review.",
+    "The workflow lives in your head. You guide the agent through it, step by step, session by session.",
+    "You manage when to clear context, when to push forward, when to loop back.",
+    "CodeMachine lets you capture that workflow and run it again.",
+    "CodeMachine is an orchestration layer that runs AI coding CLIs through structured workflows.",
+    "You define the workflow once, and CodeMachine handles execution, context passing, and agent coordination."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-02-25T21:09:41Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/moazbuilds/CodeMachine-CLI",
+  "repoUrl": "https://github.com/moazbuilds/CodeMachine-CLI",
+  "license": "Apache-2.0",
+  "stars": 2485,
+  "lastUpdated": "2026-02-25T21:09:41Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

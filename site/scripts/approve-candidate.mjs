@@ -1,6 +1,6 @@
-import fs from "node:fs/promises";
+import { resolveCandidateRecord } from "./dedupe-utils.mjs";
+import { atomicWriteJsonFile } from "./json-file-utils.mjs";
 
-const root = new URL("..", import.meta.url);
 const candidateId = process.argv[2];
 
 if (!candidateId) {
@@ -8,13 +8,16 @@ if (!candidateId) {
   process.exit(1);
 }
 
-const file = new URL(`src/content/candidates/${candidateId}.json`, root);
-const candidate = JSON.parse(await fs.readFile(file, "utf8"));
+const record = await resolveCandidateRecord(candidateId);
+const candidate = record.data;
 const today = new Date().toISOString().slice(0, 10);
 
 candidate.status = "approved";
 candidate.reviewedAt = today;
 candidate.reviewedBy = candidate.reviewedBy || "local-review";
 
-await fs.writeFile(file, `${JSON.stringify(candidate, null, 2)}\n`);
-console.log(`Approved candidate: src/content/candidates/${candidateId}.json`);
+await atomicWriteJsonFile(record.path, candidate);
+console.log(`Approved candidate: src/content/candidates/${candidate.id}.json`);
+if (record.resolvedFromLegacyId) {
+  console.log(`Resolved legacy candidate id ${candidateId} to ${candidate.id}.`);
+}

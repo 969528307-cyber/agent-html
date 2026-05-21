@@ -1,0 +1,110 @@
+{
+  "id": "candidate-learn-title-how-to-judge-agent-skill",
+  "type": "learn",
+  "status": "published",
+  "title": "How to Judge an Agent Skill",
+  "sourceUrl": "https://agentk.it/learn/how-to-judge-agent-skill",
+  "sourceName": "agentk.it Learn library",
+  "sourceRegistryId": "local-learn-library",
+  "sourceRegistry": {
+    "id": "local-learn-library",
+    "name": "Local Learn Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/learn",
+    "acceptRules": [
+      "must_have_topic",
+      "must_have_teaching_angle",
+      "must_link_related_tools_or_agents_when_possible"
+    ],
+    "rejectRules": [
+      "thin_summary_only",
+      "no_learning_outcome"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "What makes a Skill useful, portable, and safe enough to recommend.",
+  "proposedCategory": [
+    "skill",
+    "use-case"
+  ],
+  "proposedAgents": [
+    "codex",
+    "claude-code",
+    "openclaw",
+    "cursor"
+  ],
+  "extractedSignals": [
+    "What makes a Skill useful, portable, and safe enough to recommend.",
+    "Good Skills have clear triggers and output standards.",
+    "Compatibility must be documented",
+    "not guessed.",
+    "Compatibility must be documented, not guessed.",
+    "Avoid vague prompt packs that do not describe real workflows."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Learn collector output. Review teaching angle, examples, related tools, and whether this should remain Learn content rather than a Tool or Signal.",
+  "publishedAs": "how-to-judge-agent-skill",
+  "publishedAt": "2026-05-16",
+  "learnProfile": {
+    "topic": "skill",
+    "path": "use-case",
+    "difficulty": "intermediate",
+    "readingTime": "8 min",
+    "relatedTools": [
+      "repo-review-skill",
+      "antigravity-awesome-skills"
+    ],
+    "relatedAgents": [
+      "codex",
+      "claude-code",
+      "openclaw",
+      "cursor"
+    ]
+  },
+  "canonicalKey": "learn:title:how to judge agent skill",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "learn",
+    "primaryType": "learn",
+    "whatIsIt": "How to Judge an Agent Skill is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Relevant to use-case.",
+      "What makes a Skill useful, portable, and safe enough to recommend.",
+      "Good Skills have clear triggers and output standards.",
+      "Compatibility must be documented"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  }
+}

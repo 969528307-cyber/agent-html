@@ -1,0 +1,232 @@
+{
+  "id": "candidate-kubectl-mcp-server-2026-05-16",
+  "type": "tool",
+  "status": "published",
+  "title": "Kubectl Mcp Server",
+  "sourceUrl": "https://github.com/rohitg00/kubectl-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "rohitg00",
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Published in CNCF Landscape: A MCP server for Kubernetes.",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "rohitg00",
+    "repo": "kubectl-mcp-server",
+    "fullName": "rohitg00/kubectl-mcp-server",
+    "stars": 887,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "deployment",
+      "devops",
+      "genai",
+      "kubernetes",
+      "kubernetes-cluster",
+      "kubernetes-tools",
+      "llms",
+      "mcp",
+      "mcp-server",
+      "npm",
+      "pypi"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-08T22:37:48Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/index.html",
+    "docs/kubectl-mcp-server-icon.svg",
+    "package.json",
+    "kubernetes-skills/claude/k8s-autoscaling/SKILL.md",
+    "kubernetes-skills/claude/k8s-backup/SKILL.md",
+    "kubernetes-skills/claude/k8s-browser/SKILL.md",
+    "kubernetes-skills/claude/k8s-capi/SKILL.md",
+    "kubernetes-skills/claude/k8s-certs/SKILL.md",
+    "kubernetes-skills/claude/k8s-cilium/SKILL.md",
+    "kubernetes-skills/claude/k8s-cli/SKILL.md",
+    "kubernetes-skills/claude/k8s-core/SKILL.md",
+    "kubernetes-skills/claude/k8s-cost/SKILL.md",
+    "kubernetes-skills/claude/k8s-deploy/SKILL.md",
+    "kubernetes-skills/claude/k8s-diagnostics/SKILL.md",
+    "kubernetes-skills/claude/k8s-gitops/SKILL.md",
+    "kubernetes-skills/claude/k8s-helm/SKILL.md",
+    "kubernetes-skills/claude/k8s-incident/SKILL.md",
+    "kubernetes-skills/claude/k8s-kind/SKILL.md",
+    "kubernetes-skills/claude/k8s-kubevirt/SKILL.md",
+    "kubernetes-skills/claude/k8s-multicluster/SKILL.md",
+    "kubernetes-skills/claude/k8s-networking/SKILL.md",
+    "kubernetes-skills/claude/k8s-operations/SKILL.md",
+    "kubernetes-skills/claude/k8s-policy/SKILL.md",
+    "kubernetes-skills/claude/k8s-rollouts/SKILL.md",
+    "kubernetes-skills/claude/k8s-security/SKILL.md",
+    "kubernetes-skills/claude/k8s-service-mesh/SKILL.md",
+    "kubernetes-skills/claude/k8s-storage/SKILL.md",
+    "kubernetes-skills/claude/k8s-troubleshoot/SKILL.md",
+    "kubernetes-skills/claude/k8s-vind/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"logos/kubectl mcp server icon.svg\" alt=\"kubectl mcp server logo\" width=\"80\" height=\"80\" <br <strong style=\"font size: 24px;\" kubectl mcp server</strong </p <p align=\"center\" <b Control your entire Kubernetes infrastructure through natural language conversations with AI.</b <br Talk to your clusters like you talk to a DevOps expert. Debug crashed pods, optimize costs, deploy applications, a",
+  "skillExtracts": [
+    {
+      "path": "kubernetes-skills/claude/k8s-autoscaling/SKILL.md",
+      "extract": "name: k8s autoscaling description: Configure Kubernetes autoscaling with HPA, VPA, and KEDA. Use for horizontal/vertical pod autoscaling, event driven scaling, and capacity management. license: Apache 2.0 metadata: author: rohitg00 version: \"1.0.0\" tools: 7 category: scaling Kubernetes Autoscaling Comprehensive autoscaling using HPA, VPA, and KEDA with kubectl mcp server tools. When to Apply Use this skill when: User"
+    },
+    {
+      "path": "kubernetes-skills/claude/k8s-backup/SKILL.md",
+      "extract": "name: k8s backup description: Kubernetes backup and restore with Velero. Use when creating backups, restoring applications, managing disaster recovery, or migrating workloads between clusters. license: Apache 2.0 metadata: author: rohitg00 version: \"1.0.0\" tools: 11 category: backup Kubernetes Backup with Velero Manage backups and restores using kubectl mcp server's Velero tools. When to Apply Use this skill when: Us"
+    },
+    {
+      "path": "kubernetes-skills/claude/k8s-browser/SKILL.md",
+      "extract": "name: k8s browser description: Browser automation for Kubernetes dashboards and web UIs. Use when interacting with Kubernetes Dashboard, Grafana, ArgoCD UI, or other web interfaces. Requires MCP BROWSER ENABLED=true. license: Apache 2.0 metadata: author: rohitg00 version: \"1.0.0\" tools: 26 category: automation Browser Automation for Kubernetes Automate Kubernetes web UIs using kubectl mcp server's browser tools (26 t"
+    },
+    {
+      "path": "kubernetes-skills/claude/k8s-capi/SKILL.md",
+      "extract": "name: k8s capi description: Cluster API lifecycle management for provisioning, scaling, and upgrading Kubernetes clusters. Use when managing cluster infrastructure or multi cluster operations. license: Apache 2.0 metadata: author: rohitg00 version: \"1.0.0\" tools: 11 category: infrastructure Cluster API Lifecycle Management Manage Kubernetes clusters using kubectl mcp server's Cluster API tools (11 tools). When to App"
+    },
+    {
+      "path": "kubernetes-skills/claude/k8s-certs/SKILL.md",
+      "extract": "name: k8s certs description: Kubernetes certificate management with cert manager. Use when managing TLS certificates, configuring issuers, or troubleshooting certificate issues. license: Apache 2.0 metadata: author: rohitg00 version: \"1.0.0\" tools: 9 category: security Certificate Management with cert manager Manage TLS certificates using kubectl mcp server's cert manager tools. When to Apply Use this skill when: Use"
+    },
+    {
+      "path": "kubernetes-skills/claude/k8s-cilium/SKILL.md",
+      "extract": "name: k8s cilium description: Cilium and Hubble network observability for Kubernetes. Use when managing network policies, observing traffic flows, or troubleshooting connectivity with eBPF based networking. license: Apache 2.0 metadata: author: rohitg00 version: \"1.0.0\" tools: 8 category: networking Cilium & Hubble Network Observability Manage eBPF based networking using kubectl mcp server's Cilium tools (8 tools). W"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Debug crashed pods, optimize costs, deploy applications, audit security, manage Helm charts, and visualize dashboards, all through natural language..",
+    "Network connectivity diagnostics with DNS resolution",
+    "253 powerful tools 8 workflow prompts 8 data resources Works with all major AI assistants",
+    "🚀 Stop context-switching - Manage Kubernetes directly from your AI assistant conversations",
+    "🌐 Universal compatibility - Works with Claude, Cursor, Windsurf, Copilot, and 15+ other AI tools",
+    "📊 Visual insights - Interactive dashboards and browser automation for web-based tools",
+    "☸️ Production-grade - Deploy in-cluster with kMCP, 216 passing tests, active maintenance",
+    "From debugging crashed pods to optimizing cluster costs, kubectl-mcp-server is your AI-powered DevOps companion."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Published in CNCF Landscape: A MCP server for Kubernetes.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 7,
+    "cli": 5,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, agent-app, workflow.",
+    "LLM: mcp + [mcp] — This project is explicitly an MCP server for Kubernetes that exposes tools and resources to AI assistants via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "agent-app",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Kubectl Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Relevant to devops.",
+      "Debug crashed pods, optimize costs, deploy applications, audit security, manage Helm charts, and visualize dashboards, all through natural language..",
+      "Network connectivity diagnostics with DNS resolution",
+      "253 powerful tools 8 workflow prompts 8 data resources Works with all major AI assistants"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:rohitg00/kubectl-mcp-server",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-16",
+  "reviewedBy": "local-review",
+  "publishedAs": "kubectl-mcp-server",
+  "publishedAt": "2026-05-16",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

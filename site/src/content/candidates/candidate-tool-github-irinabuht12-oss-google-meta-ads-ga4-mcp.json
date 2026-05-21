@@ -1,0 +1,182 @@
+{
+  "id": "candidate-tool-github-irinabuht12-oss-google-meta-ads-ga4-mcp",
+  "type": "tool",
+  "status": "published",
+  "title": "Google Meta Ads Ga4 Mcp",
+  "sourceUrl": "https://github.com/irinabuht12-oss/google-meta-ads-ga4-mcp",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "irinabuht12-oss",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "MCP server for Google Ads, Meta Ads & GA4 — works with ChatGPT, Claude, Cursor, n8n, Windsurf & more. 250+ tools for campaign management, analytics & optimization.",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "irinabuht12-oss",
+    "repo": "google-meta-ads-ga4-mcp",
+    "fullName": "irinabuht12-oss/google-meta-ads-ga4-mcp",
+    "stars": 990,
+    "license": "MIT",
+    "topics": [
+      "ad-optimization",
+      "advertising",
+      "ai-agent",
+      "campaign-management",
+      "chatgpt",
+      "claude",
+      "codex",
+      "cursor",
+      "facebook-ads",
+      "ga4",
+      "google-ads",
+      "google-analytics",
+      "instagram-ads",
+      "marketing-automation",
+      "mcp",
+      "mcp-server",
+      "meta-ads",
+      "model-context-protocol",
+      "n8n",
+      "windsurf"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-07T01:32:31Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/EXAMPLES.md"
+  ],
+  "readmeExtract": "Google Ads + Meta Ads + GA4 — MCP Server The unified MCP server for managing Google Ads, Meta (Facebook/Instagram) Ads, and Google Analytics 4 from any AI assistant. [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](LICENSE) [![MCP Protocol](https://img.shields.io/badge/MCP Protocol blue)](https://modelcontextprotocol.io) [![Google Ads](https://img.shields.io/badge/Google%20Ads API%20v20 4285F4?l",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Google Ads + Meta Ads + GA4 — MCP Server",
+    "The unified MCP server for managing Google Ads, Meta (Facebook/Instagram) Ads, and Google Analytics 4 from any AI assistant.",
+    "Watch: Google Ads & Meta Ads Account Audit with Claude MCP",
+    "See how to run a full Google Ads and Meta Ads account audit using Claude with MCP — from data pull to automated audit report and presentation, in minutes instead of hours.",
+    "250+ tools. Manage all your advertising and analytics from ChatGPT, Claude, Cursor, n8n, Windsurf, and more.",
+    "Marketers and agencies juggle Google Ads, Meta Ads, and GA4 daily — each with its own dashboard, API, and workflow.",
+    "Separate MCP servers per platform One server, all platforms",
+    "Read-only access (official Google MCP) Full read + write across all platforms"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "MCP server for Google Ads, Meta Ads & GA4 — works with ChatGPT, Claude, Cursor, n8n, Windsurf & more. 250+ tools for campaign management, analytics & optimization.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "automation"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: agent-app, workflow.",
+    "LLM: mcp + [mcp] — The project is explicitly an MCP server for Google Ads, Meta Ads, and GA4, providing tools via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "agent-app",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Google Meta Ads Ga4 Mcp is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with automation workflows.",
+      "Relevant to data.",
+      "Google Ads + Meta Ads + GA4 — MCP Server",
+      "The unified MCP server for managing Google Ads, Meta (Facebook/Instagram) Ads, and Google Analytics 4 from any AI assistant."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:irinabuht12-oss/google-meta-ads-ga4-mcp",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "google-meta-ads-ga4-mcp",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "opensrc",
+  "name": "Opensrc",
+  "type": "cli",
+  "status": "published",
+  "summary": "Fetch source code for npm packages to give AI coding agents deeper context",
+  "description": "Fetch source code for npm packages to give AI coding agents deeper context",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/vercel-labs/opensrc",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/vercel-labs/opensrc",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/vercel-labs/opensrc#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/vercel-labs/opensrc#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/vercel-labs/opensrc/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Give coding agents access to any package's source code.",
+    "@opensrc/docs Documentation site",
+    "description: Fetch dependency source code to give AI agents deeper implementation context.",
+    "Use when the agent needs to understand how a library works internally, read source code for a package, fetch implementation details for a dependency, or explore how an npm/PyPI/crates.io package is built.",
+    "Triggers include \"fetch source for\", \"read the source of\", \"how does X work internally\", \"get the implementation of\", \"opensrc path\", or any task requiring access to dependency source code beyond types and docs.",
+    "allowed-tools: Bash(opensrc:)",
+    "Fetches dependency source code so agents can read implementations, not just types.",
+    "Don't fetch source for simple API usage questions that docs or types can answer."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-01T16:17:04Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/vercel-labs/opensrc",
+  "repoUrl": "https://github.com/vercel-labs/opensrc",
+  "license": "Apache-2.0",
+  "stars": 2108,
+  "lastUpdated": "2026-05-01T16:17:04Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,198 @@
+{
+  "id": "candidate-claude-code-tresor-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Code Tresor",
+  "sourceUrl": "https://github.com/alirezarezvani/claude-code-tresor",
+  "sourceName": "GitHub",
+  "author": "alirezarezvani",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A world-class collection of Claude Code utilities: autonomous skills, expert agents, slash commands, and prompts that supercharge your development workflow",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "alirezarezvani",
+    "repo": "claude-code-tresor",
+    "fullName": "alirezarezvani/claude-code-tresor",
+    "stars": 711,
+    "license": "MIT",
+    "topics": [
+      "agent-development-kit",
+      "agentic-ai",
+      "agentic-coding",
+      "agentic-workflow",
+      "agents",
+      "anthropic-claude",
+      "claude-code"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-02-25T10:05:36Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/AGENT-LIBRARY-GUIDE.md",
+    "docs/archive/AGENT-CATEGORIZATION.md",
+    "docs/archive/AGENT-DEPENDENCIES.md",
+    "docs/archive/AGENT-INVENTORY.md",
+    "docs/archive/ANTHROPIC-REFERENCE.md",
+    "docs/archive/COLOR-LEGEND.md",
+    "docs/archive/COMPARISON-ANALYSIS.md",
+    "docs/archive/CONSOLIDATION-REPORT.md",
+    "docs/archive/DUPLICATE-ANALYSIS.md",
+    "docs/archive/MIGRATION-PROGRESS.md",
+    "docs/archive/MIGRATION-SUMMARY.md",
+    "docs/archive/MIGRATION-VALIDATION-FINAL.md",
+    "docs/archive/PROJECT-COMPLETION-SUMMARY.md",
+    "docs/archive/README.md",
+    "docs/archive/SUB-AGENT-STRUCTURE.md",
+    "docs/archive/V2.6-IMPROVEMENT-PLAN.md",
+    "docs/archive/VALIDATION-REPORT-CONTENT.md",
+    "docs/archive/VALIDATION-REPORT-ORGANIZATION.md",
+    "docs/archive/VALIDATION-REPORT-REFERENCES.md",
+    "docs/archive/VALIDATION-REPORT-YAML.md",
+    "docs/archive/VALIDATION-REPORT.md",
+    "docs/CROSS-TEAM-COLLABORATION.md",
+    "docs/ECOSYSTEM-ROADMAP.md",
+    "docs/FINAL-MIGRATION-SUMMARY.md",
+    "docs/PHASE-1-TASKS.md",
+    "docs/QUICK-WINS.md",
+    "docs/SLASH-COMMANDS-ENHANCEMENT-PLAN.md",
+    "docs/TECHNICAL-REFERENCE.md",
+    "examples/workflows/api-development.md",
+    "examples/workflows/ci-cd-pipeline.md",
+    "examples/workflows/react-app-setup.md",
+    "examples/workflows/skills-in-action.md",
+    "skills/development/code-reviewer/SKILL.md",
+    "skills/development/git-commit-helper/SKILL.md",
+    "skills/development/test-generator/SKILL.md",
+    "skills/documentation/api-documenter/SKILL.md",
+    "skills/documentation/readme-updater/SKILL.md",
+    "skills/security/dependency-auditor/SKILL.md",
+    "skills/security/secret-scanner/SKILL.md"
+  ],
+  "readmeExtract": "Claude Code Tresor 🏆 A world class collection of Claude Code utilities: autonomous skills, expert agents, slash commands, and prompts that supercharge your development workflow. [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](https://opensource.org/licenses/MIT) [![Version](https://img.shields.io/badge/version 2.7.0 blue.svg)](https://github.com/alirezarezvani/claude code tresor) [![Quality](h",
+  "skillExtracts": [
+    {
+      "path": "skills/development/code-reviewer/SKILL.md",
+      "extract": "name: code reviewer description: Automatic code quality and best practices analysis. Use proactively when files are modified, saved, or committed. Analyzes code style, patterns, potential bugs, and security basics. Triggers on file changes, git diff, code edits, quality mentions. allowed tools: Read, Grep, Glob Code Reviewer Skill Lightweight automatic code quality checks while you code. When I Activate ✅ Files modif"
+    },
+    {
+      "path": "skills/development/git-commit-helper/SKILL.md",
+      "extract": "name: git commit helper description: Generate conventional commit messages automatically. Use when user runs git commit, stages changes, or asks for commit message help. Analyzes git diff to create clear, descriptive conventional commit messages. Triggers on git commit, staged changes, commit message requests. allowed tools: Bash, Read Git Commit Helper Skill Generate conventional commit messages from your git diff. "
+    },
+    {
+      "path": "skills/development/test-generator/SKILL.md",
+      "extract": "name: test generator description: Automatically suggest tests for new functions and components. Use when new code is written, functions added, or user mentions testing. Creates test scaffolding with Jest, Vitest, Pytest patterns. Triggers on new functions, components, test requests, testing mentions. allowed tools: Read, Write, Edit Test Generator Skill Auto suggest tests when you write new code. When I Activate ✅ Ne"
+    },
+    {
+      "path": "skills/documentation/api-documenter/SKILL.md",
+      "extract": "name: api documenter description: Auto generate API documentation from code and comments. Use when API endpoints change, or user mentions API docs. Creates OpenAPI/Swagger specs from code. Triggers on API file changes, documentation requests, endpoint additions. allowed tools: Read, Write, Grep API Documenter Skill Auto generate API documentation from code. When I Activate ✅ API endpoints added/modified ✅ User mentio"
+    },
+    {
+      "path": "skills/documentation/readme-updater/SKILL.md",
+      "extract": "name: readme updater description: Keep README files current with project changes. Use when project structure changes, features added, or setup instructions modified. Suggests README updates based on code changes. Triggers on significant project changes, new features, dependency changes. allowed tools: Read, Write, Edit, Grep README Updater Skill Keep your README current with project changes. When I Activate ✅ New fea"
+    },
+    {
+      "path": "skills/security/dependency-auditor/SKILL.md",
+      "extract": "name: dependency auditor description: Check dependencies for known vulnerabilities using npm audit, pip audit, etc. Use when package.json or requirements.txt changes, or before deployments. Alerts on vulnerable dependencies. Triggers on dependency file changes, deployment prep, security mentions. allowed tools: Bash, Read Dependency Auditor Skill Automatic dependency vulnerability checking. When I Activate ✅ package."
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A world-class collection of Claude Code utilities: autonomous skills, expert agents, slash commands, and prompts that supercharge your development workflow.",
+    "Updated: December 17, 2025 (v2.7.0 - Tresor Workflow Framework)",
+    "Major Release - 10 New Orchestration Commands + Tresor Workflow Framework!",
+    "🤖 Intelligent Agent Selection - Auto-selects from 141 agents based on tech stack",
+    "🛡️ Dependency Verification - Ensures safe parallel agent execution",
+    "🔄 Tresor Workflow Framework - Meta-prompting, todo management, context handoff",
+    "📦 Consolidated Structure - Unified agent directory in /subagents/ (133 total agents)",
+    "📚 12 Enhanced Examples - Added comprehensive usage examples to key agents"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A world-class collection of Claude Code utilities: autonomous skills, expert agents, slash commands, and prompts that supercharge your development workflow",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Code Tresor is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "A world-class collection of Claude Code utilities: autonomous skills, expert agents, slash commands, and prompts that supercharge your development workflow.",
+      "Updated: December 17, 2025 (v2.7.0 - Tresor Workflow Framework)"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-code-tresor",
+  "publishedAt": "2026-05-18"
+}

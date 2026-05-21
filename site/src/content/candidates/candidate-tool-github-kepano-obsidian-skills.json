@@ -1,0 +1,192 @@
+{
+  "id": "candidate-tool-github-kepano-obsidian-skills",
+  "type": "tool",
+  "status": "published",
+  "title": "Obsidian Skills",
+  "sourceUrl": "https://github.com/kepano/obsidian-skills",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "kepano",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "kepano",
+    "repo": "obsidian-skills",
+    "fullName": "kepano/obsidian-skills",
+    "stars": 31849,
+    "license": "MIT",
+    "topics": [
+      "claude",
+      "clawdbot",
+      "cli",
+      "codex",
+      "defuddle",
+      "obsidian",
+      "openclaw",
+      "opencode",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-07T20:24:08Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/defuddle/SKILL.md",
+    "skills/json-canvas/SKILL.md",
+    "skills/obsidian-bases/SKILL.md",
+    "skills/obsidian-cli/SKILL.md",
+    "skills/obsidian-markdown/SKILL.md"
+  ],
+  "readmeExtract": "Agent Skills for use with Obsidian. These skills follow the [Agent Skills specification](https://agentskills.io/specification) so they can be used by any skills compatible agent, including Claude Code and Codex CLI. Installation Marketplace npx skills Instead of ssh, if you prefer to use https: Manually Claude Code Add the contents of this repo to a /.claude folder in the root of your Obsidian vault (or whichever fol",
+  "skillExtracts": [
+    {
+      "path": "skills/defuddle/SKILL.md",
+      "extract": "name: defuddle description: Extract clean markdown content from web pages using Defuddle CLI, removing clutter and navigation to save tokens. Use instead of WebFetch when the user provides a URL to read or analyze, for online documentation, articles, blog posts, or any standard web page. Do NOT use for URLs ending in .md — those are already markdown, use WebFetch directly. Defuddle Use Defuddle CLI to extract clean r"
+    },
+    {
+      "path": "skills/json-canvas/SKILL.md",
+      "extract": "name: json canvas description: Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when working with .canvas files, creating visual canvases, mind maps, flowcharts, or when the user mentions Canvas files in Obsidian. JSON Canvas Skill File Structure A canvas file ( .canvas ) contains two top level arrays following the [JSON Canvas Spec 1.0](https://jsoncanvas.org/spec/1.0/): no"
+    },
+    {
+      "path": "skills/obsidian-bases/SKILL.md",
+      "extract": "name: obsidian bases description: Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian. Obsidian Bases Skill Workflow 1. Create the file : Create a .base file in the vault with valid YAML content 2. Define scope : Add"
+    },
+    {
+      "path": "skills/obsidian-cli/SKILL.md",
+      "extract": "name: obsidian cli description: Interact with Obsidian vaults using the Obsidian CLI to read, create, search, and manage notes, tasks, properties, and more. Also supports plugin and theme development with commands to reload plugins, run JavaScript, capture errors, take screenshots, and inspect the DOM. Use when the user asks to interact with their Obsidian vault, manage notes, search vault content, perform vault oper"
+    },
+    {
+      "path": "skills/obsidian-markdown/SKILL.md",
+      "extract": "name: obsidian markdown description: Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes. Obsidian Flavored Markdown Skill Create and edit valid Obsidian Flavored Markdown. Obsidian extends CommonMark and GFM w"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agent Skills for use with Obsidian.",
+    "These skills follow the Agent Skills specification so they can be used by any skills-compatible agent, including Claude Code and Codex CLI.",
+    "Add the contents of this repo to a /.claude folder in the root of your Obsidian vault (or whichever folder you're using with Claude Code).",
+    "See more in the official Claude Skills documentation.",
+    "Copy the skills/ directory into your Codex skills path (typically ~/.codex/skills).",
+    "See the Agent Skills specification for the standard skill format.",
+    "Clone the entire repo into the OpenCode skills directory (~/.opencode/skills/):",
+    "Do not copy only the inner skills/ folder — clone the full repo so the directory structure is ~/.opencode/skills/obsidian-skills/skills/ /SKILL.md."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"cli\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Obsidian Skills is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "Agent Skills for use with Obsidian.",
+      "These skills follow the Agent Skills specification so they can be used by any skills-compatible agent, including Claude Code and Codex CLI.",
+      "Add the contents of this repo to a /.claude folder in the root of your Obsidian vault (or whichever folder you're using with Claude Code)."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:kepano/obsidian-skills",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "obsidian-skills",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

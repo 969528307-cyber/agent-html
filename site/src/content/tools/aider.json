@@ -1,0 +1,77 @@
+{
+  "id": "aider",
+  "name": "Aider",
+  "type": "cli",
+  "status": "published",
+  "summary": "aider is AI pair programming in your terminal",
+  "description": "aider is AI pair programming in your terminal",
+  "category": [
+    "cli",
+    "docs",
+    "workflow"
+  ],
+  "compatibleAgents": [
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Aider-AI/aider",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Aider-AI/aider",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Aider-AI/aider#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Aider-AI/aider#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Aider-AI/aider/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Aider works best with Claude 3.7 Sonnet, DeepSeek R1 & Chat V3, OpenAI o1, o3-mini & GPT-4o, but can connect to almost any LLM, including local models.",
+    "Use familiar git tools to easily diff, manage and undo AI changes.",
+    "Add images and web pages to the chat to provide visual context, screenshots, reference docs, etc.",
+    "Aider streamlines copy/pasting code context and edits back and forth with a browser.",
+    "\"Hands down, this is the best AI coding assistant tool so far.\" — IndyDevDan on YouTube",
+    "\"[Aider] changed my daily coding workflows.",
+    "\"Best agent for actual dev work in existing codebases.\" — Nick Dobos on X",
+    "\"Aider is the precision tool of LLM code gen..."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-16T00:55:02Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Aider-AI/aider",
+  "repoUrl": "https://github.com/Aider-AI/aider",
+  "license": "Apache-2.0",
+  "stars": 44949,
+  "lastUpdated": "2026-05-16T00:55:02Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

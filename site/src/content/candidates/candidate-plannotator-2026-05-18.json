@@ -1,0 +1,179 @@
+{
+  "id": "candidate-plannotator-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Plannotator",
+  "sourceUrl": "https://github.com/backnotprop/plannotator",
+  "sourceName": "GitHub",
+  "author": "backnotprop",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Annotate and review coding agent plans and code diffs visually, share with your team, send feedback to agents with one click.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "backnotprop",
+    "repo": "plannotator",
+    "fullName": "backnotprop/plannotator",
+    "stars": 5388,
+    "license": "Apache-2.0",
+    "topics": [
+      "agents",
+      "claude-code",
+      "code-review",
+      "codex",
+      "obsidian",
+      "opencode",
+      "pi-mono",
+      "plan-mode",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T07:20:34Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/adversarial_rubric.md",
+    "docs/issue-694-code-navigation-recap.md",
+    "package.json",
+    ".agents/skills/pierre-guard/SKILL.md",
+    ".agents/skills/release/SKILL.md",
+    ".agents/skills/review-renovate/SKILL.md",
+    ".agents/skills/update-deps/SKILL.md",
+    "apps/skills/plannotator-annotate/SKILL.md",
+    "apps/skills/plannotator-compound/SKILL.md",
+    "apps/skills/plannotator-last/SKILL.md",
+    "apps/skills/plannotator-review/SKILL.md",
+    "apps/skills/plannotator-setup-goal/SKILL.md",
+    "apps/skills/plannotator-visual-explainer/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"apps/marketing/public/og image.webp\" alt=\"Plannotator\" width=\"80%\" / </p Plannotator Interactive Plan & Code Review for AI Coding Agents. Mark up and refine your plans or code diffs using a visual UI, share for team collaboration, and seamlessly integrate with Claude Code , Copilot CLI , Gemini CLI , OpenCode , Pi , and Codex . Plan Mode Demos: <table <tr <td align=\"center\" width=\"50%\" <h3",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/pierre-guard/SKILL.md",
+      "extract": "name: pierre guard description: Guard against breaking the @pierre/diffs integration in Plannotator's code review UI. Use this skill whenever modifying DiffViewer.tsx, upgrading the @pierre/diffs package, changing unsafeCSS injection, adding new props to FileDiff, or touching shadow DOM selectors or CSS variables that cross into Pierre's shadow boundary. Also trigger when someone asks \"will this break the diff viewer"
+    },
+    {
+      "path": ".agents/skills/release/SKILL.md",
+      "extract": "name: release plannotator description: Prepare and execute a Plannotator release — draft release notes with full contributor credit, bump versions across all package files, build in dependency order, and kick off the tag driven release pipeline. Use this skill whenever the user mentions preparing a release, bumping versions, writing release notes, tagging a release, or publishing. Also trigger when the user says thin"
+    },
+    {
+      "path": ".agents/skills/review-renovate/SKILL.md",
+      "extract": "name: review renovate description: Review Renovate bot PRs that update GitHub Actions dependencies. Verifies supply chain integrity by checking pinned commit SHAs against upstream tagged releases, reviews changelogs for breaking changes, and confirms compatibility with existing workflow configurations. Use when a Renovate PR updates GitHub Actions in .github/workflows/. Review Renovate GitHub Actions PRs You are revi"
+    },
+    {
+      "path": ".agents/skills/update-deps/SKILL.md",
+      "extract": "name: update deps description: Audit and update npm/Bun dependencies with supply chain integrity checks — verifies maintainers, publish age, tarball diffs, and provenance before bumping. Defers risky packages to ~/.supply chain/notes/. disable model invocation: true Update Dependencies Audit outdated packages, verify supply chain integrity, bump what's safe, defer what needs review, and log everything. This process h"
+    },
+    {
+      "path": "apps/skills/plannotator-annotate/SKILL.md",
+      "extract": "name: plannotator annotate description: Open Plannotator's annotation UI for a markdown file, converted HTML file, URL, or folder and then respond to the returned annotations. Plannotator Annotate Use this skill when the user wants to annotate a document in Plannotator instead of reviewing it inline in chat. Run: Behavior: 1. Launch the command with Bash. 2. Wait for the browser review to finish. 3. If annotations ar"
+    },
+    {
+      "path": "apps/skills/plannotator-compound/SKILL.md",
+      "extract": "name: plannotator compound disable model invocation: true description: Analyze a user's Plannotator plan archive to extract denial patterns, feedback taxonomy, evolution over time, and actionable prompt improvements — then produce a polished HTML dashboard report. Falls back to Claude Code ExitPlanMode denial reasons when Plannotator data is unavailable. Compound Planning Analysis You are conducting a comprehensive r"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Interactive Plan & Code Review for AI Coding Agents.",
+    "Mark up and refine your plans or code diffs using a visual UI, share for team collaboration, and seamlessly integrate with Claude Code, Copilot CLI, Gemini CLI, OpenCode, Pi, and Codex.",
+    "send feedback directly to agents.",
+    "send your feedback to agents",
+    "Visual Plan Review Built-in hook Approve or deny agent plans with inline annotations",
+    "Plan Diff Automatic See what changed when the agent revises a plan",
+    "Code Review /plannotator-review View git diffs or remote PRs.",
+    "Package annotations and ask AI about the code as you review."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Annotate and review coding agent plans and code diffs visually, share with your team, send feedback to agents with one click.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "coding",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Plannotator is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "Interactive Plan & Code Review for AI Coding Agents."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "plannotator",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "pilot-shell",
+  "name": "Pilot Shell",
+  "type": "mcp",
+  "status": "published",
+  "summary": "How real engineers run Claude Code: spec-driven planning, enforced TDD, persistent memory, and quality enforcement on all levels. Make Claude Code production-ready.",
+  "description": "How real engineers run Claude Code: spec-driven planning, enforced TDD, persistent memory, and quality enforcement on all levels. Make Claude Code production-ready.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/maxritter/pilot-shell",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/maxritter/pilot-shell",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/maxritter/pilot-shell#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/maxritter/pilot-shell#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/maxritter/pilot-shell/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "How real engineers run Claude Code.",
+    "Claude Code writes code fast — but without structure, it skips tests, loses context, and produces inconsistent results.",
+    "/fix — bugfix workflow with TDD; bails out when complexity exceeds the standard fix lane",
+    "Code intelligence — semantic search (Semble) + code knowledge graph (CodeGraph)",
+    "Extensions — reusable rules, skills, and MCP servers with team sharing and customization",
+    "Console — local web dashboard with real-time notifications and session management",
+    "Pilot Bot — persistent automation agent with scheduled tasks and background jobs",
+    "Run pilot for Spec-Driven Development with /spec, or pilot bot for 24/7 automations."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T06:41:11Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/maxritter/pilot-shell",
+  "repoUrl": "https://github.com/maxritter/pilot-shell",
+  "license": "NOASSERTION",
+  "stars": 1725,
+  "lastUpdated": "2026-05-19T06:41:11Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

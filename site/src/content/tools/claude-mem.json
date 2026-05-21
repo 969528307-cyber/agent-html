@@ -1,0 +1,78 @@
+{
+  "id": "claude-mem",
+  "name": "Claude Mem",
+  "type": "skill",
+  "status": "published",
+  "summary": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+  "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "OpenClaw"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/thedotmack/claude-mem#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/thedotmack/claude-mem#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/thedotmack/claude-mem/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Persistent memory compression system built for Claude Code.",
+    "Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic summaries, and making them available to future sessions.",
+    "This enables Claude to maintain continuity of knowledge about projects even after sessions end or reconnect.",
+    "Restart Claude Code or Gemini CLI.",
+    "🔍 Skill-Based Search - Query your project history with mem-search skill",
+    "💻 Claude Desktop Skill - Search memory from Claude Desktop conversations",
+    "🧪 Beta Channel - Try experimental features like Endless Mode via version switching",
+    "📚 View Full Documentation - Browse on official website"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T05:37:32Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/thedotmack/claude-mem",
+  "repoUrl": "https://github.com/thedotmack/claude-mem",
+  "license": "Apache-2.0",
+  "stars": 76524,
+  "lastUpdated": "2026-05-17T05:37:32Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

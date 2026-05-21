@@ -1,0 +1,76 @@
+{
+  "id": "golf",
+  "name": "Golf",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "Production-Ready MCP Server Framework • Build, deploy & scale secure AI agent infrastructure • Includes Auth, Observability, Debugger, Telemetry & Runtime • Run real-world MCPs powering AI Agents ",
+  "description": "Production-Ready MCP Server Framework • Build, deploy & scale secure AI agent infrastructure • Includes Auth, Observability, Debugger, Telemetry & Runtime • Run real-world MCPs powering AI Agents ",
+  "category": [
+    "security"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/golf-mcp/golf",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/golf-mcp/golf",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/golf-mcp/golf#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/golf-mcp/golf#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/golf-mcp/golf/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Easiest framework for building MCP servers",
+    "Golf is a framework designed to streamline the creation of MCP server applications.",
+    "It allows developers to define server's capabilities—tools, prompts, and resources—as simple Python files within a conventional directory structure.",
+    "Golf then automatically discovers, parses, and compiles these components into a runnable MCP server, minimizing boilerplate and accelerating development.",
+    "Focus on implementing your agent's logic while Golf handles authentication, monitoring, and server infrastructure.",
+    "This will start the MCP server, typically on (configurable in golf.json).",
+    "tools/, resources/, prompts/: Contain your Python files, each defining a single component.",
+    "These directories can also contain nested subdirectories to further organize your components (e.g., tools/payments/charge.py)."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-08T14:44:01Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/golf-mcp/golf",
+  "repoUrl": "https://github.com/golf-mcp/golf",
+  "license": "Apache-2.0",
+  "stars": 824,
+  "lastUpdated": "2026-05-08T14:44:01Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

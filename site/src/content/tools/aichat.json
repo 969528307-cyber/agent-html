@@ -1,0 +1,73 @@
+{
+  "id": "aichat",
+  "name": "Aichat",
+  "type": "cli",
+  "status": "published",
+  "summary": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.",
+  "description": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/sigoden/aichat",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/sigoden/aichat",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/sigoden/aichat#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/sigoden/aichat#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/sigoden/aichat/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AIChat: All-in-one LLM CLI Tool",
+    "AIChat is an all-in-one LLM CLI tool featuring Shell Assistant, CMD & REPL Mode, RAG, AI Tools & Agents, and More.",
+    "Experience an interactive Chat-REPL with features like tab autocompletion, multi-line input support, history search, configurable keybindings, and custom REPL prompts.",
+    "Function calling supercharges LLMs by connecting them to external tools and data sources.",
+    "Integrate external tools to automate tasks, retrieve information, and perform actions directly within your workflow.",
+    "AI Agents (CLI version of OpenAI GPTs)",
+    "AI Agent = Instructions (Prompt) + Tools (Function Callings) + Documents (RAG).",
+    "A web application to interact with supported LLMs directly from your browser."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-02-23T11:16:42Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/sigoden/aichat",
+  "repoUrl": "https://github.com/sigoden/aichat",
+  "license": "Apache-2.0",
+  "stars": 9976,
+  "lastUpdated": "2026-02-23T11:16:42Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

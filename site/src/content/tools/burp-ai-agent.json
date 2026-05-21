@@ -1,0 +1,77 @@
+{
+  "id": "burp-ai-agent",
+  "name": "Burp Ai Agent",
+  "type": "single-tool",
+  "status": "published",
+  "summary": "Burp Suite extension that adds built-in MCP tooling, AI-assisted analysis, privacy controls, passive and active scanning and more",
+  "description": "Burp Suite extension that adds built-in MCP tooling, AI-assisted analysis, privacy controls, passive and active scanning and more",
+  "category": [
+    "security"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/six2dez/burp-ai-agent",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/six2dez/burp-ai-agent",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/six2dez/burp-ai-agent#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/six2dez/burp-ai-agent#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/six2dez/burp-ai-agent/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Burp AI Agent is an extension for Burp Suite that integrates AI into your security workflow.",
+    "Use local models or cloud providers, connect external AI agents via MCP, and let passive/active scanners find vulnerabilities while you focus on manual testing.",
+    "10 AI Backends — Burp AI (built-in), Ollama, LM Studio, NVIDIA NIM, Generic OpenAI-compatible, Gemini CLI, Claude CLI, Codex CLI, OpenCode CLI, Copilot CLI.",
+    "53+ MCP Tools — Let Claude Desktop (or any MCP client) drive Burp autonomously.",
+    "Burp Scan Skill — Use your preferred AI coding assistant (Claude Code, Gemini CLI, Codex, etc.) as a scanner via MCP.",
+    "The extension auto-installs the bundled profiles into ~/.burp-ai-agent/AGENTS/ on first run.",
+    "Open the AI Agent tab and go to Settings.",
+    "Select Extensions > Burp AI Agent > Analyze this request."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-06T19:00:46Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/six2dez/burp-ai-agent",
+  "repoUrl": "https://github.com/six2dez/burp-ai-agent",
+  "license": "MIT",
+  "stars": 1105,
+  "lastUpdated": "2026-05-06T19:00:46Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

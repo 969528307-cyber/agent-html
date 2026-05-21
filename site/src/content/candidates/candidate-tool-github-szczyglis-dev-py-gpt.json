@@ -1,0 +1,222 @@
+{
+  "id": "candidate-tool-github-szczyglis-dev-py-gpt",
+  "type": "tool",
+  "status": "published",
+  "title": "Py Gpt",
+  "sourceUrl": "https://github.com/szczyglis-dev/py-gpt",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "szczyglis-dev",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Desktop AI Assistant powered by GPT-5, GPT-4, o1, o3, Gemini, Claude, Ollama, DeepSeek, Perplexity, Grok, Bielik, chat, vision, voice, RAG, image and video generation, agents, tools, MCP, plugins, speech synthesis and recognition, web search, memory, presets, assistants,and more. Linux, Windows, Mac",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Cursor"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "szczyglis-dev",
+    "repo": "py-gpt",
+    "fullName": "szczyglis-dev/py-gpt",
+    "stars": 1787,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "ai-assistant",
+      "artificial-intelligence",
+      "autonomous-agent",
+      "chatbot",
+      "claude",
+      "deepseek",
+      "desktop-app",
+      "gemini",
+      "gpt-4",
+      "gpt-5",
+      "grok",
+      "llama-index",
+      "llm",
+      "mcp",
+      "o1",
+      "ollama",
+      "openai",
+      "perplexity",
+      "sora2"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-02-06T03:08:43Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/build-en.sh",
+    "docs/build-pl.sh",
+    "docs/make.bat",
+    "docs/Makefile",
+    "docs/material.qss.template",
+    "docs/rebuild-lang.sh",
+    "docs/requirements.txt",
+    "docs/rst_to_md.sh",
+    "docs/source/accessibility.rst",
+    "docs/source/attachments.rst",
+    "docs/source/conf.py",
+    "docs/source/context.rst",
+    "docs/source/credits.rst",
+    "docs/source/debug.rst",
+    "docs/source/extending.rst",
+    "docs/source/functions.rst",
+    "docs/source/images/nodes.png",
+    "docs/source/images/v2_access.png",
+    "docs/source/images/v2_agent_toolbox.png",
+    "docs/source/images/v2_api_keys.png",
+    "docs/source/images/v2_assistant_stores_upload.png",
+    "docs/source/images/v2_assistant_stores.png",
+    "docs/source/images/v2_azure.png",
+    "docs/source/images/v2_calendar.png",
+    "docs/source/images/v2_capture_enable.png",
+    "docs/source/images/v2_capture_result.png",
+    "docs/source/images/v2_capture1.png",
+    "docs/source/images/v2_code_execute.png",
+    "docs/source/images/v2_context_list.png",
+    "docs/source/images/v2_crontab_tray.png",
+    "docs/source/images/v2_crontab.png",
+    "docs/source/images/v2_custom_cmd_example.png",
+    "docs/source/images/v2_custom_cmd.png",
+    "docs/source/images/v2_dalle2.png",
+    "docs/source/images/v2_draw.png",
+    "docs/source/images/v2_file_input.png",
+    "docs/source/images/v2_file_output.png",
+    "docs/source/images/v2_idx1.png",
+    "docs/source/images/v2_idx2.png"
+  ],
+  "readmeExtract": "PyGPT Desktop AI Assistant [![pygpt](https://snapcraft.io/pygpt/badge.svg)](https://snapcraft.io/pygpt) Release: 2.7.12 | build: 2026 02 06 | Python: =3.10, <3.14 Official website: https://pygpt.net | Documentation: https://pygpt.readthedocs.io Discord: https://pygpt.net/discord | Snap: https://snapcraft.io/pygpt | PyPi: https://pypi.org/project/pygpt net Compiled version for Linux ( zip ) and Windows 10/11 ( msi ) 6",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Official website: Documentation:",
+    "This assistant offers multiple modes of operation such as chat, assistants, agents, completions, and image-related tasks like image generation and image analysis.",
+    "PyGPT has filesystem capabilities for file I/O, can generate and run Python code, execute system commands, execute custom commands and manage file transfers.",
+    "It also allows models to perform web searches with the DuckDuckGo, Google and Microsoft Bing.",
+    "Prompt creation and management are streamlined through an intuitive preset system.",
+    "11 modes of operation: Chat, Chat with Files, Realtime + audio, Research (Perplexity), Completion, Image and Video generation, Assistants, Experts, Computer use, Agents and Autonomous Mode.",
+    "Built-in vector databases support and automated files and data embedding.",
+    "Image generation via models like DALL-E, gpt-image, Imagen, Gemini, and Nano Banana."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Desktop AI Assistant powered by GPT-5, GPT-4, o1, o3, Gemini, Claude, Ollama, DeepSeek, Perplexity, Grok, Bielik, chat, vision, voice, RAG, image and video generation, agents, tools, MCP, plugins, speech synthesis and recognition, web search, memory, presets, assistants,and more. Linux, Windows, Mac",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "media",
+      "research",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "media",
+    "research",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Agent app or product platform language detected.",
+    "Detected scope: app.",
+    "Alternative capabilities: mcp.",
+    "LLM: agent-app + [mcp] — PyGPT is a full-featured desktop AI assistant for end users, with a GUI and multiple modes, and explicitly supports MCP integration."
+  ],
+  "classificationAlternatives": [
+    "mcp"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Py Gpt is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with research workflows.",
+      "Helps with memory workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:szczyglis-dev/py-gpt",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "py-gpt",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

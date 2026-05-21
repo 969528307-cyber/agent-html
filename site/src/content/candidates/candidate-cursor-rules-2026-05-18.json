@@ -1,0 +1,108 @@
+{
+  "id": "candidate-cursor-rules-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Cursor Rules",
+  "sourceUrl": "https://github.com/flyeric0212/cursor-rules",
+  "sourceName": "GitHub",
+  "author": "flyeric0212",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "整理和收集来自不同项目的Cursor规则文件，提供多种编程语言和框架的规则支持。",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Cursor"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "flyeric0212",
+    "repo": "cursor-rules",
+    "fullName": "flyeric0212/cursor-rules",
+    "stars": 1829,
+    "topics": [
+      "cursor",
+      "cursor-rules"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-01-25T09:49:14Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "Cursor Rules 规则汇总 本项目用于收集、整理和标准化 Cursor Rules 规则文件，提供多种编程语言和框架的规则支持，使开发者能够更有效地利用 Cursor 进行开发工作。 Cursor Rules 最佳实践 文章教程： [Cursor Rules 最佳实践总结](https://mp.weixin.qq.com/s/ J LwfwH9rmFy4dzEy0RXg) [Cursor Rules 进阶指南：打造企业级多语言开发规范](https://mp.weixin.qq.com/s/rfanrMtMMuyUTwsDYmlxSg) [Cursor 0.49.x 自动化生成 Project Rules 实用指南](https://mp.weixin.qq.com/s/1yTkzYzOFjty1D0gtYHuHA) [Cursor Rules 的一次全面总结，希望能够帮助到你！](https://mp.weixin.",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 2,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "整理和收集来自不同项目的Cursor规则文件，提供多种编程语言和框架的规则支持。",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Cursor Rules is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Relevant to skill."
+    ],
+    "reasons": [
+      "Capability signals are too thin."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cursor-rules",
+  "publishedAt": "2026-05-18"
+}

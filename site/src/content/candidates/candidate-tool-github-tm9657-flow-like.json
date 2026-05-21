@@ -1,0 +1,196 @@
+{
+  "id": "candidate-tool-github-tm9657-flow-like",
+  "type": "tool",
+  "status": "published",
+  "title": "Flow Like",
+  "sourceUrl": "https://github.com/TM9657/flow-like",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "TM9657",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Flow-Like: Strongly Typed Enterprise Scale Workflows. Built for scalability, speed, seamless AI integration and rich customization.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "TM9657",
+    "repo": "flow-like",
+    "fullName": "TM9657/flow-like",
+    "stars": 865,
+    "license": "NOASSERTION",
+    "topics": [
+      "agents",
+      "ai",
+      "apis",
+      "automation",
+      "data-flow",
+      "development",
+      "llm",
+      "low-code",
+      "mcp",
+      "mcp-client",
+      "mcp-server",
+      "no-code",
+      "rust",
+      "self-hosted",
+      "typed",
+      "typescript",
+      "visual-scripting",
+      "workflow",
+      "workflow-automation"
+    ],
+    "defaultBranch": "dev",
+    "lastPushedAt": "2026-05-16T21:11:32Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "thirdparty/frontend-builder/claude/flow-like-ui/SKILL.md",
+    "apps/desktop/CLAUDE.md",
+    "apps/docs/src/content/docs/topics/genai/agents.md",
+    "CLAUDE.md",
+    "packages/api/CLAUDE.md",
+    "packages/catalog/CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://flow like.com\" <img src=\"apps/desktop/public/app logo.webp\" alt=\"Flow Like Logo\" width=\"80\" / </a </p <h1 align=\"center\" Flow Like</h1 <p align=\"center\" <strong If you can't see it, you can't trust it.</strong <br/ A Rust powered workflow engine that runs on your device — laptop, server, or phone.<br/ Fully typed. Fully traceable. Fully yours. </p <p align=\"center\" <a href=\"https://",
+  "skillExtracts": [
+    {
+      "path": "thirdparty/frontend-builder/claude/flow-like-ui/SKILL.md",
+      "extract": "name: flow like ui description: Generate valid A2UI JSON for FlowLike application frontends. Use when asked to create, design, or build user interfaces, dashboards, forms, pages, layouts, or any visual UI components as A2UI JSON. Supports 60+ component types including layout (row, column, grid), display (text, image, charts), interactive (button, textField, select), containers (card, modal, tabs), game (canvas2d, sce"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A Rust-powered workflow engine that runs on your device — laptop, server, or phone..",
+    "Flow-Like is a visual workflow automation platform that runs entirely on your hardware.",
+    "Build workflows with drag-and-drop blocks, run them on your laptop, phone, or server, and get a clear record of where data came from, what changed, and what came out — no cloud dependency, no black boxes, no guesswork.",
+    "You decide where your workflows run.",
+    "Most workflow tools force you into their cloud.",
+    "Automate on your couch without Wi-Fi.",
+    "Your workflows, your infrastructure, your rules.",
+    "The same workflow that takes 500ms in a Node.js engine takes 0.6ms in Flow-Like."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Flow-Like: Strongly Typed Enterprise Scale Workflows. Built for scalability, speed, seamless AI integration and rich customization.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "data",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "data",
+    "coding"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 9,
+    "cli": 4,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Agent instruction or rule files detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: mcp, workflow, cli.",
+    "LLM: workflow + [mcp, cli, workflow] — The repository is primarily a visual workflow automation platform with a Rust-powered engine, supporting MCP integration and CLI usage."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "workflow",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Flow Like is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with data workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation.",
+      "A Rust-powered workflow engine that runs on your device — laptop, server, or phone.."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:tm9657/flow-like",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "flow-like",
+  "publishedAt": "2026-05-18"
+}

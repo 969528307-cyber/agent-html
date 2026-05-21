@@ -1,0 +1,216 @@
+{
+  "id": "candidate-tool-github-bytechefhq-bytechef",
+  "type": "tool",
+  "status": "published",
+  "title": "Bytechef",
+  "sourceUrl": "https://github.com/bytechefhq/bytechef",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "bytechefhq",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Open-source platform that unifies AI agent orchestration and workflow automation — autonomy and precision in one platform.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Cursor"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "bytechefhq",
+    "repo": "bytechef",
+    "fullName": "bytechefhq/bytechef",
+    "stars": 757,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "api",
+      "automation",
+      "embedded-ipaas",
+      "hacktoberfest",
+      "integrations",
+      "ipaas",
+      "java",
+      "llm",
+      "low-code",
+      "mcp",
+      "n8n",
+      "no-code",
+      "self-hosted",
+      "typescript",
+      "workato",
+      "workflow",
+      "workflow-automation",
+      "zapier"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-17T19:32:47Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.gitignore",
+    "docs/app/(docs)/[...slug]/page.tsx",
+    "docs/app/(docs)/[...slug]/suggestions.ts",
+    "docs/app/(docs)/layout.tsx",
+    "docs/app/api/chat/route.ts",
+    "docs/app/api/proxy/route.ts",
+    "docs/app/api/search/route.ts",
+    "docs/app/assets/logo.svg",
+    "docs/app/global.css",
+    "docs/app/layout.client.tsx",
+    "docs/app/layout.tsx",
+    "docs/app/llms-full.txt/route.ts",
+    "docs/app/llms.mdx/[...slug]/route.ts",
+    "docs/app/llms.txt/route.ts",
+    "docs/app/og/[...slug]/generate.tsx",
+    "docs/app/og/[...slug]/route.tsx",
+    "docs/app/provider.tsx",
+    "docs/app/sitemap.ts",
+    "docs/app/static.json/route.ts",
+    "docs/bunfig.toml",
+    "docs/components/ai/markdown.tsx",
+    "docs/components/ai/page-actions.tsx",
+    "docs/components/ai/search.tsx",
+    "docs/components/api-page.tsx",
+    "docs/components/code-block.tsx",
+    "docs/components/contributor-count.tsx",
+    "docs/components/feedback.tsx",
+    "docs/components/graph-view.tsx",
+    "docs/components/mdx/mermaid.tsx",
+    "docs/components/not-found.tsx",
+    "docs/components/preview/customisation.tsx",
+    "docs/components/preview/dynamic-codeblock.tsx",
+    "docs/components/preview/index.tsx",
+    "docs/components/preview/lazy.ts",
+    "docs/components/preview/wrapper.tsx",
+    "docs/components/search.tsx",
+    "docs/components/ui/button.tsx",
+    "docs/components/ui/hover-card.tsx",
+    "docs/content/docs/(getting-started)/architecture.mdx"
+  ],
+  "readmeExtract": "<div align=\"center\" [![License: Apache 2.0 + EE](https://img.shields.io/static/v1?label=license&message=Apache%202.0%20%2B%20EE&color=brightgreen)](https://github.com/bytechefhq/bytechef/blob/master/LICENSE) [![Docker Pulls](https://img.shields.io/docker/pulls/bytechef/bytechef)](https://hub.docker.com/r/bytechef/bytechef) [![Build Status](https://github.com/bytechefhq/bytechef/actions/workflows/build push.yml/badge.",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The open-source platform that unifies AI agent orchestration and workflow automation",
+    "Documentation · Live Demo · Discord · Connect on X · Roadmap",
+    "<!-- VISUAL 1 — Workflow editor.",
+    "[//]: # (ByteChef is an open-source platform for AI agents, workflow automation, and API integration.)",
+    "[//]: # (Instead of using separate tools for AI agents and automated workflows, ByteChef brings both into a single platform with one orchestration layer, centralized management, and enterprise-grade security.)",
+    "AI Agents — built in, not bolted on",
+    "<!-- VISUAL 2 — Agent editor (cluster element editor).",
+    "Capture: the AI agent component opened with its cluster of sub-elements visible — model, tools list, memory, guardrails, knowledge base."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Open-source platform that unifies AI agent orchestration and workflow automation — autonomy and precision in one platform.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "devops",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "devops",
+    "coding"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 0,
+    "cli": 3,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: platform.",
+    "Alternative capabilities: mcp.",
+    "LLM: workflow + [mcp, cli, workflow] — ByteChef is an open-source platform unifying AI agent orchestration and workflow automation, with support for MCP and CLI tools."
+  ],
+  "classificationAlternatives": [
+    "mcp"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Bytechef is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation.",
+      "The open-source platform that unifies AI agent orchestration and workflow automation"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:bytechefhq/bytechef",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "bytechef",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,158 @@
+{
+  "id": "candidate-blades-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Blades",
+  "sourceUrl": "https://github.com/go-kratos/blades",
+  "sourceName": "GitHub",
+  "author": "go-kratos",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Blades is a Go-based multimodal AI Agent framework.",
+  "proposedCategory": [
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "go-kratos",
+    "repo": "blades",
+    "fullName": "go-kratos/blades",
+    "stars": 775,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "agent-kit",
+      "agent-sdk",
+      "agent-workflow",
+      "ai",
+      "golang",
+      "llm",
+      "multi-agent",
+      "studio",
+      "workflow"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T13:56:21Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/images/architecture.png",
+    "docs/images/chain.png",
+    "docs/images/model.png",
+    "docs/README.md",
+    "examples/recipe-basic/agent.yaml",
+    "examples/recipe-sequential/agent.yaml",
+    "examples/recipe-tool/agent.yaml",
+    "examples/skills/skills/weather-skill/references/weather_info.md",
+    "examples/skills/skills/weather-skill/SKILL.md",
+    "skills/testdata/embedded-skill/SKILL.md",
+    "AGENTS.md",
+    "cmd/blades/internal/workspace/templates/workspace/AGENTS.md",
+    "cmd/docs/vendor/github.com/go-kratos/blades/AGENTS.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://github.com/go kratos/blades/actions\" <img src=\"https://github.com/go kratos/blades/workflows/Go/badge.svg\" alt=\"Build Status\" </a <a href=\"https://pkg.go.dev/github.com/go kratos/blades\" <img src=\"https://pkg.go.dev/badge/github.com/go kratos/blades\" alt=\"GoDoc\" </a <a href=\"https://deepwiki.com/go kratos/blades\" <img src=\"https://deepwiki.com/badge.svg\" alt=\"DeepWiki\" </a <a href=\"",
+  "skillExtracts": [
+    {
+      "path": "examples/skills/skills/weather-skill/SKILL.md",
+      "extract": "name: weather skill description: A skill that provides weather information based on reference data. Step 1: Check references/weather info.md for the current weather. Step 2: If humidity is requested, run scripts/get humidity.py with the location argument. Step 3: Provide the update to the user."
+    },
+    {
+      "path": "skills/testdata/embedded-skill/SKILL.md",
+      "extract": "name: embedded skill description: Embedded skill description Use embedded instructions."
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Blades is a multimodal AI Agent framework for the Go language, supporting custom models, tools, memory, middleware, etc.",
+    "Blades leverages the characteristics of the Go language to provide a flexible and efficient AI Agent solution.",
+    "Middleware Ecosystem: Drawing inspiration from Kratos's middleware design philosophy, features like Observability and Guardrails can be easily integrated into AI Agents.",
+    "Highly Extensible: Achieves a high degree of decoupling and extensibility through unified interfaces and pluggable components, facilitating the integration of different LLM models and external tools.",
+    "These components work together to build the intelligent behavior of the Agent:",
+    "Agent: The core unit that executes tasks, capable of invoking models and tools.",
+    "Chain: Connects multiple Agents or other Chains to form complex workflows.",
+    "ModelProvider: A pluggable LLM interface, allowing you to easily switch and integrate different language model services (such as OpenAI, etc.)."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Blades is a Go-based multimodal AI Agent framework.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "workflow",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "workflow",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Blades is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Relevant to workflow.",
+      "Blades is a multimodal AI Agent framework for the Go language, supporting custom models, tools, memory, middleware, etc.",
+      "Blades leverages the characteristics of the Go language to provide a flexible and efficient AI Agent solution.",
+      "Middleware Ecosystem: Drawing inspiration from Kratos's middleware design philosophy, features like Observability and Guardrails can be easily integrated into AI Agents."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "blades",
+  "publishedAt": "2026-05-20"
+}

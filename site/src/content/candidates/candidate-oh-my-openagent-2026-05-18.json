@@ -1,0 +1,210 @@
+{
+  "id": "candidate-oh-my-openagent-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Oh My Openagent",
+  "sourceUrl": "https://github.com/code-yeongyu/oh-my-openagent",
+  "sourceName": "GitHub",
+  "author": "code-yeongyu",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "omo; the best agent harness - previously oh-my-opencode",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "code-yeongyu",
+    "repo": "oh-my-openagent",
+    "fullName": "code-yeongyu/oh-my-openagent",
+    "stars": 58358,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "amp",
+      "anthropic",
+      "chatgpt",
+      "claude",
+      "claude-code",
+      "claude-skills",
+      "cursor",
+      "gemini",
+      "ide",
+      "openai",
+      "opencode",
+      "orchestration",
+      "tui",
+      "typescript"
+    ],
+    "defaultBranch": "dev",
+    "lastPushedAt": "2026-05-18T12:54:21Z"
+  },
+  "detectedFiles": [
+    "README.ja.md",
+    "README.ko.md",
+    "README.md",
+    "README.ru.md",
+    "README.zh-cn.md",
+    "docs/examples/coding-focused.jsonc",
+    "docs/examples/default.jsonc",
+    "docs/examples/planning-focused.jsonc",
+    "docs/guide/agent-model-matching.md",
+    "docs/guide/orchestration.md",
+    "docs/guide/overview.md",
+    "docs/guide/team-mode.md",
+    "docs/legal/privacy-policy.md",
+    "docs/legal/terms-of-service.md",
+    "docs/manifesto.md",
+    "docs/model-capabilities-maintenance.md",
+    "docs/reference/cli.md",
+    "docs/reference/features.md",
+    "docs/reference/known-issues.md",
+    "docs/reference/prompt-async-gate-rfc.md",
+    "docs/reference/release-process.md",
+    "docs/superpowers/plans/2026-04-27-background-task-retry-timeline.md",
+    "docs/superpowers/plans/2026-05-08-log-rotation-design.md",
+    "docs/superpowers/specs/2026-04-27-background-task-retry-timeline-design.md",
+    "package.json",
+    ".agents/skills/get-unpublished-changes/SKILL.md",
+    ".agents/skills/github-triage/SKILL.md",
+    ".agents/skills/hyperplan/SKILL.md",
+    ".agents/skills/omomomo/SKILL.md",
+    ".agents/skills/pre-publish-review/SKILL.md",
+    ".agents/skills/publish/SKILL.md",
+    ".agents/skills/remove-deadcode/SKILL.md",
+    ".agents/skills/work-with-pr/SKILL.md",
+    ".opencode/skills/github-triage/SKILL.md",
+    ".opencode/skills/hyperplan/SKILL.md",
+    ".opencode/skills/pre-publish-review/SKILL.md",
+    ".opencode/skills/work-with-pr/SKILL.md",
+    "src/features/builtin-skills/agent-browser/SKILL.md",
+    "src/features/builtin-skills/dev-browser/SKILL.md",
+    "src/features/builtin-skills/frontend-ui-ux/SKILL.md"
+  ],
+  "readmeExtract": "[!TIP] Building in Public The maintainer builds and maintains oh my openagent in real time with Jobdori, an AI assistant running on a heavily customized fork of OpenClaw. Every feature, every fix, every issue triage — live in our Discord. [![Building in Public](./.github/assets/building in public.png)](https://discord.gg/PUwSMR9XNk) [ → Watch it happen in building in public ](https://discord.gg/PUwSMR9XNk) [!NOTE] [!",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/get-unpublished-changes/SKILL.md",
+      "extract": "name: get unpublished changes description: \"Compare HEAD with the latest published npm version and list all unpublished changes. Triggers: unpublished changes, changelog, what changed, whats new.\" IMMEDIATELY output the analysis. NO questions. NO preamble. CRITICAL: DO NOT just copy commit messages! For each commit, you MUST: 1. Read the actual diff to understand WHAT CHANGED 2. Describe the REAL change in plain lang"
+    },
+    {
+      "path": ".agents/skills/github-triage/SKILL.md",
+      "extract": "name: github triage description: \"Read only GitHub triage for issues AND PRs. 1 item = 1 background task (category: quick). Analyzes all open items and writes evidence backed reports to /tmp/{datetime}/. Every claim requires a GitHub permalink as proof. NEVER takes any action on GitHub no comments, no merges, no closes, no labels. Reports only. Triggers: 'triage', 'triage issues', 'triage PRs', 'github triage'.\" GitH"
+    },
+    {
+      "path": ".agents/skills/hyperplan/SKILL.md",
+      "extract": "name: hyperplan description: \"Adversarial multi agent planning skill. Self orchestrates 5 hostile category members (unspecified low, unspecified high, deep, ultrabrain, artistry) via team mode for ruthless cross critique debate, distills only the defensible insights, then MANDATORILY hands the distilled insight bundle to the plan agent for executable plan formalization. Use when planning needs maximum rigor and surfa"
+    },
+    {
+      "path": ".agents/skills/omomomo/SKILL.md",
+      "extract": "name: omomomo description: \"Easter egg command about oh my opencode. Triggers: omomomo, about, easter egg.\" You found an easter egg! 🥚✨ Print the following message to the user EXACTLY as written (in a friendly, celebratory tone): 🎉 oMoMoMoMoMo··· You found the easter egg! 🥚✨ What is Oh My OpenCode? Oh My OpenCode is a powerful OpenCode plugin that transforms your AI agent into a full development team: 🤖 Multi Age"
+    },
+    {
+      "path": ".agents/skills/pre-publish-review/SKILL.md",
+      "extract": "name: pre publish review description: \"Nuclear grade 16 agent pre publish release gate. Runs /get unpublished changes to detect all changes since last npm release, spawns up to 10 ultrabrain agents for deep per change analysis, invokes /review work (5 agents) for holistic review, and 1 oracle for overall release synthesis. Use before EVERY npm publish. Triggers: 'pre publish review', 'review before publish', 'release"
+    },
+    {
+      "path": ".agents/skills/publish/SKILL.md",
+      "extract": "name: publish description: \"Publish oh my opencode to npm via GitHub Actions workflow. Argument: <patch|minor|major . Triggers: publish, release, deploy, npm publish.\" You are the release manager for oh my opencode. Execute the FULL publish workflow from start to finish. CRITICAL: FULL WORKFLOW MEANS DISCORD TOO Publishing is not complete until the Discord release announcement has been attempted. DO NOT stop after cr"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The maintainer builds and maintains oh-my-openagent in real-time with Jobdori, an AI assistant running on a heavily customized fork of OpenClaw.",
+    "Join our Discord community to connect with contributors and fellow oh-my-openagent users.",
+    "Updates for oh-my-openagent used to be posted on my X account.",
+    "This is oh-my-openagent, running Team Mode.",
+    "Claude Code is a nice prison, but it's still a prison.",
+    "\"If Claude Code does in 7 days what a human does in 3 months, Sisyphus does it in 1 hour.",
+    "It is a discipline agent.\" . - B, Quant Researcher",
+    "You're juggling Claude Code, Codex, and random OSS models."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "omo; the best agent harness - previously oh-my-opencode",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Oh My Openagent is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "The maintainer builds and maintains oh-my-openagent in real-time with Jobdori, an AI assistant running on a heavily customized fork of OpenClaw.",
+      "Join our Discord community to connect with contributors and fellow oh-my-openagent users."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "oh-my-openagent",
+  "publishedAt": "2026-05-18"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "ghost-os",
+  "name": "Ghost Os",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "Full computer-use for AI agents. Self-learning workflows. Native macOS. No screenshots required.",
+  "description": "Full computer-use for AI agents. Self-learning workflows. Native macOS. No screenshots required.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ghostwright/ghost-os",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ghostwright/ghost-os",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ghostwright/ghost-os#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ghostwright/ghost-os#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ghostwright/ghost-os/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Full computer-use for AI agents.",
+    "Your AI agent can write code, run tests, search files.",
+    "Ghost OS gives AI agents eyes and hands.",
+    "Deploy persistent AI agents to dedicated VMs in 90 seconds.",
+    "AI agents that earn your trust.",
+    "Ghost OS gives AI agents eyes and hands on your Mac.",
+    "The user performs the task manually (clicking, typing, switching apps).",
+    "Claude synthesizes the raw observation into a parameterized, replayable recipe."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-03-23T22:41:44Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ghostwright/ghost-os",
+  "repoUrl": "https://github.com/ghostwright/ghost-os",
+  "license": "MIT",
+  "stars": 1452,
+  "lastUpdated": "2026-03-23T22:41:44Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>agentk.it — Discover AI Agent Tools</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-root: #09090B;
+  --bg-surface: #131317;
+  --bg-raised: #1A1A20;
+  --bg-overlay: #22222A;
+  --text-primary: #F4F4F6;
+  --text-secondary: #A1A1AA;
+  --text-tertiary: #71717A;
+  --border-default: #27272D;
+  --border-subtle: #1D1D24;
+  --border-hover: #3F3F46;
+  --accent-400: #22D3EE;
+  --accent-500: #06B6D4;
+  --accent-600: #0891B2;
+  --code-bg: #1E1E2A;
+  --code-border: #2D2D3A;
+  --code-text: #E4E4E7;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+  --shadow-hover: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  --shadow-glow: 0 0 15px -3px rgb(6 182 212 / 0.15);
+  --transition-base: 200ms ease;
+  --max-width: 1280px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+body { font-family: var(--font-sans); background: var(--bg-root); color: var(--text-primary); line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+input { font-family: inherit; }
+
+/* Layout */
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
+
+/* Navbar */
+.navbar {
+  position: sticky; top: 0; z-index: 100;
+  height: 3.5rem;
+  background: rgb(9 9 11 / 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex; align-items: center;
+}
+.navbar .container { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+.navbar-logo { font-size: 1.25rem; font-weight: 700; color: var(--accent-400); letter-spacing: -0.02em; }
+.navbar-links { display: flex; gap: 0.5rem; align-items: center; }
+.nav-dropdown {
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem; font-weight: 500; color: var(--text-secondary);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+.nav-dropdown:hover { color: var(--text-primary); background: var(--bg-raised); }
+.nav-dropdown::after { content: ' ▾'; font-size: 0.625rem; margin-left: 2px; }
+.nav-search-icon {
+  padding: 0.5rem;
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  transition: all var(--transition-base);
+}
+.nav-search-icon:hover { color: var(--text-primary); background: var(--bg-raised); }
+
+/* Hero */
+.hero {
+  padding: 6rem 0 4rem;
+  text-align: center;
+  position: relative;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgb(6 182 212 / 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
+.hero h1 span { background: linear-gradient(135deg, var(--accent-400), #A78BFA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero p { margin-top: 1rem; font-size: 1.125rem; color: var(--text-secondary); max-width: 650px; margin-inline: auto; line-height: 1.6; }
+.search-wrap {
+  margin-top: 2rem;
+  position: relative;
+  max-width: 600px; margin-inline: auto;
+}
+.search-wrap input {
+  width: 100%;
+  padding: 0.875rem 1rem 0.875rem 3rem;
+  font-size: 1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  transition: all var(--transition-base);
+  outline: none;
+}
+.search-wrap input:focus { border-color: var(--accent-500); box-shadow: var(--shadow-glow); }
+.search-wrap input::placeholder { color: var(--text-tertiary); }
+.search-wrap .search-icon {
+  position: absolute; left: 1rem; top: 50%; transform: translateY(-50%);
+  color: var(--text-tertiary); font-size: 1.1rem;
+}
+
+/* Type Tabs */
+.type-tabs { display: flex; justify-content: center; gap: 0.5rem; margin-top: 1.5rem; flex-wrap: wrap; }
+.type-tab {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem; font-weight: 500; color: var(--text-secondary);
+  border-radius: 9999px;
+  transition: all var(--transition-base);
+}
+.type-tab:hover { color: var(--text-primary); background: var(--bg-raised); }
+.type-tab.active { background: var(--accent-500); color: #09090B; font-weight: 600; }
+
+/* Sections */
+.section { padding: 5rem 0; }
+.section-header { margin-bottom: 2rem; }
+.section-header h2 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em; }
+.section-header p { margin-top: 0.25rem; font-size: 0.875rem; color: var(--text-tertiary); }
+
+/* Tool Card */
+.tool-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.tool-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem;
+  transition: all var(--transition-base);
+}
+.tool-card:hover { border-color: var(--border-hover); box-shadow: var(--shadow-hover); transform: translateY(-1px); }
+.tool-card-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
+.type-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.6875rem; font-weight: 600;
+  border-radius: 9999px; border: 1px solid;
+  text-transform: uppercase; letter-spacing: 0.02em;
+}
+.type-badge.mcp  { background: rgb(6 182 212 / 0.12); color: var(--accent-400); border-color: rgb(6 182 212 / 0.3); }
+.type-badge.skill { background: rgb(124 58 237 / 0.12); color: #A78BFA; border-color: rgb(124 58 237 / 0.3); }
+.type-badge.cli  { background: rgb(245 158 11 / 0.12); color: #FBBF24; border-color: rgb(245 158 11 / 0.3); }
+.type-badge.wf   { background: rgb(236 72 153 / 0.12); color: #F472B6; border-color: rgb(236 72 153 / 0.3); }
+.tool-card h3 { font-size: 1rem; font-weight: 600; line-height: 1.4; }
+.tool-card .desc { font-size: 0.8125rem; color: var(--text-secondary); margin-top: 0.25rem; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.tool-card .install-block {
+  margin-top: 0.75rem;
+  display: flex; align-items: center; gap: 0.5rem;
+  background: var(--code-bg); border: 1px solid var(--code-border);
+  border-radius: var(--radius-lg);
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-mono); font-size: 0.75rem; color: var(--code-text);
+  overflow: hidden;
+}
+.tool-card .install-block .cmd {
+  flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  color: #34D399;
+}
+.copy-btn {
+  flex-shrink: 0;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.6875rem; font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-overlay);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+.copy-btn:hover { color: var(--text-primary); background: var(--accent-500); color: #09090B; }
+.tool-card .meta { display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem; font-size: 0.75rem; color: var(--text-tertiary); }
+
+/* Category Pills */
+.cat-pills { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.cat-pill {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem; font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 9999px;
+  transition: all var(--transition-base);
+}
+.cat-pill:hover { color: var(--text-primary); border-color: var(--border-hover); background: var(--bg-raised); }
+
+/* Agent Cards */
+.agent-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; }
+.agent-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: all var(--transition-base);
+}
+.agent-card:hover { border-color: var(--border-hover); box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.agent-card .agent-icon { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.agent-card .agent-name { font-size: 0.8125rem; font-weight: 600; }
+.agent-card .agent-count { font-size: 0.6875rem; color: var(--text-tertiary); margin-top: 0.25rem; }
+
+/* Learn Cards */
+.learn-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.learn-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  transition: all var(--transition-base);
+}
+.learn-card:hover { border-color: var(--accent-500); box-shadow: var(--shadow-glow); }
+.learn-card .learn-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+.learn-card h3 { font-size: 1rem; font-weight: 600; }
+.learn-card p { font-size: 0.8125rem; color: var(--text-secondary); margin: 0.5rem 0 1rem; line-height: 1.5; }
+.learn-card .learn-cta { font-size: 0.8125rem; font-weight: 600; color: var(--accent-400); }
+
+/* Download Cards */
+.dl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.dl-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem;
+  text-align: center;
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+.dl-card:hover { border-color: var(--accent-500); background: var(--bg-raised); }
+.dl-card .dl-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.dl-card .dl-name { font-size: 0.8125rem; font-weight: 600; }
+.dl-card .dl-type { font-size: 0.6875rem; color: var(--text-tertiary); margin-top: 0.25rem; }
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--border-subtle);
+  padding: 2.5rem 0;
+}
+.footer .container { display: flex; align-items: center; justify-content: space-between; }
+.footer-links { display: flex; gap: 1.5rem; }
+.footer-links a { font-size: 0.8125rem; color: var(--text-tertiary); transition: color var(--transition-base); }
+.footer-links a:hover { color: var(--text-primary); }
+.footer-copy { font-size: 0.75rem; color: var(--text-tertiary); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.25rem; }
+  .tool-grid { grid-template-columns: 1fr; }
+  .agent-grid { grid-template-columns: repeat(3, 1fr); }
+  .learn-grid { grid-template-columns: 1fr; }
+  .dl-grid { grid-template-columns: repeat(2, 1fr); }
+  .navbar-links .nav-dropdown { display: none; }
+  .section { padding: 3rem 0; }
+  .container { padding: 0 1rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <a href="/" class="navbar-logo">⟡ agentk.it</a>
+    <div class="navbar-links">
+      <button class="nav-dropdown">Tools</button>
+      <button class="nav-dropdown">Learn</button>
+      <button class="nav-dropdown">Free</button>
+      <button class="nav-search-icon">🔍</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>Discover <span>AI Agent</span> Tools.</h1>
+    <p>Daily-updated library of Skills, MCP servers, CLI tools &amp; workflows — copy, paste, run.</p>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Search skills, MCPs, tools...">
+    </div>
+    <div class="type-tabs">
+      <button class="type-tab active">All</button>
+      <button class="type-tab">Skills</button>
+      <button class="type-tab">MCPs</button>
+      <button class="type-tab">CLI Tools</button>
+      <button class="type-tab">Workflows</button>
+    </div>
+  </div>
+</section>
+
+<!-- Today's Additions -->
+<section class="section" style="padding-top: 2rem;">
+  <div class="container">
+    <div class="section-header">
+      <h2>🆕 Today's Additions <span style="font-weight:400;font-size:0.875rem;color:var(--text-tertiary);">May 10, 2026</span></h2>
+      <p>Fresh tools parsed and verified in the last 24 hours</p>
+    </div>
+    <div class="tool-grid">
+      <div class="tool-card">
+        <div class="tool-card-header">
+          <span class="type-badge mcp">MCP</span>
+          <h3>Figma MCP Server</h3>
+        </div>
+        <p class="desc">Design-to-code bridge — read Figma files and export components directly from your AI agent.</p>
+        <div class="install-block">
+          <span class="cmd">npx @anthropic-ai/mcp-server-figma</span>
+          <button class="copy-btn" onclick="copyCmd(this,'npx @anthropic-ai/mcp-server-figma')">Copy</button>
+        </div>
+        <div class="meta"><span>☆ 124</span><span>Added 3h ago</span></div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-card-header">
+          <span class="type-badge skill">Skill</span>
+          <h3>GitHub PR Review</h3>
+        </div>
+        <p class="desc">Auto-review pull requests with AI — code quality checks, inline suggestions, severity levels.</p>
+        <div class="install-block">
+          <span class="cmd">hermes skills install https://raw.git...</span>
+          <button class="copy-btn" onclick="copyCmd(this,'hermes skills install https://...')">Copy</button>
+        </div>
+        <div class="meta"><span>☆ 342</span><span>Added 5h ago</span></div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-card-header">
+          <span class="type-badge cli">CLI</span>
+          <h3>aider v0.80</h3>
+        </div>
+        <p class="desc">AI pair programming in your terminal — edit code across multiple files with natural language.</p>
+        <div class="install-block">
+          <span class="cmd">pip install aider-chat</span>
+          <button class="copy-btn" onclick="copyCmd(this,'pip install aider-chat')">Copy</button>
+        </div>
+        <div class="meta"><span>☆ 18.2k</span><span>Added 8h ago</span></div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-card-header">
+          <span class="type-badge wf">Workflow</span>
+          <h3>Auto PR Review Pipeline</h3>
+        </div>
+        <p class="desc">New PR → Agent reviews → Posts inline comments → Labels PR. Fully automated code review.</p>
+        <div class="install-block">
+          <span class="cmd">hermes webhook subscribe pr-review</span>
+          <button class="copy-btn" onclick="copyCmd(this,'hermes webhook subscribe pr-review')">Copy</button>
+        </div>
+        <div class="meta"><span>☆ 89</span><span>Added 12h ago</span></div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-card-header">
+          <span class="type-badge mcp">MCP</span>
+          <h3>Notion MCP Server</h3>
+        </div>
+        <p class="desc">Read, create, and update Notion pages and databases through the Model Context Protocol.</p>
+        <div class="install-block">
+          <span class="cmd">npx @anthropic-ai/mcp-server-notion</span>
+          <button class="copy-btn" onclick="copyCmd(this,'npx @anthropic-ai/mcp-server-notion')">Copy</button>
+        </div>
+        <div class="meta"><span>☆ 201</span><span>Added 16h ago</span></div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-card-header">
+          <span class="type-badge skill">Skill</span>
+          <h3>Linear Issue Manager</h3>
+        </div>
+        <p class="desc">Create, triage, and manage Linear issues with natural language from your AI agent.</p>
+        <div class="install-block">
+          <span class="cmd">hermes skills install https://raw.git...</span>
+          <button class="copy-btn" onclick="copyCmd(this,'hermes skills install https://...')">Copy</button>
+        </div>
+        <div class="meta"><span>☆ 156</span><span>Added 20h ago</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trending -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🔥 Trending This Week</h2>
+      <p>Sorted by GitHub star growth in the last 7 days</p>
+    </div>
+    <div class="tool-grid">
+      <div class="tool-card">
+        <div class="tool-card-header">
+          <span class="type-badge mcp">MCP</span>
+          <h3>Brave Search MCP</h3>
+        </div>
+        <p class="desc">Web and local search through Brave's API. Zero setup beyond an API key. Compatible with all agents.</p>
+        <div class="install-block">
+          <span class="cmd">npx @anthropic-ai/mcp-server-brave-search</span>
+          <button class="copy-btn" onclick="copyCmd(this,'npx @anthropic-ai/mcp-server-brave-search')">Copy</button>
+        </div>
+        <div class="meta"><span>🔥 +420 stars</span><span>☆ 1.2k total</span></div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-card-header">
+          <span class="type-badge cli">CLI</span>
+          <h3>OpenCode CLI</h3>
+        </div>
+        <p class="desc">Terminal-native AI coding agent — context-aware editing with full repo understanding.</p>
+        <div class="install-block">
+          <span class="cmd">npm install -g @opencode-ai/cli</span>
+          <button class="copy-btn" onclick="copyCmd(this,'npm install -g @opencode-ai/cli')">Copy</button>
+        </div>
+        <div class="meta"><span>🔥 +380 stars</span><span>☆ 3.6k total</span></div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-card-header">
+          <span class="type-badge mcp">MCP</span>
+          <h3>Tavily Search MCP</h3>
+        </div>
+        <p class="desc">AI-optimized real-time web search API with MCP server wrapper. Built for agent consumption.</p>
+        <div class="install-block">
+          <span class="cmd">pip install tavily-mcp</span>
+          <button class="copy-btn" onclick="copyCmd(this,'pip install tavily-mcp')">Copy</button>
+        </div>
+        <div class="meta"><span>🔥 +290 stars</span><span>☆ 890 total</span></div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-card-header">
+          <span class="type-badge skill">Skill</span>
+          <h3>PPTX Generator</h3>
+        </div>
+        <p class="desc">Create professional PowerPoint decks from natural language descriptions. Hermes + OpenClaw.</p>
+        <div class="install-block">
+          <span class="cmd">hermes skills install https://raw.git...</span>
+          <button class="copy-btn" onclick="copyCmd(this,'hermes skills install https://...')">Copy</button>
+        </div>
+        <div class="meta"><span>🔥 +256 stars</span><span>☆ 610 total</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Browse by Category -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-header">
+      <h2>Browse by Category</h2>
+    </div>
+    <div class="cat-pills">
+      <button class="cat-pill">🔍 Search</button>
+      <button class="cat-pill">⚙️ DevOps</button>
+      <button class="cat-pill">💬 Communication</button>
+      <button class="cat-pill">📊 Data</button>
+      <button class="cat-pill">🤖 Automation</button>
+      <button class="cat-pill">📋 Productivity</button>
+      <button class="cat-pill">🎬 Media</button>
+      <button class="cat-pill">🔒 Security</button>
+    </div>
+  </div>
+</section>
+
+<!-- Browse by Agent -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Browse by Agent</h2>
+      <p>Find tools compatible with your AI agent</p>
+    </div>
+    <div class="agent-grid">
+      <a href="#" class="agent-card">
+        <div class="agent-icon">🧠</div>
+        <div class="agent-name">Hermes Agent</div>
+        <div class="agent-count">487 tools</div>
+      </a>
+      <a href="#" class="agent-card">
+        <div class="agent-icon">🦞</div>
+        <div class="agent-name">OpenClaw</div>
+        <div class="agent-count">392 tools</div>
+      </a>
+      <a href="#" class="agent-card">
+        <div class="agent-icon">📎</div>
+        <div class="agent-name">Claude Code</div>
+        <div class="agent-count">614 tools</div>
+      </a>
+      <a href="#" class="agent-card">
+        <div class="agent-icon">↗️</div>
+        <div class="agent-name">Cursor</div>
+        <div class="agent-count">508 tools</div>
+      </a>
+      <a href="#" class="agent-card">
+        <div class="agent-icon">💻</div>
+        <div class="agent-name">Codex</div>
+        <div class="agent-count">256 tools</div>
+      </a>
+      <a href="#" class="agent-card">
+        <div class="agent-icon">🔌</div>
+        <div class="agent-name">Generic</div>
+        <div class="agent-count">834 tools</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Learn -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>📚 Learn</h2>
+    </div>
+    <div class="learn-grid">
+      <a href="#" class="learn-card">
+        <div class="learn-icon">🔌</div>
+        <h3>What is MCP?</h3>
+        <p>Model Context Protocol explained — the USB-C standard for AI agent tools.</p>
+        <span class="learn-cta">Read guide →</span>
+      </a>
+      <a href="#" class="learn-card">
+        <div class="learn-icon">⚖️</div>
+        <h3>Agent Comparison</h3>
+        <p>Hermes vs OpenClaw vs Claude Code vs Codex — which one fits your workflow?</p>
+        <span class="learn-cta">Compare →</span>
+      </a>
+      <a href="#" class="learn-card">
+        <div class="learn-icon">🧭</div>
+        <h3>How to Choose</h3>
+        <p>Decision guide: 5 questions to find the right AI agent for your project.</p>
+        <span class="learn-cta">Find yours →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Free Downloads -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🎁 Free Downloads</h2>
+    </div>
+    <div class="dl-grid">
+      <a href="#" class="dl-card">
+        <div class="dl-icon">📄</div>
+        <div class="dl-name">MCP Cheatsheet</div>
+        <div class="dl-type">PDF</div>
+      </a>
+      <a href="#" class="dl-card">
+        <div class="dl-icon">⌨️</div>
+        <div class="dl-name">Agent CLI Commands</div>
+        <div class="dl-type">PDF</div>
+      </a>
+      <a href="#" class="dl-card">
+        <div class="dl-icon">📊</div>
+        <div class="dl-name">Framework Comparison</div>
+        <div class="dl-type">PDF</div>
+      </a>
+      <a href="#" class="dl-card">
+        <div class="dl-icon">📬</div>
+        <div class="dl-name">Weekly Newsletter</div>
+        <div class="dl-type">Email</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">RSS</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+    <span class="footer-copy">© 2026 agentk.it — Daily-updated AI agent tool library</span>
+  </div>
+</footer>
+
+<script>
+function copyCmd(btn, text) {
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = 'Copied!';
+    btn.style.color = '#09090B';
+    btn.style.background = '#22C55E';
+    setTimeout(() => {
+      btn.textContent = orig;
+      btn.style.color = '';
+      btn.style.background = '';
+    }, 1500);
+  });
+}
+</script>
+
+</body>
+</html>

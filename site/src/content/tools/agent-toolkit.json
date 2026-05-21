@@ -1,0 +1,78 @@
+{
+  "id": "agent-toolkit",
+  "name": "Agent Toolkit",
+  "type": "skill",
+  "status": "published",
+  "summary": "A curated collection of skills for AI coding agents. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows.",
+  "description": "A curated collection of skills for AI coding agents. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/softaworks/agent-toolkit",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/softaworks/agent-toolkit",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/softaworks/agent-toolkit#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/softaworks/agent-toolkit#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/softaworks/agent-toolkit/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Opinionated skills shared by @leonardocouy for improving daily work efficiency with Claude Code.",
+    "Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows.",
+    "Skills follow the Agent Skills format.",
+    "This method works with multiple AI coding agents (Claude Code, Codex, Cursor, AdaL, etc.)",
+    "Run the following commands in Claude Code:",
+    "Switch to Marketplaces tab (use arrow keys or Tab)",
+    "Select agent-toolkit, press Enter",
+    "Each skill, agent, and command is an individual plugin that can be installed separately:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-03-05T16:46:24Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/softaworks/agent-toolkit",
+  "repoUrl": "https://github.com/softaworks/agent-toolkit",
+  "license": "MIT",
+  "stars": 1844,
+  "lastUpdated": "2026-03-05T16:46:24Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

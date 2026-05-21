@@ -1,0 +1,80 @@
+{
+  "id": "last30days-skill",
+  "name": "Last30days Skill",
+  "type": "skill",
+  "status": "published",
+  "summary": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+  "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mvanhorn/last30days-skill#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mvanhorn/last30days-skill#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mvanhorn/last30days-skill/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "An AI agent-led search engine scored by upvotes, likes, and real money - not editors.",
+    "Claude Code (recommended — auto-updates via marketplace):",
+    "Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts:",
+    "/last30days searches all of it in parallel, scores it by what real people actually engage with, and an AI agent judge synthesizes it into one brief.",
+    "/last30days searches people.",
+    "You can't get this search anywhere else because no single AI has access to all of it.",
+    "Google search doesn't touch Reddit comments or X posts.",
+    "ChatGPT has a deal with Reddit but can't search X or TikTok."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T04:18:13Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mvanhorn/last30days-skill",
+  "repoUrl": "https://github.com/mvanhorn/last30days-skill",
+  "license": "MIT",
+  "stars": 26083,
+  "lastUpdated": "2026-05-18T04:18:13Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

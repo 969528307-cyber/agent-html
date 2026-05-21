@@ -1,0 +1,73 @@
+{
+  "id": "ragaai-catalyst",
+  "name": "RagaAI Catalyst",
+  "type": "sdk",
+  "status": "published",
+  "summary": "Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view ",
+  "description": "Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view ",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "RagaAI Catalyst is a comprehensive platform designed to enhance the management and optimization of LLM projects.",
+    "It offers a wide range of features, including project management, dataset management, evaluation management, trace management, prompt management, synthetic data generation, and guardrail management.",
+    "Create and manage projects using RagaAI Catalyst:",
+    "Manage datasets efficiently for your projects:",
+    "For more detailed information on Dataset Management, including CSV schema handling and advanced usage, please refer to the Dataset Management documentation.",
+    "Create and manage metric evaluation of your RAG application:",
+    "For more detailed information on Trace Management, please refer to the Trace Management documentation.",
+    "The Agentic Tracing module provides comprehensive monitoring and analysis capabilities for AI agent systems."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-02-11T14:43:33Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+  "repoUrl": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+  "license": "Apache-2.0",
+  "stars": 16157,
+  "lastUpdated": "2026-02-11T14:43:33Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,75 @@
+{
+  "id": "foundry-local",
+  "name": "Foundry Local",
+  "type": "sdk",
+  "status": "published",
+  "summary": "<div align=\"center\" <picture align=\"center\" <source media=\"(prefers color scheme: dark)\" srcset=\"media/icons/foundry local white.svg\" <source media=\"(prefers color scheme: light)\" srcset=\"media/icons/foundry local black.svg\" <img alt=\"Foundry Local icon.\" src=\"media/icons/foundry local black.svg\" height=\"100\" style=\"max width: 100%;\" </picture <div id=\"user content toc\" <ul align=\"center\" style=\"list style: none;\" <s",
+  "description": "<div align=\"center\" <picture align=\"center\" <source media=\"(prefers color scheme: dark)\" srcset=\"media/icons/foundry local white.svg\" <source media=\"(prefers color scheme: light)\" srcset=\"media/icons/foundry local black.svg\" <img alt=\"Foundry Local icon.\" src=\"media/icons/foundry local black.svg\" height=\"100\" style=\"max width: 100%;\" </picture <div id=\"user content toc\" <ul align=\"center\" style=\"list style: none;\" <s",
+  "category": [
+    "sdk"
+  ],
+  "compatibleAgents": [
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/microsoft/Foundry-Local",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/microsoft/Foundry-Local",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/microsoft/Foundry-Local#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/microsoft/Foundry-Local#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/microsoft/Foundry-Local/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Download Documentation Discord",
+    "Lightweight runtime — The runtime handles model acquisition, hardware acceleration, model management, and inference (via ONNX Runtime).",
+    "Smart model management — Foundry Local handles the full lifecycle of models on end-user devices.",
+    "Optional local server — An OpenAI-compatible web server for serving models to multiple processes, integrating with tools like LangChain, or experimenting through REST calls.",
+    "A single FoundryLocalManager can manage both chat and audio models simultaneously.",
+    "C# 12 Native chat, audio transcription, tool calling, model management, web server, tutorials",
+    "JavaScript 12 Native chat, audio, Electron app, Copilot SDK, LangChain, tool calling, tutorials",
+    "Python 9 Chat completions, audio transcription, LangChain, tool calling, tutorials"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T09:11:36Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/microsoft/Foundry-Local",
+  "repoUrl": "https://github.com/microsoft/Foundry-Local",
+  "license": "NOASSERTION",
+  "stars": 2288,
+  "lastUpdated": "2026-05-18T09:11:36Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "firered-openstoryline",
+  "name": "FireRed OpenStoryline",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consistent, professional storytelling.",
+  "description": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consistent, professional storytelling.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "⚡Editing Skill Archiving: Save your complete editing workflow as a custom Skill.",
+    "Simply swap the media and apply the corresponding Skill to instantly replicate the style, enabling efficient batch creation.",
+    "FireRed-OpenStoryline supports usage through Agent Skills.",
+    "openstoryline-use: for starting the service and running the actual video editing workflow.",
+    "This repository comes with built-in Claude Code Skills.",
+    "If you start Claude Code from the root directory of this repository, you can use the project-level Skills included in the repo directly.",
+    "Other Compatible Agents (Experimental)",
+    "These Skills are based on an open Agent Skills format, so in theory they can also be installed into other compatible agents."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-07T02:55:44Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+  "repoUrl": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+  "license": "Apache-2.0",
+  "stars": 2693,
+  "lastUpdated": "2026-05-07T02:55:44Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

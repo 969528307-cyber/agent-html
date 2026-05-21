@@ -1,0 +1,77 @@
+{
+  "id": "trigger-dev",
+  "name": "Trigger.dev",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Trigger.dev – build and deploy fully‑managed AI agents and workflows",
+  "description": "Trigger.dev – build and deploy fully‑managed AI agents and workflows",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/triggerdotdev/trigger.dev",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/triggerdotdev/trigger.dev",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/triggerdotdev/trigger.dev#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/triggerdotdev/trigger.dev#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/triggerdotdev/trigger.dev/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Build and deploy fully‑managed AI agents and workflows",
+    "Website Docs Issues Example projects Feature requests Public roadmap Self-hosting",
+    "Trigger.dev is the open-source platform for building AI workflows in TypeScript.",
+    "The platform designed for building AI agents",
+    "Build AI agents using all the frameworks, services and LLMs you're used to, deploy them to Trigger.dev and get durable, long-running tasks with retries, queues, observability, and elastic scaling out of the box.",
+    "Durability, retries & queues: Build rock solid agents and AI applications using our durable tasks, retries, queues and idempotency.",
+    "True runtime freedom: Customize your deployed tasks with system packages – run browsers, Python scripts, FFmpeg and more.",
+    "Run Python scripts, FFmpeg, browsers, and more."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T08:26:05Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/triggerdotdev/trigger.dev",
+  "repoUrl": "https://github.com/triggerdotdev/trigger.dev",
+  "license": "Apache-2.0",
+  "stars": 14903,
+  "lastUpdated": "2026-05-13T08:26:05Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

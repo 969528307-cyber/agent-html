@@ -1,0 +1,171 @@
+{
+  "id": "candidate-agent-reach-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Agent Reach",
+  "sourceUrl": "https://github.com/Panniantong/Agent-Reach",
+  "sourceName": "GitHub",
+  "author": "Panniantong",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "Panniantong",
+    "repo": "Agent-Reach",
+    "fullName": "Panniantong/Agent-Reach",
+    "stars": 19911,
+    "license": "MIT",
+    "topics": [
+      "agent-infrastructure",
+      "ai-agent",
+      "ai-search",
+      "automation",
+      "bilibili",
+      "claude-code",
+      "cli",
+      "cursor",
+      "free-api",
+      "llm-tools",
+      "mcp",
+      "python",
+      "reddit-scraper",
+      "twitter-scraper",
+      "web-scraper",
+      "xiaohongshu",
+      "youtube-transcript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T12:39:22Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/assets/logo-1.png",
+    "docs/assets/logo-1.svg",
+    "docs/assets/logo-2.png",
+    "docs/assets/logo-2.svg",
+    "docs/assets/logo-3.png",
+    "docs/assets/logo-3.svg",
+    "docs/cookie-export.md",
+    "docs/dependency-locking.md",
+    "docs/README_en.md",
+    "docs/README_ja.md",
+    "docs/README_ko.md",
+    "docs/update.md",
+    "docs/wechat-group-qr.jpg",
+    "pyproject.toml",
+    "agent_reach/skill/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" 👁️ Agent Reach</h1 <p align=\"center\" <strong 给你的 AI Agent 一键装上互联网能力</strong </p <p align=\"center\" <a href=\"LICENSE\" <img src=\"https://img.shields.io/badge/License MIT blue.svg?style=for the badge\" alt=\"MIT License\" </a <a href=\"https://www.python.org/\" <img src=\"https://img.shields.io/badge/Python 3.10+ green.svg?style=for the badge&logo=python&logoColor=white\" alt=\"Python 3.8+\" </a <a href=\"https",
+  "skillExtracts": [
+    {
+      "path": "agent_reach/skill/SKILL.md",
+      "extract": "name: agent reach description: Give your AI agent eyes to see the entire internet. 17 platforms via CLI, MCP, curl, and Python scripts. Zero config for 8 channels. 【路由方式】SKILL.md 包含路由表和常用命令，复杂场景需按需阅读对应分类的 references/ .md。 分类：search / social (小红书/抖音/微博/推特/B站/V2EX/Reddit) / career(LinkedIn) / dev(github) / web(网页/文章/公众号/RSS) / video(YouTube/B站/播客). Use when user asks to search, read, or interact on any supported platfo"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AI Agent 已经能帮你写代码、改文档、管项目——但你让它去网上找点东西，它就抓瞎了：",
+    "每个平台都有自己的门槛——要付费的 API、要绕过的封锁、要登录的账号、要清洗的数据。你要一个一个去踩坑、装工具、调配置，光是让 Agent 能读个推特就得折腾半天。",
+    "复制给你的 Agent，几分钟后它就能读推特、搜 Reddit、看 YouTube、刷小红书了。",
+    "🤖 兼容所有 Agent Claude Code、OpenClaw、Cursor、Windsurf……任何能跑命令行的 Agent 都能用",
+    "🩺 自带诊断 agent-reach doctor 一条命令告诉你哪个通、哪个不通、怎么修",
+    "🔍 全网搜索 — 全网语义搜索 自动配置（MCP 接入，免费无需 Key）",
+    "📦 GitHub 读公开仓库 + 搜索 私有仓库、提 Issue/PR、Fork 告诉 Agent「帮我登录 GitHub」",
+    "🐦 Twitter/X 读单条推文 搜索推文、浏览时间线、发推 告诉 Agent「帮我配 Twitter」"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "devops",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "devops",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Agent Reach is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-reach",
+  "publishedAt": "2026-05-20"
+}

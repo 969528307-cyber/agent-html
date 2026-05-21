@@ -1,0 +1,186 @@
+{
+  "id": "candidate-tool-github-0x4m4-hexstrike-ai",
+  "type": "tool",
+  "status": "published",
+  "title": "Hexstrike Ai",
+  "sourceUrl": "https://github.com/0x4m4/hexstrike-ai",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "0x4m4",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
+  "proposedCategory": [
+    "security",
+    "automation"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "0x4m4",
+    "repo": "hexstrike-ai",
+    "fullName": "0x4m4/hexstrike-ai",
+    "stars": 8706,
+    "license": "MIT",
+    "topics": [
+      "0x4m4",
+      "ai",
+      "ai-agents",
+      "ai-cybersecurity",
+      "ai-hacking",
+      "ai-penetration-testing",
+      "ai-security-tool",
+      "artificial-intelligence",
+      "ctf-tools",
+      "generative-ai",
+      "hexstrike",
+      "kali-linux",
+      "kali-tools",
+      "llm",
+      "llm-integration",
+      "mcp",
+      "mcp-server",
+      "mcp-tools",
+      "pentesting",
+      "pentesting-tools"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-04-27T08:56:07Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"assets/hexstrike logo.png\" alt=\"HexStrike AI Logo\" width=\"220\" style=\"margin bottom: 20px;\"/ HexStrike AI MCP Agents v6.0 AI Powered MCP Cybersecurity Automation Platform [![Python](https://img.shields.io/badge/Python 3.8%2B blue.svg)](https://www.python.org/) [![License](https://img.shields.io/badge/License MIT green.svg)](LICENSE) [![Security](https://img.shields.io/badge/Security Pene",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "HexStrike AI MCP Agents v6.0",
+    "AI-Powered MCP Cybersecurity Automation Platform",
+    "Advanced AI-powered penetration testing MCP framework with 150+ security tools and 12+ autonomous AI agents",
+    "HexStrike AI MCP v6.0 features a multi-agent architecture with autonomous AI agents, intelligent decision-making, and vulnerability intelligence.",
+    "AI Agent Connection - Claude, GPT, or other MCP-compatible agents connect via FastMCP protocol",
+    "Autonomous Execution - AI agents execute comprehensive security assessments",
+    "Claude Desktop Integration or Cursor",
+    "150+ Professional Security Tools:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"security\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "security",
+      "automation",
+      "testing",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "security",
+    "automation",
+    "testing",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "General agent-building language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: agent-framework.",
+    "LLM: mcp + [mcp] — Explicitly described as an MCP server for AI agents to run cybersecurity tools via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "agent-framework"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Hexstrike Ai is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with automation workflows.",
+      "Helps with testing workflows.",
+      "Helps with research workflows.",
+      "Relevant to security."
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  },
+  "canonicalKey": "tool:github:0x4m4/hexstrike-ai",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-14",
+  "reviewedBy": "local-review",
+  "publishedAs": "hexstrike-ai",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

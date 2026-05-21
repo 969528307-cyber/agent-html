@@ -1,0 +1,148 @@
+{
+  "id": "candidate-terraform-skill-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Terraform Skill",
+  "sourceUrl": "https://github.com/antonbabenko/terraform-skill",
+  "sourceName": "GitHub",
+  "author": "antonbabenko",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Terraform & OpenTofu Skill for AI Agents - testing, modules, CI/CD, and production patterns",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "antonbabenko",
+    "repo": "terraform-skill",
+    "fullName": "antonbabenko/terraform-skill",
+    "stars": 1866,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "best-practices",
+      "claude-code",
+      "claude-skills",
+      "devops",
+      "infrastructure-as-code",
+      "modules",
+      "opentofu",
+      "terraform",
+      "testing"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-19T17:40:05Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/terraform-skill/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Terraform & OpenTofu Skill for AI Agents [![Agent Skill](https://img.shields.io/badge/Agent Skill 5865F2)](https://agentskills.io) [![Terraform](https://img.shields.io/badge/Terraform 1.0+ 623CE4)](https://www.terraform.io/) [![OpenTofu](https://img.shields.io/badge/OpenTofu 1.6+ FFD814)](https://opentofu.org/) [![License](https://img.shields.io/badge/License Apache%202.0 blue.svg)](LICENSE) A best practices skill fo",
+  "skillExtracts": [
+    {
+      "path": "skills/terraform-skill/SKILL.md",
+      "extract": "name: terraform skill description: Use when writing, reviewing, or debugging Terraform/OpenTofu modules, tests, CI, scans, or state ops diagnoses failure mode (identity churn, secrets, blast radius, CI drift, state corruption) with version aware guards. license: Apache 2.0 metadata: author: Anton Babenko version: 1.14.0 Terraform Skill for Claude Diagnose first guidance for Terraform and OpenTofu. Core file is a work"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Terraform & OpenTofu Skill for AI Agents",
+    "A best-practices skill for Terraform and OpenTofu, for AI coding agents (Claude Code, Cursor, Copilot, Gemini CLI, OpenCode, Codex, and more).",
+    "It helps the agent test code, structure modules, set up CI/CD, and write production infrastructure code.",
+    "Testing workflows (static, integration, E2E)",
+    "Compliance scanning workflows",
+    "Installed through one Claude Code marketplace, antonbabenko/agent-plugins",
+    "(terraform-skill is listed there as an external plugin).",
+    "antonbabenko/terraform-skill as a marketplace - both use the same marketplace"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Terraform & OpenTofu Skill for AI Agents - testing, modules, CI/CD, and production patterns",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "coding",
+      "testing"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "coding",
+    "testing"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Terraform Skill is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Helps with testing workflows.",
+      "Relevant to skill.",
+      "Terraform & OpenTofu Skill for AI Agents"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "terraform-skill",
+  "publishedAt": "2026-05-20"
+}

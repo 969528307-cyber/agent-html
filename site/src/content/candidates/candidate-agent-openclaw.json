@@ -1,0 +1,127 @@
+{
+  "id": "candidate-agent-openclaw",
+  "type": "agent",
+  "status": "published",
+  "title": "OpenClaw",
+  "sourceUrl": "https://openclaw.cc/en/tools/skills",
+  "sourceName": "OpenClaw skills docs",
+  "sourceRegistryId": "local-agents-library",
+  "sourceRegistry": {
+    "id": "local-agents-library",
+    "name": "Local Agent Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/agents",
+    "acceptRules": [
+      "must_have_documentation_url",
+      "must_have_summary",
+      "must_have_capability_profile"
+    ],
+    "rejectRules": [
+      "missing_official_link",
+      "missing_agent_capability_description"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "A high-signal open agent ecosystem centered on local gateway architecture, skills, plugins, tools, MCP, and community extension review.",
+  "proposedCategory": [
+    "Skill-centered automation",
+    "Local/self-managed agent runtime",
+    "Plugin and tool experimentation",
+    "Community extension discovery with review"
+  ],
+  "proposedAgents": [
+    "openclaw"
+  ],
+  "extractedSignals": [],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Agent collector output. Review official docs, GitHub activity, extension model, and ecosystem fit before changing the public Agent page.",
+  "publishedAs": "openclaw",
+  "publishedAt": "2026-05-16",
+  "author": "OpenClaw",
+  "agentProfile": {
+    "region": "global",
+    "vendor": "OpenClaw",
+    "interfaceType": [
+      "cli",
+      "web"
+    ],
+    "supportsMcp": true,
+    "supportsSkills": true,
+    "supportsCli": true,
+    "supportsWorkflows": true,
+    "sourceKinds": [
+      "docs",
+      "github",
+      "github",
+      "docs"
+    ],
+    "officialLinks": [
+      {
+        "label": "OpenClaw skills docs",
+        "url": "https://openclaw.cc/en/tools/skills",
+        "kind": "docs"
+      },
+      {
+        "label": "OpenClaw skills source docs",
+        "url": "https://github.com/openclaw/openclaw/blob/main/docs/tools/skills.md",
+        "kind": "github"
+      },
+      {
+        "label": "OpenClaw tools overview",
+        "url": "https://github.com/openclaw/openclaw/blob/main/docs/tools/index.md",
+        "kind": "github"
+      },
+      {
+        "label": "OpenClaw skills config docs",
+        "url": "https://docs.openclaw.ai/skills-config",
+        "kind": "docs"
+      }
+    ]
+  },
+  "canonicalKey": "agent:openclaw",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "agent",
+    "primaryType": "agent",
+    "whatIsIt": "OpenClaw is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to Skill-centered automation.",
+      "Relevant to Local/self-managed agent runtime.",
+      "Relevant to Plugin and tool experimentation.",
+      "Relevant to Community extension discovery with review."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Capability signals are too thin.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

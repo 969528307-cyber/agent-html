@@ -1,0 +1,144 @@
+{
+  "id": "candidate-awesome-chatgpt-repositories-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome ChatGPT Repositories",
+  "sourceUrl": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
+  "sourceName": "GitHub",
+  "author": "taishi-i",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A curated list of resources dedicated to open source GitHub repositories related to ChatGPT, OpenAI API, and Codex.Searchable via Claude Code skills.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "taishi-i",
+    "repo": "awesome-ChatGPT-repositories",
+    "fullName": "taishi-i/awesome-ChatGPT-repositories",
+    "stars": 3019,
+    "license": "CC0-1.0",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "ai",
+      "awesome",
+      "awesome-list",
+      "chatgpt",
+      "codex",
+      "gpt-5",
+      "llm",
+      "openai",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T17:03:02Z"
+  },
+  "detectedFiles": [
+    "plugins/awesome-chatgpt-search/skills/search/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "awesome ChatGPT repositories [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face Spaces blue)](https://huggingface.co/spaces/taishi i/awesome ChatGPT repositories search) [![License: CC0 1.0](https://img.shields.io/badge/License CC0 ",
+  "skillExtracts": [
+    {
+      "path": "plugins/awesome-chatgpt-search/skills/search/SKILL.md",
+      "extract": "description: Search 2500+ curated ChatGPT and LLM open source repositories. Use when the user asks to find tools, libraries, or repos related to ChatGPT, LLMs, RAG, agents, langchain, NLP, AI development, or any open source AI tooling. Search the awesome ChatGPT repositories database for: \"$ARGUMENTS\" Instructions Step 1 — Interpret the query The user's query is: \"$ARGUMENTS\" Supported query modifiers: category:<name"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A tool for searching these repositories is available on Hugging Face Spaces.",
+    "Search 2,500+ curated repositories directly from Claude Code — no browser needed, just describe what you're looking for.",
+    "Find tools by topic — RAG frameworks, agent libraries, chatbot UIs, CLI tools, and more",
+    "Multilingual queries — search in Japanese, Chinese, Korean, or any language",
+    "Run these two commands inside Claude Code:",
+    "Vibe-Skills - Vibe-Skills is an all-in-one AI skills package.",
+    "claurst - Agentic Coding for Builders who Ship",
+    "agent-deck - Terminal session manager for AI coding agents."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A curated list of resources dedicated to open source GitHub repositories related to ChatGPT, OpenAI API, and Codex.Searchable via Claude Code skills.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "search",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "search",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome ChatGPT Repositories is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "A tool for searching these repositories is available on Hugging Face Spaces."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

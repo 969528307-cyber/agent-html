@@ -1,0 +1,76 @@
+{
+  "id": "kubefwd",
+  "name": "Kubefwd",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Bulk port forwarding Kubernetes services for local development.",
+  "description": "Bulk port forwarding Kubernetes services for local development.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/txn2/kubefwd",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/txn2/kubefwd",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/txn2/kubefwd#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/txn2/kubefwd#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/txn2/kubefwd/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Documentation Getting Started User Guide API Reference MCP (AI Integration)",
+    "Develop Locally, Connect to Kubernetes",
+    "Just run kubefwd and your application's existing connection strings work.",
+    "Bulk Kubernetes port forwarding with an interactive TUI, unique IPs per service, and automatic reconnection.",
+    "Auto-Reconnect: Reconnects when pods restart or connections drop",
+    "MCP Support: Integration with AI assistants (Claude Code, Cursor)",
+    "Port conflicts Manual management None (unique IPs)",
+    "See Comparison for detailed comparisons with Telepresence, mirrord, and other tools."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:08:58Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/txn2/kubefwd",
+  "repoUrl": "https://github.com/txn2/kubefwd",
+  "license": "Apache-2.0",
+  "stars": 4109,
+  "lastUpdated": "2026-05-20T03:08:58Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

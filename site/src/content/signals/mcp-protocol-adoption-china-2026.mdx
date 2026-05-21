@@ -1,0 +1,115 @@
+---
+englishTitle: "MCP Protocol Adoption in China: From Experimental to Production Infrastructure"
+originalTitle: "MCP 协议在中国开发者社区的采用：从实验到生产基础设施"
+sourceName: "GitHub Ecosystem Analysis — Multiple Sources"
+sourceUrl: "https://github.com/topics/mcp"
+author: "agentk.it Signals"
+originalPublishedAt: "2026-05-17"
+permissionStatus: "open_license"
+executiveSummary: "Analysis of the Chinese-language MCP ecosystem on GitHub reveals that MCP adoption has moved beyond experimental projects into production infrastructure. Chinese developers are building MCP servers for domestic services (WeChat, DingTalk, Feishu, Baidu, Alibaba Cloud), enterprise databases (MySQL, PostgreSQL, MongoDB), and internal tools. Major Chinese platforms — including Coze, Dify, JeecgBoot, and Trae — now include MCP support. Total Chinese-language MCP repositories with 300+ stars have grown to over 100, signaling mainstream adoption."
+signalThesis: "MCP protocol has crossed the chasm in China's developer community — it is no longer an experimental standard but production infrastructure being integrated into major platforms and enterprise toolchains."
+whyItMatters: "MCP's adoption in China follows a different pattern than in the West: rather than individual developers adding MCP to their personal coding agents, Chinese adoption is platform-driven — major low-code platforms, enterprise frameworks, and domestic AI coding tools are building MCP support directly into their products. This platform-driven adoption could accelerate MCP's network effects faster than the Western bottoms-up approach."
+keyTakeaways:
+  - "MCP has moved from experimental to production in the Chinese developer ecosystem."
+  - "Chinese MCP adoption is platform-driven: Coze, Dify, JeecgBoot, Trae all support MCP natively."
+  - "Chinese developers are building MCP servers for domestic services that don't exist in Western MCP registries."
+  - "100+ Chinese-language MCP repos with 300+ stars indicates critical mass."
+  - "The combination of MCP + domestic platforms creates a parallel MCP ecosystem with China-specific tools."
+ecosystemImpact:
+  - label: "MCP ecosystem bifurcation"
+    body: "China is developing a parallel MCP ecosystem with servers for domestic services, creating both opportunity (more tools) and fragmentation risk (incompatible standards)."
+  - label: "Platform-driven adoption"
+    body: "Chinese platforms embedding MCP accelerates adoption faster than individual developer adoption, potentially making China the largest MCP market."
+  - label: "Enterprise MCP"
+    body: "Enterprise platforms like JeecgBoot adding MCP support signals that MCP is becoming a requirement for Chinese enterprise software."
+whatToWatchNext:
+  - "Will Chinese MCP servers adopt the same standards as Western ones, or will domestic variations emerge?"
+  - "How will MCP adoption in WeChat/Feishu/DingTalk affect enterprise agent deployment?"
+  - "Will Chinese cloud providers (Alibaba Cloud, Tencent Cloud) offer managed MCP infrastructure?"
+  - "Could China's platform-driven MCP adoption outpace Western bottoms-up adoption?"
+relatedTools:
+  - "minimax-mcp"
+  - "mysql-mcp-server"
+  - "mongodb-mcp-server"
+  - "supabase-mcp-server"
+relatedAgents:
+  - "trae"
+  - "qwen-code"
+  - "kimi-agent"
+relatedLearn:
+  - "what-is-mcp"
+  - "skill-vs-mcp-vs-workflow"
+  - "how-to-choose-mcp-tools"
+publishedAt: "2026-05-18"
+---
+
+## Full Analysis
+
+### MCP Protocol in China: 2026 State of Adoption
+
+#### The Numbers
+
+A comprehensive search of Chinese-language MCP repositories on GitHub reveals:
+- **100+ repositories** with 300+ stars that are MCP-focused and have Chinese-language documentation
+- **Top categories**: Database connectors (MySQL, PostgreSQL, MongoDB, Redis), communication platforms (WeChat, WeCom, Feishu, DingTalk), cloud services (Alibaba Cloud, Tencent Cloud, Baidu AI), and productivity tools
+- **30+ MCP servers** specifically for Chinese domestic services with no Western equivalent
+- **10+ major platforms** now offering native MCP integration
+
+#### Platform-Driven Adoption
+
+Unlike Western MCP adoption, which grew from individual developers adding MCP servers to their Claude Code or Cursor setups, Chinese adoption follows a platform-driven model:
+
+| Platform | Stars | MCP Support |
+|----------|-------|-------------|
+| JeecgBoot | 46,300 | Native MCP plugin system |
+| Dify | 141,696 | MCP tool integration |
+| Coze (扣子) | 20,781 | MCP server deployment |
+| Trae AI | — | MCP API access |
+| Qwen Code | — | MCP + Agent Skills |
+| CodeGeeX | — | MCP tool calling |
+| MiniMax | 1,480 | MCP server publishing |
+| OpenOcta | 2,555 | MCP orchestration |
+
+This platform-driven model means that when JeecgBoot adds MCP support, thousands of enterprise developers get MCP capability without individually configuring anything. The network effect is accelerated.
+
+#### China-Specific MCP Servers
+
+Chinese developers have built MCP servers for services that don't appear in Western MCP registries:
+
+**Communication**
+- WeChat Official Account MCP — publish and manage content
+- WeCom MCP — enterprise messaging integration
+- Feishu MCP — document, calendar, and messaging APIs
+- DingTalk MCP — enterprise communication and workflow
+
+**Cloud Services**
+- Alibaba Cloud MCP — ECS, OSS, RDS management
+- Tencent Cloud MCP — CVM, COS, CDN operations
+- Baidu AI MCP — NLP, OCR, speech services
+
+**Enterprise**
+- Chinese invoice OCR and verification
+- Government API integration (business registration, tax)
+- Domestic payment gateway connectors (WeChat Pay, Alipay)
+
+#### Quality and Standards
+
+The quality of Chinese MCP servers varies significantly:
+- **High-quality**: Well-documented, actively maintained, follow MCP specification closely
+- **Platform-blessed**: Integrated into major platforms, quality maintained by platform teams
+- **Community**: Varying quality, often single-maintainer, documentation primarily in Chinese
+
+A key question for the ecosystem: will Chinese MCP servers converge on the same interoperability standards as Western ones, or will platform-specific variations create a fragmented ecosystem?
+
+#### Enterprise Implications
+
+For Chinese enterprises, MCP adoption means:
+- AI agents can now interact with domestic cloud services natively
+- Enterprise communication platforms become agent-accessible
+- Internal tools can be exposed to AI through a standard protocol
+- The gap between "AI demo" and "production AI" is closing
+
+However, enterprises must navigate:
+- Security implications of exposing internal services via MCP
+- Authentication and authorization across different MCP implementations
+- The risk of vendor lock-in to platform-specific MCP extensions

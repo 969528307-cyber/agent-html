@@ -1,0 +1,201 @@
+{
+  "id": "candidate-tool-github-kite-org-kite",
+  "type": "tool",
+  "status": "published",
+  "title": "Kite",
+  "sourceUrl": "https://github.com/kite-org/kite",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "kite-org",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "🪁 A lightweight, modern Kubernetes dashboard that unifies multi-cluster and resource management, enterprise-grade user governance (OAuth, RBAC, and audit logs), and AI agents in one workspace. Not just a tool, but more like a platform.",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "kite-org",
+    "repo": "kite",
+    "fullName": "kite-org/kite",
+    "stars": 2697,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agent",
+      "cloud-native",
+      "dashboard",
+      "kubernetes",
+      "kubernetes-addons",
+      "monitoring",
+      "multi-cluster",
+      "prometheus"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T08:09:38Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/api/authentication.md",
+    "docs/api/cluster-management.md",
+    "docs/api/rbac-management.md",
+    "docs/api/resources.md",
+    "docs/api/user-management.md",
+    "docs/assets/logo.svg",
+    "docs/donate/alipay.jpeg",
+    "docs/donate/wechat.jpeg",
+    "docs/guide/ai-assistant.md",
+    "docs/guide/custom-sidebar.md",
+    "docs/guide/global-search.md",
+    "docs/guide/helm-management.md",
+    "docs/guide/index.md",
+    "docs/guide/kube-proxy.md",
+    "docs/guide/logs.md",
+    "docs/guide/monitoring.md",
+    "docs/guide/related-resources.md",
+    "docs/guide/resource-history.md",
+    "docs/guide/web-terminal.md",
+    "docs/index.md",
+    "docs/package.json",
+    "docs/pnpm-lock.yaml",
+    "docs/public/logo.svg",
+    "docs/roles.yaml",
+    "docs/screenshots/ai-form.png",
+    "docs/screenshots/ai-permission.png",
+    "docs/screenshots/assign-role.png",
+    "docs/screenshots/assign-role2.png",
+    "docs/screenshots/assign-role3.png",
+    "docs/screenshots/log-setting.png",
+    "docs/zh/api/authentication.md",
+    "docs/zh/api/cluster-management.md",
+    "docs/zh/api/rbac-management.md",
+    "docs/zh/api/resources.md",
+    "docs/zh/api/user-management.md",
+    "docs/zh/guide/ai-assistant.md",
+    "docs/zh/guide/custom-sidebar.md",
+    "docs/zh/guide/global-search.md",
+    "docs/zh/guide/helm-management.md"
+  ],
+  "readmeExtract": "Kite Modern Kubernetes Dashboard <div align=\"center\" <img src=\"./docs/assets/logo.svg\" alt=\"Kite Logo\" width=\"128\" height=\"128\" A modern Kubernetes dashboard <a href=\"https://trendshift.io/repositories/21820\" target=\" blank\" <img src=\"https://trendshift.io/api/badge/repositories/21820\" alt=\"kite org%2Fkite | Trendshift\" style=\"width: 250px; height: 55px;\" width=\"250\" height=\"55\"/ </a <a href=\"https://github.com/kite ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Not just a tool, but more like a platform.",
+    "Global search across all resources",
+    "Switch between multiple Kubernetes clusters",
+    "Live pod logs with filtering and search",
+    "User management and role allocation",
+    "For detailed instructions, please refer to the documentation.",
+    "For troubleshooting, please refer to the documentation.",
+    "...Switch between multiple Kubernetes clusters"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "🪁 A lightweight, modern Kubernetes dashboard that unifies multi-cluster and resource management, enterprise-grade user governance (OAuth, RBAC, and audit logs), and AI agents in one workspace. Not just a tool, but more like a platform.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "docs",
+      "communication",
+      "monitoring"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "docs",
+    "communication",
+    "monitoring"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: platform.",
+    "No strong alternative capability detected.",
+    "LLM: agent-app + [] — The project is a modern Kubernetes dashboard platform that integrates AI agents, making it an agent application for end users."
+  ],
+  "classificationAlternatives": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Kite is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with docs workflows.",
+      "Helps with communication workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to devops."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:kite-org/kite",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "kite",
+  "publishedAt": "2026-05-18"
+}

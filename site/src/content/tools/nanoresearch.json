@@ -1,0 +1,78 @@
+{
+  "id": "nanoresearch",
+  "name": "NanoResearch",
+  "type": "skill",
+  "status": "published",
+  "summary": "🦞+🔬 NanoResearch: The Autonomous AI Research Assistant",
+  "description": "🦞+🔬 NanoResearch: The Autonomous AI Research Assistant",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/OpenRaiser/NanoResearch",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/OpenRaiser/NanoResearch",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/OpenRaiser/NanoResearch#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/OpenRaiser/NanoResearch#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/OpenRaiser/NanoResearch/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "🔬 NanoResearch 真正运行计算实验——它不仅生成代码，还能将代码提交到 GPU 集群执行训练，收集真实实验结果，生成论文配图，最终输出一篇有实验数据支撑的完整 LaTeX 论文。论文中的每一个数据、表格、图表都来自实际运行的实验结果，而非 LLM 编造。",
+    "以下为 NanoResearch 自动生成论文中的真实配图，所有数据、曲线、表格均来自实际运行的实验结果，非 LLM 虚构。",
+    "NanoResearch 命令行（CLI） 提供 TUI 全屏界面 与 传统流式日志 两种呈现方式。下方为 CLI 端 TUI 主题与界面 演示视频（配色切换与布局优化）。其他入口（如 Claude Code、飞书机器人）见文档对应章节。",
+    "不再反复调试失败的实验、手动整理数据、从零写论文——. NanoResearch 将完整科研流程自动化，让你专注于真正的研究创新。",
+    "REVIEW 审稿与修订 自动审阅各章节，检测问题并修订",
+    "EXECUTION 阶段是 NanoResearch 的核心差异化能力：",
+    "环境变量覆盖：NANORESEARCHBASEURL / NANORESEARCHAPIKEY / NANORESEARCHTIMEOUT",
+    "evo 是 NanoResearch 的自进化流水线，面向个性化科研自动化。它围绕技能演化、记忆演化和反馈驱动的 planner / router 适配运行，让系统在多轮研究中复用经验并逐步贴合用户偏好。"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T13:35:59Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/OpenRaiser/NanoResearch",
+  "repoUrl": "https://github.com/OpenRaiser/NanoResearch",
+  "license": "MIT",
+  "stars": 1180,
+  "lastUpdated": "2026-05-13T13:35:59Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

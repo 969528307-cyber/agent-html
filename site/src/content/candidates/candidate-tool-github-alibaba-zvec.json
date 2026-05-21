@@ -1,0 +1,154 @@
+{
+  "id": "candidate-tool-github-alibaba-zvec",
+  "type": "tool",
+  "status": "published",
+  "title": "Zvec",
+  "sourceUrl": "https://github.com/alibaba/zvec",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "alibaba",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A lightweight, lightning-fast, in-process vector database",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "alibaba",
+    "repo": "zvec",
+    "fullName": "alibaba/zvec",
+    "stars": 9637,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "db",
+      "embedded",
+      "faiss",
+      "hnsw",
+      "llm-memory",
+      "local",
+      "rag",
+      "search-engine",
+      "semantic-search",
+      "similarity-search",
+      "vector-database",
+      "vector-db"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T12:25:06Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<p align=\"right\" English | <a href=\"./README CN.md\" 中文</a </p <div align=\"center\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://zvec.oss cn hongkong.aliyuncs.com/logo/github log 2.svg\" / <img src=\"https://zvec.oss cn hongkong.aliyuncs.com/logo/github logo 1.svg\" width=\"400\" alt=\"zvec logo\" / </picture </div <p align=\"center\" <a href=\"https://codecov.io/github/alibaba/zvec\" <img src=\"https://co",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Blazing Fast: Searches billions of vectors in milliseconds.",
+    "Hybrid Search: Combine semantic similarity with structured filters for precise results.",
+    "Runs Anywhere: As an in-process library, Zvec runs wherever your code runs — notebooks, servers, CLI tools, or even edge devices.",
+    "For detailed benchmark methodology, configurations, and complete results, please see our Benchmarks documentation.",
+    "Whether you're fixing a bug, adding a feature, or improving documentation, your help makes Zvec better for everyone."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A lightweight, lightning-fast, in-process vector database",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "database",
+      "media",
+      "research",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "database",
+    "media",
+    "research",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Zvec is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with database workflows.",
+      "Helps with media workflows.",
+      "Helps with research workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:alibaba/zvec",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "zvec",
+  "publishedAt": "2026-05-18"
+}

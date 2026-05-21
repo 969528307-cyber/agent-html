@@ -1,0 +1,73 @@
+{
+  "id": "langchain4j",
+  "name": "Langchain4j",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "LangChain4j is an idiomatic, open-source Java library for building LLM-powered applications on the JVM. It offers a unified API over popular LLM providers and vector stores, and makes implementing tool calling (including MCP support), agents and RAG easy. It integrates seamlessly with enterprise Java frameworks like Quarkus and Spring Boot.",
+  "description": "LangChain4j is an idiomatic, open-source Java library for building LLM-powered applications on the JVM. It offers a unified API over popular LLM providers and vector stores, and makes implementing tool calling (including MCP support), agents and RAG easy. It integrates seamlessly with enterprise Java frameworks like Quarkus and Spring Boot.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/langchain4j/langchain4j",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/langchain4j/langchain4j",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/langchain4j/langchain4j#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/langchain4j/langchain4j#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/langchain4j/langchain4j/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "To experiment with different LLMs or embedding stores, you can easily switch between them without the need to rewrite your code.",
+    "Our toolbox includes tools ranging from low-level prompt templating, chat memory management, and function calling",
+    "to high-level patterns like Agents and RAG.",
+    "Documentation can be found here.",
+    "The documentation chatbot (experimental) can be found here.",
+    "\"label\": \"Browser Execution Engines\",",
+    "\"description\": \"Browser Execution Engines\"",
+    "BrowserExecutionEngine represents a browser execution engine that can be used to perform actions on the browser in response to a user action."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T08:17:27Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/langchain4j/langchain4j",
+  "repoUrl": "https://github.com/langchain4j/langchain4j",
+  "license": "Apache-2.0",
+  "stars": 11980,
+  "lastUpdated": "2026-05-13T08:17:27Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

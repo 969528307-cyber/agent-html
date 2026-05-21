@@ -1,0 +1,193 @@
+{
+  "id": "candidate-tool-github-agentscope-ai-agentscope-runtime",
+  "type": "tool",
+  "status": "published",
+  "title": "Agentscope Runtime",
+  "sourceUrl": "https://github.com/agentscope-ai/agentscope-runtime",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "agentscope-ai",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A production-ready runtime framework for agent apps with secure tool sandboxing, Agent-as-a-Service APIs, scalable deployment, full-stack observability, and broad framework compatibility.",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Qwen Code"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "agentscope-ai",
+    "repo": "agentscope-runtime",
+    "fullName": "agentscope-ai/agentscope-runtime",
+    "stars": 787,
+    "license": "Apache-2.0",
+    "topics": [
+      "a2a",
+      "agent",
+      "agentscope",
+      "agno",
+      "deployment",
+      "docker",
+      "kubernetes",
+      "langgraph",
+      "mcp",
+      "modelstudio",
+      "runtime",
+      "sandbox",
+      "serverless"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-24T03:27:08Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    "examples/deployments/agentrun_deploy_config.yaml",
+    "examples/deployments/agentrun_deploy/README.md",
+    "examples/deployments/k8s_deploy/k8s_deploy_config.json",
+    "examples/deployments/k8s_deploy/k8s_deploy_config.yaml",
+    "examples/deployments/knative_deploy/knative_deploy_config.json",
+    "examples/deployments/knative_deploy/knative_deploy_config.yaml",
+    "examples/deployments/kruise_deploy/kruise_deploy_config.json",
+    "examples/deployments/kruise_deploy/kruise_deploy_config.yaml",
+    "examples/deployments/local_deploy_config.yaml",
+    "examples/deployments/modelstudio_deploy_config.yaml",
+    "examples/deployments/pai_deploy_config.yaml",
+    "examples/deployments/pai_deploy/deploy_config.yaml",
+    "examples/sandbox/agentbay_sandbox/README_zh.md",
+    "examples/sandbox/agentbay_sandbox/README.md",
+    "examples/sandbox/custom_sandbox/box/mcp_server_configs.json",
+    "examples/sandbox/custom_sandbox/box/playwright_mcp_config.json"
+  ],
+  "readmeExtract": "<div align=\"center\" AgentScope Runtime: A Production grade Runtime for Agent Applications [![GitHub Repo](https://img.shields.io/badge/GitHub Repo black.svg?logo=github)](https://github.com/agentscope ai/agentscope runtime) [![WebUI](https://img.shields.io/badge/Try WebUI Online green.svg?logo=googlechrome)](http://webui.runtime.agentscope.io/) [![PyPI](https://img.shields.io/pypi/v/agentscope runtime?label=PyPI&colo",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AgentScope Runtime: A Production-grade Runtime for Agent Applications",
+    "Tool Sandboxing — tool call runs inside a hardened sandbox",
+    "Agent-as-a-Service (AaaS) APIs — expose agents as streaming, production-ready APIs",
+    "Framework compatibility with mainstream agent frameworks",
+    "I want to run an agent app in 5 minutes: Quick Start (Agent App example) → verify with curl (SSE streaming)",
+    "I want production deployment / expose APIs: Quick Start (Agent App example) → Quick Start (Deployment example) → Guides",
+    "Learn the three-stage AgentApp development pattern: init / query / shutdown.",
+    "Agent App Example: How to build a streaming (SSE) Agent-as-a-Service API"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A production-ready runtime framework for agent apps with secure tool sandboxing, Agent-as-a-Service APIs, scalable deployment, full-stack observability, and broad framework compatibility.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "monitoring"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "monitoring"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 8,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent framework language detected.",
+    "Agent app or product platform language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: framework.",
+    "Alternative capabilities: agent-app, knowledge-resource, workflow.",
+    "LLM: agent-framework + [mcp] — This project is a production-grade runtime framework for agent applications, providing tool sandboxing, AaaS APIs, and deployment capabilities, making it a framework for building and running agents."
+  ],
+  "classificationAlternatives": [
+    "agent-app",
+    "knowledge-resource",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Agentscope Runtime is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to devops.",
+      "AgentScope Runtime: A Production-grade Runtime for Agent Applications",
+      "Tool Sandboxing — tool call runs inside a hardened sandbox"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:agentscope-ai/agentscope-runtime",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agentscope-runtime",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

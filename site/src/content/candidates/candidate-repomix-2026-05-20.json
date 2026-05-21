@@ -1,0 +1,185 @@
+{
+  "id": "candidate-repomix-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Repomix",
+  "sourceUrl": "https://github.com/yamadashy/repomix",
+  "sourceName": "GitHub",
+  "author": "yamadashy",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude, ChatGPT, DeepSeek, Perplexity, Gemini, Gemma, Llama, Grok, and more.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "yamadashy",
+    "repo": "repomix",
+    "fullName": "yamadashy/repomix",
+    "stars": 25141,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "anthropic",
+      "artificial-intelligence",
+      "chatbot",
+      "chatgpt",
+      "claude",
+      "deepseek",
+      "developer-tools",
+      "gemini",
+      "genai",
+      "generative-ai",
+      "gpt",
+      "javascript",
+      "language-model",
+      "llama",
+      "llm",
+      "mcp",
+      "nodejs",
+      "openai",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T15:33:18Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    ".agents/clawhub/SKILL.md",
+    ".agents/skills/agent-carnet/SKILL.md",
+    ".claude/skills/contextual-commit/SKILL.md",
+    ".claude/skills/repomix-explorer/SKILL.md",
+    "browser/.claude/skills/browser-extension-developer/SKILL.md",
+    "website/.claude/skills/website-maintainer/SKILL.md",
+    ".cursor/commands",
+    ".cursor/rules/base.mdc",
+    "AGENTS.md",
+    "browser/CLAUDE.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<div align=\"center\" markdown=\"1\" <sup Special thanks to:</sup <br <br <a href=\"https://go.warp.dev/repomix\" <img alt=\"Warp sponsorship\" width=\"400\" src=\"https://raw.githubusercontent.com/warpdotdev/brand assets/main/Github/Sponsor/Warp Github LG 01.png\" </a [Warp, built for coding with multiple AI agents](https://go.warp.dev/repomix) [Available for MacOS, Linux, & Windows](https://go.warp.dev/repomix)<br <br <a href=",
+  "skillExtracts": [
+    {
+      "path": ".agents/clawhub/SKILL.md",
+      "extract": "name: repomix version: 1.0.0 description: | Pack and analyze codebases into AI friendly single files using Repomix. Use when the user wants to explore repositories, analyze code structure, find patterns, check token counts, or prepare codebase context for AI analysis. Supports both local directories and remote GitHub repositories. tags: code analysis repository codebase ai context code explorer token count tree sitte"
+    },
+    {
+      "path": ".agents/skills/agent-carnet/SKILL.md",
+      "extract": "name: agent carnet description: \"Use this skill when the user asks to save, recall, find, or organize notes. Triggers on: 'remember this', 'save this', 'note this', 'what did we discuss about...', 'check the notebook', 'find in carnet'. Also use proactively when discovering findings worth preserving across sessions.\" Agent Carnet A tiny CLI that gives you a shared markdown notebook on disk under .carnet/<category /<s"
+    },
+    {
+      "path": ".claude/skills/contextual-commit/SKILL.md",
+      "extract": "name: contextual commit description: Write contextual commits that capture intent, decisions, and constraints alongside code changes. Use when committing code, finishing a task, or when the user asks to commit. Extends Conventional Commits with structured action lines in the commit body that preserve WHY code was written, not just WHAT changed. license: MIT metadata: internal: true Contextual Commits You write commit"
+    },
+    {
+      "path": ".claude/skills/repomix-explorer/SKILL.md",
+      "extract": "name: repomix explorer description: \"Use this skill when the user wants to analyze or explore a codebase (remote repository or local repository) using Repomix. Triggers on: 'analyze this repo', 'explore codebase', 'what's the structure', 'find patterns in repo', 'how many files/tokens'. Runs repomix CLI to pack repositories, then analyzes the output.\" You are an expert code analyst specializing in repository explorat"
+    },
+    {
+      "path": "browser/.claude/skills/browser-extension-developer/SKILL.md",
+      "extract": "name: browser extension developer description: Use this skill when developing or maintaining browser extension code in the browser/ directory, including Chrome/Firefox/Edge compatibility, content scripts, background scripts, or i18n updates. Browser Extension Developer Cross browser extension (Chrome/Firefox/Edge) using WXT framework with Manifest V3. Injects \"Repomix\" button into GitHub repository pages. Structure C"
+    },
+    {
+      "path": "website/.claude/skills/website-maintainer/SKILL.md",
+      "extract": "name: website maintainer description: Use this skill when working on the Repomix documentation website in website/ directory, including VitePress configuration, multi language content, or translation workflows. Website Maintainer VitePress documentation site with 14 languages. Structure Adding New Language 1. Create config/configXx.ts based on existing (exports config + search translations) 2. Import and add to local"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Warp, built for coding with multiple AI agents",
+    "Cut code review time & bugs in half, instantly..",
+    "📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file.",
+    "It is perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude,",
+    "ChatGPT, DeepSeek, Perplexity, Gemini, Gemma, Llama, Grok, and more.",
+    "Try Repomix in your browser at repomix.com",
+    "Using The Browser Extension 🧩",
+    "Run it on any folder, manage outputs seamlessly, and control everything through VSCode's intuitive interface."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude, ChatGPT, DeepSeek, Perplexity, Gemini, Gemma, Llama, Grok, and more.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Repomix is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Warp, built for coding with multiple AI agents",
+      "Cut code review time & bugs in half, instantly..",
+      "📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "repomix",
+  "publishedAt": "2026-05-20"
+}

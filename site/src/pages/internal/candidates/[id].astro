@@ -1,6 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
+import toolsSources from "../../../data/sources/tools.sources.json";
+import agentsSources from "../../../data/sources/agents.sources.json";
+import learnSources from "../../../data/sources/learn.sources.json";
+import signalsSources from "../../../data/sources/signals.sources.json";
 
 export async function getStaticPaths() {
   const candidates = await getCollection("candidates");
@@ -11,8 +15,15 @@ export async function getStaticPaths() {
 }
 
 const { candidate } = Astro.props;
+const allSources = [...toolsSources, ...agentsSources, ...learnSources, ...signalsSources];
+const sourceRegistryId = candidate.data.sourceRegistryId ?? candidate.data.sourceRegistry?.id;
+const currentSourceRegistry = allSources.find((source) => source.id === sourceRegistryId) ?? candidate.data.sourceRegistry;
 const scores = Object.entries(candidate.data.reviewScore);
 const average = scores.reduce((sum, [, score]) => sum + score, 0) / scores.length;
+const toolScores = candidate.data.toolProfile?.scores ?? candidate.data.classificationScores;
+const classificationScores = toolScores
+  ? Object.entries(toolScores).sort((a, b) => b[1] - a[1])
+  : [];
 const github = candidate.data.githubMetadata;
 const slugify = (value: string) =>
   value
@@ -20,7 +31,19 @@ const slugify = (value: string) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 const publishedId = candidate.data.publishedAs || slugify(candidate.data.title);
-const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/item/${publishedId}`;
+const publicHref =
+  candidate.data.type === "agent"
+    ? `/for/${publishedId}`
+    : candidate.data.type === "learn"
+      ? `/learn/${publishedId}`
+      : candidate.data.type === "signal"
+        ? `/signals/${publishedId}`
+        : `/item/${publishedId}`;
+const isPublished = candidate.data.status === "published";
+const canPublishNow = !isPublished &&
+  !["rejected", "archived"].includes(candidate.data.status) &&
+  !["reject_not_tool", "reject_low_signal", "route_to_learn", "route_to_signal"].includes(candidate.data.enrichmentDecision ?? "") &&
+  ["tool", "agent", "learn", "signal"].includes(candidate.data.type);
 ---
 
 <BaseLayout title={`${candidate.data.title} - Candidate Pool`} description={candidate.data.summary} noindex>
@@ -30,20 +53,42 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
     <h1>{candidate.data.title}</h1>
     <p class="summary">{candidate.data.summary}</p>
 
+    {
+      candidate.data.enrichment && (
+        <div class="enrichment-banner">
+          <span>{candidate.data.enrichmentDecision}</span>
+          <strong>{candidate.data.enrichment.whatIsIt}</strong>
+          {candidate.data.enrichment.reasons.length > 0 && <p>{candidate.data.enrichment.reasons.join(" ")}</p>}
+        </div>
+      )
+    }
+
     <div class="submit-panel">
       <div class="submit-head">
         <div>
           <span>Submit to public site</span>
           <h2>One click publish.</h2>
         </div>
-        <button
-          class="small-button publish-now"
-          type="button"
-          data-publish-candidate={candidate.id}
-          data-public-href={publicHref}
-        >
-          Publish now
-        </button>
+        {
+          isPublished ? (
+            <a class="small-button publish-now published" href={publicHref}>
+              Published
+            </a>
+          ) : canPublishNow ? (
+            <button
+              class="small-button publish-now"
+              type="button"
+              data-publish-candidate={candidate.id}
+              data-public-href={publicHref}
+            >
+              Publish now
+            </button>
+          ) : (
+            <button class="small-button publish-now muted" type="button" disabled>
+              Not publishable
+            </button>
+          )
+        }
       </div>
       <div class="submit-steps">
         <article>
@@ -78,6 +123,21 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
       </dl>
     </article>
 
+    {
+      currentSourceRegistry && (
+        <article class="panel">
+          <div class="eyebrow">Source registry</div>
+          <dl>
+            <div><dt>Source ID</dt><dd>{currentSourceRegistry.id}</dd></div>
+            <div><dt>Name</dt><dd>{currentSourceRegistry.name}</dd></div>
+            <div><dt>Type</dt><dd>{currentSourceRegistry.type}</dd></div>
+            <div><dt>Trust</dt><dd>{currentSourceRegistry.trustLevel}</dd></div>
+            <div><dt>Refresh</dt><dd>{currentSourceRegistry.refreshInterval}</dd></div>
+          </dl>
+        </article>
+      )
+    }
+
     <article class="panel">
       <div class="eyebrow">Review score</div>
       <strong class="score">{average.toFixed(1)}</strong>
@@ -92,6 +152,115 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
       </div>
     </article>
 
+    {
+      candidate.data.type === "tool" && (
+        <article class="panel wide classification-panel">
+          <div class="eyebrow">Tools profile</div>
+          <div class="classification-head">
+            <div>
+              <h2>{candidate.data.toolProfile?.capabilityType ?? candidate.data.capabilityType ?? candidate.data.proposedToolType ?? "Unclassified"}</h2>
+              <p>
+                Scope: <strong>{candidate.data.toolProfile?.scope ?? candidate.data.scope ?? "unknown"}</strong> ·
+                Confidence: <strong>{candidate.data.toolProfile?.confidence ?? candidate.data.classificationConfidence ?? "unknown"}</strong> ·
+                Route: <strong>{candidate.data.toolProfile?.routingDecision ?? candidate.data.routingDecision ?? "review_required"}</strong>
+              </p>
+            </div>
+            <div class="tags">
+              {(candidate.data.toolProfile?.useCategory ?? candidate.data.useCategory).map((category) => <span>{category}</span>)}
+              {(candidate.data.toolProfile?.alternatives ?? candidate.data.classificationAlternatives).map((type) => <span>alt: {type}</span>)}
+            </div>
+          </div>
+
+          {classificationScores.length > 0 && (
+            <div class="classification-scores">
+              {classificationScores.map(([key, value]) => (
+                <div>
+                  <span>{key}</span>
+                  <meter min="0" max="12" value={value}>{value}</meter>
+                  <b>{value}</b>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {(candidate.data.toolProfile?.notes ?? candidate.data.classificationNotes).length > 0 && (
+            <ul class="note-list">
+              {(candidate.data.toolProfile?.notes ?? candidate.data.classificationNotes).map((note) => <li>{note}</li>)}
+            </ul>
+          )}
+        </article>
+      )
+    }
+
+    {
+      candidate.data.type === "agent" && candidate.data.agentProfile && (
+        <article class="panel wide classification-panel">
+          <div class="eyebrow">Agent profile</div>
+          <div class="classification-head">
+            <div>
+              <h2>{candidate.data.agentProfile.vendor ?? candidate.data.title}</h2>
+              <p>
+                Region: <strong>{candidate.data.agentProfile.region ?? "unknown"}</strong> ·
+                Interfaces: <strong>{candidate.data.agentProfile.interfaceType.join(", ") || "unknown"}</strong>
+              </p>
+            </div>
+            <div class="tags">
+              {candidate.data.agentProfile.supportsMcp && <span>MCP</span>}
+              {candidate.data.agentProfile.supportsSkills && <span>Skills</span>}
+              {candidate.data.agentProfile.supportsCli && <span>CLI</span>}
+              {candidate.data.agentProfile.supportsWorkflows && <span>Workflows</span>}
+              {candidate.data.agentProfile.sourceKinds.map((kind) => <span>{kind}</span>)}
+            </div>
+          </div>
+        </article>
+      )
+    }
+
+    {
+      candidate.data.type === "learn" && candidate.data.learnProfile && (
+        <article class="panel wide classification-panel">
+          <div class="eyebrow">Learn profile</div>
+          <div class="classification-head">
+            <div>
+              <h2>{candidate.data.learnProfile.topic ?? "Learning topic"}</h2>
+              <p>
+                Path: <strong>{candidate.data.learnProfile.path ?? "unknown"}</strong> ·
+                Difficulty: <strong>{candidate.data.learnProfile.difficulty ?? "unknown"}</strong> ·
+                Reading: <strong>{candidate.data.learnProfile.readingTime ?? "unknown"}</strong>
+              </p>
+            </div>
+            <div class="tags">
+              {candidate.data.learnProfile.relatedTools.map((tool) => <span>tool: {tool}</span>)}
+              {candidate.data.learnProfile.relatedAgents.map((agent) => <span>agent: {agent}</span>)}
+            </div>
+          </div>
+        </article>
+      )
+    }
+
+    {
+      candidate.data.type === "signal" && candidate.data.signalProfile && (
+        <article class="panel wide classification-panel">
+          <div class="eyebrow">Signal profile</div>
+          <div class="classification-head">
+            <div>
+              <h2>{candidate.data.signalProfile.sourceName ?? candidate.data.sourceName ?? "Signal source"}</h2>
+              <p>
+                Translation: <strong>{candidate.data.signalProfile.translationMode}</strong> ·
+                Permission: <strong>{candidate.data.signalProfile.permissionStatus ?? "unknown"}</strong> ·
+                Original date: <strong>{candidate.data.signalProfile.originalPublishedAt ?? "unknown"}</strong>
+              </p>
+            </div>
+            <div class="tags">
+              {candidate.data.signalProfile.relatedTools.map((tool) => <span>tool: {tool}</span>)}
+              {candidate.data.signalProfile.relatedAgents.map((agent) => <span>agent: {agent}</span>)}
+              {candidate.data.signalProfile.relatedLearn.map((learn) => <span>learn: {learn}</span>)}
+            </div>
+          </div>
+        </article>
+      )
+    }
+
     <article class="panel wide">
       <div class="eyebrow">Editorial notes</div>
       <p>{candidate.data.reviewNotes}</p>
@@ -102,6 +271,52 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
         {candidate.data.proposedAgents?.map((agent) => <span>{agent}</span>)}
       </div>
     </article>
+
+    {
+      candidate.data.enrichment && (
+        <article class="panel wide">
+          <div class="eyebrow">Enrichment result</div>
+          <dl class="github-grid">
+            <div><dt>Decision</dt><dd>{candidate.data.enrichment.decision}</dd></div>
+            <div><dt>Publish type</dt><dd>{candidate.data.enrichment.publishType}</dd></div>
+            <div><dt>Primary type</dt><dd>{candidate.data.enrichment.primaryType}</dd></div>
+            <div><dt>Confidence</dt><dd>{candidate.data.enrichment.confidence}</dd></div>
+          </dl>
+          {candidate.data.enrichment.helpsWith.length > 0 && (
+            <div class="tags">
+              {candidate.data.enrichment.helpsWith.map((item) => <span>{item}</span>)}
+            </div>
+          )}
+          {candidate.data.enrichment.riskNotes.length > 0 && (
+            <ul class="note-list">
+              {candidate.data.enrichment.riskNotes.map((note) => <li>{note}</li>)}
+            </ul>
+          )}
+        </article>
+      )
+    }
+
+    {
+      currentSourceRegistry && (
+        <article class="panel wide">
+          <div class="eyebrow">Source rules</div>
+          <div class="rule-grid">
+            <div>
+              <h3>Accept rules</h3>
+              <ul>
+                {currentSourceRegistry.acceptRules.map((rule) => <li>{rule}</li>)}
+              </ul>
+            </div>
+            <div>
+              <h3>Reject rules</h3>
+              <ul>
+                {currentSourceRegistry.rejectRules.map((rule) => <li>{rule}</li>)}
+              </ul>
+            </div>
+          </div>
+        </article>
+      )
+    }
 
     {
       github && (
@@ -159,6 +374,13 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
 </BaseLayout>
 
 <script>
+  const getCookie = (name: string) =>
+    document.cookie
+      .split(";")
+      .map((cookie) => cookie.trim())
+      .find((cookie) => cookie.startsWith(`${name}=`))
+      ?.slice(name.length + 1) || "";
+
   const publishButton = document.querySelector("[data-publish-candidate]");
   const resultBox = document.querySelector("[data-publish-result]");
 
@@ -176,7 +398,10 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
     try {
       const response = await fetch("/internal-api/publish-candidate", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRF-Token": decodeURIComponent(getCookie("agentkit_internal_csrf")),
+        },
         body: JSON.stringify({ candidateId }),
       });
       const rawBody = await response.text();
@@ -226,6 +451,34 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
     color: var(--muted);
     font-size: 15px;
     line-height: 1.72;
+  }
+
+  .enrichment-banner {
+    display: grid;
+    gap: 10px;
+    max-width: 900px;
+    margin-top: 22px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    background:
+      linear-gradient(180deg, rgb(238 244 238 / 0.045), rgb(238 244 238 / 0.012)),
+      var(--paper);
+  }
+
+  .enrichment-banner span {
+    width: fit-content;
+    padding: 6px 9px;
+    color: #111811;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: var(--sage);
+    border-radius: 999px;
+  }
+
+  .enrichment-banner p {
+    color: var(--muted);
   }
 
   .submit-panel,
@@ -300,6 +553,11 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
     background: var(--clay);
   }
 
+  .publish-now.muted {
+    color: var(--faint);
+    background: rgb(238 244 238 / 0.06);
+  }
+
   .publish-result {
     margin-top: 18px;
     color: var(--muted);
@@ -316,7 +574,7 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
     justify-content: center;
     min-height: 38px;
     padding: 0 14px;
-    color: #08100b;
+    color: #111811;
     background: var(--sage);
     border-radius: 999px;
   }
@@ -387,8 +645,8 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
     display: block;
     margin: 10px 0 18px;
     color: var(--sage);
-    font-size: 54px;
-    letter-spacing: -0.06em;
+    font-size: 44px;
+    letter-spacing: -0.035em;
   }
 
   .score-list {
@@ -458,11 +716,84 @@ const publicHref = candidate.data.type === "agent" ? `/for/${publishedId}` : `/i
     border-radius: 999px;
   }
 
+  .classification-panel {
+    background:
+      radial-gradient(circle at 8% 0%, rgb(167 207 164 / 0.12), transparent 18rem),
+      var(--paper);
+  }
+
+  .classification-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
+    gap: 18px;
+    align-items: start;
+  }
+
+  .classification-head h2 {
+    text-transform: capitalize;
+  }
+
+  .classification-head strong {
+    color: var(--sage);
+    font-weight: 800;
+  }
+
+  .classification-scores {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 16px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+
+  .classification-scores div {
+    display: grid;
+    grid-template-columns: 140px 1fr 24px;
+    gap: 10px;
+    align-items: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .note-list {
+    display: grid;
+    gap: 10px;
+    margin: 18px 0 0;
+    padding-left: 18px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .rule-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .rule-grid div {
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: rgb(238 244 238 / 0.026);
+  }
+
+  .rule-grid ul {
+    display: grid;
+    gap: 8px;
+    margin: 12px 0 0;
+    padding-left: 18px;
+    color: var(--muted);
+  }
+
   @media (max-width: 860px) {
     .submit-head,
     .submit-steps,
     .detail-grid,
-    .github-grid {
+    .github-grid,
+    .classification-head,
+    .classification-scores,
+    .rule-grid {
       grid-template-columns: 1fr;
     }
 

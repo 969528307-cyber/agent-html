@@ -1,0 +1,213 @@
+{
+  "id": "candidate-agents-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Agents",
+  "sourceUrl": "https://github.com/wshobson/agents",
+  "sourceName": "GitHub",
+  "author": "wshobson",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Intelligent automation and multi-agent orchestration for Claude Code",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "wshobson",
+    "repo": "agents",
+    "fullName": "wshobson/agents",
+    "stars": 35582,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "anthropic",
+      "anthropic-claude",
+      "automation",
+      "claude",
+      "claude-code",
+      "claude-code-cli",
+      "claude-code-commands",
+      "claude-code-plugin",
+      "claude-code-plugins",
+      "claude-code-skills",
+      "claude-code-subagents",
+      "claude-skills",
+      "claudecode",
+      "claudecode-config",
+      "claudecode-subagents",
+      "orchestration",
+      "sub-agents",
+      "subagents",
+      "workflows"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T00:46:43Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agent-skills.md",
+    "docs/agents.md",
+    "docs/architecture.md",
+    "docs/plugin-eval.md",
+    "docs/plugins.md",
+    "docs/usage.md",
+    "plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
+    "plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md",
+    "plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md",
+    "plugins/agent-teams/skills/parallel-debugging/SKILL.md",
+    "plugins/agent-teams/skills/parallel-feature-development/SKILL.md",
+    "plugins/agent-teams/skills/task-coordination-strategies/SKILL.md",
+    "plugins/agent-teams/skills/team-communication-protocols/SKILL.md",
+    "plugins/agent-teams/skills/team-composition-patterns/SKILL.md",
+    "plugins/api-scaffolding/skills/fastapi-templates/SKILL.md",
+    "plugins/backend-development/skills/api-design-principles/SKILL.md",
+    "plugins/backend-development/skills/architecture-patterns/SKILL.md",
+    "plugins/backend-development/skills/cqrs-implementation/SKILL.md",
+    "plugins/backend-development/skills/event-store-design/SKILL.md",
+    "plugins/backend-development/skills/microservices-patterns/SKILL.md",
+    "plugins/backend-development/skills/projection-patterns/SKILL.md",
+    "plugins/backend-development/skills/saga-orchestration/SKILL.md",
+    "plugins/backend-development/skills/temporal-python-testing/SKILL.md",
+    "plugins/backend-development/skills/workflow-orchestration-patterns/SKILL.md",
+    "plugins/block-no-verify/skills/block-no-verify-hook/SKILL.md",
+    "plugins/blockchain-web3/skills/defi-protocol-templates/SKILL.md",
+    "plugins/blockchain-web3/skills/nft-standards/SKILL.md",
+    "plugins/blockchain-web3/skills/solidity-security/SKILL.md",
+    "plugins/blockchain-web3/skills/web3-testing/SKILL.md",
+    "plugins/brand-landingpage/skills/brand-landingpage/SKILL.md",
+    "plugins/business-analytics/skills/data-storytelling/SKILL.md",
+    "plugins/business-analytics/skills/kpi-dashboard-design/SKILL.md",
+    "plugins/cicd-automation/skills/deployment-pipeline-design/SKILL.md",
+    "plugins/cicd-automation/skills/github-actions-templates/SKILL.md",
+    "plugins/cicd-automation/skills/gitlab-ci-patterns/SKILL.md",
+    "plugins/cicd-automation/skills/secrets-management/SKILL.md",
+    "plugins/cloud-infrastructure/skills/cost-optimization/SKILL.md",
+    "plugins/cloud-infrastructure/skills/hybrid-cloud-networking/SKILL.md",
+    "plugins/cloud-infrastructure/skills/istio-traffic-management/SKILL.md"
+  ],
+  "readmeExtract": "Claude Code Plugins: Orchestration and Automation ⚡ Updated for Opus 4.7, Sonnet 4.6 & Haiku 4.5 — Three tier model strategy for optimal performance [![Run in Smithery](https://smithery.ai/badge/skills/wshobson)](https://smithery.ai/skills?ns=wshobson&utm source=github&utm medium=badge) [![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI supported blue)](GEMINI.md) 🎯 Agent Skills Enabled — 153 specialized skill",
+  "skillExtracts": [
+    {
+      "path": "plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
+      "extract": "name: screen reader testing description: Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when validating screen reader compatibility, debugging accessibility issues, or ensuring assistive technology support. Screen Reader Testing Practical guide to testing web applications with screen readers for comprehensive accessibility validation. When to Use This Skill Validating screen reader"
+    },
+    {
+      "path": "plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md",
+      "extract": "name: wcag audit patterns description: Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation guidance. Use when auditing websites for accessibility, fixing WCAG violations, or implementing accessible design patterns. WCAG Audit Patterns Comprehensive guide to auditing web content against WCAG 2.2 guidelines with actionable remediation strategies. When to Use This Skill Con"
+    },
+    {
+      "path": "plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md",
+      "extract": "name: multi reviewer patterns description: Coordinate parallel code reviews across multiple quality dimensions with finding deduplication, severity calibration, and consolidated reporting. Use this skill when organizing multi reviewer code reviews, calibrating finding severity, or consolidating review results. version: 1.0.2 Multi Reviewer Patterns Patterns for coordinating parallel code reviews across multiple quali"
+    },
+    {
+      "path": "plugins/agent-teams/skills/parallel-debugging/SKILL.md",
+      "extract": "name: parallel debugging description: Debug complex issues using competing hypotheses with parallel investigation, evidence collection, and root cause arbitration. Use this skill when debugging bugs with multiple potential causes, performing root cause analysis, or organizing parallel investigation workflows. version: 1.0.2 Parallel Debugging Framework for debugging complex issues using the Analysis of Competing Hypo"
+    },
+    {
+      "path": "plugins/agent-teams/skills/parallel-feature-development/SKILL.md",
+      "extract": "name: parallel feature development description: Coordinate parallel feature development with file ownership strategies, conflict avoidance rules, and integration patterns for multi agent implementation. Use this skill when decomposing a large feature into independent work streams, when two or more agents need to implement different layers of the same system simultaneously, when establishing file ownership to prevent "
+    },
+    {
+      "path": "plugins/agent-teams/skills/task-coordination-strategies/SKILL.md",
+      "extract": "name: task coordination strategies description: Decompose complex tasks, design dependency graphs, and coordinate multi agent work with proper task descriptions and workload balancing. Use this skill when breaking down work for agent teams, managing task dependencies, or monitoring team progress. version: 1.0.2 Task Coordination Strategies Strategies for decomposing complex tasks into parallelizable units, designing "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Claude Code Plugins: Orchestration and Automation",
+    "🎯 Agent Skills Enabled — 153 specialized skills extend Claude's capabilities across plugins with progressive disclosure",
+    "A comprehensive production-ready system combining 185 specialized AI agents, 16 multi-agent workflow orchestrators, 153 agent skills, and 100 commands organized into 80 focused, single-purpose plugins for Claude Code.",
+    "This unified repository provides everything needed for intelligent automation and multi-agent orchestration across modern software development:",
+    "185 Specialized Agents - Domain experts with deep knowledge across architecture, languages, infrastructure, quality, data/AI, documentation, business operations, and SEO",
+    "153 Agent Skills - Modular knowledge packages with progressive disclosure for specialized expertise",
+    "16 Workflow Orchestrators - Multi-agent coordination systems for complex operations like full-stack development, security hardening, ML pipelines, and incident response",
+    "Comprehensive Tooling: 100 commands including test generation, scaffolding, and security scanning"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Intelligent automation and multi-agent orchestration for Claude Code",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Agents is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "Claude Code Plugins: Orchestration and Automation",
+      "🎯 Agent Skills Enabled — 153 specialized skills extend Claude's capabilities across plugins with progressive disclosure"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agents",
+  "publishedAt": "2026-05-18"
+}

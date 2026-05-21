@@ -1,0 +1,165 @@
+{
+  "id": "candidate-tool-github-docker-compose-for-agents",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Compose For Agents",
+  "sourceUrl": "https://github.com/docker/compose-for-agents",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "docker",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Build and run AI agents using Docker Compose. A collection of ready-to-use examples for orchestrating open-source LLMs, tools, and agent runtimes.",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "docker",
+    "repo": "compose-for-agents",
+    "fullName": "docker/compose-for-agents",
+    "stars": 955,
+    "license": "Apache-2.0",
+    "topics": [
+      "agentic-workflows",
+      "ai-agents",
+      "docker",
+      "docker-compose",
+      "examples",
+      "large-language-models",
+      "llama-cpp",
+      "openai-gym",
+      "self-hosted"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-20T11:53:59Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "adk-sock-shop/CLAUDE.md"
+  ],
+  "readmeExtract": "Compose for Agents Demos Prerequisites + [Docker Desktop] 4.43.0+ or [Docker Engine] installed. + A laptop or workstation with a GPU (e.g., a MacBook) for running open models locally. If you don't have a GPU, you can alternatively use [Docker Offload] . + If you're using [Docker Engine] on Linux or [Docker Desktop] on Windows, ensure that the [Docker Model Runner requirements] are met (specifically that GPU support i",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "create a .mcp.env file from the mcp.env.example file (if it exists, otherwise the demo",
+    "doesn't need any secrets) and supply the required MCP tokens",
+    "Compose for Agents Demos - Classification",
+    "Demo Agent System Models MCPs project compose",
+    "A2A Multi-Agent Fact Checker Multi-Agent OpenAI duckduckgo ./a2a compose.yaml",
+    "Agno agent that summarizes GitHub issues Multi-Agent qwen3(local) github-official ./agno compose.yaml",
+    "Vercel AI-SDK Chat-UI for mixing MCPs and Model Single Agent llama3.2(local), qwen3(local) wikipedia-mcp, brave, resend(email) ./vercel compose.yaml",
+    "CrewAI Marketing Strategy Agent Multi-Agent qwen3(local) duckduckgo ./crew-ai compose.yaml"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Build and run AI agents using Docker Compose. A collection of ready-to-use examples for orchestrating open-source LLMs, tools, and agent runtimes.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 6,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "Workflow/automation/orchestration language detected.",
+    "General agent-building language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: sdk-library.",
+    "Alternative capabilities: workflow, sdk, agent-framework.",
+    "LLM: knowledge-resource + [] — The repository is a collection of Docker Compose examples for running AI agents, primarily serving as educational demos rather than a standalone tool or protocol implementation."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "sdk",
+    "agent-framework"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Compose For Agents is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Relevant to devops.",
+      "create a .mcp.env file from the mcp.env.example file (if it exists, otherwise the demo",
+      "doesn't need any secrets) and supply the required MCP tokens",
+      "Compose for Agents Demos - Classification"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:docker/compose-for-agents",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ]
+}

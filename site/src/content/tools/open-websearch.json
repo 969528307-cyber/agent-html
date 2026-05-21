@@ -1,0 +1,76 @@
+{
+  "id": "open-websearch",
+  "name": "Open WebSearch",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Multi-engine MCP server, CLI, and local daemon for agent web search and content retrieval — skill-guided workflows, no API keys.",
+  "description": "Multi-engine MCP server, CLI, and local daemon for agent web search and content retrieval — skill-guided workflows, no API keys.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Aas-ee/open-webSearch",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Aas-ee/open-webSearch",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Aas-ee/open-webSearch#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Aas-ee/open-webSearch#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Aas-ee/open-webSearch/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "open-websearch provides an MCP server, CLI, and local daemon, and can also be paired with skill-guided agent workflows for live web search and content retrieval without API keys.",
+    "Web search using multi-engine results",
+    "Configurable number of results per search",
+    "Customizable default search engine",
+    "Best when you want to connect open-websearch to Claude Desktop, Cherry Studio, Cursor, or another MCP client.",
+    "Best when you want a reusable long-lived local HTTP service exposing status, GET /health, and POST /search / POST /fetch-.",
+    "Start it explicitly with open-websearch serve and check it with open-websearch status.",
+    "A skill does not replace MCP, CLI, or the local daemon; it typically works together with the CLI and/or local daemon to help an agent discover, activate, and use the smallest working path."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-08T05:34:14Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Aas-ee/open-webSearch",
+  "repoUrl": "https://github.com/Aas-ee/open-webSearch",
+  "license": "Apache-2.0",
+  "stars": 1205,
+  "lastUpdated": "2026-05-08T05:34:14Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

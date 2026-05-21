@@ -1,0 +1,77 @@
+{
+  "id": "manifest",
+  "name": "Manifest",
+  "type": "sdk",
+  "status": "published",
+  "summary": "Smart Model Routing for Agents. Cut Costs up to 70% 🦚",
+  "description": "Smart Model Routing for Agents. Cut Costs up to 70% 🦚",
+  "category": [
+    "sdk"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Qwen Code",
+    "Hermes Agent"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mnfst/manifest",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mnfst/manifest",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mnfst/manifest#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mnfst/manifest#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mnfst/manifest/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Manifest is a smart model router for agents and AI applications that redirects each query to the right model, saving up to 70% in AI costs.",
+    "Manifest connects to 300+ models across 16 providers plus any custom provider (OpenAI/Anthropic compatible).",
+    "Anthropic ✅ ✅ Claude Max / Pro claude-opus-4-7, claude-sonnet-4-6, claude-haiku-4-5",
+    "Google ✅ — gemini-2.5-pro, gemini-2.5-flash, gemini-2.0-flash",
+    "MiniMax ✅ ✅ MiniMax Coding Plan minimax-m2, abab7-chat-preview",
+    "\"description\": \"Open-source observability for AI agents — track costs, tokens, messages, and performance\",",
+    "\"packageManager\": \"npm@10.9.2\",",
+    "Manifest is a smart model router for AI agents."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T08:21:23Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mnfst/manifest",
+  "repoUrl": "https://github.com/mnfst/manifest",
+  "license": "MIT",
+  "stars": 6535,
+  "lastUpdated": "2026-05-18T08:21:23Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "agent-reach",
+  "name": "Agent Reach",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+  "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Panniantong/Agent-Reach#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Panniantong/Agent-Reach#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Panniantong/Agent-Reach/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AI Agent 已经能帮你写代码、改文档、管项目——但你让它去网上找点东西，它就抓瞎了：",
+    "每个平台都有自己的门槛——要付费的 API、要绕过的封锁、要登录的账号、要清洗的数据。你要一个一个去踩坑、装工具、调配置，光是让 Agent 能读个推特就得折腾半天。",
+    "复制给你的 Agent，几分钟后它就能读推特、搜 Reddit、看 YouTube、刷小红书了。",
+    "🤖 兼容所有 Agent Claude Code、OpenClaw、Cursor、Windsurf……任何能跑命令行的 Agent 都能用",
+    "🩺 自带诊断 agent-reach doctor 一条命令告诉你哪个通、哪个不通、怎么修",
+    "🔍 全网搜索 — 全网语义搜索 自动配置（MCP 接入，免费无需 Key）",
+    "📦 GitHub 读公开仓库 + 搜索 私有仓库、提 Issue/PR、Fork 告诉 Agent「帮我登录 GitHub」",
+    "🐦 Twitter/X 读单条推文 搜索推文、浏览时间线、发推 告诉 Agent「帮我配 Twitter」"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T12:39:22Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Panniantong/Agent-Reach",
+  "repoUrl": "https://github.com/Panniantong/Agent-Reach",
+  "license": "MIT",
+  "stars": 19911,
+  "lastUpdated": "2026-05-18T12:39:22Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

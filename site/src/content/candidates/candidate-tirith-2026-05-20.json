@@ -1,0 +1,156 @@
+{
+  "id": "candidate-tirith-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Tirith",
+  "sourceUrl": "https://github.com/sheeki03/tirith",
+  "sourceName": "GitHub",
+  "author": "sheeki03",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Terminal security for developers and AI agents. Intercepts homograph URLs, pipe-to-shell, ANSI injection, obfuscated payloads, data exfiltration, and malicious AI skills/configs before they execute.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "sheeki03",
+    "repo": "tirith",
+    "fullName": "sheeki03/tirith",
+    "stars": 2346,
+    "license": "AGPL-3.0",
+    "topics": [
+      "cli",
+      "devtools",
+      "homograph-attack",
+      "rust",
+      "security",
+      "shell",
+      "supply-chain-security",
+      "terminal",
+      "unicode",
+      "url-security"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T08:04:09Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/compatibility.md",
+    "docs/cookbook.md",
+    "docs/dogfood-guide.md",
+    "docs/homebrew-core.md",
+    "docs/roadmap.md",
+    "docs/security.md",
+    "docs/threat-model.md",
+    "SKILL.md",
+    ".cursor/mcp.json"
+  ],
+  "readmeExtract": "tirith Your browser would catch this. Your terminal won't. <p align=\"center\" <img src=\"assets/cover.png\" alt=\"tirith — terminal security\" width=\"100%\" / </p [![CI](https://github.com/sheeki03/tirith/actions/workflows/ci.yml/badge.svg)](https://github.com/sheeki03/tirith/actions/workflows/ci.yml) [![GitHub Stars](https://img.shields.io/github/stars/sheeki03/tirith?style=flat&logo=github)](https://github.com/sheeki03/t",
+  "skillExtracts": [
+    {
+      "path": "SKILL.md",
+      "extract": "name: tirith description: Terminal security analysis for shell environments. This skill should be used when checking commands for supply chain attacks before execution, scanning repositories for hidden content or config poisoning, scoring URLs for homograph attacks, setting up AI tool protection for Claude Code / Cursor / Codex / Windsurf, downloading and executing scripts safely, investigating why tirith blocked a c"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Your browser would catch this.",
+    "Website Docs SKILL.md Changelog",
+    "Browsers solved this years ago.",
+    "Malicious skill file — caught on scan:",
+    "Post-compromise behavior Process memory scraping (/proc//mem), Docker remote privilege escalation, credential file sweeps — calibrated against TeamPCP and UNC1069 post-compromise tooling",
+    "Cloaking detection Server-side cloaking (bot vs browser), clipboard hidden content, PDF hidden text",
+    "Team PCP / UNC1069 tooling ongoing Post-compromise credential sweeps, /proc//mem scraping, Docker privilege escalation",
+    "Package-name extraction currently covers language ecosystems (pip, npm/yarn/pnpm/bun, cargo, gem, go, composer, dotnet, mvn/gradle), not distro-level package managers (apt / dnf / yum / pacman)."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Terminal security for developers and AI agents. Intercepts homograph URLs, pipe-to-shell, ANSI injection, obfuscated payloads, data exfiltration, and malicious AI skills/configs before they execute.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "data",
+      "security"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "data",
+    "security"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Tirith is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with data workflows.",
+      "Helps with security workflows.",
+      "Relevant to cli.",
+      "Your browser would catch this."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "tirith",
+  "publishedAt": "2026-05-20"
+}

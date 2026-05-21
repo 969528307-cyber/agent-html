@@ -1,0 +1,160 @@
+{
+  "id": "candidate-tool-github-iannuttall-mcp-boilerplate",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Mcp Boilerplate",
+  "sourceUrl": "https://github.com/iannuttall/mcp-boilerplate",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "iannuttall",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A remote Cloudflare MCP server boilerplate with user authentication and Stripe for paid tools.",
+  "proposedCategory": [
+    "security"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "iannuttall",
+    "repo": "mcp-boilerplate",
+    "fullName": "iannuttall/mcp-boilerplate",
+    "stars": 1022,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-02-04T13:38:36Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    ".cursor/rules/mcp-server.mdc"
+  ],
+  "readmeExtract": "MCP Boilerplate: Simple Setup Guide This project helps you create your own remote MCP server on Cloudflare with user login and payment options. You don't need to be a technical expert to get it running. [!NOTE] This project is now free to use and open source. If you want to support me, just follow me on X [@iannuttall](https://x.com/iannuttall) and subscribe to [my newsletter](https://ian.is). What You'll Get An MCP ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "This project helps you create your own remote MCP server on Cloudflare with user login and payment options.",
+    "An MCP server that works with Cursor, Claude and other AI assistants",
+    "The ability to create both free and paid MCP tools",
+    "After running this command, you'll see some text that includes id and previewid values",
+    "Add an App name (like \"My AI Tool\")",
+    "Application name: Give it a name (like \"My AI Tool\")",
+    "This boilerplate includes a tool (checkusersubscriptionstatus) that can provide your end-users with a link to their Stripe Customer Billing Portal.",
+    "This portal allows them to manage their subscriptions, such as canceling them or, if you configure it, switching between different plans."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"security\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A remote Cloudflare MCP server boilerplate with user authentication and Stripe for paid tools.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "boilerplate",
+    "useCategory": [
+      "security"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "boilerplate",
+  "useCategory": [
+    "security"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 2,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Agent instruction or rule files detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent app or product platform language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: boilerplate.",
+    "Alternative capabilities: knowledge-resource, mcp, skill.",
+    "LLM: mcp + [mcp] — This is a boilerplate for creating an MCP server on Cloudflare with authentication and payments, directly implementing the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "mcp",
+    "skill"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "reject_not_tool",
+  "enrichment": {
+    "decision": "reject_not_tool",
+    "confidence": "high",
+    "publishType": "none",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp Boilerplate is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Relevant to security.",
+      "This project helps you create your own remote MCP server on Cloudflare with user login and payment options.",
+      "An MCP server that works with Cursor, Claude and other AI assistants",
+      "The ability to create both free and paid MCP tools"
+    ],
+    "reasons": [
+      "This candidate is a starter, template, or example rather than a durable tool listing."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:iannuttall/mcp-boilerplate",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

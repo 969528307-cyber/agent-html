@@ -1,0 +1,79 @@
+{
+  "id": "byterover-cli",
+  "name": "Byterover Cli",
+  "type": "mcp",
+  "status": "published",
+  "summary": "ByteRover CLI (brv) - The portable memory layer for  autonomous coding agents (formerly Cipher)",
+  "description": "ByteRover CLI (brv) - The portable memory layer for  autonomous coding agents (formerly Cipher)",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/campfirein/byterover-cli",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/campfirein/byterover-cli",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/campfirein/byterover-cli#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/campfirein/byterover-cli#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/campfirein/byterover-cli/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "ByteRover CLI (brv) gives AI coding agents persistent, structured memory.",
+    "It lets developers curate project knowledge into a context tree, sync it to the cloud, and share it across tools and teammates.",
+    "The agent understands your codebase through an agentic map, can read and write files, execute code, and store knowledge for future sessions.",
+    "🧠 Context tree and knowledge storage management",
+    "🛠️ 24 built-in agent tools (code exec, file ops, knowledge search, memory management)",
+    "👀 Review workflow for curate operations (approve/reject pending changes)",
+    "🔌 MCP (Model Context Protocol) integration",
+    "📦 Hub and connectors ecosystem for skills and bundles"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:44:13Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/campfirein/byterover-cli",
+  "repoUrl": "https://github.com/campfirein/byterover-cli",
+  "license": "NOASSERTION",
+  "stars": 4767,
+  "lastUpdated": "2026-05-20T03:44:13Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

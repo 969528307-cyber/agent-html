@@ -1,0 +1,174 @@
+{
+  "id": "candidate-crabtalk-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Crabtalk",
+  "sourceUrl": "https://github.com/crabtalk/crabtalk",
+  "sourceName": "GitHub",
+  "author": "crabtalk",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Agents daemon that hides nothing",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "crabtalk",
+    "repo": "crabtalk",
+    "fullName": "crabtalk/crabtalk",
+    "stars": 701,
+    "license": "MIT",
+    "topics": [
+      "agent-framework",
+      "agent-runtime",
+      "ai",
+      "ai-agent",
+      "composable",
+      "developer-tool",
+      "llm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T09:09:00Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.gitignore",
+    "docs/.rfc-progress",
+    "docs/book.toml",
+    "docs/src/introduction.md",
+    "docs/src/manifesto.md",
+    "docs/src/rfcs/0000-compaction.md",
+    "docs/src/rfcs/0009-transport.md",
+    "docs/src/rfcs/0018-protocol.md",
+    "docs/src/rfcs/0027-model.md",
+    "docs/src/rfcs/0036-skill.md",
+    "docs/src/rfcs/0038-memory.md",
+    "docs/src/rfcs/0043-command.md",
+    "docs/src/rfcs/0043-component.md",
+    "docs/src/rfcs/0064-session.md",
+    "docs/src/rfcs/0075-hook.md",
+    "docs/src/rfcs/0078-compact-session.md",
+    "docs/src/rfcs/0080-cron.md",
+    "docs/src/rfcs/0082-scoping.md",
+    "docs/src/rfcs/0121-event-bus.md",
+    "docs/src/rfcs/0135-agent-first.md",
+    "docs/src/rfcs/0150-memory-store.md",
+    "docs/src/rfcs/0171-topic-switching.md",
+    "docs/src/rfcs/0184-crabup.md",
+    "docs/src/rfcs/0185-session-search.md",
+    "docs/src/rfcs/0189-policy-at-the-edge.md",
+    "docs/src/rfcs/0193-agent-owned-mcp.md",
+    "docs/src/rfcs/README.md",
+    "docs/src/rfcs/superseded.md",
+    "docs/src/spec/conversations.md",
+    "docs/src/spec/daemon.md",
+    "docs/src/spec/dispatch.md",
+    "docs/src/spec/memory.md",
+    "docs/src/spec/multi-agent.md",
+    "docs/src/spec/providers.md",
+    "docs/src/spec/runtime.md",
+    "docs/src/SUMMARY.md",
+    "docs/theme/highlight.js",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Crabtalk [![Crates.io][crates badge]][crates] [![Docs][docs badge]][docs] [![Discord][discord badge]][discord] Agent daemon. Runs agents, dispatches tools, connects to MCP servers. Start it, talk to it, extend it with packages. Or cargo install crabup and use it to pull the rest. See the [installation guide][install] for details. Quick Start Full config reference: [ crates/crabtalk/config.toml ](crates/crabtalk/confi",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agent daemon. Runs agents, dispatches tools, connects to MCP servers.",
+    "The daemon ships with built-in tools (shell, task delegation, memory),",
+    "MCP server integration, and skills (Markdown prompt files).",
+    "Apps are agent-powered experiences and standalone services",
+    "built on top of the daemon — independent binaries that connect via",
+    "Ownership is necessary for an open agent ecosystem.",
+    "A configured agent is one where you picked from",
+    "An owned agent is one where you decided what's on the menu."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Agents daemon that hides nothing",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "Crabtalk is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to agent-app.",
+      "Agent daemon. Runs agents, dispatches tools, connects to MCP servers.",
+      "The daemon ships with built-in tools (shell, task delegation, memory),"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "crabtalk",
+  "publishedAt": "2026-05-20"
+}

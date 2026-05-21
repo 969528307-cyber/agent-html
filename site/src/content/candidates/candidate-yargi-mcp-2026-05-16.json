@@ -1,0 +1,157 @@
+{
+  "id": "candidate-yargi-mcp-2026-05-16",
+  "type": "tool",
+  "status": "published",
+  "title": "Yargi Mcp",
+  "sourceUrl": "https://github.com/saidsurucu/yargi-mcp",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "saidsurucu",
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "MCP Server For Turkish Legal Databases",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "saidsurucu",
+    "repo": "yargi-mcp",
+    "fullName": "saidsurucu/yargi-mcp",
+    "stars": 909,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T11:31:29Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Yargı MCP: Türk Hukuk Kaynakları için MCP Sunucusu 🚨 SUNUCU YENİ ADRESE TAŞINDI Yeni Remote MCP adresi: https://yargimcp.surucu.dev/mcp Eski adres ( https://yargimcp.fastmcp.app/mcp ) artık kullanım dışıdır — yalnızca taşındığını bildiren bir uyarı tool'u döner. Yapmanız gereken: MCP istemcinizdeki (Claude Desktop, 5ire, Google Antigravity, ChatGPT vb.) sunucu URL'sini yukarıdaki yeni adresle güncelleyin. Word'den U",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Yargı MCP: Türk Hukuk Kaynakları için MCP Sunucusu",
+    "Eski adres ( artık kullanım dışıdır — yalnızca taşındığını bildiren bir uyarı tool'u döner.",
+    "Yapmanız gereken: MCP istemcinizdeki (Claude Desktop, 5ire, Google Antigravity, ChatGPT vb.) sunucu URL'sini yukarıdaki yeni adresle güncelleyin.",
+    "🚀 5 Dakikada Başla (Remote MCP)",
+    "⚠️ Eski adres artık kullanım dışıdır — yalnızca taşındığını bildiren bir uyarı tool'u döner.",
+    "Claude Desktop ile Kullanım (Ücretli abonelik gerekir)",
+    "Settings → Connectors → Add Custom Connector",
+    "Agent session açın ve editörün yan panelindeki \"…\" dropdown menüsüne tıklayın"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "MCP Server For Turkish Legal Databases",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "data"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "data"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Package metadata detected; may expose executable commands.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: cli.",
+    "LLM: mcp + [mcp] — Repo is explicitly an MCP server for Turkish legal databases, providing tools via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Yargi Mcp is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Relevant to data.",
+      "Yargı MCP: Türk Hukuk Kaynakları için MCP Sunucusu",
+      "Eski adres ( artık kullanım dışıdır — yalnızca taşındığını bildiren bir uyarı tool'u döner.",
+      "Yapmanız gereken: MCP istemcinizdeki (Claude Desktop, 5ire, Google Antigravity, ChatGPT vb.) sunucu URL'sini yukarıdaki yeni adresle güncelleyin."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:saidsurucu/yargi-mcp",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-16",
+  "reviewedBy": "local-review",
+  "publishedAs": "yargi-mcp",
+  "publishedAt": "2026-05-16",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

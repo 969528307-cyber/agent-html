@@ -1,0 +1,79 @@
+{
+  "id": "pi",
+  "name": "Pi",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+  "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+  "category": [
+    "cli",
+    "code-review",
+    "docs",
+    "workflow"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/earendil-works/pi",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/earendil-works/pi",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/earendil-works/pi#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/earendil-works/pi#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/earendil-works/pi/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Maintainers review auto-closed issues daily.",
+    "This is the home of the pi agent harness project including our self extensible coding agent.",
+    "@earendil-works/pi-coding-agent: Interactive coding agent CLI",
+    "@earendil-works/pi-agent-core: Agent runtime with tool calling and state management",
+    "Read the documentation, but you can also ask the agent to explain itself",
+    "Share your OSS coding agent sessions",
+    "If you use pi or other coding agents for open source work, please share your sessions.",
+    "Public OSS session data helps improve coding agents with real-world tasks, tool use, failures, and fixes instead of toy benchmarks."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T00:02:08Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/earendil-works/pi",
+  "repoUrl": "https://github.com/earendil-works/pi",
+  "license": "MIT",
+  "stars": 50864,
+  "lastUpdated": "2026-05-18T00:02:08Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

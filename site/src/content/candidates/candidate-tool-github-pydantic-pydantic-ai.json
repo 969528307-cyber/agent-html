@@ -1,0 +1,203 @@
+{
+  "id": "candidate-tool-github-pydantic-pydantic-ai",
+  "type": "tool",
+  "status": "published",
+  "title": "Pydantic Ai",
+  "sourceUrl": "https://github.com/pydantic/pydantic-ai",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "pydantic",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "AI Agent Framework, the Pydantic way",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "pydantic",
+    "repo": "pydantic-ai",
+    "fullName": "pydantic/pydantic-ai",
+    "stars": 17123,
+    "license": "MIT",
+    "topics": [
+      "agent-framework",
+      "genai",
+      "llm",
+      "pydantic",
+      "python"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T11:33:40Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.cursor/rules.mdc",
+    "docs/.hooks/algolia.py",
+    "docs/.hooks/main.py",
+    "docs/.hooks/snippets.py",
+    "docs/.hooks/test_snippets.py",
+    "docs/.overrides/.icons/logfire/logo.svg",
+    "docs/.overrides/partials/search.html",
+    "docs/.partials/index-header.html",
+    "docs/a2a.md",
+    "docs/agent-spec.md",
+    "docs/agent.md",
+    "docs/AGENTS.md",
+    "docs/api/ag_ui.md",
+    "docs/api/agent.md",
+    "docs/api/capabilities.md",
+    "docs/api/common_tools.md",
+    "docs/api/concurrency.md",
+    "docs/api/direct.md",
+    "docs/api/durable_exec.md",
+    "docs/api/embeddings.md",
+    "docs/api/exceptions.md",
+    "docs/api/ext.md",
+    "docs/api/fasta2a.md",
+    "docs/api/format_prompt.md",
+    "docs/api/function_signature.md",
+    "docs/api/mcp.md",
+    "docs/api/messages.md",
+    "docs/api/models/anthropic.md",
+    "docs/api/models/base.md",
+    "docs/api/models/bedrock.md",
+    "docs/api/models/cerebras.md",
+    "docs/api/models/cohere.md",
+    "docs/api/models/fallback.md",
+    "docs/api/models/function.md",
+    "docs/api/models/google.md",
+    "docs/api/models/groq.md",
+    "docs/api/models/huggingface.md",
+    "docs/api/models/instrumented.md",
+    "docs/api/models/mcp-sampling.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <a href=\"https://ai.pydantic.dev/\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://pydantic.dev/docs/ai/img/pydantic ai dark.svg\" <img src=\"https://pydantic.dev/docs/ai/img/pydantic ai light.svg\" alt=\"Pydantic AI\" </picture </a </div <div align=\"center\" <h3 GenAI Agent Framework, the Pydantic way</h3 </div <div align=\"center\" <a href=\"https://github.com/pydantic/pydantic ai/a",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "GenAI Agent Framework, the Pydantic way",
+    "Documentation: ai.pydantic.dev",
+    "Pydantic AI is a Python agent framework designed to help you quickly, confidently, and painlessly build production grade applications and workflows with Generative AI.",
+    "Yet despite virtually every Python agent framework and LLM library using Pydantic Validation, when we began to use LLMs in Pydantic Logfire, we couldn't find anything that gave us the same feeling.",
+    "We built Pydantic AI with one simple aim: to bring that FastAPI feeling to GenAI app and agent development.",
+    "Enables you to systematically test and evaluate the performance and accuracy of the agentic systems you build, and monitor the performance over time in Pydantic Logfire.",
+    "Build agents from composable capabilities that bundle tools, hooks, instructions, and model settings into reusable units.",
+    "Define agents entirely in YAML/JSON — no code required."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-framework\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "AI Agent Framework, the Pydantic way",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "Pydantic Ai is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Relevant to agent-framework.",
+      "GenAI Agent Framework, the Pydantic way",
+      "Documentation: ai.pydantic.dev"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:pydantic/pydantic-ai",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pydantic-ai",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

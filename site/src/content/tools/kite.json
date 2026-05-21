@@ -1,0 +1,73 @@
+{
+  "id": "kite",
+  "name": "Kite",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "🪁 A lightweight, modern Kubernetes dashboard that unifies multi-cluster and resource management, enterprise-grade user governance (OAuth, RBAC, and audit logs), and AI agents in one workspace. Not just a tool, but more like a platform.",
+  "description": "🪁 A lightweight, modern Kubernetes dashboard that unifies multi-cluster and resource management, enterprise-grade user governance (OAuth, RBAC, and audit logs), and AI agents in one workspace. Not just a tool, but more like a platform.",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/kite-org/kite",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/kite-org/kite",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/kite-org/kite#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/kite-org/kite#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/kite-org/kite/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Not just a tool, but more like a platform.",
+    "Global search across all resources",
+    "Switch between multiple Kubernetes clusters",
+    "Live pod logs with filtering and search",
+    "User management and role allocation",
+    "For detailed instructions, please refer to the documentation.",
+    "For troubleshooting, please refer to the documentation.",
+    "...Switch between multiple Kubernetes clusters"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T08:09:38Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/kite-org/kite",
+  "repoUrl": "https://github.com/kite-org/kite",
+  "license": "Apache-2.0",
+  "stars": 2697,
+  "lastUpdated": "2026-05-18T08:09:38Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

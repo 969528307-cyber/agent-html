@@ -1,0 +1,129 @@
+{
+  "id": "candidate-agent-kimi-agent",
+  "type": "agent",
+  "status": "published",
+  "title": "Kimi CLI / Kimi Agent",
+  "sourceUrl": "https://www.kimi.com/",
+  "sourceName": "Kimi overview",
+  "sourceRegistryId": "local-agents-library",
+  "sourceRegistry": {
+    "id": "local-agents-library",
+    "name": "Local Agent Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/agents",
+    "acceptRules": [
+      "must_have_documentation_url",
+      "must_have_summary",
+      "must_have_capability_profile"
+    ],
+    "rejectRules": [
+      "missing_official_link",
+      "missing_agent_capability_description"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "Moonshot AI's Kimi agent surface for long-context research, document-heavy workflows, and Kimi Code CLI development tasks.",
+  "proposedCategory": [
+    "Long-context research",
+    "Document-heavy analysis",
+    "Chinese and bilingual workflows",
+    "Kimi Code CLI exploration"
+  ],
+  "proposedAgents": [
+    "kimi-agent",
+    "kimi-cli-kimi-agent"
+  ],
+  "extractedSignals": [
+    "Long-context orientation: Kimi is strongly associated with long-context reading, research, document understanding, and multi-step information work.",
+    "Agent and research product surface: Kimi's public help materials describe agent-style workflows for planning and completing tasks such as research, website generation, slides, and document work.",
+    "Kimi Code CLI path: Kimi Code CLI is the developer-facing path and should be tracked separately from the general Kimi chat or web agent experience.",
+    "CLI: supported",
+    "ACP: supported",
+    "Workflow: native"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Agent collector output. Review official docs, GitHub activity, extension model, and ecosystem fit before changing the public Agent page.",
+  "publishedAs": "kimi-agent",
+  "publishedAt": "2026-05-16",
+  "author": "Moonshot AI",
+  "agentProfile": {
+    "region": "china",
+    "vendor": "Moonshot AI",
+    "interfaceType": [
+      "web",
+      "cli"
+    ],
+    "supportsMcp": false,
+    "supportsSkills": false,
+    "supportsCli": true,
+    "supportsWorkflows": true,
+    "sourceKinds": [
+      "official",
+      "github",
+      "docs"
+    ],
+    "officialLinks": [
+      {
+        "label": "Kimi overview",
+        "url": "https://www.kimi.com/help/getting-started/overview",
+        "kind": "official"
+      },
+      {
+        "label": "Kimi CLI GitHub",
+        "url": "https://github.com/MoonshotAI/kimi-cli",
+        "kind": "github"
+      },
+      {
+        "label": "Kimi CLI docs",
+        "url": "https://moonshotai.github.io/kimi-cli/en/customization/wire-mode.html",
+        "kind": "docs"
+      }
+    ]
+  },
+  "canonicalKey": "agent:kimi-agent",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "agent",
+    "primaryType": "agent",
+    "whatIsIt": "Kimi CLI / Kimi Agent is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to Long-context research.",
+      "Relevant to Document-heavy analysis.",
+      "Relevant to Chinese and bilingual workflows.",
+      "Relevant to Kimi Code CLI exploration.",
+      "Long-context orientation: Kimi is strongly associated with long-context reading, research, document understanding, and multi-step information work."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "id": "candidate-cc-skills-golang-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Cc Skills Golang",
+  "sourceUrl": "https://github.com/samber/cc-skills-golang",
+  "sourceName": "GitHub",
+  "author": "samber",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "🧑‍🎨 A collection of Golang agentic skills that works",
+  "proposedCategory": [
+    "skill",
+    "code-review",
+    "docs",
+    "workflow",
+    "testing"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "samber",
+    "repo": "cc-skills-golang",
+    "fullName": "samber/cc-skills-golang",
+    "stars": 1715,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "ai",
+      "antigravity",
+      "claude",
+      "claude-code",
+      "code",
+      "codex",
+      "coding",
+      "copilot",
+      "cursor",
+      "gemini",
+      "gemini-cli-extension",
+      "openclaw",
+      "opencode",
+      "plugin",
+      "skills",
+      "skillsmp",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T17:04:26Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/golang-benchmark/SKILL.md",
+    "skills/golang-cli/SKILL.md",
+    "skills/golang-code-style/SKILL.md",
+    "skills/golang-concurrency/SKILL.md",
+    "skills/golang-context/SKILL.md",
+    "skills/golang-continuous-integration/SKILL.md",
+    "skills/golang-data-structures/SKILL.md",
+    "skills/golang-database/SKILL.md",
+    "skills/golang-dependency-injection/SKILL.md",
+    "skills/golang-dependency-management/SKILL.md",
+    "skills/golang-design-patterns/SKILL.md",
+    "skills/golang-documentation/SKILL.md",
+    "skills/golang-error-handling/SKILL.md",
+    "skills/golang-google-wire/SKILL.md",
+    "skills/golang-graphql/SKILL.md",
+    "skills/golang-grpc/SKILL.md",
+    "skills/golang-lint/SKILL.md",
+    "skills/golang-modernize/SKILL.md",
+    "skills/golang-naming/SKILL.md",
+    "skills/golang-observability/SKILL.md",
+    "skills/golang-performance/SKILL.md",
+    "skills/golang-popular-libraries/SKILL.md",
+    "skills/golang-project-layout/SKILL.md",
+    "skills/golang-safety/SKILL.md",
+    "skills/golang-samber-do/SKILL.md",
+    "skills/golang-samber-hot/SKILL.md",
+    "skills/golang-samber-lo/SKILL.md",
+    "skills/golang-samber-mo/SKILL.md",
+    "skills/golang-samber-oops/SKILL.md",
+    "skills/golang-samber-ro/SKILL.md",
+    "skills/golang-samber-slog/SKILL.md",
+    "skills/golang-security/SKILL.md",
+    "skills/golang-spf13-cobra/SKILL.md",
+    "skills/golang-spf13-viper/SKILL.md",
+    "skills/golang-stay-updated/SKILL.md",
+    "skills/golang-stretchr-testify/SKILL.md",
+    "skills/golang-structs-interfaces/SKILL.md",
+    "skills/golang-swagger/SKILL.md",
+    "skills/golang-testing/SKILL.md"
+  ],
+  "readmeExtract": "Agent Skills for production ready Golang projects AI agent skills are reusable instruction sets that extend your coding assistant with domain specific expertise, loaded on demand so they don't bloat your context. This repository covers Go specific skills only (language, testing, security, observability, etc.); for dev workflow skills (git conventions, CI/CD, PR reviews) you'll want to add a separate skills plugin. Fo",
+  "skillExtracts": [
+    {
+      "path": "skills/golang-benchmark/SKILL.md",
+      "extract": "name: golang benchmark description: \"Golang benchmarking, profiling, and performance measurement. Use when writing, running, or comparing Go benchmarks, profiling hot paths with pprof, interpreting CPU/memory/trace profiles, analyzing results with benchstat, setting up CI benchmark regression detection, or investigating production performance with Prometheus runtime metrics. Also use when the developer needs deep ana"
+    },
+    {
+      "path": "skills/golang-cli/SKILL.md",
+      "extract": "name: golang cli description: \"Golang CLI application development. Use when building, modifying, or reviewing a Go CLI tool — especially for command structure, flag handling, configuration layering, version embedding, exit codes, I/O patterns, signal handling, shell completion, argument validation, and CLI unit testing. Also triggers when code uses cobra, viper, or urfave/cli.\" user invocable: true license: MIT compa"
+    },
+    {
+      "path": "skills/golang-code-style/SKILL.md",
+      "extract": "name: golang code style description: \"Golang code style, formatting and conventions. Use when writing Go code, reviewing style, configuring linters, writing comments, or establishing project standards.\" user invocable: true license: MIT compatibility: Designed for Claude Code or similar AI coding agents, and for projects using Golang. metadata: author: samber version: \"1.1.2\" openclaw: emoji: \"🎨\" homepage: https://g"
+    },
+    {
+      "path": "skills/golang-concurrency/SKILL.md",
+      "extract": "name: golang concurrency description: \"Golang concurrency patterns. Use when writing or reviewing concurrent Go code involving goroutines, channels, select, locks, sync primitives, errgroup, singleflight, worker pools, or fan out/fan in pipelines. Also triggers when you detect goroutine leaks, race conditions, channel ownership issues, or need to choose between channels and mutexes.\" user invocable: true license: MIT"
+    },
+    {
+      "path": "skills/golang-context/SKILL.md",
+      "extract": "name: golang context description: \"Idiomatic context.Context usage in Golang — creation, propagation, cancellation, timeouts, deadlines, context values, and cross service tracing. Apply when working with context.Context in any Go code.\" user invocable: true license: MIT compatibility: Designed for Claude Code or similar AI coding agents, and for projects using Golang. metadata: author: samber version: \"1.1.1\" opencla"
+    },
+    {
+      "path": "skills/golang-continuous-integration/SKILL.md",
+      "extract": "name: golang continuous integration description: \"Provides CI/CD pipeline configuration using GitHub Actions for Golang projects. Covers testing, linting, SAST, security scanning, code coverage, Dependabot, Renovate, GoReleaser, code review automation, and release pipelines. Use this whenever setting up CI for a Go project, configuring workflows, adding linters or security scanners, setting up Dependabot or Renovate,"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agent Skills for production-ready Golang projects",
+    "AI agent skills are reusable instruction sets that extend your coding assistant with domain-specific expertise, loaded on demand so they don't bloat your context.",
+    "This repository covers Go-specific skills only (language, testing, security, observability, etc.); for dev workflow skills (git conventions, CI/CD, PR reviews) you'll want to add a separate skills plugin.",
+    "For generic skills, please visit cc-skills.",
+    "[!IMPORTANT] Bootstrapped with Claude Code by distilling my Go project commits.",
+    "Edited, tested, reviewed and reworked by a human.",
+    "No AI slop here. AI-made skills are useless.",
+    "Copy skills into the cross-client discovery directory:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "🧑‍🎨 A collection of Golang agentic skills that works",
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "testing",
+      "devops",
+      "security",
+      "coding",
+      "monitoring",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "testing",
+    "devops",
+    "security",
+    "coding",
+    "monitoring",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 18,
+    "cli": 6,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Repository name indicates skill content.",
+    "GitHub topics tag as skills.",
+    "Skill-collection or agent-rules language in description.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Workflow/automation/orchestration language detected.",
+    "Coding agent detected with CLI context.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: cli, workflow.",
+    "LLM: skill + [skill] — This repository contains reusable agent skill instructions for Golang projects, intended to be used as skill files by AI coding assistants."
+  ],
+  "classificationAlternatives": [
+    "cli",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Cc Skills Golang is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with testing workflows.",
+      "Helps with devops workflows.",
+      "Helps with security workflows.",
+      "Helps with coding workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cc-skills-golang",
+  "publishedAt": "2026-05-18",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  }
+}

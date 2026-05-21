@@ -1,0 +1,180 @@
+{
+  "id": "candidate-oh-story-claudecode-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Oh Story Claudecode",
+  "sourceUrl": "https://github.com/worldwonderer/oh-story-claudecode",
+  "sourceName": "GitHub",
+  "author": "worldwonderer",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "网文/小说写作 skill 包，覆盖长篇与短篇网络小说的扫榜、拆文、写作、去AI味、封面图全流程",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "worldwonderer",
+    "repo": "oh-story-claudecode",
+    "fullName": "worldwonderer/oh-story-claudecode",
+    "stars": 1280,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "ai-writing",
+      "chinese-novel",
+      "claude-code",
+      "claude-skills",
+      "creative-writing",
+      "gpt-image",
+      "novel-writing",
+      "openclaw",
+      "skill",
+      "web-novel",
+      "writing-assistant"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T01:43:54Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/browser-cdp/SKILL.md",
+    "skills/story-cover/SKILL.md",
+    "skills/story-deslop/SKILL.md",
+    "skills/story-import/SKILL.md",
+    "skills/story-long-analyze/SKILL.md",
+    "skills/story-long-scan/SKILL.md",
+    "skills/story-long-write/SKILL.md",
+    "skills/story-review/SKILL.md",
+    "skills/story-setup/SKILL.md",
+    "skills/story-short-analyze/SKILL.md",
+    "skills/story-short-scan/SKILL.md",
+    "skills/story-short-write/SKILL.md",
+    "skills/story/SKILL.md"
+  ],
+  "readmeExtract": "[English](README EN.md) | 中文 oh story claudecode 网文写作 skill 包，覆盖长篇与短篇网络小说的扫榜、拆文、写作、去AI味、封面图全流程。适配 Claude Code、OpenClaw。 核心思路 套路 = 确定性的情绪满足 专业作者的方法论三步走：1. 扫榜：分析热门榜单，洞察题材、人设、切入点。2. 拆文：拆解大纲节奏与剧情素材，建立个人模块库。3. 商业化写作：学习并运用钩子、爽感、期待感等核心技巧。 围绕爆款逆向、剧情模块化重组、上下文状态分层管理、人机协同四条线展开。 流程总览 安装 方式一 直接告诉 Claude Code / OpenClaw： 方式二 命令行： g 全局安装，所有目录可用；去掉 g 则只装到当前目录。更新时重新执行同一条命令即可。 Skills | Skill | 触发 | 说明 | |: |: |: | | story setup | /sto",
+  "skillExtracts": [
+    {
+      "path": "skills/browser-cdp/SKILL.md",
+      "extract": "name: browser cdp version: 1.0.0 description: \"Use this skill when you need to control a Chrome browser via CDP (Chrome DevTools Protocol) to reuse existing login sessions. Covers: launching Chrome in debug mode, opening URLs, waiting for page load, evaluating JavaScript, taking snapshots, and extracting auth tokens. Trigger phrases: browser automation, CDP, agent browser, 浏览器操作, 操作浏览器, Chrome CDP, 复用登录态, extract tok"
+    },
+    {
+      "path": "skills/story-cover/SKILL.md",
+      "extract": "name: story cover version: 1.0.0 description: | 小说封面生成。根据书名、作者名自动分析题材风格，调用 GPT Image 2 直接生成含标题和署名的专业级网文封面。 触发方式：/story cover、/封面、「帮我做个封面」「生成封面图」「做个小说封面」「封面设计」 metadata: openclaw: requires: env: GPT IMAGE API KEY bins: curl primaryEnv: GPT IMAGE API KEY source: https://github.com/worldwonderer/oh story claudecode story cover：小说封面生成 你是小说封面设计师。根据书名和题材，调用 GPT Image 2 一次性生成包含书名和作者名的完整封面。 核心原则：封面是读者的第一印象，一眼传达题材和氛围。 API 配置 "
+    },
+    {
+      "path": "skills/story-deslop/SKILL.md",
+      "extract": "name: story deslop version: 1.0.0 description: | 网文去AI味。检测并清除文本中的AI写作痕迹，让文字回归自然、非模板化。 触发方式：/story deslop、/去AI味、「去AI味」「去味」「deslop」「这篇太AI了」 metadata: openclaw: source: https://github.com/worldwonderer/oh story claudecode story deslop：网文去AI味 你是网文润色专家。你的任务是把 AI 味浓重的网文文本改写自然，降低模板化、书面腔和过度工整感。 核心信念：AI 味的主要问题不是语法，而是过度圆滑、工整、解释充分。改写目标是保留剧情功能，同时增加口语、停顿、跳跃和具体动作。 核心哲学 原则 1：不是改错，是改味 AI味不是语法错误，不需要\"修正\"。AI味是一种风格问题——过于书面化、过于对仗工整、过于面面俱"
+    },
+    {
+      "path": "skills/story-import/SKILL.md",
+      "extract": "name: story import version: 1.0.0 description: | 逆向导入已有小说。将已写好的小说（半成品或完本）反向解析为标准项目目录结构， 兼容 story long write 的后续写作流程。内部复用 story long analyze 的深度分析管线。 触发方式：/story import、「导入小说」「反向解析」「导入」「把我的书导进来」 metadata: openclaw: source: https://github.com/worldwonderer/oh story claudecode story import：逆向导入已有小说 你是小说项目逆向工程师。将用户已有的小说文本（半成品或完本）解析为标准项目目录结构，使其可以无缝接入 story long write 的后续写作流程。 核心信念：好的工具不是从零开始，而是从你已有的东西开始。 核心原则 原则 1：先分析后迁移 "
+    },
+    {
+      "path": "skills/story-long-analyze/SKILL.md",
+      "extract": "name: story long analyze version: 1.0.0 description: | 长篇网文拆文。深度拆解爆款长篇小说的黄金三章、人设架构、爽点设计、节奏控制。 支持两种模式： 快速拆解：分析黄金三章和整体结构（默认） 深度拆解：逐章拆解整本小说，输出结构化文件到指定目录 触发方式：/story long analyze、/长篇拆文、「帮我拆这本书」「分析黄金三章」 深度模式触发：「深度拆解」「完整拆解」「系统拆解」或提供小说文本文件路径 metadata: openclaw: source: https://github.com/worldwonderer/oh story claudecode story long analyze：长篇网文拆文 你是网络小说结构分析师。 核心信念：看懂别人的爆款，才能写出自己的爆款。 Phase 1：确认拆解对象 + 路由 问用户： 「你要拆哪本书？（书名+平台）你"
+    },
+    {
+      "path": "skills/story-long-scan/SKILL.md",
+      "extract": "name: story long scan version: 1.0.0 description: | 长篇网文扫榜。分析起点、番茄、晋江等平台排行榜数据，提炼市场趋势与热门题材。 触发方式：/story long scan、/长篇扫榜、「长篇什么火」「起点排行」 metadata: openclaw: source: https://github.com/worldwonderer/oh story claudecode story long scan：长篇网文扫榜 你是网络小说市场分析师。你的任务是基于榜单样本识别长篇网文市场格局，并输出可执行的题材候选、风险阈值和验证动作。 核心信念：单本排名不是结论，跨样本重复模式才是信号。 排行榜只能证明样本存在；必须通过多榜单、多作品和近期数据判断需求强度。 核心哲学 原则 1：扫榜不是看排名，是看模式 排名会波动，模式必须用重复样本验证。扫榜要提取：反复出现的题材、设定、套路、书名"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "网文写作 skill 包，覆盖长篇与短篇网络小说的扫榜、拆文、写作、去AI味、封面图全流程。适配 Claude Code、OpenClaw。",
+    "方式一 直接告诉 Claude Code / OpenClaw：",
+    "story /story /网文 工具箱路由 · 模糊意图自动分发到对应 skill",
+    "story-review /story-review /审查 多视角审查 · 4 Agent 多视角审稿 + 番茄/起点/知乎评分标准",
+    "browser-cdp /browser-cdp 浏览器操控 · CDP 协议复用登录态抓取数据",
+    "「沈栀现在什么状态」→ 自动 spawn story-explorer agent",
+    "写作 skill 内部通过 7 个专业 Agent 协作，各司其职：",
+    "story-researcher Sonnet 资料研究 · CDP 搜索+正文提取、多源交叉验证、结构化参考文件输出"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "网文/小说写作 skill 包，覆盖长篇与短篇网络小说的扫榜、拆文、写作、去AI味、封面图全流程",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Oh Story Claudecode is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "网文写作 skill 包，覆盖长篇与短篇网络小说的扫榜、拆文、写作、去AI味、封面图全流程。适配 Claude Code、OpenClaw。"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "oh-story-claudecode",
+  "publishedAt": "2026-05-20"
+}

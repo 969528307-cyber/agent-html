@@ -1,0 +1,158 @@
+{
+  "id": "candidate-librechat-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "LibreChat",
+  "sourceUrl": "https://github.com/danny-avila/LibreChat",
+  "sourceName": "GitHub",
+  "author": "danny-avila",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Enhanced ChatGPT Clone: Features Agents, MCP, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "danny-avila",
+    "repo": "LibreChat",
+    "fullName": "danny-avila/LibreChat",
+    "stars": 37212,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "anthropic",
+      "artifacts",
+      "aws",
+      "azure",
+      "chatgpt",
+      "chatgpt-clone",
+      "claude",
+      "clone",
+      "deepseek",
+      "gemini",
+      "google",
+      "gpt-5",
+      "librechat",
+      "mcp",
+      "o1",
+      "openai",
+      "responses-api",
+      "vision",
+      "webui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:18:41Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh.md",
+    "package.json",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://librechat.ai\" <img src=\"client/public/assets/logo.svg\" height=\"256\" </a <h1 align=\"center\" <a href=\"https://librechat.ai\" LibreChat</a </h1 </p <p align=\"center\" <strong English</strong · <a href=\"README.zh.md\" 中文</a </p <p align=\"center\" <a href=\"https://discord.librechat.ai\" <img src=\"https://img.shields.io/discord/1086345563026489514?label=&logo=discord&style=for the badge&logoWi",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Anthropic (Claude), AWS Bedrock, OpenAI, Azure OpenAI, Google, Vertex AI, OpenAI Responses API (incl.",
+    "🔦 Agents & Tools Integration:",
+    "Agent Marketplace: Discover and deploy community-built agents",
+    "Collaborative Sharing: Share agents with specific users and groups",
+    "Flexible & Extensible: Use MCP Servers, tools, file search, code execution, and more",
+    "Skills: Create reusable SKILL.md instruction bundles for manual, automatic, or always-on agent workflows",
+    "Subagents: Delegate focused work to isolated child agent runs with their own context windows",
+    "Model Context Protocol (MCP) Support for Tools"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Enhanced ChatGPT Clone: Features Agents, MCP, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "security",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "security",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "LibreChat is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with security workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "librechat",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,182 @@
+{
+  "id": "candidate-agent-rules-books-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Agent Rules Books",
+  "sourceUrl": "https://github.com/ciembor/agent-rules-books",
+  "sourceName": "GitHub",
+  "author": "ciembor",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "AGENTS.md rules / skills for AI coding agents: Codex, Cursor & Claude Code. Inspired by Clean Code, Refactoring, DDD, Clean Architecture and DDIA programming books.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "ciembor",
+    "repo": "agent-rules-books",
+    "fullName": "ciembor/agent-rules-books",
+    "stars": 1462,
+    "license": "MIT",
+    "topics": [
+      "agent-rules",
+      "agent-skills",
+      "agents-md",
+      "ai-agent",
+      "ai-skills",
+      "claude-code",
+      "claude-code-skills",
+      "code-quality",
+      "codex",
+      "codex-skills",
+      "cursor-rules",
+      "cursor-skills",
+      "domain-driven-design",
+      "programming-books",
+      "refactoring"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T05:53:15Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/ADDING_THE_BOOK.md",
+    "docs/COMPATIBILITY.md",
+    "docs/compatibility/a-philosophy-of-software-design/clean-architecture.md",
+    "docs/compatibility/a-philosophy-of-software-design/clean-code.md",
+    "docs/compatibility/a-philosophy-of-software-design/code-complete.md",
+    "docs/compatibility/a-philosophy-of-software-design/designing-data-intensive-applications.md",
+    "docs/compatibility/a-philosophy-of-software-design/domain-driven-design-distilled.md",
+    "docs/compatibility/a-philosophy-of-software-design/domain-driven-design.md",
+    "docs/compatibility/a-philosophy-of-software-design/implementing-domain-driven-design.md",
+    "docs/compatibility/a-philosophy-of-software-design/patterns-of-enterprise-application-architecture.md",
+    "docs/compatibility/a-philosophy-of-software-design/refactoring-guru.md",
+    "docs/compatibility/a-philosophy-of-software-design/refactoring.md",
+    "docs/compatibility/a-philosophy-of-software-design/release-it.md",
+    "docs/compatibility/a-philosophy-of-software-design/the-pragmatic-programmer.md",
+    "docs/compatibility/a-philosophy-of-software-design/working-effectively-with-legacy-code.md",
+    "docs/compatibility/clean-architecture/clean-code.md",
+    "docs/compatibility/clean-architecture/code-complete.md",
+    "docs/compatibility/clean-architecture/designing-data-intensive-applications.md",
+    "docs/compatibility/clean-architecture/domain-driven-design-distilled.md",
+    "docs/compatibility/clean-architecture/domain-driven-design.md",
+    "docs/compatibility/clean-architecture/implementing-domain-driven-design.md",
+    "docs/compatibility/clean-architecture/patterns-of-enterprise-application-architecture.md",
+    "docs/compatibility/clean-architecture/refactoring-guru.md",
+    "docs/compatibility/clean-architecture/refactoring.md",
+    "docs/compatibility/clean-architecture/release-it.md",
+    "docs/compatibility/clean-architecture/the-pragmatic-programmer.md",
+    "docs/compatibility/clean-architecture/working-effectively-with-legacy-code.md",
+    "docs/compatibility/clean-code/code-complete.md",
+    "docs/compatibility/clean-code/designing-data-intensive-applications.md",
+    "docs/compatibility/clean-code/domain-driven-design-distilled.md",
+    "docs/compatibility/clean-code/domain-driven-design.md",
+    "docs/compatibility/clean-code/implementing-domain-driven-design.md",
+    "docs/compatibility/clean-code/patterns-of-enterprise-application-architecture.md",
+    "docs/compatibility/clean-code/refactoring-guru.md",
+    "docs/compatibility/clean-code/refactoring.md",
+    "docs/compatibility/clean-code/release-it.md",
+    "docs/compatibility/clean-code/the-pragmatic-programmer.md",
+    "docs/compatibility/clean-code/working-effectively-with-legacy-code.md",
+    "docs/compatibility/code-complete/designing-data-intensive-applications.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"books ai rules.png\" alt=\"AI agent rules from programming books\" width=\"800\" / <h1 align=\"center\" AI agents Rules / Skills from<br / Programming Books v0.5</h1 <p align=\"center\" <strong AGENTS.md rules</strong / <strong skills</strong for <strong Codex</strong , <strong Cursor</strong , <strong Claude Code</strong , distilled from classic <strong software engineering books</strong about r",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AI agents Rules / Skills from. Programming Books v0.5",
+    "AGENTS.md rules / skills for Codex , Cursor , Claude Code , distilled from classic software engineering books about refactoring, architecture, DDD and code quality.",
+    "MIT licensed universal project rules for coding agents.",
+    "Each rule set is released in three tool-agnostic Markdown versions:",
+    "This rule set is a strong default for everyday coding and code review.",
+    "This rule set helps agents make disciplined implementation decisions.",
+    "This rule set helps agents think in terms of the business model rather than tables, controllers, or DTOs.",
+    "This rule set is useful when an agent needs to diagnose smells, choose a safe treatment, preserve behavior, and stop before cleanup turns into uncontrolled redesign."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "AGENTS.md rules / skills for AI coding agents: Codex, Cursor & Claude Code. Inspired by Clean Code, Refactoring, DDD, Clean Architecture and DDIA programming books.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Agent Rules Books is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "AI agents Rules / Skills from. Programming Books v0.5",
+      "AGENTS.md rules / skills for Codex , Cursor , Claude Code , distilled from classic software engineering books about refactoring, architecture, DDD and code quality."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-rules-books",
+  "publishedAt": "2026-05-18"
+}

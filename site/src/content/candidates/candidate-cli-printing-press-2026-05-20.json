@@ -1,0 +1,176 @@
+{
+  "id": "candidate-cli-printing-press-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Cli Printing Press",
+  "sourceUrl": "https://github.com/mvanhorn/cli-printing-press",
+  "sourceName": "GitHub",
+  "author": "mvanhorn",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Every API has a secret identity. This finds it, absorbs every feature from every competing tool, then builds the GOAT CLI — designed for AI agents first, with SQLite sync, offline search, and compound insight commands.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "mvanhorn",
+    "repo": "cli-printing-press",
+    "fullName": "mvanhorn/cli-printing-press",
+    "stars": 2270,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "cli",
+      "cli-generator",
+      "developer-tools",
+      "golang",
+      "openapi"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T02:02:05Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/ARTIFACTS.md",
+    "docs/brainstorms/2026-03-27-agent-readiness-review-loop-requirements.md",
+    "docs/brainstorms/2026-03-28-cli-manifest-requirements.md",
+    "docs/brainstorms/2026-03-28-repo-decoupling-requirements.md",
+    "docs/brainstorms/2026-03-29-client-pattern-proxy-envelope-requirements.md",
+    "docs/brainstorms/2026-03-29-crowd-sniff-requirements.md",
+    "docs/brainstorms/2026-03-29-publish-skill-requirements.md",
+    "docs/brainstorms/2026-03-29-sniffed-api-rate-limiting-requirements.md",
+    "docs/brainstorms/2026-03-30-printing-press-polish-skill-requirements.md",
+    "docs/brainstorms/2026-03-30-publish-name-collision-requirements.md",
+    "docs/brainstorms/2026-03-30-sniff-manuscript-provenance-requirements.md",
+    "docs/brainstorms/2026-03-31-auth-error-handling-requirements.md",
+    "docs/brainstorms/2026-04-03-composed-cookie-auth-requirements.md",
+    "docs/brainstorms/2026-04-04-public-retro-skill-requirements.md",
+    "docs/brainstorms/2026-05-15-printing-press-amend-requirements.md",
+    "docs/CATALOG.md",
+    "docs/CURSOR.md",
+    "docs/DOCS.md",
+    "docs/GLOSSARY.md",
+    "docs/GOLDEN.md",
+    "docs/PATTERNS.md",
+    "docs/PIPELINE.md",
+    "docs/plans/2026-03-23-feat-cli-printing-press-phase1-template-engine-plan.md",
+    "docs/plans/2026-03-23-feat-cli-printing-press-phase2-openapi-parser-plan.md",
+    "docs/plans/2026-03-23-feat-cli-printing-press-phase3-natural-language-skill-plan.md",
+    "docs/plans/2026-03-23-feat-cli-printing-press-phase4-catalog-community-plan.md",
+    "docs/plans/2026-03-23-feat-cli-printing-press-plan.md",
+    "docs/plans/2026-03-23-fix-dogfood-petstore-stytch-quality-plan.md",
+    "docs/plans/2026-03-23-fix-press-dogfood-until-steinberger-quality-plan.md",
+    "docs/plans/2026-03-23-fix-template-quality-steinberger-parity-plan.md",
+    "docs/plans/2026-03-24-docs-discrawl-parity-status-report-plan.md",
+    "docs/plans/2026-03-24-docs-update-readme-epic-vc-pitch-plan.md",
+    "docs/plans/2026-03-24-feat-autonomous-cli-pipeline-plan.md",
+    "docs/plans/2026-03-24-feat-autonomous-dogfood-phase-plan.md",
+    "docs/plans/2026-03-24-feat-dogfood-gauntlet-10-new-apis-plan.md",
+    "docs/plans/2026-03-24-feat-first-10-cli-launch-targets-plan.md",
+    "docs/plans/2026-03-24-feat-full-steinberger-parity-plan.md",
+    "docs/plans/2026-03-24-feat-goat-plan-gogcli-parity-and-press-upgrades-plan.md",
+    "docs/plans/2026-03-24-feat-overnight-press-hardening-plan.md"
+  ],
+  "readmeExtract": "CLI Printing Press [![CI](https://github.com/mvanhorn/cli printing press/actions/workflows/lint.yml/badge.svg)](https://github.com/mvanhorn/cli printing press/actions/workflows/lint.yml) [![Golden](https://github.com/mvanhorn/cli printing press/actions/workflows/golden.yml/badge.svg)](https://github.com/mvanhorn/cli printing press/actions/workflows/golden.yml) [![Release](https://img.shields.io/github/v/release/mvanh",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "In a world of AI agents, that's speed and token spend.",
+    "A well-designed CLI is muscle memory for an agent: no hunting through docs, no wrong turns, no wasted tokens.",
+    "We built the Printing Press to print the best CLIs in the world for agents.",
+    "It fuses all of that and prints a token-efficient Go CLI plus a Claude Code skill plus an MCP server for any API or any website.",
+    "flight-goat (Kayak nonstop search plus sniffed Google Flights).",
+    "Browse the full catalog of printed CLIs at printingpress.dev or in the Printing Press Library, organized by category, most with full MCP servers.",
+    "You need both the binary and the Claude Code skills.",
+    "The skills (/printing-press ) are the primary interface; they drive the binary behind the scenes."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Every API has a secret identity. This finds it, absorbs every feature from every competing tool, then builds the GOAT CLI — designed for AI agents first, with SQLite sync, offline search, and compound insight commands.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "database",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "database",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Cli Printing Press is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with database workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "In a world of AI agents, that's speed and token spend."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cli-printing-press",
+  "publishedAt": "2026-05-20"
+}

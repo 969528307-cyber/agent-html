@@ -1,0 +1,171 @@
+{
+  "id": "candidate-tool-github-666ghj-bettafish",
+  "type": "tool",
+  "status": "published",
+  "title": "BettaFish",
+  "sourceUrl": "https://github.com/666ghj/BettaFish",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "666ghj",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "proposedAgents": [
+    "Qwen Code"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "666ghj",
+    "repo": "BettaFish",
+    "fullName": "666ghj/BettaFish",
+    "stars": 40952,
+    "license": "GPL-2.0",
+    "topics": [
+      "agent-framework",
+      "data-analysis",
+      "deep-research",
+      "deep-search",
+      "llms",
+      "multi-agent-system",
+      "nlp",
+      "public-opinion-analysis",
+      "python3",
+      "sentiment-analysis"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-08T10:22:58Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"static/image/logo compressed.png\" alt=\"BettaFish Logo\" width=\"100%\" <a href=\"https://trendshift.io/repositories/15286\" target=\" blank\" <img src=\"https://trendshift.io/api/badge/repositories/15286\" alt=\"666ghj%2FBettaFish | Trendshift\" style=\"width: 250px; height: 55px;\" width=\"250\" height=\"55\"/ </a <a href=\"https://aihubmix.com/?aff=8Ds9\" target=\" blank\" <img src=\"./static/image/logo aih",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "超越LLM的复合分析引擎：我们不仅依赖设计的5类专业Agent，更融合了微调模型、统计模型等中间件。通过多模型协同工作，确保了分析结果的深度、准度与多维视角。",
+    "Agent“论坛”协作机制：为不同Agent赋予独特的工具集与思维模式，引入辩论主持人模型，通过“论坛”机制进行链式思维碰撞与辩论。这不仅避免了单一模型的思维局限与交流导致的同质化，更催生出更高质量的集体智能与决策支持。",
+    "你只需简单修改Agent工具集的api参数与prompt，就可以把他变成一个金融领域的市场分析系统",
+    "Insight Agent 私有数据库挖掘：私有舆情数据库深度分析AI代理",
+    "Media Agent 多模态内容分析：具备强大多模态能力的AI代理",
+    "Query Agent 精准信息搜索：具备国内外网页搜索能力的AI代理",
+    "Report Agent 智能报告生成：内置模板的多轮报告生成AI代理",
+    "2 并行启动 三个Agent同时开始工作 Query Agent、Media Agent、Insight Agent -"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-framework\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "data",
+      "media",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "data",
+    "media",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "BettaFish is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with data workflows.",
+      "Helps with media workflows.",
+      "Helps with research workflows.",
+      "Relevant to agent-framework."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:666ghj/bettafish",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "bettafish",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

@@ -1,0 +1,151 @@
+{
+  "id": "candidate-tool-github-firecrawl-fire-enrich",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Fire Enrich",
+  "sourceUrl": "https://github.com/firecrawl/fire-enrich",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "firecrawl",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "🔥 AI-powered data enrichment tool that transforms emails into rich datasets with company profiles, funding data, tech stacks, and more using Firecrawl and multi-agent AI",
+  "proposedCategory": [
+    "communication"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "firecrawl",
+    "repo": "fire-enrich",
+    "fullName": "firecrawl/fire-enrich",
+    "stars": 1179,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-10-08T13:43:22Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "Fire Enrich AI Powered Data Enrichment Tool <div align=\"center\" <img src=\"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjJwMnF2cW5zbXBhbGV6NXBpb3lkZmVhMWEwY3hmdmt3d3ZtbWc5YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QhpbWI09KyFZ0rwD72/giphy.gif\" alt=\"Fire Enrich Demo\" width=\"100%\" / </div Turn a simple list of emails into a rich dataset with company profiles, funding data, tech stacks, and more. Powered by [Firecr",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Fire Enrich - AI-Powered Data Enrichment Tool",
+    "Powered by Firecrawl and a multi-agent AI system.",
+    "Behind the scenes, each agent is a specialized module with its own expertise, search strategies, and type-safe output schema:",
+    "Essential first step that provides the foundation for all other agents",
+    "Company Profile Agent (Phase 2)",
+    "Uses verified company name to search for industry and market positioning",
+    "Financial Intel Agent (Phase 3)",
+    "Leverages company name + industry context for targeted funding searches"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "🔥 AI-powered data enrichment tool that transforms emails into rich datasets with company profiles, funding data, tech stacks, and more using Firecrawl and multi-agent AI",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "data",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "data",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "Package metadata detected; may expose executable commands.",
+    "General agent-building language detected.",
+    "Detected scope: single-tool.",
+    "Alternative capabilities: cli.",
+    "LLM: single-tool + [] — This is a dedicated AI-powered data enrichment tool for transforming emails into datasets, not a framework, CLI, or workflow platform."
+  ],
+  "classificationAlternatives": [
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Fire Enrich is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with data workflows.",
+      "Helps with media workflows.",
+      "Relevant to communication.",
+      "Fire Enrich - AI-Powered Data Enrichment Tool"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:firecrawl/fire-enrich",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ]
+}

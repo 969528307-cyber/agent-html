@@ -1,0 +1,76 @@
+{
+  "id": "casdoor",
+  "name": "Casdoor",
+  "type": "mcp",
+  "status": "published",
+  "summary": "An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD",
+  "description": "An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD",
+  "category": [
+    "security"
+  ],
+  "compatibleAgents": [
+    "Generic",
+    "OpenClaw"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/casdoor/casdoor",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/casdoor/casdoor",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/casdoor/casdoor#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/casdoor/casdoor#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/casdoor/casdoor/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Casdoor: AI-First Identity and Access Management (IAM) / AI MCP Gateway",
+    "An open-source, AI-first IAM / MCP gateway and authentication server with a web UI. .",
+    "Supporting MCP, A2A, OAuth 2.0, OIDC (OAuth 2.x), SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID,.",
+    "Documentation and guides: casdoor.ai",
+    "Casdoor is a UI-first identity provider and access management platform: one place to manage users, organizations, applications, and providers, with a modern web console.",
+    "Unlike reverse-proxy-centric auth companions, Casdoor is a dedicated auth server with broad protocol support, designed to be straightforward to self-host and integrate—see casdoor.ai for documentation.",
+    "To keep behavior consistent with upstream, the steps are aligned with official docs.",
+    "OAuth 2.0 / OIDC — OpenID Connect and OAuth 2.x authorization"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T12:37:49Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/casdoor/casdoor",
+  "repoUrl": "https://github.com/casdoor/casdoor",
+  "license": "Apache-2.0",
+  "stars": 13599,
+  "lastUpdated": "2026-05-12T12:37:49Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

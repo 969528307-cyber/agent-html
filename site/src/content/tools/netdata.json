@@ -1,0 +1,71 @@
+{
+  "id": "netdata",
+  "name": "Netdata",
+  "type": "workflow",
+  "status": "published",
+  "summary": "The fastest path to AI-powered full stack observability, even for lean teams.",
+  "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
+  "category": [
+    "workflow",
+    "docs"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/netdata/netdata",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/netdata/netdata",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/netdata/netdata#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/netdata/netdata#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/netdata/netdata/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Repository includes skill-related files"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T00:34:47Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/netdata/netdata",
+  "repoUrl": "https://github.com/netdata/netdata",
+  "license": "GPL-3.0",
+  "stars": 78774,
+  "lastUpdated": "2026-05-12T00:34:47Z",
+  "lastChecked": "2026-05-12",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

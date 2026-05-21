@@ -1,0 +1,76 @@
+{
+  "id": "chatgpt-cli",
+  "name": "Chatgpt Cli",
+  "type": "cli",
+  "status": "published",
+  "summary": "ChatGPT CLI is a powerful, multi-provider command-line interface for working with modern LLMs. It supports OpenAI, Azure, Perplexity, LLaMA, and more, with features like streaming, interactive chat, prompt files, image/audio I/O, MCP tool calls, and an experimental agent mode for safe, multi-step automation.",
+  "description": "ChatGPT CLI is a powerful, multi-provider command-line interface for working with modern LLMs. It supports OpenAI, Azure, Perplexity, LLaMA, and more, with features like streaming, interactive chat, prompt files, image/audio I/O, MCP tool calls, and an experimental agent mode for safe, multi-step automation.",
+  "category": [
+    "media"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/kardolus/chatgpt-cli",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/kardolus/chatgpt-cli",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/kardolus/chatgpt-cli#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/kardolus/chatgpt-cli#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/kardolus/chatgpt-cli/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Azure, Perplexity, LLaMA, and more, and includes streaming, interactive chat, prompt files, image/audio I/O, MCP tool",
+    "calls, and an experimental agent mode for multi-step tasks with safety and budget controls.",
+    "Agent Mode (ReAct + Plan/Execute)",
+    "Switching Between Configurations with --target",
+    "Thread-based context management: Enjoy seamless conversations with the GPT model with individualized context for",
+    "Agent mode (ReAct + Plan/Execute): Run multi-step tasks that can think, act, and observe using tools like shell,",
+    "Supports both iterative ReAct loops and Plan/Execute workflows, with built-in",
+    "budget limits (time, steps, tokens) and policy enforcement (allowed tools, denied commands, workdir"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T01:22:35Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/kardolus/chatgpt-cli",
+  "repoUrl": "https://github.com/kardolus/chatgpt-cli",
+  "license": "MIT",
+  "stars": 923,
+  "lastUpdated": "2026-05-18T01:22:35Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

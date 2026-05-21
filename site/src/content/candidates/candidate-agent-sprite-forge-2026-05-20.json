@@ -1,0 +1,144 @@
+{
+  "id": "candidate-agent-sprite-forge-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Agent Sprite Forge",
+  "sourceUrl": "https://github.com/0x0funky/agent-sprite-forge",
+  "sourceName": "GitHub",
+  "author": "0x0funky",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "0x0funky",
+    "repo": "agent-sprite-forge",
+    "fullName": "0x0funky/agent-sprite-forge",
+    "stars": 2234,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "codex",
+      "pixel-art",
+      "sprite-generator"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-05T17:53:33Z"
+  },
+  "detectedFiles": [
+    "README.ja.md",
+    "README.ko.md",
+    "README.md",
+    "README.zh-CN.md",
+    "README.zh-TW.md",
+    "skills/generate2dmap/SKILL.md",
+    "skills/generate2dsprite/SKILL.md"
+  ],
+  "readmeExtract": "Agent Sprite Forge Languages: [English](./README.md) | [繁體中文](./README.zh TW.md) | [简体中文](./README.zh CN.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) <p align=\"center\" <img src=\"./src/banner.png\" alt=\"Agent Sprite Forge banner\" width=\"900\" / </p <p align=\"center\" <strong Codex skills for game ready 2D sprites, layered maps, and engine ready prototypes.</strong </p <p align=\"center\" Ask in natural language. Cod",
+  "skillExtracts": [
+    {
+      "path": "skills/generate2dmap/SKILL.md",
+      "extract": "name: generate2dmap description: \"Generate and revise production oriented 2D game maps with built in image generation as the default visual asset source, choosing a visual model, runtime object model, collision model, art direction, and engine/export target. Use when Codex needs to create or integrate RPG maps, monster taming maps, tactical arenas, battle backgrounds, side scroller/parallax scenes, tilemaps, layered "
+    },
+    {
+      "path": "skills/generate2dsprite/SKILL.md",
+      "extract": "name: generate2dsprite description: \"Generate and postprocess general 2D game assets and animation sheets: pixel art sprites, clean HD map props, creatures, characters, NPCs, spells, projectiles, impacts, props, summons, and transparent GIF exports. Use when Codex should infer the asset plan from a natural language request, match a reference or map art style, call built in image gen for solid magenta raw sheets, and "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Codex skills for game-ready 2D sprites, layered maps, and engine-ready prototypes.",
+    "Codex plans the asset pipeline, renders with built-in image generation, then local processors clean, split, validate, and export assets for Godot, Unity, or raw 2D game workflows.",
+    "Agent Sprite Forge is not just a folder of prompts.",
+    "It is a Codex-first 2D game asset workflow where the agent decides the plan, image generation creates the raw visuals, and deterministic scripts turn those visuals into reusable game assets.",
+    "Ground-only bases, dressed references, prop packs, transparent props, y-sort placement, collision, zones, and previews.",
+    "These examples were assembled with Codex using agent-sprite-forge workflows.",
+    "A browser-based RPG prototype with generated characters, starter selection, map flow, and battle UI.",
+    "A compact JavaScript game showcase built from sprite, monster, battle, and map assets generated through the skill workflow."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Agent Sprite Forge is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Relevant to skill.",
+      "Codex skills for game-ready 2D sprites, layered maps, and engine-ready prototypes.",
+      "Codex plans the asset pipeline, renders with built-in image generation, then local processors clean, split, validate, and export assets for Godot, Unity, or raw 2D game workflows.",
+      "Agent Sprite Forge is not just a folder of prompts."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-sprite-forge",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "pydantic-ai",
+  "name": "Pydantic Ai",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "AI Agent Framework, the Pydantic way",
+  "description": "AI Agent Framework, the Pydantic way",
+  "category": [
+    "agent-framework"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/pydantic/pydantic-ai#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/pydantic/pydantic-ai#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/pydantic/pydantic-ai/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "GenAI Agent Framework, the Pydantic way",
+    "Documentation: ai.pydantic.dev",
+    "Pydantic AI is a Python agent framework designed to help you quickly, confidently, and painlessly build production grade applications and workflows with Generative AI.",
+    "Yet despite virtually every Python agent framework and LLM library using Pydantic Validation, when we began to use LLMs in Pydantic Logfire, we couldn't find anything that gave us the same feeling.",
+    "We built Pydantic AI with one simple aim: to bring that FastAPI feeling to GenAI app and agent development.",
+    "Enables you to systematically test and evaluate the performance and accuracy of the agentic systems you build, and monitor the performance over time in Pydantic Logfire.",
+    "Build agents from composable capabilities that bundle tools, hooks, instructions, and model settings into reusable units.",
+    "Define agents entirely in YAML/JSON — no code required."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T11:33:40Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/pydantic/pydantic-ai",
+  "repoUrl": "https://github.com/pydantic/pydantic-ai",
+  "license": "MIT",
+  "stars": 17123,
+  "lastUpdated": "2026-05-18T11:33:40Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

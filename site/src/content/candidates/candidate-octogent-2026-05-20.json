@@ -1,0 +1,154 @@
+{
+  "id": "candidate-octogent-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Octogent",
+  "sourceUrl": "https://github.com/hesamsheikh/octogent",
+  "sourceName": "GitHub",
+  "author": "hesamsheikh",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A thin orchestration dashboard over Claude Code for managing context, automation, and developer headspace. You need tentacles. 🦑",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "hesamsheikh",
+    "repo": "octogent",
+    "fullName": "hesamsheikh/octogent",
+    "stars": 1027,
+    "license": "MIT",
+    "topics": [
+      "agent-engineering",
+      "agentic-workflow",
+      "ai-agents",
+      "claude",
+      "claude-code",
+      "claude-hooks",
+      "claude-skills",
+      "codex",
+      "dashboard"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-20T17:25:35Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/concepts/mental-model.md",
+    "docs/concepts/runtime-and-api.md",
+    "docs/concepts/tentacles.md",
+    "docs/getting-started/quickstart.md",
+    "docs/guides/inter-agent-messaging.md",
+    "docs/guides/orchestrating-child-agents.md",
+    "docs/guides/working-with-todos.md",
+    "docs/index.md",
+    "docs/reference/api.md",
+    "docs/reference/cli.md",
+    "docs/reference/experimental-features.md",
+    "docs/reference/filesystem-layout.md",
+    "package.json",
+    "AGENTS.md",
+    "apps/api/AGENTS.md",
+    "apps/web/AGENTS.md",
+    "CLAUDE.md",
+    "packages/core/AGENTS.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <img width=\"1500\" height=\"500\" alt=\"Octogent header\" src=\"./static/images/octogent header.png\" / <br/ <br/ <strong too many terminals, not enough tentacles</strong <br / <br / ![Last Update](https://img.shields.io/github/last commit/hesamsheikh/octogent?label=Last%20Update&style=flat square) [![TypeScript](https://img.shields.io/badge/TypeScript 5.8 3178C6?style=flat square&logo=typescript&logoCol",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "It's really not fun to have ten Claude Code sessions open at once, constantly switching between them and trying to remember what each one was supposed to do.",
+    "Things get blurry fast when one agent is doing documentation, another is touching the database, another is changing the API, and another is somewhere in the frontend.",
+    "Octogent tries to fix that by giving each job its own scoped context, notes, and task list , while also making it possible for Claude Code to spawn other Claude Code agents, assign them work, and communicate with them.",
+    "This repo is a personal exploration of what an AI coding environment might look like when terminal coding agents are treated as parts of a bigger orchestration layer, not the final interface by themselves.",
+    "The point is not to hide Claude Code behind abstractions.",
+    "The point is to make multi-agent work less chaotic for the developer on a real codebase.",
+    "Creates tentacles as context layers so agents can work with scoped markdown files instead of broad, messy chat context",
+    "Runs multiple Claude Code terminals so one developer can coordinate several coding sessions at once"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A thin orchestration dashboard over Claude Code for managing context, automation, and developer headspace. You need tentacles. 🦑",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Octogent is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "It's really not fun to have ten Claude Code sessions open at once, constantly switching between them and trying to remember what each one was supposed to do.",
+      "Things get blurry fast when one agent is doing documentation, another is touching the database, another is changing the API, and another is somewhere in the frontend."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "octogent",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "deepbot",
+  "name": "Deepbot",
+  "type": "skill",
+  "status": "published",
+  "summary": "DeepBot is a system-level AI assistant built for both personal productivity and enterprise workflows — one-click setup, seamless experience, and native Feishu integration.",
+  "description": "DeepBot is a system-level AI assistant built for both personal productivity and enterprise workflows — one-click setup, seamless experience, and native Feishu integration.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/kevinluosl/deepbot",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/kevinluosl/deepbot",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/kevinluosl/deepbot#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/kevinluosl/deepbot#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/kevinluosl/deepbot/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Bring AI into your enterprise workflows — a real working partner, not just a chatbot",
+    "It integrates deeply with existing enterprise systems, enabling AI to participate in day-to-day operations across departments through multi-Agent collaboration — automating complex business workflows.",
+    "Whether it's document processing, data analysis, system monitoring, or cross-department coordination, DeepBot handles it through AI Agent technology.",
+    "It supports parallel task execution, scheduled tasks, and skill extensions, all protected by strict security controls.",
+    "⏰ Scheduled Tasks — Automate recurring work with cron-based scheduling",
+    "🎨 Skill Extensions — Compose tools into reusable Skills for complex workflows",
+    "🤖 Multi-Model Support — Qwen, OpenAI, Claude, and more",
+    "🌐 External Integrations — Connect with Feishu and other platforms for cross-platform interaction"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:15:45Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/kevinluosl/deepbot",
+  "repoUrl": "https://github.com/kevinluosl/deepbot",
+  "license": "MIT",
+  "stars": 2179,
+  "lastUpdated": "2026-05-20T03:15:45Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

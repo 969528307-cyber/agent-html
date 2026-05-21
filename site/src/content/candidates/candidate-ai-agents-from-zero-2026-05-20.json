@@ -1,0 +1,143 @@
+{
+  "id": "candidate-ai-agents-from-zero-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Ai Agents From Zero",
+  "sourceUrl": "https://github.com/didilili/ai-agents-from-zero",
+  "sourceName": "GitHub",
+  "author": "didilili",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": " 🚀 2026 最系统的 AI Agent 速成指南｜智能体实战教程 · 完整学习路径  + 实战项目 + 面试题库 · 对标大模型应用开发工程师岗位 · 覆盖LangChain / LangGraph / Coze / Dify / MCP / skills / LLM / RAG / 提示词 · 企业级部署与微调 · 从0到企业级落地 + 从学习到上线项目 + 面试准备一体化 ",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Qwen Code",
+    "Trae",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "didilili",
+    "repo": "ai-agents-from-zero",
+    "fullName": "didilili/ai-agents-from-zero",
+    "stars": 1205,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "agentic-ai",
+      "ai-agent",
+      "aigc",
+      "coze",
+      "dify",
+      "gpt",
+      "langchain",
+      "langgraph",
+      "llm",
+      "mcp",
+      "rag",
+      "skills",
+      "tutorial"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T02:48:47Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<div align='center' <img src=\"./images/banner.png\" alt=\"AI 智能体教程\" width=\"950px\" <h1 style=\"margin top: 15px;\" 🚀 全网最系统的 AI 智能体实战速成指南（从零到企业级落地）</h1 <h4 <b ai agents from zero</b </h4 <p <em 2026 持续更新中 · 目标打造<b 「地表最强」</b AI Agent 教程 —— <b 系统教程 + 可跑源码 + 面试题库 + 企业级实战项目</b ，全面对齐「AI 智能体 / 大模型应用开发工程师」<b 培训课表</b 与<b 招聘 JD</b 的一条龙学习路线</em </p </div <div align=\"center\" ![AI](https://img.shields.io/badge/AI Agent 00c853?style=f",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "2026 持续更新中 · 目标打造 「地表最强」 AI Agent 教程 —— 系统教程 + 可跑源码 + 面试题库 + 企业级实战项目 ，全面对齐「AI 智能体 / 大模型应用开发工程师」 培训课表 与 招聘 JD 的一条龙学习路线",
+    "目前 概念篇 已全部更新完毕，两个完整实战项目也已更新完毕：NL2SQL + LangGraph 实战项目 电商问数（源码仓库）已于 5 月 3 日完成。DeepAgents 多智能体实战项目 深度研搜（源码仓库）已于 5 月 17 日完成。你可以点击更新日志，了解最新仓库动态。若对你有帮助，欢迎 Star ⭐~",
+    "🧭 系统性学习路径，一条线拉通：从大模型与提示词，到低代码（Coze/Dify）与代码框架（LangChain/LangGraph），再到企业级 RAG/Agent、微调与工程规范——按知识体系统一编排，完整链路闭环，适合系统吃透而不是碎片化收藏。",
+    "📘 通俗易懂，真正适合零基础入门：整套教程按由浅入深的方式编排，先讲清大模型、提示词、Agent、RAG、MCP 等核心概念，再逐步进入框架与项目实战，尽量少讲新手难懂的“黑话”，更适合第一次系统学习大模型智能体开发的人。",
+    "提示与编排 提示词工程、Chain of Thought、Few-shot 多轮对话、记忆管理、Agent 与工具调用",
+    "低代码平台 Coze（扣子）、Dify 工作流、Agent、知识库、插件、Python 调用",
+    "开发框架 LangChain、LangGraph Model I/O、Chains、Memory、Agents（ReAct）、Retrieval、图状工作流",
+    "协议与通信 MCP（Model Context Protocol）、A2A Function Calling、服务解耦、跨 Agent 通信"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": " 🚀 2026 最系统的 AI Agent 速成指南｜智能体实战教程 · 完整学习路径  + 实战项目 + 面试题库 · 对标大模型应用开发工程师岗位 · 覆盖LangChain / LangGraph / Coze / Dify / MCP / skills / LLM / RAG / 提示词 · 企业级部署与微调 · 从0到企业级落地 + 从学习到上线项目 + 面试准备一体化 ",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Ai Agents From Zero is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with research workflows.",
+      "Relevant to mcp.",
+      "2026 持续更新中 · 目标打造 「地表最强」 AI Agent 教程 —— 系统教程 + 可跑源码 + 面试题库 + 企业级实战项目 ，全面对齐「AI 智能体 / 大模型应用开发工程师」 培训课表 与 招聘 JD 的一条龙学习路线",
+      "目前 概念篇 已全部更新完毕，两个完整实战项目也已更新完毕：NL2SQL + LangGraph 实战项目 电商问数（源码仓库）已于 5 月 3 日完成。DeepAgents 多智能体实战项目 深度研搜（源码仓库）已于 5 月 17 日完成。你可以点击更新日志，了解最新仓库动态。若对你有帮助，欢迎 Star ⭐~",
+      "🧭 系统性学习路径，一条线拉通：从大模型与提示词，到低代码（Coze/Dify）与代码框架（LangChain/LangGraph），再到企业级 RAG/Agent、微调与工程规范——按知识体系统一编排，完整链路闭环，适合系统吃透而不是碎片化收藏。"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "china-agent-education-ecosystem-ai-agents-from-zero",
+  "publishedAt": "2026-05-20",
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "local-review"
+}

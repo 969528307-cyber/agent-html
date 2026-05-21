@@ -1,0 +1,75 @@
+{
+  "id": "nginx-ui",
+  "name": "Nginx Ui",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Yet another WebUI for Nginx",
+  "description": "Yet another WebUI for Nginx",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/0xJacky/nginx-ui",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/0xJacky/nginx-ui",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/0xJacky/nginx-ui#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/0xJacky/nginx-ui#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/0xJacky/nginx-ui/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "To check out docs, visit nginxui.com.",
+    "📚 Enhance documentation and tutorials",
+    "Cluster management supporting mirroring operations to multiple nodes, making multi-server environments easy to manage",
+    "in your browser to complete the follow-up configurations.",
+    "you can easily make the switch.",
+    "map $httpupgrade $connectionupgrade {",
+    "proxysetheader Connection $connectionupgrade;",
+    "-docsearch-primary-color: var(--vp-c-brand) !important;"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T17:59:14Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/0xJacky/nginx-ui",
+  "repoUrl": "https://github.com/0xJacky/nginx-ui",
+  "license": "AGPL-3.0",
+  "stars": 11153,
+  "lastUpdated": "2026-05-18T17:59:14Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

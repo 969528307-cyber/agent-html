@@ -1,0 +1,224 @@
+{
+  "id": "candidate-tool-github-hmbown-deepseek-tui",
+  "type": "tool",
+  "status": "published",
+  "title": "DeepSeek TUI",
+  "sourceUrl": "https://github.com/Hmbown/DeepSeek-TUI",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "Hmbown",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Coding agent for DeepSeek models that runs in your terminal",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "Hmbown",
+    "repo": "DeepSeek-TUI",
+    "fullName": "Hmbown/DeepSeek-TUI",
+    "stars": 31743,
+    "license": "MIT",
+    "topics": [
+      "cli",
+      "deepseek",
+      "llm",
+      "rust",
+      "terminal",
+      "tui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T10:15:55Z"
+  },
+  "detectedFiles": [
+    "README.ja-JP.md",
+    "README.md",
+    "README.zh-CN.md",
+    "docs/ACCESSIBILITY.md",
+    "docs/ARCHITECTURE.md",
+    "docs/archive/V0_7_5_IMPLEMENTATION_PLAN.md",
+    "docs/capacity_controller.md",
+    "docs/CNB_MIRROR.md",
+    "docs/DOCKER.md",
+    "docs/KEYBINDINGS.md",
+    "docs/LEGACY_RUST_AUDIT_0_7_6.md",
+    "docs/LOCALIZATION.md",
+    "docs/MCP.md",
+    "docs/MEMORY.md",
+    "docs/MODES.md",
+    "docs/OPERATIONS_RUNBOOK.md",
+    "docs/RELEASE_CHECKLIST.md",
+    "docs/RELEASE_RUNBOOK.md",
+    "docs/RUNTIME_API.md",
+    "docs/SUBAGENTS.md",
+    "docs/TENCENT_CLOUD_REMOTE_FIRST.md",
+    "docs/TENCENT_LIGHTHOUSE_HK.md",
+    "docs/TOOL_SURFACE.md",
+    "crates/tui/assets/skills/delegate/SKILL.md",
+    "crates/tui/assets/skills/documents/SKILL.md",
+    "crates/tui/assets/skills/feishu/SKILL.md",
+    "crates/tui/assets/skills/mcp-builder/SKILL.md",
+    "crates/tui/assets/skills/pdf/SKILL.md",
+    "crates/tui/assets/skills/plugin-creator/SKILL.md",
+    "crates/tui/assets/skills/presentations/SKILL.md",
+    "crates/tui/assets/skills/skill-creator/SKILL.md",
+    "crates/tui/assets/skills/skill-installer/SKILL.md",
+    "crates/tui/assets/skills/spreadsheets/SKILL.md",
+    "crates/tui/assets/skills/v4-best-practices/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "DeepSeek TUI Terminal coding agent for DeepSeek V4. It runs from the deepseek command, streams reasoning blocks, edits local workspaces with approval gates, and includes an auto mode that chooses both model and thinking level per turn. [简体中文 README](README.zh CN.md) [日本語 README](README.ja JP.md) Install deepseek is distributed as Rust binaries: the dispatcher command ( deepseek ) and the companion TUI runtime ( deeps",
+  "skillExtracts": [
+    {
+      "path": "crates/tui/assets/skills/delegate/SKILL.md",
+      "extract": "name: delegate description: Strategic delegation for multi step coding, research, or verification work. Use when a task can be split into parent reasoning plus focused sub agent execution through agent open, agent eval, and agent close. metadata: short description: Delegate focused work to sub agents Delegate Use sub agents when they can do focused work in parallel while the parent keeps architectural judgment, integ"
+    },
+    {
+      "path": "crates/tui/assets/skills/documents/SKILL.md",
+      "extract": "name: documents description: Create, edit, inspect, or convert Word documents and DOCX deliverables such as memos, reports, letters, templates, and forms. Documents Use this skill when the user wants a .docx or Word style document, or when an existing document needs edits, comments, extraction, or conversion. Workflow 1. Clarify the output path if needed. Prefer a .docx file in the workspace. 2. Preserve existing doc"
+    },
+    {
+      "path": "crates/tui/assets/skills/feishu/SKILL.md",
+      "extract": "name: feishu description: Work with Feishu or Lark bots, docs, sheets, bitables, approval flows, and OpenAPI/MCP setup without hardcoding credentials. Feishu / Lark Use this skill when the user asks for Feishu, Lark, or \"飞书\" integration work. Ground Rules Feishu China APIs use open.feishu.cn ; Lark international APIs use open.larksuite.com . Never hardcode app secrets, webhook secrets, tenant tokens, or user tokens. "
+    },
+    {
+      "path": "crates/tui/assets/skills/mcp-builder/SKILL.md",
+      "extract": "name: mcp builder description: Design, build, configure, or debug Model Context Protocol servers for DeepSeek TUI, including stdio and HTTP/SSE transports. MCP Builder Use this skill when the user asks to create, configure, or debug an MCP server or tool integration. Design Rules Prefer stdio MCP servers for local tools and HTTP/SSE for remote services. Keep tool schemas small, typed, and explicit. Return structured "
+    },
+    {
+      "path": "crates/tui/assets/skills/pdf/SKILL.md",
+      "extract": "name: pdf description: Read, extract, split, merge, rotate, watermark, fill, OCR, or create PDF files with verification of page counts and text extraction. PDF Use this skill for any task where a PDF is the primary input or output. Workflow 1. Identify the PDF operation: read, extract, OCR, split, merge, rotate, watermark, redact, fill forms, encrypt/decrypt, or create. 2. Preserve originals. Write outputs with expli"
+    },
+    {
+      "path": "crates/tui/assets/skills/plugin-creator/SKILL.md",
+      "extract": "name: plugin creator description: Scaffold DeepSeek local plugin directories and activation notes. Use when the user asks to create, package, or sketch a plugin for DeepSeek TUI. Plugin Creator Use this skill when a user wants a DeepSeek plugin scaffold or a plan for a plugin style extension. DeepSeek plugins are currently a documented packaging convention, not an auto loaded runtime. Be explicit about that. A plugin"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Terminal coding agent for DeepSeek V4.",
+    "verify the SHA-256 manifest and avoid look-alike repositories or search-result",
+    "DeepSeek TUI is a coding agent that runs in your terminal.",
+    "It can read and edit files, run shell commands, search the web, manage git, and coordinate sub-agents from a keyboard-driven TUI.",
+    "Full tool suite — file ops, shell execution, git, web search/browse, apply-patch, sub-agents, MCP servers",
+    "Three modes — Plan (read-only explore), Agent (interactive with approval), YOLO (auto-approved)",
+    "HTTP/SSE runtime API — deepseek serve --http for headless agent workflows",
+    "MCP protocol — connect to Model Context Protocol servers for extended tooling; please see docs/MCP.md"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"cli\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Coding agent for DeepSeek models that runs in your terminal",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "DeepSeek TUI is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "Terminal coding agent for DeepSeek V4.",
+      "verify the SHA-256 manifest and avoid look-alike repositories or search-result"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:hmbown/deepseek-tui",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "deepseek-tui",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

@@ -1,0 +1,77 @@
+{
+  "id": "minimax-mcp",
+  "name": "MiniMax MCP",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Official MiniMax Model Context Protocol (MCP) server that enables interaction with powerful Text to Speech, image generation and video generation APIs.",
+  "description": "Official MiniMax Model Context Protocol (MCP) server that enables interaction with powerful Text to Speech, image generation and video generation APIs.",
+  "category": [
+    "media"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/MiniMax-AI/MiniMax-MCP",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-MCP",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/MiniMax-AI/MiniMax-MCP#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/MiniMax-AI/MiniMax-MCP#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/MiniMax-AI/MiniMax-MCP/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Official MiniMax Model Context Protocol (MCP) server that enables interaction with powerful Text to Speech and video/image generation APIs.",
+    "This server allows MCP clients like Claude Desktop, Cursor, Windsurf, OpenAI Agents and others to generate speech, clone voices, generate video, generate image and more.",
+    "💡 Recommended: MiniMax CLI (mmx-cli) — our official command-line tool with the latest models and additional features including text, vision, search, and music cover.",
+    "Works as an AI agent skill for Claude Code, Cursor, OpenClaw, etc.",
+    "MiniMax-MCP-JS - Official JavaScript implementation of MiniMax MCP",
+    "If you're using Windows, you will have to enable \"Developer Mode\" in Claude Desktop to use the MCP server.",
+    "Your MCP client can now interact with MiniMax through these tools:",
+    "voicedesign Generate a voice from a prompt using preview text"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-15T07:03:02Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/MiniMax-AI/MiniMax-MCP",
+  "repoUrl": "https://github.com/MiniMax-AI/MiniMax-MCP",
+  "license": "MIT",
+  "stars": 1472,
+  "lastUpdated": "2026-04-15T07:03:02Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

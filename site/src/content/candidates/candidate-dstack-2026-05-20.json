@@ -1,0 +1,157 @@
+{
+  "id": "candidate-dstack-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Dstack",
+  "sourceUrl": "https://github.com/dstackai/dstack",
+  "sourceName": "GitHub",
+  "author": "dstackai",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Vendor-agnostic orchestration for training, inference and agentic workloads across NVIDIA, AMD, TPU, and Tenstorrent on clouds, Kubernetes, and bare metal.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "dstackai",
+    "repo": "dstack",
+    "fullName": "dstackai/dstack",
+    "stars": 2140,
+    "license": "MPL-2.0",
+    "topics": [
+      "agent-skills",
+      "agentic-orchestration",
+      "amd",
+      "cloud",
+      "containers",
+      "docker",
+      "fine-tuning",
+      "gpu",
+      "inference",
+      "k8s",
+      "kubernetes",
+      "llms",
+      "machine-learning",
+      "nvidia",
+      "orchestration",
+      "python",
+      "slurm",
+      "training"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-19T21:36:37Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    "examples/single-node-training/optimum-tpu/llama31/config.yaml",
+    "skills/dstack/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "<div style=\"text align: center;\" <h2 <a target=\" blank\" href=\"https://dstack.ai\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://raw.githubusercontent.com/dstackai/dstack/master/mkdocs/assets/images/dstack logo dark.svg\"/ <img alt=\"dstack\" src=\"https://raw.githubusercontent.com/dstackai/dstack/master/mkdocs/assets/images/dstack logo.svg\" width=\"350px\"/ </picture </a </h2 [![Last commit](https://",
+  "skillExtracts": [
+    {
+      "path": "skills/dstack/SKILL.md",
+      "extract": "name: dstack description: | dstack is an open source control plane for GPU provisioning and orchestration across GPU clouds, Kubernetes, and on prem clusters. dstack Overview dstack provisions and orchestrates workloads across GPU clouds, Kubernetes, and on prem via fleets. When to use this skill: Running or managing dev environments, tasks, or services on dstack Creating, editing, or applying .dstack.yml configurati"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "It streamlines development, training, and inference, and is compatible with any hardware, open-source tools, and frameworks.",
+    "[2026/02] dstack 0.20.8: Skills",
+    "AI agents like Claude, Codex, and Cursor can now create and manage fleets and submit workloads on your behalf.",
+    "dstack automatically manages provisioning, job queuing, auto-scaling, networking, volumes, run failures,",
+    "$ npx skills add dstackai/dstack",
+    "Connection issues: Verify server status, check authentication, ensure network access to backends",
+    "Docs sources are in mkdocs/docs/ with extra contributor notes in contributing/.md.",
+    "Use attribute docstrings without leading newline."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Vendor-agnostic orchestration for training, inference and agentic workloads across NVIDIA, AMD, TPU, and Tenstorrent on clouds, Kubernetes, and bare metal.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "media",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "media",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Dstack is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with media workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "It streamlines development, training, and inference, and is compatible with any hardware, open-source tools, and frameworks."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dstack",
+  "publishedAt": "2026-05-20"
+}

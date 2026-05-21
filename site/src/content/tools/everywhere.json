@@ -1,0 +1,75 @@
+{
+  "id": "everywhere",
+  "name": "Everywhere",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "Context-aware AI assistant for your desktop. Ready to respond intelligently, seamlessly integrating multiple LLMs and MCP tools.",
+  "description": "Context-aware AI assistant for your desktop. Ready to respond intelligently, seamlessly integrating multiple LLMs and MCP tools.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Sylinko/Everywhere",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Sylinko/Everywhere",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Sylinko/Everywhere#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Sylinko/Everywhere#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Sylinko/Everywhere/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Unlike traditional AI tools, Everywhere instantly perceives and understands anything on your screen.",
+    "No need for screenshots, copying, or switching apps—just press a shortcut key to get the help you need right where you are, delivering seamless AI assistant support.",
+    "Encounter a foreign word while researching literature?",
+    "Highlight it or just bring up Everywhere against the text, tell it to \"Translate to Chinese\", and see an immediate translation without opening a secondary translation tool.",
+    "Select the relevant text, bring up Everywhere , ask \"Is this true?\", and Everywhere will quickly search and verify the reliability of the information.",
+    "• Everything Fast Search (Windows) .",
+    "👁️ Broad Context Awareness: In addition to supporting traditional screen multi-modality, we have deeply integrated underlying accessibility APIs and UI automation technologies.",
+    "🧠 Scenario Invocation & Strategy Engine: 🚧 The original intention was to completely end the workflow that disrupts your working rhythm."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T06:36:28Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Sylinko/Everywhere",
+  "repoUrl": "https://github.com/Sylinko/Everywhere",
+  "license": "NOASSERTION",
+  "stars": 5945,
+  "lastUpdated": "2026-05-13T06:36:28Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

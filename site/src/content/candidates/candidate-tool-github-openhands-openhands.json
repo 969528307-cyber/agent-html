@@ -1,0 +1,186 @@
+{
+  "id": "candidate-tool-github-openhands-openhands",
+  "type": "tool",
+  "status": "published",
+  "title": "OpenHands",
+  "sourceUrl": "https://github.com/OpenHands/OpenHands",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "OpenHands",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "🙌 OpenHands: AI-Driven Development",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "OpenHands",
+    "repo": "OpenHands",
+    "fullName": "OpenHands/OpenHands",
+    "stars": 73946,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "artificial-intelligence",
+      "chatgpt",
+      "claude-ai",
+      "cli",
+      "developer-tools",
+      "gpt",
+      "llm",
+      "openai"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T10:10:46Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    ".agents/skills/cross-repo-testing/SKILL.md",
+    ".agents/skills/upcoming-release/SKILL.md",
+    ".agents/skills/update-sdk/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "<a name=\"readme top\" </a <div align=\"center\" <img src=\"https://raw.githubusercontent.com/OpenHands/docs/main/openhands/static/img/logo.png\" alt=\"Logo\" width=\"200\" <h1 align=\"center\" style=\"border bottom: none\" OpenHands: AI Driven Development</h1 </div <div align=\"center\" <a href=\"https://github.com/OpenHands/OpenHands/blob/main/LICENSE\" <img src=\"https://img.shields.io/badge/LICENSE MIT 20B2AA?style=for the badge\" a",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/cross-repo-testing/SKILL.md",
+      "extract": "name: cross repo testing description: This skill should be used when the user asks to \"test a cross repo feature\", \"deploy a feature branch to staging\", \"test SDK against OH Cloud\", \"e2e test a cloud workspace feature\", \"test provider tokens\", \"test secrets inheritance\", or when changes span the SDK and OpenHands server repos and need end to end validation against a staging deployment. triggers: cross repo staging de"
+    },
+    {
+      "path": ".agents/skills/upcoming-release/SKILL.md",
+      "extract": "name: upcoming release description: This skill should be used when the user asks to \"generate release notes\", \"list upcoming release PRs\", \"summarize upcoming release\", \"/upcoming release\", or needs to know what changes are part of an upcoming release. Upcoming Release Summary Generate a concise summary of PRs included in the upcoming release. Prerequisites Two commit SHAs are required: First SHA : The older commit ("
+    },
+    {
+      "path": ".agents/skills/update-sdk/SKILL.md",
+      "extract": "name: update sdk description: This skill should be used when the user asks to \"update SDK\", \"bump SDK version\", \"pin SDK to a commit\", \"test unreleased SDK\", \"update agent server image\", \"bump the version\", \"prepare a release\", \"what files change for a release\", or needs to know how SDK packages are managed in the OpenHands repository. For detailed reference material, see references/docker image locations.md and refe"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "OpenHands Software Agent SDK",
+    "The SDK is a composable Python library that contains all of our agentic tech.",
+    "Define agents in code, then run them locally, or scale to 1000s of agents in the cloud.",
+    "Check out the docs or view the source",
+    "You can power it with Claude, GPT, or any other LLM.",
+    "Use the Local GUI for running agents on your laptop.",
+    "Check out the docs or view the source in this repo.",
+    "Enterprise contracts also come with extended support and access to our research team."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"cli\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "🙌 OpenHands: AI-Driven Development",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "OpenHands is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "OpenHands Software Agent SDK",
+      "The SDK is a composable Python library that contains all of our agentic tech."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:openhands/openhands",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openhands",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

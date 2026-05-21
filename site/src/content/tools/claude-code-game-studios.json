@@ -1,0 +1,75 @@
+{
+  "id": "claude-code-game-studios",
+  "name": "Claude Code Game Studios",
+  "type": "skill",
+  "status": "published",
+  "summary": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+  "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Claude Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Turn a single Claude Code session into a full game development studio.",
+    "No one stops you from hardcoding magic numbers, skipping design docs, or writing spaghetti code.",
+    "There's no QA pass, no design review, no one asking \"does this actually fit the game's vision?\"",
+    "Claude Code Game Studios solves this by giving your AI session the structure of a real studio.",
+    "Each agent has defined responsibilities, escalation paths, and quality gates.",
+    "Agents 49 Specialized subagents across design, programming, art, audio, narrative, QA, and production",
+    "Skills 73 Slash commands for every workflow phase (/start, /design-system, /create-epics, /create-stories, /dev-story, /story-done, etc.)",
+    "Hooks 12 Automated validation on commits, pushes, asset changes, session lifecycle, agent audit trail, and gap detection"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T10:15:40Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+  "repoUrl": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+  "license": "MIT",
+  "stars": 19106,
+  "lastUpdated": "2026-05-13T10:15:40Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

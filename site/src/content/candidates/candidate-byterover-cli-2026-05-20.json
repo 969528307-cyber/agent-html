@@ -1,0 +1,152 @@
+{
+  "id": "candidate-byterover-cli-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Byterover Cli",
+  "sourceUrl": "https://github.com/campfirein/byterover-cli",
+  "sourceName": "GitHub",
+  "author": "campfirein",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "ByteRover CLI (brv) - The portable memory layer for  autonomous coding agents (formerly Cipher)",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "campfirein",
+    "repo": "byterover-cli",
+    "fullName": "campfirein/byterover-cli",
+    "stars": 4767,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "ai",
+      "autonomous-agents",
+      "cli",
+      "coding-assistant",
+      "context-memory",
+      "developer-tools",
+      "knowledge-management",
+      "llm",
+      "mcp",
+      "memory",
+      "typescript",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:44:13Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "src/server/templates/skill/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "ByteRover CLI <div align=\"center\" <img src=\"./assets/images/logo/byterover logo.svg\" alt=\"ByteRover Logo\" width=\"280\" / <p align=\"center\" <em Interactive REPL CLI for AI powered context memory</em </p <p align=\"center\" <a href=\"LICENSE\" <img src=\"https://img.shields.io/badge/License Elastic%202.0 blue.svg\" alt=\"License\" / </a <a href=\"https://npmjs.org/package/byterover cli\" <img src=\"https://img.shields.io/npm/v/byt",
+  "skillExtracts": [
+    {
+      "path": "src/server/templates/skill/SKILL.md",
+      "extract": "name: byterover description: \"You MUST use this for gathering contexts before any work. This is a Knowledge management for AI agents. Use brv to store and retrieve project patterns, decisions, and architectural rules in .brv/context tree. Uses a configured LLM provider (default: ByteRover, no API key needed) for query and curate operations.\" ByteRover Knowledge Management Use the brv CLI to manage your project's long"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "ByteRover CLI (brv) gives AI coding agents persistent, structured memory.",
+    "It lets developers curate project knowledge into a context tree, sync it to the cloud, and share it across tools and teammates.",
+    "The agent understands your codebase through an agentic map, can read and write files, execute code, and store knowledge for future sessions.",
+    "🧠 Context tree and knowledge storage management",
+    "🛠️ 24 built-in agent tools (code exec, file ops, knowledge search, memory management)",
+    "👀 Review workflow for curate operations (approve/reject pending changes)",
+    "🔌 MCP (Model Context Protocol) integration",
+    "📦 Hub and connectors ecosystem for skills and bundles"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "ByteRover CLI (brv) - The portable memory layer for  autonomous coding agents (formerly Cipher)",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Byterover Cli is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with memory workflows.",
+      "Relevant to mcp.",
+      "ByteRover CLI (brv) gives AI coding agents persistent, structured memory.",
+      "It lets developers curate project knowledge into a context tree, sync it to the cloud, and share it across tools and teammates."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "byterover-cli",
+  "publishedAt": "2026-05-20"
+}

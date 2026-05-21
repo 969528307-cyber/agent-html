@@ -3,17 +3,55 @@
   "name": "Qwen Code",
   "status": "published",
   "region": "china",
-  "vendor": "Alibaba Cloud",
-  "summary": "A China-origin coding agent entry focused on Qwen model workflows and developer assistance.",
-  "bestFor": ["Chinese developer ecosystem", "Qwen model workflows", "Code assistance"],
-  "interfaceType": ["cli", "web"],
-  "documentationUrl": "https://qwenlm.github.io/",
-  "englishDocsUrl": "https://qwenlm.github.io/",
-  "supportsMcp": false,
+  "vendor": "Alibaba Cloud / Qwen",
+  "summary": "Alibaba Qwen's open-source coding-agent and agent-framework path for CLI coding, MCP-connected tools, function calling, and Qwen-native workflows.",
+  "overview": "Alibaba Qwen's open-source coding-agent and agent-framework path for CLI coding, MCP-connected tools, function calling, and Qwen-native workflows.",
+  "bestFor": [
+    "Qwen-based coding workflows",
+    "Open-source CLI agent exploration",
+    "MCP-connected Qwen tools",
+    "Chinese and bilingual developer teams"
+  ],
+  "strengths": [],
+  "extensionModel": [],
+  "recommendedStacks": [],
+  "limitations": [],
+  "sources": [
+    {
+      "label": "Qwen Code GitHub",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "kind": "github"
+    },
+    {
+      "label": "Qwen Code MCP docs",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/mcp/",
+      "kind": "docs"
+    },
+    {
+      "label": "Qwen-Agent GitHub",
+      "url": "https://github.com/QwenLM/Qwen-Agent",
+      "kind": "github"
+    },
+    {
+      "label": "Qwen-Agent features",
+      "url": "https://qwenlm.github.io/Qwen-Agent/en/guide/get_started/features/",
+      "kind": "docs"
+    }
+  ],
+  "interfaceType": [
+    "cli"
+  ],
+  "documentationUrl": "https://qwenlm.github.io/qwen-code-docs/",
+  "supportsMcp": true,
   "supportsSkills": false,
   "supportsCli": true,
   "supportsWorkflows": true,
-  "toolTypes": { "skills": 4, "mcps": 3, "cli": 8, "workflows": 7 },
-  "relatedLearn": ["how-to-choose-agent"],
-  "lastChecked": "2026-05-11"
+  "toolTypes": {
+    "skills": 0,
+    "mcps": 0,
+    "cli": 0,
+    "workflows": 0
+  },
+  "relatedLearn": [],
+  "lastChecked": "2026-05-14"
 }

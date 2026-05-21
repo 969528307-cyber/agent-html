@@ -1,0 +1,179 @@
+{
+  "id": "candidate-md2wechat-skill-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Md2wechat Skill",
+  "sourceUrl": "https://github.com/geekjourneyx/md2wechat-skill",
+  "sourceName": "GitHub",
+  "author": "geekjourneyx",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Markdown to WeChat CLI | 一键排版发布到微信公众号：支持 40+ 排版样式和专业主题 、AI 配图 、批量发布",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "geekjourneyx",
+    "repo": "md2wechat-skill",
+    "fullName": "geekjourneyx/md2wechat-skill",
+    "stars": 2274,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-cli",
+      "ai-agent",
+      "ai-writing",
+      "claude-code",
+      "claude-skills",
+      "cli",
+      "go",
+      "llm",
+      "markdown",
+      "markdown-converter",
+      "markdown-formatter",
+      "markdown-to-html",
+      "markdown-to-wechat",
+      "mcp-server",
+      "md2wechat",
+      "wechat",
+      "wechat-article",
+      "wechat-mp",
+      "wechat-public-account",
+      "weixin"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-14T06:18:32Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/AGENT-GUIDE.md",
+    "docs/ARCHITECTURE.md",
+    "docs/BRAND-PROFILE.md",
+    "docs/DESIGN.md",
+    "docs/DISCOVERY.md",
+    "docs/HUMANIZE.md",
+    "docs/IMAGE_PROVISIONERS.md",
+    "docs/LAYOUT.md",
+    "docs/OBSIDIAN.md",
+    "docs/OPENCLAW.md",
+    "docs/QUICKSTART.md",
+    "docs/README.md",
+    "docs/SKILL-RULE.md",
+    "docs/SMOKE.md",
+    "docs/USAGE.md",
+    "docs/WECHAT-CREDENTIALS.md",
+    "package.json",
+    "platforms/openclaw/md2wechat/SKILL.md",
+    "skills/md2wechat/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <h1 <img src=\"assets/favicon.ico\" alt=\"md2wechat logo\" width=\"28\" / md2wechat </h1 <img src=\"assets/readme header.gif\" alt=\"md2wechat — 公众号创作全流程 CLI\" width=\"720\" / 专为 AI 时代设计的公众号创作工作台 写 Markdown · 43 个高级排版模块 · 40+ 专业主题 · AI 配图 · 推送草稿箱<br/ 全流程 CLI，Agent native — Claude Code · Codex · OpenClaw 原生支持 [![Go Version](https://img.shields.io/badge/Go 1.26.1+ 00ADD8?logo=go)](https://golang.org) [![License",
+  "skillExtracts": [
+    {
+      "path": "platforms/openclaw/md2wechat/SKILL.md",
+      "extract": "name: md2wechat description: Convert Markdown to WeChat Official Account HTML, inspect supported providers/themes/prompts, generate article images, create drafts, write with creator styles, and remove AI writing traces. homepage: https://github.com/geekjourneyx/md2wechat skill metadata: {\"clawdbot\":{\"emoji\":\"📝\",\"requires\":{\"bins\":[\"md2wechat\"],\"env\":[\"WECHAT APPID\",\"WECHAT SECRET\"]},\"install\":[{\"id\":\"brew\",\"kind\":\"b"
+    },
+    {
+      "path": "skills/md2wechat/SKILL.md",
+      "extract": "name: md2wechat description: Convert Markdown to WeChat Official Account HTML. Use this whenever the user wants WeChat article conversion, draft upload, image generation for articles, cover or infographic generation, image post creation, writer style drafting, AI trace removal, or needs to inspect supported providers, themes, and prompt templates before running the workflow. MD to WeChat Use md2wechat when the user w"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "全流程 CLI，Agent-native — Claude Code · Codex · OpenClaw 原生支持",
+    "快速开始 · 高级排版 · API 解锁 · Agent 支持 · 常见问题",
+    "Agent 集成 无结构约定 JSON envelope、capabilities 端点、discovery 命令",
+    "AI 模式（免费）：生成排版 prompt，由你的 Claude / Codex 继续处理，3 个基础主题。",
+    "如果你想把上面的步骤直接发给 Agent 执行，见 Agent 安装脚本。",
+    "preview 生成本地预览 HTML，不触发任何上传或草稿副作用",
+    "保姆级教程（43 个模块全覆盖）见 docs/LAYOUT.md。",
+    "在 Coding Agent 或自动化脚本中，先执行 discovery 命令，不要靠猜："
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Markdown to WeChat CLI | 一键排版发布到微信公众号：支持 40+ 排版样式和专业主题 、AI 配图 、批量发布",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Md2wechat Skill is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "全流程 CLI，Agent-native — Claude Code · Codex · OpenClaw 原生支持",
+      "快速开始 · 高级排版 · API 解锁 · Agent 支持 · 常见问题"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "md2wechat-skill",
+  "publishedAt": "2026-05-20"
+}

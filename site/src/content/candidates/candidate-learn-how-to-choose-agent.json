@@ -1,0 +1,110 @@
+{
+  "id": "candidate-learn-how-to-choose-agent",
+  "type": "learn",
+  "status": "published",
+  "title": "How to Choose an Agent",
+  "sourceUrl": "https://agentk.it/learn/how-to-choose-agent",
+  "sourceName": "agentk.it Learn library",
+  "sourceRegistryId": "local-learn-library",
+  "sourceRegistry": {
+    "id": "local-learn-library",
+    "name": "Local Learn Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/learn",
+    "acceptRules": [
+      "must_have_topic",
+      "must_have_teaching_angle",
+      "must_link_related_tools_or_agents_when_possible"
+    ],
+    "rejectRules": [
+      "thin_summary_only",
+      "no_learning_outcome"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "Pick the right work surface before you compare tools.",
+  "proposedCategory": [
+    "agent",
+    "start"
+  ],
+  "proposedAgents": [
+    "codex",
+    "claude-code",
+    "cursor",
+    "qwen-code",
+    "kimi-agent",
+    "trae"
+  ],
+  "extractedSignals": [
+    "Start with where the work happens: terminal, IDE, web, API, or enterprise.",
+    "Separate the Agent from the tools it can use.",
+    "Choose by workflow fit, not brand familiarity."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Learn collector output. Review teaching angle, examples, related tools, and whether this should remain Learn content rather than a Tool or Signal.",
+  "publishedAs": "how-to-choose-agent",
+  "publishedAt": "2026-05-16",
+  "learnProfile": {
+    "topic": "agent",
+    "path": "start",
+    "difficulty": "beginner",
+    "readingTime": "8 min",
+    "relatedTools": [
+      "agent-setup-checklist"
+    ],
+    "relatedAgents": [
+      "codex",
+      "claude-code",
+      "cursor",
+      "qwen-code",
+      "kimi-agent",
+      "trae"
+    ]
+  },
+  "canonicalKey": "learn:title:how to choose agent",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "learn",
+    "primaryType": "learn",
+    "whatIsIt": "How to Choose an Agent is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to agent.",
+      "Relevant to start.",
+      "Start with where the work happens: terminal, IDE, web, API, or enterprise.",
+      "Separate the Agent from the tools it can use.",
+      "Choose by workflow fit, not brand familiarity."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

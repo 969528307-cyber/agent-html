@@ -1,0 +1,190 @@
+{
+  "id": "candidate-claude-obsidian-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Obsidian",
+  "sourceUrl": "https://github.com/AgriciDaniel/claude-obsidian",
+  "sourceName": "GitHub",
+  "author": "AgriciDaniel",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Claude + Obsidian knowledge companion. Persistent, compounding wiki vault based on Karpathy's LLM Wiki pattern. /wiki /save /autoresearch",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "AgriciDaniel",
+    "repo": "claude-obsidian",
+    "fullName": "AgriciDaniel/claude-obsidian",
+    "stars": 5213,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "ai-second-brain",
+      "autonomous-research",
+      "claude-code",
+      "claude-code-skill",
+      "claude-plugin",
+      "karpathy-llm-wiki",
+      "knowledge-graph",
+      "knowledge-management",
+      "llm",
+      "multi-agent",
+      "obsidian",
+      "obsidian-ai",
+      "obsidian-plugin",
+      "open-source",
+      "pkm",
+      "rag",
+      "second-brain",
+      "wiki"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-24T10:21:48Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/dragonscale-guide.md",
+    "docs/releases/v1.6.0.md",
+    "skills/autoresearch/SKILL.md",
+    "skills/canvas/SKILL.md",
+    "skills/defuddle/SKILL.md",
+    "skills/obsidian-bases/SKILL.md",
+    "skills/obsidian-markdown/SKILL.md",
+    "skills/save/SKILL.md",
+    "skills/wiki-fold/SKILL.md",
+    "skills/wiki-ingest/SKILL.md",
+    "skills/wiki-lint/SKILL.md",
+    "skills/wiki-query/SKILL.md",
+    "skills/wiki/SKILL.md",
+    ".cursor/rules/claude-obsidian.mdc",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "claude obsidian <p align=\"center\" <img src=\"wiki/meta/claude obsidian gif cover 16x9.gif\" alt=\"claude obsidian\" width=\"100%\" / </p [![GitHub stars](https://img.shields.io/github/stars/AgriciDaniel/claude obsidian?style=flat&color=e8734a)](https://github.com/AgriciDaniel/claude obsidian/stargazers) [![License: MIT](https://img.shields.io/badge/License MIT blue.svg)](LICENSE) [![Claude Code](https://img.shields.io/badg",
+  "skillExtracts": [
+    {
+      "path": "skills/autoresearch/SKILL.md",
+      "extract": "name: autoresearch description: Autonomous iterative research loop. Takes a topic, runs web searches, fetches sources, synthesizes findings, and files everything into the wiki as structured pages. Based on Karpathy's autoresearch pattern: program.md configures objectives and constraints, the loop runs until depth is reached, output goes directly into the knowledge base. Triggers on: \"/autoresearch\", \"autoresearch\", \""
+    },
+    {
+      "path": "skills/canvas/SKILL.md",
+      "extract": "name: canvas description: \"Visual layer of the wiki. Add images, text cards, PDFs, and wiki pages to Obsidian canvas files with auto positioning inside zones. Integrates with /banana for image capture. Triggers on: /canvas, canvas new, canvas add image, canvas add text, canvas add pdf, canvas add note, canvas zone, canvas list, canvas from banana, add to canvas, put this on the canvas, open canvas, create canvas.\" al"
+    },
+    {
+      "path": "skills/defuddle/SKILL.md",
+      "extract": "name: defuddle description: \"Strip clutter from web pages before ingesting into the wiki. Removes ads, navigation, headers, footers, and boilerplate: leaving clean readable markdown that saves 40 60% tokens. Triggers on: defuddle, clean this page, strip this url, fetch and clean, clean web content before ingesting, strip ads, remove clutter, clean URL content, readable markdown from URL.\" allowed tools: Read Bash def"
+    },
+    {
+      "path": "skills/obsidian-bases/SKILL.md",
+      "extract": "name: obsidian bases description: \"Create and edit Obsidian Bases (.base files): Obsidian's native database layer for dynamic tables, card views, list views, filters, formulas, and summaries over vault notes. Triggers on: create a base, add a base file, obsidian bases, base view, filter notes, formula, database view, dynamic table, task tracker base, reading list base.\" allowed tools: Read Write obsidian bases: Obsid"
+    },
+    {
+      "path": "skills/obsidian-markdown/SKILL.md",
+      "extract": "name: obsidian markdown description: \"Write correct Obsidian Flavored Markdown: wikilinks, embeds, callouts, properties, tags, highlights, math, and canvas syntax. Reference this when creating or editing any wiki page. Triggers on: write obsidian note, obsidian syntax, wikilink, callout, embed, obsidian markdown, wikilink format, callout syntax, embed syntax, obsidian formatting, how to write obsidian markdown.\" allo"
+    },
+    {
+      "path": "skills/save/SKILL.md",
+      "extract": "name: save description: Save the current conversation, answer, or insight into the Obsidian wiki vault as a structured note. Analyzes the chat, determines the right note type, creates frontmatter, files it in the correct wiki folder, and updates index, log, and hot cache. Triggers on: \"save this\", \"save that answer\", \"/save\", \"file this\", \"save to wiki\", \"save this session\", \"file this conversation\", \"keep this\", \"sa"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Claude + Obsidian knowledge companion.",
+    "Optional DragonScale Memory extension (log folds, deterministic page addresses, semantic tiling lint, boundary-first autoresearch).",
+    "Claude reads them, extracts entities and concepts, updates cross-references, and files everything into a structured Obsidian vault.",
+    "Claude reads the hot cache (recent context), scans the index, drills into relevant pages, and synthesizes an answer.",
+    "Claude finds orphans, dead links, stale claims, and missing cross-references.",
+    "At the end of every session, Claude updates a hot cache.",
+    "claude-obsidian is a knowledge engine - it creates, organizes, maintains, and evolves your notes autonomously.",
+    "Capability claude-obsidian Smart Connections Copilot"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Claude + Obsidian knowledge companion. Persistent, compounding wiki vault based on Karpathy's LLM Wiki pattern. /wiki /save /autoresearch",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Obsidian is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to skill.",
+      "Claude + Obsidian knowledge companion.",
+      "Optional DragonScale Memory extension (log folds, deterministic page addresses, semantic tiling lint, boundary-first autoresearch)."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-obsidian",
+  "publishedAt": "2026-05-20"
+}

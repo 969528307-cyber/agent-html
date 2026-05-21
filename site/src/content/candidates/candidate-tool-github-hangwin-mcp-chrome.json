@@ -1,0 +1,170 @@
+{
+  "id": "candidate-tool-github-hangwin-mcp-chrome",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp Chrome",
+  "sourceUrl": "https://github.com/hangwin/mcp-chrome",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "hangwin",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Chrome MCP Server is a Chrome extension-based Model Context Protocol (MCP) server that exposes your Chrome browser functionality to AI assistants like Claude, enabling complex browser automation, content analysis, and semantic search.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "hangwin",
+    "repo": "mcp-chrome",
+    "fullName": "hangwin/mcp-chrome",
+    "stars": 11639,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-01-06T13:05:39Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/ARCHITECTURE_zh.md",
+    "docs/ARCHITECTURE.md",
+    "docs/CHANGELOG.md",
+    "docs/ISSUE.md",
+    "docs/TOOLS_zh.md",
+    "docs/TOOLS.md",
+    "docs/VisualEditor_zh.md",
+    "docs/VisualEditor.md",
+    "package.json"
+  ],
+  "readmeExtract": "Chrome MCP Server 🚀 [![Stars](https://img.shields.io/github/stars/hangwin/mcp chrome)](https://img.shields.io/github/stars/hangwin/mcp chrome) [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](https://opensource.org/licenses/MIT) [![TypeScript](https://img.shields.io/badge/TypeScript 5.8+ blue.svg)](https://www.typescriptlang.org/) [![Chrome Extension](https://img.shields.io/badge/Chrome Extensi",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🌟 Turn your Chrome browser into your intelligent assistant - Let AI take control of your browser, transforming it into a powerful AI-controlled automation tool.",
+    "📖 Documentation: English 中文",
+    "🎯 What is Chrome MCP Server?",
+    "A New Visual Editor for Claude Code & Codex, for more detail here: VisualEditor",
+    "😁 Chatbot/Model Agnostic: Let any LLM or chatbot client or agent you prefer automate your browser",
+    "⭐️ Use Your Original Browser: Seamlessly integrate with your existing browser environment (your configurations, login states, etc.)",
+    "💻 Fully Local: Pure local MCP server ensuring user privacy",
+    "🚄 Streamable HTTP: Streamable HTTP connection method"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Chrome MCP Server is a Chrome extension-based Model Context Protocol (MCP) server that exposes your Chrome browser functionality to AI assistants like Claude, enabling complex browser automation, content analysis, and semantic search.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "search",
+      "browser"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "search",
+    "browser"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent app or product platform language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: mcp, cli.",
+    "LLM: mcp + [mcp] — This is a Chrome extension-based MCP server that exposes browser functionality to AI assistants via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp Chrome is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with search workflows.",
+      "Helps with browser workflows.",
+      "Relevant to automation.",
+      "🌟 Turn your Chrome browser into your intelligent assistant - Let AI take control of your browser, transforming it into a powerful AI-controlled automation tool."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:hangwin/mcp-chrome",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-chrome",
+  "publishedAt": "2026-05-18"
+}

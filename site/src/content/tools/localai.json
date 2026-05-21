@@ -1,0 +1,73 @@
+{
+  "id": "localai",
+  "name": "LocalAI",
+  "type": "mcp",
+  "status": "published",
+  "summary": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+  "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+  "category": [
+    "mcp",
+    "code-review",
+    "docs"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mudler/LocalAI",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mudler/LocalAI",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mudler/LocalAI#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mudler/LocalAI#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mudler/LocalAI/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "README mentions Model Context Protocol"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T01:33:55Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mudler/LocalAI",
+  "repoUrl": "https://github.com/mudler/LocalAI",
+  "license": "MIT",
+  "stars": 46205,
+  "lastUpdated": "2026-05-12T01:33:55Z",
+  "lastChecked": "2026-05-12",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

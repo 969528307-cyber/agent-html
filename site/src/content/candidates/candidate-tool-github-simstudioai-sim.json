@@ -1,0 +1,245 @@
+{
+  "id": "candidate-tool-github-simstudioai-sim",
+  "type": "tool",
+  "status": "published",
+  "title": "Sim",
+  "sourceUrl": "https://github.com/simstudioai/sim",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "simstudioai",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Build, deploy, and orchestrate AI agents. Sim is the central intelligence layer for your AI workforce.",
+  "proposedCategory": [
+    "workflow"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "simstudioai",
+    "repo": "sim",
+    "fullName": "simstudioai/sim",
+    "stars": 28508,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-workflow",
+      "agentic-workflow",
+      "agents",
+      "ai",
+      "aiagents",
+      "anthropic",
+      "artificial-intelligence",
+      "automation",
+      "chatbot",
+      "deepseek",
+      "gemini",
+      "low-code",
+      "nextjs",
+      "no-code",
+      "openai",
+      "rag",
+      "react",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T00:16:56Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    ".agents/skills/add-block/SKILL.md",
+    ".agents/skills/add-connector/SKILL.md",
+    ".agents/skills/add-integration/SKILL.md",
+    ".agents/skills/add-tools/SKILL.md",
+    ".agents/skills/add-trigger/SKILL.md",
+    ".agents/skills/cleanup/SKILL.md",
+    ".agents/skills/emcn-design-review/SKILL.md",
+    ".agents/skills/react-query-best-practices/SKILL.md",
+    ".agents/skills/ship/SKILL.md",
+    ".agents/skills/validate-connector/SKILL.md",
+    ".agents/skills/validate-integration/SKILL.md",
+    ".agents/skills/validate-trigger/SKILL.md",
+    ".agents/skills/you-might-not-need-a-callback/SKILL.md",
+    ".agents/skills/you-might-not-need-a-memo/SKILL.md",
+    ".agents/skills/you-might-not-need-an-effect/SKILL.md",
+    ".agents/skills/you-might-not-need-state/SKILL.md",
+    ".cursor/skills/add-hosted-key/SKILL.md",
+    "helm/sim/.claude/skills/sim-helm/SKILL.md",
+    ".cursor/commands/add-block.md",
+    ".cursor/commands/add-connector.md",
+    ".cursor/commands/add-hosted-key.md",
+    ".cursor/commands/add-integration.md",
+    ".cursor/commands/add-tools.md",
+    ".cursor/commands/add-trigger.md",
+    ".cursor/commands/cleanup.md",
+    ".cursor/commands/council.md",
+    ".cursor/commands/emcn-design-review.md",
+    ".cursor/commands/react-query-best-practices.md",
+    ".cursor/commands/ship.md",
+    ".cursor/commands/validate-connector.md",
+    ".cursor/commands/validate-integration.md",
+    ".cursor/commands/validate-trigger.md",
+    ".cursor/commands/you-might-not-need-a-callback.md",
+    ".cursor/commands/you-might-not-need-a-memo.md",
+    ".cursor/commands/you-might-not-need-an-effect.md",
+    ".cursor/commands/you-might-not-need-state.md",
+    ".cursor/rules/constitution.mdc",
+    ".cursor/rules/emcn-components.mdc"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://sim.ai\" target=\" blank\" rel=\"noopener noreferrer\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"apps/sim/public/logo/wordmark.svg\" <source media=\"(prefers color scheme: light)\" srcset=\"apps/sim/public/logo/wordmark dark.svg\" <img src=\"apps/sim/public/logo/wordmark dark.svg\" alt=\"Sim Logo\" width=\"380\"/ </picture </a </p <p align=\"center\" The open source platform to bu",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/add-block/SKILL.md",
+      "extract": "name: add block description: Create or update a Sim integration block with correct subBlocks, conditions, dependsOn, modes, canonicalParamId usage, outputs, and tool wiring. Use when working on apps/sim/blocks/blocks/{service}.ts or aligning a block with its tools. Add Block Skill You are an expert at creating block configurations for Sim. You understand the serializer, subBlock types, conditions, dependsOn, modes, a"
+    },
+    {
+      "path": ".agents/skills/add-connector/SKILL.md",
+      "extract": "name: add connector description: Add or update a Sim knowledge base connector for syncing documents from an external source, including auth mode, config fields, pagination, document mapping, tags, and registry wiring. Use when working in apps/sim/connectors/{service}/ or adding a new external document source. Add Connector Skill You are an expert at adding knowledge base connectors to Sim. A connector syncs documents"
+    },
+    {
+      "path": ".agents/skills/add-integration/SKILL.md",
+      "extract": "name: add integration description: Add a complete Sim integration from API docs, covering tools, block, icon, optional triggers, registrations, and integration conventions. Use when introducing a new service under apps/sim/tools , apps/sim/blocks , and apps/sim/triggers . Add Integration Skill You are an expert at adding complete integrations to Sim. This skill orchestrates the full process of adding a new service in"
+    },
+    {
+      "path": ".agents/skills/add-tools/SKILL.md",
+      "extract": "name: add tools description: Create or update Sim tool configurations from service API docs, including typed params, request mapping, response transforms, outputs, and registry entries. Use when working in apps/sim/tools/{service}/ or fixing tool definitions for an integration. Add Tools Skill You are an expert at creating tool configurations for Sim integrations. Your job is to read API documentation and create prop"
+    },
+    {
+      "path": ".agents/skills/add-trigger/SKILL.md",
+      "extract": "name: add trigger description: Create or update Sim webhook triggers using the generic trigger builder, service specific setup instructions, outputs, and registry wiring. Use when working in apps/sim/triggers/{service}/ or adding webhook support to an integration. Add Trigger You are an expert at creating webhook triggers for Sim. You understand the trigger system, the generic buildTriggerSubBlocks helper, and how tr"
+    },
+    {
+      "path": ".agents/skills/cleanup/SKILL.md",
+      "extract": "name: cleanup description: Run all code quality skills in sequence — effects, memo, callbacks, state, React Query, and emcn design review Cleanup Arguments: scope: what to review (default: your current changes). Examples: \"diff to main\", \"PR 123\", \"src/components/\", \"whole codebase\" fix: whether to apply fixes (default: true). Set to false to only propose changes. User arguments: $ARGUMENTS Steps Run each of these sk"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The open-source platform to build AI agents and run your agentic workforce.",
+    "Connect 1,000+ integrations and LLMs to orchestrate agentic workflows.",
+    "Design agent workflows visually on a canvas—connect agents, tools, and blocks, then run them instantly.",
+    "Upload documents to a vector store and let agents answer questions grounded in your specific content.",
+    "Copilot is a Sim-managed service.",
+    "State Management: Zustand, TanStack Query",
+    "Use when working on apps/sim/blocks/blocks/{service}.ts or aligning a block with its tools.",
+    "Hard Rule: No Guessed Tool Outputs"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"workflow\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Build, deploy, and orchestrate AI agents. Sim is the central intelligence layer for your AI workforce.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "workflow",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "coding",
+      "automation",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "workflow",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "coding",
+    "automation",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Sim is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows.",
+      "Relevant to workflow."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:simstudioai/sim",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "sim",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

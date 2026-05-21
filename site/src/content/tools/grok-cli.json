@@ -1,0 +1,77 @@
+{
+  "id": "grok-cli",
+  "name": "Grok Cli",
+  "type": "cli",
+  "status": "published",
+  "summary": "An open-source coding agent for the Grok API",
+  "description": "An open-source coding agent for the Grok API",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/superagent-ai/grok-cli",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/superagent-ai/grok-cli",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/superagent-ai/grok-cli#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/superagent-ai/grok-cli#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/superagent-ai/grok-cli/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "grok-cli: an open-source coding agent for the Grok API",
+    "This tool uses the publicly available Grok API.",
+    "Self-management (script-installed only):",
+    "If you want host desktop automation via the built-in computer sub-agent, also enable Accessibility permission for your terminal app on macOS.",
+    "Interactive (default) — launches the OpenTUI coding agent:",
+    "Headless — one prompt, then exit (scripts, CI, automation):",
+    "fit for scripts, CI, schedules, and other non-interactive workflows where a",
+    "as stepstart, text, tooluse, stepfinish, and error."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T19:01:11Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/superagent-ai/grok-cli",
+  "repoUrl": "https://github.com/superagent-ai/grok-cli",
+  "license": "MIT",
+  "stars": 3072,
+  "lastUpdated": "2026-05-18T19:01:11Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

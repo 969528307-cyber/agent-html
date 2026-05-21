@@ -1,0 +1,73 @@
+{
+  "id": "rulego",
+  "name": "Rulego",
+  "type": "sdk",
+  "status": "published",
+  "summary": "⛓️RuleGo is a lightweight, high-performance, embedded, next-generation component orchestration rule engine framework for Go.",
+  "description": "⛓️RuleGo is a lightweight, high-performance, embedded, next-generation component orchestration rule engine framework for Go.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/rulego/rulego",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/rulego/rulego",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/rulego/rulego#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/rulego/rulego#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/rulego/rulego/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Official Website Docs Contribution Guide",
+    "It has a wide range of application potential in low-code, business code orchestration, data integration, workflows, large model intelligent agents, edge computing, automation, IoT, and other scenarios.",
+    "Workflow Orchestration: Supports dynamic orchestration of rule chain components, replacing or adding business logic without restarting the application.",
+    "Built-in Components: Includes a large number of components such as Message Type Switch, JavaScript Switch, JavaScript Filter, JavaScript Transformer, HTTP Push, MQTT Push, Send Email, Log Recording, etc.",
+    "Application Integration: Use RuleGo as glue to connect various systems or protocols, such as SSH, webhook, Kafka, message queues, databases, ChatGPT, third-party application systems.",
+    "Highly Customized Business: Decouple highly customized or frequently changing business and manage it with RuleGo rule chains.",
+    "Automation: For example, CI/CD systems, process automation systems, marketing automation systems.",
+    "Rule Engine Instance Management:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-23T09:42:39Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/rulego/rulego",
+  "repoUrl": "https://github.com/rulego/rulego",
+  "license": "Apache-2.0",
+  "stars": 1505,
+  "lastUpdated": "2026-04-23T09:42:39Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,205 @@
+{
+  "id": "candidate-memsearch-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Memsearch",
+  "sourceUrl": "https://github.com/zilliztech/memsearch",
+  "sourceName": "GitHub",
+  "author": "zilliztech",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex), backed by Markdown and Milvus.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "zilliztech",
+    "repo": "memsearch",
+    "fullName": "zilliztech/memsearch",
+    "stars": 1735,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agent-memory",
+      "ai-agents",
+      "claude-code",
+      "claude-code-plugin",
+      "codex",
+      "codex-cli",
+      "embeddings",
+      "harness",
+      "hybrid-search",
+      "long-term-memory",
+      "memory",
+      "milvus",
+      "openclaw",
+      "opencode",
+      "progressive-disclosure",
+      "rag",
+      "reranker",
+      "semantic-search",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T08:05:36Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/architecture.md",
+    "docs/assets/logo-icon.jpg",
+    "docs/cli.md",
+    "docs/design-philosophy.md",
+    "docs/getting-started.md",
+    "docs/home/comparison.md",
+    "docs/home/embedding-evaluation.md",
+    "docs/home/for-developers.md",
+    "docs/home/for-users.md",
+    "docs/home/why.md",
+    "docs/index.md",
+    "docs/integrations.md",
+    "docs/platforms/claude-code/how-it-works.md",
+    "docs/platforms/claude-code/index.md",
+    "docs/platforms/claude-code/memory-recall.md",
+    "docs/platforms/codex/how-it-works.md",
+    "docs/platforms/codex/index.md",
+    "docs/platforms/codex/memory-recall.md",
+    "docs/platforms/index.md",
+    "docs/platforms/openclaw/how-it-works.md",
+    "docs/platforms/openclaw/index.md",
+    "docs/platforms/openclaw/memory-tools.md",
+    "docs/platforms/opencode/how-it-works.md",
+    "docs/platforms/opencode/index.md",
+    "docs/platforms/opencode/memory-tools.md",
+    "docs/python-api.md",
+    "docs/stylesheets/terminal.css",
+    "docs/testfile",
+    "pyproject.toml",
+    "plugins/claude-code/skills/memory-recall/SKILL.md",
+    "plugins/codex/skills/memory-recall/SKILL.md",
+    "plugins/openclaw/skills/memory-recall/SKILL.md",
+    "plugins/opencode/skills/memory-recall/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" <img src=\"assets/logo icon.jpg\" alt=\"\" width=\"100\" valign=\"middle\" &nbsp; memsearch </h1 <p align=\"center\" <strong Cross platform semantic memory for AI coding agents.</strong </p <p align=\"center\" <a href=\"https://pypi.org/project/memsearch/\" <img src=\"https://img.shields.io/pypi/v/memsearch?style=flat square&color=blue\" alt=\"PyPI\" </a <a href=\"https://zilliztech.github.io/memsearch/platforms/clau",
+  "skillExtracts": [
+    {
+      "path": "plugins/claude-code/skills/memory-recall/SKILL.md",
+      "extract": "name: memory recall description: \"Search and recall relevant memories from past sessions via memsearch. Use when the user's question could benefit from historical context, past decisions, debugging notes, previous conversations, or project knowledge especially questions like 'what did I decide about X', 'why did we do Y', or 'have I seen this before'. Also use when you see [memsearch] Memory available hints injected "
+    },
+    {
+      "path": "plugins/codex/skills/memory-recall/SKILL.md",
+      "extract": "name: memory recall description: \"Search and recall relevant memories from past sessions via memsearch. Use when the user's question could benefit from historical context, past decisions, debugging notes, previous conversations, or project knowledge especially questions like 'what did I decide about X', 'why did we do Y', or 'have I seen this before'. Also use when you see [memsearch] Memory available hints injected "
+    },
+    {
+      "path": "plugins/openclaw/skills/memory-recall/SKILL.md",
+      "extract": "name: memory recall description: \"Search and recall relevant memories from past sessions via memsearch. Use when the user's question could benefit from historical context, past decisions, debugging notes, previous conversations, or project knowledge especially questions like 'what did I decide about X', 'why did we do Y', or 'have I seen this before'. Also use when you see [memsearch] Memory available hints injected "
+    },
+    {
+      "path": "plugins/opencode/skills/memory-recall/SKILL.md",
+      "extract": "name: memory recall description: \"Search and recall relevant memories from past sessions via memsearch. Use when the user's question could benefit from historical context, past decisions, debugging notes, previous conversations, or project knowledge especially questions like 'what did I decide about X', 'why did we do Y', or 'have I seen this before'. Also use when you see [memsearch] Memory available hints injected "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Cross-platform semantic memory for AI coding agents.",
+    "🌐 All Platforms, One Memory — memories flow across Claude Code, OpenClaw, OpenCode, and Codex CLI.",
+    "After restarting, just chat with Claude Code as usual.",
+    "Or just ask naturally — Claude auto-invokes the skill when it senses the question needs history:",
+    "📖 Claude Code Plugin docs · Troubleshooting",
+    "Hooks capture and summarize each turn.",
+    "Recall memories — use the skill:",
+    "Verify it's working — memory files are stored in your agent's workspace:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex), backed by Markdown and Milvus.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "coding",
+      "research",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "coding",
+    "research",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Memsearch is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Helps with memory workflows.",
+      "Relevant to skill."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "memsearch",
+  "publishedAt": "2026-05-18"
+}

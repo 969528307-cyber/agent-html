@@ -1,0 +1,155 @@
+{
+  "id": "candidate-amazon-q-developer-cli-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Amazon Q Developer Cli",
+  "sourceUrl": "https://github.com/aws/amazon-q-developer-cli",
+  "sourceName": "GitHub",
+  "author": "aws",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "✨ Agentic chat experience in your terminal. Build applications using natural language.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "aws",
+    "repo": "amazon-q-developer-cli",
+    "fullName": "aws/amazon-q-developer-cli",
+    "stars": 1960,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "ai",
+      "amazon-q",
+      "cli",
+      "linux",
+      "llm",
+      "macos",
+      "mcp",
+      "open-source",
+      "productivity",
+      "rust",
+      "shell",
+      "terminal",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-30T17:39:50Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agent-file-locations.md",
+    "docs/agent-format.md",
+    "docs/built-in-tools.md",
+    "docs/default-agent-behavior.md",
+    "docs/draft/the-agent-format-2.md",
+    "docs/experiments.md",
+    "docs/hooks.md",
+    "docs/introduction.md",
+    "docs/introspect-tool.md",
+    "docs/knowledge-management.md",
+    "docs/legacy-profile-to-agent-migration.md",
+    "docs/SUMMARY.md",
+    "docs/tangent-mode.md",
+    "docs/todo-lists.md"
+  ],
+  "readmeExtract": "Amazon Q CLI [!IMPORTANT] This open source project is no longer being actively maintained and will only receive critical security fixes. Amazon Q Developer CLI is now available as [Kiro CLI](https://kiro.dev/cli/), a closed source product. For the latest features and updates, please use Kiro CLI. For issues with Kiro CLI, please report it [here](https://github.com/kirodotdev/Kiro/issues) instead. Installation macOS :",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Before getting started, see our contributing docs.",
+    "docs/ - Contains technical documentation",
+    "└── documentation-writer.json",
+    "WARNING: Agent conflict for my-agent.",
+    "cat > .amazonq/cli-agents/project-helper.json << 'EOF'",
+    "\"description\": \"Helper agent for this specific project\",",
+    "\"tools\": [\"fsread\", \"fswrite\", \"executebash\"],",
+    "cat > ~/.aws/amazonq/cli-agents/general-helper.json << 'EOF'"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "✨ Agentic chat experience in your terminal. Build applications using natural language.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "security",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "security",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Amazon Q Developer Cli is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Before getting started, see our contributing docs.",
+      "docs/ - Contains technical documentation"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "amazon-q-developer-cli",
+  "publishedAt": "2026-05-20"
+}

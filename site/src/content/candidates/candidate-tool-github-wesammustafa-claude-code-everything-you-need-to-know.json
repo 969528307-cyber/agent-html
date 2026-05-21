@@ -1,0 +1,166 @@
+{
+  "id": "candidate-tool-github-wesammustafa-claude-code-everything-you-need-to-know",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Claude Code Everything You Need To Know",
+  "sourceUrl": "https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "wesammustafa",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "The ultimate all-in-one guide to mastering Claude Code. From setup, prompt engineering, commands, hooks, workflows, automation, and integrations, to MCP servers, tools, and the BMAD method—packed with step-by-step tutorials, real-world examples, and expert strategies to make this the global go-to repo for Claude mastery.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "wesammustafa",
+    "repo": "Claude-Code-Everything-You-Need-to-Know",
+    "fullName": "wesammustafa/Claude-Code-Everything-You-Need-to-Know",
+    "stars": 1773,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-06T11:26:28Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/reference/changelog.md",
+    "docs/reference/commands.md",
+    "docs/reference/effort-levels.md",
+    "docs/reference/further-reading.md",
+    "docs/reference/models.md",
+    "docs/skills.md"
+  ],
+  "readmeExtract": "Claude Code: Everything You Need to Know <img src=\"Images/claude jumping.svg\" width=\"44\" height=\"40\" alt=\"Animated Claude\" align=\"right\" / A practical guide to Claude Code — from your first prompt to multi agent automation, hooks, MCP, and team workflows. Built around clear mental models and real examples, not marketing. Who this is for: Developers using (or about to use) Claude Code. Beginners get a guided path; pow",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Claude Code: Everything You Need to Know",
+    "A practical guide to Claude Code — from your first prompt to multi-agent automation, hooks, MCP, and team workflows.",
+    "Who this is for: Developers using (or about to use) Claude Code.",
+    "Beginners get a guided path; power users get depth on Skills, Hooks, MCP, and Agent Teams.",
+    "⚡ Already using it, want depth Skills · Hooks · MCP ~30 min each",
+    "🧠 Building teams or automation Agent Teams · Super Claude · BMAD varies",
+    "The four extension points in Claude Code, side by side:",
+    "Tool Use when… Skip if… Lives in"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The ultimate all-in-one guide to mastering Claude Code. From setup, prompt engineering, commands, hooks, workflows, automation, and integrations, to MCP servers, tools, and the BMAD method—packed with step-by-step tutorials, real-world examples, and expert strategies to make this the global go-to repo for Claude mastery.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "tutorial",
+    "useCategory": [
+      "automation",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "tutorial",
+  "useCategory": [
+    "automation",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 6,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 6,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Workflow/automation/orchestration language detected.",
+    "General agent-building language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tutorial.",
+    "Alternative capabilities: mcp, workflow, agent-framework.",
+    "LLM: knowledge-resource + [] — This repository is a tutorial and guide for Claude Code, not a tool or framework itself."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "workflow",
+    "agent-framework"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "single-tool",
+    "whatIsIt": "Claude Code Everything You Need To Know is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation.",
+      "Claude Code: Everything You Need to Know",
+      "A practical guide to Claude Code — from your first prompt to multi-agent automation, hooks, MCP, and team workflows."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:wesammustafa/claude-code-everything-you-need-to-know",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

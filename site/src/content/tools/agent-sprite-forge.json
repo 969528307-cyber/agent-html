@@ -1,0 +1,76 @@
+{
+  "id": "agent-sprite-forge",
+  "name": "Agent Sprite Forge",
+  "type": "skill",
+  "status": "published",
+  "summary": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts.",
+  "description": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/0x0funky/agent-sprite-forge",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/0x0funky/agent-sprite-forge",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/0x0funky/agent-sprite-forge#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/0x0funky/agent-sprite-forge#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/0x0funky/agent-sprite-forge/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Codex skills for game-ready 2D sprites, layered maps, and engine-ready prototypes.",
+    "Codex plans the asset pipeline, renders with built-in image generation, then local processors clean, split, validate, and export assets for Godot, Unity, or raw 2D game workflows.",
+    "Agent Sprite Forge is not just a folder of prompts.",
+    "It is a Codex-first 2D game asset workflow where the agent decides the plan, image generation creates the raw visuals, and deterministic scripts turn those visuals into reusable game assets.",
+    "Ground-only bases, dressed references, prop packs, transparent props, y-sort placement, collision, zones, and previews.",
+    "These examples were assembled with Codex using agent-sprite-forge workflows.",
+    "A browser-based RPG prototype with generated characters, starter selection, map flow, and battle UI.",
+    "A compact JavaScript game showcase built from sprite, monster, battle, and map assets generated through the skill workflow."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-05T17:53:33Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/0x0funky/agent-sprite-forge",
+  "repoUrl": "https://github.com/0x0funky/agent-sprite-forge",
+  "license": "MIT",
+  "stars": 2234,
+  "lastUpdated": "2026-05-05T17:53:33Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

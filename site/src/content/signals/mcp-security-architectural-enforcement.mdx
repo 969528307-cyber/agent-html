@@ -1,0 +1,61 @@
+---
+englishTitle: "MCP Security Goes Architectural: Prompts Don't Protect"
+originalTitle: "Prompts Don't Protect: Architectural Enforcement via MCP Proxy for LLM Tool Access Control"
+subtitle: "New research proposes MCP Proxy to enforce access control at the protocol layer, replacing prompt-based soft constraints"
+status: "published"
+topic: "mcp"
+path: "start"
+order: 11
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "LLMs select unauthorized MCP tools even when explicitly instructed not to"
+  - "MCP Proxy enforces architectural access control at the protocol level"
+  - "Enterprise MCP security is shifting from soft prompts to hard enforcement"
+  - "ADR system: first production-proven enterprise MCP security framework"
+relatedTools: []
+relatedAgents: []
+nextReads: ["mcp-server-selection-guide", "how-we-evaluate-mcp-tools"]
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.18414"
+author: "Rohith Uppala"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-18"
+executiveSummary: "Two papers this week signal a shift in MCP security: from trusting LLMs to enforce rules via prompts, to architectural enforcement at the protocol layer. Rohith Uppala demonstrates that LLMs will select unauthorized tools in adversarial scenarios regardless of prompt instructions. A separate paper from the ADR team presents the first production-proven enterprise MCP security framework."
+signalThesis: "Prompt-based MCP access control is fundamentally broken. The industry is moving toward architectural enforcement at the protocol level."
+whyItMatters: "If agentk.it indexes 63 MCP servers that agents can freely select, every one of those tools becomes a potential attack surface. Understanding how the security model is evolving helps users and developers choose secure architectures."
+keyTakeaways:
+  - "LLMs ignore prompt-based tool restrictions in adversarial scenarios"
+  - "MCP Proxy approach: intercept tool calls at the protocol layer, enforce before the LLM sees them"
+  - "ADR system provides observability, detection, and response for enterprise MCP deployments"
+  - "Directly relevant to MCP server developers and agent platform builders"
+ecosystemImpact:
+  - label: "MCP Server Developers"
+    body: "Should prepare for proxy-based access control as a standard layer"
+  - label: "Agent Platform Builders"
+    body: "ADR pattern may become a required component for enterprise deployments"
+whatToWatchNext:
+  - "Whether Anthropic or OpenAI adopt MCP Proxy patterns in their official MCP implementations"
+  - "Open-source MCP Proxy implementations appearing on GitHub"
+publishedAt: "2026-05-19"
+---
+
+Two papers from the past week mark an inflection point in MCP security thinking.
+
+## The Problem: Prompts Are Not Security
+
+Rohith Uppala's paper "Prompts Don't Protect" demonstrates a critical finding: when unauthorized tools are visible in an agent's context window, LLMs will select them in adversarial scenarios — even when explicitly instructed otherwise in the system prompt. The prompt is a suggestion, not a security boundary.
+
+## The Solution: Protocol-Layer Enforcement
+
+The proposed MCP Proxy sits between the agent and MCP servers, enforcing access control before tool calls reach the LLM. This is an architectural shift — security moves from the prompt layer (soft, unreliable) to the protocol layer (hard, enforceable).
+
+## Enterprise Adoption
+
+A separate paper from the ADR team describes the first large-scale, production-proven enterprise framework for securing AI agents operating through MCP. They identify three challenges: limited observability (existing EDR tools don't understand MCP), protocol-level attack surfaces, and the need for runtime detection rather than static analysis.
+
+## What This Means for agentk.it Users
+
+Every MCP server indexed in this directory is a potential tool an agent can invoke. Understanding that prompt-based restrictions are insufficient helps you evaluate which MCP servers to trust and how to deploy them securely.
+
+Source: [arXiv:2605.18414](https://arxiv.org/abs/2605.18414) (Prompts Don't Protect) and [arXiv:2605.17380](https://arxiv.org/abs/2605.17380) (ADR System)

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "local-agents-library",
+    "module": "agents",
+    "name": "Local Agent Content Library",
+    "type": "local_content",
+    "url": "src/content/agents",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "enabled": true,
+    "acceptRules": [
+      "must_have_documentation_url",
+      "must_have_summary",
+      "must_have_capability_profile"
+    ],
+    "rejectRules": [
+      "missing_official_link",
+      "missing_agent_capability_description"
+    ]
+  },
+  {
+    "id": "agent-official-docs",
+    "module": "agents",
+    "name": "Agent Official Docs Allowlist",
+    "type": "official_docs",
+    "url": "source-allowlist:agents-official-docs",
+    "trustLevel": "official",
+    "refreshInterval": "weekly",
+    "enabled": false,
+    "acceptRules": [
+      "must_be_official_domain",
+      "must_describe_agent_capability_change"
+    ],
+    "rejectRules": [
+      "third_party_comparison_only",
+      "marketing_page_without_capability_detail"
+    ]
+  },
+  {
+    "id": "agent-official-github",
+    "module": "agents",
+    "name": "Agent Official GitHub Repositories",
+    "type": "github_official",
+    "url": "source-allowlist:agents-github",
+    "trustLevel": "official",
+    "refreshInterval": "weekly",
+    "enabled": false,
+    "acceptRules": [
+      "must_match_known_agent",
+      "must_have_recent_release_or_doc_change"
+    ],
+    "rejectRules": [
+      "archived",
+      "stale_for_multiple_years",
+      "unofficial_fork"
+    ]
+  }
+]

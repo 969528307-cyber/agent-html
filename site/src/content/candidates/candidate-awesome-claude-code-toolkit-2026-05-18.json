@@ -1,0 +1,193 @@
+{
+  "id": "candidate-awesome-claude-code-toolkit-2026-05-18",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Claude Code Toolkit",
+  "sourceUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
+  "sourceName": "GitHub",
+  "author": "rohitg00",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+400,000 via SkillKit), 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, 52 ecosystem entries, and more.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "rohitg00",
+    "repo": "awesome-claude-code-toolkit",
+    "fullName": "rohitg00/awesome-claude-code-toolkit",
+    "stars": 1713,
+    "license": "Apache-2.0",
+    "topics": [
+      "claude",
+      "claude-code",
+      "claudecode",
+      "claudecode-hooks",
+      "plugins",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T07:18:34Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "examples/multi-agent-pipeline.md",
+    "examples/session-workflow.md",
+    "skills/accessibility-wcag/SKILL.md",
+    "skills/agentkit-seo/SKILL.md",
+    "skills/api-design-patterns/SKILL.md",
+    "skills/authentication-patterns/SKILL.md",
+    "skills/aws-cloud-patterns/SKILL.md",
+    "skills/ci-cd-pipelines/SKILL.md",
+    "skills/claude-memory-kit/SKILL.md",
+    "skills/continuous-learning/SKILL.md",
+    "skills/data-engineering/SKILL.md",
+    "skills/database-optimization/SKILL.md",
+    "skills/deep-dive/SKILL.md",
+    "skills/devops-automation/SKILL.md",
+    "skills/django-patterns/SKILL.md",
+    "skills/docker-best-practices/SKILL.md",
+    "skills/frontend-excellence/SKILL.md",
+    "skills/git-advanced/SKILL.md",
+    "skills/golang-idioms/SKILL.md",
+    "skills/graphql-design/SKILL.md",
+    "skills/kubernetes-operations/SKILL.md",
+    "skills/llm-integration/SKILL.md",
+    "skills/manage-skills/SKILL.md",
+    "skills/mcp-development/SKILL.md",
+    "skills/microservices-design/SKILL.md",
+    "skills/mobile-development/SKILL.md",
+    "skills/monitoring-observability/SKILL.md",
+    "skills/nextjs-mastery/SKILL.md",
+    "skills/performance-optimization/SKILL.md",
+    "skills/postgres-optimization/SKILL.md",
+    "skills/prompt-engineering/SKILL.md",
+    "skills/python-best-practices/SKILL.md",
+    "skills/react-patterns/SKILL.md",
+    "skills/redis-patterns/SKILL.md",
+    "skills/rust-systems/SKILL.md",
+    "skills/security-hardening/SKILL.md",
+    "skills/springboot-patterns/SKILL.md",
+    "skills/styleseed/SKILL.md",
+    "skills/tdd-mastery/SKILL.md"
+  ],
+  "readmeExtract": "Claude Code Toolkit The most comprehensive toolkit for Claude Code 135 agents, 35 curated skills (+400,000 via [SkillKit](https://agenstskills.com)), 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 15 MCP configs, 26 companion apps, 53 ecosystem entries, and more. <p align=\"center\" <a href=\"https://trendshift.io/repositories/21839\" target=\" blank\" <img src=\"https://trendshift.io/api/badge/repositories/218",
+  "skillExtracts": [
+    {
+      "path": "skills/accessibility-wcag/SKILL.md",
+      "extract": "name: accessibility wcag description: Web accessibility patterns for WCAG 2.2 compliance including ARIA, keyboard navigation, screen readers, and testing Accessibility & WCAG Semantic HTML Use <nav , <main , <article , <section , <aside instead of <div for landmarks. Screen readers use these to navigate the page. ARIA Patterns Keyboard Navigation All interactive elements must be reachable via keyboard. Tab for focus "
+    },
+    {
+      "path": "skills/agentkit-seo/SKILL.md",
+      "extract": "name: agentkit seo description: Route broad or ambiguous AgentKit SEO work to the right module while keeping context scoped. Use when a request spans multiple surfaces, asks for overall digital presence strategy, involves provider or install architecture, needs agent context planning, or the correct platform skill is unclear. user invocable: true argument: The specific SEO optimization task or platform to focus on (e"
+    },
+    {
+      "path": "skills/api-design-patterns/SKILL.md",
+      "extract": "name: api design patterns description: REST API design with resource naming, pagination, versioning, and OpenAPI spec generation API Design Patterns Resource Naming Use plural nouns: /users , /orders , /products Nest for relationships: /users/{id}/orders Max nesting depth: 2 levels. Beyond that, use query params or top level resources Use kebab case: /user profiles , not /userProfiles Never put verbs in URLs: /users/"
+    },
+    {
+      "path": "skills/authentication-patterns/SKILL.md",
+      "extract": "name: authentication patterns description: Authentication and authorization patterns including OAuth2, JWT, RBAC, session management, and PKCE flows Authentication Patterns JWT Access and Refresh Tokens Short lived access tokens (15 minutes) with longer lived refresh tokens (7 days). Store refresh tokens in HTTP only cookies. Auth Middleware OAuth2 Authorization Code Flow with PKCE RBAC Model Anti Patterns Storing JW"
+    },
+    {
+      "path": "skills/aws-cloud-patterns/SKILL.md",
+      "extract": "name: aws cloud patterns description: AWS cloud patterns for Lambda, ECS, S3, DynamoDB, and Infrastructure as Code with CDK/Terraform AWS Cloud Patterns Lambda Function Pattern Initialize SDK clients outside the handler to reuse connections across invocations. DynamoDB Single Table Design Design access patterns first, then model keys. Use GSIs for alternative query patterns. CDK Infrastructure S3 Event Processing Ant"
+    },
+    {
+      "path": "skills/ci-cd-pipelines/SKILL.md",
+      "extract": "name: ci cd pipelines description: CI/CD pipeline patterns for GitHub Actions, GitLab CI, testing strategies, and deployment automation CI/CD Pipelines GitHub Actions Workflow Use concurrency to cancel stale runs. Use needs to define job dependencies. GitLab CI Pipeline Reusable GitHub Action Matrix Strategy Anti Patterns Not caching dependencies (npm, pip, cargo) between runs Running all jobs sequentially when lint "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Skills (35 curated + 28 community)",
+    "Over 176 production-ready plugins that extend Claude Code with domain-specific capabilities.",
+    "pro-workflow 1,800+ Battle-tested Claude Code workflows from power users.",
+    "Self-correcting memory, parallel worktrees, wrap-up rituals, 8 hook types, 5 agents, and the 80/20 AI coding ratio.",
+    "agento-patronum Protects sensitive files, credentials, and shell commands from unintended AI access via Claude Code hooks.",
+    "skills-janitor Audit, deduplicate, check, fix, and track usage of your Claude Code skills.",
+    "aws-cost-saver AWS cost optimization scanner with 173 automated checks, ML-powered rightsizing, and Zero Hallucination Pricing - Real result: 60% cost reduction",
+    "claude-agentic-coding-playbook Evidence-based practices for LLM-assisted development -- hooks, skills, scripts, and a best-practices guide with 58 citations."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+400,000 via SkillKit), 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, 52 ecosystem entries, and more.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome Claude Code Toolkit is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Skills (35 curated + 28 community)",
+      "Over 176 production-ready plugins that extend Claude Code with domain-specific capabilities.",
+      "pro-workflow 1,800+ Battle-tested Claude Code workflows from power users."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

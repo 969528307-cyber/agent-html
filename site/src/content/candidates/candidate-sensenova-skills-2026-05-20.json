@@ -1,0 +1,177 @@
+{
+  "id": "candidate-sensenova-skills-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "SenseNova Skills",
+  "sourceUrl": "https://github.com/OpenSenseNova/SenseNova-Skills",
+  "sourceName": "GitHub",
+  "author": "OpenSenseNova",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Modular SenseNova skills for building AI-powered office assistants and productivity workflows",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Hermes Agent",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "OpenSenseNova",
+    "repo": "SenseNova-Skills",
+    "fullName": "OpenSenseNova/SenseNova-Skills",
+    "stars": 1758,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "ai-agents",
+      "ai-assistant",
+      "data-analysis",
+      "document-processing",
+      "office-automation",
+      "presentation-slides"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T04:43:37Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/images/infographics/info_000.webp",
+    "docs/images/infographics/info_001.webp",
+    "docs/images/infographics/info_009.webp",
+    "docs/images/infographics/info_011.webp",
+    "docs/images/infographics/info_012.webp",
+    "docs/images/infographics/info_013.webp",
+    "docs/images/infographics/info_014.webp",
+    "docs/images/infographics/info_015.webp",
+    "docs/images/infographics/info_016.webp",
+    "docs/images/infographics/info_017.webp",
+    "docs/images/infographics/info_018.webp",
+    "docs/images/infographics/info_019.webp",
+    "docs/images/infographics/info_020.webp",
+    "docs/images/infographics/info_021.webp",
+    "docs/images/infographics/info_022.webp",
+    "docs/images/infographics/info_023.webp",
+    "docs/images/infographics/info_024.webp",
+    "docs/images/infographics/info_025.webp",
+    "docs/images/infographics/info_026.webp",
+    "docs/images/infographics/info_028.webp",
+    "docs/images/infographics/info_029.webp",
+    "docs/images/infographics/info_030.webp",
+    "docs/images/infographics/info_031.webp",
+    "docs/images/infographics/info_032.webp",
+    "docs/images/infographics/info_033.webp",
+    "docs/images/infographics/info_034.webp",
+    "docs/images/infographics/info_036.webp",
+    "docs/images/infographics/info_037.webp",
+    "docs/images/infographics/info_039.webp",
+    "docs/images/infographics/info_041.webp",
+    "docs/images/infographics/info_044.webp",
+    "docs/images/infographics/info_045.webp",
+    "docs/images/infographics/info_046.webp",
+    "docs/images/infographics/info_053.webp",
+    "docs/images/infographics/info_055.webp",
+    "docs/images/infographics/info_056.webp",
+    "docs/images/infographics/info_057.webp",
+    "docs/images/infographics/info_059.webp",
+    "docs/images/infographics/info_060.webp"
+  ],
+  "readmeExtract": "SenseNova Skills English | [简体中文](README CN.md) <p align=\"center\" <img src=\"docs/images/teasers/teaser v2.webp\" width=\"100%\" </p <p align=\"center\" <a href=\"https://platform.sensenova.cn\" <img src=\"https://img.shields.io/badge/Website Platform 1f6feb?style=flat square&logo=googlechrome&logoColor=white\" alt=\"Website\" </a <a href=\"https://office.xiaohuanxiong.com/home\" <img src=\"https://img.shields.io/badge/%F0%9F%A6%9D",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The SenseNova model family plugs directly into agent runtimes such as OpenClaw and hermes-agent, with the skills in this repository extending the models with concrete, end-to-end office capabilities.",
+    "In this repository each skill lives in its own directory and declares triggers, capabilities, and execution flow through a SKILL.md file, following the Agent Skills convention.",
+    "The skills cover image generation & visualization, slide-deck (PPT) generation, Excel data analysis, and deep research — usable standalone or composed into end-to-end workflows.",
+    "These skills are designed to run inside an Agent Skills-compatible agent.",
+    "Recommended runtime: pair them with OpenClaw or hermes-agent.",
+    "After it finishes, you may need to manually restart the agent service before the new skills are picked up.",
+    "OpenClaw ~/.openclaw/skills/",
+    "hermes-agent ~/.hermes/skills/"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Modular SenseNova skills for building AI-powered office assistants and productivity workflows",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "data",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "data",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "SenseNova Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with data workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "The SenseNova model family plugs directly into agent runtimes such as OpenClaw and hermes-agent, with the skills in this repository extending the models with concrete, end-to-end office capabilities."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "sensenova-skills",
+  "publishedAt": "2026-05-20"
+}

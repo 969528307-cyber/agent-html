@@ -1,0 +1,78 @@
+{
+  "id": "cli-printing-press",
+  "name": "Cli Printing Press",
+  "type": "cli",
+  "status": "published",
+  "summary": "Every API has a secret identity. This finds it, absorbs every feature from every competing tool, then builds the GOAT CLI — designed for AI agents first, with SQLite sync, offline search, and compound insight commands.",
+  "description": "Every API has a secret identity. This finds it, absorbs every feature from every competing tool, then builds the GOAT CLI — designed for AI agents first, with SQLite sync, offline search, and compound insight commands.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mvanhorn/cli-printing-press",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mvanhorn/cli-printing-press",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mvanhorn/cli-printing-press#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mvanhorn/cli-printing-press#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mvanhorn/cli-printing-press/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "In a world of AI agents, that's speed and token spend.",
+    "A well-designed CLI is muscle memory for an agent: no hunting through docs, no wrong turns, no wasted tokens.",
+    "We built the Printing Press to print the best CLIs in the world for agents.",
+    "It fuses all of that and prints a token-efficient Go CLI plus a Claude Code skill plus an MCP server for any API or any website.",
+    "flight-goat (Kayak nonstop search plus sniffed Google Flights).",
+    "Browse the full catalog of printed CLIs at printingpress.dev or in the Printing Press Library, organized by category, most with full MCP servers.",
+    "You need both the binary and the Claude Code skills.",
+    "The skills (/printing-press ) are the primary interface; they drive the binary behind the scenes."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T02:02:05Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mvanhorn/cli-printing-press",
+  "repoUrl": "https://github.com/mvanhorn/cli-printing-press",
+  "license": "MIT",
+  "stars": 2270,
+  "lastUpdated": "2026-05-20T02:02:05Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,73 @@
+{
+  "id": "gpt-researcher",
+  "name": "Gpt Researcher",
+  "type": "mcp",
+  "status": "published",
+  "summary": "An autonomous agent that conducts deep research on any data using any LLM providers",
+  "description": "An autonomous agent that conducts deep research on any data using any LLM providers",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/assafelovic/gpt-researcher",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/assafelovic/gpt-researcher",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/assafelovic/gpt-researcher#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/assafelovic/gpt-researcher#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/assafelovic/gpt-researcher/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "GPT Researcher the first open deep research agent designed for both web and local research on any given task.",
+    "The agent produces detailed, factual, and unbiased research reports with citations.",
+    "GPT Researcher provides a full suite of customization options to create tailor made and domain specific research agents.",
+    "Inspired by the recent Plan-and-Solve and RAG papers, GPT Researcher addresses misinformation, speed, determinism, and reliability by offering stable performance and increased speed through parallelized agent work.",
+    "Objective conclusions for manual research can take weeks, requiring vast resources and time.",
+    "LLMs trained on outdated information can hallucinate, becoming irrelevant for current research tasks.",
+    "Current LLMs have token limitations, insufficient for generating long research reports.",
+    "Selective web sources can introduce bias into research tasks."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-16T17:41:04Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/assafelovic/gpt-researcher",
+  "repoUrl": "https://github.com/assafelovic/gpt-researcher",
+  "license": "Apache-2.0",
+  "stars": 27177,
+  "lastUpdated": "2026-04-16T17:41:04Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

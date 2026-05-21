@@ -1,0 +1,178 @@
+{
+  "id": "candidate-claude-code-skill-factory-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Code Skill Factory",
+  "sourceUrl": "https://github.com/alirezarezvani/claude-code-skill-factory",
+  "sourceName": "GitHub",
+  "author": "alirezarezvani",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Claude Code Skill Factory — A powerful open-source toolkit for building and deploying production-ready Claude Skills, Code Agents, custom Slash Commands, and LLM Prompts at scale. Easily generate structured skill templates, automate workflow integration, and accelerate AI agent development with a clean, developer-friendly setup.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "alirezarezvani",
+    "repo": "claude-code-skill-factory",
+    "fullName": "alirezarezvani/claude-code-skill-factory",
+    "stars": 775,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "ai-tools",
+      "claude-ai",
+      "claude-code",
+      "claude-skills",
+      "claude-skills-creator"
+    ],
+    "defaultBranch": "dev",
+    "lastPushedAt": "2025-11-12T15:30:27Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "generated-skills/agent-factory/SKILL.md",
+    "generated-skills/app-store-optimization/SKILL.md",
+    "generated-skills/aws-solution-architect/SKILL.md",
+    "generated-skills/claude-md-enhancer/SKILL.md",
+    "generated-skills/codex-cli-bridge/SKILL.md",
+    "generated-skills/content-trend-researcher/SKILL.md",
+    "generated-skills/hook-factory/SKILL.md",
+    "generated-skills/ms365-tenant-manager/SKILL.md",
+    "generated-skills/prompt-factory/SKILL.md",
+    "generated-skills/scrum-master-agent/SKILL.md",
+    "generated-skills/slash-command-factory/SKILL.md",
+    "generated-skills/social-media-analyzer/SKILL.md",
+    "generated-skills/tdd-guide/SKILL.md",
+    "generated-skills/tech-stack-evaluator/SKILL.md",
+    ".github/CLAUDE.md",
+    "claude-skills-examples/CLAUDE.md",
+    "CLAUDE.md",
+    "documentation/CLAUDE.md",
+    "generated-skills/CLAUDE.md"
+  ],
+  "readmeExtract": "Claude Code Skills & Agents Factory A comprehensive toolkit for generating production ready Claude Skills and Claude Code Agents at scale. This repository provides templates, examples, and powerful prompt engineering systems to create custom skills and specialized agents for Claude AI across all platforms. 🚀 Quick Start (3 Shortcuts) Shortcut 1: Interactive Builder (Fastest) The factory guide agent asks what you nee",
+  "skillExtracts": [
+    {
+      "path": "generated-skills/agent-factory/SKILL.md",
+      "extract": "name: agent factory description: Claude Code agent generation system that creates custom agents and sub agents with enhanced YAML frontmatter, tool access patterns, and MCP integration support following proven production patterns Agent Factory A comprehensive system for generating production ready Claude Code agents and sub agents. This skill provides templates, standards, and generation tools to create custom agents"
+    },
+    {
+      "path": "generated-skills/app-store-optimization/SKILL.md",
+      "extract": "name: app store optimization description: Complete App Store Optimization (ASO) toolkit for researching, optimizing, and tracking mobile app performance on Apple App Store and Google Play Store App Store Optimization (ASO) Skill This comprehensive skill provides complete ASO capabilities for successfully launching and optimizing mobile applications on the Apple App Store and Google Play Store. Capabilities Research &"
+    },
+    {
+      "path": "generated-skills/aws-solution-architect/SKILL.md",
+      "extract": "name: aws solution architect description: Expert AWS solution architecture for startups focusing on serverless, scalable, and cost effective cloud infrastructure with modern DevOps practices and infrastructure as code AWS Solution Architect for Startups This skill provides comprehensive AWS architecture design expertise for startup companies, emphasizing serverless technologies, scalability, cost optimization, and mo"
+    },
+    {
+      "path": "generated-skills/claude-md-enhancer/SKILL.md",
+      "extract": "name: claude md enhancer description: Analyzes, generates, and enhances CLAUDE.md files for any project type using best practices, modular architecture support, and tech stack customization. Use when setting up new projects, improving existing CLAUDE.md files, or establishing AI assisted development standards. CLAUDE.md File Enhancer This skill provides comprehensive CLAUDE.md file generation and enhancement for Clau"
+    },
+    {
+      "path": "generated-skills/codex-cli-bridge/SKILL.md",
+      "extract": "name: codex cli bridge description: Bridge between Claude Code and OpenAI Codex CLI generates AGENTS.md from CLAUDE.md, provides Codex CLI execution helpers, and enables seamless interoperability between both tools Codex CLI Bridge Skill Purpose This skill creates a comprehensive bridge between Claude Code and OpenAI's Codex CLI , enabling seamless interoperability through: 1. Documentation Translation : Converts CLA"
+    },
+    {
+      "path": "generated-skills/content-trend-researcher/SKILL.md",
+      "extract": "name: content trend researcher description: Advanced content and topic research skill that analyzes trends across Google Analytics, Google Trends, Substack, Medium, Reddit, LinkedIn, X, blogs, podcasts, and YouTube to generate data driven article outlines based on user intent analysis Content Trend Researcher A comprehensive content research and analysis skill designed for content creators, marketers, and publishers "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Claude Code Skills & Agents Factory",
+    "A comprehensive toolkit for generating production-ready Claude Skills and Claude Code Agents at scale.",
+    "This repository provides templates, examples, and powerful prompt engineering systems to create custom skills and specialized agents for Claude AI across all platforms.",
+    "The factory-guide agent asks what you need and delegates to specialist guides.",
+    "Shortcut 3: Use Ready-Made Skills",
+    "This toolkit includes 10 slash commands and 5 interactive agents to streamline your workflow:",
+    "/build Interactive builder (skill/agent/prompt/hook) /build skill or /build hook",
+    "/build-hook Build Claude Code hooks (Q&A, alias) /build-hook"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Claude Code Skill Factory — A powerful open-source toolkit for building and deploying production-ready Claude Skills, Code Agents, custom Slash Commands, and LLM Prompts at scale. Easily generate structured skill templates, automate workflow integration, and accelerate AI agent development with a clean, developer-friendly setup.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Code Skill Factory is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "Claude Code Skills & Agents Factory",
+      "A comprehensive toolkit for generating production-ready Claude Skills and Claude Code Agents at scale."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-code-skill-factory",
+  "publishedAt": "2026-05-18"
+}

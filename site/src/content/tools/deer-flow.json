@@ -1,0 +1,79 @@
+{
+  "id": "deer-flow",
+  "name": "Deer Flow",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+  "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+  "category": [
+    "communication"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/bytedance/deer-flow",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/bytedance/deer-flow",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/bytedance/deer-flow#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/bytedance/deer-flow#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/bytedance/deer-flow/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "DeerFlow (Deep Exploration and Efficient Research Flow) is an open-source super agent harness that orchestrates sub-agents, memory, and sandboxes to do almost anything — powered by extensible skills.",
+    "If you're looking for the original Deep Research framework, it's maintained on the 1.x branch — contributions there are still welcome.",
+    "DeerFlow has newly integrated the intelligent search and crawling toolset independently developed by BytePlus--InfoQuest (supports free online experience)",
+    "From Deep Research to Super Agent Harness",
+    "That prompt is intended for coding agents.",
+    "This launches an interactive wizard that guides you through choosing an LLM provider, optional web search, and execution/safety preferences such as sandbox mode, bash access, and file-write tools.",
+    "The wizard also lets you configure an optional web search provider, or skip it for now.",
+    "For Qwen-style reasoning models, DeerFlow toggles reasoning with extrabody.chattemplatekwargs.enablethinking and preserves vLLM's non-standard reasoning field across multi-turn tool-call conversations."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T12:03:23Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/bytedance/deer-flow",
+  "repoUrl": "https://github.com/bytedance/deer-flow",
+  "license": "MIT",
+  "stars": 68333,
+  "lastUpdated": "2026-05-17T12:03:23Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

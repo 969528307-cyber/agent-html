@@ -1,0 +1,176 @@
+{
+  "id": "candidate-fast-agent-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Fast Agent",
+  "sourceUrl": "https://github.com/evalstate/fast-agent",
+  "sourceName": "GitHub",
+  "author": "evalstate",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Code, Build and Evaluate agents - excellent Model and Skills/MCP/ACP Support",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "evalstate",
+    "repo": "fast-agent",
+    "fullName": "evalstate/fast-agent",
+    "stars": 3783,
+    "license": "Apache-2.0",
+    "topics": [
+      "acp",
+      "agent",
+      "agent-framework",
+      "agent-skills",
+      "cli",
+      "mcp",
+      "mcp-client",
+      "mcp-server",
+      "python",
+      "skills",
+      "tui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T23:53:04Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.gitignore",
+    "docs/.prettierignore",
+    "docs/.tool-versions",
+    "docs/agent/agent.py",
+    "docs/docs/_generated/model_aliases_aliyun.md",
+    "docs/docs/_generated/model_aliases_anthropic.md",
+    "docs/docs/_generated/model_aliases_codexresponses.md",
+    "docs/docs/_generated/model_aliases_deepseek.md",
+    "docs/docs/_generated/model_aliases_google.md",
+    "docs/docs/_generated/model_aliases_groq.md",
+    "docs/docs/_generated/model_aliases_hf.md",
+    "docs/docs/_generated/model_aliases_openai.md",
+    "docs/docs/_generated/model_aliases_responses.md",
+    "docs/docs/_generated/model_aliases_xai.md",
+    "docs/docs/_generated/models_reference.md",
+    "docs/docs/_generated/plugin_api.md",
+    "docs/docs/_generated/README.md",
+    "docs/docs/_generated/request_params_reference.md",
+    "docs/docs/_generated/workflows_reference.md",
+    "docs/docs/acp/customizing_agents.md",
+    "docs/docs/acp/index.md",
+    "docs/docs/agents/defining.md",
+    "docs/docs/agents/index.md",
+    "docs/docs/agents/instructions_parallel.png",
+    "docs/docs/agents/instructions.md",
+    "docs/docs/agents/instructions.png",
+    "docs/docs/agents/plugins.md",
+    "docs/docs/agents/prompting.md",
+    "docs/docs/agents/running.md",
+    "docs/docs/agents/skills.md",
+    "docs/docs/agents/tool_runner.md",
+    "docs/docs/agents/workflows.md",
+    "docs/docs/assets/brand/fast-agent-anim-dark.svg",
+    "docs/docs/assets/brand/fast-agent-anim-light.svg",
+    "docs/docs/assets/brand/fast-agent-crt.svg",
+    "docs/docs/assets/brand/fast-agent-icon.svg",
+    "docs/docs/assets/brand/fast-agent-lockup-dark.svg",
+    "docs/docs/assets/brand/fast-agent-lockup-light.svg",
+    "docs/docs/assets/brand/fast-agent-social.svg"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://pypi.org/project/fast agent mcp/\" <img src=\"https://img.shields.io/pypi/v/fast agent mcp?color=%2334D058&label=pypi\" / </a <a href=\" \" <img src=\"https://github.com/evalstate/fast agent/actions/workflows/main checks.yml/badge.svg\" / </a <a href=\"https://github.com/evalstate/fast agent/issues\" <img src=\"https://img.shields.io/github/issues raw/evalstate/fast agent\" / </a <a href=\"http",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Please see for latest documentation.",
+    "fast-agent is a flexible way to interact with LLMs, excellent for use as a Coding Agent, Development Toolkit, Evaluation or Workflow platform.",
+    "To start coding with Hugging Face inference providers or use your OpenAI Codex plan:",
+    "Manage skills with the /skills command, and connect to MCP Servers with /connect.",
+    "The default fast-agent registry contains skills to let you set up LSP, Agent and Tool Hooks, Compaction strategies, Automation and more.",
+    "fast-agent enables you to create and interact with sophisticated multimodal Agents and Workflows in minutes.",
+    "It is the first framework with complete, end-to-end tested MCP Feature support including Sampling and Elicitations.",
+    "The simple declarative syntax lets you concentrate on composing your Prompts and MCP Servers to build effective agents."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Code, Build and Evaluate agents - excellent Model and Skills/MCP/ACP Support",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Fast Agent is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Please see for latest documentation.",
+      "fast-agent is a flexible way to interact with LLMs, excellent for use as a Coding Agent, Development Toolkit, Evaluation or Workflow platform.",
+      "To start coding with Hugging Face inference providers or use your OpenAI Codex plan:"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "fast-agent",
+  "publishedAt": "2026-05-20"
+}

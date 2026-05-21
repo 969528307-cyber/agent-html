@@ -1,0 +1,75 @@
+{
+  "id": "gin-vue-admin",
+  "name": "Gin Vue Admin",
+  "type": "mcp",
+  "status": "published",
+  "summary": "🚀Vite+Vue3+Gin拥有AI辅助的基础开发平台，企业级业务AI+开发解决方案，内置mcp辅助服务，内置skills管理，支持TS和JS混用。它集成了JWT鉴权、权限管理、动态路由、显隐可控组件、分页封装、多点登录拦截、资源权限、上传下载、代码生成器、表单生成器和可配置的导入导出等开发必备功能。",
+  "description": "🚀Vite+Vue3+Gin拥有AI辅助的基础开发平台，企业级业务AI+开发解决方案，内置mcp辅助服务，内置skills管理，支持TS和JS混用。它集成了JWT鉴权、权限管理、动态路由、显隐可控组件、分页封装、多点登录拦截、资源权限、上传下载、代码生成器、表单生成器和可配置的导入导出等开发必备功能。",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/flipped-aurora/gin-vue-admin",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/flipped-aurora/gin-vue-admin",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/flipped-aurora/gin-vue-admin#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/flipped-aurora/gin-vue-admin#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/flipped-aurora/gin-vue-admin/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "合并代码需要两名维护人员参与：一人进行 review 后 approve，另一人再次 review，通过后即可合并。",
+    "执行上面的命令后，server目录下会出现docs文件夹里的 docs.go, swagger.json, swagger.yaml 三个文件更新，启动go服务之后, 在浏览器输入 即可查看swagger文档",
+    "在工作区配置文件中有go.toolsEnvVars字段，是用于VSCode自身的go工具环境变量。此外在多go版本的系统中，可以通过gopath、go.goroot指定运行版本。",
+    "后端接口路径保持不变，继续兼容现有 /autoCode/ 与 /skills/",
+    "server/mcp 中与独立服务进程管理强绑定的底层基础设施",
+    "若后续需要做到“移除 auto 插件后完全没有 MCP 相关基础设施残留”，再单独做第二轮基础设施下沉",
+    "server/api/v1/system/autocodemcp.go",
+    "server/api/v1/system/aiworkflowsession.go"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-11T05:48:18Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/flipped-aurora/gin-vue-admin",
+  "repoUrl": "https://github.com/flipped-aurora/gin-vue-admin",
+  "license": "Apache-2.0",
+  "stars": 24691,
+  "lastUpdated": "2026-05-11T05:48:18Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,167 @@
+{
+  "id": "candidate-tool-github-mobile-next-mobile-mcp",
+  "type": "tool",
+  "status": "published",
+  "title": "Mobile Mcp",
+  "sourceUrl": "https://github.com/mobile-next/mobile-mcp",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "mobile-next",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Model Context Protocol Server for Mobile Automation and Scraping (iOS, Android, Emulators, Simulators and Real Devices)",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "mobile-next",
+    "repo": "mobile-mcp",
+    "fullName": "mobile-next/mobile-mcp",
+    "stars": 4936,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "android",
+      "emulator",
+      "ios",
+      "mcp",
+      "mobile",
+      "physical",
+      "real",
+      "simulator"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T19:57:27Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "Mobile Next MCP server for Mobile Development and Automation | iOS, Android, Simulator, Emulator, and Real Devices This is a [Model Context Protocol (MCP) server](https://github.com/modelcontextprotocol) that enables scalable mobile automation, development through a platform agnostic interface, eliminating the need for distinct iOS or Android knowledge. You can run it on emulators, simulators, and real devices (iOS a",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Mobile Next - MCP server for Mobile Development and Automation iOS, Android, Simulator, Emulator, and Real Devices",
+    "This is a Model Context Protocol (MCP) server that enables scalable mobile automation, development through a platform-agnostic interface, eliminating the need for distinct iOS or Android knowledge.",
+    "This server allows Agents and LLMs to interact with native iOS/Android applications and devices through structured accessibility snapshots or coordinate-based taps based on screenshots.",
+    "🚀 Mobile MCP Roadmap: Building the Future of Mobile",
+    "Join us on our journey as we continuously enhance Mobile MCP!",
+    "Your feedback is invaluable in shaping the future of mobile automation.",
+    "How we help to scale mobile automation:",
+    "📲 Native app automation (iOS and Android) for testing or data-entry scenarios."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Model Context Protocol Server for Mobile Automation and Scraping (iOS, Android, Emulators, Simulators and Real Devices)",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: cli.",
+    "LLM: mcp + [mcp] — This project is explicitly described as a Model Context Protocol (MCP) server for mobile automation, making it an MCP server."
+  ],
+  "classificationAlternatives": [
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mobile Mcp is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Relevant to automation.",
+      "Mobile Next - MCP server for Mobile Development and Automation iOS, Android, Simulator, Emulator, and Real Devices",
+      "This is a Model Context Protocol (MCP) server that enables scalable mobile automation, development through a platform-agnostic interface, eliminating the need for distinct iOS or Android knowledge.",
+      "This server allows Agents and LLMs to interact with native iOS/Android applications and devices through structured accessibility snapshots or coordinate-based taps based on screenshots."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:mobile-next/mobile-mcp",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mobile-mcp",
+  "publishedAt": "2026-05-18"
+}

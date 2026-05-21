@@ -1,0 +1,78 @@
+{
+  "id": "agent-skills",
+  "name": "Agent Skills",
+  "type": "skill",
+  "status": "published",
+  "summary": "Production-grade engineering skills for AI coding agents.",
+  "description": "Production-grade engineering skills for AI coding agents.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/addyosmani/agent-skills#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/addyosmani/agent-skills#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/addyosmani/agent-skills/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Production-grade engineering skills for AI coding agents.",
+    "Skills encode the workflows, quality gates, and best practices that senior engineers use when building software.",
+    "These ones are packaged so AI agents follow them consistently across every phase of development.",
+    "Each one activates the right skills automatically.",
+    "Review before merge /review Improve code health",
+    "Skills also activate automatically based on what you're doing — designing an API triggers api-and-interface-design, building UI triggers frontend-ui-engineering, and so on.",
+    "Copy any SKILL.md into .cursor/rules/, or reference the full skills/ directory.",
+    "Uses agent-driven skill execution via AGENTS.md and the skill tool."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-16T22:00:25Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/addyosmani/agent-skills",
+  "repoUrl": "https://github.com/addyosmani/agent-skills",
+  "license": "MIT",
+  "stars": 43137,
+  "lastUpdated": "2026-05-16T22:00:25Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

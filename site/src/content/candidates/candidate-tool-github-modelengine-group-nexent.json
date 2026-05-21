@@ -1,0 +1,216 @@
+{
+  "id": "candidate-tool-github-modelengine-group-nexent",
+  "type": "tool",
+  "status": "published",
+  "title": "Nexent",
+  "sourceUrl": "https://github.com/ModelEngine-Group/nexent",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "ModelEngine-Group",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "ModelEngine-Group",
+    "repo": "nexent",
+    "fullName": "ModelEngine-Group/nexent",
+    "stars": 4537,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "agentic-framework",
+      "agentic-rag",
+      "agentic-workflow",
+      "ai",
+      "harness",
+      "harness-engineering",
+      "llm",
+      "mcp",
+      "multi-agent",
+      "rag"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T02:54:55Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    ".claude/skills/prompts-writing/SKILL.md",
+    ".claude/skills/skill-creator/SKILL.md",
+    ".cursor/rules/backend/app_layer_rules.mdc",
+    ".cursor/rules/backend/database_layer_rules.mdc",
+    ".cursor/rules/backend/service_layer_rules.mdc",
+    ".cursor/rules/english_comments.mdc",
+    ".cursor/rules/environment_variable.mdc",
+    ".cursor/rules/frontend/component_layer_rules.mdc",
+    ".cursor/rules/frontend/frontend_overview_rules.mdc",
+    ".cursor/rules/frontend/hook_layer_rules.mdc",
+    ".cursor/rules/frontend/page_layer_rules.mdc",
+    ".cursor/rules/frontend/service_layer_rules.mdc",
+    ".cursor/rules/frontend/type_layer_rules.mdc",
+    ".cursor/rules/frontend/ui_standards_rules.mdc",
+    ".cursor/rules/pytest_unit_test_rules.mdc",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "doc/docs/en/sdk/core/agents.md",
+    "doc/docs/zh/sdk/core/agents.md"
+  ],
+  "readmeExtract": "![Nexent Banner](./assets/NexentBanner.png) [![Website](https://img.shields.io/badge/Website blue?logo=icloud&logoColor=white)](https://nexent.tech) [![English](https://img.shields.io/badge/English README blue?logo=github)](README.md) [![中文](https://img.shields.io/badge/中文 README green?logo=github)](README CN.md) [![Documentation](https://img.shields.io/badge/Documentation CN/EN red?logo=googledocs&logoColor=%23ECD53",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/prompts-writing/SKILL.md",
+      "extract": "name: prompt writing description: Create, refine, and optimize high quality YAML prompts for AI assistants. Use when working with prompt templates, system prompts, agent prompts, or any prompt engineering tasks. Provides structure guidelines, template patterns, and quality standards for YAML based prompts. license: Complete terms in LICENSE.txt Prompt Writing Create and optimize YAML based prompts for AI assistants f"
+    },
+    {
+      "path": ".claude/skills/skill-creator/SKILL.md",
+      "extract": "name: skill creator description: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations. license: Complete terms in LICENSE.txt Skill Creator This skill provides guidance for creating effective skills. About Skills Skills are modular, self contained"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Nexent is a zero-code platform for auto-generating production-grade AI agents, built on Harness Engineering principles.",
+    "Nexent provides a comprehensive feature set for building powerful AI agents:",
+    "⚙️ Multi-Model Integration OpenAI-compatible with any provider, full LLM/Embedding/VLM/STT/TTS coverage, supports domestic model switching",
+    "🤝 A2A Agent Collaboration Agent-to-Agent protocol enables seamless multi-agent cooperation and distributed workflows",
+    "🧠 Layered Memory Mechanism Two-tier memory (user-level + user-agent-level) for persistent context across conversations",
+    "📝 Progressive Skill Disclosure Dynamically loads Skill into context, maximizing context window efficiency",
+    "🔧 MCP Tool Ecosystem Plug-and-play extension system with custom development and third-party MCP service support",
+    "🌐 Internet Knowledge Integration Multi-source search blending real-time information with private data"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "coding",
+      "automation",
+      "research",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "coding",
+    "automation",
+    "research",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 9,
+    "cli": 0,
+    "workflow": 9,
+    "agent-framework": 3,
+    "agent-app": 7,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Agent instruction or rule files detected.",
+    "Workflow/automation/orchestration language detected.",
+    "General agent-building language detected.",
+    "Agent app or product platform language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: template.",
+    "Alternative capabilities: agent-app, knowledge-resource, workflow.",
+    "LLM: agent-app + [mcp, workflow] — Zero-code platform for building and orchestrating AI agents with MCP integration and workflow capabilities."
+  ],
+  "classificationAlternatives": [
+    "agent-app",
+    "knowledge-resource",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Nexent is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:modelengine-group/nexent",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nexent",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

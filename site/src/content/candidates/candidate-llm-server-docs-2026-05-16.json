@@ -1,0 +1,176 @@
+{
+  "id": "candidate-llm-server-docs-2026-05-16",
+  "type": "tool",
+  "status": "published",
+  "title": "Llm Server Docs",
+  "sourceUrl": "https://github.com/varunvasudeva1/llm-server-docs",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "varunvasudeva1",
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "End-to-end documentation to set up your own local & fully private LLM server on Debian. Equipped with chat, web search, RAG, model management, MCP servers, image generation, and TTS.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "varunvasudeva1",
+    "repo": "llm-server-docs",
+    "fullName": "varunvasudeva1/llm-server-docs",
+    "stars": 768,
+    "license": "MIT",
+    "topics": [
+      "comfyui",
+      "debian",
+      "docker",
+      "huggingface",
+      "kokoro-fastapi",
+      "linux",
+      "llama-swap",
+      "llamacpp",
+      "llm",
+      "mcp-proxy",
+      "mcpjungle",
+      "ollama",
+      "open-webui",
+      "vllm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-02T04:13:58Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "Local LLaMA Server Setup Documentation TL;DR : End to end documentation to set up your own local & fully private LLM server on Debian. Equipped with chat, web search, RAG, model management, MCP servers, image generation, and TTS, along with steps for configuring SSH, firewall, and secure remote access via Tailscale. Software Stack: Inference Engine ([Ollama](https://github.com/ollama/ollama), [llama.cpp](https://gith",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "TL;DR: End-to-end documentation to set up your own local & fully private LLM server on Debian.",
+    "Equipped with chat, web search, RAG, model management, MCP servers, image generation, and TTS, along with steps for configuring SSH, firewall, and secure remote access via Tailscale.",
+    "MCP Proxy Server (mcp-proxy, MCPJungle)",
+    "VS Code/Claude Desktop Integration",
+    "Standard protocols (OpenAI-compatibility, MCPs, etc.) help with this a lot and, in this guide, they are always preferred over bundled solutions.",
+    "Create a bootable USB using a tool like Rufus for Windows or Balena Etcher for MacOS.",
+    "For a more detailed guide on installing Debian, refer to the official documentation.",
+    "First, we'll switch to root and grant our user permission to run commands with sudo."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "End-to-end documentation to set up your own local & fully private LLM server on Debian. Equipped with chat, web search, RAG, model management, MCP servers, image generation, and TTS.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "devops",
+      "media",
+      "research"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "devops",
+    "media",
+    "research"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: knowledge-resource.",
+    "LLM: knowledge-resource + [mcp] — This repository provides comprehensive documentation for setting up a local LLM server, including configuration of MCP servers, making it a knowledge resource."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Llm Server Docs is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with devops workflows.",
+      "Helps with media workflows.",
+      "Helps with research workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:varunvasudeva1/llm-server-docs",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-16",
+  "reviewedBy": "local-review",
+  "publishedAs": "llm-server-docs",
+  "publishedAt": "2026-05-16",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

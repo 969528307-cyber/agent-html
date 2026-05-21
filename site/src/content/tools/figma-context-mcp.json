@@ -1,0 +1,77 @@
+{
+  "id": "figma-context-mcp",
+  "name": "Figma Context MCP",
+  "type": "mcp",
+  "status": "published",
+  "summary": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+  "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/GLips/Figma-Context-MCP",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/GLips/Figma-Context-MCP",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/GLips/Figma-Context-MCP#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/GLips/Figma-Context-MCP#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/GLips/Figma-Context-MCP/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Give your coding agent access to your Figma data.. Implement designs in any framework in one-shot.",
+    "Give Cursor and other AI-powered coding tools access to your Figma files with this Model Context Protocol server.",
+    "This MCP server is specifically designed for use with Cursor.",
+    "If you need more information on how to configure the Framelink MCP for Figma, see the Framelink docs.",
+    "The Framelink MCP for Figma is simple but powerful.",
+    "\"name\": \"figma-developer-mcp\",",
+    "\"mcpName\": \"io.github.GLips/Figma-Context-MCP\",",
+    "\"description\": \"Give your coding agent access to your Figma data."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-30T00:17:20Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/GLips/Figma-Context-MCP",
+  "repoUrl": "https://github.com/GLips/Figma-Context-MCP",
+  "license": "MIT",
+  "stars": 14805,
+  "lastUpdated": "2026-04-30T00:17:20Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

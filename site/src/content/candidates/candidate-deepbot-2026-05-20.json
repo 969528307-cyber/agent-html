@@ -1,0 +1,136 @@
+{
+  "id": "candidate-deepbot-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Deepbot",
+  "sourceUrl": "https://github.com/kevinluosl/deepbot",
+  "sourceName": "GitHub",
+  "author": "kevinluosl",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "DeepBot is a system-level AI assistant built for both personal productivity and enterprise workflows — one-click setup, seamless experience, and native Feishu integration.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "kevinluosl",
+    "repo": "deepbot",
+    "fullName": "kevinluosl/deepbot",
+    "stars": 2179,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "agent-tools",
+      "agentic-workflow",
+      "agentos",
+      "ai-agents",
+      "harness",
+      "harness-engineering",
+      "openclaw"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:15:45Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/飞书机器人配置指南.md",
+    "docs/external-api.md",
+    "package.json"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"banner.jpg\" alt=\"DeepBot Terminal\" width=\"500\"/ <p Bring AI into your enterprise workflows — a real working partner, not just a chatbot [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](https://opensource.org/licenses/MIT) [![Node.js](https://img.shields.io/badge/Node.js 20+ green.svg)](https://nodejs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript 5.3+ ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Bring AI into your enterprise workflows — a real working partner, not just a chatbot",
+    "It integrates deeply with existing enterprise systems, enabling AI to participate in day-to-day operations across departments through multi-Agent collaboration — automating complex business workflows.",
+    "Whether it's document processing, data analysis, system monitoring, or cross-department coordination, DeepBot handles it through AI Agent technology.",
+    "It supports parallel task execution, scheduled tasks, and skill extensions, all protected by strict security controls.",
+    "⏰ Scheduled Tasks — Automate recurring work with cron-based scheduling",
+    "🎨 Skill Extensions — Compose tools into reusable Skills for complex workflows",
+    "🤖 Multi-Model Support — Qwen, OpenAI, Claude, and more",
+    "🌐 External Integrations — Connect with Feishu and other platforms for cross-platform interaction"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "DeepBot is a system-level AI assistant built for both personal productivity and enterprise workflows — one-click setup, seamless experience, and native Feishu integration.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Deepbot is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "Bring AI into your enterprise workflows — a real working partner, not just a chatbot",
+      "It integrates deeply with existing enterprise systems, enabling AI to participate in day-to-day operations across departments through multi-Agent collaboration — automating complex business workflows.",
+      "Whether it's document processing, data analysis, system monitoring, or cross-department coordination, DeepBot handles it through AI Agent technology."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "deepbot",
+  "publishedAt": "2026-05-20"
+}

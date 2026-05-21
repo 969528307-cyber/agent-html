@@ -1,0 +1,79 @@
+{
+  "id": "memsearch",
+  "name": "Memsearch",
+  "type": "skill",
+  "status": "published",
+  "summary": "A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex), backed by Markdown and Milvus.",
+  "description": "A persistent, unified memory layer for all your AI agents (e.g. Claude Code, Codex), backed by Markdown and Milvus.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/zilliztech/memsearch",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/zilliztech/memsearch",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/zilliztech/memsearch#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/zilliztech/memsearch#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/zilliztech/memsearch/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Cross-platform semantic memory for AI coding agents.",
+    "🌐 All Platforms, One Memory — memories flow across Claude Code, OpenClaw, OpenCode, and Codex CLI.",
+    "After restarting, just chat with Claude Code as usual.",
+    "Or just ask naturally — Claude auto-invokes the skill when it senses the question needs history:",
+    "📖 Claude Code Plugin docs · Troubleshooting",
+    "Hooks capture and summarize each turn.",
+    "Recall memories — use the skill:",
+    "Verify it's working — memory files are stored in your agent's workspace:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T08:05:36Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/zilliztech/memsearch",
+  "repoUrl": "https://github.com/zilliztech/memsearch",
+  "license": "MIT",
+  "stars": 1735,
+  "lastUpdated": "2026-05-18T08:05:36Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,177 @@
+{
+  "id": "candidate-tool-github-firecrawl-firecrawl-mcp-server",
+  "type": "tool",
+  "status": "published",
+  "title": "Firecrawl Mcp Server",
+  "sourceUrl": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "firecrawl",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "firecrawl",
+    "repo": "firecrawl-mcp-server",
+    "fullName": "firecrawl/firecrawl-mcp-server",
+    "stars": 6297,
+    "license": "MIT",
+    "topics": [
+      "batch-processing",
+      "claude",
+      "content-extraction",
+      "data-collection",
+      "firecrawl",
+      "firecrawl-ai",
+      "javascript-rendering",
+      "llm-tools",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "search-api",
+      "web-crawler",
+      "web-scraping"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T20:40:50Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "<div align=\"center\" <a name=\"readme top\" </a <img src=\"https://raw.githubusercontent.com/firecrawl/firecrawl mcp server/main/img/fire.png\" height=\"140\" </div Firecrawl MCP Server A Model Context Protocol (MCP) server implementation that integrates with [Firecrawl](https://github.com/firecrawl/firecrawl) for searching, scraping, and interacting with the web. Big thanks to [@vrknetha](https://github.com/vrknetha), [@kn",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A Model Context Protocol (MCP) server implementation that integrates with Firecrawl for searching, scraping, and interacting with the web.",
+    "Search the web and get full page content",
+    "Deep research with autonomous agent",
+    "Cloud browser sessions with agent-browser automation",
+    "Play around with our MCP Server on MCP.so's playground or on Klavis AI.",
+    "To configure Firecrawl MCP in Cursor v0.48.6",
+    "Go to Features > MCP Servers",
+    "Click \"+ Add new global MCP server\"",
+    "A Model Context Protocol (MCP) server that brings Firecrawl to MCP-compatible AI agents — search, scrape, and interact with the live web for clean, agent-ready context."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "data"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "data"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: cli.",
+    "LLM: mcp + [mcp] — This project is an official MCP server implementation for Firecrawl, providing web scraping and search tools to AI agents via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Firecrawl Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with data workflows.",
+      "Relevant to search.",
+      "A Model Context Protocol (MCP) server implementation that integrates with Firecrawl for searching, scraping, and interacting with the web."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:firecrawl/firecrawl-mcp-server",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "local-review",
+  "publishedAs": "firecrawl-mcp-server",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

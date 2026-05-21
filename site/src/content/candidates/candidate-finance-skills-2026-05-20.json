@@ -1,0 +1,183 @@
+{
+  "id": "candidate-finance-skills-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Finance Skills",
+  "sourceUrl": "https://github.com/himself65/finance-skills",
+  "sourceName": "GitHub",
+  "author": "himself65",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A collection of skills for AI financial analysis and trading.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "himself65",
+    "repo": "finance-skills",
+    "fullName": "himself65/finance-skills",
+    "stars": 2427,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "skills",
+      "trading"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T23:27:16Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "plugins/data-providers/skills/finance-sentiment/SKILL.md",
+    "plugins/data-providers/skills/funda-data/SKILL.md",
+    "plugins/data-providers/skills/hormuz-strait/SKILL.md",
+    "plugins/data-providers/skills/tradingview-reader/SKILL.md",
+    "plugins/market-analysis/skills/company-valuation/SKILL.md",
+    "plugins/market-analysis/skills/earnings-preview/SKILL.md",
+    "plugins/market-analysis/skills/earnings-recap/SKILL.md",
+    "plugins/market-analysis/skills/estimate-analysis/SKILL.md",
+    "plugins/market-analysis/skills/etf-premium/SKILL.md",
+    "plugins/market-analysis/skills/options-payoff/SKILL.md",
+    "plugins/market-analysis/skills/saas-valuation-compression/SKILL.md",
+    "plugins/market-analysis/skills/sepa-strategy/SKILL.md",
+    "plugins/market-analysis/skills/stock-correlation/SKILL.md",
+    "plugins/market-analysis/skills/stock-liquidity/SKILL.md",
+    "plugins/market-analysis/skills/yfinance-data/SKILL.md",
+    "plugins/skill-creator/skills/skill-creator/SKILL.md",
+    "plugins/social-readers/skills/discord-reader/SKILL.md",
+    "plugins/social-readers/skills/linkedin-reader/SKILL.md",
+    "plugins/social-readers/skills/opencli-reader/SKILL.md",
+    "plugins/social-readers/skills/telegram-reader/SKILL.md",
+    "plugins/social-readers/skills/twitter-reader/SKILL.md",
+    "plugins/social-readers/skills/yc-reader/SKILL.md",
+    "plugins/startup-tools/skills/startup-analysis/SKILL.md",
+    "plugins/ui-tools/skills/generative-ui/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Finance Skills [!WARNING] This project is for educational and informational purposes only. Nothing here constitutes financial advice. Always do your own research and consult a qualified financial advisor before making investment decisions. A collection of agent skills for financial analysis and trading, following the [Agent Skills](https://agentskills.io) open standard. Visit [skills.himself65.com](https://skills.him",
+  "skillExtracts": [
+    {
+      "path": "plugins/data-providers/skills/finance-sentiment/SKILL.md",
+      "extract": "name: finance sentiment description: Fetch structured stock sentiment across Reddit, X.com, news, and Polymarket using the Adanos Finance API. Use this skill whenever the user asks how much people are talking about a stock, how hot a ticker is on social platforms, how many Polymarket bets exist for a company, whether sources are aligned, or to compare stock sentiment across multiple tickers. Triggers include: \"social"
+    },
+    {
+      "path": "plugins/data-providers/skills/funda-data/SKILL.md",
+      "extract": "name: funda data description: Query Funda AI financial data via two surfaces: the MCP server at https://funda.ai/api/mcp for analyst grade research synthesis (DCF, comps, earnings previews/recaps, sector deep dives, SEC filings, transcripts, supply chain mapping, ownership flow, macro framing) via the agent chat tool — OR the REST API at https://api.funda.ai/v1 with FUNDA API KEY for raw data (real time quotes, intra"
+    },
+    {
+      "path": "plugins/data-providers/skills/hormuz-strait/SKILL.md",
+      "extract": "name: hormuz strait description: Check the current status of the Strait of Hormuz — shipping transit data, oil price impact, stranded vessels, insurance risk levels, diplomatic developments, and global trade impact. Use this skill whenever the user asks about the Strait of Hormuz, Hormuz chokepoint, Persian Gulf shipping risk, oil transit disruption, war risk premium in the Gulf, Middle East shipping routes, tanker t"
+    },
+    {
+      "path": "plugins/data-providers/skills/tradingview-reader/SKILL.md",
+      "extract": "name: tradingview reader description: Read TradingView desktop app for market data, news, alerts, watchlists, and screener results using opencli (read only). Use this skill whenever the user wants quotes, options chains, options expiries, screener results across stocks/crypto/forex/futures/bonds, gainers/losers/movers, news headlines or full story bodies, alerts (active list, fire log, offline fires), watchlists incl"
+    },
+    {
+      "path": "plugins/market-analysis/skills/company-valuation/SKILL.md",
+      "extract": "name: company valuation description: Estimate the intrinsic value of a public company using DCF, relative (peer multiple) and sum of parts (SOTP) methods, then triangulate to an implied share price with upside/downside versus the current market price. Use this skill whenever the user asks: \"what is AAPL worth\", \"valuation of NVDA\", \"fair value of TSLA\", \"intrinsic value\", \"DCF for MSFT\", \"build a DCF\", \"discounted ca"
+    },
+    {
+      "path": "plugins/market-analysis/skills/earnings-preview/SKILL.md",
+      "extract": "name: earnings preview description: Generate a pre earnings briefing for any stock using Yahoo Finance data. Use this skill whenever the user wants to prepare for an upcoming earnings report, understand what analysts expect, review a company's beat/miss track record, or get a quick overview before an earnings call. Triggers include: \"earnings preview for AAPL\", \"what to expect from TSLA earnings\", \"MSFT reports next "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Always do your own research and consult a qualified financial advisor before making investment decisions.",
+    "A collection of agent skills for financial analysis and trading, following the Agent Skills open standard.",
+    "Sponsored by Funda AI — The Investment Research OS",
+    "Funda AI ships hundreds of skills built by professional analysts — DCF valuations, earnings recaps, options flow, supply-chain graphs, congressional trades, sector deep-dives, and a lot more.",
+    "Claude Code — Individual Plugins",
+    "Claude Code — Individual Skills",
+    "earnings-preview Pre-earnings briefing — consensus estimates, beat/miss history, analyst sentiment",
+    "Read-only social media and research feeds — Twitter/X, Discord, LinkedIn, Telegram, Y Combinator, and a generic opencli fallback for 90+ other sources."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A collection of skills for AI financial analysis and trading.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Finance Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to skill.",
+      "Always do your own research and consult a qualified financial advisor before making investment decisions.",
+      "A collection of agent skills for financial analysis and trading, following the Agent Skills open standard."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "finance-skills",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "ai-devkit",
+  "name": "Ai Devkit",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Make AI coding agents follow a repeatable engineering workflow with planning, memory, verification, skills, and review. One config. All agents. Same workflow.",
+  "description": "Make AI coding agents follow a repeatable engineering workflow with planning, memory, verification, skills, and review. One config. All agents. Same workflow.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/codeaholicguy/ai-devkit",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/codeaholicguy/ai-devkit",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/codeaholicguy/ai-devkit#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/codeaholicguy/ai-devkit#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/codeaholicguy/ai-devkit/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Your AI coding agent is fast, eager, and reckless.",
+    "All coding agents: Claude Code, Cursor, Codex CLI, Gemini CLI, GitHub Copilot, opencode, Antigravity, Amp, Windsurf, Kilo Code, Roo Code.",
+    "Run npx ai-devkit@latest init and your agent gets:",
+    "Memory across sessions Local SQLite memory exposed through MCP and CLI",
+    "Developers who use AI coding agents daily and are tired of:",
+    "re-rigging CLAUDE.md / .cursor/rules / AGENTS.md for every project",
+    "the agent forgetting yesterday's conventions",
+    "the agent diving into code without a plan and producing the wrong thing"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T17:47:47Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/codeaholicguy/ai-devkit",
+  "repoUrl": "https://github.com/codeaholicguy/ai-devkit",
+  "stars": 1199,
+  "lastUpdated": "2026-05-19T17:47:47Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

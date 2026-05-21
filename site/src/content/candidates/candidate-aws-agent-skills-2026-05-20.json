@@ -1,0 +1,176 @@
+{
+  "id": "candidate-aws-agent-skills-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Aws Agent Skills",
+  "sourceUrl": "https://github.com/itsmostafa/aws-agent-skills",
+  "sourceName": "GitHub",
+  "author": "itsmostafa",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "AWS Skills for Agents",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "itsmostafa",
+    "repo": "aws-agent-skills",
+    "fullName": "itsmostafa/aws-agent-skills",
+    "stars": 1102,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "agentic-ai",
+      "aws",
+      "claude-code",
+      "claude-skills",
+      "codex",
+      "coding-agents"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T10:27:09Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/api-gateway/SKILL.md",
+    "skills/bedrock/SKILL.md",
+    "skills/cloudformation/SKILL.md",
+    "skills/cloudwatch/SKILL.md",
+    "skills/cognito/SKILL.md",
+    "skills/dynamodb/SKILL.md",
+    "skills/ec2/SKILL.md",
+    "skills/ecs/SKILL.md",
+    "skills/eks/SKILL.md",
+    "skills/eventbridge/SKILL.md",
+    "skills/iam/SKILL.md",
+    "skills/lambda/SKILL.md",
+    "skills/rds/SKILL.md",
+    "skills/s3/SKILL.md",
+    "skills/secrets-manager/SKILL.md",
+    "skills/sns/SKILL.md",
+    "skills/sqs/SKILL.md",
+    "skills/step-functions/SKILL.md"
+  ],
+  "readmeExtract": "AWS Agent Skills [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](https://opensource.org/licenses/MIT) [![Claude Code](https://img.shields.io/badge/Claude Code blueviolet)](https://claude.ai/code) ![Last Commit](https://img.shields.io/github/last commit/itsmostafa/aws agent skills) ![GitHub Stars](https://img.shields.io/github/stars/itsmostafa/aws agent skills) Supercharge Claude Code with AWS c",
+  "skillExtracts": [
+    {
+      "path": "skills/api-gateway/SKILL.md",
+      "extract": "name: api gateway description: AWS API Gateway for REST and HTTP API management. Use when creating APIs, configuring integrations, setting up authorization, managing stages, implementing rate limiting, or troubleshooting API issues. last updated: \"2026 01 07\" doc source: https://docs.aws.amazon.com/apigateway/latest/developerguide/ AWS API Gateway Amazon API Gateway is a fully managed service for creating, publishing"
+    },
+    {
+      "path": "skills/bedrock/SKILL.md",
+      "extract": "name: bedrock description: AWS Bedrock foundation models for generative AI. Use when invoking foundation models, building AI applications, creating embeddings, configuring model access, or implementing RAG patterns. last updated: \"2026 01 07\" doc source: https://docs.aws.amazon.com/bedrock/latest/userguide/ AWS Bedrock Amazon Bedrock provides access to foundation models (FMs) from AI companies through a unified API. "
+    },
+    {
+      "path": "skills/cloudformation/SKILL.md",
+      "extract": "name: cloudformation description: AWS CloudFormation infrastructure as code for stack management. Use when writing templates, deploying stacks, managing drift, troubleshooting deployments, or organizing infrastructure with nested stacks. last updated: \"2026 01 07\" doc source: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/ AWS CloudFormation AWS CloudFormation provisions and manages AWS resources usin"
+    },
+    {
+      "path": "skills/cloudwatch/SKILL.md",
+      "extract": "name: cloudwatch description: AWS CloudWatch monitoring for logs, metrics, alarms, and dashboards. Use when setting up monitoring, creating alarms, querying logs with Insights, configuring metric filters, building dashboards, or troubleshooting application issues. last updated: \"2026 01 07\" doc source: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ AWS CloudWatch Amazon CloudWatch provides monitoring"
+    },
+    {
+      "path": "skills/cognito/SKILL.md",
+      "extract": "name: cognito description: AWS Cognito user authentication and authorization service. Use when setting up user pools, configuring identity pools, implementing OAuth flows, managing user attributes, or integrating with social identity providers. last updated: \"2026 01 07\" doc source: https://docs.aws.amazon.com/cognito/latest/developerguide/ AWS Cognito Amazon Cognito provides authentication, authorization, and user m"
+    },
+    {
+      "path": "skills/dynamodb/SKILL.md",
+      "extract": "name: dynamodb description: AWS DynamoDB NoSQL database for scalable data storage. Use when designing table schemas, writing queries, configuring indexes, managing capacity, implementing single table design, or troubleshooting performance issues. last updated: \"2026 01 07\" doc source: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ AWS DynamoDB Amazon DynamoDB is a fully managed NoSQL database servi"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Supercharge Claude Code with AWS cloud engineering skills across 18 core AWS services.",
+    "AWS Agent Skills equips Claude Code (and Codex) with deep expertise across 18 AWS domains, enabling automated cloud engineering support from IaC templates to debugging guidance and security best practices.",
+    "Automatically checks AWS documentation for updates on a weekly basis to ensure skills stay current with AWS service changes.",
+    "AWS MCP is great for live docs and API calls, but AWS Agent Skills is designed for reasoning first.",
+    "It gives AI Agents a curated, LLM-optimized AWS knowledge base with real-world patterns, edge cases, and best practices, without streaming large docs or schemas.",
+    "Because the skills are local and pre compressed, it is far more token efficient, keeps the context window small and predictable, and avoids MCP infrastructure, latency, and expanded credential exposure.",
+    "iam Identity and Access Management - users, roles, policies, permissions",
+    "step-functions Workflow orchestration - state machines, error handling"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "AWS Skills for Agents",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Aws Agent Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Supercharge Claude Code with AWS cloud engineering skills across 18 core AWS services.",
+      "AWS Agent Skills equips Claude Code (and Codex) with deep expertise across 18 AWS domains, enabling automated cloud engineering support from IaC templates to debugging guidance and security best practices.",
+      "Automatically checks AWS documentation for updates on a weekly basis to ensure skills stay current with AWS service changes."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "aws-agent-skills",
+  "publishedAt": "2026-05-20"
+}

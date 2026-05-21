@@ -1,0 +1,77 @@
+{
+  "id": "fastgpt",
+  "name": "FastGPT",
+  "type": "mcp",
+  "status": "published",
+  "summary": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.",
+  "description": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/labring/FastGPT",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/labring/FastGPT",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/labring/FastGPT#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/labring/FastGPT#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/labring/FastGPT/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "FastGPT 是一个 AI Agent 构建平台，提供开箱即用的数据处理、模型调用等能力，同时可以通过 Flow 可视化进行工作流编排，从而实现复杂的应用场景！",
+    "description: 为 FastGPT 新资源接入权限管理。当用户需要为新资源（如 AgentSkill、Plugin 等）添加权限支持时触发。",
+    "description: 将 FastGPT 文档从中文翻译为面向北美用户的英文。当用户提到翻译文档、i18n、国际化、translate docs、新增/修改了中文文档需要同步英文版时，使用此 skill。也适用于用户要求检查文档翻译缺失、批量翻译、或对比中英文文档差异的场景。",
+    "文档位于 document/content/docs/ 目录下：",
+    "MDX import 语句（如 import { Alert } from '@/components/docs/Alert'）",
+    "模块标签: App, User, Chat, Workflow, Dataset",
+    "FastGPT API 规范: .claude/skills/pr-review/fastgpt-style-guide.md",
+    "PR Review 审查维度: .claude/skills/pr-review/code-quality-standards.md"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:34:39Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/labring/FastGPT",
+  "repoUrl": "https://github.com/labring/FastGPT",
+  "license": "NOASSERTION",
+  "stars": 28076,
+  "lastUpdated": "2026-05-20T03:34:39Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

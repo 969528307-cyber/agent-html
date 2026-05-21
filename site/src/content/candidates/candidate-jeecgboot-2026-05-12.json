@@ -1,19 +1,20 @@
 {
   "id": "candidate-jeecgboot-2026-05-12",
   "type": "tool",
-  "status": "candidate",
+  "status": "published",
   "title": "JeecgBoot",
   "sourceUrl": "https://github.com/jeecgboot/JeecgBoot",
   "sourceName": "GitHub",
   "author": "jeecgboot",
   "discoveredAt": "2026-05-12",
-  "lastChecked": "2026-05-12",
+  "lastChecked": "2026-05-21",
   "discoveredFrom": "github",
   "summary": "AI低代码平台，支持「低代码 + 零代码」双模式：零代码 5 分钟搭建业务系统，低代码模式一键生成前后端代码。 内置AI 应用，支持AI聊天、知识库、流程编排、MCP与插件，支持各种模型。Skills能力实现：一句话画流程图、设计表单、生成系统。 引领 AI生成→在线配置→代码生成→手工合并的开发模式，解决Java项目80%的重复工作，快速提高效率，又不失灵活性。",
   "proposedCategory": [
     "mcp",
     "docs",
-    "workflow"
+    "workflow",
+    "cli"
   ],
   "proposedAgents": [
     "Claude Code"
@@ -61,7 +62,16 @@
   "readmeExtract": "中文 | [English](./README.en US.md) | [日本語](./README.ja JP.md) JeecgBoot AI低代码平台 =============== 当前最新版本： 3.9.2（2026 04 30） [![AUR](https://img.shields.io/badge/license Apache%20License%202.0 blue.svg)](https://github.com/jeecgboot/JeecgBoot/blob/master/LICENSE) [![](https://img.shields.io/badge/Author 北京国炬软件 orange.svg)](https://jeecg.com) [![](https://img.shields.io/badge/blog 技术博客 orange.svg)](https://www.toutiao.com",
   "skillExtracts": [],
   "extractedInstall": [],
-  "extractedSignals": [],
+  "extractedSignals": [
+    "🔥 AI Skills 自然语言编程全新发布 — 一句话生成完整代码、一句话画流程、一句话设计表单、一句话出报表与大屏，覆盖 JeecgBoot 低代码全场景。",
+    "⚡ 一键安装 ｜ 📦 Skills 开源仓库 ｜ 🌐 Skills 官网 ｜ 📺 实战视频",
+    "低代码模式下，AI 自动输出前后端代码、建表 SQL 与菜单权限，生成即可运行。 平台内置 AI 应用平台：AI 聊天助手、知识库、流程编排、MCP、插件，兼容各大模型！",
+    "具备 Skills 能力，一句话画流程图、设计表单、甚至生成整个系统！",
+    "Skills能力: 全面支持skills能力，支持一句话生成完整系统，提供零代码模式（一句话搭建系统，无需编写代码）和代码生成模式（基于 jeecg-codegen，自动生成完整代码和建表SQL）两种选择。同时支持一句话自动绘制流程图、设计表单，省去手工绘制繁琐步骤。",
+    "AI应用平台: 盖AI应用管理、AI模型管理、智能对话助手、知识库问答、流程编排与设计器、AI建表、MCP插件配置等功能。平台兼容主流大模型，包括ChatGPT、DeepSeek、Ollama、智普、千问等，助力企业高效构建智能化应用，推动低代码开发与AI深度融合。",
+    "官方提供 一键安装 Claude Code + JEECG Skills，使用 AI 一句话生成代码、表单、流程、报表、大屏。",
+    "├── jeecg-module-system # System management (users, roles, permissions, dicts, menus)"
+  ],
   "reviewScore": {
     "sourceTrust": 4,
     "usefulness": 4,
@@ -72,5 +82,107 @@
     "permission": 4
   },
   "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
-  "publishReason": "AI低代码平台，支持「低代码 + 零代码」双模式：零代码 5 分钟搭建业务系统，低代码模式一键生成前后端代码。 内置AI 应用，支持AI聊天、知识库、流程编排、MCP与插件，支持各种模型。Skills能力实现：一句话画流程图、设计表单、生成系统。 引领 AI生成→在线配置→代码生成→手工合并的开发模式，解决Java项目80%的重复工作，快速提高效率，又不失灵活性。"
+  "publishReason": "AI低代码平台，支持「低代码 + 零代码」双模式：零代码 5 分钟搭建业务系统，低代码模式一键生成前后端代码。 内置AI 应用，支持AI聊天、知识库、流程编排、MCP与插件，支持各种模型。Skills能力实现：一句话画流程图、设计表单、生成系统。 引领 AI生成→在线配置→代码生成→手工合并的开发模式，解决Java项目80%的重复工作，快速提高效率，又不失灵活性。",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "automation",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "automation",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "JeecgBoot is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows.",
+      "Relevant to mcp."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:jeecgboot/jeecgboot",
+  "firstDiscoveredAt": "2026-05-12",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "publishedAs": "jeecgboot-ai-skills-lowcode-platform",
+  "publishedAt": "2026-05-18",
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "local-review"
 }

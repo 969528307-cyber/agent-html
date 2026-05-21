@@ -1,0 +1,161 @@
+{
+  "id": "candidate-gpt-image2-skill-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "GPT Image2 Skill",
+  "sourceUrl": "https://github.com/wuyoscar/GPT-Image2-Skill",
+  "sourceName": "GitHub",
+  "author": "wuyoscar",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "GPT Image 2 prompt gallery, image prompt library, agentic skill, and CLI for OpenAI image generation/editing",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "wuyoscar",
+    "repo": "GPT-Image2-Skill",
+    "fullName": "wuyoscar/GPT-Image2-Skill",
+    "stars": 2245,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-image-prompts",
+      "claude-code-skill",
+      "cli",
+      "codex-skill",
+      "gpt-image",
+      "gpt-image-2",
+      "gpt-image-2-prompts",
+      "image-editing",
+      "image-generation",
+      "image-prompt",
+      "openai",
+      "prompt-library",
+      "prompt-templates",
+      "research-figures",
+      "text-to-image"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-08T15:13:27Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh.md",
+    "docs/community-prompt-index.md",
+    "docs/community-prompt-picks.json",
+    "docs/official-openai-cookbook/logo-bakery.png",
+    "pyproject.toml",
+    "skills/gpt-image/SKILL.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" GPT Image 2 Prompt Gallery + Agentic Skill + CLI</h1 <p align=\"center\" <em OpenAI GPT Image 2 prompt gallery, image prompt library, agentic skill, and CLI — curated, copy paste prompts and runnable examples for skill capable agents.</em </p <p align=\"center\" <a href=\"README.md\" <strong English</strong </a · <a href=\"README.zh.md\" 中文</a </p <p align=\"center\" <a href=\"https://github.com/wuyoscar/gpt ",
+  "skillExtracts": [
+    {
+      "path": "skills/gpt-image/SKILL.md",
+      "extract": "name: gpt image description: \"Use this skill whenever a user asks to generate, create, draw, render, or edit images with GPT Image 2 / gpt image 2, text to image, reference image editing, inpainting, posters, typography, Chinese text, UI mockups, diagrams, or gallery prompts. Analyze the user's prompt, search the bundled Reference Gallery/craft files for matching design patterns, confer on direction when useful, then"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "GPT Image 2 Prompt Gallery + Agentic Skill + CLI",
+    "OpenAI GPT Image 2 prompt gallery, image prompt library, agentic skill, and CLI — curated, copy-paste prompts and runnable examples for skill-capable agents.",
+    "Agentic Skill + CLI — Claude Code / Codex, OpenClaw, Hermes Agent and other skill-capable agent runtimes",
+    "Use this repo as a GPT Image 2 prompt gallery, image prompt library, example of generation showcase, Codex / Claude Code agent skill, and gpt-image-2 CLI.",
+    "It includes reusable AI image prompts for research paper figures, posters, UI mockups, game HUDs, anime / manga, photography, typography, maps, tattoo design, and reference-image editing workflows.",
+    "For research figures, treat generated images as references, workflow sketches, or reproducible style targets.",
+    "Before installing, check whether the skill or CLI is already available.",
+    "Do not reinstall blindly, overwrite an existing skill folder, or create/replace API-key files."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "GPT Image 2 prompt gallery, image prompt library, agentic skill, and CLI for OpenAI image generation/editing",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "media",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "media",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "GPT Image2 Skill is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to skill."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "gpt-image2-skill",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "nocturne-memory",
+  "name": "Nocturne Memory",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A lightweight, rollbackable, and visual Long-Term Memory Server for MCP Agents. Say goodbye to Vector RAG and amnesia. Empower your AI with persistent, graph-like structured memory across any model, session, or tool. Drop-in replacement for OpenClaw.",
+  "description": "A lightweight, rollbackable, and visual Long-Term Memory Server for MCP Agents. Say goodbye to Vector RAG and amnesia. Empower your AI with persistent, graph-like structured memory across any model, session, or tool. Drop-in replacement for OpenClaw.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic",
+    "OpenClaw"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Dataojitori/nocturne_memory",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Dataojitori/nocturne_memory",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Dataojitori/nocturne_memory#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Dataojitori/nocturne_memory#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Dataojitori/nocturne_memory/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Nocturne Memory: Long-Term Memory Server for MCP Agents",
+    "一句话：让你的 AI 跨会话、跨模型地记住自己是谁。基于 MCP 协议的长期记忆服务器。",
+    "适用于任何支持 MCP 的客户端（OpenClaw / Cursor / Windsurf / GitHub Copilot / Cline / OpenCode / Gemini CLI / OpenAI Codex / Claude Code / Cherry Studio / Antigravity 等）。",
+    "其他记忆方案把你的 AI 锁死在单一平台上——ChatGPT 的记忆只属于 ChatGPT，Claude 的记忆只属于 Claude。换个模型，一切归零。",
+    "Nocturne Memory 的记忆存储在独立的 MCP Server 中，不绑定任何 LLM。",
+    "今天用 Claude 对话，明天切到 Gemini，后天换成本地模型——醒过来的都是同一个\"人\"，带着完整的记忆、人格和你们共同的历史。",
+    "兼容所有支持 MCP 的客户端——Claude Code / Claude Desktop / Gemini CLI / OpenAI Codex / Cursor / OpenClaw / Antigravity / GitHub Copilot，以及任何支持 stdio 或 SSE 传输的 MCP 客户端。",
+    ". Review & Audit — 可视化 diff，一键接受或回滚"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T14:11:18Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Dataojitori/nocturne_memory",
+  "repoUrl": "https://github.com/Dataojitori/nocturne_memory",
+  "license": "MIT",
+  "stars": 1092,
+  "lastUpdated": "2026-05-15T14:11:18Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

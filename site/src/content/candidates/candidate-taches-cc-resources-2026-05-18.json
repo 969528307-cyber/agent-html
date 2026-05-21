@@ -1,0 +1,208 @@
+{
+  "id": "candidate-taches-cc-resources-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Taches Cc Resources",
+  "sourceUrl": "https://github.com/glittercowboy/taches-cc-resources",
+  "sourceName": "GitHub",
+  "author": "glittercowboy",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A collection of my favorite custom Claude Code resources to make life easier.",
+  "proposedCategory": [
+    "skill",
+    "browser",
+    "docs",
+    "workflow",
+    "testing"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "glittercowboy",
+    "repo": "taches-cc-resources",
+    "fullName": "glittercowboy/taches-cc-resources",
+    "stars": 1916,
+    "license": "MIT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "claudecode",
+      "commands",
+      "prompts",
+      "skills",
+      "subagents"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-01T15:10:58Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/context-handoff.md",
+    "docs/meta-prompting.md",
+    "docs/todo-management.md",
+    "skills/create-agent-skills/SKILL.md",
+    "skills/create-hooks/SKILL.md",
+    "skills/create-mcp-servers/SKILL.md",
+    "skills/create-meta-prompts/SKILL.md",
+    "skills/create-plans/SKILL.md",
+    "skills/create-slash-commands/SKILL.md",
+    "skills/create-subagents/SKILL.md",
+    "skills/debug-like-expert/SKILL.md",
+    "skills/expertise/iphone-apps/SKILL.md",
+    "skills/expertise/macos-apps/SKILL.md",
+    "skills/setup-ralph/SKILL.md",
+    "skills/the-pirate-bay/SKILL.md"
+  ],
+  "readmeExtract": "TÂCHES Claude Code Resources A growing collection of custom Claude Code resources built for real workflows. Philosophy When you use a tool like Claude Code, it's your responsibility to assume everything is possible. I built these tools using that mindset. Dream big. Happy building. — TÂCHES What's Inside [Commands]( commands) (27 total) Slash commands that expand into structured workflows Meta Prompting : Separate pl",
+  "skillExtracts": [
+    {
+      "path": "skills/create-agent-skills/SKILL.md",
+      "extract": "name: create agent skills description: Expert guidance for creating, writing, building, and refining Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improving existing skills, or understanding skill structure and best practices. <essential principles How Skills Work Skills are modular, filesystem based capabilities that provide domain expertise on demand. This skill teaches how to crea"
+    },
+    {
+      "path": "skills/create-hooks/SKILL.md",
+      "extract": "name: create hooks description: Expert guidance for creating, configuring, and using Claude Code hooks. Use when working with hooks, setting up event listeners, validating commands, automating workflows, adding notifications, or understanding hook types (PreToolUse, PostToolUse, Stop, SessionStart, UserPromptSubmit, etc). <objective Hooks are event driven automation for Claude Code that execute shell commands or LLM "
+    },
+    {
+      "path": "skills/create-mcp-servers/SKILL.md",
+      "extract": "name: create mcp servers description: Create Model Context Protocol (MCP) servers that expose tools, resources, and prompts to Claude. Use when building custom integrations, APIs, data sources, or any server that Claude should interact with via the MCP protocol. Supports both TypeScript and Python implementations. <objective MCP servers extend Claude's capabilities by exposing tools, resources, and prompts. This skil"
+    },
+    {
+      "path": "skills/create-meta-prompts/SKILL.md",
+      "extract": "name: create meta prompts description: Create optimized prompts for Claude to Claude pipelines with research, planning, and execution stages. Use when building prompts that produce outputs for other prompts to consume, or when running multi stage workflows (research plan implement). <objective Create prompts optimized for Claude to Claude communication in multi stage workflows. Outputs are structured with XML and met"
+    },
+    {
+      "path": "skills/create-plans/SKILL.md",
+      "extract": "name: create plans description: Create hierarchical project plans optimized for solo agentic development. Use when planning projects, phases, or tasks that Claude will execute. Produces Claude executable plans with verification criteria, not enterprise documentation. Handles briefs, roadmaps, phase plans, and context handoffs. <essential principles <principle name=\"solo developer plus claude\" You are planning for ONE"
+    },
+    {
+      "path": "skills/create-slash-commands/SKILL.md",
+      "extract": "name: create slash commands description: Expert guidance for creating Claude Code slash commands. Use when working with slash commands, creating custom commands, understanding command structure, or learning YAML configuration. <objective Create effective slash commands for Claude Code that enable users to trigger reusable prompts with /command name syntax. Slash commands expand as prompts in the current conversation,"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "TÂCHES Claude Code Resources",
+    "A growing collection of custom Claude Code resources built for real workflows.",
+    "When you use a tool like Claude Code, it's your responsibility to assume everything is possible.",
+    "I built these tools using that mindset.",
+    "Commands (27 total) - Slash commands that expand into structured workflows",
+    "Todo Management: Capture context mid-work, resume later with full state",
+    "Skills (9 total) - Autonomous workflows that research, generate, and self-heal",
+    "Create Plans: Hierarchical project planning for solo developer + Claude workflows"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A collection of my favorite custom Claude Code resources to make life easier.",
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "docs",
+      "testing",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "docs",
+    "testing",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 6,
+    "skill": 15,
+    "cli": 0,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "GitHub topics tag as skills.",
+    "Skill-collection or agent-rules language in description.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: mcp, workflow.",
+    "LLM: skill + [skill, workflow] — This repository provides custom slash commands and autonomous skills for Claude Code, making it a skill and prompt resource collection."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Taches Cc Resources is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with docs workflows.",
+      "Helps with testing workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "taches-cc-resources",
+  "publishedAt": "2026-05-18",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  }
+}

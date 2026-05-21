@@ -1,0 +1,192 @@
+{
+  "id": "candidate-tool-github-golutra-golutra",
+  "type": "tool",
+  "status": "published",
+  "title": "Golutra",
+  "sourceUrl": "https://github.com/golutra/golutra",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "golutra",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Multi-agent AI orchestration platform for automation, workflows, and developer tools. Golutra transforms Codex, Claude Code, and OpenClaw into a unified agent system with parallel execution, task orchestration, long-running workflows, and AI productivity workspace.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Qwen Code"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "golutra",
+    "repo": "golutra",
+    "fullName": "golutra/golutra",
+    "stars": 3503,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "ai",
+      "automation",
+      "chatgpt",
+      "claude",
+      "claude-code",
+      "codex",
+      "codex-cli",
+      "desktop-app",
+      "developer",
+      "developer-tools",
+      "gemini",
+      "multi-agent",
+      "openai",
+      "openclaw",
+      "opencode",
+      "orchestration",
+      "productivity",
+      "qwen-coder",
+      "workflows"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-12T14:04:06Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/legal/BSD-3-Clause.txt",
+    "docs/legal/CCLA.md",
+    "docs/legal/corporate-authorizations.json",
+    "docs/legal/corporate-authorizations.md",
+    "docs/legal/ICLA.md",
+    "package.json"
+  ],
+  "readmeExtract": "golutra 使用赛博监工系统，指挥你的 AI 牛马。 Use Cyberpunk Overseer System: Command your AI workforce. <p align=\"center\" <a href=\"https://www.golutra.com/\" target=\" blank\" rel=\"noopener noreferrer\" <img width=\"100\" src=\"./src tauri/icons/icon.png\" alt=\"golutra logo\" / </a </p <p align=\"center\" <a href=\"https://github.com/golutra/golutra/releases\" <img src=\"https://img.shields.io/github/v/release/golutra/golutra?label=release\" alt=\"r",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "golutra is a next-generation multi-agent workspace that transforms your existing CLI tools into a unified AI collaboration hub.",
+    "Just parallel execution, automated orchestration, and real-time result tracking.",
+    "Click agent avatars to inspect logs, inject prompts directly into terminal streams, or monitor execution while your AI team runs silently in the background.",
+    "Golutra can call EverOS as a memory layer for long-running agents, preserving context, project knowledge, and cross-task continuity across sessions.",
+    "golutra-mcp provides a more stable way to connect external tools and agents through golutra-cli, making it easier to integrate Golutra with MCP-based workflows.",
+    "Unlimited multi-agent parallel execution",
+    "Automated orchestration from analysis to deployment",
+    "Custom workflows with one-click template import/export for long-running automation"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Multi-agent AI orchestration platform for automation, workflows, and developer tools. Golutra transforms Codex, Claude Code, and OpenClaw into a unified agent system with parallel execution, task orchestration, long-running workflows, and AI productivity workspace.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "communication",
+      "productivity",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "communication",
+    "productivity",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 3,
+    "skill": 0,
+    "cli": 8,
+    "workflow": 9,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "General agent-building language detected.",
+    "Detected scope: template.",
+    "Alternative capabilities: cli, agent-framework.",
+    "LLM: agent-app + [mcp, cli, workflow] — Golutra is a multi-agent orchestration platform with a desktop UI that unifies existing CLI tools, making it an agent application for end users."
+  ],
+  "classificationAlternatives": [
+    "cli",
+    "agent-framework"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Golutra is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with communication workflows.",
+      "Helps with productivity workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:golutra/golutra",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "golutra",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

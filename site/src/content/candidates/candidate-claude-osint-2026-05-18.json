@@ -1,0 +1,135 @@
+{
+  "id": "candidate-claude-osint-2026-05-18",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Claude OSINT",
+  "sourceUrl": "https://github.com/elementalsouls/Claude-OSINT",
+  "sourceName": "GitHub",
+  "author": "elementalsouls",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Two paired Claude skills · 90+ recon modules · 48 secret-regex patterns · 80+ dorks · 9 read-only credential validators · 27 attack-path templates · 5,500+ lines of structured tradecraft. Drop-in SKILL.md files that turn Claude into a god-mode external recon operator for authorized red-team and bug-bounty engagements.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "elementalsouls",
+    "repo": "Claude-OSINT",
+    "fullName": "elementalsouls/Claude-OSINT",
+    "stars": 1275,
+    "license": "NOASSERTION",
+    "topics": [
+      "agentskills",
+      "claude",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-27T09:39:42Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/architecture.md",
+    "docs/coverage.md",
+    "docs/images/.gitkeep",
+    "docs/usage.md",
+    "examples/02-bug-bounty-workflow.md",
+    "skills/offensive-osint/SKILL.md",
+    "skills/osint-methodology/SKILL.md"
+  ],
+  "readmeExtract": "![claude osint banner](assets/banner.png) claude osint 2 paired Claude skills · 90+ recon modules · 48 secret regex patterns · 80+ dorks · 9 read only credential validators · 27 attack path templates · 5,500+ lines of structured tradecraft. Drop in SKILL.md files that turn Claude into a god mode external recon operator for authorized red team and bug bounty engagements. Built by [ElementalSoul](https://github.com/ele",
+  "skillExtracts": [
+    {
+      "path": "skills/offensive-osint/SKILL.md",
+      "extract": "name: offensive osint description: \"Operational arsenal for external red team and bug bounty reconnaissance. Concrete wordlists (28 Swagger paths, 13 GraphQL paths, 35 high risk ports, 6 missing header findings, 15 always on HTTP checks, 5 SAML paths, cloud bucket permutations, JS guess paths, vendor product fingerprints for Citrix/F5/Pulse/Fortinet/Cisco/PaloAlto/VMware/Exchange, cloud native service fingerprints, c"
+    },
+    {
+      "path": "skills/osint-methodology/SKILL.md",
+      "extract": "name: osint methodology description: \"Comprehensive OSINT methodology for external red team operations and authorized attack surface assessments. Covers the 5 stage recon pipeline (seed discovery, asset expansion, enrichment, exposure analysis, reporting), asset graph discipline with 29 asset types, severity rubric (CRITICAL/HIGH/MEDIUM/LOW/INFO), confidence upgrade workflows, time budgeting, asset level triage rules"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "2 paired Claude skills · 90+ recon modules · 48 secret-regex patterns · 80+ dorks · 9 read-only credential validators · 27 attack-path templates · 5,500+ lines of structured tradecraft.",
+    "Drop-in SKILL.md files that turn Claude into a god-mode external recon operator for authorized red-team and bug-bounty engagements.",
+    "Built by ElementalSoul — GenAI Security Research.",
+    "claude-osint is a paired set of skills for the Claude skills system.",
+    "Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for one half of the offensive recon problem:",
+    "Probe paths, regexes, payloads, scoring rules, curl one-liners, tool URLs.",
+    "Drop both into your Claude environment and it behaves like a senior recon analyst: it knows the techniques, the tooling, the edge cases, and the escalation paths — and it stays in scope.",
+    "Each skill directory is self-contained."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Two paired Claude skills · 90+ recon modules · 48 secret-regex patterns · 80+ dorks · 9 read-only credential validators · 27 attack-path templates · 5,500+ lines of structured tradecraft. Drop-in SKILL.md files that turn Claude into a god-mode external recon operator for authorized red-team and bug-bounty engagements.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude OSINT is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "2 paired Claude skills · 90+ recon modules · 48 secret-regex patterns · 80+ dorks · 9 read-only credential validators · 27 attack-path templates · 5,500+ lines of structured tradecraft.",
+      "Drop-in SKILL.md files that turn Claude into a god-mode external recon operator for authorized red-team and bug-bounty engagements.",
+      "Built by ElementalSoul — GenAI Security Research."
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  }
+}

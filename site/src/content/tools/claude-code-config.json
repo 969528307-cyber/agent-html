@@ -1,0 +1,76 @@
+{
+  "id": "claude-code-config",
+  "name": "Claude Code Config",
+  "type": "skill",
+  "status": "published",
+  "summary": "My personal Claude Code configuration - rules, hooks, agents, skills, and commands",
+  "description": "My personal Claude Code configuration - rules, hooks, agents, skills, and commands",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/jarrodwatts/claude-code-config",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/jarrodwatts/claude-code-config",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/jarrodwatts/claude-code-config#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/jarrodwatts/claude-code-config#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/jarrodwatts/claude-code-config/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Option 1: Copy-Paste into Claude Code (No Git Required)",
+    "Model-invoked capabilities Claude applies automatically.",
+    "Custom subagents for specialized tasks.",
+    "codebase-search Find files and implementations",
+    "open-source-librarian Research OSS with citations",
+    "tech-docs-writer Create technical documentation",
+    "Commands (.claude/commands/)",
+    "Scripts triggered by Claude Code events."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-01-21T12:43:33Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/jarrodwatts/claude-code-config",
+  "repoUrl": "https://github.com/jarrodwatts/claude-code-config",
+  "stars": 1038,
+  "lastUpdated": "2026-01-21T12:43:33Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

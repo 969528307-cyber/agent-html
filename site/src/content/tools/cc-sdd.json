@@ -1,0 +1,79 @@
+{
+  "id": "cc-sdd",
+  "name": "Cc Sdd",
+  "type": "skill",
+  "status": "published",
+  "summary": "Turn approved specs into long-running autonomous implementation. A minimal, adaptable SDD harness with Agent Skills for Claude Code, Codex, Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity.",
+  "description": "Turn approved specs into long-running autonomous implementation. A minimal, adaptable SDD harness with Agent Skills for Claude Code, Codex, Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/gotalab/cc-sdd",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/gotalab/cc-sdd",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/gotalab/cc-sdd#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/gotalab/cc-sdd#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/gotalab/cc-sdd/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "cc-sdd: Long-running spec-driven implementation for AI coding agents",
+    "Works across 8 AI coding agents, with the same 17-skill set on each.",
+    "👻 Kiro-inspired. Similar spec-driven, agentic SDLC style as Kiro IDE.",
+    "cc-sdd v3.0 is a rework around Agent Skills and long-running autonomous implementation.",
+    "Review and validation look for boundary violations, not just style issues.",
+    "/kiro-spec-batch for multi-spec initiatives. Turn a roadmap into multiple specs in parallel, with cross-spec review to catch contradictions, duplicated responsibilities, and interface mismatches.",
+    "Claude Code and Codex are stable; Cursor, Copilot, Windsurf, OpenCode, Gemini CLI, and Antigravity are in beta.",
+    "No external dependencies; subagents are spawned through each platform's native primitive."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T16:03:51Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/gotalab/cc-sdd",
+  "repoUrl": "https://github.com/gotalab/cc-sdd",
+  "license": "MIT",
+  "stars": 3363,
+  "lastUpdated": "2026-05-17T16:03:51Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

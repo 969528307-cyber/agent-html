@@ -1,0 +1,78 @@
+{
+  "id": "google-maps-scraper",
+  "name": "Google Maps Scraper",
+  "type": "skill",
+  "status": "published",
+  "summary": "scrape data  from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place",
+  "description": "scrape data  from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/gosom/google-maps-scraper",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/gosom/google-maps-scraper",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/gosom/google-maps-scraper#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/gosom/google-maps-scraper#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/gosom/google-maps-scraper/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Extract Google Maps business leads, emails, reviews, phone numbers, websites, ratings, coordinates, and more with a free open-source CLI, Web UI, REST API, and optional self-hosted platform.",
+    "Use it for lead generation, local business research, sales prospecting, data enrichment, or developer automation.",
+    "Ask an AI coding agent to run a scrape AI Agent Skill",
+    "Run a browser UI locally Web UI",
+    "Automate scraping from your app REST API",
+    "Follow common workflows Recipes",
+    "Chrome extension that extracts emails, social profiles, phone numbers, reviews & more.",
+    "SerpApi - Google Maps API and 30+ search engine APIs"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-01T04:33:35Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/gosom/google-maps-scraper",
+  "repoUrl": "https://github.com/gosom/google-maps-scraper",
+  "license": "MIT",
+  "stars": 4101,
+  "lastUpdated": "2026-05-01T04:33:35Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

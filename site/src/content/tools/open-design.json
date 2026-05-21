@@ -1,0 +1,81 @@
+{
+  "id": "open-design",
+  "name": "Open Design",
+  "type": "skill",
+  "status": "published",
+  "summary": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
+  "description": "🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "Generic",
+    "Kimi"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/nexu-io/open-design",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/nexu-io/open-design",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/nexu-io/open-design#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/nexu-io/open-design#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/nexu-io/open-design/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "### 🔥 0.8.0-preview is here.",
+    "An open, agent-native alternative to Claude Design / Figma — 40k stars in two weeks got us this far.",
+    "Anthropic's [Claude Design][cd] (released 2026-04-17, Opus 4.7) showed what happens when an LLM stops writing prose and starts shipping design artifacts.",
+    "It went viral — and stayed closed-source, paid-only, cloud-only, locked to Anthropic's model and Anthropic's skills.",
+    "There is no checkout, no self-host, no Vercel deploy, no swap-in-your-own-agent.",
+    "We don't ship an agent — the strongest coding agents already live on your laptop.",
+    "We wire them into a skill-driven design workflow that runs locally with pnpm tools-dev, can deploy the web layer to Vercel, and stays BYOK at every layer.",
+    "The agent picks one of five curated visual directions."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T11:41:20Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/nexu-io/open-design",
+  "repoUrl": "https://github.com/nexu-io/open-design",
+  "license": "Apache-2.0",
+  "stars": 44384,
+  "lastUpdated": "2026-05-18T11:41:20Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

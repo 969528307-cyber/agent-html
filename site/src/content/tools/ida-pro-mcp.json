@@ -1,0 +1,80 @@
+{
+  "id": "ida-pro-mcp",
+  "name": "Ida Pro Mcp",
+  "type": "mcp",
+  "status": "published",
+  "summary": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
+  "description": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Trae",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mrexodia/ida-pro-mcp",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mrexodia/ida-pro-mcp",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mrexodia/ida-pro-mcp#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mrexodia/ida-pro-mcp#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mrexodia/ida-pro-mcp/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Simple MCP Server to allow vibe reversing in IDA Pro.",
+    "The binaries and prompt for the video are available in the mcp-reversing-dataset repository.",
+    "Use idapyswitch to switch to the newest Python version",
+    "Supported MCP Client (pick one you like)",
+    "Note: the MCP plugin is no longer recommended and will eventually be deprecated.",
+    "If you want to configure the MCP server manually from the IDA GUI:",
+    "Some clients (like Claude) run in the background and need to be quit from the tray icon.",
+    "Large Language Models (LLMs) are powerful tools, but they can sometimes struggle with complex mathematical calculations or exhibit \"hallucinations\" (making up facts)."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-14T21:23:31Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mrexodia/ida-pro-mcp",
+  "repoUrl": "https://github.com/mrexodia/ida-pro-mcp",
+  "license": "MIT",
+  "stars": 8667,
+  "lastUpdated": "2026-05-14T21:23:31Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

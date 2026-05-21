@@ -1,0 +1,206 @@
+{
+  "id": "candidate-ai-setup-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Ai Setup",
+  "sourceUrl": "https://github.com/caliber-ai-org/ai-setup",
+  "sourceName": "GitHub",
+  "author": "caliber-ai-org",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Continuously sync your AI setups with one command. Codebase tailor suited agent skills, MCPs and config files for Claude Code, Cursor, and Codex.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "caliber-ai-org",
+    "repo": "ai-setup",
+    "fullName": "caliber-ai-org/ai-setup",
+    "stars": 1074,
+    "license": "MIT",
+    "topics": [
+      "agent-config",
+      "ai-agents",
+      "anthropic",
+      "claude-code",
+      "claude-md",
+      "cli",
+      "codex",
+      "cursor",
+      "cursorrules",
+      "developer-tools",
+      "llm",
+      "mcp",
+      "openai",
+      "openai-codex",
+      "skills"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-06T12:57:34Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/FLOW.md",
+    "docs/superpowers/specs/audit-notes/02-providers.md",
+    "docs/superpowers/specs/audit-notes/03-generation-refresh-hooks.md",
+    "docs/superpowers/specs/audit-notes/04-closed-issues.md",
+    "docs/superpowers/specs/audit-notes/05-preflight.md",
+    "docs/superpowers/specs/audit-notes/07-path-a-dogfood.md",
+    "docs/superpowers/specs/audit-notes/08-path-b-dogfood.md",
+    "docs/superpowers/specs/audit-notes/12-path-b-synthetic.md",
+    "docs/superpowers/specs/audit-notes/15-quality-synthetic.md",
+    "docs/superpowers/specs/audit-notes/16-refresh.md",
+    "docs/superpowers/specs/audit-notes/raw/07-path-a-dogfood-bootstrap.txt",
+    "docs/superpowers/specs/audit-notes/raw/08-path-b-dogfood-init.txt",
+    "docs/superpowers/specs/audit-notes/raw/16-manual-refresh.txt",
+    "docs/superpowers/specs/audit-notes/raw/16-refresh-noop.txt",
+    "docs/superpowers/specs/audit-notes/raw/16-refresh-rename.txt",
+    "package.json",
+    ".agents/skills/adding-a-command/SKILL.md",
+    ".agents/skills/caliber-testing/SKILL.md",
+    ".agents/skills/find-skills/SKILL.md",
+    ".agents/skills/llm-provider/SKILL.md",
+    ".agents/skills/save-learning/SKILL.md",
+    ".agents/skills/scoring-checks/SKILL.md",
+    ".agents/skills/setup-caliber/SKILL.md",
+    ".agents/skills/writers-pattern/SKILL.md",
+    ".claude/skills/adding-a-command/SKILL.md",
+    ".claude/skills/caliber-testing/SKILL.md",
+    ".claude/skills/find-skills/SKILL.md",
+    ".claude/skills/llm-provider/SKILL.md",
+    ".claude/skills/save-learning/SKILL.md",
+    ".claude/skills/scoring-checks/SKILL.md",
+    ".claude/skills/setup-caliber/SKILL.md",
+    ".claude/skills/writers-pattern/SKILL.md",
+    ".cursor/skills/adding-a-command/SKILL.md",
+    ".cursor/skills/caliber-testing/SKILL.md",
+    ".cursor/skills/find-skills/SKILL.md",
+    ".cursor/skills/llm-provider/SKILL.md",
+    ".cursor/skills/save-learning/SKILL.md",
+    ".cursor/skills/scoring-checks/SKILL.md",
+    ".cursor/skills/setup-caliber/SKILL.md"
+  ],
+  "readmeExtract": "Caliber Hand written CLAUDE.md files go stale the moment you refactor. Your AI agent hallucinates paths that no longer exist, misses new dependencies, and gives advice based on yesterday's architecture. Caliber generates and maintains your AI context files ( CLAUDE.md , .cursor/rules/ , AGENTS.md , copilot instructions.md ) so they stay accurate as your code evolves — and keeps every agent on your team in sync, wheth",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/adding-a-command/SKILL.md",
+      "extract": "name: adding a command description: Creates a new CLI command following the Commander.js pattern in src/commands/. Handles command registration in src/cli.ts, telemetry tracking via tracked() wrapper, and option parsing. Use when user says add command, new CLI command, create subcommand, or adds files to src/commands/. Do NOT use for modifying existing commands or fixing bugs in existing commands. Adding a Command Cr"
+    },
+    {
+      "path": ".agents/skills/caliber-testing/SKILL.md",
+      "extract": "name: caliber testing description: Writes Vitest tests following project patterns: tests / directories, vi.mock() for module mocking with vi.hoisted() for test time factories, global LLM mock from src/test/setup.ts, environment variable save/restore in beforeEach/afterEach, vi.clearAllMocks() lifecycle, and test file organization. Use when user says 'write tests', 'add test coverage', 'test this', creates .test.ts fi"
+    },
+    {
+      "path": ".agents/skills/find-skills/SKILL.md",
+      "extract": "name: find skills description: Discovers and installs community skills from the public registry. Use when the user mentions a technology, framework, or task that could benefit from specialized skills not yet installed, asks 'how do I do X', 'find a skill for X', or starts work in a new technology area. Proactively suggest when the user's task involves tools or frameworks without existing skills. Find Skills Search th"
+    },
+    {
+      "path": ".agents/skills/llm-provider/SKILL.md",
+      "extract": "name: llm provider description: Adds a new LLM provider implementing LLMProvider interface with call() and stream() methods. Integrates with provider factory in src/llm/index.ts, config detection in src/llm/config.ts, and error handling via tracking and recovery. Use when adding a new model backend, integrating a third party LLM API, or extending LLM platform support. Do NOT use for fixing bugs in existing providers,"
+    },
+    {
+      "path": ".agents/skills/save-learning/SKILL.md",
+      "extract": "name: save learning description: Saves user instructions as persistent learnings for future sessions. Use when the user says 'remember this', 'always do X', 'from now on', 'never do Y', or gives any instruction they want persisted across sessions. Proactively suggest when the user states a preference, convention, or rule they clearly want followed in the future. Save Learning Save a user's instruction or preference a"
+    },
+    {
+      "path": ".agents/skills/scoring-checks/SKILL.md",
+      "extract": "name: scoring checks description: Add a new deterministic scoring check in src/scoring/checks/ that evaluates config quality. Follows the Check[] return pattern, uses point constants from src/scoring/constants.ts, and integrates via filterChecksForTarget() in src/scoring/index.ts. Use when user says 'add scoring check', 'new check', 'modify scoring criteria', or works in src/scoring/checks/. Do NOT use for display ch"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Hand-written CLAUDE.md files go stale the moment you refactor. Your AI agent hallucinates paths that no longer exist, misses new dependencies, and gives advice based on yesterday's architecture.",
+    "Most repos start with a hand-written CLAUDE.md and nothing else.",
+    "Then, in your terminal (not the IDE chat), start a Claude Code or Cursor CLI session and type:",
+    "Your agent detects your stack, generates tailored configs for every platform your team uses, sets up pre-commit hooks, and enables continuous sync — all from inside your normal workflow.",
+    "Then run agent login in your terminal to authenticate.",
+    "The workflow mirrors code review:",
+    "Review — accept, refine via chat, or decline each change",
+    "Your agent analyzes your project — languages, frameworks, dependencies, architecture — generates configs, and installs hooks."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Continuously sync your AI setups with one command. Codebase tailor suited agent skills, MCPs and config files for Claude Code, Cursor, and Codex.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Ai Setup is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Hand-written CLAUDE.md files go stale the moment you refactor. Your AI agent hallucinates paths that no longer exist, misses new dependencies, and gives advice based on yesterday's architecture.",
+      "Most repos start with a hand-written CLAUDE.md and nothing else.",
+      "Then, in your terminal (not the IDE chat), start a Claude Code or Cursor CLI session and type:"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ai-setup",
+  "publishedAt": "2026-05-20"
+}

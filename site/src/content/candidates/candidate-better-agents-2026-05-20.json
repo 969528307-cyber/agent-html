@@ -1,0 +1,154 @@
+{
+  "id": "candidate-better-agents-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Better Agents",
+  "sourceUrl": "https://github.com/langwatch/better-agents",
+  "sourceName": "GitHub",
+  "author": "langwatch",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Standards for building agents, better",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "langwatch",
+    "repo": "better-agents",
+    "fullName": "langwatch/better-agents",
+    "stars": 1521,
+    "license": "MIT",
+    "topics": [
+      "agent-framework",
+      "agent-testing",
+      "ai-agents",
+      "cli",
+      "dev-tool",
+      "lllm",
+      "llmops",
+      "mcp",
+      "python",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T12:53:56Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/FEATURES.md",
+    "docs/GETTING-STARTED.md",
+    "docs/PHILOSOPHY.md",
+    "docs/STRUCTURE.md",
+    "docs/USAGE.md",
+    "docs/WALKTHROUGH.md",
+    "package.json",
+    ".cursor/rules/coding-guidelines.mdc",
+    ".cursor/rules/commit-and-push.mdc",
+    ".cursor/rules/commit.mdc",
+    ".cursor/rules/correction-response.mdc",
+    ".cursor/rules/development-workflow.mdc",
+    ".cursor/rules/docs-directory.mdc",
+    ".cursor/rules/propose-commit.mdc",
+    ".cursor/rules/typescript-strict-typing.mdc",
+    ".cursor/rules/unit-tests-todos.mdc"
+  ],
+  "readmeExtract": "Better Agents <p <a href=\"https://discord.gg/kT4PhDS2gH\" target=\" blank\" <img src=\"https://img.shields.io/discord/1227886780536324106?logo=discord&labelColor=%20%235462eb&logoColor=%20%23f5f5f5&color=%20%235462eb\" alt=\"chat on Discord\" </a </p Better Agents is a CLI tool and a set of standards for agent building. It supercharges your coding assistant (Kilocode, Claude Code, Cursor, etc), making it an expert in any ag",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Better Agents is a CLI tool and a set of standards for agent building.",
+    "It supercharges your coding assistant (Kilocode, Claude Code, Cursor, etc), making it an expert in any agent framework you choose (Agno, Mastra, LangGraph etc) and all their best practices.",
+    "It's the best way to start any new agent project.",
+    "The Better Agent Structure and generated AGENTS.md ensures industry best practices, making your agent ready for production:",
+    "Scenario agent tests written for every feature to ensure agent behaviour",
+    "The structure and guidelines on AGENTS.md ensure every new feature required for the coding assistant is properly tested, evaluated, and that the prompts are versioned.",
+    "The .mcp.json comes with all the right MCPs set up so you coding assistant becomes an expert in your framework of choice and in writing Scenario tests for your agent.",
+    "scenarios/ tests guarantee the agent behaves as expected, which simulates a conversation with the agent making sure it does what expected."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Standards for building agents, better",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "testing"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "testing"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Better Agents is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with testing workflows.",
+      "Relevant to mcp.",
+      "Better Agents is a CLI tool and a set of standards for agent building.",
+      "It supercharges your coding assistant (Kilocode, Claude Code, Cursor, etc), making it an expert in any agent framework you choose (Agno, Mastra, LangGraph etc) and all their best practices."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "better-agents",
+  "publishedAt": "2026-05-20"
+}

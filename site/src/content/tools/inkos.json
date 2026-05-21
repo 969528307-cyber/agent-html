@@ -1,0 +1,78 @@
+{
+  "id": "inkos",
+  "name": "Inkos",
+  "type": "cli",
+  "status": "published",
+  "summary": "Autonomous novel writing AI Agent — agents write, audit, and revise novels with human review gates",
+  "description": "Autonomous novel writing AI Agent — agents write, audit, and revise novels with human review gates",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Kimi",
+    "OpenClaw",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Narcooo/inkos",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Narcooo/inkos",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Narcooo/inkos#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Narcooo/inkos#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Narcooo/inkos/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Autonomous Novel Writing AI Agent. 自动化小说写作 AI Agent",
+    "AI Agent 自主写小说——写、审、改，全程接管。覆盖玄幻、仙侠、都市、科幻等多种风格，支持续写、番外、同人、仿写等创作形式。人工审核门控确保你始终掌控全局。已发布为 OpenClaw skill。",
+    "欢迎加群反馈问题、提出需求，也欢迎关注项目动态 — 我们的目标是做最强的基于小说的内容生态创作 AI Agent。",
+    "InkOS 已发布为 OpenClaw Skill，可被任何兼容 Agent（Claude Code、OpenClaw 等）直接调用：",
+    "通过 npm 安装或克隆本项目时，skills/SKILL.md 已包含在内，🦞 可直接读取——无需额外从 ClawHub 安装。",
+    "选择服务商，例如 Google Gemini、Moonshot、MiniMax、智谱、百炼或自定义端点。",
+    "--service 会从 provider bank 自动推导 baseUrl、协议和兼容策略；--model 必须属于最终 service，否则会直接报错，避免把 Kimi 模型发到 Gemini 这类错配问题。",
+    "Provider bank 能力表：内置 Google Gemini、Moonshot、MiniMax、智谱、百炼、DeepSeek、硅基流动、PPIO、OpenRouter、Ollama、CodingPlan 等服务的 baseUrl、协议、模型和兼容策略。"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T10:26:45Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Narcooo/inkos",
+  "repoUrl": "https://github.com/Narcooo/inkos",
+  "license": "AGPL-3.0",
+  "stars": 6261,
+  "lastUpdated": "2026-05-19T10:26:45Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,238 @@
+{
+  "id": "candidate-tool-github-bytebase-dbhub",
+  "type": "tool",
+  "status": "published",
+  "title": "Dbhub",
+  "sourceUrl": "https://github.com/bytebase/dbhub",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "bytebase",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Zero-dependency, token-efficient database MCP server for Postgres, MySQL, SQL Server, MariaDB, SQLite.",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "bytebase",
+    "repo": "dbhub",
+    "fullName": "bytebase/dbhub",
+    "stars": 2745,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "ai",
+      "anthropic",
+      "claude",
+      "claude-ai",
+      "codex",
+      "cursor",
+      "database",
+      "dify",
+      "llm",
+      "mariadb",
+      "mcp",
+      "mcp-server",
+      "mssql",
+      "mysql",
+      "postgres",
+      "postgresql",
+      "sql",
+      "sqlite",
+      "sqlserver"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-21T10:55:33Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/blog/postgres-mcp-server-review-dbhub.mdx",
+    "docs/blog/postgres-mcp-server-review-mcp-toolbox.mdx",
+    "docs/blog/postgres-mcp-server-review-supabase-mcp.mdx",
+    "docs/blog/state-of-postgres-mcp-servers-2025.mdx",
+    "docs/docs.json",
+    "docs/favicon.svg",
+    "docs/images/blog/postgres-mcp-server-review-mcp-toolbox/mcp-toolbox-console.webp",
+    "docs/images/blog/postgres-mcp-server-review-supabase-mcp/supabase-oauth.webp",
+    "docs/images/blog/state-of-postgres-mcp-servers-2025/mcp-vs-postgres.webp",
+    "docs/images/claude-desktop.webp",
+    "docs/images/cursor.webp",
+    "docs/images/logo/full-dark.svg",
+    "docs/images/logo/full-light.svg",
+    "docs/images/logo/icon.svg",
+    "docs/images/logo/text-dark.svg",
+    "docs/images/logo/text-light.svg",
+    "docs/images/mcp-inspector.webp",
+    "docs/images/workbench/custom-tool.webp",
+    "docs/images/workbench/execute-sql.webp",
+    "docs/images/workbench/request-trace.webp",
+    "docs/images/workbench/workbench.webp",
+    "docs/index.mdx",
+    "docs/quickstart.mdx",
+    "docs/README.md",
+    "docs/tools/custom-tools.mdx",
+    "docs/tools/execute-sql.mdx",
+    "docs/tools/overview.mdx",
+    "docs/tools/search-objects.mdx",
+    "docs/workbench/overview.mdx",
+    "docs/workbench/request-trace.mdx",
+    "docs/workbench/tool-execution.mdx",
+    "package.json",
+    ".claude/skills/fix-bug/SKILL.md",
+    ".claude/skills/testing/SKILL.md",
+    "skills/dbhub/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "[!NOTE] Brought to you by [Bytebase](https://www.bytebase.com/), open source database DevSecOps platform. <p align=\"center\" <a href=\"https://dbhub.ai/\" target=\" blank\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://raw.githubusercontent.com/bytebase/dbhub/main/docs/images/logo/full dark.svg\" width=\"75%\" <source media=\"(prefers color scheme: light)\" srcset=\"https://raw.githubusercontent.com/byte",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/fix-bug/SKILL.md",
+      "extract": "name: fix bug description: Use when given a GitHub issue URL or number to investigate and implement a fix. Triggers on \"fix issue\", \"fix bug\", \"fix 123\", GitHub issue URLs, or any request to resolve a reported problem from a GitHub issue. Also triggers when asked to investigate errors, diagnose failures, or debug unexpected behavior in DBHub. Fix Bug from GitHub Issue Systematic workflow for turning a GitHub issue in"
+    },
+    {
+      "path": ".claude/skills/testing/SKILL.md",
+      "extract": "name: testing description: Run and troubleshoot tests for DBHub, including unit tests, integration tests with Testcontainers, and database specific tests. Use when asked to run tests, fix test failures, debug integration tests, troubleshoot Docker/database container issues, or add new tests. Also use when verifying code changes work correctly or when CI test failures need investigation. Testing Skill This skill helps"
+    },
+    {
+      "path": "skills/dbhub/SKILL.md",
+      "extract": "name: dbhub description: Guide for querying databases through DBHub MCP server. Use this skill whenever you need to explore database schemas, inspect tables, or run SQL queries via DBHub's MCP tools (search objects, execute sql). Activates on any database query task, schema exploration, data retrieval, or SQL execution through MCP — even if the user just says \"check the database\" or \"find me some data.\" This skill en"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "DBHub is a zero-dependency, token efficient MCP server implementing the Model Context Protocol (MCP) server interface.",
+    "This lightweight gateway allows MCP-compatible clients to connect to and explore different databases:",
+    "Local Development First: Zero dependency, token efficient with just two MCP tools to maximize context window",
+    "DBHub implements MCP tools for database operations:",
+    "searchobjects: Search and explore database schemas, tables, columns, indexes, and procedures with progressive disclosure",
+    "DBHub includes a built-in web interface for interacting with your database tools.",
+    "It provides a visual way to execute queries, run custom tools, and view request traces without requiring an MCP client.",
+    "MCP Clients MCP Server Databases"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Zero-dependency, token-efficient database MCP server for Postgres, MySQL, SQL Server, MariaDB, SQLite.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "docs",
+      "database",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "docs",
+    "database",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 7,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, knowledge-resource, workflow.",
+    "LLM: mcp + [mcp] — This project implements a Model Context Protocol (MCP) server for database access, as described in its README and topics."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "knowledge-resource",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Dbhub is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with docs workflows.",
+      "Helps with database workflows.",
+      "Helps with media workflows.",
+      "Relevant to data."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:bytebase/dbhub",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dbhub",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

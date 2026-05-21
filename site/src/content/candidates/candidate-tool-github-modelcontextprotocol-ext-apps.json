@@ -1,0 +1,210 @@
+{
+  "id": "candidate-tool-github-modelcontextprotocol-ext-apps",
+  "type": "tool",
+  "status": "published",
+  "title": "Ext Apps",
+  "sourceUrl": "https://github.com/modelcontextprotocol/ext-apps",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "modelcontextprotocol",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Official repo for spec & SDK of MCP Apps protocol - standard for UIs embedded AI chatbots, served by MCP servers",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "modelcontextprotocol",
+    "repo": "ext-apps",
+    "fullName": "modelcontextprotocol/ext-apps",
+    "stars": 2269,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "apps",
+      "mcp",
+      "mcp-apps",
+      "modelcontextprotocol",
+      "ui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T18:02:51Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agent-skills.md",
+    "docs/authorization.md",
+    "docs/csp-cors.md",
+    "docs/favicons/apple-touch-icon.png",
+    "docs/favicons/favicon-16x16.png",
+    "docs/favicons/favicon-32x32.png",
+    "docs/favicons/favicon-dark-16x16.png",
+    "docs/favicons/favicon-dark-32x32.png",
+    "docs/favicons/favicon-dark.ico",
+    "docs/favicons/favicon.ico",
+    "docs/index.html",
+    "docs/mcp-theme.css",
+    "docs/migrate_from_openai_apps.md",
+    "docs/overview.md",
+    "docs/patterns.md",
+    "docs/patterns.tsx",
+    "docs/quickstart-success.png",
+    "docs/quickstart.md",
+    "docs/testing-mcp-apps.md",
+    "package.json",
+    "examples/basic-host/tsconfig.json",
+    "examples/basic-server-preact/tsconfig.json",
+    "examples/basic-server-preact/tsconfig.server.json",
+    "examples/basic-server-react/tsconfig.json",
+    "examples/basic-server-react/tsconfig.server.json",
+    "examples/basic-server-solid/tsconfig.json",
+    "examples/basic-server-solid/tsconfig.server.json",
+    "examples/basic-server-svelte/tsconfig.json",
+    "examples/basic-server-svelte/tsconfig.server.json",
+    "examples/basic-server-vanillajs/tsconfig.json",
+    "examples/basic-server-vanillajs/tsconfig.server.json",
+    "examples/basic-server-vue/tsconfig.json",
+    "examples/basic-server-vue/tsconfig.server.json",
+    "examples/budget-allocator-server/tsconfig.json",
+    "examples/budget-allocator-server/tsconfig.server.json",
+    "examples/cohort-heatmap-server/tsconfig.json",
+    "examples/cohort-heatmap-server/tsconfig.server.json",
+    "examples/customer-segmentation-server/tsconfig.json",
+    "examples/customer-segmentation-server/tsconfig.server.json"
+  ],
+  "readmeExtract": "<! LOGO <div align=\"center\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"media/mcp white.svg\" <source media=\"(prefers color scheme: light)\" srcset=\"media/mcp.svg\" <img src=\"media/mcp.svg\" alt=\"MCP Apps\" width=\"128\" </picture <h1 MCP Apps</h1 <p Build interactive UIs for MCP tools — charts, forms, dashboards — that render inline in Claude, ChatGPT and any other compliant chat client. <br / <br / <a hr",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Build interactive UIs for MCP tools — charts, forms, dashboards — that render inline in Claude, ChatGPT and any other compliant chat client.",
+    ". Excalidraw built with MCP Apps, running in Claude",
+    "The fastest way to build an MCP App is to let your AI coding agent do it.",
+    "create-mcp-app Scaffolds a new MCP App with an interactive UI from scratch \"Create an MCP App\"",
+    "migrate-oai-app Converts an existing OpenAI App to use MCP Apps \"Migrate from OpenAI Apps SDK\"",
+    "add-app-to-server Adds interactive UI to an existing MCP server's tools \"Add UI to my MCP server\"",
+    "convert-web-app Turns an existing web app into a hybrid web + MCP App \"Add MCP App support to my web app\"",
+    "Other agents — any AI coding agent that supports"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Official repo for spec & SDK of MCP Apps protocol - standard for UIs embedded AI chatbots, served by MCP servers",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "media",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "media",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 3,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Coding agent detected with CLI context.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: knowledge-resource, sdk, cli.",
+    "LLM: sdk + [mcp] — This is the official repository for the MCP Apps specification and SDK, providing libraries for building interactive UIs that integrate with MCP servers."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "sdk",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Ext Apps is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with media workflows.",
+      "Helps with design workflows.",
+      "Relevant to search.",
+      "Build interactive UIs for MCP tools — charts, forms, dashboards — that render inline in Claude, ChatGPT and any other compliant chat client."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:modelcontextprotocol/ext-apps",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ext-apps",
+  "publishedAt": "2026-05-18"
+}

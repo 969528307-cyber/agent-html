@@ -1,0 +1,77 @@
+{
+  "id": "agent-rules-books",
+  "name": "Agent Rules Books",
+  "type": "skill",
+  "status": "published",
+  "summary": "AGENTS.md rules / skills for AI coding agents: Codex, Cursor & Claude Code. Inspired by Clean Code, Refactoring, DDD, Clean Architecture and DDIA programming books.",
+  "description": "AGENTS.md rules / skills for AI coding agents: Codex, Cursor & Claude Code. Inspired by Clean Code, Refactoring, DDD, Clean Architecture and DDIA programming books.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ciembor/agent-rules-books",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ciembor/agent-rules-books",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ciembor/agent-rules-books#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ciembor/agent-rules-books#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ciembor/agent-rules-books/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AI agents Rules / Skills from. Programming Books v0.5",
+    "AGENTS.md rules / skills for Codex , Cursor , Claude Code , distilled from classic software engineering books about refactoring, architecture, DDD and code quality.",
+    "MIT licensed universal project rules for coding agents.",
+    "Each rule set is released in three tool-agnostic Markdown versions:",
+    "This rule set is a strong default for everyday coding and code review.",
+    "This rule set helps agents make disciplined implementation decisions.",
+    "This rule set helps agents think in terms of the business model rather than tables, controllers, or DTOs.",
+    "This rule set is useful when an agent needs to diagnose smells, choose a safe treatment, preserve behavior, and stop before cleanup turns into uncontrolled redesign."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T05:53:15Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ciembor/agent-rules-books",
+  "repoUrl": "https://github.com/ciembor/agent-rules-books",
+  "license": "MIT",
+  "stars": 1462,
+  "lastUpdated": "2026-05-13T05:53:15Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

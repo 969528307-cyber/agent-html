@@ -1,0 +1,221 @@
+{
+  "id": "candidate-tool-github-googleapis-mcp-toolbox",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp Toolbox",
+  "sourceUrl": "https://github.com/googleapis/mcp-toolbox",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "googleapis",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "MCP Toolbox for Databases is an open source MCP server for databases.",
+  "proposedCategory": [
+    "data"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "googleapis",
+    "repo": "mcp-toolbox",
+    "fullName": "googleapis/mcp-toolbox",
+    "stars": 15185,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agents",
+      "ai",
+      "bigquery",
+      "clickhouse",
+      "cockroachdb",
+      "database",
+      "elasticsearch",
+      "firestore",
+      "genai",
+      "llm",
+      "mcp",
+      "mongodb",
+      "mysql",
+      "oracle",
+      "postgresql",
+      "redis",
+      "server",
+      "spanner",
+      "tidb"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T08:22:32Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/ALLOYDBADMIN_README.md",
+    "docs/ALLOYDBPG_README.md",
+    "docs/BIGQUERY_README.md",
+    "docs/CLOUDSQLMSSQL_README.md",
+    "docs/CLOUDSQLMSSQLADMIN_README.md",
+    "docs/CLOUDSQLMYSQL_README.md",
+    "docs/CLOUDSQLMYSQLADMIN_README.md",
+    "docs/CLOUDSQLPG_README.md",
+    "docs/CLOUDSQLPGADMIN_README.md",
+    "docs/en/_index.md",
+    "docs/en/blogs/_index.md",
+    "docs/en/discord/_index.md",
+    "docs/en/documentation/_index.md",
+    "docs/en/documentation/connect-to/_index.md",
+    "docs/en/documentation/connect-to/gemini-cli/_index.md",
+    "docs/en/documentation/connect-to/ides/_index.md",
+    "docs/en/documentation/connect-to/ides/alloydb_pg_admin_mcp.md",
+    "docs/en/documentation/connect-to/ides/alloydb_pg_mcp.md",
+    "docs/en/documentation/connect-to/ides/bigquery_mcp.md",
+    "docs/en/documentation/connect-to/ides/cloud_sql_mssql_admin_mcp.md",
+    "docs/en/documentation/connect-to/ides/cloud_sql_mssql_mcp.md",
+    "docs/en/documentation/connect-to/ides/cloud_sql_mysql_admin_mcp.md",
+    "docs/en/documentation/connect-to/ides/cloud_sql_mysql_mcp.md",
+    "docs/en/documentation/connect-to/ides/cloud_sql_pg_admin_mcp.md",
+    "docs/en/documentation/connect-to/ides/cloud_sql_pg_mcp.md",
+    "docs/en/documentation/connect-to/ides/firestore_mcp.md",
+    "docs/en/documentation/connect-to/ides/looker_mcp.md",
+    "docs/en/documentation/connect-to/ides/mssql_mcp.md",
+    "docs/en/documentation/connect-to/ides/mysql_mcp.md",
+    "docs/en/documentation/connect-to/ides/neo4j_mcp.md",
+    "docs/en/documentation/connect-to/ides/oracle_mcp.md",
+    "docs/en/documentation/connect-to/ides/postgres_mcp.md",
+    "docs/en/documentation/connect-to/ides/spanner_mcp.md",
+    "docs/en/documentation/connect-to/ides/sqlite_mcp.md",
+    "docs/en/documentation/connect-to/mcp-client/_index.md",
+    "docs/en/documentation/connect-to/toolbox-sdks/_index.md",
+    "docs/en/documentation/connect-to/toolbox-sdks/go-sdk/_index.md",
+    "docs/en/documentation/connect-to/toolbox-sdks/go-sdk/core/_index.md",
+    "docs/en/documentation/connect-to/toolbox-sdks/go-sdk/tbadk/_index.md"
+  ],
+  "readmeExtract": "<div align=\"center\" ![logo](./logo.png) MCP Toolbox for Databases <a href=\"https://trendshift.io/repositories/13019\" target=\" blank\" <img src=\"https://trendshift.io/api/badge/repositories/13019\" alt=\"googleapis%2Fmcp toolbox | Trendshift\" style=\"width: 250px; height: 55px;\" width=\"250\" height=\"55\"/ </a [![Go Report Card](https://goreportcard.com/badge/github.com/googleapis/mcp toolbox)](https://goreportcard.com/repor",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "MCP Toolbox for Databases is an open source Model Context Protocol (MCP) server that connects your AI agents, IDEs, and applications directly to your enterprise databases.",
+    "Ready-to-use MCP Server (Build-Time): Instantly connect Gemini CLI, Google Antigravity, Claude Code, Codex, or other MCP clients to your databases using our prebuilt generic tools.",
+    "Custom Tools Framework (Run-Time): A robust framework to build specialized, highly secure AI tools for your production agents.",
+    "Define structured queries, semantic search, and NL2SQL capabilities safely and easily.",
+    "For comprehensive details, see the full documentation.",
+    "This solution was originally named “Gen AI Toolbox for Databases” (github.com/googleapis/genai-toolbox) as its initial development predated MCP, but was renamed to align with the MCP compatibility.",
+    "Toolbox SDKs: Integrate with your Application",
+    "Out-of-the-Box Database Access: Prebuilt generic tools for instant data exploration (e.g., listtables, executesql) directly from your IDE or CLI."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"data\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "MCP Toolbox for Databases is an open source MCP server for databases.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "database"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "database"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 4,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "SDK or library language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: sdk, cli.",
+    "LLM: mcp + [mcp] — This repository is explicitly described as an open source MCP server for databases, providing prebuilt generic tools and a custom tools framework for AI agents."
+  ],
+  "classificationAlternatives": [
+    "sdk",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp Toolbox is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with database workflows.",
+      "Relevant to data.",
+      "MCP Toolbox for Databases is an open source Model Context Protocol (MCP) server that connects your AI agents, IDEs, and applications directly to your enterprise databases.",
+      "Ready-to-use MCP Server (Build-Time): Instantly connect Gemini CLI, Google Antigravity, Claude Code, Codex, or other MCP clients to your databases using our prebuilt generic tools."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:googleapis/mcp-toolbox",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-14",
+  "reviewedBy": "local-review",
+  "publishedAs": "mcp-toolbox",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

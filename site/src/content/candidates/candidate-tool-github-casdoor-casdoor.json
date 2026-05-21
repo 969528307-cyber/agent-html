@@ -1,0 +1,179 @@
+{
+  "id": "candidate-tool-github-casdoor-casdoor",
+  "type": "tool",
+  "status": "published",
+  "title": "Casdoor",
+  "sourceUrl": "https://github.com/casdoor/casdoor",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "casdoor",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD",
+  "proposedCategory": [
+    "security"
+  ],
+  "proposedAgents": [
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "casdoor",
+    "repo": "casdoor",
+    "fullName": "casdoor/casdoor",
+    "stars": 13599,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "agi",
+      "ai-gateway",
+      "auth",
+      "authentication",
+      "iam",
+      "llm",
+      "mcp",
+      "mcp-gateway",
+      "mfa",
+      "oauth",
+      "oidc",
+      "openclaw",
+      "radius",
+      "saml",
+      "scim",
+      "single-sign-on",
+      "sso",
+      "webauthn"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-12T12:37:49Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <a href=\"https://casdoor.ai\" <img src=\"https://cdn.casbin.org/img/casdoor logo 1185x256.png\" alt=\"Casdoor\" width=\"500\" </a <h3 Casdoor: AI First Identity and Access Management (IAM) / AI MCP Gateway</h3 <p align=\"center\" <strong An open source, AI first IAM / MCP gateway and authentication server with a web UI.</strong <br Supporting MCP, A2A, OAuth&nbsp;2.0, OIDC (OAuth&nbsp;2.x), SAML, CAS, LDAP",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Casdoor: AI-First Identity and Access Management (IAM) / AI MCP Gateway",
+    "An open-source, AI-first IAM / MCP gateway and authentication server with a web UI. .",
+    "Supporting MCP, A2A, OAuth 2.0, OIDC (OAuth 2.x), SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID,.",
+    "Documentation and guides: casdoor.ai",
+    "Casdoor is a UI-first identity provider and access management platform: one place to manage users, organizations, applications, and providers, with a modern web console.",
+    "Unlike reverse-proxy-centric auth companions, Casdoor is a dedicated auth server with broad protocol support, designed to be straightforward to self-host and integrate—see casdoor.ai for documentation.",
+    "To keep behavior consistent with upstream, the steps are aligned with official docs.",
+    "OAuth 2.0 / OIDC — OpenID Connect and OAuth 2.x authorization"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"security\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "security",
+      "communication",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "security",
+    "communication",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: platform.",
+    "Alternative capabilities: mcp.",
+    "LLM: mcp + [mcp] — Casdoor is an AI-first IAM/MCP gateway and auth server that exposes identity and access management capabilities via the Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "mcp"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Casdoor is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with communication workflows.",
+      "Helps with design workflows.",
+      "Relevant to security.",
+      "Casdoor: AI-First Identity and Access Management (IAM) / AI MCP Gateway"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:casdoor/casdoor",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "casdoor",
+  "publishedAt": "2026-05-18"
+}

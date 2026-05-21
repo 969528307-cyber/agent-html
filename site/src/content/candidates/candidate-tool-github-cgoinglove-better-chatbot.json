@@ -1,0 +1,193 @@
+{
+  "id": "candidate-tool-github-cgoinglove-better-chatbot",
+  "type": "tool",
+  "status": "published",
+  "title": "Better Chatbot",
+  "sourceUrl": "https://github.com/cgoinglove/better-chatbot",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "cgoinglove",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Just a Better Chatbot. Powered by Agent & MCP & Workflows.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "cgoinglove",
+    "repo": "better-chatbot",
+    "fullName": "cgoinglove/better-chatbot",
+    "stars": 1101,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "ai",
+      "ai-chatbot",
+      "automation",
+      "chatbot",
+      "claude",
+      "gemini",
+      "low-code",
+      "mcp",
+      "mcp-client",
+      "mcp-server",
+      "nextjs",
+      "ollama",
+      "openai",
+      "openai-realtime",
+      "ui",
+      "vercel",
+      "voice-ai",
+      "web-ui",
+      "workflow"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-26T18:39:10Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/tips-guides/adding-openAI-like-providers.md",
+    "docs/tips-guides/docker.md",
+    "docs/tips-guides/e2e-testing-guide.md",
+    "docs/tips-guides/file-storage.md",
+    "docs/tips-guides/mcp-oauth-flow.md",
+    "docs/tips-guides/oauth.md",
+    "docs/tips-guides/system-prompts-and-customization.md",
+    "docs/tips-guides/temporary_chat.md",
+    "docs/tips-guides/vercel.md",
+    "package.json",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "[!WARNING] The author of this project has paused development until February, however, I (@brrock) will try and address vulnerabilities and issues. If you are contributing, you might have to wait until development continues. <img width=\"1184\" height=\"576\" alt=\"thumbnail\" loading=\"lazy\" src=\"https://github.com/user attachments/assets/d6ba80ff a62a 4920 b266 85c4a89d6076\" / [![MCP Supported](https://img.shields.io/badge",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🚀 Live Demo See the experience in action in the preview below!",
+    "MCP Tools Demo: Chat with Tools",
+    "You only need one AI Provider API Key (OpenAI, Claude, Gemini, etc.).",
+    "Better Chatbot - A better open-source AI chatbot for individuals and teams, inspired by ChatGPT, Claude, Grok, and Gemini.",
+    "• Powerful Tools - MCP protocol, web search, JS/Python code execution, data visualization",
+    "• Image Generation - Create and edit images with AI models (OpenAI, Google Gemini, xAI)",
+    "• Automation - Custom agents, visual workflows, artifact generation",
+    "• Collaboration - Share agents, workflows, and MCP configurations with your team"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Just a Better Chatbot. Powered by Agent & MCP & Workflows.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "coding",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: single-tool.",
+    "Alternative capabilities: knowledge-resource, workflow, cli.",
+    "LLM: agent-app + [mcp, workflow] — This is a full-featured open-source AI chatbot with a web UI, powered by agents, MCP, and workflows, aimed at end users and teams."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "workflow",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Better Chatbot is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to automation.",
+      "🚀 Live Demo See the experience in action in the preview below!"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:cgoinglove/better-chatbot",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "better-chatbot",
+  "publishedAt": "2026-05-18"
+}

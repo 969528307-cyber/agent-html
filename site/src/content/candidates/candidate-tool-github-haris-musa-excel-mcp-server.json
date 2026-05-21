@@ -1,0 +1,168 @@
+{
+  "id": "candidate-tool-github-haris-musa-excel-mcp-server",
+  "type": "tool",
+  "status": "published",
+  "title": "Excel Mcp Server",
+  "sourceUrl": "https://github.com/haris-musa/excel-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "haris-musa",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A Model Context Protocol server for Excel file manipulation",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "haris-musa",
+    "repo": "excel-mcp-server",
+    "fullName": "haris-musa/excel-mcp-server",
+    "stars": 3834,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "automation",
+      "excel",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "sse",
+      "stdio",
+      "streamable-http",
+      "toolcalling"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-12T06:14:45Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/CNAME",
+    "docs/index.html",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"https://raw.githubusercontent.com/haris musa/excel mcp server/main/assets/logo.png\" alt=\"Excel MCP Server Logo\" width=\"300\"/ </p [![PyPI version](https://img.shields.io/pypi/v/excel mcp server.svg)](https://pypi.org/project/excel mcp server/) [![Total Downloads](https://static.pepy.tech/badge/excel mcp server)](https://pepy.tech/project/excel mcp server) [![License: MIT](https://img.shield",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A Model Context Protocol (MCP) server that lets you manipulate Excel files without needing Microsoft Excel installed.",
+    "Create, read, and modify Excel workbooks with your AI agent.",
+    "📋 Table Operations: Create and manage Excel tables with custom styling",
+    "🔧 Sheet Management: Copy, rename, delete worksheets with ease",
+    "Streamable HTTP Transport (Recommended for remote connections)",
+    "Streamable HTTP transport connection:",
+    "With these transports, tool filepath values must be relative to that directory (e.g.",
+    "You can also set the FASTMCPPORT environment variable to control the port the server listens on (default is 8017 if not set)."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A Model Context Protocol server for Excel file manipulation",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: cli.",
+    "LLM: mcp + [mcp] — This project is a Model Context Protocol server that exposes Excel file manipulation capabilities to AI agents via MCP."
+  ],
+  "classificationAlternatives": [
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Excel Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Relevant to automation.",
+      "A Model Context Protocol (MCP) server that lets you manipulate Excel files without needing Microsoft Excel installed.",
+      "Create, read, and modify Excel workbooks with your AI agent.",
+      "📋 Table Operations: Create and manage Excel tables with custom styling"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:haris-musa/excel-mcp-server",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "excel-mcp-server",
+  "publishedAt": "2026-05-18"
+}

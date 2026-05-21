@@ -1,0 +1,223 @@
+{
+  "id": "candidate-tool-github-rightnow-ai-openfang",
+  "type": "tool",
+  "status": "published",
+  "title": "Openfang",
+  "sourceUrl": "https://github.com/RightNow-AI/openfang",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "RightNow-AI",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Open-source Agent Operating System",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "proposedAgents": [
+    "Generic",
+    "OpenClaw"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "RightNow-AI",
+    "repo": "openfang",
+    "fullName": "RightNow-AI/openfang",
+    "stars": 17566,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-framework",
+      "ai-agents",
+      "llm",
+      "mcp",
+      "open-source",
+      "openclaw",
+      "operating-system",
+      "rust"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-14T08:28:37Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agent-templates.md",
+    "docs/api-reference.md",
+    "docs/architecture.md",
+    "docs/benchmarks/architecture-overview.svg",
+    "docs/benchmarks/feature-coverage.svg",
+    "docs/benchmarks/performance.svg",
+    "docs/benchmarks/security-layers.svg",
+    "docs/channel-adapters.md",
+    "docs/cli-reference.md",
+    "docs/desktop.md",
+    "docs/getting-started.md",
+    "docs/launch-roadmap.md",
+    "docs/mcp-a2a.md",
+    "docs/production-checklist.md",
+    "docs/providers.md",
+    "docs/README.md",
+    "docs/security.md",
+    "docs/VERTEX_AI_LOCAL_TESTING.md",
+    "docs/workflows.md",
+    "crates/openfang-hands/bundled/browser/SKILL.md",
+    "crates/openfang-hands/bundled/clip/SKILL.md",
+    "crates/openfang-hands/bundled/collector/SKILL.md",
+    "crates/openfang-hands/bundled/infisical-sync/SKILL.md",
+    "crates/openfang-hands/bundled/lead/SKILL.md",
+    "crates/openfang-hands/bundled/predictor/SKILL.md",
+    "crates/openfang-hands/bundled/researcher/SKILL.md",
+    "crates/openfang-hands/bundled/trader/SKILL.md",
+    "crates/openfang-hands/bundled/twitter/SKILL.md",
+    "crates/openfang-skills/bundled/ansible/SKILL.md",
+    "crates/openfang-skills/bundled/api-tester/SKILL.md",
+    "crates/openfang-skills/bundled/aws/SKILL.md",
+    "crates/openfang-skills/bundled/azure/SKILL.md",
+    "crates/openfang-skills/bundled/ci-cd/SKILL.md",
+    "crates/openfang-skills/bundled/code-reviewer/SKILL.md",
+    "crates/openfang-skills/bundled/compliance/SKILL.md",
+    "crates/openfang-skills/bundled/confluence/SKILL.md",
+    "crates/openfang-skills/bundled/crypto-expert/SKILL.md",
+    "crates/openfang-skills/bundled/css-expert/SKILL.md",
+    "crates/openfang-skills/bundled/data-analyst/SKILL.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"public/assets/openfang logo.png\" width=\"160\" alt=\"OpenFang Logo\" / </p <h1 align=\"center\" OpenFang</h1 <h3 align=\"center\" The Agent Operating System</h3 <p align=\"center\" Open source Agent OS built in Rust. 137K LOC. 14 crates. 1,767+ tests. Zero clippy warnings.<br/ <strong One binary. Battle tested. Agents that actually work for you.</strong </p <p align=\"center\" <a href=\"https://openfan",
+  "skillExtracts": [
+    {
+      "path": "crates/openfang-hands/bundled/browser/SKILL.md",
+      "extract": "name: browser automation version: \"1.0.0\" description: Playwright based browser automation patterns for autonomous web interaction author: OpenFang tags: [browser, automation, playwright, web, scraping] tools: [browser navigate, browser click, browser type, browser screenshot, browser read page, browser close] runtime: prompt only Browser Automation Skill Playwright CSS Selector Reference Basic Selectors | Selector |"
+    },
+    {
+      "path": "crates/openfang-hands/bundled/clip/SKILL.md",
+      "extract": "name: clip hand skill version: \"2.0.0\" description: \"Expert knowledge for AI video clipping — yt dlp downloading, whisper transcription, SRT generation, and ffmpeg processing\" runtime: prompt only Video Clipping Expert Knowledge Cross Platform Notes All tools (ffmpeg, ffprobe, yt dlp, whisper) use identical CLI flags on Windows, macOS, and Linux. The differences are only in shell syntax: | Feature | macOS / Linux | W"
+    },
+    {
+      "path": "crates/openfang-hands/bundled/collector/SKILL.md",
+      "extract": "name: collector hand skill version: \"1.0.0\" description: \"Expert knowledge for AI intelligence collection — OSINT methodology, entity extraction, knowledge graphs, change detection, and sentiment analysis\" runtime: prompt only Intelligence Collection Expert Knowledge OSINT Methodology Collection Cycle 1. Planning : Define target, scope, and collection requirements 2. Collection : Gather raw data from open sources 3. "
+    },
+    {
+      "path": "crates/openfang-hands/bundled/infisical-sync/SKILL.md",
+      "extract": "name: infisical sync skill version: \"1.0.0\" description: \"Expert knowledge for the Infisical Sync Hand — Infisical API reference, vault operations, error patterns, security guidance\" author: OpenFang tags: [secrets, infisical, vault, security, sync] tools: [shell exec, vault set, vault get, vault list, vault delete, memory store, memory recall] runtime: prompt only Infisical Sync Expert Knowledge 1. Infisical API Ref"
+    },
+    {
+      "path": "crates/openfang-hands/bundled/lead/SKILL.md",
+      "extract": "name: lead hand skill version: \"1.0.0\" description: \"Expert knowledge for AI lead generation — web research, enrichment, scoring, deduplication, and report generation\" runtime: prompt only Lead Generation Expert Knowledge Ideal Customer Profile (ICP) Construction A good ICP answers these questions: 1. Industry : What vertical does your ideal customer operate in? 2. Company size : How many employees? What revenue rang"
+    },
+    {
+      "path": "crates/openfang-hands/bundled/predictor/SKILL.md",
+      "extract": "name: predictor hand skill version: \"1.0.0\" description: \"Expert knowledge for AI forecasting — superforecasting principles, signal taxonomy, confidence calibration, reasoning chains, and accuracy tracking\" runtime: prompt only Forecasting Expert Knowledge Superforecasting Principles Based on research by Philip Tetlock and the Good Judgment Project: 1. Triage : Focus on questions that are hard enough to be interestin"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Open-source Agent OS built in Rust.",
+    "Agents that actually work for you.",
+    "OpenFang is an open-source Agent Operating System.",
+    "Not a \"multi-agent orchestrator.\" A full operating system for autonomous agents, built from scratch in Rust.",
+    "Traditional agent frameworks wait for you to type something.",
+    "OpenFang runs autonomous agents that work for you: on schedules, 24/7, building knowledge graphs, monitoring targets, generating leads, managing your social media, and reporting results to your dashboard.",
+    "Hands: Agents That Actually Do Things",
+    "\"Traditional agents wait for you to type."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-framework\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Open-source Agent Operating System",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "Openfang is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "Open-source Agent OS built in Rust.",
+      "Agents that actually work for you.",
+      "OpenFang is an open-source Agent Operating System."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:rightnow-ai/openfang",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openfang",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

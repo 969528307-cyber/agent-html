@@ -1,0 +1,158 @@
+{
+  "id": "candidate-tool-github-blazity-shadcn-chatbot-kit",
+  "type": "tool",
+  "status": "published",
+  "title": "Shadcn Chatbot Kit",
+  "sourceUrl": "https://github.com/Blazity/shadcn-chatbot-kit",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "Blazity",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "🤖 Beautifully designed chatbot components based on shadcn/ui",
+  "proposedCategory": [
+    "sdk"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "Blazity",
+    "repo": "shadcn-chatbot-kit",
+    "fullName": "Blazity/shadcn-chatbot-kit",
+    "stars": 788,
+    "license": "MIT",
+    "topics": [
+      "ai-sdk",
+      "generative-ai",
+      "llm",
+      "nextjs",
+      "openai",
+      "react",
+      "shadcn",
+      "shadcn-ui",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-02-26T23:36:56Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "shadcn chatbot kit A comprehensive chatbot component kit built on top of and fully compatible with the [shadcn/ui](https://ui.shadcn.com/) ecosystem. Build beautiful, customizable AI chatbots in minutes while maintaining full control over your components. ![hero](apps/www/public/og.jpg) [![MIT License](https://img.shields.io/badge/License MIT green.svg)](https://choosealicense.com/licenses/mit/) [![shadcn/ui](https:/",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Smart preview for uploaded files",
+    "Visual tool execution states",
+    "🌓 Dark/Light Mode: Built-in theme switching support"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"sdk\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "🤖 Beautifully designed chatbot components based on shadcn/ui",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "sdk",
+    "scope": "single-tool",
+    "useCategory": [
+      "design"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "sdk",
+  "scope": "single-tool",
+  "useCategory": [
+    "design"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "sdk",
+    "whatIsIt": "Shadcn Chatbot Kit is an SDK or library for developers building agent tooling.",
+    "helpsWith": [
+      "Helps with design workflows.",
+      "Relevant to sdk.",
+      "Smart preview for uploaded files",
+      "Visual tool execution states",
+      "🌓 Dark/Light Mode: Built-in theme switching support"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:blazity/shadcn-chatbot-kit",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "shadcn-chatbot-kit",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

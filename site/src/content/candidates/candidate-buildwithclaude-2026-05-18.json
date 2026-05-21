@@ -1,0 +1,241 @@
+{
+  "id": "candidate-buildwithclaude-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Buildwithclaude",
+  "sourceUrl": "https://github.com/davepoon/buildwithclaude",
+  "sourceName": "GitHub",
+  "author": "davepoon",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK and OpenClaw",
+  "proposedCategory": [
+    "skill",
+    "code-review",
+    "docs",
+    "workflow",
+    "testing"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "davepoon",
+    "repo": "buildwithclaude",
+    "fullName": "davepoon/buildwithclaude",
+    "stars": 2943,
+    "license": "MIT",
+    "topics": [
+      "claude",
+      "claude-code",
+      "claude-code-commands",
+      "claude-skills",
+      "cli-tool",
+      "commands",
+      "mcp",
+      "mcp-server",
+      "mcp-tools",
+      "openclaw",
+      "plugin-marketplace",
+      "subagents"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T01:47:13Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "plugins/agent-triforce/skills/code-health/SKILL.md",
+    "plugins/agent-triforce/skills/feature-spec/SKILL.md",
+    "plugins/agent-triforce/skills/implement-feature/SKILL.md",
+    "plugins/agent-triforce/skills/release-check/SKILL.md",
+    "plugins/agent-triforce/skills/review-findings/SKILL.md",
+    "plugins/agent-triforce/skills/security-audit/SKILL.md",
+    "plugins/agents-uc-taskmanager/skills/init/SKILL.md",
+    "plugins/agents-uc-taskmanager/skills/sdd-pipeline/SKILL.md",
+    "plugins/agents-uc-taskmanager/skills/work-pipeline/SKILL.md",
+    "plugins/agents-uc-taskmanager/skills/work-status/SKILL.md",
+    "plugins/all-skills/skills/activecampaign-automation/SKILL.md",
+    "plugins/all-skills/skills/agent-analytics/SKILL.md",
+    "plugins/all-skills/skills/airtable-automation/SKILL.md",
+    "plugins/all-skills/skills/amplitude-automation/SKILL.md",
+    "plugins/all-skills/skills/artifacts-builder/SKILL.md",
+    "plugins/all-skills/skills/asana-automation/SKILL.md",
+    "plugins/all-skills/skills/aurakit/SKILL.md",
+    "plugins/all-skills/skills/bamboohr-automation/SKILL.md",
+    "plugins/all-skills/skills/basecamp-automation/SKILL.md",
+    "plugins/all-skills/skills/bitbucket-automation/SKILL.md",
+    "plugins/all-skills/skills/box-automation/SKILL.md",
+    "plugins/all-skills/skills/brand-guidelines/SKILL.md",
+    "plugins/all-skills/skills/brevo-automation/SKILL.md",
+    "plugins/all-skills/skills/cal-com-automation/SKILL.md",
+    "plugins/all-skills/skills/calendly-automation/SKILL.md",
+    "plugins/all-skills/skills/canva-automation/SKILL.md",
+    "plugins/all-skills/skills/canvas-design/SKILL.md",
+    "plugins/all-skills/skills/cf-proxy/SKILL.md",
+    "plugins/all-skills/skills/changelog-generator/SKILL.md",
+    "plugins/all-skills/skills/circleci-automation/SKILL.md",
+    "plugins/all-skills/skills/clawring/SKILL.md",
+    "plugins/all-skills/skills/clickup-automation/SKILL.md",
+    "plugins/all-skills/skills/close-automation/SKILL.md",
+    "plugins/all-skills/skills/coda-automation/SKILL.md",
+    "plugins/all-skills/skills/coinpaprika-api/SKILL.md",
+    "plugins/all-skills/skills/competitive-ads-extractor/SKILL.md",
+    "plugins/all-skills/skills/confluence-automation/SKILL.md",
+    "plugins/all-skills/skills/content-research-writer/SKILL.md"
+  ],
+  "readmeExtract": "Build with Claude Claude Skills, Agents, Commands, Hooks, Plugins, Marketplaces collections for and extend Claude Code [![Open Source](https://badges.frapsoft.com/os/v1/open source.svg?v=103)](https://opensource.org/) [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](https://opensource.org/licenses/MIT) [![PRs Welcome](https://img.shields.io/badge/PRs welcome brightgreen.svg)](CONTRIBUTING.md) [!",
+  "skillExtracts": [
+    {
+      "path": "plugins/agent-triforce/skills/code-health/SKILL.md",
+      "extract": "name: code health category: quality security description: Scans the codebase for dead code, tech debt, outdated dependencies, and code quality issues. Delegates to the Centinela (QA) agent. Code Health Runs a comprehensive code health scan using the Centinela (QA) agent. When to Use This Skill Periodic codebase hygiene check Before a release to ensure no dead code or unresolved debt After a large refactoring to verif"
+    },
+    {
+      "path": "plugins/agent-triforce/skills/feature-spec/SKILL.md",
+      "extract": "name: feature spec category: workflow orchestration description: Creates a complete product feature specification with acceptance criteria, scope, dependencies, and risks. Delegates to the Prometeo (PM) agent. Feature Spec Creates a complete product feature specification using the Prometeo (PM) agent. When to Use This Skill Defining a new feature or product requirement Writing user stories with acceptance criteria Pl"
+    },
+    {
+      "path": "plugins/agent-triforce/skills/implement-feature/SKILL.md",
+      "extract": "name: implement feature category: workflow orchestration description: Implements a feature from its specification. Reads the spec, designs architecture, writes code and tests. Delegates to the Forja (Dev) agent. Implement Feature Implements a feature from its specification using the Forja (Dev) agent. When to Use This Skill A feature spec has been approved and is ready for implementation You need architecture design,"
+    },
+    {
+      "path": "plugins/agent-triforce/skills/release-check/SKILL.md",
+      "extract": "name: release check category: quality security description: Pre release verification checklist. Validates features, tests, docs, security, and quality gates before shipping. Delegates to the Centinela (QA) agent. Release Check Runs pre release verification using the Centinela (QA) agent. This is the highest stakes checklist in the system. When to Use This Skill Before any release to production Before tagging a versio"
+    },
+    {
+      "path": "plugins/agent-triforce/skills/review-findings/SKILL.md",
+      "extract": "name: review findings category: workflow orchestration description: Addresses and fixes findings from a QA code review. Reads the review report, fixes critical and warning issues, and prepares for re verification. Delegates to the Forja (Dev) agent. Review Findings Addresses and fixes QA findings using the Forja (Dev) agent. When to Use This Skill After receiving a code review from Centinela (QA) When a review report"
+    },
+    {
+      "path": "plugins/agent-triforce/skills/security-audit/SKILL.md",
+      "extract": "name: security audit category: quality security description: Deep security audit covering OWASP Top 10, authentication, authorization, data protection, dependency vulnerabilities, and secrets scanning. Delegates to the Centinela (QA) agent. Security Audit Performs a deep security audit using the Centinela (QA) agent. When to Use This Skill Before a release to verify security posture After significant code changes tha"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Claude Skills, Agents, Commands, Hooks, Plugins, Marketplaces collections for and extend Claude Code",
+    "A plugin marketplace and discovery platform for Claude Code.",
+    "Browse curated plugins, discover community contributions, and extend your Claude Code workflows.",
+    "Agents 117 Specialized AI experts (Python, Go, DevOps, Security, etc.)",
+    "Commands 175 Slash commands for automation (/commit, /docs, /tdd)",
+    "Hooks 28 Event-driven automation (notifications, git, formatting)",
+    "Skills 26 Reusable capabilities from plugins",
+    "The platform indexes plugins from the broader Claude Code ecosystem:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK and OpenClaw",
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "testing",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "testing",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 8,
+    "skill": 12,
+    "cli": 5,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "GitHub topics tag as skills.",
+    "Skill-collection or agent-rules language in description.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: mcp, knowledge-resource, workflow.",
+    "LLM: knowledge-resource + [] — This is a curated directory/marketplace for Claude Code plugins, skills, and commands, making it a knowledge resource rather than a tool or framework."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "knowledge-resource",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Buildwithclaude is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with testing workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "buildwithclaude",
+  "publishedAt": "2026-05-18"
+}

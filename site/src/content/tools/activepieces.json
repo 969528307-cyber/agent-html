@@ -1,0 +1,75 @@
+{
+  "id": "activepieces",
+  "name": "Activepieces",
+  "type": "workflow",
+  "status": "published",
+  "summary": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+  "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/activepieces/activepieces",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/activepieces/activepieces",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/activepieces/activepieces#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/activepieces/activepieces#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/activepieces/activepieces/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "All-in-one AI automation designed to be extensible through a type-safe pieces framework written in TypeScript.",
+    "When you contribute pieces to Activepieces they become automatically available as MCP servers that you can use with LLMs through Claude Desktop, Cursor or Windsurf!",
+    "🛠️ Largest open source MCP toolkit: All our pieces (280+) are available as MCP that you can use with LLMs on Claude Desktop, Cursor or Windsurf.",
+    "🤖 AI-First: Native AI pieces let you experiment with various providers, or create your own agents using our AI SDK to help you build flows inside the builder.",
+    "🏢 Enterprise-Ready: Developers set up the tools, and anyone in the organization can use the no-code builder.",
+    "🛠️ Largest open source MCP toolkit: All our pieces (280+) are available as MCP that you can use with LLMs on Claude Desktop, Cursor or Windsur...",
+    "Activepieces now ships with a built-in network proxy that protects your automations from network attacks.",
+    "One switch to turn it on — set APNETWORKMODE=STRICT and the protection is active."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T08:56:30Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/activepieces/activepieces",
+  "repoUrl": "https://github.com/activepieces/activepieces",
+  "license": "NOASSERTION",
+  "stars": 22164,
+  "lastUpdated": "2026-05-13T08:56:30Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,174 @@
+{
+  "id": "candidate-aworld-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "AWorld",
+  "sourceUrl": "https://github.com/inclusionAI/AWorld",
+  "sourceName": "GitHub",
+  "author": "inclusionAI",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Search, understand, reproduce, and improve an idea with ease",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "inclusionAI",
+    "repo": "AWorld",
+    "fullName": "inclusionAI/AWorld",
+    "stars": 1197,
+    "license": "MIT",
+    "topics": [
+      "agent-framework",
+      "agent-learning",
+      "agent-runtime",
+      "browsecomp",
+      "environment",
+      "gaia",
+      "mcp",
+      "rl-training",
+      "world-model",
+      "xbench"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T14:05:56Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/Agents/Build Agent.md",
+    "docs/Agents/Build Multi-Agent System(MAS).md",
+    "docs/Agents/Build WorkFlow.md",
+    "docs/Agents/Context.md",
+    "docs/Agents/Custom Agent.md",
+    "docs/Agents/Memory.md",
+    "docs/Agents/Parallel Subagents.md",
+    "docs/Agents/Runtime/Custom Runner.md",
+    "docs/Agents/Runtime/Hooks.md",
+    "docs/Agents/Runtime/Overview.md",
+    "docs/Agents/Runtime/Ralph Runner.md",
+    "docs/Agents/Trace.md",
+    "docs/AWorld CLI/Commands/Cron.md",
+    "docs/AWorld CLI/Commands/Gateway.md",
+    "docs/AWorld CLI/Commands/Memory.md",
+    "docs/AWorld CLI/Commands/Overview.md",
+    "docs/AWorld CLI/Commands/Parallel Tasks.md",
+    "docs/AWorld CLI/Commands/Plugins.md",
+    "docs/AWorld CLI/Hooks/Examples/audit_logger.sh",
+    "docs/AWorld CLI/Hooks/Examples/dangerous_command_blocker.sh",
+    "docs/AWorld CLI/Hooks/Examples/hooks.yaml.example",
+    "docs/AWorld CLI/Hooks/Examples/output_filter.sh",
+    "docs/AWorld CLI/Hooks/Examples/path_sanitizer.sh",
+    "docs/AWorld CLI/Hooks/Examples/rate_limiter.sh",
+    "docs/AWorld CLI/Hooks/Examples/README.md",
+    "docs/AWorld CLI/Hooks/Examples/session_notification.sh",
+    "docs/AWorld CLI/Hooks/Overview.md",
+    "docs/AWorld CLI/Overview.md",
+    "docs/AWorld CLI/Plugins/Overview.md",
+    "docs/AWorld CLI/Plugins/Plugin SDK.md",
+    "docs/AWorld CLI/Plugins/Ralph Session Loop.md",
+    "docs/AWorld CLI/Recipes/Deep Search.md",
+    "docs/AWorld CLI/Recipes/Mini App Build.md",
+    "docs/AWorld CLI/Recipes/Overview.md",
+    "docs/AWorld CLI/Recipes/Video Creation.md",
+    "docs/css/aworld.css",
+    "docs/Environment/Advanced Capabilities.md",
+    "docs/Environment/Env Client.md",
+    "docs/Environment/OceanBase.md"
+  ],
+  "readmeExtract": "<div align=\"center\" AWorld: The Agent Harness for Your World </div <h4 align=\"center\" \"The Next Frontier for AI is Your Expertise\" [![Twitter Follow][twitter image]][twitter url] [![WeChat QR Code][wechat image]][wechat url] [![Discord][discord image]][discord url] [![License: MIT][license image]][license url] [![DeepWiki][deepwiki image]][deepwiki url] [![Tutorial][tutorial image]][tutorial url] <! [![arXiv][arxiv i",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AWorld: The Agent Harness for Your World",
+    "General AI often hits a \"wall of context\"—the nuanced data, workflows, and intuition that define your world.",
+    "An agent's true power lies not in the model alone, but in its Agent Harness : the framework orchestrating its tools, memory, context, and execution.",
+    "We provide a complete, battle-tested Harness as the recipe for you, the expert, to forge your knowledge into a fleet of autonomous agents.",
+    "See what happens when expert knowledge is encoded into reusable Skills.",
+    "The creations below are orchestrated by the AWorld Agent, demonstrating our core scaling law: as the community contributes more expertise, the entire ecosystem becomes more powerful.",
+    "From one-prompt video generation to deep-search workflows, each example turns specialized know-how into repeatable production capability.",
+    "• Auto-creation by base model. • Auto-evaluation by UI Evaluation Skill"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Search, understand, reproduce, and improve an idea with ease",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "tutorial",
+    "useCategory": [
+      "search",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "tutorial",
+  "useCategory": [
+    "search",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "mcp",
+    "whatIsIt": "AWorld is an MCP-related tutorial tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "AWorld: The Agent Harness for Your World"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

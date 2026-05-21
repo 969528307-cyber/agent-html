@@ -1,0 +1,108 @@
+{
+  "id": "candidate-learn-china-origin-agents-qwen-kimi-trae-codegeex",
+  "type": "learn",
+  "status": "published",
+  "title": "China-origin Agents: Qwen, Kimi, Trae, CodeGeeX",
+  "sourceUrl": "https://agentk.it/learn/china-origin-agents-qwen-kimi-trae-codegeex",
+  "sourceName": "agentk.it Learn library",
+  "sourceRegistryId": "local-learn-library",
+  "sourceRegistry": {
+    "id": "local-learn-library",
+    "name": "Local Learn Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/learn",
+    "acceptRules": [
+      "must_have_topic",
+      "must_have_teaching_angle",
+      "must_link_related_tools_or_agents_when_possible"
+    ],
+    "rejectRules": [
+      "thin_summary_only",
+      "no_learning_outcome"
+    ]
+  },
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "How to think about Chinese AI coding and agent ecosystems without mixing them together.",
+  "proposedCategory": [
+    "agent",
+    "agent-deep-dive"
+  ],
+  "proposedAgents": [
+    "qwen-code",
+    "kimi-agent",
+    "trae",
+    "codegeex"
+  ],
+  "extractedSignals": [
+    "How to think about Chinese AI coding and agent ecosystems without mixing them together.",
+    "Qwen Code",
+    "Kimi",
+    "Trae"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Learn collector output. Review teaching angle, examples, related tools, and whether this should remain Learn content rather than a Tool or Signal.",
+  "publishedAs": "china-origin-agents-qwen-kimi-trae-codegeex",
+  "publishedAt": "2026-05-16",
+  "learnProfile": {
+    "topic": "agent",
+    "path": "agent-deep-dive",
+    "difficulty": "beginner",
+    "readingTime": "9 min",
+    "relatedTools": [
+      "translation-signal-flow",
+      "agent-setup-checklist"
+    ],
+    "relatedAgents": [
+      "qwen-code",
+      "kimi-agent",
+      "trae",
+      "codegeex"
+    ]
+  },
+  "canonicalKey": "learn:title:china origin agents qwen kimi trae codegeex",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "learn",
+    "primaryType": "learn",
+    "whatIsIt": "China-origin Agents: Qwen, Kimi, Trae, CodeGeeX is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to agent.",
+      "Relevant to agent-deep-dive.",
+      "How to think about Chinese AI coding and agent ecosystems without mixing them together.",
+      "Qwen Code",
+      "Kimi"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

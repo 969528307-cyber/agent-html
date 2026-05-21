@@ -1,0 +1,216 @@
+{
+  "id": "candidate-tool-github-addyosmani-agent-skills",
+  "type": "tool",
+  "status": "published",
+  "title": "Agent Skills",
+  "sourceUrl": "https://github.com/addyosmani/agent-skills",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "addyosmani",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Production-grade engineering skills for AI coding agents.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "addyosmani",
+    "repo": "agent-skills",
+    "fullName": "addyosmani/agent-skills",
+    "stars": 43137,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "antigravity",
+      "antigravity-ide",
+      "claude-code",
+      "cursor",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-16T22:00:25Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/getting-started.md",
+    "docs/skill-anatomy.md",
+    "skills/api-and-interface-design/SKILL.md",
+    "skills/browser-testing-with-devtools/SKILL.md",
+    "skills/ci-cd-and-automation/SKILL.md",
+    "skills/code-review-and-quality/SKILL.md",
+    "skills/code-simplification/SKILL.md",
+    "skills/context-engineering/SKILL.md",
+    "skills/debugging-and-error-recovery/SKILL.md",
+    "skills/deprecation-and-migration/SKILL.md",
+    "skills/documentation-and-adrs/SKILL.md",
+    "skills/doubt-driven-development/SKILL.md",
+    "skills/frontend-ui-engineering/SKILL.md",
+    "skills/git-workflow-and-versioning/SKILL.md",
+    "skills/idea-refine/SKILL.md",
+    "skills/incremental-implementation/SKILL.md",
+    "skills/interview-me/SKILL.md",
+    "skills/performance-optimization/SKILL.md",
+    "skills/planning-and-task-breakdown/SKILL.md",
+    "skills/security-and-hardening/SKILL.md",
+    "skills/shipping-and-launch/SKILL.md",
+    "skills/source-driven-development/SKILL.md",
+    "skills/spec-driven-development/SKILL.md",
+    "skills/test-driven-development/SKILL.md",
+    "skills/using-agent-skills/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Agent Skills Production grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development. ![Addy's Agent Skills](https://addyosmani.com/assets/images/addys agent skills.jpg) Commands 7 slash commands that map to the development l",
+  "skillExtracts": [
+    {
+      "path": "skills/api-and-interface-design/SKILL.md",
+      "extract": "name: api and interface design description: Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend. API and Interface Design Overview Design stable, well documented interfaces that are hard to misuse. Good interfaces make th"
+    },
+    {
+      "path": "skills/browser-testing-with-devtools/SKILL.md",
+      "extract": "name: browser testing with devtools description: Tests in real browsers via Chrome DevTools MCP. Use when building or debugging anything that runs in a browser. Use when you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data. Requires the chrome devtools MCP server to be configured. Browser Testing with DevTools Overview Use C"
+    },
+    {
+      "path": "skills/ci-cd-and-automation/SKILL.md",
+      "extract": "name: ci cd and automation description: Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test runners in CI, or establish deployment strategies. CI/CD and Automation Overview Automate quality gates so that no change reaches production without passing tests, lint, type checking, and build. CI/CD is the enforcement me"
+    },
+    {
+      "path": "skills/code-review-and-quality/SKILL.md",
+      "extract": "name: code review and quality description: Conducts multi axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Code Review and Quality Overview Multi dimensional code review with quality gates. Every change gets reviewed before merge — no exceptions."
+    },
+    {
+      "path": "skills/code-simplification/SKILL.md",
+      "extract": "name: code simplification description: Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity. Code Simplification Inspired by the [Claude Code Simplifier plugin](https://github.com/anthropics/claude plugins official/blob/main/plug"
+    },
+    {
+      "path": "skills/context-engineering/SKILL.md",
+      "extract": "name: context engineering description: Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project. Context Engineering Overview Feed agents the right information at the right time. Context is the single biggest lever for agent output quality — too little and the agent hallucinates"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Production-grade engineering skills for AI coding agents.",
+    "Skills encode the workflows, quality gates, and best practices that senior engineers use when building software.",
+    "These ones are packaged so AI agents follow them consistently across every phase of development.",
+    "Each one activates the right skills automatically.",
+    "Review before merge /review Improve code health",
+    "Skills also activate automatically based on what you're doing — designing an API triggers api-and-interface-design, building UI triggers frontend-ui-engineering, and so on.",
+    "Copy any SKILL.md into .cursor/rules/, or reference the full skills/ directory.",
+    "Uses agent-driven skill execution via AGENTS.md and the skill tool."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"skill\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Production-grade engineering skills for AI coding agents.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Agent Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Production-grade engineering skills for AI coding agents.",
+      "Skills encode the workflows, quality gates, and best practices that senior engineers use when building software.",
+      "These ones are packaged so AI agents follow them consistently across every phase of development."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:addyosmani/agent-skills",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-skills",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

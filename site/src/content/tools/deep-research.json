@@ -1,0 +1,76 @@
+{
+  "id": "deep-research",
+  "name": "Deep Research",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Use any LLMs (Large Language Models) for Deep Research. Support SSE API and MCP server.",
+  "description": "Use any LLMs (Large Language Models) for Deep Research. Support SSE API and MCP server.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/u14app/deep-research",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/u14app/deep-research",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/u14app/deep-research#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/u14app/deep-research#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/u14app/deep-research/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Lightning-Fast Deep Research Report",
+    "Deep Research uses a variety of powerful AI models to generate in-depth research reports in just a few minutes.",
+    "It leverages advanced \"Thinking\" and \"Task\" models, combined with an internet connection, to provide fast and insightful analysis on a variety of topics.",
+    "Rapid Deep Research: Generates comprehensive research reports in about 2 minutes, significantly accelerating your research process.",
+    "Privacy-Focused: Your data remains private and secure, as all data is stored locally on your browser.",
+    "Support for Multi-LLM: Supports a variety of mainstream large language models, including Gemini, OpenAI, Anthropic, Deepseek, Grok, Mistral, Azure OpenAI, any OpenAI Compatible LLMs, OpenRouter, Ollama, etc.",
+    "Support Web Search: Supports search engines such as Searxng, Tavily, Firecrawl, Exa, Bocha, Brave, etc., allowing LLMs that do not support search to use the web search function more conveniently.",
+    "Support switching research models."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-22T08:03:13Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/u14app/deep-research",
+  "repoUrl": "https://github.com/u14app/deep-research",
+  "license": "MIT",
+  "stars": 4587,
+  "lastUpdated": "2026-04-22T08:03:13Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -42,12 +42,20 @@ const stats = [
 
 const commands = [
   {
-    title: "Preview a GitHub discovery batch",
-    command: "cd /Users/ld/agent-toolkit-site/site\nnpm run discover:github -- --limit 20 --dry-run",
+    title: "Collect Tools candidates",
+    command: "npm run discover:tools -- --limit 80",
   },
   {
-    title: "Create candidate files from discovery",
-    command: "cd /Users/ld/agent-toolkit-site/site\nnpm run discover:github -- --limit 20",
+    title: "Collect Agent candidates",
+    command: "npm run discover:agents -- --limit 20",
+  },
+  {
+    title: "Collect Learn candidates",
+    command: "npm run discover:learn -- --limit 20",
+  },
+  {
+    title: "Collect Signal candidates",
+    command: "npm run discover:signals -- --limit 20",
   },
 ];
 

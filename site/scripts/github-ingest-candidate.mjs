@@ -1,7 +1,7 @@
-import fs from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 
 import "./load-local-env.mjs";
+import { atomicWriteJsonFile } from "./json-file-utils.mjs";
 
 const root = new URL("..", import.meta.url);
 
@@ -11,7 +11,8 @@ const githubApiHeaders = {
   ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {}),
 };
 
-export const MIN_GITHUB_STARS = 1000;
+export const MIN_GITHUB_STARS = 700;
+export const MAX_REPO_STALENESS_DAYS = 548;
 export const MAX_EVIDENCE_FILE_SIZE = 300_000;
 export const MAX_EVIDENCE_FILES = 40;
 export const MAX_EXTRA_EVIDENCE_DOCS = 8;
@@ -139,10 +140,49 @@ export const assertRepoMeetsStarFloor = (repo) => {
   }
 };
 
+const asDate = (value) => (value instanceof Date ? value : new Date(value));
+
+export const getRepoFreshnessCutoffDate = (today = new Date()) => {
+  const cutoff = new Date(asDate(today).getTime());
+  cutoff.setUTCDate(cutoff.getUTCDate() - MAX_REPO_STALENESS_DAYS);
+  return cutoff;
+};
+
+export const formatGitHubSearchDate = (date) => asDate(date).toISOString().slice(0, 10);
+
+export const assertRepoIsFresh = (repo, { today = new Date() } = {}) => {
+  const pushedAt = repo.pushed_at;
+  const repoName = repo.full_name || repo.html_url || repo.name || "unknown";
+  if (!pushedAt) {
+    throw new Error(`Repository ${repoName} has no GitHub pushed_at timestamp; cannot verify maintenance freshness.`);
+  }
+
+  const pushedDate = new Date(pushedAt);
+  if (Number.isNaN(pushedDate.getTime())) {
+    throw new Error(`Repository ${repoName} has invalid GitHub pushed_at timestamp: ${pushedAt}.`);
+  }
+
+  const cutoff = getRepoFreshnessCutoffDate(today);
+  if (pushedDate < cutoff) {
+    throw new Error(
+      `Repository ${repoName} was last pushed at ${pushedAt}; maximum allowed staleness is ${MAX_REPO_STALENESS_DAYS} days.`
+    );
+  }
+};
+
 export const detectToolType = ({ topics = [], files = [], readme = "" }) => {
   const topicText = topics.join(" ").toLowerCase();
   const fileText = files.join(" ").toLowerCase();
   const readmeText = readme.toLowerCase();
+  const hasSkillLibraryFiles = files.some((file) => /^skills\//i.test(file) || /^skill\.md$/i.test(file));
+
+  if (
+    includesAny(topicText, ["agent-skill", "skill", "codex-skill", "claude-skill"]) ||
+    hasSkillLibraryFiles ||
+    /\b(agentic skills?|agent skills?|codex skills?|claude skills?|skills library|skill library|skill\.md playbooks?|reusable skill)\b/.test(readmeText)
+  ) {
+    return "skill";
+  }
 
   if (
     includesAny(topicText, ["workflow", "workflow-automation", "no-code-automation", "n8n-alternative"]) ||
@@ -152,22 +192,17 @@ export const detectToolType = ({ topics = [], files = [], readme = "" }) => {
   }
 
   if (
+    /\b(coding agent|code agent|terminal agent|command-line agent|cli agent|runs locally|runs in your terminal|runs in the terminal)\b/.test(readmeText) ||
+    (includesAny(fileText, ["package.json", "pyproject.toml", "bin/"]) && includesAny(readmeText, [" cli", "command line", "terminal"]))
+  ) {
+    return "cli";
+  }
+
+  if (
     includesAny(topicText, ["mcp", "mcp-server", "model-context-protocol"]) ||
     includesAny(readmeText, ["model context protocol", "mcp server", "\"mcpservers\"", "mcpservers"])
   ) {
     return "mcp";
-  }
-
-  if (
-    includesAny(topicText, ["agent-skill", "skill", "codex-skill", "claude-skill"]) ||
-    includesAny(fileText, ["skill.md", "skills/"]) ||
-    includesAny(readmeText, ["agent skill", "codex skill", "claude skill", "skill.md"])
-  ) {
-    return "skill";
-  }
-
-  if (includesAny(fileText, ["package.json", "pyproject.toml", "bin/"]) && includesAny(readmeText, [" cli", "command line", "terminal"])) {
-    return "cli";
   }
 
   return "workflow";
@@ -254,6 +289,10 @@ const detectAgents = ({ readme = "", files = [] }) => {
     ["Cursor", ["cursor", ".cursor", "cursor rules"]],
     ["Qwen Code", ["qwen", ".qwen"]],
     ["Hermes Agent", ["hermes"]],
+    ["Kimi", ["kimi", "moonshot", "kimi agent"]],
+    ["OpenClaw", ["openclaw", "open claw"]],
+    ["Trae", ["trae"]],
+    ["CodeGeeX", ["codegeex"]],
     ["Generic", ["skill.md", "mcpservers", "model context protocol"]],
   ];
 
@@ -279,13 +318,24 @@ const categorize = ({ type, topics = [], readme = "" }) => {
   return [...categories];
 };
 
-const scoreRepo = ({ repo, readme, files, type }) => ({
+const getRepoFreshnessScore = (pushedAt, today = new Date()) => {
+  if (!pushedAt) return 1;
+  const pushedDate = new Date(pushedAt);
+  if (Number.isNaN(pushedDate.getTime())) return 1;
+  const ageDays = (asDate(today).getTime() - pushedDate.getTime()) / 86_400_000;
+  if (ageDays <= 180) return 4;
+  if (ageDays <= 365) return 3;
+  if (ageDays <= MAX_REPO_STALENESS_DAYS) return 2;
+  return 1;
+};
+
+const scoreRepo = ({ repo, readme, files, type, today }) => ({
   sourceTrust: repo.full_name ? 4 : 3,
   usefulness: readme.length > 1000 ? 4 : 3,
   agentRelevance: type === "skill" || type === "mcp" ? 5 : 3,
   verifiability: extractCapabilitySignals(readme, { files }).length > 0 ? 4 : 2,
-  freshness: repo.pushed_at ? 4 : 3,
-  editorialValue: repo.stargazers_count >= 100 ? 4 : 3,
+  freshness: getRepoFreshnessScore(repo.pushed_at, today),
+  editorialValue: repo.stargazers_count >= MIN_GITHUB_STARS ? 4 : 3,
   permission: repo.license?.spdx_id ? 4 : 2,
 });
 
@@ -326,22 +376,39 @@ const isSetupLine = (line) =>
   /\b(install|installation|setup|quickstart|configuration|config|prerequisite|requirements?|uninstall|upgrade|update)\b/i.test(line) ||
   /^(npm|npx|pnpm|yarn|brew|docker|git clone|pip|uv|cargo|go install|cp|mkdir)\b/i.test(line);
 
+const cleanCapabilityLine = (line) =>
+  line
+    .replace(/!\[[^\]]*]\([^)]+\)/g, " ")
+    .replace(/<img\b[^>]*>/gi, " ")
+    .replace(/<br\s*\/?>/gi, ". ")
+    .replace(/<code\b[^>]*>([\s\S]*?)<\/code>/gi, "$1")
+    .replace(/<a\b[^>]*>([\s\S]*?)<\/a>/gi, "$1")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/https?:\/\/\S+/g, " ")
+    .replace(/^\s{0,3}#{1,6}\s*/, "")
+    .replace(/^\s*>+\s*/, "")
+    .replace(/^\s*[-*]\s*/, "")
+    .replace(/^\s*\d+[.)]\s*/, "")
+    .replace(/[*_`]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const isNoisyCapabilityLine = (line) =>
+  /(<img\b|src=|href=|width=|height=|align=|utm_|\.png|\.jpg|\.jpeg|\.gif|\.svg|badge|banner|splash)/i.test(line);
+
 export const extractCapabilitySignals = (content = "", { files = [] } = {}) => {
   const text = content
     .replace(/```[\s\S]*?```/g, "\n")
     .replace(/\|/g, " ")
     .split(/\n|(?<=[.!?])\s+/)
-    .map((line) =>
-      line
-        .replace(/^\s{0,3}#{1,6}\s*/, "")
-        .replace(/^\s*[-*]\s*/, "")
-        .replace(/^\s*\d+[.)]\s*/, "")
-        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-        .replace(/[*_`<>]/g, "")
-        .replace(/\s+/g, " ")
-        .trim()
-    )
+    .map(cleanCapabilityLine)
     .filter((line) => line.length >= 28 && line.length <= 220)
+    .filter((line) => !isNoisyCapabilityLine(line))
     .filter((line) => !isSetupLine(line))
     .filter((line) => capabilityTerms.some((term) => line.toLowerCase().includes(term)));
 
@@ -355,7 +422,8 @@ export const extractCapabilitySignals = (content = "", { files = [] } = {}) => {
   return [...new Set([...text, ...fileSignals])].slice(0, 8);
 };
 
-export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDocs = [], evidenceDocs = [], today }) => {
+export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDocs = [], evidenceDocs = [], crawlerProfile, today }) => {
+  const checkedDate = today || new Date().toISOString().slice(0, 10);
   const skillText = skillDocs.map((doc) => doc.content).join("\n\n");
   const evidenceText = evidenceDocs.map((doc) => doc.content).join("\n\n");
   const combinedText = `${readme}\n\n${skillText}\n\n${evidenceText}`;
@@ -371,21 +439,21 @@ export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDoc
   const extractedSignals = extractCapabilitySignals(combinedText, { files });
 
   return {
-    id: `candidate-${slugify(repo.name)}-${today}`,
+    id: `candidate-${slugify(repo.name)}-${checkedDate}`,
     type: "tool",
     status: "candidate",
     title,
     sourceUrl: repo.html_url,
     sourceName: "GitHub",
     author: repo.owner?.login,
-    discoveredAt: today,
-    lastChecked: today,
+    discoveredAt: checkedDate,
+    lastChecked: checkedDate,
     discoveredFrom: "github",
     summary,
     proposedCategory,
     proposedAgents,
     proposedToolType: type,
-    crawlerProfile: type,
+    crawlerProfile: crawlerProfile || type,
     githubMetadata: {
       owner: repo.owner?.login,
       repo: repo.name,
@@ -404,7 +472,7 @@ export const buildCandidateFromRepo = ({ repo, files = [], readme = "", skillDoc
     })),
     extractedInstall: [],
     extractedSignals,
-    reviewScore: scoreRepo({ repo, readme: combinedText, files, type }),
+    reviewScore: scoreRepo({ repo, readme: combinedText, files, type, today: `${checkedDate}T00:00:00Z` }),
     reviewNotes: "Generated from GitHub metadata and README. Human review required before publishing.",
     publishReason: summary,
   };
@@ -436,10 +504,11 @@ const fetchRepoFile = async ({ owner, repo, path }) => {
   return data.encoding === "base64" && data.content ? decodeBase64(data.content) : "";
 };
 
-export const fetchRepoCandidate = async (githubUrl) => {
+export const fetchRepoCandidate = async (githubUrl, { crawlerProfile } = {}) => {
   const { owner, repo } = parseGitHubUrl(githubUrl);
   const repoData = await fetchJson(`https://api.github.com/repos/${owner}/${repo}`);
   assertRepoMeetsStarFloor(repoData);
+  assertRepoIsFresh(repoData);
 
   const tree = await fetchJson(`https://api.github.com/repos/${owner}/${repo}/git/trees/${repoData.default_branch}?recursive=1`);
   const evidenceFiles = selectEvidenceFiles(
@@ -478,13 +547,12 @@ export const fetchRepoCandidate = async (githubUrl) => {
   ].join("\n\n");
   const today = new Date().toISOString().slice(0, 10);
 
-  return buildCandidateFromRepo({ repo: repoData, files, readme: readmeEvidence, skillDocs, evidenceDocs, today });
+  return buildCandidateFromRepo({ repo: repoData, files, readme: readmeEvidence, skillDocs, evidenceDocs, crawlerProfile, today });
 };
 
 export const writeJson = async (relativePath, data) => {
   const file = new URL(relativePath, root);
-  await fs.mkdir(new URL(".", file), { recursive: true });
-  await fs.writeFile(file, `${JSON.stringify(data, null, 2)}\n`);
+  await atomicWriteJsonFile(file, data);
 };
 
 const runCli = async () => {

@@ -1,0 +1,170 @@
+{
+  "id": "candidate-xiaozhi-esp32-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Xiaozhi Esp32",
+  "sourceUrl": "https://github.com/78/xiaozhi-esp32",
+  "sourceName": "GitHub",
+  "author": "78",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "An MCP-based chatbot | 一个基于MCP的聊天机器人",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "78",
+    "repo": "xiaozhi-esp32",
+    "fullName": "78/xiaozhi-esp32",
+    "stars": 26595,
+    "license": "MIT",
+    "topics": [
+      "chatbot",
+      "esp32",
+      "mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T06:51:48Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/blufi_zh.md",
+    "docs/blufi.md",
+    "docs/code_style_zh.md",
+    "docs/code_style.md",
+    "docs/custom-board_zh.md",
+    "docs/custom-board.md",
+    "docs/mcp-based-graph.jpg",
+    "docs/mcp-protocol_zh.md",
+    "docs/mcp-protocol.md",
+    "docs/mcp-usage_zh.md",
+    "docs/mcp-usage.md",
+    "docs/mqtt-udp_zh.md",
+    "docs/mqtt-udp.md",
+    "docs/v0/AtomMatrix-echo-base.jpg",
+    "docs/v0/atoms3r-echo-base.jpg",
+    "docs/v0/ESP32-BreadBoard.jpg",
+    "docs/v0/esp32s3-box3.jpg",
+    "docs/v0/lichuang-s3.jpg",
+    "docs/v0/m5stack-cores3.jpg",
+    "docs/v0/magiclick-2p4.jpg",
+    "docs/v0/waveshare-esp32-s3-touch-amoled-1.8.jpg",
+    "docs/v0/wiring.jpg",
+    "docs/v1/atoms3r.jpg",
+    "docs/v1/electron-bot.png",
+    "docs/v1/esp-hi.jpg",
+    "docs/v1/esp-sparkbot.jpg",
+    "docs/v1/espbox3.jpg",
+    "docs/v1/lichuang-s3.jpg",
+    "docs/v1/lilygo-t-circle-s3.jpg",
+    "docs/v1/m5cores3.jpg",
+    "docs/v1/magiclick.jpg",
+    "docs/v1/movecall-cuican-esp32s3.jpg",
+    "docs/v1/movecall-moji-esp32s3.jpg",
+    "docs/v1/otto-robot.png",
+    "docs/v1/sensecap_watcher.jpg",
+    "docs/v1/waveshare.jpg",
+    "docs/v1/wiring2.jpg",
+    "docs/v1/wmnologo_xingzhi_0.96.jpg",
+    "docs/v1/wmnologo_xingzhi_1.54.jpg"
+  ],
+  "readmeExtract": "An MCP based Chatbot (English | [中文](README zh.md) | [日本語](README ja.md)) Introduction 👉 [Human: Give AI a camera vs AI: Instantly finds out the owner hasn't washed hair for three days【bilibili】](https://www.bilibili.com/video/BV1bpjgzKEhd/) 👉 [Handcraft your AI girlfriend, beginner's guide【bilibili】](https://www.bilibili.com/video/BV1XnmFYLEJN/) As a voice interaction entry, the XiaoZhi AI chatbot leverages the AI",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "As a voice interaction entry, the XiaoZhi AI chatbot leverages the AI capabilities of large models like Qwen / DeepSeek, and achieves multi-terminal control via the MCP protocol.",
+    "You can switch to v1 by running git checkout v1.",
+    "Battery display and power management",
+    "Device-side MCP for device control (Speaker, LED, Servo, GPIO, etc.)",
+    "Cloud-side MCP to extend large model capabilities (smart home control, PC desktop operation, knowledge search, email, etc.)",
+    "The firmware connects to the official xiaozhi.me server by default.",
+    "MCP Protocol IoT Control Usage - Learn how to control IoT devices via MCP protocol",
+    "MCP Protocol Interaction Flow - Device-side MCP protocol implementation"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "An MCP-based chatbot | 一个基于MCP的聊天机器人",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Xiaozhi Esp32 is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Relevant to mcp.",
+      "As a voice interaction entry, the XiaoZhi AI chatbot leverages the AI capabilities of large models like Qwen / DeepSeek, and achieves multi-terminal control via the MCP protocol.",
+      "You can switch to v1 by running git checkout v1."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "xiaozhi-esp32",
+  "publishedAt": "2026-05-20"
+}

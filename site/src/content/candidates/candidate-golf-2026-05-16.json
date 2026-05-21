@@ -1,0 +1,181 @@
+{
+  "id": "candidate-golf-2026-05-16",
+  "type": "tool",
+  "status": "published",
+  "title": "Golf",
+  "sourceUrl": "https://github.com/golf-mcp/golf",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "golf-mcp",
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Production-Ready MCP Server Framework • Build, deploy & scale secure AI agent infrastructure • Includes Auth, Observability, Debugger, Telemetry & Runtime • Run real-world MCPs powering AI Agents ",
+  "proposedCategory": [
+    "security"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "golf-mcp",
+    "repo": "golf",
+    "fullName": "golf-mcp/golf",
+    "stars": 824,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-runtime",
+      "ai",
+      "ai-agent",
+      "ai-agent-tools",
+      "ai-agents",
+      "ai-platform",
+      "aiagents",
+      "auth",
+      "authentication",
+      "authorization",
+      "mcp",
+      "mcp-framework",
+      "mcp-server",
+      "mcp-servers",
+      "mcp-tools",
+      "mcps",
+      "observability",
+      "python"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-08T14:44:01Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"./golf banner.png\" alt=\"Golf Banner\" <br <h1 align=\"center\" <br <span style=\"font size: 80px;\" ⛳ Golf</span <br </h1 <h3 align=\"center\" Easiest framework for building MCP servers </h3 <br <p <a href=\"https://opensource.org/licenses/Apache 2.0\" <img src=\"https://img.shields.io/badge/License Apache%202.0 blue.svg\" alt=\"License\" </a <a href=\"https://github.com/golf mcp/golf/pulls\" <img src=",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Easiest framework for building MCP servers",
+    "Golf is a framework designed to streamline the creation of MCP server applications.",
+    "It allows developers to define server's capabilities—tools, prompts, and resources—as simple Python files within a conventional directory structure.",
+    "Golf then automatically discovers, parses, and compiles these components into a runnable MCP server, minimizing boilerplate and accelerating development.",
+    "Focus on implementing your agent's logic while Golf handles authentication, monitoring, and server infrastructure.",
+    "This will start the MCP server, typically on (configurable in golf.json).",
+    "tools/, resources/, prompts/: Contain your Python files, each defining a single component.",
+    "These directories can also contain nested subdirectories to further organize your components (e.g., tools/payments/charge.py)."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"security\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Production-Ready MCP Server Framework • Build, deploy & scale secure AI agent infrastructure • Includes Auth, Observability, Debugger, Telemetry & Runtime • Run real-world MCPs powering AI Agents ",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "security",
+      "devops",
+      "monitoring"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "security",
+    "devops",
+    "monitoring"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 4,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Detected scope: boilerplate.",
+    "Alternative capabilities: cli.",
+    "LLM: agent-framework + [mcp, cli] — It is a framework for building MCP servers, providing automatic discovery and compilation of Python-based components into runnable MCP servers."
+  ],
+  "classificationAlternatives": [
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Golf is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with devops workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to security.",
+      "Easiest framework for building MCP servers"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:golf-mcp/golf",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "golf",
+  "publishedAt": "2026-05-18"
+}

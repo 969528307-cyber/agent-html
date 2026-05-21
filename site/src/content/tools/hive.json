@@ -1,0 +1,76 @@
+{
+  "id": "hive",
+  "name": "Hive",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "Multi-Agent Harness for Production AI",
+  "description": "Multi-Agent Harness for Production AI",
+  "category": [
+    "agent-framework"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/aden-hive/hive",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/aden-hive/hive",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/aden-hive/hive#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/aden-hive/hive#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/aden-hive/hive/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The agent harness for production workloads — state management, failure recovery, observability, and human oversight so your agents actually run.",
+    "By simply defining your objective, the runtime compiles a strict, graph-based execution DAG that safely coordinates specialized agents to execute concurrent tasks in parallel.",
+    "✅ Multi-Agent Coordination for parallel task execution",
+    "✅ General Compute Use and Browser Use with Native Extension",
+    "Visit adenhq.com for complete documentation, examples, and guides.",
+    "Visit HoneyComb to see what jobs are being automated by AI.",
+    "It’s a stock market for jobs, driven by our community’s AI agent progress.",
+    "Hive is the multi-agent harness layer for teams moving AI agents from prototype to production."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T13:44:11Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/aden-hive/hive",
+  "repoUrl": "https://github.com/aden-hive/hive",
+  "license": "Apache-2.0",
+  "stars": 10359,
+  "lastUpdated": "2026-05-15T13:44:11Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

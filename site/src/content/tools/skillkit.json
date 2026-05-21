@@ -1,0 +1,80 @@
+{
+  "id": "skillkit",
+  "name": "Skillkit",
+  "type": "skill",
+  "status": "published",
+  "summary": "Supercharge AI coding agents with portable skills. Install, translate & share skills across Claude Code, Cursor, Codex, Copilot & 40 more",
+  "description": "Supercharge AI coding agents with portable skills. Install, translate & share skills across Claude Code, Cursor, Codex, Copilot & 40 more",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Trae",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/rohitg00/skillkit",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/rohitg00/skillkit",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/rohitg00/skillkit#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/rohitg00/skillkit#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/rohitg00/skillkit/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Every AI coding agent wants skills.",
+    "Every agent invented a different format.",
+    "Claude Code SKILL.md .claude/skills/",
+    "Copilot Markdown .github/skills/",
+    "Windsurf Markdown .windsurf/skills/",
+    "You rewrite the same skill for each agent.",
+    "SkillKit is the package manager for AI agent skills.",
+    "Pick your agent (your detected agent is pre-selected), confirm, done."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-11T10:05:18Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/rohitg00/skillkit",
+  "repoUrl": "https://github.com/rohitg00/skillkit",
+  "license": "Apache-2.0",
+  "stars": 1121,
+  "lastUpdated": "2026-05-11T10:05:18Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

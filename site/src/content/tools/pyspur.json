@@ -1,0 +1,75 @@
+{
+  "id": "pyspur",
+  "name": "Pyspur",
+  "type": "workflow",
+  "status": "published",
+  "summary": "A visual playground for agentic workflows: Iterate over your agents 10x faster",
+  "description": "A visual playground for agentic workflows: Iterate over your agents 10x faster",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/PySpur-Dev/pyspur",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/PySpur-Dev/pyspur",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/PySpur-Dev/pyspur#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/PySpur-Dev/pyspur#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/PySpur-Dev/pyspur/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Iterate over your agents 10x faster.",
+    "AI engineers use PySpur to iterate over AI agents visually without reinventing the wheel.",
+    "AI engineers today face three problems of building agents:",
+    "Workflow Blindspots: Lack of visibility into step interactions causing hidden failures and confusion.",
+    "We launched a graphic design agent early 2024 and quickly reached thousands of users, yet, struggled with the lack of its reliability and existing debugging tools.",
+    "Solution: A playground for agents that saves time",
+    "Step 2: Build the agent in Python code or via UI",
+    "👤 Human in the Loop: Persistent workflows that wait for human approval."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-07-20T19:18:16Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/PySpur-Dev/pyspur",
+  "repoUrl": "https://github.com/PySpur-Dev/pyspur",
+  "license": "Apache-2.0",
+  "stars": 5721,
+  "lastUpdated": "2025-07-20T19:18:16Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -6,6 +6,42 @@ const candidates = (await getCollection("candidates")).sort((a, b) =>
   b.data.discoveredAt.localeCompare(a.data.discoveredAt)
 );
 
+const moduleConfigs = [
+  {
+    type: "tool",
+    label: "Tools",
+    title: "Tools Candidates",
+    description: "MCP, Skill, CLI, Workflow, SDK, and tool-like repositories. Uses the Tools GitHub crawler only.",
+    command: "npm run discover:tools -- --limit 80",
+  },
+  {
+    type: "agent",
+    label: "Agents",
+    title: "Agent Candidates",
+    description: "Agent products, coding assistants, frameworks, official docs, GitHub sources, and ecosystem capability updates.",
+    command: "npm run discover:agents -- --limit 20",
+  },
+  {
+    type: "learn",
+    label: "Learn",
+    title: "Learn Candidates",
+    description: "Teaching topics, concept explainers, decision guides, glossary pages, and learning paths.",
+    command: "npm run discover:learn -- --limit 20",
+  },
+  {
+    type: "signal",
+    label: "Signals",
+    title: "Signal Candidates",
+    description: "High-quality ecosystem signals, Chinese-to-English translation candidates, releases, and source-backed trends.",
+    command: "npm run discover:signals -- --limit 20",
+  },
+] as const;
+
+const candidatesByType = moduleConfigs.reduce<Record<string, typeof candidates>>((groups, module) => {
+  groups[module.type] = candidates.filter((candidate) => candidate.data.type === module.type);
+  return groups;
+}, {});
+
 const statusCounts = candidates.reduce<Record<string, number>>((counts, candidate) => {
   counts[candidate.data.status] = (counts[candidate.data.status] ?? 0) + 1;
   return counts;
@@ -22,6 +58,95 @@ const formatStars = (stars?: number) => {
   return `${stars} stars`;
 };
 
+const formatCategories = (categories?: string[]) => {
+  if (!categories?.length) return "no use category";
+  return categories.slice(0, 4).join(", ");
+};
+
+const routeFor = (candidate: (typeof candidates)[number]) =>
+  candidate.data.toolProfile?.routingDecision ?? candidate.data.routingDecision ?? "review_required";
+
+const enrichmentFor = (candidate: (typeof candidates)[number]) =>
+  candidate.data.enrichmentDecision ?? "not_enriched";
+
+const profileTagsFor = (candidate: (typeof candidates)[number]) => {
+  if (candidate.data.type === "tool") {
+    const profile = candidate.data.toolProfile;
+    return [
+      profile?.capabilityType ?? candidate.data.capabilityType ?? candidate.data.proposedToolType ?? "untyped",
+      profile?.scope ?? candidate.data.scope ?? "scope unknown",
+      profile?.confidence ?? candidate.data.classificationConfidence ?? "confidence unknown",
+      routeFor(candidate),
+      enrichmentFor(candidate),
+    ];
+  }
+
+  if (candidate.data.type === "agent") {
+    const profile = candidate.data.agentProfile;
+    return [
+      profile?.region ?? "region unknown",
+      profile?.interfaceType?.join(", ") || "interface unknown",
+      profile?.supportsMcp ? "MCP" : "MCP unknown",
+      profile?.supportsSkills ? "Skills" : "Skills unknown",
+    ];
+  }
+
+  if (candidate.data.type === "learn") {
+    const profile = candidate.data.learnProfile;
+    return [
+      profile?.topic ?? "topic unknown",
+      profile?.path ?? "path unknown",
+      profile?.difficulty ?? "difficulty unknown",
+      profile?.readingTime ?? "reading time unknown",
+    ];
+  }
+
+  const profile = candidate.data.signalProfile;
+  return [
+    profile?.sourceName ?? candidate.data.sourceName ?? "source unknown",
+    profile?.permissionStatus ?? candidate.data.permissionStatus ?? "permission unknown",
+    profile?.translationMode ?? "full_english_translation",
+  ];
+};
+
+const evidenceTagsFor = (candidate: (typeof candidates)[number]) => {
+  if (candidate.data.type === "tool") {
+    return [
+      formatStars(candidate.data.githubMetadata?.stars),
+      candidate.data.permissionStatus ?? candidate.data.githubMetadata?.license ?? "permission unknown",
+      formatCategories(candidate.data.toolProfile?.useCategory ?? candidate.data.useCategory),
+      `${candidate.data.detectedFiles.length} evidence files`,
+      `${candidate.data.extractedSignals.length} capability signals`,
+    ];
+  }
+
+  if (candidate.data.type === "agent") {
+    const profile = candidate.data.agentProfile;
+    return [
+      profile?.vendor ?? candidate.data.author ?? "vendor unknown",
+      profile?.sourceKinds?.join(", ") || "source kind unknown",
+      `${candidate.data.extractedSignals.length} capability signals`,
+    ];
+  }
+
+  if (candidate.data.type === "learn") {
+    const profile = candidate.data.learnProfile;
+    return [
+      `${profile?.relatedTools?.length ?? 0} related tools`,
+      `${profile?.relatedAgents?.length ?? 0} related agents`,
+      `${candidate.data.extractedSignals.length} teaching signals`,
+    ];
+  }
+
+  const profile = candidate.data.signalProfile;
+  return [
+    profile?.originalPublishedAt ? `published ${profile.originalPublishedAt}` : "source date unknown",
+    `${profile?.relatedTools?.length ?? 0} related tools`,
+    `${profile?.relatedAgents?.length ?? 0} related agents`,
+    `${candidate.data.extractedSignals.length} signal notes`,
+  ];
+};
+
 const slugify = (value: string) =>
   value
     .toLowerCase()
@@ -31,7 +156,41 @@ const slugify = (value: string) =>
 const publicHref = (candidate: (typeof candidates)[number]) => {
   const publishedId = candidate.data.publishedAs || slugify(candidate.data.title);
   if (candidate.data.type === "agent") return `/for/${publishedId}`;
+  if (candidate.data.type === "learn") return `/learn/${publishedId}`;
+  if (candidate.data.type === "signal") return `/signals/${publishedId}`;
   return `/item/${publishedId}`;
+};
+
+const isPublished = (candidate: (typeof candidates)[number]) => candidate.data.status === "published";
+
+const canPublishNow = (candidate: (typeof candidates)[number]) => {
+  if (isPublished(candidate) || ["rejected", "archived"].includes(candidate.data.status)) return false;
+  const decision = candidate.data.enrichmentDecision;
+  if (["reject_not_tool", "reject_low_signal", "route_to_learn", "route_to_signal"].includes(decision ?? "")) return false;
+  return ["tool", "agent", "learn", "signal"].includes(candidate.data.type);
+};
+
+type CandidateEntry = (typeof candidates)[number];
+
+const dateKeyFor = (candidate: CandidateEntry) => candidate.data.discoveredAt || candidate.data.lastChecked || "unknown-date";
+
+const groupedByDiscoveredDate = (items: CandidateEntry[]) => {
+  const groups = new Map<string, CandidateEntry[]>();
+  for (const item of items) {
+    const key = dateKeyFor(item);
+    groups.set(key, [...(groups.get(key) ?? []), item]);
+  }
+  return [...groups.entries()].map(([date, entries]) => ({ date, entries }));
+};
+
+const statusSummaryFor = (items: CandidateEntry[]) => {
+  const counts = items.reduce<Record<string, number>>((summary, item) => {
+    summary[item.data.status] = (summary[item.data.status] ?? 0) + 1;
+    return summary;
+  }, {});
+  return Object.entries(counts)
+    .map(([status, count]) => `${count} ${status}`)
+    .join(" · ");
 };
 ---
 
@@ -45,12 +204,18 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
       and target content type visible before it can move into the public site.
     </p>
     <div class="hero-actions">
-      <a class="small-button" href="#queue">Review candidate queue</a>
-      <code>npm run discover:github -- --limit 20 --dry-run</code>
+      <a class="small-button" href="#tool">Review module queues</a>
+      <code>npm run discover:tools -- --limit 80</code>
     </div>
   </section>
 
   <section class="page stats">
+    {moduleConfigs.map((module) => (
+      <a href={`#${module.type}`}>
+        <span>{candidatesByType[module.type]?.length ?? 0}</span>
+        <p>{module.label}</p>
+      </a>
+    ))}
     {Object.entries(statusCounts).map(([status, count]) => (
       <div>
         <span>{count}</span>
@@ -62,53 +227,111 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
   <section class="section page help-panel">
     <div>
       <div class="eyebrow">How this page works</div>
-      <h2>Open a candidate to inspect what it helps with, or publish directly from the queue.</h2>
+      <h2>Each module has its own collector, fields, and review lane.</h2>
     </div>
     <ol>
-      <li>Click <code>Review</code> to inspect capability signals, source quality, and official links.</li>
-      <li>Click <code>Publish now</code> when the tool value is clear enough for the public directory.</li>
-      <li>The public page links users back to official setup docs instead of mirroring generated commands.</li>
+      <li>Tools use the GitHub tools crawler and tool-only capability classification.</li>
+      <li>Agents, Learn, and Signals use separate collectors and profile fields.</li>
+      <li>Click <code>Publish now</code> only after the module-specific evidence makes sense.</li>
     </ol>
   </section>
 
-  <section class="section page candidate-list" id="queue">
-    {
-      candidates.map((candidate) => (
-        <article class="candidate-row" id={candidate.id}>
-          <a class="candidate-main" href={`/internal/candidates/${candidate.id}`}>
-            <div class="row-top">
-              <span>{candidate.data.type}</span>
-              <span>{candidate.data.status}</span>
-              <span>score {averageScore(candidate).toFixed(1)}</span>
-              <span>{candidate.data.proposedToolType ?? "untyped"}</span>
+  {
+    moduleConfigs.map((module) => {
+      const moduleCandidates = candidatesByType[module.type] ?? [];
+      const dateGroups = groupedByDiscoveredDate(moduleCandidates);
+      return (
+        <section class="section page module-queue" id={module.type}>
+          <div class="module-head">
+            <div>
+              <div class="eyebrow">{module.label} queue</div>
+              <h2>{module.title}</h2>
+              <p>{module.description}</p>
             </div>
-            <h2>{candidate.data.title}</h2>
-            <p>{candidate.data.summary}</p>
-            <div class="evidence-line">
-              <span>{formatStars(candidate.data.githubMetadata?.stars)}</span>
-              <span>{candidate.data.permissionStatus ?? candidate.data.githubMetadata?.license ?? "permission unknown"}</span>
-              <span>{candidate.data.detectedFiles.length} evidence files</span>
-              <span>{candidate.data.extractedSignals.length} capability signals</span>
-            </div>
-          </a>
-          <div class="row-actions">
-            <a href={`/internal/candidates/${candidate.id}`}>Review</a>
-            <button
-              class="publish-button"
-              type="button"
-              data-publish-candidate={candidate.id}
-              data-public-href={publicHref(candidate)}
-            >
-              Publish now
-            </button>
+            <code>{module.command}</code>
           </div>
-        </article>
-      ))
-    }
-  </section>
+
+          <div class="candidate-list">
+            {moduleCandidates.length === 0 && (
+              <article class="empty-row">
+                <h3>No {module.label.toLowerCase()} candidates yet.</h3>
+                <p>Run this module's collector when you are ready to fill this queue.</p>
+              </article>
+            )}
+
+            {dateGroups.map((group) => (
+              <section class="date-group" id={`${module.type}-${group.date}`}>
+                <header class="date-head">
+                  <div>
+                    <span>Discovered</span>
+                    <h3>{group.date}</h3>
+                  </div>
+                  <p>{group.entries.length} candidates · {statusSummaryFor(group.entries)}</p>
+                </header>
+
+                <div class="date-list">
+                  {group.entries.map((candidate) => (
+                    <article class:list={["candidate-row", { "is-published": isPublished(candidate) }]} id={candidate.id}>
+                      <a class="candidate-main" href={`/internal/candidates/${candidate.id}`}>
+                        <div class="row-top">
+                          <span>{candidate.data.type}</span>
+                          <span>{candidate.data.status}</span>
+                          <span>score {averageScore(candidate).toFixed(1)}</span>
+                          <span class={`enrich-${enrichmentFor(candidate)}`}>{enrichmentFor(candidate)}</span>
+                          {profileTagsFor(candidate).map((tag) => (
+                            <span class={tag === routeFor(candidate) ? `route-${routeFor(candidate)}` : undefined}>{tag}</span>
+                          ))}
+                        </div>
+                        <h2>{candidate.data.title}</h2>
+                        <p>{candidate.data.summary}</p>
+                        {candidate.data.enrichment?.whatIsIt && <p class="enrichment-line">{candidate.data.enrichment.whatIsIt}</p>}
+                        <div class="evidence-line">
+                          {evidenceTagsFor(candidate).map((tag) => <span>{tag}</span>)}
+                        </div>
+                      </a>
+                      <div class="row-actions">
+                        <a href={`/internal/candidates/${candidate.id}`}>Review</a>
+                        {
+                          isPublished(candidate) ? (
+                            <a class="published-link" href={publicHref(candidate)}>
+                              Published
+                            </a>
+                          ) : canPublishNow(candidate) ? (
+                            <button
+                              class="publish-button"
+                              type="button"
+                              data-publish-candidate={candidate.id}
+                              data-public-href={publicHref(candidate)}
+                            >
+                              Publish now
+                            </button>
+                          ) : (
+                            <button class="publish-button muted" type="button" disabled>
+                              Not publishable
+                            </button>
+                          )
+                        }
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        </section>
+      );
+    })
+  }
 </BaseLayout>
 
 <script>
+  const getCookie = (name: string) =>
+    document.cookie
+      .split(";")
+      .map((cookie) => cookie.trim())
+      .find((cookie) => cookie.startsWith(`${name}=`))
+      ?.slice(name.length + 1) || "";
+
   const publishCandidate = async (button: HTMLButtonElement) => {
     const candidateId = button.dataset.publishCandidate;
     const publicHref = button.dataset.publicHref;
@@ -121,7 +344,10 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
     try {
       const response = await fetch("/internal-api/publish-candidate", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRF-Token": decodeURIComponent(getCookie("agentkit_internal_csrf")),
+        },
         body: JSON.stringify({ candidateId }),
       });
       const rawBody = await response.text();
@@ -209,7 +435,8 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
     margin-top: 8px;
   }
 
-  .stats div {
+  .stats div,
+  .stats a {
     min-width: 150px;
     padding: 18px;
     border: 1px solid var(--line);
@@ -258,9 +485,58 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
     color: var(--sage);
   }
 
+  .module-queue {
+    scroll-margin-top: 120px;
+  }
+
+  .module-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.52fr);
+    gap: 18px;
+    align-items: end;
+    margin-bottom: 18px;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background:
+      radial-gradient(circle at 100% 0%, rgb(167 207 164 / 0.1), transparent 18rem),
+      var(--paper);
+  }
+
+  .module-head p {
+    max-width: 680px;
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .module-head code {
+    display: block;
+    padding: 12px 14px;
+    overflow: auto;
+    color: var(--sage);
+    font-size: 12px;
+    background: var(--sage-soft);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+  }
+
   .candidate-list {
     display: grid;
-    gap: 14px;
+    gap: 20px;
+  }
+
+  .empty-row {
+    padding: 22px;
+    border: 1px dashed var(--line);
+    border-radius: 24px;
+    background: rgb(238 244 238 / 0.018);
+  }
+
+  .empty-row p {
+    margin-top: 8px;
+    color: var(--muted);
   }
 
   .candidate-row {
@@ -272,6 +548,53 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
     border: 1px solid var(--line);
     border-radius: 24px;
     background: var(--paper);
+  }
+
+  .date-group {
+    display: grid;
+    gap: 12px;
+    scroll-margin-top: 120px;
+  }
+
+  .date-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    align-items: end;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background:
+      linear-gradient(90deg, rgb(167 207 164 / 0.08), transparent),
+      rgb(238 244 238 / 0.025);
+  }
+
+  .date-head span {
+    color: var(--sage);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .date-head h3 {
+    margin-top: 4px;
+    color: var(--ink);
+    font-size: 22px;
+    letter-spacing: -0.04em;
+  }
+
+  .date-head p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: right;
+    text-transform: capitalize;
+  }
+
+  .date-list {
+    display: grid;
+    gap: 12px;
   }
 
   .candidate-main {
@@ -299,11 +622,52 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
     text-transform: uppercase;
   }
 
+  .row-top .route-auto_publish {
+    color: #111811;
+    background: var(--sage);
+  }
+
+  .row-top .route-review_required {
+    color: var(--clay);
+    background: rgb(225 166 122 / 0.12);
+  }
+
+  .row-top .route-auto_reject {
+    color: var(--faint);
+    background: rgb(238 244 238 / 0.05);
+  }
+
+  .row-top .enrich-ready_to_publish {
+    color: #111811;
+    background: var(--sage);
+  }
+
+  .row-top .enrich-needs_editor_review {
+    color: var(--clay);
+    background: rgb(225 166 122 / 0.12);
+  }
+
+  .row-top .enrich-route_to_learn,
+  .row-top .enrich-route_to_signal {
+    color: #c9d8ff;
+    background: rgb(135 165 255 / 0.12);
+  }
+
+  .row-top .enrich-reject_not_tool,
+  .row-top .enrich-reject_low_signal {
+    color: var(--faint);
+    background: rgb(238 244 238 / 0.05);
+  }
+
   .candidate-row p {
     margin-top: 8px;
     color: var(--muted);
     font-size: 14px;
     line-height: 1.65;
+  }
+
+  .candidate-row .enrichment-line {
+    color: var(--ink);
   }
 
   .row-actions {
@@ -329,7 +693,7 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
 
   .publish-button,
   .published-link {
-    color: #08100b;
+    color: #111811;
     font-size: 12px;
     background: var(--sage);
     border: 0;
@@ -337,6 +701,11 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
 
   .publish-button.published {
     background: var(--clay);
+  }
+
+  .publish-button.muted {
+    color: var(--faint);
+    background: rgb(238 244 238 / 0.06);
   }
 
   .evidence-line {
@@ -366,8 +735,18 @@ const publicHref = (candidate: (typeof candidates)[number]) => {
 
   @media (max-width: 760px) {
     .candidate-row,
-    .help-panel {
+    .help-panel,
+    .module-head {
       grid-template-columns: 1fr;
+    }
+
+    .date-head {
+      align-items: start;
+      flex-direction: column;
+    }
+
+    .date-head p {
+      text-align: left;
     }
   }
 </style>

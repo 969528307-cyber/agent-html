@@ -1,0 +1,158 @@
+{
+  "id": "candidate-claude-code-config-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Code Config",
+  "sourceUrl": "https://github.com/jarrodwatts/claude-code-config",
+  "sourceName": "GitHub",
+  "author": "jarrodwatts",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "My personal Claude Code configuration - rules, hooks, agents, skills, and commands",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "jarrodwatts",
+    "repo": "claude-code-config",
+    "fullName": "jarrodwatts/claude-code-config",
+    "stars": 1038,
+    "topics": [
+      "ai",
+      "claude",
+      "claude-code",
+      "developer-tools",
+      "dotfiles"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-01-21T12:43:33Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/planning-with-files/SKILL.md",
+    "skills/react-useeffect/SKILL.md",
+    "skills/rigorous-coding/SKILL.md",
+    "skills/vercel-react-best-practices/SKILL.md",
+    "skills/web-design-guidelines/SKILL.md",
+    "CLAUDE.md",
+    "skills/vercel-react-best-practices/AGENTS.md"
+  ],
+  "readmeExtract": "Claude Code Config my personal claude code configuration mostly not created by me, but sourced from many talented people in the community. Installation Option 1: Copy Paste into Claude Code (No Git Required) Copy the prompt from [INSTALL.md](INSTALL.md) and paste it into Claude Code. Claude will fetch and install all config files automatically. Option 2: Git Clone Option 3: Selective Install Contents Rules ( .claude/",
+  "skillExtracts": [
+    {
+      "path": "skills/planning-with-files/SKILL.md",
+      "extract": "name: planning with files description: Transforms workflow to use Manus style persistent markdown files for planning, progress tracking, and knowledge storage. Use when starting complex tasks, multi step projects, research tasks, or when the user mentions planning, organizing work, tracking progress, or wants structured output. Planning with Files Work like Manus: Use persistent markdown files as your \"working memory"
+    },
+    {
+      "path": "skills/react-useeffect/SKILL.md",
+      "extract": "name: react useeffect description: React useEffect best practices from official docs. Use when writing/reviewing useEffect, useState for derived values, data fetching, or state synchronization. Teaches when NOT to use Effect and better alternatives. You Might Not Need an Effect Effects are an escape hatch from React. They let you synchronize with external systems. If there is no external system involved, you shouldn'"
+    },
+    {
+      "path": "skills/rigorous-coding/SKILL.md",
+      "extract": "name: rigorous coding description: Apply rigorous coding standards. Use when writing, implementing, or reviewing code. Do not write code before stating assumptions. Do not claim correctness you haven't verified. Do not handle only the happy path. Under what conditions does this work?"
+    },
+    {
+      "path": "skills/vercel-react-best-practices/SKILL.md",
+      "extract": "name: vercel react best practices description: React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements. Vercel React Best Practices Comprehensive p"
+    },
+    {
+      "path": "skills/web-design-guidelines/SKILL.md",
+      "extract": "name: web design guidelines description: Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\". argument hint: <file or pattern Web Interface Guidelines Review files for compliance with Web Interface Guidelines. How It Works 1. Fetch the latest guidelines from the source URL below 2. Read "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Option 1: Copy-Paste into Claude Code (No Git Required)",
+    "Model-invoked capabilities Claude applies automatically.",
+    "Custom subagents for specialized tasks.",
+    "codebase-search Find files and implementations",
+    "open-source-librarian Research OSS with citations",
+    "tech-docs-writer Create technical documentation",
+    "Commands (.claude/commands/)",
+    "Scripts triggered by Claude Code events."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "My personal Claude Code configuration - rules, hooks, agents, skills, and commands",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Code Config is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Option 1: Copy-Paste into Claude Code (No Git Required)",
+      "Model-invoked capabilities Claude applies automatically.",
+      "Custom subagents for specialized tasks."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-code-config",
+  "publishedAt": "2026-05-18"
+}

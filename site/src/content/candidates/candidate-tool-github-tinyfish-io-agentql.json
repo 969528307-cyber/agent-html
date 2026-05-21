@@ -1,0 +1,179 @@
+{
+  "id": "candidate-tool-github-tinyfish-io-agentql",
+  "type": "tool",
+  "status": "published",
+  "title": "Agentql",
+  "sourceUrl": "https://github.com/tinyfish-io/agentql",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "tinyfish-io",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "AgentQL is a suite of tools for connecting your AI to the web. Featuring a query language and Playwright integrations for interacting with elements and extracting data quickly, precisely, and at scale. Includes REST API, Python and JavaScript SDKs, browser debugger.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "tinyfish-io",
+    "repo": "agentql",
+    "fullName": "tinyfish-io/agentql",
+    "stars": 1364,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "ai",
+      "aiagent",
+      "automation",
+      "javascript",
+      "playwright",
+      "python",
+      "rpa",
+      "scraping",
+      "web",
+      "web-scraping",
+      "web-scraping-colabs",
+      "web-scraping-javascript",
+      "web-scraping-python",
+      "web-scrapping",
+      "webagent"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T06:01:45Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <h1 align=\"center\" <a href=\"https://agentql.com\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://github.com/user attachments/assets/972700ef b4e6 49e9 a282 40994d9cb823\" <img alt=\"AgentQL\" src=\"https://github.com/user attachments/assets/893d8117 258c 4cf9 8fd8 5c850586e8d4\" width=\"500\" </picture </a </h1 <h2 AgentQL connects LLMs and AI agents to the entire web</h2 <p align=\"",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AgentQL connects LLMs and AI agents to the entire web",
+    "AgentQL is a suite of tools for extracting data and automating workflows on live web sites featuring an AI-powered query language, Python and JavaScript SDKs, a browser-based debugger, and a REST API endpoint.",
+    "AgentQL's natural language selectors find elements intuitively based on the content of the web page and work across similar web sites, self-healing as UI changes over time.",
+    "Playwright AgentQL's Python SDK and JavaScript SDK seamlessly integrates with Playwright for advanced automation and testing.",
+    "Python SDK for running automation and scraping scripts with AgentQL queries in Python.",
+    "JavaScript SDK for running automation and scraping scripts with AgentQL queries in JavaScript.",
+    "Integrations with agent frameworks and automation tools like Langchain and Zapier and our MCP server.",
+    "Debugger Browser Extension lets you debug and finesse queries in real-time on live sites."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "AgentQL is a suite of tools for connecting your AI to the web. Featuring a query language and Playwright integrations for interacting with elements and extracting data quickly, precisely, and at scale. Includes REST API, Python and JavaScript SDKs, browser debugger.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "browser",
+      "data",
+      "media",
+      "testing"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "browser",
+    "data",
+    "media",
+    "testing"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 6,
+    "agent-framework": 8,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent framework language detected.",
+    "SDK or library language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: mcp, workflow, sdk.",
+    "LLM: sdk + [mcp] — AgentQL is a suite of tools centered around an AI-powered query language and SDKs for Python and JavaScript, making it primarily an SDK for web automation and data extraction."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "workflow",
+    "sdk"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Agentql is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with browser workflows.",
+      "Helps with data workflows.",
+      "Helps with media workflows.",
+      "Helps with testing workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:tinyfish-io/agentql",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agentql",
+  "publishedAt": "2026-05-18"
+}

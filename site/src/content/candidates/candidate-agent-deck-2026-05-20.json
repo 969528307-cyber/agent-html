@@ -1,0 +1,172 @@
+{
+  "id": "candidate-agent-deck-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Agent Deck",
+  "sourceUrl": "https://github.com/asheshgoplani/agent-deck",
+  "sourceName": "GitHub",
+  "author": "asheshgoplani",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Terminal session manager for AI coding agents. One TUI for Claude, Gemini, OpenCode, Codex, and more.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "asheshgoplani",
+    "repo": "agent-deck",
+    "fullName": "asheshgoplani/agent-deck",
+    "stars": 2454,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "ai-agents",
+      "ai-coding-assistant",
+      "aider",
+      "bubble-tea",
+      "claude-code",
+      "cli",
+      "codex",
+      "developer-tools",
+      "discord",
+      "gemini-cli",
+      "golang",
+      "mcp",
+      "productivity",
+      "session-manager",
+      "terminal",
+      "tmux",
+      "tui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T21:39:04Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/feature-copilot/copilot-session-issues-and-improvements.md",
+    "docs/internal/path-selector-ux-rfc.md",
+    "docs/internal/state-db-schema.md",
+    "docs/perf-budget-suite.md",
+    "docs/plans/2026-02-14-vagrant-mode-design.md",
+    "docs/rfc/EVALUATOR_HARNESS.md",
+    "docs/rfc/PLUGIN_ATTACH.md",
+    "docs/session-id-lifecycle.md",
+    "docs/SESSION-PERSISTENCE-SPEC.md",
+    "cmd/agent-deck/assets/skills/watcher-creator/SKILL.md",
+    "skills/agent-deck/SKILL.md",
+    "skills/session-share/SKILL.md",
+    "assets/watcher-templates/CLAUDE.md",
+    "internal/watcher/assets/watcher-templates/CLAUDE.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <! Status Grid Logo <img src=\"site/logo.svg\" alt=\"Agent Deck Logo\" width=\"120\" Agent Deck Your AI agent command center [![GitHub Stars](https://img.shields.io/github/stars/asheshgoplani/agent deck?style=for the badge&logo=github&color=yellow&labelColor=1a1b26)](https://github.com/asheshgoplani/agent deck/stargazers) [![Downloads](https://img.shields.io/github/downloads/asheshgoplani/agent deck/tot",
+  "skillExtracts": [
+    {
+      "path": "cmd/agent-deck/assets/skills/watcher-creator/SKILL.md",
+      "extract": "name: watcher creator description: Guide for creating agent deck watchers conversationally. This skill should be used when users want to set up a new watcher (webhook, ntfy, github, slack, gmail) to route events to a conductor. It walks the user through selecting an adapter type, gathering required settings, generating watcher.toml and clients.json entries, and emits the exact agent deck watcher create command to run"
+    },
+    {
+      "path": "skills/agent-deck/SKILL.md",
+      "extract": "name: agent deck description: Terminal session manager for AI coding agents. Use when user mentions \"agent deck\", \"session\", \"sub agent\", \"MCP attach\", \"git worktree\", or needs to (1) create/start/stop/restart/fork sessions, (2) attach/detach MCPs, (3) manage groups/profiles, (4) get session output, (5) configure agent deck, (6) troubleshoot issues, (7) launch sub agents, or (8) create/manage worktree sessions. Cover"
+    },
+    {
+      "path": "skills/session-share/SKILL.md",
+      "extract": "name: session share description: Share Claude Code sessions between developers. Use when user mentions \"share session\", \"export session\", \"import session\", \"send session to\", \"continue from colleague\", or needs to (1) export current session to file, (2) import session from another developer, (3) hand off work context. Enables private, secure session transfer via direct file sharing. metadata: compatibility: \"claude, "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Your AI agent command center",
+    "Option 1: Claude Code Skill (recommended for Claude Code users)",
+    "Then ask: \"How do I set up MCP pooling?\"",
+    "Option 2: OpenCode (has built-in Claude skill compatibility)",
+    "OpenCode will auto-discover the skill from ~/.claude/skills/.",
+    "Option 3: Any LLM (ChatGPT, Claude, Gemini, etc.)",
+    "Five minutes from zero to a Telegram bot that watches every Claude session you have running.",
+    "From now on every other agent-deck session you run is supervised by a single"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Terminal session manager for AI coding agents. One TUI for Claude, Gemini, OpenCode, Codex, and more.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Agent Deck is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Your AI agent command center",
+      "Option 1: Claude Code Skill (recommended for Claude Code users)",
+      "Then ask: \"How do I set up MCP pooling?\""
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-deck",
+  "publishedAt": "2026-05-20"
+}

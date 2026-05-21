@@ -1,0 +1,79 @@
+{
+  "id": "agency-agents-zh",
+  "name": "Agency Agents Zh",
+  "type": "skill",
+  "status": "published",
+  "summary": "🎭 211 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 16 种工具，覆盖工程/设计/营销/金融等 18 个部门。含 46 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）",
+  "description": "🎭 211 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 16 种工具，覆盖工程/设计/营销/金融等 18 个部门。含 46 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/jnMetaCode/agency-agents-zh",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/jnMetaCode/agency-agents-zh",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/jnMetaCode/agency-agents-zh#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/jnMetaCode/agency-agents-zh#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/jnMetaCode/agency-agents-zh/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "agency-agents 中文版（AI 智能体专家团队）",
+    "215 个即插即用的 AI 专家角色 — 覆盖工程、设计、营销、产品、游戏、安全、金融等 18 个部门。不是通用提示词模板，每个智能体都有独立的人设、专业流程和可交付成果。支持 Claude Code / Cursor / Copilot 等 17 种 AI 编程工具。",
+    "agency-agents 的中文社区版。在完整翻译上游的基础上，新增了 50 个中国市场原创智能体（小红书、抖音、微信、B站、飞书、钉钉等平台运营，以及跨境电商、政务ToG、医疗合规、Qt 工业上位机、机械设计、畜禽养殖档案核对等垂直领域）。",
+    "📖 配套阅读：《AI 编程实战 · 方法论三卷书》 — 10 个 AI 编程工具完整教程 + 真实踩坑 · 这个仓的 215 个角色装进 Claude Code / Cursor / Codex 后，配合方法论效率更高 · 在线书 + PDF · 永久免费",
+    "🆓 6 种免费 LLM Claude Code / Gemini CLI / Copilot / Codex / OpenClaw / Ollama",
+    "💰 3 种 API 接入 DeepSeek / Claude API / OpenAI",
+    "Claude Code 和 GitHub Copilot 可直接安装；其他工具需先运行 ./scripts/convert.sh 转换格式。",
+    "OpenClaw 是目前社区用户最多的集成方式，每个智能体会拆分为三个文件：SOUL.md（身份人设）+ AGENTS.md（业务能力）+ IDENTITY.md（简介），天然支持多智能体协作编排。"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-14T16:09:16Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/jnMetaCode/agency-agents-zh",
+  "repoUrl": "https://github.com/jnMetaCode/agency-agents-zh",
+  "license": "MIT",
+  "stars": 11658,
+  "lastUpdated": "2026-05-14T16:09:16Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

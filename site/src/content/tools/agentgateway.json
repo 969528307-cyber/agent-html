@@ -1,0 +1,73 @@
+{
+  "id": "agentgateway",
+  "name": "Agentgateway",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Next Generation Agentic Proxy for AI Agents and MCP servers",
+  "description": "Next Generation Agentic Proxy for AI Agents and MCP servers",
+  "category": [
+    "devops"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/agentgateway/agentgateway",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/agentgateway/agentgateway",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/agentgateway/agentgateway#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/agentgateway/agentgateway#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/agentgateway/agentgateway/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The first complete connectivity solution for Agentic AI.",
+    "Route traffic to major LLM providers (OpenAI, Anthropic, Gemini, Bedrock, and more) through a unified OpenAI-compatible API with budget and spend controls, prompt enrichment, load balancing, and failover.",
+    "Connect LLMs to tools and external data sources via MCP with tool federation, stdio/HTTP/SSE/Streamable HTTP transports, OpenAPI integration, and OAuth authentication.",
+    "Enable secure agent-to-agent communication using A2A, with capability discovery, modality negotiation, and task collaboration.",
+    "Depending on your deployment environment, check out the following docs:",
+    "agentgateway.dev/docs: For standalone deployments such as local or on-prem.",
+    "These docs are for this upstream agentgateway/agentgateway GitHub project.",
+    "agentgateway.dev/docs/kubernetes/latest: For Kubernetes-based deployments using the built-in Kubernetes controller and Gateway API support."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T17:53:20Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/agentgateway/agentgateway",
+  "repoUrl": "https://github.com/agentgateway/agentgateway",
+  "license": "Apache-2.0",
+  "stars": 2684,
+  "lastUpdated": "2026-05-12T17:53:20Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

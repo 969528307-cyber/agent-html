@@ -1,0 +1,146 @@
+{
+  "id": "candidate-tutor-skills-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Tutor Skills",
+  "sourceUrl": "https://github.com/bevibing/tutor-skills",
+  "sourceName": "GitHub",
+  "author": "bevibing",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A Claude Code skill that turns PDFs, docs, and codebases into Obsidian study vaults",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "bevibing",
+    "repo": "tutor-skills",
+    "fullName": "bevibing/tutor-skills",
+    "stars": 884,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "claude",
+      "claude-code",
+      "claude-skills",
+      "skill",
+      "skills",
+      "skillsmp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-02-28T14:41:09Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/tutor-setup/SKILL.md",
+    "skills/tutor/SKILL.md"
+  ],
+  "readmeExtract": "tutor skill [![License: MIT](https://img.shields.io/badge/License MIT yellow.svg)](LICENSE) [![Claude Code](https://img.shields.io/badge/Claude Code skill blue)](https://docs.anthropic.com/en/docs/claude code) [![Install with npx skills](https://img.shields.io/badge/npx skills add green)](https://github.com/vercel labs/skills) Two [Claude Code](https://docs.anthropic.com/en/docs/claude code) skills that turn any know",
+  "skillExtracts": [
+    {
+      "path": "skills/tutor-setup/SKILL.md",
+      "extract": "name: tutor setup description: Transforms knowledge sources into an Obsidian StudyVault. Two modes: (1) Document Mode — PDF/text/web sources → study notes with practice questions. (2) Codebase Mode — source code project → onboarding vault for new developers. Mode is auto detected based on project markers in CWD. argument hint: \"[source path or url]\" allowed tools: Read, Write, Edit, Glob, Grep, Bash, WebFetch Tutor S"
+    },
+    {
+      "path": "skills/tutor/SKILL.md",
+      "extract": "name: tutor description: Interactive quiz tutor for Obsidian StudyVault learning. Use when the user wants to: (1) Take a diagnostic assessment of their knowledge, (2) Study or review specific sections/topics, (3) Drill weak areas identified in previous sessions, (4) Check their learning progress or dashboard, or says things like \"quiz me\", \"test me\", \"let's study\", \"/tutor\", \"학습\", \"퀴즈\", \"평가\". Tutor Skill Quiz based t"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Two Claude Code skills that turn any knowledge source into an Obsidian StudyVault and then quiz you on it — closing the loop from content to comprehension.",
+    "Skill Command Purpose Input Output",
+    "Requires npx skills — works with Claude Code, Cursor, Windsurf, and more.",
+    "D9 Self-Review Verify against quality checklist",
+    "C9 Self-Review Verify against quality checklist",
+    "Hard-mode review All areas 🟩/🟦 Challenge mastered material",
+    "Claude Code CLI installed and configured",
+    "allowed-tools: Read, Write, Edit, Glob, Grep, Bash, WebFetch"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A Claude Code skill that turns PDFs, docs, and codebases into Obsidian study vaults",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Tutor Skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Two Claude Code skills that turn any knowledge source into an Obsidian StudyVault and then quiz you on it — closing the loop from content to comprehension.",
+      "Skill Command Purpose Input Output"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "tutor-skills",
+  "publishedAt": "2026-05-20"
+}

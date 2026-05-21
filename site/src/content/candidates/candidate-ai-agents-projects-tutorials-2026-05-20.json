@@ -1,0 +1,137 @@
+{
+  "id": "candidate-ai-agents-projects-tutorials-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "AI Agents Projects Tutorials",
+  "sourceUrl": "https://github.com/Marktechpost/AI-Agents-Projects-Tutorials",
+  "sourceName": "GitHub",
+  "author": "Marktechpost",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Multi-agent systems, memory, planning, reasoning loops",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Hermes Agent",
+    "OpenClaw"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "Marktechpost",
+    "repo": "AI-Agents-Projects-Tutorials",
+    "fullName": "Marktechpost/AI-Agents-Projects-Tutorials",
+    "stars": 2599,
+    "topics": [
+      "agent-skills",
+      "agentic-ai",
+      "agentic-ai-development",
+      "agentic-coding",
+      "agentic-engineering",
+      "agentic-framework",
+      "agentic-rag",
+      "agentic-workflow",
+      "ai",
+      "aiagent",
+      "aiagents"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T05:30:31Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "🤝 Show your support give a ⭐️ if you liked the content Star History [![Star History Chart](https://api.star history.com/svg?repos=Marktechpost/AI Tutorial Codes Included&type=date&legend=top left)](https://www.star history.com/ Marktechpost/AI Tutorial Codes Included&type=date&legend=top left) Agentic AI and Agents Tutorials/Implementations and Notebooks ▶ How to Build Repository Level Code Intelligence with Repowis",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agentic AI and Agents Tutorials/Implementations and Notebooks",
+    "▶ Build a Hybrid-Memory Autonomous Agent with Modular Architecture and Tool Dispatch Using OpenAI Codes Tutorial",
+    "▶ How to Build an Advanced Agentic AI System with Planning, Tool Calling, Memory, and Self-Critique Using OpenAI API Codes Tutorial",
+    "▶ A Coding Implementation to Build Agent-Native Memory Infrastructure with Memori for Persistent Multi-User and Multi-Session LLM Applications Codes Tutorial",
+    "▶ How to Build a Cost-Aware LLM Routing System with NadirClaw Using Local Prompt Classification and Gemini Model Switching Codes Tutorial",
+    "▶ Build a CloakBrowser Automation Workflow with Stealth Chromium, Persistent Profiles, and Browser Signal Inspection Codes Tutorial",
+    "▶ A Groq-Powered Agentic Research Assistant with LangGraph, Tool Calling, Sub-Agents, and Agentic Memory: Lets Built It Codes Tutorial",
+    "▶ Build a Modular Skill-Based Agent System for LLMs with Dynamic Tool Routing in Python Codes Tutorial"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Multi-agent systems, memory, planning, reasoning loops",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "tutorial",
+    "useCategory": [
+      "coding",
+      "automation",
+      "research",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "tutorial",
+  "useCategory": [
+    "coding",
+    "automation",
+    "research",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "AI Agents Projects Tutorials is a skill-oriented tutorial resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows.",
+      "Helps with memory workflows.",
+      "Relevant to skill."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

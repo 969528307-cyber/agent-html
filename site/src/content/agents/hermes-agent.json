@@ -3,16 +3,124 @@
   "name": "Hermes Agent",
   "status": "published",
   "region": "global",
-  "vendor": "Hermes",
-  "summary": "A workflow-oriented agent concept focused on reusable commands, skills, and local execution.",
-  "bestFor": ["Reusable workflows", "Command packs", "Local automation"],
-  "interfaceType": ["cli"],
-  "documentationUrl": "https://example.com/hermes-agent",
-  "supportsMcp": false,
+  "vendor": "Nous Research",
+  "summary": "Nous Research's open-source, terminal-oriented agent with skills, MCP integration, local execution, and a large Skills Hub ecosystem.",
+  "bestFor": [
+    "Terminal agent workflows",
+    "Skill-based automation",
+    "Community skill discovery",
+    "Nous Research ecosystem exploration"
+  ],
+  "interfaceType": [
+    "cli"
+  ],
+  "documentationUrl": "https://hermes-agent.nousresearch.com/docs/",
+  "supportsMcp": true,
   "supportsSkills": true,
   "supportsCli": true,
   "supportsWorkflows": true,
-  "toolTypes": { "skills": 30, "mcps": 8, "cli": 14, "workflows": 22 },
-  "relatedLearn": ["what-is-agent-skill"],
-  "lastChecked": "2026-05-11"
+  "toolTypes": {
+    "skills": 30,
+    "mcps": 8,
+    "cli": 14,
+    "workflows": 22
+  },
+  "relatedLearn": [
+    "what-is-agent-skill"
+  ],
+  "lastChecked": "2026-05-12",
+  "overview": "Hermes Agent is Nous Research's open-source agent for terminal, development, and multi-surface automation workflows. It should be treated as a major Agent page because its public ecosystem includes a GitHub repository, official documentation, and a large Skills Hub. The page should emphasize the difference between official docs, official/community skills, MCP integration, and local execution risk. Hermes is not just a small workflow concept; it is a full agent ecosystem that deserves the same source rigor as Codex, Claude Code, Cursor, Qwen Code, and OpenClaw.",
+  "strengths": [
+    {
+      "title": "Open-source agent repository",
+      "body": "Hermes Agent has an official GitHub repository, making source review and ecosystem tracking possible."
+    },
+    {
+      "title": "Skills Hub ecosystem",
+      "body": "The Skills Hub organizes hundreds of skills across software development, research, translation, productivity, DevOps, security, and other categories."
+    },
+    {
+      "title": "Terminal-first execution model",
+      "body": "Hermes is best represented as a CLI-oriented agent where local execution, commands, and skill-driven workflows are central."
+    },
+    {
+      "title": "Nous Research positioning",
+      "body": "The agent belongs to the broader Nous Research ecosystem, so model, agent, and skill materials should be labeled clearly."
+    }
+  ],
+  "extensionModel": [
+    {
+      "label": "CLI",
+      "status": "native",
+      "body": "Hermes should be mapped as a terminal-first agent surface with local command execution and interactive sessions.",
+      "sourceUrl": "https://github.com/nousresearch/hermes-agent"
+    },
+    {
+      "label": "Skills",
+      "status": "native",
+      "body": "The official Skills Hub is a core compatibility surface and should drive skill discovery, categorization, and review.",
+      "sourceUrl": "https://hermes-agent.nousresearch.com/docs/skills/"
+    },
+    {
+      "label": "MCP",
+      "status": "supported",
+      "body": "Hermes documentation positions MCP integration as part of the agent's extension story, but individual servers still need source review.",
+      "sourceUrl": "https://hermes-agent.nousresearch.com/docs/"
+    },
+    {
+      "label": "Workflow",
+      "status": "supported",
+      "body": "Useful for local execution workflows, reusable skill packs, command patterns, and multi-agent or tool-connected routines."
+    }
+  ],
+  "recommendedStacks": [
+    {
+      "title": "Hermes Skills Hub review",
+      "body": "Use the Skills Hub as the discovery source, but publish only skills that pass source, usefulness, and safety review.",
+      "toolIds": [
+        "hermes-cli-commands"
+      ]
+    },
+    {
+      "title": "CLI workflow kit",
+      "body": "Map command packs and terminal workflows when they are backed by official docs or repository evidence.",
+      "toolIds": []
+    },
+    {
+      "title": "MCP plus skill flow",
+      "body": "Treat MCP servers as separate capability providers and connect them to Hermes only after compatibility evidence is clear.",
+      "toolIds": [
+        "awesome-mcp-servers"
+      ]
+    }
+  ],
+  "limitations": [
+    "The old placeholder documentation URL must not be used; Hermes pages should point to Nous Research docs and GitHub.",
+    "Large skill directories need safety and maintenance review before individual items are recommended.",
+    "Do not publish generated install commands; link to current official docs instead.",
+    "Compatibility with third-party skills or MCP servers must be verified per candidate."
+  ],
+  "sources": [
+    {
+      "label": "Hermes Agent docs",
+      "url": "https://hermes-agent.nousresearch.com/docs/",
+      "kind": "docs"
+    },
+    {
+      "label": "Hermes Agent GitHub",
+      "url": "https://github.com/nousresearch/hermes-agent",
+      "kind": "github"
+    },
+    {
+      "label": "Hermes Skills Hub",
+      "url": "https://hermes-agent.nousresearch.com/docs/skills/",
+      "kind": "docs"
+    },
+    {
+      "label": "Hermes Agent bundled guide",
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/skills/bundled/autonomous-ai-agents/autonomous-ai-agents-hermes-agent",
+      "kind": "docs"
+    }
+  ],
+  "englishDocsUrl": "https://hermes-agent.nousresearch.com/docs/"
 }

@@ -1,0 +1,258 @@
+{
+  "id": "candidate-tool-github-langgenius-dify",
+  "type": "tool",
+  "status": "published",
+  "title": "Dify",
+  "sourceUrl": "https://github.com/langgenius/dify",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "langgenius",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Production-ready platform for agentic workflow development.",
+  "proposedCategory": [
+    "automation",
+    "workflow",
+    "code-review",
+    "browser",
+    "docs"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "langgenius",
+    "repo": "dify",
+    "fullName": "langgenius/dify",
+    "stars": 141522,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "agentic-framework",
+      "agentic-workflow",
+      "ai",
+      "automation",
+      "gemini",
+      "genai",
+      "gpt",
+      "gpt-4",
+      "llm",
+      "low-code",
+      "mcp",
+      "nextjs",
+      "no-code",
+      "openai",
+      "orchestration",
+      "python",
+      "rag",
+      "workflow"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-16T02:01:40Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/ar-SA/README.md",
+    "docs/bn-BD/README.md",
+    "docs/de-DE/README.md",
+    "docs/es-ES/README.md",
+    "docs/eu-ai-act-compliance.md",
+    "docs/fr-FR/README.md",
+    "docs/hi-IN/README.md",
+    "docs/it-IT/README.md",
+    "docs/ja-JP/README.md",
+    "docs/ko-KR/README.md",
+    "docs/pt-BR/README.md",
+    "docs/sl-SI/README.md",
+    "docs/tlh/README.md",
+    "docs/tr-TR/README.md",
+    "docs/vi-VN/README.md",
+    "docs/weaviate/WEAVIATE_MIGRATION_GUIDE/README.md",
+    "docs/zh-CN/README.md",
+    "docs/zh-TW/README.md",
+    "package.json",
+    ".agents/skills/backend-code-review/SKILL.md",
+    ".agents/skills/component-refactoring/SKILL.md",
+    ".agents/skills/e2e-cucumber-playwright/SKILL.md",
+    ".agents/skills/frontend-code-review/SKILL.md",
+    ".agents/skills/frontend-testing/SKILL.md",
+    ".agents/skills/how-to-write-component/SKILL.md",
+    ".agents/skills/tailwind-css-rules/SKILL.md",
+    "AGENTS.md",
+    "api/AGENTS.md",
+    "CLAUDE.md",
+    "dify-agent/AGENTS.md",
+    "e2e/AGENTS.md",
+    "packages/dify-ui/AGENTS.md",
+    "web/AGENTS.md",
+    "web/CLAUDE.md"
+  ],
+  "readmeExtract": "![cover v5 optimized](./images/GitHub README if.png) <p align=\"center\" <a href=\"https://cloud.dify.ai\" Dify Cloud</a · <a href=\"https://docs.dify.ai/getting started/install self hosted\" Self hosting</a · <a href=\"https://docs.dify.ai\" Documentation</a · <a href=\"https://dify.ai/pricing\" Dify edition overview</a </p <p align=\"center\" <a href=\"https://dify.ai\" target=\" blank\" <img alt=\"Static Badge\" src=\"https://img.sh",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/backend-code-review/SKILL.md",
+      "extract": "name: backend code review description: Review backend code for quality, security, maintainability, and best practices based on established checklist rules. Use when the user requests a review, analysis, or improvement of backend files (e.g., .py ) under the api/ directory. Do NOT use for frontend files (e.g., .tsx , .ts , .js ). Supports pending change review, code snippets review, and file focused review. Backend Co"
+    },
+    {
+      "path": ".agents/skills/component-refactoring/SKILL.md",
+      "extract": "name: component refactoring description: Refactor high complexity React components in Dify frontend. Use when pnpm analyze component json shows complexity 50 or lineCount 300, when the user asks for code splitting, hook extraction, or complexity reduction, or when pnpm analyze component warns to refactor before testing; avoid for simple/well structured components, third party wrappers, or when the user explicitly wan"
+    },
+    {
+      "path": ".agents/skills/e2e-cucumber-playwright/SKILL.md",
+      "extract": "name: e2e cucumber playwright description: Write, update, or review Dify end to end tests under e2e/ that use Cucumber, Gherkin, and Playwright. Use when the task involves .feature files, features/step definitions/ , features/support/ , DifyWorld , scenario tags, locator/assertion choices, or E2E testing best practices for this repository. Dify E2E Cucumber + Playwright Use this skill for Dify's repository level E2E "
+    },
+    {
+      "path": ".agents/skills/frontend-code-review/SKILL.md",
+      "extract": "name: frontend code review description: \"Trigger when the user requests a review of frontend files (e.g., .tsx , .ts , .js ). Support both pending change reviews and focused file reviews while applying the checklist rules.\" Frontend Code Review Intent Use this skill whenever the user asks to review frontend code (especially .tsx , .ts , or .js files). Support two review modes: 1. Pending change review – inspect stage"
+    },
+    {
+      "path": ".agents/skills/frontend-testing/SKILL.md",
+      "extract": "name: frontend testing description: Generate Vitest + React Testing Library tests for Dify frontend components, hooks, and utilities. Triggers on testing, spec files, coverage, Vitest, RTL, unit tests, integration tests, or write/review test requests. Dify Frontend Testing Skill This skill enables Codex to generate high quality, comprehensive frontend tests for the Dify project following established conventions and b"
+    },
+    {
+      "path": ".agents/skills/how-to-write-component/SKILL.md",
+      "extract": "name: how to write component description: React/TypeScript component style guide. Use when writing, refactoring, or reviewing React components, especially around props typing, state boundaries, shared local state with Jotai atoms, API types, query/mutation contracts, navigation, memoization, wrappers, and empty state handling. How To Write A Component Use this as the decision guide for React/TypeScript component stru"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "After running, you can access the Dify dashboard in your browser at and start the initialization process.",
+    "Build and test powerful AI workflows on a visual canvas, leveraging all the following features and beyond.",
+    "You can define agents based on LLM Function Calling or ReAct, and add pre-built or custom tools for the agent.",
+    "Dify provides 50+ built-in tools for AI agents, such as Google Search, DALL·E, Stable Diffusion and WolframAlpha.",
+    "Use our documentation for further references and more in-depth instructions.",
+    "Dify provides 50+ built-in tools for AI agents, such as Google Search, DALL·E, Stable Diff...",
+    "...libaba Cloud with Alibaba Cloud Data Management",
+    "description: Review backend code for quality, security, maintainability, and best practices based on established checklist rules.",
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Production-ready platform for agentic workflow development.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "browser",
+      "docs",
+      "devops",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "browser",
+    "docs",
+    "devops",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Dify is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with browser workflows.",
+      "Helps with docs workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "classificationScores": {
+    "mcp": 2,
+    "skill": 7,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: agent-app, knowledge-resource, workflow.",
+    "LLM: workflow + [] — Dify is a platform for building and orchestrating AI workflows with a visual canvas, making it a workflow automation tool."
+  ],
+  "classificationAlternatives": [
+    "agent-app",
+    "knowledge-resource",
+    "workflow"
+  ],
+  "canonicalKey": "tool:github:langgenius/dify",
+  "firstDiscoveredAt": "2026-05-12",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dify",
+  "publishedAt": "2026-05-18"
+}

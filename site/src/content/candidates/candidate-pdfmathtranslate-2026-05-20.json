@@ -1,0 +1,165 @@
+{
+  "id": "candidate-pdfmathtranslate-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "PDFMathTranslate",
+  "sourceUrl": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+  "sourceName": "GitHub",
+  "author": "PDFMathTranslate",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "PDFMathTranslate",
+    "repo": "PDFMathTranslate",
+    "fullName": "PDFMathTranslate/PDFMathTranslate",
+    "stars": 33870,
+    "license": "AGPL-3.0",
+    "topics": [
+      "chinese",
+      "document",
+      "edit",
+      "english",
+      "japanese",
+      "korean",
+      "latex",
+      "math",
+      "mcp",
+      "modify",
+      "obsidian",
+      "openai",
+      "pdf",
+      "pdf2zh",
+      "python",
+      "russian",
+      "translate",
+      "translation",
+      "zotero"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T17:03:15Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/ADVANCED.md",
+    "docs/APIS.md",
+    "docs/CODE_OF_CONDUCT.md",
+    "docs/images/banner.png",
+    "docs/images/cmd.explained.png",
+    "docs/images/cmd.explained.zh.png",
+    "docs/images/gui.gif",
+    "docs/README_GUI.md",
+    "docs/README_ja-JP.md",
+    "docs/README_ko-KR.md",
+    "docs/README_zh-CN.md",
+    "docs/README_zh-TW.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<div align=\"center\" <a href=\"https://go.warp.dev/PDFMathTranslate\" target=\" blank\" <sup Special thanks to:</sup <br <img alt=\"Warp sponsorship\" width=\"400\" src=\"https://github.com/warpdotdev/brand assets/blob/main/Github/Sponsor/Warp Github LG 02.png\" <br <h Warp, built for coding with multiple AI agents</b <br <sup Available for macOS, Linux and Windows</sup </a </div <br <div align=\"center\" English | [简体中文](docs/RE",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Warp, built for coding with multiple AI agents",
+    "🤖 Provides commandline tool, interactive user interface, and Docker",
+    "[May 9, 2025] pdf2zh 2.0 Preview Version #586: The Windows ZIP file and Docker image are now available.",
+    "If your browser has not been started automatically, goto",
+    "See documentation for GUI for more details.",
+    "2.5 Reference manager: Zotero Plugin",
+    "The current program relies on the AI model (wybxc/DocLayout-YOLO-DocStructBench-onnx), and some users are unable to download it due to these network issues.",
+    "--mcp Enable MCP STDIO mode pdf2zh --mcp"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "devops",
+      "coding",
+      "research",
+      "translation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "devops",
+    "coding",
+    "research",
+    "translation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "PDFMathTranslate is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Helps with translation workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pdfmathtranslate",
+  "publishedAt": "2026-05-20"
+}

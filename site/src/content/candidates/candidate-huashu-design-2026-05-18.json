@@ -1,0 +1,138 @@
+{
+  "id": "candidate-huashu-design-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Huashu Design",
+  "sourceUrl": "https://github.com/alchaincyf/huashu-design",
+  "sourceName": "GitHub",
+  "author": "alchaincyf",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "alchaincyf",
+    "repo": "huashu-design",
+    "fullName": "alchaincyf/huashu-design",
+    "stars": 14161,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-14T15:11:53Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh.md",
+    "SKILL.md"
+  ],
+  "readmeExtract": "<sub <b 🌐 English</b · <a href=\"README.zh.md\" 中文</a </sub <div align=\"center\" Huashu Design \"Type. Hit enter. A finished design lands in your lap.\" 「打字。回车。一份能交付的设计。」 [![License](https://img.shields.io/badge/License MIT green.svg)](LICENSE) [![Agent Agnostic](https://img.shields.io/badge/Agent Agnostic blueviolet)](https://skills.sh) [![Skills](https://img.shields.io/badge/skills.sh Compatible green)](https://skills.",
+  "skillExtracts": [
+    {
+      "path": "SKILL.md",
+      "extract": "name: huashu design description: 花叔Design（Huashu Design）——用HTML做高保真原型、交互Demo、幻灯片、动画、设计变体探索+设计方向顾问+专家评审的一体化设计能力。HTML是工具不是媒介，根据任务embody不同专家（UX设计师/动画师/幻灯片设计师/原型师），避免web design tropes。触发词：做原型、设计Demo、交互原型、HTML演示、动画Demo、设计变体、hi fi设计、UI mockup、prototype、设计探索、做个HTML页面、做个可视化、app原型、iOS原型、移动应用mockup、导出MP4、导出GIF、60fps视频、设计风格、设计方向、设计哲学、配色方案、视觉风格、推荐风格、选个风格、做个好看的、评审、好不好看、review this design、带解说的动画、解说视频、概念解释视频、长视频科普、配音动画、voiceover、na"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Say one sentence to your agent — Claude Code, Cursor, Codex, OpenClaw, Hermes all work.",
+    "Give the skill your brand assets (logo, colors, UI screenshots) and it reads your brand's voice; give it nothing and the built-in 20 design vocabularies still keep you out of AI slop territory.",
+    "Every animation in this README was made by huashu-design itself. No Figma, no After Effects — just a sentence + skill run.",
+    "📣 Now MIT-licensed. As of 2026-05-14 this skill is fully open-source under the MIT License — free for personal and commercial use, no authorization required.",
+    "Claude Design](#vs-claude-design)",
+    "📖 Note for English readers: this skill is built by a Chinese-speaking developer.",
+    "The skill's agent prompts (SKILL.md, references/.md) are in Chinese but the agent is bilingual — works fine with English tasks.",
+    "📖 致中文读者：这个 skill 由花叔（@AlchainHust）开发。一句话能让 agent 在 3–30 分钟内交付产品发布动画 / 可点击 App 原型 / 可编辑 PPT / 印刷级信息图。完整中文介绍见 README.zh.md。"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Huashu Design is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "Say one sentence to your agent — Claude Code, Cursor, Codex, OpenClaw, Hermes all work."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "huashu-design",
+  "publishedAt": "2026-05-18"
+}

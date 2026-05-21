@@ -1,0 +1,224 @@
+{
+  "id": "candidate-tool-github-anomalyco-opencode",
+  "type": "tool",
+  "status": "published",
+  "title": "Opencode",
+  "sourceUrl": "https://github.com/anomalyco/opencode",
+  "sourceName": "GitHub",
+  "author": "anomalyco",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "The open source coding agent.",
+  "proposedCategory": [
+    "cli",
+    "code-review",
+    "browser",
+    "docs",
+    "workflow",
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Cursor",
+    "Generic",
+    "Claude Code"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "anomalyco",
+    "repo": "opencode",
+    "fullName": "anomalyco/opencode",
+    "stars": 161784,
+    "license": "MIT",
+    "topics": [],
+    "defaultBranch": "dev",
+    "lastPushedAt": "2026-05-18T03:32:11Z"
+  },
+  "detectedFiles": [
+    "README.ar.md",
+    "README.bn.md",
+    "README.br.md",
+    "README.bs.md",
+    "README.da.md",
+    "README.de.md",
+    "README.es.md",
+    "README.fr.md",
+    "README.gr.md",
+    "README.it.md",
+    "README.ja.md",
+    "README.ko.md",
+    "README.md",
+    "README.no.md",
+    "README.pl.md",
+    "README.ru.md",
+    "README.th.md",
+    "README.tr.md",
+    "README.uk.md",
+    "README.vi.md",
+    "README.zh.md",
+    "README.zht.md",
+    "package.json",
+    ".opencode/skills/effect/SKILL.md",
+    ".opencode/skills/improve-codebase-architecture/SKILL.md",
+    "packages/opencode/test/fixture/skills/agents-sdk/SKILL.md",
+    "packages/opencode/test/fixture/skills/cloudflare/SKILL.md",
+    "AGENTS.md",
+    "packages/app/AGENTS.md",
+    "packages/desktop/AGENTS.md",
+    "packages/llm/AGENTS.md",
+    "packages/opencode/AGENTS.md",
+    "packages/opencode/src/provider/sdk/copilot/AGENTS.md",
+    "packages/opencode/src/server/routes/instance/httpapi/AGENTS.md",
+    "packages/opencode/test/AGENTS.md",
+    "packages/opencode/test/server/AGENTS.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <a href=\"https://opencode.ai\" <picture <source srcset=\"packages/console/app/src/asset/logo ornate dark.svg\" media=\"(prefers color scheme: dark)\" <source srcset=\"packages/console/app/src/asset/logo ornate light.svg\" media=\"(prefers color scheme: light)\" <img src=\"packages/console/app/src/asset/logo ornate light.svg\" alt=\"OpenCode logo\" </picture </a </p <p align=\"center\" The open source AI coding age",
+  "skillExtracts": [
+    {
+      "path": ".opencode/skills/effect/SKILL.md",
+      "extract": "name: effect description: Work with Effect v4 / effect smol TypeScript code in this repo Effect This codebase uses Effect for typed, composable TypeScript services, schemas, and workflows. Source Of Truth Use the current Effect v4 / effect smol source, not memory or older Effect v2/v3 examples. 1. If .opencode/references/effect smol is missing, clone https://github.com/Effect TS/effect smol there. Do this in the proj"
+    },
+    {
+      "path": ".opencode/skills/improve-codebase-architecture/SKILL.md",
+      "extract": "name: improve codebase architecture description: Find deepening opportunities in a codebase, informed by the domain language in CONTEXT.md and the decisions in docs/adr/. Use when the user wants to improve architecture, find refactoring opportunities, consolidate tightly coupled modules, or make a codebase more testable and AI navigable. Improve Codebase Architecture Surface architectural friction and propose deepeni"
+    },
+    {
+      "path": "packages/opencode/test/fixture/skills/agents-sdk/SKILL.md",
+      "extract": "name: agents sdk description: Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real time WebSocket apps, scheduled tasks, MCP servers, or chat applications. Covers Agent class, state management, callable RPC, Workflows integration, and React hooks. Cloudflare Agents SDK STOP. Your knowledge of the Agents SDK may be outdated. Prefer retrieval over pre t"
+    },
+    {
+      "path": "packages/opencode/test/fixture/skills/cloudflare/SKILL.md",
+      "extract": "name: cloudflare description: Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure as code (Terraform, Pulumi). Use for any Cloudflare development task. references: workers pages d1 durable objects workers ai Cloudflare Platform Skill Consolidated skill for building on the "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The open source AI coding agent.",
+    "OpenCode includes two built-in agents you can switch between with the Tab key.",
+    "build - Default, full-access agent for development work",
+    "plan - Read-only agent for analysis and code exploration",
+    "Also included is a general subagent for complex searches and multistep tasks.",
+    "For more info on how to configure OpenCode, head over to our docs.",
+    "If you're interested in contributing to OpenCode, please read our contributing docs before submitting a pull request.",
+    "This codebase uses Effect for typed, composable TypeScript services, schemas, and workflows.",
+    "Repository includes skill-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "The open source coding agent.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "docs",
+      "media",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "docs",
+    "media",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Opencode is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "classificationScores": {
+    "mcp": 6,
+    "skill": 7,
+    "cli": 4,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: knowledge-resource, mcp, workflow.",
+    "LLM: agent-app + [cli] — This is an open-source AI coding agent with built-in agents and a console UI, classifying it as an agent application for end users."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "mcp",
+    "workflow"
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "local-review",
+  "publishedAs": "opencode",
+  "publishedAt": "2026-05-18",
+  "canonicalKey": "tool:github:anomalyco/opencode",
+  "firstDiscoveredAt": "2026-05-12",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

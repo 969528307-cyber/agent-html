@@ -1,0 +1,186 @@
+{
+  "id": "candidate-tool-github-amoylab-unla",
+  "type": "tool",
+  "status": "published",
+  "title": "Unla",
+  "sourceUrl": "https://github.com/AmoyLab/Unla",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "AmoyLab",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "🧩 MCP Gateway - A lightweight gateway service that instantly transforms existing MCP Servers and APIs into MCP servers with zero code changes. Features Docker deployment and management UI, requiring no infrastructure modifications.",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "AmoyLab",
+    "repo": "Unla",
+    "fullName": "AmoyLab/Unla",
+    "stars": 2110,
+    "license": "MIT",
+    "topics": [
+      "awesome",
+      "mcp",
+      "mcp-adapter",
+      "mcp-gateway",
+      "mcp-server",
+      "rest-to-mcp",
+      "restful-to-mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-22T07:50:58Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.ai/release.md",
+    "docs/.ai/SOP.client.zh-CN.md",
+    "docs/.ai/SOP.server.zh-CN.md",
+    "docs/i18n_direct_errors.md",
+    "docs/i18n_example.md",
+    "docs/i18n_summary.md",
+    "docs/i18n.md",
+    "docs/README.zh-CN.md",
+    "docs/README.zh-TW.md",
+    "docs/requirements/mvp.server.md",
+    "docs/specs/all-in-one.yaml",
+    "docs/specs/MCP-Error-Handling.md",
+    "agents.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "Unla MCP Gateway 🚀 Instantly transform your existing MCP Servers and APIs into [MCP](https://modelcontextprotocol.io/) endpoints — without changing a line of code. [![English](https://img.shields.io/badge/English Click yellow)](./README.md) [![简体中文](https://img.shields.io/badge/简体中文 点击查看 orange)](docs/README.zh CN.md) [![繁體中文](https://img.shields.io/badge/繁體中文 點擊查看 blue)](docs/README.zh TW.md) [![Release](https://im",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🚀 Instantly transform your existing MCP Servers and APIs into MCP endpoints — without changing a line of code.",
+    "Due to the fast iteration, documentation updates may sometimes lag behind.",
+    "If you encounter any issues, feel free to search or ask for help via Discord or Issues ❤️",
+    "Click \"Add MCP Server\" in the web interface",
+    "Configure your MCP Client with the /sse or /mcp suffix URLs to start using it.",
+    "The MCP Chat page in the web interface",
+    "Your own MCP Client (recommended)",
+    "[x] Support for converting RESTful APIs to MCP Server — Client → MCP Gateway → APIs"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "🧩 MCP Gateway - A lightweight gateway service that instantly transforms existing MCP Servers and APIs into MCP servers with zero code changes. Features Docker deployment and management UI, requiring no infrastructure modifications.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "docs",
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "docs",
+    "coding",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 2,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Agent instruction or rule files detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: knowledge-resource, skill.",
+    "LLM: mcp + [mcp] — The project is explicitly a gateway service that transforms existing APIs into MCP endpoints, acting as an MCP server/gateway."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "skill"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Unla is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to devops."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:amoylab/unla",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "unla",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

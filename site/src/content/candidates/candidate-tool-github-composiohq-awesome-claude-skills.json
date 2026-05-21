@@ -1,0 +1,297 @@
+{
+  "id": "candidate-tool-github-composiohq-awesome-claude-skills",
+  "type": "tool",
+  "status": "published",
+  "title": "Awesome Claude Skills",
+  "sourceUrl": "https://github.com/ComposioHQ/awesome-claude-skills",
+  "sourceName": "GitHub",
+  "author": "ComposioHQ",
+  "discoveredAt": "2026-05-12",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+  "proposedCategory": [
+    "workflow",
+    "code-review",
+    "browser",
+    "docs",
+    "testing",
+    "skill",
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "ComposioHQ",
+    "repo": "awesome-claude-skills",
+    "fullName": "ComposioHQ/awesome-claude-skills",
+    "stars": 59320,
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "antigravity",
+      "automation",
+      "claude",
+      "claude-code",
+      "codex",
+      "composio",
+      "cursor",
+      "developer-tools",
+      "gemini-cli",
+      "mcp",
+      "openai-codex",
+      "rube",
+      "saas",
+      "skill",
+      "workflow-automation"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-07T07:32:20Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "artifacts-builder/SKILL.md",
+    "brand-guidelines/SKILL.md",
+    "canvas-design/SKILL.md",
+    "changelog-generator/SKILL.md",
+    "competitive-ads-extractor/SKILL.md",
+    "composio-skills/-21risk-automation/SKILL.md",
+    "composio-skills/-2chat-automation/SKILL.md",
+    "composio-skills/ably-automation/SKILL.md",
+    "composio-skills/abstract-automation/SKILL.md",
+    "composio-skills/abuselpdb-automation/SKILL.md",
+    "composio-skills/abyssale-automation/SKILL.md",
+    "composio-skills/accelo-automation/SKILL.md",
+    "composio-skills/accredible-certificates-automation/SKILL.md",
+    "composio-skills/acculynx-automation/SKILL.md",
+    "composio-skills/active-campaign-automation/SKILL.md",
+    "composio-skills/addresszen-automation/SKILL.md",
+    "composio-skills/adobe-automation/SKILL.md",
+    "composio-skills/adrapid-automation/SKILL.md",
+    "composio-skills/adyntel-automation/SKILL.md",
+    "composio-skills/aero-workflow-automation/SKILL.md",
+    "composio-skills/aeroleads-automation/SKILL.md",
+    "composio-skills/affinda-automation/SKILL.md",
+    "composio-skills/affinity-automation/SKILL.md",
+    "composio-skills/agencyzoom-automation/SKILL.md",
+    "composio-skills/agent-mail-automation/SKILL.md",
+    "composio-skills/agentql-automation/SKILL.md",
+    "composio-skills/agenty-automation/SKILL.md",
+    "composio-skills/agiled-automation/SKILL.md",
+    "composio-skills/agility-cms-automation/SKILL.md",
+    "composio-skills/ahrefs-automation/SKILL.md",
+    "composio-skills/ai-ml-api-automation/SKILL.md",
+    "composio-skills/aivoov-automation/SKILL.md",
+    "composio-skills/alchemy-automation/SKILL.md",
+    "composio-skills/algodocs-automation/SKILL.md",
+    "composio-skills/algolia-automation/SKILL.md",
+    "composio-skills/all-images-ai-automation/SKILL.md",
+    "composio-skills/alpha-vantage-automation/SKILL.md",
+    "composio-skills/altoviz-automation/SKILL.md",
+    "composio-skills/alttext-ai-automation/SKILL.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" Awesome Claude Skills</h1 <p align=\"center\" <a href=\"https://dashboard.composio.dev/login?utm source=Github&utm medium=Youtube&utm campaign=2025 11&utm content=AwesomeSkills\" <img width=\"1280\" height=\"640\" alt=\"Composio banner\" src=\"https://github.com/user attachments/assets/e91255af e4ba 4d71 b1a8 bd081e8a234a\" </a </p <p align=\"center\" <a href=\"https://awesome.re\" <img src=\"https://awesome.re/bad",
+  "skillExtracts": [
+    {
+      "path": "artifacts-builder/SKILL.md",
+      "extract": "name: artifacts builder description: Suite of tools for creating elaborate, multi component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components not for simple single file HTML/JSX artifacts. license: Complete terms in LICENSE.txt Artifacts Builder To build powerful frontend claude.ai ar"
+    },
+    {
+      "path": "brand-guidelines/SKILL.md",
+      "extract": "name: brand guidelines description: Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look and feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply. license: Complete terms in LICENSE.txt Anthropic Brand Styling Overview To access Anthropic's official brand identity and style resources, use this"
+    },
+    {
+      "path": "canvas-design/SKILL.md",
+      "extract": "name: canvas design description: Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations. license: Complete terms in LICENSE.txt These are instructions for creating design philosophies ae"
+    },
+    {
+      "path": "changelog-generator/SKILL.md",
+      "extract": "name: changelog generator description: Automatically creates user facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits into clear, customer friendly release notes. Turns hours of manual changelog writing into minutes of automated generation. Changelog Generator This skill transforms technical git commits into polished, user friendly changelogs that y"
+    },
+    {
+      "path": "competitive-ads-extractor/SKILL.md",
+      "extract": "name: competitive ads extractor description: Extracts and analyzes competitors' ads from ad libraries (Facebook, LinkedIn, etc.) to understand what messaging, problems, and creative approaches are working. Helps inspire and improve your own ad campaigns. Competitive Ads Extractor This skill extracts your competitors' ads from ad libraries and analyzes what's working—the problems they're highlighting, use cases they'r"
+    },
+    {
+      "path": "composio-skills/-21risk-automation/SKILL.md",
+      "extract": "name: 21risk automation description: \"Automate 21risk tasks via Rube MCP (Composio). Always search tools first for current schemas.\" requires: mcp: [rube] 21risk Automation via Rube MCP Automate 21risk operations through Composio's 21risk toolkit via Rube MCP. Toolkit docs : [composio.dev/toolkits/ 21risk](https://composio.dev/toolkits/ 21risk) Prerequisites Rube MCP must be connected (RUBE SEARCH TOOLS available) Ac"
+    }
+  ],
+  "extractedInstall": [
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
+      "command": "claude --plugin-dir ./connect-apps-plugin",
+      "audience": "verified_install"
+    },
+    {
+      "title": "Install command",
+      "body": "Extracted from the repository README. Review before publishing.",
+      "sourcePath": "README.md",
+      "command": "claude --plugin-dir ./connect-apps-plugin",
+      "audience": "verified_install"
+    }
+  ],
+  "extractedSignals": [
+    "Repository includes skill-related files",
+    "README mentions Model Context Protocol",
+    "Want skills that do more than generate text? Claude can send emails, create issues, post to Slack, and take actions across 1000+ apps.",
+    "The connect-apps plugin lets Claude perform real actions - send emails, create issues, post to Slack.",
+    "It handles auth and connects to 500+ apps using Composio under the hood.",
+    "If you receive the email, Claude is now connected to 500+ apps.",
+    "Collaboration & Project Management",
+    "Claude Skills are reusable instruction packages that teach an AI agent how to handle a specific class of tasks.",
+    "Each skill is a folder containing a SKILL.md file with YAML frontmatter (name, description) and Markdown instructions, optionally bundled with scripts, references, and assets.",
+    "At session start, the agent sees only each skill's name and description — roughly 100 tokens per skill."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "workflow",
+    "scope": "awesome-list",
+    "useCategory": [
+      "browser",
+      "docs",
+      "testing",
+      "automation",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "workflow",
+  "scope": "awesome-list",
+  "useCategory": [
+    "browser",
+    "docs",
+    "testing",
+    "automation",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "workflow",
+    "whatIsIt": "Awesome Claude Skills is a awesome-list workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with docs workflows.",
+      "Helps with testing workflows.",
+      "Helps with automation workflows.",
+      "Helps with coding workflows."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:composiohq/awesome-claude-skills",
+  "firstDiscoveredAt": "2026-05-12",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "classificationScores": {
+    "mcp": 2,
+    "skill": 18,
+    "cli": 4,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Repository name indicates skill content.",
+    "GitHub topics tag as skills.",
+    "Skill-collection or agent-rules language in description.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: awesome-list.",
+    "Alternative capabilities: knowledge-resource, workflow, cli.",
+    "LLM: knowledge-resource + [skill] — This is a curated list of Claude Skills resources, making it a knowledge-resource."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "workflow",
+    "cli"
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "publishedAs": "awesome-claude-skills",
+  "publishedAt": "2026-05-19",
+  "reviewedAt": "2026-05-19",
+  "reviewedBy": "local-review"
+}

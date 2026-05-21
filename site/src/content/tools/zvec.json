@@ -1,0 +1,70 @@
+{
+  "id": "zvec",
+  "name": "Zvec",
+  "type": "skill",
+  "status": "published",
+  "summary": "A lightweight, lightning-fast, in-process vector database",
+  "description": "A lightweight, lightning-fast, in-process vector database",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/alibaba/zvec",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/alibaba/zvec",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/alibaba/zvec#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/alibaba/zvec#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/alibaba/zvec/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Blazing Fast: Searches billions of vectors in milliseconds.",
+    "Hybrid Search: Combine semantic similarity with structured filters for precise results.",
+    "Runs Anywhere: As an in-process library, Zvec runs wherever your code runs — notebooks, servers, CLI tools, or even edge devices.",
+    "For detailed benchmark methodology, configurations, and complete results, please see our Benchmarks documentation.",
+    "Whether you're fixing a bug, adding a feature, or improving documentation, your help makes Zvec better for everyone."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T12:25:06Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/alibaba/zvec",
+  "repoUrl": "https://github.com/alibaba/zvec",
+  "license": "Apache-2.0",
+  "stars": 9637,
+  "lastUpdated": "2026-05-18T12:25:06Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

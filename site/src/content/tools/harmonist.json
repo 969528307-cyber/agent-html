@@ -1,0 +1,80 @@
+{
+  "id": "harmonist",
+  "name": "Harmonist",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "Portable AI agent orchestration with mechanical protocol enforcement. 186 agents, zero runtime dependencies.",
+  "description": "Portable AI agent orchestration with mechanical protocol enforcement. 186 agents, zero runtime dependencies.",
+  "category": [
+    "agent-app"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Kimi",
+    "OpenClaw"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/GammaLabTechnologies/harmonist",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/GammaLabTechnologies/harmonist",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/GammaLabTechnologies/harmonist#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/GammaLabTechnologies/harmonist#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/GammaLabTechnologies/harmonist/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Portable AI agent orchestration with mechanical protocol enforcement",
+    "A drop-in multi-agent framework for Cursor, Claude Code, Copilot, Windsurf, Aider, and other AI coding assistants.",
+    "turn is gated by hooks that check whether the required reviewers ran,",
+    "This is the first open-source agent framework where protocol",
+    "The problem: every serious engineering workflow has non-negotiable",
+    "external call retries with idempotency keys\", \"security review before",
+    "Thin agent frameworks (LangChain, CrewAI, AutoGen, MetaGPT and",
+    "observe every subagent dispatch, every file edit, every session stop."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-23T05:48:48Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/GammaLabTechnologies/harmonist",
+  "repoUrl": "https://github.com/GammaLabTechnologies/harmonist",
+  "license": "MIT",
+  "stars": 1807,
+  "lastUpdated": "2026-04-23T05:48:48Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

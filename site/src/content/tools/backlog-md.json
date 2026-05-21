@@ -1,0 +1,78 @@
+{
+  "id": "backlog-md",
+  "name": "Backlog.md",
+  "type": "cli",
+  "status": "published",
+  "summary": "Backlog.md - A tool for managing project collaboration between humans and AI Agents in a git ecosystem",
+  "description": "Backlog.md - A tool for managing project collaboration between humans and AI Agents in a git ecosystem",
+  "category": [
+    "productivity"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/MrLesk/Backlog.md",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/MrLesk/Backlog.md",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/MrLesk/Backlog.md#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/MrLesk/Backlog.md#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/MrLesk/Backlog.md/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Markdown‑native Task Manager & Kanban visualizer for any Git repository",
+    "Built for spec‑driven AI development — structure your tasks so AI agents deliver predictable results.",
+    "📝 Markdown-native tasks -- manage every issue as a plain .md file",
+    "🤖 AI-Ready -- Works with Claude Code, Gemini CLI, Codex, Kiro & any other MCP or CLI compatible AI assistants",
+    "🌐 Modern web interface -- backlog browser launches a sleek web UI for visual task management",
+    "🔍 Powerful search -- fuzzy search across tasks, docs & decisions with backlog search",
+    "🔒 100 % private & offline -- backlog lives entirely inside your repo and you can manage everything locally",
+    "The init wizard will ask how you want to connect AI tools:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-07T21:29:07Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/MrLesk/Backlog.md",
+  "repoUrl": "https://github.com/MrLesk/Backlog.md",
+  "license": "MIT",
+  "stars": 5578,
+  "lastUpdated": "2026-05-07T21:29:07Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

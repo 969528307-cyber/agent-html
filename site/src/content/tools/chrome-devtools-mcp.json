@@ -1,0 +1,78 @@
+{
+  "id": "chrome-devtools-mcp",
+  "name": "Chrome Devtools Mcp",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Chrome DevTools for coding agents",
+  "description": "Chrome DevTools for coding agents",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Chrome DevTools for agents (chrome-devtools-mcp) lets your coding agent (such as Gemini, Claude, Cursor or Copilot)",
+    "control and inspect a live Chrome browser.",
+    "(MCP) server, giving your AI coding assistant access to the full power of",
+    "Chrome DevTools for reliable automation, in-depth debugging, and performance analysis.",
+    "A CLI is also provided for use without MCP.",
+    "Tool reference Changelog Contributing Troubleshooting Design Principles",
+    "Advanced browser debugging: Analyze network requests, take screenshots and",
+    "check browser console messages (with source-mapped stack traces)."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T11:04:46Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "repoUrl": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "license": "Apache-2.0",
+  "stars": 39897,
+  "lastUpdated": "2026-05-18T11:04:46Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,189 @@
+{
+  "id": "candidate-fastgpt-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "FastGPT",
+  "sourceUrl": "https://github.com/labring/FastGPT",
+  "sourceName": "GitHub",
+  "author": "labring",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "labring",
+    "repo": "FastGPT",
+    "fullName": "labring/FastGPT",
+    "stars": 28076,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "claude",
+      "deepseek",
+      "llm",
+      "mcp",
+      "nextjs",
+      "openai",
+      "qwen",
+      "rag",
+      "workflow"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:34:39Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    ".claude/skills/add-permission/SKILL.md",
+    ".claude/skills/api-development/SKILL.md",
+    ".claude/skills/doc-i18n/SKILL.md",
+    ".claude/skills/server-common-api_development/SKILL.md",
+    ".claude/skills/system-deprecate_workflow_node/SKILL.md",
+    ".claude/skills/system-local_review/SKILL.md",
+    ".claude/skills/system-pr_review/SKILL.md",
+    ".claude/skills/system-prompt_optimize/SKILL.md",
+    ".claude/skills/system-test/SKILL.md",
+    ".codex/skills/core/ai/prompt_optimize/SKILL.md",
+    ".codex/skills/core/workflow/deprecate_workflow_node/SKILL.md",
+    ".codex/skills/doc/i18n/SKILL.md",
+    ".codex/skills/support/permission/add-permission/SKILL.md",
+    ".codex/skills/system/api-development/SKILL.md",
+    ".codex/skills/system/local-pr-review/SKILL.md",
+    ".codex/skills/system/pr-review/SKILL.md",
+    ".codex/skills/system/test-case/SKILL.md",
+    ".claude/CLAUDE.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <a href=\"https://fastgpt.io/\" <img src=\"/.github/imgs/logo.svg\" width=\"120\" height=\"120\" alt=\"fastgpt logo\" </a FastGPT <p align=\"center\" <a href=\"./README en.md\" English</a | <a href=\"./README.md\" 简体中文</a | <a href=\"./README id.md\" Bahasa Indonesia</a | <a href=\"./README th.md\" ไทย</a | <a href=\"./README vi.md\" Tiếng Việt</a | <a href=\"./README ja.md\" 日本語</a </p FastGPT 是一个 AI Agent 构建平台，提供开箱即用的数",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/add-permission/SKILL.md",
+      "extract": "name: add permission description: 为 FastGPT 新资源接入权限管理。当用户需要为新资源（如 AgentSkill、Plugin 等）添加权限支持时触发。 新资源权限接入 你的资源是哪种类型？ 快速链接 | 我想... | 去看... | | | | | 5 步完成最小接入 | [快速入门](./guides/quick start.md) | | 接入继承型资源 | [完整接入](./guides/full integration.md) | | 检查遗漏项 | [实施清单](./checklist.md) | | 理解权限系统原理 | [参考文档](./reference/README.md) | 关键代码位置 | 文件 | 用途 | | | | | packages/global/support/permission/constant.ts | 添加 PerResourceTypeEn"
+    },
+    {
+      "path": ".claude/skills/api-development/SKILL.md",
+      "extract": "name: api development description: FastGPT API 开发规范。重点强调使用 zod schema 定义入参和出参,在 API 文档中声明路由信息,编写对应的 OpenAPI 文档,以及在 API 路由中使用 schema.parse 进行验证。 FastGPT API 开发规范 FastGPT 项目 API 路由开发的标准化指南,确保 API 的一致性、类型安全和文档完整性。 何时使用此技能 开发新的 Next.js API 路由 修改现有 API 的入参或出参 需要 API 类型定义和文档 审查 API 相关代码 说明文档 [API 设计规范](../../design/api/index.md)"
+    },
+    {
+      "path": ".claude/skills/doc-i18n/SKILL.md",
+      "extract": "name: doc i18n description: 将 FastGPT 文档从中文翻译为面向北美用户的英文。当用户提到翻译文档、i18n、国际化、translate docs、新增/修改了中文文档需要同步英文版时，使用此 skill。也适用于用户要求检查文档翻译缺失、批量翻译、或对比中英文文档差异的场景。 概述 FastGPT 文档采用双文件 i18n 方案，中文为源语言，英文为目标语言。你的任务是将中文文档翻译为自然流畅的北美英文，而非逐字直译。 文件结构 文档位于 document/content/docs/ 目录下： 内容文件： {name}.mdx （中文） → {name}.en.mdx （英文） 导航文件： meta.json （中文） → meta.en.json （英文） 工作流程 1. 确定翻译范围 两种方式确定需要翻译的文件： 自动检测 （用户未指定具体文件时）： 运行 git diff name onl"
+    },
+    {
+      "path": ".claude/skills/server-common-api_development/SKILL.md",
+      "extract": "name: api development description: FastGPT API 开发规范。重点强调使用 zod schema 定义入参和出参,在 API 文档中声明路由信息,编写对应的 OpenAPI 文档,以及在 API 路由中使用 schema.parse 进行验证。 FastGPT API 开发规范 FastGPT 项目 API 路由开发的标准化指南,确保 API 的一致性、类型安全和文档完整性。 何时使用此技能 开发新的 Next.js API 路由 修改现有 API 的入参或出参 需要 API 类型定义和文档 审查 API 相关代码 核心原则 🔴 必须遵守的规则 1. 所有 API 必须使用 zod schema 定义入参和出参 2. 必须导出 schema 的 TypeScript 类型 3. 必须在 schema 文件头部声明 API 信息(路由、方法、描述、标签) 4. 入参必须使用 schema"
+    },
+    {
+      "path": ".claude/skills/system-deprecate_workflow_node/SKILL.md",
+      "extract": "name: deprecate workflow node description: 当用户需要弃用一个工作流节点（保留向后兼容、隐藏出模板面板）时触发该 skill。FastGPT 工作流节点的弃用流程标准化封装，覆盖模板、Dispatcher、UI 引用等所有需要改动的位置。 When to Use This Skill 当用户需要\"弃用 / 废弃 / 下线 / 不再推荐使用\"某个工作流节点（例如 LoopNode 、 RunAppModule 等）时触发。 弃用的目标： 已存在的工作流仍能正常加载和运行（保持运行时兼容）。 新建工作流时，模板面板 不再展示 该节点。 节点的类型枚举值（FlowNodeTypeEnum）必须保留，否则旧工作流会找不到节点定义。 核心理念 弃用 ≠ 删除。 只断\"新增入口\"，不断\"运行通路\" 。 | 维度 | 处理方式 | | | | | 类型枚举值 | 保留（旧工作流引用） | | 模板定义"
+    },
+    {
+      "path": ".claude/skills/system-local_review/SKILL.md",
+      "extract": "name: local review description: 当用户请求对本地未提交的代码（或本地分支特定 commit 等）进行代码审查时触发该 skill，对本地变更进行审查。 When to Use This Skill 当用户请求本地审查时触发。本技能支持对以下三种变更范围进行环境友好的深度审查： 1. 未提交的变更 (Uncommitted) : 审查工作区中所有尚未提交的修改（包括已暂存和未暂存）。 2. 特定的历史 Commit (Recent Commits) : 选定检查最近几次 commit（如 HEAD~N ）的改动情况。 3. 主干差异对比 (Main Branch Diff) : 与 main 等主干分支对比，整体审查当前特性的增量细节。 Local Review 本地代码审查技能 在本地开发环境中，利用全量代码库的上下文优势，全面审查代码变更的质量、安全性、性能和架构设计，并自动评估跨文件影响，提供"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "FastGPT 是一个 AI Agent 构建平台，提供开箱即用的数据处理、模型调用等能力，同时可以通过 Flow 可视化进行工作流编排，从而实现复杂的应用场景！",
+    "description: 为 FastGPT 新资源接入权限管理。当用户需要为新资源（如 AgentSkill、Plugin 等）添加权限支持时触发。",
+    "description: 将 FastGPT 文档从中文翻译为面向北美用户的英文。当用户提到翻译文档、i18n、国际化、translate docs、新增/修改了中文文档需要同步英文版时，使用此 skill。也适用于用户要求检查文档翻译缺失、批量翻译、或对比中英文文档差异的场景。",
+    "文档位于 document/content/docs/ 目录下：",
+    "MDX import 语句（如 import { Alert } from '@/components/docs/Alert'）",
+    "模块标签: App, User, Chat, Workflow, Dataset",
+    "FastGPT API 规范: .claude/skills/pr-review/fastgpt-style-guide.md",
+    "PR Review 审查维度: .claude/skills/pr-review/code-quality-standards.md"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "data",
+      "automation",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "data",
+    "automation",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "FastGPT is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with data workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "fastgpt",
+  "publishedAt": "2026-05-20"
+}

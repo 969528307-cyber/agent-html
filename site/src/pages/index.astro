@@ -1,131 +1,174 @@
 ---
 import { getCollection } from "astro:content";
 import ArticleCard from "../components/ArticleCard.astro";
-import DownloadCard from "../components/DownloadCard.astro";
-import RouteCard from "../components/RouteCard.astro";
-import SearchHero from "../components/SearchHero.astro";
-import ToolCard from "../components/ToolCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const tools = (await getCollection("tools"))
   .filter((entry) => entry.data.status === "published")
-  .sort((a, b) => Number(b.data.featured) - Number(a.data.featured) || b.data.trendingScore - a.data.trendingScore);
-
-const learnArticles = (await getCollection("learn")).filter((entry) => entry.data.status === "published");
+  .sort((a, b) => b.data.publishedAt.localeCompare(a.data.publishedAt));
+const agents = (await getCollection("agents")).filter((entry) => entry.data.status === "published");
 const signals = (await getCollection("signals")).filter((entry) => entry.data.status === "published");
-const downloads = (await getCollection("downloads")).filter((entry) => entry.data.status === "published");
 
-const featuredTools = tools.slice(0, 3);
-const learnHighlights = learnArticles.slice(0, 3);
-const signalHighlights = signals.slice(0, 3);
-const freeDownloads = downloads.slice(0, 3);
+const featuredTools = tools.slice(0, 5).map((tool) => tool.data);
+const featuredAgents = agents.slice(0, 6).map((agent) => agent.data);
+const signalHighlights = signals.slice(0, 2);
+
+const categorySlugs = ["devops", "automation", "data", "security"];
+const categoryCounts = Object.fromEntries(
+  categorySlugs.map((slug) => [slug, tools.filter((tool) => tool.data.category.includes(slug)).length]),
+);
+
+const categories = [
+  { title: "AI Coding Tools", href: "/category/devops", count: categoryCounts.devops, tone: "blue", sub: ["Repo analysis", "Code review", "Terminal agents", "IDE workflows"] },
+  { title: "AI Automation Tools", href: "/category/automation", count: categoryCounts.automation, tone: "amber", sub: ["Workflows", "Connectors", "Browser tasks", "Scheduled jobs"] },
+  { title: "AI Data & RAG Tools", href: "/category/data", count: categoryCounts.data, tone: "green", sub: ["Databases", "Vector search", "Knowledge base", "Web retrieval"] },
+  { title: "AI Security Tools", href: "/category/security", count: categoryCounts.security, tone: "rose", sub: ["Scanning", "Sandbox", "Auth", "Compliance"] },
+];
+
+const oldestCheck = tools.length > 0
+  ? Math.ceil((Date.now() - new Date(Math.min(...tools.map((t) => new Date(t.data.lastChecked).getTime()))).getTime()) / (1000 * 60 * 60 * 24))
+  : 0;
+const pipeline = [
+  { label: "tools", value: tools.length, detail: "published" },
+  { label: "agents", value: agents.length, detail: "profiles" },
+  { label: "freshness", value: `${oldestCheck}d`, detail: "max stale" },
+  { label: "publish", value: "auto", detail: "quality gates" },
+];
 ---
 
 <BaseLayout
-  title="agentk.it - AI Agent Tool Directory"
-  description="Find the right Skills, MCP servers, CLI tools, and Workflows for your AI agent stack."
+  title="agentk.it - Agent-Native AI Tool Directory"
+  description="Browse agent-native AI tools by category, then verify MCP, Skill, CLI, Workflow, compatibility, and source quality."
 >
-  <section class="hero page">
-    <div>
-      <div class="eyebrow">Tool-first agent directory</div>
-      <h1>Find the right tools for your AI agent stack.</h1>
-      <p class="hero-copy">
-        A calm, curated index of Skills, MCP servers, CLI tools, and Workflows.
-        Agent pages help you browse compatibility; Learn and Signals help you
-        understand what matters.
-      </p>
-      <SearchHero />
-    </div>
-
-    <aside class="summary-card">
-      <div class="eyebrow">Why this exists</div>
-      <h3>Less browsing. Better setup decisions.</h3>
-      <p>
-        Every item should answer what it helps with, which agents it supports,
-        how to install it, and what to read next.
-      </p>
-    </aside>
-  </section>
-
-  <section class="section page">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Today's additions</div>
-        <h2>New tools, lightly curated.</h2>
+  <section class="home page">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="route-chip"><span></span>AI Atlas + Technical Lab</div>
+        <h1>Find agent-native AI tools by category, then verify the stack.</h1>
+        <p>
+          Browse by the job first: coding, automation, data, research, communication, and security.
+          Then filter by MCP, Skill, CLI, Workflow, compatible agent, source trust, stars, and freshness.
+        </p>
+        <form class="search-panel" action="/search">
+          <input name="q" type="search" placeholder="Search MCP servers, Skills, Workflows, Agents..." />
+          <button>Search</button>
+        </form>
       </div>
-      <p>
-        Only a few items appear on the homepage. The goal is discovery without
-        making the page feel like a spreadsheet.
-      </p>
-    </div>
-    <div class="grid-3">
-      {featuredTools.map((tool) => <ToolCard tool={tool.data} />)}
-    </div>
-  </section>
 
-  <section class="section page">
-    <div class="grid-4">
-      <RouteCard href="/tools" kicker="Browse by type" title="Tools" description="Skills, MCPs, CLI tools, and Workflows." />
-      <RouteCard href="/agents" kicker="Browse by agent" title="Agents" description="Compatibility pages for Codex, Claude Code, OpenClaw, Cursor, and more." />
-      <RouteCard href="/learn" kicker="Understand" title="Learn" description="Guides, explainers, comparisons, and glossaries." />
-      <RouteCard href="/signals" kicker="Editorial" title="Signals" description="English translations and notes from high-quality Chinese AI content." />
-    </div>
-  </section>
+      <aside class="lab-console">
+        <div class="console-head">
+          <span>Live directory</span>
+          <strong>Auto rules</strong>
+        </div>
+        <div class="console-lines">
+          {pipeline.map((item) => (
+            <div>
+              <span>{item.label}</span>
+              <strong>{item.value}</strong>
+              <p>{item.detail}</p>
+            </div>
+          ))}
+        </div>
+      </aside>
+    </section>
 
-  <section class="section page split">
-    <div class="soft-panel">
-      <div class="eyebrow">Browse by category</div>
-      <h2>Start from the job.</h2>
-      <div class="chip-list">
-        {["Search", "DevOps", "Communication", "Data", "Automation", "Productivity", "Media", "Security"].map((category) => (
-          <a href={`/category/${category.toLowerCase()}`}>{category}</a>
+    <section class="category-section">
+      <div class="section-kicker">
+        <span>01</span>
+        <h2>Start from AI categories.</h2>
+        <p>MCP / Skill / CLI / Workflow remain important, but they work better as filters than as the first door.</p>
+      </div>
+
+      <div class="atlas-grid">
+        {categories.map((category) => (
+          <a class={`atlas-card tone-${category.tone}`} href={category.href}>
+            <div class="orb" aria-hidden="true"></div>
+            <div class="card-content">
+              <div class="count">{category.count} tools</div>
+              <h3>{category.title}</h3>
+              <div class="subgrid">
+                {category.sub.map((item) => <span>{item}</span>)}
+              </div>
+            </div>
+          </a>
         ))}
       </div>
-    </div>
-    <div class="soft-panel">
-      <div class="eyebrow">Browse by agent</div>
-      <h2>Use compatibility as a filter.</h2>
-      <div class="chip-list">
-        {["Claude Code", "Codex", "Cursor", "OpenClaw", "Qwen Code", "Kimi Agent", "Trae"].map((agent) => (
-          <a href={`/for/${agent.toLowerCase().replaceAll(" ", "-")}`}>{agent}</a>
+    </section>
+
+    <section class="tool-section">
+      <div class="section-kicker">
+        <span>02</span>
+        <h2>Newly published tools.</h2>
+        <p>Cards show value first, then technical type, source evidence, and a quick path to the detail page.</p>
+      </div>
+
+      <div class="tool-shell">
+        <aside class="filters">
+          <strong>Refine</strong>
+          <a class="active" href="/tools">All tools</a>
+          <a href="/type/mcp">MCP</a>
+          <a href="/type/skill">Skill</a>
+          <a href="/type/cli">CLI</a>
+          <a href="/type/workflow">Workflow</a>
+          <a href="/type/agent-app">Agent App</a>
+          <a href="/type/agent-framework">Framework</a>
+          <a href="/type/sdk">SDK</a>
+          <a href="/agents">Agent compatibility</a>
+        </aside>
+
+        <div class="evidence-list">
+          {featuredTools.map((tool) => (
+            <article class="evidence-card">
+              <div class="card-main">
+                <div class="tags">
+                  <span>{tool.type}</span>
+                  {(tool.category || []).slice(0, 2).map((category) => <span>{category}</span>)}
+                </div>
+                <h3>{tool.name}</h3>
+                <p>{tool.summary}</p>
+              </div>
+              <div class="metrics">
+                <div>
+                  <strong>{tool.stars ? tool.stars.toLocaleString() : "linked"}</strong>
+                  <span>stars</span>
+                </div>
+                <div>
+                  <strong>{tool.license || "source"}</strong>
+                  <span>license</span>
+                </div>
+                <a href={`/item/${tool.id}`}>Open</a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="agent-section">
+      <div class="section-kicker">
+        <span>03</span>
+        <h2>Agent compatibility comes next.</h2>
+        <p>Use agent pages after picking the problem space. They explain which tools, skills, MCPs, and workflows fit each agent.</p>
+      </div>
+      <div class="agent-matrix">
+        {featuredAgents.map((agent) => (
+          <a href={`/for/${agent.id}`}>
+            <span>{agent.region}</span>
+            <strong>{agent.name}</strong>
+            <p>{agent.summary}</p>
+          </a>
         ))}
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section page">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Learn highlights</div>
-        <h2>Short guides that reduce confusion.</h2>
+    <section class="signals-section">
+      <div class="section-kicker">
+        <span>04</span>
+        <h2>Signals and Learn support the directory.</h2>
+        <p>They explain why the ecosystem is moving, without taking over the tool-first homepage.</p>
       </div>
-      <p>Learning content supports tool choice. It should not replace the directory as the main product.</p>
-    </div>
-    <div class="grid-3">
-      {
-        learnHighlights.map((article) => (
-          <ArticleCard
-            href={`/learn/${article.id}`}
-            label={article.data.topic}
-            title={article.data.title}
-            description={article.data.subtitle}
-          />
-        ))
-      }
-    </div>
-  </section>
-
-  <section class="section page">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Signals highlights</div>
-        <h2>Translated ideas, routed back to tools.</h2>
-      </div>
-      <p>Signals should show source, summary, why it matters, and related tools.</p>
-    </div>
-    <div class="grid-3">
-      {
-        signalHighlights.map((signal) => (
+      <div class="signal-grid">
+        {signalHighlights.map((signal) => (
           <ArticleCard
             href={`/signals/${signal.id}`}
             label={signal.data.permissionStatus}
@@ -133,116 +176,497 @@ const freeDownloads = downloads.slice(0, 3);
             title={signal.data.englishTitle}
             description={signal.data.executiveSummary}
           />
-        ))
-      }
-    </div>
-  </section>
-
-  <section class="section page">
-    <div class="soft-panel">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">Free downloads</div>
-          <h2>Useful entry points, not clutter.</h2>
-        </div>
-        <p>Cheatsheets and comparison assets prove quality before any upgrade path.</p>
+        ))}
+        <ArticleCard
+          href="/learn"
+          label="learn"
+          title="Read the field guides"
+          description="Short explanations for MCP, Skills, Workflows, and agent selection."
+        />
       </div>
-      <div class="grid-3">
-        {freeDownloads.map((download) => <DownloadCard download={download.data} />)}
-      </div>
-    </div>
+    </section>
   </section>
 </BaseLayout>
 
 <style>
+  :global(body) {
+    background:
+      radial-gradient(circle at 12% 0%, rgb(134 174 255 / 0.2), transparent 30rem),
+      radial-gradient(circle at 90% 8%, rgb(229 183 106 / 0.14), transparent 28rem),
+      radial-gradient(circle at 60% 86%, rgb(80 220 160 / 0.12), transparent 34rem),
+      #080b10;
+  }
+
+  .home {
+    padding: 42px 0 68px;
+  }
+
   .hero {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 360px;
-    gap: 34px;
-    align-items: end;
-    padding: 78px 0 38px;
-  }
-
-  .hero-copy {
-    max-width: 620px;
-    margin-top: 18px;
-    color: var(--muted);
-    font-size: 15.5px;
-    line-height: 1.72;
-  }
-
-  .summary-card {
-    padding: 24px;
-    border: 1px solid var(--line);
-    border-radius: 28px;
-    background:
-      linear-gradient(180deg, rgb(238 244 238 / 0.045), rgb(238 244 238 / 0.012)),
-      var(--paper);
-    box-shadow: var(--shadow);
-  }
-
-  .summary-card p {
-    margin-top: 14px;
-    color: var(--muted);
-    line-height: 1.7;
-  }
-
-  .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
     gap: 18px;
   }
 
-  .grid-4 {
+  .hero-copy,
+  .lab-console,
+  .atlas-card,
+  .filters,
+  .evidence-card,
+  .agent-matrix a {
+    border: 1px solid rgb(246 242 234 / 0.11);
+    background:
+      linear-gradient(180deg, rgb(246 242 234 / 0.07), rgb(246 242 234 / 0.026)),
+      rgb(12 17 24 / 0.82);
+    box-shadow: 0 30px 100px rgb(0 0 0 / 0.32);
+    backdrop-filter: blur(30px);
+  }
+
+  .hero-copy {
+    position: relative;
+    padding: clamp(28px, 4.4vw, 52px);
+    overflow: hidden;
+    border-radius: 42px;
+  }
+
+  .hero-copy::after {
+    position: absolute;
+    right: -80px;
+    bottom: -130px;
+    width: 360px;
+    height: 360px;
+    content: "";
+    background:
+      radial-gradient(circle at 34% 35%, rgb(246 242 234 / 0.7), transparent 8%),
+      conic-gradient(from 180deg, rgb(134 174 255 / 0.65), rgb(229 183 106 / 0.42), rgb(82 220 160 / 0.46), rgb(134 174 255 / 0.65));
+    border-radius: 42% 58% 48% 52%;
+    filter: blur(4px);
+    opacity: 0.72;
+  }
+
+  .route-chip {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 9px 12px;
+    color: #d9e6ff;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    border: 1px solid rgb(134 174 255 / 0.26);
+    border-radius: 999px;
+    background: rgb(134 174 255 / 0.1);
+  }
+
+  .route-chip span {
+    width: 8px;
+    height: 8px;
+    background: #e5b76a;
+    border-radius: 999px;
+  }
+
+  .hero h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin-top: 26px;
+    font-family: var(--sans);
+    font-size: clamp(42px, 5.7vw, 74px);
+    font-weight: 790;
+    line-height: 0.9;
+    letter-spacing: -0.082em;
+  }
+
+  .hero-copy p {
+    position: relative;
+    z-index: 1;
+    max-width: 590px;
+    margin-top: 20px;
+    color: #b1b8c7;
+    font-size: 15px;
+    line-height: 1.68;
+  }
+
+  .search-panel {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    max-width: 620px;
+    margin-top: 26px;
+    padding: 10px;
+    border: 1px solid rgb(246 242 234 / 0.12);
+    border-radius: 999px;
+    background: rgb(246 242 234 / 0.08);
+  }
+
+  .search-panel input {
+    min-height: 44px;
+    padding: 0 14px;
+    color: #f6f2ea;
+    background: transparent;
+    border: 0;
+    outline: 0;
+  }
+
+  .search-panel button,
+  .metrics a {
+    min-height: 44px;
+    padding: 0 18px;
+    color: #0a0e13;
+    font-weight: 850;
+    border: 0;
+    border-radius: 999px;
+    background: #e5b76a;
+  }
+
+  .lab-console {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+    border-radius: 42px;
+  }
+
+  .console-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: #8f98aa;
+    font-size: 13px;
+  }
+
+  .console-head strong,
+  .section-kicker h2,
+  .atlas-card h3,
+  .evidence-card h3,
+  .agent-matrix strong {
+    color: #f6f2ea;
+  }
+
+  .console-lines {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .console-lines div {
+    padding: 14px;
+    border: 1px solid rgb(134 174 255 / 0.14);
+    border-radius: 24px;
+    background:
+      linear-gradient(90deg, rgb(134 174 255 / 0.08), transparent),
+      rgb(246 242 234 / 0.035);
+  }
+
+  .console-lines span,
+  .section-kicker span {
+    color: #8fb7ff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .console-lines strong {
+    display: block;
+    margin-top: 8px;
+    color: #e5b76a;
+    font-size: 23px;
+    letter-spacing: -0.06em;
+  }
+
+  .console-lines p,
+  .section-kicker p,
+  .evidence-card p,
+  .agent-matrix p {
+    color: #9aa4b6;
+  }
+
+  .console-lines p {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+
+  .category-section,
+  .tool-section,
+  .agent-section,
+  .signals-section {
+    margin-top: 44px;
+  }
+
+  .section-kicker {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 0.9fr) minmax(240px, 0.55fr);
+    gap: 18px;
+    align-items: end;
+    margin-bottom: 16px;
+  }
+
+  .section-kicker h2 {
+    font-family: var(--sans);
+    font-size: clamp(28px, 3.6vw, 44px);
+    font-weight: 780;
+    line-height: 0.96;
+    letter-spacing: -0.075em;
+  }
+
+  .section-kicker p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .atlas-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 14px;
   }
 
-  .split {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 20px;
+  .atlas-card {
+    position: relative;
+    min-height: 230px;
+    padding: 16px;
+    overflow: hidden;
+    border-radius: 32px;
   }
 
-  .soft-panel {
-    padding: 24px;
-    border: 1px solid var(--line);
-    border-radius: 28px;
+  .orb {
+    position: absolute;
+    inset: 14px 14px auto;
+    height: 96px;
+    border-radius: 20px;
     background:
-      linear-gradient(180deg, rgb(238 244 238 / 0.035), rgb(238 244 238 / 0.01)),
-      var(--paper);
+      radial-gradient(circle at 52% 48%, var(--tone), transparent 46%),
+      linear-gradient(135deg, rgb(246 242 234 / 0.16), transparent),
+      rgb(246 242 234 / 0.045);
   }
 
-  .chip-list {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 18px;
+  .tone-blue { --tone: rgb(134 174 255 / 0.56); }
+  .tone-amber { --tone: rgb(229 183 106 / 0.52); }
+  .tone-green { --tone: rgb(82 220 160 / 0.44); }
+  .tone-rose { --tone: rgb(248 113 113 / 0.38); }
+
+  .card-content {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
   }
 
-  .chip-list a {
-    min-height: 44px;
-    padding: 12px 15px;
-    color: var(--ink);
-    background: rgb(238 244 238 / 0.035);
-    border: 1px solid var(--line);
+  .count,
+  .tags span {
+    display: inline-flex;
+    padding: 7px 9px;
+    color: #c8d0dd;
+    font-size: 11px;
+    font-weight: 850;
+    text-transform: uppercase;
+    border: 1px solid rgb(246 242 234 / 0.1);
     border-radius: 999px;
+    background: rgb(246 242 234 / 0.05);
   }
 
-  .chip-list a:hover {
-    color: var(--sage);
-    border-color: var(--line-strong);
+  .atlas-card h3 {
+    margin-top: 12px;
+    font-size: 21px;
+    letter-spacing: -0.06em;
   }
 
-  @media (max-width: 960px) {
-    .hero {
+  .subgrid {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .subgrid span {
+    color: #cdd5e3;
+    font-size: 12px;
+  }
+
+  .tool-shell {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .filters {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: start;
+    padding: 18px;
+    border-radius: 28px;
+  }
+
+  .filters strong {
+    margin-bottom: 6px;
+  }
+
+  .filters a {
+    min-height: 40px;
+    padding: 11px 12px;
+    color: #aab4c4;
+    border: 1px solid rgb(246 242 234 / 0.09);
+    border-radius: 999px;
+    background: rgb(246 242 234 / 0.035);
+  }
+
+  .filters a.active {
+    color: #0a0e13;
+    background: #8fb7ff;
+  }
+
+  .evidence-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .evidence-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .evidence-card h3 {
+    margin-top: 12px;
+    font-size: 21px;
+    letter-spacing: -0.055em;
+  }
+
+  .evidence-card p {
+    display: -webkit-box;
+    max-width: 760px;
+    margin-top: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    align-content: center;
+  }
+
+  .metrics div {
+    padding: 11px;
+    border: 1px solid rgb(246 242 234 / 0.08);
+    border-radius: 18px;
+    background: rgb(246 242 234 / 0.035);
+  }
+
+  .metrics strong {
+    display: block;
+    color: #e5b76a;
+    font-size: 17px;
+    letter-spacing: -0.04em;
+  }
+
+  .metrics span {
+    color: #8f98aa;
+    font-size: 12px;
+  }
+
+  .metrics a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / -1;
+  }
+
+  .agent-matrix,
+  .signal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .agent-matrix a {
+    min-height: 176px;
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .agent-matrix a > span {
+    color: #8fb7ff;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .agent-matrix strong {
+    display: block;
+    margin-top: 16px;
+    font-size: 21px;
+    letter-spacing: -0.06em;
+  }
+
+  .agent-matrix p {
+    display: -webkit-box;
+    margin-top: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.52;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  @media (max-width: 1100px) {
+    .hero,
+    .tool-shell {
       grid-template-columns: 1fr;
     }
 
-    .grid-3,
-    .grid-4,
-    .split {
+    .atlas-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .filters {
+      position: static;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .home {
+      padding-top: 28px;
+    }
+
+    .hero-copy,
+    .lab-console,
+    .atlas-card,
+    .evidence-card,
+    .agent-matrix a {
+      border-radius: 26px;
+    }
+
+    .hero,
+    .atlas-grid,
+    .agent-matrix,
+    .signal-grid,
+    .evidence-card,
+    .metrics,
+    .section-kicker {
+      grid-template-columns: 1fr;
+    }
+
+    .search-panel {
+      align-items: stretch;
+      border-radius: 24px;
       grid-template-columns: 1fr;
     }
   }

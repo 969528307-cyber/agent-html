@@ -1,0 +1,73 @@
+{
+  "id": "electerm",
+  "name": "Electerm",
+  "type": "mcp",
+  "status": "published",
+  "summary": "📻Terminal/ssh/sftp/ftp/telnet/serialport/RDP/VNC/Spice client(linux, mac, win)",
+  "description": "📻Terminal/ssh/sftp/ftp/telnet/serialport/RDP/VNC/Spice client(linux, mac, win)",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/electerm/electerm",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/electerm/electerm",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/electerm/electerm#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/electerm/electerm#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/electerm/electerm/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "For experienced developers, you may try the web app version running in browser(including mobile device): electerm-web or docker image for electerm-web",
+    "Works as a terminal/file manager or ssh/sftp/ftp/telnet/serialport/RDP/VNC/Spice client",
+    "MCP (Model Context Protocol) widget for AI assistants and external tools integration - see MCP Widget Usage Guide",
+    "Deep link support: Open connections with URLs like telnet://192.168.2.31:34554 or ssh://user@host:22 - see Deep link support wiki",
+    "\"https-proxy-agent\": \"7.0.1\",",
+    "\"socks-proxy-agent\": \"8.0.1\","
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T23:31:54Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/electerm/electerm",
+  "repoUrl": "https://github.com/electerm/electerm",
+  "license": "MIT",
+  "stars": 14119,
+  "lastUpdated": "2026-05-19T23:31:54Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

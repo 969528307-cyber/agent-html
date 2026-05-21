@@ -1,0 +1,52 @@
+---
+englishTitle: "Agent Memory Goes Infrastructure: Memori at 14K Stars"
+originalTitle: "Memori: Agent-Native Memory Infrastructure"
+subtitle: "LLM-agnostic persistent memory layer for agents signals a new infrastructure category"
+status: "published"
+topic: "agent"
+path: "start"
+order: 14
+difficulty: "intermediate"
+readingTime: "2 min"
+summaryBullets:
+  - "Memori (14K★): agent-native memory infrastructure, LLM-agnostic"
+  - "Turns agent execution and conversation into structured, persistent state"
+  - "Signals emergence of 'agent middleware' as a new infrastructure category"
+  - "Complements MCP (tool access) with persistent state management"
+relatedTools: ["memori"]
+relatedAgents: ["claude-code", "codex", "hermes-agent"]
+nextReads: ["agent-feature-matrix-2026", "mcp-server-selection-guide"]
+sourceName: "GitHub"
+sourceUrl: "https://github.com/MemoriLabs/Memori"
+author: "MemoriLabs"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-19"
+executiveSummary: "Memori represents a new category: agent-native memory infrastructure. It's LLM-agnostic, turning agent execution traces and conversations into structured, persistent state for production systems. At 14K stars, it signals that memory is becoming a standalone infrastructure concern, separate from the agent runtime."
+signalThesis: "Agent memory is becoming its own infrastructure layer — not a feature of the agent, but a standalone service the agent connects to."
+whyItMatters: "If MCP gives agents tools and Skills give agents behavior, memory gives agents continuity. The emergence of dedicated memory infrastructure completes the agent middleware stack: MCP for tool access, Skills for behavior, Memory for state."
+keyTakeaways:
+  - "14,613★ in a new category: agent-native memory, not just vector databases"
+  - "LLM-agnostic: works across Claude, GPT, and open-source models"
+  - "Structured persistent state, not just chat history"
+ecosystemImpact:
+  - label: "Agent Infrastructure"
+    body: "Memory joins MCP as a standard middleware concern for production agents"
+  - label: "Tool Developers"
+    body: "Tools that need persistent context should consider memory APIs, not local storage"
+whatToWatchNext:
+  - "Whether major agent platforms (Codex, Claude Code) build native memory or rely on third-party"
+  - "Other memory-focused infrastructure projects emerging on GitHub"
+publishedAt: "2026-05-19"
+---
+
+Memori has reached 14,613 stars on GitHub, marking the emergence of agent-native memory as a standalone infrastructure category.
+
+## What Memori Does
+
+Unlike vector databases that store embeddings, or chat history that preserves conversation logs, Memori transforms agent execution and conversation into structured, persistent state. It's LLM-agnostic — whether an agent uses Claude, GPT, or an open-source model, Memori provides the same memory layer.
+
+## The Missing Middleware Layer
+
+The agent infrastructure stack is becoming clearer: MCP servers provide tools, Skills provide behavior templates, and memory provides continuity. Together these three layers turn a stateless LLM call into a persistent, capable agent system. Memori's traction suggests this stack is being formalized by the community, not just by platform vendors.
+
+Source: [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori)

@@ -1,0 +1,200 @@
+{
+  "id": "candidate-continuous-claude-v3-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Continuous Claude V3",
+  "sourceUrl": "https://github.com/parcadei/Continuous-Claude-v3",
+  "sourceName": "GitHub",
+  "author": "parcadei",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Context management for Claude Code. Hooks maintain state via ledgers and handoffs. MCP execution without context pollution. Agent orchestration with isolated context windows.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "parcadei",
+    "repo": "Continuous-Claude-v3",
+    "fullName": "parcadei/Continuous-Claude-v3",
+    "stars": 3777,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "claude-code",
+      "claude-code-cli",
+      "claude-code-hooks",
+      "claude-code-mcp",
+      "claude-code-skills",
+      "claude-code-subagents",
+      "claude-skills",
+      "mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-01-26T15:27:49Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agents/README.md",
+    "docs/ARCHITECTURE.md",
+    "docs/hooks/README.md",
+    "docs/MULTI-SESSION-ARCHITECTURE.md",
+    "docs/QUICKSTART.md",
+    "docs/README.md",
+    "docs/skill-activation.md",
+    "docs/skills/help.md",
+    "docs/skills/README.md",
+    "docs/TLDR.md",
+    "docs/tools/math.md",
+    "docs/tools/memory.md",
+    "docs/tools/README.md",
+    "docs/tools/tldr.md",
+    "docs/workflows/README.md",
+    ".claude/plugins/braintrust-tracing/skills/trace-claude-code/SKILL.md",
+    ".claude/skills/agent-context-isolation/SKILL.md",
+    ".claude/skills/agent-orchestration/SKILL.md",
+    ".claude/skills/agentic-workflow/SKILL.md",
+    ".claude/skills/agentica-claude-proxy/SKILL.md",
+    ".claude/skills/agentica-infrastructure/SKILL.md",
+    ".claude/skills/agentica-prompts/SKILL.md",
+    ".claude/skills/agentica-sdk/SKILL.md",
+    ".claude/skills/agentica-server/SKILL.md",
+    ".claude/skills/agentica-spawn/SKILL.md",
+    ".claude/skills/archive/async-repl-protocol/SKILL.md",
+    ".claude/skills/archive/leann-search/SKILL.md",
+    ".claude/skills/archive/router-first-architecture/SKILL.md",
+    ".claude/skills/archive/search-hierarchy/SKILL.md",
+    ".claude/skills/archive/search-tools/SKILL.md",
+    ".claude/skills/ast-grep-find/SKILL.md",
+    ".claude/skills/async-repl-protocol/SKILL.md",
+    ".claude/skills/background-agent-pings/SKILL.md",
+    ".claude/skills/braintrust-analyze/SKILL.md",
+    ".claude/skills/braintrust-tracing/SKILL.md",
+    ".claude/skills/build/SKILL.md",
+    ".claude/skills/cli-reference/SKILL.md",
+    ".claude/skills/commit/SKILL.md",
+    ".claude/skills/complete-skill/SKILL.md"
+  ],
+  "readmeExtract": "Continuous Claude A persistent, learning, multi agent development environment built on Claude Code [![License: MIT](https://img.shields.io/badge/License MIT blue.svg)](LICENSE) [![Claude Code](https://img.shields.io/badge/Claude Code orange.svg)](https://claude.ai/code) [![Skills](https://img.shields.io/badge/Skills 109 green.svg)]( skills system) [![Agents](https://img.shields.io/badge/Agents 32 purple.svg)]( agents",
+  "skillExtracts": [
+    {
+      "path": ".claude/plugins/braintrust-tracing/skills/trace-claude-code/SKILL.md",
+      "extract": "name: trace claude code description: | Automatically trace Claude Code conversations to Braintrust for observability. Captures sessions, conversation turns, and tool calls as hierarchical traces. version: 1.1.0 Trace Claude Code to Braintrust Automatically send Claude Code conversations to Braintrust for tracing and observability. Get full visibility into your AI coding sessions with hierarchical traces showing sessi"
+    },
+    {
+      "path": ".claude/skills/agent-context-isolation/SKILL.md",
+      "extract": "name: agent context isolation description: Agent Context Isolation user invocable: false Agent Context Isolation Prevent agent output from polluting the main context window. Rules 1. Use Background Agents with File Based Coordination Background agents with run in background=true isolate their context. Have them write results to files in .claude/cache/agents/<agent type / . 2. Never Use TaskOutput to Retrieve Results "
+    },
+    {
+      "path": ".claude/skills/agent-orchestration/SKILL.md",
+      "extract": "name: agent orchestration description: Agent Orchestration Rules user invocable: false Agent Orchestration Rules When the user asks to implement something, use implementation agents to preserve main context. The Pattern Wrong burns context: Right preserves context: When to Use Agents | Task Type | Use Agent? | Reason | | | | | | Multi file implementation | Yes | Agent handles complexity internally | | Following a pla"
+    },
+    {
+      "path": ".claude/skills/agentic-workflow/SKILL.md",
+      "extract": "name: agentic workflow description: Agentic Workflow Pattern user invocable: false Agentic Workflow Pattern Standard multi agent pipeline for implementation tasks. Architecture Principles Use run in background: true for all agents to keep main context minimal Use Task tool (never TaskOutput ) to avoid receiving full agent transcripts Agents write outputs to .claude/cache/agents/<stage / for injection into subsequent "
+    },
+    {
+      "path": ".claude/skills/agentica-claude-proxy/SKILL.md",
+      "extract": "name: agentica claude proxy description: Guide for integrating Agentica SDK with Claude Code CLI proxy allowed tools: [Read, Bash] user invocable: false Agentica Claude Code Proxy Integration Use this skill when developing or debugging the Agentica Claude proxy integration. When to Use Setting up Agentica agents to use Claude Code tools Debugging agent hallucination issues Fixing permission errors in file operations "
+    },
+    {
+      "path": ".claude/skills/agentica-infrastructure/SKILL.md",
+      "extract": "name: agentica infrastructure description: Reference guide for Agentica multi agent infrastructure APIs allowed tools: [Read] user invocable: false Agentica Infrastructure Reference Complete API specification for Agentica multi agent coordination infrastructure. When to Use Building multi agent workflows with Agentica patterns Need exact constructor signatures for pattern classes Want to understand coordination datab"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A persistent, learning, multi-agent development environment built on Claude Code",
+    "Continuous Claude transforms Claude Code into a continuously learning system that maintains context across sessions, orchestrates specialized agents, and eliminates wasting tokens through intelligent code analysis.",
+    "Claude Code has a compaction problem: when context fills up, the system compacts your conversation, losing nuanced understanding and decisions made during the session.",
+    "Continuous Claude solves this with:",
+    "Complex tasks need coordination Meta-skills orchestrate agent workflows",
+    "Repeating workflows manually 109 skills with natural language triggers",
+    "Continuous because Claude maintains state across sessions.",
+    "An agent is five things: Prompt + Tools + Context + Memory + Model."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Context management for Claude Code. Hooks maintain state via ledgers and handoffs. MCP execution without context pollution. Agent orchestration with isolated context windows.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Continuous Claude V3 is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "A persistent, learning, multi-agent development environment built on Claude Code",
+      "Continuous Claude transforms Claude Code into a continuously learning system that maintains context across sessions, orchestrates specialized agents, and eliminates wasting tokens through intelligent code analysis."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "continuous-claude-v3",
+  "publishedAt": "2026-05-20"
+}

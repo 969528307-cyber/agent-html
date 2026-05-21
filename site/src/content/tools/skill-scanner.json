@@ -1,0 +1,78 @@
+{
+  "id": "skill-scanner",
+  "name": "Skill Scanner",
+  "type": "skill",
+  "status": "published",
+  "summary": "Security Scanner for Agent Skills",
+  "description": "Security Scanner for Agent Skills",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/cisco-ai-defense/skill-scanner",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/cisco-ai-defense/skill-scanner",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/cisco-ai-defense/skill-scanner#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/cisco-ai-defense/skill-scanner#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/cisco-ai-defense/skill-scanner/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A best-effort security scanner for AI Agent Skills that detects prompt injection, data exfiltration, and malicious code patterns.",
+    "A scan that returns no findings does not guarantee that a skill is free of all threats.",
+    "Supports OpenAI Codex Skills and Cursor Agent Skills formats following the Agent Skills specification.",
+    "With --lenient, also scans non-standard formats such as Claude Code .claude/commands/.md and flat markdown skill repos.",
+    "CI/CD Ready - SARIF output for GitHub Code Scanning, reusable GitHub Actions workflow, exit codes for build failures",
+    "Pre-commit Hook - Standard pre-commit framework integration to scan skills before every commit",
+    "Join the Cisco AI Discord to discuss, share feedback, or connect with the team.",
+    "Skill Scanner is a detection tool."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-30T01:53:23Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/cisco-ai-defense/skill-scanner",
+  "repoUrl": "https://github.com/cisco-ai-defense/skill-scanner",
+  "license": "NOASSERTION",
+  "stars": 2010,
+  "lastUpdated": "2026-04-30T01:53:23Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

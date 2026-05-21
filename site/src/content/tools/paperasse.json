@@ -1,0 +1,78 @@
+{
+  "id": "paperasse",
+  "name": "Paperasse",
+  "type": "skill",
+  "status": "published",
+  "summary": "🇫🇷  Skills pour agents IA spécialisés dans la bureaucratie française : Comptable, Notaire, ...",
+  "description": "🇫🇷  Skills pour agents IA spécialisés dans la bureaucratie française : Comptable, Notaire, ...",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/romainsimon/paperasse",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/romainsimon/paperasse",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/romainsimon/paperasse#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/romainsimon/paperasse#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/romainsimon/paperasse/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Des skills pour agents IA spécialisés dans la bureaucratie française.",
+    "Les skills sont du Markdown.",
+    "Ils fonctionnent avec tout agent ou outil capable de lire des fichiers.",
+    "Paperasse inclut aussi des connecteurs pour récupérer automatiquement vos transactions bancaires (Qonto) et paiements (Stripe).",
+    "Installe les skills depuis le registre agentskill.sh.",
+    "Pas besoin de cloner le repo et permet d'avoir tous les skills maintenus à jour automatiquement via ags + scan de sécurité, auto-review des skills, etc.",
+    "Copiez-collez ces instructions dans votre agent IA :",
+    "Si vous n'utilisez ni agentskill.sh ni un clone Git complet, attention aux liens symboliques vers les ressources partagées (data, scripts, templates, integrations)."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-13T15:42:08Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/romainsimon/paperasse",
+  "repoUrl": "https://github.com/romainsimon/paperasse",
+  "license": "MIT",
+  "stars": 1885,
+  "lastUpdated": "2026-05-13T15:42:08Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,217 @@
+{
+  "id": "candidate-html-anything-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Html Anything",
+  "sourceUrl": "https://github.com/nexu-io/html-anything",
+  "sourceName": "GitHub",
+  "author": "nexu-io",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · data report · Hyperframes) 🛡️ Sandboxed preview · 📤 1-click to WeChat / X / Zhihu / HTML / PNG 🔑 Zero API key — Claude Code / Cursor / Codex / Gemini / Copilot / OpenCode / Qwen / Aider.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "nexu-io",
+    "repo": "html-anything",
+    "fullName": "nexu-io/html-anything",
+    "stars": 3101,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "agentic",
+      "ai-agents",
+      "ai-design",
+      "ai-editor",
+      "byok",
+      "claude",
+      "claude-code",
+      "claude-skills",
+      "coding-agents",
+      "generative-ai",
+      "html",
+      "html-editor",
+      "hyperframes",
+      "local-first",
+      "markdown",
+      "nextjs",
+      "vibe-coding",
+      "wechat",
+      "xiaohongshu"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T12:26:33Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh-CN.md",
+    "docs/cover.html",
+    "package.json",
+    "next/src/lib/templates/skills/article-magazine/SKILL.md",
+    "next/src/lib/templates/skills/blog-post/SKILL.md",
+    "next/src/lib/templates/skills/card-twitter/SKILL.md",
+    "next/src/lib/templates/skills/card-xiaohongshu/SKILL.md",
+    "next/src/lib/templates/skills/dashboard/SKILL.md",
+    "next/src/lib/templates/skills/data-report/SKILL.md",
+    "next/src/lib/templates/skills/dating-web/SKILL.md",
+    "next/src/lib/templates/skills/deck-blueprint/SKILL.md",
+    "next/src/lib/templates/skills/deck-course-module/SKILL.md",
+    "next/src/lib/templates/skills/deck-dir-key-nav/SKILL.md",
+    "next/src/lib/templates/skills/deck-graphify-dark/SKILL.md",
+    "next/src/lib/templates/skills/deck-guizang-editorial/SKILL.md",
+    "next/src/lib/templates/skills/deck-hermes-cyber/SKILL.md",
+    "next/src/lib/templates/skills/deck-magazine-web/SKILL.md",
+    "next/src/lib/templates/skills/deck-obsidian-claude/SKILL.md",
+    "next/src/lib/templates/skills/deck-open-slide-canvas/SKILL.md",
+    "next/src/lib/templates/skills/deck-pitch/SKILL.md",
+    "next/src/lib/templates/skills/deck-presenter-mode/SKILL.md",
+    "next/src/lib/templates/skills/deck-product-launch/SKILL.md",
+    "next/src/lib/templates/skills/deck-replit/SKILL.md",
+    "next/src/lib/templates/skills/deck-safety-alert/SKILL.md",
+    "next/src/lib/templates/skills/deck-simple/SKILL.md",
+    "next/src/lib/templates/skills/deck-swiss-international/SKILL.md",
+    "next/src/lib/templates/skills/deck-tech-sharing/SKILL.md",
+    "next/src/lib/templates/skills/deck-xhs-pastel/SKILL.md",
+    "next/src/lib/templates/skills/deck-xhs-post/SKILL.md",
+    "next/src/lib/templates/skills/deck-xhs-white/SKILL.md",
+    "next/src/lib/templates/skills/digital-eguide/SKILL.md",
+    "next/src/lib/templates/skills/doc-kami-parchment/SKILL.md",
+    "next/src/lib/templates/skills/docs-page/SKILL.md",
+    "next/src/lib/templates/skills/email-marketing/SKILL.md",
+    "next/src/lib/templates/skills/eng-runbook/SKILL.md",
+    "next/src/lib/templates/skills/finance-report/SKILL.md",
+    "next/src/lib/templates/skills/flowai-team-dashboard/SKILL.md",
+    "next/src/lib/templates/skills/frame-data-chart-nyt/SKILL.md",
+    "next/src/lib/templates/skills/frame-flowchart-sticky/SKILL.md"
+  ],
+  "readmeExtract": "HTML Anything <p align=\"center\" <sub From the team behind <a href=\"https://github.com/nexu io/open design\" <b Open Design</b </a — <b 40k★ · 200+ contributors</b , production grade and iterating faster. html anything is the focused agent era HTML editor; if it clicks for you, <a href=\"https://github.com/nexu io/open design\" Open Design</a is where the same team ships at scale.</sub </p Markdown is the draft. HTML is ",
+  "skillExtracts": [
+    {
+      "path": "next/src/lib/templates/skills/article-magazine/SKILL.md",
+      "extract": "name: article magazine zh name: \"杂志文章\" en name: \"Magazine Article\" emoji: \"📖\" description: \"Substack / Medium 高级感长文排版, 适合公众号、博客发布\" category: article scenario: marketing aspect hint: \"A4 / 长页面\" featured: 11 tags: [\"blog\", \"essay\", \"newsletter\", \"公众号\", \"博客\", \"文章\"] example id: sample article trq212 html example name: \"杂志文章 · HTML 取代 Markdown\" example format: markdown example tagline: \"灵感来自 @trq212 的推文\" example desc: \"围"
+    },
+    {
+      "path": "next/src/lib/templates/skills/blog-post/SKILL.md",
+      "extract": "name: blog post zh name: \"博客长文\" en name: \"Blog Post\" emoji: \"📰\" description: \"杂志感长文, 含 masthead、hero、figures、pull quote、作者署名\" category: article scenario: marketing aspect hint: \"长页面\" tags: [\"blog\", \"essay\", \"case study\", \"长文\"] 【模板: 博客长文 / Blog Post】 【意图】≥ 600 字的真正的长文章, 排版以 typography 为主, 70% 文字 20% 图 10% chrome。 【布局】 Masthead (publication name + date) Hero (大标题 + 副标 + 作者署名 + 阅读时间) 正文 (单栏 65ch, 含 figures, pull quotes"
+    },
+    {
+      "path": "next/src/lib/templates/skills/card-twitter/SKILL.md",
+      "extract": "name: card twitter zh name: \"Twitter 分享卡\" en name: \"Twitter Share Card\" emoji: \"🐦\" description: \"推特金句 / 数据卡, 适合配推文\" category: card scenario: marketing aspect hint: \"1600×900 (16:9)\" tags: [\"twitter\", \"x\", \"quote\", \"金句\"] example id: sample twitter quote example name: \"推特卡 · 金句\" example format: text example tagline: \"16:9 暗色金句卡, 截图直接配推文\" example desc: \"高对比金句模板, 含 grid 网格 + 渐变光晕背景\" 【模板: Twitter 分享卡】 容器 w [1600px] h [90"
+    },
+    {
+      "path": "next/src/lib/templates/skills/card-xiaohongshu/SKILL.md",
+      "extract": "name: card xiaohongshu zh name: \"小红书图文卡片\" en name: \"Xiaohongshu Card\" emoji: \"📱\" description: \"小红书风格知识卡片, 多张联排可滑动浏览\" category: card scenario: marketing aspect hint: \"1080×1440 (3:4)\" featured: 24 tags: [\"xhs\", \"小红书\", \"carousel\", \"图文\"] example id: sample xhs ai habits example name: \"小红书图文卡 · AI 工具习惯\" example format: markdown example tagline: \"7 张连排, 莫兰迪渐变\" example desc: \"干货卡片合集, 适合截图发小红书 / 朋友圈\" 【模板: 小红书图文卡片】 输出 N 张连续"
+    },
+    {
+      "path": "next/src/lib/templates/skills/dashboard/SKILL.md",
+      "extract": "name: dashboard zh name: \"管理后台仪表板\" en name: \"Admin Dashboard\" emoji: \"🎛️\" description: \"固定侧栏 + 顶栏 + KPI 网格 + 1 2 张图\" category: dashboard scenario: operations aspect hint: \"桌面 1440\" tags: [\"dashboard\", \"admin\", \"analytics\"] 【模板: 管理后台 Dashboard】 【意图】标准 admin/analytics 仪表板单页。 【布局】 Fixed left sidebar (logo + 导航 + 用户 footer) Top bar (search + 通知 + avatar) Main: KPI cards 网格 (3 5 个) 1 2 张主图表 (折线 / 柱 / 区域) 底部 recent activi"
+    },
+    {
+      "path": "next/src/lib/templates/skills/data-report/SKILL.md",
+      "extract": "name: data report zh name: \"数据可视化报告\" en name: \"Data Visualization Report\" emoji: \"📊\" description: \"把 CSV/Excel/JSON 数据转成漂亮的可视化报告页\" category: data scenario: finance aspect hint: \"桌面长页面\" featured: 10 tags: [\"data\", \"report\", \"chart\", \"数据\", \"报告\"] example id: sample data weekly report example name: \"数据报告 · 周报\" example format: csv example tagline: \"KPI 卡 + Chart.js 图表 + 表格\" example desc: \"9 个月增长数据自动渲染成可视化报告, 内联 Chart.js\""
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "html-anything is the focused agent-era HTML editor; if it clicks for you, Open Design is where the same team ships at scale.",
+    "Your local agent writes it. The agentic HTML editor — in the agentic era, you don't hand-edit docs anymore, so the output format should be what the reader actually wants: HTML.",
+    "The eight skills that surface at the top of the picker's Featured / 推荐 group — sorted by their recommended: rank in SKILL.md frontmatter (lower = higher).",
+    "deck-guizang-editorial · deck · recommended: 1. Magazine × e-ink editorial deck, inspired by op7418/guizang-ppt-skill — 10 locked layouts × 5 palettes (Ink / Indigo Porcelain / Forest Ink / Kraft / Dune).",
+    "frame-glitch-title · frame · recommended: 6. Glitch title frame — cyan/magenta chromatic offset, CRT scanlines, corrupted-data subtitle, ASCII noise in the corners.",
+    "The full skill catalog (organized by mode) is in Skills below.",
+    "Anthropic's Claude Code team announced they stopped writing internal docs in Markdown — they ship HTML now.",
+    "nexu-io/open-design — the agent-detection layer, the design-system model, and the SKILL.md protocol."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · data report · Hyperframes) 🛡️ Sandboxed preview · 📤 1-click to WeChat / X / Zhihu / HTML / PNG 🔑 Zero API key — Claude Code / Cursor / Codex / Gemini / Copilot / OpenCode / Qwen / Aider.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "coding",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Html Anything is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "html-anything is the focused agent-era HTML editor; if it clicks for you, Open Design is where the same team ships at scale."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "html-anything",
+  "publishedAt": "2026-05-18"
+}

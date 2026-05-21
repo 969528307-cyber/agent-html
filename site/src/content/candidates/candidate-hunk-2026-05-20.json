@@ -1,0 +1,147 @@
+{
+  "id": "candidate-hunk-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Hunk",
+  "sourceUrl": "https://github.com/modem-dev/hunk",
+  "sourceName": "GitHub",
+  "author": "modem-dev",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Review-first terminal diff viewer for agentic coders",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "modem-dev",
+    "repo": "hunk",
+    "fullName": "modem-dev/hunk",
+    "stars": 4217,
+    "license": "MIT",
+    "topics": [
+      "cli",
+      "code-review",
+      "diff",
+      "git",
+      "tui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:39:36Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agent-workflows.md",
+    "docs/opentui-component.md",
+    "package.json",
+    "examples/3-agent-review-demo/agent-context.json",
+    "examples/3-agent-review-demo/README.md",
+    "examples/6-readme-screenshot/agent-context.json",
+    "skills/hunk-review/SKILL.md",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "hunk Hunk is a review first terminal diff viewer for agent authored changesets, built on [OpenTUI](https://github.com/anomalyco/opentui) and [Pierre diffs](https://www.npmjs.com/package/@pierre/diffs). [![CI status](https://img.shields.io/github/actions/workflow/status/modem dev/hunk/ci.yml?branch=main&style=for the badge&label=CI)](https://github.com/modem dev/hunk/actions/workflows/ci.yml?branch=main) [![Latest rel",
+  "skillExtracts": [
+    {
+      "path": "skills/hunk-review/SKILL.md",
+      "extract": "name: hunk review description: Interacts with live Hunk diff review sessions via CLI. Inspects review focus, navigates files and hunks, reloads session contents, and adds inline review comments. Use when the user has a Hunk session running or wants to review diffs interactively. Hunk Review Hunk is an interactive terminal diff viewer. The TUI is for the user do NOT run hunk diff , hunk show , or other interactive com"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Hunk is a review-first terminal diff viewer for agent-authored changesets, built on OpenTUI and Pierre diffs.",
+    "multi-file review stream with sidebar navigation",
+    "inline AI and agent annotations beside the code",
+    "watch mode for auto-reloading file and Git-backed reviews",
+    "keyboard, mouse, pager, and Git difftool support",
+    "Git recommended for most workflows",
+    "Hunk mirrors Git's diff-style commands, but opens the changeset in a review UI instead of plain text.",
+    "Tell your agent to add the skill file returned by hunk skill path."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Review-first terminal diff viewer for agentic coders",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Hunk is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to cli.",
+      "Hunk is a review-first terminal diff viewer for agent-authored changesets, built on OpenTUI and Pierre diffs.",
+      "multi-file review stream with sidebar navigation"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "hunk",
+  "publishedAt": "2026-05-20"
+}

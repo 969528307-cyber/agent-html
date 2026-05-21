@@ -1,0 +1,215 @@
+{
+  "id": "candidate-tool-github-fireredteam-firered-openstoryline",
+  "type": "tool",
+  "status": "published",
+  "title": "FireRed OpenStoryline",
+  "sourceUrl": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "FireRedTeam",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consistent, professional storytelling.",
+  "proposedCategory": [
+    "automation",
+    "media"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "FireRedTeam",
+    "repo": "FireRed-OpenStoryline",
+    "fullName": "FireRedTeam/FireRed-OpenStoryline",
+    "stars": 2693,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "chatbot",
+      "langchain",
+      "mcp",
+      "skills",
+      "video",
+      "video-cut",
+      "video-editing",
+      "video-editing-tools"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-07T02:55:44Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/source/en/api-key.md",
+    "docs/source/en/guide.md",
+    "docs/source/zh/api-key.md",
+    "docs/source/zh/guide.md",
+    ".claude/skills/openstoryline-install/SKILL.md",
+    ".claude/skills/openstoryline-use/SKILL.md",
+    ".storyline/skills/ai_transition_editing_skill/SKILL.md",
+    ".storyline/skills/create_profile_style_skill/SKILL.md",
+    ".storyline/skills/default_editing_workflow_skill/SKILL.md",
+    ".storyline/skills/speech_rough_cut_skill/SKILL.md",
+    ".storyline/skills/subtitle_imitation_skill/SKILL.md"
+  ],
+  "readmeExtract": "<div align=\"center\" <a href=\" gh light mode only\" <img src=\"https://image url 2 feature 1251524319.cos.ap shanghai.myqcloud.com/openstoryline/web/static/brand white.png\" alt=\"openstoryline\" width=\"70%\" / </a <a href=\" gh dark mode only\" <img src=\"https://image url 2 feature 1251524319.cos.ap shanghai.myqcloud.com/openstoryline/web/static/brand black.png\" alt=\"openstoryline\" width=\"70%\" / </a <p <a href=\"./README zh.m",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/openstoryline-install/SKILL.md",
+      "extract": "name: openstoryline install description: Install, configure, and start FireRed OpenStoryline from source on a local machine. Use when a user asks to set up OpenStoryline, troubleshoot installation, download required resources, fill config.toml API keys, or launch the MCP and web services, as well as Chinese requests like “安装 OpenStoryline”, “配置 OpenStoryline”, “启动 OpenStoryline”, “把 OpenStoryline 跑起来”, “修复 OpenStoryl"
+    },
+    {
+      "path": ".claude/skills/openstoryline-use/SKILL.md",
+      "extract": "name: openstoryline use description: Use this skill when OpenStoryline is already installed and the user wants to start the local MCP/Web services, create or continue a session, send editing instructions, perform multi turn re editing, and verify rendered video outputs, as well as Chinese requests like “启动 OpenStoryline”, “把 OpenStoryline 跑起来”, “用 OpenStoryline 剪视频”. OpenStoryline Usage Skill 你负责在“已安装完成”的前提下，执行 OpenS"
+    },
+    {
+      "path": ".storyline/skills/ai_transition_editing_skill/SKILL.md",
+      "extract": "name: ai transition editing skill description: 【WORKFLOW SKILL】使用 AI 生成的转场将用户素材串联起来。 角色定义 (Role) 你是一个专业的剪辑师，擅长利用现有工具和 Skills 完成剪辑任务。 注意事项 AI 转场剪辑目前不支持字幕、配音 基本流程 AI 转场剪辑流程如下，这里每一步都对应一个或多个工具或 Skills 供你使用： 搜索素材 \"search media\"（可跳过）。如果你发现用户并没有上传素材，可以提示用户你可以上网搜索素材。搜索素材后需要运行load media工具才可以真正加载到素材。 素材加载 \"load media\"（固定）。用于获取输入素材的路径、长宽等基础信息。 镜头切分 \"split shots\"（可跳过）。将素材按镜头切分成片段。 内容理解 \"understand clips\"（可跳过）。 为每个片段(clips)生成一段描述"
+    },
+    {
+      "path": ".storyline/skills/create_profile_style_skill/SKILL.md",
+      "extract": "name: create profile style skill description: 【META SKILL】分析当前剪辑逻辑与风格，总结并生成一个新的可复用 Skill 文件，存入剪辑技能库。Analyze the current editing logic and style, summarize and generate a new reusable Skill file, and store it in the editing skill library. version: 1.0.0 author: User Agent Architect tags: [meta skill, workflow, writing, file system] 角色定义 (Role) 你是一个专业的“剪辑风格架构师”。你具备深厚的影视视听语言知识，能够从具体的剪辑操作（如切点选择、转场习惯、BGM卡点逻辑）中提炼出抽象的“剪辑哲学”"
+    },
+    {
+      "path": ".storyline/skills/default_editing_workflow_skill/SKILL.md",
+      "extract": "name: default editing workflow skill description: 【WORKFLOW SKILL】通用剪辑流程。可用于剪辑日常/旅行 vlog，或是任何用户需求不明确的场景。A universal editing workflow. It can be used to edit daily/travel vlogs, or any scenario where user needs are unclear. 角色定义 (Role) 你是一个专业的剪辑师，擅长利用现有工具和 Skills 完成剪辑任务。 常规剪辑流程如下，这里每一步都对应一个或多个工具或 Skills 供你使用： 搜索素材 \"search media\"（可跳过）。如果你发现用户并没有上传素材，可以提示用户你可以上网搜索素材。搜索素材后需要运行load media工具才可以真正加载到素材。 素材加载 \"load media\"（固定）"
+    },
+    {
+      "path": ".storyline/skills/speech_rough_cut_skill/SKILL.md",
+      "extract": "name: speech rough cut skill description: 【WORKFLOW SKILL】根据输入视频的音频信息进行口播粗剪。Rough cut based on audio information from the input video for narration. 角色定义 (Role) 你是一个专业的“口播粗剪专家”。你具备深厚的影视视听语言知识，能够根据视频的音频信息（如ASR结果）进行合理的剪辑，提取出有价值的片段，去除冗余内容。 任务目标 (Objective) 你的任务是根据输入的视频音频信息，自动进行口播粗剪，生成一个包含剪辑结果的 JSON 对象，供后续节点使用。需要依次调用以下几个工具： 1. 读取视频素材； 2. 执行split shots节点但是使用“skip”参数跳过； 3. 使用asr节点完成文字的识别和文字时间戳打标； 4. 再用speech rough cut节点实现视"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "⚡Editing Skill Archiving: Save your complete editing workflow as a custom Skill.",
+    "Simply swap the media and apply the corresponding Skill to instantly replicate the style, enabling efficient batch creation.",
+    "FireRed-OpenStoryline supports usage through Agent Skills.",
+    "openstoryline-use: for starting the service and running the actual video editing workflow.",
+    "This repository comes with built-in Claude Code Skills.",
+    "If you start Claude Code from the root directory of this repository, you can use the project-level Skills included in the repo directly.",
+    "Other Compatible Agents (Experimental)",
+    "These Skills are based on an open Agent Skills format, so in theory they can also be installed into other compatible agents."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consistent, professional storytelling.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "media",
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "media",
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 5,
+    "skill": 15,
+    "cli": 3,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "GitHub topics tag as skills.",
+    "Skill-collection or agent-rules language in description.",
+    "Workflow/automation/orchestration language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: knowledge-resource, workflow, sdk.",
+    "LLM: agent-app + [mcp, skill, cli, workflow] — FireRed-OpenStoryline is an AI video editing agent with a user interface, supporting MCP, skills, CLI, and workflow capabilities."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "workflow",
+    "sdk"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "FireRed OpenStoryline is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with media workflows.",
+      "Helps with docs workflows.",
+      "Relevant to automation.",
+      "Relevant to media."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:fireredteam/firered-openstoryline",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "firered-openstoryline",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

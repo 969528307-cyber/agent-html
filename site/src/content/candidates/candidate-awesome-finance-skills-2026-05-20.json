@@ -1,0 +1,162 @@
+{
+  "id": "candidate-awesome-finance-skills-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Finance Skills",
+  "sourceUrl": "https://github.com/RKiding/Awesome-finance-skills",
+  "sourceName": "GitHub",
+  "author": "RKiding",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A collection of Awesome Finance Agent Skills for free and easy to start | 一系列开源免费的金融分析Agent Skills",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "OpenClaw",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "RKiding",
+    "repo": "Awesome-finance-skills",
+    "fullName": "RKiding/Awesome-finance-skills",
+    "stars": 2298,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "finances",
+      "fintech"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-29T05:03:47Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/alphaear-deepear-lite/SKILL.md",
+    "skills/alphaear-logic-visualizer/SKILL.md",
+    "skills/alphaear-news/SKILL.md",
+    "skills/alphaear-predictor/SKILL.md",
+    "skills/alphaear-reporter/SKILL.md",
+    "skills/alphaear-search/SKILL.md",
+    "skills/alphaear-sentiment/SKILL.md",
+    "skills/alphaear-signal-tracker/SKILL.md",
+    "skills/alphaear-stock/SKILL.md",
+    "skills/skill-creator/SKILL.md"
+  ],
+  "readmeExtract": "🧠 Awesome Finance Skills Transform your AI agent into a Wall Street analyst in seconds. A plug and play skill collection that empowers LLMs with real time news , stock data , sentiment analysis , logic visualization , and market prediction capabilities. 🚀 New: [DeepEar](https://github.com/HKUSTDial/DeepEar) Live Demo (Free Lite Version) is now online: [https://deepear.vercel.app/](https://deepear.vercel.app/) [Engl",
+  "skillExtracts": [
+    {
+      "path": "skills/alphaear-deepear-lite/SKILL.md",
+      "extract": "name: alphaear deepear lite description: Fetch the latest financial signals and transmission chain analyses from DeepEar Lite. Use when the user needs immediate insights into financial market trends, stock performance factors, and reasoning from the DeepEar Lite dashboard. DeepEar Lite Skill Overview Fetch high frequency financial signals, including titles, summaries, confidence scores, and reasoning directly from th"
+    },
+    {
+      "path": "skills/alphaear-logic-visualizer/SKILL.md",
+      "extract": "name: alphaear logic visualizer description: Create visualize finance logic diagrams (e.g., Draw.io XML) to explain complex finance transmission chains or finance logic flows. AlphaEar Logic Visualizer Skill Overview This skill specializes in creating visual representations of logic flows, specifically generating Draw.io XML compatible diagrams. It is useful for visualizing investment theses or signal transmission ch"
+    },
+    {
+      "path": "skills/alphaear-news/SKILL.md",
+      "extract": "name: alphaear news description: Fetch hot finance news, unified trends, and prediction financial market data. Use when the user needs real time financial news, trend reports from multiple finance sources (Weibo, Zhihu, WallstreetCN, etc.), or Polymarket finance market prediction data. AlphaEar News Skill Overview Fetch real time hot news, generate unified trend reports, and retrieve Polymarket prediction data. Capab"
+    },
+    {
+      "path": "skills/alphaear-predictor/SKILL.md",
+      "extract": "name: alphaear predictor description: Market prediction skill using Kronos. Use when user needs finance market time series forecasting or news aware finance market adjustments. AlphaEar Predictor Skill Overview This skill utilizes the Kronos model (via KronosPredictorUtility ) to perform time series forecasting and adjust predictions based on news sentiment. Capabilities 1. Forecast Market Trends 1. Forecast Market T"
+    },
+    {
+      "path": "skills/alphaear-reporter/SKILL.md",
+      "extract": "name: alphaear reporter description: Plan, write, and edit professional financial reports; generate finance chart configurations. Use when condensing finance analysis into a structured output. AlphaEar Reporter Skill Overview This skill provides a structured workflow for generating professional financial reports. It includes planning, writing, editing, and creating visual aids (charts). Capabilities Capabilities 1. G"
+    },
+    {
+      "path": "skills/alphaear-search/SKILL.md",
+      "extract": "name: alphaear search description: Perform finance web searches and local context searches. Use when the user needs general finance info from the web (Jina/DDG/Baidu) or needs to retrieve finance information from a local document store (RAG). AlphaEar Search Skill Overview Unified search capabilities: web search (Jina/DDG/Baidu) and local RAG search. Capabilities 1. Web Search Use scripts/search tools.py via SearchTo"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Transform your AI agent into a Wall Street analyst in seconds.",
+    "A plug-and-play skill collection that empowers LLMs with real-time news, stock data, sentiment analysis, logic visualization, and market prediction capabilities.",
+    "That's it! Your agent now understands finance.",
+    "Skill Description Key Feature",
+    "alphaear-stock A-Share, HK & US stock data Ticker search, OHLCV, Fundamentals",
+    "alphaear-search Web search & local RAG Jina / DDG / Baidu",
+    "Awesome Finance Skills supports multiple agent frameworks:",
+    "Antigravity Workspace /.agent/skills/ /"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A collection of Awesome Finance Agent Skills for free and easy to start | 一系列开源免费的金融分析Agent Skills",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "data"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "data"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome Finance Skills is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Relevant to skill.",
+      "Transform your AI agent into a Wall Street analyst in seconds.",
+      "A plug-and-play skill collection that empowers LLMs with real-time news, stock data, sentiment analysis, logic visualization, and market prediction capabilities.",
+      "That's it! Your agent now understands finance."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

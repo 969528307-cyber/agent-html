@@ -1,0 +1,145 @@
+{
+  "id": "candidate-osworld-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "OSWorld",
+  "sourceUrl": "https://github.com/xlang-ai/OSWorld",
+  "sourceName": "GitHub",
+  "author": "xlang-ai",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "[NeurIPS 2024] OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Kimi"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "xlang-ai",
+    "repo": "OSWorld",
+    "fullName": "xlang-ai/OSWorld",
+    "stars": 2859,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "artificial-intelligence",
+      "benchmark",
+      "cli",
+      "code-generation",
+      "gui",
+      "language-model",
+      "large-action-model",
+      "llm",
+      "multimodal",
+      "natural-language-processing",
+      "reinforcement-learning",
+      "rpa",
+      "vlm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T14:12:41Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"https://huggingface.co/datasets/xlangai/assets/resolve/main/github banner v2.png\" alt=\"Banner\" </p <p align=\"center\" <a href=\"https://os world.github.io/\" Website</a • <a href=\"https://arxiv.org/abs/2404.07972\" Paper</a • <a href=\"https://timothyxxx.github.io/OSWorld/\" Doc</a • <a href=\"https://github.com/xlang ai/OSWorld/tree/main/evaluation examples\" Data</a • <a href=\"https://os world.g",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "If you wish to run the baseline agent used in our paper, you can execute the following command as an example under the GPT-4o pure-screenshot setting:",
+    "Parallel execution (example showing switching provider to docker)",
+    "The results, which include screenshots, actions, and video recordings of the agent's task completion, will be saved in the ./results (or other resultdir you specified) directory in this case.",
+    "For manual verification and examination of specific benchmark tasks, you can use the manual examination tool:",
+    "Please start by reading through the agent interface and the environment interface.",
+    "Correctly implement the agent interface and import your customized version in the run.py (for single-threaded execution) or scripts/python/runmultienv.py / scripts/python/runmultienvxxx.py (for parallel execution) file.",
+    "Afterward, you can execute a command similar to the one in the previous section to run the benchmark on your agent.",
+    "title={OSWorld: Benchmarking Multimodal Agents..."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "[NeurIPS 2024] OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "media",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "media",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "OSWorld is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to cli."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "osworld",
+  "publishedAt": "2026-05-20"
+}

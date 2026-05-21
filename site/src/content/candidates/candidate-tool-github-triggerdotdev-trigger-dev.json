@@ -1,0 +1,218 @@
+{
+  "id": "candidate-tool-github-triggerdotdev-trigger-dev",
+  "type": "tool",
+  "status": "published",
+  "title": "Trigger.dev",
+  "sourceUrl": "https://github.com/triggerdotdev/trigger.dev",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "triggerdotdev",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Trigger.dev – build and deploy fully‑managed AI agents and workflows",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "triggerdotdev",
+    "repo": "trigger.dev",
+    "fullName": "triggerdotdev/trigger.dev",
+    "stars": 14903,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai",
+      "ai-agent-framework",
+      "ai-agents",
+      "automation",
+      "background-jobs",
+      "mcp",
+      "mcp-server",
+      "nextjs",
+      "orchestration",
+      "scheduler",
+      "serverless",
+      "workflow-automation",
+      "workflows"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T08:26:05Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.gitignore",
+    "docs/apikeys.mdx",
+    "docs/batch-queue-metrics.md",
+    "docs/batch-queue-stress-test-plan.md",
+    "docs/building-with-ai.mdx",
+    "docs/bulk-actions.mdx",
+    "docs/changelog.mdx",
+    "docs/CLAUDE.md",
+    "docs/cli-deploy-commands.mdx",
+    "docs/cli-deploy.mdx",
+    "docs/cli-dev-commands.mdx",
+    "docs/cli-dev.mdx",
+    "docs/cli-init-commands.mdx",
+    "docs/cli-introduction.mdx",
+    "docs/cli-list-profiles-commands.mdx",
+    "docs/cli-login-commands.mdx",
+    "docs/cli-logout-commands.mdx",
+    "docs/cli-preview-archive.mdx",
+    "docs/cli-promote-commands.mdx",
+    "docs/cli-switch.mdx",
+    "docs/cli-update-commands.mdx",
+    "docs/cli-whoami-commands.mdx",
+    "docs/community.mdx",
+    "docs/compute-private-beta.mdx",
+    "docs/context.mdx",
+    "docs/deploy-environment-variables.mdx",
+    "docs/deployment/atomic-deployment.mdx",
+    "docs/deployment/overview.mdx",
+    "docs/deployment/preview-branches-archive.png",
+    "docs/deployment/preview-branches-new.png",
+    "docs/deployment/preview-branches.mdx",
+    "docs/deployment/preview-branches.png",
+    "docs/deployment/preview-environment-branches.png",
+    "docs/deployment/preview-environment-variables.png",
+    "docs/docs.json",
+    "docs/errors-retrying.mdx",
+    "docs/examples.mdx",
+    "docs/github-actions.mdx",
+    "docs/github-integration.mdx"
+  ],
+  "readmeExtract": "<div align=\"center\" ![Trigger.dev logo](https://content.trigger.dev/github header banner.jpg) Build and deploy fully‑managed AI agents and workflows [Website](https://trigger.dev) | [Docs](https://trigger.dev/docs) | [Issues](https://github.com/triggerdotdev/trigger.dev/issues) | [Example projects](https://github.com/triggerdotdev/examples) | [Feature requests](https://triggerdev.featurebase.app/) | [Public roadmap](",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Build and deploy fully‑managed AI agents and workflows",
+    "Website Docs Issues Example projects Feature requests Public roadmap Self-hosting",
+    "Trigger.dev is the open-source platform for building AI workflows in TypeScript.",
+    "The platform designed for building AI agents",
+    "Build AI agents using all the frameworks, services and LLMs you're used to, deploy them to Trigger.dev and get durable, long-running tasks with retries, queues, observability, and elastic scaling out of the box.",
+    "Durability, retries & queues: Build rock solid agents and AI applications using our durable tasks, retries, queues and idempotency.",
+    "True runtime freedom: Customize your deployed tasks with system packages – run browsers, Python scripts, FFmpeg and more.",
+    "Run Python scripts, FFmpeg, browsers, and more."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Trigger.dev – build and deploy fully‑managed AI agents and workflows",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "example",
+    "useCategory": [
+      "automation",
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "example",
+  "useCategory": [
+    "automation",
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 7,
+    "workflow": 9,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: example.",
+    "Alternative capabilities: knowledge-resource, workflow, cli.",
+    "LLM: workflow + [mcp, cli, workflow] — The platform is primarily designed for building and deploying AI workflows and orchestrated agents, with support for MCP, a CLI, and workflow automation."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "workflow",
+    "cli"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "reject_not_tool",
+  "enrichment": {
+    "decision": "reject_not_tool",
+    "confidence": "high",
+    "publishType": "none",
+    "primaryType": "single-tool",
+    "whatIsIt": "Trigger.dev is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with docs workflows.",
+      "Relevant to automation.",
+      "Build and deploy fully‑managed AI agents and workflows",
+      "Website Docs Issues Example projects Feature requests Public roadmap Self-hosting"
+    ],
+    "reasons": [
+      "This candidate is a starter, template, or example rather than a durable tool listing."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:triggerdotdev/trigger.dev",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null,
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "trigger-dev",
+  "publishedAt": "2026-05-18"
+}

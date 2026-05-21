@@ -1,0 +1,166 @@
+{
+  "id": "candidate-web-search-mcp-2026-05-16",
+  "type": "tool",
+  "status": "published",
+  "title": "Web Search Mcp",
+  "sourceUrl": "https://github.com/mrkrsl/web-search-mcp",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "mrkrsl",
+  "discoveredAt": "2026-05-16",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A simple, locally hosted Web Search MCP server for use with Local LLMs",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "mrkrsl",
+    "repo": "web-search-mcp",
+    "fullName": "mrkrsl/web-search-mcp",
+    "stars": 860,
+    "license": "MIT",
+    "topics": [
+      "llm",
+      "lmstudio",
+      "local-llm",
+      "mcp",
+      "web-search"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-08-08T19:58:47Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/API.md",
+    "package.json"
+  ],
+  "readmeExtract": "Web Search MCP Server for use with Local LLMs A TypeScript MCP (Model Context Protocol) server that provides comprehensive web search capabilities using direct connections (no API keys required) with multiple tools for different use cases. Features Multi Engine Web Search : Prioritises Bing Brave DuckDuckGo for optimal reliability and performance Full Page Content Extraction : Fetches and extracts complete page conte",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Web Search MCP Server for use with Local LLMs",
+    "A TypeScript MCP (Model Context Protocol) server that provides comprehensive web search capabilities using direct connections (no API keys required) with multiple tools for different use cases.",
+    "Multi-Engine Web Search: Prioritises Bing > Brave > DuckDuckGo for optimal reliability and performance",
+    "Full Page Content Extraction: Fetches and extracts complete page content from search results",
+    "Multiple Search Tools: Three specialised tools for different use cases",
+    "Smart Request Strategy: Switches between playwright browesrs and fast axios requests to ensure results are returned",
+    "The server provides three specialised tools for different web search needs:",
+    "When a comprehensive search is requested, the server uses an optimised search strategy:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A simple, locally hosted Web Search MCP server for use with Local LLMs",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search"
+  ],
+  "classificationConfidence": "medium",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Agent app or product platform language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: agent-app, cli.",
+    "LLM: mcp + [mcp] — The project is explicitly a TypeScript MCP server for web search, providing tools via Model Context Protocol."
+  ],
+  "classificationAlternatives": [
+    "agent-app",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Web Search Mcp is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Relevant to search.",
+      "Web Search MCP Server for use with Local LLMs",
+      "A TypeScript MCP (Model Context Protocol) server that provides comprehensive web search capabilities using direct connections (no API keys required) with multiple tools for different use cases.",
+      "Multi-Engine Web Search: Prioritises Bing > Brave > DuckDuckGo for optimal reliability and performance"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:mrkrsl/web-search-mcp",
+  "firstDiscoveredAt": "2026-05-16",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-16",
+  "reviewedBy": "local-review",
+  "publishedAs": "web-search-mcp",
+  "publishedAt": "2026-05-16",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

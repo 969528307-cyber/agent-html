@@ -4,16 +4,127 @@
   "status": "published",
   "region": "global",
   "vendor": "Anthropic",
-  "summary": "A terminal-native coding agent with strong long-context repository workflows.",
-  "bestFor": ["Large codebases", "Terminal workflows", "MCP tool use"],
-  "interfaceType": ["cli"],
+  "summary": "Anthropic's terminal-native coding agent for large repositories, MCP-connected tools, skills, hooks, and team workflows.",
+  "bestFor": [
+    "Large repository work",
+    "Terminal-native development",
+    "MCP and tool-connected coding",
+    "Team-shared agent workflows"
+  ],
+  "interfaceType": [
+    "cli"
+  ],
   "documentationUrl": "https://docs.anthropic.com/",
   "englishDocsUrl": "https://docs.anthropic.com/",
   "supportsMcp": true,
   "supportsSkills": true,
   "supportsCli": true,
   "supportsWorkflows": true,
-  "toolTypes": { "skills": 38, "mcps": 34, "cli": 10, "workflows": 20 },
-  "relatedLearn": ["how-to-choose-agent"],
-  "lastChecked": "2026-05-11"
+  "toolTypes": {
+    "skills": 38,
+    "mcps": 34,
+    "cli": 10,
+    "workflows": 20
+  },
+  "relatedLearn": [
+    "how-to-choose-agent"
+  ],
+  "lastChecked": "2026-05-12",
+  "overview": "Claude Code is Anthropic's terminal-native coding agent for working inside software projects. The page should explain it as an agentic engineering environment: repository context, CLAUDE.md memory, slash commands, skills, hooks, MCP connectors, and permission settings all shape how it behaves. It is a core Agent category because many reusable skills, command packs, and MCP integrations are designed around Claude Code first.",
+  "strengths": [
+    {
+      "title": "Large-codebase navigation",
+      "body": "A strong fit when the agent must understand project structure, modify files, and reason across a long-running coding session."
+    },
+    {
+      "title": "MCP-connected tool use",
+      "body": "Claude Code documents MCP as a first-class way to connect external tools, prompts, authenticated services, and data sources."
+    },
+    {
+      "title": "Reusable workflow surfaces",
+      "body": "Slash commands, skills, hooks, subagents, and plugins give teams several ways to package repeatable engineering behavior."
+    },
+    {
+      "title": "Project memory near the code",
+      "body": "CLAUDE.md and related memory patterns let teams keep conventions, architecture notes, and operating rules close to the repository."
+    }
+  ],
+  "extensionModel": [
+    {
+      "label": "MCP",
+      "status": "native",
+      "body": "MCP is a central integration layer for tools, prompts, and external services in Claude Code.",
+      "sourceUrl": "https://docs.anthropic.com/en/docs/claude-code/mcp"
+    },
+    {
+      "label": "Skills",
+      "status": "native",
+      "body": "Skills are suitable for comprehensive reusable capabilities with structure, scripts, references, and team workflows.",
+      "sourceUrl": "https://docs.claude.com/en/docs/claude-code/slash-commands"
+    },
+    {
+      "label": "Hooks",
+      "status": "native",
+      "body": "Hooks let teams intercept and control agent behavior around tool use, notifications, validation, and workflow automation.",
+      "sourceUrl": "https://docs.claude.com/en/docs/claude-code/hooks"
+    },
+    {
+      "label": "Workflow",
+      "status": "native",
+      "body": "Custom commands and skills are good for PR review, lint repair, migration routines, release checks, and operational checklists.",
+      "sourceUrl": "https://docs.claude.com/en/docs/claude-code/slash-commands"
+    }
+  ],
+  "recommendedStacks": [
+    {
+      "title": "Team repository assistant",
+      "body": "Combine Claude Code with project memory, skills, and code-review workflows for shared engineering standards.",
+      "toolIds": [
+        "repo-review-skill",
+        "playwright-mcp"
+      ]
+    },
+    {
+      "title": "MCP-connected engineering loop",
+      "body": "Use MCP-backed GitHub, docs, issue tracker, database, or observability tools when implementation depends on external systems.",
+      "toolIds": [
+        "context7"
+      ]
+    },
+    {
+      "title": "Command and skill library",
+      "body": "Treat Claude Code as a reference ecosystem for slash commands and structured skills that other agents may later adapt.",
+      "toolIds": [
+        "awesome-codex-skills"
+      ]
+    }
+  ],
+  "limitations": [
+    "MCP servers, hooks, plugins, and commands can reach sensitive systems, so permissions and source review matter.",
+    "Teams should document who owns shared commands and skills; otherwise the workflow layer becomes hard to audit.",
+    "Do not collapse Claude Code skills, slash commands, hooks, and MCP into one generic extension label.",
+    "Community packages should remain candidate-only until their source, maintenance, and scope are reviewed."
+  ],
+  "sources": [
+    {
+      "label": "Claude Code feature overview",
+      "url": "https://code.claude.com/docs/en/features-overview",
+      "kind": "docs"
+    },
+    {
+      "label": "Claude Code MCP docs",
+      "url": "https://docs.anthropic.com/en/docs/claude-code/mcp",
+      "kind": "docs"
+    },
+    {
+      "label": "Claude Code slash commands",
+      "url": "https://docs.claude.com/en/docs/claude-code/slash-commands",
+      "kind": "docs"
+    },
+    {
+      "label": "Claude Code hooks",
+      "url": "https://docs.claude.com/en/docs/claude-code/hooks",
+      "kind": "docs"
+    }
+  ]
 }

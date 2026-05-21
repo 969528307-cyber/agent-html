@@ -1,0 +1,169 @@
+{
+  "id": "candidate-super-agent-party-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Super Agent Party",
+  "sourceUrl": "https://github.com/heshengtao/super-agent-party",
+  "sourceName": "GitHub",
+  "author": "heshengtao",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "⭐ All-in-one AI companion! Super Agent Party = Self hosted neuro sama + openclaw! ⭐ 全能AI伴侣！超级智能体派对 = 自托管neuro sama + openclaw!",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "heshengtao",
+    "repo": "super-agent-party",
+    "fullName": "heshengtao/super-agent-party",
+    "stars": 2282,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent-skills",
+      "ai-companion",
+      "ai-vtuber",
+      "claude-code",
+      "comfyui",
+      "cowork",
+      "discord-bot",
+      "home-assistant",
+      "im-bot",
+      "livestream",
+      "mcp",
+      "neuro-sama",
+      "openclaw",
+      "sap",
+      "sillytavern",
+      "super-agent-party",
+      "vrm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T09:52:52Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    "pyproject.toml",
+    "skills/find-skills/SKILL.md",
+    "skills/officeCLI/SKILL.md",
+    "skills/sap-extension-creator/SKILL.md",
+    "skills/skill-creator/SKILL.md"
+  ],
+  "readmeExtract": "![image](static/source/cover.png) <div align=\"center\" <a href=\"./README ZH.md\" <img src=\"https://img.shields.io/badge/简体中文 自述文档 00B4AB?style=for the badge&logo=markdown\"/ </a <a href=\"./README.md\" <img src=\"https://img.shields.io/badge/English Readme 0057D2?style=for the badge&logo=markdown\"/ </a <a href=\"./README JA.md\" <img src=\"https://img.shields.io/badge/日本語 Readme FF69B4?style=for the badge&logo=markdown\"/ </a ",
+  "skillExtracts": [
+    {
+      "path": "skills/find-skills/SKILL.md",
+      "extract": "name: find skills description: Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill. Find Skills This skill helps you discover and install skills from the open agent skil"
+    },
+    {
+      "path": "skills/officeCLI/SKILL.md",
+      "extract": "name: officeCLI description: Create, analyze, proofread, and modify Office documents (.docx, .xlsx, .pptx) using the officecli CLI tool. Use when the user wants to create, inspect, check formatting, find issues, add charts, or modify Office documents. officecli AI friendly CLI for .docx, .xlsx, .pptx. Single binary, no dependencies, no Office installation needed. Install & Update Same command for both install and upg"
+    },
+    {
+      "path": "skills/sap-extension-creator/SKILL.md",
+      "extract": "name: sap extension creator description: Create Super Agent Party (SAP) extensions. This skill should be used when users want to create, build, or scaffold a new extension for Super Agent Party including static HTML extensions (pure frontend) and Node.js backend extensions. Triggers on requests like \"create a new SAP extension\", \"build an extension for Super Agent Party\", \"scaffold a plugin\", \"make a chat UI extensio"
+    },
+    {
+      "path": "skills/skill-creator/SKILL.md",
+      "extract": "name: skill creator description: Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude's capabilities with specialized knowledge, workflows, or tool integrations. license: Complete terms in LICENSE.txt Skill Creator This skill provides guidance for creating effective skills. About Skills Skills are modular, self contained"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Task Center: Enable your AI agents to perform any advanced tasks in the background, automatically control your computer to get work done, supporting MCP and Agent Skills.",
+    "Computer Control: Through desktop vision combined with a toolchain for controlling the mouse, keyboard, and terminal, AI agents can accomplish any task on a computer!",
+    "AI Browser: Equips your AI agents with their own browser, supporting automatic control",
+    "All extensions can be opened either in an independent window or in a sidebar.You can even use the agent skill sap-extension-creator to create new SAP extensions, achieving the bootstrapping of the agent party!",
+    "Developer-Friendly: Offers open OpenAI API interfaces and MCP interfaces, allowing agents to be externally connected",
+    "CLI Agent needs to check the documentation at READMEAGENT.md.",
+    "If you are a human using a CLI Agent",
+    "./super-agent-data can be replaced with any local folder."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "⭐ All-in-one AI companion! Super Agent Party = Self hosted neuro sama + openclaw! ⭐ 全能AI伴侣！超级智能体派对 = 自托管neuro sama + openclaw!",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "media",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Super Agent Party is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Task Center: Enable your AI agents to perform any advanced tasks in the background, automatically control your computer to get work done, supporting MCP and Agent Skills."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "super-agent-party",
+  "publishedAt": "2026-05-20"
+}

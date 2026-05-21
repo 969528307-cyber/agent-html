@@ -1,0 +1,104 @@
+{
+  "id": "candidate-signal-jeecgboot-ai-skills-meet-low-code-46-000-stars-for-china-s-ai-native-development-platform",
+  "type": "signal",
+  "status": "published",
+  "title": "JeecgBoot: AI Skills Meet Low-Code — 46,000 Stars for China's AI-Native Development Platform",
+  "sourceUrl": "https://github.com/jeecgboot/JeecgBoot",
+  "sourceName": "GitHub — jeecgboot/JeecgBoot",
+  "sourceRegistryId": "local-signals-library",
+  "sourceRegistry": {
+    "id": "local-signals-library",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/signals",
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "directory",
+  "summary": "JeecgBoot is China's most popular AI-powered low-code platform with 46,000+ GitHub stars. It combines traditional low-code generation with AI Skills that can generate entire systems from natural language descriptions — one sentence to draw workflows, design forms, and scaffold complete applications. With built-in AI chat, knowledge bases, MCP plugin support, and compatibility with mainstream Chinese and Western LLMs, it represents the convergence of AI agents and enterprise application development in China.",
+  "proposedCategory": [
+    "signal"
+  ],
+  "proposedAgents": [],
+  "extractedSignals": [
+    "AI Skills are being embedded directly into China's most popular low-code platforms, enabling natural-language-driven application generation — this represents a fundamentally different path to AI-assisted development than Western coding agents.",
+    "With 46,000 stars, JeecgBoot is one of China's most popular developer tools. Its addition of AI Skills marks the moment when AI agent capabilities move from experimental coding assistants into production development platforms used by thousands of enterprises. The combination of low-code scaffolding and AI-driven generation creates a development paradigm that doesn't exist in the Western market at this scale.",
+    "AI Skills integrated into low-code: one sentence generates workflows, forms, and complete CRUD systems.",
+    "46,000+ stars make it the most popular Chinese AI+low-code platform on GitHub.",
+    "MCP plugin support connects the low-code platform to the broader AI agent ecosystem."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Signals collector output. Review source quality, translation value, ecosystem implication, and whether this belongs as a Signal rather than Learn content.",
+  "publishedAs": "jeecgboot-ai-skills-lowcode-platform",
+  "publishedAt": "2026-05-18",
+  "author": "JeecgBoot Team",
+  "permissionStatus": "open_license",
+  "signalProfile": {
+    "sourceName": "GitHub — jeecgboot/JeecgBoot",
+    "originalPublishedAt": "2026-05-01",
+    "permissionStatus": "open_license",
+    "translationMode": "full_english_translation",
+    "relatedTools": [
+      "n8n",
+      "activepieces"
+    ],
+    "relatedAgents": [],
+    "relatedLearn": [
+      "what-is-agent-skill",
+      "skill-vs-mcp-vs-workflow"
+    ]
+  },
+  "canonicalKey": "signal:url:https://github.com/jeecgboot/jeecgboot:title:jeecgboot ai skills meet low code 46 000 stars for china s ai native development platform",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "duplicateReason": null,
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "JeecgBoot: AI Skills Meet Low-Code — 46,000 Stars for China's AI-Native Development Platform is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to signal.",
+      "AI Skills are being embedded directly into China's most popular low-code platforms, enabling natural-language-driven application generation — this represents a fundamentally different path to AI-assisted development than Western coding agents.",
+      "With 46,000 stars, JeecgBoot is one of China's most popular developer tools. Its addition of AI Skills marks the moment when AI agent capabilities move from experimental coding assistants into production development platforms used by thousands of enterprises. The combination of low-code scaffolding and AI-driven generation creates a development paradigm that doesn't exist in the Western market at this scale.",
+      "AI Skills integrated into low-code: one sentence generates workflows, forms, and complete CRUD systems."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null
+}

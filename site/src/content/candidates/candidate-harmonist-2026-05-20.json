@@ -1,0 +1,142 @@
+{
+  "id": "candidate-harmonist-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Harmonist",
+  "sourceUrl": "https://github.com/GammaLabTechnologies/harmonist",
+  "sourceName": "GitHub",
+  "author": "GammaLabTechnologies",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Portable AI agent orchestration with mechanical protocol enforcement. 186 agents, zero runtime dependencies.",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Kimi",
+    "OpenClaw"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "GammaLabTechnologies",
+    "repo": "harmonist",
+    "fullName": "GammaLabTechnologies/harmonist",
+    "stars": 1807,
+    "license": "MIT",
+    "topics": [
+      "agent-framework",
+      "agent-system",
+      "ai-agents",
+      "claude-code",
+      "cursor-ide",
+      "llm",
+      "multi-agent-framework",
+      "orchestration",
+      "prompt-engineering",
+      "python"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-23T05:48:48Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "<div align=\"center\" Harmonist Portable AI agent orchestration with mechanical protocol enforcement A drop in multi agent framework for Cursor, Claude Code, Copilot, Windsurf, Aider, and other AI coding assistants. [![GitHub stars](https://img.shields.io/github/stars/GammaLabTechnologies/harmonist?style=flat&logo=github&color=yellow)](https://github.com/GammaLabTechnologies/harmonist/stargazers) [![CI](https://github.",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Portable AI agent orchestration with mechanical protocol enforcement",
+    "A drop-in multi-agent framework for Cursor, Claude Code, Copilot, Windsurf, Aider, and other AI coding assistants.",
+    "turn is gated by hooks that check whether the required reviewers ran,",
+    "This is the first open-source agent framework where protocol",
+    "The problem: every serious engineering workflow has non-negotiable",
+    "external call retries with idempotency keys\", \"security review before",
+    "Thin agent frameworks (LangChain, CrewAI, AutoGen, MetaGPT and",
+    "observe every subagent dispatch, every file edit, every session stop."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Portable AI agent orchestration with mechanical protocol enforcement. 186 agents, zero runtime dependencies.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "Harmonist is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-app.",
+      "Portable AI agent orchestration with mechanical protocol enforcement",
+      "A drop-in multi-agent framework for Cursor, Claude Code, Copilot, Windsurf, Aider, and other AI coding assistants."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "harmonist",
+  "publishedAt": "2026-05-20"
+}

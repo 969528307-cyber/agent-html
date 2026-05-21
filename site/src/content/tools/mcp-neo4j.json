@@ -1,0 +1,76 @@
+{
+  "id": "mcp-neo4j",
+  "name": "Mcp Neo4j",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Neo4j Labs Model Context Protocol servers",
+  "description": "Neo4j Labs Model Context Protocol servers",
+  "category": [
+    "data"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/neo4j-contrib/mcp-neo4j#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/neo4j-contrib/mcp-neo4j#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/neo4j-contrib/mcp-neo4j/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "These MCP servers are a part of the Neo4j Labs program.",
+    "If you are looking for the official product Neo4j MCP server please find it here.",
+    "Model Context Protocol (MCP) is a standardized protocol for managing context between large language models (LLMs) and external systems.",
+    "This lets you use Claude Desktop, or any other MCP Client (VS Code, Cursor, Windsurf, Gemini CLI), to use natural language to accomplish things with Neo4j and your Aura account, e.g.:",
+    "Create a new instance named mcp-test for Aura Professional with 4GB and Graph Data Science enabled",
+    "Store the fact that I worked on the Neo4j MCP Servers today with Andreas and Oskar",
+    "mcp-neo4j-cypher - natural language to Cypher queries",
+    "mcp-neo4j-memory - knowledge graph memory stored in Neo4j"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-10T18:53:37Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/neo4j-contrib/mcp-neo4j",
+  "repoUrl": "https://github.com/neo4j-contrib/mcp-neo4j",
+  "license": "MIT",
+  "stars": 947,
+  "lastUpdated": "2026-04-10T18:53:37Z",
+  "lastChecked": "2026-05-16",
+  "publishedAt": "2026-05-16",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,76 @@
+{
+  "id": "firecrawl-mcp-server",
+  "name": "Firecrawl Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
+  "description": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A Model Context Protocol (MCP) server implementation that integrates with Firecrawl for searching, scraping, and interacting with the web.",
+    "Search the web and get full page content",
+    "Deep research with autonomous agent",
+    "Cloud browser sessions with agent-browser automation",
+    "Play around with our MCP Server on MCP.so's playground or on Klavis AI.",
+    "To configure Firecrawl MCP in Cursor v0.48.6",
+    "Go to Features > MCP Servers",
+    "Click \"+ Add new global MCP server\""
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T20:40:50Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "repoUrl": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "license": "MIT",
+  "stars": 6297,
+  "lastUpdated": "2026-05-12T20:40:50Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

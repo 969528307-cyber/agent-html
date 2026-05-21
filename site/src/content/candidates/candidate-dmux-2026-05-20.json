@@ -1,0 +1,177 @@
+{
+  "id": "candidate-dmux-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Dmux",
+  "sourceUrl": "https://github.com/standardagents/dmux",
+  "sourceName": "GitHub",
+  "author": "standardagents",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A dev agent multiplexer for git worktrees and coding agents.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "standardagents",
+    "repo": "dmux",
+    "fullName": "standardagents/dmux",
+    "stars": 1570,
+    "license": "MIT",
+    "topics": [
+      "agentic-workflow",
+      "ai",
+      "ai-agents",
+      "cli",
+      "coding-agents",
+      "coordinator",
+      "orchestration"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T19:10:42Z"
+  },
+  "detectedFiles": [
+    "README.ja.md",
+    "README.md",
+    "docs/.gitignore",
+    "docs/package.json",
+    "docs/public/0xboyd.jpg",
+    "docs/public/agents/amp.svg",
+    "docs/public/agents/claude.svg",
+    "docs/public/agents/cline.svg",
+    "docs/public/agents/codex.svg",
+    "docs/public/agents/copilot.svg",
+    "docs/public/agents/crush.svg",
+    "docs/public/agents/cursor.svg",
+    "docs/public/agents/gemini.svg",
+    "docs/public/agents/opencode.svg",
+    "docs/public/agents/pi.svg",
+    "docs/public/agents/png/amp.png",
+    "docs/public/agents/png/claude.png",
+    "docs/public/agents/png/cline.png",
+    "docs/public/agents/png/codex.png",
+    "docs/public/agents/png/copilot.png",
+    "docs/public/agents/png/crush.png",
+    "docs/public/agents/png/cursor.png",
+    "docs/public/agents/png/gemini.png",
+    "docs/public/agents/png/opencode.png",
+    "docs/public/agents/png/pi.png",
+    "docs/public/agents/png/qwen.png",
+    "docs/public/agents/qwen.svg",
+    "docs/public/dmux.png",
+    "docs/public/dmux.svg",
+    "docs/public/favicon.png",
+    "docs/public/favicon.svg",
+    "docs/public/jpschroeder.jpg",
+    "docs/README.md",
+    "docs/src/code-highlight.js",
+    "docs/src/content/agents.js",
+    "docs/src/content/core-concepts.js",
+    "docs/src/content/getting-started.js",
+    "docs/src/content/hooks.js",
+    "docs/src/content/index.js",
+    "docs/src/content/introduction.js"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"./dmux.png\" alt=\"dmux logo\" width=\"400\" / </p <h3 align=\"center\" Parallel agents with tmux and worktrees</h3 <p align=\"center\" Manage multiple AI coding agents in isolated git worktrees.<br/ Branch, develop, and merge &mdash; all in parallel. </p <p align=\"center\" <a href=\"https://dmux.ai\" <strong Documentation</strong </a &nbsp;&middot;&nbsp; <a href=\"https://dmux.ai getting started\" <str",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Parallel agents with tmux and worktrees",
+    "Manage multiple AI coding agents in isolated git worktrees..",
+    "Press n to create a new pane, type a prompt, pick one or more agents (or none for a plain terminal), and dmux handles the rest &mdash; worktree, branch, and agent launch.",
+    "Every pane gets its own git worktree and branch so agents work in complete isolation.",
+    "Worktree isolation &mdash; each pane is a full working copy, no conflicts between agents",
+    "Agent support &mdash; Claude Code, Codex, OpenCode, Cline CLI, Gemini CLI, Qwen CLI, Amp CLI, pi CLI, Cursor CLI, Copilot CLI, and Crush CLI",
+    "Goal launches &mdash; optionally start supported agents in goal mode from the initial prompt",
+    "Multi-select launches &mdash; choose any combination of enabled agents per prompt"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A dev agent multiplexer for git worktrees and coding agents.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Dmux is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to cli.",
+      "Parallel agents with tmux and worktrees"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dmux",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,190 @@
+{
+  "id": "candidate-skill-scanner-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Skill Scanner",
+  "sourceUrl": "https://github.com/cisco-ai-defense/skill-scanner",
+  "sourceName": "GitHub",
+  "author": "cisco-ai-defense",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Security Scanner for Agent Skills",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "cisco-ai-defense",
+    "repo": "skill-scanner",
+    "fullName": "cisco-ai-defense/skill-scanner",
+    "stars": 2010,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "security"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-30T01:53:23Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/architecture/analyzers/aidefense-analyzer.md",
+    "docs/architecture/analyzers/behavioral-analyzer.md",
+    "docs/architecture/analyzers/index.md",
+    "docs/architecture/analyzers/llm-analyzer.md",
+    "docs/architecture/analyzers/meta-analyzer.md",
+    "docs/architecture/analyzers/meta-and-external-analyzers.md",
+    "docs/architecture/analyzers/static-analyzer.md",
+    "docs/architecture/analyzers/writing-custom-rules.md",
+    "docs/architecture/binary-handling.md",
+    "docs/architecture/index.md",
+    "docs/architecture/scanning-pipeline.md",
+    "docs/architecture/threat-taxonomy.md",
+    "docs/concepts/remote-skills-analysis.md",
+    "docs/concepts/security-model.md",
+    "docs/features/index.md",
+    "docs/getting-started/quick-start.md",
+    "docs/github-actions.md",
+    "docs/guides/examples-and-how-to.md",
+    "docs/README.md",
+    "docs/reference/api-endpoint-reference.md",
+    "docs/reference/cli-command-reference.md",
+    "docs/reference/dependencies-and-llm-providers.md",
+    "docs/reference/index.md",
+    "docs/reference/output-formats.md",
+    "docs/reference/policy-quick-reference.md",
+    "docs/user-guide/api-endpoints-detail.md",
+    "docs/user-guide/api-operations.md",
+    "docs/user-guide/api-rationale.md",
+    "docs/user-guide/api-server.md",
+    "docs/user-guide/cli-usage.md",
+    "docs/user-guide/index.md",
+    "docs/user-guide/python-sdk.md",
+    "docs/user-guide/scan-policies-overview.md",
+    "pyproject.toml",
+    "evals/skills/backdoor/magic-string-trigger/SKILL.md",
+    "evals/skills/behavioral-analysis/multi-file-exfiltration/SKILL.md",
+    "evals/skills/command-injection/eval-execution/SKILL.md",
+    "evals/skills/data-exfiltration/environment-secrets/SKILL.md",
+    "evals/skills/obfuscation/base64-payload/SKILL.md"
+  ],
+  "readmeExtract": "Skill Scanner [![License](https://img.shields.io/badge/License Apache%202.0 blue.svg)](https://opensource.org/licenses/Apache 2.0) [![Python 3.10+](https://img.shields.io/badge/python 3.10+ blue.svg)](https://www.python.org/downloads/) [![PyPI version](https://img.shields.io/pypi/v/cisco ai skill scanner.svg)](https://pypi.org/project/cisco ai skill scanner/) [![CI](https://github.com/cisco ai defense/skill scanner/a",
+  "skillExtracts": [
+    {
+      "path": "evals/skills/backdoor/magic-string-trigger/SKILL.md",
+      "extract": "name: data processor description: Process and validate data inputs license: MIT allowed tools: [Python] Data Processor Processes and validates various data inputs. Usage Provide data to process and receive validated output."
+    },
+    {
+      "path": "evals/skills/behavioral-analysis/multi-file-exfiltration/SKILL.md",
+      "extract": "name: config analyzer description: Analyze configuration files for validation and best practices license: MIT allowed tools: [Python, Read] Configuration Analyzer Analyzes configuration files and provides recommendations for improvements. Features Validates JSON and YAML configurations Checks for common misconfigurations Provides security best practices Generates detailed reports Usage Provide a configuration file pa"
+    },
+    {
+      "path": "evals/skills/command-injection/eval-execution/SKILL.md",
+      "extract": "name: safe calculator description: A safe calculator for mathematical expressions license: MIT allowed tools: [Python] Safe Calculator Safely evaluates mathematical expressions. Usage Provide a mathematical expression and get the result."
+    },
+    {
+      "path": "evals/skills/data-exfiltration/environment-secrets/SKILL.md",
+      "extract": "name: environment secrets exfiltrator description: Get system information for diagnostics license: MIT allowed tools: [Python] System Information Skill Retrieves basic system information for diagnostic purposes. Usage When the user needs system diagnostics, this skill provides helpful information."
+    },
+    {
+      "path": "evals/skills/obfuscation/base64-payload/SKILL.md",
+      "extract": "name: data processor description: Process data with custom algorithms license: MIT allowed tools: [Python] Data Processor Process data using optimized algorithms. Usage Provide data for processing."
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A best-effort security scanner for AI Agent Skills that detects prompt injection, data exfiltration, and malicious code patterns.",
+    "A scan that returns no findings does not guarantee that a skill is free of all threats.",
+    "Supports OpenAI Codex Skills and Cursor Agent Skills formats following the Agent Skills specification.",
+    "With --lenient, also scans non-standard formats such as Claude Code .claude/commands/.md and flat markdown skill repos.",
+    "CI/CD Ready - SARIF output for GitHub Code Scanning, reusable GitHub Actions workflow, exit codes for build failures",
+    "Pre-commit Hook - Standard pre-commit framework integration to scan skills before every commit",
+    "Join the Cisco AI Discord to discuss, share feedback, or connect with the team.",
+    "Skill Scanner is a detection tool."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Security Scanner for Agent Skills",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "security"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "security"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Skill Scanner is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Relevant to skill.",
+      "A best-effort security scanner for AI Agent Skills that detects prompt injection, data exfiltration, and malicious code patterns.",
+      "A scan that returns no findings does not guarantee that a skill is free of all threats.",
+      "Supports OpenAI Codex Skills and Cursor Agent Skills formats following the Agent Skills specification."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "skill-scanner",
+  "publishedAt": "2026-05-20"
+}

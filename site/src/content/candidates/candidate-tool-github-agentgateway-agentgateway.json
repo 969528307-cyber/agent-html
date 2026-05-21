@@ -1,0 +1,197 @@
+{
+  "id": "candidate-tool-github-agentgateway-agentgateway",
+  "type": "tool",
+  "status": "published",
+  "title": "Agentgateway",
+  "sourceUrl": "https://github.com/agentgateway/agentgateway",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "agentgateway",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Next Generation Agentic Proxy for AI Agents and MCP servers",
+  "proposedCategory": [
+    "devops"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "agentgateway",
+    "repo": "agentgateway",
+    "fullName": "agentgateway/agentgateway",
+    "stars": 2684,
+    "license": "Apache-2.0",
+    "topics": [
+      "agents",
+      "ai",
+      "ai-gateway",
+      "api-gateway",
+      "gateway-api",
+      "kubernetes",
+      "mcp",
+      "mcp-gateway",
+      "reverse-proxy",
+      "rust",
+      "service-mesh"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-12T17:53:20Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "examples/a2a/config.yaml",
+    "examples/a2a/strands-agents/pyproject.toml",
+    "examples/a2a/strands-agents/README.md",
+    "examples/ai-prompt-guard/azure-content-safety-config.yaml",
+    "examples/ai-prompt-guard/bedrock-config.yaml",
+    "examples/ai-prompt-guard/config.yaml",
+    "examples/ai-prompt-guard/model-armor-config.yaml",
+    "examples/authorization/config.yaml",
+    "examples/aws-agentcore/config.yaml",
+    "examples/basic/config.yaml",
+    "examples/delegation/config.yaml",
+    "examples/http/config.yaml",
+    "examples/mcp-authentication/config.yaml",
+    "examples/mcp-authentication/keycloak/docker-compose.yml",
+    "examples/mcp-authentication/keycloak/mcp-realm.json",
+    "examples/mcp-authentication/README.md",
+    "examples/multiplex/config.yaml",
+    "examples/oauth2-proxy/config.yaml",
+    "examples/oidc/agentgateway-realm.json",
+    "examples/oidc/config.yaml",
+    "examples/openapi/config.yaml",
+    "examples/prompt-enrichment/config.yaml",
+    "examples/ratelimiting/global/config.yaml",
+    "examples/ratelimiting/global/ratelimit-config.yaml",
+    "examples/ratelimiting/local/config.yaml",
+    "examples/standalone-epp/config.yaml",
+    "examples/tailscale-auth/config.yaml",
+    "examples/telemetry/config.yaml",
+    "examples/telemetry/otel-collector-config.yaml",
+    "examples/tls/config.yaml"
+  ],
+  "readmeExtract": "<div align=\"center\" <picture <source media=\"(prefers color scheme: dark)\" srcset=\"https://raw.githubusercontent.com/agentgateway/agentgateway/refs/heads/main/img/banner light.svg\" alt=\"agentgateway\" width=\"400\" <source media=\"(prefers color scheme: light)\" srcset=\"https://raw.githubusercontent.com/agentgateway/agentgateway/refs/heads/main/img/banner dark.svg\" alt=\"agentgateway\" width=\"400\" <img alt=\"agentgateway\" src",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The first complete connectivity solution for Agentic AI.",
+    "Route traffic to major LLM providers (OpenAI, Anthropic, Gemini, Bedrock, and more) through a unified OpenAI-compatible API with budget and spend controls, prompt enrichment, load balancing, and failover.",
+    "Connect LLMs to tools and external data sources via MCP with tool federation, stdio/HTTP/SSE/Streamable HTTP transports, OpenAPI integration, and OAuth authentication.",
+    "Enable secure agent-to-agent communication using A2A, with capability discovery, modality negotiation, and task collaboration.",
+    "Depending on your deployment environment, check out the following docs:",
+    "agentgateway.dev/docs: For standalone deployments such as local or on-prem.",
+    "These docs are for this upstream agentgateway/agentgateway GitHub project.",
+    "agentgateway.dev/docs/kubernetes/latest: For Kubernetes-based deployments using the built-in Kubernetes controller and Gateway API support."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Next Generation Agentic Proxy for AI Agents and MCP servers",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: knowledge-resource.",
+    "LLM: mcp + [mcp] — This project is an agentic proxy/gateway that routes traffic to LLM providers and connects to MCP servers, functioning as an MCP gateway."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Agentgateway is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with media workflows.",
+      "Relevant to devops.",
+      "The first complete connectivity solution for Agentic AI.",
+      "Route traffic to major LLM providers (OpenAI, Anthropic, Gemini, Bedrock, and more) through a unified OpenAI-compatible API with budget and spend controls, prompt enrichment, load balancing, and failover."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:agentgateway/agentgateway",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agentgateway",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

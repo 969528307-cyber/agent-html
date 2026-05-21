@@ -1,0 +1,75 @@
+{
+  "id": "bettafish",
+  "name": "BettaFish",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。",
+  "description": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。",
+  "category": [
+    "agent-framework"
+  ],
+  "compatibleAgents": [
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/666ghj/BettaFish",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/666ghj/BettaFish",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/666ghj/BettaFish#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/666ghj/BettaFish#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/666ghj/BettaFish/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "超越LLM的复合分析引擎：我们不仅依赖设计的5类专业Agent，更融合了微调模型、统计模型等中间件。通过多模型协同工作，确保了分析结果的深度、准度与多维视角。",
+    "Agent“论坛”协作机制：为不同Agent赋予独特的工具集与思维模式，引入辩论主持人模型，通过“论坛”机制进行链式思维碰撞与辩论。这不仅避免了单一模型的思维局限与交流导致的同质化，更催生出更高质量的集体智能与决策支持。",
+    "你只需简单修改Agent工具集的api参数与prompt，就可以把他变成一个金融领域的市场分析系统",
+    "Insight Agent 私有数据库挖掘：私有舆情数据库深度分析AI代理",
+    "Media Agent 多模态内容分析：具备强大多模态能力的AI代理",
+    "Query Agent 精准信息搜索：具备国内外网页搜索能力的AI代理",
+    "Report Agent 智能报告生成：内置模板的多轮报告生成AI代理",
+    "2 并行启动 三个Agent同时开始工作 Query Agent、Media Agent、Insight Agent -"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-08T10:22:58Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/666ghj/BettaFish",
+  "repoUrl": "https://github.com/666ghj/BettaFish",
+  "license": "GPL-2.0",
+  "stars": 40952,
+  "lastUpdated": "2026-05-08T10:22:58Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

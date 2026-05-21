@@ -1,0 +1,78 @@
+{
+  "id": "golutra",
+  "name": "Golutra",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "Multi-agent AI orchestration platform for automation, workflows, and developer tools. Golutra transforms Codex, Claude Code, and OpenClaw into a unified agent system with parallel execution, task orchestration, long-running workflows, and AI productivity workspace.",
+  "description": "Multi-agent AI orchestration platform for automation, workflows, and developer tools. Golutra transforms Codex, Claude Code, and OpenClaw into a unified agent system with parallel execution, task orchestration, long-running workflows, and AI productivity workspace.",
+  "category": [
+    "automation"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Qwen Code",
+    "OpenClaw"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/golutra/golutra",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/golutra/golutra",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/golutra/golutra#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/golutra/golutra#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/golutra/golutra/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "golutra is a next-generation multi-agent workspace that transforms your existing CLI tools into a unified AI collaboration hub.",
+    "Just parallel execution, automated orchestration, and real-time result tracking.",
+    "Click agent avatars to inspect logs, inject prompts directly into terminal streams, or monitor execution while your AI team runs silently in the background.",
+    "Golutra can call EverOS as a memory layer for long-running agents, preserving context, project knowledge, and cross-task continuity across sessions.",
+    "golutra-mcp provides a more stable way to connect external tools and agents through golutra-cli, making it easier to integrate Golutra with MCP-based workflows.",
+    "Unlimited multi-agent parallel execution",
+    "Automated orchestration from analysis to deployment",
+    "Custom workflows with one-click template import/export for long-running automation"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-12T14:04:06Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/golutra/golutra",
+  "repoUrl": "https://github.com/golutra/golutra",
+  "license": "NOASSERTION",
+  "stars": 3503,
+  "lastUpdated": "2026-05-12T14:04:06Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

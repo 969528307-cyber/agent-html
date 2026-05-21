@@ -1,0 +1,76 @@
+{
+  "id": "duckduckgo-mcp-server",
+  "name": "Duckduckgo Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A Model Context Protocol (MCP) server that provides web search capabilities through DuckDuckGo, with additional features for content fetching and parsing.",
+  "description": "A Model Context Protocol (MCP) server that provides web search capabilities through DuckDuckGo, with additional features for content fetching and parsing.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/nickclyde/duckduckgo-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/nickclyde/duckduckgo-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/nickclyde/duckduckgo-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/nickclyde/duckduckgo-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/nickclyde/duckduckgo-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "DuckDuckGo Search MCP Server",
+    "A Model Context Protocol (MCP) server that provides web search capabilities through DuckDuckGo, with additional features for content fetching and parsing.",
+    "Web Search: Search DuckDuckGo with advanced rate limiting and result formatting",
+    "Rate Limiting: Built-in protection against rate limits for both search and content fetching",
+    "On macOS: ~/Library/Application Support/Claude/claudedesktopconfig.json",
+    "On Windows: %APPDATA%\\Claude\\claudedesktopconfig.json",
+    "DDGSAFESEARCH: SafeSearch filtering level (optional)",
+    "Add the MCP server: claude mcp add ddg-search uvx duckduckgo-mcp-server"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-08T19:22:05Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/nickclyde/duckduckgo-mcp-server",
+  "repoUrl": "https://github.com/nickclyde/duckduckgo-mcp-server",
+  "license": "MIT",
+  "stars": 1125,
+  "lastUpdated": "2026-05-08T19:22:05Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

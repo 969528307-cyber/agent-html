@@ -1,0 +1,77 @@
+{
+  "id": "memu",
+  "name": "MemU",
+  "type": "skill",
+  "status": "published",
+  "summary": "Memory for 24/7 proactive agents like OpenClaw.",
+  "description": "Memory for 24/7 proactive agents like OpenClaw.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Qwen Code",
+    "OpenClaw"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/NevaMind-AI/memU",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/NevaMind-AI/memU",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/NevaMind-AI/memU#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/NevaMind-AI/memU#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/NevaMind-AI/memU/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "24/7 Always-On Proactive Memory for AI Agents",
+    "memU is a memory framework built for 24/7 proactive agents.",
+    "It is designed for long-running use and greatly reduces the LLM token cost of keeping agents always online, making always-on, evolving agents practical in production systems.",
+    "Even without a command, the agent can tell what you are about to do and act on it by itself.",
+    "📄 Files 🧠 Memory Items (extracted facts, preferences, skills)",
+    "Cross-link everything—memories reference each other, building a connected knowledge graph",
+    "Just as a file system turns raw bytes into organized data, memU transforms raw interactions into structured, searchable, proactive intelligence.",
+    "🤖 24/7 Proactive Agent Always-on memory agent that works continuously in the background"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-22T12:36:17Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/NevaMind-AI/memU",
+  "repoUrl": "https://github.com/NevaMind-AI/memU",
+  "license": "NOASSERTION",
+  "stars": 13655,
+  "lastUpdated": "2026-04-22T12:36:17Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

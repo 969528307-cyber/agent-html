@@ -1,7 +1,11 @@
 import { pathToFileURL } from "node:url";
 
 import "./load-local-env.mjs";
-import { fetchRepoCandidate, MIN_GITHUB_STARS, writeJson } from "./github-ingest-candidate.mjs";
+import {
+  formatGitHubSearchDate,
+  getRepoFreshnessCutoffDate,
+  MIN_GITHUB_STARS,
+} from "./github-ingest-candidate.mjs";
 
 const githubApiHeaders = {
   Accept: "application/vnd.github+json",
@@ -9,26 +13,21 @@ const githubApiHeaders = {
   ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {}),
 };
 
-const defaultDiscoveryTerms = [
-  "mcp",
-  "model context protocol",
-  "ai coding",
-  "coding agent",
-  "developer agent",
-  "llm tools",
-  "cursor rules",
-  "claude code",
-  "codex",
-  "agents.md",
-  "workflow automation",
-  "developer workflow",
-  "openclaw",
-];
+export const discoveryProfiles = {
+  mcp: ["mcp server", "model context protocol", "mcp tools", "mcp registry"],
+  skill: ["agent skill", "claude skills", "codex skill", "cursor rules", "agents.md"],
+  cli: ["coding agent cli", "terminal coding agent", "developer agent cli", "codex", "claude code", "aider", "opencode", "cli coding tool", "command-line agent"],
+  workflow: ["workflow automation", "ai workflow automation", "developer workflow", "agent workflow", "n8n alternative"],
+};
+
+const defaultDiscoveryTerms = Object.values(discoveryProfiles).flat();
 
 const quoteTerm = (term) => (/\s/.test(term) ? `"${term}"` : term);
 
-export const buildDiscoveryQueries = (terms = defaultDiscoveryTerms) =>
-  terms.map((term) => `${quoteTerm(term)} stars:>=${MIN_GITHUB_STARS} fork:false archived:false`);
+export const buildDiscoveryQueries = (terms = defaultDiscoveryTerms, { pushedSince } = {}) => {
+  const cutoff = pushedSince || formatGitHubSearchDate(getRepoFreshnessCutoffDate());
+  return terms.map((term) => `${quoteTerm(term)} stars:>=${MIN_GITHUB_STARS} pushed:>=${cutoff} fork:false archived:false`);
+};
 
 export const dedupeSearchItems = (items) => {
   const seen = new Set();
@@ -45,6 +44,7 @@ export const parseDiscoverArgs = (argv) => {
   const parsed = {
     dryRun: false,
     limit: 20,
+    profile: "all",
     queries: [],
   };
 
@@ -58,11 +58,18 @@ export const parseDiscoverArgs = (argv) => {
     } else if (arg === "--query") {
       parsed.queries.push(argv[index + 1]);
       index += 1;
+    } else if (arg === "--profile") {
+      parsed.profile = argv[index + 1];
+      index += 1;
     }
   }
 
   if (!Number.isInteger(parsed.limit) || parsed.limit < 1) {
     throw new Error("--limit must be a positive integer.");
+  }
+
+  if (parsed.profile !== "all" && !discoveryProfiles[parsed.profile]) {
+    throw new Error(`--profile must be one of: all, ${Object.keys(discoveryProfiles).join(", ")}.`);
   }
 
   return parsed;
@@ -94,45 +101,10 @@ export const discoverRepositories = async ({ queries, limit }) => {
   return dedupeSearchItems(found).slice(0, limit);
 };
 
-const runCli = async () => {
-  const args = parseDiscoverArgs(process.argv.slice(2));
-  const queries = buildDiscoveryQueries(args.queries.length > 0 ? args.queries : defaultDiscoveryTerms);
-  const repos = await discoverRepositories({ queries, limit: args.limit });
-  const candidates = [];
-
-  for (const repo of repos) {
-    try {
-      const candidate = await fetchRepoCandidate(repo.html_url);
-      candidates.push(candidate);
-
-      if (!args.dryRun) {
-        await writeJson(`src/content/candidates/${candidate.id}.json`, candidate);
-        console.log(`Created candidate: src/content/candidates/${candidate.id}.json`);
-      }
-    } catch (error) {
-      console.error(`Skipped ${repo.full_name}: ${error.message}`);
-    }
-  }
-
-  if (args.dryRun) {
-    console.log(
-      JSON.stringify(
-        candidates.map((candidate) => ({
-          id: candidate.id,
-          title: candidate.title,
-          sourceUrl: candidate.sourceUrl,
-          stars: candidate.githubMetadata.stars,
-          proposedToolType: candidate.proposedToolType,
-          proposedAgents: candidate.proposedAgents,
-          detectedFiles: candidate.detectedFiles,
-        })),
-        null,
-        2
-      )
-    );
-  }
-
-  console.log(`Discovered ${repos.length} repositories; generated ${candidates.length} candidates.`);
+export const runCli = async () => {
+  throw new Error(
+    "github-discover-candidates.mjs is deprecated because it bypasses source registries. Use npm run discover:tools instead."
+  );
 };
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {

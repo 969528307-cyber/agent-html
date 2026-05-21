@@ -1,0 +1,79 @@
+{
+  "id": "n8n-mcp",
+  "name": "N8n Mcp",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
+  "description": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Trae",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/czlonkowski/n8n-mcp",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/czlonkowski/n8n-mcp",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/czlonkowski/n8n-mcp#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/czlonkowski/n8n-mcp#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/czlonkowski/n8n-mcp/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations.",
+    "Deploy in minutes to give Claude and other AI assistants deep knowledge about n8n's 1,650 workflow automation nodes (820 core + 830 community).",
+    "n8n-MCP serves as a bridge between n8n's workflow automation platform and AI models, enabling them to understand and work with n8n nodes effectively.",
+    "Documentation - 87% coverage from official n8n docs (including AI nodes)",
+    "AI tools - 265 AI-capable tool variants detected with full documentation",
+    "Template library - 2,352 workflow templates with 99.96% AI metadata coverage",
+    "Community nodes - Search verified community integrations with source filter",
+    "n8n-mcp started as a personal tool but now helps tens of thousands of developers automate their workflows efficiently."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T14:44:46Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/czlonkowski/n8n-mcp",
+  "repoUrl": "https://github.com/czlonkowski/n8n-mcp",
+  "license": "MIT",
+  "stars": 21121,
+  "lastUpdated": "2026-05-18T14:44:46Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

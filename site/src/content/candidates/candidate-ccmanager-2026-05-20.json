@@ -1,0 +1,156 @@
+{
+  "id": "candidate-ccmanager-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Ccmanager",
+  "sourceUrl": "https://github.com/kbwo/ccmanager",
+  "sourceName": "GitHub",
+  "author": "kbwo",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Coding Agent Session Manager for Claude Code / Gemini CLI / Codex CLI / Cursor Agent / Copilot CLI / Cline CLI / OpenCode / Kimi CLI",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Kimi"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "kbwo",
+    "repo": "ccmanager",
+    "fullName": "kbwo/ccmanager",
+    "stars": 1115,
+    "license": "MIT",
+    "topics": [
+      "claude",
+      "claude-code",
+      "cli",
+      "cline",
+      "codex",
+      "copilot",
+      "copilot-cli",
+      "cursor",
+      "cursor-agent",
+      "cursor-cli",
+      "gemini",
+      "gemini-cli",
+      "github-copilot",
+      "kimi",
+      "kimi-cli",
+      "opencode",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T13:20:51Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/auto-approval.md",
+    "docs/auto-approval.schema.json",
+    "docs/devcontainer.md",
+    "docs/effect-error-handling-migration.md",
+    "docs/gemini-support.md",
+    "docs/multi-project.md",
+    "docs/status-hooks.md",
+    "docs/worktree-auto-directory.md",
+    "docs/worktree-hooks.md",
+    "package.json",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "CCManager AI Code Agent Session Manager [![Mentioned in Awesome Gemini CLI](https://awesome.re/mentioned badge.svg)](https://github.com/Piebald AI/awesome gemini cli) CCManager is a CLI application for managing multiple AI coding assistant sessions (Claude Code, Gemini CLI, Codex CLI, Cursor Agent, Copilot CLI, Cline CLI, OpenCode, Kimi CLI) across Git worktrees and projects. https://github.com/user attachments/asset",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "CCManager - AI Code Agent Session Manager",
+    "CCManager is a CLI application for managing multiple AI coding assistant sessions (Claude Code, Gemini CLI, Codex CLI, Cursor Agent, Copilot CLI, Cline CLI, OpenCode, Kimi CLI) across Git worktrees and projects.",
+    "Multi-project support: Manage multiple git repositories from a single interface",
+    "Support for multiple AI coding assistants (Claude Code, Gemini CLI, Codex CLI, Cursor Agent, Copilot CLI, Cline CLI, OpenCode, Kimi CLI)",
+    "Switch between sessions seamlessly",
+    "Copy Claude Code session data between worktrees to maintain conversation context",
+    "Configurable state detection strategies for different CLI tools",
+    "Status change hooks for automation and notifications"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Coding Agent Session Manager for Claude Code / Gemini CLI / Codex CLI / Cursor Agent / Copilot CLI / Cline CLI / OpenCode / Kimi CLI",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Ccmanager is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "CCManager - AI Code Agent Session Manager",
+      "CCManager is a CLI application for managing multiple AI coding assistant sessions (Claude Code, Gemini CLI, Codex CLI, Cursor Agent, Copilot CLI, Cline CLI, OpenCode, Kimi CLI) across Git worktrees and projects.",
+      "Multi-project support: Manage multiple git repositories from a single interface"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ccmanager",
+  "publishedAt": "2026-05-20"
+}

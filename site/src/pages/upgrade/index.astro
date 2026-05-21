@@ -1,101 +1,213 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const tiers = [
+const resources = [
   {
-    name: "Free",
-    price: "$0",
-    body: "Open directory, public Learn pages, Signals summaries, and selected downloads.",
+    href: "/learn/how-to-choose-mcp-tools",
+    label: "MCP",
+    title: "MCP selection guide",
+    description: "Use the current Learn guide as the v1 replacement for downloadable MCP cheat sheets.",
   },
   {
-    name: "Builder",
-    price: "Later",
-    body: "Saved stacks, full checklists, comparison tables, and workflow templates.",
+    href: "/learn/codex-vs-claude-code-vs-cursor",
+    label: "Agents",
+    title: "Agent comparison",
+    description: "Compare agent surfaces before picking an IDE, CLI, or framework layer.",
   },
   {
-    name: "Team",
-    price: "Later",
-    body: "Internal tool catalogs, review workflow, private candidate pool, and team notes.",
+    href: "/learn/official-docs-vs-generated-install-commands",
+    label: "Trust",
+    title: "Official docs over generated commands",
+    description: "Understand why public pages link to official setup docs instead of mirroring commands.",
   },
 ];
 ---
 
-<BaseLayout title="Free and Upgrade - agentk.it" description="Free resources and future upgrade path for agentk.it.">
-  <section class="page hero-lite">
-    <div>
-      <div class="eyebrow">Free first</div>
-      <h1>Earn trust before asking people to upgrade.</h1>
-      <p>
-        The first release should feel useful without payment: directory pages,
-        learning explainers, translated Signals, and practical downloadable
-        references.
-      </p>
-    </div>
-  </section>
+<BaseLayout title="Upgrade resources - agentk.it" description="Download-style resources and deeper guides for agent tooling.">
+  <section class="upgrade page">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="route-chip"><span></span>/upgrade</div>
+        <h1>Deeper resources for tool decisions.</h1>
+        <p>
+          The old Free section has been removed. This route now acts as a clean
+          resource shelf until there are real downloadable assets.
+        </p>
+      </div>
+      <aside class="lab-console">
+        <span>Resources</span>
+        <strong>{resources.length}</strong>
+        <p>curated guides</p>
+      </aside>
+    </section>
 
-  <section class="section page tier-grid">
-    {tiers.map((tier) => (
-      <article class:list={["tier", { featured: tier.name === "Free" }]}>
-        <span>{tier.price}</span>
-        <h2>{tier.name}</h2>
-        <p>{tier.body}</p>
-      </article>
-    ))}
+    <section class="resource-section">
+      <div class="section-kicker">
+        <span>01</span>
+        <h2>Use durable guides instead of fake downloads.</h2>
+        <p>Each resource links to an existing Learn page, so this page stays honest while the product matures.</p>
+      </div>
+
+      <div class="resource-grid">
+        {resources.map((resource) => (
+          <a class="resource-card" href={resource.href}>
+            <span>{resource.label}</span>
+            <strong>{resource.title}</strong>
+            <p>{resource.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
   </section>
 </BaseLayout>
 
 <style>
-  .hero-lite {
-    padding: 72px 0 24px;
+  :global(body) {
+    background:
+      radial-gradient(circle at 12% 0%, rgb(134 174 255 / 0.18), transparent 30rem),
+      radial-gradient(circle at 90% 8%, rgb(229 183 106 / 0.14), transparent 28rem),
+      radial-gradient(circle at 60% 86%, rgb(82 220 160 / 0.12), transparent 34rem),
+      #080b10;
   }
 
-  .hero-lite p {
-    max-width: 650px;
-    margin-top: 18px;
-    color: var(--muted);
+  .upgrade {
+    padding: 42px 0 72px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 18px;
+    margin-bottom: 44px;
+  }
+
+  .hero-copy,
+  .lab-console,
+  .resource-card {
+    border: 1px solid rgb(246 242 234 / 0.11);
+    background:
+      linear-gradient(180deg, rgb(246 242 234 / 0.07), rgb(246 242 234 / 0.026)),
+      rgb(12 17 24 / 0.82);
+    box-shadow: 0 30px 100px rgb(0 0 0 / 0.28);
+    backdrop-filter: blur(30px);
+  }
+
+  .hero-copy {
+    padding: clamp(26px, 4vw, 44px);
+    border-radius: 36px;
+  }
+
+  .route-chip {
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    padding: 9px 12px;
+    color: #d9e6ff;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    border: 1px solid rgb(134 174 255 / 0.26);
+    border-radius: 999px;
+    background: rgb(134 174 255 / 0.1);
+  }
+
+  .route-chip span {
+    width: 8px;
+    height: 8px;
+    background: #e5b76a;
+    border-radius: 999px;
+  }
+
+  h1 {
+    margin-top: 20px;
+    color: #f6f2ea;
+    font-size: clamp(44px, 6vw, 80px);
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+  }
+
+  .hero-copy p,
+  .lab-console p,
+  .section-kicker p,
+  .resource-card p {
+    max-width: 680px;
+    margin-top: 16px;
+    color: #9aa4b6;
     font-size: 15px;
-    line-height: 1.72;
+    line-height: 1.62;
   }
 
-  .tier-grid {
+  .lab-console {
+    display: grid;
+    align-content: center;
+    padding: 24px;
+    border-radius: 32px;
+  }
+
+  .lab-console span,
+  .section-kicker > span,
+  .resource-card span {
+    color: #e5b76a;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .lab-console strong {
+    display: block;
+    margin-top: 10px;
+    color: #f6f2ea;
+    font-size: 56px;
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+  }
+
+  .section-kicker {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 0.8fr) minmax(260px, 0.6fr);
+    gap: 18px;
+    align-items: end;
+    margin-bottom: 18px;
+  }
+
+  .section-kicker h2 {
+    color: #f6f2ea;
+    font-size: clamp(26px, 3vw, 42px);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+  }
+
+  .resource-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
+    gap: 14px;
   }
 
-  .tier {
-    min-height: 260px;
-    padding: 24px;
-    border: 1px solid var(--line);
+  .resource-card {
+    display: grid;
+    min-height: 240px;
+    padding: 22px;
     border-radius: 28px;
-    background: var(--paper);
-    box-shadow: var(--shadow);
   }
 
-  .tier.featured {
-    border-color: rgb(167 207 164 / 0.36);
-    background: linear-gradient(180deg, rgb(167 207 164 / 0.08), rgb(238 244 238 / 0.012)), var(--paper);
+  .resource-card strong {
+    margin-top: 22px;
+    color: #f6f2ea;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: -0.055em;
   }
 
-  .tier span {
-    color: var(--sage);
-    font-size: 13px;
-    font-weight: 700;
+  .resource-card p {
+    align-self: end;
   }
 
-  .tier h2 {
-    margin-top: 42px;
-  }
-
-  .tier p {
-    margin-top: 14px;
-    color: var(--muted);
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  @media (max-width: 860px) {
-    .tier-grid {
+  @media (max-width: 920px) {
+    .hero,
+    .section-kicker,
+    .resource-grid {
       grid-template-columns: 1fr;
     }
   }

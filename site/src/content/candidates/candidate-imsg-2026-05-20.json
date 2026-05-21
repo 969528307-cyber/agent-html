@@ -1,0 +1,151 @@
+{
+  "id": "candidate-imsg-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Imsg",
+  "sourceUrl": "https://github.com/openclaw/imsg",
+  "sourceName": "GitHub",
+  "author": "openclaw",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "CLI for Apple's Messages.app so your agent can send and receive text messages/iMessages.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "openclaw",
+    "repo": "imsg",
+    "fullName": "openclaw/imsg",
+    "stars": 1123,
+    "license": "MIT",
+    "topics": [
+      "cli",
+      "imessage"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-16T15:24:37Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/advanced-imcore.md",
+    "docs/attachments.md",
+    "docs/chats.md",
+    "docs/CNAME",
+    "docs/completions.md",
+    "docs/groups.md",
+    "docs/history.md",
+    "docs/index.md",
+    "docs/json.md",
+    "docs/linux.md",
+    "docs/permissions.md",
+    "docs/quickstart.md",
+    "docs/RELEASING.md",
+    "docs/rpc.md",
+    "docs/send.md",
+    "docs/watch.md",
+    ".agents/skills/imsg/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "imsg Read, watch, and send iMessage / SMS from the macOS terminal — with stable JSON and JSON RPC surfaces designed for agents, scripts, and long running integrations. imsg reads ~/Library/Messages/chat.db directly, streams new rows over filesystem events (with a polling fallback), and drives Messages.app through its public AppleScript automation surface. Advanced IMCore controls (read receipts, typing indicators, ed",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/imsg/SKILL.md",
+      "extract": "name: imsg description: \"iMessage/SMS: local archive, contacts, chat history, watch, requested sends.\" imsg Use this for Messages.app history, chat lookup, streaming, visible UI contact lookup, and sends. Reading is local DB access; sending uses Messages automation and must be explicitly requested. Sources DB: ~/Library/Messages/chat.db Repo: ~/Projects/imsg CLI: imsg JSON output is NDJSON; pipe to jq s for arrays. R"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "and JSON-RPC surfaces designed for agents, scripts, and long-running",
+    "its public AppleScript automation surface.",
+    "receipts, typing indicators, edit/unsend, group management, rich sends) are",
+    "preview against a chat.db copied from macOS.",
+    "Local-first reads. Chats, history, attachments, and search query",
+    "Built for agents. Stable JSON-RPC over stdio, deterministic JSON",
+    "Linux read-only preview. Inspect a copied Messages database from a Linux",
+    "Automation permission for Messages.app when using send or react."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "CLI for Apple's Messages.app so your agent can send and receive text messages/iMessages.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Imsg is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Relevant to cli.",
+      "and JSON-RPC surfaces designed for agents, scripts, and long-running",
+      "its public AppleScript automation surface.",
+      "receipts, typing indicators, edit/unsend, group management, rich sends) are"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "imsg",
+  "publishedAt": "2026-05-20"
+}

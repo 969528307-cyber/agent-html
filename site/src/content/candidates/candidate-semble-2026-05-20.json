@@ -1,0 +1,137 @@
+{
+  "id": "candidate-semble-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Semble",
+  "sourceUrl": "https://github.com/MinishLab/semble",
+  "sourceName": "GitHub",
+  "author": "MinishLab",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "MinishLab",
+    "repo": "semble",
+    "fullName": "MinishLab/semble",
+    "stars": 3109,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "code-search",
+      "embeddings",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "retrieval"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T18:42:13Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<h2 align=\"center\" <img width=\"30%\" alt=\"semble logo\" src=\"https://raw.githubusercontent.com/MinishLab/semble/main/assets/images/semble logo.png\" <br/ Fast and Accurate Code Search for Agents<br/ <sub Uses ~98% fewer tokens than grep+read</sub </h2 <div align=\"center\" <h2 <a href=\"https://pypi.org/project/semble/\" <img src=\"https://img.shields.io/pypi/v/semble?color=%23007ec6&label=pypi%20package\" alt=\"Package versio",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Fast and Accurate Code Search for Agents.",
+    "Semble is a code search library built for agents.",
+    "Indexing and searching a full codebase end-to-end takes under a second, with ~200x faster indexing and ~10x faster queries than a code-specialized transformer, at 99% of its retrieval quality (see benchmarks).",
+    "Run it as an MCP server or call it from the shell via AGENTS.md and any agent (Claude Code, Cursor, Codex, OpenCode, etc.) gets instant access to any repo.",
+    "Your agent queries Semble in natural language (e.g.",
+    "Set it up as an MCP server or via AGENTS.md:",
+    "Add Semble to Claude Code (requires uv):",
+    "Using another agent harness?"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Semble is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Fast and Accurate Code Search for Agents.",
+      "Semble is a code search library built for agents."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "semble",
+  "publishedAt": "2026-05-20"
+}

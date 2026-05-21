@@ -1,0 +1,78 @@
+{
+  "id": "ccmanager",
+  "name": "Ccmanager",
+  "type": "cli",
+  "status": "published",
+  "summary": "Coding Agent Session Manager for Claude Code / Gemini CLI / Codex CLI / Cursor Agent / Copilot CLI / Cline CLI / OpenCode / Kimi CLI",
+  "description": "Coding Agent Session Manager for Claude Code / Gemini CLI / Codex CLI / Cursor Agent / Copilot CLI / Cline CLI / OpenCode / Kimi CLI",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Kimi"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/kbwo/ccmanager",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/kbwo/ccmanager",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/kbwo/ccmanager#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/kbwo/ccmanager#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/kbwo/ccmanager/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "CCManager - AI Code Agent Session Manager",
+    "CCManager is a CLI application for managing multiple AI coding assistant sessions (Claude Code, Gemini CLI, Codex CLI, Cursor Agent, Copilot CLI, Cline CLI, OpenCode, Kimi CLI) across Git worktrees and projects.",
+    "Multi-project support: Manage multiple git repositories from a single interface",
+    "Support for multiple AI coding assistants (Claude Code, Gemini CLI, Codex CLI, Cursor Agent, Copilot CLI, Cline CLI, OpenCode, Kimi CLI)",
+    "Switch between sessions seamlessly",
+    "Copy Claude Code session data between worktrees to maintain conversation context",
+    "Configurable state detection strategies for different CLI tools",
+    "Status change hooks for automation and notifications"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T13:20:51Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/kbwo/ccmanager",
+  "repoUrl": "https://github.com/kbwo/ccmanager",
+  "license": "MIT",
+  "stars": 1115,
+  "lastUpdated": "2026-05-17T13:20:51Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,228 @@
+{
+  "id": "candidate-tool-github-ghostwright-phantom",
+  "type": "tool",
+  "status": "published",
+  "title": "Phantom",
+  "sourceUrl": "https://github.com/ghostwright/phantom",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "ghostwright",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "An AI co-worker with its own computer. Self-evolving, persistent memory, MCP server, secure credential collection, email identity. Built on the Claude Agent SDK.",
+  "proposedCategory": [
+    "devops",
+    "communication"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "ghostwright",
+    "repo": "phantom",
+    "fullName": "ghostwright/phantom",
+    "stars": 1417,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "ai-coworker",
+      "anthropic",
+      "autonomous-agents",
+      "bun",
+      "claude",
+      "docker",
+      "llm",
+      "mcp",
+      "self-evolution",
+      "slack",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-02T04:37:07Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/architecture.md",
+    "docs/assets/phantom.svg",
+    "docs/channels.md",
+    "docs/deploy-checklist.md",
+    "docs/docker-deploy.md",
+    "docs/getting-started.md",
+    "docs/landing.md",
+    "docs/mcp.md",
+    "docs/memory.md",
+    "docs/providers.md",
+    "docs/roles.md",
+    "docs/security.md",
+    "docs/self-evolution.md",
+    "docs/slack-cloud-mode.md",
+    "package.json",
+    "skills-builtin/echo/SKILL.md",
+    "skills-builtin/list-plugins/SKILL.md",
+    "skills-builtin/mirror/SKILL.md",
+    "skills-builtin/overheard/SKILL.md",
+    "skills-builtin/ritual/SKILL.md",
+    "skills-builtin/show-my-tools/SKILL.md",
+    "skills-builtin/thread/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"docs/assets/phantom.svg\" alt=\"Phantom\" width=\"120\" height=\"120\" / </p <h1 align=\"center\" Phantom</h1 <p align=\"center\" An AI co worker with its own computer.</p <p align=\"center\" <a href=\"LICENSE\" <img src=\"https://img.shields.io/badge/license Apache%202.0 blue.svg\" alt=\"License\" </a <img src=\"https://img.shields.io/badge/tests 1819%20passed brightgreen.svg\" alt=\"Tests\" <a href=\"https://hu",
+  "skillExtracts": [
+    {
+      "path": "skills-builtin/echo/SKILL.md",
+      "extract": "name: echo x phantom source: built in description: Before answering a substantive question, quietly check whether the user has already resolved this question in the past. when to use: Use when the user asks a substantive question that might have been asked and resolved before. Substantive questions are things like \"how should I do X\", \"what is the right way to Y\", \"which approach is better\", \"what did we decide about"
+    },
+    {
+      "path": "skills-builtin/list-plugins/SKILL.md",
+      "extract": "name: list plugins x phantom source: built in description: List the Claude Code plugins currently enabled for the agent, read straight from settings.json. when to use: Use when the operator asks \"what plugins are installed\", \"which plugins are active\", \"show plugins\", \"list plugins\", \"show me the marketplace state\", or any narrow question specifically about the current plugin set. allowed tools: Read context: inline "
+    },
+    {
+      "path": "skills-builtin/mirror/SKILL.md",
+      "extract": "name: mirror x phantom source: built in description: Weekly self audit playback. Surface patterns from the user's past week that they probably cannot see themselves. when to use: Use when the user says \"mirror\", \"weekly review\", \"show me my week\", \"what did I actually do this week\", \"reflect on last week\", \"how did my week go\", or any similar reflective request. Also fires automatically on a Friday evening schedule i"
+    },
+    {
+      "path": "skills-builtin/overheard/SKILL.md",
+      "extract": "name: overheard x phantom source: built in description: Find commitments the user made in the last two weeks and did not follow through on. A promises audit. when to use: Use when the user says \"overheard\", \"what did I promise\", \"what am I behind on\", \"promises audit\", \"am I dropping balls\", \"what did I commit to\", \"what do I owe people\", or any similar commitment check phrase. Also runs automatically once per day at"
+    },
+    {
+      "path": "skills-builtin/ritual/SKILL.md",
+      "extract": "name: ritual x phantom source: built in description: Discover recurring behaviors from memory and offer to formalize them as scheduled jobs. when to use: Use when the user says \"ritual\", \"what are my patterns\", \"turn this into a routine\", \"make this recurring\", \"what do I do regularly\", \"what should I schedule\", \"automate this for me\", or any similar pattern formalization phrase. Also fires on a monthly cadence if en"
+    },
+    {
+      "path": "skills-builtin/show-my-tools/SKILL.md",
+      "extract": "name: show my tools x phantom source: built in description: List the agent's current skills, memory files, plugins, subagents, hooks, and a settings summary plus dashboard URLs. The user facing discovery path for everything the operator can edit. when to use: Use when the user says \"what can you do\", \"what skills do you have\", \"show me your skills\", \"what can I edit\", \"how do I customize you\", \"what memory files do y"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "AI agents today are disposable.",
+    "The agent's workspace is its own.",
+    "It is a co-worker that runs on Slack, has a web chat interface at /chat, has its own email address, creates its own tools, and builds infrastructure without asking for permission.",
+    "Then it registered that API as an MCP tool so it could use it in future sessions and other agents could query it too.",
+    "The agent was honest about what it could not do, then built the capability on the spot.",
+    "The agent is watching its own infrastructure.",
+    "Anthropic (default) - Claude Opus, Sonnet, Haiku",
+    "Roughly 15x cheaper than Claude Opus for comparable coding quality."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"devops\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "An AI co-worker with its own computer. Self-evolving, persistent memory, MCP server, secure credential collection, email identity. Built on the Claude Agent SDK.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "communication",
+      "docs",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "communication",
+    "docs",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 7,
+    "cli": 1,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 5,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Package metadata detected; may expose executable commands.",
+    "SDK or library language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, sdk, cli.",
+    "LLM: agent-app + [mcp] — Phantom is an autonomous AI co-worker application with Slack and web interfaces, built on Claude Agent SDK, and includes an MCP server."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "sdk",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Phantom is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with communication workflows.",
+      "Helps with docs workflows.",
+      "Helps with memory workflows.",
+      "Relevant to devops."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:ghostwright/phantom",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "phantom",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

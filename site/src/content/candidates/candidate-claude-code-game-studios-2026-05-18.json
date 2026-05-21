@@ -1,0 +1,179 @@
+{
+  "id": "candidate-claude-code-game-studios-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Code Game Studios",
+  "sourceUrl": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+  "sourceName": "GitHub",
+  "author": "Donchitos",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Claude Code"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "Donchitos",
+    "repo": "Claude-Code-Game-Studios",
+    "fullName": "Donchitos/Claude-Code-Game-Studios",
+    "stars": 19106,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "ai-assisted-development",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "game-design",
+      "game-development",
+      "gamedev",
+      "godot",
+      "indie-game-dev",
+      "unity",
+      "unreal-engine"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T10:15:40Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/architecture/tr-registry.yaml",
+    "docs/CLAUDE.md",
+    "docs/COLLABORATIVE-DESIGN-PRINCIPLE.md",
+    "docs/engine-reference/godot/breaking-changes.md",
+    "docs/engine-reference/godot/current-best-practices.md",
+    "docs/engine-reference/godot/deprecated-apis.md",
+    "docs/engine-reference/godot/modules/animation.md",
+    "docs/engine-reference/godot/modules/audio.md",
+    "docs/engine-reference/godot/modules/input.md",
+    "docs/engine-reference/godot/modules/navigation.md",
+    "docs/engine-reference/godot/modules/networking.md",
+    "docs/engine-reference/godot/modules/physics.md",
+    "docs/engine-reference/godot/modules/rendering.md",
+    "docs/engine-reference/godot/modules/ui.md",
+    "docs/engine-reference/godot/VERSION.md",
+    "docs/engine-reference/README.md",
+    "docs/engine-reference/unity/breaking-changes.md",
+    "docs/engine-reference/unity/current-best-practices.md",
+    "docs/engine-reference/unity/deprecated-apis.md",
+    "docs/engine-reference/unity/modules/animation.md",
+    "docs/engine-reference/unity/modules/audio.md",
+    "docs/engine-reference/unity/modules/input.md",
+    "docs/engine-reference/unity/modules/navigation.md",
+    "docs/engine-reference/unity/modules/networking.md",
+    "docs/engine-reference/unity/modules/physics.md",
+    "docs/engine-reference/unity/modules/rendering.md",
+    "docs/engine-reference/unity/modules/ui.md",
+    "docs/engine-reference/unity/PLUGINS.md",
+    "docs/engine-reference/unity/plugins/addressables.md",
+    "docs/engine-reference/unity/plugins/cinemachine.md",
+    "docs/engine-reference/unity/plugins/dots-entities.md",
+    "docs/engine-reference/unity/VERSION.md",
+    "docs/engine-reference/unreal/breaking-changes.md",
+    "docs/engine-reference/unreal/current-best-practices.md",
+    "docs/engine-reference/unreal/deprecated-apis.md",
+    "docs/engine-reference/unreal/modules/animation.md",
+    "docs/engine-reference/unreal/modules/audio.md",
+    "docs/engine-reference/unreal/modules/input.md",
+    "docs/engine-reference/unreal/modules/navigation.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <h1 align=\"center\" Claude Code Game Studios</h1 <p align=\"center\" Turn a single Claude Code session into a full game development studio. <br / 49 agents. 73 skills. One coordinated AI team. </p </p <p align=\"center\" <a href=\"LICENSE\" <img src=\"https://img.shields.io/badge/license MIT blue.svg\" alt=\"MIT License\" </a <a href=\".claude/agents\" <img src=\"https://img.shields.io/badge/agents 49 blueviolet\"",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Turn a single Claude Code session into a full game development studio.",
+    "No one stops you from hardcoding magic numbers, skipping design docs, or writing spaghetti code.",
+    "There's no QA pass, no design review, no one asking \"does this actually fit the game's vision?\"",
+    "Claude Code Game Studios solves this by giving your AI session the structure of a real studio.",
+    "Each agent has defined responsibilities, escalation paths, and quality gates.",
+    "Agents 49 Specialized subagents across design, programming, art, audio, narrative, QA, and production",
+    "Skills 73 Slash commands for every workflow phase (/start, /design-system, /create-epics, /create-stories, /dev-story, /story-done, etc.)",
+    "Hooks 12 Automated validation on commits, pushes, asset changes, session lifecycle, agent audit trail, and gap detection"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation",
+    "design"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Claude Code Game Studios is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "Turn a single Claude Code session into a full game development studio."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-code-game-studios",
+  "publishedAt": "2026-05-18"
+}

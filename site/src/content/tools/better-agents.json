@@ -1,0 +1,77 @@
+{
+  "id": "better-agents",
+  "name": "Better Agents",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Standards for building agents, better",
+  "description": "Standards for building agents, better",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/langwatch/better-agents",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/langwatch/better-agents",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/langwatch/better-agents#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/langwatch/better-agents#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/langwatch/better-agents/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Better Agents is a CLI tool and a set of standards for agent building.",
+    "It supercharges your coding assistant (Kilocode, Claude Code, Cursor, etc), making it an expert in any agent framework you choose (Agno, Mastra, LangGraph etc) and all their best practices.",
+    "It's the best way to start any new agent project.",
+    "The Better Agent Structure and generated AGENTS.md ensures industry best practices, making your agent ready for production:",
+    "Scenario agent tests written for every feature to ensure agent behaviour",
+    "The structure and guidelines on AGENTS.md ensure every new feature required for the coding assistant is properly tested, evaluated, and that the prompts are versioned.",
+    "The .mcp.json comes with all the right MCPs set up so you coding assistant becomes an expert in your framework of choice and in writing Scenario tests for your agent.",
+    "scenarios/ tests guarantee the agent behaves as expected, which simulates a conversation with the agent making sure it does what expected."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-11T12:53:56Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/langwatch/better-agents",
+  "repoUrl": "https://github.com/langwatch/better-agents",
+  "license": "MIT",
+  "stars": 1521,
+  "lastUpdated": "2026-05-11T12:53:56Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

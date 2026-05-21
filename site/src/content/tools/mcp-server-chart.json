@@ -1,0 +1,77 @@
+{
+  "id": "mcp-server-chart",
+  "name": "Mcp Server Chart",
+  "type": "mcp",
+  "status": "published",
+  "summary": "🤖 A visualization mcp & skills contains 25+ visual charts using @antvis. Using for chart generation and data analysis.",
+  "description": "🤖 A visualization mcp & skills contains 25+ visual charts using @antvis. Using for chart generation and data analysis.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/antvis/mcp-server-chart",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/antvis/mcp-server-chart",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/antvis/mcp-server-chart#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/antvis/mcp-server-chart#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/antvis/mcp-server-chart/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A Model Context Protocol server for generating charts using AntV.",
+    "We can use this mcp server for chart generation and data analysis.",
+    "This is a TypeScript-based MCP server that provides chart generation capabilities.",
+    "It allows you to create various types of charts through MCP tools.",
+    "generatenetworkgraph: Generate a network graph, used to display relationships and connections between nodes.",
+    "The above geographic visualization chart generation tool uses AMap service and currently only supports map generation within China.",
+    "If you are using an AI IDE with skill support (like Claude Code), you can use the chart-visualization skill to automatically select the best chart type and generate visualizations.",
+    "You can add the skill from using:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-06T07:58:59Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/antvis/mcp-server-chart",
+  "repoUrl": "https://github.com/antvis/mcp-server-chart",
+  "license": "MIT",
+  "stars": 4074,
+  "lastUpdated": "2026-05-06T07:58:59Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

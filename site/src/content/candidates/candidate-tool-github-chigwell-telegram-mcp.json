@@ -1,0 +1,177 @@
+{
+  "id": "candidate-tool-github-chigwell-telegram-mcp",
+  "type": "tool",
+  "status": "published",
+  "title": "Telegram Mcp",
+  "sourceUrl": "https://github.com/chigwell/telegram-mcp",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "chigwell",
+  "discoveredAt": "2026-05-13",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
+  "proposedCategory": [
+    "communication"
+  ],
+  "proposedAgents": [
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "chigwell",
+    "repo": "telegram-mcp",
+    "fullName": "chigwell/telegram-mcp",
+    "stars": 1087,
+    "license": "Apache-2.0",
+    "topics": [
+      "admin",
+      "api",
+      "chat-management",
+      "contacts",
+      "groups",
+      "mcp",
+      "media",
+      "messaging",
+      "search",
+      "telegram",
+      "telegram-api",
+      "telegram-client",
+      "telethon"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T18:42:24Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"https://capsule render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Telegram%20MCP%20Server&fontSize=50&fontAlignY=35&animation=fadeIn&fontColor=FFFFFF&descAlignY=55&descAlign=62\" alt=\"Telegram MCP Server\" width=\"100%\" / </div ![MCP Badge](https://badge.mcpx.dev) [![License: Apache 2.0](https://img.shields.io/badge/license Apache%202.0 green?style=flat square)",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A Telegram integration for Claude, Cursor, and other MCP-compatible clients.",
+    "It exposes Telegram account, chat, message, contact, media, folder, and admin operations through the Model Context Protocol using Telethon.",
+    "Basic Telegram MCP usage in Claude:",
+    "Asking Claude to analyze chat history and send a response:",
+    "The server currently includes 80+ MCP tools grouped into these areas:",
+    "Accounts: list configured accounts and route tool calls by account label.",
+    "Messages: send, schedule, edit, delete, forward, pin, unpin, mark read, reply, search, inspect context, create polls, manage reactions, inspect inline buttons, and press inline callbacks.",
+    "Contacts: list, search, add, delete, block, unblock, import, export, inspect direct chats, and find recent contact interactions."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"communication\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, contacts, and settings.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "search",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "search",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 0,
+    "cli": 1,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Package metadata detected; may expose executable commands.",
+    "Workflow/automation/orchestration language detected.",
+    "Detected scope: tool-server.",
+    "Alternative capabilities: workflow, cli.",
+    "LLM: mcp + [mcp] — The repository is explicitly a Telegram MCP server that exposes 80+ tools via the Model Context Protocol for AI agents."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Telegram Mcp is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with search workflows.",
+      "Helps with media workflows.",
+      "Relevant to communication.",
+      "A Telegram integration for Claude, Cursor, and other MCP-compatible clients."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:chigwell/telegram-mcp",
+  "firstDiscoveredAt": "2026-05-13",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "telegram-mcp",
+  "publishedAt": "2026-05-15",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

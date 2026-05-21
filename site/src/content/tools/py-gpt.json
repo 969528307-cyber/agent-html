@@ -1,0 +1,75 @@
+{
+  "id": "py-gpt",
+  "name": "Py Gpt",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "Desktop AI Assistant powered by GPT-5, GPT-4, o1, o3, Gemini, Claude, Ollama, DeepSeek, Perplexity, Grok, Bielik, chat, vision, voice, RAG, image and video generation, agents, tools, MCP, plugins, speech synthesis and recognition, web search, memory, presets, assistants,and more. Linux, Windows, Mac",
+  "description": "Desktop AI Assistant powered by GPT-5, GPT-4, o1, o3, Gemini, Claude, Ollama, DeepSeek, Perplexity, Grok, Bielik, chat, vision, voice, RAG, image and video generation, agents, tools, MCP, plugins, speech synthesis and recognition, web search, memory, presets, assistants,and more. Linux, Windows, Mac",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/szczyglis-dev/py-gpt",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/szczyglis-dev/py-gpt",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/szczyglis-dev/py-gpt#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/szczyglis-dev/py-gpt#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/szczyglis-dev/py-gpt/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Official website: Documentation:",
+    "This assistant offers multiple modes of operation such as chat, assistants, agents, completions, and image-related tasks like image generation and image analysis.",
+    "PyGPT has filesystem capabilities for file I/O, can generate and run Python code, execute system commands, execute custom commands and manage file transfers.",
+    "It also allows models to perform web searches with the DuckDuckGo, Google and Microsoft Bing.",
+    "Prompt creation and management are streamlined through an intuitive preset system.",
+    "11 modes of operation: Chat, Chat with Files, Realtime + audio, Research (Perplexity), Completion, Image and Video generation, Assistants, Experts, Computer use, Agents and Autonomous Mode.",
+    "Built-in vector databases support and automated files and data embedding.",
+    "Image generation via models like DALL-E, gpt-image, Imagen, Gemini, and Nano Banana."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-02-06T03:08:43Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/szczyglis-dev/py-gpt",
+  "repoUrl": "https://github.com/szczyglis-dev/py-gpt",
+  "license": "NOASSERTION",
+  "stars": 1787,
+  "lastUpdated": "2026-02-06T03:08:43Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

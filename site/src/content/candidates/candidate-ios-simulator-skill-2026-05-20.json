@@ -1,0 +1,157 @@
+{
+  "id": "candidate-ios-simulator-skill-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Ios Simulator Skill",
+  "sourceUrl": "https://github.com/conorluddy/ios-simulator-skill",
+  "sourceName": "GitHub",
+  "author": "conorluddy",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps. I mainly use it as an xcodebuild wrapper to save context.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "conorluddy",
+    "repo": "ios-simulator-skill",
+    "fullName": "conorluddy/ios-simulator-skill",
+    "stars": 1015,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "ai-agents",
+      "claude",
+      "claude-ai",
+      "claude-code",
+      "claude-skills",
+      "claudecode",
+      "claudeskills",
+      "dx",
+      "ios",
+      "iossimulator",
+      "mcp",
+      "mcp-tools",
+      "python",
+      "simulator",
+      "skills",
+      "testing",
+      "tooling",
+      "xcode"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-16T11:23:11Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "pyproject.toml",
+    "ios-simulator-skill/skills/ios-simulator-skill/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/conorluddy/ios simulator skill) iOS Simulator Skill for Claude Code Production ready skill for building, testing, and automating iOS apps. 22 scripts optimized for both human developers and AI agents. Xcode Build + Simulator Automation This skill covers both sides of iOS development: Xcode builds via xcodebuild — compile, test, and parse results w",
+  "skillExtracts": [
+    {
+      "path": "ios-simulator-skill/skills/ios-simulator-skill/SKILL.md",
+      "extract": "name: ios simulator skill version: 1.4.0 description: 22 production ready scripts for iOS app testing, building, and automation. Provides semantic UI navigation, build automation, accessibility testing, and simulator lifecycle management. Optimized for AI agents with minimal token output. iOS Simulator Skill Build, test, and automate iOS applications using accessibility driven navigation and structured data instead o"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "iOS Simulator Skill for Claude Code",
+    "Production-ready skill for building, testing, and automating iOS apps.",
+    "22 scripts optimized for both human developers and AI agents.",
+    "Xcode Build + Simulator Automation",
+    "This skill covers both sides of iOS development:",
+    "If you only need Xcode build tooling without the simulator scripts, see the plugin version: xclaude-plugin",
+    "The skill loads automatically.",
+    "This keeps agent conversations focused — no walls of build output unless you ask for them."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "An IOS Simulator Skill for ClaudeCode. Use it to optimise Claude's ability to build, run and interact with your apps. I mainly use it as an xcodebuild wrapper to save context.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "testing",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "testing",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Ios Simulator Skill is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with testing workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "iOS Simulator Skill for Claude Code"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ios-simulator-skill",
+  "publishedAt": "2026-05-20"
+}

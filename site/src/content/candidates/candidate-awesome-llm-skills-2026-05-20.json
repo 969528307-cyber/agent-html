@@ -1,0 +1,195 @@
+{
+  "id": "candidate-awesome-llm-skills-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Llm Skills",
+  "sourceUrl": "https://github.com/Prat011/awesome-llm-skills",
+  "sourceName": "GitHub",
+  "author": "Prat011",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "A curated list of awesome LLM and AI Agent Skills, resources and tools for customising AI Agent workflows - that works with Claude Code, Codex, Gemini CLI and your custom AI Agents",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "Prat011",
+    "repo": "awesome-llm-skills",
+    "fullName": "Prat011/awesome-llm-skills",
+    "stars": 1252,
+    "topics": [
+      "anthropic",
+      "awesome-list",
+      "awesome-lists",
+      "claude-code",
+      "claude-skills",
+      "claude-skills-creator",
+      "codex",
+      "codex-cli",
+      "gemini",
+      "gemini-cli",
+      "llama",
+      "llms",
+      "openai",
+      "opencode",
+      "qwen",
+      "qwen-coder",
+      "skills"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-04-22T10:46:57Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "algorithmic-art/SKILL.md",
+    "artifacts-builder/SKILL.md",
+    "brand-guidelines/SKILL.md",
+    "canvas-design/SKILL.md",
+    "changelog-generator/SKILL.md",
+    "competitive-ads-extractor/SKILL.md",
+    "content-research-writer/SKILL.md",
+    "document-skills/docx/SKILL.md",
+    "document-skills/pdf/SKILL.md",
+    "document-skills/pptx/SKILL.md",
+    "document-skills/xlsx/SKILL.md",
+    "domain-name-brainstormer/SKILL.md",
+    "file-organizer/SKILL.md",
+    "image-enhancer/SKILL.md",
+    "internal-comms/SKILL.md",
+    "invoice-organizer/SKILL.md",
+    "lead-research-assistant/SKILL.md",
+    "mcp-builder/SKILL.md",
+    "meeting-insights-analyzer/SKILL.md",
+    "notion-knowledge-capture/SKILL.md",
+    "notion-meeting-intelligence/SKILL.md",
+    "notion-research-documentation/SKILL.md",
+    "notion-spec-to-implementation/SKILL.md",
+    "raffle-winner-picker/SKILL.md",
+    "resemble-detect/SKILL.md",
+    "skill-creator/SKILL.md",
+    "slack-gif-creator/SKILL.md",
+    "template-skill/SKILL.md",
+    "theme-factory/SKILL.md",
+    "video-downloader/SKILL.md",
+    "webapp-testing/SKILL.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" Awesome LLM Skills</h1 <p align=\"center\" <a href=\"url\" <img width=\"1280\" height=\"640\" alt=\"Awesome LLM Skills\" src=\"https://github.com/user attachments/assets/fb10b4c7 4155 4026 95b9 b4b979a14921\" / </a </p <p align=\"center\" A curated list of awesome LLM Skills, resources, and tools for customizing AI workflows on tools like Claude Code, Codex, Gemini CLI, Qwen Code, OpenCode etc. </p <p align=\"cen",
+  "skillExtracts": [
+    {
+      "path": "algorithmic-art/SKILL.md",
+      "extract": "name: algorithmic art description: Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations. license: Complete terms in LICENSE.txt Algorithmic philosoph"
+    },
+    {
+      "path": "artifacts-builder/SKILL.md",
+      "extract": "name: artifacts builder description: Suite of tools for creating elaborate, multi component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components not for simple single file HTML/JSX artifacts. license: Complete terms in LICENSE.txt Artifacts Builder To build powerful frontend claude.ai ar"
+    },
+    {
+      "path": "brand-guidelines/SKILL.md",
+      "extract": "name: brand guidelines description: Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look and feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply. license: Complete terms in LICENSE.txt Anthropic Brand Styling Overview To access Anthropic's official brand identity and style resources, use this"
+    },
+    {
+      "path": "canvas-design/SKILL.md",
+      "extract": "name: canvas design description: Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations. license: Complete terms in LICENSE.txt These are instructions for creating design philosophies ae"
+    },
+    {
+      "path": "changelog-generator/SKILL.md",
+      "extract": "name: changelog generator description: Automatically creates user facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits into clear, customer friendly release notes. Turns hours of manual changelog writing into minutes of automated generation. Changelog Generator This skill transforms technical git commits into polished, user friendly changelogs that y"
+    },
+    {
+      "path": "competitive-ads-extractor/SKILL.md",
+      "extract": "name: competitive ads extractor description: Extracts and analyzes competitors' ads from ad libraries (Facebook, LinkedIn, etc.) to understand what messaging, problems, and creative approaches are working. Helps inspire and improve your own ad campaigns. Competitive Ads Extractor This skill extracts your competitors' ads from ad libraries and analyzes what's working—the problems they're highlighting, use cases they'r"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A curated list of awesome LLM Skills, resources, and tools for customizing AI workflows on tools like Claude Code, Codex, Gemini CLI, Qwen Code, OpenCode etc.",
+    "Skills enable LLM to execute tasks in a repeatable, standardized manner across all LLM platforms.",
+    "Create a project-local or user-level skill folder",
+    "Use one of these discovery paths so Claude Code finds it automatically:",
+    "Project: .claude/skills/webapp-testing/",
+    "User: ~/.claude/skills/webapp-testing/",
+    "This keeps skills snappy to load and easier for Claude to apply.",
+    "Claude (web or Desktop): Upload a ZIP via Settings → Capabilities → Skills → Upload skill."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "A curated list of awesome LLM and AI Agent Skills, resources and tools for customising AI Agent workflows - that works with Claude Code, Codex, Gemini CLI and your custom AI Agents",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome Llm Skills is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "A curated list of awesome LLM Skills, resources, and tools for customizing AI workflows on tools like Claude Code, Codex, Gemini CLI, Qwen Code, OpenCode etc.",
+      "Skills enable LLM to execute tasks in a repeatable, standardized manner across all LLM platforms.",
+      "Create a project-local or user-level skill folder"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

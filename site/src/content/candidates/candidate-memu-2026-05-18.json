@@ -1,0 +1,155 @@
+{
+  "id": "candidate-memu-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "MemU",
+  "sourceUrl": "https://github.com/NevaMind-AI/memU",
+  "sourceName": "GitHub",
+  "author": "NevaMind-AI",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Memory for 24/7 proactive agents like OpenClaw.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Qwen Code"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "NevaMind-AI",
+    "repo": "memU",
+    "fullName": "NevaMind-AI/memU",
+    "stars": 13655,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-memory",
+      "agentic-workflow",
+      "claude",
+      "claude-skills",
+      "mcp",
+      "memory",
+      "openclaw",
+      "openclaw-skills",
+      "proactive",
+      "proactive-ai",
+      "sandbox",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-22T12:36:17Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/adr/0001-workflow-pipeline-architecture.md",
+    "docs/adr/0002-pluggable-storage-and-vector-strategy.md",
+    "docs/adr/0003-user-scope-in-data-model.md",
+    "docs/adr/README.md",
+    "docs/architecture.md",
+    "docs/HACKATHON_ISSUE_DRAFT.md",
+    "docs/HACKATHON_MAD_COMBOS.md",
+    "docs/integrations/grok.md",
+    "docs/langgraph_integration.md",
+    "docs/providers/grok.md",
+    "docs/sealos_use_case.md",
+    "docs/sealos-devbox-guide.md",
+    "docs/sqlite.md",
+    "docs/tutorials/getting_started.md",
+    "pyproject.toml",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "![MemU Banner](assets/banner.png) <div align=\"center\" memU 24/7 Always On Proactive Memory for AI Agents [![PyPI version](https://badge.fury.io/py/memu py.svg)](https://badge.fury.io/py/memu py) [![License: Apache 2.0](https://img.shields.io/badge/License Apache%202.0 blue.svg)](https://opensource.org/licenses/Apache 2.0) [![Python 3.13+](https://img.shields.io/badge/python 3.13+ blue.svg)](https://www.python.org/dow",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "24/7 Always-On Proactive Memory for AI Agents",
+    "memU is a memory framework built for 24/7 proactive agents.",
+    "It is designed for long-running use and greatly reduces the LLM token cost of keeping agents always online, making always-on, evolving agents practical in production systems.",
+    "Even without a command, the agent can tell what you are about to do and act on it by itself.",
+    "📄 Files 🧠 Memory Items (extracted facts, preferences, skills)",
+    "Cross-link everything—memories reference each other, building a connected knowledge graph",
+    "Just as a file system turns raw bytes into organized data, memU transforms raw interactions into structured, searchable, proactive intelligence.",
+    "🤖 24/7 Proactive Agent Always-on memory agent that works continuously in the background"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Memory for 24/7 proactive agents like OpenClaw.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "MemU is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with memory workflows.",
+      "Relevant to skill.",
+      "24/7 Always-On Proactive Memory for AI Agents",
+      "memU is a memory framework built for 24/7 proactive agents."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "memu",
+  "publishedAt": "2026-05-18"
+}

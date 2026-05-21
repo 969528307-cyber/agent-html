@@ -1,0 +1,163 @@
+{
+  "id": "candidate-viper-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Viper",
+  "sourceUrl": "https://github.com/FunnyWolf/Viper",
+  "sourceName": "GitHub",
+  "author": "FunnyWolf",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Adversary simulation and Red teaming platform with AI",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "FunnyWolf",
+    "repo": "Viper",
+    "fullName": "FunnyWolf/Viper",
+    "stars": 5043,
+    "topics": [
+      "agent",
+      "ai",
+      "cobalt-strike",
+      "llm",
+      "mcp-server",
+      "metasploit-framework",
+      "post-exploitation",
+      "red-team-tools",
+      "redteam",
+      "viper"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-03-31T10:39:39Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/.vitepress/theme/components/Features.vue",
+    "docs/.vitepress/theme/components/Hero.vue",
+    "docs/.vitepress/theme/components/KeyFeatures.vue",
+    "docs/.vitepress/theme/components/Pricing.vue",
+    "docs/.vitepress/theme/components/Testimonials.vue",
+    "docs/.vitepress/theme/handleHeadMeta.ts",
+    "docs/.vitepress/theme/index.ts",
+    "docs/.vitepress/theme/Layout.vue",
+    "docs/.vitepress/theme/styles.css",
+    "docs/.vitepress/theme/styles/custom.css",
+    "docs/en/guide/about_viper.md",
+    "docs/en/guide/ai_agent.md",
+    "docs/en/guide/aiqicha_api.md",
+    "docs/en/guide/automation.md",
+    "docs/en/guide/avoid_tracing.md",
+    "docs/en/guide/bark_bot.md",
+    "docs/en/guide/change_password.md",
+    "docs/en/guide/console.md",
+    "docs/en/guide/credential.md",
+    "docs/en/guide/dashboard.md",
+    "docs/en/guide/delete.md",
+    "docs/en/guide/dingding_bot.md",
+    "docs/en/guide/explorer.md",
+    "docs/en/guide/file_explorer.md",
+    "docs/en/guide/fofa_api.md",
+    "docs/en/guide/getting_start.md",
+    "docs/en/guide/handler_and_payload.md",
+    "docs/en/guide/handler_firewall.md",
+    "docs/en/guide/host_and_session_list.md",
+    "docs/en/guide/hunter_api.md",
+    "docs/en/guide/information.md",
+    "docs/en/guide/internet_scan.md",
+    "docs/en/guide/issues.md",
+    "docs/en/guide/license.md",
+    "docs/en/guide/login.md",
+    "docs/en/guide/mcpserver.md",
+    "docs/en/guide/msfconsole.md",
+    "docs/en/guide/open_source_software.md",
+    "docs/en/guide/openai_api.md"
+  ],
+  "readmeExtract": "![cover v5 optimized](./docs/public/og/img 0.png) <p align=\"center\" <a href=\"https://www.viperrtp.com/guide/getting start\" Getting Started</a · <a href=\"https://www.viperrtp.com/guide/welcome to viper\" Documentation</a </p <p align=\"center\" <a href=\"https://www.viperrtp.com/\" target=\" blank\" <img alt=\"Static Badge\" src=\"https://img.shields.io/badge/Website F04438\" </a <a href=\"https://discord.gg/3R9yZvQueT\" target=\" ",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "It integrates the core tools and functionalities required for adversary simulation and red team operations, assisting you in",
+    "Out-of-the-Box Red Teaming Tools",
+    "Built-in Large Language Model (LLM) agent enhances automated processing capabilities and intelligent decision-making support.",
+    "Includes built-in anti-tracing/handler firewall/defense evasion/pivot graph/automated notification functions.",
+    "Repository includes MCP-related files"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Adversary simulation and Red teaming platform with AI",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Viper is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Relevant to mcp.",
+      "It integrates the core tools and functionalities required for adversary simulation and red team operations, assisting you in",
+      "Out-of-the-Box Red Teaming Tools",
+      "Built-in Large Language Model (LLM) agent enhances automated processing capabilities and intelligent decision-making support."
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  }
+}

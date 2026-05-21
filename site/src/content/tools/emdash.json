@@ -1,0 +1,80 @@
+{
+  "id": "emdash",
+  "name": "Emdash",
+  "type": "cli",
+  "status": "published",
+  "summary": "Emdash is the Open-Source Agentic Development Environment (🧡 YC W26). Run multiple coding agents in parallel. Use any provider.",
+  "description": "Emdash is the Open-Source Agentic Development Environment (🧡 YC W26). Run multiple coding agents in parallel. Use any provider.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "Kimi"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/generalaction/emdash",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/generalaction/emdash",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/generalaction/emdash#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/generalaction/emdash#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/generalaction/emdash/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Emdash is a provider-agnostic desktop app that lets you run multiple coding agents in parallel, each isolated in its own git worktree, either locally or over SSH on a remote machine.",
+    "We call it an Agentic Development Environment (ADE).",
+    "Emdash supports 27 CLI agents, including Claude Code, Codex, OpenCode, Gemini and Amp.",
+    "Users can directly pass Linear, GitHub, Jira, or Asana tickets to an agent, review diffs, test changes, create PRs, see CI/CD checks, and merge.",
+    "Connect to remote machines via SSH/SFTP to work with remote codebases.",
+    "Emdash supports SSH agent and key authentication, with secure credential storage in your OS keychain.",
+    "Run agents on remote projects using the same parallel workflow as local development.",
+    "Claude Code ✅ Supported curl -fsSL &#124; bash"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T02:08:04Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/generalaction/emdash",
+  "repoUrl": "https://github.com/generalaction/emdash",
+  "license": "Apache-2.0",
+  "stars": 4479,
+  "lastUpdated": "2026-05-20T02:08:04Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

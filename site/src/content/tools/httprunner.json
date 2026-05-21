@@ -1,0 +1,75 @@
+{
+  "id": "httprunner",
+  "name": "Httprunner",
+  "type": "mcp",
+  "status": "published",
+  "summary": "HttpRunner 是一款开源的 API/UI 测试框架，简单易用，功能强大，具有丰富的插件化机制和高度的可扩展能力。",
+  "description": "HttpRunner 是一款开源的 API/UI 测试框架，简单易用，功能强大，具有丰富的插件化机制和高度的可扩展能力。",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/httprunner/httprunner",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/httprunner/httprunner",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/httprunner/httprunner#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/httprunner/httprunner#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/httprunner/httprunner/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "在 2022 年，HttpRunner 开始新增支持 UI 自动化测试，当前已经支持了 Android/iOS/Harmony/Browser 多种系统平台，并在 v5 版本融入了大模型技术，成长成为了一款通用的智能自动化测试框架。",
+    "UI Automation: Android/iOS/Harmony/Browser",
+    "adb simple utils for android device management",
+    "ios simple utils for ios device management",
+    "mcp-server Start MCP server for UI automation",
+    "mcphost Start a chat session to interact with MCP tools",
+    "├── mcphost/ # MCP (Model Context Protocol) 主机模块",
+    "M[mcphost/] --> N[AI Models]"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-12-11T16:50:50Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/httprunner/httprunner",
+  "repoUrl": "https://github.com/httprunner/httprunner",
+  "license": "Apache-2.0",
+  "stars": 4277,
+  "lastUpdated": "2025-12-11T16:50:50Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

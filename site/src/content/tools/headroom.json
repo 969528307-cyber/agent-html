@@ -1,0 +1,77 @@
+{
+  "id": "headroom",
+  "name": "Headroom",
+  "type": "single-tool",
+  "status": "published",
+  "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+  "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/chopratejas/headroom",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/chopratejas/headroom",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/chopratejas/headroom#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/chopratejas/headroom#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/chopratejas/headroom/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "60–95% fewer tokens · library · proxy · MCP · 6 algorithms · local-first · reversible",
+    "AI agents / LLMs: read /llms.txt here, or fetch the live index / full docs blob.",
+    "Headroom compresses everything your AI agent reads — tool outputs, logs, RAG chunks, files, and conversation history — before it reaches the LLM.",
+    "Agent wrap — headroom wrap claude codex cursor aider copilot in one command",
+    "MCP server — headroomcompress, headroomretrieve, headroomstats for any MCP client",
+    "Cross-agent memory — shared store across Claude, Codex, Gemini, auto-dedup",
+    "headroom learn — mines failed sessions, writes corrections to CLAUDE.md / AGENTS.md",
+    "Granular extras: [proxy], [mcp], [ml], [agno], [langchain], [evals]."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-16T03:33:19Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/chopratejas/headroom",
+  "repoUrl": "https://github.com/chopratejas/headroom",
+  "license": "Apache-2.0",
+  "stars": 1772,
+  "lastUpdated": "2026-05-16T03:33:19Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

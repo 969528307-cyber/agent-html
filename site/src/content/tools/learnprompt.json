@@ -1,0 +1,78 @@
+{
+  "id": "learnprompt",
+  "name": "LearnPrompt",
+  "type": "cli",
+  "status": "published",
+  "summary": "永久免费开源的 AIGC 课程, 目前已支持Claude Code，Codex，Hermes，OpenClaw，Obsidian，Prompt Engineering, ChatGPT, Midjourney, Runway, Stable Diffusion, AI数字人，AI声音&音乐，开源大模型",
+  "description": "永久免费开源的 AIGC 课程, 目前已支持Claude Code，Codex，Hermes，OpenClaw，Obsidian，Prompt Engineering, ChatGPT, Midjourney, Runway, Stable Diffusion, AI数字人，AI声音&音乐，开源大模型",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Hermes Agent",
+    "OpenClaw"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/LearnPrompt/LearnPrompt",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/LearnPrompt/LearnPrompt",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/LearnPrompt/LearnPrompt#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/LearnPrompt/LearnPrompt#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/LearnPrompt/LearnPrompt/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "我是卡尔，一个兴趣使然的古法AI码农，长期做AI工具实测、内容创作、开源教程和Agent工作流。",
+    "这句话是我做LearnPrompt、AI沃茨和Carl Skills的底层原因。我不太想只追热点，也不太想把新工具讲成发布会摘要。",
+    "LearnPrompt是我的来时路，也是这个账号最早的公共项目。它是一套持续维护的中文AI学习路径，覆盖Claude Code，Codex，OpenClaw，Hermes，提示语工程，ChatGPT，RAG，Agent，AI编程，Agent Skills，Obsidian，Midjourney，Runway，Stable Diffusion，数字人，AI声音与音乐和大模型微调等主题。",
+    "AI News Radar里的伯乐Skill，用GitHub Actions、网页和自动化摘要，把AI/tech信息源变成一个可以持续运行的雷达。它能判断一个新的信息源，设置7天冷静期判断内容值不值得长期追更，会不会跟你现有信息流有内容重复，如果值得，应该怎么接进来最稳定？",
+    "淘金小镇从ClawHub Top100开始，记录每天哪些AI skill在上升。然后就是覆盖到更多的排行榜，像Claude Code的更新日志，或者像AA Index这种模型排行榜，观测它们的更新，让模型以最少的环境依赖稳定地运行多次数据分析。",
+    "很多AI做PPT的问题，出在第一页之前。材料刚丢进去，就被压成一堆无聊的提纲，这样用的HTML PPT Skill再好也没用。",
+    "Carl Skills · 把真实AI工作流做成可复用的skills",
+    "Carl Skills就是这个方向的新仓库。它会逐步收纳内容生产，资料整理，工具评测，PPT制作，飞书和Obsidian协作，Hermes/Codex/OpenClaw实践里长出来的AI workflows。"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T11:51:08Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/LearnPrompt/LearnPrompt",
+  "repoUrl": "https://github.com/LearnPrompt/LearnPrompt",
+  "license": "NOASSERTION",
+  "stars": 2371,
+  "lastUpdated": "2026-05-19T11:51:08Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

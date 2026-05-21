@@ -1,0 +1,212 @@
+{
+  "id": "candidate-understand-anything-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Understand Anything",
+  "sourceUrl": "https://github.com/Lum1104/Understand-Anything",
+  "sourceName": "GitHub",
+  "author": "Lum1104",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Graphs that teach > graphs that impress. Turn any code, or knowledge base (Karpathy LLM wiki), into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Hermes Agent",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "Lum1104",
+    "repo": "Understand-Anything",
+    "fullName": "Lum1104/Understand-Anything",
+    "stars": 15014,
+    "license": "MIT",
+    "topics": [
+      "antigravity-skills",
+      "business-knowledge",
+      "claude-code",
+      "claude-skills",
+      "codex",
+      "codex-skills",
+      "gemini-cli-skills",
+      "karpathy-llm-wiki",
+      "knowledge-base",
+      "knowledge-graph",
+      "memory",
+      "opencode-skills",
+      "pi-agent",
+      "understandcode"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T02:13:25Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/superpowers/plans/2026-03-14-phase1-implementation.md",
+    "docs/superpowers/plans/2026-03-14-phase2-implementation.md",
+    "docs/superpowers/plans/2026-03-14-phase3-implementation.md",
+    "docs/superpowers/plans/2026-03-14-phase4-implementation.md",
+    "docs/superpowers/plans/2026-03-15-homepage-implementation.md",
+    "docs/superpowers/plans/2026-03-18-multi-platform-simple-implementation.md",
+    "docs/superpowers/plans/2026-03-21-language-agnostic-plan.md",
+    "docs/superpowers/plans/2026-03-25-dashboard-robustness-impl.md",
+    "docs/superpowers/plans/2026-03-25-dashboard-robustness-plan.md",
+    "docs/superpowers/plans/2026-03-26-theme-system-implementation.md",
+    "docs/superpowers/plans/2026-03-27-token-reduction-impl.md",
+    "docs/superpowers/plans/2026-03-28-understand-anything-extension-impl.md",
+    "docs/superpowers/plans/2026-03-29-homepage-update-impl.md",
+    "docs/superpowers/plans/2026-04-01-business-domain-knowledge-impl.md",
+    "docs/superpowers/plans/2026-04-09-understand-knowledge.md",
+    "docs/superpowers/plans/2026-04-10-understandignore-impl.md",
+    "docs/superpowers/plans/2026-04-15-language-extractors-impl.md",
+    "docs/superpowers/plans/2026-05-03-graph-layout-scaling.md",
+    "docs/superpowers/specs/2026-03-14-understand-anything-design.md",
+    "docs/superpowers/specs/2026-03-15-homepage-design.md",
+    "docs/superpowers/specs/2026-03-18-multi-platform-simple-design.md",
+    "docs/superpowers/specs/2026-03-21-language-agnostic-design.md",
+    "docs/superpowers/specs/2026-03-26-theme-system-design.md",
+    "docs/superpowers/specs/2026-03-27-token-reduction-design.md",
+    "docs/superpowers/specs/2026-03-28-understand-anything-extension-design.md",
+    "docs/superpowers/specs/2026-03-29-homepage-update-design.md",
+    "docs/superpowers/specs/2026-04-01-business-domain-knowledge-design.md",
+    "docs/superpowers/specs/2026-04-09-understand-knowledge-design.md",
+    "docs/superpowers/specs/2026-04-10-understandignore-design.md",
+    "docs/superpowers/specs/2026-05-03-graph-layout-scaling-design.md",
+    "package.json",
+    "understand-anything-plugin/skills/understand-chat/SKILL.md",
+    "understand-anything-plugin/skills/understand-dashboard/SKILL.md",
+    "understand-anything-plugin/skills/understand-diff/SKILL.md",
+    "understand-anything-plugin/skills/understand-domain/SKILL.md",
+    "understand-anything-plugin/skills/understand-explain/SKILL.md",
+    "understand-anything-plugin/skills/understand-knowledge/SKILL.md",
+    "understand-anything-plugin/skills/understand-onboard/SKILL.md",
+    "understand-anything-plugin/skills/understand/SKILL.md"
+  ],
+  "readmeExtract": "<h1 align=\"center\" Understand Anything</h1 <p align=\"center\" <strong Turn any codebase, knowledge base, or docs into an interactive knowledge graph you can explore, search, and ask questions about.</strong <br / <em Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.</em </p <p align=\"center\" <a href=\"README.md\" English</a | <a href=\"READMEs/README.zh CN.md\" 简体中文</a | <a href=\"READMEs/README.zh TW.m",
+  "skillExtracts": [
+    {
+      "path": "understand-anything-plugin/skills/understand-chat/SKILL.md",
+      "extract": "name: understand chat description: Use when you need to ask questions about a codebase or understand code using a knowledge graph argument hint: [query] /understand chat Answer questions about this codebase using the knowledge graph at .understand anything/knowledge graph.json . Graph Structure Reference The knowledge graph JSON has this structure: project — {name, description, languages, frameworks, analyzedAt, gitC"
+    },
+    {
+      "path": "understand-anything-plugin/skills/understand-dashboard/SKILL.md",
+      "extract": "name: understand dashboard description: Launch the interactive web dashboard to visualize a codebase's knowledge graph argument hint: [project path] /understand dashboard Start the Understand Anything dashboard to visualize the knowledge graph for the current project. Instructions 1. Determine the project directory: If $ARGUMENTS contains a path, use that as the project directory Otherwise, use the current working di"
+    },
+    {
+      "path": "understand-anything-plugin/skills/understand-diff/SKILL.md",
+      "extract": "name: understand diff description: Use when you need to analyze git diffs or pull requests to understand what changed, affected components, and risks /understand diff Analyze the current code changes against the knowledge graph at .understand anything/knowledge graph.json . Graph Structure Reference The knowledge graph JSON has this structure: project — {name, description, languages, frameworks, analyzedAt, gitCommit"
+    },
+    {
+      "path": "understand-anything-plugin/skills/understand-domain/SKILL.md",
+      "extract": "name: understand domain description: Extract business domain knowledge from a codebase and generate an interactive domain flow graph. Works standalone (lightweight scan) or derives from an existing /understand knowledge graph. argument hint: [ full] /understand domain Extracts business domain knowledge — domains, business flows, and process steps — from a codebase and produces an interactive horizontal flow graph in "
+    },
+    {
+      "path": "understand-anything-plugin/skills/understand-explain/SKILL.md",
+      "extract": "name: understand explain description: Use when you need a deep dive explanation of a specific file, function, or module in the codebase argument hint: [file path] /understand explain Provide a thorough, in depth explanation of a specific code component. Graph Structure Reference The knowledge graph JSON has this structure: project — {name, description, languages, frameworks, analyzedAt, gitCommitHash} nodes[] — each "
+    },
+    {
+      "path": "understand-anything-plugin/skills/understand-knowledge/SKILL.md",
+      "extract": "name: understand knowledge description: Analyze a Karpathy pattern LLM wiki knowledge base and generate an interactive knowledge graph with entity extraction, implicit relationships, and topic clustering. argument hint: [wiki directory] /understand knowledge Analyzes a Karpathy pattern LLM wiki — a three layer knowledge base with raw sources, wiki markdown, and a schema file — and produces an interactive knowledge gr"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Turn any codebase, knowledge base, or docs into an interactive knowledge graph you can explore, search, and ask questions about.",
+    "Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+    "Want to skip the reading? Try the live demo in our homepage — a fully interactive dashboard you can pan, zoom, search, and explore right in your browser.",
+    "Navigate your codebase as an interactive knowledge graph — every file, function, and class is a node you can click, search, and explore.",
+    "Switch to the domain view and see how your code maps to real business processes — domains, flows, and steps laid out as a horizontal graph.",
+    "Search \"which parts handle auth?\" and get relevant results across the graph.",
+    "A multi-agent pipeline scans your project, extracts every file, function, class, and dependency, then builds a knowledge graph saved to .understand-anything/knowledge-graph.json.",
+    "Dashboard UI labels, buttons, and tooltips"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Graphs that teach > graphs that impress. Turn any code, or knowledge base (Karpathy LLM wiki), into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "coding",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "coding",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Understand Anything is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with memory workflows.",
+      "Relevant to skill."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "understand-anything",
+  "publishedAt": "2026-05-18"
+}

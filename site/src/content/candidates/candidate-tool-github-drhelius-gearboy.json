@@ -1,0 +1,189 @@
+{
+  "id": "candidate-tool-github-drhelius-gearboy",
+  "type": "tool",
+  "status": "published",
+  "title": "Gearboy",
+  "sourceUrl": "https://github.com/drhelius/Gearboy",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "drhelius",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Game Boy / Game Boy Color / Super Game Boy emulator, debugger and embedded MCP server for macOS, Windows, Linux, BSD and RetroArch.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "drhelius",
+    "repo": "Gearboy",
+    "fullName": "drhelius/Gearboy",
+    "stars": 1131,
+    "license": "GPL-3.0",
+    "topics": [
+      "bsd",
+      "emulation",
+      "emulator",
+      "game-boy",
+      "gameboy",
+      "gameboy-color-emulator",
+      "gameboy-emulator",
+      "libretro",
+      "linux",
+      "mcp",
+      "mcp-server",
+      "nintendo-gameboy",
+      "raspberry-pi",
+      "retroarch",
+      "vgm"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-17T21:56:21Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/gearboy-debugging/SKILL.md",
+    "skills/gearboy-romhacking/SKILL.md"
+  ],
+  "readmeExtract": "Gearboy [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/drhelius/Gearboy/gearboy.yml)](https://github.com/drhelius/Gearboy/actions/workflows/gearboy.yml) [![GitHub Releases)](https://img.shields.io/github/v/tag/drhelius/Gearboy?label=version)](https://github.com/drhelius/Gearboy/releases) [![commits)](https://img.shields.io/github/commit activity/t/drhelius/Gearboy)](https://github.co",
+  "skillExtracts": [
+    {
+      "path": "skills/gearboy-debugging/SKILL.md",
+      "extract": "name: gearboy debugging description: Debug and trace Game Boy / Game Boy Color / Super Game Boy games using the Gearboy emulator MCP server. Provides workflows for SM83 CPU debugging, breakpoint management, hardware inspection, disassembly analysis, and execution tracing. Use when the user wants to debug a Game Boy game, trace code execution, inspect CPU registers or hardware state, set breakpoints, analyze interrupt"
+    },
+    {
+      "path": "skills/gearboy-romhacking/SKILL.md",
+      "extract": "name: gearboy romhacking description: Hack, modify, and translate Game Boy / Game Boy Color ROMs using the Gearboy emulator MCP server. Provides workflows for memory searching, value discovery, cheat creation, data modification, sprite/text finding, and translation patching. Use when the user wants to create cheats, find game values in memory, modify ROM data, translate a Game Boy game, patch game behavior, create RO"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Gearboy is an accurate, cross-platform Game Boy / Game Boy Color / Super Game Boy emulator written in C++ that runs on Windows, macOS, Linux, BSD and RetroArch, with an embedded MCP server for debugging and tooling.",
+    "Save states with preview and rewind support.",
+    "MCP server for AI-assisted debugging with GitHub Copilot, Claude, Codex and similar, exposing tools for execution control, memory inspection, hardware status, rewind and more.",
+    "Gearboy includes a Model Context Protocol (MCP) server that enables AI-assisted debugging through AI agents like GitHub Copilot, Claude, Codex and similar.",
+    "The server provides tools for execution control, memory inspection, breakpoints, disassembly, hardware status, and more.",
+    "Gearboy provides Agent Skills that teach AI assistants how to effectively use the emulator for specific tasks:",
+    "gearboy-debugging — Game debugging, code tracing, breakpoint management, hardware inspection, and reverse engineering.",
+    "gearboy-romhacking — Cheat creation, memory searching, ROM data modification, text translation, and game patching."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Game Boy / Game Boy Color / Super Game Boy emulator, debugger and embedded MCP server for macOS, Windows, Linux, BSD and RetroArch.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 13,
+    "cli": 0,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Skill-collection or agent-rules language in description.",
+    "Workflow/automation/orchestration language detected.",
+    "Agent app or product platform language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: mcp, agent-app, workflow.",
+    "LLM: mcp + [mcp, skill] — Project is primarily an emulator with an embedded MCP server and agent skills for AI-assisted debugging."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "agent-app",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Gearboy is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with automation workflows.",
+      "Relevant to search.",
+      "Gearboy is an accurate, cross-platform Game Boy / Game Boy Color / Super Game Boy emulator written in C++ that runs on Windows, macOS, Linux, BSD and RetroArch, with an embedded MCP server for debugging and tooling.",
+      "Save states with preview and rewind support."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:drhelius/gearboy",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "gearboy",
+  "publishedAt": "2026-05-18"
+}

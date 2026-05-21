@@ -1,0 +1,75 @@
+{
+  "id": "mysql-mcp-server",
+  "name": "Mysql Mcp Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "A Model Context Protocol (MCP) server that enables secure interaction with MySQL databases",
+  "description": "A Model Context Protocol (MCP) server that enables secure interaction with MySQL databases",
+  "category": [
+    "data"
+  ],
+  "compatibleAgents": [
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/designcomputer/mysql_mcp_server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/designcomputer/mysql_mcp_server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/designcomputer/mysql_mcp_server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/designcomputer/mysql_mcp_server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/designcomputer/mysql_mcp_server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A Model Context Protocol (MCP) implementation that enables secure interaction with MySQL databases.",
+    "Note: MySQL MCP Server is not designed to be used as a standalone server, but rather as a communication protocol implementation between AI applications and MySQL databases.",
+    "Add this to your claudedesktopconfig.json:",
+    "Debugging with MCP Inspector",
+    "While MySQL MCP Server isn't intended to be run standalone or directly from the command line with Python, you can use the MCP Inspector to debug it.",
+    "The MCP Inspector provides a convenient way to test and debug your MCP implementation:",
+    "The MySQL MCP Server is designed to be integrated with AI applications like Claude Desktop and should not be run directly as a standalone Python program.",
+    "This MCP implementation requires database access to function."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-06-05T11:05:28Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/designcomputer/mysql_mcp_server",
+  "repoUrl": "https://github.com/designcomputer/mysql_mcp_server",
+  "license": "MIT",
+  "stars": 1250,
+  "lastUpdated": "2025-06-05T11:05:28Z",
+  "lastChecked": "2026-05-13",
+  "publishedAt": "2026-05-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

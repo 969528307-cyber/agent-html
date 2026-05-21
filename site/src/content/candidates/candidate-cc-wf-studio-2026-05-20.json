@@ -1,0 +1,173 @@
+{
+  "id": "candidate-cc-wf-studio-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Cc Wf Studio",
+  "sourceUrl": "https://github.com/breaking-brake/cc-wf-studio",
+  "sourceName": "GitHub",
+  "author": "breaking-brake",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "CC Workflow Studio",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "breaking-brake",
+    "repo": "cc-wf-studio",
+    "fullName": "breaking-brake/cc-wf-studio",
+    "stars": 5005,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "mcp-tools",
+      "slash-commands",
+      "sub-agents",
+      "vscode-extension",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T13:50:08Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/release-automation.md",
+    "docs/schema-maintenance.md",
+    "package.json",
+    ".claude/skills/jira-driven-planning/SKILL.md",
+    ".claude/skills/pr-review-analysis/SKILL.md",
+    ".claude/skills/pr-to-main-cleanup/SKILL.md",
+    ".claude/skills/pr-to-main/SKILL.md",
+    ".claude/skills/pr-to-production/SKILL.md",
+    ".claude/skills/workflow-schema-tuning/SKILL.md",
+    ".github/skills/cc-workflow-ai-editor/SKILL.md",
+    ".roo/skills/cc-workflow-ai-editor/SKILL.md",
+    "CLAUDE.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"./resources/icon large.png\" alt=\"CC Workflow Studio Icon\" width=\"128\" </p CC Workflow Studio <p align=\"center\" <a href=\"https://github.com/breaking brake/cc wf studio/stargazers\" <img src=\"https://img.shields.io/github/stars/breaking brake/cc wf studio\" alt=\"GitHub Stars\" / </a <a href=\"https://marketplace.visualstudio.com/items?itemName=breaking brake.cc wf studio\" <img src=\"https://vsmar",
+  "skillExtracts": [
+    {
+      "path": ".claude/skills/jira-driven-planning/SKILL.md",
+      "extract": "name: jira driven planning description: Jiraチケットの要件とConfluenceの関連ドキュメントを基に、Frontend/Backend/Infrastructureに分割した実装計画を策定するプランニングスキル。Jiraチケット情報とConfluence検索結果が前段で取得済みであることを前提とし、構造化された実装計画を出力する。「プランニング」「実装計画策定」「タスク分割」などの文脈で使用。 Jira Driven Planning Jiraチケットの要件とConfluenceの関連ドキュメントを入力として、Frontend / Backend / Infrastructure に分割した実装計画を策定する。 Workflow 1. 前段で取得されたJiraチケット情報（タイトル、説明、受け入れ基準、優先度）を確認 2. 前段で取得されたConfluenceドキュメント（設計書、"
+    },
+    {
+      "path": ".claude/skills/pr-review-analysis/SKILL.md",
+      "extract": "name: pr review analysis description: Analyze PR review comments from a GitHub PR URL. Fetch review comments, verify each finding against the actual codebase, assess validity (correct/incorrect/partial), present a structured summary with recommended actions, and optionally reply to each comment on GitHub. Use when given a PR review URL or when asked to check/analyze PR feedback. PR Review Analysis GitHub PR のレビューコメント"
+    },
+    {
+      "path": ".claude/skills/pr-to-main-cleanup/SKILL.md",
+      "extract": "name: pr to main cleanup description: Clean up merged feature branches after PR to main is merged. Use when the user says \"ブランチ削除\", \"cleanup\", \"マージ後の片付け\", or wants to delete a merged branch. PR to Main Cleanup Delete merged feature branches after PR is merged to main. Workflow 1. Gather context (parallel): git branch to identify current branch git log oneline 1 to confirm current state 2. Execute cleanup : Switch to "
+    },
+    {
+      "path": ".claude/skills/pr-to-main/SKILL.md",
+      "extract": "name: pr to main description: Create a PR to main branch for feature/fix changes. Use when the user says \"PRを作成\", \"mainにPR\", or wants to submit changes for review. PR to Main Branch Create PR for feature branches targeting main. Workflow 1. Gather context (parallel): git status (no uall flag) git diff for staged/unstaged changes git log for commit history on current branch Check if branch tracks remote and needs push"
+    },
+    {
+      "path": ".claude/skills/pr-to-production/SKILL.md",
+      "extract": "name: pr to production description: Create a release PR from main to production branch. Use when the user says \"リリースPR\", \"productionにPR\", \"リリース準備\", or wants to trigger a release. PR to Production Branch (Release) Create release PR from main to production for semantic release. Workflow 1. Fetch latest from remote (required first): git fetch origin production main quiet IMPORTANT : Always use remote refs ( origin/produ"
+    },
+    {
+      "path": ".claude/skills/workflow-schema-tuning/SKILL.md",
+      "extract": "name: workflow schema tuning description: Use when modifying resources/workflow schema.json in cc wf studio to influence how AI agents generate workflows via the cc workflow ai editor skill. Triggers include \"AIが特定のノードタイプを選んでくれない\", \"ワークフロー生成のバイアスを調整したい\", \"スキーマの description を変えたい\", \"新しいノードタイプを追加したい\", \"嘘の制約がスキーマに混じっていないか確認したい\". Covers what the schema actually does (instructions to AI, not runtime constraints), the desi"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "CC Workflow Studio speaks both.",
+    "Design workflows on a canvas.",
+    "Export as Markdown your AI agent already understands.",
+    "Agent Export Format Requires",
+    "Claude Code .claude/agents/ .claude/commands/ Claude Code",
+    "GitHub Copilot CLI .github/skills/ Copilot CLI",
+    "OpenAI Codex CLI .codex/skills/ Codex CLI",
+    "Roo Code .roo/skills/ Roo Code"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "CC Workflow Studio",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Cc Wf Studio is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "CC Workflow Studio speaks both.",
+      "Design workflows on a canvas."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cc-wf-studio",
+  "publishedAt": "2026-05-20"
+}

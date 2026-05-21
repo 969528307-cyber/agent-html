@@ -1,0 +1,202 @@
+{
+  "id": "candidate-tool-github-microsoftdocs-mcp",
+  "type": "tool",
+  "status": "published",
+  "title": "Mcp",
+  "sourceUrl": "https://github.com/MicrosoftDocs/mcp",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "MicrosoftDocs",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Official Microsoft Learn MCP Server and CLI tool – powering LLMs and AI agents with real-time, trusted Microsoft docs & code samples.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "MicrosoftDocs",
+    "repo": "mcp",
+    "fullName": "MicrosoftDocs/mcp",
+    "stars": 1641,
+    "license": "CC-BY-4.0",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "cli",
+      "copilot",
+      "documentation",
+      "learn-cli",
+      "llm",
+      "mcp",
+      "microsoft",
+      "microsoft-learn",
+      "rag",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-10T02:19:02Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "skills/microsoft-code-reference/SKILL.md",
+    "skills/microsoft-docs/SKILL.md",
+    "skills/microsoft-skill-creator/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "🌟 Microsoft Learn MCP Server [![Install in VS Code](https://img.shields.io/badge/VS Code Install Microsoft Learn MCP 0098FF?style=flat square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=microsoft learn&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D) [![Install in VS Code Insiders](https://img.shields.io/badge/VS Code Ins",
+  "skillExtracts": [
+    {
+      "path": "skills/microsoft-code-reference/SKILL.md",
+      "extract": "name: microsoft code reference description: Find working code samples, verify API signatures, and fix Microsoft SDK errors using official docs. Use whenever the user is writing, debugging, or reviewing code that touches any Microsoft SDK, .NET library, Azure client library, or Microsoft API—even if they don't ask for a \"reference.\" Catches hallucinated methods, wrong signatures, and deprecated patterns. If the task i"
+    },
+    {
+      "path": "skills/microsoft-docs/SKILL.md",
+      "extract": "name: microsoft docs description: Understand Microsoft technologies by querying official documentation. Use whenever the user asks how something works, wants tutorials, needs configuration options, limits, quotas, or best practices for any Microsoft technology (Azure, .NET, M365, Windows, Power Platform, etc.)—even if they don't mention \"docs.\" If the question is about understanding a concept rather than writing code"
+    },
+    {
+      "path": "skills/microsoft-skill-creator/SKILL.md",
+      "extract": "name: microsoft skill creator description: Create agent skills for Microsoft technologies using official documentation. Use whenever the user wants to build, generate, or scaffold a skill for any Microsoft technology (Azure, .NET, M365, VS Code, Bicep, etc.)—even phrased casually like \"make a skill for Cosmos DB.\" Investigates the topic via official docs, then generates a hybrid skill with essential knowledge stored "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "🌟 Microsoft Learn MCP Server",
+    "Stop AI Hallucinations. Give your AI assistant (Claude, Cursor, Copilot, Codex, ...) direct access to the latest official Microsoft documentation.",
+    "Stop relying on outdated training data or risky web searches.",
+    "Learn MCP server provides secure, direct access to Microsoft official docs.",
+    "Unlike generic web searches that may scrape insecure blogs or malicious sites, this tool only accesses official 1st-party Microsoft documentation.",
+    "💸 Completely Free. High search capacity tailored for seamless, heavy coding sessions.",
+    "\"Give me the Azure CLI commands to create an Azure Container App with a managed identity.\"",
+    "🌐 The Microsoft Learn MCP Server Endpoint"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Official Microsoft Learn MCP Server and CLI tool – powering LLMs and AI agents with real-time, trusted Microsoft docs & code samples.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 12,
+    "cli": 9,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 5,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "GitHub topics tag as skills.",
+    "Skill-collection or agent-rules language in description.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "GitHub topics explicitly tag as CLI.",
+    "Agent app or product platform language detected.",
+    "SDK or library language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: tutorial.",
+    "Alternative capabilities: mcp, agent-app, knowledge-resource.",
+    "LLM: mcp + [mcp, cli] — This project is an MCP server that provides an endpoint for AI agents to access Microsoft Learn documentation, and also includes a CLI tool."
+  ],
+  "classificationAlternatives": [
+    "mcp",
+    "agent-app",
+    "knowledge-resource"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Mcp is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to search."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:microsoftdocs/mcp",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "publishedAs": "mcp",
+  "publishedAt": "2026-05-21",
+  "reviewedAt": "2026-05-21",
+  "reviewedBy": "local-review"
+}

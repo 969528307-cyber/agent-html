@@ -1,0 +1,77 @@
+{
+  "id": "codegraph-rust",
+  "name": "Codegraph Rust",
+  "type": "mcp",
+  "status": "published",
+  "summary": "100% Rust implementation of code graphRAG with blazing fast AST+FastML parsing, surrealDB backend and advanced agentic code analysis tools through MCP for efficient code agent context management",
+  "description": "100% Rust implementation of code graphRAG with blazing fast AST+FastML parsing, surrealDB backend and advanced agentic code analysis tools through MCP for efficient code agent context management",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Jakedismo/codegraph-rust",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Jakedismo/codegraph-rust",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Jakedismo/codegraph-rust#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Jakedismo/codegraph-rust#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Jakedismo/codegraph-rust/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "CodeGraph transforms your entire codebase into a semantically searchable knowledge graph that AI agents can actually reason about—not just grep through.",
+    "Most semantic search tools create embeddings and call it a day.",
+    "When you search, you don't just get \"similar code\"—you get code with its relationships intact.",
+    "Document/spec nodes linked to backticked symbols in README.md, docs//.md, and schema//.surql",
+    "balanced LSP symbols + docs/enrichment + module linking Good agentic results without full cost",
+    "fast: disables build context, LSP, enrichment, module linking, dataflow, docs/contracts, and architecture; filters out Uses/References edges.",
+    "balanced: enables build context, LSP symbols, enrichment, module linking, and docs/contracts; filters out References edges.",
+    "When the tier enables LSP (balanced/full), indexing fails fast if required external tools are missing."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2025-12-20T02:24:45Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Jakedismo/codegraph-rust",
+  "repoUrl": "https://github.com/Jakedismo/codegraph-rust",
+  "stars": 730,
+  "lastUpdated": "2025-12-20T02:24:45Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

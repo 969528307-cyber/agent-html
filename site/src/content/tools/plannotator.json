@@ -1,0 +1,77 @@
+{
+  "id": "plannotator",
+  "name": "Plannotator",
+  "type": "skill",
+  "status": "published",
+  "summary": "Annotate and review coding agent plans and code diffs visually, share with your team, send feedback to agents with one click.",
+  "description": "Annotate and review coding agent plans and code diffs visually, share with your team, send feedback to agents with one click.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/backnotprop/plannotator",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/backnotprop/plannotator",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/backnotprop/plannotator#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/backnotprop/plannotator#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/backnotprop/plannotator/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Interactive Plan & Code Review for AI Coding Agents.",
+    "Mark up and refine your plans or code diffs using a visual UI, share for team collaboration, and seamlessly integrate with Claude Code, Copilot CLI, Gemini CLI, OpenCode, Pi, and Codex.",
+    "send feedback directly to agents.",
+    "send your feedback to agents",
+    "Visual Plan Review Built-in hook Approve or deny agent plans with inline annotations",
+    "Plan Diff Automatic See what changed when the agent revises a plan",
+    "Code Review /plannotator-review View git diffs or remote PRs.",
+    "Package annotations and ask AI about the code as you review."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-18T07:20:34Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/backnotprop/plannotator",
+  "repoUrl": "https://github.com/backnotprop/plannotator",
+  "license": "Apache-2.0",
+  "stars": 5388,
+  "lastUpdated": "2026-05-18T07:20:34Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

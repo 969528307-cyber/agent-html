@@ -1,0 +1,206 @@
+{
+  "id": "candidate-claude-codex-bridge-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Codex Bridge",
+  "sourceUrl": "https://github.com/SeemSeam/claude_codex_bridge",
+  "sourceName": "GitHub",
+  "author": "SeemSeam",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Visible multi-agent CLI teams for Claude, Codex, Gemini, OpenCode, and Droid with project memory and tmux supervision",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "SeemSeam",
+    "repo": "claude_codex_bridge",
+    "fullName": "SeemSeam/claude_codex_bridge",
+    "stars": 2718,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-collaboration",
+      "ai-tools",
+      "claude-code",
+      "cli",
+      "codex",
+      "cross-platform",
+      "droid",
+      "gemini",
+      "llm",
+      "multi-agent-cli",
+      "multi-agent-systems",
+      "opencode",
+      "python",
+      "terminal"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T08:11:23Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/agent-first-v2-clean-core.md",
+    "docs/agent-mailbox-kernel-design.md",
+    "docs/agent-message-management-roadmap.md",
+    "docs/agent-message-timeout-retry-contract.md",
+    "docs/ask-native-async-job-architecture.md",
+    "docs/ccb-project-shared-memory-plan.md",
+    "docs/ccb-provider-state-storage-boundary-plan.md",
+    "docs/ccb-release-packaging-plan.md",
+    "docs/ccb-wsl-compatibility-plan.md",
+    "docs/ccbd-ask-submit-fastpath-plan.md",
+    "docs/ccbd-diagnostics-contract.md",
+    "docs/ccbd-lifecycle-stability-plan.md",
+    "docs/ccbd-lifecycle-test-plan.md",
+    "docs/ccbd-manual-test-issue-log.md",
+    "docs/ccbd-p3-p4-mailbox-cli-plan.md",
+    "docs/ccbd-pane-recovery-continuous-attach-plan.md",
+    "docs/ccbd-project-control-plane-refactor-plan.md",
+    "docs/ccbd-project-namespace-lifecycle-plan.md",
+    "docs/ccbd-startup-supervision-contract.md",
+    "docs/ccbd-windows-psmux-plan.md",
+    "docs/claude-binary-cache-dedup-plan.md",
+    "docs/claude-session-isolation-contract.md",
+    "docs/codex-managed-home-isolation-plan.md",
+    "docs/codex-plugin-projection-plan.md",
+    "docs/codex-session-isolation-contract.md",
+    "docs/current-project-structure.md",
+    "docs/final-target-agent-first-multi-mount.md",
+    "docs/gemini-session-isolation-contract.md",
+    "docs/managed-provider-completion-reliability-plan.md",
+    "docs/memory-first-agent-architecture.md",
+    "docs/opencode-completion-contract.md",
+    "dev_tools/skills/ccb-github/SKILL.md",
+    "inherit_skills/claude_skills/ask/SKILL.md",
+    "inherit_skills/claude_skills/ccb_config/SKILL.md",
+    "inherit_skills/codex_skills/ask/SKILL.md",
+    "inherit_skills/codex_skills/ccb_config/SKILL.md",
+    "inherit_skills/droid_skills/ask/SKILL.md",
+    "useful_tools/claude_skills/plan-tree/SKILL.md",
+    "useful_tools/codex_skills/plan-tree/SKILL.md"
+  ],
+  "readmeExtract": "<div align=\"center\" CCB Agent CLI Hub and Teams <p <img src=\"https://img.shields.io/badge/Every Interaction Visible 096DD9?style=for the badge\" alt=\"Every Interaction Visible\" <img src=\"https://img.shields.io/badge/Every Model Controllable CF1322?style=for the badge\" alt=\"Every Model Controllable\" </p [![Version](https://img.shields.io/badge/version 6.2.5 orange.svg)]() [![Platform](https://img.shields.io/badge/platf",
+  "skillExtracts": [
+    {
+      "path": "dev_tools/skills/ccb-github/SKILL.md",
+      "extract": "name: ccb github description: Maintain this CCB project's GitHub facing release surface. Use when preparing, publishing, auditing, or fixing CCB releases; updating README.md, README zh.md, CHANGELOG.md, VERSION, GitHub release notes/assets, repository description/topics, or GitHub Actions release/test status. CCB GitHub Release Maintainer Core Rule Treat GitHub as the user facing product page. A release is not done u"
+    },
+    {
+      "path": "inherit_skills/claude_skills/ask/SKILL.md",
+      "extract": "name: ask description: Send a request to a CCB agent with ask . metadata: short description: Ask agent Use this only for /ask <target <message... . TARGET = first token after /ask . MESSAGE = exact raw remainder sent as the task body. ask may append reply guidance unless the message already contains explicit output requirements. TARGET=all broadcasts. Plain ask injects concise reply guidance while still delivering th"
+    },
+    {
+      "path": "inherit_skills/claude_skills/ccb_config/SKILL.md",
+      "extract": "name: ccb config description: Design and edit CCB project teams by updating .ccb/ccb.config plus shared and per agent memory. Use when the user wants to add, rename, remove, or reorganize CCB agents; choose providers, worktree isolation, models, API shortcuts, or workflow roles; or turn a natural language team/workflow description into a valid CCB config. CCB Config Use this skill to design and edit a CCB managed pro"
+    },
+    {
+      "path": "inherit_skills/codex_skills/ask/SKILL.md",
+      "extract": "name: ask description: Send a request to a CCB agent with ask . metadata: short description: Ask agent Use this skill when the user writes $ask <target <message... . TARGET = first token; MESSAGE = raw remainder sent as the task body. ask may append reply guidance unless the message already contains explicit output requirements. TARGET=all broadcasts. Plain ask injects concise reply guidance while still delivering th"
+    },
+    {
+      "path": "inherit_skills/codex_skills/ccb_config/SKILL.md",
+      "extract": "name: ccb config description: Design and edit CCB project teams by updating .ccb/ccb.config plus shared and per agent memory. Use when the user wants to add, rename, remove, or reorganize CCB agents; choose providers, worktree isolation, models, API shortcuts, or workflow roles; or turn a natural language team/workflow description into a valid CCB config. CCB Config Use this skill to design and edit a CCB managed pro"
+    },
+    {
+      "path": "inherit_skills/droid_skills/ask/SKILL.md",
+      "extract": "name: ask description: Send a request to a CCB agent with ask . metadata: short description: Ask agent Use this only for /ask <target <message... . TARGET = first token; MESSAGE = raw remainder sent as the task body. ask may append reply guidance unless the message already contains explicit output requirements. TARGET=all broadcasts. Plain ask injects concise reply guidance while still delivering the full reply body."
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "CCB - Agent CLI Hub and Teams",
+    "One command for all required CLI operations and management",
+    "Start, attach, recover, supervise, and operate Claude, Codex, Gemini, OpenCode, and Droid from one terminal workspace.",
+    "one project entry point for all supported CLI agents",
+    "one place to manage startup, restore, attach, and shutdown",
+    "one consistent runtime flow instead of per-tool ad hoc handling",
+    "Agents can sense and communicate with each other",
+    "Named agents can discover each other, use /ask, broadcast updates, and delegate work without copy/paste."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Visible multi-agent CLI teams for Claude, Codex, Gemini, OpenCode, and Droid with project memory and tmux supervision",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "Claude Codex Bridge is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with memory workflows.",
+      "Relevant to cli.",
+      "CCB - Agent CLI Hub and Teams",
+      "One command for all required CLI operations and management"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-codex-bridge",
+  "publishedAt": "2026-05-20"
+}

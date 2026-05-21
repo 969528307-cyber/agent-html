@@ -1,0 +1,96 @@
+[
+  {
+    "id": "github-tools-topic-search",
+    "module": "tools",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "url": "https://api.github.com/search/repositories",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "enabled": true,
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ],
+    "config": {
+      "categories": {
+        "mcp": [
+          "topic:mcp-server stars:>=700",
+          "topic:mcp stars:>=700"
+        ],
+        "skill": [
+          "topic:agent-skills stars:>=700",
+          "topic:claude-skills stars:>=700",
+          "topic:cursor-rules stars:>=700"
+        ],
+        "cli": [
+          "topic:cli stars:>=700 agent",
+          "topic:ai-cli stars:>=700"
+        ],
+        "workflow": [
+          "topic:ai-workflow stars:>=700",
+          "topic:agent-workflow stars:>=700"
+        ],
+        "agent-app": [
+          "topic:ai-agent stars:>=700",
+          "topic:coding-agent stars:>=700"
+        ],
+        "agent-framework": [
+          "topic:agent-framework stars:>=700",
+          "topic:multi-agent stars:>=700"
+        ],
+        "sdk": [
+          "topic:ai-sdk stars:>=700",
+          "topic:llm-sdk stars:>=700"
+        ]
+      }
+    }
+  },
+  {
+    "id": "official-mcp-registry",
+    "module": "tools",
+    "name": "Official MCP Registry",
+    "type": "registry",
+    "url": "https://registry.modelcontextprotocol.io",
+    "trustLevel": "official",
+    "refreshInterval": "weekly",
+    "enabled": false,
+    "acceptRules": [
+      "must_have_official_source",
+      "must_have_tool_description"
+    ],
+    "rejectRules": [
+      "no_source_link",
+      "no_capability_description"
+    ]
+  },
+  {
+    "id": "glama-mcp-directory",
+    "module": "tools",
+    "name": "Glama MCP Directory",
+    "type": "directory",
+    "url": "https://glama.ai/mcp/servers",
+    "trustLevel": "medium",
+    "refreshInterval": "weekly",
+    "enabled": false,
+    "acceptRules": [
+      "must_link_to_github_or_official_docs",
+      "must_have_tool_description"
+    ],
+    "rejectRules": [
+      "no_source_link",
+      "directory_entry_without_upstream"
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "id": "claude-code",
+  "name": "Claude Code",
+  "type": "skill",
+  "status": "published",
+  "summary": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+  "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/codeaashu/claude-code",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/codeaashu/claude-code",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/codeaashu/claude-code#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/codeaashu/claude-code#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/codeaashu/claude-code/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The full source code of Anthropic's Claude Code CLI, leaked on March 31, 2026",
+    "Chaofan Shou (@Friedrice) discovered that the published npm package for Claude Code included a .map file referencing the full, unobfuscated TypeScript source — downloadable as a zip from Anthropic's R2 storage bucket.",
+    "\"Claude code source code has been leaked via a map file in their npm registry!\"",
+    "Claude Code is Anthropic's official CLI tool for interacting with Claude directly from the terminal — editing files, running commands, searching codebases, managing git workflows, and more.",
+    "For in-depth guides, see the docs/ directory:",
+    "Architecture Core pipeline, startup sequence, state management, rendering, data flow",
+    "Tools Reference Complete catalog of all ~40 agent tools with categories and permission model",
+    "Subsystems Guide Deep dives into Bridge, MCP, Permissions, Plugins, Skills, Tasks, Memory, Voice"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-22T07:08:37Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/codeaashu/claude-code",
+  "repoUrl": "https://github.com/codeaashu/claude-code",
+  "license": "NOASSERTION",
+  "stars": 2664,
+  "lastUpdated": "2026-04-22T07:08:37Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

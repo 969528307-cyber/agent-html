@@ -1,0 +1,76 @@
+{
+  "id": "trendradar",
+  "name": "TrendRadar",
+  "type": "mcp",
+  "status": "published",
+  "summary": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
+  "description": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
+  "category": [
+    "mcp",
+    "developer-tools"
+  ],
+  "compatibleAgents": [
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/sansan0/TrendRadar",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/sansan0/TrendRadar",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/sansan0/TrendRadar#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/sansan0/TrendRadar#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/sansan0/TrendRadar/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Rw 10 2025.11.17 这 agent 做的牛逼啊,兄弟",
+    "和 mcp 功能一样, 这个小工具我也不新开一个仓库维护了, 反正纯前端, 都搁一起吧",
+    "推荐工作流：searchnews(query=\"关键词\", includeurl=True) → readarticle(url=...) 读取正文",
+    "文档更新：README-MCP-FAQ.md 和 README-MCP-FAQ-EN.md 新增 Q19-Q20 文章读取相关说明",
+    "2026/01/10 - mcp-v3.0.0~v3.1.5",
+    "MCP Resources：新增 4 个资源（platforms、rss-feeds、available-dates、keywords）",
+    "新增 checkversion 工具：支持同时检查 TrendRadar 和 MCP Server 版本更新",
+    "Gemini: gemini/gemini-2.5-flash"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-30T02:09:11Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/sansan0/TrendRadar",
+  "repoUrl": "https://github.com/sansan0/TrendRadar",
+  "license": "GPL-3.0",
+  "stars": 57350,
+  "lastUpdated": "2026-04-30T02:09:11Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

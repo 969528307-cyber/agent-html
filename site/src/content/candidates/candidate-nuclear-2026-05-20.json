@@ -1,0 +1,168 @@
+{
+  "id": "candidate-nuclear-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Nuclear",
+  "sourceUrl": "https://github.com/nukeop/nuclear",
+  "sourceName": "GitHub",
+  "author": "nukeop",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Streaming music player that finds free music for you",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "nukeop",
+    "repo": "nuclear",
+    "fullName": "nukeop/nuclear",
+    "stars": 17648,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent",
+      "ai",
+      "desktop-app",
+      "linux",
+      "mac",
+      "mcp",
+      "mcp-server",
+      "music",
+      "music-player",
+      "react",
+      "rust",
+      "spotify",
+      "streaming",
+      "tauri",
+      "typescript",
+      "windows"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-18T12:53:08Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "package.json",
+    ".agents/skills/creating-components/SKILL.md",
+    ".agents/skills/host-pattern/SKILL.md",
+    ".agents/skills/writing-docs/SKILL.md",
+    ".agents/skills/writing-plugins/SKILL.md",
+    "AGENTS.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <picture <source alt=\"Nuclear Music Player\" srcset=\"packages/docs/.gitbook/assets/readme banner.png\" <img alt=\"Nuclear Music Player\" srcset=\"packages/docs/.gitbook/assets/readme banner.png\" </picture </p <div align=\"center\" Nuclear </div <div align=\"center\" Nuclear is a free, open source music player without ads or tracking. Search for any song or artist, build playlists, and start listening.<br Run",
+  "skillExtracts": [
+    {
+      "path": ".agents/skills/creating-components/SKILL.md",
+      "extract": "name: creating components description: Use when creating new UI components in packages/ui. Covers component structure, tests, stories, and what to avoid. Creating UI Components Component Structure After creating, export from packages/ui/src/components/index.ts . Implementation Pattern Tests What to test: Snapshots (1 2 covering key variants) User interactions Behavior (callbacks called with correct args) What NOT to "
+    },
+    {
+      "path": ".agents/skills/host-pattern/SKILL.md",
+      "extract": "name: host pattern description: Use when adding a new domain to Nuclear's plugin system, or implementing a host. Covers the host pattern (how player functionality is exposed to plugins), the host interface and API class structure, how hosts are implemented in the player, error handling conventions, and what files to create and modify. Trigger phrases include \"add a domain\", \"new domain\", \"host implementation\", \"host "
+    },
+    {
+      "path": ".agents/skills/writing-docs/SKILL.md",
+      "extract": "name: writing docs description: Use when writing or editing documentation in packages/docs. Covers Gitbook markdown syntax, special blocks, page structure, and the SUMMARY.md table of contents. Trigger phrases include \"write docs\", \"add documentation\", \"docs page\", \"gitbook\", \"user manual\". Writing Documentation Docs live in packages/docs/ . Hosted on Gitbook, synced from the repo via .gitbook.yaml . Page structure E"
+    },
+    {
+      "path": ".agents/skills/writing-plugins/SKILL.md",
+      "extract": "name: writing plugins description: Use when writing, scaffolding, or modifying Nuclear plugins. Covers plugin structure, manifest, entry point, provider types, available APIs, and publishing. Trigger phrases include \"create a plugin\", \"write a plugin\", \"plugin scaffold\", \"streaming provider\", \"metadata provider\". Writing Nuclear Plugins Plugins are standalone repos compiled in browser via esbuild wasm. Structure Mani"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Search for any song or artist, build playlists, and start listening..",
+    "Search for music and stream it from any source",
+    "Queue management with shuffle, repeat, and drag-and-drop reordering",
+    "MCP server lets your AI agent drive the player",
+    "You can enable the MCP server in Settings → Integrations.",
+    "Then to add it to Claude Code:",
+    "Claude Desktop / Cursor / Windsurf:",
+    "The MCP is designed to be discoverable, but there's a skill you can load to get your AI up to speed: Nuclear MCP Skill"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Streaming music player that finds free music for you",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Nuclear is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Relevant to mcp.",
+      "Search for any song or artist, build playlists, and start listening..",
+      "Search for music and stream it from any source"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nuclear",
+  "publishedAt": "2026-05-20"
+}

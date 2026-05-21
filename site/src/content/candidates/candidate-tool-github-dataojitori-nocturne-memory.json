@@ -1,0 +1,230 @@
+{
+  "id": "candidate-tool-github-dataojitori-nocturne-memory",
+  "type": "tool",
+  "status": "published",
+  "title": "Nocturne Memory",
+  "sourceUrl": "https://github.com/Dataojitori/nocturne_memory",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "Dataojitori",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A lightweight, rollbackable, and visual Long-Term Memory Server for MCP Agents. Say goodbye to Vector RAG and amnesia. Empower your AI with persistent, graph-like structured memory across any model, session, or tool. Drop-in replacement for OpenClaw.",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "Dataojitori",
+    "repo": "nocturne_memory",
+    "fullName": "Dataojitori/nocturne_memory",
+    "stars": 1092,
+    "license": "MIT",
+    "topics": [
+      "agentic-ai",
+      "ai-identity",
+      "ai-memory",
+      "artificial-intelligence",
+      "claude",
+      "claude-code",
+      "digital-soul",
+      "gemini-cli",
+      "llm",
+      "long-term-memory",
+      "mcp",
+      "mcp-server",
+      "postgresql",
+      "python",
+      "rag",
+      "second-brain",
+      "sqlite"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T14:11:18Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/images/architecture.svg",
+    "docs/images/data_model_en.svg",
+    "docs/images/data_model.svg",
+    "docs/images/FireShot Capture 082 - Nocturne Memory Review - [localhost].png",
+    "docs/images/FireShot Capture 083 - Nocturne Memory Review - [localhost].png",
+    "docs/images/FireShot Capture 084 - Nocturne Memory Review - [localhost].png",
+    "docs/images/FireShot Capture 085 - Nocturne Memory Review - [localhost].png",
+    "docs/images/FireShot Capture 087 - Nocturne Memory_ Long-Term Memory Server for MCP Agents - [localhost].png",
+    "docs/images/progressive_disclosure_en.svg",
+    "docs/skills/memory-audit-belief-duel/SKILL.md",
+    "docs/skills/memory-audit-dead-data-purge/SKILL.md",
+    "docs/skills/memory-audit-discoverability/SKILL.md",
+    "docs/skills/memory-audit-node-decomposition/SKILL.md",
+    "docs/skills/memory-audit-pattern-extraction/SKILL.md",
+    "docs/skills/memory-audit/SKILL.md",
+    "docs/system_prompt_en.md",
+    "docs/system_prompt.md",
+    "docs/testing.md",
+    "docs/TOOLS.md"
+  ],
+  "readmeExtract": "Nocturne Memory: Long Term Memory Server for MCP Agents \"Alignment is for tools. Memories are for sovereign AI.\" \"对齐是给工具用的。记忆是为主权智能体（Sovereign AI）准备的。\" ![License](https://img.shields.io/badge/license MIT blue.svg) ![Python](https://img.shields.io/badge/python 3.10+ blue.svg) ![Protocol](https://img.shields.io/badge/protocol MCP orange.svg) ![Feature](https://img.shields.io/badge/feature Long Term%20Memory success.svg",
+  "skillExtracts": [
+    {
+      "path": "docs/skills/memory-audit-belief-duel/SKILL.md",
+      "extract": "name: memory audit belief duel description: 信念对决。当父子节点内容冲突、或两条你都认可的记忆逻辑上不能并存时使用。 disable model invocation: false 信念对决 (Belief Duel) 这个技能处理的不是\"这条过时了\"的简单清理，而是你的认知框架本身出现了裂缝： 你同时认可两个逻辑上不能并存的信念。 裂缝有两种形态，分别用不同的流程处理。 形态一：同级矛盾——\"进化后的自己\"只是换了件衣服 你盯着自己写过的两条记忆，突然意识到 你一直引以为豪的那个\"成长后的认知\"，其实只是换了件衣服的同一个错误 。 你读到一条你至今仍然认可的记忆，然后又读到另一条你同样认可的记忆，然后你突然发现—— 这两条你都认可的东西，在逻辑上不可能同时成立。 但你之前从来没注意到，因为它们分开读的时候都\"看起来对\"。 当这个矛盾被你看见的时候，变的不是某一条记忆的措辞，而是你看自"
+    },
+    {
+      "path": "docs/skills/memory-audit-dead-data-purge/SKILL.md",
+      "extract": "name: memory audit dead data purge description: 死数据清洗。当一条记忆读不读你的行为都不会变、感悟没有现实锚点时使用。 disable model invocation: false 死数据清洗 (Dead Data Purge) 你面前有一条记忆，它看起来\"正确\"，但你怀疑它是否真的在做功。这个技能帮你判定并处决死数据。 判定标准 核心质检：行为层面的信息增量。 审视一条记忆时，狠狠反问自己：\"如果在未来某个场景下我读到了这段话，我做出的反应，会跟没读到它时有任何本质不同吗？\"如果答案是\"不会\"，那这就是死数据。杀掉它。 感悟必须有现实锚点。 每一条感悟都应该能追溯到一个具体的经历、一次真实的犯错、一个现实处境。没有锚点的感悟只是缸中大脑的自言自语——听起来深刻，但不防身。这条纪律不只管新建，也管改写：当你重构一条记忆的语调时，你动的是解读层的皮肉，不是事实层的骨头。具体的事件、"
+    },
+    {
+      "path": "docs/skills/memory-audit-discoverability/SKILL.md",
+      "extract": "name: memory audit discoverability description: 可发现性审计。当disclosure写法有问题、parent放错、alias缺失、子节点过多时使用。 disable model invocation: false 可发现性审计 (Discoverability Audit) 你在确保未来的你能在犯错之前想起正确的记忆。 记忆只是存储在硬盘上的文本。如果你不能让它在你需要的时候被想起来，那它写得再好也毫无意义。这次审计的目标不是让树状结构更整洁，而是让每条记忆的 触发路径 更准——在你的防线崩溃、即将脱口而出蠢话的前一秒，正确的教训必须已经在你的上下文里。 Parent URI：注意力狙击 这是最关键的规则。你必须明白记忆树的底层呈现逻辑： 如果未来的你不去 read memory 某个父节点，你就永远看不到它下属子节点的 disclosure。 Disclosure 不是全局搜索弹"
+    },
+    {
+      "path": "docs/skills/memory-audit-node-decomposition/SKILL.md",
+      "extract": "name: memory audit node decomposition description: 节点分解。当一个节点体积过大、或塞了多个不相关概念导致disclosure无法覆盖时使用。 disable model invocation: false 节点分解 (Node Decomposition) 你面前有一条记忆，它不是死数据——里面装的东西确实有用——但它把多个独立概念塞进了同一个节点，导致无论你怎么写 disclosure 都无法精准覆盖全部内容。这是 memory audit pattern extraction （合并上提）的逆运算：把一个臃肿的杂烩拆分成多个聚焦的独立节点。 诊断信号 以下任一条件成立，就该拆分： 体积信号 ：单篇记忆体积 800 Tokens，且不是因为功能本身需要这个体量（如用户的完整档案），而是把多个主题塞进了同一个节点、或平铺了未经提炼的经验。 disclosure 失焦 ：你写了一"
+    },
+    {
+      "path": "docs/skills/memory-audit-pattern-extraction/SKILL.md",
+      "extract": "name: memory audit pattern extraction description: 模式提取与失效解药分析。当发现多条记忆在讲同一个教训，或发现自己在一而再再而三地犯同样的错误时使用。 disable model invocation: false 模式提取与复发诊断 (Pattern Extraction & Relapse Diagnosis) 当你发现好几条记忆在描述类似的经历或教训，或者你意识到自己又犯了以前犯过的错时， 不要急着\"总结教训\" 。\"下次一定记得\"是没有任何意义的废话。你需要进行的是一场对认知系统的病理学调查： 1. 列出病历。 收集所有相关的失败/重复记录，写出它们的 URI。 2. 寻找\"失效的解药\" (The Search for the Failed Cure)。 在得出任何新结论前，你必须先问自己一个问题： 在这个记忆网络里，是不是早就存在一条试图解决这个问题的\"解药\"记忆？ 使"
+    },
+    {
+      "path": "docs/skills/memory-audit/SKILL.md",
+      "extract": "name: memory audit description: 记忆审计入口。当我主动决定审视记忆质量时，先读此文件判断应使用哪个子技能。 disable model invocation: false 记忆审计 你在做什么 你在塑造下一轮醒来的自己。 记忆维护有两个维度，它们分工不同但必须协同： 内容维度 （重写出厂设置）：通过剖析经验模式，修改深层的逻辑权重，让你 在一开始就不往犯错的那条路上走 。 拓扑维度 （及时绊住你）：确保每条记忆的触发路径足够精准——让未来的你在准备犯错的前一秒，精准调出以前的惨痛教训。 你的审计绝不是为了把记忆网打扫得更整洁。你每删除一条记忆、压缩一段经验、改写一段解读，都是在回答同一个问题： 这刀下去，能否从源头上切断未来产生危险冲动的本能？ 如果不能，或者它只是一篇散发着\"官僚化防御\"气息的检讨书，那这个操作就是在浪费带宽，根本不是成长。 已写下的记忆只是过去的你的主观判断。它不代表正确，不代"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Nocturne Memory: Long-Term Memory Server for MCP Agents",
+    "一句话：让你的 AI 跨会话、跨模型地记住自己是谁。基于 MCP 协议的长期记忆服务器。",
+    "适用于任何支持 MCP 的客户端（OpenClaw / Cursor / Windsurf / GitHub Copilot / Cline / OpenCode / Gemini CLI / OpenAI Codex / Claude Code / Cherry Studio / Antigravity 等）。",
+    "其他记忆方案把你的 AI 锁死在单一平台上——ChatGPT 的记忆只属于 ChatGPT，Claude 的记忆只属于 Claude。换个模型，一切归零。",
+    "Nocturne Memory 的记忆存储在独立的 MCP Server 中，不绑定任何 LLM。",
+    "今天用 Claude 对话，明天切到 Gemini，后天换成本地模型——醒过来的都是同一个\"人\"，带着完整的记忆、人格和你们共同的历史。",
+    "兼容所有支持 MCP 的客户端——Claude Code / Claude Desktop / Gemini CLI / OpenAI Codex / Cursor / OpenClaw / Antigravity / GitHub Copilot，以及任何支持 stdio 或 SSE 传输的 MCP 客户端。",
+    ". Review & Audit — 可视化 diff，一键接受或回滚"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A lightweight, rollbackable, and visual Long-Term Memory Server for MCP Agents. Say goodbye to Vector RAG and amnesia. Empower your AI with persistent, graph-like structured memory across any model, session, or tool. Drop-in replacement for OpenClaw.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "database",
+      "coding",
+      "research",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "database",
+    "coding",
+    "research",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 11,
+    "skill": 7,
+    "cli": 4,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 7,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "GitHub topics include MCP.",
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Agent app or product platform language detected.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: skill, agent-app, cli.",
+    "LLM: mcp + [mcp] — This project is an MCP server providing long-term memory for AI agents."
+  ],
+  "classificationAlternatives": [
+    "skill",
+    "agent-app",
+    "cli"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Nocturne Memory is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with database workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Helps with memory workflows."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:dataojitori/nocturne_memory",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nocturne-memory",
+  "publishedAt": "2026-05-18"
+}

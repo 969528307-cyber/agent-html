@@ -1,0 +1,81 @@
+{
+  "id": "osaurus",
+  "name": "Osaurus",
+  "type": "mcp",
+  "status": "published",
+  "summary": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source.",
+  "description": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "Kimi",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/osaurus-ai/osaurus",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/osaurus-ai/osaurus",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/osaurus-ai/osaurus#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/osaurus-ai/osaurus#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/osaurus-ai/osaurus/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Agents, memory, tools, and identity that live on your Mac.",
+    "What's irreplaceable is the layer around them -- your context, your memory, your tools, your identity.",
+    "It sits between you and any model -- local or cloud -- and provides the continuity that makes AI personal: agents that remember, execute autonomously, run real code, and stay reachable from anywhere.",
+    "Connect to any cloud provider when you want more power.",
+    "Agents are the core of Osaurus.",
+    "Each one gets its own prompts, memory, and visual theme -- a research assistant, a coding partner, a file organizer, whatever you need.",
+    "Everything else in the harness exists to make agents smarter, faster, and more capable over time.",
+    "Agents can also opt into a private encrypted database and a single self-scheduled next run -- see Agent DB & Self-Scheduling."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-20T03:33:22Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/osaurus-ai/osaurus",
+  "repoUrl": "https://github.com/osaurus-ai/osaurus",
+  "license": "MIT",
+  "stars": 5449,
+  "lastUpdated": "2026-05-20T03:33:22Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

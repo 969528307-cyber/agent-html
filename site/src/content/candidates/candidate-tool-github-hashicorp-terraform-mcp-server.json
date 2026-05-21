@@ -1,0 +1,156 @@
+{
+  "id": "candidate-tool-github-hashicorp-terraform-mcp-server",
+  "type": "tool",
+  "status": "published",
+  "title": "Terraform Mcp Server",
+  "sourceUrl": "https://github.com/hashicorp/terraform-mcp-server",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "hashicorp",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "mcp",
+  "crawlerProfile": "mcp",
+  "githubMetadata": {
+    "owner": "hashicorp",
+    "repo": "terraform-mcp-server",
+    "fullName": "hashicorp/terraform-mcp-server",
+    "stars": 1369,
+    "license": "MPL-2.0",
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T02:24:03Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<img src=\"public/images/Terraform LogoMark onDark.svg\" width=\"30\" align=\"left\" style=\"margin right: 12px;\"/ Terraform MCP Server The Terraform MCP Server is a [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) server that provides seamless integration with Terraform Registry APIs, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development. Features",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The Terraform MCP Server is a Model Context Protocol (MCP)",
+    "automation and interaction capabilities for Infrastructure as Code (IaC) development.",
+    "HCP Terraform & Terraform Enterprise Support: Full workspace management, organization/project listing, and private registry access",
+    "OTel metrics for monitoring tool usage: Integration with open telemetry meters to track tool-call volume, latency and failures in Streamable HTTP mode.",
+    "Security Note: At this stage, the MCP server is intended for local use only.",
+    "If using the StreamableHTTP transport, always configure the MCPALLOWEDORIGINS environment variable to restrict access to trusted origins only.",
+    "Security Note: Depending on the query, the MCP server may expose certain Terraform data to the MCP client and LLM.",
+    "Do not use the MCP server with untrusted MCP clients or LLMs."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The Terraform MCP Server provides seamless integration with Terraform ecosystem, enabling advanced automation and interaction capabilities for Infrastructure as Code (IaC) development.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "devops",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "devops",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 9,
+    "skill": 0,
+    "cli": 0,
+    "workflow": 0,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 0
+  },
+  "classificationNotes": [
+    "MCP evidence found in name, topics, README, or files.",
+    "Detected scope: tool-server.",
+    "No strong alternative capability detected.",
+    "LLM: mcp + [mcp] — This is an MCP server for Terraform, providing MCP protocol support for AI agents."
+  ],
+  "classificationAlternatives": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Terraform Mcp Server is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation.",
+      "The Terraform MCP Server is a Model Context Protocol (MCP)"
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:hashicorp/terraform-mcp-server",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "terraform-mcp-server",
+  "publishedAt": "2026-05-18"
+}

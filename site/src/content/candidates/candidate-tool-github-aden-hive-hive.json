@@ -1,0 +1,213 @@
+{
+  "id": "candidate-tool-github-aden-hive-hive",
+  "type": "tool",
+  "status": "published",
+  "title": "Hive",
+  "sourceUrl": "https://github.com/aden-hive/hive",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "aden-hive",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "Multi-Agent Harness for Production AI",
+  "proposedCategory": [
+    "agent-framework",
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Cursor",
+    "OpenClaw"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "aden-hive",
+    "repo": "hive",
+    "fullName": "aden-hive/hive",
+    "stars": 10359,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "agent-skills",
+      "anthropic",
+      "automation",
+      "autonomous-agents",
+      "claude",
+      "harness",
+      "harness-engineering",
+      "human-in-the-loop",
+      "openai",
+      "python",
+      "self-hosted",
+      "self-improving"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T13:44:11Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/aden-credential-sync.md",
+    "docs/agent_runtime.md",
+    "docs/architecture/agent-usage-and-status-tracking.md",
+    "docs/architecture/multi-entry-point-agents.md",
+    "docs/architecture/README.md",
+    "docs/articles/Architecture Diagram (github readme) (2).jpg",
+    "docs/articles/building-production-ai-agents.md",
+    "docs/articles/human-in-the-loop-ai-agents.md",
+    "docs/articles/multi-agent-vs-single-agent-systems.md",
+    "docs/assets/aden-architecture-diagram.jpg",
+    "docs/bounty-program/contributor-guide.md",
+    "docs/bounty-program/game-master-manual.md",
+    "docs/bounty-program/promotion-checklist.md",
+    "docs/bounty-program/README.md",
+    "docs/bounty-program/templates/agent-test-report-template.md",
+    "docs/bounty-program/templates/tool-readme-template.md",
+    "docs/CODE_OF_CONDUCT.md",
+    "docs/developer-guide.md",
+    "docs/draft-flowchart-schema.md",
+    "docs/getting-started.md",
+    "docs/i18n/es.md",
+    "docs/i18n/hi.md",
+    "docs/i18n/ja.md",
+    "docs/i18n/ko.md",
+    "docs/i18n/pt.md",
+    "docs/i18n/ru.md",
+    "docs/i18n/zh-CN.md",
+    "docs/key_concepts/evolution.md",
+    "docs/key_concepts/goals_outcome.md",
+    "docs/key_concepts/graph.md",
+    "docs/key_concepts/worker_agent.md",
+    "docs/mcp-registry-prd.md",
+    "docs/pr-requirements.md",
+    "docs/releases/v0.10.0.md",
+    "docs/releases/v0.10.1.md",
+    "docs/releases/v0.10.2.md",
+    "docs/releases/v0.10.3.md",
+    "docs/releases/v0.10.4.md",
+    "docs/releases/v0.10.5.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img width=\"100%\" alt=\"Hive Banner\" src=\"https://asset.acho.io/github/img/banner.gif\" / </p <p align=\"center\" <a href=\"README.md\" English</a | <a href=\"docs/i18n/zh CN.md\" 简体中文</a | <a href=\"docs/i18n/es.md\" Español</a | <a href=\"docs/i18n/hi.md\" हिन्दी</a | <a href=\"docs/i18n/pt.md\" Português</a | <a href=\"docs/i18n/ja.md\" 日本語</a | <a href=\"docs/i18n/ru.md\" Русский</a | <a href=\"docs/i18n/ko.md\" 한국",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The agent harness for production workloads — state management, failure recovery, observability, and human oversight so your agents actually run.",
+    "By simply defining your objective, the runtime compiles a strict, graph-based execution DAG that safely coordinates specialized agents to execute concurrent tasks in parallel.",
+    "✅ Multi-Agent Coordination for parallel task execution",
+    "✅ General Compute Use and Browser Use with Native Extension",
+    "Visit adenhq.com for complete documentation, examples, and guides.",
+    "Visit HoneyComb to see what jobs are being automated by AI.",
+    "It’s a stock market for jobs, driven by our community’s AI agent progress.",
+    "Hive is the multi-agent harness layer for teams moving AI agents from prototype to production."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-framework\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "Multi-Agent Harness for Production AI",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "automation"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "Hive is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-framework.",
+      "Relevant to skill.",
+      "The agent harness for production workloads — state management, failure recovery, observability, and human oversight so your agents actually run."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:aden-hive/hive",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "hive",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

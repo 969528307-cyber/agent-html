@@ -1,0 +1,214 @@
+{
+  "id": "candidate-tool-github-evoagentx-evoagentx",
+  "type": "tool",
+  "status": "published",
+  "title": "EvoAgentX",
+  "sourceUrl": "https://github.com/EvoAgentX/EvoAgentX",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "EvoAgentX",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "🚀 EvoAgentX: Building a Self-Evolving Ecosystem of AI Agents",
+  "proposedCategory": [
+    "search"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Qwen Code"
+  ],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "EvoAgentX",
+    "repo": "EvoAgentX",
+    "fullName": "EvoAgentX/EvoAgentX",
+    "stars": 3017,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "ai",
+      "ai-agents",
+      "llms",
+      "memory",
+      "multi-agent-systems",
+      "natural-language-processing",
+      "rag",
+      "self-evolving",
+      "tool",
+      "tools"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T13:33:07Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/api/actions.md",
+    "docs/api/agents.md",
+    "docs/api/benchmark.md",
+    "docs/api/core.md",
+    "docs/api/evaluators.md",
+    "docs/api/memory.md",
+    "docs/api/models.md",
+    "docs/api/optimizers.md",
+    "docs/api/storages.md",
+    "docs/api/tools.md",
+    "docs/api/workflow.md",
+    "docs/assets/logo.svg",
+    "docs/assets/rag_pipeline.png",
+    "docs/ColabNotebook/tutorial_notebooks_zh/aflow_optimizer.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks_zh/benchmark_and_evaluation.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks_zh/first_agent.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks_zh/first_workflow.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks_zh/quickstart.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks_zh/textgrad_optimizer.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks_zh/tools.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks/aflow_optimizer.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks/benchmark_and_evaluation.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks/first_agent.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks/first_workflow.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks/quickstart.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks/textgrad_optimizer.ipynb",
+    "docs/ColabNotebook/tutorial_notebooks/tools.ipynb",
+    "docs/index.md",
+    "docs/modules/action_graph.md",
+    "docs/modules/agent.md",
+    "docs/modules/benchmark.md",
+    "docs/modules/customize_agent.md",
+    "docs/modules/evaluator.md",
+    "docs/modules/image_tools.md",
+    "docs/modules/llm.md",
+    "docs/modules/multi_agent_debate.md",
+    "docs/modules/prompt_template.md",
+    "docs/modules/rag.md",
+    "docs/modules/storages.md"
+  ],
+  "readmeExtract": "<! Add logo here <div align=\"center\" <a href=\"https://github.com/EvoAgentX/EvoAgentX\" <img src=\"./assets/EAXLoGo.svg\" alt=\"EvoAgentX\" width=\"50%\" </a </div <h2 align=\"center\" Building a Self Evolving Ecosystem of AI Agents </h2 <div align=\"center\" [![EvoAgentX Homepage](https://img.shields.io/badge/EvoAgentX Homepage blue?logo=homebridge)](https://evoagentx.org/) [![Docs](https://img.shields.io/badge/ Documentation 0",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Building a Self-Evolving Ecosystem of AI Agents",
+    "EvoAgentX is an open-source framework for building, evaluating, and evolving LLM-based agents or agentic workflows in an automated, modular, and goal-driven manner.",
+    "At its core, EvoAgentX enables developers and researchers to move beyond static prompt chaining or manual workflow orchestration.",
+    "It introduces a self-evolving agent ecosystem, where AI agents can be constructed, assessed, and optimized through iterative feedback loops—much like how software is continuously tested and improved.",
+    "🧱 Agent Workflow Autoconstruction",
+    "From a single prompt, EvoAgentX builds structured, multi-agent workflows tailored to the task.",
+    "It integrates automatic evaluators to score agent behavior using task-specific criteria.",
+    "Agents don’t just work—they learn."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"search\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "🚀 EvoAgentX: Building a Self-Evolving Ecosystem of AI Agents",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "docs",
+      "research",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "docs",
+    "research",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 2,
+    "cli": 0,
+    "workflow": 9,
+    "agent-framework": 3,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "Agent instruction or rule files detected.",
+    "Workflow/automation/orchestration language detected.",
+    "General agent-building language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Detected scope: framework.",
+    "Alternative capabilities: workflow, agent-framework, skill.",
+    "LLM: agent-framework + [workflow] — The project is an open-source framework for building, evaluating, and evolving LLM-based agents and agentic workflows, which aligns with agent-framework classification."
+  ],
+  "classificationAlternatives": [
+    "workflow",
+    "agent-framework",
+    "skill"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "EvoAgentX is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with docs workflows.",
+      "Helps with research workflows.",
+      "Helps with memory workflows.",
+      "Relevant to search."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:evoagentx/evoagentx",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "evoagentx",
+  "publishedAt": "2026-05-18"
+}

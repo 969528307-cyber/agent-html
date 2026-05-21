@@ -1,0 +1,183 @@
+{
+  "id": "candidate-deepseek-reasonix-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "DeepSeek Reasonix",
+  "sourceUrl": "https://github.com/esengine/DeepSeek-Reasonix",
+  "sourceName": "GitHub",
+  "author": "esengine",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+  "proposedCategory": [
+    "cli"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "esengine",
+    "repo": "DeepSeek-Reasonix",
+    "fullName": "esengine/DeepSeek-Reasonix",
+    "stars": 4728,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "ai-agent",
+      "ai-coding",
+      "cli",
+      "coding-agent",
+      "deepseek",
+      "developer-tools",
+      "ink",
+      "llm",
+      "prompt-caching",
+      "r1",
+      "terminal",
+      "tool-use",
+      "tui",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:05:38Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh-CN.md",
+    "docs/.nojekyll",
+    "docs/arch-i18n.js",
+    "docs/architecture.html",
+    "docs/ARCHITECTURE.md",
+    "docs/assets/feature-grid.svg",
+    "docs/assets/feature-grid.zh-CN.svg",
+    "docs/assets/hero-stats.svg",
+    "docs/assets/hero-stats.zh-CN.svg",
+    "docs/assets/hero-terminal.svg",
+    "docs/assets/hero-terminal.zh-CN.svg",
+    "docs/assets/og-card.svg",
+    "docs/assets/pillars.svg",
+    "docs/assets/pillars.zh-CN.svg",
+    "docs/brand/reasonix-icon.ico",
+    "docs/brand/reasonix-icon.png",
+    "docs/brand/reasonix-icon.svg",
+    "docs/brand/reasonix-logo-square-light.png",
+    "docs/brand/reasonix-logo-square-light.svg",
+    "docs/brand/reasonix-logo-square.png",
+    "docs/brand/reasonix-logo-square.svg",
+    "docs/brand/reasonix-wordmark.png",
+    "docs/brand/reasonix-wordmark.svg",
+    "docs/cli-ref-i18n.js",
+    "docs/cli-reference.html",
+    "docs/CLI-REFERENCE.md",
+    "docs/design/agent-dashboard.html",
+    "docs/design/agent-tui-terminal.html",
+    "docs/download.html",
+    "docs/favicon.svg",
+    "docs/guide-i18n.js",
+    "docs/guide.css",
+    "docs/i18n.js",
+    "docs/index.html",
+    "docs/logo.svg",
+    "docs/motion.js",
+    "docs/qq-connect.md",
+    "docs/qq-connect.zh-CN.md",
+    "docs/rfcs/0001-multi-context-orchestrator.issue.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"docs/logo.svg\" alt=\"Reasonix\" width=\"640\"/ </p <p align=\"center\" <strong English</strong &nbsp;·&nbsp; <a href=\"./README.zh CN.md\" 简体中文</a &nbsp;·&nbsp; <a href=\"https://esengine.github.io/DeepSeek Reasonix/\" Website</a &nbsp;·&nbsp; <a href=\"https://esengine.github.io/DeepSeek Reasonix/configuration.html\" Guide</a &nbsp;·&nbsp; <a href=\"./docs/ARCHITECTURE.md\" Architecture</a &nbsp;·&nbsp",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "A DeepSeek-native AI coding agent for your terminal.",
+    "reasonix / reasonix code [dir] The coding agent.",
+    "reasonix chat Plain chat — no filesystem or shell tools.",
+    "reasonix doctor Health check: Node, API key, MCP wiring.",
+    "Other subcommands (replay · diff · events · stats · index · mcp · prune-sessions) are in reasonix --help and the CLI reference.",
+    "Then connect QQ from inside the session:",
+    "Later /qq connect calls reuse the saved credentials directly.",
+    "Multi-tab, the right-panel shows files the agent has read or edited this session, the same cost / cache / token meters live at the bottom."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "DeepSeek Reasonix is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "A DeepSeek-native AI coding agent for your terminal.",
+      "reasonix / reasonix code [dir] The coding agent."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "deepseek-reasonix",
+  "publishedAt": "2026-05-20"
+}

@@ -1,0 +1,243 @@
+{
+  "id": "candidate-tool-github-nousresearch-hermes-agent",
+  "type": "tool",
+  "status": "published",
+  "title": "Hermes Agent",
+  "sourceUrl": "https://github.com/NousResearch/hermes-agent",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "NousResearch",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "The agent that grows with you",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Hermes Agent",
+    "Generic",
+    "Kimi",
+    "OpenClaw"
+  ],
+  "proposedToolType": "cli",
+  "crawlerProfile": "cli",
+  "githubMetadata": {
+    "owner": "NousResearch",
+    "repo": "hermes-agent",
+    "fullName": "NousResearch/hermes-agent",
+    "stars": 155732,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "anthropic",
+      "chatgpt",
+      "claude",
+      "claude-code",
+      "clawdbot",
+      "codex",
+      "hermes",
+      "hermes-agent",
+      "llm",
+      "moltbot",
+      "nous-research",
+      "openai",
+      "openclaw"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-18T11:08:26Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "README.zh-CN.md",
+    "docs/hermes-kanban-v1-spec.pdf",
+    "docs/plans/2026-05-02-telegram-dm-user-managed-multisession-topics.md",
+    "docs/plans/2026-05-15-acp-zed-edit-approval-diffs.md",
+    "package.json",
+    "pyproject.toml",
+    "optional-skills/autonomous-ai-agents/blackbox/SKILL.md",
+    "optional-skills/autonomous-ai-agents/honcho/SKILL.md",
+    "optional-skills/blockchain/evm/SKILL.md",
+    "optional-skills/blockchain/hyperliquid/SKILL.md",
+    "optional-skills/blockchain/solana/SKILL.md",
+    "optional-skills/communication/one-three-one-rule/SKILL.md",
+    "optional-skills/creative/blender-mcp/SKILL.md",
+    "optional-skills/creative/concept-diagrams/SKILL.md",
+    "optional-skills/creative/hyperframes/SKILL.md",
+    "optional-skills/creative/kanban-video-orchestrator/SKILL.md",
+    "optional-skills/creative/meme-generation/SKILL.md",
+    "optional-skills/devops/cli/SKILL.md",
+    "optional-skills/devops/docker-management/SKILL.md",
+    "optional-skills/devops/pinggy-tunnel/SKILL.md",
+    "optional-skills/devops/watchers/SKILL.md",
+    "optional-skills/dogfood/adversarial-ux-test/SKILL.md",
+    "optional-skills/email/agentmail/SKILL.md",
+    "optional-skills/finance/3-statement-model/SKILL.md",
+    "optional-skills/finance/comps-analysis/SKILL.md",
+    "optional-skills/finance/dcf-model/SKILL.md",
+    "optional-skills/finance/excel-author/SKILL.md",
+    "optional-skills/finance/lbo-model/SKILL.md",
+    "optional-skills/finance/merger-model/SKILL.md",
+    "optional-skills/finance/pptx-author/SKILL.md",
+    "optional-skills/finance/stocks/SKILL.md",
+    "optional-skills/health/fitness-nutrition/SKILL.md",
+    "optional-skills/health/neuroskill-bci/SKILL.md",
+    "optional-skills/mcp/fastmcp/SKILL.md",
+    "optional-skills/mcp/mcporter/SKILL.md",
+    "optional-skills/migration/openclaw-migration/SKILL.md",
+    "optional-skills/mlops/accelerate/SKILL.md",
+    "optional-skills/mlops/chroma/SKILL.md",
+    "optional-skills/mlops/clip/SKILL.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img src=\"assets/banner.png\" alt=\"Hermes Agent\" width=\"100%\" </p Hermes Agent ☤ <p align=\"center\" <a href=\"https://hermes agent.nousresearch.com/docs/\" <img src=\"https://img.shields.io/badge/Docs hermes agent.nousresearch.com FFD700?style=for the badge\" alt=\"Documentation\" </a <a href=\"https://discord.gg/NousResearch\" <img src=\"https://img.shields.io/badge/Discord 5865F2?style=for the badge&logo=dis",
+  "skillExtracts": [
+    {
+      "path": "optional-skills/autonomous-ai-agents/blackbox/SKILL.md",
+      "extract": "name: blackbox description: Delegate coding tasks to Blackbox AI CLI agent. Multi model agent with built in judge that runs tasks through multiple LLMs and picks the best result. Requires the blackbox CLI and a Blackbox AI API key. version: 1.0.0 author: Hermes Agent (Nous Research) license: MIT platforms: [linux, macos, windows] metadata: hermes: tags: [Coding Agent, Blackbox, Multi Agent, Judge, Multi Model] relate"
+    },
+    {
+      "path": "optional-skills/autonomous-ai-agents/honcho/SKILL.md",
+      "extract": "name: honcho description: Configure and use Honcho memory with Hermes cross session user modeling, multi profile peer isolation, observation config, dialectic reasoning, session summaries, and context budget enforcement. Use when setting up Honcho, troubleshooting memory, managing profiles with Honcho peers, or tuning observation, recall, and dialectic settings. version: 2.0.0 author: Hermes Agent license: MIT platfo"
+    },
+    {
+      "path": "optional-skills/blockchain/evm/SKILL.md",
+      "extract": "name: evm description: \"Read only EVM client: wallets, tokens, gas across 8 chains.\" version: 1.0.0 author: Mibayy (@Mibayy), youssefea (@youssefea), ethernet8023 (@ethernet8023), Hermes Agent license: MIT platforms: [linux, macos, windows] metadata: hermes: tags: [EVM, Ethereum, BNB, BSC, Base, Arbitrum, Polygon, Optimism, Avalanche, zkSync, Blockchain, Crypto, Web3, DeFi, NFT, ENS, Whale, Security] category: blockc"
+    },
+    {
+      "path": "optional-skills/blockchain/hyperliquid/SKILL.md",
+      "extract": "name: hyperliquid description: Hyperliquid market data, account history, trade review. version: 0.1.0 author: Hugo Sequier (Hugo SEQUIER), Hermes Agent license: MIT platforms: [linux, macos, windows] metadata: hermes: tags: [Hyperliquid, Blockchain, Crypto, Trading, Perpetuals, Spot, DeFi] related skills: [] Hyperliquid Skill Query Hyperliquid market and account data through the public /info endpoint. Read only — no "
+    },
+    {
+      "path": "optional-skills/blockchain/solana/SKILL.md",
+      "extract": "name: solana description: Query Solana blockchain data with USD pricing — wallet balances, token portfolios with values, transaction details, NFTs, whale detection, and live network stats. Uses Solana RPC + CoinGecko. No API key required. version: 0.2.0 author: Deniz Alagoz (gizdusum), enhanced by Hermes Agent license: MIT platforms: [linux, macos, windows] metadata: hermes: tags: [Solana, Blockchain, Crypto, Web3, R"
+    },
+    {
+      "path": "optional-skills/communication/one-three-one-rule/SKILL.md",
+      "extract": "name: one three one rule description: Structured decision making framework for technical proposals and trade off analysis. When the user faces a choice between multiple approaches (architecture decisions, tool selection, refactoring strategies, migration paths), this skill produces a 1 3 1 format: one clear problem statement, three distinct options with pros/cons, and one concrete recommendation with definition of do"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Switch with hermes model — no code changes, no lock-in.",
+    "A real terminal interface Full TUI with multiline editing, slash-command autocomplete, conversation history, interrupt-and-redirect, and streaming tool output.",
+    "A closed learning loop Agent-curated memory with periodic nudges.",
+    "Autonomous skill creation after complex tasks.",
+    "Skills self-improve during use.",
+    "FTS5 session search with LLM summarization for cross-session recall.",
+    "Compatible with the agentskills.io open standard.",
+    "Scheduled automations Built-in cron scheduler with delivery to any platform."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-app\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "The agent that grows with you",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "research"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "Hermes Agent is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to agent-app.",
+      "Switch with hermes model — no code changes, no lock-in."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:nousresearch/hermes-agent",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "hermes-agent",
+  "publishedAt": "2026-05-18",
+  "duplicateOf": null,
+  "duplicateReason": null
+}

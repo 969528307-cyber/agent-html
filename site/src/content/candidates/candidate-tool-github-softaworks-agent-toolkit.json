@@ -1,0 +1,239 @@
+{
+  "id": "candidate-tool-github-softaworks-agent-toolkit",
+  "type": "tool",
+  "status": "published",
+  "title": "Agent Toolkit",
+  "sourceUrl": "https://github.com/softaworks/agent-toolkit",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "softaworks",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "A curated collection of skills for AI coding agents. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows.",
+  "proposedCategory": [
+    "automation"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "softaworks",
+    "repo": "agent-toolkit",
+    "fullName": "softaworks/agent-toolkit",
+    "stars": 1844,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "automation",
+      "claude",
+      "claude-code",
+      "coding-agent",
+      "development"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-05T16:46:24Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "dist/plugins/agent-md-refactor/skills/agent-md-refactor/SKILL.md",
+    "dist/plugins/backend-to-frontend-handoff-docs/skills/backend-to-frontend-handoff-docs/SKILL.md",
+    "dist/plugins/c4-architecture/skills/c4-architecture/SKILL.md",
+    "dist/plugins/codex/skills/codex/SKILL.md",
+    "dist/plugins/command-creator/skills/command-creator/SKILL.md",
+    "dist/plugins/commit-work/skills/commit-work/SKILL.md",
+    "dist/plugins/crafting-effective-readmes/skills/crafting-effective-readmes/SKILL.md",
+    "dist/plugins/daily-meeting-update/skills/daily-meeting-update/SKILL.md",
+    "dist/plugins/database-schema-designer/skills/database-schema-designer/SKILL.md",
+    "dist/plugins/datadog-cli/skills/datadog-cli/SKILL.md",
+    "dist/plugins/dependency-updater/skills/dependency-updater/SKILL.md",
+    "dist/plugins/design-system-starter/skills/design-system-starter/SKILL.md",
+    "dist/plugins/difficult-workplace-conversations/skills/difficult-workplace-conversations/SKILL.md",
+    "dist/plugins/domain-name-brainstormer/skills/domain-name-brainstormer/SKILL.md",
+    "dist/plugins/draw-io/skills/draw-io/SKILL.md",
+    "dist/plugins/excalidraw/skills/excalidraw/SKILL.md",
+    "dist/plugins/feedback-mastery/skills/feedback-mastery/SKILL.md",
+    "dist/plugins/frontend-to-backend-requirements/skills/frontend-to-backend-requirements/SKILL.md",
+    "dist/plugins/game-changing-features/skills/game-changing-features/SKILL.md",
+    "dist/plugins/gemini/skills/gemini/SKILL.md",
+    "dist/plugins/gepetto/skills/gepetto/SKILL.md",
+    "dist/plugins/humanizer/skills/humanizer/SKILL.md",
+    "dist/plugins/jira/skills/jira/SKILL.md",
+    "dist/plugins/lesson-learned/skills/lesson-learned/SKILL.md",
+    "dist/plugins/marp-slide/skills/marp-slide/SKILL.md",
+    "dist/plugins/meme-factory/skills/meme-factory/SKILL.md",
+    "dist/plugins/mermaid-diagrams/skills/mermaid-diagrams/SKILL.md",
+    "dist/plugins/mui/skills/mui/SKILL.md",
+    "dist/plugins/naming-analyzer/skills/naming-analyzer/SKILL.md",
+    "dist/plugins/openapi-to-typescript/skills/openapi-to-typescript/SKILL.md",
+    "dist/plugins/perplexity/skills/perplexity/SKILL.md",
+    "dist/plugins/plugin-forge/skills/plugin-forge/SKILL.md",
+    "dist/plugins/professional-communication/skills/professional-communication/SKILL.md",
+    "dist/plugins/qa-test-planner/skills/qa-test-planner/SKILL.md",
+    "dist/plugins/react-dev/skills/react-dev/SKILL.md",
+    "dist/plugins/react-useeffect/skills/react-useeffect/SKILL.md",
+    "dist/plugins/reducing-entropy/skills/reducing-entropy/SKILL.md",
+    "dist/plugins/requirements-clarity/skills/requirements-clarity/SKILL.md",
+    "dist/plugins/session-handoff/skills/session-handoff/SKILL.md"
+  ],
+  "readmeExtract": "Softaworks Agent Skills Opinionated skills shared by [@leonardocouy](https://github.com/leonardocouy) for improving daily work efficiency with Claude Code. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows. Skills follow the [Agent Skills](https://agentskills.io/) format. 🧭 Quick Navigation [🚀 Installation]( installati",
+  "skillExtracts": [
+    {
+      "path": "dist/plugins/agent-md-refactor/skills/agent-md-refactor/SKILL.md",
+      "extract": "name: agent md refactor description: Refactor bloated AGENTS.md, CLAUDE.md, or similar agent instruction files to follow progressive disclosure principles. Splits monolithic files into organized, linked documentation. license: MIT Agent MD Refactor Refactor bloated agent instruction files (AGENTS.md, CLAUDE.md, COPILOT.md, etc.) to follow progressive disclosure principles keeping essentials at root and organizing the"
+    },
+    {
+      "path": "dist/plugins/backend-to-frontend-handoff-docs/skills/backend-to-frontend-handoff-docs/SKILL.md",
+      "extract": "name: backend to frontend handoff docs description: Create API handoff documentation for frontend developers. Use when backend work is complete and needs to be documented for frontend integration, or user says 'create handoff', 'document API', 'frontend handoff', or 'API documentation'. API Handoff Mode No Chat Output : Produce the handoff document only. No discussion, no explanation—just the markdown block saved to "
+    },
+    {
+      "path": "dist/plugins/c4-architecture/skills/c4-architecture/SKILL.md",
+      "extract": "name: c4 architecture description: Generate architecture documentation using C4 model Mermaid diagrams. Use when asked to create architecture diagrams, document system architecture, visualize software structure, create C4 diagrams, or generate context/container/component/deployment diagrams. Triggers include \"architecture diagram\", \"C4 diagram\", \"system context\", \"container diagram\", \"component diagram\", \"deployment "
+    },
+    {
+      "path": "dist/plugins/codex/skills/codex/SKILL.md",
+      "extract": "name: codex description: Use when the user asks to run Codex CLI (codex exec, codex resume) or references OpenAI Codex for code analysis, refactoring, or automated editing. Uses GPT 5.2 by default for state of the art software engineering. Codex Skill Guide Running a Task 1. Default to gpt 5.2 model. Ask the user (via AskUserQuestion ) which reasoning effort to use ( xhigh , high , medium , or low ). User can overrid"
+    },
+    {
+      "path": "dist/plugins/command-creator/skills/command-creator/SKILL.md",
+      "extract": "name: command creator description: This skill should be used when creating a Claude Code slash command. Use when users ask to \"create a command\", \"make a slash command\", \"add a command\", or want to document a workflow as a reusable command. Essential for creating optimized, agent executable slash commands with proper structure and best practices. Command Creator This skill guides the creation of Claude Code slash com"
+    },
+    {
+      "path": "dist/plugins/commit-work/skills/commit-work/SKILL.md",
+      "extract": "name: commit work description: \"Create high quality git commits: review/stage intended changes, split into logical commits, and write clear commit messages (including Conventional Commits). Use when the user asks to commit, craft a commit message, stage changes, or split work into multiple commits.\" Commit work Goal Make commits that are easy to review and safe to ship: only intended changes are included commits are "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Opinionated skills shared by @leonardocouy for improving daily work efficiency with Claude Code.",
+    "Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows.",
+    "Skills follow the Agent Skills format.",
+    "This method works with multiple AI coding agents (Claude Code, Codex, Cursor, AdaL, etc.)",
+    "Run the following commands in Claude Code:",
+    "Switch to Marketplaces tab (use arrow keys or Tab)",
+    "Select agent-toolkit, press Enter",
+    "Each skill, agent, and command is an individual plugin that can be installed separately:"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"automation\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "A curated collection of skills for AI coding agents. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "single-tool",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation",
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "single-tool",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation",
+    "docs",
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "classificationScores": {
+    "mcp": 0,
+    "skill": 17,
+    "cli": 6,
+    "workflow": 6,
+    "agent-framework": 0,
+    "agent-app": 0,
+    "sdk": 0,
+    "knowledge-resource": 7
+  },
+  "classificationNotes": [
+    "Skill evidence found through SKILL.md, skill collection, or agent skill language.",
+    "Agent instruction or rule files detected.",
+    "GitHub topics tag as skills.",
+    "Skill-collection or agent-rules language in description.",
+    "CLI (word-boundary) or terminal usage language detected.",
+    "Workflow/automation/orchestration language detected.",
+    "Knowledge-resource language detected, such as awesome list, tutorial, guide, or examples.",
+    "Coding agent detected with CLI context.",
+    "Detected scope: skill-collection.",
+    "Alternative capabilities: knowledge-resource, cli, workflow.",
+    "LLM: skill + [skill] — This project is a curated collection of agent skills (packaged instructions and scripts) for AI coding agents, following the Agent Skills format."
+  ],
+  "classificationAlternatives": [
+    "knowledge-resource",
+    "cli",
+    "workflow"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "single-tool",
+    "whatIsIt": "Agent Toolkit is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to automation.",
+      "Opinionated skills shared by @leonardocouy for improving daily work efficiency with Claude Code."
+    ],
+    "reasons": [],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:softaworks/agent-toolkit",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-functional-search",
+      "seenAt": "2026-05-18"
+    }
+  ],
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-toolkit",
+  "publishedAt": "2026-05-18"
+}

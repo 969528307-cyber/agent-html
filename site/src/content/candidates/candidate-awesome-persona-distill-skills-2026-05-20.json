@@ -1,0 +1,126 @@
+{
+  "id": "candidate-awesome-persona-distill-skills-2026-05-20",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Awesome Persona Distill Skills",
+  "sourceUrl": "https://github.com/xixu-me/awesome-persona-distill-skills",
+  "sourceName": "GitHub",
+  "author": "xixu-me",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Curated list of Agent Skills centered on people, relationships, commemorative scenes, and methodological perspectives",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "xixu-me",
+    "repo": "awesome-persona-distill-skills",
+    "fullName": "xixu-me/awesome-persona-distill-skills",
+    "stars": 4281,
+    "license": "CC0-1.0",
+    "topics": [
+      "agent-skills",
+      "awesome",
+      "awesome-list",
+      "persona-distill"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T07:50:48Z"
+  },
+  "detectedFiles": [
+    "README.en.md",
+    "README.md",
+    "package.json"
+  ],
+  "readmeExtract": "<div align=\"center\" <img src=\"media/header.svg\" alt=\"抽象化的角色网络与记忆连线插图。\" width=\"900\" <h1 Awesome Persona Distill Skills</h1 <p <a href=\"https://awesome.re\" <img src=\"https://awesome.re/badge.svg\" alt=\"Awesome\" </a </p </div [English](./README.en.md) [!TIP] 欢迎加入“Xget 开源与 AI 交流群”，一起交流开源项目、AI 应用、工程实践、效率工具和独立开发；如果你也在做产品、写代码、折腾项目或者对开源和 AI 感兴趣，欢迎[ 进群 ](https://file.xi xu.me/QR%20Codes/%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Awesome Persona Distill Skills",
+    "围绕人物、关系、纪念性场景与方法论视角的 Agent Skills 收录列表。",
+    "反蒸馏 Skill - 将可公开分发的技能内容与私有经验备份拆分管理，用于技能交付场景。",
+    "图鉴.skill - 跨作者 persona skill 调度器 — 根据对话意图，从 30 个 persona skill 中智能匹配推荐。",
+    "数字人生.skills - 从个人在日常工具中留下的数字痕迹中提炼结构化自我画像。",
+    "Forge Skill - 将自我蒸馏与他人蒸馏拆分为独立流程，用于自我镜像、记忆整理与角色化对话。",
+    "永生.skill - 从聊天记录与相关资料中整理多维数字人格画像。",
+    "大师.skill - 从一个具体行业的从业经验中提炼判断方式、决策框架与工具习惯，形成可复用的方法论 skill。"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Curated list of Agent Skills centered on people, relationships, commemorative scenes, and methodological perspectives",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "docs",
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "docs",
+    "media"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome Persona Distill Skills is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with media workflows.",
+      "Relevant to skill.",
+      "Awesome Persona Distill Skills",
+      "围绕人物、关系、纪念性场景与方法论视角的 Agent Skills 收录列表。"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

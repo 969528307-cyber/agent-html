@@ -1,0 +1,77 @@
+{
+  "id": "abtop",
+  "name": "Abtop",
+  "type": "cli",
+  "status": "published",
+  "summary": "Like htop, but for AI coding agents. Monitor Claude    Code & Codex CLI sessions, tokens, context window,    rate limits, and ports in real-time.",
+  "description": "Like htop, but for AI coding agents. Monitor Claude    Code & Codex CLI sessions, tokens, context window,    rate limits, and ports in real-time.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/graykode/abtop",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/graykode/abtop",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/graykode/abtop#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/graykode/abtop#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/graykode/abtop/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Like btop, but for your AI coding agents.",
+    "See every Claude Code, Codex CLI, and OpenCode session at a glance — token usage, context window %, rate limits, child processes, open ports, and more.",
+    "Claude Code, Codex CLI, and OpenCode sessions are discovered from local process/file state, so multiple active profiles are supported across macOS, Linux, and Windows.",
+    "Running 3+ agents across projects?",
+    "Agent spawned a server and forgot to kill it?",
+    "abtop works standalone, but running inside tmux unlocks session jumping — press Enter to switch directly to the pane running that agent.",
+    "Feature Claude Code Codex CLI OpenCode",
+    "When language is unset, abtop auto-detects from LANG — any value starting with zh switches to Simplified Chinese, otherwise English."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-14T05:54:37Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/graykode/abtop",
+  "repoUrl": "https://github.com/graykode/abtop",
+  "license": "MIT",
+  "stars": 2278,
+  "lastUpdated": "2026-05-14T05:54:37Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

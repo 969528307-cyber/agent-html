@@ -1,0 +1,173 @@
+{
+  "id": "candidate-tool-github-nirdiamant-agents-towards-production",
+  "type": "tool",
+  "status": "candidate",
+  "title": "Agents Towards Production",
+  "sourceUrl": "https://github.com/NirDiamant/agents-towards-production",
+  "sourceName": "GitHub (tools crawl)",
+  "author": "NirDiamant",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-21",
+  "discoveredFrom": "github",
+  "summary": "End-to-end, code-first tutorials for building production-grade GenAI agents. From prototype to enterprise deployment.",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "proposedAgents": [],
+  "proposedToolType": "workflow",
+  "crawlerProfile": "workflow",
+  "githubMetadata": {
+    "owner": "NirDiamant",
+    "repo": "agents-towards-production",
+    "fullName": "NirDiamant/agents-towards-production",
+    "stars": 20144,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "agents",
+      "ai-agents",
+      "deployment",
+      "genai",
+      "generative-ai",
+      "langgraph",
+      "llm",
+      "llms",
+      "mlops",
+      "production",
+      "python",
+      "tutorials"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T18:24:30Z"
+  },
+  "detectedFiles": [
+    "README.md"
+  ],
+  "readmeExtract": "<div align=\"center\" Agents Towards Production The open source playbook for turning AI agents into real world products. Agents Towards Production is your go‑to resource for building production‑ready GenAI agents that scale from prototype to enterprise. Tutorials cover stateful workflows, vector memory, real‑time web search APIs, Docker deployment, FastAPI endpoints, security guardrails, GPU scaling, browser automation",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "The open-source playbook for turning AI agents into real-world products.",
+    "28 production-grade tutorials covering stateful workflows, vector memory, web search APIs, Docker deployment, security guardrails, GPU scaling, multi-agent coordination, and more.",
+    "Agent Framework & Workflows .",
+    "RAG & Knowledge Management .",
+    "...ment, security guardrails, GPU scaling, multi-agent coordination, and more.",
+    "...ef=\"tutorials/kotlin-agent-with-koog\" title=\"Open JetBrains Koog tutorial\">"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 3,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Discovered by functional category \"agent-framework\" crawler (min 700 stars, current maintenance window). Human review required.",
+  "publishReason": "End-to-end, code-first tutorials for building production-grade GenAI agents. From prototype to enterprise deployment.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "tutorial",
+    "useCategory": [
+      "search",
+      "browser",
+      "devops",
+      "security",
+      "coding",
+      "automation",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "tutorial",
+  "useCategory": [
+    "search",
+    "browser",
+    "devops",
+    "security",
+    "coding",
+    "automation",
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "agent-framework",
+    "whatIsIt": "Agents Towards Production is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with browser workflows.",
+      "Helps with devops workflows.",
+      "Helps with security workflows.",
+      "Helps with coding workflows."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "canonicalKey": "tool:github:nirdiamant/agents-towards-production",
+  "firstDiscoveredAt": "2026-05-18",
+  "lastSeenAt": "2026-05-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-18-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-05-19-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-19"
+    },
+    {
+      "runId": "2026-05-20-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-20"
+    },
+    {
+      "runId": "2026-05-21-tools",
+      "module": "tools",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-21"
+    }
+  ],
+  "duplicateOf": null,
+  "duplicateReason": null
+}

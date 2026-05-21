@@ -1,0 +1,138 @@
+{
+  "id": "candidate-agent-skill-creator-2026-05-18",
+  "type": "tool",
+  "status": "published",
+  "title": "Agent Skill Creator",
+  "sourceUrl": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "sourceName": "GitHub",
+  "author": "FrancyJGLisboa",
+  "discoveredAt": "2026-05-18",
+  "lastChecked": "2026-05-18",
+  "discoveredFrom": "github",
+  "summary": "Turn any workflow into reusable AI agent skills that install on 14+ tools — Claude Code, Copilot, Cursor, Windsurf, Codex, Gemini, Kiro, and more. One SKILL.md, every platform.",
+  "proposedCategory": [
+    "skill"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "FrancyJGLisboa",
+    "repo": "agent-skill-creator",
+    "fullName": "FrancyJGLisboa/agent-skill-creator",
+    "stars": 943,
+    "topics": [],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-26T10:29:53Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "references/examples/stock-analyzer/SKILL.md",
+    "SKILL.md"
+  ],
+  "readmeExtract": "Agent Skill Creator Turn any workflow into reusable AI agent software that installs on 14+ tools — no spec writing, no prompt engineering, no coding required. [![Agent Skills Open Standard](https://img.shields.io/badge/Agent%20Skills Open%20Standard blue)](https://github.com/anthropics/agent skills spec) [![Version](https://img.shields.io/badge/version 5.0.0 brightgreen)]() [![License: MIT](https://img.shields.io/bad",
+  "skillExtracts": [
+    {
+      "path": "references/examples/stock-analyzer/SKILL.md",
+      "extract": "name: stock analyzer description: Provides comprehensive technical analysis for stocks and ETFs using RSI, MACD, Bollinger Bands, and other indicators. Activates when user requests stock analysis, technical indicators, trading signals, or market data for specific ticker symbols. version: 1.0.0 Stock Analyzer Skill Technical Specification Version: 1.0.0 Type: Simple Skill Domain: Financial Technical Analysis Created: "
+    },
+    {
+      "path": "SKILL.md",
+      "extract": "name: agent skill creator description: Create cross platform agent skills from workflow descriptions. Activates when users ask to create an agent, automate a repetitive workflow, create a custom skill, or need advanced agent creation. Triggers on phrases like create agent for, automate workflow, create skill for, every day I have to, daily I need to, turn process into agent, need to automate, create a cross platform "
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Turn any workflow into reusable AI agent software that installs on 14+ tools — no spec writing, no prompt engineering, no coding required.",
+    "Every AI coding tool — Claude Code, GitHub Copilot, Cursor, Windsurf, Codex, Gemini, Kiro, and more — starts from zero.",
+    "So every person re-explains the same workflows in every conversation.",
+    "Agent skills fix this. A skill is structured knowledge your agent loads automatically — like installing an app.",
+    "The catch: building a proper skill requires understanding the spec format, writing clear prompt instructions, designing how information loads progressively, writing functional code, and getting activation keywords right.",
+    "Even simple skills take multiple rounds of iteration to get right.",
+    "Option A — One-liner (installs to all detected tools):",
+    "This clones to ~/.agents/skills/agent-skill-creator and symlinks to every detected global platform (Claude Code, Gemini CLI, Goose, OpenCode, Copilot)."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Turn any workflow into reusable AI agent skills that install on 14+ tools — Claude Code, Copilot, Cursor, Windsurf, Codex, Gemini, Kiro, and more. One SKILL.md, every platform.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "classificationConfidence": "medium",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "Agent Skill Creator is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "Turn any workflow into reusable AI agent software that installs on 14+ tools — no spec writing, no prompt engineering, no coding required.",
+      "Every AI coding tool — Claude Code, GitHub Copilot, Cursor, Windsurf, Codex, Gemini, Kiro, and more — starts from zero."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-skill-creator",
+  "publishedAt": "2026-05-18"
+}

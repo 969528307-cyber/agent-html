@@ -1,0 +1,54 @@
+---
+title: "Agent Feature Matrix (May 2026)"
+subtitle: "Capabilities, interfaces, and ecosystem comparison across 9 AI agents — data from agentk.it"
+status: "published"
+topic: "agent"
+path: "agent-deep-dive"
+order: 7
+difficulty: "intermediate"
+readingTime: "6 min"
+summaryBullets:
+  - "MCP support: 7/9 agents, only Kimi and CodeGeeX do not support it"
+  - "Skill support: 4/9 agents — Claude Code, Codex, Hermes Agent, OpenClaw"
+  - "CLI interface: 5/9 agents provide a command-line entry point"
+  - "Differences between China-origin agents (Kimi/Trae/CodeGeeX/Qwen Code) and global agents"
+relatedTools: []
+relatedAgents: ["codex", "claude-code", "cursor", "qwen-code", "kimi-agent", "trae", "openclaw", "hermes-agent", "codegeex"]
+nextReads: ["how-to-choose-agent", "codex-vs-claude-code-vs-cursor"]
+publishedAt: "2026-05-18"
+---
+
+All data below comes from published Agent configurations in the agentk.it directory. No subjective evaluations.
+
+## Capability Matrix
+
+- Claude Code — MCP ✅ Skills ✅ CLI ✅ Workflow ✅ — CLI — Global (Anthropic)
+- Codex — MCP ✅ Skills ✅ CLI ✅ Workflow ✅ — CLI/API — Global (OpenAI)
+- Hermes Agent — MCP ✅ Skills ✅ CLI ✅ Workflow ✅ — CLI — Global (Nous Research)
+- OpenClaw — MCP ✅ Skills ✅ CLI ✅ Workflow ✅ — CLI/Web — Global
+- Cursor — MCP ✅ Skills ❌ CLI ❌ Workflow ✅ — IDE — Global
+- Qwen Code — MCP ✅ Skills ❌ CLI ✅ Workflow ✅ — CLI — China (Alibaba)
+- Trae — MCP ✅ Skills ❌ CLI ❌ Workflow ✅ — IDE — China (ByteDance)
+- Kimi — MCP ❌ Skills ❌ CLI ✅ Workflow ✅ — Web/CLI — China (Moonshot)
+- CodeGeeX — MCP ❌ Skills ❌ CLI ❌ Workflow ✅ — IDE — China (Zhipu)
+
+## Key Findings
+
+Full-capability agents: Claude Code, Codex, Hermes Agent, and OpenClaw support all four extension types. If you need a general-purpose agent that can connect to MCP servers, use Skills, execute CLI commands, and orchestrate Workflows, choose from these four.
+
+China-origin agents: Kimi and CodeGeeX do not currently support MCP or Skills. Kimi focuses on long-context research scenarios. CodeGeeX is positioned for IDE code completion. Qwen Code and Trae support MCP, narrowing the compatibility gap with global agents.
+
+IDE vs CLI split: IDE agents (Cursor, Trae, CodeGeeX) prioritize in-editor experience and generally do not expose CLI interfaces. CLI agents (Claude Code, Codex, Hermes Agent) can be integrated into terminals, CI/CD pipelines, and scripts.
+
+## Use-Case Quick Reference
+
+- Large repository refactoring: Claude Code / Codex (full capabilities + CLI integration)
+- In-IDE coding: Cursor / Trae (native editor experience)
+- Long document analysis: Kimi (extra-long context)
+- China-based dev teams: Qwen Code / Trae (Chinese ecosystem)
+- Community Skill ecosystem: OpenClaw / Hermes Agent (discoverable, reusable Skills)
+- CI/CD automation: Claude Code / Codex (terminal-scriptable)
+
+## Data Sources
+
+Agent configurations from src/content/agents. Mapped tool counts based on agentMatchesTool dual matching (keyword + type). Last updated: 2026-05-18. Refreshed daily at 08:00 via cron.

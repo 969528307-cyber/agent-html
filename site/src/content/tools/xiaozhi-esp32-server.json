@@ -1,0 +1,75 @@
+{
+  "id": "xiaozhi-esp32-server",
+  "name": "Xiaozhi Esp32 Server",
+  "type": "mcp",
+  "status": "published",
+  "summary": "本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.",
+  "description": "本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [
+    "Qwen Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "支持MQTT+UDP协议、Websocket协议、MCP接入点、声纹识别、知识库",
+    "工具调用 支持客户端IOT协议、客户MCP协议、服务端MCP协议、MCP接入点协议、自定义工具函数",
+    "指令下发 依托MQTT协议，支持从智控台将MCP指令下发到ESP32设备",
+    "openai 接口调用 阿里百炼、火山引擎、DeepSeek、智谱、Gemini、科大讯飞 智谱、Gemini",
+    "玄凤科技 感谢玄凤科技贡献函数调用框架、MCP通信协议及插件化调用机制的实现代码，通过标准化的指令调度体系与动态扩展能力，显著提升了前端设备(IoT)的交互效率和功能延展性",
+    "它和MCP、记忆有本质的区别：上下文源是强制让小智感知世界的数据；记忆(Mem)是让他知道之前聊了什么内容；MCP(functionc all)是当需要调用某项能力/知识的时候使用调用。",
+    "注意：该功能只是方便小智在唤醒的时候感知事物的状态，而如果想要小智唤醒后实时获取事物的状态，建议在此功能上再结合MCP工具的调用。",
+    "默认情况下，系统的提示词模板文件（data/.agent-base-prompt.txt）中已经预置了 {{ dynamiccontext }} 占位符，您无需手动添加。"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T02:51:01Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/xinnan-tech/xiaozhi-esp32-server",
+  "repoUrl": "https://github.com/xinnan-tech/xiaozhi-esp32-server",
+  "license": "MIT",
+  "stars": 9594,
+  "lastUpdated": "2026-05-15T02:51:01Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

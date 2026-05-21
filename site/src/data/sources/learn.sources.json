@@ -1,0 +1,58 @@
+[
+  {
+    "id": "local-learn-library",
+    "module": "learn",
+    "name": "Local Learn Content Library",
+    "type": "local_content",
+    "url": "src/content/learn",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "enabled": true,
+    "acceptRules": [
+      "must_have_topic",
+      "must_have_teaching_angle",
+      "must_link_related_tools_or_agents_when_possible"
+    ],
+    "rejectRules": [
+      "thin_summary_only",
+      "no_learning_outcome"
+    ]
+  },
+  {
+    "id": "official-agent-docs-for-learn",
+    "module": "learn",
+    "name": "Official Agent Documentation for Learn",
+    "type": "official_docs",
+    "url": "source-allowlist:learn-official-docs",
+    "trustLevel": "official",
+    "refreshInterval": "weekly",
+    "enabled": false,
+    "acceptRules": [
+      "must_explain_concept_or_decision",
+      "must_be_reusable_as_learning_topic"
+    ],
+    "rejectRules": [
+      "release_note_without_teaching_value",
+      "api_reference_only"
+    ]
+  },
+  {
+    "id": "learn-blog-allowlist",
+    "module": "learn",
+    "name": "High Quality Technical Blog Allowlist",
+    "type": "blog_allowlist",
+    "url": "source-allowlist:learn-blogs",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "enabled": false,
+    "acceptRules": [
+      "must_be_substantive",
+      "must_help_users_understand_agent_tools"
+    ],
+    "rejectRules": [
+      "seo_content",
+      "thin_listicle",
+      "no_original_explanation"
+    ]
+  }
+]

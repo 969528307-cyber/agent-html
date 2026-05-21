@@ -1,0 +1,180 @@
+{
+  "id": "candidate-claude-plugins-official-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Claude Plugins Official",
+  "sourceUrl": "https://github.com/anthropics/claude-plugins-official",
+  "sourceName": "GitHub",
+  "author": "anthropics",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Claude Code",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "anthropics",
+    "repo": "claude-plugins-official",
+    "fullName": "anthropics/claude-plugins-official",
+    "stars": 20299,
+    "topics": [
+      "claude-code",
+      "mcp",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T00:54:19Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "external_plugins/discord/skills/access/SKILL.md",
+    "external_plugins/discord/skills/configure/SKILL.md",
+    "external_plugins/imessage/skills/access/SKILL.md",
+    "external_plugins/imessage/skills/configure/SKILL.md",
+    "external_plugins/telegram/skills/access/SKILL.md",
+    "external_plugins/telegram/skills/configure/SKILL.md",
+    "plugins/claude-code-setup/skills/claude-automation-recommender/SKILL.md",
+    "plugins/claude-md-management/skills/claude-md-improver/SKILL.md",
+    "plugins/cwc-makers/skills/cardputer-buddy/SKILL.md",
+    "plugins/cwc-makers/skills/m5-onboard/SKILL.md",
+    "plugins/example-plugin/skills/example-command/SKILL.md",
+    "plugins/example-plugin/skills/example-skill/SKILL.md",
+    "plugins/frontend-design/skills/frontend-design/SKILL.md",
+    "plugins/hookify/skills/writing-rules/SKILL.md",
+    "plugins/math-olympiad/skills/math-olympiad/SKILL.md",
+    "plugins/mcp-server-dev/skills/build-mcp-app/SKILL.md",
+    "plugins/mcp-server-dev/skills/build-mcp-server/SKILL.md",
+    "plugins/mcp-server-dev/skills/build-mcpb/SKILL.md",
+    "plugins/playground/skills/playground/SKILL.md",
+    "plugins/plugin-dev/skills/agent-development/SKILL.md",
+    "plugins/plugin-dev/skills/command-development/SKILL.md",
+    "plugins/plugin-dev/skills/hook-development/SKILL.md",
+    "plugins/plugin-dev/skills/mcp-integration/SKILL.md",
+    "plugins/plugin-dev/skills/plugin-settings/SKILL.md",
+    "plugins/plugin-dev/skills/plugin-structure/SKILL.md",
+    "plugins/plugin-dev/skills/skill-development/SKILL.md",
+    "plugins/session-report/skills/session-report/SKILL.md",
+    "plugins/skill-creator/skills/skill-creator/SKILL.md"
+  ],
+  "readmeExtract": "Claude Code Plugins Directory A curated directory of high quality plugins for Claude Code. ⚠️ Important: Make sure you trust a plugin before installing, updating, or using it. Anthropic does not control what MCP servers, files, or other software are included in plugins and cannot verify that they will work as intended or that they won't change. See each plugin's homepage for more information. Structure /plugins Inter",
+  "skillExtracts": [
+    {
+      "path": "external_plugins/discord/skills/access/SKILL.md",
+      "extract": "name: access description: Manage Discord channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the Discord channel. user invocable: true allowed tools: Read Write Bash(ls ) Bash(mkdir ) /discord:access — Discord Channel Access Management This skill only acts on requests typed by the user in their terminal ses"
+    },
+    {
+      "path": "external_plugins/discord/skills/configure/SKILL.md",
+      "extract": "name: configure description: Set up the Discord channel — save the bot token and review access policy. Use when the user pastes a Discord bot token, asks to configure Discord, asks \"how do I set this up\" or \"who can reach me,\" or wants to check channel status. user invocable: true allowed tools: Read Write Bash(ls ) Bash(mkdir ) /discord:configure — Discord Channel Setup Writes the bot token to ~/.claude/channels/dis"
+    },
+    {
+      "path": "external_plugins/imessage/skills/access/SKILL.md",
+      "extract": "name: access description: Manage iMessage channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the iMessage channel. user invocable: true allowed tools: Read Write Bash(ls ) Bash(mkdir ) /imessage:access — iMessage Channel Access Management This skill only acts on requests typed by the user in their terminal"
+    },
+    {
+      "path": "external_plugins/imessage/skills/configure/SKILL.md",
+      "extract": "name: configure description: Check iMessage channel setup and review access policy. Use when the user asks to configure iMessage, asks \"how do I set this up\" or \"who can reach me,\" or wants to know why texts aren't reaching the assistant. user invocable: true allowed tools: Read Bash(ls ) /imessage:configure — iMessage Channel Setup There's no token to save — iMessage reads ~/Library/Messages/chat.db directly. This s"
+    },
+    {
+      "path": "external_plugins/telegram/skills/access/SKILL.md",
+      "extract": "name: access description: Manage Telegram channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the Telegram channel. user invocable: true allowed tools: Read Write Bash(ls ) Bash(mkdir ) /telegram:access — Telegram Channel Access Management This skill only acts on requests typed by the user in their terminal"
+    },
+    {
+      "path": "external_plugins/telegram/skills/configure/SKILL.md",
+      "extract": "name: configure description: Set up the Telegram channel — save the bot token and review access policy. Use when the user pastes a Telegram bot token, asks to configure Telegram, asks \"how do I set this up\" or \"who can reach me,\" or wants to check channel status. user invocable: true allowed tools: Read Write Bash(ls ) Bash(mkdir ) /telegram:configure — Telegram Channel Setup Writes the bot token to ~/.claude/channel"
+    }
+  ],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Claude Code Plugins Directory",
+    "A curated directory of high-quality plugins for Claude Code.",
+    "Anthropic does not control what MCP servers, files, or other software are included in plugins and cannot verify that they will work as intended or that they won't change.",
+    "Plugins can be installed directly from this marketplace via Claude Code's plugin system.",
+    "For more information on developing Claude Code plugins, see the official documentation.",
+    "description: Manage Discord channel access — approve pairings, edit allowlists, set DM/group policy.",
+    "/discord:access — Discord Channel Access Management",
+    "This skill only acts on requests typed by the user in their terminal"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 2
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Claude Plugins Official is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Claude Code Plugins Directory",
+      "A curated directory of high-quality plugins for Claude Code.",
+      "Anthropic does not control what MCP servers, files, or other software are included in plugins and cannot verify that they will work as intended or that they won't change."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-plugins-official",
+  "publishedAt": "2026-05-20"
+}

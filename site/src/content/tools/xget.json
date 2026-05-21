@@ -1,0 +1,76 @@
+{
+  "id": "xget",
+  "name": "Xget",
+  "type": "skill",
+  "status": "published",
+  "summary": "Ultra-high-performance, secure, all-in-one acceleration engine for developer resources",
+  "description": "Ultra-high-performance, secure, all-in-one acceleration engine for developer resources",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/xixu-me/xget",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/xixu-me/xget",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/xixu-me/xget#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/xixu-me/xget#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/xixu-me/xget/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Agent Skills: npx skills add xixu-me/skills -s xget",
+    "Connection Reuse: Uses standard HTTP connection reuse and keep-alive",
+    "Permissions-Policy: Restricts privacy-sensitive browser features by",
+    "X-XSS-Protection: Legacy compatibility header for older browsers",
+    "Detects Git client User-Agent patterns",
+    "git push: Code push and branch management",
+    "Smart User-Agent handling (default git/2.34.1)",
+    "Dedicated Browser Extension:"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-11T12:36:00Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/xixu-me/xget",
+  "repoUrl": "https://github.com/xixu-me/xget",
+  "license": "AGPL-3.0",
+  "stars": 8102,
+  "lastUpdated": "2026-05-11T12:36:00Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

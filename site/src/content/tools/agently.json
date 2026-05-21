@@ -1,0 +1,77 @@
+{
+  "id": "agently",
+  "name": "Agently",
+  "type": "agent-framework",
+  "status": "published",
+  "summary": "[GenAI Application Development Framework]  🚀 Build GenAI application quick and easy 💬 Easy to interact with GenAI agent in code using structure data and chained-calls syntax 🧩 Use Event-Driven Flow *TriggerFlow* to manage complex GenAI working logic 🔀 Switch to any model without rewrite application code",
+  "description": "[GenAI Application Development Framework]  🚀 Build GenAI application quick and easy 💬 Easy to interact with GenAI agent in code using structure data and chained-calls syntax 🧩 Use Event-Driven Flow *TriggerFlow* to manage complex GenAI working logic 🔀 Switch to any model without rewrite application code",
+  "category": [
+    "agent-framework"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Qwen Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/AgentEra/Agently",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/AgentEra/Agently",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/AgentEra/Agently#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/AgentEra/Agently#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/AgentEra/Agently/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Agently 4.1 - AI Application Development Framework",
+    "Build model-powered applications with stable structured outputs, observable actions, service-ready APIs, and durable workflows.",
+    "Agently is for teams moving from \"the model can do it once\" to \"the application must do it reliably\":",
+    "product engineers building assistants, internal copilots, knowledge tools, operation workflows, or AI-backed APIs",
+    "platform teams that need clear extension points for model providers, tools, MCP servers, sandboxes, workflows, and observability",
+    "coding-agent users who want a framework whose recommended patterns can be encoded as reusable project guidance",
+    "The main design question is simple: how do you keep model behavior useful while still giving application code stable contracts, observable execution, and restart-safe workflow boundaries?",
+    "Agently is optimized for the engineering layer that makes model applications survive model changes, output drift, streaming UX, action execution, workflow signals, and service boundaries."
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T02:12:09Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/AgentEra/Agently",
+  "repoUrl": "https://github.com/AgentEra/Agently",
+  "license": "Apache-2.0",
+  "stars": 1575,
+  "lastUpdated": "2026-05-19T02:12:09Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

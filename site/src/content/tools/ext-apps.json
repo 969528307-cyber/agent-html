@@ -1,0 +1,77 @@
+{
+  "id": "ext-apps",
+  "name": "Ext Apps",
+  "type": "sdk",
+  "status": "published",
+  "summary": "Official repo for spec & SDK of MCP Apps protocol - standard for UIs embedded AI chatbots, served by MCP servers",
+  "description": "Official repo for spec & SDK of MCP Apps protocol - standard for UIs embedded AI chatbots, served by MCP servers",
+  "category": [
+    "search"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/modelcontextprotocol/ext-apps",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/modelcontextprotocol/ext-apps",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/modelcontextprotocol/ext-apps#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/modelcontextprotocol/ext-apps#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/modelcontextprotocol/ext-apps/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Build interactive UIs for MCP tools — charts, forms, dashboards — that render inline in Claude, ChatGPT and any other compliant chat client.",
+    ". Excalidraw built with MCP Apps, running in Claude",
+    "The fastest way to build an MCP App is to let your AI coding agent do it.",
+    "create-mcp-app Scaffolds a new MCP App with an interactive UI from scratch \"Create an MCP App\"",
+    "migrate-oai-app Converts an existing OpenAI App to use MCP Apps \"Migrate from OpenAI Apps SDK\"",
+    "add-app-to-server Adds interactive UI to an existing MCP server's tools \"Add UI to my MCP server\"",
+    "convert-web-app Turns an existing web app into a hybrid web + MCP App \"Add MCP App support to my web app\"",
+    "Other agents — any AI coding agent that supports"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-15T18:02:51Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/modelcontextprotocol/ext-apps",
+  "repoUrl": "https://github.com/modelcontextprotocol/ext-apps",
+  "license": "NOASSERTION",
+  "stars": 2269,
+  "lastUpdated": "2026-05-15T18:02:51Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

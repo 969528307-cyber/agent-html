@@ -1,0 +1,179 @@
+{
+  "id": "candidate-osaurus-2026-05-20",
+  "type": "tool",
+  "status": "published",
+  "title": "Osaurus",
+  "sourceUrl": "https://github.com/osaurus-ai/osaurus",
+  "sourceName": "GitHub",
+  "author": "osaurus-ai",
+  "discoveredAt": "2026-05-20",
+  "lastChecked": "2026-05-20",
+  "discoveredFrom": "github",
+  "summary": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source.",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "proposedAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Qwen Code",
+    "Hermes Agent",
+    "Kimi",
+    "Generic"
+  ],
+  "proposedToolType": "skill",
+  "crawlerProfile": "skill",
+  "githubMetadata": {
+    "owner": "osaurus-ai",
+    "repo": "osaurus",
+    "fullName": "osaurus-ai/osaurus",
+    "stars": 5449,
+    "license": "MIT",
+    "topics": [
+      "anthropic",
+      "apple-foundation-models",
+      "apple-intelligence",
+      "apple-neural-engine",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "mlx",
+      "openai",
+      "swift"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T03:33:22Z"
+  },
+  "detectedFiles": [
+    "README.md",
+    "docs/ACCESSIBILITY.md",
+    "docs/AGENT_DB.md",
+    "docs/AGENT_LOOP.md",
+    "docs/appcast.xml",
+    "docs/CLAUDE_PLUGINS.md",
+    "docs/CODE_OF_CONDUCT.md",
+    "docs/DEVELOPER_TOOLS.md",
+    "docs/FEATURES.md",
+    "docs/GLOBAL_PROXY.md",
+    "docs/IDENTITY.md",
+    "docs/INFERENCE_RUNTIME.md",
+    "docs/JANGTQ2_QUALITY_LIMITS.md",
+    "docs/LING_JANGTQ2_LONG_PROMPT_CRASH.md",
+    "docs/LING_VMLX_INTEGRATION.md",
+    "docs/LOCALIZATION.md",
+    "docs/MEMORY.md",
+    "docs/MODEL_COMPATIBILITY_RESEARCH.md",
+    "docs/MODEL_IDLE_RESIDENCY_SPEC.md",
+    "docs/MULTIMODAL_PLUGIN_ENGINE_SPEC.md",
+    "docs/NEMOTRON_OMNI_LIVE_VOICE_PR_CHECKLIST_2026_05_12.md",
+    "docs/OpenAI_API_GUIDE.md",
+    "docs/Osaurus-latest.html",
+    "docs/plugins/ABI_VERSIONS.md",
+    "docs/plugins/AUTHORING.md",
+    "docs/plugins/DEBUGGING.md",
+    "docs/plugins/EXAMPLE_TELEGRAM.md",
+    "docs/plugins/HOST_API.md",
+    "docs/plugins/MESSAGING_PATTERN.md",
+    "docs/plugins/PACKAGING.md",
+    "docs/plugins/QUICKSTART.md",
+    "docs/plugins/README.md",
+    "docs/plugins/ROUTES_AND_WEB.md",
+    "docs/plugins/TESTING.md",
+    "docs/PROMPT_BLOAT_FOLLOWUP.md",
+    "docs/REMOTE_MCP_PROVIDERS.md",
+    "docs/REMOTE_PROVIDERS.md",
+    "docs/RUNTIME_VALIDATION_STANDARD.md",
+    "docs/SANDBOX.md",
+    "docs/SECURITY.md"
+  ],
+  "readmeExtract": "<p align=\"center\" <img width=\"1920\" height=\"1080\" alt=\"osaurus techcrunch 1\" src=\"https://github.com/user attachments/assets/d7905005 71fe 41ba b69f e8968af29b5c\" / </p <h1 align=\"center\" Osaurus</h1 <p align=\"center\" <strong Own your AI.</strong <br Agents, memory, tools, and identity that live on your Mac. Built purely in Swift. Fully offline. Open source. </p <p align=\"center\" <a href=\"https://github.com/osaurus a",
+  "skillExtracts": [],
+  "extractedInstall": [],
+  "extractedSignals": [
+    "Agents, memory, tools, and identity that live on your Mac.",
+    "What's irreplaceable is the layer around them -- your context, your memory, your tools, your identity.",
+    "It sits between you and any model -- local or cloud -- and provides the continuity that makes AI personal: agents that remember, execute autonomously, run real code, and stay reachable from anywhere.",
+    "Connect to any cloud provider when you want more power.",
+    "Agents are the core of Osaurus.",
+    "Each one gets its own prompts, memory, and visual theme -- a research assistant, a coding partner, a file organizer, whatever you need.",
+    "Everything else in the harness exists to make agents smarter, faster, and more capable over time.",
+    "Agents can also opt into a private encrypted database and a single self-scheduled next run -- see Agent DB & Self-Scheduling."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 5,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Generated from GitHub metadata and README. Human review required before publishing.",
+  "publishReason": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source.",
+  "sourceRegistryId": "github-tools-topic-search",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "memory"
+  ],
+  "classificationConfidence": "high",
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Osaurus is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with memory workflows.",
+      "Relevant to mcp.",
+      "Agents, memory, tools, and identity that live on your Mac.",
+      "What's irreplaceable is the layer around them -- your context, your memory, your tools, your identity.",
+      "It sits between you and any model -- local or cloud -- and provides the continuity that makes AI personal: agents that remember, execute autonomously, run real code, and stay reachable from anywhere."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "osaurus",
+  "publishedAt": "2026-05-20"
+}

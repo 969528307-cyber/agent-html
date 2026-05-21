@@ -1,0 +1,77 @@
+{
+  "id": "preline",
+  "name": "Preline",
+  "type": "skill",
+  "status": "published",
+  "summary": "Preline UI is an open-source set of prebuilt UI components based on the utility-first Tailwind CSS framework.",
+  "description": "Preline UI is an open-source set of prebuilt UI components based on the utility-first Tailwind CSS framework.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/htmlstreamofficial/preline",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/htmlstreamofficial/preline",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/htmlstreamofficial/preline#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/htmlstreamofficial/preline#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/htmlstreamofficial/preline/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Full documentation, Figma, themes, and agent skills",
+    "Preline UI includes Agent Skills for agentic coding tools such as Cursor, Claude Code, and Gemini CLI, making it easier to automate theme generation and UI workflows.",
+    "Learn more in the dedicated Accessibility documentation.",
+    "Explore headless Tailwind CSS plugins for accessible UI behavior, interactions, forms, navigation, overlays, and productivity workflows.",
+    "Overlays Dropdown, Overlay, Tooltip",
+    "Miscellaneous DataTable, Carousel, Layout Splitter, Remove Element, Theme Switch",
+    "Browse Tailwind CSS component docs across layout, base UI, forms, navigation, overlays, tables, and advanced integrations.",
+    "Basic Forms Input, Input Group, Textarea, File Input, Checkbox, Radio, Switch, Select, Range Slider, Color Picker, Time Picker"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-10T14:12:28Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/htmlstreamofficial/preline",
+  "repoUrl": "https://github.com/htmlstreamofficial/preline",
+  "license": "NOASSERTION",
+  "stars": 6321,
+  "lastUpdated": "2026-05-10T14:12:28Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

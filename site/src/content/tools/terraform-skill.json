@@ -1,0 +1,78 @@
+{
+  "id": "terraform-skill",
+  "name": "Terraform Skill",
+  "type": "skill",
+  "status": "published",
+  "summary": "Terraform & OpenTofu Skill for AI Agents - testing, modules, CI/CD, and production patterns",
+  "description": "Terraform & OpenTofu Skill for AI Agents - testing, modules, CI/CD, and production patterns",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Claude Code",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/antonbabenko/terraform-skill",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/antonbabenko/terraform-skill",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/antonbabenko/terraform-skill#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/antonbabenko/terraform-skill#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/antonbabenko/terraform-skill/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Terraform & OpenTofu Skill for AI Agents",
+    "A best-practices skill for Terraform and OpenTofu, for AI coding agents (Claude Code, Cursor, Copilot, Gemini CLI, OpenCode, Codex, and more).",
+    "It helps the agent test code, structure modules, set up CI/CD, and write production infrastructure code.",
+    "Testing workflows (static, integration, E2E)",
+    "Compliance scanning workflows",
+    "Installed through one Claude Code marketplace, antonbabenko/agent-plugins",
+    "(terraform-skill is listed there as an external plugin).",
+    "antonbabenko/terraform-skill as a marketplace - both use the same marketplace"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-19T17:40:05Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/antonbabenko/terraform-skill",
+  "repoUrl": "https://github.com/antonbabenko/terraform-skill",
+  "license": "NOASSERTION",
+  "stars": 1866,
+  "lastUpdated": "2026-05-19T17:40:05Z",
+  "lastChecked": "2026-05-20",
+  "publishedAt": "2026-05-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

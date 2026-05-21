@@ -1,0 +1,77 @@
+{
+  "id": "deepseek-tui",
+  "name": "DeepSeek TUI",
+  "type": "cli",
+  "status": "published",
+  "summary": "Coding agent for DeepSeek models that runs in your terminal",
+  "description": "Coding agent for DeepSeek models that runs in your terminal",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [
+    "Codex",
+    "Cursor",
+    "Generic"
+  ],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Hmbown/DeepSeek-TUI/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Terminal coding agent for DeepSeek V4.",
+    "verify the SHA-256 manifest and avoid look-alike repositories or search-result",
+    "DeepSeek TUI is a coding agent that runs in your terminal.",
+    "It can read and edit files, run shell commands, search the web, manage git, and coordinate sub-agents from a keyboard-driven TUI.",
+    "Full tool suite — file ops, shell execution, git, web search/browse, apply-patch, sub-agents, MCP servers",
+    "Three modes — Plan (read-only explore), Agent (interactive with approval), YOLO (auto-approved)",
+    "HTTP/SSE runtime API — deepseek serve --http for headless agent workflows",
+    "MCP protocol — connect to Model Context Protocol servers for extended tooling; please see docs/MCP.md"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-17T10:15:55Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Hmbown/DeepSeek-TUI",
+  "repoUrl": "https://github.com/Hmbown/DeepSeek-TUI",
+  "license": "MIT",
+  "stars": 31743,
+  "lastUpdated": "2026-05-17T10:15:55Z",
+  "lastChecked": "2026-05-18",
+  "publishedAt": "2026-05-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
