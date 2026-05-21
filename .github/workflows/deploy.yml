@@ -27,13 +27,15 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: site/package-lock.json
-      - id: pages
-        uses: actions/configure-pages@v5
-      - run: npm ci
-      - run: npx astro build --base "${{ steps.pages.outputs.base_path }}"
+      - name: Install dependencies
+        run: npm ci
+      - name: Build with Astro
+        run: npx astro build
         env:
-          SITE: ${{ steps.pages.outputs.origin }}
-      - uses: actions/upload-pages-artifact@v3
+          SITE: https://969528307-cyber.github.io
+          BASE: /agent-html
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: site/dist
 

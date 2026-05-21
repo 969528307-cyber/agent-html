@@ -251,5 +251,7 @@ const localCandidateActions = () => ({
 
 // https://astro.build/config
 export default defineConfig({
+  site: process.env.SITE || "http://localhost:4321",
+  base: process.env.BASE || "/",
   integrations: [mdx(), localCandidateActions()],
 });
