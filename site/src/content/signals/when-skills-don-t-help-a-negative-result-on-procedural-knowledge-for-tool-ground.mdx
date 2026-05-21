@@ -1,0 +1,75 @@
+---
+englishTitle: "When Skills Hurt: Negative Result for CTF Agents"
+originalTitle: "When Skills Don't Help: A Negative Result on Procedural Knowledge for Tool-Grounded Agents in Offensive Cybersecurity"
+subtitle: "High-bandwidth tool feedback can make curated agent skills redundant—or even harmful."
+status: "published"
+topic: "mcp"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "Adding curated procedural knowledge (Skills) to an MCP-grounded CTF agent yielded only an 8.9 pp improvement—statistically insignificant."
+  - "In one timing side-channel task, Skills actively degraded performance compared to the no-Skills baseline."
+  - "The paper argues that high-bandwidth, schema-validated tool feedback from the environment substitutes for the correction signal Skills normally provide."
+  - "This challenges the prevailing assumption that more procedural knowledge always boosts agent performance."
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.20023v1"
+author: "Samuel Jacob Chacko"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-19"
+executiveSummary: "This paper presents a controlled study of an MCP-grounded autonomous Capture-the-Flag (CTF) agent, showing that adding curated procedural knowledge (Skills) yields no statistically significant improvement over a no-Skills baseline. The authors argue that when an agent's tool layer returns strict, low-latency, schema-validated observations, the environment itself provides the correction signal that Skills are meant to supply, making them redundant overhead—and in some cases, actively harmful."
+signalThesis: "High-bandwidth environment feedback can fully substitute for curated procedural knowledge in tool-grounded agents, challenging the default assumption that more Skills always help."
+whyItMatters: "For agentk.it users building MCP-based agents, this paper provides a critical counterpoint to the 'more Skills is better' narrative. It suggests that investing in rich tool schemas and fast, validated feedback loops may be more impactful than curating large libraries of procedural knowledge—especially in domains like cybersecurity, DevOps, and data engineering where the environment itself is a high-bandwidth teacher."
+keyTakeaways:
+  - "Curated Skills (procedural knowledge) can be redundant when the environment provides strict, low-latency, schema-validated feedback."
+  - "In offensive cybersecurity CTF tasks, the marginal benefit of Skills collapsed to a statistically insignificant 8.9 pp improvement."
+  - "Agent designers should measure 'environment-feedback bandwidth' as a key variable before deciding to invest in Skill curation."
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "This paper introduces 'environment-feedback bandwidth' as a falsifiable variable that predicts when Skills help vs. hurt. It opens a new line of inquiry into the interaction between tool design and procedural knowledge, and provides a reanalysis pipeline for replication."
+  - label: "For Developers"
+    body: "Developers building MCP-based agents should prioritize designing tools that return strict, schema-validated, low-latency observations. This may reduce or eliminate the need for curated Skill libraries, simplifying agent architectures and reducing maintenance overhead."
+  - label: "For Users"
+    body: "End users of AI agents may experience more reliable and simpler agents when the underlying tool layer provides rich feedback. However, they should be aware that in some edge cases (e.g., timing side-channels), adding Skills can actually degrade performance."
+whatToWatchNext:
+  - "Replication studies in other high-feedback domains (e.g., robotics, database querying, API orchestration) to test the environment-feedback bandwidth hypothesis."
+  - "Development of a standardized metric for 'environment-feedback bandwidth' that agent designers can use to decide when to invest in Skills."
+publishedAt: "2026-05-21"
+---
+
+## Summary
+
+This paper presents a sobering counterpoint to the prevailing narrative that adding curated procedural knowledge ("Skills") to LLM agents always improves performance. The authors re-analyze a controlled study of an MCP-grounded autonomous Capture-the-Flag (CTF) agent under four documentation conditions (55, 1,478, 1,976, and 4,147 lines), which map almost exactly to a No-Skills, Experiential-Skills, Curated-Skills, and Comprehensive-Skills ablation.
+
+The key finding is stark: the spread between the no-Skills and full-Skills conditions was only 8.9 percentage points—statistically insignificant across multiple tests (p = 0.71 for χ²; p = 0.25 for Cochran–Armitage trend test). Five of six pairwise Cohen's h values fell below the 0.2 small-effect threshold. In one timing side-channel setting, Skills actively *degraded* performance.
+
+The authors propose a novel explanatory variable: **environment-feedback bandwidth**. When an agent's tool layer returns strict, schema-validated, low-latency observations, the environment itself supplies the procedural correction signal that Skills are normally needed to provide. This challenges the default assumption in the agent ecosystem that more procedural knowledge is always better.
+
+## Key Contributions
+
+- **Negative result with statistical rigor**: Demonstrates that in a high-feedback domain (offensive cybersecurity CTF), adding curated Skills yields no statistically significant improvement over a no-Skills baseline.
+- **Introduction of "environment-feedback bandwidth"**: A falsifiable variable that predicts when Skills help vs. hurt, grounded in the observation that strict, low-latency tool feedback substitutes for procedural knowledge.
+- **Reanalysis pipeline**: The authors will release their reanalysis pipeline to support replication, enabling the community to test the hypothesis in other domains.
+- **Challenge to prevailing assumption**: Directly questions the widely reported 16.2 pp average improvement from Skills, noting that 16 of 84 tasks in those benchmarks suffered negative deltas.
+
+## Implications
+
+### For Researchers
+
+This paper provides a clean, falsifiable hypothesis for *when* Skills help and when they are redundant. Researchers should incorporate "environment-feedback bandwidth" as a control variable in future agent benchmarking studies. The finding that Skills can actively degrade performance in certain settings (e.g., timing side-channels) opens a new line of inquiry into the interaction between tool design, procedural knowledge, and task characteristics.
+
+### For Developers
+
+For developers building MCP-based agents, this paper suggests a shift in investment strategy. Instead of defaulting to curating large Skill libraries, prioritize designing tools that return **strict, schema-validated, low-latency observations**. This may simplify agent architectures, reduce maintenance overhead, and in some cases improve performance. The paper also warns that adding Skills without considering the feedback bandwidth of the environment can backfire.
+
+### For Users
+
+End users of AI agents—especially in cybersecurity, DevOps, and data engineering—should be aware that "more is not always better." An agent that relies on rich tool feedback may be simpler, faster, and more reliable than one burdened with extensive procedural knowledge. However, users should also be cautious in edge cases (e.g., timing-sensitive tasks) where Skills can introduce noise.
+
+## References
+
+- https://arxiv.org/abs/2605.20023v1

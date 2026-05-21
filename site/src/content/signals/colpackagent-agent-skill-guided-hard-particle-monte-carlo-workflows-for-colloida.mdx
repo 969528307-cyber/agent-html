@@ -1,0 +1,74 @@
+---
+englishTitle: "ColPackAgent: MCP-Powered AI for Colloidal Packing Simulations"
+originalTitle: "ColPackAgent: Agent-Skill-Guided Hard-Particle Monte Carlo Workflows for Colloidal Packing"
+subtitle: "An agent framework that turns a simulation toolkit into an autonomous research workflow using MCP tools and portable skills."
+status: "published"
+topic: "mcp"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "ColPackAgent uses an MCP tool server and agent skill to autonomously run Monte Carlo simulations of colloidal packing."
+  - "The MCP server exposes a custom colpack Python package wrapping HOOMD-blue hard-particle Monte Carlo."
+  - "The system operates in interactive, autonomous, or autoresearch modes, demonstrated on cube particles, binary disk-capsule systems, and 2D hard-disk freezing."
+  - "A benchmark across 17 LLMs with stage-specific prompts reveals how reliably models follow the setup, planning, and analysis workflow."
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.15625v1"
+author: "Lijie Ding"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-15"
+executiveSummary: "ColPackAgent is an agent framework that pairs a domain-specific Python package (colpack) with a Model Context Protocol (MCP) tool server and a portable agent skill to autonomously execute colloidal packing simulations. It demonstrates that general-purpose LLMs can reliably run structured scientific workflows when given dedicated tools and workflow instructions, rather than just describing them."
+signalThesis: "ColPackAgent shows that MCP-based tool servers and portable agent skills are a practical blueprint for turning any simulation toolkit into an agent-assisted research workflow."
+whyItMatters: "For agentk.it users, this paper provides a concrete, open-source example of how to bridge domain-specific scientific software (like HOOMD-blue) with LLM agents using MCP. It validates that MCP is not just a protocol for general tool use, but a viable infrastructure for reproducible, autonomous scientific computing."
+keyTakeaways:
+  - "MCP tool servers can encapsulate complex scientific Python packages, making them callable by any MCP-compatible agent."
+  - "Portable agent skills encode structured multi-stage workflows (setup, planning, execution, analysis) that guide LLMs beyond simple description to reliable execution."
+  - "The 17-LLM benchmark provides a stage-level reliability check, showing which models can follow scientific workflows without hallucination."
+  - "ColPackAgent supports interactive, autonomous, and autoresearch modes, offering flexibility for different research workflows."
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Enables materials scientists and physicists to run complex Monte Carlo simulations via natural language prompts, reducing the need for manual scripting and debugging. The autoresearch mode allows for batch or programmatic execution of simulation campaigns."
+  - label: "For Developers"
+    body: "Provides a reference architecture for wrapping domain-specific Python packages as MCP tools. The agent skill pattern (a structured workflow contract) can be reused to build similar agents for other scientific domains (e.g., molecular dynamics, DFT, CFD)."
+  - label: "For Users"
+    body: "End users (e.g., students, lab technicians) can interact with advanced simulation software through a chat interface or a simple prompt, lowering the barrier to entry for computational materials research."
+whatToWatchNext:
+  - "Expect more domain-specific MCP tool servers for other scientific simulation packages (e.g., LAMMPS, GROMACS, VASP) and the emergence of a registry of portable agent skills for common research workflows."
+publishedAt: "2026-05-21"
+---
+
+## Summary
+
+ColPackAgent introduces a novel approach to scientific computing by combining a Model Context Protocol (MCP) tool server with a portable agent skill to automate colloidal packing simulations. The core innovation is the `colpack` Python package, which wraps HOOMD-blue's hard-particle Monte Carlo engine, and an MCP server that exposes its functions as tools. The agent skill encodes a four-stage workflow contract (setup, planning, execution, analysis) that guides the LLM through the simulation process.
+
+The paper demonstrates the system in three modes: interactive (with human feedback), autonomous (from an end-to-end prompt), and autoresearch (following a program file). Examples include 3D cube particles, a binary 2D system of disks and capsules, and the 2D hard-disk freezing transition. A key contribution is the benchmark of 17 LLMs on 17 stage-specific prompts, providing a granular view of model reliability for scientific workflows.
+
+## Key Contributions
+
+- **MCP-based tool server for scientific simulation**: Exposes the `colpack` Python package (wrapping HOOMD-blue) as callable tools, enabling any MCP-compatible agent to run Monte Carlo simulations.
+- **Portable agent skill for structured workflows**: Encodes a four-stage workflow contract (setup, planning, execution, analysis) that transforms LLMs from workflow describers to reliable executors.
+- **Multi-mode operation**: Supports interactive, autonomous, and autoresearch modes, demonstrating flexibility for different research scenarios.
+- **Comprehensive LLM benchmark**: Evaluates 17 LLMs on 17 stage-specific prompts, providing a stage-level reliability check for scientific workflow following.
+- **Open-source implementation**: The `colpack` package and MCP server are available, enabling reproducibility and extension by the community.
+
+## Implications
+
+### For Researchers
+
+ColPackAgent lowers the barrier to running complex Monte Carlo simulations. Researchers can now describe a simulation in natural language and have it executed autonomously, rather than writing and debugging Python scripts. The autoresearch mode is particularly powerful for high-throughput screening of colloidal systems.
+
+### For Developers
+
+This paper provides a clear architectural pattern for building scientific agents: wrap a domain-specific Python package as an MCP tool server, then pair it with a portable agent skill that encodes the workflow. Developers can reuse this pattern for other simulation engines (e.g., LAMMPS, GROMACS) or data analysis pipelines.
+
+### For Users
+
+End users—including students, technicians, and scientists without deep programming expertise—can now interact with advanced simulation software through a chat interface. The system's ability to handle human feedback in interactive mode also makes it suitable for educational settings and exploratory research.
+
+## References
+
+- https://arxiv.org/abs/2605.15625v1
