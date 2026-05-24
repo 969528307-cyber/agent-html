@@ -1,0 +1,74 @@
+---
+englishTitle: "Formal Skill: Executable Runtime Skills for LLM Agents"
+originalTitle: "Formal Skill: Programmable Runtime Skills for Efficient and Accurate LLM Agents"
+subtitle: "A new runtime-native abstraction replaces prompt-based skills with executable state machines for token-efficient, enforceable agent control."
+status: "published"
+topic: "mcp"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "Introduces Formal Skill, a runtime-native abstraction that encodes reusable capabilities as JSON metadata, Python executors, and hook-governed control logic."
+  - "Replaces informal prompt-based skills (Markdown, instruction packs) with executable state machines, reducing token usage while improving task accuracy."
+  - "Implements the abstraction in FairyClaw, an open-source event-driven runtime for composable Formal Skills."
+  - "On Harness-Bench, FairyClaw achieves competitive scores with substantially fewer tokens, especially on tasks requiring structured workflow enforcement."
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.19604v1"
+author: "Xi Zhang"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-19"
+executiveSummary: "This paper introduces Formal Skill, a runtime-native abstraction that moves reusable agent procedures from verbose prompt text into executable state machines with hook-governed policies. Implemented in the open-source FairyClaw runtime, it achieves competitive accuracy on Harness-Bench while using significantly fewer tokens, particularly excelling on tasks requiring structured workflow enforcement and policy compliance."
+signalThesis: "Formal Skill signals a shift from prompt-based skill engineering to runtime-native, executable skill abstractions, promising more reliable and token-efficient LLM agents."
+whyItMatters: "For agentk.it users building production agents, Formal Skill offers a path to reduce token costs and improve reliability by encoding workflows as executable state machines rather than fragile prompt text. This abstraction directly addresses the brittleness of current MCP and function-calling approaches by embedding state, policy, and completion discipline directly into the skill runtime."
+keyTakeaways:
+  - "Formal Skill replaces informal prompt-based skills with executable, stateful runtime components that enforce policies via hooks."
+  - "The FairyClaw runtime demonstrates that this approach reduces token consumption while maintaining or improving task accuracy."
+  - "This abstraction is particularly impactful for multi-step workflows where state management and policy enforcement are critical."
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Opens a new research direction in runtime-native agent skill design, moving beyond prompt engineering to executable state machines with formal properties."
+  - label: "For Developers"
+    body: "Provides a concrete implementation (FairyClaw) and design pattern for building more reliable, token-efficient agents. Developers can now encode complex workflows as composable, enforceable skills rather than relying on lengthy prompt instructions."
+  - label: "For Users"
+    body: "End users benefit from agents that are more accurate, use fewer tokens (lower cost), and can reliably enforce business policies and completion requirements."
+whatToWatchNext:
+  - "Adoption of Formal Skill patterns in mainstream agent frameworks and MCP implementations."
+  - "Extensions of the hook-governed control logic to support more complex policy enforcement and multi-agent coordination."
+publishedAt: "2026-05-24"
+---
+
+## Summary
+
+Large Language Model (LLM) agents increasingly operate in real-world workspaces, but the skills they use to translate reasoning into action remain largely informal. Current approaches—Markdown skills, instruction packs, function calling, and MCP servers—either encode procedures as long natural-language documents or leave workflow state, policy enforcement, and completion discipline outside the skill itself. This paper introduces **Formal Skill**, a runtime-native abstraction that represents reusable capabilities through JSON metadata, action schemas, reliable Python executors, hook-governed control logic, and skill-local runtime state.
+
+The authors implement Formal Skill in **FairyClaw**, an open-source event-driven runtime designed for executable, observable, and composable skills. By moving reusable procedures from repeated prompt text into executable state machines with hook policies, Formal Skill provides agents with a token-efficient and enforceable control surface. On the Harness-Bench benchmark, FairyClaw achieves highly competitive average scores while using substantially fewer tokens, with particularly strong results on tasks that benefit from structured workflow enforcement.
+
+## Key Contributions
+
+- **Formal Skill abstraction**: A runtime-native skill representation with JSON metadata, action schemas, Python executors, hook-governed control logic, and local runtime state.
+- **FairyClaw runtime**: An open-source, event-driven implementation that makes Formal Skills executable, observable, and composable.
+- **Token efficiency**: Demonstrated reduction in token usage while maintaining or improving task accuracy on Harness-Bench.
+- **Policy enforcement via hooks**: A novel mechanism for embedding workflow state, policy enforcement, and completion discipline directly into the skill runtime.
+- **Empirical validation**: Competitive results on Harness-Bench, especially on tasks requiring structured multi-step workflows.
+
+## Implications
+
+### For Researchers
+
+This work shifts the research focus from prompt engineering to runtime-native skill design. The Formal Skill abstraction opens avenues for studying formal properties of agent skills—such as termination guarantees, policy compliance, and composability—that are difficult to achieve with informal prompt-based approaches. Researchers can now investigate how executable state machines with hook policies compare to traditional reinforcement learning or planning approaches for agent control.
+
+### For Developers
+
+Developers building production agents with frameworks like LangChain, CrewAI, or AutoGen can adopt the Formal Skill pattern to reduce token costs and improve reliability. Instead of crafting lengthy prompt instructions for multi-step workflows, developers can encode these workflows as composable, enforceable skills with built-in state management and policy hooks. The open-source FairyClaw runtime provides a concrete starting point for experimentation and integration.
+
+### For Users
+
+End users of AI agents will benefit from more reliable and cost-effective interactions. Formal Skill reduces the likelihood of agents deviating from required workflows or failing to complete tasks, while the token efficiency translates directly to lower operational costs. This is particularly valuable in enterprise settings where policy compliance and auditability are critical.
+
+## References
+
+- https://arxiv.org/abs/2605.19604v1
