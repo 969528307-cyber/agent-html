@@ -1,0 +1,136 @@
+{
+  "type": "tool",
+  "title": "MeiGen-AI-Design-MCP",
+  "summary": "Supports GPT Image 2, Nanobanana & ComfyUI, with a 1,400+ prompt library, carefully crafted hooks and a multi-task orchestration system",
+  "sourceUrl": "https://github.com/jau123/MeiGen-AI-Design-MCP",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "jau123",
+    "repo": "MeiGen-AI-Design-MCP",
+    "fullName": "jau123/MeiGen-AI-Design-MCP",
+    "stars": 1193,
+    "license": "MIT",
+    "topics": [
+      "ai-image-generation",
+      "claude",
+      "claude-code",
+      "comfyui",
+      "lovart",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "openclaw",
+      "prompt-engineering"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T04:57:18Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-jau123-meigen-ai-design-mcp",
+  "canonicalKey": "tool:github:jau123/meigen-ai-design-mcp",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "productivity",
+      "media",
+      "coding",
+      "automation",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "productivity",
+    "media",
+    "coding",
+    "automation",
+    "design"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "MeiGen-AI-Design-MCP is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with productivity workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with design workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Supports GPT Image 2, Nanobanana & ComfyUI, with a 1,400+ prompt library, carefully crafted hooks and a multi-task orchestration system",
+    "Topics: ai-image-generation, claude, claude-code, comfyui, lovart",
+    "GitHub stars: 1193",
+    "Last pushed: 2026-05-19"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "meigen-ai-design-mcp",
+  "publishedAt": "2026-05-25"
+}

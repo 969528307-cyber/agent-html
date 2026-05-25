@@ -1,0 +1,142 @@
+{
+  "type": "tool",
+  "title": "iwe",
+  "summary": "Markdown memory system for you and your AI agent",
+  "sourceUrl": "https://github.com/iwe-org/iwe",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "iwe-org",
+    "repo": "iwe",
+    "fullName": "iwe-org/iwe",
+    "stars": 1061,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "cli",
+      "developer-tools",
+      "graph",
+      "gtd",
+      "helix",
+      "knowledge-graph",
+      "knowledge-management",
+      "lsp",
+      "markdown",
+      "mcp",
+      "neovim",
+      "notes",
+      "pkm",
+      "productivity",
+      "rust",
+      "vscode",
+      "zed",
+      "zettelkasten"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-24T23:18:03Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-iwe-org-iwe",
+  "canonicalKey": "tool:github:iwe-org/iwe",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "productivity",
+      "coding",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "productivity",
+    "coding",
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "iwe is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with productivity workflows.",
+      "Helps with coding workflows.",
+      "Helps with memory workflows.",
+      "Relevant to cli.",
+      "Markdown memory system for you and your AI agent"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Markdown memory system for you and your AI agent",
+    "Topics: ai, ai-agents, cli, developer-tools, graph",
+    "GitHub stars: 1061",
+    "Last pushed: 2026-05-24"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "iwe",
+  "publishedAt": "2026-05-25"
+}

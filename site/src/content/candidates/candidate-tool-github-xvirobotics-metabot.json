@@ -1,0 +1,144 @@
+{
+  "type": "tool",
+  "title": "metabot",
+  "summary": "构建受监督的、自我进化的 Agent 组织的基础设施 | Infrastructure for supervised, self-improving agent organization. 飞书/Telegram 手机端运行 Claude Code 或 Kimi Code（双引擎，两家原生订阅直接用），共享记忆、Agent 工厂、定时任务、通信总线。",
+  "sourceUrl": "https://github.com/xvirobotics/metabot",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "xvirobotics",
+    "repo": "metabot",
+    "fullName": "xvirobotics/metabot",
+    "stars": 799,
+    "license": "MIT",
+    "topics": [
+      "agent-native",
+      "agent-organization",
+      "ai-agent",
+      "anthropic",
+      "claude-agent-sdk",
+      "claude-code",
+      "feishu",
+      "feishu-bot",
+      "kimi",
+      "kimi-code",
+      "lark",
+      "metamemory",
+      "metaskill",
+      "moonshot",
+      "multi-agent",
+      "self-improving",
+      "task-scheduler",
+      "telegram-bot",
+      "voice-assistant",
+      "wechat-bot"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T10:29:22Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-xvirobotics-metabot",
+  "canonicalKey": "tool:github:xvirobotics/metabot",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "communication",
+      "productivity",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "communication",
+    "productivity",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "metabot is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with communication workflows.",
+      "Helps with productivity workflows.",
+      "Helps with coding workflows.",
+      "Relevant to agent-framework."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "构建受监督的、自我进化的 Agent 组织的基础设施 | Infrastructure for supervised, self-improving agent organization. 飞书/Telegram 手机端运行 Claude Code 或 Kimi Code（双引擎，两家原生订阅直接用），共享记忆、Agent 工厂、定时任务、通信总线。",
+    "Topics: agent-native, agent-organization, ai-agent, anthropic, claude-agent-sdk",
+    "GitHub stars: 799",
+    "Last pushed: 2026-05-25"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "metabot",
+  "publishedAt": "2026-05-25"
+}

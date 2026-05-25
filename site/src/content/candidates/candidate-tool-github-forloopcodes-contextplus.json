@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "contextplus",
+  "summary": "Semantic Intelligence for Large-Scale Engineering. Context+ is an MCP server designed for developers who demand 99% accuracy. By combining RAG, Tree-sitter AST, Spectral Clustering, and Obsidian-style linking, Context+ turns a massive codebase into a searchable, hierarchical feature graph.",
+  "sourceUrl": "https://github.com/forloopcodes/contextplus",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "forloopcodes",
+    "repo": "contextplus",
+    "fullName": "forloopcodes/contextplus",
+    "stars": 1905,
+    "license": "MIT",
+    "topics": [
+      "mcp-server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-02T06:48:20Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-forloopcodes-contextplus",
+  "canonicalKey": "tool:github:forloopcodes/contextplus",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "research"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "contextplus is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with research workflows.",
+      "Relevant to mcp.",
+      "Semantic Intelligence for Large-Scale Engineering. Context+ is an MCP server designed for developers who demand 99% accuracy. By combining RAG, Tree-sitter AST, Spectral Clustering, and Obsidian-style",
+      "Topics: mcp-server",
+      "GitHub stars: 1905"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Semantic Intelligence for Large-Scale Engineering. Context+ is an MCP server designed for developers who demand 99% accuracy. By combining RAG, Tree-sitter AST, Spectral Clustering, and Obsidian-style",
+    "Topics: mcp-server",
+    "GitHub stars: 1905",
+    "Last pushed: 2026-05-02"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "contextplus",
+  "publishedAt": "2026-05-25"
+}

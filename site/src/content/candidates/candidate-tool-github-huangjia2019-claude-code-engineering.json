@@ -1,0 +1,124 @@
+{
+  "type": "tool",
+  "title": "claude-code-engineering",
+  "summary": "This repository demonstrates how to use Claude Code to do real engineering work, not just writing code.  本项目是极客时间专栏 《Claude Code 工程化实战》 的官方配套示例仓库，目标很明确： 👉 把 Claude Code 从“对话式编码工具”，变成 可设计、可复用、可治理的工程系统。",
+  "sourceUrl": "https://github.com/huangjia2019/claude-code-engineering",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "huangjia2019",
+    "repo": "claude-code-engineering",
+    "fullName": "huangjia2019/claude-code-engineering",
+    "stars": 701,
+    "license": "",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "ai",
+      "claude",
+      "claude-code",
+      "claude-skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-24T01:13:52Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-huangjia2019-claude-code-engineering",
+  "canonicalKey": "tool:github:huangjia2019/claude-code-engineering",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "claude-code-engineering is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "This repository demonstrates how to use Claude Code to do real engineering work, not just writing code.  本项目是极客时间专栏 《Claude Code 工程化实战》 的官方配套示例仓库，目标很明确： 👉 把 Claude Code 从“对话式编码工具”，变成 可设计、可复用、可治理的工程系统",
+      "Topics: agent, agentic-ai, ai, claude, claude-code",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "claude-code-engineering-workflow-china",
+  "publishedAt": "2026-05-25",
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "local-review",
+  "extractedSignals": [
+    "This repository demonstrates how to use Claude Code to do real engineering work, not just writing code.  本项目是极客时间专栏 《Claude Code 工程化实战》 的官方配套示例仓库，目标很明确： 👉 把 Claude Code 从“对话式编码工具”，变成 可设计、可复用、可治理的工程系统",
+    "Topics: agent, agentic-ai, ai, claude, claude-code",
+    "GitHub stars: 701",
+    "Last pushed: 2026-05-24"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "jupyter-mcp-server",
+  "summary": "🪐 🔧 Model Context Protocol (MCP) Server for Jupyter.",
+  "sourceUrl": "https://github.com/datalayer/jupyter-mcp-server",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "datalayer",
+    "repo": "jupyter-mcp-server",
+    "fullName": "datalayer/jupyter-mcp-server",
+    "stars": 1122,
+    "license": "BSD-3-Clause",
+    "topics": [
+      "ai",
+      "jupyter",
+      "mcp",
+      "mcp-server",
+      "tools"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T12:27:16Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-datalayer-jupyter-mcp-server",
+  "canonicalKey": "tool:github:datalayer/jupyter-mcp-server",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "jupyter-mcp-server is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "🪐 🔧 Model Context Protocol (MCP) Server for Jupyter.",
+      "Topics: ai, jupyter, mcp, mcp-server, tools",
+      "GitHub stars: 1122"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "🪐 🔧 Model Context Protocol (MCP) Server for Jupyter.",
+    "Topics: ai, jupyter, mcp, mcp-server, tools",
+    "GitHub stars: 1122",
+    "Last pushed: 2026-05-13"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "jupyter-mcp-server",
+  "publishedAt": "2026-05-25"
+}

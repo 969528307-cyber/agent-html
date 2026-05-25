@@ -1,0 +1,69 @@
+{
+  "id": "pgschema",
+  "name": "pgschema",
+  "type": "cli",
+  "status": "published",
+  "summary": "Terraform-style, declarative schema migration CLI for Postgres. Agent friendly.",
+  "description": "Terraform-style, declarative schema migration CLI for Postgres. Agent friendly.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/pgplex/pgschema",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/pgplex/pgschema",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/pgplex/pgschema#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/pgplex/pgschema#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/pgplex/pgschema/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Terraform-style, declarative schema migration CLI for Postgres. Agent friendly.",
+    "Topics: cicd, cli, ddl, devops, gitops",
+    "GitHub stars: 923",
+    "Last pushed: 2026-04-30"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-04-30T02:40:10Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/pgplex/pgschema",
+  "repoUrl": "https://github.com/pgplex/pgschema",
+  "license": "Apache-2.0",
+  "stars": 923,
+  "lastUpdated": "2026-04-30T02:40:10Z",
+  "lastChecked": "2026-05-25",
+  "publishedAt": "2026-05-25",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

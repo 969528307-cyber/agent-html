@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "skills",
+  "summary": "Repository for skills to assist AI coding agents with .NET and C#",
+  "sourceUrl": "https://github.com/dotnet/skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "dotnet",
+    "repo": "skills",
+    "fullName": "dotnet/skills",
+    "stars": 3007,
+    "license": "MIT",
+    "topics": [
+      "agent-skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T02:15:08Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-dotnet-skills",
+  "canonicalKey": "tool:github:dotnet/skills",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Repository for skills to assist AI coding agents with .NET and C#",
+      "Topics: agent-skills",
+      "GitHub stars: 3007"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "skills",
+  "publishedAt": "2026-05-25",
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "local-review",
+  "extractedSignals": [
+    "Repository for skills to assist AI coding agents with .NET and C#",
+    "Topics: agent-skills",
+    "GitHub stars: 3007",
+    "Last pushed: 2026-05-25"
+  ]
+}

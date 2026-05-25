@@ -1,0 +1,142 @@
+{
+  "type": "tool",
+  "title": "moai-adk",
+  "summary": "SPEC-First Agentic Development Kit for Claude Code — 24 AI agents + 52 skills with TDD/DDD quality gates, 16-language projects, 4-language docs. Go CLI, zero deps.",
+  "sourceUrl": "https://github.com/modu-ai/moai-adk",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "modu-ai",
+    "repo": "moai-adk",
+    "fullName": "modu-ai/moai-adk",
+    "stars": 1030,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-teams",
+      "agentic-ai",
+      "agentic-coding",
+      "agentic-workflow",
+      "ai-agent",
+      "ai-coding",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "claudecode",
+      "cli-tool",
+      "code-quality",
+      "ddd",
+      "developer-tools",
+      "ears-format",
+      "multi-agent",
+      "spec-driven-development",
+      "spec-first",
+      "tdd",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T10:36:24Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-modu-ai-moai-adk",
+  "canonicalKey": "tool:github:modu-ai/moai-adk",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding",
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "moai-adk is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-app.",
+      "SPEC-First Agentic Development Kit for Claude Code — 24 AI agents + 52 skills with TDD/DDD quality gates, 16-language projects, 4-language docs. Go CLI, zero deps."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "SPEC-First Agentic Development Kit for Claude Code — 24 AI agents + 52 skills with TDD/DDD quality gates, 16-language projects, 4-language docs. Go CLI, zero deps.",
+    "Topics: agent-teams, agentic-ai, agentic-coding, agentic-workflow, ai-agent",
+    "GitHub stars: 1030",
+    "Last pushed: 2026-05-25"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "moai-adk",
+  "publishedAt": "2026-05-25"
+}

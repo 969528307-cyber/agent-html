@@ -1,0 +1,138 @@
+{
+  "type": "tool",
+  "title": "leon",
+  "summary": "🧠 Leon is your open-source personal assistant.",
+  "sourceUrl": "https://github.com/leon-ai/leon",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "leon-ai",
+    "repo": "leon",
+    "fullName": "leon-ai/leon",
+    "stars": 17258,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-assistant",
+      "artificial-intelligence",
+      "assistant",
+      "automation",
+      "bot",
+      "chatbot",
+      "leon",
+      "nodejs",
+      "offline",
+      "personal-assistant",
+      "privacy",
+      "python",
+      "speech-recognition",
+      "speech-synthesis",
+      "speech-to-text",
+      "text-to-speech",
+      "virtual-assistant",
+      "voice-assistant"
+    ],
+    "defaultBranch": "develop",
+    "lastPushedAt": "2026-05-19T15:40:16Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-leon-ai-leon",
+  "canonicalKey": "tool:github:leon-ai/leon",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "leon is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Relevant to agent-app.",
+      "🧠 Leon is your open-source personal assistant.",
+      "Topics: ai, ai-agent, ai-assistant, artificial-intelligence, assistant",
+      "GitHub stars: 17258"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "🧠 Leon is your open-source personal assistant.",
+    "Topics: ai, ai-agent, ai-assistant, artificial-intelligence, assistant",
+    "GitHub stars: 17258",
+    "Last pushed: 2026-05-19"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "leon",
+  "publishedAt": "2026-05-25"
+}

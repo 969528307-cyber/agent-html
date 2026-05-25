@@ -1,0 +1,126 @@
+{
+  "type": "tool",
+  "title": "vibetest-use",
+  "summary": "Vibetest MCP - automated QA testing using Browser-Use agents",
+  "sourceUrl": "https://github.com/browser-use/vibetest-use",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "browser-use",
+    "repo": "vibetest-use",
+    "fullName": "browser-use/vibetest-use",
+    "stars": 795,
+    "license": "",
+    "topics": [
+      "agents",
+      "browser",
+      "claude",
+      "cursor",
+      "mcp",
+      "mcp-server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-09-02T23:02:43Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-browser-use-vibetest-use",
+  "canonicalKey": "tool:github:browser-use/vibetest-use",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "testing"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "testing"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "vibetest-use is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with testing workflows.",
+      "Relevant to mcp.",
+      "Vibetest MCP - automated QA testing using Browser-Use agents",
+      "Topics: agents, browser, claude, cursor, mcp"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Vibetest MCP - automated QA testing using Browser-Use agents",
+    "Topics: agents, browser, claude, cursor, mcp",
+    "GitHub stars: 795",
+    "Last pushed: 2025-09-02"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "vibetest-use",
+  "publishedAt": "2026-05-25"
+}

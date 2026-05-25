@@ -1,0 +1,127 @@
+{
+  "type": "tool",
+  "title": "GenAI_Agents",
+  "summary": "50+ tutorials and implementations for Generative AI Agent techniques, from basic conversational bots to complex multi-agent systems.",
+  "sourceUrl": "https://github.com/NirDiamant/GenAI_Agents",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "NirDiamant",
+    "repo": "GenAI_Agents",
+    "fullName": "NirDiamant/GenAI_Agents",
+    "stars": 22193,
+    "license": "NOASSERTION",
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "genai",
+      "langchain",
+      "langgraph",
+      "llm",
+      "llms",
+      "multi-agent",
+      "openai",
+      "python",
+      "rag",
+      "tutorials"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-23T23:36:18Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-nirdiamant-genai-agents",
+  "canonicalKey": "tool:github:nirdiamant/genai_agents",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "tutorial",
+    "useCategory": [
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "tutorial",
+  "useCategory": [
+    "research"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "agent-framework",
+    "whatIsIt": "GenAI_Agents is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with research workflows.",
+      "Relevant to agent-framework.",
+      "50+ tutorials and implementations for Generative AI Agent techniques, from basic conversational bots to complex multi-agent systems.",
+      "Topics: agents, ai, ai-agents, genai, langchain",
+      "GitHub stars: 22193"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "50+ tutorials and implementations for Generative AI Agent techniques, from basic conversational bots to complex multi-agent systems.",
+    "Topics: agents, ai, ai-agents, genai, langchain",
+    "GitHub stars: 22193",
+    "Last pushed: 2026-05-23"
+  ]
+}

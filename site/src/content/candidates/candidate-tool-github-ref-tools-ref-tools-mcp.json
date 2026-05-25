@@ -1,0 +1,124 @@
+{
+  "type": "tool",
+  "title": "ref-tools-mcp",
+  "summary": "Helping coding agents never make mistakes working with public or private libraries without wasting the context window.",
+  "sourceUrl": "https://github.com/ref-tools/ref-tools-mcp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "ref-tools",
+    "repo": "ref-tools-mcp",
+    "fullName": "ref-tools/ref-tools-mcp",
+    "stars": 1111,
+    "license": "MIT",
+    "topics": [
+      "coding-agent",
+      "documentation-tool",
+      "mcp",
+      "mcp-server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-06T15:57:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-ref-tools-ref-tools-mcp",
+  "canonicalKey": "tool:github:ref-tools/ref-tools-mcp",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "ref-tools-mcp is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Helping coding agents never make mistakes working with public or private libraries without wasting the context window.",
+      "Topics: coding-agent, documentation-tool, mcp, mcp-server"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Helping coding agents never make mistakes working with public or private libraries without wasting the context window.",
+    "Topics: coding-agent, documentation-tool, mcp, mcp-server",
+    "GitHub stars: 1111",
+    "Last pushed: 2026-05-06"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ref-tools-mcp",
+  "publishedAt": "2026-05-25"
+}

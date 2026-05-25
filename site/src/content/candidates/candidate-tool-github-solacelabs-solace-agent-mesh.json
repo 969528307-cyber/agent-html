@@ -1,0 +1,142 @@
+{
+  "type": "tool",
+  "title": "solace-agent-mesh",
+  "summary": "An event-driven framework designed to build and orchestrate multi-agent AI systems. It enables seamless integration of AI agents with real-world data sources and systems, facilitating complex, multi-step workflows.",
+  "sourceUrl": "https://github.com/SolaceLabs/solace-agent-mesh",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "SolaceLabs",
+    "repo": "solace-agent-mesh",
+    "fullName": "SolaceLabs/solace-agent-mesh",
+    "stars": 4603,
+    "license": "Apache-2.0",
+    "topics": [
+      "a2a",
+      "agentframework",
+      "agentic",
+      "agentic-ai",
+      "agentic-framework",
+      "agentic-workflow",
+      "agenticai",
+      "agents",
+      "ai",
+      "ai-agents",
+      "aiagentframework",
+      "aiframework",
+      "enterprise",
+      "event-driven-architecture",
+      "framework",
+      "mcp",
+      "multi-agent",
+      "multi-agent-systems",
+      "multiagent",
+      "rag"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-22T19:12:31Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-solacelabs-solace-agent-mesh",
+  "canonicalKey": "tool:github:solacelabs/solace-agent-mesh",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "automation",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "automation",
+    "research"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "solace-agent-mesh is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows.",
+      "Relevant to agent-framework.",
+      "An event-driven framework designed to build and orchestrate multi-agent AI systems. It enables seamless integration of AI agents with real-world data sources and systems, facilitating complex, multi-s"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "An event-driven framework designed to build and orchestrate multi-agent AI systems. It enables seamless integration of AI agents with real-world data sources and systems, facilitating complex, multi-s",
+    "Topics: a2a, agentframework, agentic, agentic-ai, agentic-framework",
+    "GitHub stars: 4603",
+    "Last pushed: 2026-05-22"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "solace-agent-mesh",
+  "publishedAt": "2026-05-25"
+}

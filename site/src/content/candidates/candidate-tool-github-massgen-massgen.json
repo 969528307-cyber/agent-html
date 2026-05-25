@@ -1,0 +1,138 @@
+{
+  "type": "tool",
+  "title": "MassGen",
+  "summary": "🚀 MassGen is an open-source multi-agent scaling system that runs in your terminal, autonomously orchestrating frontier models and agents to collaborate, reason, and produce high-quality results. | Join us on Discord: discord.massgen.ai",
+  "sourceUrl": "https://github.com/massgen/MassGen",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "massgen",
+    "repo": "MassGen",
+    "fullName": "massgen/MassGen",
+    "stars": 1040,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "autonomous-agents",
+      "cli",
+      "collaborative-ai",
+      "conversational-ai",
+      "genai",
+      "generative-ai",
+      "llm",
+      "llm-orchestration",
+      "model-context-protocol",
+      "multi-agent",
+      "python",
+      "terminal-ui",
+      "test-time-scaling",
+      "tool-calling"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-23T02:20:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-massgen-massgen",
+  "canonicalKey": "tool:github:massgen/massgen",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "testing",
+      "automation",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "testing",
+    "automation",
+    "design"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "MassGen is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with testing workflows.",
+      "Helps with automation workflows.",
+      "Helps with design workflows.",
+      "Relevant to cli.",
+      "🚀 MassGen is an open-source multi-agent scaling system that runs in your terminal, autonomously orchestrating frontier models and agents to collaborate, reason, and produce high-quality results. | Jo"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "🚀 MassGen is an open-source multi-agent scaling system that runs in your terminal, autonomously orchestrating frontier models and agents to collaborate, reason, and produce high-quality results. | Jo",
+    "Topics: agent, agentic-ai, autonomous-agents, cli, collaborative-ai",
+    "GitHub stars: 1040",
+    "Last pushed: 2026-05-23"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "massgen",
+  "publishedAt": "2026-05-25"
+}

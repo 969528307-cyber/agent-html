@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "learn-harness-engineering",
+  "summary": "Harness engineering official style beginner tutorial, from 0 to 1",
+  "sourceUrl": "https://github.com/walkinglabs/learn-harness-engineering",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "walkinglabs",
+    "repo": "learn-harness-engineering",
+    "fullName": "walkinglabs/learn-harness-engineering",
+    "stars": 6378,
+    "license": "",
+    "topics": [
+      "agent",
+      "agentic",
+      "agentic-ai",
+      "ai",
+      "ai-agent",
+      "harness",
+      "harness-engineering",
+      "harness-framework",
+      "llm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-23T05:46:15Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-walkinglabs-learn-harness-engineering",
+  "canonicalKey": "tool:github:walkinglabs/learn-harness-engineering",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "tutorial",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "tutorial",
+  "useCategory": [],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "agent-app",
+    "whatIsIt": "learn-harness-engineering is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Harness engineering official style beginner tutorial, from 0 to 1",
+      "Topics: agent, agentic, agentic-ai, ai, ai-agent",
+      "GitHub stars: 6378"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Harness engineering official style beginner tutorial, from 0 to 1",
+    "Topics: agent, agentic, agentic-ai, ai, ai-agent",
+    "GitHub stars: 6378",
+    "Last pushed: 2026-05-23"
+  ]
+}

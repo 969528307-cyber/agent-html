@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "hermes-hud",
+  "summary": "TUI consciousness monitor for Hermes",
+  "sourceUrl": "https://github.com/joeynyc/hermes-hud",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "joeynyc",
+    "repo": "hermes-hud",
+    "fullName": "joeynyc/hermes-hud",
+    "stars": 815,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "dashboard",
+      "neofetch",
+      "python",
+      "terminal",
+      "textual",
+      "tui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-09T03:52:46Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-joeynyc-hermes-hud",
+  "canonicalKey": "tool:github:joeynyc/hermes-hud",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "hermes-hud is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "TUI consciousness monitor for Hermes",
+      "Topics: ai-agent, dashboard, neofetch, python, terminal",
+      "GitHub stars: 815"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "TUI consciousness monitor for Hermes",
+    "Topics: ai-agent, dashboard, neofetch, python, terminal",
+    "GitHub stars: 815",
+    "Last pushed: 2026-05-09"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "hermes-hud",
+  "publishedAt": "2026-05-25"
+}

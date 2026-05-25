@@ -1,0 +1,138 @@
+{
+  "type": "tool",
+  "title": "OpenSwarm",
+  "summary": "OpenSwarm — Autonomous AI dev team orchestrator powered by Claude Code CLI. Discord control, Linear integration, cognitive memory.",
+  "sourceUrl": "https://github.com/unohee/OpenSwarm",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "unohee",
+    "repo": "OpenSwarm",
+    "fullName": "unohee/OpenSwarm",
+    "stars": 787,
+    "license": "GPL-3.0",
+    "topics": [
+      "ai-agents",
+      "ai-coding",
+      "autonomous-agents",
+      "claude",
+      "claude-code",
+      "devops",
+      "discord-bot",
+      "linear",
+      "llm",
+      "multi-agent",
+      "orchestrator",
+      "pair-programming",
+      "typescript",
+      "vector-database"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-07T12:13:37Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-unohee-openswarm",
+  "canonicalKey": "tool:github:unohee/openswarm",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "database",
+      "devops",
+      "coding",
+      "memory"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "database",
+    "devops",
+    "coding",
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "OpenSwarm is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with database workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Helps with memory workflows.",
+      "Relevant to agent-framework."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "OpenSwarm — Autonomous AI dev team orchestrator powered by Claude Code CLI. Discord control, Linear integration, cognitive memory.",
+    "Topics: ai-agents, ai-coding, autonomous-agents, claude, claude-code",
+    "GitHub stars: 787",
+    "Last pushed: 2026-05-07"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openswarm",
+  "publishedAt": "2026-05-25"
+}

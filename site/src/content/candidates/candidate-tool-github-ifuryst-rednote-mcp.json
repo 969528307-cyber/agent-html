@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "RedNote-MCP",
+  "summary": "🚀MCP server for accessing RedNote(XiaoHongShu, xhs).",
+  "sourceUrl": "https://github.com/iFurySt/RedNote-MCP",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "iFurySt",
+    "repo": "RedNote-MCP",
+    "fullName": "iFurySt/RedNote-MCP",
+    "stars": 1056,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "mcp",
+      "mcp-server",
+      "rednote",
+      "rednote-mcp",
+      "xhs",
+      "xhs-mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-05-11T12:30:52Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-ifuryst-rednote-mcp",
+  "canonicalKey": "tool:github:ifuryst/rednote-mcp",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "RedNote-MCP is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "🚀MCP server for accessing RedNote(XiaoHongShu, xhs).",
+      "Topics: ai, mcp, mcp-server, rednote, rednote-mcp",
+      "GitHub stars: 1056"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "🚀MCP server for accessing RedNote(XiaoHongShu, xhs).",
+    "Topics: ai, mcp, mcp-server, rednote, rednote-mcp",
+    "GitHub stars: 1056",
+    "Last pushed: 2025-05-11"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "rednote-mcp",
+  "publishedAt": "2026-05-25"
+}

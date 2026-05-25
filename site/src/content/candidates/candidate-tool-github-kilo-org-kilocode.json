@@ -1,0 +1,130 @@
+{
+  "type": "tool",
+  "title": "kilocode",
+  "summary": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+  "sourceUrl": "https://github.com/Kilo-Org/kilocode",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "Kilo-Org",
+    "repo": "kilocode",
+    "fullName": "Kilo-Org/kilocode",
+    "stars": 19558,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-age",
+      "ai-coding",
+      "ai-developer-tools",
+      "chatgpt",
+      "claude",
+      "cli",
+      "gemini",
+      "jetbrains",
+      "sonnet",
+      "vscode",
+      "vscode-extension"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-24T22:31:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-kilo-org-kilocode",
+  "canonicalKey": "tool:github:kilo-org/kilocode",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "kilocode is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+      "Topics: ai, ai-age, ai-coding, ai-developer-tools, chatgpt",
+      "GitHub stars: 19558"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+    "Topics: ai, ai-age, ai-coding, ai-developer-tools, chatgpt",
+    "GitHub stars: 19558",
+    "Last pushed: 2026-05-24"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "kilocode",
+  "publishedAt": "2026-05-25"
+}

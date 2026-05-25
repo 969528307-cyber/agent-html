@@ -1,0 +1,142 @@
+{
+  "type": "tool",
+  "title": "obsidian-second-brain",
+  "summary": "Cross-CLI skill for Obsidian. Turns your vault into a living AI-first second brain across Claude Code, Codex CLI, Gemini CLI, and OpenCode. 32 commands, vault-first research, scheduled agents, write-time AI-first validator.",
+  "sourceUrl": "https://github.com/eugeniughelbur/obsidian-second-brain",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "eugeniughelbur",
+    "repo": "obsidian-second-brain",
+    "fullName": "eugeniughelbur/obsidian-second-brain",
+    "stars": 1338,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "ai-agents",
+      "ai-automation",
+      "ai-research",
+      "ai-tools",
+      "anthropic",
+      "claude",
+      "claude-ai",
+      "claude-code",
+      "claude-code-skill",
+      "claude-skill",
+      "knowledge-management",
+      "llm-tools",
+      "note-taking",
+      "obsidian",
+      "obsidian-md",
+      "obsidian-plugin",
+      "obsidian-skill",
+      "personal-knowledge-management",
+      "second-brain"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-24T13:45:52Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-eugeniughelbur-obsidian-second-brain",
+  "canonicalKey": "tool:github:eugeniughelbur/obsidian-second-brain",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation",
+    "research"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "obsidian-second-brain is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows.",
+      "Relevant to agent-app.",
+      "Cross-CLI skill for Obsidian. Turns your vault into a living AI-first second brain across Claude Code, Codex CLI, Gemini CLI, and OpenCode. 32 commands, vault-first research, scheduled agents, write-t"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Cross-CLI skill for Obsidian. Turns your vault into a living AI-first second brain across Claude Code, Codex CLI, Gemini CLI, and OpenCode. 32 commands, vault-first research, scheduled agents, write-t",
+    "Topics: ai-agent, ai-agents, ai-automation, ai-research, ai-tools",
+    "GitHub stars: 1338",
+    "Last pushed: 2026-05-24"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "obsidian-second-brain",
+  "publishedAt": "2026-05-25"
+}

@@ -1,0 +1,133 @@
+{
+  "type": "tool",
+  "title": "clawpanel",
+  "summary": "🦞 OpenClaw & Hermes Agent 多引擎 AI 管理面板 — 内置 AI 助手（工具调用 + 图片识别 + 多模态），一键安装 | Tauri v2 跨平台桌面应用 | 11 种语言",
+  "sourceUrl": "https://github.com/qingchencloud/clawpanel",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "qingchencloud",
+    "repo": "clawpanel",
+    "fullName": "qingchencloud/clawpanel",
+    "stars": 2758,
+    "license": "NOASSERTION",
+    "topics": [
+      "admin-panel",
+      "ai-agent",
+      "ai-assistant",
+      "ai-chat",
+      "ai-tools",
+      "chatgpt",
+      "cross-platform",
+      "deepseek",
+      "desktop-app",
+      "hermes-agent",
+      "llm",
+      "management-panel",
+      "multi-engine",
+      "openclaw",
+      "openclaw-panel",
+      "rust",
+      "tauri",
+      "tauri-v2",
+      "tool-calling",
+      "vite"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-24T11:06:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-qingchencloud-clawpanel",
+  "canonicalKey": "tool:github:qingchencloud/clawpanel",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "clawpanel is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "🦞 OpenClaw & Hermes Agent 多引擎 AI 管理面板 — 内置 AI 助手（工具调用 + 图片识别 + 多模态），一键安装 | Tauri v2 跨平台桌面应用 | 11 种语言",
+      "Topics: admin-panel, ai-agent, ai-assistant, ai-chat, ai-tools",
+      "GitHub stars: 2758"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "🦞 OpenClaw & Hermes Agent 多引擎 AI 管理面板 — 内置 AI 助手（工具调用 + 图片识别 + 多模态），一键安装 | Tauri v2 跨平台桌面应用 | 11 种语言",
+    "Topics: admin-panel, ai-agent, ai-assistant, ai-chat, ai-tools",
+    "GitHub stars: 2758",
+    "Last pushed: 2026-05-24"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "clawpanel",
+  "publishedAt": "2026-05-25"
+}

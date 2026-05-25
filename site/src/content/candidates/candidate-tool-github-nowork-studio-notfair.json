@@ -1,0 +1,126 @@
+{
+  "type": "tool",
+  "title": "NotFair",
+  "summary": "Open-source Claude Code skills for SEO, GEO, Google Ads, Meta Ads",
+  "sourceUrl": "https://github.com/nowork-studio/NotFair",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "nowork-studio",
+    "repo": "NotFair",
+    "fullName": "nowork-studio/NotFair",
+    "stars": 2639,
+    "license": "MIT",
+    "topics": [
+      "claude-code-plugin",
+      "claude-skills",
+      "geo",
+      "googleads",
+      "googleadsmcp",
+      "mcp",
+      "metaads",
+      "seo"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-24T18:00:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-nowork-studio-notfair",
+  "canonicalKey": "tool:github:nowork-studio/notfair",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "NotFair is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Open-source Claude Code skills for SEO, GEO, Google Ads, Meta Ads",
+      "Topics: claude-code-plugin, claude-skills, geo, googleads, googleadsmcp",
+      "GitHub stars: 2639"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Open-source Claude Code skills for SEO, GEO, Google Ads, Meta Ads",
+    "Topics: claude-code-plugin, claude-skills, geo, googleads, googleadsmcp",
+    "GitHub stars: 2639",
+    "Last pushed: 2026-05-24"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "notfair",
+  "publishedAt": "2026-05-25"
+}

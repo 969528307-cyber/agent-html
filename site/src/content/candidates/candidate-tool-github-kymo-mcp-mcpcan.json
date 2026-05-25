@@ -1,0 +1,139 @@
+{
+  "type": "tool",
+  "title": "mcpcan",
+  "summary": "MCPCAN is a centralized management platform for MCP services. It deploys each MCP service using a container deployment method. The platform supports container monitoring and MCP service token verification, solving security risks and enabling rapid deployment of MCP services. It uses SSE, STDIO, and ",
+  "sourceUrl": "https://github.com/Kymo-MCP/mcpcan",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Kymo-MCP",
+    "repo": "mcpcan",
+    "fullName": "Kymo-MCP/mcpcan",
+    "stars": 719,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "apitomcp",
+      "container",
+      "dify-synchronous",
+      "docker",
+      "helm",
+      "kubernetes",
+      "mcp",
+      "mcp-server",
+      "modelcontextprotocol",
+      "openai",
+      "openapi",
+      "opensource",
+      "platform",
+      "reddit",
+      "typescript",
+      "vue"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-03T03:15:31Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-kymo-mcp-mcpcan",
+  "canonicalKey": "tool:github:kymo-mcp/mcpcan",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "security",
+      "monitoring"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "security",
+    "monitoring"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "mcpcan is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with security workflows.",
+      "Helps with monitoring workflows.",
+      "Relevant to mcp.",
+      "MCPCAN is a centralized management platform for MCP services. It deploys each MCP service using a container deployment method. The platform supports container monitoring and MCP service token verifica"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "MCPCAN is a centralized management platform for MCP services. It deploys each MCP service using a container deployment method. The platform supports container monitoring and MCP service token verifica",
+    "Topics: ai, apitomcp, container, dify-synchronous, docker",
+    "GitHub stars: 719",
+    "Last pushed: 2026-04-03"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcpcan",
+  "publishedAt": "2026-05-25"
+}

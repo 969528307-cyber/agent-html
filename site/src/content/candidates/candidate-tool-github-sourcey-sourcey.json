@@ -1,0 +1,136 @@
+{
+  "type": "tool",
+  "title": "sourcey",
+  "summary": "Precision documentation from OpenAPI, MCP, Doxygen, and Markdown guides. Static HTML you own.",
+  "sourceUrl": "https://github.com/sourcey/sourcey",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "sourcey",
+    "repo": "sourcey",
+    "fullName": "sourcey/sourcey",
+    "stars": 1296,
+    "license": "AGPL-3.0",
+    "topics": [
+      "api-documentation",
+      "developer-tools",
+      "docs",
+      "documentation",
+      "documentation-generator",
+      "doxygen",
+      "godoc",
+      "llms-txt",
+      "mcp-server",
+      "openapi",
+      "openapi-documentation",
+      "openapi3",
+      "openapi31",
+      "static-site-generator",
+      "swagger",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-15T07:29:44Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-sourcey-sourcey",
+  "canonicalKey": "tool:github:sourcey/sourcey",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "sourcey is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Precision documentation from OpenAPI, MCP, Doxygen, and Markdown guides. Static HTML you own.",
+      "Topics: api-documentation, developer-tools, docs, documentation, documentation-generator"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Precision documentation from OpenAPI, MCP, Doxygen, and Markdown guides. Static HTML you own.",
+    "Topics: api-documentation, developer-tools, docs, documentation, documentation-generator",
+    "GitHub stars: 1296",
+    "Last pushed: 2026-05-15"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "sourcey",
+  "publishedAt": "2026-05-25"
+}

@@ -1,0 +1,127 @@
+{
+  "type": "tool",
+  "title": "vm0",
+  "summary": "Zero, your trustworthy AI teammate for real work. ",
+  "sourceUrl": "https://github.com/vm0-ai/vm0",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "vm0-ai",
+    "repo": "vm0",
+    "fullName": "vm0-ai/vm0",
+    "stars": 1114,
+    "license": "NOASSERTION",
+    "topics": [
+      "agentic-workflow",
+      "ai-agent",
+      "ai-runtime",
+      "ai-sandbox",
+      "claude-code",
+      "dev-tools",
+      "sandbox"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T10:37:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-vm0-ai-vm0",
+  "canonicalKey": "tool:github:vm0-ai/vm0",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "vm0 is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-app.",
+      "Zero, your trustworthy AI teammate for real work. ",
+      "Topics: agentic-workflow, ai-agent, ai-runtime, ai-sandbox, claude-code"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Zero, your trustworthy AI teammate for real work. ",
+    "Topics: agentic-workflow, ai-agent, ai-runtime, ai-sandbox, claude-code",
+    "GitHub stars: 1114",
+    "Last pushed: 2026-05-25"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "vm0",
+  "publishedAt": "2026-05-25"
+}

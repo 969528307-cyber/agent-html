@@ -1,0 +1,133 @@
+{
+  "type": "tool",
+  "title": "AgileRL",
+  "summary": "Streamlining reinforcement learning with RLOps. State-of-the-art RL algorithms and tools, with 10x faster training through evolutionary hyperparameter optimization.",
+  "sourceUrl": "https://github.com/AgileRL/AgileRL",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "AgileRL",
+    "repo": "AgileRL",
+    "fullName": "AgileRL/AgileRL",
+    "stars": 919,
+    "license": "Apache-2.0",
+    "topics": [
+      "agilerl",
+      "automl",
+      "deep-learning",
+      "deep-reinforcement-learning",
+      "distributed",
+      "evolutionary-algorithms",
+      "gym",
+      "hpo",
+      "hyperparameter-optimization",
+      "hyperparameter-tuning",
+      "machine-learning",
+      "mlops",
+      "multi-agent",
+      "multi-agent-reinforcement-learning",
+      "pettingzoo",
+      "python",
+      "pytorch",
+      "reinforcement-learning",
+      "rlops",
+      "training"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-23T10:30:37Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-agilerl-agilerl",
+  "canonicalKey": "tool:github:agilerl/agilerl",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "AgileRL is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "Streamlining reinforcement learning with RLOps. State-of-the-art RL algorithms and tools, with 10x faster training through evolutionary hyperparameter optimization.",
+      "Topics: agilerl, automl, deep-learning, deep-reinforcement-learning, distributed",
+      "GitHub stars: 919"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Streamlining reinforcement learning with RLOps. State-of-the-art RL algorithms and tools, with 10x faster training through evolutionary hyperparameter optimization.",
+    "Topics: agilerl, automl, deep-learning, deep-reinforcement-learning, distributed",
+    "GitHub stars: 919",
+    "Last pushed: 2026-05-23"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agilerl",
+  "publishedAt": "2026-05-25"
+}

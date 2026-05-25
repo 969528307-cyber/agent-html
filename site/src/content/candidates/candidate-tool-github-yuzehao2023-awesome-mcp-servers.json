@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "Awesome-MCP-Servers",
+  "summary": "A curated list of Model Context Protocol (MCP) servers ",
+  "sourceUrl": "https://github.com/YuzeHao2023/Awesome-MCP-Servers",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "YuzeHao2023",
+    "repo": "Awesome-MCP-Servers",
+    "fullName": "YuzeHao2023/Awesome-MCP-Servers",
+    "stars": 1045,
+    "license": "Apache-2.0",
+    "topics": [
+      "awesome",
+      "awesome-list",
+      "llm",
+      "mcp",
+      "mcp-server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-03T14:26:01Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-yuzehao2023-awesome-mcp-servers",
+  "canonicalKey": "tool:github:yuzehao2023/awesome-mcp-servers",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "awesome-list",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "awesome-list",
+  "useCategory": [],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "mcp",
+    "whatIsIt": "Awesome-MCP-Servers is an MCP-related awesome-list tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A curated list of Model Context Protocol (MCP) servers ",
+      "Topics: awesome, awesome-list, llm, mcp, mcp-server",
+      "GitHub stars: 1045"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "A curated list of Model Context Protocol (MCP) servers ",
+    "Topics: awesome, awesome-list, llm, mcp, mcp-server",
+    "GitHub stars: 1045",
+    "Last pushed: 2026-05-03"
+  ]
+}

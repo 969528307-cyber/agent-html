@@ -1,0 +1,138 @@
+{
+  "type": "tool",
+  "title": "FunASR",
+  "summary": "Industrial-grade speech recognition toolkit: 170x realtime, 50+ languages, speaker diarization, emotion detection, streaming, and OpenAI-compatible API.",
+  "sourceUrl": "https://github.com/modelscope/FunASR",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "modelscope",
+    "repo": "FunASR",
+    "fullName": "modelscope/FunASR",
+    "stars": 16254,
+    "license": "MIT",
+    "topics": [
+      "asr",
+      "audio",
+      "chinese",
+      "emotion-recognition",
+      "mcp-server",
+      "multilingual-asr",
+      "openai-compatible-api",
+      "paraformer",
+      "punctuation",
+      "pytorch",
+      "real-time",
+      "speaker-diarization",
+      "speech-recognition",
+      "speech-to-text",
+      "streaming-asr",
+      "transcription",
+      "vad",
+      "vllm",
+      "voice-activity-detection",
+      "whisper-alternative"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T05:56:42Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-modelscope-funasr",
+  "canonicalKey": "tool:github:modelscope/funasr",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "media"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "media"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "FunASR is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Relevant to mcp.",
+      "Industrial-grade speech recognition toolkit: 170x realtime, 50+ languages, speaker diarization, emotion detection, streaming, and OpenAI-compatible API.",
+      "Topics: asr, audio, chinese, emotion-recognition, mcp-server",
+      "GitHub stars: 16254"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Industrial-grade speech recognition toolkit: 170x realtime, 50+ languages, speaker diarization, emotion detection, streaming, and OpenAI-compatible API.",
+    "Topics: asr, audio, chinese, emotion-recognition, mcp-server",
+    "GitHub stars: 16254",
+    "Last pushed: 2026-05-25"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "funasr",
+  "publishedAt": "2026-05-25"
+}

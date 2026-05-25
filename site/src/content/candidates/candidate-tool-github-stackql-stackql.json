@@ -1,0 +1,143 @@
+{
+  "type": "tool",
+  "title": "stackql",
+  "summary": "Query, provision and operate Cloud and SaaS resources and APIs using an extensible SQL based framework",
+  "sourceUrl": "https://github.com/stackql/stackql",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "stackql",
+    "repo": "stackql",
+    "fullName": "stackql/stackql",
+    "stars": 843,
+    "license": "MIT",
+    "topics": [
+      "asset-management",
+      "cloud",
+      "cloud-automation",
+      "cloud-config",
+      "cloud-operations",
+      "cloud-security",
+      "cspm",
+      "devops",
+      "devsecops",
+      "hacktoberfest",
+      "identity-governance",
+      "iga",
+      "infrastructure-as-code",
+      "mcp-server",
+      "openapi3",
+      "sql",
+      "stackql"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T10:28:58Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-stackql-stackql",
+  "canonicalKey": "tool:github:stackql/stackql",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "database",
+      "devops",
+      "security",
+      "coding",
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "database",
+    "devops",
+    "security",
+    "coding",
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "stackql is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with database workflows.",
+      "Helps with devops workflows.",
+      "Helps with security workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Query, provision and operate Cloud and SaaS resources and APIs using an extensible SQL based framework",
+    "Topics: asset-management, cloud, cloud-automation, cloud-config, cloud-operations",
+    "GitHub stars: 843",
+    "Last pushed: 2026-05-25"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "stackql",
+  "publishedAt": "2026-05-25"
+}

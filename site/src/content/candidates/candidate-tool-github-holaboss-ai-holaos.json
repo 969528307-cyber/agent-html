@@ -1,0 +1,140 @@
+{
+  "type": "tool",
+  "title": "holaOS",
+  "summary": "Turn repeat work into running AI work-streams.",
+  "sourceUrl": "https://github.com/holaboss-ai/holaOS",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "holaboss-ai",
+    "repo": "holaOS",
+    "fullName": "holaboss-ai/holaOS",
+    "stars": 5557,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "agent-harness",
+      "agent-os",
+      "agentic",
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "artificial-intelligence",
+      "electron",
+      "holaboss",
+      "holaos",
+      "llm",
+      "mcp",
+      "memory",
+      "model-context-protocol",
+      "proactive",
+      "proactive-ai",
+      "runtime",
+      "typescript",
+      "workspace"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T10:07:16Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-holaboss-ai-holaos",
+  "canonicalKey": "tool:github:holaboss-ai/holaos",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "holaOS is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with memory workflows.",
+      "Relevant to agent-app.",
+      "Turn repeat work into running AI work-streams.",
+      "Topics: agent, agent-harness, agent-os, agentic, ai"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Turn repeat work into running AI work-streams.",
+    "Topics: agent, agent-harness, agent-os, agentic, ai",
+    "GitHub stars: 5557",
+    "Last pushed: 2026-05-25"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "holaos",
+  "publishedAt": "2026-05-25"
+}

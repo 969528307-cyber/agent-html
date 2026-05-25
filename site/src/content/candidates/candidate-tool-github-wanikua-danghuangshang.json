@@ -1,0 +1,138 @@
+{
+  "type": "tool",
+  "title": "danghuangshang",
+  "summary": "AI 朝廷搭建完整教程 - 从零基础到进阶",
+  "sourceUrl": "https://github.com/wanikua/danghuangshang",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "wanikua",
+    "repo": "danghuangshang",
+    "fullName": "wanikua/danghuangshang",
+    "stars": 2656,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "ai-collaboration",
+      "ai-court",
+      "ai-orchestration",
+      "ancient-china",
+      "autonomous-agents",
+      "clawdbot",
+      "discord",
+      "discord-bot",
+      "imperial-china",
+      "liu-bu-zhi",
+      "llm",
+      "ming-dynasty",
+      "multi-agent",
+      "openclaw",
+      "san-sheng-liu-bu",
+      "six-ministries",
+      "tutorial",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-22T12:41:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-wanikua-danghuangshang",
+  "canonicalKey": "tool:github:wanikua/danghuangshang",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "danghuangshang is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with automation workflows.",
+      "Relevant to agent-framework.",
+      "AI 朝廷搭建完整教程 - 从零基础到进阶",
+      "Topics: ai, ai-agents, ai-collaboration, ai-court, ai-orchestration",
+      "GitHub stars: 2656"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "AI 朝廷搭建完整教程 - 从零基础到进阶",
+    "Topics: ai, ai-agents, ai-collaboration, ai-court, ai-orchestration",
+    "GitHub stars: 2656",
+    "Last pushed: 2026-05-22"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "danghuangshang",
+  "publishedAt": "2026-05-25"
+}

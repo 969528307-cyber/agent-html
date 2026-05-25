@@ -1,0 +1,142 @@
+{
+  "type": "tool",
+  "title": "claude-codex-settings",
+  "summary": "My personal Claude Code and OpenAI Codex setup with battle-tested skills, plugins, hooks and agents that I use daily.",
+  "sourceUrl": "https://github.com/fcakyon/claude-codex-settings",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "fcakyon",
+    "repo": "claude-codex-settings",
+    "fullName": "fcakyon/claude-codex-settings",
+    "stars": 705,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "ai-tools",
+      "claude-ai",
+      "claude-code",
+      "claude-code-plugin",
+      "claude-skills",
+      "claudecode",
+      "claudecode-config",
+      "codex",
+      "codex-cli",
+      "commit-message",
+      "cursor",
+      "dokploy",
+      "frontend-design",
+      "gemini-cli",
+      "github",
+      "hetzner",
+      "plugin",
+      "pull-requests",
+      "slack"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-09T12:49:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-fcakyon-claude-codex-settings",
+  "canonicalKey": "tool:github:fcakyon/claude-codex-settings",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "coding",
+      "design"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "coding",
+    "design"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "claude-codex-settings is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "My personal Claude Code and OpenAI Codex setup with battle-tested skills, plugins, hooks and agents that I use daily."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "My personal Claude Code and OpenAI Codex setup with battle-tested skills, plugins, hooks and agents that I use daily.",
+    "Topics: ai-agents, ai-tools, claude-ai, claude-code, claude-code-plugin",
+    "GitHub stars: 705",
+    "Last pushed: 2026-05-09"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-codex-settings",
+  "publishedAt": "2026-05-25"
+}

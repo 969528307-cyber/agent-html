@@ -1,0 +1,124 @@
+{
+  "type": "tool",
+  "title": "awesome-multi-agent-papers",
+  "summary": "A compilation of the best multi-agent papers",
+  "sourceUrl": "https://github.com/kyegomez/awesome-multi-agent-papers",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "kyegomez",
+    "repo": "awesome-multi-agent-papers",
+    "fullName": "kyegomez/awesome-multi-agent-papers",
+    "stars": 1494,
+    "license": "NOASSERTION",
+    "topics": [
+      "agents",
+      "agents-team",
+      "attention",
+      "autogen",
+      "autonomous-agents",
+      "crewai",
+      "langgraph",
+      "llms",
+      "multi-agent",
+      "multiagent",
+      "swarm",
+      "swarms",
+      "swarms-of-agents",
+      "transformers",
+      "transformers-models"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T12:54:21Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-kyegomez-awesome-multi-agent-papers",
+  "canonicalKey": "tool:github:kyegomez/awesome-multi-agent-papers",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "awesome-list",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "awesome-list",
+  "useCategory": [],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "agent-framework",
+    "whatIsIt": "awesome-multi-agent-papers is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "A compilation of the best multi-agent papers",
+      "Topics: agents, agents-team, attention, autogen, autonomous-agents",
+      "GitHub stars: 1494"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "A compilation of the best multi-agent papers",
+    "Topics: agents, agents-team, attention, autogen, autonomous-agents",
+    "GitHub stars: 1494",
+    "Last pushed: 2026-05-17"
+  ]
+}

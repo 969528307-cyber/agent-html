@@ -1,0 +1,131 @@
+{
+  "type": "tool",
+  "title": "Awesome-Agent-Skills-for-Empirical-Research",
+  "summary": "🔬 A curated collection of 23,000+ agent skills for empirical research across 8 social science disciplines. | 精选 23,000+ AI Agent 技能库，覆盖8大社会科学学科的实证研究。CoPaper.AI 20分钟完成一篇可复现的规范实证论文，并支持用户上传 Skills。-- Maintained by CoPaper.AI from Stanford REAP.",
+  "sourceUrl": "https://github.com/brycewang-stanford/Awesome-Agent-Skills-for-Empirical-Research",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "brycewang-stanford",
+    "repo": "Awesome-Agent-Skills-for-Empirical-Research",
+    "fullName": "brycewang-stanford/Awesome-Agent-Skills-for-Empirical-Research",
+    "stars": 1211,
+    "license": "NOASSERTION",
+    "topics": [
+      "academic-research",
+      "agent-skills",
+      "ai-agent",
+      "awesome-list",
+      "communication",
+      "copaper",
+      "economics",
+      "education",
+      "empirical-research",
+      "international-relations",
+      "political-science",
+      "psychology",
+      "public-administration",
+      "reproducible-research",
+      "skills-library",
+      "social-science",
+      "sociology"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T10:08:07Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-brycewang-stanford-awesome-agent-skills-for-empirical-research",
+  "canonicalKey": "tool:github:brycewang-stanford/awesome-agent-skills-for-empirical-research",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "research"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "Awesome-Agent-Skills-for-Empirical-Research is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with research workflows.",
+      "Relevant to skill.",
+      "🔬 A curated collection of 23,000+ agent skills for empirical research across 8 social science disciplines. | 精选 23,000+ AI Agent 技能库，覆盖8大社会科学学科的实证研究。CoPaper.AI 20分钟完成一篇可复现的规范实证论文，并支持用户上传 Skills。-- Ma",
+      "Topics: academic-research, agent-skills, ai-agent, awesome-list, communication",
+      "GitHub stars: 1211"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "🔬 A curated collection of 23,000+ agent skills for empirical research across 8 social science disciplines. | 精选 23,000+ AI Agent 技能库，覆盖8大社会科学学科的实证研究。CoPaper.AI 20分钟完成一篇可复现的规范实证论文，并支持用户上传 Skills。-- Ma",
+    "Topics: academic-research, agent-skills, ai-agent, awesome-list, communication",
+    "GitHub stars: 1211",
+    "Last pushed: 2026-05-25"
+  ]
+}

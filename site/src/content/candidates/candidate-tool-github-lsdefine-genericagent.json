@@ -1,0 +1,139 @@
+{
+  "type": "tool",
+  "title": "GenericAgent",
+  "summary": "Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system control with 6x less token consumption",
+  "sourceUrl": "https://github.com/lsdefine/GenericAgent",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "lsdefine",
+    "repo": "GenericAgent",
+    "fullName": "lsdefine/GenericAgent",
+    "stars": 12054,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "automation",
+      "autonomous-agent",
+      "browser-automation",
+      "claude",
+      "computer-control",
+      "desktop-automation",
+      "gemini",
+      "lightweight",
+      "llm-agent",
+      "memory-system",
+      "python",
+      "self-evolving",
+      "skill-tree",
+      "task-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T05:29:14Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-lsdefine-genericagent",
+  "canonicalKey": "tool:github:lsdefine/genericagent",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "productivity",
+      "automation",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "productivity",
+    "automation",
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "GenericAgent is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with productivity workflows.",
+      "Helps with automation workflows.",
+      "Helps with memory workflows.",
+      "Relevant to agent-app."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system control with 6x less token consumption",
+    "Topics: ai-agent, automation, autonomous-agent, browser-automation, claude",
+    "GitHub stars: 12054",
+    "Last pushed: 2026-05-25"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "genericagent",
+  "publishedAt": "2026-05-25"
+}

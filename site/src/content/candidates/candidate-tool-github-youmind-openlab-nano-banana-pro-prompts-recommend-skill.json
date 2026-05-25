@@ -1,0 +1,134 @@
+{
+  "type": "tool",
+  "title": "nano-banana-pro-prompts-recommend-skill",
+  "summary": "AI skill for OpenClaw & Claude Code — recommend from 10000+ Nano Banana Pro (Gemini) image prompts. Smart search by use case, content remix, sample images.",
+  "sourceUrl": "https://github.com/YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "YouMind-OpenLab",
+    "repo": "nano-banana-pro-prompts-recommend-skill",
+    "fullName": "YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill",
+    "stars": 1599,
+    "license": "",
+    "topics": [
+      "ai-agent",
+      "ai-image",
+      "claude-code-skill",
+      "clawhub",
+      "content-creation",
+      "gemini",
+      "image-generation",
+      "nano-banana",
+      "openclaw",
+      "openclaw-skill",
+      "prompt-engineering",
+      "prompt-library"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T04:26:01Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-youmind-openlab-nano-banana-pro-prompts-recommend-skill",
+  "canonicalKey": "tool:github:youmind-openlab/nano-banana-pro-prompts-recommend-skill",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "media",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "media",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "nano-banana-pro-prompts-recommend-skill is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to agent-app.",
+      "AI skill for OpenClaw & Claude Code — recommend from 10000+ Nano Banana Pro (Gemini) image prompts. Smart search by use case, content remix, sample images."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "AI skill for OpenClaw & Claude Code — recommend from 10000+ Nano Banana Pro (Gemini) image prompts. Smart search by use case, content remix, sample images.",
+    "Topics: ai-agent, ai-image, claude-code-skill, clawhub, content-creation",
+    "GitHub stars: 1599",
+    "Last pushed: 2026-05-25"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nano-banana-pro-prompts-recommend-skill",
+  "publishedAt": "2026-05-25"
+}

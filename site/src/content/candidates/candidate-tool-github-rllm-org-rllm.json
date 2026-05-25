@@ -1,0 +1,138 @@
+{
+  "type": "tool",
+  "title": "rllm",
+  "summary": "Democratizing Reinforcement Learning for LLMs",
+  "sourceUrl": "https://github.com/rllm-org/rllm",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "rllm-org",
+    "repo": "rllm",
+    "fullName": "rllm-org/rllm",
+    "stars": 5562,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-framework",
+      "agentic-workflow",
+      "coding-agent",
+      "distributed-training",
+      "llm-reasoning",
+      "llm-training",
+      "machine-learning",
+      "ml-infrastructure",
+      "ml-platform",
+      "reinforcement-learning",
+      "search-agent",
+      "swe-agent",
+      "tinker",
+      "verl"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-22T23:13:51Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-rllm-org-rllm",
+  "canonicalKey": "tool:github:rllm-org/rllm",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "devops",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "devops",
+    "coding",
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "rllm is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-framework."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Democratizing Reinforcement Learning for LLMs",
+    "Topics: agent-framework, agentic-workflow, coding-agent, distributed-training, llm-reasoning",
+    "GitHub stars: 5562",
+    "Last pushed: 2026-05-22"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "rllm",
+  "publishedAt": "2026-05-25"
+}

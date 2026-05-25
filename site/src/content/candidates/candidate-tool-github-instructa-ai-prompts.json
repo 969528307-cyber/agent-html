@@ -1,0 +1,124 @@
+{
+  "type": "tool",
+  "title": "ai-prompts",
+  "summary": "Curated AI Prompts for Cursor Rules, Cline, Windsurf and Github Copilot",
+  "sourceUrl": "https://github.com/instructa/ai-prompts",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "instructa",
+    "repo": "ai-prompts",
+    "fullName": "instructa/ai-prompts",
+    "stars": 1041,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "ai-agent",
+      "ai-prompts",
+      "cline",
+      "copilot",
+      "cursor",
+      "cursor-ai",
+      "github-copilot",
+      "prompting",
+      "prompts",
+      "windsurf"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-13T11:42:58Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-instructa-ai-prompts",
+  "canonicalKey": "tool:github:instructa/ai-prompts",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "ai-prompts is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Curated AI Prompts for Cursor Rules, Cline, Windsurf and Github Copilot",
+      "Topics: agent, ai-agent, ai-prompts, cline, copilot",
+      "GitHub stars: 1041"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Curated AI Prompts for Cursor Rules, Cline, Windsurf and Github Copilot",
+    "Topics: agent, ai-agent, ai-prompts, cline, copilot",
+    "GitHub stars: 1041",
+    "Last pushed: 2026-05-13"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ai-prompts",
+  "publishedAt": "2026-05-25"
+}

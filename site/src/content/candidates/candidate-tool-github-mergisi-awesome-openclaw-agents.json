@@ -1,0 +1,144 @@
+{
+  "type": "tool",
+  "title": "awesome-openclaw-agents",
+  "summary": "162 production-ready AI agent templates for OpenClaw. SOUL.md configs across 19 categories. Submit yours!",
+  "sourceUrl": "https://github.com/mergisi/awesome-openclaw-agents",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "mergisi",
+    "repo": "awesome-openclaw-agents",
+    "fullName": "mergisi/awesome-openclaw-agents",
+    "stars": 3449,
+    "license": "MIT",
+    "topics": [
+      "ai-agent-templates",
+      "ai-agents",
+      "ai-automation",
+      "anthropic",
+      "automation",
+      "awesome",
+      "awesome-list",
+      "claude",
+      "community-agents",
+      "crewclaw",
+      "docker",
+      "llm",
+      "mcp",
+      "multi-agent",
+      "no-code",
+      "openclaw",
+      "productivity",
+      "soul-md",
+      "submit-your-agent",
+      "telegram-bot"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T10:21:05Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-mergisi-awesome-openclaw-agents",
+  "canonicalKey": "tool:github:mergisi/awesome-openclaw-agents",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "awesome-list",
+    "useCategory": [
+      "devops",
+      "communication",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "awesome-list",
+  "useCategory": [
+    "devops",
+    "communication",
+    "coding",
+    "automation"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "agent-framework",
+    "whatIsIt": "awesome-openclaw-agents is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-framework."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "openclaw-agent-template-ecosystem",
+  "publishedAt": "2026-05-25",
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "local-review",
+  "extractedSignals": [
+    "162 production-ready AI agent templates for OpenClaw. SOUL.md configs across 19 categories. Submit yours!",
+    "Topics: ai-agent-templates, ai-agents, ai-automation, anthropic, automation",
+    "GitHub stars: 3449",
+    "Last pushed: 2026-05-25"
+  ]
+}

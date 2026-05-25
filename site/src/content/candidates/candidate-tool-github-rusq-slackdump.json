@@ -1,0 +1,130 @@
+{
+  "type": "tool",
+  "title": "slackdump",
+  "summary": "Save or export your private and public Slack messages, threads, files, and users locally without admin privileges.",
+  "sourceUrl": "https://github.com/rusq/slackdump",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "rusq",
+    "repo": "slackdump",
+    "fullName": "rusq/slackdump",
+    "stars": 2603,
+    "license": "AGPL-3.0",
+    "topics": [
+      "archive",
+      "backup",
+      "channels",
+      "dump",
+      "dumper",
+      "mattermost",
+      "mattermost-app",
+      "mcp-server",
+      "migration-tool",
+      "slack",
+      "slack-exports",
+      "slackdump"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-23T11:14:28Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-rusq-slackdump",
+  "canonicalKey": "tool:github:rusq/slackdump",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "slackdump is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Relevant to mcp.",
+      "Save or export your private and public Slack messages, threads, files, and users locally without admin privileges.",
+      "Topics: archive, backup, channels, dump, dumper",
+      "GitHub stars: 2603"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Save or export your private and public Slack messages, threads, files, and users locally without admin privileges.",
+    "Topics: archive, backup, channels, dump, dumper",
+    "GitHub stars: 2603",
+    "Last pushed: 2026-05-23"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "slackdump",
+  "publishedAt": "2026-05-25"
+}

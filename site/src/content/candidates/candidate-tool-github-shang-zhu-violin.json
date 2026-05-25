@@ -1,0 +1,124 @@
+{
+  "type": "tool",
+  "title": "violin",
+  "summary": "Open-source Video Translation Skill",
+  "sourceUrl": "https://github.com/shang-zhu/violin",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "shang-zhu",
+    "repo": "violin",
+    "fullName": "shang-zhu/violin",
+    "stars": 813,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "asr",
+      "dubbing",
+      "video-translation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T01:51:24Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-shang-zhu-violin",
+  "canonicalKey": "tool:github:shang-zhu/violin",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "translation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "translation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "violin is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with translation workflows.",
+      "Relevant to skill.",
+      "Open-source Video Translation Skill",
+      "Topics: agent-skills, asr, dubbing, video-translation"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Open-source Video Translation Skill",
+    "Topics: agent-skills, asr, dubbing, video-translation",
+    "GitHub stars: 813",
+    "Last pushed: 2026-05-19"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "violin",
+  "publishedAt": "2026-05-25"
+}

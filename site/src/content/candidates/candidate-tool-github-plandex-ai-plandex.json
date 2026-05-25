@@ -1,0 +1,136 @@
+{
+  "type": "tool",
+  "title": "plandex",
+  "summary": "Open source AI coding agent. Designed for large projects and real world tasks.",
+  "sourceUrl": "https://github.com/plandex-ai/plandex",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "plandex-ai",
+    "repo": "plandex",
+    "fullName": "plandex-ai/plandex",
+    "stars": 15393,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "ai-developer-tools",
+      "ai-tools",
+      "cli",
+      "command-line",
+      "developer-tools",
+      "git",
+      "golang",
+      "gpt-4",
+      "llm",
+      "openai",
+      "polyglot-programming",
+      "terminal",
+      "terminal-based",
+      "terminal-ui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-10-03T21:49:58Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-plandex-ai-plandex",
+  "canonicalKey": "tool:github:plandex-ai/plandex",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "design"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "plandex is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to cli.",
+      "Open source AI coding agent. Designed for large projects and real world tasks.",
+      "Topics: ai, ai-agents, ai-developer-tools, ai-tools, cli"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Open source AI coding agent. Designed for large projects and real world tasks.",
+    "Topics: ai, ai-agents, ai-developer-tools, ai-tools, cli",
+    "GitHub stars: 15393",
+    "Last pushed: 2025-10-03"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "plandex",
+  "publishedAt": "2026-05-25"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "radar",
+  "name": "radar",
+  "type": "mcp",
+  "status": "published",
+  "summary": "The missing open source Kubernetes UI. Topology, event timeline, and service traffic — plus resource browsing and Helm management.",
+  "description": "The missing open source Kubernetes UI. Topology, event timeline, and service traffic — plus resource browsing and Helm management.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/skyhook-io/radar",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/skyhook-io/radar",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/skyhook-io/radar#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/skyhook-io/radar#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/skyhook-io/radar/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The missing open source Kubernetes UI. Topology, event timeline, and service traffic — plus resource browsing and Helm management.",
+    "Topics: argocd, cloud-native, gitops, helm, k8s",
+    "GitHub stars: 2113",
+    "Last pushed: 2026-05-25"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-25T09:13:44Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/skyhook-io/radar",
+  "repoUrl": "https://github.com/skyhook-io/radar",
+  "license": "Apache-2.0",
+  "stars": 2113,
+  "lastUpdated": "2026-05-25T09:13:44Z",
+  "lastChecked": "2026-05-25",
+  "publishedAt": "2026-05-25",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

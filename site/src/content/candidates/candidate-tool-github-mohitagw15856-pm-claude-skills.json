@@ -1,0 +1,121 @@
+{
+  "type": "tool",
+  "title": "pm-claude-skills",
+  "summary": "Professional skills for Claude AI — 135 skills across 16 professions. Save 8-10 hours per week. PM stands for Professional.",
+  "sourceUrl": "https://github.com/mohitagw15856/pm-claude-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "mohitagw15856",
+    "repo": "pm-claude-skills",
+    "fullName": "mohitagw15856/pm-claude-skills",
+    "stars": 879,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "claude",
+      "claude-ai",
+      "claude-skill",
+      "claude-skills",
+      "product-management",
+      "productivity",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T12:29:33Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-mohitagw15856-pm-claude-skills",
+  "canonicalKey": "tool:github:mohitagw15856/pm-claude-skills",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "pm-claude-skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Professional skills for Claude AI — 135 skills across 16 professions. Save 8-10 hours per week. PM stands for Professional.",
+      "Topics: ai, claude, claude-ai, claude-skill, claude-skills",
+      "GitHub stars: 879"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Professional skills for Claude AI — 135 skills across 16 professions. Save 8-10 hours per week. PM stands for Professional.",
+    "Topics: ai, claude, claude-ai, claude-skill, claude-skills",
+    "GitHub stars: 879",
+    "Last pushed: 2026-05-20"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pm-claude-skills",
+  "publishedAt": "2026-05-25"
+}

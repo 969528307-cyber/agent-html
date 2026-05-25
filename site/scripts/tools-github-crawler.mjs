@@ -226,15 +226,21 @@ const buildCandidateFromRepo = (repo, config) => {
     discoveredAt: new Date().toISOString().slice(0, 10),
     lastChecked: new Date().toISOString().slice(0, 10),
     reviewScore: {
-      sourceTrust: 3,
+      sourceTrust: 4,
       usefulness: 3,
-      agentRelevance: 3,
-      verifiability: 3,
+      agentRelevance: 4,
+      verifiability: 4,
       freshness: 3,
       editorialValue: 3,
       permission: 3,
     },
     reviewNotes: "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+    extractedSignals: [
+      repo.description?.slice(0, 200),
+      `Topics: ${rawTopics.slice(0, 5).join(", ")}`,
+      `GitHub stars: ${repo.stargazers_count || 0}`,
+      `Last pushed: ${repo.pushed_at?.slice(0, 10) || "unknown"}`,
+    ].filter(Boolean),
   };
 };
 

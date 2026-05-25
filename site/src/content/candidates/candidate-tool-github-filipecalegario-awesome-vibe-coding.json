@@ -1,0 +1,123 @@
+{
+  "type": "tool",
+  "title": "awesome-vibe-coding",
+  "summary": "A curated list of vibe coding references, collaborating with AI to write code.",
+  "sourceUrl": "https://github.com/filipecalegario/awesome-vibe-coding",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "filipecalegario",
+    "repo": "awesome-vibe-coding",
+    "fullName": "filipecalegario/awesome-vibe-coding",
+    "stars": 4526,
+    "license": "CC0-1.0",
+    "topics": [
+      "ai-agent",
+      "ai-agents",
+      "ai-coding-assistant",
+      "ai-coding-tools",
+      "awesome",
+      "awesome-list",
+      "cursor",
+      "lovable",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-16T01:34:11Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-filipecalegario-awesome-vibe-coding",
+  "canonicalKey": "tool:github:filipecalegario/awesome-vibe-coding",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "awesome-list",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "awesome-list",
+  "useCategory": [
+    "coding"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "agent-app",
+    "whatIsIt": "awesome-vibe-coding is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to agent-app.",
+      "A curated list of vibe coding references, collaborating with AI to write code.",
+      "Topics: ai-agent, ai-agents, ai-coding-assistant, ai-coding-tools, awesome",
+      "GitHub stars: 4526"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "A curated list of vibe coding references, collaborating with AI to write code.",
+    "Topics: ai-agent, ai-agents, ai-coding-assistant, ai-coding-tools, awesome",
+    "GitHub stars: 4526",
+    "Last pushed: 2026-04-16"
+  ]
+}

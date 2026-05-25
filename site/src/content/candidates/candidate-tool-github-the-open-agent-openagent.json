@@ -1,0 +1,143 @@
+{
+  "type": "tool",
+  "title": "openagent",
+  "summary": "⚡️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org",
+  "sourceUrl": "https://github.com/the-open-agent/openagent",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "the-open-agent",
+    "repo": "openagent",
+    "fullName": "the-open-agent/openagent",
+    "stars": 4937,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agentic",
+      "agentic-ai",
+      "agi",
+      "chatbot",
+      "chatgpt",
+      "gpt",
+      "harness",
+      "hermes-agent",
+      "knowledge-base",
+      "langchain",
+      "llm",
+      "mcp",
+      "model-context-protocol",
+      "multi-agent",
+      "openagent",
+      "openai",
+      "openclaw",
+      "rag"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-24T10:44:35Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-the-open-agent-openagent",
+  "canonicalKey": "tool:github:the-open-agent/openagent",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "media",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "media",
+    "coding",
+    "research"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "openagent is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to agent-framework."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "⚡️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org",
+    "Topics: agent, agentic, agentic-ai, agi, chatbot",
+    "GitHub stars: 4937",
+    "Last pushed: 2026-05-24"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openagent",
+  "publishedAt": "2026-05-25"
+}

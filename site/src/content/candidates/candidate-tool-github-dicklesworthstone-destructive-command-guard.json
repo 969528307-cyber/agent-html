@@ -1,0 +1,126 @@
+{
+  "type": "tool",
+  "title": "destructive_command_guard",
+  "summary": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+  "sourceUrl": "https://github.com/Dicklesworthstone/destructive_command_guard",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "Dicklesworthstone",
+    "repo": "destructive_command_guard",
+    "fullName": "Dicklesworthstone/destructive_command_guard",
+    "stars": 1057,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-agents",
+      "cli",
+      "developer-tools",
+      "git",
+      "rust",
+      "safety"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T03:05:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-dicklesworthstone-destructive-command-guard",
+  "canonicalKey": "tool:github:dicklesworthstone/destructive_command_guard",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "security",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "security",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "destructive_command_guard is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with coding workflows.",
+      "Relevant to cli.",
+      "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+      "Topics: ai-agents, cli, developer-tools, git, rust"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+    "Topics: ai-agents, cli, developer-tools, git, rust",
+    "GitHub stars: 1057",
+    "Last pushed: 2026-05-25"
+  ],
+  "reviewedAt": "2026-05-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "destructive-command-guard",
+  "publishedAt": "2026-05-25"
+}

@@ -1,0 +1,140 @@
+{
+  "type": "tool",
+  "title": "antigravity-workspace-template",
+  "summary": "Multi-agent knowledge engine (ag-refresh / ag-ask) that turns any codebase into a queryable AI assistant.Workspace template + MCP server for Claude Code, Codex CLI, Cursor & Windsurf. ",
+  "sourceUrl": "https://github.com/study8677/antigravity-workspace-template",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "study8677",
+    "repo": "antigravity-workspace-template",
+    "fullName": "study8677/antigravity-workspace-template",
+    "stars": 1239,
+    "license": "MIT",
+    "topics": [
+      "agentic-ai",
+      "agentic-coding",
+      "ai-agents",
+      "ai-coding",
+      "ai-ide",
+      "ai-workspace",
+      "claude-code",
+      "claude-code-template",
+      "code-search",
+      "codex",
+      "codex-cli",
+      "cursor-ide",
+      "developer-tools",
+      "gemini-cli",
+      "google-antigravity",
+      "llm-tools",
+      "mcp-server",
+      "prompt-engineering",
+      "rag",
+      "windsurf"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-24T14:08:38Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-25",
+  "lastChecked": "2026-05-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "id": "candidate-tool-github-study8677-antigravity-workspace-template",
+  "canonicalKey": "tool:github:study8677/antigravity-workspace-template",
+  "firstDiscoveredAt": "2026-05-25",
+  "lastSeenAt": "2026-05-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-25"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "template",
+    "useCategory": [
+      "search",
+      "communication",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "template",
+  "useCategory": [
+    "search",
+    "communication",
+    "coding",
+    "research"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "reject_not_tool",
+  "enrichment": {
+    "decision": "reject_not_tool",
+    "confidence": "high",
+    "publishType": "none",
+    "primaryType": "mcp",
+    "whatIsIt": "antigravity-workspace-template is an MCP-related template tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to mcp."
+    ],
+    "reasons": [
+      "This candidate is a starter, template, or example rather than a durable tool listing."
+    ],
+    "riskNotes": []
+  },
+  "extractedSignals": [
+    "Multi-agent knowledge engine (ag-refresh / ag-ask) that turns any codebase into a queryable AI assistant.Workspace template + MCP server for Claude Code, Codex CLI, Cursor & Windsurf. ",
+    "Topics: agentic-ai, agentic-coding, ai-agents, ai-coding, ai-ide",
+    "GitHub stars: 1239",
+    "Last pushed: 2026-05-24"
+  ]
+}
