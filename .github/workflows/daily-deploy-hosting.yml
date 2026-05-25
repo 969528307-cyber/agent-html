@@ -1,12 +1,12 @@
-name: Daily Build + Deploy to Hostinger
+name: Deploy to Hostinger
 
 on:
-  schedule:
-    - cron: '0 0 * * *'   # 每天 08:00 (UTC 0 = 北京时间 8am)
-  workflow_dispatch:       # 也可以手动触发
+  push:
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -23,19 +23,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Run pipeline (crawl → classify → enrich → publish)
-        env:
-          GITHUB_TOKEN: ${{ secrets.PIPELINE_GITHUB_TOKEN }}
-        run: |
-          for cat in skill mcp cli workflow agent-app agent-framework sdk; do
-            echo "==> Crawling $cat..."
-            node scripts/tools-github-crawler.mjs --limit 8 --category "$cat" || true
-          done
-          npm run classify:candidates || true
-          npm run enrich:candidates || true
-          npm run dedupe:candidates || true
-          node scripts/auto-publish-candidates.mjs || true
 
       - name: Build with Astro
         run: npx astro build
