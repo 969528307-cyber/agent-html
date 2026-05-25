@@ -1,0 +1,78 @@
+---
+englishTitle: "Contractual Skills: Making Enterprise AI Agents Governable"
+originalTitle: "Contractual Skills: A GovernSpec Design Framework for Enterprise AI Agents"
+subtitle: "A new framework turns SKILL.md files into inspectable task contracts, improving governance without sacrificing generation quality"
+status: "published"
+topic: "mcp"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "Contractual skills package agent instructions, workflows, and reference materials into inspectable task contracts with explicit goals, boundaries, and acceptance criteria"
+  - "In text-generation tests across 8 models, contractual skills outperformed no-skill and minimal-skill baselines on all models, but gains over expanded plain skills were small and mixed"
+  - "In tool-calling tests, contractual skills reduced high-risk tool attempts, but model differences persisted and runtime guardrails remained necessary"
+  - "The framework is best understood as a governance layer for checkability and maintainability, not a standalone safety mechanism"
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.22634v1"
+author: "Ting Liu"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-21"
+executiveSummary: "This paper introduces 'contractual skills'—a GovernSpec-inspired framework for organizing SKILL.md files as readable, inspectable task contracts. Through two offline experiments covering 960 text-generation outputs and 192 simulated tool-call records across multiple models, the author demonstrates that contractual skills improve governance and checkability over baselines, but do not significantly boost raw generation quality. The framework clarifies the boundary between skills, YAML contracts, MCP surfaces, tool adapters, and runtime guardrails."
+signalThesis: "Contractual skills represent a pragmatic step toward governable AI agents, proving that explicit task contracts improve checkability and maintainability without harming performance—but they are not a substitute for runtime safety mechanisms."
+whyItMatters: "For agentk.it users building enterprise agent workflows, this paper provides a concrete, testable pattern for making agent skills inspectable and auditable. It clarifies when to use contractual fields versus runtime guardrails, helping developers design systems that balance flexibility with governance requirements."
+keyTakeaways:
+  - "Contractual skills make task intent, boundaries, and acceptance criteria explicit without requiring heavyweight formal specifications"
+  - "The framework integrates naturally with existing SKILL.md patterns and MCP surfaces, enabling progressive loading and lightweight discovery"
+  - "Text-generation quality gains over expanded plain skills are marginal, suggesting the primary value is in governance, not generation"
+  - "Tool-calling safety improves with contractual skills, but model-level differences remain significant and runtime guardrails are still essential"
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Provides a reproducible experimental framework (960 outputs, 1680 cross-judge scores) for studying skill governance. Opens questions about how contractual fields interact with model reasoning and tool selection."
+  - label: "For Developers"
+    body: "Offers a practical pattern for structuring SKILL.md files that balances readability with inspectability. Clarifies the boundary between skills, YAML contracts, MCP surfaces, and runtime guardrails—reducing architectural confusion."
+  - label: "For Users"
+    body: "Enterprise users gain confidence that agent skills have explicit, auditable boundaries and acceptance criteria. The framework enables better human oversight through defined approval points and handoff rules."
+whatToWatchNext:
+  - "Integration of contractual skills with MCP servers for runtime contract enforcement"
+  - "Empirical studies comparing contractual skills against formal verification approaches for safety-critical agent tasks"
+  - "Tooling ecosystems that auto-generate contractual skill templates from natural language descriptions"
+publishedAt: "2026-05-25"
+---
+
+## Summary
+
+As enterprises deploy AI agents for increasingly complex tasks, the need for governance mechanisms that are both lightweight and inspectable has become critical. Ting Liu's paper introduces "contractual skills"—a design framework inspired by GovernSpec that extends the common SKILL.md pattern with explicit fields for goals, input boundaries, permissions, evidence requirements, output contracts, quality criteria, verification steps, human approval points, and handoff rules.
+
+The paper's key insight is that contractual skills should serve as a **governance layer** rather than a performance optimization. Through two offline experiments—a text-generation study with 960 outputs across 8 models and a tool-calling challenge with 192 simulated records—Liu demonstrates that contractual skills consistently outperform no-skill and minimal-skill baselines. However, when compared to information-rich plain expanded skills, the gains are small and mixed, confirming that the primary value lies in making task intent and boundaries explicit rather than improving raw generation quality.
+
+The tool-calling results are particularly instructive: while contractual skills reduced high-risk tool attempts, model-level differences persisted, and runtime tool guardrails remained necessary. This reinforces the paper's central thesis that contractual skills are best understood as a **complement to, not a replacement for**, runtime safety mechanisms.
+
+## Key Contributions
+
+- **Contractual Skills Framework**: A GovernSpec-inspired design pattern for SKILL.md files that makes goals, boundaries, permissions, evidence requirements, output contracts, quality criteria, verification steps, human approval points, and handoff rules inspectable
+- **Architectural Clarification**: Clear delineation between contractual skills, GovernSpec YAML contracts, Model Context Protocol surfaces, tool adapters, runtime guardrails, tracing, and evaluation systems
+- **Empirical Validation**: Two offline experiments with 960 text-generation outputs and 192 tool-call records across 8 models, with 1680 cross-judge score records
+- **Baseline Comparisons**: Systematic comparison across four instruction conditions (no-skill, minimal-skill, contractual-skill, expanded-skill) showing where contractual skills add value and where they don't
+- **Safety Analysis**: Evidence that contractual skills reduce high-risk tool attempts but cannot replace runtime guardrails
+
+## Implications
+
+### For Researchers
+
+This paper provides a reproducible experimental framework for studying skill governance in enterprise AI agents. The 960-output, 1680-cross-judge dataset offers a benchmark for future work on skill structure and agent behavior. Researchers should explore how contractual fields interact with different model architectures and reasoning strategies, and investigate whether certain contractual fields (e.g., evidence requirements vs. quality criteria) have disproportionate impact on agent behavior.
+
+### For Developers
+
+The framework offers a practical, immediately applicable pattern for structuring SKILL.md files. Developers can adopt contractual skills incrementally—starting with goal and boundary fields, then adding verification steps and approval points as needed. The paper's architectural clarifications help avoid common confusions between skills, YAML contracts, MCP surfaces, and runtime guardrails, enabling cleaner system designs.
+
+### For Users
+
+Enterprise users gain confidence that agent skills have explicit, auditable boundaries and acceptance criteria. The framework enables better human oversight through defined approval points and handoff rules, making it easier to integrate AI agents into regulated workflows. However, users should understand that contractual skills are a governance layer, not a safety guarantee—runtime monitoring remains essential.
+
+## References
+
+- https://arxiv.org/abs/2605.22634v1
