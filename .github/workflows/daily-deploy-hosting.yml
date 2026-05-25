@@ -1,0 +1,51 @@
+name: Daily Build + Deploy to Hostinger
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 每天 08:00 (UTC 0 = 北京时间 8am)
+  workflow_dispatch:       # 也可以手动触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run pipeline (crawl → classify → enrich → publish)
+        env:
+          GITHUB_TOKEN: ${{ secrets.PIPELINE_GITHUB_TOKEN }}
+        run: |
+          for cat in skill mcp cli workflow agent-app agent-framework sdk; do
+            echo "==> Crawling $cat..."
+            node scripts/tools-github-crawler.mjs --limit 8 --category "$cat" || true
+          done
+          npm run classify:candidates || true
+          npm run enrich:candidates || true
+          npm run dedupe:candidates || true
+          node scripts/auto-publish-candidates.mjs || true
+
+      - name: Build with Astro
+        run: npx astro build
+
+      - name: Deploy to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: site/dist/
+          server-dir: public_html/
+          dangerous-clean-slate: true
