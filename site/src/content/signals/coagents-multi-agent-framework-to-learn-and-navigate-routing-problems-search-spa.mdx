@@ -1,0 +1,76 @@
+```yaml
+---
+englishTitle: "COAgents: Multi-Agent Framework Masters VRP Search Space"
+originalTitle: "COAgents: Multi-Agent Framework to Learn and Navigate Routing Problems Search Space"
+subtitle: "Cooperative agents dynamically guide search, achieving SOTA on VRPTW by 44%"
+status: "published"
+topic: "agent"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "COAgents models the search process as a graph, with nodes as solutions and edges as local refinements or large perturbations (jumps)."
+  - "Three specialized agents (Node Selection, Move Selection, Jump) cooperate to balance intensification and exploration."
+  - "Achieves new state-of-the-art among learning-based methods on VRPTW, reducing gap to best-known solutions by 44% at N=50."
+  - "Clean separation of problem-agnostic search control from domain-specific encoding enables easy adaptation to new tasks."
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.20618v1"
+author: "Oleksandr Yakovenko"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-20"
+executiveSummary: "COAgents introduces a cooperative multi-agent framework for solving Vehicle Routing Problems (VRP) by modeling the search process as a dynamically constructed graph. Three specialized agents—Node Selection, Move Selection, and Jump—collaborate to guide intensification and exploration, achieving state-of-the-art results on VRPTW benchmarks and competitive performance on CVRP."
+signalThesis: "COAgents demonstrates that multi-agent cooperation, with clear role separation, can outperform monolithic neural solvers on complex combinatorial optimization tasks."
+whyItMatters: "For agentk.it users, COAgents provides a blueprint for building modular, cooperative agent systems that tackle hard optimization problems. Its clean separation of search control from domain encoding makes it a versatile template for developers creating AI agents for logistics, scheduling, and other combinatorial domains."
+keyTakeaways:
+  - "Multi-agent cooperation with specialized roles (intensification vs. exploration) outperforms single-agent approaches on VRPTW."
+  - "Dynamic graph construction of the search space enables efficient learning and navigation without end-to-end training."
+  - "The framework's modular design allows easy adaptation to different VRP variants and potentially other combinatorial problems."
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Provides a new paradigm for combining reinforcement learning with search heuristics, opening avenues for multi-agent coordination in combinatorial optimization."
+  - label: "For Developers"
+    body: "Offers a reusable architecture for building agent-based solvers that can be adapted to various routing and scheduling problems with minimal domain-specific engineering."
+  - label: "For Users"
+    body: "Delivers practical improvements in solving complex logistics problems, reducing the gap to optimal solutions by significant margins on challenging benchmarks."
+whatToWatchNext:
+  - "Extension of COAgents to other combinatorial optimization problems (e.g., scheduling, assignment) and integration with real-time logistics platforms."
+publishedAt: "2026-05-25"
+---
+
+## Summary
+
+Vehicle Routing Problems (VRP) are fundamental to logistics and supply chain management but remain computationally intractable at scale. Traditional heuristics rely on handcrafted rules and struggle to generalize across diverse instances. COAgents introduces a cooperative multi-agent framework that models the search process as a dynamically constructed graph, where nodes represent candidate solutions and edges represent either local refinements or large perturbations (jumps). Three specialized agents—Node Selection, Move Selection, and Jump—collaborate to balance intensification and exploration, learning to navigate the search space efficiently.
+
+The framework achieves state-of-the-art results among learning-based methods on the more challenging VRPTW benchmarks, reducing the gap to best-known solutions by 14% at N=100 and 44% at N=50 relative to the strongest neural solver (POMO), and by 21% and 40% respectively relative to ALNS. On CVRP, COAgents remains competitive with existing learn-to-search baselines. The clean separation of problem-agnostic search control from compact domain-specific encoding facilitates adaptability across tasks, making the framework a versatile tool for combinatorial optimization.
+
+## Key Contributions
+
+- **Multi-agent cooperative search**: Introduces three specialized agents (Node Selection, Move Selection, Jump) that collaborate to guide the search process, balancing local refinement with global exploration.
+- **Dynamic Partial Search Graph (PSG)**: Models the search space as a graph constructed on-the-fly, enabling efficient learning and navigation without requiring full enumeration.
+- **State-of-the-art on VRPTW**: Achieves new best results among learning-based methods, significantly reducing the gap to optimal solutions on challenging benchmarks.
+- **Modular and adaptable design**: Separates search control from domain encoding, allowing easy adaptation to different VRP variants and potentially other combinatorial problems.
+- **Open-source implementation**: Code available on GitHub, enabling reproduction and extension by the research community.
+
+## Implications
+
+### For Researchers
+
+COAgents provides a new paradigm for combining reinforcement learning with search heuristics in combinatorial optimization. The multi-agent architecture with clear role separation offers a template for tackling other hard optimization problems. Researchers can build upon this framework to explore more sophisticated agent coordination strategies, such as hierarchical or meta-learning approaches for search control.
+
+### For Developers
+
+The modular design of COAgents makes it a practical template for building agent-based solvers for logistics, scheduling, and routing applications. Developers can adapt the framework to specific domain requirements by swapping the domain-specific encoding while retaining the core search control logic. The open-source codebase provides a solid foundation for integration into real-world systems.
+
+### For Users
+
+End users in logistics and supply chain management benefit from improved solution quality on complex routing problems. The significant reduction in the gap to optimal solutions on VRPTW benchmarks translates to more efficient route planning, reduced operational costs, and better resource utilization in real-world applications.
+
+## References
+
+- https://arxiv.org/abs/2605.20618v1
+- https://github.com/mahdims/COAgents
+```

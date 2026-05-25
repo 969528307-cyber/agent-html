@@ -1,0 +1,75 @@
+---
+englishTitle: "Orchard: Open-Source Framework for Scalable Agent Training"
+originalTitle: "Orchard: An Open-Source Agentic Modeling Framework"
+subtitle: "A lightweight, open environment layer enables state-of-the-art coding, GUI, and personal assistant agents with minimal data"
+status: "published"
+topic: "agent"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "Orchard Env provides reusable sandbox lifecycle management primitives across task domains, enabling scalable agent training without proprietary infrastructure."
+  - "Orchard-SWE achieves 67.5% on SWE-bench Verified using only 107K distilled trajectories and credit-assignment SFT + Balanced Adaptive Rollout RL, setting a new SOTA for open-source models of comparable size."
+  - "Orchard-GUI trains a 4B vision-language computer-use agent with just 0.4K distilled trajectories and 2.2K open-ended tasks, outperforming all open-source models on WebVoyager, Online-Mind2Web, and DeepShop."
+  - "Orchard-Claw personal assistant agent achieves 59.6% pass@3 on Claw-Eval with only 0.2K synthetic tasks, demonstrating extreme data efficiency."
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.15040v2"
+author: "Baolin Peng"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-14"
+executiveSummary: "Orchard introduces a lightweight, open-source environment service (Orchard Env) that provides reusable primitives for sandbox lifecycle management across agent domains. Built on this layer, the authors demonstrate three agentic modeling recipes—Orchard-SWE (coding), Orchard-GUI (computer use), and Orchard-Claw (personal assistant)—that achieve state-of-the-art results among open-source models using dramatically fewer training trajectories than prior approaches."
+signalThesis: "Orchard proves that a lightweight, harness-agnostic environment layer is the missing infrastructure for scalable, reusable agent training across domains."
+whyItMatters: "For agentk.it users building or evaluating AI agent tools, Orchard demonstrates that open-source agent training can now match proprietary systems without massive proprietary datasets or infrastructure. The framework's reusable environment primitives and data-efficient recipes lower the barrier to entry for agent development, making it easier to build, train, and evaluate agents for coding, GUI automation, and personal assistance tasks."
+keyTakeaways:
+  - "A lightweight environment service (Orchard Env) enables reusable agentic data, training recipes, and evaluations across coding, GUI, and personal assistant domains."
+  - "Credit-assignment SFT and Balanced Adaptive Rollout RL allow effective learning from partial trajectories, reducing data requirements by orders of magnitude."
+  - "Open-source agents can now achieve competitive or state-of-the-art results on SWE-bench, WebVoyager, and Claw-Eval with minimal training data."
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Orchard provides a standardized, open environment layer that decouples agent training from proprietary infrastructure, enabling reproducible research and fair comparisons across agent architectures and training methods."
+  - label: "For Developers"
+    body: "Developers can leverage Orchard's reusable environment primitives and pre-trained recipes to build custom agents for coding, GUI automation, or personal assistance without needing massive proprietary datasets or compute resources."
+  - label: "For Users"
+    body: "End users will benefit from more capable, open-source agents that can be deployed locally or in private clouds, reducing reliance on proprietary API services and enabling greater customization and privacy."
+whatToWatchNext:
+  - "Extension of Orchard Env to additional domains such as robotics, data analysis, and multi-agent coordination."
+  - "Community adoption and contribution to Orchard as an open-source standard for agent environment management."
+  - "Integration of Orchard's training recipes with popular agent frameworks like LangChain, CrewAI, and AutoGPT."
+publishedAt: "2026-05-25"
+---
+
+## Summary
+
+Orchard addresses a critical bottleneck in agentic AI research: the lack of open, scalable infrastructure for training autonomous agents. While many high-performing agent systems rely on proprietary codebases, models, or services, most open-source frameworks focus on orchestration and evaluation rather than scalable agent training. Orchard introduces a lightweight environment service (Orchard Env) that provides reusable primitives for sandbox lifecycle management across task domains, agent harnesses, and pipeline stages.
+
+The paper demonstrates three agentic modeling recipes built on Orchard Env. Orchard-SWE targets coding agents, achieving 64.3% on SWE-bench Verified after SFT and 67.5% after SFT+RL—a new state of the art among open-source models of comparable size. Orchard-GUI trains a 4B vision-language computer-use agent using only 0.4K distilled trajectories and 2.2K open-ended tasks, achieving 74.1% on WebVoyager, 67.0% on Online-Mind2Web, and 64.0% on DeepShop. Orchard-Claw targets personal assistant agents, achieving 59.6% pass@3 on Claw-Eval with only 0.2K synthetic tasks.
+
+## Key Contributions
+
+- **Orchard Env**: A lightweight, open-source environment service providing reusable primitives for sandbox lifecycle management across task domains, agent harnesses, and pipeline stages.
+- **Credit-Assignment SFT**: A novel training method that learns from productive segments of unresolved trajectories, enabling effective use of partial or failed trajectories.
+- **Balanced Adaptive Rollout (BAR)**: An RL technique that dynamically adjusts rollout distribution to focus on underperforming scenarios, improving sample efficiency.
+- **Three Domain-Specific Recipes**: Orchard-SWE (coding), Orchard-GUI (computer use), and Orchard-Claw (personal assistant) demonstrating state-of-the-art results with minimal training data.
+- **Extreme Data Efficiency**: Orchard-GUI and Orchard-Claw achieve competitive results with only hundreds to thousands of training trajectories, orders of magnitude less than prior approaches.
+
+## Implications
+
+### For Researchers
+
+Orchard provides a standardized, open environment layer that decouples agent training from proprietary infrastructure. This enables reproducible research, fair comparisons across agent architectures, and the ability to share and reuse training data and recipes across labs. The credit-assignment SFT and BAR techniques offer new tools for learning from partial trajectories, which could be applied to other domains where complete successful trajectories are scarce.
+
+### For Developers
+
+Developers can leverage Orchard's reusable environment primitives and pre-trained recipes to build custom agents for coding, GUI automation, or personal assistance without needing massive proprietary datasets or compute resources. The framework's harness-agnostic design means it can integrate with existing agent frameworks and tools, reducing the barrier to entry for building production-grade agents.
+
+### For Users
+
+End users will benefit from more capable, open-source agents that can be deployed locally or in private clouds, reducing reliance on proprietary API services. The data efficiency of Orchard's recipes means that specialized agents can be trained for niche domains with limited data, enabling greater customization and privacy for enterprise and personal use cases.
+
+## References
+
+- https://arxiv.org/abs/2605.15040v2
