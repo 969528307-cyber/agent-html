@@ -1,8 +1,22 @@
+#!/usr/bin/env node
+/**
+ * tools-github-crawler.mjs
+ *
+ * GitHub search-based tool discovery for agentk.it.
+ * Supports incremental discovery: skips repos already in candidates,
+ * paginates through results to find genuinely new repos.
+ *
+ * Usage:
+ *   node scripts/tools-github-crawler.mjs
+ *   node scripts/tools-github-crawler.mjs --limit 8 --category skill
+ *   node scripts/tools-github-crawler.mjs --dry-run
+ */
+
 import { pathToFileURL } from "node:url";
 
 import "./load-local-env.mjs";
 import { buildToolProfile } from "./tool-profile.mjs";
-import { upsertCandidate } from "./dedupe-utils.mjs";
+import { upsertCandidate, loadCandidateRecords } from "./dedupe-utils.mjs";
 import { enrichCandidate } from "./enrich-candidate.mjs";
 import {
   assertRepoIsFresh,
@@ -17,6 +31,8 @@ import { loadSourcesByType, sourceRegistryRef } from "./source-registry.mjs";
 // ── Config ──────────────────────────────────────────────────────────
 const MIN_STARS = MIN_GITHUB_STARS;
 const MAX_ITEMS_TOTAL = 80;
+const PER_PAGE = 100; // GitHub max per page
+const MAX_PAGES = 10; // Safety limit: don't paginate forever
 
 const githubApiHeaders = {
   Accept: "application/vnd.github+json",
@@ -25,6 +41,8 @@ const githubApiHeaders = {
 };
 
 const titleCase = (value) => value.charAt(0).toUpperCase() + value.slice(1);
+
+// ── Source config loading ─────────────────────────────────────────────
 
 const loadFunctionalCategories = async () => {
   const [source] = await loadSourcesByType("tools", "github_search");
@@ -48,7 +66,7 @@ const loadFunctionalCategories = async () => {
   return categories;
 };
 
-// ── GitHub API ──────────────────────────────────────────────────────
+// ── GitHub API helpers ──────────────────────────────────────────────
 
 const fetchJson = async (url) => {
   const response = await fetch(url, { headers: githubApiHeaders });
@@ -65,105 +83,153 @@ const normalizeSearchQuery = (query) =>
     .replace(/\s+archived:(true|false)/gi, "")
     .trim();
 
-const searchRepositories = async (query, perPage = 10) => {
+const searchRepositories = async (query, page = 1, perPage = PER_PAGE) => {
   const pushedSince = formatGitHubSearchDate(getRepoFreshnessCutoffDate());
   const safeQuery = `${normalizeSearchQuery(query)} stars:>=${MIN_STARS} pushed:>=${pushedSince} fork:false archived:false`;
-  const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(safeQuery)}&sort=stars&order=desc&per_page=${perPage}`;
+  const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(safeQuery)}&sort=stars&order=desc&per_page=${perPage}&page=${page}`;
   const data = await fetchJson(url);
-  return data.items || [];
+  return {
+    items: data.items || [],
+    total: data.total_count || 0,
+    incomplete: data.incomplete_results || false,
+  };
 };
 
 const fetchRepoDetails = async (owner, repo) => {
   return fetchJson(`https://api.github.com/repos/${owner}/${repo}`);
 };
 
-// ── Main crawl logic ────────────────────────────────────────────────
+// ── Known repos loading ─────────────────────────────────────────────
 
-const dedupe = (items, seen = new Set()) => {
-  return items.filter(item => {
-    if (!item.full_name || seen.has(item.full_name)) return false;
-    seen.add(item.full_name);
-    return true;
-  });
-};
+let _knownRepos = null;
+
+async function loadKnownRepos() {
+  if (_knownRepos) return _knownRepos;
+  const known = new Set();
+  try {
+    const records = await loadCandidateRecords();
+    for (const r of records) {
+      const fullName = r.data.githubMetadata?.fullName;
+      if (fullName) known.add(fullName.toLowerCase());
+    }
+  } catch { /* candidates dir may not exist */ }
+  _knownRepos = known;
+  return known;
+}
+
+// ── Main crawl logic ────────────────────────────────────────────────
 
 const crawlCategory = async (functionalCategories, categoryKey, limit) => {
   const config = functionalCategories[categoryKey];
   if (!config) throw new Error(`Unknown category: ${categoryKey}`);
 
-  const allItems = [];
+  const knownRepos = await loadKnownRepos();
+  const foundRepos = [];
+  const alreadySkipped = [];
+
   for (const query of config.queries) {
-    if (allItems.length >= limit) break;
-    try {
-      const items = await searchRepositories(query, limit);
-      allItems.push(...items);
-    } catch (err) {
-      console.warn(`  Query failed for "${query}": ${err.message}`);
+    if (foundRepos.length >= limit) break;
+
+    for (let page = 1; page <= MAX_PAGES; page++) {
+      if (foundRepos.length >= limit) break;
+
+      try {
+        const result = await searchRepositories(query, page);
+        if (result.items.length === 0) break; // No more results
+
+        for (const item of result.items) {
+          if (foundRepos.length >= limit) break;
+
+          const fullName = (item.full_name || "").toLowerCase();
+          if (knownRepos.has(fullName)) {
+            alreadySkipped.push(fullName);
+            continue;
+          }
+
+          foundRepos.push(item);
+          knownRepos.add(fullName); // Prevent duplicates within same run
+        }
+
+        // If we got fewer items than per_page, this is the last page
+        if (result.items.length < PER_PAGE) break;
+      } catch (err) {
+        console.warn(`  Query failed for "${query}" (page ${page}): ${err.message}`);
+        break;
+      }
     }
   }
 
-  return dedupe(allItems).slice(0, limit);
+  console.log(`  Found ${foundRepos.length} new + ${alreadySkipped.length} already known (limit ${limit})`);
+
+  // Process all found repos: fetch full details and upsert as candidates
+  const candidates = [];
+  for (const item of foundRepos) {
+    try {
+      const repo = await fetchRepoDetails(item.owner?.login || item.owner, item.name);
+      const candidate = buildCandidateFromRepo(repo, config);
+      candidates.push(candidate);
+    } catch (err) {
+      console.warn(`  Skip ${item.full_name}: ${err.message}`);
+    }
+  }
+
+  return candidates;
 };
 
 const crawlAllCategories = async ({ functionalCategories, limit, dryRun }) => {
   const allCandidates = [];
-  const seenRepos = new Set();
   const perCategoryLimit = Math.max(2, Math.ceil((limit || MAX_ITEMS_TOTAL) / Object.keys(functionalCategories).length));
 
   for (const [key, config] of Object.entries(functionalCategories)) {
     console.log(`\n[${config.label}] Searching...`);
-    const repos = await crawlCategory(functionalCategories, key, perCategoryLimit);
-    console.log(`  Found ${repos.length} repos`);
+    console.log(`  Queries: ${config.queries.join(", ")}`);
 
-    for (const repo of repos) {
-      if (seenRepos.has(repo.full_name)) continue;
-      if ((repo.stargazers_count || 0) < MIN_STARS) continue;
-      seenRepos.add(repo.full_name);
-
-      try {
-        const details = await fetchRepoDetails(repo.owner.login, repo.name);
-
-        if (details.fork || details.archived) continue;
-        assertRepoMeetsStarFloor(details);
-        assertRepoIsFresh(details);
-
-        const candidate = await fetchRepoCandidate(details.html_url);
-        candidate.sourceName = "GitHub (tools crawl)";
-        candidate.sourceRegistryId = config.sourceRegistry.id;
-        candidate.sourceRegistry = config.sourceRegistry;
-        candidate.proposedCategory = functionalCategories[key]?.defaultCategory || [key];
-        candidate.reviewNotes = `Discovered by functional category "${key}" crawler (min ${MIN_STARS} stars, current maintenance window). Human review required.`;
-        Object.assign(candidate, buildToolProfile(candidate));
-        Object.assign(candidate, enrichCandidate(candidate));
-
-        allCandidates.push(candidate);
-
-        if (!dryRun) {
-          const result = await upsertCandidate(candidate, { runId: `${candidate.lastChecked}-tools`, module: "tools" });
-          console.log(
-            `  ✓ ${candidate.title} (${candidate.capabilityType}/${candidate.scope}/${candidate.routingDecision}) ${candidate.githubMetadata.stars}★ → ${result.action} ${result.candidate.id}.json`
-          );
-        } else {
-          console.log(
-            `  [DRY RUN] ${candidate.title} (${candidate.capabilityType}/${candidate.scope}/${candidate.routingDecision}) ${candidate.githubMetadata.stars}★`
-          );
-        }
-      } catch (err) {
-        console.warn(`  ✗ Skipped ${repo.full_name}: ${err.message}`);
-      }
-    }
-
-    if (allCandidates.length >= (limit || MAX_ITEMS_TOTAL)) break;
+    const candidates = await crawlCategory(functionalCategories, key, perCategoryLimit);
+    allCandidates.push(...candidates);
   }
 
+  console.log(`\n── Done: ${allCandidates.length} new candidates across ${Object.keys(functionalCategories).length} categories ──`);
   return allCandidates;
 };
 
-// ── CLI ─────────────────────────────────────────────────────────────
+// ── Candidate building ──────────────────────────────────────────────
 
-const parseArgs = (argv) => {
+const buildCandidateFromRepo = (repo, config) => {
+  const rawTopics = (repo.topics || []).filter(Boolean);
+  const category = [...(config.defaultCategory || [])];
+
+  return {
+    type: "tool",
+    title: repo.name || repo.full_name,
+    summary: (repo.description || "").slice(0, 300),
+    sourceUrl: repo.html_url,
+    discoveredFrom: "github",
+    proposedCategory: category,
+    githubMetadata: {
+      owner: repo.owner?.login || "",
+      repo: repo.name || "",
+      fullName: repo.full_name || "",
+      stars: repo.stargazers_count || 0,
+      license: repo.license?.spdx_id || repo.license?.key || "",
+      topics: rawTopics,
+      defaultBranch: repo.default_branch || "main",
+      lastPushedAt: repo.pushed_at || "",
+    },
+    // These will be filled by classify/enrich steps
+    proposedAgents: [],
+    discoveredAt: new Date().toISOString().slice(0, 10),
+    lastChecked: new Date().toISOString().slice(0, 10),
+    sourceRegistry: config.sourceRegistry,
+    sourceRegistryId: config.sourceRegistry?.id,
+    classificationConfidence: "medium",
+  };
+};
+
+// ── CLI Entry ───────────────────────────────────────────────────────
+
+const parseArgs = () => {
+  const argv = process.argv.slice(2);
   const parsed = { dryRun: false, limit: MAX_ITEMS_TOTAL, category: null };
-
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === "--dry-run") {
       parsed.dryRun = true;
@@ -175,80 +241,103 @@ const parseArgs = (argv) => {
       i++;
     }
   }
-
   return parsed;
 };
 
-const crawlSingleCategory = async ({ functionalCategories, categoryKey, limit, dryRun }) => {
-  const config = functionalCategories[categoryKey];
-  console.log(`\n[${config.label}] Searching...`);
-  const repos = await crawlCategory(functionalCategories, categoryKey, limit);
-  console.log(`  Found ${repos.length} repos`);
+export const runToolsCrawl = async ({ limit = MAX_ITEMS_TOTAL, dryRun = false, category = null } = {}) => {
+  console.log(`Tools GitHub Crawler (min ${MIN_STARS} stars, ${limit} item limit)`);
+  console.log(`Mode: ${dryRun ? "DRY RUN" : "WRITE"}`);
 
-  const candidates = [];
-  for (const repo of repos) {
-    if ((repo.stargazers_count || 0) < MIN_STARS) continue;
+  const functionalCategories = await loadFunctionalCategories();
+  const categories = category
+    ? { [category]: functionalCategories[category] }
+    : functionalCategories;
 
-    try {
-      const details = await fetchRepoDetails(repo.owner.login, repo.name);
+  for (const [key, config] of Object.entries(categories)) {
+    if (!config) {
+      console.warn(`  Unknown category "${key}", skipping.`);
+      continue;
+    }
 
-      if (details.fork || details.archived) continue;
-      assertRepoMeetsStarFloor(details);
-      assertRepoIsFresh(details);
-
-      const candidate = await fetchRepoCandidate(details.html_url);
-      candidate.sourceName = "GitHub (tools crawl)";
-      candidate.sourceRegistryId = config.sourceRegistry.id;
-      candidate.sourceRegistry = config.sourceRegistry;
-      candidate.proposedCategory = functionalCategories[categoryKey]?.defaultCategory || [categoryKey];
-      candidate.reviewNotes = `Discovered by functional category "${categoryKey}" crawler (min ${MIN_STARS} stars, current maintenance window). Human review required.`;
-      Object.assign(candidate, buildToolProfile(candidate));
-      Object.assign(candidate, enrichCandidate(candidate));
-
-      candidates.push(candidate);
-
-      if (!dryRun) {
-        const result = await upsertCandidate(candidate, { runId: `${candidate.lastChecked}-tools`, module: "tools" });
-        console.log(
-          `  ✓ ${candidate.title} (${candidate.capabilityType}/${candidate.scope}/${candidate.routingDecision}) ${candidate.githubMetadata.stars}★ → ${result.action} ${result.candidate.id}.json`
-        );
-      } else {
-        const catLabel = config.label;
-        console.log(
-          `  [DRY RUN] ${candidate.title} (${candidate.capabilityType}/${candidate.scope}/${candidate.routingDecision}) ${candidate.githubMetadata.stars}★ [${catLabel}]`
-        );
+    const candidates = await crawlCategory({ [key]: config }, key, limit);
+    if (dryRun) {
+      for (const c of candidates) {
+        console.log(`  [DRY] Would create candidate for ${c.githubMetadata?.fullName || c.title}`);
       }
-    } catch (err) {
-      console.warn(`  ✗ Skipped ${repo.full_name}: ${err.message}`);
+    } else {
+      for (const c of candidates) {
+        try {
+          const result = await upsertCandidate(c, { runId: `${c.lastChecked}-${key}`, module: key });
+          console.log(`  ${result.action === "created" ? "✓" : "~"} ${c.githubMetadata?.fullName} (${c.githubMetadata?.stars}★) → ${result.action}`);
+        } catch (err) {
+          console.warn(`  ✗ Failed to save ${c.githubMetadata?.fullName}: ${err.message}`);
+        }
+      }
     }
   }
-
-  return candidates;
 };
 
-const runCli = async () => {
-  const args = parseArgs(process.argv.slice(2));
-  const functionalCategories = await loadFunctionalCategories();
-
-  if (args.category && !functionalCategories[args.category]) {
-    throw new Error(`Unknown category "${args.category}". Available: ${Object.keys(functionalCategories).join(", ")}`);
-  }
+const main = async () => {
+  const args = parseArgs();
 
   console.log(`Tools GitHub Crawler (min ${MIN_STARS} stars, ${args.limit} item limit)`);
   console.log(`Mode: ${args.dryRun ? "DRY RUN" : "WRITE"}`);
 
+  const functionalCategories = await loadFunctionalCategories();
+
   if (args.category) {
-    const candidates = await crawlSingleCategory({ functionalCategories, categoryKey: args.category, limit: args.limit, dryRun: args.dryRun });
-    console.log(`\n── Done: ${candidates.length} candidates in "${functionalCategories[args.category].label}" ──`);
+    const config = functionalCategories[args.category];
+    if (!config) {
+      console.error(`Unknown category: ${args.category}. Available: ${Object.keys(functionalCategories).join(", ")}`);
+      process.exit(1);
+    }
+    console.log(`\n[${config.label}] Searching...`);
+
+    const candidates = await crawlCategory({ [args.category]: config }, args.category, args.limit);
+
+    if (args.dryRun) {
+      for (const c of candidates) {
+        console.log(`  [DRY] ${c.githubMetadata?.fullName} (${c.githubMetadata?.stars}★)`);
+      }
+    } else {
+      let created = 0, updated = 0;
+      for (const c of candidates) {
+        try {
+          const result = await upsertCandidate(c, { runId: `${c.lastChecked}-${args.category}`, module: args.category });
+          console.log(`  ${result.action === "created" ? "✓" : "~"} ${c.githubMetadata?.fullName} (${c.githubMetadata?.stars}★) → ${result.action}`);
+          if (result.action === "created") created++;
+          else updated++;
+        } catch (err) {
+          console.warn(`  ✗ ${c.githubMetadata?.fullName}: ${err.message}`);
+        }
+      }
+      console.log(`\n── Done: ${candidates.length} repos (${created} new, ${updated} already known) in "${config.label}" ──`);
+    }
+
   } else {
-    const candidates = await crawlAllCategories({ functionalCategories, limit: args.limit, dryRun: args.dryRun });
-    console.log(`\n── Done: ${candidates.length} candidates across ${Object.keys(functionalCategories).length} categories ──`);
+    const allCandidates = await crawlAllCategories({ functionalCategories, limit: args.limit, dryRun: args.dryRun });
+
+    if (args.dryRun) {
+      for (const c of allCandidates) {
+        console.log(`  [DRY] ${c.githubMetadata?.fullName} (${c.githubMetadata?.stars}★)`);
+      }
+    } else {
+      let created = 0, updated = 0;
+      for (const c of allCandidates) {
+        try {
+          const result = await upsertCandidate(c, { runId: `${c.lastChecked}-${c.proposedCategory?.[0] || "tool"}`, module: c.proposedCategory?.[0] || "tool" });
+          if (result.action === "created") created++;
+          else updated++;
+        } catch (err) {
+          console.warn(`  ✗ ${c.githubMetadata?.fullName}: ${err.message}`);
+        }
+      }
+      console.log(`\n── Done: ${allCandidates.length} repos (${created} new, ${updated} already known) in all categories ──`);
+    }
   }
 };
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
-  runCli().catch(err => {
-    console.error(err.message);
-    process.exit(1);
-  });
-}
+main().catch((err) => {
+  console.error(`Fatal: ${err.message}`);
+  process.exit(1);
+});
