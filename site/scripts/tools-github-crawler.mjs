@@ -222,6 +222,19 @@ const buildCandidateFromRepo = (repo, config) => {
     sourceRegistry: config.sourceRegistry,
     sourceRegistryId: config.sourceRegistry?.id,
     classificationConfidence: "medium",
+    status: "candidate",
+    discoveredAt: new Date().toISOString().slice(0, 10),
+    lastChecked: new Date().toISOString().slice(0, 10),
+    reviewScore: {
+      sourceTrust: 3,
+      usefulness: 3,
+      agentRelevance: 3,
+      verifiability: 3,
+      freshness: 3,
+      editorialValue: 3,
+      permission: 3,
+    },
+    reviewNotes: "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
   };
 };
 
