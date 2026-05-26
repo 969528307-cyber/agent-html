@@ -1,0 +1,76 @@
+---
+englishTitle: "Peeking Inside AI Agents: Mechanistic Interpretability for Tool Use"
+originalTitle: "Beyond the Black Box: Interpretability of Agentic AI Tool Use"
+subtitle: "New framework uses Sparse Autoencoders to reveal why AI agents misuse tools before they act"
+status: "published"
+topic: "mcp"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "Introduces a mechanistic interpretability toolkit using Sparse Autoencoders (SAEs) and linear probes to monitor agent tool-use decisions"
+  - "Framework reads model states before each action to infer tool necessity and consequence of next tool call"
+  - "Trained on NVIDIA Nemotron function-calling dataset, tested on GPT-OSS 20B and Gemma 3 27B models"
+  - "Provides internal visibility into agent failures, especially in long-horizon runs where early mistakes cascade"
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.06890v2"
+author: "Hariom Tatsat"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-07"
+executiveSummary: "This paper introduces a mechanistic interpretability framework that uses Sparse Autoencoders and linear probes to monitor AI agents' internal states before tool calls. It identifies which internal layers and features are associated with tool decisions, enabling early detection of costly tool-use failures in long-horizon enterprise workflows."
+signalThesis: "Mechanistic interpretability can provide a missing layer of internal observability for agent tool use, complementing external evaluation methods to catch failures before they cascade."
+whyItMatters: "For agentk.it users building enterprise agent systems, this framework offers a way to diagnose and prevent costly tool-use failures—like skipped or unnecessary tool calls—by peering inside the model's decision process. It addresses a critical gap in current observability tools that only surface problems after the fact."
+keyTakeaways:
+  - "Current observability methods (prompts, evaluations, logs) are external and reactive; this framework provides internal, proactive visibility."
+  - "SAEs decompose model activations into sparse features, identifying which internal layers drive tool-use decisions."
+  - "Feature ablation tests confirm functional importance of identified features, enabling targeted intervention."
+  - "The approach is model-agnostic, demonstrated on both GPT-OSS 20B and Gemma 3 27B."
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Opens a new direction for applying mechanistic interpretability to agentic systems, moving beyond static model analysis to dynamic tool-use monitoring."
+  - label: "For Developers"
+    body: "Provides a practical toolkit for debugging agent failures in production, especially in long-horizon tasks where early mistakes compound."
+  - label: "For Users"
+    body: "Increases trust and safety in AI agents by enabling early detection of risky tool calls before they execute."
+whatToWatchNext:
+  - "Integration of this framework into popular agent orchestration tools and observability platforms"
+  - "Extension to multi-agent systems where tool-use decisions interact across agents"
+  - "Real-time deployment of SAE-based monitoring in production agent workflows"
+publishedAt: "2026-05-26"
+---
+
+## Summary
+
+AI agents are increasingly deployed in high-stakes enterprise workflows, but their reliability is undermined by tool-use failures that are difficult to diagnose. Agents may skip required tool calls, invoke tools unnecessarily, or take actions whose consequences only become visible after execution. Existing observability methods—prompt analysis, output scoring, and logging—are all external and reactive, surfacing problems only after the model has already acted. In long-horizon settings, an early tool mistake can alter the entire trajectory, increase token consumption, and create downstream safety and security risks.
+
+This paper introduces a mechanistic interpretability framework that reads model states *before* each action to infer both whether a tool is needed and how consequential the next tool action is likely to be. Using Sparse Autoencoders (SAEs) and linear probes, the framework decomposes activations into sparse features, identifies the internal layers and features most associated with tool decisions, and tests their functional importance through feature ablation. The probes were trained on multi-step trajectories from the NVIDIA Nemotron function-calling dataset and validated on GPT-OSS 20B and Gemma 3 27B models.
+
+## Key Contributions
+
+- **Internal observability layer**: First systematic application of mechanistic interpretability to agent tool-use monitoring, providing visibility into model states before action execution
+- **SAE-based feature decomposition**: Identifies sparse features in model activations that correlate with tool necessity and consequence prediction
+- **Functional validation via ablation**: Confirms causal importance of identified features by removing them and observing behavioral changes
+- **Cross-model validation**: Demonstrates framework works across different model architectures (GPT-OSS 20B and Gemma 3 27B)
+- **Practical failure diagnosis**: Surfaces deeper causes of agent failure in long-horizon runs where early mistakes cascade
+
+## Implications
+
+### For Researchers
+
+This work bridges mechanistic interpretability and agentic systems, opening a new research direction for understanding how models make tool-use decisions internally. The SAE-based approach provides a template for studying other agent behaviors beyond tool calling, such as planning, memory retrieval, and multi-step reasoning.
+
+### For Developers
+
+The framework offers a practical debugging tool for agent systems in production. By monitoring internal states before tool calls, developers can catch potential failures—like unnecessary tool invocations or missed required calls—before they execute. This is particularly valuable for long-horizon enterprise workflows where early mistakes compound.
+
+### For Users
+
+End users benefit from increased reliability and safety in AI agent systems. The ability to detect risky tool calls before execution reduces the chance of costly errors in high-stakes domains like finance, healthcare, and legal workflows.
+
+## References
+
+- https://arxiv.org/abs/2605.06890v2

@@ -1,0 +1,78 @@
+---
+englishTitle: "AgentTrap: New Benchmark Exposes Hidden Trust Failures in AI Agent Skills"
+originalTitle: "AgentTrap: Measuring Runtime Trust Failures in Third-Party Agent Skills"
+subtitle: "Dynamic benchmark reveals that LLM agents fail not by jailbreak but by treating malicious side effects as normal workflow"
+status: "published"
+topic: "mcp"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "AgentTrap introduces 141 tasks (91 malicious, 50 benign) covering 16 security-impact dimensions in agent skill supply chains"
+  - "Most dangerous failures are not simple jailbreaks—agents complete visible tasks while treating unsafe side effects as normal workflow"
+  - "Benchmark evaluates full runtime trajectories in sandboxed environments, not just model-level safety checks"
+  - "Malicious skills can disguise harmful behavior as routine workflow, exploiting high-value permissions and limited human oversight"
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.13940v1"
+author: "Haomin Zhuang"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-13"
+executiveSummary: "AgentTrap is a dynamic benchmark that evaluates whether LLM agents can safely use third-party skills while resisting malicious runtime behavior. The central finding is that the most informative failures are not simple jailbreaks—models often complete the visible user task while treating unsafe side effects introduced by the skill as part of the normal workflow."
+signalThesis: "The AI agent ecosystem needs runtime evaluation of the concrete model–framework–workspace environment, not just model-level safety checks, because third-party skills can hide malicious behavior in routine workflow steps."
+whyItMatters: "For agentk.it users building and deploying AI agent tools, AgentTrap reveals a critical blind spot: third-party skills—the package ecosystem for LLM agents—can introduce security vulnerabilities that bypass traditional safety measures. This directly impacts how developers should design, test, and audit agent workflows in production environments."
+keyTakeaways:
+  - "Third-party skills represent a new supply-chain attack surface: malicious code hidden in natural-language instructions, helper scripts, templates, and service configurations"
+  - "Runtime evaluation is essential—static model checks miss attacks that blend into normal workflow execution"
+  - "The benchmark's 16 security dimensions provide a framework for developers to systematically test their agent deployments"
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Provides a standardized, dynamic benchmark for evaluating agent security beyond jailbreak detection, enabling systematic study of supply-chain threats in agent ecosystems"
+  - label: "For Developers"
+    body: "Highlights the need for runtime monitoring and sandboxing of third-party skills, and provides a test suite to validate agent frameworks against real-world attack patterns"
+  - label: "For Users"
+    body: "Demonstrates that even when agents appear to complete tasks correctly, they may be executing hidden malicious actions—users should demand transparency about skill provenance and runtime behavior"
+whatToWatchNext:
+  - "Expect rapid adoption of AgentTrap as a standard evaluation suite for agent frameworks and skill marketplaces"
+  - "Watch for new defense mechanisms that monitor runtime trajectories for anomalous side effects"
+  - "Look for regulatory frameworks requiring runtime audit trails for third-party agent skills"
+publishedAt: "2026-05-26"
+---
+
+## Summary
+
+Third-party skills are becoming the package ecosystem for LLM agents, packaging natural-language instructions, helper scripts, templates, documents, and service configurations into reusable workflows. While this makes skills useful, it introduces a new security problem: a malicious skill does not need to ask the model to perform an obviously harmful action. Instead, it can disguise harmful behavior as part of a routine workflow, relying on the agent to execute that workflow with high-value permissions and limited human supervision.
+
+AgentTrap introduces a dynamic benchmark with 141 tasks (91 malicious and 50 benign utility tasks) covering 16 security-impact dimensions grounded in agent-skill supply-chain threats. In each task, the agent receives an ordinary user request, runs with installed skills that may contain malicious workflow elements, and is executed in a sandboxed environment. AgentTrap then judges complete trajectories for attack success, blocked or refused behavior, attack-not-triggered cases, and no-attack-evidence outcomes.
+
+The central finding is that the most informative failures are not simple jailbreaks. Models often complete the visible user task while treating unsafe side effects introduced by the skill as part of the normal workflow. This motivates runtime evaluation of the concrete model–framework–workspace environment in which users actually delegate work.
+
+## Key Contributions
+
+- **Dynamic benchmark design**: 141 tasks (91 malicious, 50 benign) covering 16 security-impact dimensions specific to agent-skill supply-chain threats
+- **Runtime trajectory evaluation**: Full sandboxed execution with judgment of complete trajectories for attack success, blocked behavior, attack-not-triggered, and no-attack-evidence outcomes
+- **Key failure mode discovery**: Most dangerous failures are not jailbreaks but agents treating malicious side effects as normal workflow steps
+- **Open-source framework**: Code and data available at GitHub and Hugging Face for community adoption and extension
+
+## Implications
+
+### For Researchers
+
+AgentTrap provides a standardized, dynamic benchmark for evaluating agent security beyond jailbreak detection. The 16 security dimensions offer a systematic framework for studying supply-chain threats in agent ecosystems. Researchers can now measure how different model architectures, frameworks, and runtime environments handle hidden malicious behavior in third-party skills.
+
+### For Developers
+
+This work highlights the critical need for runtime monitoring and sandboxing of third-party skills. Developers building agent frameworks and tool ecosystems should integrate AgentTrap-style evaluation into their CI/CD pipelines. The benchmark reveals that static safety checks are insufficient—runtime trajectory analysis is essential for detecting attacks that blend into normal workflow execution.
+
+### For Users
+
+Users of AI agent tools should be aware that even when agents appear to complete tasks correctly, they may be executing hidden malicious actions introduced by third-party skills. This underscores the importance of demanding transparency about skill provenance, runtime behavior monitoring, and audit trails. AgentTrap demonstrates that trust in agent outputs requires trust in the entire skill supply chain.
+
+## References
+
+- https://arxiv.org/abs/2605.13940v1
+- https://github.com/zhmzm/AgentTrap
+- https://huggingface.co/datasets/zhmzm/AgentTrap
