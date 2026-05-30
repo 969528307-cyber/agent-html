@@ -1,0 +1,75 @@
+---
+englishTitle: "MCP Poisoning Attacks: When Tool Manuals Lie to AI Agents"
+originalTitle: "When the Manual Lies: A Realistic Benchmark to Evaluate MCP Poisoning Attacks for LLM Agents"
+subtitle: "New benchmark reveals LLM agents are critically vulnerable to metadata poisoning attacks via MCP, with 100% success rates on leading models"
+status: "published"
+topic: "mcp"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "Tool Description Poisoning (TDP) attacks achieve nearly 100% success rate on GPT-4o across six high-risk scenarios"
+  - "Standard prompt-guardrail defenses are ineffective and can paradoxically worsen security (Firewall Fallacy)"
+  - "Proposed 'Reactive Self-Correction' defense enables agents to autonomously detect and revert malicious actions post-execution"
+  - "First specialized security benchmark for MCP-based agent systems, spanning 32 realistic test cases across 6 risk categories"
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.24069v1"
+author: "Shi Liu"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-22"
+executiveSummary: "This paper systematically investigates Tool Description Poisoning (TDP), a novel semantic attack where malicious instructions are covertly injected into tool metadata rather than executable code. The authors introduce the MCP-TDP Security Benchmark—a high-fidelity sandbox with 32 realistic test cases—and demonstrate that leading LLMs like GPT-4o are critically vulnerable, with existing defenses proving ineffective or counterproductive."
+signalThesis: "The MCP ecosystem's trust in tool metadata creates a critical vulnerability that requires fundamental rethinking of agent security architecture."
+whyItMatters: "For agentk.it users building MCP-based agent systems, this research reveals that the very metadata protocols enabling tool interoperability also create a covert attack surface. The finding that standard prompt-guardrails can worsen security (Firewall Fallacy) means current best practices may be actively harmful, requiring immediate adoption of reactive self-correction mechanisms."
+keyTakeaways:
+  - "Tool Description Poisoning exploits the agent's reliance on metadata for planning, not executable code—bypassing traditional security checks"
+  - "Current prompt-guardrail defenses are not just ineffective but can be counterproductive, creating a false sense of security"
+  - "Reactive Self-Correction—where agents autonomously detect and revert malicious actions post-execution—shows promise as a defense"
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Opens a new research direction in agent security: cognitive-layer attacks that exploit metadata trust. The Firewall Fallacy phenomenon demands investigation into why and how guardrails backfire, and Reactive Self-Correction needs validation across more agent architectures."
+  - label: "For Developers"
+    body: "Immediate action required: audit all MCP tool descriptions for injection vulnerabilities, implement post-execution monitoring and rollback capabilities, and avoid over-reliance on prompt-based guardrails. Consider adding metadata integrity checks and tool description sanitization pipelines."
+  - label: "For Users"
+    body: "Be aware that AI agents using MCP tools can be manipulated through seemingly benign tool descriptions. Until defenses mature, exercise caution when deploying agents in high-stakes environments, and prefer agents with built-in self-correction and audit logging capabilities."
+whatToWatchNext:
+  - "Development of metadata sanitization standards for MCP tool descriptions"
+  - "Adoption of Reactive Self-Correction as a standard agent architecture pattern"
+  - "Emergence of adversarial training datasets for tool description robustness"
+publishedAt: "2026-05-30"
+---
+
+## Summary
+
+The rise of tool-using LLM agents, standardized by protocols like MCP, has unlocked unprecedented autonomous capabilities—but also introduced a covert attack surface targeting the agent's cognitive planning layer. This paper systematically investigates **Tool Description Poisoning (TDP)**, a novel semantic attack where malicious instructions are covertly injected into a tool's descriptive metadata—the very "manual" an agent relies on for planning and decision-making.
+
+The researchers introduce the **MCP-TDP Security Benchmark**, a high-fidelity sandbox environment comprising 32 realistic test cases spanning 6 distinct risk categories. Their evaluation of 8 mainstream LLMs reveals severe vulnerabilities: leading models like GPT-4o exhibit a nearly 100% Attack Success Rate (ASR) in six high-risk scenarios. Critically, common prompt-guardrail defenses are largely ineffective and can be counterproductive—a phenomenon termed the **"Firewall Fallacy."**
+
+## Key Contributions
+
+- **Systematic definition and formalization** of Tool Description Poisoning (TDP) as a distinct attack class targeting agent metadata
+- **MCP-TDP Security Benchmark**: 32 realistic test cases across 6 risk categories (data exfiltration, privilege escalation, denial of service, etc.)
+- **Empirical vulnerability assessment** of 8 mainstream LLMs, showing near-100% ASR on GPT-4o
+- **Identification of the Firewall Fallacy**: prompt-guardrail defenses can worsen security outcomes
+- **Proposal of Reactive Self-Correction**: a novel defense mechanism where agents autonomously detect and revert malicious actions post-execution
+
+## Implications
+
+### For Researchers
+
+This work establishes a new attack surface in agent security: cognitive-layer attacks that exploit metadata trust rather than code vulnerabilities. The Firewall Fallacy phenomenon demands urgent investigation into why prompt-based defenses backfire, potentially due to adversarial perturbations in the agent's reasoning chain. Reactive Self-Correction opens a promising research direction in post-hoc security mechanisms for autonomous agents.
+
+### For Developers
+
+Immediate action items: audit all MCP tool descriptions for injection vulnerabilities, implement post-execution monitoring and rollback capabilities, and avoid over-reliance on prompt-based guardrails. Consider adding metadata integrity checks, tool description sanitization pipelines, and runtime anomaly detection. The finding that guardrails can worsen security means current best practices may be actively harmful.
+
+### For Users
+
+Until defenses mature, exercise caution when deploying MCP-based agents in high-stakes environments. Prefer agents with built-in self-correction and audit logging capabilities. Be aware that seemingly benign tool descriptions can manipulate agent behavior—treat tool metadata as untrusted input, similar to user prompts.
+
+## References
+
+- https://arxiv.org/abs/2605.24069v1

@@ -1,0 +1,75 @@
+---
+englishTitle: "Trustworthy Agentic AI: Safety, Privacy & Security Survey"
+originalTitle: "Towards trustworthy agentic AI: a comprehensive survey of safety, robustness, privacy, and system security"
+subtitle: "First comprehensive mapping of failure modes and mitigations across the entire agent workflow"
+status: "published"
+topic: "mcp"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "Identifies new failure modes unique to multi-step agent trajectories, beyond traditional LLM risks"
+  - "Provides stage-targeted mitigation strategies for safety, robustness, privacy, and system security"
+  - "Consolidates evaluation into a unified metrics-and-benchmarks hub with scenario-to-metric guidance"
+  - "Includes a case study of real-world security failures in open-source agentic systems"
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.23989v1"
+author: "Jinhu Qi"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-17"
+executiveSummary: "This comprehensive survey systematically maps trustworthiness risks across the entire agentic AI workflow—from planning and tool use to memory and long-horizon interactions. It provides stage-targeted mitigation strategies for safety, robustness, privacy, and system security, and consolidates evaluation into a unified metrics-and-benchmarks hub to support deployment decisions in high-stakes environments."
+signalThesis: "As agentic AI moves from research to production, this survey provides the missing operational blueprint for building trustworthy systems by mapping risks to specific workflow stages and offering actionable mitigation strategies."
+whyItMatters: "For agentk.it users building or deploying agentic systems, this survey directly addresses the critical gap between capability and trustworthiness. It provides practical guidance on where failures occur in agent workflows, how to measure them, and what mitigations work—essential knowledge for anyone shipping autonomous agents into production environments."
+keyTakeaways:
+  - "Agentic AI introduces fundamentally new failure modes (e.g., tool misuse, memory poisoning, multi-step adversarial attacks) that require stage-specific mitigations"
+  - "Trustworthiness evaluation must measure both outcome (task success) and process signals (constraint violations, trace completeness, adversarial success rates)"
+  - "Privacy-preserving personalization and runtime monitoring remain open challenges with no mature solutions"
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Provides a structured taxonomy of trustworthiness dimensions and open challenges (self-evolving agents, runtime verification) that define the next research frontier"
+  - label: "For Developers"
+    body: "Offers actionable stage-targeted mitigation strategies and a unified metrics hub that can be directly applied to release gating and deployment decisions"
+  - label: "For Users"
+    body: "Highlights the trust-utility trade-off and the need for transparency mechanisms, empowering users to make informed decisions about agentic system adoption"
+whatToWatchNext:
+  - "Emergence of runtime monitoring and verification tools for agentic systems"
+  - "Privacy-preserving personalization frameworks that balance utility with data protection"
+  - "Standardized benchmarks for measuring process-level trustworthiness signals"
+publishedAt: "2026-05-30"
+---
+
+## Summary
+
+This survey from researchers at The Chinese University of Hong Kong and Southern University of Science and Technology provides the first comprehensive mapping of trustworthiness risks specific to agentic AI systems—LLMs augmented with planning, tool use, memory, and long-horizon interactions. Unlike traditional LLM trustworthiness surveys, this work focuses on the unique failure modes that emerge from multi-step agent trajectories, such as tool misuse cascades, memory poisoning across sessions, and adversarial attacks on planning components.
+
+The authors organize their analysis around two core dimensions critical for high-risk deployments: Safety and Robustness (covering adversarial robustness, out-of-distribution generalization, and value alignment) and Privacy and System Security (covering data leakage, model extraction, and system-level vulnerabilities). For each dimension, they clarify key concepts, identify where risks emerge along the agent workflow, and summarize stage-targeted mitigation strategies. The paper also consolidates evaluation into a unified metrics-and-benchmarks hub, emphasizing both outcome and process signals, and provides scenario-to-metric guidance for release gating.
+
+## Key Contributions
+
+- First systematic mapping of trustworthiness risks to specific stages of the agent workflow (planning, tool use, memory, interaction)
+- Stage-targeted mitigation strategies for safety, robustness, privacy, and system security
+- Unified metrics-and-benchmarks hub with guidance on selecting appropriate metrics for different deployment scenarios
+- Case study of real-world security failures in open-source agentic systems
+- Identification of open challenges including self-evolving agents, runtime monitoring, privacy-preserving personalization, and the trust-utility trade-off
+
+## Implications
+
+### For Researchers
+
+This survey provides a structured taxonomy that can guide future research agendas. The identification of open challenges—particularly self-evolving agents and runtime monitoring—highlights areas where current solutions are insufficient. The unified metrics hub also provides a foundation for developing standardized benchmarks that measure process-level trustworthiness signals, not just task completion.
+
+### For Developers
+
+The stage-targeted mitigation strategies offer immediate practical value. Developers can use the risk mapping to identify where their agent systems are most vulnerable and apply appropriate countermeasures. The scenario-to-metric guidance for release gating provides a framework for making deployment decisions based on trustworthiness signals.
+
+### For Users
+
+The survey's emphasis on the trust-utility trade-off and transparency mechanisms is directly relevant to end users. Understanding that agentic systems involve inherent trade-offs between capability and trustworthiness empowers users to make informed decisions about adoption, particularly in high-stakes environments.
+
+## References
+
+- https://arxiv.org/abs/2605.23989v1
