@@ -1,0 +1,69 @@
+{
+  "id": "kubeshark",
+  "name": "kubeshark",
+  "type": "mcp",
+  "status": "published",
+  "summary": "eBPF-powered network observability for Kubernetes. Indexes L4/L7 traffic with full K8s context, decrypts TLS without keys. Queryable by AI agents via MCP and humans via dashboard.",
+  "description": "eBPF-powered network observability for Kubernetes. Indexes L4/L7 traffic with full K8s context, decrypts TLS without keys. Queryable by AI agents via MCP and humans via dashboard.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/kubeshark/kubeshark",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/kubeshark/kubeshark",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/kubeshark/kubeshark#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/kubeshark/kubeshark#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/kubeshark/kubeshark/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "eBPF-powered network observability for Kubernetes. Indexes L4/L7 traffic with full K8s context, decrypts TLS without keys. Queryable by AI agents via MCP and humans via dashboard.",
+    "Topics: cloud-native, devops, docker, ebpf, golang",
+    "GitHub stars: 11908",
+    "Last pushed: 2026-05-21"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-21T13:52:12Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/kubeshark/kubeshark",
+  "repoUrl": "https://github.com/kubeshark/kubeshark",
+  "license": "Apache-2.0",
+  "stars": 11908,
+  "lastUpdated": "2026-05-21T13:52:12Z",
+  "lastChecked": "2026-05-26",
+  "publishedAt": "2026-05-26",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

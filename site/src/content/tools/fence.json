@@ -1,0 +1,69 @@
+{
+  "id": "fence",
+  "name": "fence",
+  "type": "agent-app",
+  "status": "published",
+  "summary": "Lightweight, container-free sandbox for running commands with network and filesystem restrictions",
+  "description": "Lightweight, container-free sandbox for running commands with network and filesystem restrictions",
+  "category": [
+    "agent-app"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/jy-tan/fence",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/jy-tan/fence",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/jy-tan/fence#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/jy-tan/fence#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/jy-tan/fence/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Lightweight, container-free sandbox for running commands with network and filesystem restrictions",
+    "Topics: bubblewrap, code-security, coding-agent, landlock, sandbox",
+    "GitHub stars: 774",
+    "Last pushed: 2026-05-28"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-05-28T22:42:32Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/jy-tan/fence",
+  "repoUrl": "https://github.com/jy-tan/fence",
+  "license": "Apache-2.0",
+  "stars": 774,
+  "lastUpdated": "2026-05-28T22:42:32Z",
+  "lastChecked": "2026-05-29",
+  "publishedAt": "2026-05-29",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
