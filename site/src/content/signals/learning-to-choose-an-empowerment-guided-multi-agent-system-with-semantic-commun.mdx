@@ -1,0 +1,76 @@
+```yaml
+---
+englishTitle: "Empowerment-Guided Multi-Agent System Prevents Semantic Drift"
+originalTitle: "Learning to Choose: An Empowerment-Guided Multi-Agent System with semantic communication for Adaptive Method Selection"
+subtitle: "New framework uses empowerment theory and semantic checkpoints to ensure agent actions match intentions in scientific computing pipelines"
+status: "published"
+topic: "agent"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "Introduces a multi-agent framework combining contextual bandits with semantic checkpoints to prevent semantic drift in scientific computing workflows"
+  - "Demonstrates that unchecked semantic drift degrades policy learning, while the proposed framework improves convergence and robustness"
+  - "Uses empowerment theory (Yiu et al., 2025) as a lens to ensure action-outcome fidelity across agent pipelines"
+  - "Validated on sensitivity analysis and uncertainty quantification case studies, showing adaptation to novel problem contexts"
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.30042v1"
+author: "Geremy Loachamín-Suntaxi"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-28"
+executiveSummary: "This paper introduces a multi-agent framework that uses empowerment theory and semantic checkpoints to prevent semantic drift—where agent actions diverge from their original intentions—in scientific computing pipelines. By combining contextual bandits with structured inter-agent communication and self-healing execution loops, the system ensures reliable policy learning and adaptation to novel problem contexts."
+signalThesis: "For AI agent systems to learn reliably, they must preserve the causal integrity of decisions across agent handoffs—semantic checkpoints are the key mechanism."
+whyItMatters: "For agentk.it users building multi-agent pipelines for scientific computing or any domain requiring high reliability, this paper provides a concrete design pattern to prevent the common failure mode of semantic drift. It bridges reinforcement learning, semantic communication, and agent orchestration in a practical framework."
+keyTakeaways:
+  - "Semantic drift is a critical failure mode in multi-agent systems where agent intentions and actions become misaligned over pipeline stages"
+  - "Empowerment theory provides a principled way to measure and preserve action-outcome fidelity across agent handoffs"
+  - "Combining contextual bandits with semantic checkpoints enables adaptive method selection without sacrificing causal attribution"
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Provides a formal framework (empowerment + semantic checkpoints) for studying reliability in multi-agent systems, opening new directions for causal inference in agent pipelines"
+  - label: "For Developers"
+    body: "Offers a practical architecture pattern: integrate semantic checkpoints between LLM agents to verify action fidelity before passing control to the next agent"
+  - label: "For Users"
+    body: "Enables more trustworthy autonomous scientific computing workflows where users can trace decisions back to their originating agent actions"
+whatToWatchNext:
+  - "Integration of empowerment-guided checkpoints into popular multi-agent frameworks like LangGraph or CrewAI"
+  - "Extensions to non-scientific domains where semantic drift is equally problematic (e.g., financial trading, medical diagnosis)"
+publishedAt: "2026-06-01"
+---
+
+## Summary
+
+This paper tackles a fundamental problem in multi-agent AI systems: **semantic drift**. When multiple LLM agents collaborate on a task—especially in scientific computing—small inconsistencies between what an agent intends to do and what it actually does can compound across pipeline stages. The result is that the final executed procedure no longer reflects the originally selected strategy, corrupting downstream evaluation and adaptation.
+
+The authors propose a framework that combines **contextual bandits** (for adaptive method selection) with **semantic checkpoints** (to verify action-outcome fidelity at each agent handoff). They ground this in **empowerment theory**, which provides a formal measure of how much control an agent has over future outcomes. Using sensitivity analysis and uncertainty quantification as test cases, they show that their framework significantly improves convergence, robustness, and adaptation to novel problem contexts compared to baselines without semantic checkpoints.
+
+## Key Contributions
+
+- **Formalization of semantic drift** in multi-agent scientific computing pipelines, showing how it degrades policy learning
+- **Empowerment-guided framework** that combines contextual bandits with semantic checkpoints to preserve action-outcome fidelity
+- **Practical architecture** with specialized LLM agents, grounded code generation, and self-healing execution loops
+- **Empirical validation** on sensitivity analysis and uncertainty quantification workflows, demonstrating improved convergence and robustness
+- **Design principle**: adaptive decision-making must be coupled with explicit mechanisms guaranteeing semantic consistency across the pipeline
+
+## Implications
+
+### For Researchers
+
+This paper provides a rigorous framework for studying reliability in multi-agent systems. The empowerment lens offers a formal way to measure and optimize for action-outcome fidelity, which could be applied beyond scientific computing to any domain where causal attribution matters. Researchers should investigate how semantic checkpoints interact with different agent architectures and communication protocols.
+
+### For Developers
+
+The key takeaway is practical: **insert semantic checkpoints between agent handoffs**. Before passing control from one agent to the next, verify that the action taken matches the intended strategy. This can be implemented as a lightweight verification step using a separate LLM or rule-based system. The paper also demonstrates the value of self-healing loops that can retry or correct actions when drift is detected.
+
+### For Users
+
+For end users of multi-agent systems—especially in scientific computing, engineering, or any domain requiring reproducibility—this work means more reliable autonomous workflows. Users can trust that the system's decisions are causally attributable to the original strategy selection, enabling better debugging, auditing, and adaptation to new problems.
+
+## References
+
+- https://arxiv.org/abs/2605.30042v1
+```
