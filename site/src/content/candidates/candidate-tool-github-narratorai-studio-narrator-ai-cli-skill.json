@@ -1,0 +1,135 @@
+{
+  "type": "tool",
+  "title": "narrator-ai-cli-skill",
+  "summary": "AI 解说大师 — Agent skill；封装 narrator-ai-cli 供 Claude/Codex 等工具调用",
+  "sourceUrl": "https://github.com/NarratorAI-Studio/narrator-ai-cli-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "NarratorAI-Studio",
+    "repo": "narrator-ai-cli-skill",
+    "fullName": "NarratorAI-Studio/narrator-ai-cli-skill",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agent",
+      "ai-video",
+      "claude-code",
+      "claude-code-skill",
+      "content-creation",
+      "cursor",
+      "film-commentary",
+      "narrator-ai",
+      "openclaw",
+      "openclaw-skill",
+      "short-drama",
+      "skill-md",
+      "video-narration",
+      "windsurf"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-29T12:36:58Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-31",
+  "lastChecked": "2026-05-31",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI 解说大师 — Agent skill；封装 narrator-ai-cli 供 Claude/Codex 等工具调用",
+    "Topics: agent-skills, ai-agent, ai-video, claude-code, claude-code-skill",
+    "GitHub stars: 700",
+    "Last pushed: 2026-05-29"
+  ],
+  "id": "candidate-tool-github-narratorai-studio-narrator-ai-cli-skill",
+  "canonicalKey": "tool:github:narratorai-studio/narrator-ai-cli-skill",
+  "firstDiscoveredAt": "2026-05-31",
+  "lastSeenAt": "2026-05-31",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-31-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-31"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "narrator-ai-cli-skill is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "AI 解说大师 — Agent skill；封装 narrator-ai-cli 供 Claude/Codex 等工具调用",
+      "Topics: agent-skills, ai-agent, ai-video, claude-code, claude-code-skill"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-31",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "narrator-ai-cli-skill",
+  "publishedAt": "2026-05-31"
+}

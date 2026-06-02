@@ -1,0 +1,130 @@
+{
+  "type": "tool",
+  "title": "openclaw-docs",
+  "summary": "OpenClaw 中文文档站 | AI 智能体框架 源码剖析 安装教程 | WhatsApp Telegram Discord 飞书   多通道机器人",
+  "sourceUrl": "https://github.com/yeuxuan/openclaw-docs",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "yeuxuan",
+    "repo": "openclaw-docs",
+    "fullName": "yeuxuan/openclaw-docs",
+    "stars": 709,
+    "license": "",
+    "topics": [
+      "ai-agent",
+      "chinese",
+      "clawdbot",
+      "documentation",
+      "llm",
+      "multi-channel",
+      "openclaw",
+      "telegram-bot-ai-assistant",
+      "vitepress",
+      "whatsapp-bot"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-06T03:14:06Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-27",
+  "lastChecked": "2026-05-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "OpenClaw 中文文档站 | AI 智能体框架 源码剖析 安装教程 | WhatsApp Telegram Discord 飞书   多通道机器人",
+    "Topics: ai-agent, chinese, clawdbot, documentation, llm",
+    "GitHub stars: 709",
+    "Last pushed: 2026-05-06"
+  ],
+  "id": "candidate-tool-github-yeuxuan-openclaw-docs",
+  "canonicalKey": "tool:github:yeuxuan/openclaw-docs",
+  "firstDiscoveredAt": "2026-05-27",
+  "lastSeenAt": "2026-05-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-27-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-27"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "communication"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "communication"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "openclaw-docs is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with communication workflows.",
+      "Relevant to agent-app.",
+      "OpenClaw 中文文档站 | AI 智能体框架 源码剖析 安装教程 | WhatsApp Telegram Discord 飞书   多通道机器人",
+      "Topics: ai-agent, chinese, clawdbot, documentation, llm"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-27",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openclaw-docs",
+  "publishedAt": "2026-05-27"
+}

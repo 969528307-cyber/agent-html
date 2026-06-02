@@ -1,0 +1,140 @@
+{
+  "type": "tool",
+  "title": "voltagent",
+  "summary": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework",
+  "sourceUrl": "https://github.com/VoltAgent/voltagent",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "VoltAgent",
+    "repo": "voltagent",
+    "fullName": "VoltAgent/voltagent",
+    "stars": 9152,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "ai-agents-framework",
+      "aiagentframework",
+      "chatbots",
+      "chatgpt",
+      "framework",
+      "javascript",
+      "llm",
+      "llm-observability",
+      "mcp",
+      "multiagent",
+      "nodejs",
+      "observability",
+      "open-source",
+      "openai",
+      "rag",
+      "tts",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T22:17:18Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-26",
+  "lastChecked": "2026-05-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework",
+    "Topics: agents, ai, ai-agents, ai-agents-framework, aiagentframework",
+    "GitHub stars: 9152",
+    "Last pushed: 2026-05-25"
+  ],
+  "id": "candidate-tool-github-voltagent-voltagent",
+  "canonicalKey": "tool:github:voltagent/voltagent",
+  "firstDiscoveredAt": "2026-05-26",
+  "lastSeenAt": "2026-05-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-26-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-26"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "monitoring",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "monitoring",
+    "research"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "voltagent is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with monitoring workflows.",
+      "Helps with research workflows.",
+      "Relevant to mcp.",
+      "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework",
+      "Topics: agents, ai, ai-agents, ai-agents-framework, aiagentframework"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "voltagent",
+  "publishedAt": "2026-05-26"
+}

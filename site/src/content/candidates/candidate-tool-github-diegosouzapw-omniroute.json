@@ -1,0 +1,138 @@
+{
+  "type": "tool",
+  "title": "OmniRoute",
+  "summary": "Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
+  "sourceUrl": "https://github.com/diegosouzapw/OmniRoute",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "diegosouzapw",
+    "repo": "OmniRoute",
+    "fullName": "diegosouzapw/OmniRoute",
+    "stars": 5461,
+    "license": "MIT",
+    "topics": [
+      "a2a",
+      "ai-agents",
+      "ai-gateway",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "cline",
+      "codex",
+      "copilot",
+      "cursor",
+      "deepseek",
+      "free-ai",
+      "gemini",
+      "gemini-cli",
+      "llm-gateway",
+      "mcp",
+      "openai",
+      "openai-proxy",
+      "qwen",
+      "token-saver"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-28T20:40:41Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-29",
+  "lastChecked": "2026-05-29",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95%",
+    "Topics: a2a, ai-agents, ai-gateway, anthropic, claude",
+    "GitHub stars: 5461",
+    "Last pushed: 2026-05-28"
+  ],
+  "id": "candidate-tool-github-diegosouzapw-omniroute",
+  "canonicalKey": "tool:github:diegosouzapw/omniroute",
+  "firstDiscoveredAt": "2026-05-29",
+  "lastSeenAt": "2026-05-29",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-29-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-29"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "OmniRoute is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to mcp.",
+      "Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95%",
+      "Topics: a2a, ai-agents, ai-gateway, anthropic, claude",
+      "GitHub stars: 5461"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-29",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "omniroute",
+  "publishedAt": "2026-05-29"
+}

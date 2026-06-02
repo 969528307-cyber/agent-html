@@ -1,0 +1,128 @@
+{
+  "type": "tool",
+  "title": "LightAgent",
+  "summary": "LightAgent: Lightweight AI agent framework with memory, mcp & skill. Supports multi-agent collaboration, self-learning, and major LLMs (OpenAI/DeepSeek/Qwen). Open-source with MCP/SSE protocol integration.",
+  "sourceUrl": "https://github.com/wanxingai/LightAgent",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "wanxingai",
+    "repo": "LightAgent",
+    "fullName": "wanxingai/LightAgent",
+    "stars": 1028,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-framework",
+      "agents",
+      "ai-agent",
+      "llm",
+      "mcp",
+      "multi-agent",
+      "openai",
+      "openai-api",
+      "python",
+      "tool-calling"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-28T18:29:40Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-29",
+  "lastChecked": "2026-05-29",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "LightAgent: Lightweight AI agent framework with memory, mcp & skill. Supports multi-agent collaboration, self-learning, and major LLMs (OpenAI/DeepSeek/Qwen). Open-source with MCP/SSE protocol integra",
+    "Topics: agent-framework, agents, ai-agent, llm, mcp",
+    "GitHub stars: 1028",
+    "Last pushed: 2026-05-28"
+  ],
+  "id": "candidate-tool-github-wanxingai-lightagent",
+  "canonicalKey": "tool:github:wanxingai/lightagent",
+  "firstDiscoveredAt": "2026-05-29",
+  "lastSeenAt": "2026-05-29",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-29-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-29"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "LightAgent is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with memory workflows.",
+      "Relevant to agent-app.",
+      "LightAgent: Lightweight AI agent framework with memory, mcp & skill. Supports multi-agent collaboration, self-learning, and major LLMs (OpenAI/DeepSeek/Qwen). Open-source with MCP/SSE protocol integra",
+      "Topics: agent-framework, agents, ai-agent, llm, mcp",
+      "GitHub stars: 1028"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-29",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "lightagent",
+  "publishedAt": "2026-05-29"
+}

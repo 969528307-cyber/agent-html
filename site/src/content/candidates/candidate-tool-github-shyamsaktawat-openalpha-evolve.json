@@ -1,0 +1,137 @@
+{
+  "type": "tool",
+  "title": "OpenAlpha_Evolve",
+  "summary": "OpenAlpha_Evolve is an open-source Python framework inspired by the groundbreaking research on autonomous coding agents like DeepMind's AlphaEvolve.",
+  "sourceUrl": "https://github.com/shyamsaktawat/OpenAlpha_Evolve",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "shyamsaktawat",
+    "repo": "OpenAlpha_Evolve",
+    "fullName": "shyamsaktawat/OpenAlpha_Evolve",
+    "stars": 1022,
+    "license": "MIT",
+    "topics": [
+      "alphacode",
+      "alphafold",
+      "coding-agent",
+      "discovery",
+      "distributed-evolutionary-algorithms",
+      "evolution-computing",
+      "evolutionary-algorithm",
+      "evolutionary-algorithms",
+      "genetic-algorithm",
+      "google",
+      "iterative-methods",
+      "iterative-refinement",
+      "llm-engineering",
+      "llm-ensemble",
+      "llm-inference",
+      "openevolve",
+      "optimize"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-05-31T16:34:33Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-28",
+  "lastChecked": "2026-05-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "OpenAlpha_Evolve is an open-source Python framework inspired by the groundbreaking research on autonomous coding agents like DeepMind's AlphaEvolve.",
+    "Topics: alphacode, alphafold, coding-agent, discovery, distributed-evolutionary-algorithms",
+    "GitHub stars: 1022",
+    "Last pushed: 2025-05-31"
+  ],
+  "id": "candidate-tool-github-shyamsaktawat-openalpha-evolve",
+  "canonicalKey": "tool:github:shyamsaktawat/openalpha_evolve",
+  "firstDiscoveredAt": "2026-05-28",
+  "lastSeenAt": "2026-05-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-28-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-28"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "research"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "OpenAlpha_Evolve is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to agent-app.",
+      "OpenAlpha_Evolve is an open-source Python framework inspired by the groundbreaking research on autonomous coding agents like DeepMind's AlphaEvolve.",
+      "Topics: alphacode, alphafold, coding-agent, discovery, distributed-evolutionary-algorithms"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openalpha-evolve",
+  "publishedAt": "2026-05-28"
+}

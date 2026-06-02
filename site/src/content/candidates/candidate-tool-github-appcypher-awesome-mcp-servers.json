@@ -1,31 +1,35 @@
 {
   "type": "tool",
-  "title": "Awesome-AI-Agents",
-  "summary": "A collection of autonomous agents 🤖️ powered by LLM.",
-  "sourceUrl": "https://github.com/Jenqyang/Awesome-AI-Agents",
+  "title": "awesome-mcp-servers",
+  "summary": "Awesome MCP Servers - A curated list of Model Context Protocol servers",
+  "sourceUrl": "https://github.com/appcypher/awesome-mcp-servers",
   "discoveredFrom": "github",
   "proposedCategory": [
-    "agent-framework"
+    "mcp"
   ],
   "githubMetadata": {
-    "owner": "Jenqyang",
-    "repo": "Awesome-AI-Agents",
-    "fullName": "Jenqyang/Awesome-AI-Agents",
-    "stars": 1134,
+    "owner": "appcypher",
+    "repo": "awesome-mcp-servers",
+    "fullName": "appcypher/awesome-mcp-servers",
+    "stars": 5567,
     "license": "",
     "topics": [
-      "agent",
-      "agents",
-      "llm",
-      "llm-powered-agents",
-      "multi-agent"
+      "ai",
+      "anthropic-claude",
+      "awesome",
+      "context",
+      "mcp",
+      "model-context-protocol",
+      "servers",
+      "tool-use",
+      "tools"
     ],
     "defaultBranch": "main",
-    "lastPushedAt": "2026-05-25T10:10:02Z"
+    "lastPushedAt": "2026-05-06T08:04:35Z"
   },
   "proposedAgents": [],
-  "discoveredAt": "2026-05-25",
-  "lastChecked": "2026-05-25",
+  "discoveredAt": "2026-05-28",
+  "lastChecked": "2026-05-28",
   "sourceRegistry": {
     "id": "github-tools-topic-search",
     "name": "GitHub Tools Topic Search",
@@ -51,7 +55,7 @@
   },
   "sourceRegistryId": "github-tools-topic-search",
   "classificationConfidence": "high",
-  "status": "published",
+  "status": "candidate",
   "reviewScore": {
     "sourceTrust": 4,
     "usefulness": 3,
@@ -62,20 +66,26 @@
     "permission": 3
   },
   "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
-  "id": "candidate-tool-github-jenqyang-awesome-ai-agents",
-  "canonicalKey": "tool:github:jenqyang/awesome-ai-agents",
-  "firstDiscoveredAt": "2026-05-25",
-  "lastSeenAt": "2026-05-25",
+  "extractedSignals": [
+    "Awesome MCP Servers - A curated list of Model Context Protocol servers",
+    "Topics: ai, anthropic-claude, awesome, context, mcp",
+    "GitHub stars: 5567",
+    "Last pushed: 2026-05-06"
+  ],
+  "id": "candidate-tool-github-appcypher-awesome-mcp-servers",
+  "canonicalKey": "tool:github:appcypher/awesome-mcp-servers",
+  "firstDiscoveredAt": "2026-05-28",
+  "lastSeenAt": "2026-05-28",
   "crawlRuns": [
     {
-      "runId": "2026-05-25-agent-framework",
-      "module": "agent-framework",
+      "runId": "2026-05-28-mcp",
+      "module": "mcp",
       "sourceRegistryId": "github-tools-topic-search",
-      "seenAt": "2026-05-25"
+      "seenAt": "2026-05-28"
     }
   ],
   "toolProfile": {
-    "capabilityType": "agent-framework",
+    "capabilityType": "mcp",
     "scope": "awesome-list",
     "useCategory": [],
     "confidence": "high",
@@ -83,7 +93,7 @@
     "scores": {},
     "notes": []
   },
-  "capabilityType": "agent-framework",
+  "capabilityType": "mcp",
   "scope": "awesome-list",
   "useCategory": [],
   "routingDecision": "auto_reject",
@@ -92,27 +102,17 @@
     "decision": "route_to_learn",
     "confidence": "high",
     "publishType": "learn",
-    "primaryType": "agent-framework",
-    "whatIsIt": "Awesome-AI-Agents is an agent framework for building agentic applications.",
+    "primaryType": "mcp",
+    "whatIsIt": "awesome-mcp-servers is an MCP-related awesome-list tool that exposes external capabilities to agents.",
     "helpsWith": [
-      "Relevant to agent-framework.",
-      "A collection of autonomous agents 🤖️ powered by LLM.",
-      "Topics: agent, agents, llm, llm-powered-agents, multi-agent",
-      "GitHub stars: 1134"
+      "Relevant to mcp.",
+      "Awesome MCP Servers - A curated list of Model Context Protocol servers",
+      "Topics: ai, anthropic-claude, awesome, context, mcp",
+      "GitHub stars: 5567"
     ],
     "reasons": [
       "This candidate is primarily educational or directory-style content, not a single public tool page."
     ],
     "riskNotes": []
-  },
-  "extractedSignals": [
-    "A collection of autonomous agents 🤖️ powered by LLM.",
-    "Topics: agent, agents, llm, llm-powered-agents, multi-agent",
-    "GitHub stars: 1134",
-    "Last pushed: 2026-05-25"
-  ],
-  "publishedAs": "awesome-ai-agents",
-  "publishedAt": "2026-05-26",
-  "reviewedAt": "2026-05-26",
-  "reviewedBy": "local-review"
+  }
 }

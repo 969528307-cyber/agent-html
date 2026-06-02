@@ -1,0 +1,127 @@
+{
+  "type": "tool",
+  "title": "10x",
+  "summary": "⚡️ 10x - Up to 20x faster AI coding with multi-step Superpowers. Open-source agent with smart model routing, BYOK, fully self-hosted.",
+  "sourceUrl": "https://github.com/ntegrals/10x",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "ntegrals",
+    "repo": "10x",
+    "fullName": "ntegrals/10x",
+    "stars": 1353,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "codex",
+      "coding-agent",
+      "continue",
+      "gemini-cli",
+      "open-code"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-01-05T01:46:15Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-28",
+  "lastChecked": "2026-05-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "⚡️ 10x - Up to 20x faster AI coding with multi-step Superpowers. Open-source agent with smart model routing, BYOK, fully self-hosted.",
+    "Topics: ai-agents, anthropic, claude, claude-code, codex",
+    "GitHub stars: 1353",
+    "Last pushed: 2026-01-05"
+  ],
+  "id": "candidate-tool-github-ntegrals-10x",
+  "canonicalKey": "tool:github:ntegrals/10x",
+  "firstDiscoveredAt": "2026-05-28",
+  "lastSeenAt": "2026-05-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-28-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-28"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "10x is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to agent-app.",
+      "⚡️ 10x - Up to 20x faster AI coding with multi-step Superpowers. Open-source agent with smart model routing, BYOK, fully self-hosted.",
+      "Topics: ai-agents, anthropic, claude, claude-code, codex",
+      "GitHub stars: 1353"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "10x",
+  "publishedAt": "2026-05-28"
+}

@@ -1,0 +1,128 @@
+{
+  "type": "tool",
+  "title": "agents-cli",
+  "summary": "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
+  "sourceUrl": "https://github.com/google/agents-cli",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "google",
+    "repo": "agents-cli",
+    "fullName": "google/agents-cli",
+    "stars": 2590,
+    "license": "Apache-2.0",
+    "topics": [
+      "adk",
+      "agent-development-kit",
+      "agents",
+      "coding-agent",
+      "gemini",
+      "gemini-enterprise-agent-platform",
+      "generative-ai",
+      "google-cloud"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T01:14:35Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-27",
+  "lastChecked": "2026-05-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
+    "Topics: adk, agent-development-kit, agents, coding-agent, gemini",
+    "GitHub stars: 2590",
+    "Last pushed: 2026-05-19"
+  ],
+  "id": "candidate-tool-github-google-agents-cli",
+  "canonicalKey": "tool:github:google/agents-cli",
+  "firstDiscoveredAt": "2026-05-27",
+  "lastSeenAt": "2026-05-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-27-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-27"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "agents-cli is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Relevant to agent-app.",
+      "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
+      "Topics: adk, agent-development-kit, agents, coding-agent, gemini"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-27",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agents-cli",
+  "publishedAt": "2026-05-27"
+}

@@ -1,0 +1,127 @@
+{
+  "type": "tool",
+  "title": "ai-dev-tools-zoomcamp",
+  "summary": "AI Dev Tools Zoomcamp is a free course that helps you use AI tools to write better code, faster. We're starting the first cohort of this course on November 18, 2025! Sign up here to join us 👇🏼",
+  "sourceUrl": "https://github.com/DataTalksClub/ai-dev-tools-zoomcamp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "DataTalksClub",
+    "repo": "ai-dev-tools-zoomcamp",
+    "fullName": "DataTalksClub/ai-dev-tools-zoomcamp",
+    "stars": 1102,
+    "license": "",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "automation",
+      "cicd",
+      "coding-agent",
+      "course",
+      "devops",
+      "free",
+      "mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-09T16:46:49Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-28",
+  "lastChecked": "2026-05-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI Dev Tools Zoomcamp is a free course that helps you use AI tools to write better code, faster. We're starting the first cohort of this course on November 18, 2025! Sign up here to join us 👇🏼",
+    "Topics: ai, ai-agents, automation, cicd, coding-agent",
+    "GitHub stars: 1102",
+    "Last pushed: 2026-03-09"
+  ],
+  "id": "candidate-tool-github-datatalksclub-ai-dev-tools-zoomcamp",
+  "canonicalKey": "tool:github:datatalksclub/ai-dev-tools-zoomcamp",
+  "firstDiscoveredAt": "2026-05-28",
+  "lastSeenAt": "2026-05-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-28-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-28"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "tutorial",
+    "useCategory": [
+      "devops",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "tutorial",
+  "useCategory": [
+    "devops",
+    "coding",
+    "automation"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "agent-app",
+    "whatIsIt": "ai-dev-tools-zoomcamp is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-app.",
+      "AI Dev Tools Zoomcamp is a free course that helps you use AI tools to write better code, faster. We're starting the first cohort of this course on November 18, 2025! Sign up here to join us 👇🏼"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

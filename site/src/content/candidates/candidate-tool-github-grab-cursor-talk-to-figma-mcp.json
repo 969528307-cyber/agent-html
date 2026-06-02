@@ -1,0 +1,136 @@
+{
+  "type": "tool",
+  "title": "cursor-talk-to-figma-mcp",
+  "summary": "TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code) and Figma, allowing Agentic AI to communicate with Figma for reading designs and modifying them programmatically.",
+  "sourceUrl": "https://github.com/grab/cursor-talk-to-figma-mcp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "grab",
+    "repo": "cursor-talk-to-figma-mcp",
+    "fullName": "grab/cursor-talk-to-figma-mcp",
+    "stars": 6794,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agentic",
+      "agentic-ai",
+      "ai",
+      "ai-agents",
+      "automation",
+      "cursor",
+      "design",
+      "figma",
+      "generative-ai",
+      "llm",
+      "llms",
+      "mcp",
+      "model-context-protocol"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-29T11:05:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-27",
+  "lastChecked": "2026-05-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code) and Figma, allowing Agentic AI to communicate with Figma for reading designs and modifying them programmatically.",
+    "Topics: agent, agentic, agentic-ai, ai, ai-agents",
+    "GitHub stars: 6794",
+    "Last pushed: 2026-04-29"
+  ],
+  "id": "candidate-tool-github-grab-cursor-talk-to-figma-mcp",
+  "canonicalKey": "tool:github:grab/cursor-talk-to-figma-mcp",
+  "firstDiscoveredAt": "2026-05-27",
+  "lastSeenAt": "2026-05-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-27-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-27"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation",
+    "design"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "cursor-talk-to-figma-mcp is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with design workflows.",
+      "Relevant to mcp.",
+      "TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code) and Figma, allowing Agentic AI to communicate with Figma for reading designs and modifying them programmatically."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-27",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cursor-talk-to-figma-mcp",
+  "publishedAt": "2026-05-27"
+}

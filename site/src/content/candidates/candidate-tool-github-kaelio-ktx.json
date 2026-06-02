@@ -1,0 +1,142 @@
+{
+  "type": "tool",
+  "title": "ktx",
+  "summary": "ktx is an executable context layer for data and analytics agents 🐙 Allow Claude Code, Codex, and any AI agent to query data accurately through MCP with skills, memory and a semantic layer",
+  "sourceUrl": "https://github.com/Kaelio/ktx",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Kaelio",
+    "repo": "ktx",
+    "fullName": "Kaelio/ktx",
+    "stars": 772,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "agents",
+      "ai-agent",
+      "ai-agents",
+      "analytics",
+      "analytics-engineering",
+      "business-intelligence",
+      "claude",
+      "claude-code",
+      "claude-skills",
+      "codex",
+      "context-layer",
+      "data-analysis",
+      "data-engineering",
+      "llm",
+      "mcp",
+      "memory",
+      "semantic-layer",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-01T23:47:40Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-02",
+  "lastChecked": "2026-06-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "ktx is an executable context layer for data and analytics agents 🐙 Allow Claude Code, Codex, and any AI agent to query data accurately through MCP with skills, memory and a semantic layer",
+    "Topics: agent, agent-skills, agents, ai-agent, ai-agents",
+    "GitHub stars: 772",
+    "Last pushed: 2026-06-01"
+  ],
+  "id": "candidate-tool-github-kaelio-ktx",
+  "canonicalKey": "tool:github:kaelio/ktx",
+  "firstDiscoveredAt": "2026-06-02",
+  "lastSeenAt": "2026-06-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-02-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-02"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "data",
+      "coding",
+      "memory"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "data",
+    "coding",
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "ktx is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with data workflows.",
+      "Helps with coding workflows.",
+      "Helps with memory workflows.",
+      "Relevant to skill.",
+      "ktx is an executable context layer for data and analytics agents 🐙 Allow Claude Code, Codex, and any AI agent to query data accurately through MCP with skills, memory and a semantic layer"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-02",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ktx",
+  "publishedAt": "2026-06-02"
+}

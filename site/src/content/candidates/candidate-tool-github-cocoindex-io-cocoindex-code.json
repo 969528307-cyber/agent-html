@@ -1,0 +1,130 @@
+{
+  "type": "tool",
+  "title": "cocoindex-code",
+  "summary": "A super light-weight embedded code search engine CLI (AST based) that just works - saves 70% token and improves speed for coding agent  🌟 Star if you like it!",
+  "sourceUrl": "https://github.com/cocoindex-io/cocoindex-code",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "cocoindex-io",
+    "repo": "cocoindex-code",
+    "fullName": "cocoindex-io/cocoindex-code",
+    "stars": 1746,
+    "license": "Apache-2.0",
+    "topics": [
+      "agents",
+      "ast",
+      "cocoindex",
+      "code-search",
+      "coding-agent",
+      "context-engineering",
+      "indexing",
+      "mcp",
+      "python",
+      "tree-sitter"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T04:49:48Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-28",
+  "lastChecked": "2026-05-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A super light-weight embedded code search engine CLI (AST based) that just works - saves 70% token and improves speed for coding agent  🌟 Star if you like it!",
+    "Topics: agents, ast, cocoindex, code-search, coding-agent",
+    "GitHub stars: 1746",
+    "Last pushed: 2026-05-19"
+  ],
+  "id": "candidate-tool-github-cocoindex-io-cocoindex-code",
+  "canonicalKey": "tool:github:cocoindex-io/cocoindex-code",
+  "firstDiscoveredAt": "2026-05-28",
+  "lastSeenAt": "2026-05-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-28-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-28"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "cocoindex-code is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with coding workflows.",
+      "Relevant to agent-app.",
+      "A super light-weight embedded code search engine CLI (AST based) that just works - saves 70% token and improves speed for coding agent  🌟 Star if you like it!",
+      "Topics: agents, ast, cocoindex, code-search, coding-agent"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cocoindex-code",
+  "publishedAt": "2026-05-28"
+}

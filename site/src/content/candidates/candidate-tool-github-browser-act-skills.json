@@ -1,0 +1,145 @@
+{
+  "type": "tool",
+  "title": "skills",
+  "summary": "Browser automation CLI built for AI agents. Break through anti-bot walls, hand off to humans across platforms when stuck. Parallel multi-task execution, independent multi-session operation, isolated multi-account browsing.",
+  "sourceUrl": "https://github.com/browser-act/skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "browser-act",
+    "repo": "skills",
+    "fullName": "browser-act/skills",
+    "stars": 1429,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "automation",
+      "claude-cli",
+      "claude-code",
+      "claude-code-skills",
+      "claude-skills",
+      "codex",
+      "codex-cli",
+      "codex-skill",
+      "cursor",
+      "data-extraction",
+      "no-code",
+      "openclaw",
+      "openclaw-cli",
+      "openclaw-skill",
+      "openclaw-skills",
+      "web-data-extraction",
+      "web-scraping",
+      "web-scraping-api"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-25T17:27:38Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-26",
+  "lastChecked": "2026-05-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Browser automation CLI built for AI agents. Break through anti-bot walls, hand off to humans across platforms when stuck. Parallel multi-task execution, independent multi-session operation, isolated m",
+    "Topics: ai-agents, automation, claude-cli, claude-code, claude-code-skills",
+    "GitHub stars: 1429",
+    "Last pushed: 2026-05-25"
+  ],
+  "id": "candidate-tool-github-browser-act-skills",
+  "canonicalKey": "tool:github:browser-act/skills",
+  "firstDiscoveredAt": "2026-05-26",
+  "lastSeenAt": "2026-05-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-26-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-26"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "data",
+      "productivity",
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "data",
+    "productivity",
+    "coding",
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "skills is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with data workflows.",
+      "Helps with productivity workflows.",
+      "Helps with coding workflows.",
+      "Helps with automation workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "skills",
+  "publishedAt": "2026-05-26",
+  "reviewedAt": "2026-05-26",
+  "reviewedBy": "local-review"
+}

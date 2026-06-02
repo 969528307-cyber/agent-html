@@ -1,0 +1,125 @@
+{
+  "type": "tool",
+  "title": "neo",
+  "summary": "Turn any web app into an API. Chrome extension captures browser traffic, auto-generates schemas, lets AI replay APIs directly. No official API needed.",
+  "sourceUrl": "https://github.com/4ier/neo",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "4ier",
+    "repo": "neo",
+    "fullName": "4ier/neo",
+    "stars": 720,
+    "license": "",
+    "topics": [
+      "ai-agent",
+      "api-discovery",
+      "browser-automation",
+      "chrome-extension",
+      "web-scraping"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-28T11:17:59Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-26",
+  "lastChecked": "2026-05-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Turn any web app into an API. Chrome extension captures browser traffic, auto-generates schemas, lets AI replay APIs directly. No official API needed.",
+    "Topics: ai-agent, api-discovery, browser-automation, chrome-extension, web-scraping",
+    "GitHub stars: 720",
+    "Last pushed: 2026-04-28"
+  ],
+  "id": "candidate-tool-github-4ier-neo",
+  "canonicalKey": "tool:github:4ier/neo",
+  "firstDiscoveredAt": "2026-05-26",
+  "lastSeenAt": "2026-05-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-26-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-26"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "neo is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-app.",
+      "Turn any web app into an API. Chrome extension captures browser traffic, auto-generates schemas, lets AI replay APIs directly. No official API needed.",
+      "Topics: ai-agent, api-discovery, browser-automation, chrome-extension, web-scraping"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "neo",
+  "publishedAt": "2026-05-26"
+}

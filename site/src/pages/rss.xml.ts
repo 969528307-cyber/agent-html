@@ -10,8 +10,8 @@ export async function GET() {
     .map(
       (tool) => `<item>
   <title><![CDATA[${tool.data.name}]]></title>
-  <link>https://agentk.it/item/${tool.data.id}</link>
-  <guid>https://agentk.it/item/${tool.data.id}</guid>
+  <link>https://2playclaw.com/item/${tool.data.id}</link>
+  <guid>https://2playclaw.com/item/${tool.data.id}</guid>
   <description><![CDATA[${tool.data.summary}]]></description>
   <pubDate>${new Date(tool.data.publishedAt).toUTCString()}</pubDate>
 </item>`,
@@ -22,7 +22,7 @@ export async function GET() {
 <rss version="2.0">
 <channel>
   <title>agentk.it tools</title>
-  <link>https://agentk.it/tools</link>
+  <link>https://2playclaw.com/tools</link>
   <description>Recently published AI agent tools.</description>
 ${items}
 </channel>

@@ -1,6 +1,6 @@
 import { getCollection } from "astro:content";
 
-const site = "https://agentk.it";
+const site = "https://2playclaw.com";
 
 export async function GET() {
   const [tools, agents, learn, signals] = await Promise.all([

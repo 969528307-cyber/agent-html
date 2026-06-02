@@ -1,0 +1,142 @@
+{
+  "type": "tool",
+  "title": "neo",
+  "summary": "Neo.mjs is a self-evolving software organism: a professional end-to-end AI engineering team whose cross-model swarm inhabits live apps via Neural Link, Active Hybrid GraphRAG, DreamService, and self-healing loops.",
+  "sourceUrl": "https://github.com/neomjs/neo",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "neomjs",
+    "repo": "neo",
+    "fullName": "neomjs/neo",
+    "stars": 3190,
+    "license": "MIT",
+    "topics": [
+      "agent-memory",
+      "ai",
+      "ai-agent",
+      "ai-memory",
+      "context-engineering",
+      "frontend",
+      "frontend-runtime",
+      "graph-rag",
+      "javascript",
+      "json",
+      "knowledge-graph",
+      "llm",
+      "long-term-memory",
+      "mcp",
+      "mcp-server",
+      "multi-agent-systems",
+      "rag",
+      "scene-graph",
+      "semantic-search",
+      "web-workers"
+    ],
+    "defaultBranch": "dev",
+    "lastPushedAt": "2026-05-31T23:50:24Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-01",
+  "lastChecked": "2026-06-01",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Neo.mjs is a self-evolving software organism: a professional end-to-end AI engineering team whose cross-model swarm inhabits live apps via Neural Link, Active Hybrid GraphRAG, DreamService, and self-h",
+    "Topics: agent-memory, ai, ai-agent, ai-memory, context-engineering",
+    "GitHub stars: 3190",
+    "Last pushed: 2026-05-31"
+  ],
+  "id": "candidate-tool-github-neomjs-neo",
+  "canonicalKey": "tool:github:neomjs/neo",
+  "firstDiscoveredAt": "2026-06-01",
+  "lastSeenAt": "2026-06-01",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-01-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-01"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "research",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "research",
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "neo is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with research workflows.",
+      "Helps with memory workflows.",
+      "Relevant to mcp.",
+      "Neo.mjs is a self-evolving software organism: a professional end-to-end AI engineering team whose cross-model swarm inhabits live apps via Neural Link, Active Hybrid GraphRAG, DreamService, and self-h"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "neo",
+  "publishedAt": "2026-06-01",
+  "reviewedAt": "2026-06-01",
+  "reviewedBy": "local-review"
+}

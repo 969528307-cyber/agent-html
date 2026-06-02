@@ -1,0 +1,131 @@
+{
+  "type": "tool",
+  "title": "opencode-telegram-bot",
+  "summary": "OpenCode mobile client via Telegram: run and monitor AI coding tasks from your phone while everything runs locally on your machine. Scheduled tasks support.",
+  "sourceUrl": "https://github.com/grinev/opencode-telegram-bot",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "grinev",
+    "repo": "opencode-telegram-bot",
+    "fullName": "grinev/opencode-telegram-bot",
+    "stars": 708,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "autonomous-agent",
+      "coding-agent",
+      "developer-tools",
+      "grammy",
+      "nodejs",
+      "openclaw-alternative",
+      "opencode",
+      "telegram",
+      "telegrambot",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-19T14:17:22Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-27",
+  "lastChecked": "2026-05-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "OpenCode mobile client via Telegram: run and monitor AI coding tasks from your phone while everything runs locally on your machine. Scheduled tasks support.",
+    "Topics: ai-agent, autonomous-agent, coding-agent, developer-tools, grammy",
+    "GitHub stars: 708",
+    "Last pushed: 2026-05-19"
+  ],
+  "id": "candidate-tool-github-grinev-opencode-telegram-bot",
+  "canonicalKey": "tool:github:grinev/opencode-telegram-bot",
+  "firstDiscoveredAt": "2026-05-27",
+  "lastSeenAt": "2026-05-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-27-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-27"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "communication",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "communication",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "opencode-telegram-bot is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Relevant to agent-app.",
+      "OpenCode mobile client via Telegram: run and monitor AI coding tasks from your phone while everything runs locally on your machine. Scheduled tasks support.",
+      "Topics: ai-agent, autonomous-agent, coding-agent, developer-tools, grammy"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-27",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "opencode-telegram-bot",
+  "publishedAt": "2026-05-27"
+}

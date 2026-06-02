@@ -1,0 +1,142 @@
+{
+  "type": "tool",
+  "title": "learn-agentic-ai",
+  "summary": "Learn Agentic AI using Dapr Agentic Cloud Ascent (DACA) Design Pattern and Agent-Native Cloud Technologies: OpenAI Agents SDK, Memory, MCP, A2A, Knowledge Graphs, Dapr, Rancher Desktop, and Kubernetes.",
+  "sourceUrl": "https://github.com/panaversity/learn-agentic-ai",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "panaversity",
+    "repo": "learn-agentic-ai",
+    "fullName": "panaversity/learn-agentic-ai",
+    "stars": 4194,
+    "license": "MIT",
+    "topics": [
+      "a2a",
+      "agentic-ai",
+      "dapr",
+      "dapr-pub-sub",
+      "dapr-service-invocation",
+      "dapr-sidecar",
+      "dapr-workflow",
+      "docker",
+      "kafka",
+      "kubernetes",
+      "langmem",
+      "mcp",
+      "openai",
+      "openai-agents-sdk",
+      "openai-api",
+      "postgresql-database",
+      "rabbitmq",
+      "rancher-desktop",
+      "redis",
+      "serverless-containers"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-10-26T01:09:51Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-01",
+  "lastChecked": "2026-06-01",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Learn Agentic AI using Dapr Agentic Cloud Ascent (DACA) Design Pattern and Agent-Native Cloud Technologies: OpenAI Agents SDK, Memory, MCP, A2A, Knowledge Graphs, Dapr, Rancher Desktop, and Kubernetes",
+    "Topics: a2a, agentic-ai, dapr, dapr-pub-sub, dapr-service-invocation",
+    "GitHub stars: 4194",
+    "Last pushed: 2025-10-26"
+  ],
+  "id": "candidate-tool-github-panaversity-learn-agentic-ai",
+  "canonicalKey": "tool:github:panaversity/learn-agentic-ai",
+  "firstDiscoveredAt": "2026-06-01",
+  "lastSeenAt": "2026-06-01",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-01-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-01"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "tutorial",
+    "useCategory": [
+      "database",
+      "devops",
+      "automation",
+      "memory",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "tutorial",
+  "useCategory": [
+    "database",
+    "devops",
+    "automation",
+    "memory",
+    "design"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "mcp",
+    "whatIsIt": "learn-agentic-ai is an MCP-related tutorial tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with database workflows.",
+      "Helps with devops workflows.",
+      "Helps with automation workflows.",
+      "Helps with memory workflows.",
+      "Helps with design workflows."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

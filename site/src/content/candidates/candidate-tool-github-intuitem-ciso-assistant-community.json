@@ -1,0 +1,140 @@
+{
+  "type": "tool",
+  "title": "ciso-assistant-community",
+  "summary": "CISO Assistant is a one-stop-shop GRC platform for Risk Management, AppSec, Compliance & Audit, TPRM, BIA, Privacy, and Reporting. It supports 150+ global frameworks with automatic control mapping, including ISO 27001, NIST CSF, SOC 2, CIS, PCI DSS, NIS2, DORA, GDPR, HIPAA, CMMC, and more.",
+  "sourceUrl": "https://github.com/intuitem/ciso-assistant-community",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "intuitem",
+    "repo": "ciso-assistant-community",
+    "fullName": "intuitem/ciso-assistant-community",
+    "stars": 4095,
+    "license": "NOASSERTION",
+    "topics": [
+      "audit",
+      "automation",
+      "bsi",
+      "cis",
+      "compliance",
+      "cybersecurity",
+      "dora",
+      "ebios-rm",
+      "gdpr",
+      "grc",
+      "isms",
+      "iso27001",
+      "llm",
+      "mcp",
+      "nis2",
+      "nist",
+      "quantification",
+      "risk-management",
+      "security",
+      "soc2"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-01T21:47:31Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-02",
+  "lastChecked": "2026-06-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "CISO Assistant is a one-stop-shop GRC platform for Risk Management, AppSec, Compliance & Audit, TPRM, BIA, Privacy, and Reporting. It supports 150+ global frameworks with automatic control mapping, in",
+    "Topics: audit, automation, bsi, cis, compliance",
+    "GitHub stars: 4095",
+    "Last pushed: 2026-06-01"
+  ],
+  "id": "candidate-tool-github-intuitem-ciso-assistant-community",
+  "canonicalKey": "tool:github:intuitem/ciso-assistant-community",
+  "firstDiscoveredAt": "2026-06-02",
+  "lastSeenAt": "2026-06-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-02-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-02"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "security",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "security",
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "ciso-assistant-community is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "CISO Assistant is a one-stop-shop GRC platform for Risk Management, AppSec, Compliance & Audit, TPRM, BIA, Privacy, and Reporting. It supports 150+ global frameworks with automatic control mapping, in",
+      "Topics: audit, automation, bsi, cis, compliance"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-02",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ciso-assistant-community",
+  "publishedAt": "2026-06-02"
+}

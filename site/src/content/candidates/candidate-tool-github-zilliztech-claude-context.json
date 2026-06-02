@@ -1,0 +1,146 @@
+{
+  "type": "tool",
+  "title": "claude-context",
+  "summary": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
+  "sourceUrl": "https://github.com/zilliztech/claude-context",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "zilliztech",
+    "repo": "claude-context",
+    "fullName": "zilliztech/claude-context",
+    "stars": 11568,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agentic-rag",
+      "ai-coding",
+      "claude-code",
+      "code-generation",
+      "code-search",
+      "cursor",
+      "embedding",
+      "gemini-cli",
+      "mcp",
+      "merkle-tree",
+      "nodejs",
+      "openai",
+      "rag",
+      "semantic-search",
+      "typescript",
+      "vector-database",
+      "vibe-coding",
+      "voyage-ai",
+      "vscode-extension"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-22T07:26:05Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-26",
+  "lastChecked": "2026-05-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
+    "Topics: agent, agentic-rag, ai-coding, claude-code, code-generation",
+    "GitHub stars: 11568",
+    "Last pushed: 2026-05-22"
+  ],
+  "id": "candidate-tool-github-zilliztech-claude-context",
+  "canonicalKey": "tool:github:zilliztech/claude-context",
+  "firstDiscoveredAt": "2026-05-26",
+  "lastSeenAt": "2026-05-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-26-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-26"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "database",
+      "media",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "database",
+    "media",
+    "coding",
+    "research"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "claude-context is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with database workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-context",
+  "publishedAt": "2026-05-26"
+}

@@ -1,0 +1,128 @@
+{
+  "type": "tool",
+  "title": "forgecad-public-kit",
+  "summary": "Public companion kit for ForgeCAD: examples, agent skills, docs links, and issue tracking. The hosted CAD app and core source live elsewhere.",
+  "sourceUrl": "https://github.com/KoStard/forgecad-public-kit",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "KoStard",
+    "repo": "forgecad-public-kit",
+    "fullName": "KoStard/forgecad-public-kit",
+    "stars": 788,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "cad-as-code",
+      "cad-examples",
+      "forgecad",
+      "issue-tracker",
+      "javascript-cad",
+      "parametric-cad",
+      "typescript-cad"
+    ],
+    "defaultBranch": "mainline",
+    "lastPushedAt": "2026-05-25T16:58:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-26",
+  "lastChecked": "2026-05-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Public companion kit for ForgeCAD: examples, agent skills, docs links, and issue tracking. The hosted CAD app and core source live elsewhere.",
+    "Topics: agent-skills, cad-as-code, cad-examples, forgecad, issue-tracker",
+    "GitHub stars: 788",
+    "Last pushed: 2026-05-25"
+  ],
+  "id": "candidate-tool-github-kostard-forgecad-public-kit",
+  "canonicalKey": "tool:github:kostard/forgecad-public-kit",
+  "firstDiscoveredAt": "2026-05-26",
+  "lastSeenAt": "2026-05-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-26-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-26"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "forgecad-public-kit is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Public companion kit for ForgeCAD: examples, agent skills, docs links, and issue tracking. The hosted CAD app and core source live elsewhere.",
+      "Topics: agent-skills, cad-as-code, cad-examples, forgecad, issue-tracker"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "forgecad-public-kit",
+  "publishedAt": "2026-05-26"
+}

@@ -1,0 +1,142 @@
+{
+  "type": "tool",
+  "title": "ainativelang",
+  "summary": "AINL helps turn AI from \"a smart conversation\" into \"a structured worker.\"  It is designed for teams building AI workflows that need multiple steps, state and memory, tool use, repeatable execution, validation and control, and lower dependence on long prompt loops.  AINL is a compact, graph-canonica",
+  "sourceUrl": "https://github.com/sbhooley/ainativelang",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "sbhooley",
+    "repo": "ainativelang",
+    "fullName": "sbhooley/ainativelang",
+    "stars": 705,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-orchestration",
+      "ai-agents",
+      "ai-native-language",
+      "ainl",
+      "claude-code",
+      "compiler",
+      "deterministic-execution",
+      "domain-specific-language",
+      "dsl",
+      "graph-ir",
+      "langchain-alternative",
+      "llm-orchestration",
+      "mcp",
+      "model-context-protocol",
+      "multi-agent",
+      "openai",
+      "openclaw",
+      "prompt-engineering",
+      "python",
+      "workflow-engine"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-27T18:56:14Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-30",
+  "lastChecked": "2026-05-30",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AINL helps turn AI from \"a smart conversation\" into \"a structured worker.\"  It is designed for teams building AI workflows that need multiple steps, state and memory, tool use, repeatable execution, v",
+    "Topics: agent-orchestration, ai-agents, ai-native-language, ainl, claude-code",
+    "GitHub stars: 705",
+    "Last pushed: 2026-05-27"
+  ],
+  "id": "candidate-tool-github-sbhooley-ainativelang",
+  "canonicalKey": "tool:github:sbhooley/ainativelang",
+  "firstDiscoveredAt": "2026-05-30",
+  "lastSeenAt": "2026-05-30",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-30-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-30"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation",
+      "memory"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation",
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "ainativelang is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Helps with memory workflows.",
+      "Relevant to agent-framework.",
+      "AINL helps turn AI from \"a smart conversation\" into \"a structured worker.\"  It is designed for teams building AI workflows that need multiple steps, state and memory, tool use, repeatable execution, v"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-30",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ainativelang",
+  "publishedAt": "2026-05-30"
+}

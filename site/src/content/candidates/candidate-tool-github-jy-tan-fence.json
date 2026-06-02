@@ -1,0 +1,128 @@
+{
+  "type": "tool",
+  "title": "fence",
+  "summary": "Lightweight, container-free sandbox for running commands with network and filesystem restrictions",
+  "sourceUrl": "https://github.com/jy-tan/fence",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "jy-tan",
+    "repo": "fence",
+    "fullName": "jy-tan/fence",
+    "stars": 774,
+    "license": "Apache-2.0",
+    "topics": [
+      "bubblewrap",
+      "code-security",
+      "coding-agent",
+      "landlock",
+      "sandbox",
+      "seatbelt",
+      "seccomp",
+      "socat"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-28T22:42:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-29",
+  "lastChecked": "2026-05-29",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Lightweight, container-free sandbox for running commands with network and filesystem restrictions",
+    "Topics: bubblewrap, code-security, coding-agent, landlock, sandbox",
+    "GitHub stars: 774",
+    "Last pushed: 2026-05-28"
+  ],
+  "id": "candidate-tool-github-jy-tan-fence",
+  "canonicalKey": "tool:github:jy-tan/fence",
+  "firstDiscoveredAt": "2026-05-29",
+  "lastSeenAt": "2026-05-29",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-29-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-29"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "security",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "security",
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "fence is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with coding workflows.",
+      "Relevant to agent-app.",
+      "Lightweight, container-free sandbox for running commands with network and filesystem restrictions",
+      "Topics: bubblewrap, code-security, coding-agent, landlock, sandbox"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-29",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "fence",
+  "publishedAt": "2026-05-29"
+}

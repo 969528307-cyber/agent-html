@@ -1,0 +1,130 @@
+{
+  "type": "tool",
+  "title": "zerostack",
+  "summary": "Minimalistic coding agent written in Rust, optimized for memory footprint and performance",
+  "sourceUrl": "https://github.com/gi-dellav/zerostack",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "gi-dellav",
+    "repo": "zerostack",
+    "fullName": "gi-dellav/zerostack",
+    "stars": 1056,
+    "license": "GPL-3.0",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "agentic-coding",
+      "agents",
+      "ai",
+      "claude-code",
+      "coding-agent",
+      "llm",
+      "rust",
+      "rust-lang"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-31T20:30:08Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-01",
+  "lastChecked": "2026-06-01",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Minimalistic coding agent written in Rust, optimized for memory footprint and performance",
+    "Topics: agent, agentic-ai, agentic-coding, agents, ai",
+    "GitHub stars: 1056",
+    "Last pushed: 2026-05-31"
+  ],
+  "id": "candidate-tool-github-gi-dellav-zerostack",
+  "canonicalKey": "tool:github:gi-dellav/zerostack",
+  "firstDiscoveredAt": "2026-06-01",
+  "lastSeenAt": "2026-06-01",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-01-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-01"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "memory"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "zerostack is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with memory workflows.",
+      "Relevant to agent-app.",
+      "Minimalistic coding agent written in Rust, optimized for memory footprint and performance",
+      "Topics: agent, agentic-ai, agentic-coding, agents, ai"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-01",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "zerostack",
+  "publishedAt": "2026-06-01"
+}

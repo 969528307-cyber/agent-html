@@ -1,0 +1,136 @@
+{
+  "type": "tool",
+  "title": "piclaw",
+  "summary": "pi coding agent in a technicolor web trenchcoat ",
+  "sourceUrl": "https://github.com/rcarmo/piclaw",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "rcarmo",
+    "repo": "piclaw",
+    "fullName": "rcarmo/piclaw",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "adaptive-cards",
+      "ai-agent",
+      "bun",
+      "coding-agent",
+      "docker",
+      "llm",
+      "pi-agent",
+      "self-hosted",
+      "typescript",
+      "vnc",
+      "web-ui",
+      "workspace"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-28T19:51:06Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-29",
+  "lastChecked": "2026-05-29",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "pi coding agent in a technicolor web trenchcoat ",
+    "Topics: adaptive-cards, ai-agent, bun, coding-agent, docker",
+    "GitHub stars: 700",
+    "Last pushed: 2026-05-28"
+  ],
+  "id": "candidate-tool-github-rcarmo-piclaw",
+  "canonicalKey": "tool:github:rcarmo/piclaw",
+  "firstDiscoveredAt": "2026-05-29",
+  "lastSeenAt": "2026-05-29",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-29-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-29"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "communication",
+      "coding",
+      "design"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "communication",
+    "coding",
+    "design"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "piclaw is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with communication workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to agent-app."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-29",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "piclaw",
+  "publishedAt": "2026-05-29"
+}

@@ -1,0 +1,142 @@
+{
+  "type": "tool",
+  "title": "atom",
+  "summary": "Atom Agent, automate your workflows by talking to an AI — and let it remember, search, and handle tasks like a real assistant",
+  "sourceUrl": "https://github.com/rush86999/atom",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "rush86999",
+    "repo": "atom",
+    "fullName": "rush86999/atom",
+    "stars": 751,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agentic-workflow",
+      "ai",
+      "ai-agent",
+      "calendar",
+      "finance",
+      "gdrive",
+      "gmail",
+      "google-calendar",
+      "notion",
+      "productivity",
+      "scheduler",
+      "shopify",
+      "slack",
+      "tasks",
+      "zoho",
+      "zoom"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-20T12:37:47Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-05-26",
+  "lastChecked": "2026-05-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Atom Agent, automate your workflows by talking to an AI — and let it remember, search, and handle tasks like a real assistant",
+    "Topics: agentic-workflow, ai, ai-agent, calendar, finance",
+    "GitHub stars: 751",
+    "Last pushed: 2026-05-20"
+  ],
+  "id": "candidate-tool-github-rush86999-atom",
+  "canonicalKey": "tool:github:rush86999/atom",
+  "firstDiscoveredAt": "2026-05-26",
+  "lastSeenAt": "2026-05-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-05-26-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-05-26"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "communication",
+      "productivity",
+      "automation",
+      "memory"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "communication",
+    "productivity",
+    "automation",
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "atom is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with communication workflows.",
+      "Helps with productivity workflows.",
+      "Helps with automation workflows.",
+      "Helps with memory workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-05-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "atom",
+  "publishedAt": "2026-05-26"
+}
