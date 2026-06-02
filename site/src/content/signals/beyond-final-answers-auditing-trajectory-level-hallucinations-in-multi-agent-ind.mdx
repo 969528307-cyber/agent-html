@@ -1,0 +1,74 @@
+---
+englishTitle: "Beyond Final Answers: Auditing Hidden Failures in Multi-Agent Workflows"
+originalTitle: "Beyond Final Answers: Auditing Trajectory-Level Hallucinations in Multi-Agent Industrial Workflows"
+subtitle: "New benchmark reveals that most LLM agent failures occur in intermediate steps, not final outputs"
+status: "published"
+topic: "agent"
+path: "start"
+order: 1
+difficulty: "intermediate"
+readingTime: "3 min"
+summaryBullets:
+  - "Introduces Trajel, a dataset and taxonomy for auditing trajectory-level hallucinations across multi-step agent workflows"
+  - "Five-type hallucination taxonomy (factual, referential, logical, procedural, scope-based) captures failures missed by final-answer benchmarks"
+  - "Nearly half of hallucinated trajectories involve multiple hallucination types simultaneously"
+  - "Trajectory-aware detection significantly outperforms standard post-hoc verification methods"
+relatedTools: []
+relatedAgents: []
+nextReads: []
+sourceName: "arXiv"
+sourceUrl: "https://arxiv.org/abs/2605.24219v2"
+author: "Harshada Badave"
+permissionStatus: "open_license"
+originalPublishedAt: "2026-05-22"
+executiveSummary: "This paper introduces Trajel, a dataset and evaluation framework that audits hallucinations at the trajectory level in multi-agent industrial workflows. It reveals that most existing benchmarks miss failures originating in intermediate Thought-Action-Observation steps, and that nearly half of hallucinated trajectories contain multiple hallucination types simultaneously."
+signalThesis: "Trajectory-level hallucination auditing is essential for safe deployment of multi-agent systems, as final-answer benchmarks systematically miss the most common failure modes."
+whyItMatters: "For agentk.it users building multi-agent workflows, this paper provides a rigorous taxonomy and detection framework to catch failures that current evaluation tools miss—critical for production deployments where intermediate reasoning errors compound into costly mistakes."
+keyTakeaways:
+  - "Standard final-answer hallucination benchmarks miss the majority of failures in multi-step agent workflows"
+  - "A five-type taxonomy (factual, referential, logical, procedural, scope-based) is needed to classify trajectory-level hallucinations"
+  - "Automated detectors with high binary accuracy still misclassify the subtlest hallucination types"
+ecosystemImpact:
+  - label: "For Researchers"
+    body: "Provides a structured dataset and taxonomy that shifts evaluation from output-only to process-aware auditing, enabling more rigorous benchmarking of agent reasoning."
+  - label: "For Developers"
+    body: "Highlights the need for trajectory-aware detection in agent frameworks; developers should integrate step-by-step verification rather than relying on post-hoc checks."
+  - label: "For Users"
+    body: "End users of agentic systems will benefit from safer deployments as trajectory-level auditing catches failures that could lead to incorrect decisions in industrial workflows."
+whatToWatchNext:
+  - "Integration of trajectory-level hallucination detection into popular agent frameworks like LangChain and AutoGen"
+  - "Extension of the Trajel taxonomy to multimodal and tool-use agent scenarios"
+publishedAt: "2026-06-02"
+---
+
+## Summary
+
+Large Language Models (LLMs) are increasingly deployed as autonomous agents that reason, use tools, and act over multiple steps. Yet most hallucination benchmarks still evaluate only the final output, missing failures that originate in intermediate Thought-Action-Observation steps. This paper presents **Trajel**, a dataset and evaluation framework for auditing trajectory-level hallucinations in multi-agent industrial workflows.
+
+The authors introduce a five-type hallucination taxonomy—factual, referential, logical, procedural, and scope-based—over expert-annotated agent traces from AssetOpsBench. Their results show that the most common failure modes are missed by existing benchmarks, that nearly half of hallucinated trajectories involve multiple types at once, and that automated detectors with high binary accuracy still misclassify the subtlest types. Trajectory-aware detection significantly outperforms standard post-hoc verification, making taxonomy-grounded evaluation necessary for safer agentic deployment.
+
+## Key Contributions
+
+- **Trajel dataset**: Expert-annotated agent traces from industrial AssetOpsBench with trajectory-level hallucination labels
+- **Five-type hallucination taxonomy**: Factual, referential, logical, procedural, and scope-based categories for intermediate failures
+- **Benchmarking results**: Supervised detection models evaluated at subtask, trajectory, and long-context levels
+- **Key finding**: Nearly half of hallucinated trajectories contain multiple hallucination types simultaneously
+- **Detection insight**: Trajectory-aware detection significantly outperforms standard post-hoc verification
+
+## Implications
+
+### For Researchers
+
+This work shifts the evaluation paradigm from output-only to process-aware auditing. The Trajel dataset and taxonomy provide a rigorous foundation for studying how reasoning errors compound across multi-step agent workflows. Researchers can now benchmark models on intermediate reasoning quality, not just final answer correctness.
+
+### For Developers
+
+Developers building multi-agent systems should integrate trajectory-level verification rather than relying on post-hoc checks. The five-type taxonomy offers a practical framework for debugging agent failures in production. Tools that monitor intermediate Thought-Action-Observation steps will be essential for safe deployment.
+
+### For Users
+
+End users of agentic systems—especially in industrial and enterprise contexts—will benefit from safer, more reliable deployments. Trajectory-level auditing catches failures that could lead to incorrect decisions, financial losses, or safety issues in automated workflows.
+
+## References
+
+- https://arxiv.org/abs/2605.24219v2
