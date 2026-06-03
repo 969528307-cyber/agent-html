@@ -78,7 +78,7 @@ jobs:
           name: hostinger-dist
           path: dist
       - name: Deploy Hostinger tools page
-        timeout-minutes: 3
+        timeout-minutes: 12
         env:
           FTP_HOST: ftp://145.79.14.52
           FTP_USER: ${{ secrets.FTP_USER }}
@@ -118,25 +118,26 @@ jobs:
             echo "$html" | grep -q "deploy:${GITHUB_SHA}"
           }
 
-          for remote in \
-            public_html/tools/index.html \
-            domains/2playclaw.com/public_html/tools/index.html \
-            tools/index.html
-          do
-            if ! upload_file tools/index.html "$remote"; then
+          remote="tools/index.html"
+          for upload_attempt in 1 2 3 4 5; do
+            echo "Hostinger tools upload attempt $upload_attempt/5"
+            if upload_file tools/index.html tools/index.html; then
+              for verify_attempt in 1 2 3 4 5 6; do
+                if verify_tools; then
+                  echo "Hostinger tools page verified via FTP path: $remote"
+                  exit 0
+                fi
+                sleep 5
+              done
+              echo "Uploaded $remote, but https://2playclaw.com/tools/ is still stale." >&2
+            else
               echo "Upload failed for FTP path: $remote" >&2
-              continue
             fi
-            for attempt in 1 2 3 4 5 6; do
-              if verify_tools; then
-                echo "Hostinger tools page verified via FTP path: $remote"
-                exit 0
-              fi
-              sleep 5
-            done
+
+            [ "$upload_attempt" -eq 5 ] || sleep 30
           done
 
-          echo "Uploaded tools/index.html to all candidate FTP paths, but https://2playclaw.com/tools/ is still stale." >&2
+          echo "Hostinger tools deploy failed after 5 upload attempts." >&2
           exit 1
       - name: Verify Hostinger tools page
         run: |
