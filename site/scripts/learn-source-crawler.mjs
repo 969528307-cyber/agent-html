@@ -25,7 +25,7 @@ export const collectLearnCandidates = async ({ limit = 20, dryRun = false } = {}
       sourceId: slug,
       title,
       sourceUrl: `https://2playclaw.com/learn/${slug}`,
-      sourceName: "2playclaw.com Learn library",
+      sourceName: "To Play Claw Learn library",
       summary: frontmatter.subtitle || frontmatter.coreIdea || `Learning candidate for ${title}.`,
       proposedCategory: [frontmatter.topic, frontmatter.path].filter(Boolean),
       proposedAgents: Array.isArray(frontmatter.relatedAgents) ? frontmatter.relatedAgents : [],

@@ -2,7 +2,7 @@
 /**
  * tools-github-crawler.mjs
  *
- * GitHub search-based tool discovery for 2playclaw.com.
+ * GitHub search-based tool discovery for To Play Claw.
  * Supports incremental discovery: skips repos already in candidates,
  * paginates through results to find genuinely new repos.
  *

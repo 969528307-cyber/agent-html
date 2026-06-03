@@ -23,7 +23,7 @@ permissionStatus: "open_license"
 originalPublishedAt: "2026-05-17"
 executiveSummary: "Training LLMs to reliably call tools remains a bottleneck. Two new papers present complementary solutions: FireFly generates verified tool-call trajectories from real APIs with ground-truth outcomes, while EnvFactory synthesizes executable environments and uses reinforcement learning to scale agent training. Together they address the core data problem that limits tool-using agent reliability."
 signalThesis: "The next leap in agent reliability won't come from better models — it will come from verified tool-call training data at scale."
-whyItMatters: "Every tool indexed in 2playclaw.com — whether MCP server, CLI tool, or workflow — depends on the agent's ability to call it correctly. The quality of tool-calling directly determines whether these tools are useful or dangerous."
+whyItMatters: "Every tool indexed in To Play Claw — whether MCP server, CLI tool, or workflow — depends on the agent's ability to call it correctly. The quality of tool-calling directly determines whether these tools are useful or dangerous."
 keyTakeaways:
   - "FireFly uses real APIs (not synthetic mocks) to generate training data with verifiable labels"
   - "EnvFactory introduces Agentic RL: agents learn tool use through reinforcement in executable environments"
@@ -54,6 +54,6 @@ Minrui Xu et al. tackle the scaling problem from a different angle. EnvFactory s
 
 ## Why This Matters for the Ecosystem
 
-The 204 tools indexed in 2playclaw.com only deliver value if agents can call them reliably. Papers like FireFly and EnvFactory represent the infrastructure layer that will make tool-calling agents production-ready. Combined with MCP as the standard protocol, we're seeing the full stack emerge: protocol standardization (MCP), security enforcement (MCP Proxy/ADR), and training infrastructure (FireFly/EnvFactory).
+The 204 tools indexed in To Play Claw only deliver value if agents can call them reliably. Papers like FireFly and EnvFactory represent the infrastructure layer that will make tool-calling agents production-ready. Combined with MCP as the standard protocol, we're seeing the full stack emerge: protocol standardization (MCP), security enforcement (MCP Proxy/ADR), and training infrastructure (FireFly/EnvFactory).
 
 Sources: [FireFly (arXiv:2605.17558)](https://arxiv.org/abs/2605.17558), [EnvFactory (arXiv:2605.18703)](https://arxiv.org/abs/2605.18703), [OpenAPI→MCP (arXiv:2605.14312)](https://arxiv.org/abs/2605.14312)

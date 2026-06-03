@@ -242,7 +242,7 @@ test("builds published learn and signal entries from candidates", () => {
     status: "approved",
     title: "Skill vs MCP",
     sourceUrl: "https://2playclaw.com/learn/skill-vs-mcp",
-    sourceName: "2playclaw.com Learn library",
+    sourceName: "To Play Claw Learn library",
     discoveredAt: "2026-05-14",
     discoveredFrom: "directory",
     summary: "A practical comparison.",
