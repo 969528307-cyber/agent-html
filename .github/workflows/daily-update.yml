@@ -1,0 +1,56 @@
+name: Daily update
+
+on:
+  schedule:
+    - cron: "30 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Auto-publish ready candidates
+        run: npm run auto:publish
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Commit daily content changes
+        run: |
+          git add src/content
+          if git diff --quiet --cached; then
+            echo "No daily content changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "daily build $(TZ=Asia/Shanghai date +%F)"
+          git push
+          curl -fsSL -X POST \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/deploy.yml/dispatches" \
+            -d '{"ref": "main"}'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
