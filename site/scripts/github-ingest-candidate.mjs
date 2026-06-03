@@ -7,7 +7,7 @@ const root = new URL("..", import.meta.url);
 
 const githubApiHeaders = {
   Accept: "application/vnd.github+json",
-  "User-Agent": "agentk-it-ingest",
+  "User-Agent": "2playclaw-ingest",
   ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {}),
 };
 

@@ -24,7 +24,7 @@ export const collectSignalCandidates = async ({ limit = 20, dryRun = false } = {
       source: sourceRef,
       sourceId: slug,
       title,
-      sourceUrl: frontmatter.sourceUrl || `https://agentk.it/signals/${slug}`,
+      sourceUrl: frontmatter.sourceUrl || `https://2playclaw.com/signals/${slug}`,
       sourceName: frontmatter.sourceName || "Unknown source",
       summary: frontmatter.executiveSummary || frontmatter.whyItMatters || `Signal candidate for ${title}.`,
       proposedCategory: ["signal"],

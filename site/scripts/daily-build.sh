@@ -16,4 +16,4 @@ echo "=== [$(date -u +"%Y-%m-%dT%H:%M:%SZ")] Daily build done ==="
 # Deployment step:
 # If using Vercel, add: curl -X POST "$VERCEL_DEPLOY_HOOK_URL"
 # If using Cloudflare Pages, add: curl -X POST "$CF_DEPLOY_HOOK_URL"
-# If using rsync to a VPS, add: rsync -avz --delete dist/ user@host:/var/www/agentk.it/
+# If using rsync to a VPS, add: rsync -avz --delete dist/ user@host:/var/www/2playclaw.com/

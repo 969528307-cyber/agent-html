@@ -172,7 +172,7 @@ function renderEcosystemDigestMDX(digest, date) {
 
   return `---
 title: "Agent Tool Ecosystem Digest (${date})"
-subtitle: "Published tools, stars distribution, license breakdown, and recent activity — data from agentk.it"
+subtitle: "Published tools, stars distribution, license breakdown, and recent activity — data from 2playclaw.com"
 status: "published"
 topic: "agent"
 path: "start"
@@ -237,7 +237,7 @@ ${recentRows}
 
 ---
 
-*Data refreshed ${date}. Source: [agentk.it](https://agentk.it) published tool directory.*
+*Data refreshed ${date}. Source: [2playclaw.com](https://2playclaw.com) published tool directory.*
 `;
 }
 
@@ -259,7 +259,7 @@ function renderAgentCompatMDX(compat, date) {
 
   return `---
 title: "Tool-Agent Compatibility Matrix (${date})"
-subtitle: "Which tools work with which agent platforms — compatibility data from agentk.it"
+subtitle: "Which tools work with which agent platforms — compatibility data from 2playclaw.com"
 status: "published"
 topic: "agent"
 path: "start"
@@ -297,7 +297,7 @@ ${compat.toolTypes.map(t => `| ${t} | ${compat.counts[t] || 0} |`).join("\n")}
 
 ---
 
-*Data refreshed ${date}. Agent compatibility based on published tool configurations in [agentk.it](https://agentk.it).*
+*Data refreshed ${date}. Agent compatibility based on published tool configurations in [2playclaw.com](https://2playclaw.com).*
 `;
 }
 

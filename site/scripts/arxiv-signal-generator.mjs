@@ -176,7 +176,7 @@ async function generateSignalContent(entry) {
   // Map to valid schema topics
   const validTopics = ["mcp", "skill", "agent", "workflow", "glossary"];
 
-  const prompt = `You are a research analyst for agentk.it, a directory of AI agent tools and frameworks.
+  const prompt = `You are a research analyst for 2playclaw.com, a directory of AI agent tools and frameworks.
 
 Generate a structured signal article in YAML frontmatter + markdown format about this arXiv paper.
 
@@ -213,7 +213,7 @@ permissionStatus: "open_license"
 originalPublishedAt: "${published}"
 executiveSummary: "2-3 sentence executive summary"
 signalThesis: "One-line thesis about what this means for the AI agent ecosystem"
-whyItMatters: "Why this matters for agentk.it users and the agent tool ecosystem"
+whyItMatters: "Why this matters for 2playclaw.com users and the agent tool ecosystem"
 keyTakeaways:
   - "Takeaway 1"
   - "Takeaway 2"

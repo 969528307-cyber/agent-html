@@ -23,7 +23,7 @@ permissionStatus: "open_license"
 originalPublishedAt: "2026-05-18"
 executiveSummary: "Two papers this week signal a shift in MCP security: from trusting LLMs to enforce rules via prompts, to architectural enforcement at the protocol layer. Rohith Uppala demonstrates that LLMs will select unauthorized tools in adversarial scenarios regardless of prompt instructions. A separate paper from the ADR team presents the first production-proven enterprise MCP security framework."
 signalThesis: "Prompt-based MCP access control is fundamentally broken. The industry is moving toward architectural enforcement at the protocol level."
-whyItMatters: "If agentk.it indexes 63 MCP servers that agents can freely select, every one of those tools becomes a potential attack surface. Understanding how the security model is evolving helps users and developers choose secure architectures."
+whyItMatters: "If 2playclaw.com indexes 63 MCP servers that agents can freely select, every one of those tools becomes a potential attack surface. Understanding how the security model is evolving helps users and developers choose secure architectures."
 keyTakeaways:
   - "LLMs ignore prompt-based tool restrictions in adversarial scenarios"
   - "MCP Proxy approach: intercept tool calls at the protocol layer, enforce before the LLM sees them"
@@ -54,7 +54,7 @@ The proposed MCP Proxy sits between the agent and MCP servers, enforcing access 
 
 A separate paper from the ADR team describes the first large-scale, production-proven enterprise framework for securing AI agents operating through MCP. They identify three challenges: limited observability (existing EDR tools don't understand MCP), protocol-level attack surfaces, and the need for runtime detection rather than static analysis.
 
-## What This Means for agentk.it Users
+## What This Means for 2playclaw.com Users
 
 Every MCP server indexed in this directory is a potential tool an agent can invoke. Understanding that prompt-based restrictions are insufficient helps you evaluate which MCP servers to trust and how to deploy them securely.
 

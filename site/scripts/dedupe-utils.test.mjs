@@ -49,12 +49,12 @@ test("normalizes learn titles enough to catch article-only duplicates", () => {
   const learnA = {
     type: "learn",
     title: "How to Judge an Agent Skill",
-    sourceUrl: "https://agentk.it/learn/how-to-judge-an-agent-skill",
+    sourceUrl: "https://2playclaw.com/learn/how-to-judge-an-agent-skill",
   };
   const learnB = {
     type: "learn",
     title: "How to Judge Agent Skill",
-    sourceUrl: "https://agentk.it/learn/how-to-judge-agent-skill",
+    sourceUrl: "https://2playclaw.com/learn/how-to-judge-agent-skill",
   };
 
   assert.equal(canonicalKeyForCandidate(learnA), "learn:title:how to judge agent skill");

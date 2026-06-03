@@ -9,7 +9,7 @@ import {
 
 const githubApiHeaders = {
   Accept: "application/vnd.github+json",
-  "User-Agent": "agentk-it-discover",
+  "User-Agent": "2playclaw-discover",
   ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {}),
 };
 

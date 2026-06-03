@@ -2,7 +2,7 @@
 /**
  * tools-github-crawler.mjs
  *
- * GitHub search-based tool discovery for agentk.it.
+ * GitHub search-based tool discovery for 2playclaw.com.
  * Supports incremental discovery: skips repos already in candidates,
  * paginates through results to find genuinely new repos.
  *
@@ -36,7 +36,7 @@ const MAX_PAGES = 10; // Safety limit: don't paginate forever
 
 const githubApiHeaders = {
   Accept: "application/vnd.github+json",
-  "User-Agent": "agentk-it-tools-crawler",
+  "User-Agent": "2playclaw-tools-crawler",
   ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {}),
 };
 
