@@ -8,19 +8,22 @@ import { assertPublicDistSafe, cleanPublicDist } from "./public-build-utils.mjs"
 const makeTempDist = async () => {
   const root = await fs.mkdtemp(path.join(os.tmpdir(), "agentkit-public-dist-"));
   await fs.mkdir(path.join(root, "internal", "candidates"), { recursive: true });
+  await fs.mkdir(path.join(root, "prototype"), { recursive: true });
   await fs.mkdir(path.join(root, "tools"), { recursive: true });
   await fs.writeFile(path.join(root, "internal", "index.html"), "internal");
   await fs.writeFile(path.join(root, "internal", "candidates", "index.html"), "candidates");
+  await fs.writeFile(path.join(root, "prototype", "index.html"), "prototype");
   await fs.writeFile(path.join(root, "tools", "index.html"), "public tools");
   return root;
 };
 
-test("cleanPublicDist removes internal pages while keeping public pages", async () => {
+test("cleanPublicDist removes internal and prototype pages while keeping public pages", async () => {
   const dist = await makeTempDist();
 
   await cleanPublicDist(dist);
 
   await assert.rejects(() => fs.access(path.join(dist, "internal")));
+  await assert.rejects(() => fs.access(path.join(dist, "prototype")));
   assert.equal(await fs.readFile(path.join(dist, "tools", "index.html"), "utf8"), "public tools");
 });
 

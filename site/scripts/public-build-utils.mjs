@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-export const forbiddenPublicOutputPaths = ["internal", "internal-auth", "internal-api"];
+export const forbiddenPublicOutputPaths = ["internal", "internal-auth", "internal-api", "prototype"];
 
 export const cleanPublicDist = async (distDir) => {
   await Promise.all(
