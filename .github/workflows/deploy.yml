@@ -22,6 +22,8 @@ jobs:
         working-directory: site
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -45,6 +47,8 @@ jobs:
           BASE: /
       - name: Mark Hostinger tools build
         run: printf '\n<!-- deploy:%s -->\n' "$GITHUB_SHA" >> dist/tools/index.html
+      - name: Write Hostinger item deploy list
+        run: node scripts/write-item-deploy-list.mjs
       - name: Upload Hostinger dist artifact
         uses: actions/upload-artifact@v4
         with:
@@ -170,7 +174,7 @@ jobs:
               --retry 1 \
               --retry-delay 5 \
               --upload-file "$file" \
-              "$ftp_base/public_html/$remote" \
+              "$ftp_base/$remote" \
               --user "$FTP_USER:$FTP_PASS"
           }
 
@@ -208,7 +212,17 @@ jobs:
             *) ftp_base="ftp://$ftp_base" ;;
           esac
 
-          find item -type f -print0 | sort -z | while IFS= read -r -d '' file; do
+          if [ ! -s item-deploy-list.txt ]; then
+            echo "No changed item pages to upload."
+            exit 0
+          fi
+
+          while IFS= read -r file; do
+            [ -n "$file" ] || continue
+            [ -f "$file" ] || {
+              echo "Skipping missing item page: $file" >&2
+              continue
+            }
             remote="${file#./}"
             echo "Uploading $remote"
             timeout 90s curl --fail --silent --show-error \
@@ -218,6 +232,6 @@ jobs:
               --retry 1 \
               --retry-delay 5 \
               --upload-file "$file" \
-              "$ftp_base/public_html/$remote" \
+              "$ftp_base/$remote" \
               --user "$FTP_USER:$FTP_PASS"
-          done
+          done < item-deploy-list.txt
