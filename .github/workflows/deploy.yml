@@ -115,11 +115,14 @@ jobs:
           }
 
           for remote in \
-            tools/index.html \
             public_html/tools/index.html \
-            domains/2playclaw.com/public_html/tools/index.html
+            domains/2playclaw.com/public_html/tools/index.html \
+            tools/index.html
           do
-            upload_file tools/index.html "$remote"
+            if ! upload_file tools/index.html "$remote"; then
+              echo "Upload failed for FTP path: $remote" >&2
+              continue
+            fi
             for attempt in 1 2 3 4 5 6; do
               if verify_tools; then
                 echo "Hostinger tools page verified via FTP path: $remote"
