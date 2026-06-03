@@ -4,6 +4,9 @@ import { spawn } from "node:child_process";
 
 const toolContentPattern = /^(?:site\/)?src\/content\/tools\/([^/]+)\.json$/;
 const fullItemDeployPatterns = [
+  /^\.github\/workflows\/deploy\.yml$/,
+  /^(?:site\/)?scripts\/item-deploy-utils\.mjs$/,
+  /^(?:site\/)?scripts\/write-item-deploy-list\.mjs$/,
   /^(?:site\/)?src\/pages\/item\//,
   /^(?:site\/)?src\/content\.config\.ts$/,
 ];

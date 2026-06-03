@@ -42,3 +42,10 @@ test("falls back to all item pages when item rendering code changes", () => {
     allItemPaths,
   );
 });
+
+test("falls back to all item pages when Hostinger deploy logic changes", () => {
+  assert.deepEqual(
+    changedItemDeployPaths([".github/workflows/deploy.yml"], allItemPaths),
+    allItemPaths,
+  );
+});
