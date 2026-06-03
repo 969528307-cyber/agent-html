@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -73,7 +73,8 @@ jobs:
         with:
           name: hostinger-dist
           path: dist
-      - name: Deploy Hostinger public pages
+      - name: Deploy Hostinger tools page
+        timeout-minutes: 3
         env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USER: ${{ secrets.FTP_USER }}
@@ -94,11 +95,52 @@ jobs:
             local file="$1"
             local remote="${file#./}"
             echo "Uploading $remote"
-            curl --fail --silent --show-error \
+            timeout 90s curl --fail --silent --show-error \
               --ftp-create-dirs \
               --connect-timeout 20 \
-              --max-time 90 \
-              --retry 2 \
+              --max-time 75 \
+              --retry 1 \
+              --retry-delay 5 \
+              --upload-file "$file" \
+              "$ftp_base/public_html/$remote" \
+              --user "$FTP_USER:$FTP_PASS"
+          }
+
+          upload_file tools/index.html
+      - name: Verify Hostinger tools page
+        run: |
+          html="$(curl -fsSL --retry 3 --retry-delay 10 "https://2playclaw.com/tools/?deploy=${GITHUB_SHA}")"
+          echo "$html" | grep -q "Tools directory"
+          echo "$html" | grep -q "/item/"
+          echo "$html" | grep -q "deploy:${GITHUB_SHA}"
+      - name: Deploy Hostinger supporting pages
+        continue-on-error: true
+        timeout-minutes: 10
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+        run: |
+          test -n "$FTP_HOST"
+          test -n "$FTP_USER"
+          test -n "$FTP_PASS"
+          cd dist
+
+          ftp_base="${FTP_HOST%/}"
+          case "$ftp_base" in
+            ftp://*|ftps://*) ;;
+            *) ftp_base="ftp://$ftp_base" ;;
+          esac
+
+          upload_file() {
+            local file="$1"
+            local remote="${file#./}"
+            echo "Uploading $remote"
+            timeout 90s curl --fail --silent --show-error \
+              --ftp-create-dirs \
+              --connect-timeout 20 \
+              --max-time 75 \
+              --retry 1 \
               --retry-delay 5 \
               --upload-file "$file" \
               "$ftp_base/public_html/$remote" \
@@ -113,11 +155,11 @@ jobs:
             done
           }
 
-          for file in index.html favicon.svg favicon.ico robots.txt sitemap.xml rss.xml tools/index.html; do
+          for file in index.html favicon.svg favicon.ico robots.txt sitemap.xml rss.xml; do
             [ -f "$file" ] && upload_file "$file"
           done
 
-          for dir in _astro tools type category agents search learn signals for upgrade; do
+          for dir in _astro type category agents search learn signals for upgrade; do
             upload_tree "$dir"
           done
       - name: Deploy Hostinger item pages
@@ -142,19 +184,13 @@ jobs:
           find item -type f -print0 | sort -z | while IFS= read -r -d '' file; do
             remote="${file#./}"
             echo "Uploading $remote"
-            curl --fail --silent --show-error \
+            timeout 90s curl --fail --silent --show-error \
               --ftp-create-dirs \
               --connect-timeout 20 \
-              --max-time 90 \
-              --retry 2 \
+              --max-time 75 \
+              --retry 1 \
               --retry-delay 5 \
               --upload-file "$file" \
               "$ftp_base/public_html/$remote" \
               --user "$FTP_USER:$FTP_PASS"
           done
-      - name: Verify Hostinger tools page
-        run: |
-          html="$(curl -fsSL --retry 3 --retry-delay 10 "https://2playclaw.com/tools/?deploy=${GITHUB_SHA}")"
-          echo "$html" | grep -q "Tools directory"
-          echo "$html" | grep -q "/item/"
-          echo "$html" | grep -q "deploy:${GITHUB_SHA}"
