@@ -1,0 +1,108 @@
+{
+  "id": "candidate-learn-title-mcp-server-selection-guide",
+  "type": "learn",
+  "status": "published",
+  "title": "MCP Server Selection Guide",
+  "sourceUrl": "https://2playclaw.com/learn/mcp-server-selection-guide",
+  "sourceName": "To Play Claw Learn library",
+  "sourceRegistryId": "local-learn-library",
+  "sourceRegistry": {
+    "id": "local-learn-library",
+    "name": "Local Learn Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/learn",
+    "acceptRules": [
+      "must_have_topic",
+      "must_have_teaching_angle",
+      "must_link_related_tools_or_agents_when_possible"
+    ],
+    "rejectRules": [
+      "thin_summary_only",
+      "no_learning_outcome"
+    ]
+  },
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-04",
+  "discoveredFrom": "directory",
+  "summary": "Distribution, quality metrics, and functional domains across 63 indexed MCP tools — data-driven selection",
+  "proposedCategory": [
+    "mcp",
+    "use-case"
+  ],
+  "proposedAgents": [
+    "claude-code",
+    "codex",
+    "cursor",
+    "hermes-agent",
+    "qwen-code",
+    "trae",
+    "openclaw"
+  ],
+  "extractedSignals": [
+    "63 MCP tools indexed, covering 16 functional domains",
+    "50K+ star tools make up 16%, 1K-5K star tools are the largest group (48%)",
+    "Top 3 domains: Docs 13, Search 12, Data 11"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Learn collector output. Review teaching angle, examples, related tools, and whether this should remain Learn content rather than a Tool or Signal.",
+  "publishedAs": "mcp-server-selection-guide",
+  "publishedAt": "2026-06-04",
+  "learnProfile": {
+    "topic": "mcp",
+    "path": "use-case",
+    "difficulty": "intermediate",
+    "readingTime": "5 min",
+    "relatedTools": [],
+    "relatedAgents": [
+      "claude-code",
+      "codex",
+      "cursor",
+      "hermes-agent",
+      "qwen-code",
+      "trae",
+      "openclaw"
+    ]
+  },
+  "canonicalKey": "learn:title:mcp server selection guide",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-06-04"
+    }
+  ],
+  "duplicateReason": "source already published",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "learn",
+    "primaryType": "learn",
+    "whatIsIt": "MCP Server Selection Guide is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Relevant to use-case.",
+      "63 MCP tools indexed, covering 16 functional domains",
+      "50K+ star tools make up 16%, 1K-5K star tools are the largest group (48%)",
+      "Top 3 domains: Docs 13, Search 12, Data 11"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  }
+}

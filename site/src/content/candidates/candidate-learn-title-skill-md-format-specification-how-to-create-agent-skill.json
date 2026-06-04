@@ -1,0 +1,102 @@
+{
+  "id": "candidate-learn-title-skill-md-format-specification-how-to-create-agent-skill",
+  "type": "learn",
+  "status": "published",
+  "title": "SKILL.md Format Specification — How to Create an Agent Skill",
+  "sourceUrl": "https://2playclaw.com/learn/skill-md-format-spec",
+  "sourceName": "To Play Claw Learn library",
+  "sourceRegistryId": "local-learn-library",
+  "sourceRegistry": {
+    "id": "local-learn-library",
+    "name": "Local Learn Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/learn",
+    "acceptRules": [
+      "must_have_topic",
+      "must_have_teaching_angle",
+      "must_link_related_tools_or_agents_when_possible"
+    ],
+    "rejectRules": [
+      "thin_summary_only",
+      "no_learning_outcome"
+    ]
+  },
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-04",
+  "discoveredFrom": "directory",
+  "summary": "Based on the public format from anthropics/skills (136K★) and 51 Skill repos indexed in To Play Claw",
+  "proposedCategory": [
+    "skill",
+    "start"
+  ],
+  "proposedAgents": [
+    "claude-code",
+    "codex",
+    "hermes-agent",
+    "openclaw"
+  ],
+  "extractedSignals": [
+    "SKILL.md is the standard entry file for Agent Skills: YAML frontmatter + Markdown body",
+    "51 Skill repos are indexed in To Play Claw, covering code, design, security, and docs",
+    "The format originates from anthropics/skills and the Agent Skills specification"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Learn collector output. Review teaching angle, examples, related tools, and whether this should remain Learn content rather than a Tool or Signal.",
+  "publishedAs": "skill-md-format-spec",
+  "publishedAt": "2026-06-04",
+  "learnProfile": {
+    "topic": "skill",
+    "path": "start",
+    "difficulty": "beginner",
+    "readingTime": "5 min",
+    "relatedTools": [],
+    "relatedAgents": [
+      "claude-code",
+      "codex",
+      "hermes-agent",
+      "openclaw"
+    ]
+  },
+  "canonicalKey": "learn:title:skill md format specification how to create agent skill",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-06-04"
+    }
+  ],
+  "duplicateReason": "source already published",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "learn",
+    "primaryType": "learn",
+    "whatIsIt": "SKILL.md Format Specification — How to Create an Agent Skill is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Relevant to start.",
+      "SKILL.md is the standard entry file for Agent Skills: YAML frontmatter + Markdown body",
+      "51 Skill repos are indexed in To Play Claw, covering code, design, security, and docs",
+      "The format originates from anthropics/skills and the Agent Skills specification"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  }
+}

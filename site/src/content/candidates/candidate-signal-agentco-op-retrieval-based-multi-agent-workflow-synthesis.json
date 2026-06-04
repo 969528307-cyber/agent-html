@@ -1,0 +1,96 @@
+{
+  "id": "candidate-signal-agentco-op-retrieval-based-multi-agent-workflow-synthesis",
+  "type": "signal",
+  "status": "published",
+  "title": "AgentCo-op: Retrieval-Based Multi-Agent Workflow Synthesis",
+  "sourceUrl": "https://arxiv.org/abs/2605.20425v1",
+  "sourceName": "arXiv",
+  "sourceRegistryId": "local-signals-library",
+  "sourceRegistry": {
+    "id": "local-signals-library",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/signals",
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-04",
+  "discoveredFrom": "directory",
+  "summary": "AgentCo-op introduces a retrieval-based synthesis framework that dynamically composes existing agents, tools, and skills into multi-agent workflows using typed artifact handoffs. It applies bounded local repair to fix only failing components, achieving strong benchmark results while reducing costs and enabling open-world scientific collaboration without redesigning existing agents.",
+  "proposedCategory": [
+    "signal"
+  ],
+  "proposedAgents": [],
+  "extractedSignals": [
+    "AgentCo-op signals a shift from hand-crafted or search-optimized agent graphs toward retrieval-based, composable workflows that can integrate existing tools and agents without redesign.",
+    "For To Play Claw users building multi-agent systems, AgentCo-op demonstrates a practical path to composing independently developed agents and tools into auditable workflows without costly global search or redesign. This reduces integration friction and operational costs, making multi-agent orchestration more accessible for real-world scientific and enterprise applications.",
+    "Retrieval-based synthesis enables composition of existing agents and tools without retraining or redesign",
+    "Bounded local repair efficiently fixes workflow failures by targeting only implicated components",
+    "Synthesis and search are complementary: workflows can be imported as priors and iteratively improved"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Signals collector output. Review source quality, translation value, ecosystem implication, and whether this belongs as a Signal rather than Learn content.",
+  "publishedAs": "agentco-op-retrieval-based-synthesis-of-interoperable-multi-agent-workflows",
+  "publishedAt": "2026-06-04",
+  "author": "Shuaike Shen",
+  "permissionStatus": "open_license",
+  "signalProfile": {
+    "sourceName": "arXiv",
+    "originalPublishedAt": "2026-05-19",
+    "permissionStatus": "open_license",
+    "translationMode": "full_english_translation",
+    "relatedTools": [],
+    "relatedAgents": [],
+    "relatedLearn": []
+  },
+  "canonicalKey": "signal:url:https://arxiv.org/abs/2605.20425v1:title:agentco op retrieval based multi agent workflow synthesis",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-04"
+    }
+  ],
+  "duplicateReason": "source already published",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "AgentCo-op: Retrieval-Based Multi-Agent Workflow Synthesis is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to signal.",
+      "AgentCo-op signals a shift from hand-crafted or search-optimized agent graphs toward retrieval-based, composable workflows that can integrate existing tools and agents without redesign.",
+      "For To Play Claw users building multi-agent systems, AgentCo-op demonstrates a practical path to composing independently developed agents and tools into auditable workflows without costly global search or redesign. This reduces integration friction and operational costs, making multi-agent orchestration more accessible for real-world scientific and enterprise applications.",
+      "Retrieval-based synthesis enables composition of existing agents and tools without retraining or redesign"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  }
+}

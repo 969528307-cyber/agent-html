@@ -1,0 +1,104 @@
+{
+  "id": "candidate-signal-china-agent-ecosystem-agentuniverse-framework-and-chinese-developer-tools",
+  "type": "signal",
+  "status": "published",
+  "title": "China Agent Ecosystem: agentUniverse Framework and Chinese Developer Tools",
+  "sourceUrl": "https://github.com/agentuniverse-ai/agentUniverse",
+  "sourceName": "GitHub",
+  "sourceRegistryId": "local-signals-library",
+  "sourceRegistry": {
+    "id": "local-signals-library",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/signals",
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-04",
+  "discoveredFrom": "directory",
+  "summary": "Two Chinese-origin projects highlight parallel development in the agent ecosystem. agentUniverse is a multi-agent framework that lets developers build collaborative LLM applications. indie-hacker-tools-plus is a curated Chinese-language tool stack for independent developers, including AI agent tools. Both signal that the Chinese AI agent ecosystem is building its own infrastructure layer.",
+  "proposedCategory": [
+    "signal"
+  ],
+  "proposedAgents": [
+    "qwen-code",
+    "trae",
+    "kimi-agent"
+  ],
+  "extractedSignals": [
+    "The Chinese AI agent ecosystem is developing parallel infrastructure — frameworks, tools, and curated lists — that mirror but don't simply copy the global ecosystem.",
+    "To Play Claw indexes 4 Chinese-origin agents (Kimi, Trae, Qwen Code, CodeGeeX) and numerous Chinese-compatible tools. Understanding the parallel infrastructure development helps global users navigate the Chinese ecosystem.",
+    "agentUniverse: a Chinese multi-agent framework comparable to LangGraph or CrewAI",
+    "indie-hacker-tools-plus: curated Chinese tools including AI agent components",
+    "Chinese developers are building their own discovery layers, separate from English-language awesome-lists"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Signals collector output. Review source quality, translation value, ecosystem implication, and whether this belongs as a Signal rather than Learn content.",
+  "publishedAs": "china-agent-ecosystem-agentuniverse",
+  "publishedAt": "2026-06-04",
+  "author": "agentUniverse Community",
+  "permissionStatus": "open_license",
+  "signalProfile": {
+    "sourceName": "GitHub",
+    "originalPublishedAt": "2026-05-19",
+    "permissionStatus": "open_license",
+    "translationMode": "full_english_translation",
+    "relatedTools": [],
+    "relatedAgents": [
+      "qwen-code",
+      "trae",
+      "kimi-agent"
+    ],
+    "relatedLearn": []
+  },
+  "canonicalKey": "signal:url:https://github.com/agentuniverse-ai/agentuniverse:title:china agent ecosystem agentuniverse framework and chinese developer tools",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-04"
+    }
+  ],
+  "duplicateReason": "source already published",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "China Agent Ecosystem: agentUniverse Framework and Chinese Developer Tools is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to signal.",
+      "The Chinese AI agent ecosystem is developing parallel infrastructure — frameworks, tools, and curated lists — that mirror but don't simply copy the global ecosystem.",
+      "To Play Claw indexes 4 Chinese-origin agents (Kimi, Trae, Qwen Code, CodeGeeX) and numerous Chinese-compatible tools. Understanding the parallel infrastructure development helps global users navigate the Chinese ecosystem.",
+      "agentUniverse: a Chinese multi-agent framework comparable to LangGraph or CrewAI"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  }
+}

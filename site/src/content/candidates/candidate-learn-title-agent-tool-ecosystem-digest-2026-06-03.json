@@ -1,0 +1,118 @@
+{
+  "id": "candidate-learn-title-agent-tool-ecosystem-digest-2026-06-03",
+  "type": "learn",
+  "status": "published",
+  "title": "Agent Tool Ecosystem Digest (2026-06-03)",
+  "sourceUrl": "https://2playclaw.com/learn/agent-tool-ecosystem-digest",
+  "sourceName": "To Play Claw Learn library",
+  "sourceRegistryId": "local-learn-library",
+  "sourceRegistry": {
+    "id": "local-learn-library",
+    "name": "Local Learn Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/learn",
+    "acceptRules": [
+      "must_have_topic",
+      "must_have_teaching_angle",
+      "must_link_related_tools_or_agents_when_possible"
+    ],
+    "rejectRules": [
+      "thin_summary_only",
+      "no_learning_outcome"
+    ]
+  },
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-04",
+  "discoveredFrom": "directory",
+  "summary": "Published tools, stars distribution, license breakdown, and recent activity — data from To Play Claw",
+  "proposedCategory": [
+    "agent",
+    "start"
+  ],
+  "proposedAgents": [
+    "claude code",
+    "codegeex",
+    "codex",
+    "cursor",
+    "hermes agent",
+    "kimi cli / kimi agent",
+    "openclaw",
+    "qwen code",
+    "trae"
+  ],
+  "extractedSignals": [
+    "784 published tools across 9 types",
+    "9 agent platforms with varying compatible tools",
+    "50 tools updated in the past 7 days"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Learn collector output. Review teaching angle, examples, related tools, and whether this should remain Learn content rather than a Tool or Signal.",
+  "publishedAs": "agent-tool-ecosystem-digest",
+  "publishedAt": "2026-06-04",
+  "learnProfile": {
+    "topic": "agent",
+    "path": "start",
+    "difficulty": "beginner",
+    "readingTime": "5 min",
+    "relatedTools": [
+      "ecc",
+      "n8n",
+      "everything-claude-code",
+      "opencode",
+      "hermes-agent"
+    ],
+    "relatedAgents": [
+      "claude code",
+      "codegeex",
+      "codex",
+      "cursor",
+      "hermes agent",
+      "kimi cli / kimi agent",
+      "openclaw",
+      "qwen code",
+      "trae"
+    ]
+  },
+  "canonicalKey": "learn:title:agent tool ecosystem digest 2026 06 03",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-06-04"
+    }
+  ],
+  "duplicateReason": "source already published",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "learn",
+    "primaryType": "learn",
+    "whatIsIt": "Agent Tool Ecosystem Digest (2026-06-03) is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to agent.",
+      "Relevant to start.",
+      "784 published tools across 9 types",
+      "9 agent platforms with varying compatible tools",
+      "50 tools updated in the past 7 days"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  }
+}

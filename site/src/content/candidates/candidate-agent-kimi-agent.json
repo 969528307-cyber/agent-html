@@ -24,7 +24,7 @@
     ]
   },
   "discoveredAt": "2026-05-16",
-  "lastChecked": "2026-05-18",
+  "lastChecked": "2026-06-04",
   "discoveredFrom": "directory",
   "summary": "Moonshot AI's Kimi agent surface for long-context research, document-heavy workflows, and Kimi Code CLI development tasks.",
   "proposedCategory": [
@@ -94,13 +94,19 @@
   },
   "canonicalKey": "agent:kimi-agent",
   "firstDiscoveredAt": "2026-05-16",
-  "lastSeenAt": "2026-05-18",
+  "lastSeenAt": "2026-06-04",
   "crawlRuns": [
     {
       "runId": "2026-05-18-agents",
       "module": "agents",
       "sourceRegistryId": "local-agents-library",
       "seenAt": "2026-05-18"
+    },
+    {
+      "runId": "2026-06-04-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-06-04"
     }
   ],
   "detectedFiles": [],
