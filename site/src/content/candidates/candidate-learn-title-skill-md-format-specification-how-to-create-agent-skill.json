@@ -78,7 +78,7 @@
       "seenAt": "2026-06-04"
     }
   ],
-  "duplicateReason": "source already published",
+  "duplicateReason": null,
   "enrichmentDecision": "needs_editor_review",
   "enrichment": {
     "decision": "needs_editor_review",
@@ -98,5 +98,7 @@
       "Classification confidence is not strong enough."
     ],
     "riskNotes": []
-  }
+  },
+  "detectedFiles": [],
+  "duplicateOf": null
 }

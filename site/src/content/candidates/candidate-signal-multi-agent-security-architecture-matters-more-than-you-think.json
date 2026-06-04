@@ -73,7 +73,7 @@
       "seenAt": "2026-06-04"
     }
   ],
-  "duplicateReason": "source already published",
+  "duplicateReason": null,
   "enrichmentDecision": "needs_editor_review",
   "enrichment": {
     "decision": "needs_editor_review",
@@ -94,5 +94,7 @@
     "riskNotes": [
       "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
     ]
-  }
+  },
+  "detectedFiles": [],
+  "duplicateOf": null
 }

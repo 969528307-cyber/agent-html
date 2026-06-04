@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "core",
+  "summary": "AI agent microservice",
+  "sourceUrl": "https://github.com/cheshire-cat-ai/core",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "cheshire-cat-ai",
+    "repo": "core",
+    "fullName": "cheshire-cat-ai/core",
+    "stars": 3040,
+    "license": "GPL-3.0",
+    "topics": [
+      "ag-ui-protocol",
+      "agent",
+      "ai",
+      "assistant",
+      "chatbot",
+      "conversational",
+      "docker",
+      "framework",
+      "function-calling",
+      "llm",
+      "mcp",
+      "mcp-client",
+      "plugin",
+      "python",
+      "vector-search"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-14T21:20:37Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI agent microservice",
+    "Topics: ag-ui-protocol, agent, ai, assistant, chatbot",
+    "GitHub stars: 3040",
+    "Last pushed: 2026-03-14"
+  ],
+  "id": "candidate-tool-github-cheshire-cat-ai-core",
+  "canonicalKey": "tool:github:cheshire-cat-ai/core",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "core is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "AI agent microservice",
+      "Topics: ag-ui-protocol, agent, ai, assistant, chatbot",
+      "GitHub stars: 3040"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "core",
+  "publishedAt": "2026-06-04",
+  "reviewedAt": "2026-06-04",
+  "reviewedBy": "local-review"
+}
