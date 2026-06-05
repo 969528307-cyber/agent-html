@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "comfyui_LLM_party",
+  "summary": "LLM Agent Framework in ComfyUI includes MCP sever, Omost,GPT-sovits, ChatTTS,GOT-OCR2.0, and FLUX prompt nodes,access to Feishu,discord,and adapts to all llms with similar openai / aisuite interfaces, such as o1,ollama, gemini, grok, qwen, GLM, deepseek, kimi,doubao. Adapted to local llms, vlm, gguf",
+  "sourceUrl": "https://github.com/heshengtao/comfyui_LLM_party",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "heshengtao",
+    "repo": "comfyui_LLM_party",
+    "fullName": "heshengtao/comfyui_LLM_party",
+    "stars": 2271,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent",
+      "comfyui",
+      "dify",
+      "flux",
+      "gemini",
+      "gguf",
+      "gpt-sovits",
+      "graphrag",
+      "janus-pro",
+      "linux",
+      "llama",
+      "mcp",
+      "o1",
+      "ocr",
+      "ollama",
+      "omost",
+      "openai",
+      "vlm",
+      "workflow"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-08T17:40:45Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-05",
+  "lastChecked": "2026-06-05",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "LLM Agent Framework in ComfyUI includes MCP sever, Omost,GPT-sovits, ChatTTS,GOT-OCR2.0, and FLUX prompt nodes,access to Feishu,discord,and adapts to all llms with similar openai / aisuite interfaces,",
+    "Topics: agent, comfyui, dify, flux, gemini",
+    "GitHub stars: 2271",
+    "Last pushed: 2026-03-08"
+  ],
+  "id": "candidate-tool-github-heshengtao-comfyui-llm-party",
+  "canonicalKey": "tool:github:heshengtao/comfyui_llm_party",
+  "firstDiscoveredAt": "2026-06-05",
+  "lastSeenAt": "2026-06-05",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-05-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-05"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "comfyui_LLM_party is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "LLM Agent Framework in ComfyUI includes MCP sever, Omost,GPT-sovits, ChatTTS,GOT-OCR2.0, and FLUX prompt nodes,access to Feishu,discord,and adapts to all llms with similar openai / aisuite interfaces,",
+      "Topics: agent, comfyui, dify, flux, gemini",
+      "GitHub stars: 2271"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-05",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "comfyui-llm-party",
+  "publishedAt": "2026-06-05"
+}

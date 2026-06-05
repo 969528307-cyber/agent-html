@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "MonkeyCode",
+  "summary": "企业级 AI 开发平台，内置了开发环境管理、AI 模型管理、AI 任务管理、项目需求管理等能力，是真正面向专业开发团队的 AI 助手",
+  "sourceUrl": "https://github.com/chaitin/MonkeyCode",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "chaitin",
+    "repo": "MonkeyCode",
+    "fullName": "chaitin/MonkeyCode",
+    "stars": 3223,
+    "license": "AGPL-3.0",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-coding",
+      "ai-coding-assistant",
+      "aicoding",
+      "claude",
+      "codex",
+      "coding",
+      "cursor",
+      "opencode",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-05T14:02:24Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-05",
+  "lastChecked": "2026-06-05",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "企业级 AI 开发平台，内置了开发环境管理、AI 模型管理、AI 任务管理、项目需求管理等能力，是真正面向专业开发团队的 AI 助手",
+    "Topics: ai, ai-agent, ai-coding, ai-coding-assistant, aicoding",
+    "GitHub stars: 3223",
+    "Last pushed: 2026-06-05"
+  ],
+  "id": "candidate-tool-github-chaitin-monkeycode",
+  "canonicalKey": "tool:github:chaitin/monkeycode",
+  "firstDiscoveredAt": "2026-06-05",
+  "lastSeenAt": "2026-06-05",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-05-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-05"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "MonkeyCode is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "企业级 AI 开发平台，内置了开发环境管理、AI 模型管理、AI 任务管理、项目需求管理等能力，是真正面向专业开发团队的 AI 助手",
+      "Topics: ai, ai-agent, ai-coding, ai-coding-assistant, aicoding",
+      "GitHub stars: 3223"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-05",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "monkeycode",
+  "publishedAt": "2026-06-05"
+}

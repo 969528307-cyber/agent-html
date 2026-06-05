@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "html-video",
+  "summary": "Programmatic video for coding agents — turn HTML, CSS & data into real MP4s on your laptop. Pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project by the Open Design team.",
+  "sourceUrl": "https://github.com/nexu-io/html-video",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "nexu-io",
+    "repo": "html-video",
+    "fullName": "nexu-io/html-video",
+    "stars": 1358,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agent",
+      "apache-2",
+      "coding-agent",
+      "css",
+      "ffmpeg",
+      "html",
+      "html-to-video",
+      "hyperframes",
+      "mp4",
+      "open-design",
+      "open-source",
+      "programmatic-video",
+      "video",
+      "video-as-code",
+      "video-generation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-05T09:22:52Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-05",
+  "lastChecked": "2026-06-05",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Programmatic video for coding agents — turn HTML, CSS & data into real MP4s on your laptop. Pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project b",
+    "Topics: ai-agent, apache-2, coding-agent, css, ffmpeg",
+    "GitHub stars: 1358",
+    "Last pushed: 2026-06-05"
+  ],
+  "id": "candidate-tool-github-nexu-io-html-video",
+  "canonicalKey": "tool:github:nexu-io/html-video",
+  "firstDiscoveredAt": "2026-06-05",
+  "lastSeenAt": "2026-06-05",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-05-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-05"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "html-video is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Programmatic video for coding agents — turn HTML, CSS & data into real MP4s on your laptop. Pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project b",
+      "Topics: ai-agent, apache-2, coding-agent, css, ffmpeg",
+      "GitHub stars: 1358"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-05",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "html-video",
+  "publishedAt": "2026-06-05"
+}

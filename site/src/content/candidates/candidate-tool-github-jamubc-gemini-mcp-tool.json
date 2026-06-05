@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "gemini-mcp-tool",
+  "summary": "MCP server that enables AI assistants to interact with Google Gemini CLI, leveraging Gemini's massive token window for large file analysis and codebase understanding",
+  "sourceUrl": "https://github.com/jamubc/gemini-mcp-tool",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "jamubc",
+    "repo": "gemini-mcp-tool",
+    "fullName": "jamubc/gemini-mcp-tool",
+    "stars": 2229,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "claude",
+      "cli",
+      "codebase-analysis",
+      "file-analysis",
+      "gemini",
+      "mcp",
+      "model-context-protocol",
+      "npm",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-05T18:24:07Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-05",
+  "lastChecked": "2026-06-05",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "MCP server that enables AI assistants to interact with Google Gemini CLI, leveraging Gemini's massive token window for large file analysis and codebase understanding",
+    "Topics: ai, claude, cli, codebase-analysis, file-analysis",
+    "GitHub stars: 2229",
+    "Last pushed: 2026-06-05"
+  ],
+  "id": "candidate-tool-github-jamubc-gemini-mcp-tool",
+  "canonicalKey": "tool:github:jamubc/gemini-mcp-tool",
+  "firstDiscoveredAt": "2026-06-05",
+  "lastSeenAt": "2026-06-05",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-05-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-05"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "gemini-mcp-tool is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "MCP server that enables AI assistants to interact with Google Gemini CLI, leveraging Gemini's massive token window for large file analysis and codebase understanding",
+      "Topics: ai, claude, cli, codebase-analysis, file-analysis",
+      "GitHub stars: 2229"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-05",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "gemini-mcp-tool",
+  "publishedAt": "2026-06-05"
+}
