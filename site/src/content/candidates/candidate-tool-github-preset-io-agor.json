@@ -1,0 +1,139 @@
+{
+  "type": "tool",
+  "title": "agor",
+  "summary": "Orchestrate Claude Code, Codex, and Gemini sessions on a multiplayer canvas. Manage git worktrees, track AI conversations, and visualize your team's agentic work in real-time.",
+  "sourceUrl": "https://github.com/preset-io/agor",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "preset-io",
+    "repo": "agor",
+    "fullName": "preset-io/agor",
+    "stars": 1244,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-orchestration",
+      "agentic",
+      "ai-agents",
+      "ai-coding",
+      "ai-pair-programming",
+      "canvas",
+      "claude-code",
+      "codex",
+      "coding-assistant",
+      "developer-tools",
+      "devtools",
+      "gemini-cli",
+      "git-worktree",
+      "mcp",
+      "multi-agent",
+      "multiplayer",
+      "orchestration",
+      "real-time-collaboration",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-06T00:01:25Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-06",
+  "lastChecked": "2026-06-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Orchestrate Claude Code, Codex, and Gemini sessions on a multiplayer canvas. Manage git worktrees, track AI conversations, and visualize your team's agentic work in real-time.",
+    "Topics: agent-orchestration, agentic, ai-agents, ai-coding, ai-pair-programming",
+    "GitHub stars: 1244",
+    "Last pushed: 2026-06-06"
+  ],
+  "id": "candidate-tool-github-preset-io-agor",
+  "canonicalKey": "tool:github:preset-io/agor",
+  "firstDiscoveredAt": "2026-06-06",
+  "lastSeenAt": "2026-06-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-06-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-06"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "agor is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
+      "Relevant to agent-framework.",
+      "Orchestrate Claude Code, Codex, and Gemini sessions on a multiplayer canvas. Manage git worktrees, track AI conversations, and visualize your team's agentic work in real-time.",
+      "Topics: agent-orchestration, agentic, ai-agents, ai-coding, ai-pair-programming"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agor",
+  "publishedAt": "2026-06-06"
+}

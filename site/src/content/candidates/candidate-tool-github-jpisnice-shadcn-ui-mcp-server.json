@@ -1,0 +1,137 @@
+{
+  "type": "tool",
+  "title": "shadcn-ui-mcp-server",
+  "summary": "A mcp server to allow LLMS gain context about shadcn ui component structure,usage and installation,compaitable with react,svelte 5,vue & React Native",
+  "sourceUrl": "https://github.com/Jpisnice/shadcn-ui-mcp-server",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Jpisnice",
+    "repo": "shadcn-ui-mcp-server",
+    "fullName": "Jpisnice/shadcn-ui-mcp-server",
+    "stars": 2784,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "expo",
+      "mcp",
+      "modelcontextprotocol",
+      "nextjs",
+      "npm",
+      "npm-package",
+      "npx",
+      "react",
+      "react-native",
+      "shadcn-ui",
+      "svelte",
+      "sveltekit",
+      "ts",
+      "typescript",
+      "ui",
+      "vue",
+      "vuejs",
+      "webdev"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-16T13:09:07Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-06",
+  "lastChecked": "2026-06-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A mcp server to allow LLMS gain context about shadcn ui component structure,usage and installation,compaitable with react,svelte 5,vue & React Native",
+    "Topics: ai, expo, mcp, modelcontextprotocol, nextjs",
+    "GitHub stars: 2784",
+    "Last pushed: 2026-05-16"
+  ],
+  "id": "candidate-tool-github-jpisnice-shadcn-ui-mcp-server",
+  "canonicalKey": "tool:github:jpisnice/shadcn-ui-mcp-server",
+  "firstDiscoveredAt": "2026-06-06",
+  "lastSeenAt": "2026-06-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-06-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-06"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "design"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "shadcn-ui-mcp-server is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with design workflows.",
+      "Relevant to mcp.",
+      "A mcp server to allow LLMS gain context about shadcn ui component structure,usage and installation,compaitable with react,svelte 5,vue & React Native",
+      "Topics: ai, expo, mcp, modelcontextprotocol, nextjs",
+      "GitHub stars: 2784"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "shadcn-ui-mcp-server",
+  "publishedAt": "2026-06-06"
+}

@@ -1,0 +1,134 @@
+{
+  "type": "tool",
+  "title": "teaql-agent-kit",
+  "summary": "Deterministic execution for non-deterministic AI.",
+  "sourceUrl": "https://github.com/teaql/teaql-agent-kit",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "teaql",
+    "repo": "teaql-agent-kit",
+    "fullName": "teaql/teaql-agent-kit",
+    "stars": 2765,
+    "license": "MIT",
+    "topics": [
+      "agentic-coding",
+      "ai-coding",
+      "code-generation",
+      "coding-agent",
+      "ddd",
+      "developer-tools",
+      "domain-driven-design",
+      "java",
+      "rust",
+      "semantic-guardrails",
+      "semantic-modeling",
+      "teaql"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-05T03:44:48Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-06",
+  "lastChecked": "2026-06-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Deterministic execution for non-deterministic AI.",
+    "Topics: agentic-coding, ai-coding, code-generation, coding-agent, ddd",
+    "GitHub stars: 2765",
+    "Last pushed: 2026-06-05"
+  ],
+  "id": "candidate-tool-github-teaql-teaql-agent-kit",
+  "canonicalKey": "tool:github:teaql/teaql-agent-kit",
+  "firstDiscoveredAt": "2026-06-06",
+  "lastSeenAt": "2026-06-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-06-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-06"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "media",
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "media",
+    "coding",
+    "design"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "teaql-agent-kit is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to agent-app.",
+      "Deterministic execution for non-deterministic AI."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "teaql-agent-kit",
+  "publishedAt": "2026-06-06"
+}

@@ -1,0 +1,133 @@
+{
+  "type": "tool",
+  "title": "relay",
+  "summary": "Headless Slack for agents. A hosted messaging store + router with fast retrieval",
+  "sourceUrl": "https://github.com/AgentWorkforce/relay",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "AgentWorkforce",
+    "repo": "relay",
+    "fullName": "AgentWorkforce/relay",
+    "stars": 707,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agent-collaboration",
+      "agent-communication",
+      "agent-skills",
+      "agentic-ai",
+      "agents",
+      "headless",
+      "orchestration",
+      "orchestration-systems",
+      "real-time",
+      "slack"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-04T15:25:47Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-05",
+  "lastChecked": "2026-06-05",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Headless Slack for agents. A hosted messaging store + router with fast retrieval",
+    "Topics: agent, agent-collaboration, agent-communication, agent-skills, agentic-ai",
+    "GitHub stars: 707",
+    "Last pushed: 2026-06-04"
+  ],
+  "id": "candidate-tool-github-agentworkforce-relay",
+  "canonicalKey": "tool:github:agentworkforce/relay",
+  "firstDiscoveredAt": "2026-06-05",
+  "lastSeenAt": "2026-06-05",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-05-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-05"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "communication",
+      "automation"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "communication",
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "relay is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with communication workflows.",
+      "Helps with automation workflows.",
+      "Relevant to skill.",
+      "Headless Slack for agents. A hosted messaging store + router with fast retrieval"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-05",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "relay",
+  "publishedAt": "2026-06-05"
+}

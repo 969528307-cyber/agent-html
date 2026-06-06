@@ -1,0 +1,122 @@
+{
+  "type": "tool",
+  "title": "claude-fuer-deutsches-recht",
+  "summary": "⚠️ Experimentelle Skill-Sammlung für deutsches Recht (Arbeits-, Gesellschafts-, Insolvenz-, Datenschutz-, Prozessrecht u.a.) – inzwischen verbessert und im Alltag getestet, aber weiterhin Experiment. Bitte selber ausprobieren, Issues/PRs willkommen! Keine Rechtsberatung. Mandatsgeheimnis (§§ 203/204",
+  "sourceUrl": "https://github.com/Klotzkette/claude-fuer-deutsches-recht",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Klotzkette",
+    "repo": "claude-fuer-deutsches-recht",
+    "fullName": "Klotzkette/claude-fuer-deutsches-recht",
+    "stars": 702,
+    "license": "Apache-2.0",
+    "topics": [
+      "anthropic",
+      "bgh",
+      "claude-skills",
+      "deutsches-recht",
+      "dsgvo",
+      "german-law",
+      "kanzlei",
+      "legal-ai",
+      "legaltech"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-05T20:41:59Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-06",
+  "lastChecked": "2026-06-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "⚠️ Experimentelle Skill-Sammlung für deutsches Recht (Arbeits-, Gesellschafts-, Insolvenz-, Datenschutz-, Prozessrecht u.a.) – inzwischen verbessert und im Alltag getestet, aber weiterhin Experiment. ",
+    "Topics: anthropic, bgh, claude-skills, deutsches-recht, dsgvo",
+    "GitHub stars: 702",
+    "Last pushed: 2026-06-05"
+  ],
+  "id": "candidate-tool-github-klotzkette-claude-fuer-deutsches-recht",
+  "canonicalKey": "tool:github:klotzkette/claude-fuer-deutsches-recht",
+  "firstDiscoveredAt": "2026-06-06",
+  "lastSeenAt": "2026-06-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-06-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-06"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "claude-fuer-deutsches-recht is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "⚠️ Experimentelle Skill-Sammlung für deutsches Recht (Arbeits-, Gesellschafts-, Insolvenz-, Datenschutz-, Prozessrecht u.a.) – inzwischen verbessert und im Alltag getestet, aber weiterhin Experiment. ",
+      "Topics: anthropic, bgh, claude-skills, deutsches-recht, dsgvo",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-fuer-deutsches-recht",
+  "publishedAt": "2026-06-06"
+}
