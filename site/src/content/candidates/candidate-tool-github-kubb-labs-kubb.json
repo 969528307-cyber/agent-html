@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "kubb",
+  "summary": "🧡 The meta framework for code generation. Automate OpenAPI to type-safe TypeScript, Zod, and TanStack Query with a modular, plugin-based engine.",
+  "sourceUrl": "https://github.com/kubb-labs/kubb",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "kubb-labs",
+    "repo": "kubb",
+    "fullName": "kubb-labs/kubb",
+    "stars": 1732,
+    "license": "NOASSERTION",
+    "topics": [
+      "axios",
+      "claude",
+      "codegen",
+      "faker",
+      "kubb",
+      "mcp",
+      "msw",
+      "openapi",
+      "plugin-manager",
+      "react",
+      "react-query",
+      "solid",
+      "svelte",
+      "swagger",
+      "swr",
+      "typescript",
+      "vue",
+      "zod",
+      "zodios"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-05T17:11:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-07",
+  "lastChecked": "2026-06-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "🧡 The meta framework for code generation. Automate OpenAPI to type-safe TypeScript, Zod, and TanStack Query with a modular, plugin-based engine.",
+    "Topics: axios, claude, codegen, faker, kubb",
+    "GitHub stars: 1732",
+    "Last pushed: 2026-06-05"
+  ],
+  "id": "candidate-tool-github-kubb-labs-kubb",
+  "canonicalKey": "tool:github:kubb-labs/kubb",
+  "firstDiscoveredAt": "2026-06-07",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "kubb is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "🧡 The meta framework for code generation. Automate OpenAPI to type-safe TypeScript, Zod, and TanStack Query with a modular, plugin-based engine.",
+      "Topics: axios, claude, codegen, faker, kubb",
+      "GitHub stars: 1732"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "kubb",
+  "publishedAt": "2026-06-07"
+}
