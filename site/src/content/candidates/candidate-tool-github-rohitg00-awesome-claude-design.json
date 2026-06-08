@@ -1,0 +1,127 @@
+{
+  "type": "tool",
+  "title": "awesome-claude-design",
+  "summary": "Claude Design DESIGN.md prompts by aesthetic family, remix recipes, skills, video teardowns, X signal, honest community takes.",
+  "sourceUrl": "https://github.com/rohitg00/awesome-claude-design",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "rohitg00",
+    "repo": "awesome-claude-design",
+    "fullName": "rohitg00/awesome-claude-design",
+    "stars": 702,
+    "license": "MIT",
+    "topics": [
+      "ai-design",
+      "anthropic",
+      "awesome",
+      "awesome-list",
+      "claude-code",
+      "claude-design",
+      "claude-skills",
+      "design-md",
+      "design-system"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-23T13:37:55Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-08",
+  "lastChecked": "2026-06-08",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Claude Design DESIGN.md prompts by aesthetic family, remix recipes, skills, video teardowns, X signal, honest community takes.",
+    "Topics: ai-design, anthropic, awesome, awesome-list, claude-code",
+    "GitHub stars: 702",
+    "Last pushed: 2026-04-23"
+  ],
+  "id": "candidate-tool-github-rohitg00-awesome-claude-design",
+  "canonicalKey": "tool:github:rohitg00/awesome-claude-design",
+  "firstDiscoveredAt": "2026-06-08",
+  "lastSeenAt": "2026-06-08",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-08-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-08"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "awesome-list",
+    "useCategory": [
+      "media",
+      "coding",
+      "design"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "awesome-list",
+  "useCategory": [
+    "media",
+    "coding",
+    "design"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "route_to_learn",
+  "enrichment": {
+    "decision": "route_to_learn",
+    "confidence": "medium",
+    "publishType": "learn",
+    "primaryType": "skill",
+    "whatIsIt": "awesome-claude-design is a skill-oriented awesome-list resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "Claude Design DESIGN.md prompts by aesthetic family, remix recipes, skills, video teardowns, X signal, honest community takes."
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": []
+  }
+}

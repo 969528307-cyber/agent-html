@@ -1,0 +1,130 @@
+{
+  "type": "tool",
+  "title": "awesome-mcp-security",
+  "summary": "🔥🔒 Awesome MCP (Model Context Protocol) Security 🖥️",
+  "sourceUrl": "https://github.com/Puliczek/awesome-mcp-security",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Puliczek",
+    "repo": "awesome-mcp-security",
+    "fullName": "Puliczek/awesome-mcp-security",
+    "stars": 700,
+    "license": "",
+    "topics": [
+      "awesome-list",
+      "bugbounty",
+      "bugbountytips",
+      "cybers",
+      "exploit",
+      "mcp",
+      "mcp-client",
+      "mcp-server",
+      "mcp-servers",
+      "pentesting",
+      "poc",
+      "security",
+      "security-writeups",
+      "writeups"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-03-03T20:29:51Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-07",
+  "lastChecked": "2026-06-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "🔥🔒 Awesome MCP (Model Context Protocol) Security 🖥️",
+    "Topics: awesome-list, bugbounty, bugbountytips, cybers, exploit",
+    "GitHub stars: 700",
+    "Last pushed: 2026-03-03"
+  ],
+  "id": "candidate-tool-github-puliczek-awesome-mcp-security",
+  "canonicalKey": "tool:github:puliczek/awesome-mcp-security",
+  "firstDiscoveredAt": "2026-06-07",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "awesome-list",
+    "useCategory": [
+      "security"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "awesome-list",
+  "useCategory": [
+    "security"
+  ],
+  "routingDecision": "auto_reject",
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "awesome-mcp-security is an MCP-related awesome-list tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with security workflows.",
+      "Relevant to mcp.",
+      "🔥🔒 Awesome MCP (Model Context Protocol) Security 🖥️",
+      "Topics: awesome-list, bugbounty, bugbountytips, cybers, exploit",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
+    ],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  }
+}

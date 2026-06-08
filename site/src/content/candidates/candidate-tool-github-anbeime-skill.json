@@ -1,0 +1,122 @@
+{
+  "type": "tool",
+  "title": "skill",
+  "summary": "收录最全、更新最快的技能Skills 商店，涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流等多个领域的 72 个精选技能包。所有技能已打包完成，可直接安装使用！ 该商店中自动抓取了 Github 上的所有的 Skills 项目，并按照分类、更新时间、Star 数量等标签进行整理。",
+  "sourceUrl": "https://github.com/anbeime/skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "anbeime",
+    "repo": "skill",
+    "fullName": "anbeime/skill",
+    "stars": 1259,
+    "license": "",
+    "topics": [
+      "claude-skills",
+      "finance-skill",
+      "gemini-skills",
+      "hermes-skill",
+      "office-skill",
+      "openclaw-skills",
+      "skill",
+      "skill-md",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-06T05:46:35Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-07",
+  "lastChecked": "2026-06-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "收录最全、更新最快的技能Skills 商店，涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流等多个领域的 72 个精选技能包。所有技能已打包完成，可直接安装使用！ 该商店中自动抓取了 Github 上的所有的 Skills 项目，并按照分类、更新时间、Star 数量等标签进行整理。",
+    "Topics: claude-skills, finance-skill, gemini-skills, hermes-skill, office-skill",
+    "GitHub stars: 1259",
+    "Last pushed: 2026-06-06"
+  ],
+  "id": "candidate-tool-github-anbeime-skill",
+  "canonicalKey": "tool:github:anbeime/skill",
+  "firstDiscoveredAt": "2026-06-07",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-07-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "skill is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "收录最全、更新最快的技能Skills 商店，涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流等多个领域的 72 个精选技能包。所有技能已打包完成，可直接安装使用！ 该商店中自动抓取了 Github 上的所有的 Skills 项目，并按照分类、更新时间、Star 数量等标签进行整理。",
+      "Topics: claude-skills, finance-skill, gemini-skills, hermes-skill, office-skill",
+      "GitHub stars: 1259"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "skill",
+  "publishedAt": "2026-06-07"
+}

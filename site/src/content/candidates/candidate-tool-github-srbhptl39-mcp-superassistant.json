@@ -1,0 +1,126 @@
+{
+  "type": "tool",
+  "title": "MCP-SuperAssistant",
+  "summary": "Brings MCP to ChatGPT, DeepSeek, Perplexity, Grok, Gemini, Google AI Studio, OpenRouter, DeepSeek, T3 Chat and more...",
+  "sourceUrl": "https://github.com/srbhptl39/MCP-SuperAssistant",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "srbhptl39",
+    "repo": "MCP-SuperAssistant",
+    "fullName": "srbhptl39/MCP-SuperAssistant",
+    "stars": 2491,
+    "license": "MIT",
+    "topics": [
+      "aistudio",
+      "assistant",
+      "chatgpt",
+      "deepseek",
+      "gemini",
+      "google",
+      "grok",
+      "kagi",
+      "mcp",
+      "openrouter",
+      "perplexity",
+      "qwen",
+      "t3"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-02-09T17:38:45Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-07",
+  "lastChecked": "2026-06-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Brings MCP to ChatGPT, DeepSeek, Perplexity, Grok, Gemini, Google AI Studio, OpenRouter, DeepSeek, T3 Chat and more...",
+    "Topics: aistudio, assistant, chatgpt, deepseek, gemini",
+    "GitHub stars: 2491",
+    "Last pushed: 2026-02-09"
+  ],
+  "id": "candidate-tool-github-srbhptl39-mcp-superassistant",
+  "canonicalKey": "tool:github:srbhptl39/mcp-superassistant",
+  "firstDiscoveredAt": "2026-06-07",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "MCP-SuperAssistant is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Brings MCP to ChatGPT, DeepSeek, Perplexity, Grok, Gemini, Google AI Studio, OpenRouter, DeepSeek, T3 Chat and more...",
+      "Topics: aistudio, assistant, chatgpt, deepseek, gemini",
+      "GitHub stars: 2491"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-superassistant",
+  "publishedAt": "2026-06-07"
+}

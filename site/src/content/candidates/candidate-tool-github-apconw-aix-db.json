@@ -1,0 +1,131 @@
+{
+  "type": "tool",
+  "title": "Aix-DB",
+  "summary": "Aix-DB 基于 LangChain/LangGraph 框架，结合 MCP Skills 多智能体协作架构，实现自然语言到数据洞察的端到端转换。",
+  "sourceUrl": "https://github.com/apconw/Aix-DB",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "apconw",
+    "repo": "Aix-DB",
+    "fullName": "apconw/Aix-DB",
+    "stars": 2153,
+    "license": "",
+    "topics": [
+      "bigdata",
+      "cli",
+      "deepseek-r1",
+      "dify",
+      "echarts",
+      "hermes",
+      "lamaindex",
+      "langchain",
+      "langgraph-python",
+      "mcp",
+      "neo4j",
+      "openclaw",
+      "python",
+      "qwen",
+      "sanic",
+      "skils",
+      "text2sql",
+      "vue3"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-06-05T05:45:49Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-08",
+  "lastChecked": "2026-06-08",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Aix-DB 基于 LangChain/LangGraph 框架，结合 MCP Skills 多智能体协作架构，实现自然语言到数据洞察的端到端转换。",
+    "Topics: bigdata, cli, deepseek-r1, dify, echarts",
+    "GitHub stars: 2153",
+    "Last pushed: 2026-06-05"
+  ],
+  "id": "candidate-tool-github-apconw-aix-db",
+  "canonicalKey": "tool:github:apconw/aix-db",
+  "firstDiscoveredAt": "2026-06-08",
+  "lastSeenAt": "2026-06-08",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-08-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-08"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Aix-DB is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Aix-DB 基于 LangChain/LangGraph 框架，结合 MCP Skills 多智能体协作架构，实现自然语言到数据洞察的端到端转换。",
+      "Topics: bigdata, cli, deepseek-r1, dify, echarts",
+      "GitHub stars: 2153"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-08",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "aix-db",
+  "publishedAt": "2026-06-08"
+}
