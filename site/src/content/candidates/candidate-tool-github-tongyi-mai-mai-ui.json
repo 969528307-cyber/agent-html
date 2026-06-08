@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "MAI-UI",
+  "summary": "MAI-UI: Real-World Centric Foundation GUI Agents ranging from 2B to 235B",
+  "sourceUrl": "https://github.com/Tongyi-MAI/MAI-UI",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Tongyi-MAI",
+    "repo": "MAI-UI",
+    "fullName": "Tongyi-MAI/MAI-UI",
+    "stars": 1817,
+    "license": "Apache-2.0",
+    "topics": [
+      "device-cloud-collaboration",
+      "gui-agent",
+      "gui-grounding",
+      "gui-navigation",
+      "mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-20T06:18:25Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-07",
+  "lastChecked": "2026-06-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "MAI-UI: Real-World Centric Foundation GUI Agents ranging from 2B to 235B",
+    "Topics: device-cloud-collaboration, gui-agent, gui-grounding, gui-navigation, mcp",
+    "GitHub stars: 1817",
+    "Last pushed: 2026-04-20"
+  ],
+  "id": "candidate-tool-github-tongyi-mai-mai-ui",
+  "canonicalKey": "tool:github:tongyi-mai/mai-ui",
+  "firstDiscoveredAt": "2026-06-07",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "MAI-UI is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "MAI-UI: Real-World Centric Foundation GUI Agents ranging from 2B to 235B",
+      "Topics: device-cloud-collaboration, gui-agent, gui-grounding, gui-navigation, mcp",
+      "GitHub stars: 1817"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mai-ui",
+  "publishedAt": "2026-06-07"
+}

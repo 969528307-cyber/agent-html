@@ -1,0 +1,116 @@
+{
+  "id": "candidate-signal-engiai-multi-agent-benchmark-reveals-llm-gaps-in-engineering-design",
+  "type": "signal",
+  "status": "published",
+  "title": "EngiAI: Multi-Agent Benchmark Reveals LLM Gaps in Engineering Design",
+  "sourceUrl": "https://arxiv.org/abs/2605.19743v1",
+  "sourceName": "arXiv",
+  "sourceRegistryId": "local-signals-library",
+  "sourceRegistry": {
+    "id": "local-signals-library",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/signals",
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-07",
+  "discoveredFrom": "directory",
+  "summary": "EngiAI introduces a multi-agent benchmark suite for LLM-driven engineering design, testing agents across workflow, RAG, and HPC dimensions. Results show proprietary models excel on simple tasks but all models struggle with conditional branching and long-running orchestration, revealing critical gaps for real-world engineering deployment.",
+  "proposedCategory": [
+    "signal"
+  ],
+  "proposedAgents": [],
+  "extractedSignals": [
+    "The EngiAI benchmark reveals that current LLM agents are not yet reliable for complex engineering workflows, particularly where conditional logic and sustained multi-step execution are required.",
+    "For To Play Claw users building engineering or manufacturing agents, this paper provides the first rigorous benchmark to evaluate agent reliability across the full design-to-manufacturing pipeline, highlighting where current tools fail and where improvements are needed.",
+    "Conditional branching is the single biggest weakness for LLM agents in engineering—models drop to 20-53% accuracy on complex problems",
+    "RAG is not optional: retrieval-augmented scores are near-perfect while non-RAG scores are near-zero, validating the necessity of external knowledge",
+    "Long-running HPC workflows expose a critical failure mode: instruction-following degrades significantly over multi-step pipelines"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Signals collector output. Review source quality, translation value, ecosystem implication, and whether this belongs as a Signal rather than Learn content.",
+  "publishedAs": "engiai-a-multi-agent-framework-and-benchmark-suite-for-llm-driven-engineering-de",
+  "publishedAt": "2026-06-04",
+  "author": "Gioele Molinari",
+  "permissionStatus": "open_license",
+  "signalProfile": {
+    "sourceName": "arXiv",
+    "originalPublishedAt": "2026-05-19",
+    "permissionStatus": "open_license",
+    "translationMode": "full_english_translation",
+    "relatedTools": [],
+    "relatedAgents": [],
+    "relatedLearn": []
+  },
+  "canonicalKey": "signal:url:https://arxiv.org/abs/2605.19743v1:title:engiai multi agent benchmark reveals llm gaps in engineering design",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-04"
+    },
+    {
+      "runId": "2026-06-05-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-05"
+    },
+    {
+      "runId": "2026-06-06-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-06"
+    },
+    {
+      "runId": "2026-06-07-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "duplicateReason": null,
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "EngiAI: Multi-Agent Benchmark Reveals LLM Gaps in Engineering Design is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to signal.",
+      "The EngiAI benchmark reveals that current LLM agents are not yet reliable for complex engineering workflows, particularly where conditional logic and sustained multi-step execution are required.",
+      "For To Play Claw users building engineering or manufacturing agents, this paper provides the first rigorous benchmark to evaluate agent reliability across the full design-to-manufacturing pipeline, highlighting where current tools fail and where improvements are needed.",
+      "Conditional branching is the single biggest weakness for LLM agents in engineering—models drop to 20-53% accuracy on complex problems"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null
+}

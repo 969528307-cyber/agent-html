@@ -1,0 +1,116 @@
+{
+  "id": "candidate-signal-peeking-inside-ai-agents-mechanistic-interpretability-for-tool-use",
+  "type": "signal",
+  "status": "published",
+  "title": "Peeking Inside AI Agents: Mechanistic Interpretability for Tool Use",
+  "sourceUrl": "https://arxiv.org/abs/2605.06890v2",
+  "sourceName": "arXiv",
+  "sourceRegistryId": "local-signals-library",
+  "sourceRegistry": {
+    "id": "local-signals-library",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/signals",
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-07",
+  "discoveredFrom": "directory",
+  "summary": "This paper introduces a mechanistic interpretability framework that uses Sparse Autoencoders and linear probes to monitor AI agents' internal states before tool calls. It identifies which internal layers and features are associated with tool decisions, enabling early detection of costly tool-use failures in long-horizon enterprise workflows.",
+  "proposedCategory": [
+    "signal"
+  ],
+  "proposedAgents": [],
+  "extractedSignals": [
+    "Mechanistic interpretability can provide a missing layer of internal observability for agent tool use, complementing external evaluation methods to catch failures before they cascade.",
+    "For To Play Claw users building enterprise agent systems, this framework offers a way to diagnose and prevent costly tool-use failures—like skipped or unnecessary tool calls—by peering inside the model's decision process. It addresses a critical gap in current observability tools that only surface problems after the fact.",
+    "Current observability methods (prompts, evaluations, logs) are external and reactive; this framework provides internal, proactive visibility.",
+    "SAEs decompose model activations into sparse features, identifying which internal layers drive tool-use decisions.",
+    "Feature ablation tests confirm functional importance of identified features, enabling targeted intervention."
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Signals collector output. Review source quality, translation value, ecosystem implication, and whether this belongs as a Signal rather than Learn content.",
+  "publishedAs": "beyond-the-black-box-interpretability-of-agentic-ai-tool-use",
+  "publishedAt": "2026-06-04",
+  "author": "Hariom Tatsat",
+  "permissionStatus": "open_license",
+  "signalProfile": {
+    "sourceName": "arXiv",
+    "originalPublishedAt": "2026-05-07",
+    "permissionStatus": "open_license",
+    "translationMode": "full_english_translation",
+    "relatedTools": [],
+    "relatedAgents": [],
+    "relatedLearn": []
+  },
+  "canonicalKey": "signal:url:https://arxiv.org/abs/2605.06890v2:title:peeking inside ai agents mechanistic interpretability for tool use",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-04"
+    },
+    {
+      "runId": "2026-06-05-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-05"
+    },
+    {
+      "runId": "2026-06-06-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-06"
+    },
+    {
+      "runId": "2026-06-07-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "duplicateReason": null,
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "Peeking Inside AI Agents: Mechanistic Interpretability for Tool Use is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to signal.",
+      "Mechanistic interpretability can provide a missing layer of internal observability for agent tool use, complementing external evaluation methods to catch failures before they cascade.",
+      "For To Play Claw users building enterprise agent systems, this framework offers a way to diagnose and prevent costly tool-use failures—like skipped or unnecessary tool calls—by peering inside the model's decision process. It addresses a critical gap in current observability tools that only surface problems after the fact.",
+      "Current observability methods (prompts, evaluations, logs) are external and reactive; this framework provides internal, proactive visibility."
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null
+}

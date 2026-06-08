@@ -1,0 +1,116 @@
+{
+  "id": "candidate-signal-decoupled-intelligence-multi-agent-llms-for-traffic-simulation",
+  "type": "signal",
+  "status": "published",
+  "title": "Decoupled Intelligence: Multi-Agent LLMs for Traffic Simulation",
+  "sourceUrl": "https://arxiv.org/abs/2605.27685v1",
+  "sourceName": "arXiv",
+  "sourceRegistryId": "local-signals-library",
+  "sourceRegistry": {
+    "id": "local-signals-library",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/signals",
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-07",
+  "discoveredFrom": "directory",
+  "summary": "This paper presents a multi-agent LLM framework that decouples the traffic simulation pipeline into specialized roles coordinated by a state-persistent Orchestrator using the Model Context Protocol (MCP). The system automates the entire lifecycle of traffic simulation in SUMO, from scenario planning to execution and iterative optimization, achieving significantly higher task success rates than monolithic agent architectures.",
+  "proposedCategory": [
+    "signal"
+  ],
+  "proposedAgents": [],
+  "extractedSignals": [
+    "Decoupling complex simulation workflows into specialized, MCP-coordinated LLM agents represents a scalable pattern for bridging natural language intent with low-level execution in domain-specific environments.",
+    "For To Play Claw users, this paper demonstrates a practical implementation of the Model Context Protocol (MCP) for state management across distributed agents, and validates the multi-agent architecture pattern for complex, multi-step simulation tasks. It provides a blueprint for building robust, controllable agent systems that can handle real-world data extraction and optimization workflows.",
+    "Multi-agent architectures with specialized roles outperform monolithic agents in complex simulation tasks by reducing reasoning failures and parameter inconsistencies",
+    "The Model Context Protocol (MCP) enables robust state persistence and data handover across distributed agent actions, solving a key challenge in multi-agent coordination",
+    "Closed-loop refinement using KPI-driven analysis allows the system to iteratively optimize simulation outcomes without human intervention"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Signals collector output. Review source quality, translation value, ecosystem implication, and whether this belongs as a Signal rather than Learn content.",
+  "publishedAs": "decoupled-intelligence-a-multi-agent-llm-framework-for-controllable-traffic-scen",
+  "publishedAt": "2026-06-04",
+  "author": "Shuyang Li",
+  "permissionStatus": "open_license",
+  "signalProfile": {
+    "sourceName": "arXiv",
+    "originalPublishedAt": "2026-05-26",
+    "permissionStatus": "open_license",
+    "translationMode": "full_english_translation",
+    "relatedTools": [],
+    "relatedAgents": [],
+    "relatedLearn": []
+  },
+  "canonicalKey": "signal:url:https://arxiv.org/abs/2605.27685v1:title:decoupled intelligence multi agent llms for traffic simulation",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-04"
+    },
+    {
+      "runId": "2026-06-05-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-05"
+    },
+    {
+      "runId": "2026-06-06-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-06"
+    },
+    {
+      "runId": "2026-06-07-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "duplicateReason": null,
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "Decoupled Intelligence: Multi-Agent LLMs for Traffic Simulation is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to signal.",
+      "Decoupling complex simulation workflows into specialized, MCP-coordinated LLM agents represents a scalable pattern for bridging natural language intent with low-level execution in domain-specific environments.",
+      "For To Play Claw users, this paper demonstrates a practical implementation of the Model Context Protocol (MCP) for state management across distributed agents, and validates the multi-agent architecture pattern for complex, multi-step simulation tasks. It provides a blueprint for building robust, controllable agent systems that can handle real-world data extraction and optimization workflows.",
+      "Multi-agent architectures with specialized roles outperform monolithic agents in complex simulation tasks by reducing reasoning failures and parameter inconsistencies"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null
+}

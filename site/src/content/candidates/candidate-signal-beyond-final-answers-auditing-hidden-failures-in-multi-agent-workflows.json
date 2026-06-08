@@ -1,0 +1,116 @@
+{
+  "id": "candidate-signal-beyond-final-answers-auditing-hidden-failures-in-multi-agent-workflows",
+  "type": "signal",
+  "status": "published",
+  "title": "Beyond Final Answers: Auditing Hidden Failures in Multi-Agent Workflows",
+  "sourceUrl": "https://arxiv.org/abs/2605.24219v2",
+  "sourceName": "arXiv",
+  "sourceRegistryId": "local-signals-library",
+  "sourceRegistry": {
+    "id": "local-signals-library",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/signals",
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-07",
+  "discoveredFrom": "directory",
+  "summary": "This paper introduces Trajel, a dataset and evaluation framework that audits hallucinations at the trajectory level in multi-agent industrial workflows. It reveals that most existing benchmarks miss failures originating in intermediate Thought-Action-Observation steps, and that nearly half of hallucinated trajectories contain multiple hallucination types simultaneously.",
+  "proposedCategory": [
+    "signal"
+  ],
+  "proposedAgents": [],
+  "extractedSignals": [
+    "Trajectory-level hallucination auditing is essential for safe deployment of multi-agent systems, as final-answer benchmarks systematically miss the most common failure modes.",
+    "For To Play Claw users building multi-agent workflows, this paper provides a rigorous taxonomy and detection framework to catch failures that current evaluation tools miss—critical for production deployments where intermediate reasoning errors compound into costly mistakes.",
+    "Standard final-answer hallucination benchmarks miss the majority of failures in multi-step agent workflows",
+    "A five-type taxonomy (factual, referential, logical, procedural, scope-based) is needed to classify trajectory-level hallucinations",
+    "Automated detectors with high binary accuracy still misclassify the subtlest hallucination types"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Signals collector output. Review source quality, translation value, ecosystem implication, and whether this belongs as a Signal rather than Learn content.",
+  "publishedAs": "beyond-final-answers-auditing-trajectory-level-hallucinations-in-multi-agent-ind",
+  "publishedAt": "2026-06-04",
+  "author": "Harshada Badave",
+  "permissionStatus": "open_license",
+  "signalProfile": {
+    "sourceName": "arXiv",
+    "originalPublishedAt": "2026-05-22",
+    "permissionStatus": "open_license",
+    "translationMode": "full_english_translation",
+    "relatedTools": [],
+    "relatedAgents": [],
+    "relatedLearn": []
+  },
+  "canonicalKey": "signal:url:https://arxiv.org/abs/2605.24219v2:title:beyond final answers auditing hidden failures in multi agent workflows",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-04"
+    },
+    {
+      "runId": "2026-06-05-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-05"
+    },
+    {
+      "runId": "2026-06-06-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-06"
+    },
+    {
+      "runId": "2026-06-07-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "duplicateReason": null,
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "Beyond Final Answers: Auditing Hidden Failures in Multi-Agent Workflows is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to signal.",
+      "Trajectory-level hallucination auditing is essential for safe deployment of multi-agent systems, as final-answer benchmarks systematically miss the most common failure modes.",
+      "For To Play Claw users building multi-agent workflows, this paper provides a rigorous taxonomy and detection framework to catch failures that current evaluation tools miss—critical for production deployments where intermediate reasoning errors compound into costly mistakes.",
+      "Standard final-answer hallucination benchmarks miss the majority of failures in multi-step agent workflows"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": []
+  },
+  "detectedFiles": [],
+  "duplicateOf": null
+}

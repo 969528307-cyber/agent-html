@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "yomo",
+  "summary": "🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.",
+  "sourceUrl": "https://github.com/yomorun/yomo",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "yomorun",
+    "repo": "yomo",
+    "fullName": "yomorun/yomo",
+    "stars": 1906,
+    "license": "",
+    "topics": [
+      "a2a-protocol",
+      "chatgpt",
+      "claude-code",
+      "cursor",
+      "distributed-cloud",
+      "function-calling",
+      "geodistributedsystems",
+      "low-latency",
+      "mcp",
+      "openai",
+      "quic",
+      "realtime",
+      "serverless",
+      "stream-processing",
+      "yomo"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-05T04:25:31Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-07",
+  "lastChecked": "2026-06-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.",
+    "Topics: a2a-protocol, chatgpt, claude-code, cursor, distributed-cloud",
+    "GitHub stars: 1906",
+    "Last pushed: 2026-06-05"
+  ],
+  "id": "candidate-tool-github-yomorun-yomo",
+  "canonicalKey": "tool:github:yomorun/yomo",
+  "firstDiscoveredAt": "2026-06-07",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "yomo is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.",
+      "Topics: a2a-protocol, chatgpt, claude-code, cursor, distributed-cloud",
+      "GitHub stars: 1906"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "yomo",
+  "publishedAt": "2026-06-07"
+}

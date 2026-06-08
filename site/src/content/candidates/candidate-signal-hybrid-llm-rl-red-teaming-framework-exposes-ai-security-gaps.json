@@ -1,0 +1,118 @@
+{
+  "id": "candidate-signal-hybrid-llm-rl-red-teaming-framework-exposes-ai-security-gaps",
+  "type": "signal",
+  "status": "published",
+  "title": "Hybrid LLM-RL Red Teaming Framework Exposes AI Security Gaps",
+  "sourceUrl": "https://arxiv.org/abs/2605.17075v1",
+  "sourceName": "arXiv",
+  "sourceRegistryId": "local-signals-library",
+  "sourceRegistry": {
+    "id": "local-signals-library",
+    "name": "Local Signals Content Library",
+    "type": "local_content",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "src/content/signals",
+    "acceptRules": [
+      "must_have_source_url",
+      "must_have_ecosystem_implication",
+      "must_have_translation_or_summary_value"
+    ],
+    "rejectRules": [
+      "no_original_source",
+      "no_signal_thesis",
+      "thin_news_only"
+    ]
+  },
+  "discoveredAt": "2026-06-04",
+  "lastChecked": "2026-06-07",
+  "discoveredFrom": "directory",
+  "summary": "This paper introduces an autonomous red teaming framework that combines large language models with reinforcement learning to generate adaptive, multi-stage attack campaigns against AI-enabled security systems. Testing in high-fidelity enterprise simulations reveals that standalone LLM agents cannot sustain complex attacks, while hybrid LLM-RL approaches achieve significantly higher compromise rates, exposing critical vulnerabilities in current AI security defenses.",
+  "proposedCategory": [
+    "signal"
+  ],
+  "proposedAgents": [],
+  "extractedSignals": [
+    "The failure of standalone LLMs in sustained adversarial scenarios signals a fundamental shift toward hybrid LLM-RL architectures for both offensive and defensive AI security tools.",
+    "For To Play Claw users building or deploying AI security agents, this research demonstrates that current LLM-only approaches are insufficient for robust cyber defense testing. The hybrid LLM-RL framework provides a blueprint for next-generation red teaming tools, while also warning that autonomous defenders must account for adaptive, multi-stage adversaries rather than simple single-vector attacks.",
+    "Hybrid LLM-RL architectures are essential for realistic adversarial testing of AI security systems",
+    "Standalone LLM agents cannot sustain multi-stage attack campaigns, limiting their utility in red teaming",
+    "Reward shaping aligned with attack kill chains enables more effective and realistic adversarial simulations"
+  ],
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 4,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 4,
+    "editorialValue": 4,
+    "permission": 4
+  },
+  "reviewNotes": "Signals collector output. Review source quality, translation value, ecosystem implication, and whether this belongs as a Signal rather than Learn content.",
+  "publishedAs": "a-red-teaming-framework-for-evaluating-robustness-of-ai-enabled-security-orchest",
+  "publishedAt": "2026-06-04",
+  "author": "Ayan Javeed Shaikh",
+  "permissionStatus": "open_license",
+  "signalProfile": {
+    "sourceName": "arXiv",
+    "originalPublishedAt": "2026-05-16",
+    "permissionStatus": "open_license",
+    "translationMode": "full_english_translation",
+    "relatedTools": [],
+    "relatedAgents": [],
+    "relatedLearn": []
+  },
+  "canonicalKey": "signal:url:https://arxiv.org/abs/2605.17075v1:title:hybrid llm rl red teaming framework exposes ai security gaps",
+  "firstDiscoveredAt": "2026-06-04",
+  "lastSeenAt": "2026-06-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-04-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-04"
+    },
+    {
+      "runId": "2026-06-05-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-05"
+    },
+    {
+      "runId": "2026-06-06-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-06"
+    },
+    {
+      "runId": "2026-06-07-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-07"
+    }
+  ],
+  "duplicateReason": null,
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "low",
+    "publishType": "signal",
+    "primaryType": "signal",
+    "whatIsIt": "Hybrid LLM-RL Red Teaming Framework Exposes AI Security Gaps is a knowledge resource rather than a single installable tool.",
+    "helpsWith": [
+      "Relevant to signal.",
+      "The failure of standalone LLMs in sustained adversarial scenarios signals a fundamental shift toward hybrid LLM-RL architectures for both offensive and defensive AI security tools.",
+      "For To Play Claw users building or deploying AI security agents, this research demonstrates that current LLM-only approaches are insufficient for robust cyber defense testing. The hybrid LLM-RL framework provides a blueprint for next-generation red teaming tools, while also warning that autonomous defenders must account for adaptive, multi-stage adversaries rather than simple single-vector attacks.",
+      "Hybrid LLM-RL architectures are essential for realistic adversarial testing of AI security systems"
+    ],
+    "reasons": [
+      "GitHub stars are below the configured discovery threshold.",
+      "Classification confidence is not strong enough."
+    ],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  },
+  "detectedFiles": [],
+  "duplicateOf": null
+}
