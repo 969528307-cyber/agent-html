@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "cognee",
+  "summary": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
+  "sourceUrl": "https://github.com/topoteretes/cognee",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "topoteretes",
+    "repo": "cognee",
+    "fullName": "topoteretes/cognee",
+    "stars": 17729,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-memory",
+      "agent-skills",
+      "ai",
+      "ai-agents",
+      "ai-memory",
+      "cognitive-architecture",
+      "cognitive-memory",
+      "context-engineering",
+      "contributions-welcome",
+      "good-first-issue",
+      "good-first-pr",
+      "graph-database",
+      "graph-rag",
+      "help-wanted",
+      "knowledge",
+      "knowledge-graph",
+      "memory-management",
+      "open-source",
+      "vector-database"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-08T19:14:34Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-08",
+  "lastChecked": "2026-06-08",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
+    "Topics: agent-memory, agent-skills, ai, ai-agents, ai-memory",
+    "GitHub stars: 17729",
+    "Last pushed: 2026-06-08"
+  ],
+  "id": "candidate-tool-github-topoteretes-cognee",
+  "canonicalKey": "tool:github:topoteretes/cognee",
+  "firstDiscoveredAt": "2026-06-08",
+  "lastSeenAt": "2026-06-08",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-08-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-08"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "cognee is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.",
+      "Topics: agent-memory, agent-skills, ai, ai-agents, ai-memory",
+      "GitHub stars: 17729"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-08",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cognee",
+  "publishedAt": "2026-06-08"
+}

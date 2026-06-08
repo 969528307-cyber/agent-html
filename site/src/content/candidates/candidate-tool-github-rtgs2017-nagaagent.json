@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "NagaAgent",
+  "summary": "A simple yet powerful agent framework for personal assistants, designed to enable intelligent interaction, multi-agent collaboration, and seamless tool integration.",
+  "sourceUrl": "https://github.com/RTGS2017/NagaAgent",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "RTGS2017",
+    "repo": "NagaAgent",
+    "fullName": "RTGS2017/NagaAgent",
+    "stars": 1522,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agentic-ai",
+      "agents",
+      "mcp",
+      "mcp-client",
+      "openai",
+      "openclaw",
+      "toolcall"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-10T10:27:47Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-08",
+  "lastChecked": "2026-06-08",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A simple yet powerful agent framework for personal assistants, designed to enable intelligent interaction, multi-agent collaboration, and seamless tool integration.",
+    "Topics: agentic-ai, agents, mcp, mcp-client, openai",
+    "GitHub stars: 1522",
+    "Last pushed: 2026-05-10"
+  ],
+  "id": "candidate-tool-github-rtgs2017-nagaagent",
+  "canonicalKey": "tool:github:rtgs2017/nagaagent",
+  "firstDiscoveredAt": "2026-06-08",
+  "lastSeenAt": "2026-06-08",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-08-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-08"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "NagaAgent is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A simple yet powerful agent framework for personal assistants, designed to enable intelligent interaction, multi-agent collaboration, and seamless tool integration.",
+      "Topics: agentic-ai, agents, mcp, mcp-client, openai",
+      "GitHub stars: 1522"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-08",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nagaagent",
+  "publishedAt": "2026-06-08"
+}

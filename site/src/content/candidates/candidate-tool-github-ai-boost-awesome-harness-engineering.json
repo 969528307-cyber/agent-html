@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "awesome-harness-engineering",
+  "summary": "Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration.",
+  "sourceUrl": "https://github.com/ai-boost/awesome-harness-engineering",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "ai-boost",
+    "repo": "awesome-harness-engineering",
+    "fullName": "ai-boost/awesome-harness-engineering",
+    "stars": 1726,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-harness",
+      "agent-memory",
+      "agent-orchestration",
+      "ai-agents",
+      "awesome-list",
+      "context-engineering",
+      "harness-engineering",
+      "mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-08T14:35:11Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-08",
+  "lastChecked": "2026-06-08",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration.",
+    "Topics: agent-harness, agent-memory, agent-orchestration, ai-agents, awesome-list",
+    "GitHub stars: 1726",
+    "Last pushed: 2026-06-08"
+  ],
+  "id": "candidate-tool-github-ai-boost-awesome-harness-engineering",
+  "canonicalKey": "tool:github:ai-boost/awesome-harness-engineering",
+  "firstDiscoveredAt": "2026-06-08",
+  "lastSeenAt": "2026-06-08",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-08-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-08"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "awesome-harness-engineering is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration.",
+      "Topics: agent-harness, agent-memory, agent-orchestration, ai-agents, awesome-list",
+      "GitHub stars: 1726"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-08",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "awesome-harness-engineering",
+  "publishedAt": "2026-06-08"
+}
