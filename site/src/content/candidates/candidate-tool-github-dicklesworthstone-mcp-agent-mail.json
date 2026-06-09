@@ -50,7 +50,7 @@
     ]
   },
   "sourceRegistryId": "github-tools-topic-search",
-  "classificationConfidence": "medium",
+  "classificationConfidence": "high",
   "status": "published",
   "reviewScore": {
     "sourceTrust": 4,
@@ -83,15 +83,16 @@
   "enrichmentDecision": "ready_to_publish",
   "enrichment": {
     "decision": "ready_to_publish",
-    "confidence": "medium",
+    "confidence": "high",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "mcp_agent_mail is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "mcp_agent_mail is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with database workflows.",
+      "Helps with coding workflows.",
       "Relevant to mcp.",
       "Asynchronous coordination layer for AI coding agents: identities, inboxes, searchable threads, and advisory file leases over FastMCP + Git + SQLite",
-      "Topics: ai-agents, coordination, fastmcp, mcp, python",
-      "GitHub stars: 1974"
+      "Topics: ai-agents, coordination, fastmcp, mcp, python"
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -101,5 +102,24 @@
   "reviewedAt": "2026-06-06",
   "reviewedBy": "auto-publisher",
   "publishedAs": "mcp-agent-mail",
-  "publishedAt": "2026-06-06"
+  "publishedAt": "2026-06-06",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "database",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "database",
+    "coding"
+  ],
+  "routingDecision": "auto_publish"
 }

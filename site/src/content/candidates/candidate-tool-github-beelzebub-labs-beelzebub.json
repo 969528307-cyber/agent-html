@@ -65,7 +65,7 @@
     ]
   },
   "sourceRegistryId": "github-tools-topic-search",
-  "classificationConfidence": "medium",
+  "classificationConfidence": "high",
   "status": "published",
   "reviewScore": {
     "sourceTrust": 4,
@@ -98,15 +98,16 @@
   "enrichmentDecision": "ready_to_publish",
   "enrichment": {
     "decision": "ready_to_publish",
-    "confidence": "medium",
+    "confidence": "high",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "beelzebub is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "beelzebub is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with security workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
       "Relevant to mcp.",
-      "A secure low code deception runtime framework, leveraging AI for System Virtualization.",
-      "Topics: acis, agentic-ai-security, cloudnative, cloudsecurity, cybersecurity",
-      "GitHub stars: 2037"
+      "A secure low code deception runtime framework, leveraging AI for System Virtualization."
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -116,5 +117,26 @@
   "reviewedAt": "2026-06-06",
   "reviewedBy": "auto-publisher",
   "publishedAs": "beelzebub",
-  "publishedAt": "2026-06-06"
+  "publishedAt": "2026-06-06",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "security",
+      "coding",
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "security",
+    "coding",
+    "research"
+  ],
+  "routingDecision": "auto_publish"
 }

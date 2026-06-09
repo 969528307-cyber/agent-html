@@ -1,0 +1,128 @@
+{
+  "type": "tool",
+  "title": "Hands-On-AI-Engineering",
+  "summary": "A curated collection of practical AI projects implementing OCR systems, RAG, AI agents, and other AI use cases.",
+  "sourceUrl": "https://github.com/Sumanth077/Hands-On-AI-Engineering",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Sumanth077",
+    "repo": "Hands-On-AI-Engineering",
+    "fullName": "Sumanth077/Hands-On-AI-Engineering",
+    "stars": 1662,
+    "license": "",
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "ai-engineering",
+      "generative-ai",
+      "llms",
+      "mcp",
+      "ocr",
+      "python",
+      "rag"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-05T11:32:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-09",
+  "lastChecked": "2026-06-09",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A curated collection of practical AI projects implementing OCR systems, RAG, AI agents, and other AI use cases.",
+    "Topics: agents, ai, ai-agents, ai-engineering, generative-ai",
+    "GitHub stars: 1662",
+    "Last pushed: 2026-06-05"
+  ],
+  "id": "candidate-tool-github-sumanth077-hands-on-ai-engineering",
+  "canonicalKey": "tool:github:sumanth077/hands-on-ai-engineering",
+  "firstDiscoveredAt": "2026-06-09",
+  "lastSeenAt": "2026-06-09",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-09-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-09"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "research"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "research"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "Hands-On-AI-Engineering is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with research workflows.",
+      "Relevant to mcp.",
+      "A curated collection of practical AI projects implementing OCR systems, RAG, AI agents, and other AI use cases.",
+      "Topics: agents, ai, ai-agents, ai-engineering, generative-ai",
+      "GitHub stars: 1662"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-09",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "hands-on-ai-engineering",
+  "publishedAt": "2026-06-09"
+}

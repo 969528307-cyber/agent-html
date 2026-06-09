@@ -60,7 +60,7 @@
     ]
   },
   "sourceRegistryId": "github-tools-topic-search",
-  "classificationConfidence": "medium",
+  "classificationConfidence": "high",
   "status": "published",
   "reviewScore": {
     "sourceTrust": 4,
@@ -93,15 +93,16 @@
   "enrichmentDecision": "ready_to_publish",
   "enrichment": {
     "decision": "ready_to_publish",
-    "confidence": "medium",
+    "confidence": "high",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "yomo is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "yomo is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
       "Relevant to mcp.",
       "🦖 Serverless AI Agent Framework with Geo-distributed Edge AI Infra.",
-      "Topics: a2a-protocol, chatgpt, claude-code, cursor, distributed-cloud",
-      "GitHub stars: 1906"
+      "Topics: a2a-protocol, chatgpt, claude-code, cursor, distributed-cloud"
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -111,5 +112,24 @@
   "reviewedAt": "2026-06-07",
   "reviewedBy": "auto-publisher",
   "publishedAs": "yomo",
-  "publishedAt": "2026-06-07"
+  "publishedAt": "2026-06-07",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "coding"
+  ],
+  "routingDecision": "auto_publish"
 }

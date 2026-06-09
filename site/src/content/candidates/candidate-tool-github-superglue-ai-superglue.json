@@ -60,7 +60,7 @@
     ]
   },
   "sourceRegistryId": "github-tools-topic-search",
-  "classificationConfidence": "medium",
+  "classificationConfidence": "high",
   "status": "published",
   "reviewScore": {
     "sourceTrust": 4,
@@ -93,15 +93,16 @@
   "enrichmentDecision": "ready_to_publish",
   "enrichment": {
     "decision": "ready_to_publish",
-    "confidence": "medium",
+    "confidence": "high",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "superglue is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "superglue is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with automation workflows.",
       "Relevant to mcp.",
       "superglue (YC W25) builds integrations and tools from natural language. Get production-grade tools for long tail and enterprise systems.",
-      "Topics: agents, ai, ai-agents, api, api-gateway",
-      "GitHub stars: 2018"
+      "Topics: agents, ai, ai-agents, api, api-gateway"
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -111,5 +112,24 @@
   "reviewedAt": "2026-06-06",
   "reviewedBy": "auto-publisher",
   "publishedAs": "superglue",
-  "publishedAt": "2026-06-06"
+  "publishedAt": "2026-06-06",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "automation"
+  ],
+  "routingDecision": "auto_publish"
 }

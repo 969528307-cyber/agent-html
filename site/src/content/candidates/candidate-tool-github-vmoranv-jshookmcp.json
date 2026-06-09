@@ -1,33 +1,34 @@
 {
   "type": "tool",
-  "title": "plik",
-  "summary": "Plik is a temporary file upload system (Wetransfer like) in Go.",
-  "sourceUrl": "https://github.com/root-gg/plik",
+  "title": "jshookmcp",
+  "summary": "js hook toolkit that all you need",
+  "sourceUrl": "https://github.com/vmoranv/jshookmcp",
   "discoveredFrom": "github",
   "proposedCategory": [
     "mcp"
   ],
   "githubMetadata": {
-    "owner": "root-gg",
-    "repo": "plik",
-    "fullName": "root-gg/plik",
-    "stars": 1773,
-    "license": "NOASSERTION",
+    "owner": "vmoranv",
+    "repo": "jshookmcp",
+    "fullName": "vmoranv/jshookmcp",
+    "stars": 1624,
+    "license": "AGPL-3.0",
     "topics": [
-      "docker",
-      "e2ee",
-      "file-sharing",
-      "file-upload",
-      "golang",
+      "browser-automation",
+      "debugging",
+      "deobfuscation",
+      "js-reverse",
       "mcp",
-      "self-hosted"
+      "network-analysis",
+      "reverse-engineering",
+      "security-analysis"
     ],
     "defaultBranch": "master",
-    "lastPushedAt": "2026-05-25T11:22:08Z"
+    "lastPushedAt": "2026-06-06T12:33:32Z"
   },
   "proposedAgents": [],
-  "discoveredAt": "2026-06-07",
-  "lastChecked": "2026-06-07",
+  "discoveredAt": "2026-06-09",
+  "lastChecked": "2026-06-09",
   "sourceRegistry": {
     "id": "github-tools-topic-search",
     "name": "GitHub Tools Topic Search",
@@ -65,51 +66,30 @@
   },
   "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
   "extractedSignals": [
-    "Plik is a temporary file upload system (Wetransfer like) in Go.",
-    "Topics: docker, e2ee, file-sharing, file-upload, golang",
-    "GitHub stars: 1773",
-    "Last pushed: 2026-05-25"
+    "js hook toolkit that all you need",
+    "Topics: browser-automation, debugging, deobfuscation, js-reverse, mcp",
+    "GitHub stars: 1624",
+    "Last pushed: 2026-06-06"
   ],
-  "id": "candidate-tool-github-root-gg-plik",
-  "canonicalKey": "tool:github:root-gg/plik",
-  "firstDiscoveredAt": "2026-06-07",
-  "lastSeenAt": "2026-06-07",
+  "id": "candidate-tool-github-vmoranv-jshookmcp",
+  "canonicalKey": "tool:github:vmoranv/jshookmcp",
+  "firstDiscoveredAt": "2026-06-09",
+  "lastSeenAt": "2026-06-09",
   "crawlRuns": [
     {
-      "runId": "2026-06-07-mcp",
+      "runId": "2026-06-09-mcp",
       "module": "mcp",
       "sourceRegistryId": "github-tools-topic-search",
-      "seenAt": "2026-06-07"
+      "seenAt": "2026-06-09"
     }
   ],
-  "enrichmentDecision": "ready_to_publish",
-  "enrichment": {
-    "decision": "ready_to_publish",
-    "confidence": "high",
-    "publishType": "tool",
-    "primaryType": "mcp",
-    "whatIsIt": "plik is an MCP-related tool that exposes external capabilities to agents.",
-    "helpsWith": [
-      "Helps with devops workflows.",
-      "Relevant to mcp.",
-      "Plik is a temporary file upload system (Wetransfer like) in Go.",
-      "Topics: docker, e2ee, file-sharing, file-upload, golang",
-      "GitHub stars: 1773"
-    ],
-    "reasons": [
-      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
-    ],
-    "riskNotes": []
-  },
-  "reviewedAt": "2026-06-07",
-  "reviewedBy": "auto-publisher",
-  "publishedAs": "plik",
-  "publishedAt": "2026-06-07",
   "toolProfile": {
     "capabilityType": "mcp",
     "scope": "single-tool",
     "useCategory": [
-      "devops"
+      "browser",
+      "security",
+      "automation"
     ],
     "confidence": "high",
     "routingDecision": "auto_publish",
@@ -119,7 +99,32 @@
   "capabilityType": "mcp",
   "scope": "single-tool",
   "useCategory": [
-    "devops"
+    "browser",
+    "security",
+    "automation"
   ],
-  "routingDecision": "auto_publish"
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "mcp",
+    "whatIsIt": "jshookmcp is an MCP-related tool that exposes external capabilities to agents.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with security workflows.",
+      "Helps with automation workflows.",
+      "Relevant to mcp.",
+      "js hook toolkit that all you need"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-09",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "jshookmcp",
+  "publishedAt": "2026-06-09"
 }

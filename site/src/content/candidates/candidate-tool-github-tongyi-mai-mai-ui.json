@@ -50,7 +50,7 @@
     ]
   },
   "sourceRegistryId": "github-tools-topic-search",
-  "classificationConfidence": "medium",
+  "classificationConfidence": "high",
   "status": "published",
   "reviewScore": {
     "sourceTrust": 4,
@@ -83,15 +83,16 @@
   "enrichmentDecision": "ready_to_publish",
   "enrichment": {
     "decision": "ready_to_publish",
-    "confidence": "medium",
+    "confidence": "high",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "MAI-UI is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "MAI-UI is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with design workflows.",
       "Relevant to mcp.",
       "MAI-UI: Real-World Centric Foundation GUI Agents ranging from 2B to 235B",
-      "Topics: device-cloud-collaboration, gui-agent, gui-grounding, gui-navigation, mcp",
-      "GitHub stars: 1817"
+      "Topics: device-cloud-collaboration, gui-agent, gui-grounding, gui-navigation, mcp"
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -101,5 +102,24 @@
   "reviewedAt": "2026-06-07",
   "reviewedBy": "auto-publisher",
   "publishedAs": "mai-ui",
-  "publishedAt": "2026-06-07"
+  "publishedAt": "2026-06-07",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "design"
+  ],
+  "routingDecision": "auto_publish"
 }

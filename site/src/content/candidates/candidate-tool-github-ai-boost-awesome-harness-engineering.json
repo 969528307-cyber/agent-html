@@ -1,37 +1,34 @@
 {
   "type": "tool",
-  "title": "AI-Agents-Projects-Tutorials",
-  "summary": "Multi-agent systems, memory, planning, reasoning loops",
-  "sourceUrl": "https://github.com/MARKTECHPOST-AI-MEDIA-INC/AI-Agents-Projects-Tutorials",
+  "title": "awesome-harness-engineering",
+  "summary": "Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration.",
+  "sourceUrl": "https://github.com/ai-boost/awesome-harness-engineering",
   "discoveredFrom": "github",
   "proposedCategory": [
-    "skill"
+    "mcp"
   ],
   "githubMetadata": {
-    "owner": "MARKTECHPOST-AI-MEDIA-INC",
-    "repo": "AI-Agents-Projects-Tutorials",
-    "fullName": "MARKTECHPOST-AI-MEDIA-INC/AI-Agents-Projects-Tutorials",
-    "stars": 2670,
-    "license": "",
+    "owner": "ai-boost",
+    "repo": "awesome-harness-engineering",
+    "fullName": "ai-boost/awesome-harness-engineering",
+    "stars": 1726,
+    "license": "NOASSERTION",
     "topics": [
-      "agent-skills",
-      "agentic-ai",
-      "agentic-ai-development",
-      "agentic-coding",
-      "agentic-engineering",
-      "agentic-framework",
-      "agentic-rag",
-      "agentic-workflow",
-      "ai",
-      "aiagent",
-      "aiagents"
+      "agent-harness",
+      "agent-memory",
+      "agent-orchestration",
+      "ai-agents",
+      "awesome-list",
+      "context-engineering",
+      "harness-engineering",
+      "mcp"
     ],
     "defaultBranch": "main",
-    "lastPushedAt": "2026-06-04T17:11:25Z"
+    "lastPushedAt": "2026-06-08T14:35:11Z"
   },
   "proposedAgents": [],
-  "discoveredAt": "2026-06-05",
-  "lastChecked": "2026-06-05",
+  "discoveredAt": "2026-06-09",
+  "lastChecked": "2026-06-09",
   "sourceRegistry": {
     "id": "github-tools-topic-search",
     "name": "GitHub Tools Topic Search",
@@ -57,7 +54,7 @@
   },
   "sourceRegistryId": "github-tools-topic-search",
   "classificationConfidence": "high",
-  "status": "published",
+  "status": "candidate",
   "reviewScore": {
     "sourceTrust": 4,
     "usefulness": 3,
@@ -69,30 +66,29 @@
   },
   "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
   "extractedSignals": [
-    "Multi-agent systems, memory, planning, reasoning loops",
-    "Topics: agent-skills, agentic-ai, agentic-ai-development, agentic-coding, agentic-engineering",
-    "GitHub stars: 2670",
-    "Last pushed: 2026-06-04"
+    "Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration.",
+    "Topics: agent-harness, agent-memory, agent-orchestration, ai-agents, awesome-list",
+    "GitHub stars: 1726",
+    "Last pushed: 2026-06-08"
   ],
-  "id": "candidate-tool-github-marktechpost-ai-media-inc-ai-agents-projects-tutorials",
-  "canonicalKey": "tool:github:marktechpost-ai-media-inc/ai-agents-projects-tutorials",
-  "firstDiscoveredAt": "2026-06-05",
-  "lastSeenAt": "2026-06-05",
+  "id": "candidate-tool-github-ai-boost-awesome-harness-engineering",
+  "canonicalKey": "tool:github:ai-boost/awesome-harness-engineering",
+  "firstDiscoveredAt": "2026-06-09",
+  "lastSeenAt": "2026-06-09",
   "crawlRuns": [
     {
-      "runId": "2026-06-05-skill",
-      "module": "skill",
+      "runId": "2026-06-09-mcp",
+      "module": "mcp",
       "sourceRegistryId": "github-tools-topic-search",
-      "seenAt": "2026-06-05"
+      "seenAt": "2026-06-09"
     }
   ],
   "toolProfile": {
-    "capabilityType": "skill",
-    "scope": "tutorial",
+    "capabilityType": "mcp",
+    "scope": "awesome-list",
     "useCategory": [
-      "coding",
+      "monitoring",
       "automation",
-      "research",
       "memory"
     ],
     "confidence": "high",
@@ -100,12 +96,11 @@
     "scores": {},
     "notes": []
   },
-  "capabilityType": "skill",
-  "scope": "tutorial",
+  "capabilityType": "mcp",
+  "scope": "awesome-list",
   "useCategory": [
-    "coding",
+    "monitoring",
     "automation",
-    "research",
     "memory"
   ],
   "routingDecision": "auto_reject",
@@ -114,22 +109,18 @@
     "decision": "route_to_learn",
     "confidence": "high",
     "publishType": "learn",
-    "primaryType": "skill",
-    "whatIsIt": "AI-Agents-Projects-Tutorials is a skill-oriented tutorial resource for teaching or extending agent behavior.",
+    "primaryType": "mcp",
+    "whatIsIt": "awesome-harness-engineering is an MCP-related awesome-list tool that exposes external capabilities to agents.",
     "helpsWith": [
-      "Helps with coding workflows.",
+      "Helps with monitoring workflows.",
       "Helps with automation workflows.",
-      "Helps with research workflows.",
       "Helps with memory workflows.",
-      "Relevant to skill."
+      "Relevant to mcp.",
+      "Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration."
     ],
     "reasons": [
       "This candidate is primarily educational or directory-style content, not a single public tool page."
     ],
     "riskNotes": []
-  },
-  "publishedAs": "ai-agents-projects-tutorials",
-  "publishedAt": "2026-06-09",
-  "reviewedAt": "2026-06-09",
-  "reviewedBy": "local-review"
+  }
 }
