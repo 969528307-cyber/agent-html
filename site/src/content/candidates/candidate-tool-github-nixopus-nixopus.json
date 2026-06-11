@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "nixopus",
+  "summary": "Run production apps without thinking about infrastructure. On your server or ours. Fully agentic.",
+  "sourceUrl": "https://github.com/nixopus/nixopus",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "nixopus",
+    "repo": "nixopus",
+    "fullName": "nixopus/nixopus",
+    "stars": 1446,
+    "license": "NOASSERTION",
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "ci-cd",
+      "coolify",
+      "cursor",
+      "deployment",
+      "golang",
+      "heroku",
+      "infrastructure",
+      "mcp",
+      "netlify",
+      "nextjs",
+      "self-hosted",
+      "server",
+      "terminal",
+      "typescript",
+      "vercel",
+      "vps",
+      "vps-server"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-16T11:58:36Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-10",
+  "lastChecked": "2026-06-10",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Run production apps without thinking about infrastructure. On your server or ours. Fully agentic.",
+    "Topics: agents, ai, ai-agents, ci-cd, coolify",
+    "GitHub stars: 1446",
+    "Last pushed: 2026-05-16"
+  ],
+  "id": "candidate-tool-github-nixopus-nixopus",
+  "canonicalKey": "tool:github:nixopus/nixopus",
+  "firstDiscoveredAt": "2026-06-10",
+  "lastSeenAt": "2026-06-10",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-10-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-10"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "nixopus is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Run production apps without thinking about infrastructure. On your server or ours. Fully agentic.",
+      "Topics: agents, ai, ai-agents, ci-cd, coolify",
+      "GitHub stars: 1446"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-10",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nixopus",
+  "publishedAt": "2026-06-10"
+}

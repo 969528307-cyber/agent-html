@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "sceneview",
+  "summary": "3D & AR SDK for Android (Jetpack Compose + Filament), iOS (SwiftUI + RealityKit), and Web. AI-first: llms.txt, MCP server, Copilot/Cursor rules. The only Compose-native 3D library.",
+  "sourceUrl": "https://github.com/sceneview/sceneview",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "sceneview",
+    "repo": "sceneview",
+    "fullName": "sceneview/sceneview",
+    "stars": 1223,
+    "license": "Apache-2.0",
+    "topics": [
+      "3d",
+      "ai",
+      "android",
+      "ar",
+      "arcore",
+      "arkit",
+      "augmented-reality",
+      "filament",
+      "flutter",
+      "gltf",
+      "ios",
+      "jetpack-compose",
+      "kotlin",
+      "mcp",
+      "react-native",
+      "realitykit",
+      "swift",
+      "swiftui",
+      "visionos",
+      "web"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-10T18:25:48Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-11",
+  "lastChecked": "2026-06-11",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "3D & AR SDK for Android (Jetpack Compose + Filament), iOS (SwiftUI + RealityKit), and Web. AI-first: llms.txt, MCP server, Copilot/Cursor rules. The only Compose-native 3D library.",
+    "Topics: 3d, ai, android, ar, arcore",
+    "GitHub stars: 1223",
+    "Last pushed: 2026-06-10"
+  ],
+  "id": "candidate-tool-github-sceneview-sceneview",
+  "canonicalKey": "tool:github:sceneview/sceneview",
+  "firstDiscoveredAt": "2026-06-11",
+  "lastSeenAt": "2026-06-11",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-11-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-11"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "sceneview is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "3D & AR SDK for Android (Jetpack Compose + Filament), iOS (SwiftUI + RealityKit), and Web. AI-first: llms.txt, MCP server, Copilot/Cursor rules. The only Compose-native 3D library.",
+      "Topics: 3d, ai, android, ar, arcore",
+      "GitHub stars: 1223"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-11",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "sceneview",
+  "publishedAt": "2026-06-11"
+}
