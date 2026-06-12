@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "tuui",
+  "summary": "A desktop MCP client designed as a tool unitary utility integration, accelerating AI adoption through the Model Context Protocol (MCP) and enabling cross-vendor LLM API orchestration.",
+  "sourceUrl": "https://github.com/AI-QL/tuui",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "AI-QL",
+    "repo": "tuui",
+    "fullName": "AI-QL/tuui",
+    "stars": 1148,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "ai",
+      "ai-playground",
+      "anthropic",
+      "claude",
+      "deepseek",
+      "dxt",
+      "llm",
+      "llm-eval",
+      "mcp",
+      "mcp-client",
+      "mcp-host",
+      "mcp-inspector",
+      "mcpb",
+      "model-context-protocol",
+      "openai-api",
+      "prompt",
+      "qwen",
+      "testing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-14T09:02:28Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-12",
+  "lastChecked": "2026-06-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A desktop MCP client designed as a tool unitary utility integration, accelerating AI adoption through the Model Context Protocol (MCP) and enabling cross-vendor LLM API orchestration.",
+    "Topics: agent, agentic-ai, ai, ai-playground, anthropic",
+    "GitHub stars: 1148",
+    "Last pushed: 2026-05-14"
+  ],
+  "id": "candidate-tool-github-ai-ql-tuui",
+  "canonicalKey": "tool:github:ai-ql/tuui",
+  "firstDiscoveredAt": "2026-06-12",
+  "lastSeenAt": "2026-06-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-12-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "tuui is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A desktop MCP client designed as a tool unitary utility integration, accelerating AI adoption through the Model Context Protocol (MCP) and enabling cross-vendor LLM API orchestration.",
+      "Topics: agent, agentic-ai, ai, ai-playground, anthropic",
+      "GitHub stars: 1148"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "tuui",
+  "publishedAt": "2026-06-12"
+}

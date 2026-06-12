@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "weave",
+  "summary": "Entity-level git merge driver. Resolves false conflicts git invents when independent agents edit the same file. ~95% reduction vs. line-based merge.",
+  "sourceUrl": "https://github.com/Ataraxy-Labs/weave",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Ataraxy-Labs",
+    "repo": "weave",
+    "fullName": "Ataraxy-Labs/weave",
+    "stars": 1126,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "code-intelligence",
+      "coding-agents",
+      "conflict-resolution",
+      "developer-tools",
+      "git-merge",
+      "llm-tools",
+      "mcp",
+      "merge-driver",
+      "tree-sitter"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-07T01:58:42Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-12",
+  "lastChecked": "2026-06-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Entity-level git merge driver. Resolves false conflicts git invents when independent agents edit the same file. ~95% reduction vs. line-based merge.",
+    "Topics: ai-agents, code-intelligence, coding-agents, conflict-resolution, developer-tools",
+    "GitHub stars: 1126",
+    "Last pushed: 2026-06-07"
+  ],
+  "id": "candidate-tool-github-ataraxy-labs-weave",
+  "canonicalKey": "tool:github:ataraxy-labs/weave",
+  "firstDiscoveredAt": "2026-06-12",
+  "lastSeenAt": "2026-06-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-12-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "weave is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Entity-level git merge driver. Resolves false conflicts git invents when independent agents edit the same file. ~95% reduction vs. line-based merge.",
+      "Topics: ai-agents, code-intelligence, coding-agents, conflict-resolution, developer-tools",
+      "GitHub stars: 1126"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "weave",
+  "publishedAt": "2026-06-12"
+}
