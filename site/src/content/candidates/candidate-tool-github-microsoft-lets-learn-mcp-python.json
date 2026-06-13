@@ -1,0 +1,103 @@
+{
+  "type": "tool",
+  "title": "lets-learn-mcp-python",
+  "summary": "MCP Python Tutorial ",
+  "sourceUrl": "https://github.com/microsoft/lets-learn-mcp-python",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "microsoft",
+    "repo": "lets-learn-mcp-python",
+    "fullName": "microsoft/lets-learn-mcp-python",
+    "stars": 1059,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "mcp",
+      "python"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-09-24T09:01:39Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-12",
+  "lastChecked": "2026-06-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "MCP Python Tutorial ",
+    "Topics: ai, mcp, python",
+    "GitHub stars: 1059",
+    "Last pushed: 2025-09-24"
+  ],
+  "id": "candidate-tool-github-microsoft-lets-learn-mcp-python",
+  "canonicalKey": "tool:github:microsoft/lets-learn-mcp-python",
+  "firstDiscoveredAt": "2026-06-12",
+  "lastSeenAt": "2026-06-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-12-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "lets-learn-mcp-python is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "MCP Python Tutorial ",
+      "Topics: ai, mcp, python",
+      "GitHub stars: 1059"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "lets-learn-mcp-python",
+  "publishedAt": "2026-06-12"
+}
