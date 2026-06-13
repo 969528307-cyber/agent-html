@@ -1,0 +1,146 @@
+{
+  "type": "tool",
+  "title": "deepseek-pp",
+  "summary": "DeepSeek Web browser extension: AI agent workspace with MCP tools, memory, Skills, automation, web search, and conversation export.",
+  "sourceUrl": "https://github.com/zhu1090093659/deepseek-pp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "zhu1090093659",
+    "repo": "deepseek-pp",
+    "fullName": "zhu1090093659/deepseek-pp",
+    "stars": 713,
+    "license": "",
+    "topics": [
+      "agentic-ai",
+      "ai-agent",
+      "ai-memory",
+      "automation",
+      "browser-extension",
+      "chrome-extension",
+      "conversation-export",
+      "deepseek",
+      "deepseek-ai",
+      "edge-extension",
+      "firefox-extension",
+      "mcp",
+      "model-context-protocol",
+      "native-messaging",
+      "officecli",
+      "react",
+      "tool-calling",
+      "typescript",
+      "web-search",
+      "wxt"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-11T10:32:36Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-12",
+  "lastChecked": "2026-06-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "DeepSeek Web browser extension: AI agent workspace with MCP tools, memory, Skills, automation, web search, and conversation export.",
+    "Topics: agentic-ai, ai-agent, ai-memory, automation, browser-extension",
+    "GitHub stars: 713",
+    "Last pushed: 2026-06-11"
+  ],
+  "id": "candidate-tool-github-zhu1090093659-deepseek-pp",
+  "canonicalKey": "tool:github:zhu1090093659/deepseek-pp",
+  "firstDiscoveredAt": "2026-06-12",
+  "lastSeenAt": "2026-06-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-12-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-12"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "browser",
+      "communication",
+      "automation",
+      "memory"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "browser",
+    "communication",
+    "automation",
+    "memory"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-app",
+    "whatIsIt": "deepseek-pp is an agent application or platform for building AI workflows.",
+    "helpsWith": [
+      "Helps with search workflows.",
+      "Helps with browser workflows.",
+      "Helps with communication workflows.",
+      "Helps with automation workflows.",
+      "Helps with memory workflows."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "deepseek-pp",
+  "publishedAt": "2026-06-12"
+}

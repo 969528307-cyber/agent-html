@@ -1,0 +1,128 @@
+{
+  "type": "tool",
+  "title": "baoyu-design",
+  "summary": "Run Claude Design locally as an Agent Skill — Cursor, Claude Code & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best with Opus 4.8.",
+  "sourceUrl": "https://github.com/JimLiu/baoyu-design",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "JimLiu",
+    "repo": "baoyu-design",
+    "fullName": "JimLiu/baoyu-design",
+    "stars": 768,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "claude",
+      "claude-code",
+      "claude-design",
+      "cursor",
+      "design",
+      "prototyping",
+      "ui-design"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-11T17:09:14Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-12",
+  "lastChecked": "2026-06-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Run Claude Design locally as an Agent Skill — Cursor, Claude Code & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best with Opus 4",
+    "Topics: agent-skills, claude, claude-code, claude-design, cursor",
+    "GitHub stars: 768",
+    "Last pushed: 2026-06-11"
+  ],
+  "id": "candidate-tool-github-jimliu-baoyu-design",
+  "canonicalKey": "tool:github:jimliu/baoyu-design",
+  "firstDiscoveredAt": "2026-06-12",
+  "lastSeenAt": "2026-06-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-12-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-12"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "design"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "design"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "baoyu-design is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
+      "Relevant to skill.",
+      "Run Claude Design locally as an Agent Skill — Cursor, Claude Code & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best with Opus 4",
+      "Topics: agent-skills, claude, claude-code, claude-design, cursor"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "baoyu-design",
+  "publishedAt": "2026-06-12"
+}

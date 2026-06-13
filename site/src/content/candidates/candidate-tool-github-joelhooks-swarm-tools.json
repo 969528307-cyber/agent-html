@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "swarm-tools",
+  "summary": "🐝 Multi-agent swarm coordination for OpenCode with learning capabilities, agent issue tracking, and management",
+  "sourceUrl": "https://github.com/joelhooks/swarm-tools",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "joelhooks",
+    "repo": "swarm-tools",
+    "fullName": "joelhooks/swarm-tools",
+    "stars": 700,
+    "license": "",
+    "topics": [
+      "ai-agents",
+      "machine-learning",
+      "multi-agent",
+      "opencode",
+      "swarm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-21T05:56:21Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-12",
+  "lastChecked": "2026-06-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "🐝 Multi-agent swarm coordination for OpenCode with learning capabilities, agent issue tracking, and management",
+    "Topics: ai-agents, machine-learning, multi-agent, opencode, swarm",
+    "GitHub stars: 700",
+    "Last pushed: 2026-05-21"
+  ],
+  "id": "candidate-tool-github-joelhooks-swarm-tools",
+  "canonicalKey": "tool:github:joelhooks/swarm-tools",
+  "firstDiscoveredAt": "2026-06-12",
+  "lastSeenAt": "2026-06-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-12-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-12"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "agent-framework",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-framework",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "agent-framework",
+    "whatIsIt": "swarm-tools is an agent framework for building agentic applications.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "🐝 Multi-agent swarm coordination for OpenCode with learning capabilities, agent issue tracking, and management",
+      "Topics: ai-agents, machine-learning, multi-agent, opencode, swarm",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "swarm-tools",
+  "publishedAt": "2026-06-12"
+}

@@ -1,0 +1,128 @@
+{
+  "type": "tool",
+  "title": "ponytail",
+  "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+  "sourceUrl": "https://github.com/DietrichGebert/ponytail",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "DietrichGebert",
+    "repo": "ponytail",
+    "fullName": "DietrichGebert/ponytail",
+    "stars": 913,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude",
+      "claude-code",
+      "claude-code-plugin",
+      "cursor-rules",
+      "developer-tools",
+      "llm",
+      "prompt-engineering",
+      "yagni"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-12T23:53:53Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-13",
+  "lastChecked": "2026-06-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "Topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin",
+    "GitHub stars: 913",
+    "Last pushed: 2026-06-12"
+  ],
+  "id": "candidate-tool-github-dietrichgebert-ponytail",
+  "canonicalKey": "tool:github:dietrichgebert/ponytail",
+  "firstDiscoveredAt": "2026-06-13",
+  "lastSeenAt": "2026-06-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-13-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-13"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "skill",
+    "whatIsIt": "ponytail is a skill-oriented resource for teaching or extending agent behavior.",
+    "helpsWith": [
+      "Helps with coding workflows.",
+      "Relevant to skill.",
+      "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "Topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin",
+      "GitHub stars: 913"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ponytail",
+  "publishedAt": "2026-06-13"
+}

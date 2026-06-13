@@ -1,0 +1,131 @@
+{
+  "type": "tool",
+  "title": "cli",
+  "summary": "QA Wolf from anywhere — your terminal, your CI, your AI agent.",
+  "sourceUrl": "https://github.com/qawolf/cli",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "qawolf",
+    "repo": "cli",
+    "fullName": "qawolf/cli",
+    "stars": 3427,
+    "license": "Apache-2.0",
+    "topics": [
+      "automation",
+      "cli",
+      "e2e",
+      "end-to-end-testing",
+      "playwright",
+      "qa",
+      "qawolf",
+      "test-automation",
+      "testing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-12T21:25:04Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-13",
+  "lastChecked": "2026-06-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "high",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "QA Wolf from anywhere — your terminal, your CI, your AI agent.",
+    "Topics: automation, cli, e2e, end-to-end-testing, playwright",
+    "GitHub stars: 3427",
+    "Last pushed: 2026-06-12"
+  ],
+  "id": "candidate-tool-github-qawolf-cli",
+  "canonicalKey": "tool:github:qawolf/cli",
+  "firstDiscoveredAt": "2026-06-13",
+  "lastSeenAt": "2026-06-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-13-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-13"
+    }
+  ],
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "testing",
+      "automation"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "testing",
+    "automation"
+  ],
+  "routingDecision": "auto_publish",
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "high",
+    "publishType": "tool",
+    "primaryType": "cli",
+    "whatIsIt": "cli is a CLI-oriented tool for local developer or agent workflows.",
+    "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with testing workflows.",
+      "Helps with automation workflows.",
+      "Relevant to cli.",
+      "QA Wolf from anywhere — your terminal, your CI, your AI agent."
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "cli",
+  "publishedAt": "2026-06-13",
+  "reviewedAt": "2026-06-13",
+  "reviewedBy": "local-review"
+}
