@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "openinference",
+  "summary": "OpenTelemetry Instrumentation for AI Observability",
+  "sourceUrl": "https://github.com/Arize-ai/openinference",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Arize-ai",
+    "repo": "openinference",
+    "fullName": "Arize-ai/openinference",
+    "stars": 1023,
+    "license": "Apache-2.0",
+    "topics": [
+      "aiops",
+      "gemini",
+      "hacktoberfest",
+      "haystack",
+      "langchain",
+      "langraph",
+      "llamaindex",
+      "llmops",
+      "llms",
+      "mcp",
+      "openai",
+      "openai-agents",
+      "opentelemetry",
+      "pydantic-ai",
+      "smolagents",
+      "telemetry",
+      "tracing",
+      "vercel",
+      "vertex"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-11T18:03:18Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-13",
+  "lastChecked": "2026-06-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "OpenTelemetry Instrumentation for AI Observability",
+    "Topics: aiops, gemini, hacktoberfest, haystack, langchain",
+    "GitHub stars: 1023",
+    "Last pushed: 2026-06-11"
+  ],
+  "id": "candidate-tool-github-arize-ai-openinference",
+  "canonicalKey": "tool:github:arize-ai/openinference",
+  "firstDiscoveredAt": "2026-06-13",
+  "lastSeenAt": "2026-06-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "openinference is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "OpenTelemetry Instrumentation for AI Observability",
+      "Topics: aiops, gemini, hacktoberfest, haystack, langchain",
+      "GitHub stars: 1023"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openinference",
+  "publishedAt": "2026-06-13"
+}

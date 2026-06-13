@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "TokenTracker",
+  "summary": "Track token usage across 22 AI coding tools (Claude Code, Codex, Cursor, Gemini, Roo Code, Zed Agent, Goose, and more) — local-first, zero-config, with a beautiful dashboard, native macOS menu bar app, and 4 desktop widgets.",
+  "sourceUrl": "https://github.com/mm7894215/TokenTracker",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "mm7894215",
+    "repo": "TokenTracker",
+    "fullName": "mm7894215/TokenTracker",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-tools",
+      "antigravity",
+      "claude-code",
+      "cli",
+      "codex-cli",
+      "cost-tracker",
+      "cursor",
+      "dashboard",
+      "developer-tools",
+      "gemini-cli",
+      "llm",
+      "local-first",
+      "macos",
+      "nodejs",
+      "npm-package",
+      "observability",
+      "privacy-first",
+      "token-tracker"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-13T16:25:29Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-13",
+  "lastChecked": "2026-06-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Track token usage across 22 AI coding tools (Claude Code, Codex, Cursor, Gemini, Roo Code, Zed Agent, Goose, and more) — local-first, zero-config, with a beautiful dashboard, native macOS menu bar app",
+    "Topics: ai, ai-agent, ai-tools, antigravity, claude-code",
+    "GitHub stars: 700",
+    "Last pushed: 2026-06-13"
+  ],
+  "id": "candidate-tool-github-mm7894215-tokentracker",
+  "canonicalKey": "tool:github:mm7894215/tokentracker",
+  "firstDiscoveredAt": "2026-06-13",
+  "lastSeenAt": "2026-06-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-13-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "TokenTracker is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "Track token usage across 22 AI coding tools (Claude Code, Codex, Cursor, Gemini, Roo Code, Zed Agent, Goose, and more) — local-first, zero-config, with a beautiful dashboard, native macOS menu bar app",
+      "Topics: ai, ai-agent, ai-tools, antigravity, claude-code",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "tokentracker",
+  "publishedAt": "2026-06-13"
+}
