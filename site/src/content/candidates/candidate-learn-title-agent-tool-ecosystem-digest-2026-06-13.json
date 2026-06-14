@@ -24,7 +24,7 @@
     ]
   },
   "discoveredAt": "2026-06-13",
-  "lastChecked": "2026-06-13",
+  "lastChecked": "2026-06-14",
   "discoveredFrom": "directory",
   "summary": "Published tools, stars distribution, license breakdown, and recent activity — data from To Play Claw",
   "proposedCategory": [
@@ -85,16 +85,22 @@
   },
   "canonicalKey": "learn:title:agent tool ecosystem digest 2026 06 13",
   "firstDiscoveredAt": "2026-06-13",
-  "lastSeenAt": "2026-06-13",
+  "lastSeenAt": "2026-06-14",
   "crawlRuns": [
     {
       "runId": "2026-06-13-learn",
       "module": "learn",
       "sourceRegistryId": "local-learn-library",
       "seenAt": "2026-06-13"
+    },
+    {
+      "runId": "2026-06-14-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-06-14"
     }
   ],
-  "duplicateReason": "source already published",
+  "duplicateReason": null,
   "enrichmentDecision": "needs_editor_review",
   "enrichment": {
     "decision": "needs_editor_review",
@@ -114,5 +120,7 @@
       "Classification confidence is not strong enough."
     ],
     "riskNotes": []
-  }
+  },
+  "detectedFiles": [],
+  "duplicateOf": null
 }

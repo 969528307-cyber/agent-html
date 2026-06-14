@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "OpenBiliClaw",
+  "summary": "OpenBiliClaw 是纯本地、私有、开源的自进化跨平台内容发现 Agent：从跨平台使用、项目反馈与对话中持续深化心理画像，带着对你的理解主动去 B 站、小红书、抖音、YouTube 等来源找内容 / Fully local, private, open-source, self-improving discovery agent that learns from usage, feedback, and dialogue to find content across Bilibili, Xiaohongshu, Douyin, YouTube, and more.",
+  "sourceUrl": "https://github.com/whiteguo233/OpenBiliClaw",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "whiteguo233",
+    "repo": "OpenBiliClaw",
+    "fullName": "whiteguo233/OpenBiliClaw",
+    "stars": 701,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "bilibili",
+      "browser-extension",
+      "chrome-extension",
+      "content-discovery",
+      "cross-platform",
+      "douyin",
+      "llm",
+      "local-first",
+      "multi-source",
+      "open-source",
+      "personal-ai",
+      "personality-profiling",
+      "privacy-first",
+      "python",
+      "recommendation-system",
+      "self-hosted",
+      "typescript",
+      "xiaohongshu",
+      "youtube"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-14T18:59:02Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-14",
+  "lastChecked": "2026-06-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "OpenBiliClaw 是纯本地、私有、开源的自进化跨平台内容发现 Agent：从跨平台使用、项目反馈与对话中持续深化心理画像，带着对你的理解主动去 B 站、小红书、抖音、YouTube 等来源找内容 / Fully local, private, open-source, self-improving discovery agent that learns from usage, feedba",
+    "Topics: ai-agent, bilibili, browser-extension, chrome-extension, content-discovery",
+    "GitHub stars: 701",
+    "Last pushed: 2026-06-14"
+  ],
+  "id": "candidate-tool-github-whiteguo233-openbiliclaw",
+  "canonicalKey": "tool:github:whiteguo233/openbiliclaw",
+  "firstDiscoveredAt": "2026-06-14",
+  "lastSeenAt": "2026-06-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-14-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "OpenBiliClaw is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "OpenBiliClaw 是纯本地、私有、开源的自进化跨平台内容发现 Agent：从跨平台使用、项目反馈与对话中持续深化心理画像，带着对你的理解主动去 B 站、小红书、抖音、YouTube 等来源找内容 / Fully local, private, open-source, self-improving discovery agent that learns from usage, feedba",
+      "Topics: ai-agent, bilibili, browser-extension, chrome-extension, content-discovery",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-14",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openbiliclaw",
+  "publishedAt": "2026-06-14"
+}

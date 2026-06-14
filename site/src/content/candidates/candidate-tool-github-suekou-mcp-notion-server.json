@@ -1,0 +1,106 @@
+{
+  "type": "tool",
+  "title": "mcp-notion-server",
+  "summary": "A Model Context Protocol server for connecting Notion to MCP-compatible clients",
+  "sourceUrl": "https://github.com/suekou/mcp-notion-server",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "suekou",
+    "repo": "mcp-notion-server",
+    "fullName": "suekou/mcp-notion-server",
+    "stars": 901,
+    "license": "MIT",
+    "topics": [
+      "mcp",
+      "model-context-protocol",
+      "notion",
+      "notion-api",
+      "npm",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-12T07:16:24Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-14",
+  "lastChecked": "2026-06-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A Model Context Protocol server for connecting Notion to MCP-compatible clients",
+    "Topics: mcp, model-context-protocol, notion, notion-api, npm",
+    "GitHub stars: 901",
+    "Last pushed: 2026-06-12"
+  ],
+  "id": "candidate-tool-github-suekou-mcp-notion-server",
+  "canonicalKey": "tool:github:suekou/mcp-notion-server",
+  "firstDiscoveredAt": "2026-06-14",
+  "lastSeenAt": "2026-06-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-14-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "mcp-notion-server is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A Model Context Protocol server for connecting Notion to MCP-compatible clients",
+      "Topics: mcp, model-context-protocol, notion, notion-api, npm",
+      "GitHub stars: 901"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-14",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-notion-server",
+  "publishedAt": "2026-06-14"
+}
