@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "k8m",
+  "summary": "一款轻量级、跨平台的 Mini Kubernetes AI Dashboard，支持大模型+智能体+MCP(支持设置操作权限)，集成多集群管理、智能分析、实时异常检测等功能，支持多架构并可单文件部署，助力高效集群管理与运维优化。",
+  "sourceUrl": "https://github.com/weibaohui/k8m",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "weibaohui",
+    "repo": "k8m",
+    "fullName": "weibaohui/k8m",
+    "stars": 835,
+    "license": "MIT",
+    "topics": [
+      "2fa",
+      "ai",
+      "apigateway",
+      "chatgpt",
+      "dashboard",
+      "k8s",
+      "k8s-gpt",
+      "mcp",
+      "ollama",
+      "openai",
+      "openkruise"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-04T14:13:21Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-15",
+  "lastChecked": "2026-06-15",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "一款轻量级、跨平台的 Mini Kubernetes AI Dashboard，支持大模型+智能体+MCP(支持设置操作权限)，集成多集群管理、智能分析、实时异常检测等功能，支持多架构并可单文件部署，助力高效集群管理与运维优化。",
+    "Topics: 2fa, ai, apigateway, chatgpt, dashboard",
+    "GitHub stars: 835",
+    "Last pushed: 2026-06-04"
+  ],
+  "id": "candidate-tool-github-weibaohui-k8m",
+  "canonicalKey": "tool:github:weibaohui/k8m",
+  "firstDiscoveredAt": "2026-06-15",
+  "lastSeenAt": "2026-06-15",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-15-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-15"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "k8m is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "一款轻量级、跨平台的 Mini Kubernetes AI Dashboard，支持大模型+智能体+MCP(支持设置操作权限)，集成多集群管理、智能分析、实时异常检测等功能，支持多架构并可单文件部署，助力高效集群管理与运维优化。",
+      "Topics: 2fa, ai, apigateway, chatgpt, dashboard",
+      "GitHub stars: 835"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "k8m",
+  "publishedAt": "2026-06-15"
+}
