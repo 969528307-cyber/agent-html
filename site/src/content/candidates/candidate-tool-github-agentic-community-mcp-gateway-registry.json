@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "mcp-gateway-registry",
+  "summary": "Enterprise-ready MCP Gateway & Registry that centralizes AI development tools with secure OAuth authentication, dynamic tool discovery, and unified access for both autonomous AI agents and AI coding assistants. Transform scattered MCP server chaos into governed, auditable tool access with Keycloak/E",
+  "sourceUrl": "https://github.com/agentic-community/mcp-gateway-registry",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "agentic-community",
+    "repo": "mcp-gateway-registry",
+    "fullName": "agentic-community/mcp-gateway-registry",
+    "stars": 708,
+    "license": "Apache-2.0",
+    "topics": [
+      "a2a",
+      "agentic-ai",
+      "agents",
+      "ans",
+      "documentdb",
+      "ecs",
+      "ecs-fargate",
+      "entra-id",
+      "fgac",
+      "mcp",
+      "mcp-gateway",
+      "mcp-registry",
+      "mcp-servers",
+      "mongodb",
+      "oauth2",
+      "okta",
+      "registry",
+      "skills",
+      "terraform"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-16T13:27:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-16",
+  "lastChecked": "2026-06-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Enterprise-ready MCP Gateway & Registry that centralizes AI development tools with secure OAuth authentication, dynamic tool discovery, and unified access for both autonomous AI agents and AI coding a",
+    "Topics: a2a, agentic-ai, agents, ans, documentdb",
+    "GitHub stars: 708",
+    "Last pushed: 2026-06-16"
+  ],
+  "id": "candidate-tool-github-agentic-community-mcp-gateway-registry",
+  "canonicalKey": "tool:github:agentic-community/mcp-gateway-registry",
+  "firstDiscoveredAt": "2026-06-16",
+  "lastSeenAt": "2026-06-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-16-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "mcp-gateway-registry is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Enterprise-ready MCP Gateway & Registry that centralizes AI development tools with secure OAuth authentication, dynamic tool discovery, and unified access for both autonomous AI agents and AI coding a",
+      "Topics: a2a, agentic-ai, agents, ans, documentdb",
+      "GitHub stars: 708"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-gateway-registry",
+  "publishedAt": "2026-06-16"
+}

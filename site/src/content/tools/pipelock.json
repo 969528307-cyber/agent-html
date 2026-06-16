@@ -1,0 +1,69 @@
+{
+  "id": "pipelock",
+  "name": "pipelock",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection, and emits mediator-signed action receipts: verifiable audit evidence from outside the agent.",
+  "description": "Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection, and emits mediator-signed action receipts: verifiable audit evidence from outside the agent.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/luckyPipewrench/pipelock",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/luckyPipewrench/pipelock",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/luckyPipewrench/pipelock#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/luckyPipewrench/pipelock#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/luckyPipewrench/pipelock/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection, and emits mediator-signed action rec",
+    "Topics: agent-security, ai-agent-security, ai-agents, ai-firewall, ai-security",
+    "GitHub stars: 719",
+    "Last pushed: 2026-06-16"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-06-16T20:46:02Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/luckyPipewrench/pipelock",
+  "repoUrl": "https://github.com/luckyPipewrench/pipelock",
+  "license": "Apache-2.0",
+  "stars": 719,
+  "lastUpdated": "2026-06-16T20:46:02Z",
+  "lastChecked": "2026-06-16",
+  "publishedAt": "2026-06-16",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

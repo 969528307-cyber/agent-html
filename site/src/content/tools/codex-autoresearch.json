@@ -1,0 +1,69 @@
+{
+  "id": "codex-autoresearch",
+  "name": "codex-autoresearch",
+  "type": "workflow",
+  "status": "published",
+  "summary": "A codex plugin for running optimization loops inside a codebase. It is useful when you have a measurable target and many possible changes to try: test runtime, build speed, bundle size, model loss, Lighthouse scores, memory use, query latency, or any other metric you can print from a script.",
+  "description": "A codex plugin for running optimization loops inside a codebase. It is useful when you have a measurable target and many possible changes to try: test runtime, build speed, bundle size, model loss, Lighthouse scores, memory use, query latency, or any other metric you can print from a script.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/TheGreenCedar/codex-autoresearch",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/TheGreenCedar/codex-autoresearch",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/TheGreenCedar/codex-autoresearch#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/TheGreenCedar/codex-autoresearch#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/TheGreenCedar/codex-autoresearch/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A codex plugin for running optimization loops inside a codebase. It is useful when you have a measurable target and many possible changes to try: test runtime, build speed, bundle size, model loss, Li",
+    "Topics: agent-skills, autonomous-agents, autoresearch, code-optimization, codex",
+    "GitHub stars: 717",
+    "Last pushed: 2026-06-16"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-06-16T16:46:01Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/TheGreenCedar/codex-autoresearch",
+  "repoUrl": "https://github.com/TheGreenCedar/codex-autoresearch",
+  "license": "Apache-2.0",
+  "stars": 717,
+  "lastUpdated": "2026-06-16T16:46:01Z",
+  "lastChecked": "2026-06-16",
+  "publishedAt": "2026-06-16",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
