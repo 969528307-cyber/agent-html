@@ -100,9 +100,10 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "OpenBiliClaw is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "agent-app",
+    "whatIsIt": "OpenBiliClaw is an agent application or platform for building AI workflows.",
     "helpsWith": [
+      "Helps with browser workflows.",
       "Relevant to agent-app.",
       "OpenBiliClaw 是纯本地、私有、开源的自进化跨平台内容发现 Agent：从跨平台使用、项目反馈与对话中持续深化心理画像，带着对你的理解主动去 B 站、小红书、抖音、YouTube 等来源找内容 / Fully local, private, open-source, self-improving discovery agent that learns from usage, feedba",
       "Topics: ai-agent, bilibili, browser-extension, chrome-extension, content-discovery",
@@ -116,5 +117,22 @@
   "reviewedAt": "2026-06-14",
   "reviewedBy": "auto-publisher",
   "publishedAs": "openbiliclaw",
-  "publishedAt": "2026-06-14"
+  "publishedAt": "2026-06-14",
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser"
+  ],
+  "routingDecision": "auto_publish"
 }

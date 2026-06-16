@@ -83,8 +83,8 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "openapi-servers is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "openapi-servers is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
       "Relevant to mcp.",
       "OpenAPI Tool Servers",
@@ -99,5 +99,18 @@
   "reviewedAt": "2026-06-13",
   "reviewedBy": "auto-publisher",
   "publishedAs": "openapi-servers",
-  "publishedAt": "2026-06-13"
+  "publishedAt": "2026-06-13",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish"
 }

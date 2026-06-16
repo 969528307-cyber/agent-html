@@ -100,13 +100,14 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "octocode is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "octocode is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
-      "Relevant to mcp.",
-      "MCP server for semantic code research and context generation on real-time using LLM patterns | Search naturally across public & private repos based on your permissions | Transform any accessible codeb",
-      "Topics: agent, ai, ai-agents, ai-tools, claude-ai",
-      "GitHub stars: 864"
+      "Helps with search workflows.",
+      "Helps with media workflows.",
+      "Helps with coding workflows.",
+      "Helps with research workflows.",
+      "Relevant to mcp."
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -116,5 +117,28 @@
   "reviewedAt": "2026-06-14",
   "reviewedBy": "auto-publisher",
   "publishedAs": "octocode",
-  "publishedAt": "2026-06-14"
+  "publishedAt": "2026-06-14",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "search",
+      "media",
+      "coding",
+      "research"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "search",
+    "media",
+    "coding",
+    "research"
+  ],
+  "routingDecision": "auto_publish"
 }

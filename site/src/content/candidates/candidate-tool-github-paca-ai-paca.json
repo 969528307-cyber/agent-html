@@ -93,8 +93,8 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "paca is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "agent-app",
+    "whatIsIt": "paca is an agent application or platform for building AI workflows.",
     "helpsWith": [
       "Relevant to agent-app.",
       "AI-native, free, open-source alternative to Jira, Trello, ClickUp & Monday. Built for Scrum teams where humans and AI agents collaborate as equals — on the same board, the same sprints, the same goals",
@@ -109,5 +109,18 @@
   "reviewedAt": "2026-06-14",
   "reviewedBy": "auto-publisher",
   "publishedAs": "paca",
-  "publishedAt": "2026-06-14"
+  "publishedAt": "2026-06-14",
+  "toolProfile": {
+    "capabilityType": "agent-app",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "agent-app",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish"
 }

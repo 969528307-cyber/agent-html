@@ -82,8 +82,8 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "effective-html is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "skill",
+    "whatIsIt": "effective-html is a skill-oriented resource for teaching or extending agent behavior.",
     "helpsWith": [
       "Relevant to skill.",
       "Agent skill for elegant and simple html plans, architecture diagrams, or whatever else you can think of.",
@@ -98,5 +98,18 @@
   "reviewedAt": "2026-06-13",
   "reviewedBy": "auto-publisher",
   "publishedAs": "effective-html",
-  "publishedAt": "2026-06-13"
+  "publishedAt": "2026-06-13",
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish"
 }

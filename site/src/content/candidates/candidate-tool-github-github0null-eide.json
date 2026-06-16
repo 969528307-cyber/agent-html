@@ -100,8 +100,8 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "eide is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "eide is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
       "Relevant to mcp.",
       "An embedded development environment for mcs51/stm8/avr/cortex-m/riscv on VsCode.",
@@ -116,5 +116,18 @@
   "reviewedAt": "2026-06-13",
   "reviewedBy": "auto-publisher",
   "publishedAs": "eide",
-  "publishedAt": "2026-06-13"
+  "publishedAt": "2026-06-13",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish"
 }

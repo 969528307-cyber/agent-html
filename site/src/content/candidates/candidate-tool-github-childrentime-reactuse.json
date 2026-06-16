@@ -65,7 +65,7 @@
     ]
   },
   "sourceRegistryId": "github-tools-topic-search",
-  "classificationConfidence": "medium",
+  "classificationConfidence": "high",
   "status": "published",
   "reviewScore": {
     "sourceTrust": 4,
@@ -98,15 +98,16 @@
   "enrichmentDecision": "ready_to_publish",
   "enrichment": {
     "decision": "ready_to_publish",
-    "confidence": "medium",
+    "confidence": "high",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "reactuse is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "reactuse is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with browser workflows.",
+      "Helps with coding workflows.",
+      "Helps with design workflows.",
       "Relevant to mcp.",
-      "115+ production-ready React Hooks for sensors, UI, state & browser APIs. Tree-shakable, SSR-safe, TypeScript-first. Used by Shopee, PDD & Ctrip. Inspired by VueUse.",
-      "Topics: browser-api, custom-hooks, developer-tools, frontend, hooks",
-      "GitHub stars: 1015"
+      "115+ production-ready React Hooks for sensors, UI, state & browser APIs. Tree-shakable, SSR-safe, TypeScript-first. Used by Shopee, PDD & Ctrip. Inspired by VueUse."
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -116,5 +117,26 @@
   "reviewedAt": "2026-06-13",
   "reviewedBy": "auto-publisher",
   "publishedAs": "reactuse",
-  "publishedAt": "2026-06-13"
+  "publishedAt": "2026-06-13",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "browser",
+      "coding",
+      "design"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "browser",
+    "coding",
+    "design"
+  ],
+  "routingDecision": "auto_publish"
 }

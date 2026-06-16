@@ -89,8 +89,8 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "mcp-framework is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "mcp-framework is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
       "Relevant to mcp.",
       "The Typescript MCP Framework",
@@ -105,5 +105,18 @@
   "reviewedAt": "2026-06-14",
   "reviewedBy": "auto-publisher",
   "publishedAs": "mcp-framework",
-  "publishedAt": "2026-06-14"
+  "publishedAt": "2026-06-14",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [],
+  "routingDecision": "auto_publish"
 }

@@ -91,13 +91,14 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "OpenDerisk is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "OpenDerisk is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with automation workflows.",
+      "Helps with research workflows.",
       "Relevant to mcp.",
-      "AI-Native Risk Intelligence Systems, OpenDeRisk——Your application system risk intelligent manager provides 7* 24-hour comprehensive and in-depth protection.",
-      "Topics: agent, ai-sre, aigc, devops, mcp",
-      "GitHub stars: 944"
+      "AI-Native Risk Intelligence Systems, OpenDeRisk——Your application system risk intelligent manager provides 7* 24-hour comprehensive and in-depth protection."
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -107,5 +108,26 @@
   "reviewedAt": "2026-06-14",
   "reviewedBy": "auto-publisher",
   "publishedAs": "openderisk",
-  "publishedAt": "2026-06-14"
+  "publishedAt": "2026-06-14",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "automation",
+      "research"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "automation",
+    "research"
+  ],
+  "routingDecision": "auto_publish"
 }

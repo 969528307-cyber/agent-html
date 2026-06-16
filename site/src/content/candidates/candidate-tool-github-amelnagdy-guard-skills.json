@@ -89,13 +89,14 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "guard-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "skill",
+    "whatIsIt": "guard-skills is a skill-oriented resource for teaching or extending agent behavior.",
     "helpsWith": [
+      "Helps with docs workflows.",
+      "Helps with security workflows.",
+      "Helps with coding workflows.",
       "Relevant to skill.",
-      "Guard skills for coding agents, quality gates that catch AI-generated failure modes in code, tests, and docs",
-      "Topics: agent-skills, ai, claude, claude-code, code-review",
-      "GitHub stars: 722"
+      "Guard skills for coding agents, quality gates that catch AI-generated failure modes in code, tests, and docs"
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -105,5 +106,26 @@
   "reviewedAt": "2026-06-14",
   "reviewedBy": "auto-publisher",
   "publishedAs": "guard-skills",
-  "publishedAt": "2026-06-14"
+  "publishedAt": "2026-06-14",
+  "toolProfile": {
+    "capabilityType": "skill",
+    "scope": "single-tool",
+    "useCategory": [
+      "docs",
+      "security",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "skill",
+  "scope": "single-tool",
+  "useCategory": [
+    "docs",
+    "security",
+    "coding"
+  ],
+  "routingDecision": "auto_publish"
 }

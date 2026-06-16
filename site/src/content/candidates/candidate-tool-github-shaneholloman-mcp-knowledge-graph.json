@@ -86,9 +86,10 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "mcp-knowledge-graph is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "mcp-knowledge-graph is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with memory workflows.",
       "Relevant to mcp.",
       "MCP server enabling persistent memory for Claude through a local knowledge graph - fork focused on local development",
       "Topics: ai-memory, claude-ai, knowledge-graph, mcp, memory-server",
@@ -102,5 +103,22 @@
   "reviewedAt": "2026-06-14",
   "reviewedBy": "auto-publisher",
   "publishedAs": "mcp-knowledge-graph",
-  "publishedAt": "2026-06-14"
+  "publishedAt": "2026-06-14",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "memory"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "memory"
+  ],
+  "routingDecision": "auto_publish"
 }

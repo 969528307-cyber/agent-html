@@ -98,9 +98,10 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "mcpm.sh is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "mcpm.sh is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with search workflows.",
       "Relevant to mcp.",
       "CLI MCP package manager & registry for all platforms and all clients. Search & configure MCP servers. Advanced Router & Profile features.",
       "Topics: ai, claude-desktop, cli, cline, continue",
@@ -114,5 +115,22 @@
   "reviewedAt": "2026-06-13",
   "reviewedBy": "auto-publisher",
   "publishedAs": "mcpm-sh",
-  "publishedAt": "2026-06-13"
+  "publishedAt": "2026-06-13",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "search"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "search"
+  ],
+  "routingDecision": "auto_publish"
 }

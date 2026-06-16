@@ -48,7 +48,7 @@
     ]
   },
   "sourceRegistryId": "github-tools-topic-search",
-  "classificationConfidence": "medium",
+  "classificationConfidence": "high",
   "status": "published",
   "reviewScore": {
     "sourceTrust": 4,
@@ -78,13 +78,13 @@
       "seenAt": "2026-06-12"
     }
   ],
-  "enrichmentDecision": "ready_to_publish",
+  "enrichmentDecision": "route_to_learn",
   "enrichment": {
-    "decision": "ready_to_publish",
-    "confidence": "medium",
-    "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "lets-learn-mcp-python is a workflow automation tool for connecting repeatable agent or app actions.",
+    "decision": "route_to_learn",
+    "confidence": "high",
+    "publishType": "learn",
+    "primaryType": "mcp",
+    "whatIsIt": "lets-learn-mcp-python is an MCP-related tutorial tool that exposes external capabilities to agents.",
     "helpsWith": [
       "Relevant to mcp.",
       "MCP Python Tutorial ",
@@ -92,12 +92,25 @@
       "GitHub stars: 1059"
     ],
     "reasons": [
-      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+      "This candidate is primarily educational or directory-style content, not a single public tool page."
     ],
     "riskNotes": []
   },
   "reviewedAt": "2026-06-12",
   "reviewedBy": "auto-publisher",
   "publishedAs": "lets-learn-mcp-python",
-  "publishedAt": "2026-06-12"
+  "publishedAt": "2026-06-12",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "tutorial",
+    "useCategory": [],
+    "confidence": "high",
+    "routingDecision": "auto_reject",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "tutorial",
+  "useCategory": [],
+  "routingDecision": "auto_reject"
 }

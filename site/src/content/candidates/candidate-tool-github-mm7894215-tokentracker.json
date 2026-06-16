@@ -100,13 +100,14 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "TokenTracker is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "cli",
+    "whatIsIt": "TokenTracker is a CLI-oriented tool for local developer or agent workflows.",
     "helpsWith": [
+      "Helps with coding workflows.",
+      "Helps with monitoring workflows.",
       "Relevant to cli.",
       "Track token usage across 22 AI coding tools (Claude Code, Codex, Cursor, Gemini, Roo Code, Zed Agent, Goose, and more) — local-first, zero-config, with a beautiful dashboard, native macOS menu bar app",
-      "Topics: ai, ai-agent, ai-tools, antigravity, claude-code",
-      "GitHub stars: 700"
+      "Topics: ai, ai-agent, ai-tools, antigravity, claude-code"
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -116,5 +117,24 @@
   "reviewedAt": "2026-06-13",
   "reviewedBy": "auto-publisher",
   "publishedAs": "tokentracker",
-  "publishedAt": "2026-06-13"
+  "publishedAt": "2026-06-13",
+  "toolProfile": {
+    "capabilityType": "cli",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding",
+      "monitoring"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "cli",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding",
+    "monitoring"
+  ],
+  "routingDecision": "auto_publish"
 }

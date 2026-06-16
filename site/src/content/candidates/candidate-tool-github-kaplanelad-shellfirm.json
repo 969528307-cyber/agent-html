@@ -91,13 +91,14 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "shellfirm is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "shellfirm is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with devops workflows.",
+      "Helps with coding workflows.",
       "Relevant to mcp.",
       "Safety guardrails for ai coding agents and human terminal commands",
-      "Topics: agent, ai, captcha, devops, devops-tools",
-      "GitHub stars: 917"
+      "Topics: agent, ai, captcha, devops, devops-tools"
     ],
     "reasons": [
       "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
@@ -107,5 +108,24 @@
   "reviewedAt": "2026-06-14",
   "reviewedBy": "auto-publisher",
   "publishedAs": "shellfirm",
-  "publishedAt": "2026-06-14"
+  "publishedAt": "2026-06-14",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "devops",
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "devops",
+    "coding"
+  ],
+  "routingDecision": "auto_publish"
 }

@@ -55,7 +55,7 @@
     ]
   },
   "sourceRegistryId": "github-tools-topic-search",
-  "classificationConfidence": "medium",
+  "classificationConfidence": "high",
   "status": "published",
   "reviewScore": {
     "sourceTrust": 4,
@@ -88,11 +88,12 @@
   "enrichmentDecision": "ready_to_publish",
   "enrichment": {
     "decision": "ready_to_publish",
-    "confidence": "medium",
+    "confidence": "high",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "weave is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "weave is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with coding workflows.",
       "Relevant to mcp.",
       "Entity-level git merge driver. Resolves false conflicts git invents when independent agents edit the same file. ~95% reduction vs. line-based merge.",
       "Topics: ai-agents, code-intelligence, coding-agents, conflict-resolution, developer-tools",
@@ -106,5 +107,22 @@
   "reviewedAt": "2026-06-12",
   "reviewedBy": "auto-publisher",
   "publishedAs": "weave",
-  "publishedAt": "2026-06-12"
+  "publishedAt": "2026-06-12",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "high",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "routingDecision": "auto_publish"
 }

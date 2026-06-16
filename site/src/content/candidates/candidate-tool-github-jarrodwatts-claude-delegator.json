@@ -87,9 +87,10 @@
     "decision": "ready_to_publish",
     "confidence": "medium",
     "publishType": "tool",
-    "primaryType": "workflow",
-    "whatIsIt": "claude-delegator is a workflow automation tool for connecting repeatable agent or app actions.",
+    "primaryType": "mcp",
+    "whatIsIt": "claude-delegator is an MCP-related tool that exposes external capabilities to agents.",
     "helpsWith": [
+      "Helps with coding workflows.",
       "Relevant to mcp.",
       "Delegate tasks to Codex and Gemini directly from within Claude Code.",
       "Topics: ai-agents, claude, claude-code, codex, gpt",
@@ -103,5 +104,22 @@
   "reviewedAt": "2026-06-13",
   "reviewedBy": "auto-publisher",
   "publishedAs": "claude-delegator",
-  "publishedAt": "2026-06-13"
+  "publishedAt": "2026-06-13",
+  "toolProfile": {
+    "capabilityType": "mcp",
+    "scope": "single-tool",
+    "useCategory": [
+      "coding"
+    ],
+    "confidence": "medium",
+    "routingDecision": "auto_publish",
+    "scores": {},
+    "notes": []
+  },
+  "capabilityType": "mcp",
+  "scope": "single-tool",
+  "useCategory": [
+    "coding"
+  ],
+  "routingDecision": "auto_publish"
 }
