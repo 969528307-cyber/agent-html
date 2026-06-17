@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "MiMo-Code",
+  "summary": "MiMo Code: Where Models and Agents Co-Evolve",
+  "sourceUrl": "https://github.com/XiaomiMiMo/MiMo-Code",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "XiaomiMiMo",
+    "repo": "MiMo-Code",
+    "fullName": "XiaomiMiMo/MiMo-Code",
+    "stars": 9573,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "cli",
+      "mimo",
+      "mimo-code"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-17T14:58:07Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-17",
+  "lastChecked": "2026-06-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "MiMo Code: Where Models and Agents Co-Evolve",
+    "Topics: ai, ai-agents, cli, mimo, mimo-code",
+    "GitHub stars: 9573",
+    "Last pushed: 2026-06-17"
+  ],
+  "id": "candidate-tool-github-xiaomimimo-mimo-code",
+  "canonicalKey": "tool:github:xiaomimimo/mimo-code",
+  "firstDiscoveredAt": "2026-06-17",
+  "lastSeenAt": "2026-06-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-17-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "MiMo-Code is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "MiMo Code: Where Models and Agents Co-Evolve",
+      "Topics: ai, ai-agents, cli, mimo, mimo-code",
+      "GitHub stars: 9573"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mimo-code",
+  "publishedAt": "2026-06-17"
+}

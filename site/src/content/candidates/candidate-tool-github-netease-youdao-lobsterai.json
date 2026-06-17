@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "LobsterAI",
+  "summary": "Open-source, desktop-grade AI agent that gets real work done — data analysis, slides, docs, video & web research. Built on OpenClaw; runs tools on your real desktop and takes commands from your phone via WeChat, Feishu, DingTalk & Telegram.",
+  "sourceUrl": "https://github.com/netease-youdao/LobsterAI",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "netease-youdao",
+    "repo": "LobsterAI",
+    "fullName": "netease-youdao/LobsterAI",
+    "stars": 5302,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "ai-agent",
+      "ai-assistant",
+      "automation",
+      "autonomous-agents",
+      "chatbot",
+      "copilot",
+      "cross-platform",
+      "desktop-app",
+      "electron",
+      "llm",
+      "mcp",
+      "office-automation",
+      "openclaw",
+      "productivity",
+      "react",
+      "tyepscript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-17T12:25:59Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-17",
+  "lastChecked": "2026-06-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source, desktop-grade AI agent that gets real work done — data analysis, slides, docs, video & web research. Built on OpenClaw; runs tools on your real desktop and takes commands from your phone ",
+    "Topics: agent, ai-agent, ai-assistant, automation, autonomous-agents",
+    "GitHub stars: 5302",
+    "Last pushed: 2026-06-17"
+  ],
+  "id": "candidate-tool-github-netease-youdao-lobsterai",
+  "canonicalKey": "tool:github:netease-youdao/lobsterai",
+  "firstDiscoveredAt": "2026-06-17",
+  "lastSeenAt": "2026-06-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-17-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "LobsterAI is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source, desktop-grade AI agent that gets real work done — data analysis, slides, docs, video & web research. Built on OpenClaw; runs tools on your real desktop and takes commands from your phone ",
+      "Topics: agent, ai-agent, ai-assistant, automation, autonomous-agents",
+      "GitHub stars: 5302"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "lobsterai",
+  "publishedAt": "2026-06-17"
+}
