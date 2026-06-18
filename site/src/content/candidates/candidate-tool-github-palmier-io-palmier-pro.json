@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "palmier-pro",
+  "summary": "macOS video editor built for AI",
+  "sourceUrl": "https://github.com/palmier-io/palmier-pro",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "palmier-io",
+    "repo": "palmier-pro",
+    "fullName": "palmier-io/palmier-pro",
+    "stars": 1101,
+    "license": "GPL-3.0",
+    "topics": [
+      "ai-video",
+      "claude",
+      "macos",
+      "mcp",
+      "seedance2",
+      "swift",
+      "video-editor"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-18T21:17:52Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-18",
+  "lastChecked": "2026-06-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "macOS video editor built for AI",
+    "Topics: ai-video, claude, macos, mcp, seedance2",
+    "GitHub stars: 1101",
+    "Last pushed: 2026-06-18"
+  ],
+  "id": "candidate-tool-github-palmier-io-palmier-pro",
+  "canonicalKey": "tool:github:palmier-io/palmier-pro",
+  "firstDiscoveredAt": "2026-06-18",
+  "lastSeenAt": "2026-06-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-18-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "palmier-pro is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "macOS video editor built for AI",
+      "Topics: ai-video, claude, macos, mcp, seedance2",
+      "GitHub stars: 1101"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "palmier-pro",
+  "publishedAt": "2026-06-18"
+}
