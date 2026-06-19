@@ -1,0 +1,69 @@
+{
+  "id": "openosint",
+  "name": "OpenOSINT",
+  "type": "workflow",
+  "status": "published",
+  "summary": "AI-powered OSINT agent with interactive REPL, MCP server, and CLI. 16 tools. Works with Claude, GPT-4, or local models. For authorized security research only.",
+  "description": "AI-powered OSINT agent with interactive REPL, MCP server, and CLI. 16 tools. Works with Claude, GPT-4, or local models. For authorized security research only.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/OpenOSINT/OpenOSINT",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/OpenOSINT/OpenOSINT",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/OpenOSINT/OpenOSINT#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/OpenOSINT/OpenOSINT#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/OpenOSINT/OpenOSINT/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AI-powered OSINT agent with interactive REPL, MCP server, and CLI. 16 tools. Works with Claude, GPT-4, or local models. For authorized security research only.",
+    "Topics: ai-agent, anthropic, claude, cli, cybersecurity",
+    "GitHub stars: 711",
+    "Last pushed: 2026-06-19"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-06-19T16:12:03Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/OpenOSINT/OpenOSINT",
+  "repoUrl": "https://github.com/OpenOSINT/OpenOSINT",
+  "license": "MIT",
+  "stars": 711,
+  "lastUpdated": "2026-06-19T16:12:03Z",
+  "lastChecked": "2026-06-19",
+  "publishedAt": "2026-06-19",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

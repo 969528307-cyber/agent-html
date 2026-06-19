@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "mcp-gateway",
+  "summary": "MCP Gateway is a reverse proxy and management layer for MCP servers, enabling scalable, session-aware stateful routing and lifecycle management of MCP servers in Kubernetes environments.",
+  "sourceUrl": "https://github.com/microsoft/mcp-gateway",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "microsoft",
+    "repo": "mcp-gateway",
+    "fullName": "microsoft/mcp-gateway",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "api-gateway",
+      "arm-deployments",
+      "asp-net-core",
+      "azure",
+      "bicep",
+      "cloud-computing",
+      "cloud-computing-service",
+      "csharp",
+      "docker",
+      "gateway",
+      "infrastructure-as-code",
+      "kubernetes",
+      "llm",
+      "mcp",
+      "powershell",
+      "restful-api"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-19T18:50:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-19",
+  "lastChecked": "2026-06-19",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "MCP Gateway is a reverse proxy and management layer for MCP servers, enabling scalable, session-aware stateful routing and lifecycle management of MCP servers in Kubernetes environments.",
+    "Topics: ai, api-gateway, arm-deployments, asp-net-core, azure",
+    "GitHub stars: 700",
+    "Last pushed: 2026-06-19"
+  ],
+  "id": "candidate-tool-github-microsoft-mcp-gateway",
+  "canonicalKey": "tool:github:microsoft/mcp-gateway",
+  "firstDiscoveredAt": "2026-06-19",
+  "lastSeenAt": "2026-06-19",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-19-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-19"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "mcp-gateway is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "MCP Gateway is a reverse proxy and management layer for MCP servers, enabling scalable, session-aware stateful routing and lifecycle management of MCP servers in Kubernetes environments.",
+      "Topics: ai, api-gateway, arm-deployments, asp-net-core, azure",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-19",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-gateway",
+  "publishedAt": "2026-06-19"
+}

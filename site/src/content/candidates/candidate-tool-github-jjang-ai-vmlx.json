@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "vmlx",
+  "summary": "vMLX - JANGTQ Uber Compressed MLX Models - L2 Disk Cache (survives restart) + L1 Paged (super fast ttft) + Hybrid SSM Scheduler  + Cont Batching + etc!",
+  "sourceUrl": "https://github.com/jjang-ai/vmlx",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "jjang-ai",
+    "repo": "vmlx",
+    "fullName": "jjang-ai/vmlx",
+    "stars": 701,
+    "license": "Apache-2.0",
+    "topics": [
+      "anthropic-api",
+      "kvcache-compression",
+      "kvcache-optimization",
+      "kvcache-reuse",
+      "llm",
+      "lmstudio",
+      "macbook",
+      "mcp-server",
+      "mlx",
+      "mlxllm",
+      "mlxstudio",
+      "omlx",
+      "omlx-alternative",
+      "openai-api",
+      "openclaw",
+      "openclaw-agent",
+      "persistent-memory",
+      "prefix-cache",
+      "vmlx"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-19T04:08:37Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-19",
+  "lastChecked": "2026-06-19",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "vMLX - JANGTQ Uber Compressed MLX Models - L2 Disk Cache (survives restart) + L1 Paged (super fast ttft) + Hybrid SSM Scheduler  + Cont Batching + etc!",
+    "Topics: anthropic-api, kvcache-compression, kvcache-optimization, kvcache-reuse, llm",
+    "GitHub stars: 701",
+    "Last pushed: 2026-06-19"
+  ],
+  "id": "candidate-tool-github-jjang-ai-vmlx",
+  "canonicalKey": "tool:github:jjang-ai/vmlx",
+  "firstDiscoveredAt": "2026-06-19",
+  "lastSeenAt": "2026-06-19",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-19-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-19"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "vmlx is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "vMLX - JANGTQ Uber Compressed MLX Models - L2 Disk Cache (survives restart) + L1 Paged (super fast ttft) + Hybrid SSM Scheduler  + Cont Batching + etc!",
+      "Topics: anthropic-api, kvcache-compression, kvcache-optimization, kvcache-reuse, llm",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-19",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "vmlx",
+  "publishedAt": "2026-06-19"
+}
