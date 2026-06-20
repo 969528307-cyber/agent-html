@@ -1,0 +1,69 @@
+{
+  "id": "airecon",
+  "name": "airecon",
+  "type": "workflow",
+  "status": "published",
+  "summary": "AIRecon is an autonomous cybersecurity agent that combines a self-hosted Large Language Model (Ollama) with a Kali Linux Docker sandbox and a Textual TUI. It is designed to automate security assessments, penetration testing, and bug bounty reconnaissance — without any API keys or cloud dependency.",
+  "description": "AIRecon is an autonomous cybersecurity agent that combines a self-hosted Large Language Model (Ollama) with a Kali Linux Docker sandbox and a Textual TUI. It is designed to automate security assessments, penetration testing, and bug bounty reconnaissance — without any API keys or cloud dependency.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/pikpikcu/airecon",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/pikpikcu/airecon",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/pikpikcu/airecon#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/pikpikcu/airecon#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/pikpikcu/airecon/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AIRecon is an autonomous cybersecurity agent that combines a self-hosted Large Language Model (Ollama) with a Kali Linux Docker sandbox and a Textual TUI. It is designed to automate security assessmen",
+    "Topics: ai-agents, automation, bugbounty, cli, ollama",
+    "GitHub stars: 719",
+    "Last pushed: 2026-06-20"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-06-20T03:57:31Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/pikpikcu/airecon",
+  "repoUrl": "https://github.com/pikpikcu/airecon",
+  "license": "MIT",
+  "stars": 719,
+  "lastUpdated": "2026-06-20T03:57:31Z",
+  "lastChecked": "2026-06-20",
+  "publishedAt": "2026-06-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
