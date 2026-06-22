@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "headroom",
+  "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+  "sourceUrl": "https://github.com/headroomlabs-ai/headroom",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "headroomlabs-ai",
+    "repo": "headroom",
+    "fullName": "headroomlabs-ai/headroom",
+    "stars": 46909,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "ai",
+      "anthropic",
+      "claude-code",
+      "compression",
+      "context-engineering",
+      "context-window",
+      "cursor",
+      "fastapi",
+      "langchain",
+      "llm",
+      "mcp",
+      "openai",
+      "prompt-engineering",
+      "proxy",
+      "python",
+      "rag",
+      "token-optimization",
+      "tokens",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-22T21:32:40Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-22",
+  "lastChecked": "2026-06-22",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+    "Topics: agent, ai, anthropic, claude-code, compression",
+    "GitHub stars: 46909",
+    "Last pushed: 2026-06-22"
+  ],
+  "id": "candidate-tool-github-headroomlabs-ai-headroom",
+  "canonicalKey": "tool:github:headroomlabs-ai/headroom",
+  "firstDiscoveredAt": "2026-06-22",
+  "lastSeenAt": "2026-06-22",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-22-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-22"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "headroom is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "Topics: agent, ai, anthropic, claude-code, compression",
+      "GitHub stars: 46909"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "headroom",
+  "publishedAt": "2026-06-22",
+  "reviewedAt": "2026-06-22",
+  "reviewedBy": "local-review"
+}
