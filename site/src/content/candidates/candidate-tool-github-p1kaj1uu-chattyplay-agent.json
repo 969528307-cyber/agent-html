@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "ChattyPlay-Agent",
+  "summary": "🚀 告别多个App！本项目主要基于Python+React+TypeScript+Hono+SQLite3+Redis，打造“All in One”智能工具集。免会员破解爱奇艺、腾讯视频、优酷、抖音、B站、小红书等20+平台视频，支持4K在线解析与无水印高速下载。集成Cloudflare Turnstile防机器人和爬虫、Google、GitHub授权登录及OpenAI SDK、埋点SDK、MCP服务和Agent等，支持ChatGPT对话、AI绘画、论文降重、Hugging Face论文爬取、在线Latex编写；更有实时黄金K线、AI思维导图、闲鱼助手等效率黑科技。内置海量动漫漫画资源，畅享",
+  "sourceUrl": "https://github.com/P1kaj1uu/ChattyPlay-Agent",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "P1kaj1uu",
+    "repo": "ChattyPlay-Agent",
+    "fullName": "P1kaj1uu/ChattyPlay-Agent",
+    "stars": 702,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "ai-drawing",
+      "aigc",
+      "chatgpt",
+      "docker",
+      "eventstream",
+      "hono",
+      "huggingface",
+      "live2d",
+      "mcp",
+      "music-player",
+      "nginx",
+      "react",
+      "sdk",
+      "three-js",
+      "typescript",
+      "video",
+      "vip",
+      "vue",
+      "xian-yu"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-05-07T03:19:38Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-23",
+  "lastChecked": "2026-06-23",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "🚀 告别多个App！本项目主要基于Python+React+TypeScript+Hono+SQLite3+Redis，打造“All in One”智能工具集。免会员破解爱奇艺、腾讯视频、优酷、抖音、B站、小红书等20+平台视频，支持4K在线解析与无水印高速下载。集成Cloudflare Turnstile防机器人和爬虫、Google、GitHub授权登录及OpenAI SDK、埋点SDK、MC",
+    "Topics: agent, ai-drawing, aigc, chatgpt, docker",
+    "GitHub stars: 702",
+    "Last pushed: 2026-05-07"
+  ],
+  "id": "candidate-tool-github-p1kaj1uu-chattyplay-agent",
+  "canonicalKey": "tool:github:p1kaj1uu/chattyplay-agent",
+  "firstDiscoveredAt": "2026-06-23",
+  "lastSeenAt": "2026-06-23",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-23-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-23"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "ChattyPlay-Agent is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "🚀 告别多个App！本项目主要基于Python+React+TypeScript+Hono+SQLite3+Redis，打造“All in One”智能工具集。免会员破解爱奇艺、腾讯视频、优酷、抖音、B站、小红书等20+平台视频，支持4K在线解析与无水印高速下载。集成Cloudflare Turnstile防机器人和爬虫、Google、GitHub授权登录及OpenAI SDK、埋点SDK、MC",
+      "Topics: agent, ai-drawing, aigc, chatgpt, docker",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-23",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "chattyplay-agent",
+  "publishedAt": "2026-06-23"
+}

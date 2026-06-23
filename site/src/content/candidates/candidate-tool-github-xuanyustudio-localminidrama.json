@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "LocalMiniDrama",
+  "summary": "🎬 seedance2接入  开源本地 AI 短剧 & 漫剧生成工具 —— 从故事到成片一站式完成，数据不出本机，短剧工作流管理平台，高灵活度，AI真人剧，AI漫剧本地搞定。 Open-source local AI short drama maker: story → storyboard → video, fully offline, your data stays yours. 纳米流水线",
+  "sourceUrl": "https://github.com/xuanyustudio/LocalMiniDrama",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "xuanyustudio",
+    "repo": "LocalMiniDrama",
+    "fullName": "xuanyustudio/LocalMiniDrama",
+    "stars": 702,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-mini-drama",
+      "ai-video",
+      "electron",
+      "javascript",
+      "mini-drama",
+      "nodejs",
+      "offline",
+      "offline-short-drama",
+      "open-source",
+      "short-video",
+      "short-video-maker",
+      "storyboard",
+      "video-generation",
+      "vue",
+      "vue3"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-23T15:16:40Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-23",
+  "lastChecked": "2026-06-23",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "🎬 seedance2接入  开源本地 AI 短剧 & 漫剧生成工具 —— 从故事到成片一站式完成，数据不出本机，短剧工作流管理平台，高灵活度，AI真人剧，AI漫剧本地搞定。 Open-source local AI short drama maker: story → storyboard → video, fully offline, your data stays yours. 纳米流水线",
+    "Topics: ai, ai-agent, ai-mini-drama, ai-video, electron",
+    "GitHub stars: 702",
+    "Last pushed: 2026-06-23"
+  ],
+  "id": "candidate-tool-github-xuanyustudio-localminidrama",
+  "canonicalKey": "tool:github:xuanyustudio/localminidrama",
+  "firstDiscoveredAt": "2026-06-23",
+  "lastSeenAt": "2026-06-23",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-23-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-23"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "LocalMiniDrama is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "🎬 seedance2接入  开源本地 AI 短剧 & 漫剧生成工具 —— 从故事到成片一站式完成，数据不出本机，短剧工作流管理平台，高灵活度，AI真人剧，AI漫剧本地搞定。 Open-source local AI short drama maker: story → storyboard → video, fully offline, your data stays yours. 纳米流水线",
+      "Topics: ai, ai-agent, ai-mini-drama, ai-video, electron",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-23",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "localminidrama",
+  "publishedAt": "2026-06-23"
+}
