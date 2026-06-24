@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "awesome-ai-tools-for-ui",
+  "summary": "Curated list of awesome AI tools to build beautiful UI/UX.",
+  "sourceUrl": "https://github.com/maxbogo/awesome-ai-tools-for-ui",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "maxbogo",
+    "repo": "awesome-ai-tools-for-ui",
+    "fullName": "maxbogo/awesome-ai-tools-for-ui",
+    "stars": 701,
+    "license": "",
+    "topics": [
+      "awesome",
+      "awesome-list",
+      "claude",
+      "codex",
+      "cursor",
+      "figma",
+      "landing-page",
+      "mcp",
+      "skills",
+      "ui",
+      "ui-design",
+      "vibe-coding",
+      "vibe-design"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T12:30:05Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-24",
+  "lastChecked": "2026-06-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Curated list of awesome AI tools to build beautiful UI/UX.",
+    "Topics: awesome, awesome-list, claude, codex, cursor",
+    "GitHub stars: 701",
+    "Last pushed: 2026-05-17"
+  ],
+  "id": "candidate-tool-github-maxbogo-awesome-ai-tools-for-ui",
+  "canonicalKey": "tool:github:maxbogo/awesome-ai-tools-for-ui",
+  "firstDiscoveredAt": "2026-06-24",
+  "lastSeenAt": "2026-06-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-24-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "awesome-ai-tools-for-ui is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Curated list of awesome AI tools to build beautiful UI/UX.",
+      "Topics: awesome, awesome-list, claude, codex, cursor",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "awesome-ai-tools-for-ui",
+  "publishedAt": "2026-06-24"
+}

@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-06-23",
+  "lastChecked": "2026-06-24",
   "discoveredFrom": "directory",
   "summary": "This paper presents the first systematic empirical study of how architectural decisions in multi-agent systems (MAS) affect the tradeoff between task performance and security. Across three environments and 13 configurations, the authors find that MAS designs are generally more vulnerable than single agents, with attack success rates varying by up to 3.8x depending on architecture choices like agent roles, communication topology, and memory design.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2604.23459v1:title:multi agent security architecture matters more than you think",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-06-23",
+  "lastSeenAt": "2026-06-24",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -179,6 +179,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-06-23"
+    },
+    {
+      "runId": "2026-06-24-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-24"
     }
   ],
   "duplicateReason": null,
