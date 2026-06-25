@@ -1,0 +1,106 @@
+{
+  "type": "tool",
+  "title": "open-code-review",
+  "summary": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+  "sourceUrl": "https://github.com/alibaba/open-code-review",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "alibaba",
+    "repo": "open-code-review",
+    "fullName": "alibaba/open-code-review",
+    "stars": 9274,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "code-review",
+      "code-review-assistant",
+      "harness",
+      "repository-level-context"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-25T16:02:09Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-25",
+  "lastChecked": "2026-06-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-",
+    "Topics: agent, agent-skills, code-review, code-review-assistant, harness",
+    "GitHub stars: 9274",
+    "Last pushed: 2026-06-25"
+  ],
+  "id": "candidate-tool-github-alibaba-open-code-review",
+  "canonicalKey": "tool:github:alibaba/open-code-review",
+  "firstDiscoveredAt": "2026-06-25",
+  "lastSeenAt": "2026-06-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-25"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "open-code-review is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-",
+      "Topics: agent, agent-skills, code-review, code-review-assistant, harness",
+      "GitHub stars: 9274"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "open-code-review",
+  "publishedAt": "2026-06-25"
+}

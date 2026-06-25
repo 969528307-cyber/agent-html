@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "Atomic-Chat",
+  "summary": "Local AI app and inference engine for agents. Run open-weight LLMs locally — private, 100% offline on your computer.",
+  "sourceUrl": "https://github.com/AtomicBot-ai/Atomic-Chat",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "AtomicBot-ai",
+    "repo": "Atomic-Chat",
+    "fullName": "AtomicBot-ai/Atomic-Chat",
+    "stars": 968,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-chat",
+      "ai-tools",
+      "apple-silicon",
+      "chatgpt",
+      "deepseek",
+      "desktop-app",
+      "gemma",
+      "gguf",
+      "gpt-oss",
+      "llamacpp",
+      "llm",
+      "llm-inference",
+      "local-ai",
+      "local-first",
+      "local-llm",
+      "mcp",
+      "mlx",
+      "open-source",
+      "qwen",
+      "self-hosted"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-25T17:46:26Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-25",
+  "lastChecked": "2026-06-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Local AI app and inference engine for agents. Run open-weight LLMs locally — private, 100% offline on your computer.",
+    "Topics: ai-chat, ai-tools, apple-silicon, chatgpt, deepseek",
+    "GitHub stars: 968",
+    "Last pushed: 2026-06-25"
+  ],
+  "id": "candidate-tool-github-atomicbot-ai-atomic-chat",
+  "canonicalKey": "tool:github:atomicbot-ai/atomic-chat",
+  "firstDiscoveredAt": "2026-06-25",
+  "lastSeenAt": "2026-06-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-25"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Atomic-Chat is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Local AI app and inference engine for agents. Run open-weight LLMs locally — private, 100% offline on your computer.",
+      "Topics: ai-chat, ai-tools, apple-silicon, chatgpt, deepseek",
+      "GitHub stars: 968"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "atomic-chat",
+  "publishedAt": "2026-06-25"
+}

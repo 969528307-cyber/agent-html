@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-06-24",
+  "lastChecked": "2026-06-25",
   "discoveredFrom": "directory",
   "summary": "This paper introduces Trajel, a dataset and evaluation framework that audits hallucinations at the trajectory level in multi-agent industrial workflows. It reveals that most existing benchmarks miss failures originating in intermediate Thought-Action-Observation steps, and that nearly half of hallucinated trajectories contain multiple hallucination types simultaneously.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.24219v2:title:beyond final answers auditing hidden failures in multi agent workflows",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-06-24",
+  "lastSeenAt": "2026-06-25",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -185,6 +185,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-06-24"
+    },
+    {
+      "runId": "2026-06-25-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-25"
     }
   ],
   "duplicateReason": null,
