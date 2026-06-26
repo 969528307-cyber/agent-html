@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "code-graph-rag",
+  "summary": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+  "sourceUrl": "https://github.com/vitali87/code-graph-rag",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "vitali87",
+    "repo": "code-graph-rag",
+    "fullName": "vitali87/code-graph-rag",
+    "stars": 2274,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ast",
+      "claude-code",
+      "code-analysis",
+      "code-understanding",
+      "codebase-search",
+      "developer-tools",
+      "graph-database",
+      "knowledge-graph",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "memgraph",
+      "monorepo",
+      "multi-language",
+      "python",
+      "rag",
+      "retrieval-augmented-generation",
+      "semantic-search",
+      "tree-sitter"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-25T14:48:17Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-26",
+  "lastChecked": "2026-06-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+    "Topics: ai, ast, claude-code, code-analysis, code-understanding",
+    "GitHub stars: 2274",
+    "Last pushed: 2026-06-25"
+  ],
+  "id": "candidate-tool-github-vitali87-code-graph-rag",
+  "canonicalKey": "tool:github:vitali87/code-graph-rag",
+  "firstDiscoveredAt": "2026-06-26",
+  "lastSeenAt": "2026-06-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-26-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "code-graph-rag is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "Topics: ai, ast, claude-code, code-analysis, code-understanding",
+      "GitHub stars: 2274"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "code-graph-rag",
+  "publishedAt": "2026-06-26"
+}

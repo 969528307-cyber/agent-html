@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "CyberStrike",
+  "summary": "AI-powered offensive security agent with 7,300+ actionable security skills. Autonomous pentesting powered by MITRE ATT&CK (2,000+ Atomic tests), CIS Benchmarks (1,500+ controls), OWASP, NIST. Lazy-loading, zero context pollution. Your AI red team.",
+  "sourceUrl": "https://github.com/CyberStrikeus/CyberStrike",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "CyberStrikeus",
+    "repo": "CyberStrike",
+    "fullName": "CyberStrikeus/CyberStrike",
+    "stars": 756,
+    "license": "AGPL-3.0",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "appsec",
+      "atomic-red-team",
+      "bug-bounty",
+      "cis-benchmarks",
+      "cybersecurity",
+      "devsecops",
+      "ethical-hacking",
+      "mcp",
+      "mitre-attack",
+      "nist",
+      "offensive-security",
+      "owasp",
+      "penetration-testing",
+      "pentest",
+      "red-team",
+      "security-automation",
+      "security-tools",
+      "web-security"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-26T14:28:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-26",
+  "lastChecked": "2026-06-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI-powered offensive security agent with 7,300+ actionable security skills. Autonomous pentesting powered by MITRE ATT&CK (2,000+ Atomic tests), CIS Benchmarks (1,500+ controls), OWASP, NIST. Lazy-loa",
+    "Topics: ai, ai-agent, appsec, atomic-red-team, bug-bounty",
+    "GitHub stars: 756",
+    "Last pushed: 2026-06-26"
+  ],
+  "id": "candidate-tool-github-cyberstrikeus-cyberstrike",
+  "canonicalKey": "tool:github:cyberstrikeus/cyberstrike",
+  "firstDiscoveredAt": "2026-06-26",
+  "lastSeenAt": "2026-06-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-26-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-26"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "CyberStrike is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "AI-powered offensive security agent with 7,300+ actionable security skills. Autonomous pentesting powered by MITRE ATT&CK (2,000+ Atomic tests), CIS Benchmarks (1,500+ controls), OWASP, NIST. Lazy-loa",
+      "Topics: ai, ai-agent, appsec, atomic-red-team, bug-bounty",
+      "GitHub stars: 756"
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  }
+}

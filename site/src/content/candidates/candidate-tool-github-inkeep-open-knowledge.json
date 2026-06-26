@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "open-knowledge",
+  "summary": "Beautiful, AI-native markdown editor and LLM Wiki",
+  "sourceUrl": "https://github.com/inkeep/open-knowledge",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "inkeep",
+    "repo": "open-knowledge",
+    "fullName": "inkeep/open-knowledge",
+    "stars": 1014,
+    "license": "GPL-3.0",
+    "topics": [
+      "2nd-brain",
+      "agent-skills",
+      "claude",
+      "codex",
+      "docs",
+      "knowledge-base",
+      "knowledge-management",
+      "llm",
+      "llm-wiki",
+      "markdown",
+      "markdown-editor",
+      "md",
+      "mdx",
+      "notes",
+      "pkm",
+      "second-brain",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-26T20:35:50Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-26",
+  "lastChecked": "2026-06-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Beautiful, AI-native markdown editor and LLM Wiki",
+    "Topics: 2nd-brain, agent-skills, claude, codex, docs",
+    "GitHub stars: 1014",
+    "Last pushed: 2026-06-26"
+  ],
+  "id": "candidate-tool-github-inkeep-open-knowledge",
+  "canonicalKey": "tool:github:inkeep/open-knowledge",
+  "firstDiscoveredAt": "2026-06-26",
+  "lastSeenAt": "2026-06-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-26-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "open-knowledge is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Beautiful, AI-native markdown editor and LLM Wiki",
+      "Topics: 2nd-brain, agent-skills, claude, codex, docs",
+      "GitHub stars: 1014"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "open-knowledge",
+  "publishedAt": "2026-06-26"
+}
