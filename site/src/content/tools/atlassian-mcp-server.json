@@ -1,0 +1,69 @@
+{
+  "id": "atlassian-mcp-server",
+  "name": "atlassian-mcp-server",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Official remote MCP server for Atlassian. Securely connect Jira, Confluence, Jira Service Management, Bitbucket, and Compass to Claude, ChatGPT, Cursor, VS Code, and other AI tools using OAuth 2.1 or API tokens.",
+  "description": "Official remote MCP server for Atlassian. Securely connect Jira, Confluence, Jira Service Management, Bitbucket, and Compass to Claude, ChatGPT, Cursor, VS Code, and other AI tools using OAuth 2.1 or API tokens.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/atlassian/atlassian-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/atlassian/atlassian-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/atlassian/atlassian-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/atlassian/atlassian-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/atlassian/atlassian-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Official remote MCP server for Atlassian. Securely connect Jira, Confluence, Jira Service Management, Bitbucket, and Compass to Claude, ChatGPT, Cursor, VS Code, and other AI tools using OAuth 2.1 or ",
+    "Topics: ai, ai-agents, atlassian, bitbucket, chatgpt",
+    "GitHub stars: 804",
+    "Last pushed: 2026-06-27"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-06-27T00:39:41Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/atlassian/atlassian-mcp-server",
+  "repoUrl": "https://github.com/atlassian/atlassian-mcp-server",
+  "license": "Apache-2.0",
+  "stars": 804,
+  "lastUpdated": "2026-06-27T00:39:41Z",
+  "lastChecked": "2026-06-27",
+  "publishedAt": "2026-06-27",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

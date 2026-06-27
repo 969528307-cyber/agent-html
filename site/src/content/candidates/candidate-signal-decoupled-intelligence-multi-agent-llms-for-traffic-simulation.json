@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-06-26",
+  "lastChecked": "2026-06-27",
   "discoveredFrom": "directory",
   "summary": "This paper presents a multi-agent LLM framework that decouples the traffic simulation pipeline into specialized roles coordinated by a state-persistent Orchestrator using the Model Context Protocol (MCP). The system automates the entire lifecycle of traffic simulation in SUMO, from scenario planning to execution and iterative optimization, achieving significantly higher task success rates than monolithic agent architectures.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.27685v1:title:decoupled intelligence multi agent llms for traffic simulation",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-06-26",
+  "lastSeenAt": "2026-06-27",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -197,6 +197,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-06-26"
+    },
+    {
+      "runId": "2026-06-27-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-27"
     }
   ],
   "duplicateReason": null,
