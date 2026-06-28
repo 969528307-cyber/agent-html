@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "aaron-marketing-skills",
+  "summary": "38 marketing skills + 5 commands for Claude Code & 35+ AI agents: SEO/GEO + influencer marketing (IMPACT). Frameworks: CORE-EEAT, CITE, C3.",
+  "sourceUrl": "https://github.com/aaron-he-zhu/aaron-marketing-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "aaron-he-zhu",
+    "repo": "aaron-marketing-skills",
+    "fullName": "aaron-he-zhu/aaron-marketing-skills",
+    "stars": 2287,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "ai-skills",
+      "claude-code",
+      "claude-skills",
+      "content-optimization",
+      "creator-marketing",
+      "generative-engine-optimization",
+      "geo",
+      "influencer-marketing",
+      "marketing",
+      "search-engine-optimization",
+      "seo",
+      "seo-tools"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-28T13:17:07Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-28",
+  "lastChecked": "2026-06-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "38 marketing skills + 5 commands for Claude Code & 35+ AI agents: SEO/GEO + influencer marketing (IMPACT). Frameworks: CORE-EEAT, CITE, C3.",
+    "Topics: agent-skills, ai-skills, claude-code, claude-skills, content-optimization",
+    "GitHub stars: 2287",
+    "Last pushed: 2026-06-28"
+  ],
+  "id": "candidate-tool-github-aaron-he-zhu-aaron-marketing-skills",
+  "canonicalKey": "tool:github:aaron-he-zhu/aaron-marketing-skills",
+  "firstDiscoveredAt": "2026-06-28",
+  "lastSeenAt": "2026-06-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-28-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-28"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "aaron-marketing-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "38 marketing skills + 5 commands for Claude Code & 35+ AI agents: SEO/GEO + influencer marketing (IMPACT). Frameworks: CORE-EEAT, CITE, C3.",
+      "Topics: agent-skills, ai-skills, claude-code, claude-skills, content-optimization",
+      "GitHub stars: 2287"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "aaron-marketing-skills",
+  "publishedAt": "2026-06-28"
+}

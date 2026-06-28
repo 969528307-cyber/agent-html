@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "VCPToolBox",
+  "summary": "VCP 部署在 AI 模型 API 与前端应用之间，是面向AGI OS开发和探索的工业级基建示范项目。通过统一指令协议、多层级持久化记忆、分布式插件引擎及多 Agent 协作框架，将原本“无状态、无记忆、无工具调用能力”的大语言模型，彻底改造成拥有永久自我意识、物理世界操作权及群体协作智能的完整智能体系统。",
+  "sourceUrl": "https://github.com/lioensky/VCPToolBox",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "lioensky",
+    "repo": "VCPToolBox",
+    "fullName": "lioensky/VCPToolBox",
+    "stars": 2163,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-framework",
+      "ai-agent",
+      "ai-assistant",
+      "ai-companion",
+      "context-management",
+      "context-management-system",
+      "function-calling",
+      "llm",
+      "multi-model",
+      "nodejs",
+      "openai-compatible",
+      "plugin-system",
+      "prompt-engineering",
+      "rag",
+      "rust",
+      "vector-database",
+      "vue"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-28T19:24:56Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-28",
+  "lastChecked": "2026-06-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "VCP 部署在 AI 模型 API 与前端应用之间，是面向AGI OS开发和探索的工业级基建示范项目。通过统一指令协议、多层级持久化记忆、分布式插件引擎及多 Agent 协作框架，将原本“无状态、无记忆、无工具调用能力”的大语言模型，彻底改造成拥有永久自我意识、物理世界操作权及群体协作智能的完整智能体系统。",
+    "Topics: agent-framework, ai-agent, ai-assistant, ai-companion, context-management",
+    "GitHub stars: 2163",
+    "Last pushed: 2026-06-28"
+  ],
+  "id": "candidate-tool-github-lioensky-vcptoolbox",
+  "canonicalKey": "tool:github:lioensky/vcptoolbox",
+  "firstDiscoveredAt": "2026-06-28",
+  "lastSeenAt": "2026-06-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-28-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-28"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "VCPToolBox is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "VCP 部署在 AI 模型 API 与前端应用之间，是面向AGI OS开发和探索的工业级基建示范项目。通过统一指令协议、多层级持久化记忆、分布式插件引擎及多 Agent 协作框架，将原本“无状态、无记忆、无工具调用能力”的大语言模型，彻底改造成拥有永久自我意识、物理世界操作权及群体协作智能的完整智能体系统。",
+      "Topics: agent-framework, ai-agent, ai-assistant, ai-companion, context-management",
+      "GitHub stars: 2163"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "vcptoolbox",
+  "publishedAt": "2026-06-28"
+}
