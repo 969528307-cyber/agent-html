@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-06-28",
+  "lastChecked": "2026-06-29",
   "discoveredFrom": "directory",
   "summary": "This paper introduces a multimodal multi-agent framework that automatically executes complex workflows by first constructing a topological knowledge graph from fragmented execution logs (offline), then using adaptive Retrieval-Augmented Generation (RAG) over that graph during inference. A closed-loop verification protocol enables agents to self-correct and navigate non-stationary scenarios, outperforming linear approaches in reliability and semantic awareness.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.28607v1:title:adaptive multi agent framework for workflow automation",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-06-28",
+  "lastSeenAt": "2026-06-29",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -209,6 +209,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-06-28"
+    },
+    {
+      "runId": "2026-06-29-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-29"
     }
   ],
   "duplicateReason": null,
