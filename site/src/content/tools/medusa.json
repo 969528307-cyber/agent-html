@@ -1,0 +1,69 @@
+{
+  "id": "medusa",
+  "name": "medusa",
+  "type": "workflow",
+  "status": "published",
+  "summary": "AI-first security scanner. NEW in v2026.7: Claude Code compromise detection — vet .claude/ hooks, permissions & skills before you clone — plus an always-on AI attack-signature scanner and native Rust & PHP rules. Also: medusa scan --git to vet any repo, medusa secrets scan for leaked API keys. 40,00",
+  "description": "AI-first security scanner. NEW in v2026.7: Claude Code compromise detection — vet .claude/ hooks, permissions & skills before you clone — plus an always-on AI attack-signature scanner and native Rust & PHP rules. Also: medusa scan --git to vet any repo, medusa secrets scan for leaked API keys. 40,00",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Pantheon-Security/medusa",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Pantheon-Security/medusa",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Pantheon-Security/medusa#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Pantheon-Security/medusa#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Pantheon-Security/medusa/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AI-first security scanner. NEW in v2026.7: Claude Code compromise detection — vet .claude/ hooks, permissions & skills before you clone — plus an always-on AI attack-signature scanner and native Rust ",
+    "Topics: agent-security, ai-security, code-analysis, cve-detection, devsecops",
+    "GitHub stars: 746",
+    "Last pushed: 2026-06-24"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-06-24T07:51:51Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Pantheon-Security/medusa",
+  "repoUrl": "https://github.com/Pantheon-Security/medusa",
+  "license": "AGPL-3.0",
+  "stars": 746,
+  "lastUpdated": "2026-06-24T07:51:51Z",
+  "lastChecked": "2026-06-30",
+  "publishedAt": "2026-06-30",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

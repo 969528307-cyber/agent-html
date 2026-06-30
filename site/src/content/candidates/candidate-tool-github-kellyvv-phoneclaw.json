@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "PhoneClaw",
+  "summary": "Mobile-native local AI Agent framework for iPhone with a fully offline local path, on-device models, native iOS Skills, and optional Mac Gateway inference",
+  "sourceUrl": "https://github.com/kellyvv/PhoneClaw",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "kellyvv",
+    "repo": "PhoneClaw",
+    "fullName": "kellyvv/PhoneClaw",
+    "stars": 1115,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-framework",
+      "ai-agent",
+      "gemma",
+      "healthkit",
+      "ios",
+      "ios-agent",
+      "iphone",
+      "iphone-ai-agent",
+      "litert",
+      "litert-lm",
+      "local-agent",
+      "local-ai",
+      "local-llm",
+      "mobile-agent",
+      "mobile-ai",
+      "ollama",
+      "on-device-ai",
+      "swift"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-30T09:45:40Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-30",
+  "lastChecked": "2026-06-30",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Mobile-native local AI Agent framework for iPhone with a fully offline local path, on-device models, native iOS Skills, and optional Mac Gateway inference",
+    "Topics: agent-framework, ai-agent, gemma, healthkit, ios",
+    "GitHub stars: 1115",
+    "Last pushed: 2026-06-30"
+  ],
+  "id": "candidate-tool-github-kellyvv-phoneclaw",
+  "canonicalKey": "tool:github:kellyvv/phoneclaw",
+  "firstDiscoveredAt": "2026-06-30",
+  "lastSeenAt": "2026-06-30",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-30-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-30"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "PhoneClaw is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Mobile-native local AI Agent framework for iPhone with a fully offline local path, on-device models, native iOS Skills, and optional Mac Gateway inference",
+      "Topics: agent-framework, ai-agent, gemma, healthkit, ios",
+      "GitHub stars: 1115"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-30",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "phoneclaw",
+  "publishedAt": "2026-06-30"
+}

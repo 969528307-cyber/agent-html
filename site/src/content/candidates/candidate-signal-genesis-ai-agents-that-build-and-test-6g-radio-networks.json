@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-06-29",
+  "lastChecked": "2026-06-30",
   "discoveredFrom": "directory",
   "summary": "GENESIS is an agentic AI framework that automates the six most time-consuming processes in cellular R&D—from synthesizing new features from standards to hardening against field anomalies. By combining composable agent primitives with a persistent knowledge base (SYNAPSE), it converts intents into over-the-air validated solutions, dramatically compressing months of manual engineering into autonomous, repeatable workflows.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.27360v1:title:genesis ai agents that build and test 6g radio networks",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-06-29",
+  "lastSeenAt": "2026-06-30",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -215,6 +215,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-06-29"
+    },
+    {
+      "runId": "2026-06-30-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-06-30"
     }
   ],
   "duplicateReason": null,

@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "medusa",
+  "summary": "AI-first security scanner. NEW in v2026.7: Claude Code compromise detection — vet .claude/ hooks, permissions & skills before you clone — plus an always-on AI attack-signature scanner and native Rust & PHP rules. Also: medusa scan --git to vet any repo, medusa secrets scan for leaked API keys. 40,00",
+  "sourceUrl": "https://github.com/Pantheon-Security/medusa",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Pantheon-Security",
+    "repo": "medusa",
+    "fullName": "Pantheon-Security/medusa",
+    "stars": 746,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent-security",
+      "ai-security",
+      "code-analysis",
+      "cve-detection",
+      "devsecops",
+      "llm-security",
+      "mcp",
+      "nextjs",
+      "open-source",
+      "python",
+      "react",
+      "sast",
+      "scanner",
+      "security",
+      "security-tools",
+      "static-analysis",
+      "vulnerability-scanner"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-24T07:51:51Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-06-30",
+  "lastChecked": "2026-06-30",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI-first security scanner. NEW in v2026.7: Claude Code compromise detection — vet .claude/ hooks, permissions & skills before you clone — plus an always-on AI attack-signature scanner and native Rust ",
+    "Topics: agent-security, ai-security, code-analysis, cve-detection, devsecops",
+    "GitHub stars: 746",
+    "Last pushed: 2026-06-24"
+  ],
+  "id": "candidate-tool-github-pantheon-security-medusa",
+  "canonicalKey": "tool:github:pantheon-security/medusa",
+  "firstDiscoveredAt": "2026-06-30",
+  "lastSeenAt": "2026-06-30",
+  "crawlRuns": [
+    {
+      "runId": "2026-06-30-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-06-30"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "medusa is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "AI-first security scanner. NEW in v2026.7: Claude Code compromise detection — vet .claude/ hooks, permissions & skills before you clone — plus an always-on AI attack-signature scanner and native Rust ",
+      "Topics: agent-security, ai-security, code-analysis, cve-detection, devsecops",
+      "GitHub stars: 746"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-06-30",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "medusa",
+  "publishedAt": "2026-06-30"
+}
