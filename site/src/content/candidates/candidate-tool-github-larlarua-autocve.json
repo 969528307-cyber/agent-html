@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "AutoCVE",
+  "summary": "Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
+  "sourceUrl": "https://github.com/larlarua/AutoCVE",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "larlarua",
+    "repo": "AutoCVE",
+    "fullName": "larlarua/AutoCVE",
+    "stars": 869,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent",
+      "ai-security",
+      "code-audit",
+      "cve",
+      "fastapi",
+      "llm-agent",
+      "multi-agent",
+      "penetration-testing",
+      "react",
+      "security-audit",
+      "security-tools",
+      "source-code-analysis",
+      "vulnerability-detection",
+      "vulnerability-research"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-27T04:16:17Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-01",
+  "lastChecked": "2026-07-01",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
+    "Topics: agent, ai-security, code-audit, cve, fastapi",
+    "GitHub stars: 869",
+    "Last pushed: 2026-06-27"
+  ],
+  "id": "candidate-tool-github-larlarua-autocve",
+  "canonicalKey": "tool:github:larlarua/autocve",
+  "firstDiscoveredAt": "2026-07-01",
+  "lastSeenAt": "2026-07-01",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-01-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-01"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "AutoCVE is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
+      "Topics: agent, ai-security, code-audit, cve, fastapi",
+      "GitHub stars: 869"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-01",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "autocve",
+  "publishedAt": "2026-07-01"
+}

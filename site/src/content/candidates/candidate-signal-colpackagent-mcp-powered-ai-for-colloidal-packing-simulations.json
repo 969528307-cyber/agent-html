@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-06-30",
+  "lastChecked": "2026-07-01",
   "discoveredFrom": "directory",
   "summary": "ColPackAgent is an agent framework that pairs a domain-specific Python package (colpack) with a Model Context Protocol (MCP) tool server and a portable agent skill to autonomously execute colloidal packing simulations. It demonstrates that general-purpose LLMs can reliably run structured scientific workflows when given dedicated tools and workflow instructions, rather than just describing them.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.15625v1:title:colpackagent mcp powered ai for colloidal packing simulations",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-06-30",
+  "lastSeenAt": "2026-07-01",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -221,6 +221,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-06-30"
+    },
+    {
+      "runId": "2026-07-01-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-07-01"
     }
   ],
   "duplicateReason": null,
