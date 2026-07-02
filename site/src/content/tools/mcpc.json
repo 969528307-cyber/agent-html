@@ -1,0 +1,69 @@
+{
+  "id": "mcpc",
+  "name": "mcpc",
+  "type": "workflow",
+  "status": "published",
+  "summary": "A universal CLI client for MCP. mcpc supports persistent sessions, stdio/HTTP, OAuth 2.1, tasks, JSON output for code mode, proxy for AI sandboxes, x402, and more.",
+  "description": "A universal CLI client for MCP. mcpc supports persistent sessions, stdio/HTTP, OAuth 2.1, tasks, JSON output for code mode, proxy for AI sandboxes, x402, and more.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/apify/mcpc",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/apify/mcpc",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/apify/mcpc#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/apify/mcpc#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/apify/mcpc/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A universal CLI client for MCP. mcpc supports persistent sessions, stdio/HTTP, OAuth 2.1, tasks, JSON output for code mode, proxy for AI sandboxes, x402, and more.",
+    "Topics: ai-agents, bash, claude, cli, code-mode",
+    "GitHub stars: 700",
+    "Last pushed: 2026-06-27"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-06-27T22:05:19Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/apify/mcpc",
+  "repoUrl": "https://github.com/apify/mcpc",
+  "license": "Apache-2.0",
+  "stars": 700,
+  "lastUpdated": "2026-06-27T22:05:19Z",
+  "lastChecked": "2026-07-02",
+  "publishedAt": "2026-07-02",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

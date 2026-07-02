@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "mcpc",
+  "summary": "A universal CLI client for MCP. mcpc supports persistent sessions, stdio/HTTP, OAuth 2.1, tasks, JSON output for code mode, proxy for AI sandboxes, x402, and more.",
+  "sourceUrl": "https://github.com/apify/mcpc",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "apify",
+    "repo": "mcpc",
+    "fullName": "apify/mcpc",
+    "stars": 700,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "bash",
+      "claude",
+      "cli",
+      "code-mode",
+      "command-line",
+      "mcp",
+      "mcp-client",
+      "model-context-protocol",
+      "shell"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-27T22:05:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-02",
+  "lastChecked": "2026-07-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A universal CLI client for MCP. mcpc supports persistent sessions, stdio/HTTP, OAuth 2.1, tasks, JSON output for code mode, proxy for AI sandboxes, x402, and more.",
+    "Topics: ai-agents, bash, claude, cli, code-mode",
+    "GitHub stars: 700",
+    "Last pushed: 2026-06-27"
+  ],
+  "id": "candidate-tool-github-apify-mcpc",
+  "canonicalKey": "tool:github:apify/mcpc",
+  "firstDiscoveredAt": "2026-07-02",
+  "lastSeenAt": "2026-07-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-02-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-02"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "mcpc is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A universal CLI client for MCP. mcpc supports persistent sessions, stdio/HTTP, OAuth 2.1, tasks, JSON output for code mode, proxy for AI sandboxes, x402, and more.",
+      "Topics: ai-agents, bash, claude, cli, code-mode",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-02",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcpc",
+  "publishedAt": "2026-07-02"
+}

@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-07-01",
+  "lastChecked": "2026-07-02",
   "discoveredFrom": "directory",
   "summary": "Claw AI Lab transforms autonomous research from a black-box pipeline into an interactive, multi-agent laboratory. Users can instantiate a full research team from a single prompt, monitor progress in real time, inspect artifacts, and roll back experiments—all through a unified dashboard. Its Claw-Code Harness bridges the gap between code execution and paper generation, significantly improving experimental completeness and result integrity.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.22662v1:title:claw ai lab from prompt to interactive ai research team",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-07-01",
+  "lastSeenAt": "2026-07-02",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -227,6 +227,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-07-01"
+    },
+    {
+      "runId": "2026-07-02-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-07-02"
     }
   ],
   "duplicateReason": null,
