@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "Hermes-CN-Desktop",
+  "summary": "Hermes Agent CN desktop app, Windows-First, built with Tauri, Typescript and Rust. Isolated Hermes Agent core insides. ",
+  "sourceUrl": "https://github.com/Eynzof/Hermes-CN-Desktop",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "Eynzof",
+    "repo": "Hermes-CN-Desktop",
+    "fullName": "Eynzof/Hermes-CN-Desktop",
+    "stars": 718,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-agent",
+      "desktop-app",
+      "hermes-agent",
+      "react",
+      "rust",
+      "tauri",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-03T09:08:07Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-03",
+  "lastChecked": "2026-07-03",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Hermes Agent CN desktop app, Windows-First, built with Tauri, Typescript and Rust. Isolated Hermes Agent core insides. ",
+    "Topics: ai-agent, desktop-app, hermes-agent, react, rust",
+    "GitHub stars: 718",
+    "Last pushed: 2026-07-03"
+  ],
+  "id": "candidate-tool-github-eynzof-hermes-cn-desktop",
+  "canonicalKey": "tool:github:eynzof/hermes-cn-desktop",
+  "firstDiscoveredAt": "2026-07-03",
+  "lastSeenAt": "2026-07-03",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-03-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-03"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Hermes-CN-Desktop is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Hermes Agent CN desktop app, Windows-First, built with Tauri, Typescript and Rust. Isolated Hermes Agent core insides. ",
+      "Topics: ai-agent, desktop-app, hermes-agent, react, rust",
+      "GitHub stars: 718"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-03",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "hermes-cn-desktop",
+  "publishedAt": "2026-07-03"
+}
