@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "marketing-skills",
+  "summary": "Agent Skills for Marketing — SEO, Social, Influencer & More. 160+ open-source skills for SEO, content, 40+ page types, paid ads, channels, and strategies. Add project context; get tailored, production-ready output. Cursor, Claude Code, OpenClaw — no lock-in.",
+  "sourceUrl": "https://github.com/kostja94/marketing-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "kostja94",
+    "repo": "marketing-skills",
+    "fullName": "kostja94/marketing-skills",
+    "stars": 703,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "cursor",
+      "growth-marketing",
+      "marketing",
+      "seo",
+      "skills-sh",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-09T05:13:07Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-04",
+  "lastChecked": "2026-07-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Agent Skills for Marketing — SEO, Social, Influencer & More. 160+ open-source skills for SEO, content, 40+ page types, paid ads, channels, and strategies. Add project context; get tailored, production",
+    "Topics: agent-skills, cursor, growth-marketing, marketing, seo",
+    "GitHub stars: 703",
+    "Last pushed: 2026-06-09"
+  ],
+  "id": "candidate-tool-github-kostja94-marketing-skills",
+  "canonicalKey": "tool:github:kostja94/marketing-skills",
+  "firstDiscoveredAt": "2026-07-04",
+  "lastSeenAt": "2026-07-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-04-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "marketing-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Agent Skills for Marketing — SEO, Social, Influencer & More. 160+ open-source skills for SEO, content, 40+ page types, paid ads, channels, and strategies. Add project context; get tailored, production",
+      "Topics: agent-skills, cursor, growth-marketing, marketing, seo",
+      "GitHub stars: 703"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "marketing-skills",
+  "publishedAt": "2026-07-04"
+}
