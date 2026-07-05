@@ -1,0 +1,104 @@
+{
+  "type": "tool",
+  "title": "Feishu-MCP",
+  "summary": " Feishu / Lark 飞书文档与任务管理工具，支持 MCP 服务器和 CLI + Skill 两种使用方式，可无缝集成 Cursor、Claude Code、Cline 等 AI 编码工具",
+  "sourceUrl": "https://github.com/cso1z/Feishu-MCP",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "cso1z",
+    "repo": "Feishu-MCP",
+    "fullName": "cso1z/Feishu-MCP",
+    "stars": 701,
+    "license": "MIT",
+    "topics": [
+      "feishu",
+      "lark",
+      "mcp",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-30T11:48:18Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-05",
+  "lastChecked": "2026-07-05",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    " Feishu / Lark 飞书文档与任务管理工具，支持 MCP 服务器和 CLI + Skill 两种使用方式，可无缝集成 Cursor、Claude Code、Cline 等 AI 编码工具",
+    "Topics: feishu, lark, mcp, skills",
+    "GitHub stars: 701",
+    "Last pushed: 2026-06-30"
+  ],
+  "id": "candidate-tool-github-cso1z-feishu-mcp",
+  "canonicalKey": "tool:github:cso1z/feishu-mcp",
+  "firstDiscoveredAt": "2026-07-05",
+  "lastSeenAt": "2026-07-05",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-05-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-05"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Feishu-MCP is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      " Feishu / Lark 飞书文档与任务管理工具，支持 MCP 服务器和 CLI + Skill 两种使用方式，可无缝集成 Cursor、Claude Code、Cline 等 AI 编码工具",
+      "Topics: feishu, lark, mcp, skills",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-05",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "feishu-mcp",
+  "publishedAt": "2026-07-05"
+}

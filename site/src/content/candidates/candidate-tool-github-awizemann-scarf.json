@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "scarf",
+  "summary": "Native macOS and iOS App for the Hermes AI agent — multi-window, multi-server (local + remote over SSH). Chat, dashboard, sessions, memory, cron, MCP, and more.",
+  "sourceUrl": "https://github.com/awizemann/scarf",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "awizemann",
+    "repo": "scarf",
+    "fullName": "awizemann/scarf",
+    "stars": 701,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "gui",
+      "hermes",
+      "macos",
+      "macos-app",
+      "swift",
+      "swiftui",
+      "terminal"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-04T06:53:03Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-05",
+  "lastChecked": "2026-07-05",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Native macOS and iOS App for the Hermes AI agent — multi-window, multi-server (local + remote over SSH). Chat, dashboard, sessions, memory, cron, MCP, and more.",
+    "Topics: ai-agent, gui, hermes, macos, macos-app",
+    "GitHub stars: 701",
+    "Last pushed: 2026-07-04"
+  ],
+  "id": "candidate-tool-github-awizemann-scarf",
+  "canonicalKey": "tool:github:awizemann/scarf",
+  "firstDiscoveredAt": "2026-07-05",
+  "lastSeenAt": "2026-07-05",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-05-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-05"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "scarf is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Native macOS and iOS App for the Hermes AI agent — multi-window, multi-server (local + remote over SSH). Chat, dashboard, sessions, memory, cron, MCP, and more.",
+      "Topics: ai-agent, gui, hermes, macos, macos-app",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-05",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "scarf",
+  "publishedAt": "2026-07-05"
+}
