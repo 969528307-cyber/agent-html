@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "OpenRath",
+  "summary": "An open-source, PyTorch-like runtime for dynamic multi-agent and multi-session workflows.",
+  "sourceUrl": "https://github.com/Rath-Team/OpenRath",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "Rath-Team",
+    "repo": "OpenRath",
+    "fullName": "Rath-Team/OpenRath",
+    "stars": 1070,
+    "license": "BSD-3-Clause",
+    "topics": [
+      "agent-framework",
+      "agentic-ai",
+      "ai-agents",
+      "anthropic",
+      "lllm-agent",
+      "llm",
+      "memory",
+      "model-context-protocol",
+      "multi-agent",
+      "multi-agent-systems",
+      "open-source",
+      "openai",
+      "provenance",
+      "python",
+      "runtime-state",
+      "sandbox",
+      "session-graph",
+      "session-state",
+      "workflow-orchestration"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-06T14:41:53Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-06",
+  "lastChecked": "2026-07-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "An open-source, PyTorch-like runtime for dynamic multi-agent and multi-session workflows.",
+    "Topics: agent-framework, agentic-ai, ai-agents, anthropic, lllm-agent",
+    "GitHub stars: 1070",
+    "Last pushed: 2026-07-06"
+  ],
+  "id": "candidate-tool-github-rath-team-openrath",
+  "canonicalKey": "tool:github:rath-team/openrath",
+  "firstDiscoveredAt": "2026-07-06",
+  "lastSeenAt": "2026-07-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-06-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-06"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "OpenRath is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "An open-source, PyTorch-like runtime for dynamic multi-agent and multi-session workflows.",
+      "Topics: agent-framework, agentic-ai, ai-agents, anthropic, lllm-agent",
+      "GitHub stars: 1070"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openrath",
+  "publishedAt": "2026-07-06"
+}
