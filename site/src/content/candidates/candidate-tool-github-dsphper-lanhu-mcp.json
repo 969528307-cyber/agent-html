@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "lanhu-mcp",
+  "summary": "⚡ 需求分析效率提升 200%！全球首个为 AI 编程时代设计的团队协作 MCP 服务器，自动分析需求自动编写前后端代码，下载切图",
+  "sourceUrl": "https://github.com/dsphper/lanhu-mcp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "dsphper",
+    "repo": "lanhu-mcp",
+    "fullName": "dsphper/lanhu-mcp",
+    "stars": 1876,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "ai-coding",
+      "ai-tools",
+      "mcp",
+      "mcp-service",
+      "mcp-tools"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-07T17:57:00Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-07",
+  "lastChecked": "2026-07-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "⚡ 需求分析效率提升 200%！全球首个为 AI 编程时代设计的团队协作 MCP 服务器，自动分析需求自动编写前后端代码，下载切图",
+    "Topics: ai, ai-agents, ai-coding, ai-tools, mcp",
+    "GitHub stars: 1876",
+    "Last pushed: 2026-07-07"
+  ],
+  "id": "candidate-tool-github-dsphper-lanhu-mcp",
+  "canonicalKey": "tool:github:dsphper/lanhu-mcp",
+  "firstDiscoveredAt": "2026-07-07",
+  "lastSeenAt": "2026-07-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "lanhu-mcp is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "⚡ 需求分析效率提升 200%！全球首个为 AI 编程时代设计的团队协作 MCP 服务器，自动分析需求自动编写前后端代码，下载切图",
+      "Topics: ai, ai-agents, ai-coding, ai-tools, mcp",
+      "GitHub stars: 1876"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "lanhu-mcp",
+  "publishedAt": "2026-07-07"
+}

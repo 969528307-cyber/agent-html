@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "gzh-design-skill",
+  "summary": "把 Markdown 一键排成可直接粘进公众号编辑器的精致 HTML —— 6 套精选主题 + 主题生成器 + 双关卡校验。An AI-agent skill that turns Markdown into paste-ready WeChat article HTML.",
+  "sourceUrl": "https://github.com/isjiamu/gzh-design-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "isjiamu",
+    "repo": "gzh-design-skill",
+    "fullName": "isjiamu/gzh-design-skill",
+    "stars": 975,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skill",
+      "ai-agent",
+      "claude-code",
+      "codex",
+      "cursor",
+      "gongzhonghao",
+      "html",
+      "markdown",
+      "rich-text",
+      "skill",
+      "typesetting",
+      "wechat",
+      "weixin"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-06T19:05:47Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-07",
+  "lastChecked": "2026-07-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "把 Markdown 一键排成可直接粘进公众号编辑器的精致 HTML —— 6 套精选主题 + 主题生成器 + 双关卡校验。An AI-agent skill that turns Markdown into paste-ready WeChat article HTML.",
+    "Topics: agent-skill, ai-agent, claude-code, codex, cursor",
+    "GitHub stars: 975",
+    "Last pushed: 2026-07-06"
+  ],
+  "id": "candidate-tool-github-isjiamu-gzh-design-skill",
+  "canonicalKey": "tool:github:isjiamu/gzh-design-skill",
+  "firstDiscoveredAt": "2026-07-07",
+  "lastSeenAt": "2026-07-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-07-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "gzh-design-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "把 Markdown 一键排成可直接粘进公众号编辑器的精致 HTML —— 6 套精选主题 + 主题生成器 + 双关卡校验。An AI-agent skill that turns Markdown into paste-ready WeChat article HTML.",
+      "Topics: agent-skill, ai-agent, claude-code, codex, cursor",
+      "GitHub stars: 975"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "gzh-design-skill",
+  "publishedAt": "2026-07-07"
+}

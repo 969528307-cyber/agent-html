@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "nimbalyst",
+  "summary": "Nimbalyst - The open-source visual workspace for Claude Code, Codex, and OpenCode. Run multiple coding agents in parallel, edit their work visually in markdown, mockups, and diagrams, and track tasks. Free, MIT-licensed desktop app for macOS, Windows, Linux, with mobile companion for iOS and Android",
+  "sourceUrl": "https://github.com/nimbalyst/nimbalyst",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "nimbalyst",
+    "repo": "nimbalyst",
+    "fullName": "nimbalyst/nimbalyst",
+    "stars": 1091,
+    "license": "MIT",
+    "topics": [
+      "agentic-ai",
+      "ai-agents",
+      "claude-code",
+      "codex",
+      "coding-agent",
+      "developer-tools",
+      "ide",
+      "markdown-editor",
+      "mcp",
+      "multi-agent-systems",
+      "opencode",
+      "wysiwyg-editor"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-07T19:47:01Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-07",
+  "lastChecked": "2026-07-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Nimbalyst - The open-source visual workspace for Claude Code, Codex, and OpenCode. Run multiple coding agents in parallel, edit their work visually in markdown, mockups, and diagrams, and track tasks.",
+    "Topics: agentic-ai, ai-agents, claude-code, codex, coding-agent",
+    "GitHub stars: 1091",
+    "Last pushed: 2026-07-07"
+  ],
+  "id": "candidate-tool-github-nimbalyst-nimbalyst",
+  "canonicalKey": "tool:github:nimbalyst/nimbalyst",
+  "firstDiscoveredAt": "2026-07-07",
+  "lastSeenAt": "2026-07-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "nimbalyst is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Nimbalyst - The open-source visual workspace for Claude Code, Codex, and OpenCode. Run multiple coding agents in parallel, edit their work visually in markdown, mockups, and diagrams, and track tasks.",
+      "Topics: agentic-ai, ai-agents, claude-code, codex, coding-agent",
+      "GitHub stars: 1091"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nimbalyst",
+  "publishedAt": "2026-07-07"
+}
