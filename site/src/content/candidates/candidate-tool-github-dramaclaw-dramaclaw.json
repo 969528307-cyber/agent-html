@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "dramaclaw",
+  "summary": "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos, otome games, and more. | 通用 AIGC 视频引擎 —— 从剧本到成片一条流水线，漫剧、广告、电商、乙游皆可",
+  "sourceUrl": "https://github.com/dramaclaw/dramaclaw",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "dramaclaw",
+    "repo": "dramaclaw",
+    "fullName": "dramaclaw/dramaclaw",
+    "stars": 758,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-agent",
+      "ai-filmmaking",
+      "ai-video",
+      "aigc",
+      "aigc-pipeline",
+      "content-creation",
+      "dramaclaw",
+      "fastapi",
+      "generative-ai",
+      "image-to-video",
+      "python",
+      "react",
+      "self-hosted",
+      "storyboard",
+      "text-to-video",
+      "tts",
+      "video-engine",
+      "video-generation",
+      "voice-synthesis"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-08T14:26:31Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-08",
+  "lastChecked": "2026-07-08",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos, otome games, and more. | 通用 AIGC 视频引擎 —— 从剧本到成片一条流水线，漫剧、广告、电商、乙游皆可",
+    "Topics: ai-agent, ai-filmmaking, ai-video, aigc, aigc-pipeline",
+    "GitHub stars: 758",
+    "Last pushed: 2026-07-08"
+  ],
+  "id": "candidate-tool-github-dramaclaw-dramaclaw",
+  "canonicalKey": "tool:github:dramaclaw/dramaclaw",
+  "firstDiscoveredAt": "2026-07-08",
+  "lastSeenAt": "2026-07-08",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-08-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-08"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "dramaclaw is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos, otome games, and more. | 通用 AIGC 视频引擎 —— 从剧本到成片一条流水线，漫剧、广告、电商、乙游皆可",
+      "Topics: ai-agent, ai-filmmaking, ai-video, aigc, aigc-pipeline",
+      "GitHub stars: 758"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-08",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dramaclaw",
+  "publishedAt": "2026-07-08"
+}

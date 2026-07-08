@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "Awesome-Journal-Skills",
+  "summary": "Journal-specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济研究 & 200+ more — your fast track to getting published. ｜ 覆盖主流期刊的 Claude Code/Codex 期刊技能包，从选题、识别策略到表格规范与审稿回复全流程，助你快速发论文。",
+  "sourceUrl": "https://github.com/brycewang-stanford/Awesome-Journal-Skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "brycewang-stanford",
+    "repo": "Awesome-Journal-Skills",
+    "fullName": "brycewang-stanford/Awesome-Journal-Skills",
+    "stars": 721,
+    "license": "MIT",
+    "topics": [
+      "academic-research",
+      "academic-writing",
+      "agent-skills",
+      "ai-agents",
+      "anthropic",
+      "awesome-list",
+      "causal-inference",
+      "claude",
+      "claude-code",
+      "econometrics",
+      "economics",
+      "empirical-research",
+      "finance",
+      "journal",
+      "llm",
+      "mcp",
+      "peer-review",
+      "replication",
+      "research-tools",
+      "scholarly-publishing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-08T17:53:56Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-08",
+  "lastChecked": "2026-07-08",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Journal-specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济研究 & 200+ more — your fast track to getting published. ｜ 覆盖主流期刊的 Claude Code/Codex 期刊技能包，从",
+    "Topics: academic-research, academic-writing, agent-skills, ai-agents, anthropic",
+    "GitHub stars: 721",
+    "Last pushed: 2026-07-08"
+  ],
+  "id": "candidate-tool-github-brycewang-stanford-awesome-journal-skills",
+  "canonicalKey": "tool:github:brycewang-stanford/awesome-journal-skills",
+  "firstDiscoveredAt": "2026-07-08",
+  "lastSeenAt": "2026-07-08",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-08-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-08"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Awesome-Journal-Skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Journal-specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济研究 & 200+ more — your fast track to getting published. ｜ 覆盖主流期刊的 Claude Code/Codex 期刊技能包，从",
+      "Topics: academic-research, academic-writing, agent-skills, ai-agents, anthropic",
+      "GitHub stars: 721"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-08",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "awesome-journal-skills",
+  "publishedAt": "2026-07-08"
+}

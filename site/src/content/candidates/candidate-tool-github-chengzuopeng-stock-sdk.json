@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "stock-sdk",
+  "summary": "为前端设计的无需 Python、无需后端服务、零依赖的获取股票数据 JavaScript SDK。",
+  "sourceUrl": "https://github.com/chengzuopeng/stock-sdk",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "chengzuopeng",
+    "repo": "stock-sdk",
+    "fullName": "chengzuopeng/stock-sdk",
+    "stars": 1632,
+    "license": "ISC",
+    "topics": [
+      "a-share",
+      "ai-agent",
+      "akshare",
+      "finance",
+      "financial-data",
+      "fintech",
+      "free-stock-market-api",
+      "mcp",
+      "nodejs",
+      "quantitative-finance",
+      "sdk",
+      "stock",
+      "stock-data",
+      "stock-market",
+      "stock-prices",
+      "stocks",
+      "stocks-api",
+      "technical-analysis",
+      "trading",
+      "typescript"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-07-07T03:19:48Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-08",
+  "lastChecked": "2026-07-08",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "为前端设计的无需 Python、无需后端服务、零依赖的获取股票数据 JavaScript SDK。",
+    "Topics: a-share, ai-agent, akshare, finance, financial-data",
+    "GitHub stars: 1632",
+    "Last pushed: 2026-07-07"
+  ],
+  "id": "candidate-tool-github-chengzuopeng-stock-sdk",
+  "canonicalKey": "tool:github:chengzuopeng/stock-sdk",
+  "firstDiscoveredAt": "2026-07-08",
+  "lastSeenAt": "2026-07-08",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-08-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-08"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "stock-sdk is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "为前端设计的无需 Python、无需后端服务、零依赖的获取股票数据 JavaScript SDK。",
+      "Topics: a-share, ai-agent, akshare, finance, financial-data",
+      "GitHub stars: 1632"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-08",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "stock-sdk",
+  "publishedAt": "2026-07-08"
+}
