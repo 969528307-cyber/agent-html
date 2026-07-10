@@ -1,0 +1,69 @@
+{
+  "id": "stride-gpt",
+  "name": "stride-gpt",
+  "type": "workflow",
+  "status": "published",
+  "summary": "An AI-powered threat modeling tool that leverages OpenAI's GPT models to generate threat models for a given application based on the STRIDE methodology.",
+  "description": "An AI-powered threat modeling tool that leverages OpenAI's GPT models to generate threat models for a given application based on the STRIDE methodology.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mrwadams/stride-gpt",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mrwadams/stride-gpt",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mrwadams/stride-gpt#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mrwadams/stride-gpt#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mrwadams/stride-gpt/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "An AI-powered threat modeling tool that leverages OpenAI's GPT models to generate threat models for a given application based on the STRIDE methodology.",
+    "Topics: ai-security, application-security, attack-trees, cybersecurity, dread",
+    "GitHub stars: 1073",
+    "Last pushed: 2026-07-10"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-07-10T07:21:27Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mrwadams/stride-gpt",
+  "repoUrl": "https://github.com/mrwadams/stride-gpt",
+  "license": "MIT",
+  "stars": 1073,
+  "lastUpdated": "2026-07-10T07:21:27Z",
+  "lastChecked": "2026-07-10",
+  "publishedAt": "2026-07-10",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

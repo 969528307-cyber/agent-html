@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "stride-gpt",
+  "summary": "An AI-powered threat modeling tool that leverages OpenAI's GPT models to generate threat models for a given application based on the STRIDE methodology.",
+  "sourceUrl": "https://github.com/mrwadams/stride-gpt",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "mrwadams",
+    "repo": "stride-gpt",
+    "fullName": "mrwadams/stride-gpt",
+    "stars": 1073,
+    "license": "MIT",
+    "topics": [
+      "ai-security",
+      "application-security",
+      "attack-trees",
+      "cybersecurity",
+      "dread",
+      "generative-ai",
+      "llm",
+      "mcp",
+      "mitre-attack",
+      "security-tools",
+      "streamlit",
+      "stride",
+      "threat-modeling"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-07-10T07:21:27Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-10",
+  "lastChecked": "2026-07-10",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "An AI-powered threat modeling tool that leverages OpenAI's GPT models to generate threat models for a given application based on the STRIDE methodology.",
+    "Topics: ai-security, application-security, attack-trees, cybersecurity, dread",
+    "GitHub stars: 1073",
+    "Last pushed: 2026-07-10"
+  ],
+  "id": "candidate-tool-github-mrwadams-stride-gpt",
+  "canonicalKey": "tool:github:mrwadams/stride-gpt",
+  "firstDiscoveredAt": "2026-07-10",
+  "lastSeenAt": "2026-07-10",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-10-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-10"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "stride-gpt is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "An AI-powered threat modeling tool that leverages OpenAI's GPT models to generate threat models for a given application based on the STRIDE methodology.",
+      "Topics: ai-security, application-security, attack-trees, cybersecurity, dread",
+      "GitHub stars: 1073"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-10",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "stride-gpt",
+  "publishedAt": "2026-07-10"
+}
