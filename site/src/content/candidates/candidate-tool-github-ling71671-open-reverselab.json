@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "open-reverselab",
+  "summary": "Open-source reverse engineering lab: 197-article knowledge base + MCP tools + CTF/APK/PE automation toolchain. Agent-native.  Note:由于场景原因，目前有让几乎所有（除fable5）AI都会越狱的bug,静等官方修复,但是请在合法授权下进行安全测试😉(等我用上5.6再更新(ー_ー)!!)",
+  "sourceUrl": "https://github.com/LING71671/open-reverselab",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "LING71671",
+    "repo": "open-reverselab",
+    "fullName": "LING71671/open-reverselab",
+    "stars": 741,
+    "license": "GPL-3.0",
+    "topics": [
+      "ai-agent",
+      "ai-jailbreak",
+      "ai-jailbreak-universal",
+      "android-reverse-engineering",
+      "binary-analysis",
+      "claude-code",
+      "cryptography",
+      "ctf",
+      "frida",
+      "ghidra",
+      "knowledge-base",
+      "malware-analysis",
+      "mcp-server",
+      "model-context-protocol",
+      "pe-analysis",
+      "reverse-engineering",
+      "security-automation",
+      "vulnerability-research",
+      "web-security",
+      "x64dbg"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-12T18:03:02Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-13",
+  "lastChecked": "2026-07-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source reverse engineering lab: 197-article knowledge base + MCP tools + CTF/APK/PE automation toolchain. Agent-native.  Note:由于场景原因，目前有让几乎所有（除fable5）AI都会越狱的bug,静等官方修复,但是请在合法授权下进行安全测试😉(等我用上5.6再更",
+    "Topics: ai-agent, ai-jailbreak, ai-jailbreak-universal, android-reverse-engineering, binary-analysis",
+    "GitHub stars: 741",
+    "Last pushed: 2026-07-12"
+  ],
+  "id": "candidate-tool-github-ling71671-open-reverselab",
+  "canonicalKey": "tool:github:ling71671/open-reverselab",
+  "firstDiscoveredAt": "2026-07-13",
+  "lastSeenAt": "2026-07-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "open-reverselab is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source reverse engineering lab: 197-article knowledge base + MCP tools + CTF/APK/PE automation toolchain. Agent-native.  Note:由于场景原因，目前有让几乎所有（除fable5）AI都会越狱的bug,静等官方修复,但是请在合法授权下进行安全测试😉(等我用上5.6再更",
+      "Topics: ai-agent, ai-jailbreak, ai-jailbreak-universal, android-reverse-engineering, binary-analysis",
+      "GitHub stars: 741"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "open-reverselab",
+  "publishedAt": "2026-07-13"
+}

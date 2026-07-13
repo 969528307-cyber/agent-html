@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "claude-ads",
+  "summary": "Claude-first paid-media operations skill for Claude Code across 12 ad platforms (Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, Apple, Amazon, Reddit, Pinterest, Snapchat, X): source-grounded audits, deterministic scoring, versioned JSON reports, and capability-gated account changes.",
+  "sourceUrl": "https://github.com/AgriciDaniel/claude-ads",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "AgriciDaniel",
+    "repo": "claude-ads",
+    "fullName": "AgriciDaniel/claude-ads",
+    "stars": 6970,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "ai-marketing",
+      "claude-code",
+      "claude-code-skill",
+      "google-ads",
+      "marketing-automation",
+      "meta-ads",
+      "open-source",
+      "paid-advertising",
+      "ppc"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-13T20:22:29Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-13",
+  "lastChecked": "2026-07-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Claude-first paid-media operations skill for Claude Code across 12 ad platforms (Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, Apple, Amazon, Reddit, Pinterest, Snapchat, X): source-grounded aud",
+    "Topics: agent-skills, ai, ai-marketing, claude-code, claude-code-skill",
+    "GitHub stars: 6970",
+    "Last pushed: 2026-07-13"
+  ],
+  "id": "candidate-tool-github-agricidaniel-claude-ads",
+  "canonicalKey": "tool:github:agricidaniel/claude-ads",
+  "firstDiscoveredAt": "2026-07-13",
+  "lastSeenAt": "2026-07-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-13-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "claude-ads is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Claude-first paid-media operations skill for Claude Code across 12 ad platforms (Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, Apple, Amazon, Reddit, Pinterest, Snapchat, X): source-grounded aud",
+      "Topics: agent-skills, ai, ai-marketing, claude-code, claude-code-skill",
+      "GitHub stars: 6970"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-ads",
+  "publishedAt": "2026-07-13"
+}

@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "Dark-Moon",
+  "summary": "Autonomous AI pentesting engine, continuous offensive security across web, cloud, AD & Kubernetes. Agentic reasoning + real exploit execution deliver proof-based vulnerabilities. Privacy gateway: the LLM never sees your real IPs, hosts, creds or paths (deterministic placeholders rehydrated locally),",
+  "sourceUrl": "https://github.com/ASCIT31/Dark-Moon",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "ASCIT31",
+    "repo": "Dark-Moon",
+    "fullName": "ASCIT31/Dark-Moon",
+    "stars": 726,
+    "license": "GPL-3.0",
+    "topics": [
+      "active-directory",
+      "ai-agents",
+      "ai-red-team",
+      "ai-security-tool",
+      "autonomous-agents",
+      "cybersecurity",
+      "dast",
+      "hacking",
+      "kubernetes",
+      "llm",
+      "local-llm",
+      "mcp",
+      "multi-agent-systems",
+      "offensive-security",
+      "penetration-testing",
+      "pentesting",
+      "red-team",
+      "security-automation",
+      "security-tools",
+      "self-hosted"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-07-13T08:38:02Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-13",
+  "lastChecked": "2026-07-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Autonomous AI pentesting engine, continuous offensive security across web, cloud, AD & Kubernetes. Agentic reasoning + real exploit execution deliver proof-based vulnerabilities. Privacy gateway: the ",
+    "Topics: active-directory, ai-agents, ai-red-team, ai-security-tool, autonomous-agents",
+    "GitHub stars: 726",
+    "Last pushed: 2026-07-13"
+  ],
+  "id": "candidate-tool-github-ascit31-dark-moon",
+  "canonicalKey": "tool:github:ascit31/dark-moon",
+  "firstDiscoveredAt": "2026-07-13",
+  "lastSeenAt": "2026-07-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-13"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Dark-Moon is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Autonomous AI pentesting engine, continuous offensive security across web, cloud, AD & Kubernetes. Agentic reasoning + real exploit execution deliver proof-based vulnerabilities. Privacy gateway: the ",
+      "Topics: active-directory, ai-agents, ai-red-team, ai-security-tool, autonomous-agents",
+      "GitHub stars: 726"
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  }
+}

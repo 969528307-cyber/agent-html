@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "astrid",
+  "summary": "Astrid is a portable, capability-secure operating system for composable software.",
+  "sourceUrl": "https://github.com/astrid-runtime/astrid",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "astrid-runtime",
+    "repo": "astrid",
+    "fullName": "astrid-runtime/astrid",
+    "stars": 10322,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-runtime",
+      "ai-agents",
+      "capability-security",
+      "llm",
+      "mcp",
+      "microkernel",
+      "rust",
+      "sandbox",
+      "wasm",
+      "webassembly"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-13T20:03:08Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-13",
+  "lastChecked": "2026-07-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Astrid is a portable, capability-secure operating system for composable software.",
+    "Topics: agent-runtime, ai-agents, capability-security, llm, mcp",
+    "GitHub stars: 10322",
+    "Last pushed: 2026-07-13"
+  ],
+  "id": "candidate-tool-github-astrid-runtime-astrid",
+  "canonicalKey": "tool:github:astrid-runtime/astrid",
+  "firstDiscoveredAt": "2026-07-13",
+  "lastSeenAt": "2026-07-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "astrid is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Astrid is a portable, capability-secure operating system for composable software.",
+      "Topics: agent-runtime, ai-agents, capability-security, llm, mcp",
+      "GitHub stars: 10322"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "astrid",
+  "publishedAt": "2026-07-13",
+  "reviewedAt": "2026-07-13",
+  "reviewedBy": "local-review"
+}
