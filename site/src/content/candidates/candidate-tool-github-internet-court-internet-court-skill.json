@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "internet-court-skill",
+  "summary": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code plugin.",
+  "sourceUrl": "https://github.com/internet-court/internet-court-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "internet-court",
+    "repo": "internet-court-skill",
+    "fullName": "internet-court/internet-court-skill",
+    "stars": 837,
+    "license": "NOASSERTION",
+    "topics": [
+      "a2a",
+      "adjudication",
+      "agent-payments",
+      "agent-skills",
+      "agentic-commerce",
+      "ai-agents",
+      "claude-code",
+      "claude-plugin",
+      "claude-skill",
+      "codex",
+      "dispute-resolution",
+      "erc-7710",
+      "erc-8004",
+      "escrow",
+      "genlayer",
+      "hermes-agent",
+      "openclaw",
+      "opencode",
+      "web3",
+      "x402"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-10T04:27:35Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-14",
+  "lastChecked": "2026-07-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code ",
+    "Topics: a2a, adjudication, agent-payments, agent-skills, agentic-commerce",
+    "GitHub stars: 837",
+    "Last pushed: 2026-07-10"
+  ],
+  "id": "candidate-tool-github-internet-court-internet-court-skill",
+  "canonicalKey": "tool:github:internet-court/internet-court-skill",
+  "firstDiscoveredAt": "2026-07-14",
+  "lastSeenAt": "2026-07-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-14-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "internet-court-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code ",
+      "Topics: a2a, adjudication, agent-payments, agent-skills, agentic-commerce",
+      "GitHub stars: 837"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-14",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "internet-court-skill",
+  "publishedAt": "2026-07-14"
+}

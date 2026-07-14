@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-07-13",
+  "lastChecked": "2026-07-14",
   "discoveredFrom": "directory",
   "summary": "This paper introduces Formal Skill, a runtime-native abstraction that moves reusable agent procedures from verbose prompt text into executable state machines with hook-governed policies. Implemented in the open-source FairyClaw runtime, it achieves competitive accuracy on Harness-Bench while using significantly fewer tokens, particularly excelling on tasks requiring structured workflow enforcement and policy compliance.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.19604v1:title:formal skill executable runtime skills for llm agents",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-07-13",
+  "lastSeenAt": "2026-07-14",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -299,6 +299,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-07-13"
+    },
+    {
+      "runId": "2026-07-14-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-07-14"
     }
   ],
   "duplicateReason": null,
