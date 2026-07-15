@@ -1,0 +1,69 @@
+{
+  "id": "itops-agent-platform",
+  "name": "itops-agent-platform",
+  "type": "workflow",
+  "status": "published",
+  "summary": "国内首个企业级 IT 运维多 Agent 自动化平台 — 基于大语言模型的智能运维解决方案。ITOps Agent Platform通过可视化工作流编排，将多个AI Agent组合成智能运维自动化流水线，实现服务器管理、告警处理、故障诊断、日志分析、脚本管理、定时运维任务的自动化执行， 支持国内外主流大模型，旨在 Zabbix/Prometheus 告警自动修复闭环，Docker 一键部署，多平台兼容。",
+  "description": "国内首个企业级 IT 运维多 Agent 自动化平台 — 基于大语言模型的智能运维解决方案。ITOps Agent Platform通过可视化工作流编排，将多个AI Agent组合成智能运维自动化流水线，实现服务器管理、告警处理、故障诊断、日志分析、脚本管理、定时运维任务的自动化执行， 支持国内外主流大模型，旨在 Zabbix/Prometheus 告警自动修复闭环，Docker 一键部署，多平台兼容。",
+  "category": [
+    "agent-framework"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/qinshihu/itops-agent-platform",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/qinshihu/itops-agent-platform",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/qinshihu/itops-agent-platform#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/qinshihu/itops-agent-platform#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/qinshihu/itops-agent-platform/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "国内首个企业级 IT 运维多 Agent 自动化平台 — 基于大语言模型的智能运维解决方案。ITOps Agent Platform通过可视化工作流编排，将多个AI Agent组合成智能运维自动化流水线，实现服务器管理、告警处理、故障诊断、日志分析、脚本管理、定时运维任务的自动化执行， 支持国内外主流大模型，旨在 Zabbix/Prometheus 告警自动修复闭环，Docker 一键部署，多平台",
+    "Topics: agentic-ai, aiops, devops, docker, incident-management",
+    "GitHub stars: 701",
+    "Last pushed: 2026-07-10"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-07-10T11:25:07Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/qinshihu/itops-agent-platform",
+  "repoUrl": "https://github.com/qinshihu/itops-agent-platform",
+  "license": "NOASSERTION",
+  "stars": 701,
+  "lastUpdated": "2026-07-10T11:25:07Z",
+  "lastChecked": "2026-07-15",
+  "publishedAt": "2026-07-15",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

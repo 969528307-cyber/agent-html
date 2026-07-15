@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "itops-agent-platform",
+  "summary": "国内首个企业级 IT 运维多 Agent 自动化平台 — 基于大语言模型的智能运维解决方案。ITOps Agent Platform通过可视化工作流编排，将多个AI Agent组合成智能运维自动化流水线，实现服务器管理、告警处理、故障诊断、日志分析、脚本管理、定时运维任务的自动化执行， 支持国内外主流大模型，旨在 Zabbix/Prometheus 告警自动修复闭环，Docker 一键部署，多平台兼容。",
+  "sourceUrl": "https://github.com/qinshihu/itops-agent-platform",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "qinshihu",
+    "repo": "itops-agent-platform",
+    "fullName": "qinshihu/itops-agent-platform",
+    "stars": 701,
+    "license": "NOASSERTION",
+    "topics": [
+      "agentic-ai",
+      "aiops",
+      "devops",
+      "docker",
+      "incident-management",
+      "it-operations",
+      "llm-ops",
+      "multi-agent",
+      "network-monitoring",
+      "nodejs",
+      "openai",
+      "prometheus",
+      "react",
+      "root-cause-analysis",
+      "self-hosted",
+      "sre",
+      "zabbix"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-10T11:25:07Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-15",
+  "lastChecked": "2026-07-15",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "国内首个企业级 IT 运维多 Agent 自动化平台 — 基于大语言模型的智能运维解决方案。ITOps Agent Platform通过可视化工作流编排，将多个AI Agent组合成智能运维自动化流水线，实现服务器管理、告警处理、故障诊断、日志分析、脚本管理、定时运维任务的自动化执行， 支持国内外主流大模型，旨在 Zabbix/Prometheus 告警自动修复闭环，Docker 一键部署，多平台",
+    "Topics: agentic-ai, aiops, devops, docker, incident-management",
+    "GitHub stars: 701",
+    "Last pushed: 2026-07-10"
+  ],
+  "id": "candidate-tool-github-qinshihu-itops-agent-platform",
+  "canonicalKey": "tool:github:qinshihu/itops-agent-platform",
+  "firstDiscoveredAt": "2026-07-15",
+  "lastSeenAt": "2026-07-15",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-15-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-15"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "itops-agent-platform is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "国内首个企业级 IT 运维多 Agent 自动化平台 — 基于大语言模型的智能运维解决方案。ITOps Agent Platform通过可视化工作流编排，将多个AI Agent组合成智能运维自动化流水线，实现服务器管理、告警处理、故障诊断、日志分析、脚本管理、定时运维任务的自动化执行， 支持国内外主流大模型，旨在 Zabbix/Prometheus 告警自动修复闭环，Docker 一键部署，多平台",
+      "Topics: agentic-ai, aiops, devops, docker, incident-management",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "itops-agent-platform",
+  "publishedAt": "2026-07-15"
+}
