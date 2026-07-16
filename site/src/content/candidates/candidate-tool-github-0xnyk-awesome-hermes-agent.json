@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "awesome-hermes-agent",
+  "summary": "Independent directory of useful skills, plugins, memory providers, tools, surfaces, and guides for Nous Research's open-source Hermes Agent.",
+  "sourceUrl": "https://github.com/0xNyk/awesome-hermes-agent",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "0xNyk",
+    "repo": "awesome-hermes-agent",
+    "fullName": "0xNyk/awesome-hermes-agent",
+    "stars": 4735,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "ai-tools",
+      "awesome",
+      "awesome-list",
+      "hermes-agent",
+      "mcp",
+      "memory",
+      "nous-research",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-15T21:41:31Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-16",
+  "lastChecked": "2026-07-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Independent directory of useful skills, plugins, memory providers, tools, surfaces, and guides for Nous Research's open-source Hermes Agent.",
+    "Topics: agent-skills, ai-agents, ai-tools, awesome, awesome-list",
+    "GitHub stars: 4735",
+    "Last pushed: 2026-07-15"
+  ],
+  "id": "candidate-tool-github-0xnyk-awesome-hermes-agent",
+  "canonicalKey": "tool:github:0xnyk/awesome-hermes-agent",
+  "firstDiscoveredAt": "2026-07-16",
+  "lastSeenAt": "2026-07-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-16-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "awesome-hermes-agent is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Independent directory of useful skills, plugins, memory providers, tools, surfaces, and guides for Nous Research's open-source Hermes Agent.",
+      "Topics: agent-skills, ai-agents, ai-tools, awesome, awesome-list",
+      "GitHub stars: 4735"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "awesome-hermes-agent",
+  "publishedAt": "2026-07-16",
+  "reviewedAt": "2026-07-16",
+  "reviewedBy": "local-review"
+}

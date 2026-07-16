@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "one-skill-to-rule-them-all",
+  "summary": "The meta-skill that builds and improves all your skills, including itself. Watches your work sessions, captures corrections and judgement calls, and turns them into skill improvements automatically. Practical application of the Augmented Expertise methodology. Open-source, domain-agnostic, CC BY 4.0",
+  "sourceUrl": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "rebelytics",
+    "repo": "one-skill-to-rule-them-all",
+    "fullName": "rebelytics/one-skill-to-rule-them-all",
+    "stars": 1050,
+    "license": "CC-BY-4.0",
+    "topics": [
+      "agent-skills",
+      "agentic-skills",
+      "ai-skills",
+      "augmented-expertise",
+      "awesome-skills",
+      "claude",
+      "claude-code",
+      "claude-cowork",
+      "improve-skills",
+      "meta-skill",
+      "meta-skills",
+      "rebelytics",
+      "skill",
+      "skill-automation",
+      "skill-builder",
+      "skill-creation",
+      "skill-generation",
+      "skill-improvement",
+      "skill-management",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-16T19:42:12Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-16",
+  "lastChecked": "2026-07-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The meta-skill that builds and improves all your skills, including itself. Watches your work sessions, captures corrections and judgement calls, and turns them into skill improvements automatically. P",
+    "Topics: agent-skills, agentic-skills, ai-skills, augmented-expertise, awesome-skills",
+    "GitHub stars: 1050",
+    "Last pushed: 2026-07-16"
+  ],
+  "id": "candidate-tool-github-rebelytics-one-skill-to-rule-them-all",
+  "canonicalKey": "tool:github:rebelytics/one-skill-to-rule-them-all",
+  "firstDiscoveredAt": "2026-07-16",
+  "lastSeenAt": "2026-07-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-16-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "one-skill-to-rule-them-all is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "The meta-skill that builds and improves all your skills, including itself. Watches your work sessions, captures corrections and judgement calls, and turns them into skill improvements automatically. P",
+      "Topics: agent-skills, agentic-skills, ai-skills, augmented-expertise, awesome-skills",
+      "GitHub stars: 1050"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "one-skill-to-rule-them-all",
+  "publishedAt": "2026-07-16"
+}

@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "Lightswind-UI-Library",
+  "summary": "The AI-native CLI-first React component library. 160+ animated, accessible, production-ready components with MCP Server support for Cursor, Claude & GitHub Copilot. Copy-paste architecture — you own the code.",
+  "sourceUrl": "https://github.com/codewithMUHILAN/Lightswind-UI-Library",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "codewithMUHILAN",
+    "repo": "Lightswind-UI-Library",
+    "fullName": "codewithMUHILAN/Lightswind-UI-Library",
+    "stars": 785,
+    "license": "MIT",
+    "topics": [
+      "ai-native",
+      "animated-components",
+      "component-library",
+      "design-system",
+      "framer-motion",
+      "frontend",
+      "gsap",
+      "lightswind-ui",
+      "mcp-server",
+      "nextjs",
+      "react",
+      "tailwindcss",
+      "typescript",
+      "ui-library",
+      "vite"
+    ],
+    "defaultBranch": "Master",
+    "lastPushedAt": "2026-07-16T04:47:02Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-16",
+  "lastChecked": "2026-07-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The AI-native CLI-first React component library. 160+ animated, accessible, production-ready components with MCP Server support for Cursor, Claude & GitHub Copilot. Copy-paste architecture — you own t",
+    "Topics: ai-native, animated-components, component-library, design-system, framer-motion",
+    "GitHub stars: 785",
+    "Last pushed: 2026-07-16"
+  ],
+  "id": "candidate-tool-github-codewithmuhilan-lightswind-ui-library",
+  "canonicalKey": "tool:github:codewithmuhilan/lightswind-ui-library",
+  "firstDiscoveredAt": "2026-07-16",
+  "lastSeenAt": "2026-07-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-16-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Lightswind-UI-Library is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "The AI-native CLI-first React component library. 160+ animated, accessible, production-ready components with MCP Server support for Cursor, Claude & GitHub Copilot. Copy-paste architecture — you own t",
+      "Topics: ai-native, animated-components, component-library, design-system, framer-motion",
+      "GitHub stars: 785"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "lightswind-ui-library",
+  "publishedAt": "2026-07-16"
+}
