@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-07-16",
+  "lastChecked": "2026-07-17",
   "discoveredFrom": "directory",
   "summary": "AgentGuard is an attribute-based access control framework that secures LLM-based agents during tool invocation. It requires minimal code changes (around 10 lines) and provides server-side inspection for both single-tool and cross-tool security risks, alongside a visual interface for policy management and auditing.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.28071v1:title:agentguard attribute based access control for safer ai agents",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-07-16",
+  "lastSeenAt": "2026-07-17",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -317,6 +317,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-07-16"
+    },
+    {
+      "runId": "2026-07-17-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-07-17"
     }
   ],
   "duplicateReason": null,
