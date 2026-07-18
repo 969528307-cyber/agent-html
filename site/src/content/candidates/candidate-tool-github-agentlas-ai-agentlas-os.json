@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "Agentlas-OS",
+  "summary": "Agent OS: keep specialist agents in a hub, spin up a temporary orchestrator per task. Local-first, works with any model.",
+  "sourceUrl": "https://github.com/agentlas-ai/Agentlas-OS",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "agentlas-ai",
+    "repo": "Agentlas-OS",
+    "fullName": "agentlas-ai/Agentlas-OS",
+    "stars": 708,
+    "license": "Apache-2.0",
+    "topics": [
+      "a2a",
+      "agent",
+      "agent-framework",
+      "agent-os-desktop",
+      "agent-skills",
+      "agentic-ai",
+      "agentic-workflow",
+      "agentos",
+      "agents",
+      "agents-team",
+      "agentshub",
+      "ai-agents",
+      "autonomous-agents",
+      "llm",
+      "llm-agents",
+      "llm-tools",
+      "mcp",
+      "multi-agent-systems",
+      "ochestration"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-18T07:11:04Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-18",
+  "lastChecked": "2026-07-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Agent OS: keep specialist agents in a hub, spin up a temporary orchestrator per task. Local-first, works with any model.",
+    "Topics: a2a, agent, agent-framework, agent-os-desktop, agent-skills",
+    "GitHub stars: 708",
+    "Last pushed: 2026-07-18"
+  ],
+  "id": "candidate-tool-github-agentlas-ai-agentlas-os",
+  "canonicalKey": "tool:github:agentlas-ai/agentlas-os",
+  "firstDiscoveredAt": "2026-07-18",
+  "lastSeenAt": "2026-07-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-18-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Agentlas-OS is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Agent OS: keep specialist agents in a hub, spin up a temporary orchestrator per task. Local-first, works with any model.",
+      "Topics: a2a, agent, agent-framework, agent-os-desktop, agent-skills",
+      "GitHub stars: 708"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agentlas-os",
+  "publishedAt": "2026-07-18"
+}

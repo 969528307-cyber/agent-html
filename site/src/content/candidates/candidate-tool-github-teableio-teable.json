@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "teable",
+  "summary": "✨ AI Spreadsheet for Business",
+  "sourceUrl": "https://github.com/teableio/teable",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "teableio",
+    "repo": "teable",
+    "fullName": "teableio/teable",
+    "stars": 21504,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-agent",
+      "airtable",
+      "airtable-alternative",
+      "app-builder",
+      "database",
+      "internal-tool",
+      "low-code",
+      "no-code",
+      "postgres",
+      "postgresql",
+      "sandbox",
+      "spreadsheet"
+    ],
+    "defaultBranch": "develop",
+    "lastPushedAt": "2026-07-18T14:48:10Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-18",
+  "lastChecked": "2026-07-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "✨ AI Spreadsheet for Business",
+    "Topics: ai-agent, airtable, airtable-alternative, app-builder, database",
+    "GitHub stars: 21504",
+    "Last pushed: 2026-07-18"
+  ],
+  "id": "candidate-tool-github-teableio-teable",
+  "canonicalKey": "tool:github:teableio/teable",
+  "firstDiscoveredAt": "2026-07-18",
+  "lastSeenAt": "2026-07-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-18-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "teable is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "✨ AI Spreadsheet for Business",
+      "Topics: ai-agent, airtable, airtable-alternative, app-builder, database",
+      "GitHub stars: 21504"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "teable",
+  "publishedAt": "2026-07-18"
+}
