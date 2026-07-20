@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "ATLAS",
+  "summary": "Adaptive Test-time Learning and Autonomous Specialization",
+  "sourceUrl": "https://github.com/itigges22/ATLAS",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "itigges22",
+    "repo": "ATLAS",
+    "fullName": "itigges22/ATLAS",
+    "stars": 2064,
+    "license": "AGPL-3.0",
+    "topics": [
+      "ai-agent",
+      "ai-harness",
+      "coding-agent",
+      "developer-tools",
+      "local-first"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-20T19:12:56Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-20",
+  "lastChecked": "2026-07-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Adaptive Test-time Learning and Autonomous Specialization",
+    "Topics: ai-agent, ai-harness, coding-agent, developer-tools, local-first",
+    "GitHub stars: 2064",
+    "Last pushed: 2026-07-20"
+  ],
+  "id": "candidate-tool-github-itigges22-atlas",
+  "canonicalKey": "tool:github:itigges22/atlas",
+  "firstDiscoveredAt": "2026-07-20",
+  "lastSeenAt": "2026-07-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-20-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "ATLAS is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Adaptive Test-time Learning and Autonomous Specialization",
+      "Topics: ai-agent, ai-harness, coding-agent, developer-tools, local-first",
+      "GitHub stars: 2064"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "atlas",
+  "publishedAt": "2026-07-20"
+}

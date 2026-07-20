@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "solana-mcp-vybe",
+  "summary": "Public Solana MCP registry metadata for Vybe Solana API",
+  "sourceUrl": "https://github.com/vybenetwork/solana-mcp-vybe",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "vybenetwork",
+    "repo": "solana-mcp-vybe",
+    "fullName": "vybenetwork/solana-mcp-vybe",
+    "stars": 814,
+    "license": "",
+    "topics": [
+      "claude",
+      "cursor",
+      "mcp",
+      "mcp-client",
+      "mcp-clients",
+      "mcp-server",
+      "mcp-servers",
+      "mcp-tools",
+      "solana",
+      "spl-token",
+      "token-2022",
+      "vscode"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-11T21:04:52Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-20",
+  "lastChecked": "2026-07-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Public Solana MCP registry metadata for Vybe Solana API",
+    "Topics: claude, cursor, mcp, mcp-client, mcp-clients",
+    "GitHub stars: 814",
+    "Last pushed: 2026-05-11"
+  ],
+  "id": "candidate-tool-github-vybenetwork-solana-mcp-vybe",
+  "canonicalKey": "tool:github:vybenetwork/solana-mcp-vybe",
+  "firstDiscoveredAt": "2026-07-20",
+  "lastSeenAt": "2026-07-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-20-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "solana-mcp-vybe is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Public Solana MCP registry metadata for Vybe Solana API",
+      "Topics: claude, cursor, mcp, mcp-client, mcp-clients",
+      "GitHub stars: 814"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "solana-mcp-vybe",
+  "publishedAt": "2026-07-20"
+}

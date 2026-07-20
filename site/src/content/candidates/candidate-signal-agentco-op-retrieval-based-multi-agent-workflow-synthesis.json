@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-07-19",
+  "lastChecked": "2026-07-20",
   "discoveredFrom": "directory",
   "summary": "AgentCo-op introduces a retrieval-based synthesis framework that dynamically composes existing agents, tools, and skills into multi-agent workflows using typed artifact handoffs. It applies bounded local repair to fix only failing components, achieving strong benchmark results while reducing costs and enabling open-world scientific collaboration without redesigning existing agents.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.20425v1:title:agentco op retrieval based multi agent workflow synthesis",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-07-19",
+  "lastSeenAt": "2026-07-20",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -335,6 +335,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-07-19"
+    },
+    {
+      "runId": "2026-07-20-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-07-20"
     }
   ],
   "duplicateReason": null,
