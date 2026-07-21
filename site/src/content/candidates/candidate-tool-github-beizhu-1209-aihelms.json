@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "AIHelms",
+  "summary": "企业级 AI 资源纳管平台，提供统一 AI网关，纳管 OpenAI、Azure、Claude、DeepSeek 等主流模型，并支持 MCP 工具与 Skill 的集中注册分发。具备内外双轨定价、成本归因、统一身份认证、安全审计与效能报表，帮助企业精准控制成本、量化 ROI，高效治理 AI 资产。",
+  "sourceUrl": "https://github.com/beizhu-1209/AIHelms",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "beizhu-1209",
+    "repo": "AIHelms",
+    "fullName": "beizhu-1209/AIHelms",
+    "stars": 711,
+    "license": "GPL-3.0",
+    "topics": [
+      "agent",
+      "ai-gateway",
+      "ai-management",
+      "ai-observability",
+      "claude",
+      "cost-control",
+      "deepseek",
+      "docker",
+      "enterprise-ai",
+      "fastapi",
+      "llm-governance",
+      "mcp",
+      "model-gateway",
+      "openai",
+      "skill-management",
+      "skillspector",
+      "vue3"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-21T03:18:28Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-21",
+  "lastChecked": "2026-07-21",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "企业级 AI 资源纳管平台，提供统一 AI网关，纳管 OpenAI、Azure、Claude、DeepSeek 等主流模型，并支持 MCP 工具与 Skill 的集中注册分发。具备内外双轨定价、成本归因、统一身份认证、安全审计与效能报表，帮助企业精准控制成本、量化 ROI，高效治理 AI 资产。",
+    "Topics: agent, ai-gateway, ai-management, ai-observability, claude",
+    "GitHub stars: 711",
+    "Last pushed: 2026-07-21"
+  ],
+  "id": "candidate-tool-github-beizhu-1209-aihelms",
+  "canonicalKey": "tool:github:beizhu-1209/aihelms",
+  "firstDiscoveredAt": "2026-07-21",
+  "lastSeenAt": "2026-07-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-21-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-21"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "AIHelms is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "企业级 AI 资源纳管平台，提供统一 AI网关，纳管 OpenAI、Azure、Claude、DeepSeek 等主流模型，并支持 MCP 工具与 Skill 的集中注册分发。具备内外双轨定价、成本归因、统一身份认证、安全审计与效能报表，帮助企业精准控制成本、量化 ROI，高效治理 AI 资产。",
+      "Topics: agent, ai-gateway, ai-management, ai-observability, claude",
+      "GitHub stars: 711"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-21",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "aihelms",
+  "publishedAt": "2026-07-21"
+}
