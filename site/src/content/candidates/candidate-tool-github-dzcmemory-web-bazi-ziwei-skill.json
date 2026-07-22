@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "bazi-ziwei-skill",
+  "summary": "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。",
+  "sourceUrl": "https://github.com/dzcmemory-web/bazi-ziwei-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "dzcmemory-web",
+    "repo": "bazi-ziwei-skill",
+    "fullName": "dzcmemory-web/bazi-ziwei-skill",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "bazi",
+      "bazi-suanming",
+      "chinese-astrology",
+      "claude-skill",
+      "fortune-telling",
+      "metaphysics",
+      "skill-md",
+      "ziwei",
+      "ziwei-doushu"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-14T03:53:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-22",
+  "lastChecked": "2026-07-22",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。",
+    "Topics: ai-agent, bazi, bazi-suanming, chinese-astrology, claude-skill",
+    "GitHub stars: 700",
+    "Last pushed: 2026-06-14"
+  ],
+  "id": "candidate-tool-github-dzcmemory-web-bazi-ziwei-skill",
+  "canonicalKey": "tool:github:dzcmemory-web/bazi-ziwei-skill",
+  "firstDiscoveredAt": "2026-07-22",
+  "lastSeenAt": "2026-07-22",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-22-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-22"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "bazi-ziwei-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "AI 八字 + 紫微斗数排盘与综合印证 Skill：算法精准排盘（不靠 LLM 猜），三种分析模式，一键生成水墨风 HTML 命盘海报。兼容 Claude / Codex / Cursor / Workbuddy 等 SKILL.md Agent。",
+      "Topics: ai-agent, bazi, bazi-suanming, chinese-astrology, claude-skill",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-22",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "bazi-ziwei-skill",
+  "publishedAt": "2026-07-22"
+}

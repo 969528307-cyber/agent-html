@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "PanWatch",
+  "summary": "盯盘侠 PanWatch · 自托管 AI 盯盘助手，集成 TradingAgents 多 Agent 投资决策 | A股/港股/美股实时监控、持仓管理、智能分析、全渠道推送",
+  "sourceUrl": "https://github.com/TNT-Likely/PanWatch",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "TNT-Likely",
+    "repo": "PanWatch",
+    "fullName": "TNT-Likely/PanWatch",
+    "stars": 702,
+    "license": "MIT",
+    "topics": [
+      "a-share",
+      "agent",
+      "ai",
+      "ai-agent",
+      "akshare",
+      "deepseek",
+      "fastapi",
+      "fintech",
+      "llm",
+      "openai",
+      "portfolio",
+      "pwa",
+      "quant",
+      "self-hosted",
+      "stock",
+      "stock-analysis",
+      "stock-market",
+      "trading-agents",
+      "trading-bot"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-18T09:49:10Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-22",
+  "lastChecked": "2026-07-22",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "盯盘侠 PanWatch · 自托管 AI 盯盘助手，集成 TradingAgents 多 Agent 投资决策 | A股/港股/美股实时监控、持仓管理、智能分析、全渠道推送",
+    "Topics: a-share, agent, ai, ai-agent, akshare",
+    "GitHub stars: 702",
+    "Last pushed: 2026-07-18"
+  ],
+  "id": "candidate-tool-github-tnt-likely-panwatch",
+  "canonicalKey": "tool:github:tnt-likely/panwatch",
+  "firstDiscoveredAt": "2026-07-22",
+  "lastSeenAt": "2026-07-22",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-22-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-22"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "PanWatch is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "盯盘侠 PanWatch · 自托管 AI 盯盘助手，集成 TradingAgents 多 Agent 投资决策 | A股/港股/美股实时监控、持仓管理、智能分析、全渠道推送",
+      "Topics: a-share, agent, ai, ai-agent, akshare",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-22",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "panwatch",
+  "publishedAt": "2026-07-22"
+}

@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-07-21",
+  "lastChecked": "2026-07-22",
   "discoveredFrom": "directory",
   "summary": "This paper introduces an autonomous red teaming framework that combines large language models with reinforcement learning to generate adaptive, multi-stage attack campaigns against AI-enabled security systems. Testing in high-fidelity enterprise simulations reveals that standalone LLM agents cannot sustain complex attacks, while hybrid LLM-RL approaches achieve significantly higher compromise rates, exposing critical vulnerabilities in current AI security defenses.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.17075v1:title:hybrid llm rl red teaming framework exposes ai security gaps",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-07-21",
+  "lastSeenAt": "2026-07-22",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -347,6 +347,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-07-21"
+    },
+    {
+      "runId": "2026-07-22-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-07-22"
     }
   ],
   "duplicateReason": null,
