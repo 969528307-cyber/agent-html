@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "synthadoc",
+  "summary": "Synthadoc: An open-source LLM knowledge compilation engine that turns raw documents into structured, local-first wikis. A transparent, human-readable alternative to traditional RAG, which can be self-managed and self-improved without the use of any tools.",
+  "sourceUrl": "https://github.com/axoviq-ai/synthadoc",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "axoviq-ai",
+    "repo": "synthadoc",
+    "fullName": "axoviq-ai/synthadoc",
+    "stars": 706,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent-skills",
+      "agentic-ai",
+      "cli-tool",
+      "domain-adaptation",
+      "enterprise",
+      "enterprise-solutions",
+      "knowledge-graph",
+      "local-llm",
+      "obsidian-md",
+      "obsidian-plugin",
+      "personal-knowledge-management",
+      "pkm",
+      "rag-alternative",
+      "synthetic",
+      "synthetic-data"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-23T19:31:29Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-23",
+  "lastChecked": "2026-07-23",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Synthadoc: An open-source LLM knowledge compilation engine that turns raw documents into structured, local-first wikis. A transparent, human-readable alternative to traditional RAG, which can be self-",
+    "Topics: agent-skills, agentic-ai, cli-tool, domain-adaptation, enterprise",
+    "GitHub stars: 706",
+    "Last pushed: 2026-07-23"
+  ],
+  "id": "candidate-tool-github-axoviq-ai-synthadoc",
+  "canonicalKey": "tool:github:axoviq-ai/synthadoc",
+  "firstDiscoveredAt": "2026-07-23",
+  "lastSeenAt": "2026-07-23",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-23-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-23"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "synthadoc is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Synthadoc: An open-source LLM knowledge compilation engine that turns raw documents into structured, local-first wikis. A transparent, human-readable alternative to traditional RAG, which can be self-",
+      "Topics: agent-skills, agentic-ai, cli-tool, domain-adaptation, enterprise",
+      "GitHub stars: 706"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-23",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "synthadoc",
+  "publishedAt": "2026-07-23"
+}

@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-07-22",
+  "lastChecked": "2026-07-23",
   "discoveredFrom": "directory",
   "summary": "AgentTrap is a dynamic benchmark that evaluates whether LLM agents can safely use third-party skills while resisting malicious runtime behavior. The central finding is that the most informative failures are not simple jailbreaks—models often complete the visible user task while treating unsafe side effects introduced by the skill as part of the normal workflow.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.13940v1:title:agenttrap new benchmark exposes hidden trust failures in ai agent skills",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-07-22",
+  "lastSeenAt": "2026-07-23",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -353,6 +353,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-07-22"
+    },
+    {
+      "runId": "2026-07-23-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-07-23"
     }
   ],
   "duplicateReason": null,
