@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "a-stock-data",
+  "summary": "A股全栈数据工具包 · 10层架构 · 43端点(含3官方备胎) · 15数据源 · 行情/研报/资金面/筹码/公告/打板/ETF期权/舆情互动全覆盖+备用源降级 | China A-Share full-stack data toolkit (43 endpoints)",
+  "sourceUrl": "https://github.com/simonlin1212/a-stock-data",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "simonlin1212",
+    "repo": "a-stock-data",
+    "fullName": "simonlin1212/a-stock-data",
+    "stars": 7712,
+    "license": "Apache-2.0",
+    "topics": [
+      "a-share",
+      "ai-agent",
+      "ai-skill",
+      "china-stocks",
+      "claude-code",
+      "financial-data",
+      "fintech",
+      "investment-research",
+      "llm-tools",
+      "market-data",
+      "python",
+      "quantitative-finance",
+      "stock-market",
+      "trading"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-23T04:17:46Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-24",
+  "lastChecked": "2026-07-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A股全栈数据工具包 · 10层架构 · 43端点(含3官方备胎) · 15数据源 · 行情/研报/资金面/筹码/公告/打板/ETF期权/舆情互动全覆盖+备用源降级 | China A-Share full-stack data toolkit (43 endpoints)",
+    "Topics: a-share, ai-agent, ai-skill, china-stocks, claude-code",
+    "GitHub stars: 7712",
+    "Last pushed: 2026-07-23"
+  ],
+  "id": "candidate-tool-github-simonlin1212-a-stock-data",
+  "canonicalKey": "tool:github:simonlin1212/a-stock-data",
+  "firstDiscoveredAt": "2026-07-24",
+  "lastSeenAt": "2026-07-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-24-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "a-stock-data is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "A股全栈数据工具包 · 10层架构 · 43端点(含3官方备胎) · 15数据源 · 行情/研报/资金面/筹码/公告/打板/ETF期权/舆情互动全覆盖+备用源降级 | China A-Share full-stack data toolkit (43 endpoints)",
+      "Topics: a-share, ai-agent, ai-skill, china-stocks, claude-code",
+      "GitHub stars: 7712"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "a-stock-data",
+  "publishedAt": "2026-07-24"
+}

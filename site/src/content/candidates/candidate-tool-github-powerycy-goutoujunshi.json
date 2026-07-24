@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "goutoujunshi",
+  "summary": "一个先接住情绪、再分析关系并给出可执行策略的 Codex 恋爱军师，内置心理、法律、社会、人文、哲学、婚姻家庭与性学知识库，支持多元关系。",
+  "sourceUrl": "https://github.com/powerycy/goutoujunshi",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "powerycy",
+    "repo": "goutoujunshi",
+    "fullName": "powerycy/goutoujunshi",
+    "stars": 799,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-agent",
+      "chinese",
+      "codex",
+      "codex-skill",
+      "lgbtq",
+      "psychology",
+      "relationship-advice"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-23T11:37:48Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-24",
+  "lastChecked": "2026-07-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "一个先接住情绪、再分析关系并给出可执行策略的 Codex 恋爱军师，内置心理、法律、社会、人文、哲学、婚姻家庭与性学知识库，支持多元关系。",
+    "Topics: ai-agent, chinese, codex, codex-skill, lgbtq",
+    "GitHub stars: 799",
+    "Last pushed: 2026-07-23"
+  ],
+  "id": "candidate-tool-github-powerycy-goutoujunshi",
+  "canonicalKey": "tool:github:powerycy/goutoujunshi",
+  "firstDiscoveredAt": "2026-07-24",
+  "lastSeenAt": "2026-07-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-24-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "goutoujunshi is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "一个先接住情绪、再分析关系并给出可执行策略的 Codex 恋爱军师，内置心理、法律、社会、人文、哲学、婚姻家庭与性学知识库，支持多元关系。",
+      "Topics: ai-agent, chinese, codex, codex-skill, lgbtq",
+      "GitHub stars: 799"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "goutoujunshi",
+  "publishedAt": "2026-07-24"
+}

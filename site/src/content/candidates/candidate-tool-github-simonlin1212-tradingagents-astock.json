@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "TradingAgents-astock",
+  "summary": "A股多Agent投研框架 — 适配A股数据源(龙虎榜/游资/解禁等)，7位分析师基于A股规则的辩论决策，基于TradingAgents深度改造，适配大A。A-share multi-agent investment research framework — 7 AI analysts, bull/bear debate, risk assessment。",
+  "sourceUrl": "https://github.com/simonlin1212/TradingAgents-astock",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "simonlin1212",
+    "repo": "TradingAgents-astock",
+    "fullName": "simonlin1212/TradingAgents-astock",
+    "stars": 2594,
+    "license": "Apache-2.0",
+    "topics": [
+      "a-share",
+      "ai-agent",
+      "china-stocks",
+      "claude",
+      "fintech",
+      "investment-research",
+      "langgraph",
+      "llm",
+      "multi-agent",
+      "python",
+      "quantitative-finance",
+      "trading-agents"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-24T07:54:26Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-24",
+  "lastChecked": "2026-07-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A股多Agent投研框架 — 适配A股数据源(龙虎榜/游资/解禁等)，7位分析师基于A股规则的辩论决策，基于TradingAgents深度改造，适配大A。A-share multi-agent investment research framework — 7 AI analysts, bull/bear debate, risk assessment。",
+    "Topics: a-share, ai-agent, china-stocks, claude, fintech",
+    "GitHub stars: 2594",
+    "Last pushed: 2026-07-24"
+  ],
+  "id": "candidate-tool-github-simonlin1212-tradingagents-astock",
+  "canonicalKey": "tool:github:simonlin1212/tradingagents-astock",
+  "firstDiscoveredAt": "2026-07-24",
+  "lastSeenAt": "2026-07-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-24-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "TradingAgents-astock is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "A股多Agent投研框架 — 适配A股数据源(龙虎榜/游资/解禁等)，7位分析师基于A股规则的辩论决策，基于TradingAgents深度改造，适配大A。A-share multi-agent investment research framework — 7 AI analysts, bull/bear debate, risk assessment。",
+      "Topics: a-share, ai-agent, china-stocks, claude, fintech",
+      "GitHub stars: 2594"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "tradingagents-astock",
+  "publishedAt": "2026-07-24"
+}

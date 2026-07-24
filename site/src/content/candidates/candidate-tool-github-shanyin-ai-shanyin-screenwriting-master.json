@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "shanyin-screenwriting-master",
+  "summary": "山音超级编剧大师——由 @山音 设计的全格式影视编剧技能。 覆盖从1-3分钟概念超短片到90分钟电影长片、多集剧集的全格式剧本创作。 支持四种格式：概念超短片（how-to-tell/what-if）、5-10分钟叙事短片、90分钟长片（商业/文艺）、多集剧集。 覆盖从人物设计、结构大纲、场景拆解、到完整剧本写作的全流程。 ",
+  "sourceUrl": "https://github.com/Shanyin-ai/shanyin-screenwriting-master",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Shanyin-ai",
+    "repo": "shanyin-screenwriting-master",
+    "fullName": "Shanyin-ai/shanyin-screenwriting-master",
+    "stars": 702,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "claude-ai",
+      "claude-skills",
+      "screenwriting",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-01T02:18:00Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-24",
+  "lastChecked": "2026-07-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "山音超级编剧大师——由 @山音 设计的全格式影视编剧技能。 覆盖从1-3分钟概念超短片到90分钟电影长片、多集剧集的全格式剧本创作。 支持四种格式：概念超短片（how-to-tell/what-if）、5-10分钟叙事短片、90分钟长片（商业/文艺）、多集剧集。 覆盖从人物设计、结构大纲、场景拆解、到完整剧本写作的全流程。 ",
+    "Topics: ai-agent, claude-ai, claude-skills, screenwriting, skills",
+    "GitHub stars: 702",
+    "Last pushed: 2026-04-01"
+  ],
+  "id": "candidate-tool-github-shanyin-ai-shanyin-screenwriting-master",
+  "canonicalKey": "tool:github:shanyin-ai/shanyin-screenwriting-master",
+  "firstDiscoveredAt": "2026-07-24",
+  "lastSeenAt": "2026-07-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-24-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "shanyin-screenwriting-master is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "山音超级编剧大师——由 @山音 设计的全格式影视编剧技能。 覆盖从1-3分钟概念超短片到90分钟电影长片、多集剧集的全格式剧本创作。 支持四种格式：概念超短片（how-to-tell/what-if）、5-10分钟叙事短片、90分钟长片（商业/文艺）、多集剧集。 覆盖从人物设计、结构大纲、场景拆解、到完整剧本写作的全流程。 ",
+      "Topics: ai-agent, claude-ai, claude-skills, screenwriting, skills",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "shanyin-screenwriting-master",
+  "publishedAt": "2026-07-24"
+}
