@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "magic-mcp",
+  "summary": "It's like v0, but in your Cursor / Claude Code / Windsurf: search 10,000+ React/Tailwind components, generate new UI with AI, and publish your own — right from your editor. Magic MCP is now the 21st MCP; this package keeps old configs working. Setup: 21st.dev/mcp",
+  "sourceUrl": "https://github.com/21st-dev/magic-mcp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "21st-dev",
+    "repo": "magic-mcp",
+    "fullName": "21st-dev/magic-mcp",
+    "stars": 5519,
+    "license": "",
+    "topics": [
+      "21st",
+      "claude",
+      "cursor",
+      "mcp",
+      "model-context-protocol",
+      "react",
+      "tailwindcss",
+      "ui-components"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-24T23:30:26Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-25",
+  "lastChecked": "2026-07-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "It's like v0, but in your Cursor / Claude Code / Windsurf: search 10,000+ React/Tailwind components, generate new UI with AI, and publish your own — right from your editor. Magic MCP is now the 21st M",
+    "Topics: 21st, claude, cursor, mcp, model-context-protocol",
+    "GitHub stars: 5519",
+    "Last pushed: 2026-07-24"
+  ],
+  "id": "candidate-tool-github-21st-dev-magic-mcp",
+  "canonicalKey": "tool:github:21st-dev/magic-mcp",
+  "firstDiscoveredAt": "2026-07-25",
+  "lastSeenAt": "2026-07-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-25"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "magic-mcp is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "It's like v0, but in your Cursor / Claude Code / Windsurf: search 10,000+ React/Tailwind components, generate new UI with AI, and publish your own — right from your editor. Magic MCP is now the 21st M",
+      "Topics: 21st, claude, cursor, mcp, model-context-protocol",
+      "GitHub stars: 5519"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "magic-mcp",
+  "publishedAt": "2026-07-25"
+}

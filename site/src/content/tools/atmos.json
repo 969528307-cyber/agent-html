@@ -1,0 +1,69 @@
+{
+  "id": "atmos",
+  "name": "atmos",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Atmos is the open-source runtime for infrastructure — it builds, authenticates, and ships Terraform, OpenTofu, Kubernetes, Helm, and containers the same way on your laptop, in CI, and with AI agents.",
+  "description": "Atmos is the open-source runtime for infrastructure — it builds, authenticates, and ships Terraform, OpenTofu, Kubernetes, Helm, and containers the same way on your laptop, in CI, and with AI agents.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/cloudposse/atmos",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/cloudposse/atmos",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/cloudposse/atmos#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/cloudposse/atmos#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/cloudposse/atmos/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Atmos is the open-source runtime for infrastructure — it builds, authenticates, and ships Terraform, OpenTofu, Kubernetes, Helm, and containers the same way on your laptop, in CI, and with AI agents.",
+    "Topics: automation, cli, cloud, devops, hcl2",
+    "GitHub stars: 1341",
+    "Last pushed: 2026-07-25"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-07-25T19:39:39Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/cloudposse/atmos",
+  "repoUrl": "https://github.com/cloudposse/atmos",
+  "license": "Apache-2.0",
+  "stars": 1341,
+  "lastUpdated": "2026-07-25T19:39:39Z",
+  "lastChecked": "2026-07-25",
+  "publishedAt": "2026-07-25",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "speak-human-tw",
+  "summary": "「說人話」：繁體中文的去 AI 味改寫 skill。抓 38 種 AI 寫作痕跡，順手校正中國用語與半形標點，給 Claude Code / Codex / Cursor 用。",
+  "sourceUrl": "https://github.com/Raymondhou0917/speak-human-tw",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Raymondhou0917",
+    "repo": "speak-human-tw",
+    "fullName": "Raymondhou0917/speak-human-tw",
+    "stars": 701,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-writing",
+      "claude-code",
+      "codex",
+      "cursor",
+      "humanizer",
+      "prompt-engineering",
+      "traditional-chinese",
+      "writing-tools",
+      "zh-tw"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-07-25T03:22:35Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-25",
+  "lastChecked": "2026-07-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "「說人話」：繁體中文的去 AI 味改寫 skill。抓 38 種 AI 寫作痕跡，順手校正中國用語與半形標點，給 Claude Code / Codex / Cursor 用。",
+    "Topics: agent-skills, ai-writing, claude-code, codex, cursor",
+    "GitHub stars: 701",
+    "Last pushed: 2026-07-25"
+  ],
+  "id": "candidate-tool-github-raymondhou0917-speak-human-tw",
+  "canonicalKey": "tool:github:raymondhou0917/speak-human-tw",
+  "firstDiscoveredAt": "2026-07-25",
+  "lastSeenAt": "2026-07-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-25"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "speak-human-tw is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "「說人話」：繁體中文的去 AI 味改寫 skill。抓 38 種 AI 寫作痕跡，順手校正中國用語與半形標點，給 Claude Code / Codex / Cursor 用。",
+      "Topics: agent-skills, ai-writing, claude-code, codex, cursor",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "speak-human-tw",
+  "publishedAt": "2026-07-25"
+}
