@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "Orkas",
+  "summary": "Open-source multi-agent AI desktop client — build and command your AI agent team through conversation. A commander LLM dispatches sub-agents in parallel or in series; agents self-evolve via reflection and skill crystallization. Local-first, BYO LLM keys (Claude · OpenAI · Gemini · DeepSeek · Kimi · ",
+  "sourceUrl": "https://github.com/Orkas-AI/Orkas",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "workflow"
+  ],
+  "githubMetadata": {
+    "owner": "Orkas-AI",
+    "repo": "Orkas",
+    "fullName": "Orkas-AI/Orkas",
+    "stars": 714,
+    "license": "MIT",
+    "topics": [
+      "agent-collaboration",
+      "agent-orchestration",
+      "agent-team",
+      "agentic-ai",
+      "ai-agents",
+      "ai-assistant",
+      "ai-team",
+      "ai-workflow",
+      "autonomous-agents",
+      "byo-llm",
+      "cross-platform",
+      "desktop-app",
+      "electron",
+      "hermes-agent",
+      "llm",
+      "local-first",
+      "multi-agent",
+      "multi-agent-system",
+      "openclaw",
+      "self-evolving-agents"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-23T02:59:24Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-27",
+  "lastChecked": "2026-07-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source multi-agent AI desktop client — build and command your AI agent team through conversation. A commander LLM dispatches sub-agents in parallel or in series; agents self-evolve via reflection",
+    "Topics: agent-collaboration, agent-orchestration, agent-team, agentic-ai, ai-agents",
+    "GitHub stars: 714",
+    "Last pushed: 2026-07-23"
+  ],
+  "id": "candidate-tool-github-orkas-ai-orkas",
+  "canonicalKey": "tool:github:orkas-ai/orkas",
+  "firstDiscoveredAt": "2026-07-27",
+  "lastSeenAt": "2026-07-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-27-workflow",
+      "module": "workflow",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-27"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Orkas is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to workflow.",
+      "Open-source multi-agent AI desktop client — build and command your AI agent team through conversation. A commander LLM dispatches sub-agents in parallel or in series; agents self-evolve via reflection",
+      "Topics: agent-collaboration, agent-orchestration, agent-team, agentic-ai, ai-agents",
+      "GitHub stars: 714"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-27",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "orkas",
+  "publishedAt": "2026-07-27"
+}

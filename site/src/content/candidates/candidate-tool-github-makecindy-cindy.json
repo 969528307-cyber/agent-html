@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "cindy",
+  "summary": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+  "sourceUrl": "https://github.com/makecindy/cindy",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "makecindy",
+    "repo": "cindy",
+    "fullName": "makecindy/cindy",
+    "stars": 827,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "ai-agent",
+      "ai-assistant",
+      "android",
+      "claude-code",
+      "codex",
+      "electron",
+      "ios",
+      "llm",
+      "macos",
+      "react-native",
+      "typescript",
+      "windows"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-27T20:50:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-27",
+  "lastChecked": "2026-07-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+    "Topics: agent, ai-agent, ai-assistant, android, claude-code",
+    "GitHub stars: 827",
+    "Last pushed: 2026-07-27"
+  ],
+  "id": "candidate-tool-github-makecindy-cindy",
+  "canonicalKey": "tool:github:makecindy/cindy",
+  "firstDiscoveredAt": "2026-07-27",
+  "lastSeenAt": "2026-07-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-27-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-27"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "cindy is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "Topics: agent, ai-agent, ai-assistant, android, claude-code",
+      "GitHub stars: 827"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-27",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cindy",
+  "publishedAt": "2026-07-27"
+}
