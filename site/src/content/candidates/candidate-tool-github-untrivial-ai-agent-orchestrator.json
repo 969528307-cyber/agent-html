@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "agent-orchestrator",
+  "summary": "Agent IDE that enables you to manage fleets of coding agents. It comes with an agentic orchestrator that plans tasks, spawns agents, and autonomously handles CI fixes, merge conflicts, and code reviews.",
+  "sourceUrl": "https://github.com/Untrivial-ai/agent-orchestrator",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "Untrivial-ai",
+    "repo": "agent-orchestrator",
+    "fullName": "Untrivial-ai/agent-orchestrator",
+    "stars": 8626,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-fleet",
+      "agent-swarm",
+      "claude-code",
+      "codex-cli",
+      "git-worktrees",
+      "multi-agent",
+      "orchestration",
+      "orchestrator",
+      "parallel-agents",
+      "parallel-coding",
+      "skills",
+      "tmux"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-28T20:41:44Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-28",
+  "lastChecked": "2026-07-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Agent IDE that enables you to manage fleets of coding agents. It comes with an agentic orchestrator that plans tasks, spawns agents, and autonomously handles CI fixes, merge conflicts, and code review",
+    "Topics: agent-fleet, agent-swarm, claude-code, codex-cli, git-worktrees",
+    "GitHub stars: 8626",
+    "Last pushed: 2026-07-28"
+  ],
+  "id": "candidate-tool-github-untrivial-ai-agent-orchestrator",
+  "canonicalKey": "tool:github:untrivial-ai/agent-orchestrator",
+  "firstDiscoveredAt": "2026-07-28",
+  "lastSeenAt": "2026-07-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-28-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-28"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "agent-orchestrator is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "Agent IDE that enables you to manage fleets of coding agents. It comes with an agentic orchestrator that plans tasks, spawns agents, and autonomously handles CI fixes, merge conflicts, and code review",
+      "Topics: agent-fleet, agent-swarm, claude-code, codex-cli, git-worktrees",
+      "GitHub stars: 8626"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "agent-orchestrator",
+  "publishedAt": "2026-07-28",
+  "reviewedAt": "2026-07-28",
+  "reviewedBy": "local-review"
+}
