@@ -24,7 +24,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-07-28",
+  "lastChecked": "2026-07-29",
   "discoveredFrom": "directory",
   "summary": "Based on the public format from anthropics/skills (136K★) and 51 Skill repos indexed in To Play Claw",
   "proposedCategory": [
@@ -69,7 +69,7 @@
   },
   "canonicalKey": "learn:title:skill md format specification how to create agent skill",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-07-28",
+  "lastSeenAt": "2026-07-29",
   "crawlRuns": [
     {
       "runId": "2026-06-04-learn",
@@ -394,6 +394,12 @@
       "module": "learn",
       "sourceRegistryId": "local-learn-library",
       "seenAt": "2026-07-28"
+    },
+    {
+      "runId": "2026-07-29-learn",
+      "module": "learn",
+      "sourceRegistryId": "local-learn-library",
+      "seenAt": "2026-07-29"
     }
   ],
   "duplicateReason": null,
