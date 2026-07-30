@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-07-29",
+  "lastChecked": "2026-07-30",
   "discoveredFrom": "directory",
   "summary": "EngiAI introduces a multi-agent benchmark suite for LLM-driven engineering design, testing agents across workflow, RAG, and HPC dimensions. Results show proprietary models excel on simple tasks but all models struggle with conditional branching and long-running orchestration, revealing critical gaps for real-world engineering deployment.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.19743v1:title:engiai multi agent benchmark reveals llm gaps in engineering design",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-07-29",
+  "lastSeenAt": "2026-07-30",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -395,6 +395,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-07-29"
+    },
+    {
+      "runId": "2026-07-30-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-07-30"
     }
   ],
   "duplicateReason": null,
