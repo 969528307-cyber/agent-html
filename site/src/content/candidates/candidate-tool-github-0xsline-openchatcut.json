@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "OpenChatCut",
+  "summary": "Open-source, local-first conversational AI video editor with a professional multi-track timeline, Agent Skills, MCP integration, and Remotion rendering.",
+  "sourceUrl": "https://github.com/0xsline/OpenChatCut",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "0xsline",
+    "repo": "OpenChatCut",
+    "fullName": "0xsline/OpenChatCut",
+    "stars": 725,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent-skills",
+      "agentic-ai",
+      "ai-agent",
+      "ai-video-editor",
+      "capcut",
+      "chatcut",
+      "claude-code",
+      "codex",
+      "desktop-app",
+      "electron",
+      "ffmpeg",
+      "local-first",
+      "mcp",
+      "open-source",
+      "openchatcut",
+      "remotion",
+      "text-based-video-editing",
+      "timeline-editor",
+      "video-editing",
+      "video-editor"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-31T11:07:28Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-07-31",
+  "lastChecked": "2026-07-31",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source, local-first conversational AI video editor with a professional multi-track timeline, Agent Skills, MCP integration, and Remotion rendering.",
+    "Topics: agent-skills, agentic-ai, ai-agent, ai-video-editor, capcut",
+    "GitHub stars: 725",
+    "Last pushed: 2026-07-31"
+  ],
+  "id": "candidate-tool-github-0xsline-openchatcut",
+  "canonicalKey": "tool:github:0xsline/openchatcut",
+  "firstDiscoveredAt": "2026-07-31",
+  "lastSeenAt": "2026-07-31",
+  "crawlRuns": [
+    {
+      "runId": "2026-07-31-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-07-31"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "OpenChatCut is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source, local-first conversational AI video editor with a professional multi-track timeline, Agent Skills, MCP integration, and Remotion rendering.",
+      "Topics: agent-skills, agentic-ai, ai-agent, ai-video-editor, capcut",
+      "GitHub stars: 725"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-07-31",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openchatcut",
+  "publishedAt": "2026-07-31"
+}

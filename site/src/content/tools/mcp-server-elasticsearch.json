@@ -1,0 +1,68 @@
+{
+  "id": "mcp-server-elasticsearch",
+  "name": "mcp-server-elasticsearch",
+  "type": "workflow",
+  "status": "published",
+  "summary": "",
+  "description": "",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/elastic/mcp-server-elasticsearch",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/elastic/mcp-server-elasticsearch",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/elastic/mcp-server-elasticsearch#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/elastic/mcp-server-elasticsearch#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/elastic/mcp-server-elasticsearch/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Topics: elasticsearch, mcp, mcp-server, vector-database",
+    "GitHub stars: 700",
+    "Last pushed: 2026-07-31"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-07-31T19:50:57Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/elastic/mcp-server-elasticsearch",
+  "repoUrl": "https://github.com/elastic/mcp-server-elasticsearch",
+  "license": "Apache-2.0",
+  "stars": 700,
+  "lastUpdated": "2026-07-31T19:50:57Z",
+  "lastChecked": "2026-07-31",
+  "publishedAt": "2026-07-31",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
