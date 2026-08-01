@@ -1,0 +1,106 @@
+{
+  "type": "tool",
+  "title": "pi-textbook",
+  "summary": "《动手学 Pi》：沿 15 个真实 checkpoint 从零构建 Pi-style Agent",
+  "sourceUrl": "https://github.com/hahhforest/pi-textbook",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "hahhforest",
+    "repo": "pi-textbook",
+    "fullName": "hahhforest/pi-textbook",
+    "stars": 703,
+    "license": "MIT",
+    "topics": [
+      "agent-engineering",
+      "ai-agent",
+      "chinese",
+      "llm",
+      "textbook",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-23T03:35:41Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-01",
+  "lastChecked": "2026-08-01",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "《动手学 Pi》：沿 15 个真实 checkpoint 从零构建 Pi-style Agent",
+    "Topics: agent-engineering, ai-agent, chinese, llm, textbook",
+    "GitHub stars: 703",
+    "Last pushed: 2026-07-23"
+  ],
+  "id": "candidate-tool-github-hahhforest-pi-textbook",
+  "canonicalKey": "tool:github:hahhforest/pi-textbook",
+  "firstDiscoveredAt": "2026-08-01",
+  "lastSeenAt": "2026-08-01",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-01-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-01"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "pi-textbook is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "《动手学 Pi》：沿 15 个真实 checkpoint 从零构建 Pi-style Agent",
+      "Topics: agent-engineering, ai-agent, chinese, llm, textbook",
+      "GitHub stars: 703"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-01",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pi-textbook",
+  "publishedAt": "2026-08-01"
+}
