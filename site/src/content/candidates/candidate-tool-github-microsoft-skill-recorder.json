@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "skill-recorder",
+  "summary": "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio.",
+  "sourceUrl": "https://github.com/microsoft/skill-recorder",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "microsoft",
+    "repo": "skill-recorder",
+    "fullName": "microsoft/skill-recorder",
+    "stars": 707,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "automation",
+      "copilot",
+      "copilot-cli",
+      "copilot-cowork",
+      "copilot-studio",
+      "electron",
+      "microsoft-scout",
+      "screen-recording"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-02T19:39:27Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-02",
+  "lastChecked": "2026-08-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Mic",
+    "Topics: agent-skills, ai-agents, automation, copilot, copilot-cli",
+    "GitHub stars: 707",
+    "Last pushed: 2026-08-02"
+  ],
+  "id": "candidate-tool-github-microsoft-skill-recorder",
+  "canonicalKey": "tool:github:microsoft/skill-recorder",
+  "firstDiscoveredAt": "2026-08-02",
+  "lastSeenAt": "2026-08-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-02-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-02"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "skill-recorder is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Mic",
+      "Topics: agent-skills, ai-agents, automation, copilot, copilot-cli",
+      "GitHub stars: 707"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-02",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "skill-recorder",
+  "publishedAt": "2026-08-02"
+}

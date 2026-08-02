@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "ctf-super-hub",
+  "summary": " 面向小白用户的 CTF / 逆向 Skills 整合包：自动分流、头脑风暴、教学模式、比赛模式、只提示模式",
+  "sourceUrl": "https://github.com/asdfgh1445/ctf-super-hub",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "asdfgh1445",
+    "repo": "ctf-super-hub",
+    "fullName": "asdfgh1445/ctf-super-hub",
+    "stars": 712,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "codex",
+      "cryptography",
+      "ctf",
+      "ctf-tools",
+      "forensics",
+      "osint",
+      "pwn",
+      "reverse-engineering",
+      "web-security"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-23T19:16:56Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-02",
+  "lastChecked": "2026-08-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    " 面向小白用户的 CTF / 逆向 Skills 整合包：自动分流、头脑风暴、教学模式、比赛模式、只提示模式",
+    "Topics: agent-skills, ai-agents, codex, cryptography, ctf",
+    "GitHub stars: 712",
+    "Last pushed: 2026-04-23"
+  ],
+  "id": "candidate-tool-github-asdfgh1445-ctf-super-hub",
+  "canonicalKey": "tool:github:asdfgh1445/ctf-super-hub",
+  "firstDiscoveredAt": "2026-08-02",
+  "lastSeenAt": "2026-08-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-02-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-02"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "ctf-super-hub is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      " 面向小白用户的 CTF / 逆向 Skills 整合包：自动分流、头脑风暴、教学模式、比赛模式、只提示模式",
+      "Topics: agent-skills, ai-agents, codex, cryptography, ctf",
+      "GitHub stars: 712"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-02",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ctf-super-hub",
+  "publishedAt": "2026-08-02"
+}

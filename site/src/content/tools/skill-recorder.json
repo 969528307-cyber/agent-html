@@ -1,0 +1,69 @@
+{
+  "id": "skill-recorder",
+  "name": "skill-recorder",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio.",
+  "description": "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Microsoft Copilot Cowork, or Copilot Studio.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/microsoft/skill-recorder",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/microsoft/skill-recorder",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/microsoft/skill-recorder#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/microsoft/skill-recorder#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/microsoft/skill-recorder/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Scout, Mic",
+    "Topics: agent-skills, ai-agents, automation, copilot, copilot-cli",
+    "GitHub stars: 707",
+    "Last pushed: 2026-08-02"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-08-02T19:39:27Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/microsoft/skill-recorder",
+  "repoUrl": "https://github.com/microsoft/skill-recorder",
+  "license": "MIT",
+  "stars": 707,
+  "lastUpdated": "2026-08-02T19:39:27Z",
+  "lastChecked": "2026-08-02",
+  "publishedAt": "2026-08-02",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
