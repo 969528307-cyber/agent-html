@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "design-judge-skills",
+  "summary": "Evidence-driven Agent Skills for design award research, evaluation, award matching, entry writing, and submission readiness.",
+  "sourceUrl": "https://github.com/SeanJ1ang/design-judge-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "SeanJ1ang",
+    "repo": "design-judge-skills",
+    "fullName": "SeanJ1ang/design-judge-skills",
+    "stars": 734,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "codex",
+      "design-awards",
+      "design-evaluation",
+      "design-research",
+      "hermes-agent",
+      "industrial-design",
+      "openclaw",
+      "opencode",
+      "python"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-03T06:39:44Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-03",
+  "lastChecked": "2026-08-03",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Evidence-driven Agent Skills for design award research, evaluation, award matching, entry writing, and submission readiness.",
+    "Topics: agent-skills, claude-code, codex, design-awards, design-evaluation",
+    "GitHub stars: 734",
+    "Last pushed: 2026-08-03"
+  ],
+  "id": "candidate-tool-github-seanj1ang-design-judge-skills",
+  "canonicalKey": "tool:github:seanj1ang/design-judge-skills",
+  "firstDiscoveredAt": "2026-08-03",
+  "lastSeenAt": "2026-08-03",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-03-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-03"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "design-judge-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Evidence-driven Agent Skills for design award research, evaluation, award matching, entry writing, and submission readiness.",
+      "Topics: agent-skills, claude-code, codex, design-awards, design-evaluation",
+      "GitHub stars: 734"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-03",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "design-judge-skills",
+  "publishedAt": "2026-08-03"
+}
