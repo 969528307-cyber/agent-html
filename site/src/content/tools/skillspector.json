@@ -1,0 +1,69 @@
+{
+  "id": "skillspector",
+  "name": "SkillSpector",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+  "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/NVIDIA/SkillSpector#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/NVIDIA/SkillSpector#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/NVIDIA/SkillSpector/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills befo",
+    "Topics: agent-security, agent-skills, agentic-ai, ai-security, claude-code",
+    "GitHub stars: 14164",
+    "Last pushed: 2026-08-04"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-08-04T20:17:12Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/NVIDIA/SkillSpector",
+  "repoUrl": "https://github.com/NVIDIA/SkillSpector",
+  "license": "Apache-2.0",
+  "stars": 14164,
+  "lastUpdated": "2026-08-04T20:17:12Z",
+  "lastChecked": "2026-08-04",
+  "publishedAt": "2026-08-04",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

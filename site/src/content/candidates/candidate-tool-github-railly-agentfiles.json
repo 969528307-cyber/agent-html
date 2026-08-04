@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "agentfiles",
+  "summary": "Browse, create, and edit AI agent files across Claude Code, Cursor, Codex, and 12 coding tools — from Obsidian.",
+  "sourceUrl": "https://github.com/Railly/agentfiles",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Railly",
+    "repo": "agentfiles",
+    "fullName": "Railly/agentfiles",
+    "stars": 708,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "ai-tools",
+      "claude-code",
+      "codex",
+      "coding-agents",
+      "copilot",
+      "cursor",
+      "developer-tools",
+      "dotfiles",
+      "obsidian",
+      "obsidian-plugin",
+      "skills",
+      "windsurf"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-24T20:07:27Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-04",
+  "lastChecked": "2026-08-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Browse, create, and edit AI agent files across Claude Code, Cursor, Codex, and 12 coding tools — from Obsidian.",
+    "Topics: agent-skills, ai-agents, ai-tools, claude-code, codex",
+    "GitHub stars: 708",
+    "Last pushed: 2026-07-24"
+  ],
+  "id": "candidate-tool-github-railly-agentfiles",
+  "canonicalKey": "tool:github:railly/agentfiles",
+  "firstDiscoveredAt": "2026-08-04",
+  "lastSeenAt": "2026-08-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-04-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "agentfiles is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Browse, create, and edit AI agent files across Claude Code, Cursor, Codex, and 12 coding tools — from Obsidian.",
+      "Topics: agent-skills, ai-agents, ai-tools, claude-code, codex",
+      "GitHub stars: 708"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agentfiles",
+  "publishedAt": "2026-08-04"
+}
