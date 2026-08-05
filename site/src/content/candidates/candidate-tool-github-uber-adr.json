@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "ADR",
+  "summary": "ADR secures enterprise AI agents through observability, security benchmarking, and threat detection. Deployed at Uber.",
+  "sourceUrl": "https://github.com/uber/ADR",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "uber",
+    "repo": "ADR",
+    "fullName": "uber/ADR",
+    "stars": 995,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-security",
+      "ai-agents",
+      "ai-security",
+      "benchmark",
+      "claude",
+      "claude-code",
+      "codex",
+      "cursor",
+      "llm-security",
+      "mcp",
+      "model-context-protocol",
+      "prompt-injection",
+      "threat-detection"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-03T18:11:16Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-05",
+  "lastChecked": "2026-08-05",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "ADR secures enterprise AI agents through observability, security benchmarking, and threat detection. Deployed at Uber.",
+    "Topics: agent-security, ai-agents, ai-security, benchmark, claude",
+    "GitHub stars: 995",
+    "Last pushed: 2026-08-03"
+  ],
+  "id": "candidate-tool-github-uber-adr",
+  "canonicalKey": "tool:github:uber/adr",
+  "firstDiscoveredAt": "2026-08-05",
+  "lastSeenAt": "2026-08-05",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-05-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-05"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "ADR is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "ADR secures enterprise AI agents through observability, security benchmarking, and threat detection. Deployed at Uber.",
+      "Topics: agent-security, ai-agents, ai-security, benchmark, claude",
+      "GitHub stars: 995"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-05",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "adr",
+  "publishedAt": "2026-08-05"
+}
