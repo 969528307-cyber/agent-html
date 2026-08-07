@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "GoNavi",
+  "summary": "High-performance multi-data-source database client — ~30MB, AI & MCP ready, zero Electron bloat. | 高性能多数据源数据库客户端：约 30MB，AI 与 MCP 就绪，告别 Electron 膨胀。",
+  "sourceUrl": "https://github.com/Syngnat/GoNavi",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Syngnat",
+    "repo": "GoNavi",
+    "fullName": "Syngnat/GoNavi",
+    "stars": 1838,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai",
+      "cross-platform",
+      "database-client",
+      "database-gui",
+      "desktop-app",
+      "developer-tools",
+      "golang",
+      "kafka",
+      "mcp",
+      "model-context-protocol",
+      "mongodb",
+      "mqtt",
+      "mysql",
+      "oracle-database",
+      "postgresql",
+      "react",
+      "redis",
+      "sql-client",
+      "typescript",
+      "wails"
+    ],
+    "defaultBranch": "dev",
+    "lastPushedAt": "2026-08-07T00:41:58Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-07",
+  "lastChecked": "2026-08-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "High-performance multi-data-source database client — ~30MB, AI & MCP ready, zero Electron bloat. | 高性能多数据源数据库客户端：约 30MB，AI 与 MCP 就绪，告别 Electron 膨胀。",
+    "Topics: ai, cross-platform, database-client, database-gui, desktop-app",
+    "GitHub stars: 1838",
+    "Last pushed: 2026-08-07"
+  ],
+  "id": "candidate-tool-github-syngnat-gonavi",
+  "canonicalKey": "tool:github:syngnat/gonavi",
+  "firstDiscoveredAt": "2026-08-07",
+  "lastSeenAt": "2026-08-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "GoNavi is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "High-performance multi-data-source database client — ~30MB, AI & MCP ready, zero Electron bloat. | 高性能多数据源数据库客户端：约 30MB，AI 与 MCP 就绪，告别 Electron 膨胀。",
+      "Topics: ai, cross-platform, database-client, database-gui, desktop-app",
+      "GitHub stars: 1838"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "gonavi",
+  "publishedAt": "2026-08-07"
+}
