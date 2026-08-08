@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "lieflat-charts",
+  "summary": "Data visualization Skill for AI Agents, turning data into polished, interactive HTML charts. 面向 AI Agents 的数据可视化 Skill，将数据快速生成精致、可交互的 HTML 图表。",
+  "sourceUrl": "https://github.com/larashero3-dotcom/lieflat-charts",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "larashero3-dotcom",
+    "repo": "lieflat-charts",
+    "fullName": "larashero3-dotcom/lieflat-charts",
+    "stars": 736,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "charts",
+      "claude-code",
+      "codex",
+      "data-visualization",
+      "html",
+      "moxt",
+      "svg"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-07T10:02:40Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-08",
+  "lastChecked": "2026-08-08",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Data visualization Skill for AI Agents, turning data into polished, interactive HTML charts. 面向 AI Agents 的数据可视化 Skill，将数据快速生成精致、可交互的 HTML 图表。",
+    "Topics: agent-skills, charts, claude-code, codex, data-visualization",
+    "GitHub stars: 736",
+    "Last pushed: 2026-08-07"
+  ],
+  "id": "candidate-tool-github-larashero3-dotcom-lieflat-charts",
+  "canonicalKey": "tool:github:larashero3-dotcom/lieflat-charts",
+  "firstDiscoveredAt": "2026-08-08",
+  "lastSeenAt": "2026-08-08",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-08-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-08"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "lieflat-charts is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Data visualization Skill for AI Agents, turning data into polished, interactive HTML charts. 面向 AI Agents 的数据可视化 Skill，将数据快速生成精致、可交互的 HTML 图表。",
+      "Topics: agent-skills, charts, claude-code, codex, data-visualization",
+      "GitHub stars: 736"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-08",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "lieflat-charts",
+  "publishedAt": "2026-08-08"
+}
