@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "MimikaStudio",
+  "summary": "MimikaStudio - A local-first application for macOS (Apple Silicon) + Agentic MCP Support",
+  "sourceUrl": "https://github.com/BoltzmannEntropy/MimikaStudio",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "BoltzmannEntropy",
+    "repo": "MimikaStudio",
+    "fullName": "BoltzmannEntropy/MimikaStudio",
+    "stars": 713,
+    "license": "GPL-3.0",
+    "topics": [
+      "apple-silicon",
+      "audio-book-converter",
+      "audiobooks",
+      "flutter-app",
+      "flutter-apps",
+      "flutter-examples",
+      "flutter-ui",
+      "mcp",
+      "osx",
+      "python",
+      "qwen",
+      "qwen3",
+      "qwen3-tts",
+      "rvc",
+      "tts",
+      "voice",
+      "voice-clone",
+      "voice-cloning",
+      "xttsv2"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-04-01T10:38:10Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-09",
+  "lastChecked": "2026-08-09",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "MimikaStudio - A local-first application for macOS (Apple Silicon) + Agentic MCP Support",
+    "Topics: apple-silicon, audio-book-converter, audiobooks, flutter-app, flutter-apps",
+    "GitHub stars: 713",
+    "Last pushed: 2026-04-01"
+  ],
+  "id": "candidate-tool-github-boltzmannentropy-mimikastudio",
+  "canonicalKey": "tool:github:boltzmannentropy/mimikastudio",
+  "firstDiscoveredAt": "2026-08-09",
+  "lastSeenAt": "2026-08-09",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-09-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-09"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "MimikaStudio is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "MimikaStudio - A local-first application for macOS (Apple Silicon) + Agentic MCP Support",
+      "Topics: apple-silicon, audio-book-converter, audiobooks, flutter-app, flutter-apps",
+      "GitHub stars: 713"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-09",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mimikastudio",
+  "publishedAt": "2026-08-09"
+}

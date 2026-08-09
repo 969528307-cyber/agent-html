@@ -24,7 +24,7 @@
     ]
   },
   "discoveredAt": "2026-05-16",
-  "lastChecked": "2026-08-08",
+  "lastChecked": "2026-08-09",
   "discoveredFrom": "directory",
   "summary": "A China-origin IDE coding assistant focused on completion, explanation, and editor-side developer assistance.",
   "proposedCategory": [
@@ -80,7 +80,7 @@
   },
   "canonicalKey": "agent:codegeex",
   "firstDiscoveredAt": "2026-05-16",
-  "lastSeenAt": "2026-08-08",
+  "lastSeenAt": "2026-08-09",
   "crawlRuns": [
     {
       "runId": "2026-05-18-agents",
@@ -471,6 +471,12 @@
       "module": "agents",
       "sourceRegistryId": "local-agents-library",
       "seenAt": "2026-08-08"
+    },
+    {
+      "runId": "2026-08-09-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-08-09"
     }
   ],
   "enrichmentDecision": "needs_editor_review",

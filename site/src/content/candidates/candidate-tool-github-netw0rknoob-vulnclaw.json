@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "VulnClaw",
+  "summary": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
+  "sourceUrl": "https://github.com/Netw0rkNoob/VulnClaw",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "Netw0rkNoob",
+    "repo": "VulnClaw",
+    "fullName": "Netw0rkNoob/VulnClaw",
+    "stars": 2659,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-tools",
+      "ctf",
+      "cybersecurity",
+      "openclaw",
+      "penetration-testing",
+      "penetration-testing-tools",
+      "security-tools",
+      "skill"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-09T17:32:35Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-09",
+  "lastChecked": "2026-08-09",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
+    "Topics: ai, ai-agent, ai-tools, ctf, cybersecurity",
+    "GitHub stars: 2659",
+    "Last pushed: 2026-08-09"
+  ],
+  "id": "candidate-tool-github-netw0rknoob-vulnclaw",
+  "canonicalKey": "tool:github:netw0rknoob/vulnclaw",
+  "firstDiscoveredAt": "2026-08-09",
+  "lastSeenAt": "2026-08-09",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-09-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-09"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "VulnClaw is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
+      "Topics: ai, ai-agent, ai-tools, ctf, cybersecurity",
+      "GitHub stars: 2659"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "vulnclaw",
+  "publishedAt": "2026-08-09",
+  "reviewedAt": "2026-08-09",
+  "reviewedBy": "local-review"
+}
