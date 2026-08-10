@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "Locus",
+  "summary": "The open source Unity Dev Agent",
+  "sourceUrl": "https://github.com/r1n7aro/Locus",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "r1n7aro",
+    "repo": "Locus",
+    "fullName": "r1n7aro/Locus",
+    "stars": 700,
+    "license": "GPL-3.0",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "codex",
+      "gamedev",
+      "llm",
+      "rust",
+      "unity"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-06T06:37:53Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-10",
+  "lastChecked": "2026-08-10",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The open source Unity Dev Agent",
+    "Topics: ai, ai-agent, codex, gamedev, llm",
+    "GitHub stars: 700",
+    "Last pushed: 2026-08-06"
+  ],
+  "id": "candidate-tool-github-r1n7aro-locus",
+  "canonicalKey": "tool:github:r1n7aro/locus",
+  "firstDiscoveredAt": "2026-08-10",
+  "lastSeenAt": "2026-08-10",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-10-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-10"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Locus is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "The open source Unity Dev Agent",
+      "Topics: ai, ai-agent, codex, gamedev, llm",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-10",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "locus",
+  "publishedAt": "2026-08-10"
+}

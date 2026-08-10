@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "cc-safety-net",
+  "summary": "An AI coding agent guardrail — a CLI hook that blocks destructive git and filesystem commands and secret file access before they execute. Supports Amp Code, Antigravity CLI, Claude Code, Codex, Copilot CLI, Cursor, Gemini CLI, Hermes Agent, Kimi Code, OpenClaw, OpenCode, and Pi.",
+  "sourceUrl": "https://github.com/kenryu42/cc-safety-net",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "kenryu42",
+    "repo": "cc-safety-net",
+    "fullName": "kenryu42/cc-safety-net",
+    "stars": 1479,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "ai-safety",
+      "antigravity",
+      "claude",
+      "claude-code",
+      "claude-code-plugin",
+      "cli",
+      "codex",
+      "codex-cli",
+      "coding-agent",
+      "cursor",
+      "developer-tools",
+      "gemini-cli",
+      "guardrails",
+      "hermes-agent",
+      "hooks",
+      "openclaw",
+      "opencode",
+      "pi-extension",
+      "security"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-10T06:35:50Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-10",
+  "lastChecked": "2026-08-10",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "An AI coding agent guardrail — a CLI hook that blocks destructive git and filesystem commands and secret file access before they execute. Supports Amp Code, Antigravity CLI, Claude Code, Codex, Copilo",
+    "Topics: ai-agents, ai-safety, antigravity, claude, claude-code",
+    "GitHub stars: 1479",
+    "Last pushed: 2026-08-10"
+  ],
+  "id": "candidate-tool-github-kenryu42-cc-safety-net",
+  "canonicalKey": "tool:github:kenryu42/cc-safety-net",
+  "firstDiscoveredAt": "2026-08-10",
+  "lastSeenAt": "2026-08-10",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-10-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-10"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "cc-safety-net is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "An AI coding agent guardrail — a CLI hook that blocks destructive git and filesystem commands and secret file access before they execute. Supports Amp Code, Antigravity CLI, Claude Code, Codex, Copilo",
+      "Topics: ai-agents, ai-safety, antigravity, claude, claude-code",
+      "GitHub stars: 1479"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-10",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cc-safety-net",
+  "publishedAt": "2026-08-10"
+}
