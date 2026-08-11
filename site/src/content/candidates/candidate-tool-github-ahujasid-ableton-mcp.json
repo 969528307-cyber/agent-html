@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "ableton-mcp",
+  "summary": "🎵 Control Ableton Live with Claude AI — create tracks, arrange clips & compose music via MCP",
+  "sourceUrl": "https://github.com/ahujasid/ableton-mcp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "ahujasid",
+    "repo": "ableton-mcp",
+    "fullName": "ahujasid/ableton-mcp",
+    "stars": 2897,
+    "license": "MIT",
+    "topics": [
+      "ableton",
+      "ai",
+      "claude",
+      "daw",
+      "generative-ai",
+      "llm",
+      "mcp",
+      "model-context-protocol",
+      "music",
+      "python"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-11T10:51:22Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-11",
+  "lastChecked": "2026-08-11",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "🎵 Control Ableton Live with Claude AI — create tracks, arrange clips & compose music via MCP",
+    "Topics: ableton, ai, claude, daw, generative-ai",
+    "GitHub stars: 2897",
+    "Last pushed: 2026-08-11"
+  ],
+  "id": "candidate-tool-github-ahujasid-ableton-mcp",
+  "canonicalKey": "tool:github:ahujasid/ableton-mcp",
+  "firstDiscoveredAt": "2026-08-11",
+  "lastSeenAt": "2026-08-11",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-11-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-11"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "ableton-mcp is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "🎵 Control Ableton Live with Claude AI — create tracks, arrange clips & compose music via MCP",
+      "Topics: ableton, ai, claude, daw, generative-ai",
+      "GitHub stars: 2897"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "ableton-mcp",
+  "publishedAt": "2026-08-11",
+  "reviewedAt": "2026-08-11",
+  "reviewedBy": "local-review"
+}

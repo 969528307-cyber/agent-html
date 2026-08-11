@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "webbrain",
+  "summary": "Open-source AI browser agent for Chrome and Firefox (monorepo) 🧠 ",
+  "sourceUrl": "https://github.com/webbrain-one/webbrain",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "webbrain-one",
+    "repo": "webbrain",
+    "fullName": "webbrain-one/webbrain",
+    "stars": 719,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "ai-agents",
+      "ai-tools",
+      "browser-ai",
+      "browser-automation",
+      "browser-extension",
+      "chrome-ai",
+      "chrome-devtools",
+      "chrome-extension",
+      "chrome-extensions",
+      "firefox-addon",
+      "firefox-addons",
+      "firefox-extension",
+      "firefox-extensions",
+      "gemma",
+      "gemma4",
+      "minimax",
+      "offline-ai",
+      "offline-llm",
+      "qwen"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-11T19:55:09Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-11",
+  "lastChecked": "2026-08-11",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source AI browser agent for Chrome and Firefox (monorepo) 🧠 ",
+    "Topics: ai-agent, ai-agents, ai-tools, browser-ai, browser-automation",
+    "GitHub stars: 719",
+    "Last pushed: 2026-08-11"
+  ],
+  "id": "candidate-tool-github-webbrain-one-webbrain",
+  "canonicalKey": "tool:github:webbrain-one/webbrain",
+  "firstDiscoveredAt": "2026-08-11",
+  "lastSeenAt": "2026-08-11",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-11-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-11"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "webbrain is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Open-source AI browser agent for Chrome and Firefox (monorepo) 🧠 ",
+      "Topics: ai-agent, ai-agents, ai-tools, browser-ai, browser-automation",
+      "GitHub stars: 719"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-11",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "webbrain",
+  "publishedAt": "2026-08-11"
+}
