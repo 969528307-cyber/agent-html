@@ -1,0 +1,109 @@
+{
+  "type": "tool",
+  "title": "notfair-plugin",
+  "summary": "Open-source SEO, GEO, and marketing skills for AI agents.",
+  "sourceUrl": "https://github.com/nowork-studio/notfair-plugin",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "nowork-studio",
+    "repo": "notfair-plugin",
+    "fullName": "nowork-studio/notfair-plugin",
+    "stars": 3345,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "claude-code-plugin",
+      "claude-skills",
+      "geo",
+      "googleads",
+      "googleadsmcp",
+      "mcp",
+      "metaads",
+      "seo"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-12T04:48:08Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-12",
+  "lastChecked": "2026-08-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source SEO, GEO, and marketing skills for AI agents.",
+    "Topics: agents, claude-code-plugin, claude-skills, geo, googleads",
+    "GitHub stars: 3345",
+    "Last pushed: 2026-08-12"
+  ],
+  "id": "candidate-tool-github-nowork-studio-notfair-plugin",
+  "canonicalKey": "tool:github:nowork-studio/notfair-plugin",
+  "firstDiscoveredAt": "2026-08-12",
+  "lastSeenAt": "2026-08-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-12-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "notfair-plugin is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source SEO, GEO, and marketing skills for AI agents.",
+      "Topics: agents, claude-code-plugin, claude-skills, geo, googleads",
+      "GitHub stars: 3345"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "notfair-plugin",
+  "publishedAt": "2026-08-12"
+}

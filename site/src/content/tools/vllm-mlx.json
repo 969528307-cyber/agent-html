@@ -1,0 +1,69 @@
+{
+  "id": "vllm-mlx",
+  "name": "vllm-mlx",
+  "type": "workflow",
+  "status": "published",
+  "summary": "High-performance OpenAI and Anthropic compatible LLM inference server for Apple Silicon. Native MLX, continuous batching, multimodal models, MCP tool calling, and Claude Code support.",
+  "description": "High-performance OpenAI and Anthropic compatible LLM inference server for Apple Silicon. Native MLX, continuous batching, multimodal models, MCP tool calling, and Claude Code support.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/waybarrios/vllm-mlx",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/waybarrios/vllm-mlx",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/waybarrios/vllm-mlx#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/waybarrios/vllm-mlx#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/waybarrios/vllm-mlx/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "High-performance OpenAI and Anthropic compatible LLM inference server for Apple Silicon. Native MLX, continuous batching, multimodal models, MCP tool calling, and Claude Code support.",
+    "Topics: anthropic, anthropic-api, apple-silicon, claude-code, continuous-batching",
+    "GitHub stars: 1504",
+    "Last pushed: 2026-08-12"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-08-12T05:29:34Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/waybarrios/vllm-mlx",
+  "repoUrl": "https://github.com/waybarrios/vllm-mlx",
+  "license": "Apache-2.0",
+  "stars": 1504,
+  "lastUpdated": "2026-08-12T05:29:34Z",
+  "lastChecked": "2026-08-12",
+  "publishedAt": "2026-08-12",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
