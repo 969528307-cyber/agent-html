@@ -25,7 +25,7 @@
     ]
   },
   "discoveredAt": "2026-06-04",
-  "lastChecked": "2026-08-12",
+  "lastChecked": "2026-08-13",
   "discoveredFrom": "directory",
   "summary": "This paper introduces a mechanistic interpretability framework that uses Sparse Autoencoders and linear probes to monitor AI agents' internal states before tool calls. It identifies which internal layers and features are associated with tool decisions, enabling early detection of costly tool-use failures in long-horizon enterprise workflows.",
   "proposedCategory": [
@@ -64,7 +64,7 @@
   },
   "canonicalKey": "signal:url:https://arxiv.org/abs/2605.06890v2:title:peeking inside ai agents mechanistic interpretability for tool use",
   "firstDiscoveredAt": "2026-06-04",
-  "lastSeenAt": "2026-08-12",
+  "lastSeenAt": "2026-08-13",
   "crawlRuns": [
     {
       "runId": "2026-06-04-signals",
@@ -473,6 +473,12 @@
       "module": "signals",
       "sourceRegistryId": "local-signals-library",
       "seenAt": "2026-08-12"
+    },
+    {
+      "runId": "2026-08-13-signals",
+      "module": "signals",
+      "sourceRegistryId": "local-signals-library",
+      "seenAt": "2026-08-13"
     }
   ],
   "duplicateReason": null,

@@ -1,0 +1,106 @@
+{
+  "type": "tool",
+  "title": "deeptide",
+  "summary": "Built by DeepSeek, for DeepSeek — a Swift-native macOS coding agent",
+  "sourceUrl": "https://github.com/paean-ai/deeptide",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "paean-ai",
+    "repo": "deeptide",
+    "fullName": "paean-ai/deeptide",
+    "stars": 1014,
+    "license": "MIT",
+    "topics": [
+      "coding-agent",
+      "deepseek",
+      "deepseek-harness",
+      "dsh-plugin",
+      "macos",
+      "swift"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-08T09:37:30Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-13",
+  "lastChecked": "2026-08-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Built by DeepSeek, for DeepSeek — a Swift-native macOS coding agent",
+    "Topics: coding-agent, deepseek, deepseek-harness, dsh-plugin, macos",
+    "GitHub stars: 1014",
+    "Last pushed: 2026-07-08"
+  ],
+  "id": "candidate-tool-github-paean-ai-deeptide",
+  "canonicalKey": "tool:github:paean-ai/deeptide",
+  "firstDiscoveredAt": "2026-08-13",
+  "lastSeenAt": "2026-08-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-13-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "deeptide is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Built by DeepSeek, for DeepSeek — a Swift-native macOS coding agent",
+      "Topics: coding-agent, deepseek, deepseek-harness, dsh-plugin, macos",
+      "GitHub stars: 1014"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "deeptide",
+  "publishedAt": "2026-08-13"
+}
