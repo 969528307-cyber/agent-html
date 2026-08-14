@@ -1,0 +1,69 @@
+{
+  "id": "agentcookie",
+  "name": "agentcookie",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Your agent runs on a Mac that isn't your daily driver. agentcookie keeps its sessions in sync with the Mac you actually browse on, continuously, encrypted over Tailscale, so OpenClaw, Hermes, or any other agent runtime wakes up authenticated. macOS, peer-to-peer, no cloud middleman.",
+  "description": "Your agent runs on a Mac that isn't your daily driver. agentcookie keeps its sessions in sync with the Mac you actually browse on, continuously, encrypted over Tailscale, so OpenClaw, Hermes, or any other agent runtime wakes up authenticated. macOS, peer-to-peer, no cloud middleman.",
+  "category": [
+    "cli"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mvanhorn/agentcookie",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mvanhorn/agentcookie",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mvanhorn/agentcookie#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mvanhorn/agentcookie#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mvanhorn/agentcookie/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Your agent runs on a Mac that isn't your daily driver. agentcookie keeps its sessions in sync with the Mac you actually browse on, continuously, encrypted over Tailscale, so OpenClaw, Hermes, or any o",
+    "Topics: ai-agents, automation, chrome, cli, cookies",
+    "GitHub stars: 732",
+    "Last pushed: 2026-08-14"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-08-14T14:07:54Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mvanhorn/agentcookie",
+  "repoUrl": "https://github.com/mvanhorn/agentcookie",
+  "license": "MIT",
+  "stars": 732,
+  "lastUpdated": "2026-08-14T14:07:54Z",
+  "lastChecked": "2026-08-14",
+  "publishedAt": "2026-08-14",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "agent-vision-toolkit",
+  "summary": "为纯文本模型\"看图“设计更好的视觉工具箱和技能，支持多图理解，图片问答，前端UI还原、GUI 自动化等，并可选无缝接入多个主流agent，直接识别粘贴图片｜ A vision toolkit and skill designed for text-only llms — image Q&A, long-screenshot OCR, frontend UI restoration, and GUI automation, with optional seamless integration for Codex, Claude Code, Pi, Oh My Pi, and OpenCode",
+  "sourceUrl": "https://github.com/Anionex/agent-vision-toolkit",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Anionex",
+    "repo": "agent-vision-toolkit",
+    "fullName": "Anionex/agent-vision-toolkit",
+    "stars": 831,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "claude-code",
+      "codex",
+      "computer-use",
+      "deepseek",
+      "dsh-plugin",
+      "glm",
+      "harness-engineering",
+      "multimodal",
+      "opencode",
+      "text-only-llm",
+      "vision",
+      "vision-language-model"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-14T19:21:11Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-14",
+  "lastChecked": "2026-08-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "为纯文本模型\"看图“设计更好的视觉工具箱和技能，支持多图理解，图片问答，前端UI还原、GUI 自动化等，并可选无缝接入多个主流agent，直接识别粘贴图片｜ A vision toolkit and skill designed for text-only llms — image Q&A, long-screenshot OCR, frontend UI restoration, and GUI",
+    "Topics: agent, agent-skills, claude-code, codex, computer-use",
+    "GitHub stars: 831",
+    "Last pushed: 2026-08-14"
+  ],
+  "id": "candidate-tool-github-anionex-agent-vision-toolkit",
+  "canonicalKey": "tool:github:anionex/agent-vision-toolkit",
+  "firstDiscoveredAt": "2026-08-14",
+  "lastSeenAt": "2026-08-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-14-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "agent-vision-toolkit is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "为纯文本模型\"看图“设计更好的视觉工具箱和技能，支持多图理解，图片问答，前端UI还原、GUI 自动化等，并可选无缝接入多个主流agent，直接识别粘贴图片｜ A vision toolkit and skill designed for text-only llms — image Q&A, long-screenshot OCR, frontend UI restoration, and GUI",
+      "Topics: agent, agent-skills, claude-code, codex, computer-use",
+      "GitHub stars: 831"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-14",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-vision-toolkit",
+  "publishedAt": "2026-08-14"
+}

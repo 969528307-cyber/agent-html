@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "Qu1cksc0pe",
+  "summary": "All-in-One malware analysis tool.",
+  "sourceUrl": "https://github.com/CYB3RMX/Qu1cksc0pe",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "CYB3RMX",
+    "repo": "Qu1cksc0pe",
+    "fullName": "CYB3RMX/Qu1cksc0pe",
+    "stars": 2044,
+    "license": "GPL-3.0",
+    "topics": [
+      "all-in-one",
+      "apk",
+      "elf",
+      "exe",
+      "linux",
+      "malware",
+      "malware-analysis",
+      "mcp",
+      "mcp-server",
+      "osx",
+      "packer",
+      "python3",
+      "ransomware",
+      "security-tools",
+      "static-analysis",
+      "strings",
+      "suspicious-files",
+      "termux",
+      "threat-analysis",
+      "windows"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-08-12T08:54:42Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-14",
+  "lastChecked": "2026-08-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "All-in-One malware analysis tool.",
+    "Topics: all-in-one, apk, elf, exe, linux",
+    "GitHub stars: 2044",
+    "Last pushed: 2026-08-12"
+  ],
+  "id": "candidate-tool-github-cyb3rmx-qu1cksc0pe",
+  "canonicalKey": "tool:github:cyb3rmx/qu1cksc0pe",
+  "firstDiscoveredAt": "2026-08-14",
+  "lastSeenAt": "2026-08-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-14-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Qu1cksc0pe is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "All-in-One malware analysis tool.",
+      "Topics: all-in-one, apk, elf, exe, linux",
+      "GitHub stars: 2044"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-14",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "qu1cksc0pe",
+  "publishedAt": "2026-08-14"
+}

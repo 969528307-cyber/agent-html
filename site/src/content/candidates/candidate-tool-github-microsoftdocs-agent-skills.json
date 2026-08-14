@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "Agent-Skills",
+  "summary": "Curated Agent Skills for Microsoft & Azure – giving AI coding assistants structured, real-time expertise from Microsoft Learn docs.",
+  "sourceUrl": "https://github.com/MicrosoftDocs/Agent-Skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "MicrosoftDocs",
+    "repo": "Agent-Skills",
+    "fullName": "MicrosoftDocs/Agent-Skills",
+    "stars": 702,
+    "license": "CC-BY-4.0",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "agentic-skills",
+      "agentskill",
+      "ai",
+      "ai-agents",
+      "ai-coding",
+      "azure",
+      "azure-functions",
+      "azure-kubernetes-service",
+      "azure-openai",
+      "azure-sql-database",
+      "azure-storage",
+      "azure-virtual-machine",
+      "claude-code",
+      "github-copilot",
+      "microsoft-learn",
+      "openai-codex",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-10T03:53:03Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-14",
+  "lastChecked": "2026-08-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Curated Agent Skills for Microsoft & Azure – giving AI coding assistants structured, real-time expertise from Microsoft Learn docs.",
+    "Topics: agent, agent-skills, agentic-skills, agentskill, ai",
+    "GitHub stars: 702",
+    "Last pushed: 2026-08-10"
+  ],
+  "id": "candidate-tool-github-microsoftdocs-agent-skills",
+  "canonicalKey": "tool:github:microsoftdocs/agent-skills",
+  "firstDiscoveredAt": "2026-08-14",
+  "lastSeenAt": "2026-08-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-14-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Agent-Skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Curated Agent Skills for Microsoft & Azure – giving AI coding assistants structured, real-time expertise from Microsoft Learn docs.",
+      "Topics: agent, agent-skills, agentic-skills, agentskill, ai",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "agent-skills",
+  "publishedAt": "2026-08-14",
+  "reviewedAt": "2026-08-14",
+  "reviewedBy": "local-review"
+}

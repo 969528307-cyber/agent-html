@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "brooks-lint",
+  "summary": "AI code reviews grounded in 12 classic engineering books — decay risk diagnostics with book citations, severity labels, and 6 analysis modes including full-sweep auto-fix",
+  "sourceUrl": "https://github.com/hyhmrright/brooks-lint",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "hyhmrright",
+    "repo": "brooks-lint",
+    "fullName": "hyhmrright/brooks-lint",
+    "stars": 1311,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-code-review",
+      "architecture-review",
+      "auto-fix",
+      "claude-code",
+      "claude-code-plugin",
+      "clean-architecture",
+      "code-health",
+      "code-quality",
+      "code-review",
+      "code-smells",
+      "codex-cli-plugin",
+      "deepseek-harness",
+      "developer-tools",
+      "dsh-plugin",
+      "gemini-cli-extension",
+      "refactoring",
+      "static-analysis",
+      "tech-debt",
+      "test-quality"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-14T14:46:25Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-14",
+  "lastChecked": "2026-08-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI code reviews grounded in 12 classic engineering books — decay risk diagnostics with book citations, severity labels, and 6 analysis modes including full-sweep auto-fix",
+    "Topics: agent-skills, ai-code-review, architecture-review, auto-fix, claude-code",
+    "GitHub stars: 1311",
+    "Last pushed: 2026-08-14"
+  ],
+  "id": "candidate-tool-github-hyhmrright-brooks-lint",
+  "canonicalKey": "tool:github:hyhmrright/brooks-lint",
+  "firstDiscoveredAt": "2026-08-14",
+  "lastSeenAt": "2026-08-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-14-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "brooks-lint is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "AI code reviews grounded in 12 classic engineering books — decay risk diagnostics with book citations, severity labels, and 6 analysis modes including full-sweep auto-fix",
+      "Topics: agent-skills, ai-code-review, architecture-review, auto-fix, claude-code",
+      "GitHub stars: 1311"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-14",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "brooks-lint",
+  "publishedAt": "2026-08-14"
+}
