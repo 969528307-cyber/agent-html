@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "projectmem",
+  "summary": "Local-first AI coding memory for AI agents. Records issues, attempts, fixes and decisions, then warns your agent before it repeats an approach that already failed. Native MCP server for Claude Code, Cursor, Antigravity and Codex. 100% local, no cloud, no telemetry. MIT.",
+  "sourceUrl": "https://github.com/riponcm/projectmem",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "riponcm",
+    "repo": "projectmem",
+    "fullName": "riponcm/projectmem",
+    "stars": 707,
+    "license": "MIT",
+    "topics": [
+      "agent-memory",
+      "ai-agents",
+      "ai-memory",
+      "ai-tools",
+      "antigravity",
+      "claude",
+      "claude-code",
+      "codex",
+      "coding-assistant",
+      "context-engineering",
+      "cursor",
+      "developer-tools",
+      "knowledge-management",
+      "llm",
+      "local-first",
+      "mcp",
+      "mcp-server",
+      "memory",
+      "model-context-protocol",
+      "python"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-06T01:49:30Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-16",
+  "lastChecked": "2026-08-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Local-first AI coding memory for AI agents. Records issues, attempts, fixes and decisions, then warns your agent before it repeats an approach that already failed. Native MCP server for Claude Code, C",
+    "Topics: agent-memory, ai-agents, ai-memory, ai-tools, antigravity",
+    "GitHub stars: 707",
+    "Last pushed: 2026-08-06"
+  ],
+  "id": "candidate-tool-github-riponcm-projectmem",
+  "canonicalKey": "tool:github:riponcm/projectmem",
+  "firstDiscoveredAt": "2026-08-16",
+  "lastSeenAt": "2026-08-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-16-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "projectmem is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Local-first AI coding memory for AI agents. Records issues, attempts, fixes and decisions, then warns your agent before it repeats an approach that already failed. Native MCP server for Claude Code, C",
+      "Topics: agent-memory, ai-agents, ai-memory, ai-tools, antigravity",
+      "GitHub stars: 707"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "projectmem",
+  "publishedAt": "2026-08-16"
+}

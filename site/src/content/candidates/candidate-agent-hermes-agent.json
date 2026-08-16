@@ -24,7 +24,7 @@
     ]
   },
   "discoveredAt": "2026-05-16",
-  "lastChecked": "2026-08-15",
+  "lastChecked": "2026-08-16",
   "discoveredFrom": "directory",
   "summary": "Nous Research's open-source, terminal-oriented agent with skills, MCP integration, local execution, and a large Skills Hub ecosystem.",
   "proposedCategory": [
@@ -98,7 +98,7 @@
   },
   "canonicalKey": "agent:hermes-agent",
   "firstDiscoveredAt": "2026-05-16",
-  "lastSeenAt": "2026-08-15",
+  "lastSeenAt": "2026-08-16",
   "crawlRuns": [
     {
       "runId": "2026-05-18-agents",
@@ -531,6 +531,12 @@
       "module": "agents",
       "sourceRegistryId": "local-agents-library",
       "seenAt": "2026-08-15"
+    },
+    {
+      "runId": "2026-08-16-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-08-16"
     }
   ],
   "enrichmentDecision": "needs_editor_review",

@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "tty7",
+  "summary": "A terminal workbench in pure Rust: shells, persistent sessions, SSH, coding agents. GPU-rendered on Zed's gpui, VT core from Alacritty.",
+  "sourceUrl": "https://github.com/l0ng-ai/tty7",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "l0ng-ai",
+    "repo": "tty7",
+    "fullName": "l0ng-ai/tty7",
+    "stars": 725,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "alacritty",
+      "claude-code",
+      "coding-agent",
+      "cross-platform",
+      "daemon",
+      "developer-tools",
+      "gpu",
+      "gpui",
+      "linux",
+      "macos",
+      "pty",
+      "rust",
+      "shell",
+      "ssh",
+      "terminal",
+      "terminal-emulator",
+      "terminal-multiplexer",
+      "tmux",
+      "windows"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-16T16:03:41Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-16",
+  "lastChecked": "2026-08-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A terminal workbench in pure Rust: shells, persistent sessions, SSH, coding agents. GPU-rendered on Zed's gpui, VT core from Alacritty.",
+    "Topics: ai-agents, alacritty, claude-code, coding-agent, cross-platform",
+    "GitHub stars: 725",
+    "Last pushed: 2026-08-16"
+  ],
+  "id": "candidate-tool-github-l0ng-ai-tty7",
+  "canonicalKey": "tool:github:l0ng-ai/tty7",
+  "firstDiscoveredAt": "2026-08-16",
+  "lastSeenAt": "2026-08-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-16-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "tty7 is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "A terminal workbench in pure Rust: shells, persistent sessions, SSH, coding agents. GPU-rendered on Zed's gpui, VT core from Alacritty.",
+      "Topics: ai-agents, alacritty, claude-code, coding-agent, cross-platform",
+      "GitHub stars: 725"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "tty7",
+  "publishedAt": "2026-08-16"
+}

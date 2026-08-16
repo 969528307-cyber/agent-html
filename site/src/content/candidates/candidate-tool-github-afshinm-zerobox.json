@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "zerobox",
+  "summary": "Lightweight, cross-platform process sandboxing powered by OpenAI Codex's runtime. Sandbox any command with file, network, and credential controls.",
+  "sourceUrl": "https://github.com/afshinm/zerobox",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "afshinm",
+    "repo": "zerobox",
+    "fullName": "afshinm/zerobox",
+    "stars": 702,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "cli",
+      "llm",
+      "llm-sandbox",
+      "mcp",
+      "mcp-security",
+      "openclaw",
+      "process-isolation",
+      "rust",
+      "sandbox",
+      "security",
+      "security-tools",
+      "vault"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-17T22:06:15Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-16",
+  "lastChecked": "2026-08-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Lightweight, cross-platform process sandboxing powered by OpenAI Codex's runtime. Sandbox any command with file, network, and credential controls.",
+    "Topics: ai-agents, cli, llm, llm-sandbox, mcp",
+    "GitHub stars: 702",
+    "Last pushed: 2026-05-17"
+  ],
+  "id": "candidate-tool-github-afshinm-zerobox",
+  "canonicalKey": "tool:github:afshinm/zerobox",
+  "firstDiscoveredAt": "2026-08-16",
+  "lastSeenAt": "2026-08-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-16-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "zerobox is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Lightweight, cross-platform process sandboxing powered by OpenAI Codex's runtime. Sandbox any command with file, network, and credential controls.",
+      "Topics: ai-agents, cli, llm, llm-sandbox, mcp",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "zerobox",
+  "publishedAt": "2026-08-16"
+}
