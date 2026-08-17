@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "FofaMap",
+  "summary": "一款证据驱动的 FOFA 资产测绘智能体：支持自然语言侦察、AI 反思、CLI / MCP / Skill / REST API，以及经人工审批的 Nuclei 扫描。",
+  "sourceUrl": "https://github.com/asaotomo/FofaMap",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "asaotomo",
+    "repo": "FofaMap",
+    "fullName": "asaotomo/FofaMap",
+    "stars": 700,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agent",
+      "asset-discovery",
+      "asset-mapping",
+      "attack-surface-management",
+      "cybersecurity",
+      "fastapi",
+      "fofa",
+      "fofa-api",
+      "mcp",
+      "model-context-protocol",
+      "nuclei",
+      "osint",
+      "python",
+      "red-team",
+      "security-tools"
+    ],
+    "defaultBranch": "v2.0.1",
+    "lastPushedAt": "2026-08-16T17:44:59Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-17",
+  "lastChecked": "2026-08-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "一款证据驱动的 FOFA 资产测绘智能体：支持自然语言侦察、AI 反思、CLI / MCP / Skill / REST API，以及经人工审批的 Nuclei 扫描。",
+    "Topics: ai-agent, asset-discovery, asset-mapping, attack-surface-management, cybersecurity",
+    "GitHub stars: 700",
+    "Last pushed: 2026-08-16"
+  ],
+  "id": "candidate-tool-github-asaotomo-fofamap",
+  "canonicalKey": "tool:github:asaotomo/fofamap",
+  "firstDiscoveredAt": "2026-08-17",
+  "lastSeenAt": "2026-08-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-17-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "FofaMap is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "一款证据驱动的 FOFA 资产测绘智能体：支持自然语言侦察、AI 反思、CLI / MCP / Skill / REST API，以及经人工审批的 Nuclei 扫描。",
+      "Topics: ai-agent, asset-discovery, asset-mapping, attack-surface-management, cybersecurity",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "fofamap",
+  "publishedAt": "2026-08-17"
+}

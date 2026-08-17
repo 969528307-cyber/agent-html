@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "J-Space-Cognition-Suite-V3.6",
+  "summary": "J-Space Cognition Suite V3.6 - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research. | 哔哩哔哩：Tiger380 (UID 3494375382321675) — https://space.bilibili.com/3494375382321675",
+  "sourceUrl": "https://github.com/Tiger3807861189/J-Space-Cognition-Suite-V3.6",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Tiger3807861189",
+    "repo": "J-Space-Cognition-Suite-V3.6",
+    "fullName": "Tiger3807861189/J-Space-Cognition-Suite-V3.6",
+    "stars": 983,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "claude-code",
+      "codex",
+      "cognitive-enhancement",
+      "deepseek",
+      "deepseek-harness",
+      "developer-tools",
+      "dsh",
+      "dsh-plugin",
+      "global-workspace",
+      "hermes-agent",
+      "inference-time-control",
+      "j-space",
+      "opencode",
+      "react",
+      "tailwindcss"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-17T09:21:48Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-17",
+  "lastChecked": "2026-08-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "J-Space Cognition Suite V3.6 - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research. | 哔哩哔哩：Tiger380 (UID 3494375382321675) — https://space.bilibili.com/3494375382321",
+    "Topics: agent-skills, ai, ai-agent, ai-agents, claude-code",
+    "GitHub stars: 983",
+    "Last pushed: 2026-08-17"
+  ],
+  "id": "candidate-tool-github-tiger3807861189-j-space-cognition-suite-v3-6",
+  "canonicalKey": "tool:github:tiger3807861189/j-space-cognition-suite-v3.6",
+  "firstDiscoveredAt": "2026-08-17",
+  "lastSeenAt": "2026-08-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-17-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "J-Space-Cognition-Suite-V3.6 is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "J-Space Cognition Suite V3.6 - AI cognitive-enhancement Skills based on Anthropic's J-space global workspace research. | 哔哩哔哩：Tiger380 (UID 3494375382321675) — https://space.bilibili.com/3494375382321",
+      "Topics: agent-skills, ai, ai-agent, ai-agents, claude-code",
+      "GitHub stars: 983"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "j-space-cognition-suite-v3-6",
+  "publishedAt": "2026-08-17"
+}
