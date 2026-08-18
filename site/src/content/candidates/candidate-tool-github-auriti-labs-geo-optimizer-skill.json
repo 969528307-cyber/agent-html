@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "geo-optimizer-skill",
+  "summary": "Open-source Answer Engine Optimization (AEO) & Generative Engine Optimization (GEO) toolkit — audit, optimize & track whether ChatGPT, Perplexity, Gemini & Google AI Overviews cite your site. AI SEO / LLM SEO. CLI, Python, MCP, Astro.",
+  "sourceUrl": "https://github.com/Auriti-Labs/geo-optimizer-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Auriti-Labs",
+    "repo": "geo-optimizer-skill",
+    "fullName": "Auriti-Labs/geo-optimizer-skill",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "aeo",
+      "ai-search-optimization",
+      "ai-seo",
+      "ai-visibility",
+      "answer-engine-optimization",
+      "astro",
+      "chatgpt",
+      "citation-tracking",
+      "claude",
+      "cli",
+      "gemini",
+      "generative-engine-optimization",
+      "geo",
+      "llm-seo",
+      "llms-txt",
+      "mcp",
+      "perplexity",
+      "python",
+      "schema-markup",
+      "seo"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-17T04:34:57Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-18",
+  "lastChecked": "2026-08-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source Answer Engine Optimization (AEO) & Generative Engine Optimization (GEO) toolkit — audit, optimize & track whether ChatGPT, Perplexity, Gemini & Google AI Overviews cite your site. AI SEO /",
+    "Topics: aeo, ai-search-optimization, ai-seo, ai-visibility, answer-engine-optimization",
+    "GitHub stars: 700",
+    "Last pushed: 2026-08-17"
+  ],
+  "id": "candidate-tool-github-auriti-labs-geo-optimizer-skill",
+  "canonicalKey": "tool:github:auriti-labs/geo-optimizer-skill",
+  "firstDiscoveredAt": "2026-08-18",
+  "lastSeenAt": "2026-08-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-18-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "geo-optimizer-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source Answer Engine Optimization (AEO) & Generative Engine Optimization (GEO) toolkit — audit, optimize & track whether ChatGPT, Perplexity, Gemini & Google AI Overviews cite your site. AI SEO /",
+      "Topics: aeo, ai-search-optimization, ai-seo, ai-visibility, answer-engine-optimization",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "geo-optimizer-skill",
+  "publishedAt": "2026-08-18"
+}

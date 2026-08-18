@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "MindMemOS",
+  "summary": "",
+  "sourceUrl": "https://github.com/mindscale-noah/MindMemOS",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "mindscale-noah",
+    "repo": "MindMemOS",
+    "fullName": "mindscale-noah/MindMemOS",
+    "stars": 938,
+    "license": "",
+    "topics": [
+      "agent",
+      "agent-memory",
+      "agent-skills",
+      "agentic",
+      "dsh-plugin",
+      "dsh-plugins",
+      "openclaw",
+      "openclaw-agent",
+      "openclaw-plugin",
+      "rag",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-18T11:40:58Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-18",
+  "lastChecked": "2026-08-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Topics: agent, agent-memory, agent-skills, agentic, dsh-plugin",
+    "GitHub stars: 938",
+    "Last pushed: 2026-08-18"
+  ],
+  "id": "candidate-tool-github-mindscale-noah-mindmemos",
+  "canonicalKey": "tool:github:mindscale-noah/mindmemos",
+  "firstDiscoveredAt": "2026-08-18",
+  "lastSeenAt": "2026-08-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-18-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "MindMemOS is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Topics: agent, agent-memory, agent-skills, agentic, dsh-plugin",
+      "GitHub stars: 938",
+      "Last pushed: 2026-08-18"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mindmemos",
+  "publishedAt": "2026-08-18"
+}

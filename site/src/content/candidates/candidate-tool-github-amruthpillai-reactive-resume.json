@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "reactive-resume",
+  "summary": "A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!",
+  "sourceUrl": "https://github.com/amruthpillai/reactive-resume",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "amruthpillai",
+    "repo": "reactive-resume",
+    "fullName": "amruthpillai/reactive-resume",
+    "stars": 40992,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "dsh-plugin",
+      "hacktoberfest",
+      "javascript",
+      "mcp-server",
+      "react",
+      "resume-builder",
+      "self-hosted",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-18T18:43:31Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-18",
+  "lastChecked": "2026-08-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!",
+    "Topics: agent-skills, ai, dsh-plugin, hacktoberfest, javascript",
+    "GitHub stars: 40992",
+    "Last pushed: 2026-08-18"
+  ],
+  "id": "candidate-tool-github-amruthpillai-reactive-resume",
+  "canonicalKey": "tool:github:amruthpillai/reactive-resume",
+  "firstDiscoveredAt": "2026-08-18",
+  "lastSeenAt": "2026-08-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-18-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "reactive-resume is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!",
+      "Topics: agent-skills, ai, dsh-plugin, hacktoberfest, javascript",
+      "GitHub stars: 40992"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "reactive-resume",
+  "publishedAt": "2026-08-18"
+}

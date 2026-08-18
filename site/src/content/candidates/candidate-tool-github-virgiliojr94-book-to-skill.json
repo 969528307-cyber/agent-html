@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "book-to-skill",
+  "summary": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+  "sourceUrl": "https://github.com/virgiliojr94/book-to-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "virgiliojr94",
+    "repo": "book-to-skill",
+    "fullName": "virgiliojr94/book-to-skill",
+    "stars": 22818,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "book-to-skill",
+      "context-engineering",
+      "document-processing",
+      "edtech",
+      "knowledge-base",
+      "knowledge-management",
+      "llm",
+      "pdf-to-markdown",
+      "rag",
+      "self-study",
+      "study-tools"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-08-18T19:41:14Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-18",
+  "lastChecked": "2026-08-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+    "Topics: agent-skills, ai-agents, book-to-skill, context-engineering, document-processing",
+    "GitHub stars: 22818",
+    "Last pushed: 2026-08-18"
+  ],
+  "id": "candidate-tool-github-virgiliojr94-book-to-skill",
+  "canonicalKey": "tool:github:virgiliojr94/book-to-skill",
+  "firstDiscoveredAt": "2026-08-18",
+  "lastSeenAt": "2026-08-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-18-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "book-to-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "Topics: agent-skills, ai-agents, book-to-skill, context-engineering, document-processing",
+      "GitHub stars: 22818"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "book-to-skill",
+  "publishedAt": "2026-08-18",
+  "reviewedAt": "2026-08-18",
+  "reviewedBy": "local-review"
+}

@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "im-not-ai",
+  "summary": "AI가 쓴 한글을 사람 글처럼 윤문하는 Claude 스킬 — Korean AI-text humanizer: detects and rewrites translationese, mechanical parallelism, and 71 other AI tells",
+  "sourceUrl": "https://github.com/epoko77-ai/im-not-ai",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "epoko77-ai",
+    "repo": "im-not-ai",
+    "fullName": "epoko77-ai/im-not-ai",
+    "stars": 4495,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-detection",
+      "claude",
+      "claude-code",
+      "claude-skill",
+      "humanizer",
+      "korean",
+      "korean-nlp",
+      "llm",
+      "nlp",
+      "translationese",
+      "writing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-18T11:25:15Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-18",
+  "lastChecked": "2026-08-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI가 쓴 한글을 사람 글처럼 윤문하는 Claude 스킬 — Korean AI-text humanizer: detects and rewrites translationese, mechanical parallelism, and 71 other AI tells",
+    "Topics: agent-skills, ai-detection, claude, claude-code, claude-skill",
+    "GitHub stars: 4495",
+    "Last pushed: 2026-08-18"
+  ],
+  "id": "candidate-tool-github-epoko77-ai-im-not-ai",
+  "canonicalKey": "tool:github:epoko77-ai/im-not-ai",
+  "firstDiscoveredAt": "2026-08-18",
+  "lastSeenAt": "2026-08-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-18-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "im-not-ai is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "AI가 쓴 한글을 사람 글처럼 윤문하는 Claude 스킬 — Korean AI-text humanizer: detects and rewrites translationese, mechanical parallelism, and 71 other AI tells",
+      "Topics: agent-skills, ai-detection, claude, claude-code, claude-skill",
+      "GitHub stars: 4495"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "im-not-ai",
+  "publishedAt": "2026-08-18"
+}
