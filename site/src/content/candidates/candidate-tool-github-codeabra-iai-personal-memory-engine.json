@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "iai-personal-memory-engine",
+  "summary": "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time. Free, local, works with Cursor, Claude Code, Codex, OpenClaw, Hermes and more. MIT.",
+  "sourceUrl": "https://github.com/CodeAbra/iai-personal-memory-engine",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "CodeAbra",
+    "repo": "iai-personal-memory-engine",
+    "fullName": "CodeAbra/iai-personal-memory-engine",
+    "stars": 719,
+    "license": "MIT",
+    "topics": [
+      "agent-memory",
+      "ai-memory",
+      "claude",
+      "claude-code",
+      "codex",
+      "cursor",
+      "encrypted",
+      "episodic-memory",
+      "gemini",
+      "llm-memory",
+      "local-first",
+      "long-term-memory",
+      "mcp",
+      "mcp-memory",
+      "mcp-server",
+      "model-context-protocol",
+      "persistent-memory",
+      "rag-alternative",
+      "vector-database"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-20T17:58:06Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-20",
+  "lastChecked": "2026-08-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time. Free, local, works with Cursor, Claude Code, Codex, OpenClaw, Hermes and more.",
+    "Topics: agent-memory, ai-memory, claude, claude-code, codex",
+    "GitHub stars: 719",
+    "Last pushed: 2026-08-20"
+  ],
+  "id": "candidate-tool-github-codeabra-iai-personal-memory-engine",
+  "canonicalKey": "tool:github:codeabra/iai-personal-memory-engine",
+  "firstDiscoveredAt": "2026-08-20",
+  "lastSeenAt": "2026-08-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-20-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "iai-personal-memory-engine is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A cyber brain for your AI. It never forgets a detail, remembers exactly what you said, and learns how you work over time. Free, local, works with Cursor, Claude Code, Codex, OpenClaw, Hermes and more.",
+      "Topics: agent-memory, ai-memory, claude, claude-code, codex",
+      "GitHub stars: 719"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "iai-personal-memory-engine",
+  "publishedAt": "2026-08-20"
+}

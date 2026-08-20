@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "maka",
+  "summary": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+  "sourceUrl": "https://github.com/apache/maka",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "apache",
+    "repo": "maka",
+    "fullName": "apache/maka",
+    "stars": 1869,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-runtime",
+      "ai",
+      "ai-agent",
+      "apache",
+      "cli",
+      "desktop",
+      "electron",
+      "event-sourcing",
+      "llm",
+      "local-first",
+      "maka",
+      "tool-use",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-20T19:42:21Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-20",
+  "lastChecked": "2026-08-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+    "Topics: agent-runtime, ai, ai-agent, apache, cli",
+    "GitHub stars: 1869",
+    "Last pushed: 2026-08-20"
+  ],
+  "id": "candidate-tool-github-apache-maka",
+  "canonicalKey": "tool:github:apache/maka",
+  "firstDiscoveredAt": "2026-08-20",
+  "lastSeenAt": "2026-08-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-20-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "maka is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+      "Topics: agent-runtime, ai, ai-agent, apache, cli",
+      "GitHub stars: 1869"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "maka",
+  "publishedAt": "2026-08-20"
+}
