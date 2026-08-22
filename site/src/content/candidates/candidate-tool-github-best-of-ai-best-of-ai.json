@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "best-of-ai",
+  "summary": "A curated list of best ai tools",
+  "sourceUrl": "https://github.com/best-of-ai/best-of-ai",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "best-of-ai",
+    "repo": "best-of-ai",
+    "fullName": "best-of-ai/best-of-ai",
+    "stars": 700,
+    "license": "",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "ai-assistant",
+      "ai-chatbot",
+      "ai-engineering",
+      "ai-tools",
+      "ai-tools-directory",
+      "awesome",
+      "awesome-list",
+      "best-ai-tools",
+      "best-of-ai",
+      "bestofai",
+      "free-ai-tools",
+      "top-ai-tools"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-17T21:38:26Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-22",
+  "lastChecked": "2026-08-22",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A curated list of best ai tools",
+    "Topics: ai, ai-agent, ai-agents, ai-assistant, ai-chatbot",
+    "GitHub stars: 700",
+    "Last pushed: 2026-08-17"
+  ],
+  "id": "candidate-tool-github-best-of-ai-best-of-ai",
+  "canonicalKey": "tool:github:best-of-ai/best-of-ai",
+  "firstDiscoveredAt": "2026-08-22",
+  "lastSeenAt": "2026-08-22",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-22-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-22"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "best-of-ai is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "A curated list of best ai tools",
+      "Topics: ai, ai-agent, ai-agents, ai-assistant, ai-chatbot",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-22",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "best-of-ai",
+  "publishedAt": "2026-08-22"
+}

@@ -24,7 +24,7 @@
     ]
   },
   "discoveredAt": "2026-05-16",
-  "lastChecked": "2026-08-21",
+  "lastChecked": "2026-08-22",
   "discoveredFrom": "directory",
   "summary": "A high-signal open agent ecosystem centered on local gateway architecture, skills, plugins, tools, MCP, and community extension review.",
   "proposedCategory": [
@@ -92,7 +92,7 @@
   },
   "canonicalKey": "agent:openclaw",
   "firstDiscoveredAt": "2026-05-16",
-  "lastSeenAt": "2026-08-21",
+  "lastSeenAt": "2026-08-22",
   "crawlRuns": [
     {
       "runId": "2026-05-18-agents",
@@ -561,6 +561,12 @@
       "module": "agents",
       "sourceRegistryId": "local-agents-library",
       "seenAt": "2026-08-21"
+    },
+    {
+      "runId": "2026-08-22-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-08-22"
     }
   ],
   "enrichmentDecision": "needs_editor_review",

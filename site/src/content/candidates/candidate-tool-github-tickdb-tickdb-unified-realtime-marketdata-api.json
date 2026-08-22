@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "tickdb-unified-realtime-marketdata-api",
+  "summary": "TickDB: AI-native real time stock API and market data API for US stocks, HK stocks, A-shares, forex, crypto, indices and commodities. Skill, CLI, MCP, REST API and WebSocket. AI 原生实时股票 API 与金融行情数据 API，支持美股、港股、A 股、外汇、加密货币、指数和大宗商品。",
+  "sourceUrl": "https://github.com/TickDB/tickdb-unified-realtime-marketdata-api",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "TickDB",
+    "repo": "tickdb-unified-realtime-marketdata-api",
+    "fullName": "TickDB/tickdb-unified-realtime-marketdata-api",
+    "stars": 702,
+    "license": "MIT",
+    "topics": [
+      "ai-tools",
+      "cli-tool",
+      "commodities",
+      "cryptocurrency",
+      "financial-data",
+      "forex",
+      "indices",
+      "market-data",
+      "mcp",
+      "order-book",
+      "real-time",
+      "rest-api",
+      "skill",
+      "stock",
+      "stock-api",
+      "stock-data",
+      "stock-market",
+      "stocks",
+      "tick-data",
+      "websocket"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-06-20T15:31:17Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-22",
+  "lastChecked": "2026-08-22",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "TickDB: AI-native real time stock API and market data API for US stocks, HK stocks, A-shares, forex, crypto, indices and commodities. Skill, CLI, MCP, REST API and WebSocket. AI 原生实时股票 API 与金融行情数据 API",
+    "Topics: ai-tools, cli-tool, commodities, cryptocurrency, financial-data",
+    "GitHub stars: 702",
+    "Last pushed: 2026-06-20"
+  ],
+  "id": "candidate-tool-github-tickdb-tickdb-unified-realtime-marketdata-api",
+  "canonicalKey": "tool:github:tickdb/tickdb-unified-realtime-marketdata-api",
+  "firstDiscoveredAt": "2026-08-22",
+  "lastSeenAt": "2026-08-22",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-22-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-22"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "tickdb-unified-realtime-marketdata-api is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "TickDB: AI-native real time stock API and market data API for US stocks, HK stocks, A-shares, forex, crypto, indices and commodities. Skill, CLI, MCP, REST API and WebSocket. AI 原生实时股票 API 与金融行情数据 API",
+      "Topics: ai-tools, cli-tool, commodities, cryptocurrency, financial-data",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-22",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "tickdb-unified-realtime-marketdata-api",
+  "publishedAt": "2026-08-22"
+}
