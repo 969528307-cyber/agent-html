@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "autoprompt-skill",
+  "summary": "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+  "sourceUrl": "https://github.com/Spielewoy/autoprompt-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Spielewoy",
+    "repo": "autoprompt-skill",
+    "fullName": "Spielewoy/autoprompt-skill",
+    "stars": 757,
+    "license": "MIT",
+    "topics": [
+      "agent-orchestration",
+      "agent-skills",
+      "agentic-workflows",
+      "ai-agents",
+      "ai-coding",
+      "automated-testing",
+      "autonomous-agents",
+      "claude-code",
+      "cli",
+      "code-review",
+      "codex",
+      "coding-agent",
+      "developer-tools",
+      "github-copilot",
+      "multi-agent-systems",
+      "opencode",
+      "prompt-engineering",
+      "subagents",
+      "test-driven-development",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-21T16:35:53Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-23",
+  "lastChecked": "2026-08-23",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+    "Topics: agent-orchestration, agent-skills, agentic-workflows, ai-agents, ai-coding",
+    "GitHub stars: 757",
+    "Last pushed: 2026-08-21"
+  ],
+  "id": "candidate-tool-github-spielewoy-autoprompt-skill",
+  "canonicalKey": "tool:github:spielewoy/autoprompt-skill",
+  "firstDiscoveredAt": "2026-08-23",
+  "lastSeenAt": "2026-08-23",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-23-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-23"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "autoprompt-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+      "Topics: agent-orchestration, agent-skills, agentic-workflows, ai-agents, ai-coding",
+      "GitHub stars: 757"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-23",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "autoprompt-skill",
+  "publishedAt": "2026-08-23"
+}

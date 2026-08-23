@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "tick-stock-panel",
+  "summary": "TSP自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台 | 基于 TickFlow 数据源  | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源 ,非第三方官方项目",
+  "sourceUrl": "https://github.com/shy3130/tick-stock-panel",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "shy3130",
+    "repo": "tick-stock-panel",
+    "fullName": "shy3130/tick-stock-panel",
+    "stars": 3534,
+    "license": "MIT",
+    "topics": [
+      "a-stock",
+      "ai-agent",
+      "aigc",
+      "backtesting",
+      "daily",
+      "duckdb",
+      "fastapi",
+      "llm",
+      "polars",
+      "quant",
+      "quantitative-finance",
+      "quantitative-trading",
+      "react",
+      "screener",
+      "self-hosted",
+      "stock",
+      "stock-analysis",
+      "tdx",
+      "tickflow",
+      "tsp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-23T13:31:39Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-23",
+  "lastChecked": "2026-08-23",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "TSP自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台 | 基于 TickFlow 数据源  | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源 ,非第三方官方项目",
+    "Topics: a-stock, ai-agent, aigc, backtesting, daily",
+    "GitHub stars: 3534",
+    "Last pushed: 2026-08-23"
+  ],
+  "id": "candidate-tool-github-shy3130-tick-stock-panel",
+  "canonicalKey": "tool:github:shy3130/tick-stock-panel",
+  "firstDiscoveredAt": "2026-08-23",
+  "lastSeenAt": "2026-08-23",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-23-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-23"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "tick-stock-panel is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "TSP自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台 | 基于 TickFlow 数据源  | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源 ,非第三方官方项目",
+      "Topics: a-stock, ai-agent, aigc, backtesting, daily",
+      "GitHub stars: 3534"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-23",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "tick-stock-panel",
+  "publishedAt": "2026-08-23"
+}
