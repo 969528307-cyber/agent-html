@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "DevOps-Security-Agent-Skills",
+  "summary": "Agent-ready DevOps, security, infrastructure, and compliance knowledge base with 80+ skills across Kubernetes, Terraform, AWS/Azure/GCP, AI platform operations, container hardening, SOC2/ISO27001, and incident response—plus ready-to-run scripts, templates, and playbooks for SRE, platform, and securi",
+  "sourceUrl": "https://github.com/BagelHole/DevOps-Security-Agent-Skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "BagelHole",
+    "repo": "DevOps-Security-Agent-Skills",
+    "fullName": "BagelHole/DevOps-Security-Agent-Skills",
+    "stars": 768,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "agentic-ai",
+      "ai-agents",
+      "aws",
+      "cheatsheets",
+      "compliance",
+      "devops",
+      "docker",
+      "infrastructure-as-code",
+      "kubernetes",
+      "security",
+      "sre",
+      "terraform"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-05-22T13:07:20Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-24",
+  "lastChecked": "2026-08-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Agent-ready DevOps, security, infrastructure, and compliance knowledge base with 80+ skills across Kubernetes, Terraform, AWS/Azure/GCP, AI platform operations, container hardening, SOC2/ISO27001, and",
+    "Topics: agent-skills, agentic-ai, ai-agents, aws, cheatsheets",
+    "GitHub stars: 768",
+    "Last pushed: 2026-05-22"
+  ],
+  "id": "candidate-tool-github-bagelhole-devops-security-agent-skills",
+  "canonicalKey": "tool:github:bagelhole/devops-security-agent-skills",
+  "firstDiscoveredAt": "2026-08-24",
+  "lastSeenAt": "2026-08-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-24-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "DevOps-Security-Agent-Skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Agent-ready DevOps, security, infrastructure, and compliance knowledge base with 80+ skills across Kubernetes, Terraform, AWS/Azure/GCP, AI platform operations, container hardening, SOC2/ISO27001, and",
+      "Topics: agent-skills, agentic-ai, ai-agents, aws, cheatsheets",
+      "GitHub stars: 768"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "devops-security-agent-skills",
+  "publishedAt": "2026-08-24"
+}

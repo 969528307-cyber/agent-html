@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "ux-ui-agent-skills",
+  "summary": "Turn Claude into a Senior Design Architect — DTCG design tokens, 42 components, WCAG 2.2 accessibility, any-framework code, 138 design systems, and runnable skills.",
+  "sourceUrl": "https://github.com/plugin87/ux-ui-agent-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "plugin87",
+    "repo": "ux-ui-agent-skills",
+    "fullName": "plugin87/ux-ui-agent-skills",
+    "stars": 713,
+    "license": "",
+    "topics": [
+      "accessibility",
+      "ai-agents",
+      "claude",
+      "claude-code",
+      "claude-skills",
+      "component-library",
+      "design-system",
+      "design-to-code",
+      "design-tokens",
+      "dtcg",
+      "figma",
+      "react",
+      "tailwindcss",
+      "ui",
+      "ux",
+      "wcag"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-24T07:20:57Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-24",
+  "lastChecked": "2026-08-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Turn Claude into a Senior Design Architect — DTCG design tokens, 42 components, WCAG 2.2 accessibility, any-framework code, 138 design systems, and runnable skills.",
+    "Topics: accessibility, ai-agents, claude, claude-code, claude-skills",
+    "GitHub stars: 713",
+    "Last pushed: 2026-08-24"
+  ],
+  "id": "candidate-tool-github-plugin87-ux-ui-agent-skills",
+  "canonicalKey": "tool:github:plugin87/ux-ui-agent-skills",
+  "firstDiscoveredAt": "2026-08-24",
+  "lastSeenAt": "2026-08-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-24-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "ux-ui-agent-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Turn Claude into a Senior Design Architect — DTCG design tokens, 42 components, WCAG 2.2 accessibility, any-framework code, 138 design systems, and runnable skills.",
+      "Topics: accessibility, ai-agents, claude, claude-code, claude-skills",
+      "GitHub stars: 713"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ux-ui-agent-skills",
+  "publishedAt": "2026-08-24"
+}

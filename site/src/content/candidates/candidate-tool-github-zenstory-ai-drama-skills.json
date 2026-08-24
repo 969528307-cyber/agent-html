@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "drama-skills",
+  "summary": "AI 短剧/漫剧创作 skill 合集，覆盖剧本、资产、分镜、图片/视频提示词到独立审查全链路，适配 Claude Code 与 Codex。| An AI short-drama skill suite for Claude Code & Codex: scripts, assets, storyboards, image/video prompts, and independent review.",
+  "sourceUrl": "https://github.com/zenstory-ai/drama-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "zenstory-ai",
+    "repo": "drama-skills",
+    "fullName": "zenstory-ai/drama-skills",
+    "stars": 1071,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "aigc",
+      "claude-code",
+      "codex",
+      "prompt-engineering",
+      "screenwriting",
+      "short-drama",
+      "storyboard"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-24T14:27:50Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-24",
+  "lastChecked": "2026-08-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI 短剧/漫剧创作 skill 合集，覆盖剧本、资产、分镜、图片/视频提示词到独立审查全链路，适配 Claude Code 与 Codex。| An AI short-drama skill suite for Claude Code & Codex: scripts, assets, storyboards, image/video prompts, and independent revie",
+    "Topics: agent-skills, aigc, claude-code, codex, prompt-engineering",
+    "GitHub stars: 1071",
+    "Last pushed: 2026-08-24"
+  ],
+  "id": "candidate-tool-github-zenstory-ai-drama-skills",
+  "canonicalKey": "tool:github:zenstory-ai/drama-skills",
+  "firstDiscoveredAt": "2026-08-24",
+  "lastSeenAt": "2026-08-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-24-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "drama-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "AI 短剧/漫剧创作 skill 合集，覆盖剧本、资产、分镜、图片/视频提示词到独立审查全链路，适配 Claude Code 与 Codex。| An AI short-drama skill suite for Claude Code & Codex: scripts, assets, storyboards, image/video prompts, and independent revie",
+      "Topics: agent-skills, aigc, claude-code, codex, prompt-engineering",
+      "GitHub stars: 1071"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "drama-skills",
+  "publishedAt": "2026-08-24",
+  "reviewedAt": "2026-08-24",
+  "reviewedBy": "local-review"
+}

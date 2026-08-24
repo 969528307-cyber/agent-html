@@ -1,0 +1,69 @@
+{
+  "id": "x64dbg-mcp-server",
+  "name": "x64dbg-mcp-server",
+  "type": "workflow",
+  "status": "published",
+  "summary": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Z",
+  "description": "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg programmatically: set breakpoints, step through code, read memory, dump registers, and more.  Built with Z",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/duty1g/x64dbg-mcp-server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/duty1g/x64dbg-mcp-server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/duty1g/x64dbg-mcp-server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/duty1g/x64dbg-mcp-server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/duty1g/x64dbg-mcp-server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "x64dbg-MCP Server is a native MCP (Model Context Protocol) plugin for x64dbg that exposes the debugger's full functionality over HTTP. Connect any MCP-compatible AI assistant and control x64dbg progra",
+    "Topics: ai-agents, ai-debugging, binary-analysis, claude, claude-code",
+    "GitHub stars: 1185",
+    "Last pushed: 2026-08-24"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-08-24T08:42:34Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/duty1g/x64dbg-mcp-server",
+  "repoUrl": "https://github.com/duty1g/x64dbg-mcp-server",
+  "license": "MIT",
+  "stars": 1185,
+  "lastUpdated": "2026-08-24T08:42:34Z",
+  "lastChecked": "2026-08-24",
+  "publishedAt": "2026-08-24",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

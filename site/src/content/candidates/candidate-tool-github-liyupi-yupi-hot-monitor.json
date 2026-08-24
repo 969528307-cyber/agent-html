@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "yupi-hot-monitor",
+  "summary": "2026 年编程导航 AI 编程实战新项目，基于 Node.js + Express + React + OpenRouter 的 AI 热点监控工具，支持多信息源聚合抓取（Twitter / Bing / HackerNews / B 站等 7+ 平台）、AI 查询扩展、AI 真假识别与相关性分析、WebSocket 实时推送、邮件通知、多维度筛选排序，并将热点监控能力封装为 Agent Skills 技能包。覆盖 Prisma + SQLite 数据库、Socket.io 实时通信、Axios + Cheerio 网页爬虫、OpenRouter 大模型接入、Aceternity UI 炫酷",
+  "sourceUrl": "https://github.com/liyupi/yupi-hot-monitor",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "liyupi",
+    "repo": "yupi-hot-monitor",
+    "fullName": "liyupi/yupi-hot-monitor",
+    "stars": 701,
+    "license": "",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "backend",
+      "frontend",
+      "javascript",
+      "nodejs",
+      "openrouter",
+      "react",
+      "typescript",
+      "vibe-coding",
+      "web"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-04-16T11:56:53Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-24",
+  "lastChecked": "2026-08-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "2026 年编程导航 AI 编程实战新项目，基于 Node.js + Express + React + OpenRouter 的 AI 热点监控工具，支持多信息源聚合抓取（Twitter / Bing / HackerNews / B 站等 7+ 平台）、AI 查询扩展、AI 真假识别与相关性分析、WebSocket 实时推送、邮件通知、多维度筛选排序，并将热点监控能力封装为 Agent Ski",
+    "Topics: agent-skills, ai, backend, frontend, javascript",
+    "GitHub stars: 701",
+    "Last pushed: 2026-04-16"
+  ],
+  "id": "candidate-tool-github-liyupi-yupi-hot-monitor",
+  "canonicalKey": "tool:github:liyupi/yupi-hot-monitor",
+  "firstDiscoveredAt": "2026-08-24",
+  "lastSeenAt": "2026-08-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-24-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "yupi-hot-monitor is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "2026 年编程导航 AI 编程实战新项目，基于 Node.js + Express + React + OpenRouter 的 AI 热点监控工具，支持多信息源聚合抓取（Twitter / Bing / HackerNews / B 站等 7+ 平台）、AI 查询扩展、AI 真假识别与相关性分析、WebSocket 实时推送、邮件通知、多维度筛选排序，并将热点监控能力封装为 Agent Ski",
+      "Topics: agent-skills, ai, backend, frontend, javascript",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "yupi-hot-monitor",
+  "publishedAt": "2026-08-24"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "watermark-remover",
+  "name": "watermark-remover",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Purge multi-vendor AI watermarks: clean Unicode text, apply statistical rewrite hooks, and clear C2PA plus metadata from PNG, JPEG, SVG, PDF, DOCX, HTML, and MD.",
+  "description": "Purge multi-vendor AI watermarks: clean Unicode text, apply statistical rewrite hooks, and clear C2PA plus metadata from PNG, JPEG, SVG, PDF, DOCX, HTML, and MD.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ShadowAqueduct/watermark-remover",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ShadowAqueduct/watermark-remover",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ShadowAqueduct/watermark-remover#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ShadowAqueduct/watermark-remover#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ShadowAqueduct/watermark-remover/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Purge multi-vendor AI watermarks: clean Unicode text, apply statistical rewrite hooks, and clear C2PA plus metadata from PNG, JPEG, SVG, PDF, DOCX, HTML, and MD.",
+    "Topics: claude-ai, claude-code, claude-code-plugin, claude-skills, codex",
+    "GitHub stars: 767",
+    "Last pushed: 2026-08-23"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-08-23T22:07:11Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ShadowAqueduct/watermark-remover",
+  "repoUrl": "https://github.com/ShadowAqueduct/watermark-remover",
+  "license": "MIT",
+  "stars": 767,
+  "lastUpdated": "2026-08-23T22:07:11Z",
+  "lastChecked": "2026-08-24",
+  "publishedAt": "2026-08-24",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
