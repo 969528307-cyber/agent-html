@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "Graft",
+  "summary": "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+  "sourceUrl": "https://github.com/trailhq/Graft",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "trailhq",
+    "repo": "Graft",
+    "fullName": "trailhq/Graft",
+    "stars": 4885,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "anthropic",
+      "claude-code",
+      "cli",
+      "code-graph",
+      "codex",
+      "context-engineering",
+      "cursor",
+      "developer-tools",
+      "gemini",
+      "knowledge-graph",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "open-source",
+      "openai",
+      "tree-sitter"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-25T19:20:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-25",
+  "lastChecked": "2026-08-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+    "Topics: ai-agents, anthropic, claude-code, cli, code-graph",
+    "GitHub stars: 4885",
+    "Last pushed: 2026-08-25"
+  ],
+  "id": "candidate-tool-github-trailhq-graft",
+  "canonicalKey": "tool:github:trailhq/graft",
+  "firstDiscoveredAt": "2026-08-25",
+  "lastSeenAt": "2026-08-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-25"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Graft is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+      "Topics: ai-agents, anthropic, claude-code, cli, code-graph",
+      "GitHub stars: 4885"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "graft",
+  "publishedAt": "2026-08-25",
+  "reviewedAt": "2026-08-25",
+  "reviewedBy": "local-review"
+}

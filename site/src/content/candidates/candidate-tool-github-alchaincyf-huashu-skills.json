@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "huashu-skills",
+  "summary": "花叔全部开源 Agent Skills 总目录：16 旗舰 + 14 人物视角 + 22 内置共 52 个 skill，分层分类 + AI Agent 安装协议 + 机器可读 skills.json + 更新检查机制",
+  "sourceUrl": "https://github.com/alchaincyf/huashu-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "alchaincyf",
+    "repo": "huashu-skills",
+    "fullName": "alchaincyf/huashu-skills",
+    "stars": 1398,
+    "license": "",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude",
+      "claude-code",
+      "skills"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-08-25T03:06:30Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-25",
+  "lastChecked": "2026-08-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "花叔全部开源 Agent Skills 总目录：16 旗舰 + 14 人物视角 + 22 内置共 52 个 skill，分层分类 + AI Agent 安装协议 + 机器可读 skills.json + 更新检查机制",
+    "Topics: agent-skills, ai-agents, claude, claude-code, skills",
+    "GitHub stars: 1398",
+    "Last pushed: 2026-08-25"
+  ],
+  "id": "candidate-tool-github-alchaincyf-huashu-skills",
+  "canonicalKey": "tool:github:alchaincyf/huashu-skills",
+  "firstDiscoveredAt": "2026-08-25",
+  "lastSeenAt": "2026-08-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-25"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "huashu-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "花叔全部开源 Agent Skills 总目录：16 旗舰 + 14 人物视角 + 22 内置共 52 个 skill，分层分类 + AI Agent 安装协议 + 机器可读 skills.json + 更新检查机制",
+      "Topics: agent-skills, ai-agents, claude, claude-code, skills",
+      "GitHub stars: 1398"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "huashu-skills",
+  "publishedAt": "2026-08-25"
+}
