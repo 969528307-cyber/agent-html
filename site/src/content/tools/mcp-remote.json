@@ -1,0 +1,69 @@
+{
+  "id": "mcp-remote",
+  "name": "mcp-remote",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Connect an MCP Client that only supports local (stdio) servers to a Remote MCP Server.",
+  "description": "Connect an MCP Client that only supports local (stdio) servers to a Remote MCP Server.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/punkpeye/mcp-remote",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/punkpeye/mcp-remote",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/punkpeye/mcp-remote#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/punkpeye/mcp-remote#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/punkpeye/mcp-remote/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Connect an MCP Client that only supports local (stdio) servers to a Remote MCP Server.",
+    "Topics: mcp",
+    "GitHub stars: 1562",
+    "Last pushed: 2026-08-26"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-08-26T21:37:49Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/punkpeye/mcp-remote",
+  "repoUrl": "https://github.com/punkpeye/mcp-remote",
+  "license": "MIT",
+  "stars": 1562,
+  "lastUpdated": "2026-08-26T21:37:49Z",
+  "lastChecked": "2026-08-26",
+  "publishedAt": "2026-08-26",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

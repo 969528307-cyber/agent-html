@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "social-media-research-skills",
+  "summary": "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more. Powered by ScrapeCreators. Works with Claude Code, Cursor, Codex, Gemini CLI.",
+  "sourceUrl": "https://github.com/ScrapeCreators/social-media-research-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "ScrapeCreators",
+    "repo": "social-media-research-skills",
+    "fullName": "ScrapeCreators/social-media-research-skills",
+    "stars": 1780,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude-code",
+      "claude-skills",
+      "competitor-analysis",
+      "content-marketing",
+      "cursor",
+      "influencer-marketing",
+      "market-research",
+      "social-media",
+      "social-media-research",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-26T17:26:01Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-26",
+  "lastChecked": "2026-08-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more. Powered by ScrapeCr",
+    "Topics: agent-skills, ai-agents, claude-code, claude-skills, competitor-analysis",
+    "GitHub stars: 1780",
+    "Last pushed: 2026-08-26"
+  ],
+  "id": "candidate-tool-github-scrapecreators-social-media-research-skills",
+  "canonicalKey": "tool:github:scrapecreators/social-media-research-skills",
+  "firstDiscoveredAt": "2026-08-26",
+  "lastSeenAt": "2026-08-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-26-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "social-media-research-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more. Powered by ScrapeCr",
+      "Topics: agent-skills, ai-agents, claude-code, claude-skills, competitor-analysis",
+      "GitHub stars: 1780"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "social-media-research-skills",
+  "publishedAt": "2026-08-26"
+}
