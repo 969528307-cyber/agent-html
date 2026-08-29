@@ -1,0 +1,106 @@
+{
+  "type": "tool",
+  "title": "codex-with-chatgpt",
+  "summary": "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+  "sourceUrl": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "XiaoDuoYa",
+    "repo": "codex-with-chatgpt",
+    "fullName": "XiaoDuoYa/codex-with-chatgpt",
+    "stars": 897,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "chatgpt",
+      "codex",
+      "mcp",
+      "model-context-protocol",
+      "oauth"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-29T11:52:34Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-29",
+  "lastChecked": "2026-08-29",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+    "Topics: ai-agents, chatgpt, codex, mcp, model-context-protocol",
+    "GitHub stars: 897",
+    "Last pushed: 2026-08-29"
+  ],
+  "id": "candidate-tool-github-xiaoduoya-codex-with-chatgpt",
+  "canonicalKey": "tool:github:xiaoduoya/codex-with-chatgpt",
+  "firstDiscoveredAt": "2026-08-29",
+  "lastSeenAt": "2026-08-29",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-29-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-29"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "codex-with-chatgpt is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+      "Topics: ai-agents, chatgpt, codex, mcp, model-context-protocol",
+      "GitHub stars: 897"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-29",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "codex-with-chatgpt",
+  "publishedAt": "2026-08-29"
+}
