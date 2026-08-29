@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "PiDeck",
+  "summary": "PiDeck 是一个开源的桌面工作台，用于在本地项目目录中统一管理 pi Agent 会话，并支持导入 Codex、Claude 本地会话以便统一浏览和恢复。支持多项目工作区、会话历史、Git 集成、内置终端、模型配置和插件管理，基于 Electron 构建。",
+  "sourceUrl": "https://github.com/ayuayue/PiDeck",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "ayuayue",
+    "repo": "PiDeck",
+    "fullName": "ayuayue/PiDeck",
+    "stars": 702,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "ai-assistant",
+      "ai-coding-agent",
+      "claude-code",
+      "codex",
+      "coding-agent",
+      "desktop",
+      "desktop-app",
+      "multi-project",
+      "pi",
+      "pi-agent",
+      "pi-deck",
+      "pi-desktop",
+      "pideck",
+      "pidesktop",
+      "session-management"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-29T01:06:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-29",
+  "lastChecked": "2026-08-29",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "PiDeck 是一个开源的桌面工作台，用于在本地项目目录中统一管理 pi Agent 会话，并支持导入 Codex、Claude 本地会话以便统一浏览和恢复。支持多项目工作区、会话历史、Git 集成、内置终端、模型配置和插件管理，基于 Electron 构建。",
+    "Topics: agent, ai-assistant, ai-coding-agent, claude-code, codex",
+    "GitHub stars: 702",
+    "Last pushed: 2026-08-29"
+  ],
+  "id": "candidate-tool-github-ayuayue-pideck",
+  "canonicalKey": "tool:github:ayuayue/pideck",
+  "firstDiscoveredAt": "2026-08-29",
+  "lastSeenAt": "2026-08-29",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-29-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-29"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "PiDeck is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "PiDeck 是一个开源的桌面工作台，用于在本地项目目录中统一管理 pi Agent 会话，并支持导入 Codex、Claude 本地会话以便统一浏览和恢复。支持多项目工作区、会话历史、Git 集成、内置终端、模型配置和插件管理，基于 Electron 构建。",
+      "Topics: agent, ai-assistant, ai-coding-agent, claude-code, codex",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-29",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pideck",
+  "publishedAt": "2026-08-29"
+}
