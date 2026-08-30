@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "iot-dc3",
+  "summary": "IoT DC3 is a multi-protocol, cloud-native, AI-powered, open-source industrial IoT platform evolving toward AI agents. A complete IoT system solution: device connectivity, data acquisition, edge-to-cloud delivery and intelligent operations.",
+  "sourceUrl": "https://github.com/pnoker/iot-dc3",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "pnoker",
+    "repo": "iot-dc3",
+    "fullName": "pnoker/iot-dc3",
+    "stars": 1133,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "cloud-native",
+      "data-collection",
+      "device-management",
+      "edge-computing",
+      "iiot",
+      "industrial-iot",
+      "iot",
+      "java",
+      "mcp",
+      "modbus",
+      "model-context-protocol",
+      "mqtt",
+      "opc-ua",
+      "plc",
+      "robotics",
+      "scada",
+      "spring-ai",
+      "spring-cloud"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-28T22:42:51Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-30",
+  "lastChecked": "2026-08-30",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "IoT DC3 is a multi-protocol, cloud-native, AI-powered, open-source industrial IoT platform evolving toward AI agents. A complete IoT system solution: device connectivity, data acquisition, edge-to-clo",
+    "Topics: ai, ai-agents, cloud-native, data-collection, device-management",
+    "GitHub stars: 1133",
+    "Last pushed: 2026-08-28"
+  ],
+  "id": "candidate-tool-github-pnoker-iot-dc3",
+  "canonicalKey": "tool:github:pnoker/iot-dc3",
+  "firstDiscoveredAt": "2026-08-30",
+  "lastSeenAt": "2026-08-30",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-30-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-30"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "iot-dc3 is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "IoT DC3 is a multi-protocol, cloud-native, AI-powered, open-source industrial IoT platform evolving toward AI agents. A complete IoT system solution: device connectivity, data acquisition, edge-to-clo",
+      "Topics: ai, ai-agents, cloud-native, data-collection, device-management",
+      "GitHub stars: 1133"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-30",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "iot-dc3",
+  "publishedAt": "2026-08-30"
+}

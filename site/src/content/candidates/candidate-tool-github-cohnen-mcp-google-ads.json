@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "mcp-google-ads",
+  "summary": "An MCP tool that connects Google Ads with Claude AI/Cursor and others, allowing you to analyze your advertising data through natural language conversations. This integration gives you access to campaign information, performance metrics, keyword analytics, and ad management—all through simple chat wi",
+  "sourceUrl": "https://github.com/cohnen/mcp-google-ads",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "cohnen",
+    "repo": "mcp-google-ads",
+    "fullName": "cohnen/mcp-google-ads",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "claude",
+      "google-ads",
+      "mcp",
+      "mcp-server"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2025-10-16T20:20:14Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-30",
+  "lastChecked": "2026-08-30",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "An MCP tool that connects Google Ads with Claude AI/Cursor and others, allowing you to analyze your advertising data through natural language conversations. This integration gives you access to campai",
+    "Topics: ai, claude, google-ads, mcp, mcp-server",
+    "GitHub stars: 700",
+    "Last pushed: 2025-10-16"
+  ],
+  "id": "candidate-tool-github-cohnen-mcp-google-ads",
+  "canonicalKey": "tool:github:cohnen/mcp-google-ads",
+  "firstDiscoveredAt": "2026-08-30",
+  "lastSeenAt": "2026-08-30",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-30-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-30"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "mcp-google-ads is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "An MCP tool that connects Google Ads with Claude AI/Cursor and others, allowing you to analyze your advertising data through natural language conversations. This integration gives you access to campai",
+      "Topics: ai, claude, google-ads, mcp, mcp-server",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-30",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcp-google-ads",
+  "publishedAt": "2026-08-30"
+}

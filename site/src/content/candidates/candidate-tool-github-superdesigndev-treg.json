@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "treg",
+  "summary": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+  "sourceUrl": "https://github.com/superdesigndev/treg",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "superdesigndev",
+    "repo": "treg",
+    "fullName": "superdesigndev/treg",
+    "stars": 705,
+    "license": "NOASSERTION",
+    "topics": [
+      "agents",
+      "api-keys",
+      "cli",
+      "credentials",
+      "developer-tools",
+      "dsh-plugin",
+      "mcp",
+      "proxy",
+      "python",
+      "registry",
+      "secrets"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-30T15:22:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-30",
+  "lastChecked": "2026-08-30",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+    "Topics: agents, api-keys, cli, credentials, developer-tools",
+    "GitHub stars: 705",
+    "Last pushed: 2026-08-30"
+  ],
+  "id": "candidate-tool-github-superdesigndev-treg",
+  "canonicalKey": "tool:github:superdesigndev/treg",
+  "firstDiscoveredAt": "2026-08-30",
+  "lastSeenAt": "2026-08-30",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-30-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-30"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "treg is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+      "Topics: agents, api-keys, cli, credentials, developer-tools",
+      "GitHub stars: 705"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-30",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "treg",
+  "publishedAt": "2026-08-30"
+}

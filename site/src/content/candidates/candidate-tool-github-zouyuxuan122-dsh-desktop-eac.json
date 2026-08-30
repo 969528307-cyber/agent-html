@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "DSH-Desktop-EAC",
+  "summary": "DeepSeek Harness Desktop (dsh-desktop). EAC: Embracing All Creation (揽尽万象). Bundled Node.js runtime with full dsh-CLI kernel, one-click startup, 10 built-in UI themes.",
+  "sourceUrl": "https://github.com/zouyuxuan122/DSH-Desktop-EAC",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "zouyuxuan122",
+    "repo": "DSH-Desktop-EAC",
+    "fullName": "zouyuxuan122/DSH-Desktop-EAC",
+    "stars": 1445,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "deepseek",
+      "deepseek-harness",
+      "desktop",
+      "desktop-app",
+      "dsh",
+      "dsh-plugins",
+      "dshdesktop",
+      "electron",
+      "tauri",
+      "windows"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-30T17:35:15Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-08-30",
+  "lastChecked": "2026-08-30",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "DeepSeek Harness Desktop (dsh-desktop). EAC: Embracing All Creation (揽尽万象). Bundled Node.js runtime with full dsh-CLI kernel, one-click startup, 10 built-in UI themes.",
+    "Topics: ai-agent, deepseek, deepseek-harness, desktop, desktop-app",
+    "GitHub stars: 1445",
+    "Last pushed: 2026-08-30"
+  ],
+  "id": "candidate-tool-github-zouyuxuan122-dsh-desktop-eac",
+  "canonicalKey": "tool:github:zouyuxuan122/dsh-desktop-eac",
+  "firstDiscoveredAt": "2026-08-30",
+  "lastSeenAt": "2026-08-30",
+  "crawlRuns": [
+    {
+      "runId": "2026-08-30-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-08-30"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "DSH-Desktop-EAC is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "DeepSeek Harness Desktop (dsh-desktop). EAC: Embracing All Creation (揽尽万象). Bundled Node.js runtime with full dsh-CLI kernel, one-click startup, 10 built-in UI themes.",
+      "Topics: ai-agent, deepseek, deepseek-harness, desktop, desktop-app",
+      "GitHub stars: 1445"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-08-30",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dsh-desktop-eac",
+  "publishedAt": "2026-08-30"
+}

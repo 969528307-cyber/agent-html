@@ -24,7 +24,7 @@
     ]
   },
   "discoveredAt": "2026-05-16",
-  "lastChecked": "2026-08-29",
+  "lastChecked": "2026-08-30",
   "discoveredFrom": "directory",
   "summary": "ByteDance's AI IDE agent surface for project coding, rules-guided behavior, MCP integrations, and Chinese developer workflows.",
   "proposedCategory": [
@@ -85,7 +85,7 @@
   },
   "canonicalKey": "agent:trae",
   "firstDiscoveredAt": "2026-05-16",
-  "lastSeenAt": "2026-08-29",
+  "lastSeenAt": "2026-08-30",
   "crawlRuns": [
     {
       "runId": "2026-05-18-agents",
@@ -596,6 +596,12 @@
       "module": "agents",
       "sourceRegistryId": "local-agents-library",
       "seenAt": "2026-08-29"
+    },
+    {
+      "runId": "2026-08-30-agents",
+      "module": "agents",
+      "sourceRegistryId": "local-agents-library",
+      "seenAt": "2026-08-30"
     }
   ],
   "enrichmentDecision": "needs_editor_review",
