@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "career-ops",
+  "summary": "Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+  "sourceUrl": "https://github.com/career-ops-hq/career-ops",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "career-ops-hq",
+    "repo": "career-ops",
+    "fullName": "career-ops-hq/career-ops",
+    "stars": 69746,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "anthropic",
+      "ats",
+      "automation",
+      "beginner-friendly",
+      "career",
+      "careerops",
+      "claude",
+      "claude-code",
+      "cli",
+      "first-timers-only",
+      "golang",
+      "good-first-issue",
+      "interview-prep",
+      "job-application",
+      "job-hunting",
+      "job-search",
+      "open-source",
+      "resume"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-01T17:52:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-01",
+  "lastChecked": "2026-09-01",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Cod",
+    "Topics: ai, ai-agent, anthropic, ats, automation",
+    "GitHub stars: 69746",
+    "Last pushed: 2026-09-01"
+  ],
+  "id": "candidate-tool-github-career-ops-hq-career-ops",
+  "canonicalKey": "tool:github:career-ops-hq/career-ops",
+  "firstDiscoveredAt": "2026-09-01",
+  "lastSeenAt": "2026-09-01",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-01-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-01"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "career-ops is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Cod",
+      "Topics: ai, ai-agent, anthropic, ats, automation",
+      "GitHub stars: 69746"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "career-ops",
+  "publishedAt": "2026-09-01",
+  "reviewedAt": "2026-09-01",
+  "reviewedBy": "local-review"
+}
