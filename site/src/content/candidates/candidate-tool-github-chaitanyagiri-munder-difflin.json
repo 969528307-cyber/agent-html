@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "munder-difflin",
+  "summary": "A local multi-agent harness that works with your existing Claude Code, Codex subscriptions, allows you to run an office of agents",
+  "sourceUrl": "https://github.com/chaitanyagiri/munder-difflin",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "chaitanyagiri",
+    "repo": "munder-difflin",
+    "fullName": "chaitanyagiri/munder-difflin",
+    "stars": 6148,
+    "license": "MIT",
+    "topics": [
+      "agent-orchestration",
+      "agents",
+      "ai-agents",
+      "autonomous-agents",
+      "claude-code",
+      "codex",
+      "desktop-app",
+      "electron",
+      "free",
+      "gemini-cli",
+      "harness",
+      "harness-engineering",
+      "local-first",
+      "memory",
+      "multi-agent",
+      "opencode",
+      "orchestration",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-02T21:53:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-02",
+  "lastChecked": "2026-09-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A local multi-agent harness that works with your existing Claude Code, Codex subscriptions, allows you to run an office of agents",
+    "Topics: agent-orchestration, agents, ai-agents, autonomous-agents, claude-code",
+    "GitHub stars: 6148",
+    "Last pushed: 2026-09-02"
+  ],
+  "id": "candidate-tool-github-chaitanyagiri-munder-difflin",
+  "canonicalKey": "tool:github:chaitanyagiri/munder-difflin",
+  "firstDiscoveredAt": "2026-09-02",
+  "lastSeenAt": "2026-09-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-02-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-02"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "munder-difflin is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "A local multi-agent harness that works with your existing Claude Code, Codex subscriptions, allows you to run an office of agents",
+      "Topics: agent-orchestration, agents, ai-agents, autonomous-agents, claude-code",
+      "GitHub stars: 6148"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-02",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "munder-difflin",
+  "publishedAt": "2026-09-02"
+}

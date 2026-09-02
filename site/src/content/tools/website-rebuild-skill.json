@@ -1,0 +1,69 @@
+{
+  "id": "website-rebuild-skill",
+  "name": "website-rebuild-skill",
+  "type": "workflow",
+  "status": "published",
+  "summary": "复刻网站的 Agent Skill：抓只读镜像、从压缩代码逐行还原、自动比对验收。An agent skill that mirrors a website, rebuilds it from the minified code, and verifies the result with automated diffs.",
+  "description": "复刻网站的 Agent Skill：抓只读镜像、从压缩代码逐行还原、自动比对验收。An agent skill that mirrors a website, rebuilds it from the minified code, and verifies the result with automated diffs.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/boyang-hu/website-rebuild-skill",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/boyang-hu/website-rebuild-skill",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/boyang-hu/website-rebuild-skill#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/boyang-hu/website-rebuild-skill#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/boyang-hu/website-rebuild-skill/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "复刻网站的 Agent Skill：抓只读镜像、从压缩代码逐行还原、自动比对验收。An agent skill that mirrors a website, rebuilds it from the minified code, and verifies the result with automated diffs.",
+    "Topics: agent-skills, ai-agents, claude, claude-code, codex",
+    "GitHub stars: 818",
+    "Last pushed: 2026-09-02"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-09-02T09:00:26Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/boyang-hu/website-rebuild-skill",
+  "repoUrl": "https://github.com/boyang-hu/website-rebuild-skill",
+  "license": "MIT",
+  "stars": 818,
+  "lastUpdated": "2026-09-02T09:00:26Z",
+  "lastChecked": "2026-09-02",
+  "publishedAt": "2026-09-02",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

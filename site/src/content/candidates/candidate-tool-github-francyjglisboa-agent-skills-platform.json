@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "agent-skills-platform",
+  "summary": "Build tested agent skills and govern their lifecycle through a user-defined marketplace: evidence, discovery, updates, rollback, quarantine, and 17-platform distribution.",
+  "sourceUrl": "https://github.com/FrancyJGLisboa/agent-skills-platform",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "FrancyJGLisboa",
+    "repo": "agent-skills-platform",
+    "fullName": "FrancyJGLisboa/agent-skills-platform",
+    "stars": 2371,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude-code",
+      "codex",
+      "cursor",
+      "developer-tools",
+      "evals",
+      "github-copilot",
+      "governance",
+      "skill-marketplace"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-02T21:53:12Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-02",
+  "lastChecked": "2026-09-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Build tested agent skills and govern their lifecycle through a user-defined marketplace: evidence, discovery, updates, rollback, quarantine, and 17-platform distribution.",
+    "Topics: agent-skills, ai-agents, claude-code, codex, cursor",
+    "GitHub stars: 2371",
+    "Last pushed: 2026-09-02"
+  ],
+  "id": "candidate-tool-github-francyjglisboa-agent-skills-platform",
+  "canonicalKey": "tool:github:francyjglisboa/agent-skills-platform",
+  "firstDiscoveredAt": "2026-09-02",
+  "lastSeenAt": "2026-09-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-02-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-02"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "agent-skills-platform is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Build tested agent skills and govern their lifecycle through a user-defined marketplace: evidence, discovery, updates, rollback, quarantine, and 17-platform distribution.",
+      "Topics: agent-skills, ai-agents, claude-code, codex, cursor",
+      "GitHub stars: 2371"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-02",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-skills-platform",
+  "publishedAt": "2026-09-02"
+}

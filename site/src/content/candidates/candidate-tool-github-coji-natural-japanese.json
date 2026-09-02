@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "natural-japanese",
+  "summary": "仕事の日本語を、読みやすくわかりやすく書く・直すための Agent Skill です。",
+  "sourceUrl": "https://github.com/coji/natural-japanese",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "coji",
+    "repo": "natural-japanese",
+    "fullName": "coji/natural-japanese",
+    "stars": 727,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "claude",
+      "claude-code",
+      "japanese",
+      "lint",
+      "nlp",
+      "sudachipy",
+      "writing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-17T00:56:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-02",
+  "lastChecked": "2026-09-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "仕事の日本語を、読みやすくわかりやすく書く・直すための Agent Skill です。",
+    "Topics: agent-skills, claude, claude-code, japanese, lint",
+    "GitHub stars: 727",
+    "Last pushed: 2026-08-17"
+  ],
+  "id": "candidate-tool-github-coji-natural-japanese",
+  "canonicalKey": "tool:github:coji/natural-japanese",
+  "firstDiscoveredAt": "2026-09-02",
+  "lastSeenAt": "2026-09-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-02-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-02"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "natural-japanese is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "仕事の日本語を、読みやすくわかりやすく書く・直すための Agent Skill です。",
+      "Topics: agent-skills, claude, claude-code, japanese, lint",
+      "GitHub stars: 727"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-02",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "natural-japanese",
+  "publishedAt": "2026-09-02"
+}

@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "GLM-5.3-Flash-J-Space-Capability-Realization-Report",
+  "summary": "GLM-5.3-Flash × J-Space capability realization — benchmark presentation of the J-Space Cognition Suite",
+  "sourceUrl": "https://github.com/Tiger3807861189/GLM-5.3-Flash-J-Space-Capability-Realization-Report",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Tiger3807861189",
+    "repo": "GLM-5.3-Flash-J-Space-Capability-Realization-Report",
+    "fullName": "Tiger3807861189/GLM-5.3-Flash-J-Space-Capability-Realization-Report",
+    "stars": 1029,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "ai-agent",
+      "benchmark",
+      "deepseek",
+      "deepseek-harness",
+      "dsh",
+      "dsh-plugin"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-02T11:21:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-02",
+  "lastChecked": "2026-09-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "GLM-5.3-Flash × J-Space capability realization — benchmark presentation of the J-Space Cognition Suite",
+    "Topics: agent-skills, ai-agent, benchmark, deepseek, deepseek-harness",
+    "GitHub stars: 1029",
+    "Last pushed: 2026-09-02"
+  ],
+  "id": "candidate-tool-github-tiger3807861189-glm-5-3-flash-j-space-capability-realization-report",
+  "canonicalKey": "tool:github:tiger3807861189/glm-5.3-flash-j-space-capability-realization-report",
+  "firstDiscoveredAt": "2026-09-02",
+  "lastSeenAt": "2026-09-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-02-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-02"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "GLM-5.3-Flash-J-Space-Capability-Realization-Report is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "GLM-5.3-Flash × J-Space capability realization — benchmark presentation of the J-Space Cognition Suite",
+      "Topics: agent-skills, ai-agent, benchmark, deepseek, deepseek-harness",
+      "GitHub stars: 1029"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-02",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "glm-5-3-flash-j-space-capability-realization-report",
+  "publishedAt": "2026-09-02"
+}

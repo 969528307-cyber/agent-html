@@ -1,0 +1,69 @@
+{
+  "id": "gpt-rag",
+  "name": "GPT-RAG",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Enterprise-grade accelerator for agentic RAG on Azure. Built on Microsoft Foundry with Foundry IQ as the default retrieval backend, Microsoft Agent Framework orchestration, Zero-Trust architecture and IaC.",
+  "description": "Enterprise-grade accelerator for agentic RAG on Azure. Built on Microsoft Foundry with Foundry IQ as the default retrieval backend, Microsoft Agent Framework orchestration, Zero-Trust architecture and IaC.",
+  "category": [
+    "agent-framework"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Azure/GPT-RAG",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Azure/GPT-RAG",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Azure/GPT-RAG#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Azure/GPT-RAG#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Azure/GPT-RAG/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Enterprise-grade accelerator for agentic RAG on Azure. Built on Microsoft Foundry with Foundry IQ as the default retrieval backend, Microsoft Agent Framework orchestration, Zero-Trust architecture and",
+    "Topics: agent-framework, agentic-rag, ai-agents, azd-templates, azure",
+    "GitHub stars: 1170",
+    "Last pushed: 2026-09-02"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-09-02T16:12:14Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Azure/GPT-RAG",
+  "repoUrl": "https://github.com/Azure/GPT-RAG",
+  "license": "MIT",
+  "stars": 1170,
+  "lastUpdated": "2026-09-02T16:12:14Z",
+  "lastChecked": "2026-09-02",
+  "publishedAt": "2026-09-02",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

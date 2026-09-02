@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "Cybermes",
+  "summary": "Autonomous Offensive Security, Bug Bounty & Red Teaming Agent Framework powered by Hermes Agent, specialized reasoning skills, and multi-model LLM orchestration.",
+  "sourceUrl": "https://github.com/Zyrexnn/Cybermes",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "Zyrexnn",
+    "repo": "Cybermes",
+    "fullName": "Zyrexnn/Cybermes",
+    "stars": 721,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agent",
+      "appsec",
+      "bug-bounty",
+      "cvss-v3",
+      "cybersecurity",
+      "devsecops",
+      "exploit-validation",
+      "hermes-agent",
+      "infosec",
+      "llm-security",
+      "nuclei",
+      "offensive-security",
+      "penetration-testing",
+      "playwright",
+      "reconnaissance",
+      "red-teaming",
+      "security-tools",
+      "sqlmap",
+      "threat-research",
+      "vulnerability-scanner"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-30T08:30:02Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-02",
+  "lastChecked": "2026-09-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Autonomous Offensive Security, Bug Bounty & Red Teaming Agent Framework powered by Hermes Agent, specialized reasoning skills, and multi-model LLM orchestration.",
+    "Topics: ai-agent, appsec, bug-bounty, cvss-v3, cybersecurity",
+    "GitHub stars: 721",
+    "Last pushed: 2026-08-30"
+  ],
+  "id": "candidate-tool-github-zyrexnn-cybermes",
+  "canonicalKey": "tool:github:zyrexnn/cybermes",
+  "firstDiscoveredAt": "2026-09-02",
+  "lastSeenAt": "2026-09-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-02-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-02"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Cybermes is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Autonomous Offensive Security, Bug Bounty & Red Teaming Agent Framework powered by Hermes Agent, specialized reasoning skills, and multi-model LLM orchestration.",
+      "Topics: ai-agent, appsec, bug-bounty, cvss-v3, cybersecurity",
+      "GitHub stars: 721"
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  }
+}
