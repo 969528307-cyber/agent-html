@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "Deuz-SDK",
+  "summary": "Zero-dependency TypeScript framework for production AI agents: durable execution, long-term memory, hybrid RAG, MCP tool calling, human-in-the-loop approval, planning and CodeAct sandboxes. One streaming API for Claude, GPT, Gemini, Grok, Mistral and DeepSeek — Node, Bun, Deno, serverless and edge.",
+  "sourceUrl": "https://github.com/Deuz-AI/Deuz-SDK",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Deuz-AI",
+    "repo": "Deuz-SDK",
+    "fullName": "Deuz-AI/Deuz-SDK",
+    "stars": 1291,
+    "license": "MIT",
+    "topics": [
+      "agent-framework",
+      "agentic-ai",
+      "ai",
+      "ai-agents",
+      "ai-sdk",
+      "anthropic",
+      "autonomous-agents",
+      "claude",
+      "durable-execution",
+      "gemini",
+      "human-in-the-loop",
+      "llm",
+      "mcp",
+      "model-context-protocol",
+      "multi-agent",
+      "nodejs",
+      "openai",
+      "rag",
+      "tool-calling",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-13T11:32:11Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-03",
+  "lastChecked": "2026-09-03",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Zero-dependency TypeScript framework for production AI agents: durable execution, long-term memory, hybrid RAG, MCP tool calling, human-in-the-loop approval, planning and CodeAct sandboxes. One stream",
+    "Topics: agent-framework, agentic-ai, ai, ai-agents, ai-sdk",
+    "GitHub stars: 1291",
+    "Last pushed: 2026-08-13"
+  ],
+  "id": "candidate-tool-github-deuz-ai-deuz-sdk",
+  "canonicalKey": "tool:github:deuz-ai/deuz-sdk",
+  "firstDiscoveredAt": "2026-09-03",
+  "lastSeenAt": "2026-09-03",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-03-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-03"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Deuz-SDK is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Zero-dependency TypeScript framework for production AI agents: durable execution, long-term memory, hybrid RAG, MCP tool calling, human-in-the-loop approval, planning and CodeAct sandboxes. One stream",
+      "Topics: agent-framework, agentic-ai, ai, ai-agents, ai-sdk",
+      "GitHub stars: 1291"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-03",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "deuz-sdk",
+  "publishedAt": "2026-09-03"
+}

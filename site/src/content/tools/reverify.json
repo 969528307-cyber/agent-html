@@ -1,0 +1,69 @@
+{
+  "id": "reverify",
+  "name": "reverify",
+  "type": "workflow",
+  "status": "published",
+  "summary": "AI makes things up when it reads a binary. Reverify checks its every claim against the real bytes, so you see what's actually true — AI-assisted reverse engineering you can trust. LLM proposes, deterministic tools verify. MCP server + CLI.",
+  "description": "AI makes things up when it reads a binary. Reverify checks its every claim against the real bytes, so you see what's actually true — AI-assisted reverse engineering you can trust. LLM proposes, deterministic tools verify. MCP server + CLI.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/2akouwu/reverify",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/2akouwu/reverify",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/2akouwu/reverify#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/2akouwu/reverify#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/2akouwu/reverify/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "AI makes things up when it reads a binary. Reverify checks its every claim against the real bytes, so you see what's actually true — AI-assisted reverse engineering you can trust. LLM proposes, determ",
+    "Topics: ai, ai-agents, binary-analysis, capstone, ctf",
+    "GitHub stars: 739",
+    "Last pushed: 2026-09-03"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-09-03T17:43:06Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/2akouwu/reverify",
+  "repoUrl": "https://github.com/2akouwu/reverify",
+  "license": "MIT",
+  "stars": 739,
+  "lastUpdated": "2026-09-03T17:43:06Z",
+  "lastChecked": "2026-09-03",
+  "publishedAt": "2026-09-03",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

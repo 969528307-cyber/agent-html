@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "linkedin-skills",
+  "summary": "Claude skills for LinkedIn. 11 Claude Code and Codex skills that write human-sounding LinkedIn posts, craft comments that get noticed, analyze your feed, and build a publishing cadence, all from your terminal. Content engineering by Creative Content Crafts. MIT.",
+  "sourceUrl": "https://github.com/sergebulaev/linkedin-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "sergebulaev",
+    "repo": "linkedin-skills",
+    "fullName": "sergebulaev/linkedin-skills",
+    "stars": 803,
+    "license": "MIT",
+    "topics": [
+      "agent-skill",
+      "agent-skills",
+      "ai-agents",
+      "ai-content",
+      "ai-marketing",
+      "anthropic",
+      "awesome-claude",
+      "claude-code",
+      "claude-skills",
+      "content-creation",
+      "content-engineering",
+      "linkedin",
+      "linkedin-automation",
+      "linkedin-engineering",
+      "llm-tools",
+      "openclaw-skill",
+      "personal-branding",
+      "prompt-engineering",
+      "skill-md",
+      "social-media-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-03T09:59:58Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-03",
+  "lastChecked": "2026-09-03",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Claude skills for LinkedIn. 11 Claude Code and Codex skills that write human-sounding LinkedIn posts, craft comments that get noticed, analyze your feed, and build a publishing cadence, all from your ",
+    "Topics: agent-skill, agent-skills, ai-agents, ai-content, ai-marketing",
+    "GitHub stars: 803",
+    "Last pushed: 2026-09-03"
+  ],
+  "id": "candidate-tool-github-sergebulaev-linkedin-skills",
+  "canonicalKey": "tool:github:sergebulaev/linkedin-skills",
+  "firstDiscoveredAt": "2026-09-03",
+  "lastSeenAt": "2026-09-03",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-03-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-03"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "linkedin-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Claude skills for LinkedIn. 11 Claude Code and Codex skills that write human-sounding LinkedIn posts, craft comments that get noticed, analyze your feed, and build a publishing cadence, all from your ",
+      "Topics: agent-skill, agent-skills, ai-agents, ai-content, ai-marketing",
+      "GitHub stars: 803"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-03",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "linkedin-skills",
+  "publishedAt": "2026-09-03"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "no-negative-echo",
+  "name": "no-negative-echo",
+  "type": "workflow",
+  "status": "published",
+  "summary": "让 Codex 根据最终结果生成标题、注释、commit 和 PR，减少被否决方案在交付中的残留。",
+  "description": "让 Codex 根据最终结果生成标题、注释、commit 和 PR，减少被否决方案在交付中的残留。",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/LB623/no-negative-echo",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/LB623/no-negative-echo",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/LB623/no-negative-echo#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/LB623/no-negative-echo#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/LB623/no-negative-echo/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "让 Codex 根据最终结果生成标题、注释、commit 和 PR，减少被否决方案在交付中的残留。",
+    "Topics: agent-skills, chinese, codex, codex-skill, prompt-engineering",
+    "GitHub stars: 714",
+    "Last pushed: 2026-08-31"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-08-31T02:20:48Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/LB623/no-negative-echo",
+  "repoUrl": "https://github.com/LB623/no-negative-echo",
+  "license": "MIT",
+  "stars": 714,
+  "lastUpdated": "2026-08-31T02:20:48Z",
+  "lastChecked": "2026-09-03",
+  "publishedAt": "2026-09-03",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
