@@ -1,0 +1,109 @@
+{
+  "type": "tool",
+  "title": "yuwen-publish-precheck",
+  "summary": "发布前审｜发抖音/小红书/视频号前先让 AI 审一遍：哪句踩线、依据哪条官方规则、给能直接用的改法。38 篇真实样本校准判定尺度，72 条官方原文引文可查证，你踩过的坑沉淀成本地规则库越用越准。不承诺过审，不教绕审。",
+  "sourceUrl": "https://github.com/yuwen-cool/yuwen-publish-precheck",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "yuwen-cool",
+    "repo": "yuwen-publish-precheck",
+    "fullName": "yuwen-cool/yuwen-publish-precheck",
+    "stars": 702,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai",
+      "chinese",
+      "claude",
+      "content-compliance",
+      "cursor",
+      "douyin",
+      "wechat-channels",
+      "xiaohongshu"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-08-11T03:25:56Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-04",
+  "lastChecked": "2026-09-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "发布前审｜发抖音/小红书/视频号前先让 AI 审一遍：哪句踩线、依据哪条官方规则、给能直接用的改法。38 篇真实样本校准判定尺度，72 条官方原文引文可查证，你踩过的坑沉淀成本地规则库越用越准。不承诺过审，不教绕审。",
+    "Topics: agent-skills, ai, chinese, claude, content-compliance",
+    "GitHub stars: 702",
+    "Last pushed: 2026-08-11"
+  ],
+  "id": "candidate-tool-github-yuwen-cool-yuwen-publish-precheck",
+  "canonicalKey": "tool:github:yuwen-cool/yuwen-publish-precheck",
+  "firstDiscoveredAt": "2026-09-04",
+  "lastSeenAt": "2026-09-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-04-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "yuwen-publish-precheck is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "发布前审｜发抖音/小红书/视频号前先让 AI 审一遍：哪句踩线、依据哪条官方规则、给能直接用的改法。38 篇真实样本校准判定尺度，72 条官方原文引文可查证，你踩过的坑沉淀成本地规则库越用越准。不承诺过审，不教绕审。",
+      "Topics: agent-skills, ai, chinese, claude, content-compliance",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "yuwen-publish-precheck",
+  "publishedAt": "2026-09-04"
+}

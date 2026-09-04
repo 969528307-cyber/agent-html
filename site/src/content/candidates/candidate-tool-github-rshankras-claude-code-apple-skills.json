@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "claude-code-apple-skills",
+  "summary": "Claude Code skills for Apple platform development (iOS, macOS, iPadOS) — product validation, code generation, App Store optimization, and more",
+  "sourceUrl": "https://github.com/rshankras/claude-code-apple-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "rshankras",
+    "repo": "claude-code-apple-skills",
+    "fullName": "rshankras/claude-code-apple-skills",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-tools",
+      "anthropic",
+      "app-store",
+      "apple",
+      "aso",
+      "claude",
+      "claude-code",
+      "code-generation",
+      "developer-tools",
+      "indie-developer",
+      "ios",
+      "ipados",
+      "macos",
+      "swift",
+      "swiftui",
+      "visionos",
+      "watchos",
+      "xcode"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-24T11:01:45Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-04",
+  "lastChecked": "2026-09-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Claude Code skills for Apple platform development (iOS, macOS, iPadOS) — product validation, code generation, App Store optimization, and more",
+    "Topics: agent-skills, ai-tools, anthropic, app-store, apple",
+    "GitHub stars: 700",
+    "Last pushed: 2026-07-24"
+  ],
+  "id": "candidate-tool-github-rshankras-claude-code-apple-skills",
+  "canonicalKey": "tool:github:rshankras/claude-code-apple-skills",
+  "firstDiscoveredAt": "2026-09-04",
+  "lastSeenAt": "2026-09-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-04-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "claude-code-apple-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Claude Code skills for Apple platform development (iOS, macOS, iPadOS) — product validation, code generation, App Store optimization, and more",
+      "Topics: agent-skills, ai-tools, anthropic, app-store, apple",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-code-apple-skills",
+  "publishedAt": "2026-09-04"
+}

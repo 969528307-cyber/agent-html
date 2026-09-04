@@ -1,0 +1,104 @@
+{
+  "type": "tool",
+  "title": "LiveStream-Agent-Studio",
+  "summary": "面向抖音直播电商的 Windows 本地 AI Agent Studio，贯通主播发现、直播洞察、直播复盘与短视频内容编导的统一智能工作流。",
+  "sourceUrl": "https://github.com/HanyuanWang/LiveStream-Agent-Studio",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "HanyuanWang",
+    "repo": "LiveStream-Agent-Studio",
+    "fullName": "HanyuanWang/LiveStream-Agent-Studio",
+    "stars": 729,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "douyin",
+      "livestream",
+      "speech-to-text"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-24T02:48:43Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-04",
+  "lastChecked": "2026-09-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "面向抖音直播电商的 Windows 本地 AI Agent Studio，贯通主播发现、直播洞察、直播复盘与短视频内容编导的统一智能工作流。",
+    "Topics: ai-agent, douyin, livestream, speech-to-text",
+    "GitHub stars: 729",
+    "Last pushed: 2026-08-24"
+  ],
+  "id": "candidate-tool-github-hanyuanwang-livestream-agent-studio",
+  "canonicalKey": "tool:github:hanyuanwang/livestream-agent-studio",
+  "firstDiscoveredAt": "2026-09-04",
+  "lastSeenAt": "2026-09-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-04-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "LiveStream-Agent-Studio is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "面向抖音直播电商的 Windows 本地 AI Agent Studio，贯通主播发现、直播洞察、直播复盘与短视频内容编导的统一智能工作流。",
+      "Topics: ai-agent, douyin, livestream, speech-to-text",
+      "GitHub stars: 729"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "livestream-agent-studio",
+  "publishedAt": "2026-09-04"
+}

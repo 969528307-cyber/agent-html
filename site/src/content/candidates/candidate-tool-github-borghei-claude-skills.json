@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "Claude-Skills",
+  "summary": "368 AI skills, 76 expert agents, and 859 stdlib Python tools for every team: engineering, PM, marketing, C-level, compliance, business ops, and research. Installs on Claude Code, Cursor, Codex, Gemini, Copilot, and 6 other AI assistants.",
+  "sourceUrl": "https://github.com/borghei/Claude-Skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "borghei",
+    "repo": "Claude-Skills",
+    "fullName": "borghei/Claude-Skills",
+    "stars": 701,
+    "license": "NOASSERTION",
+    "topics": [
+      "agentic-coding",
+      "agile",
+      "ai-agents",
+      "ai-skills",
+      "business-operations",
+      "claude-code",
+      "claude-skills",
+      "compliance-automation",
+      "cursor",
+      "developer-tools",
+      "gemini-cli",
+      "github-copilot",
+      "jira",
+      "mcp-server",
+      "notion",
+      "product-management",
+      "project-management",
+      "research-ops",
+      "technical-writing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-12T15:16:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-04",
+  "lastChecked": "2026-09-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "368 AI skills, 76 expert agents, and 859 stdlib Python tools for every team: engineering, PM, marketing, C-level, compliance, business ops, and research. Installs on Claude Code, Cursor, Codex, Gemini",
+    "Topics: agentic-coding, agile, ai-agents, ai-skills, business-operations",
+    "GitHub stars: 701",
+    "Last pushed: 2026-08-12"
+  ],
+  "id": "candidate-tool-github-borghei-claude-skills",
+  "canonicalKey": "tool:github:borghei/claude-skills",
+  "firstDiscoveredAt": "2026-09-04",
+  "lastSeenAt": "2026-09-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-04-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Claude-Skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "368 AI skills, 76 expert agents, and 859 stdlib Python tools for every team: engineering, PM, marketing, C-level, compliance, business ops, and research. Installs on Claude Code, Cursor, Codex, Gemini",
+      "Topics: agentic-coding, agile, ai-agents, ai-skills, business-operations",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "claude-skills",
+  "publishedAt": "2026-09-04",
+  "reviewedAt": "2026-09-04",
+  "reviewedBy": "local-review"
+}
