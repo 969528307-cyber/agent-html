@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "EnterpriseAgentFramework",
+  "summary": "ReachAI企业级智能体开发平台：快速、安全完成已有业务系统智能化改造，让 AI 在 OA、ERP、CRM 等原系统中查数据、填表单、办业务。ReachAI: Quickly and securely bring AI to existing enterprise systems, enabling AI to query data, fill out forms, and execute business tasks directly within OA, ERP, CRM, and other business applications.",
+  "sourceUrl": "https://github.com/w8123/EnterpriseAgentFramework",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "w8123",
+    "repo": "EnterpriseAgentFramework",
+    "fullName": "w8123/EnterpriseAgentFramework",
+    "stars": 702,
+    "license": "MIT",
+    "topics": [
+      "a2a",
+      "agent",
+      "agent-framework",
+      "agent-skills",
+      "agents",
+      "ai-agents",
+      "ai-capability",
+      "ai-coding",
+      "ai-gateway",
+      "enterprise-agent",
+      "enterprise-ai",
+      "java",
+      "langgraph",
+      "mcp",
+      "milvus",
+      "openai-compatible",
+      "rag",
+      "tool-calling",
+      "vue",
+      "workflow"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-31T01:42:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-06",
+  "lastChecked": "2026-09-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "ReachAI企业级智能体开发平台：快速、安全完成已有业务系统智能化改造，让 AI 在 OA、ERP、CRM 等原系统中查数据、填表单、办业务。ReachAI: Quickly and securely bring AI to existing enterprise systems, enabling AI to query data, fill out forms, and execute bu",
+    "Topics: a2a, agent, agent-framework, agent-skills, agents",
+    "GitHub stars: 702",
+    "Last pushed: 2026-08-31"
+  ],
+  "id": "candidate-tool-github-w8123-enterpriseagentframework",
+  "canonicalKey": "tool:github:w8123/enterpriseagentframework",
+  "firstDiscoveredAt": "2026-09-06",
+  "lastSeenAt": "2026-09-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-06-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-06"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "EnterpriseAgentFramework is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "ReachAI企业级智能体开发平台：快速、安全完成已有业务系统智能化改造，让 AI 在 OA、ERP、CRM 等原系统中查数据、填表单、办业务。ReachAI: Quickly and securely bring AI to existing enterprise systems, enabling AI to query data, fill out forms, and execute bu",
+      "Topics: a2a, agent, agent-framework, agent-skills, agents",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "enterpriseagentframework",
+  "publishedAt": "2026-09-06"
+}
