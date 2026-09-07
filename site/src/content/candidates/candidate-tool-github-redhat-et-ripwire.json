@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "ripwire",
+  "summary": "The ripgrep of AI context: a zero-dependency C++23 CLI + MCP server giving coding agents a ranked, deterministic map of any repo, blast radius, tests-to-run and quality deltas. Signatures at 80% fewer bytes than bodies; ~5% of a grep-and-read pass's tokens.",
+  "sourceUrl": "https://github.com/redhat-et/ripwire",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "redhat-et",
+    "repo": "ripwire",
+    "fullName": "redhat-et/ripwire",
+    "stars": 1310,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "call-graph",
+      "claude",
+      "claude-code",
+      "cli",
+      "code-navigation",
+      "codex",
+      "coding-agents",
+      "context-engineering",
+      "cpp",
+      "developer-tools",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "python",
+      "rust",
+      "static-analysis",
+      "swift",
+      "tree-sitter",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-07T21:22:53Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-07",
+  "lastChecked": "2026-09-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The ripgrep of AI context: a zero-dependency C++23 CLI + MCP server giving coding agents a ranked, deterministic map of any repo, blast radius, tests-to-run and quality deltas. Signatures at 80% fewer",
+    "Topics: ai-agents, call-graph, claude, claude-code, cli",
+    "GitHub stars: 1310",
+    "Last pushed: 2026-09-07"
+  ],
+  "id": "candidate-tool-github-redhat-et-ripwire",
+  "canonicalKey": "tool:github:redhat-et/ripwire",
+  "firstDiscoveredAt": "2026-09-07",
+  "lastSeenAt": "2026-09-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "ripwire is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "The ripgrep of AI context: a zero-dependency C++23 CLI + MCP server giving coding agents a ranked, deterministic map of any repo, blast radius, tests-to-run and quality deltas. Signatures at 80% fewer",
+      "Topics: ai-agents, call-graph, claude, claude-code, cli",
+      "GitHub stars: 1310"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ripwire",
+  "publishedAt": "2026-09-07"
+}

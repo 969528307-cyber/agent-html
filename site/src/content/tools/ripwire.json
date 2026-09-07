@@ -1,0 +1,69 @@
+{
+  "id": "ripwire",
+  "name": "ripwire",
+  "type": "workflow",
+  "status": "published",
+  "summary": "The ripgrep of AI context: a zero-dependency C++23 CLI + MCP server giving coding agents a ranked, deterministic map of any repo, blast radius, tests-to-run and quality deltas. Signatures at 80% fewer bytes than bodies; ~5% of a grep-and-read pass's tokens.",
+  "description": "The ripgrep of AI context: a zero-dependency C++23 CLI + MCP server giving coding agents a ranked, deterministic map of any repo, blast radius, tests-to-run and quality deltas. Signatures at 80% fewer bytes than bodies; ~5% of a grep-and-read pass's tokens.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/redhat-et/ripwire",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/redhat-et/ripwire",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/redhat-et/ripwire#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/redhat-et/ripwire#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/redhat-et/ripwire/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "The ripgrep of AI context: a zero-dependency C++23 CLI + MCP server giving coding agents a ranked, deterministic map of any repo, blast radius, tests-to-run and quality deltas. Signatures at 80% fewer",
+    "Topics: ai-agents, call-graph, claude, claude-code, cli",
+    "GitHub stars: 1310",
+    "Last pushed: 2026-09-07"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-09-07T21:22:53Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/redhat-et/ripwire",
+  "repoUrl": "https://github.com/redhat-et/ripwire",
+  "license": "Apache-2.0",
+  "stars": 1310,
+  "lastUpdated": "2026-09-07T21:22:53Z",
+  "lastChecked": "2026-09-07",
+  "publishedAt": "2026-09-07",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
