@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "pr-lens",
+  "summary": "Review code 100X faster. Lens draws every PR as animated architecture and data-flow walkthroughs, inside the pull request itself. Use it as a GitHub App, GitHub Action, CLI, or a skill for your coding agent",
+  "sourceUrl": "https://github.com/coldteadotai/pr-lens",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "coldteadotai",
+    "repo": "pr-lens",
+    "fullName": "coldteadotai/pr-lens",
+    "stars": 935,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "architecture-as-code",
+      "architecture-diagrams",
+      "claude-skills",
+      "code-visualisation",
+      "codex",
+      "coding-agents",
+      "data-flow-diagram",
+      "diagrams-as-code",
+      "mermaid-alternative",
+      "opencode",
+      "sequence-diagrams",
+      "software-architecture-and-design",
+      "system-design",
+      "text-to-diagram"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-08T17:46:38Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-08",
+  "lastChecked": "2026-09-08",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Review code 100X faster. Lens draws every PR as animated architecture and data-flow walkthroughs, inside the pull request itself. Use it as a GitHub App, GitHub Action, CLI, or a skill for your coding",
+    "Topics: agent-skills, architecture-as-code, architecture-diagrams, claude-skills, code-visualisation",
+    "GitHub stars: 935",
+    "Last pushed: 2026-09-08"
+  ],
+  "id": "candidate-tool-github-coldteadotai-pr-lens",
+  "canonicalKey": "tool:github:coldteadotai/pr-lens",
+  "firstDiscoveredAt": "2026-09-08",
+  "lastSeenAt": "2026-09-08",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-08-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-08"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "pr-lens is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Review code 100X faster. Lens draws every PR as animated architecture and data-flow walkthroughs, inside the pull request itself. Use it as a GitHub App, GitHub Action, CLI, or a skill for your coding",
+      "Topics: agent-skills, architecture-as-code, architecture-diagrams, claude-skills, code-visualisation",
+      "GitHub stars: 935"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-08",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pr-lens",
+  "publishedAt": "2026-09-08"
+}
