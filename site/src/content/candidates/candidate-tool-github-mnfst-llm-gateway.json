@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "llm-gateway",
+  "summary": "Connect Your Agents And Harnesses With Any Provider 🦚",
+  "sourceUrl": "https://github.com/mnfst/llm-gateway",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "sdk"
+  ],
+  "githubMetadata": {
+    "owner": "mnfst",
+    "repo": "llm-gateway",
+    "fullName": "mnfst/llm-gateway",
+    "stars": 7514,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-",
+      "ai-sdk",
+      "anthropic",
+      "byok",
+      "cost-tracking",
+      "gateway",
+      "hermes-agent",
+      "llm-observability",
+      "llm-router",
+      "open-source",
+      "openai-api",
+      "openclaw",
+      "subscription",
+      "token-tracking"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-10T10:29:10Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-10",
+  "lastChecked": "2026-09-10",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Connect Your Agents And Harnesses With Any Provider 🦚",
+    "Topics: ai, ai-, ai-sdk, anthropic, byok",
+    "GitHub stars: 7514",
+    "Last pushed: 2026-09-10"
+  ],
+  "id": "candidate-tool-github-mnfst-llm-gateway",
+  "canonicalKey": "tool:github:mnfst/llm-gateway",
+  "firstDiscoveredAt": "2026-09-10",
+  "lastSeenAt": "2026-09-10",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-10-sdk",
+      "module": "sdk",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-10"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "llm-gateway is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to sdk.",
+      "Connect Your Agents And Harnesses With Any Provider 🦚",
+      "Topics: ai, ai-, ai-sdk, anthropic, byok",
+      "GitHub stars: 7514"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-10",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "llm-gateway",
+  "publishedAt": "2026-09-10"
+}
