@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "Douyin_TikTok_Download_API",
+  "summary": "🚀 Self-hosted TikTok & Douyin scraper and no-watermark video downloader — async REST API, MCP server, CLI and web console for posts, profiles, comments and playlists. Self-healing identity pool, PostgreSQL archive, one docker compose up. 抖音、TikTok 数据采集与无水印视频下载 API，自托管，支持 MCP 调用与 Docker 一键部署。",
+  "sourceUrl": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Evil0ctal",
+    "repo": "Douyin_TikTok_Download_API",
+    "fullName": "Evil0ctal/Douyin_TikTok_Download_API",
+    "stars": 20073,
+    "license": "Apache-2.0",
+    "topics": [
+      "asyncio",
+      "crawler",
+      "data-collection",
+      "douyin",
+      "douyin-api",
+      "downloader",
+      "fastapi",
+      "mcp-server",
+      "model-context-protocol",
+      "openapi",
+      "rest-api",
+      "scraper",
+      "social-media",
+      "spider",
+      "tiktok",
+      "tiktok-api",
+      "tiktok-downloader",
+      "tiktok-scraper",
+      "video-downloader",
+      "web-scraping"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-11T09:58:52Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-11",
+  "lastChecked": "2026-09-11",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "🚀 Self-hosted TikTok & Douyin scraper and no-watermark video downloader — async REST API, MCP server, CLI and web console for posts, profiles, comments and playlists. Self-healing identity pool, Post",
+    "Topics: asyncio, crawler, data-collection, douyin, douyin-api",
+    "GitHub stars: 20073",
+    "Last pushed: 2026-09-11"
+  ],
+  "id": "candidate-tool-github-evil0ctal-douyin-tiktok-download-api",
+  "canonicalKey": "tool:github:evil0ctal/douyin_tiktok_download_api",
+  "firstDiscoveredAt": "2026-09-11",
+  "lastSeenAt": "2026-09-11",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-11-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-11"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Douyin_TikTok_Download_API is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "🚀 Self-hosted TikTok & Douyin scraper and no-watermark video downloader — async REST API, MCP server, CLI and web console for posts, profiles, comments and playlists. Self-healing identity pool, Post",
+      "Topics: asyncio, crawler, data-collection, douyin, douyin-api",
+      "GitHub stars: 20073"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-11",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "douyin-tiktok-download-api",
+  "publishedAt": "2026-09-11"
+}

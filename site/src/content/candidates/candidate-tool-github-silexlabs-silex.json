@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "Silex",
+  "summary": "Silex is an online tool for visually creating static sites with dynamic data. With the free/libre spirit of internet, together.",
+  "sourceUrl": "https://github.com/silexlabs/Silex",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "silexlabs",
+    "repo": "Silex",
+    "fullName": "silexlabs/Silex",
+    "stars": 2962,
+    "license": "AGPL-3.0",
+    "topics": [
+      "composable",
+      "design",
+      "grapesjs",
+      "jamstack",
+      "javascript",
+      "mcp",
+      "mcp-server",
+      "no-code",
+      "nocode",
+      "nodejs",
+      "saas",
+      "silex",
+      "visual",
+      "visual-programming",
+      "webdesign",
+      "website-builder"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-11T15:38:18Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-11",
+  "lastChecked": "2026-09-11",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Silex is an online tool for visually creating static sites with dynamic data. With the free/libre spirit of internet, together.",
+    "Topics: composable, design, grapesjs, jamstack, javascript",
+    "GitHub stars: 2962",
+    "Last pushed: 2026-09-11"
+  ],
+  "id": "candidate-tool-github-silexlabs-silex",
+  "canonicalKey": "tool:github:silexlabs/silex",
+  "firstDiscoveredAt": "2026-09-11",
+  "lastSeenAt": "2026-09-11",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-11-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-11"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Silex is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Silex is an online tool for visually creating static sites with dynamic data. With the free/libre spirit of internet, together.",
+      "Topics: composable, design, grapesjs, jamstack, javascript",
+      "GitHub stars: 2962"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-11",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "silex",
+  "publishedAt": "2026-09-11"
+}
