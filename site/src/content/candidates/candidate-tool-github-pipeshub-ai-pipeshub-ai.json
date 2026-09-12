@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "pipeshub-ai",
+  "summary": "PipesHub is an open-source platform for securely connecting enterprise knowledge to AI. Give AI agents trusted context and your team permission-aware search with verified citations across your business systems.",
+  "sourceUrl": "https://github.com/pipeshub-ai/pipeshub-ai",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "pipeshub-ai",
+    "repo": "pipeshub-ai",
+    "fullName": "pipeshub-ai/pipeshub-ai",
+    "stars": 3738,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agents",
+      "ai",
+      "docker",
+      "enterprise-search",
+      "fastapi",
+      "glean",
+      "graphrag",
+      "knowledge-graph",
+      "langchain",
+      "langgraph",
+      "mcp",
+      "notion",
+      "ollama",
+      "python",
+      "rag",
+      "retrieval-augmented-generation",
+      "self-hosted",
+      "slack",
+      "workplace-ai"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-12T18:22:45Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-12",
+  "lastChecked": "2026-09-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "PipesHub is an open-source platform for securely connecting enterprise knowledge to AI. Give AI agents trusted context and your team permission-aware search with verified citations across your busines",
+    "Topics: agent, agents, ai, docker, enterprise-search",
+    "GitHub stars: 3738",
+    "Last pushed: 2026-09-12"
+  ],
+  "id": "candidate-tool-github-pipeshub-ai-pipeshub-ai",
+  "canonicalKey": "tool:github:pipeshub-ai/pipeshub-ai",
+  "firstDiscoveredAt": "2026-09-12",
+  "lastSeenAt": "2026-09-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-12-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "pipeshub-ai is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "PipesHub is an open-source platform for securely connecting enterprise knowledge to AI. Give AI agents trusted context and your team permission-aware search with verified citations across your busines",
+      "Topics: agent, agents, ai, docker, enterprise-search",
+      "GitHub stars: 3738"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pipeshub-ai",
+  "publishedAt": "2026-09-12"
+}
