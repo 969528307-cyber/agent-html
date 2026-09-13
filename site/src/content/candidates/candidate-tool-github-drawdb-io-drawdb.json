@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "drawdb",
+  "summary": "Free, simple, and intuitive online database diagram editor and SQL generator.",
+  "sourceUrl": "https://github.com/drawdb-io/drawdb",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "drawdb-io",
+    "repo": "drawdb",
+    "fullName": "drawdb-io/drawdb",
+    "stars": 39516,
+    "license": "AGPL-3.0",
+    "topics": [
+      "database",
+      "database-design",
+      "database-diagram",
+      "database-schema",
+      "dbml",
+      "diagram-editor",
+      "editor",
+      "er-diagram",
+      "erd",
+      "erdiagram",
+      "indexeddb",
+      "mariadb",
+      "mcp",
+      "oracle-database",
+      "oracle-db",
+      "postgresql",
+      "schema-design",
+      "sql",
+      "sql-server",
+      "sqlite"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-13T18:45:53Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-13",
+  "lastChecked": "2026-09-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Free, simple, and intuitive online database diagram editor and SQL generator.",
+    "Topics: database, database-design, database-diagram, database-schema, dbml",
+    "GitHub stars: 39516",
+    "Last pushed: 2026-09-13"
+  ],
+  "id": "candidate-tool-github-drawdb-io-drawdb",
+  "canonicalKey": "tool:github:drawdb-io/drawdb",
+  "firstDiscoveredAt": "2026-09-13",
+  "lastSeenAt": "2026-09-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "drawdb is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Free, simple, and intuitive online database diagram editor and SQL generator.",
+      "Topics: database, database-design, database-diagram, database-schema, dbml",
+      "GitHub stars: 39516"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "drawdb",
+  "publishedAt": "2026-09-13"
+}

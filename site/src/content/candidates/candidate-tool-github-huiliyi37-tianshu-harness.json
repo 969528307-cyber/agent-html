@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "Tianshu-harness",
+  "summary": "天枢 (Tianshu) 是一个基于harness工程的终端编程智能体运行时（Tui X Gui），针对DeepSeek V4 做了前缀缓存工程优化（长会话实测稳态命中率 97–99%）和深度适配。它跳出了传统 AI 编程助手把大模型仅当成“工具”的局限，基于认知虚拟机 (CVM)、自感知层和信息素（Stigmergy）自衰减记忆构建，让 AI 成为有独立判断与认知防护的“开发伙伴”。",
+  "sourceUrl": "https://github.com/huiliyi37/Tianshu-harness",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "huiliyi37",
+    "repo": "Tianshu-harness",
+    "fullName": "huiliyi37/Tianshu-harness",
+    "stars": 706,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agent",
+      "coding-agent",
+      "context-management",
+      "deepseek",
+      "dsh",
+      "gui",
+      "harness",
+      "harness-engineering",
+      "prefix-cache",
+      "tui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-12T18:26:35Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-13",
+  "lastChecked": "2026-09-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "天枢 (Tianshu) 是一个基于harness工程的终端编程智能体运行时（Tui X Gui），针对DeepSeek V4 做了前缀缓存工程优化（长会话实测稳态命中率 97–99%）和深度适配。它跳出了传统 AI 编程助手把大模型仅当成“工具”的局限，基于认知虚拟机 (CVM)、自感知层和信息素（Stigmergy）自衰减记忆构建，让 AI 成为有独立判断与认知防护的“开发伙伴”。",
+    "Topics: ai-agent, coding-agent, context-management, deepseek, dsh",
+    "GitHub stars: 706",
+    "Last pushed: 2026-09-12"
+  ],
+  "id": "candidate-tool-github-huiliyi37-tianshu-harness",
+  "canonicalKey": "tool:github:huiliyi37/tianshu-harness",
+  "firstDiscoveredAt": "2026-09-13",
+  "lastSeenAt": "2026-09-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-13-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Tianshu-harness is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "天枢 (Tianshu) 是一个基于harness工程的终端编程智能体运行时（Tui X Gui），针对DeepSeek V4 做了前缀缓存工程优化（长会话实测稳态命中率 97–99%）和深度适配。它跳出了传统 AI 编程助手把大模型仅当成“工具”的局限，基于认知虚拟机 (CVM)、自感知层和信息素（Stigmergy）自衰减记忆构建，让 AI 成为有独立判断与认知防护的“开发伙伴”。",
+      "Topics: ai-agent, coding-agent, context-management, deepseek, dsh",
+      "GitHub stars: 706"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "tianshu-harness",
+  "publishedAt": "2026-09-13"
+}

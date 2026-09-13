@@ -1,0 +1,69 @@
+{
+  "id": "tianshu-harness",
+  "name": "Tianshu-harness",
+  "type": "workflow",
+  "status": "published",
+  "summary": "天枢 (Tianshu) 是一个基于harness工程的终端编程智能体运行时（Tui X Gui），针对DeepSeek V4 做了前缀缓存工程优化（长会话实测稳态命中率 97–99%）和深度适配。它跳出了传统 AI 编程助手把大模型仅当成“工具”的局限，基于认知虚拟机 (CVM)、自感知层和信息素（Stigmergy）自衰减记忆构建，让 AI 成为有独立判断与认知防护的“开发伙伴”。",
+  "description": "天枢 (Tianshu) 是一个基于harness工程的终端编程智能体运行时（Tui X Gui），针对DeepSeek V4 做了前缀缓存工程优化（长会话实测稳态命中率 97–99%）和深度适配。它跳出了传统 AI 编程助手把大模型仅当成“工具”的局限，基于认知虚拟机 (CVM)、自感知层和信息素（Stigmergy）自衰减记忆构建，让 AI 成为有独立判断与认知防护的“开发伙伴”。",
+  "category": [
+    "agent-app"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/huiliyi37/Tianshu-harness",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/huiliyi37/Tianshu-harness",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/huiliyi37/Tianshu-harness#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/huiliyi37/Tianshu-harness#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/huiliyi37/Tianshu-harness/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "天枢 (Tianshu) 是一个基于harness工程的终端编程智能体运行时（Tui X Gui），针对DeepSeek V4 做了前缀缓存工程优化（长会话实测稳态命中率 97–99%）和深度适配。它跳出了传统 AI 编程助手把大模型仅当成“工具”的局限，基于认知虚拟机 (CVM)、自感知层和信息素（Stigmergy）自衰减记忆构建，让 AI 成为有独立判断与认知防护的“开发伙伴”。",
+    "Topics: ai-agent, coding-agent, context-management, deepseek, dsh",
+    "GitHub stars: 706",
+    "Last pushed: 2026-09-12"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-09-12T18:26:35Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/huiliyi37/Tianshu-harness",
+  "repoUrl": "https://github.com/huiliyi37/Tianshu-harness",
+  "license": "Apache-2.0",
+  "stars": 706,
+  "lastUpdated": "2026-09-12T18:26:35Z",
+  "lastChecked": "2026-09-13",
+  "publishedAt": "2026-09-13",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
