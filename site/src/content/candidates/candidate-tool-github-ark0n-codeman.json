@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "Codeman",
+  "summary": "Self-hosted mission control for AI coding agents: run Claude Code, OpenCode, Pi, Codex, and Antigravity & Gemini CLI 24/7, from any device, watch every subagent live",
+  "sourceUrl": "https://github.com/Ark0N/Codeman",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Ark0N",
+    "repo": "Codeman",
+    "fullName": "Ark0N/Codeman",
+    "stars": 755,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "ai-agents",
+      "claude",
+      "claude-ai",
+      "claude-code",
+      "claude-code-marketplace",
+      "claude-code-plugin",
+      "claude-skills",
+      "codex",
+      "developer-tools",
+      "docker",
+      "gemini-cli",
+      "opencode",
+      "pi",
+      "self-hosted",
+      "session-manager",
+      "terminal",
+      "tmux",
+      "web-dashboard",
+      "xterm"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-09-14T22:27:02Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-14",
+  "lastChecked": "2026-09-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Self-hosted mission control for AI coding agents: run Claude Code, OpenCode, Pi, Codex, and Antigravity & Gemini CLI 24/7, from any device, watch every subagent live",
+    "Topics: agent, ai-agents, claude, claude-ai, claude-code",
+    "GitHub stars: 755",
+    "Last pushed: 2026-09-14"
+  ],
+  "id": "candidate-tool-github-ark0n-codeman",
+  "canonicalKey": "tool:github:ark0n/codeman",
+  "firstDiscoveredAt": "2026-09-14",
+  "lastSeenAt": "2026-09-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-14-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Codeman is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Self-hosted mission control for AI coding agents: run Claude Code, OpenCode, Pi, Codex, and Antigravity & Gemini CLI 24/7, from any device, watch every subagent live",
+      "Topics: agent, ai-agents, claude, claude-ai, claude-code",
+      "GitHub stars: 755"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-14",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "codeman",
+  "publishedAt": "2026-09-14"
+}
