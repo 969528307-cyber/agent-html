@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "native-subtitle-quote-image",
+  "summary": "保留视频内嵌字幕，精确取帧并生成 3:4 社交长图的 Agent Skill",
+  "sourceUrl": "https://github.com/chengyi-ai/native-subtitle-quote-image",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "chengyi-ai",
+    "repo": "native-subtitle-quote-image",
+    "fullName": "chengyi-ai/native-subtitle-quote-image",
+    "stars": 707,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "codex",
+      "social-media",
+      "subtitles",
+      "video-processing"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-24T06:21:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-15",
+  "lastChecked": "2026-09-15",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "保留视频内嵌字幕，精确取帧并生成 3:4 社交长图的 Agent Skill",
+    "Topics: agent-skills, codex, social-media, subtitles, video-processing",
+    "GitHub stars: 707",
+    "Last pushed: 2026-08-24"
+  ],
+  "id": "candidate-tool-github-chengyi-ai-native-subtitle-quote-image",
+  "canonicalKey": "tool:github:chengyi-ai/native-subtitle-quote-image",
+  "firstDiscoveredAt": "2026-09-15",
+  "lastSeenAt": "2026-09-15",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-15-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-15"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "native-subtitle-quote-image is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "保留视频内嵌字幕，精确取帧并生成 3:4 社交长图的 Agent Skill",
+      "Topics: agent-skills, codex, social-media, subtitles, video-processing",
+      "GitHub stars: 707"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "native-subtitle-quote-image",
+  "publishedAt": "2026-09-15"
+}
