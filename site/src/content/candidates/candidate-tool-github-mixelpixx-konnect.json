@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "Konnect",
+  "summary": "AI-assisted PCB design for KiCAD 10. Native KiCAD plugin — a single Rust binary exposing 217 schematic, layout, routing, placement, design-review, and manufacturing tools to Claude, or the LLM of your choosing",
+  "sourceUrl": "https://github.com/mixelpixx/Konnect",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "mixelpixx",
+    "repo": "Konnect",
+    "fullName": "mixelpixx/Konnect",
+    "stars": 702,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent-skills",
+      "claude",
+      "kicad-pcb",
+      "kicad-schematics",
+      "llm",
+      "mcp-server",
+      "mcp-tools"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-16T18:59:22Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-16",
+  "lastChecked": "2026-09-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI-assisted PCB design for KiCAD 10. Native KiCAD plugin — a single Rust binary exposing 217 schematic, layout, routing, placement, design-review, and manufacturing tools to Claude, or the LLM of your",
+    "Topics: agent-skills, claude, kicad-pcb, kicad-schematics, llm",
+    "GitHub stars: 702",
+    "Last pushed: 2026-09-16"
+  ],
+  "id": "candidate-tool-github-mixelpixx-konnect",
+  "canonicalKey": "tool:github:mixelpixx/konnect",
+  "firstDiscoveredAt": "2026-09-16",
+  "lastSeenAt": "2026-09-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-16-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Konnect is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "AI-assisted PCB design for KiCAD 10. Native KiCAD plugin — a single Rust binary exposing 217 schematic, layout, routing, placement, design-review, and manufacturing tools to Claude, or the LLM of your",
+      "Topics: agent-skills, claude, kicad-pcb, kicad-schematics, llm",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "konnect",
+  "publishedAt": "2026-09-16"
+}
