@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "harlequin",
+  "summary": "The SQL IDE for Your Terminal.",
+  "sourceUrl": "https://github.com/tconbeer/harlequin",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "tconbeer",
+    "repo": "harlequin",
+    "fullName": "tconbeer/harlequin",
+    "stars": 6404,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "cli",
+      "client",
+      "database",
+      "db",
+      "db-cli",
+      "db-client",
+      "duckdb",
+      "mariadb",
+      "mssql",
+      "mysql",
+      "odbc",
+      "postgres",
+      "python",
+      "redshift",
+      "snowflake",
+      "sql",
+      "sqlite",
+      "textual",
+      "tui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-17T18:47:16Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-18",
+  "lastChecked": "2026-09-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The SQL IDE for Your Terminal.",
+    "Topics: agent, cli, client, database, db",
+    "GitHub stars: 6404",
+    "Last pushed: 2026-09-17"
+  ],
+  "id": "candidate-tool-github-tconbeer-harlequin",
+  "canonicalKey": "tool:github:tconbeer/harlequin",
+  "firstDiscoveredAt": "2026-09-18",
+  "lastSeenAt": "2026-09-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-18-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "harlequin is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "The SQL IDE for Your Terminal.",
+      "Topics: agent, cli, client, database, db",
+      "GitHub stars: 6404"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "harlequin",
+  "publishedAt": "2026-09-18"
+}
