@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "okf-agent-memory",
+  "summary": "Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with zero external databases or dependencies. Built in pure Go.",
+  "sourceUrl": "https://github.com/okf-memory/okf-agent-memory",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "okf-memory",
+    "repo": "okf-agent-memory",
+    "fullName": "okf-memory/okf-agent-memory",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "agent-memory",
+      "ai-agents",
+      "bm25",
+      "coding-agents",
+      "developer-tools",
+      "git-native",
+      "go",
+      "golang",
+      "knowledge-base",
+      "knowledge-graph",
+      "llm-memory",
+      "markdown",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "okf",
+      "open-knowledge-format",
+      "persistent-memory"
+    ],
+    "defaultBranch": "develop",
+    "lastPushedAt": "2026-09-19T13:07:12Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-19",
+  "lastChecked": "2026-09-19",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with zer",
+    "Topics: agent-memory, ai-agents, bm25, coding-agents, developer-tools",
+    "GitHub stars: 700",
+    "Last pushed: 2026-09-19"
+  ],
+  "id": "candidate-tool-github-okf-memory-okf-agent-memory",
+  "canonicalKey": "tool:github:okf-memory/okf-agent-memory",
+  "firstDiscoveredAt": "2026-09-19",
+  "lastSeenAt": "2026-09-19",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-19-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-19"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "okf-agent-memory is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with zer",
+      "Topics: agent-memory, ai-agents, bm25, coding-agents, developer-tools",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-19",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "okf-agent-memory",
+  "publishedAt": "2026-09-19"
+}
