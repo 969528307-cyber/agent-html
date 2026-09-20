@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "meridian",
+  "summary": "Use Claude and Antigravity with Pi, OpenCode and other coding clients. Local API bridge, usage dashboard and Mac app. Antigravity preview available in 1.74.0.",
+  "sourceUrl": "https://github.com/rynfar/meridian",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "rynfar",
+    "repo": "meridian",
+    "fullName": "rynfar/meridian",
+    "stars": 2031,
+    "license": "",
+    "topics": [
+      "ai-agents",
+      "ai-coding",
+      "aider",
+      "anthropic",
+      "antigravity",
+      "bun",
+      "claude",
+      "claude-agent-sdk",
+      "claude-max",
+      "cline",
+      "crush-cli",
+      "gemini",
+      "google-antigravity",
+      "jcode",
+      "llm",
+      "mcp",
+      "opencode",
+      "opencode-plugin",
+      "pi-coding-agent",
+      "proxy"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-20T20:04:35Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-20",
+  "lastChecked": "2026-09-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Use Claude and Antigravity with Pi, OpenCode and other coding clients. Local API bridge, usage dashboard and Mac app. Antigravity preview available in 1.74.0.",
+    "Topics: ai-agents, ai-coding, aider, anthropic, antigravity",
+    "GitHub stars: 2031",
+    "Last pushed: 2026-09-20"
+  ],
+  "id": "candidate-tool-github-rynfar-meridian",
+  "canonicalKey": "tool:github:rynfar/meridian",
+  "firstDiscoveredAt": "2026-09-20",
+  "lastSeenAt": "2026-09-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-20-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "meridian is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Use Claude and Antigravity with Pi, OpenCode and other coding clients. Local API bridge, usage dashboard and Mac app. Antigravity preview available in 1.74.0.",
+      "Topics: ai-agents, ai-coding, aider, anthropic, antigravity",
+      "GitHub stars: 2031"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "meridian",
+  "publishedAt": "2026-09-20"
+}

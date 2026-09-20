@@ -1,0 +1,109 @@
+{
+  "type": "tool",
+  "title": "open-steps",
+  "summary": "Skills that translate your coding agent's output into plain language: honest reports, straight verdicts, steps you can follow. MIT.",
+  "sourceUrl": "https://github.com/kharmanskyi/open-steps",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "kharmanskyi",
+    "repo": "open-steps",
+    "fullName": "kharmanskyi/open-steps",
+    "stars": 801,
+    "license": "MIT",
+    "topics": [
+      "agent-skill",
+      "agent-skills",
+      "ai-agents",
+      "claude-code",
+      "claude-code-plugin",
+      "claude-code-skills",
+      "claude-skill",
+      "prompt-optimization",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-14T16:02:26Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-20",
+  "lastChecked": "2026-09-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Skills that translate your coding agent's output into plain language: honest reports, straight verdicts, steps you can follow. MIT.",
+    "Topics: agent-skill, agent-skills, ai-agents, claude-code, claude-code-plugin",
+    "GitHub stars: 801",
+    "Last pushed: 2026-09-14"
+  ],
+  "id": "candidate-tool-github-kharmanskyi-open-steps",
+  "canonicalKey": "tool:github:kharmanskyi/open-steps",
+  "firstDiscoveredAt": "2026-09-20",
+  "lastSeenAt": "2026-09-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-20-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "open-steps is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Skills that translate your coding agent's output into plain language: honest reports, straight verdicts, steps you can follow. MIT.",
+      "Topics: agent-skill, agent-skills, ai-agents, claude-code, claude-code-plugin",
+      "GitHub stars: 801"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "open-steps",
+  "publishedAt": "2026-09-20"
+}

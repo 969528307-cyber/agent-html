@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "BrowserKitten",
+  "summary": "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
+  "sourceUrl": "https://github.com/Player-YN/BrowserKitten",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "Player-YN",
+    "repo": "BrowserKitten",
+    "fullName": "Player-YN/BrowserKitten",
+    "stars": 2844,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "browser-agent",
+      "byok",
+      "chrome-extension",
+      "llm",
+      "pptx",
+      "tldraw",
+      "univer"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-18T07:18:28Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-20",
+  "lastChecked": "2026-09-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
+    "Topics: ai-agent, browser-agent, byok, chrome-extension, llm",
+    "GitHub stars: 2844",
+    "Last pushed: 2026-09-18"
+  ],
+  "id": "candidate-tool-github-player-yn-browserkitten",
+  "canonicalKey": "tool:github:player-yn/browserkitten",
+  "firstDiscoveredAt": "2026-09-20",
+  "lastSeenAt": "2026-09-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-20-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "BrowserKitten is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Paw Work - selection-first web agent for Chrome: select on the live page, describe the outcome, take away an editable office file. BYOK, sandboxed, no server.",
+      "Topics: ai-agent, browser-agent, byok, chrome-extension, llm",
+      "GitHub stars: 2844"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "browserkitten",
+  "publishedAt": "2026-09-20"
+}
