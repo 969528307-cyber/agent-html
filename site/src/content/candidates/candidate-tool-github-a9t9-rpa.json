@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "RPA",
+  "summary": "Browser and desktop automation with an MCP server for AI assistants. Record macros or write JavaScript to automate websites, extract data, and control desktop apps with OCR and image recognition.",
+  "sourceUrl": "https://github.com/A9T9/RPA",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "A9T9",
+    "repo": "RPA",
+    "fullName": "A9T9/RPA",
+    "stars": 2026,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-agents",
+      "browser-automation",
+      "browser-automation-ai-api",
+      "browser-extension",
+      "computer-use",
+      "desktop-automation",
+      "image-recognition",
+      "macro-recorder",
+      "mcp",
+      "mcp-server",
+      "ocr",
+      "selenium-ide",
+      "web-automation"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-09-21T21:23:29Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-21",
+  "lastChecked": "2026-09-21",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Browser and desktop automation with an MCP server for AI assistants. Record macros or write JavaScript to automate websites, extract data, and control desktop apps with OCR and image recognition.",
+    "Topics: ai-agents, browser-automation, browser-automation-ai-api, browser-extension, computer-use",
+    "GitHub stars: 2026",
+    "Last pushed: 2026-09-21"
+  ],
+  "id": "candidate-tool-github-a9t9-rpa",
+  "canonicalKey": "tool:github:a9t9/rpa",
+  "firstDiscoveredAt": "2026-09-21",
+  "lastSeenAt": "2026-09-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-21-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-21"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "RPA is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Browser and desktop automation with an MCP server for AI assistants. Record macros or write JavaScript to automate websites, extract data, and control desktop apps with OCR and image recognition.",
+      "Topics: ai-agents, browser-automation, browser-automation-ai-api, browser-extension, computer-use",
+      "GitHub stars: 2026"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-21",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "rpa",
+  "publishedAt": "2026-09-21"
+}
