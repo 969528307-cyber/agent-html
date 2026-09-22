@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "ekko-studio",
+  "summary": "Ekko Studio is a local-first AI workspace for multi-agent chat, coding, and visual workflows, available on desktop and the web.",
+  "sourceUrl": "https://github.com/EKKOLearnAI/ekko-studio",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "EKKOLearnAI",
+    "repo": "ekko-studio",
+    "fullName": "EKKOLearnAI/ekko-studio",
+    "stars": 11177,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "ai-agent",
+      "chat-ui",
+      "coding-agents",
+      "dashboard",
+      "ekko-studio",
+      "hermes",
+      "hermes-agent",
+      "hermes-web-ui",
+      "llm",
+      "multi-agent",
+      "multi-model",
+      "multi-platform",
+      "self-hosted",
+      "typescript",
+      "vue3",
+      "web-ui",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-22T13:37:03Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-22",
+  "lastChecked": "2026-09-22",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Ekko Studio is a local-first AI workspace for multi-agent chat, coding, and visual workflows, available on desktop and the web.",
+    "Topics: agent, ai-agent, chat-ui, coding-agents, dashboard",
+    "GitHub stars: 11177",
+    "Last pushed: 2026-09-22"
+  ],
+  "id": "candidate-tool-github-ekkolearnai-ekko-studio",
+  "canonicalKey": "tool:github:ekkolearnai/ekko-studio",
+  "firstDiscoveredAt": "2026-09-22",
+  "lastSeenAt": "2026-09-22",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-22-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-22"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "ekko-studio is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Ekko Studio is a local-first AI workspace for multi-agent chat, coding, and visual workflows, available on desktop and the web.",
+      "Topics: agent, ai-agent, chat-ui, coding-agents, dashboard",
+      "GitHub stars: 11177"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-22",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ekko-studio",
+  "publishedAt": "2026-09-22"
+}

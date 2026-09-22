@@ -1,0 +1,69 @@
+{
+  "id": "purple",
+  "name": "purple",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Free, open-source terminal SSH manager and SSH config editor in Rust for macOS and Linux that keeps ~/.ssh/config in sync with 18 cloud providers, monitors live SSH tunnels and manages Docker and Podman containers fleet-wide. Plus scp, Vault SSH certs and an MCP server for AI agents.",
+  "description": "Free, open-source terminal SSH manager and SSH config editor in Rust for macOS and Linux that keeps ~/.ssh/config in sync with 18 cloud providers, monitors live SSH tunnels and manages Docker and Podman containers fleet-wide. Plus scp, Vault SSH certs and an MCP server for AI agents.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/erickochen/purple",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/erickochen/purple",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/erickochen/purple#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/erickochen/purple#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/erickochen/purple/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Free, open-source terminal SSH manager and SSH config editor in Rust for macOS and Linux that keeps ~/.ssh/config in sync with 18 cloud providers, monitors live SSH tunnels and manages Docker and Podm",
+    "Topics: cli, cloud-sync, devops, docker, hashicorp-vault",
+    "GitHub stars: 701",
+    "Last pushed: 2026-09-22"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-09-22T20:09:05Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/erickochen/purple",
+  "repoUrl": "https://github.com/erickochen/purple",
+  "license": "MIT",
+  "stars": 701,
+  "lastUpdated": "2026-09-22T20:09:05Z",
+  "lastChecked": "2026-09-22",
+  "publishedAt": "2026-09-22",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

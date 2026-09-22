@@ -1,0 +1,69 @@
+{
+  "id": "monitor",
+  "name": "monitor",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Real-time monitoring, slowlog analysis, and audit trails for Valkey and Redis",
+  "description": "Real-time monitoring, slowlog analysis, and audit trails for Valkey and Redis",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/BetterDB-inc/monitor",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/BetterDB-inc/monitor",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/BetterDB-inc/monitor#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/BetterDB-inc/monitor#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/BetterDB-inc/monitor/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Real-time monitoring, slowlog analysis, and audit trails for Valkey and Redis",
+    "Topics: dragonfly, mcp, mcp-server, metrics, monitoring",
+    "GitHub stars: 1300",
+    "Last pushed: 2026-09-22"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-09-22T18:30:41Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/BetterDB-inc/monitor",
+  "repoUrl": "https://github.com/BetterDB-inc/monitor",
+  "license": "NOASSERTION",
+  "stars": 1300,
+  "lastUpdated": "2026-09-22T18:30:41Z",
+  "lastChecked": "2026-09-22",
+  "publishedAt": "2026-09-22",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
