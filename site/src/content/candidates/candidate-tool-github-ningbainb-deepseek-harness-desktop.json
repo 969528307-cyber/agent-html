@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "deepseek-harness-desktop",
+  "summary": "Open-source Windows desktop client and GUI for DeepSeek Harness — zero-setup installer with Codex, plugins, skills, SSH, mobile remote access, and 11 skins.",
+  "sourceUrl": "https://github.com/ningbainb/deepseek-harness-desktop",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "ningbainb",
+    "repo": "deepseek-harness-desktop",
+    "fullName": "ningbainb/deepseek-harness-desktop",
+    "stars": 701,
+    "license": "BSD-3-Clause",
+    "topics": [
+      "ai-agent",
+      "ai-coding-assistant",
+      "codex",
+      "deepseek",
+      "deepseek-harness",
+      "desktop-app",
+      "dsh",
+      "dsh-plugin",
+      "electron",
+      "electron-app",
+      "gui",
+      "open-source",
+      "plugin-system",
+      "plugins",
+      "remote-access",
+      "skills",
+      "ssh-client",
+      "windows",
+      "windows-desktop"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-22T16:36:05Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-23",
+  "lastChecked": "2026-09-23",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source Windows desktop client and GUI for DeepSeek Harness — zero-setup installer with Codex, plugins, skills, SSH, mobile remote access, and 11 skins.",
+    "Topics: ai-agent, ai-coding-assistant, codex, deepseek, deepseek-harness",
+    "GitHub stars: 701",
+    "Last pushed: 2026-09-22"
+  ],
+  "id": "candidate-tool-github-ningbainb-deepseek-harness-desktop",
+  "canonicalKey": "tool:github:ningbainb/deepseek-harness-desktop",
+  "firstDiscoveredAt": "2026-09-23",
+  "lastSeenAt": "2026-09-23",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-23-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-23"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "deepseek-harness-desktop is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Open-source Windows desktop client and GUI for DeepSeek Harness — zero-setup installer with Codex, plugins, skills, SSH, mobile remote access, and 11 skins.",
+      "Topics: ai-agent, ai-coding-assistant, codex, deepseek, deepseek-harness",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-23",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "deepseek-harness-desktop",
+  "publishedAt": "2026-09-23"
+}
