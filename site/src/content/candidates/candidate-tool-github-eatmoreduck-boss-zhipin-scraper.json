@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "boss-zhipin-scraper",
+  "summary": "Boss直聘爬虫 / BOSS直聘职位数据抓取工具，基于 Chrome CDP 协议复用真实登录态，绕过字体反爬，输出明文薪资 JSON/CSV + 薪资技能分析。A Chrome-CDP-based BOSS Zhipin job scraper/crawler.",
+  "sourceUrl": "https://github.com/eatmoreduck/boss-zhipin-scraper",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "eatmoreduck",
+    "repo": "boss-zhipin-scraper",
+    "fullName": "eatmoreduck/boss-zhipin-scraper",
+    "stars": 1470,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "boss-zhipin",
+      "boss-zhipin-scraper",
+      "boss-zhipin-spider",
+      "bosszp",
+      "chrome-cdp",
+      "claude-skills",
+      "crawler",
+      "job-scraper",
+      "python",
+      "scraper",
+      "spider",
+      "zhipin"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-09-17T05:58:04Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-24",
+  "lastChecked": "2026-09-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Boss直聘爬虫 / BOSS直聘职位数据抓取工具，基于 Chrome CDP 协议复用真实登录态，绕过字体反爬，输出明文薪资 JSON/CSV + 薪资技能分析。A Chrome-CDP-based BOSS Zhipin job scraper/crawler.",
+    "Topics: agent-skills, ai-agents, boss-zhipin, boss-zhipin-scraper, boss-zhipin-spider",
+    "GitHub stars: 1470",
+    "Last pushed: 2026-09-17"
+  ],
+  "id": "candidate-tool-github-eatmoreduck-boss-zhipin-scraper",
+  "canonicalKey": "tool:github:eatmoreduck/boss-zhipin-scraper",
+  "firstDiscoveredAt": "2026-09-24",
+  "lastSeenAt": "2026-09-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-24-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "boss-zhipin-scraper is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Boss直聘爬虫 / BOSS直聘职位数据抓取工具，基于 Chrome CDP 协议复用真实登录态，绕过字体反爬，输出明文薪资 JSON/CSV + 薪资技能分析。A Chrome-CDP-based BOSS Zhipin job scraper/crawler.",
+      "Topics: agent-skills, ai-agents, boss-zhipin, boss-zhipin-scraper, boss-zhipin-spider",
+      "GitHub stars: 1470"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "boss-zhipin-scraper",
+  "publishedAt": "2026-09-24"
+}
