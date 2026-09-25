@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "linkedin-agent-skill",
+  "summary": "Eleven free Claude skills that run a LinkedIn account: posts off 21 hook formulas, comments, replies, profile score, weekly plan, and a humanizer that strips the AI fingerprint and scores the draft before it goes out.",
+  "sourceUrl": "https://github.com/Jakeschincariol/linkedin-agent-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Jakeschincariol",
+    "repo": "linkedin-agent-skill",
+    "fullName": "Jakeschincariol/linkedin-agent-skill",
+    "stars": 730,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-humanizer",
+      "claude",
+      "claude-code",
+      "claude-skills",
+      "content-marketing",
+      "linkedin"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-17T11:27:52Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-25",
+  "lastChecked": "2026-09-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Eleven free Claude skills that run a LinkedIn account: posts off 21 hook formulas, comments, replies, profile score, weekly plan, and a humanizer that strips the AI fingerprint and scores the draft be",
+    "Topics: agent-skills, ai-humanizer, claude, claude-code, claude-skills",
+    "GitHub stars: 730",
+    "Last pushed: 2026-09-17"
+  ],
+  "id": "candidate-tool-github-jakeschincariol-linkedin-agent-skill",
+  "canonicalKey": "tool:github:jakeschincariol/linkedin-agent-skill",
+  "firstDiscoveredAt": "2026-09-25",
+  "lastSeenAt": "2026-09-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-25-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-25"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "linkedin-agent-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Eleven free Claude skills that run a LinkedIn account: posts off 21 hook formulas, comments, replies, profile score, weekly plan, and a humanizer that strips the AI fingerprint and scores the draft be",
+      "Topics: agent-skills, ai-humanizer, claude, claude-code, claude-skills",
+      "GitHub stars: 730"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "linkedin-agent-skill",
+  "publishedAt": "2026-09-25"
+}
