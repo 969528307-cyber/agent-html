@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "google-ads-meta-ads-mcp",
+  "summary": "Google Ads MCP server + Meta Ads MCP (Facebook Ads MCP) + GA4 + Search Console in one hosted remote MCP for Claude, ChatGPT, Cursor & n8n: 250+ tools, OAuth login, no API keys, approval-gated writes, free. By Ryze AI.",
+  "sourceUrl": "https://github.com/irinabuht12-oss/google-ads-meta-ads-mcp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "irinabuht12-oss",
+    "repo": "google-ads-meta-ads-mcp",
+    "fullName": "irinabuht12-oss/google-ads-meta-ads-mcp",
+    "stars": 2693,
+    "license": "MIT",
+    "topics": [
+      "advertising",
+      "chatgpt",
+      "claude",
+      "cursor",
+      "facebook-ads",
+      "facebook-ads-mcp",
+      "ga4",
+      "google-ads",
+      "google-ads-mcp",
+      "google-ads-mcp-server",
+      "google-analytics",
+      "google-analytics-mcp",
+      "mcp",
+      "mcp-server",
+      "meta-ads",
+      "meta-ads-mcp",
+      "meta-ads-mcp-server",
+      "model-context-protocol",
+      "n8n",
+      "remote-mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-25T23:37:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-26",
+  "lastChecked": "2026-09-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Google Ads MCP server + Meta Ads MCP (Facebook Ads MCP) + GA4 + Search Console in one hosted remote MCP for Claude, ChatGPT, Cursor & n8n: 250+ tools, OAuth login, no API keys, approval-gated writes, ",
+    "Topics: advertising, chatgpt, claude, cursor, facebook-ads",
+    "GitHub stars: 2693",
+    "Last pushed: 2026-09-25"
+  ],
+  "id": "candidate-tool-github-irinabuht12-oss-google-ads-meta-ads-mcp",
+  "canonicalKey": "tool:github:irinabuht12-oss/google-ads-meta-ads-mcp",
+  "firstDiscoveredAt": "2026-09-26",
+  "lastSeenAt": "2026-09-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-26-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "google-ads-meta-ads-mcp is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Google Ads MCP server + Meta Ads MCP (Facebook Ads MCP) + GA4 + Search Console in one hosted remote MCP for Claude, ChatGPT, Cursor & n8n: 250+ tools, OAuth login, no API keys, approval-gated writes, ",
+      "Topics: advertising, chatgpt, claude, cursor, facebook-ads",
+      "GitHub stars: 2693"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "google-ads-meta-ads-mcp",
+  "publishedAt": "2026-09-26"
+}
