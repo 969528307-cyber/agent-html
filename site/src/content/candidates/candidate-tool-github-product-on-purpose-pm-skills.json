@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "pm-skills",
+  "summary": "68 plug-and-play, best-practice product management skills for AI agents: 30 Triple Diamond phase + 11 foundation + 12 utility + 15 tool (Foundation Sprint + Design Sprint). Plus 6 sub-agents, workflows, 200+ output samples, guides, and CI-enforced contracts. Apache 2.0.",
+  "sourceUrl": "https://github.com/product-on-purpose/pm-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "product-on-purpose",
+    "repo": "pm-skills",
+    "fullName": "product-on-purpose/pm-skills",
+    "stars": 700,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "agentskills",
+      "ai-skills",
+      "claude-code",
+      "claude-desktop",
+      "codex",
+      "design-sprint",
+      "foundation-sprint",
+      "openskills",
+      "product-management",
+      "skill-families",
+      "triple-diamond"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-18T02:24:42Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-27",
+  "lastChecked": "2026-09-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "68 plug-and-play, best-practice product management skills for AI agents: 30 Triple Diamond phase + 11 foundation + 12 utility + 15 tool (Foundation Sprint + Design Sprint). Plus 6 sub-agents, workflow",
+    "Topics: agent-skills, agentskills, ai-skills, claude-code, claude-desktop",
+    "GitHub stars: 700",
+    "Last pushed: 2026-09-18"
+  ],
+  "id": "candidate-tool-github-product-on-purpose-pm-skills",
+  "canonicalKey": "tool:github:product-on-purpose/pm-skills",
+  "firstDiscoveredAt": "2026-09-27",
+  "lastSeenAt": "2026-09-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-27-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-27"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "pm-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "68 plug-and-play, best-practice product management skills for AI agents: 30 Triple Diamond phase + 11 foundation + 12 utility + 15 tool (Foundation Sprint + Design Sprint). Plus 6 sub-agents, workflow",
+      "Topics: agent-skills, agentskills, ai-skills, claude-code, claude-desktop",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "pm-skills",
+  "publishedAt": "2026-09-27",
+  "reviewedAt": "2026-09-27",
+  "reviewedBy": "local-review"
+}
