@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "dotfiles",
+  "summary": "A repository that gathered files starting with dot",
+  "sourceUrl": "https://github.com/babarot/dotfiles",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "babarot",
+    "repo": "dotfiles",
+    "fullName": "babarot/dotfiles",
+    "stars": 779,
+    "license": "",
+    "topics": [
+      "agent-skills",
+      "dotfiles",
+      "herdr",
+      "neovim",
+      "nix"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-28T17:49:24Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-28",
+  "lastChecked": "2026-09-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A repository that gathered files starting with dot",
+    "Topics: agent-skills, dotfiles, herdr, neovim, nix",
+    "GitHub stars: 779",
+    "Last pushed: 2026-09-28"
+  ],
+  "id": "candidate-tool-github-babarot-dotfiles",
+  "canonicalKey": "tool:github:babarot/dotfiles",
+  "firstDiscoveredAt": "2026-09-28",
+  "lastSeenAt": "2026-09-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-28-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-28"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "dotfiles is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "A repository that gathered files starting with dot",
+      "Topics: agent-skills, dotfiles, herdr, neovim, nix",
+      "GitHub stars: 779"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dotfiles",
+  "publishedAt": "2026-09-28"
+}

@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "DSHA",
+  "summary": "免 ROOT 免 Termux，在手机上跑 DeepSeek Harness。完整 Ubuntu 环境 + proroot 零 ptrace 开销 · AI 输出实时上屏 · ADB 直连 · 数据不丢",
+  "sourceUrl": "https://github.com/DSH-APP/DSHA",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "DSH-APP",
+    "repo": "DSHA",
+    "fullName": "DSH-APP/DSHA",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "android",
+      "coding-agent",
+      "deepseek",
+      "deepseek-harness",
+      "launcher",
+      "llm",
+      "proot",
+      "proroot",
+      "shizuku",
+      "webui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-28T15:13:50Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-28",
+  "lastChecked": "2026-09-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "免 ROOT 免 Termux，在手机上跑 DeepSeek Harness。完整 Ubuntu 环境 + proroot 零 ptrace 开销 · AI 输出实时上屏 · ADB 直连 · 数据不丢",
+    "Topics: android, coding-agent, deepseek, deepseek-harness, launcher",
+    "GitHub stars: 700",
+    "Last pushed: 2026-09-28"
+  ],
+  "id": "candidate-tool-github-dsh-app-dsha",
+  "canonicalKey": "tool:github:dsh-app/dsha",
+  "firstDiscoveredAt": "2026-09-28",
+  "lastSeenAt": "2026-09-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-28-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-28"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "DSHA is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "免 ROOT 免 Termux，在手机上跑 DeepSeek Harness。完整 Ubuntu 环境 + proroot 零 ptrace 开销 · AI 输出实时上屏 · ADB 直连 · 数据不丢",
+      "Topics: android, coding-agent, deepseek, deepseek-harness, launcher",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dsha",
+  "publishedAt": "2026-09-28"
+}

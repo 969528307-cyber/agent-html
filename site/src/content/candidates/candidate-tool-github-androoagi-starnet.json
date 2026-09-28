@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "starnet",
+  "summary": "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run.",
+  "sourceUrl": "https://github.com/androoAGI/starnet",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "androoAGI",
+    "repo": "starnet",
+    "fullName": "androoAGI/starnet",
+    "stars": 704,
+    "license": "MIT",
+    "topics": [
+      "agent-harness",
+      "ai",
+      "ai-agents",
+      "byok",
+      "desktop-app",
+      "game-ui",
+      "llm",
+      "local-first",
+      "multi-agent",
+      "openrouter",
+      "pixel-art",
+      "tauri"
+    ],
+    "defaultBranch": "feat/harness-backend",
+    "lastPushedAt": "2026-09-28T21:02:04Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-28",
+  "lastChecked": "2026-09-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run.",
+    "Topics: agent-harness, ai, ai-agents, byok, desktop-app",
+    "GitHub stars: 704",
+    "Last pushed: 2026-09-28"
+  ],
+  "id": "candidate-tool-github-androoagi-starnet",
+  "canonicalKey": "tool:github:androoagi/starnet",
+  "firstDiscoveredAt": "2026-09-28",
+  "lastSeenAt": "2026-09-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-28-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-28"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "starnet is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run.",
+      "Topics: agent-harness, ai, ai-agents, byok, desktop-app",
+      "GitHub stars: 704"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "starnet",
+  "publishedAt": "2026-09-28"
+}

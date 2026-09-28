@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "attestix",
+  "summary": "Attestix - Attestation Infrastructure for AI Agents. DID-based agent identity, W3C Verifiable Credentials, EU AI Act compliance layer, delegation chains, and reputation scoring. 47 MCP tools across 9 modules.",
+  "sourceUrl": "https://github.com/VibeTensor/attestix",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "VibeTensor",
+    "repo": "attestix",
+    "fullName": "VibeTensor/attestix",
+    "stars": 703,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-identity",
+      "ai-agents",
+      "attestation",
+      "blockchain",
+      "compliance",
+      "delegation",
+      "did",
+      "ed25519",
+      "eu-ai-act",
+      "gdpr",
+      "identity",
+      "mcp",
+      "mcp-server",
+      "python",
+      "reputation",
+      "ucan",
+      "verifiable-credentials",
+      "verifiable-presentations",
+      "w3c"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-27T18:51:48Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-28",
+  "lastChecked": "2026-09-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Attestix - Attestation Infrastructure for AI Agents. DID-based agent identity, W3C Verifiable Credentials, EU AI Act compliance layer, delegation chains, and reputation scoring. 47 MCP tools across 9 ",
+    "Topics: agent-identity, ai-agents, attestation, blockchain, compliance",
+    "GitHub stars: 703",
+    "Last pushed: 2026-09-27"
+  ],
+  "id": "candidate-tool-github-vibetensor-attestix",
+  "canonicalKey": "tool:github:vibetensor/attestix",
+  "firstDiscoveredAt": "2026-09-28",
+  "lastSeenAt": "2026-09-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-28-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-28"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "attestix is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Attestix - Attestation Infrastructure for AI Agents. DID-based agent identity, W3C Verifiable Credentials, EU AI Act compliance layer, delegation chains, and reputation scoring. 47 MCP tools across 9 ",
+      "Topics: agent-identity, ai-agents, attestation, blockchain, compliance",
+      "GitHub stars: 703"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "attestix",
+  "publishedAt": "2026-09-28"
+}
