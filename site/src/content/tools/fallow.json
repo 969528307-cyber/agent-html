@@ -1,0 +1,69 @@
+{
+  "id": "fallow",
+  "name": "fallow",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Codebase intelligence for TypeScript and JavaScript. Health, complexity hotspots, duplication, architecture boundaries, circular dependencies, design-system drift, and unused code, from one graph. CLI, GitHub Action, LSP, MCP, and VS Code. Rust, MIT licensed.",
+  "description": "Codebase intelligence for TypeScript and JavaScript. Health, complexity hotspots, duplication, architecture boundaries, circular dependencies, design-system drift, and unused code, from one graph. CLI, GitHub Action, LSP, MCP, and VS Code. Rust, MIT licensed.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/fallow-rs/fallow",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/fallow-rs/fallow",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/fallow-rs/fallow#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/fallow-rs/fallow#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/fallow-rs/fallow/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Codebase intelligence for TypeScript and JavaScript. Health, complexity hotspots, duplication, architecture boundaries, circular dependencies, design-system drift, and unused code, from one graph. CLI",
+    "Topics: architecture, circular-dependencies, cli, code-duplication, code-health",
+    "GitHub stars: 4957",
+    "Last pushed: 2026-09-29"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-09-29T23:03:09Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/fallow-rs/fallow",
+  "repoUrl": "https://github.com/fallow-rs/fallow",
+  "license": "MIT",
+  "stars": 4957,
+  "lastUpdated": "2026-09-29T23:03:09Z",
+  "lastChecked": "2026-09-29",
+  "publishedAt": "2026-09-29",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
