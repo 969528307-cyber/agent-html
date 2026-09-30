@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "dots",
+  "summary": "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.",
+  "sourceUrl": "https://github.com/feder-cr/dots",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "feder-cr",
+    "repo": "dots",
+    "fullName": "feder-cr/dots",
+    "stars": 1931,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "ai-agents",
+      "ai-browser",
+      "anti-detect-browser",
+      "browser-agent",
+      "browser-automation",
+      "chatgpt",
+      "dotfiles",
+      "dots",
+      "firefox",
+      "llm-agent",
+      "mcp",
+      "open-source-alternative",
+      "openai",
+      "openai-dots",
+      "openrouter",
+      "playwright",
+      "stealth-browser",
+      "web-agent",
+      "web-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-29T23:24:01Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-09-30",
+  "lastChecked": "2026-09-30",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.",
+    "Topics: ai-agent, ai-agents, ai-browser, anti-detect-browser, browser-agent",
+    "GitHub stars: 1931",
+    "Last pushed: 2026-09-29"
+  ],
+  "id": "candidate-tool-github-feder-cr-dots",
+  "canonicalKey": "tool:github:feder-cr/dots",
+  "firstDiscoveredAt": "2026-09-30",
+  "lastSeenAt": "2026-09-30",
+  "crawlRuns": [
+    {
+      "runId": "2026-09-30-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-09-30"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "dots is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked.",
+      "Topics: ai-agent, ai-agents, ai-browser, anti-detect-browser, browser-agent",
+      "GitHub stars: 1931"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-09-30",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dots",
+  "publishedAt": "2026-09-30"
+}
