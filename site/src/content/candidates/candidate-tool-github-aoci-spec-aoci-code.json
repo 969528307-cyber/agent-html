@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "aoci-code",
+  "summary": "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code knowledge that gives Claude Code, Codex, Cursor, and opencode long-term context, memory, and code int",
+  "sourceUrl": "https://github.com/aoci-spec/aoci-code",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "aoci-spec",
+    "repo": "aoci-code",
+    "fullName": "aoci-spec/aoci-code",
+    "stars": 704,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-memory",
+      "agents-md",
+      "ai-coding",
+      "ai-context",
+      "claude-code",
+      "code-indexing",
+      "code-intelligence",
+      "codex",
+      "coding-agent",
+      "context-engineering",
+      "cursor",
+      "database-schema",
+      "golang",
+      "llm",
+      "local-first",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "opencode",
+      "repo-map"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-29T16:33:01Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-01",
+  "lastChecked": "2026-10-01",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code k",
+    "Topics: agent-memory, agents-md, ai-coding, ai-context, claude-code",
+    "GitHub stars: 704",
+    "Last pushed: 2026-09-29"
+  ],
+  "id": "candidate-tool-github-aoci-spec-aoci-code",
+  "canonicalKey": "tool:github:aoci-spec/aoci-code",
+  "firstDiscoveredAt": "2026-10-01",
+  "lastSeenAt": "2026-10-01",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-01-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-01"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "aoci-code is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code k",
+      "Topics: agent-memory, agents-md, ai-coding, ai-context, claude-code",
+      "GitHub stars: 704"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-01",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "aoci-code",
+  "publishedAt": "2026-10-01"
+}

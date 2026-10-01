@@ -1,0 +1,69 @@
+{
+  "id": "aoci-code",
+  "name": "aoci-code",
+  "type": "workflow",
+  "status": "published",
+  "summary": "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code knowledge that gives Claude Code, Codex, Cursor, and opencode long-term context, memory, and code int",
+  "description": "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code knowledge that gives Claude Code, Codex, Cursor, and opencode long-term context, memory, and code int",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/aoci-spec/aoci-code",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/aoci-spec/aoci-code",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/aoci-spec/aoci-code#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/aoci-spec/aoci-code#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/aoci-spec/aoci-code/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "A persistent, Git-versioned map of your whole codebase and database schema that coding agents read before they touch anything. Local-first MCP server + CLI in Go: a governed repository index of code k",
+    "Topics: agent-memory, agents-md, ai-coding, ai-context, claude-code",
+    "GitHub stars: 704",
+    "Last pushed: 2026-09-29"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-09-29T16:33:01Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/aoci-spec/aoci-code",
+  "repoUrl": "https://github.com/aoci-spec/aoci-code",
+  "license": "NOASSERTION",
+  "stars": 704,
+  "lastUpdated": "2026-09-29T16:33:01Z",
+  "lastChecked": "2026-10-01",
+  "publishedAt": "2026-10-01",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

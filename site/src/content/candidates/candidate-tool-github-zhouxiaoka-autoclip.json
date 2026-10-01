@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "autoclip",
+  "summary": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+  "sourceUrl": "https://github.com/zhouxiaoka/autoclip",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "zhouxiaoka",
+    "repo": "autoclip",
+    "fullName": "zhouxiaoka/autoclip",
+    "stars": 9092,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "ai-video-editor",
+      "content-repurposing",
+      "desktop-app",
+      "douyin",
+      "instagram-reels",
+      "mcp",
+      "open-source",
+      "podcast",
+      "subtitles",
+      "tiktok",
+      "video-clipping",
+      "video-editing-software",
+      "xiaohongshu",
+      "youtube-shorts"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-01T17:13:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-01",
+  "lastChecked": "2026-10-01",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+    "Topics: ai-agent, ai-video-editor, content-repurposing, desktop-app, douyin",
+    "GitHub stars: 9092",
+    "Last pushed: 2026-10-01"
+  ],
+  "id": "candidate-tool-github-zhouxiaoka-autoclip",
+  "canonicalKey": "tool:github:zhouxiaoka/autoclip",
+  "firstDiscoveredAt": "2026-10-01",
+  "lastSeenAt": "2026-10-01",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-01-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-01"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "autoclip is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "Topics: ai-agent, ai-video-editor, content-repurposing, desktop-app, douyin",
+      "GitHub stars: 9092"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-01",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "autoclip",
+  "publishedAt": "2026-10-01"
+}
