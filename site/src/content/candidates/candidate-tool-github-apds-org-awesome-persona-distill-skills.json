@@ -1,0 +1,104 @@
+{
+  "type": "tool",
+  "title": "awesome-persona-distill-skills",
+  "summary": "Curated list of Agent Skills centered on people, relationships, commemorative scenes, and methodological perspectives",
+  "sourceUrl": "https://github.com/apds-org/awesome-persona-distill-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "apds-org",
+    "repo": "awesome-persona-distill-skills",
+    "fullName": "apds-org/awesome-persona-distill-skills",
+    "stars": 4669,
+    "license": "CC0-1.0",
+    "topics": [
+      "agent-skills",
+      "awesome",
+      "awesome-list",
+      "persona-distill"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-02T22:25:17Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-02",
+  "lastChecked": "2026-10-02",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Curated list of Agent Skills centered on people, relationships, commemorative scenes, and methodological perspectives",
+    "Topics: agent-skills, awesome, awesome-list, persona-distill",
+    "GitHub stars: 4669",
+    "Last pushed: 2026-10-02"
+  ],
+  "id": "candidate-tool-github-apds-org-awesome-persona-distill-skills",
+  "canonicalKey": "tool:github:apds-org/awesome-persona-distill-skills",
+  "firstDiscoveredAt": "2026-10-02",
+  "lastSeenAt": "2026-10-02",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-02-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-02"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "awesome-persona-distill-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Curated list of Agent Skills centered on people, relationships, commemorative scenes, and methodological perspectives",
+      "Topics: agent-skills, awesome, awesome-list, persona-distill",
+      "GitHub stars: 4669"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-02",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "awesome-persona-distill-skills",
+  "publishedAt": "2026-10-02"
+}
