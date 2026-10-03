@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "lemo-opuscar",
+  "summary": "Claude Code skill for short films with no video model: 43 film styles, each a style prompt plus a demo film made entirely in code by Claude Opus 5.5 (incl. OPUSCAR 98). By Lemomo. | Opus5.5 x 43 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南",
+  "sourceUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "lemomo-ai",
+    "repo": "lemo-opuscar",
+    "fullName": "lemomo-ai/lemo-opuscar",
+    "stars": 886,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "ai-short-film",
+      "ai-video",
+      "animation",
+      "canvas",
+      "claude",
+      "claude-code",
+      "claude-code-plugin",
+      "claude-code-skill",
+      "creative-coding",
+      "ffmpeg",
+      "filmmaking",
+      "motion-graphics",
+      "opus-5-5",
+      "prompt-library",
+      "text-to-speech",
+      "threejs",
+      "video-production",
+      "webgl"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-03T14:01:13Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-03",
+  "lastChecked": "2026-10-03",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Claude Code skill for short films with no video model: 43 film styles, each a style prompt plus a demo film made entirely in code by Claude Opus 5.5 (incl. OPUSCAR 98). By Lemomo. | Opus5.5 x 43 种影片风格",
+    "Topics: agent-skills, ai-agents, ai-short-film, ai-video, animation",
+    "GitHub stars: 886",
+    "Last pushed: 2026-10-03"
+  ],
+  "id": "candidate-tool-github-lemomo-ai-lemo-opuscar",
+  "canonicalKey": "tool:github:lemomo-ai/lemo-opuscar",
+  "firstDiscoveredAt": "2026-10-03",
+  "lastSeenAt": "2026-10-03",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-03-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-03"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "lemo-opuscar is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Claude Code skill for short films with no video model: 43 film styles, each a style prompt plus a demo film made entirely in code by Claude Opus 5.5 (incl. OPUSCAR 98). By Lemomo. | Opus5.5 x 43 种影片风格",
+      "Topics: agent-skills, ai-agents, ai-short-film, ai-video, animation",
+      "GitHub stars: 886"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-03",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "lemo-opuscar",
+  "publishedAt": "2026-10-03"
+}

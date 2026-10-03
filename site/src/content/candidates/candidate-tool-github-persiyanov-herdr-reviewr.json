@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "herdr-reviewr",
+  "summary": "Review your coding agent's diff in a terminal pane and send line comments back to Claude Code, Codex, OpenCode or Pi. A herdr plugin.",
+  "sourceUrl": "https://github.com/persiyanov/herdr-reviewr",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "persiyanov",
+    "repo": "herdr-reviewr",
+    "fullName": "persiyanov/herdr-reviewr",
+    "stars": 825,
+    "license": "MIT",
+    "topics": [
+      "agentic-coding",
+      "ai-agents",
+      "claude-code",
+      "cli",
+      "code-review",
+      "code-review-tool",
+      "codex",
+      "coding-agents",
+      "developer-tools",
+      "diff",
+      "git",
+      "herdr",
+      "herdr-plugin",
+      "opencode",
+      "ratatui",
+      "rust",
+      "terminal",
+      "tui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-03T20:56:30Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-03",
+  "lastChecked": "2026-10-03",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Review your coding agent's diff in a terminal pane and send line comments back to Claude Code, Codex, OpenCode or Pi. A herdr plugin.",
+    "Topics: agentic-coding, ai-agents, claude-code, cli, code-review",
+    "GitHub stars: 825",
+    "Last pushed: 2026-10-03"
+  ],
+  "id": "candidate-tool-github-persiyanov-herdr-reviewr",
+  "canonicalKey": "tool:github:persiyanov/herdr-reviewr",
+  "firstDiscoveredAt": "2026-10-03",
+  "lastSeenAt": "2026-10-03",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-03-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-03"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "herdr-reviewr is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "Review your coding agent's diff in a terminal pane and send line comments back to Claude Code, Codex, OpenCode or Pi. A herdr plugin.",
+      "Topics: agentic-coding, ai-agents, claude-code, cli, code-review",
+      "GitHub stars: 825"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-03",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "herdr-reviewr",
+  "publishedAt": "2026-10-03"
+}

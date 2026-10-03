@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "easy-agent",
+  "summary": "Production-ready open source terminal coding agent with readable, layered code: permission rules, OS sandboxing, MCP, skills, sub-agents, and Anthropic, OpenAI-compatible, Gemini, or local models.",
+  "sourceUrl": "https://github.com/ConardLi/easy-agent",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "ConardLi",
+    "repo": "easy-agent",
+    "fullName": "ConardLi/easy-agent",
+    "stars": 1006,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "ai-agent",
+      "anthropic",
+      "cli",
+      "coding-agent",
+      "developer-tools",
+      "gemini",
+      "llm",
+      "mcp",
+      "openai",
+      "sandbox",
+      "terminal",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-03T15:33:53Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-03",
+  "lastChecked": "2026-10-03",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Production-ready open source terminal coding agent with readable, layered code: permission rules, OS sandboxing, MCP, skills, sub-agents, and Anthropic, OpenAI-compatible, Gemini, or local models.",
+    "Topics: agent, ai-agent, anthropic, cli, coding-agent",
+    "GitHub stars: 1006",
+    "Last pushed: 2026-10-03"
+  ],
+  "id": "candidate-tool-github-conardli-easy-agent",
+  "canonicalKey": "tool:github:conardli/easy-agent",
+  "firstDiscoveredAt": "2026-10-03",
+  "lastSeenAt": "2026-10-03",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-03-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-03"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "easy-agent is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Production-ready open source terminal coding agent with readable, layered code: permission rules, OS sandboxing, MCP, skills, sub-agents, and Anthropic, OpenAI-compatible, Gemini, or local models.",
+      "Topics: agent, ai-agent, anthropic, cli, coding-agent",
+      "GitHub stars: 1006"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-03",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "easy-agent",
+  "publishedAt": "2026-10-03"
+}

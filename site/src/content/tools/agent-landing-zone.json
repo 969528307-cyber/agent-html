@@ -1,0 +1,69 @@
+{
+  "id": "agent-landing-zone",
+  "name": "agent-landing-zone",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Enterprise-grade accelerator for agentic RAG on Azure. Built on Microsoft Foundry with Foundry IQ as the default retrieval backend, Microsoft Agent Framework orchestration, Zero-Trust architecture and IaC.",
+  "description": "Enterprise-grade accelerator for agentic RAG on Azure. Built on Microsoft Foundry with Foundry IQ as the default retrieval backend, Microsoft Agent Framework orchestration, Zero-Trust architecture and IaC.",
+  "category": [
+    "agent-framework"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Azure/agent-landing-zone",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Azure/agent-landing-zone",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Azure/agent-landing-zone#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Azure/agent-landing-zone#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Azure/agent-landing-zone/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Enterprise-grade accelerator for agentic RAG on Azure. Built on Microsoft Foundry with Foundry IQ as the default retrieval backend, Microsoft Agent Framework orchestration, Zero-Trust architecture and",
+    "Topics: agent-framework, agentic-rag, ai-agents, azd-templates, azure",
+    "GitHub stars: 1181",
+    "Last pushed: 2026-10-03"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-10-03T17:18:31Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Azure/agent-landing-zone",
+  "repoUrl": "https://github.com/Azure/agent-landing-zone",
+  "license": "MIT",
+  "stars": 1181,
+  "lastUpdated": "2026-10-03T17:18:31Z",
+  "lastChecked": "2026-10-03",
+  "publishedAt": "2026-10-03",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
