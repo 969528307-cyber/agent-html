@@ -1,0 +1,109 @@
+{
+  "type": "tool",
+  "title": "answer-me-with-html",
+  "summary": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
+  "sourceUrl": "https://github.com/QingYunA/answer-me-with-html",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "QingYunA",
+    "repo": "answer-me-with-html",
+    "fullName": "QingYunA/answer-me-with-html",
+    "stars": 1013,
+    "license": "MIT",
+    "topics": [
+      "agent-skill",
+      "ai-agent",
+      "claude-code",
+      "cli",
+      "diagram",
+      "explainer",
+      "html",
+      "llm",
+      "ste100"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-04T16:39:46Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-04",
+  "lastChecked": "2026-10-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
+    "Topics: agent-skill, ai-agent, claude-code, cli, diagram",
+    "GitHub stars: 1013",
+    "Last pushed: 2026-10-04"
+  ],
+  "id": "candidate-tool-github-qingyuna-answer-me-with-html",
+  "canonicalKey": "tool:github:qingyuna/answer-me-with-html",
+  "firstDiscoveredAt": "2026-10-04",
+  "lastSeenAt": "2026-10-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-04-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "answer-me-with-html is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
+      "Topics: agent-skill, ai-agent, claude-code, cli, diagram",
+      "GitHub stars: 1013"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "answer-me-with-html",
+  "publishedAt": "2026-10-04"
+}

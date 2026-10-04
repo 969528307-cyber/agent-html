@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "seo-ops",
+  "summary": "SEO foundation checks as an Agent Skill: give it a URL, get a crawler's-eye pass/fail report with evidence. 26 structural checks, zero LLM, deterministic.",
+  "sourceUrl": "https://github.com/tigerless-labs/seo-ops",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "tigerless-labs",
+    "repo": "seo-ops",
+    "fullName": "tigerless-labs/seo-ops",
+    "stars": 701,
+    "license": "",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "codex",
+      "geo",
+      "seo"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-01T15:13:59Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-04",
+  "lastChecked": "2026-10-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "SEO foundation checks as an Agent Skill: give it a URL, get a crawler's-eye pass/fail report with evidence. 26 structural checks, zero LLM, deterministic.",
+    "Topics: agent-skills, claude-code, codex, geo, seo",
+    "GitHub stars: 701",
+    "Last pushed: 2026-09-01"
+  ],
+  "id": "candidate-tool-github-tigerless-labs-seo-ops",
+  "canonicalKey": "tool:github:tigerless-labs/seo-ops",
+  "firstDiscoveredAt": "2026-10-04",
+  "lastSeenAt": "2026-10-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-04-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "seo-ops is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "SEO foundation checks as an Agent Skill: give it a URL, get a crawler's-eye pass/fail report with evidence. 26 structural checks, zero LLM, deterministic.",
+      "Topics: agent-skills, claude-code, codex, geo, seo",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "seo-ops",
+  "publishedAt": "2026-10-04"
+}

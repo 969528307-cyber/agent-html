@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "sweetpad",
+  "summary": "xcodebuild for humans and agents: build, run, debug, and test iOS, macOS, tvOS, watchOS, and visionOS apps from your terminal.",
+  "sourceUrl": "https://github.com/sweetpad-dev/sweetpad",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "sweetpad-dev",
+    "repo": "sweetpad",
+    "fullName": "sweetpad-dev/sweetpad",
+    "stars": 1886,
+    "license": "MIT",
+    "topics": [
+      "build-server-protocol",
+      "cli",
+      "hot-reload",
+      "ios",
+      "ios-development",
+      "ios-swift",
+      "macos",
+      "neovim",
+      "rust",
+      "simulator",
+      "sourcekit-lsp",
+      "swift",
+      "swiftui",
+      "tuist",
+      "xcode",
+      "xcodebuild",
+      "xcodegen"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-04T21:52:28Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-04",
+  "lastChecked": "2026-10-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "xcodebuild for humans and agents: build, run, debug, and test iOS, macOS, tvOS, watchOS, and visionOS apps from your terminal.",
+    "Topics: build-server-protocol, cli, hot-reload, ios, ios-development",
+    "GitHub stars: 1886",
+    "Last pushed: 2026-10-04"
+  ],
+  "id": "candidate-tool-github-sweetpad-dev-sweetpad",
+  "canonicalKey": "tool:github:sweetpad-dev/sweetpad",
+  "firstDiscoveredAt": "2026-10-04",
+  "lastSeenAt": "2026-10-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-04-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "sweetpad is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "xcodebuild for humans and agents: build, run, debug, and test iOS, macOS, tvOS, watchOS, and visionOS apps from your terminal.",
+      "Topics: build-server-protocol, cli, hot-reload, ios, ios-development",
+      "GitHub stars: 1886"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "sweetpad",
+  "publishedAt": "2026-10-04"
+}

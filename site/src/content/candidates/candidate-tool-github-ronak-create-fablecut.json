@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "FableCut",
+  "summary": "Zero-dependency browser video editor that AI agents can drive — JSON timeline, MCP + REST, live-reloading UI",
+  "sourceUrl": "https://github.com/ronak-create/FableCut",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "ronak-create",
+    "repo": "FableCut",
+    "fullName": "ronak-create/FableCut",
+    "stars": 700,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "canvas",
+      "claude",
+      "ffmpeg",
+      "javascript",
+      "llm",
+      "mcp",
+      "nle",
+      "reels",
+      "video-editing",
+      "video-editor",
+      "zero-dependency"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-04T18:13:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-04",
+  "lastChecked": "2026-10-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Zero-dependency browser video editor that AI agents can drive — JSON timeline, MCP + REST, live-reloading UI",
+    "Topics: ai-agent, canvas, claude, ffmpeg, javascript",
+    "GitHub stars: 700",
+    "Last pushed: 2026-10-04"
+  ],
+  "id": "candidate-tool-github-ronak-create-fablecut",
+  "canonicalKey": "tool:github:ronak-create/fablecut",
+  "firstDiscoveredAt": "2026-10-04",
+  "lastSeenAt": "2026-10-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-04-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "FableCut is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Zero-dependency browser video editor that AI agents can drive — JSON timeline, MCP + REST, live-reloading UI",
+      "Topics: ai-agent, canvas, claude, ffmpeg, javascript",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "fablecut",
+  "publishedAt": "2026-10-04"
+}

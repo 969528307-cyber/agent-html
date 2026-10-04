@@ -1,0 +1,69 @@
+{
+  "id": "fauxnix",
+  "name": "fauxnix",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Run Linux-style commands on Windows via deterministic bash→PowerShell translation. No VM, no WSL. MCP server + CLI built for AI agents (Claude Code, Codex, OpenCode...). GNU-style output, bash-style errors, UTF-8/GBK handled.",
+  "description": "Run Linux-style commands on Windows via deterministic bash→PowerShell translation. No VM, no WSL. MCP server + CLI built for AI agents (Claude Code, Codex, OpenCode...). GNU-style output, bash-style errors, UTF-8/GBK handled.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/20000419/fauxnix",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/20000419/fauxnix",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/20000419/fauxnix#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/20000419/fauxnix#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/20000419/fauxnix/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Run Linux-style commands on Windows via deterministic bash→PowerShell translation. No VM, no WSL. MCP server + CLI built for AI agents (Claude Code, Codex, OpenCode...). GNU-style output, bash-style e",
+    "Topics: ai-agents, bash, claude-code, cli, codex",
+    "GitHub stars: 722",
+    "Last pushed: 2026-09-30"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-09-30T11:46:29Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/20000419/fauxnix",
+  "repoUrl": "https://github.com/20000419/fauxnix",
+  "license": "MIT",
+  "stars": 722,
+  "lastUpdated": "2026-09-30T11:46:29Z",
+  "lastChecked": "2026-10-04",
+  "publishedAt": "2026-10-04",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
