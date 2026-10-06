@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "geo-sleuth",
+  "summary": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
+  "sourceUrl": "https://github.com/Oldcircle/geo-sleuth",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Oldcircle",
+    "repo": "geo-sleuth",
+    "fullName": "Oldcircle/geo-sleuth",
+    "stars": 735,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude-code",
+      "codex",
+      "computer-vision",
+      "cursor",
+      "gemini-cli",
+      "geoguessr",
+      "geoint",
+      "geolocation",
+      "github-copilot",
+      "image-geolocation",
+      "opencode",
+      "openstreetmap",
+      "osint",
+      "photo-geolocation",
+      "reverse-image-search",
+      "satellite-imagery"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-24T13:11:22Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-06",
+  "lastChecked": "2026-10-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CL",
+    "Topics: agent-skills, ai-agents, claude-code, codex, computer-vision",
+    "GitHub stars: 735",
+    "Last pushed: 2026-09-24"
+  ],
+  "id": "candidate-tool-github-oldcircle-geo-sleuth",
+  "canonicalKey": "tool:github:oldcircle/geo-sleuth",
+  "firstDiscoveredAt": "2026-10-06",
+  "lastSeenAt": "2026-10-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-06-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-06"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "geo-sleuth is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CL",
+      "Topics: agent-skills, ai-agents, claude-code, codex, computer-vision",
+      "GitHub stars: 735"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "geo-sleuth",
+  "publishedAt": "2026-10-06"
+}

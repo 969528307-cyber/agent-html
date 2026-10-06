@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "qq-bridge",
+  "summary": "Bridge between QQ (SnowLuma OneBot v11) and DeepSeek Harness agents: social simulation, safe MCP tools, slang learning and more.",
+  "sourceUrl": "https://github.com/Derpyu520/qq-bridge",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "Derpyu520",
+    "repo": "qq-bridge",
+    "fullName": "Derpyu520/qq-bridge",
+    "stars": 707,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-agent",
+      "chatbot",
+      "deepseek-harness",
+      "dsh",
+      "onebot",
+      "qq-bot",
+      "snowluma"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-03T06:13:55Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-06",
+  "lastChecked": "2026-10-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Bridge between QQ (SnowLuma OneBot v11) and DeepSeek Harness agents: social simulation, safe MCP tools, slang learning and more.",
+    "Topics: ai-agent, chatbot, deepseek-harness, dsh, onebot",
+    "GitHub stars: 707",
+    "Last pushed: 2026-10-03"
+  ],
+  "id": "candidate-tool-github-derpyu520-qq-bridge",
+  "canonicalKey": "tool:github:derpyu520/qq-bridge",
+  "firstDiscoveredAt": "2026-10-06",
+  "lastSeenAt": "2026-10-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-06-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-06"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "qq-bridge is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Bridge between QQ (SnowLuma OneBot v11) and DeepSeek Harness agents: social simulation, safe MCP tools, slang learning and more.",
+      "Topics: ai-agent, chatbot, deepseek-harness, dsh, onebot",
+      "GitHub stars: 707"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "qq-bridge",
+  "publishedAt": "2026-10-06"
+}

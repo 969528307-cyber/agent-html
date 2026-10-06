@@ -1,0 +1,69 @@
+{
+  "id": "rapid-mlx",
+  "name": "Rapid-MLX",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Rapid-MLX is an open-source (Apache 2.0) OpenAI- and Anthropic-compatible LLM inference server for Apple Silicon, built on MLX, focused on reliable tool calling for coding agents. Up to 4× faster than Apple's MLX (mlx-lm) on the same weights.",
+  "description": "Rapid-MLX is an open-source (Apache 2.0) OpenAI- and Anthropic-compatible LLM inference server for Apple Silicon, built on MLX, focused on reliable tool calling for coding agents. Up to 4× faster than Apple's MLX (mlx-lm) on the same weights.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/raullenchai/Rapid-MLX",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/raullenchai/Rapid-MLX",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/raullenchai/Rapid-MLX#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/raullenchai/Rapid-MLX#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/raullenchai/Rapid-MLX/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Rapid-MLX is an open-source (Apache 2.0) OpenAI- and Anthropic-compatible LLM inference server for Apple Silicon, built on MLX, focused on reliable tool calling for coding agents. Up to 4× faster than",
+    "Topics: anthropic-api, apple-silicon, claude-code, coding-agents, continuous-batching",
+    "GitHub stars: 3907",
+    "Last pushed: 2026-10-06"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-10-06T00:31:35Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/raullenchai/Rapid-MLX",
+  "repoUrl": "https://github.com/raullenchai/Rapid-MLX",
+  "license": "NOASSERTION",
+  "stars": 3907,
+  "lastUpdated": "2026-10-06T00:31:35Z",
+  "lastChecked": "2026-10-06",
+  "publishedAt": "2026-10-06",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
