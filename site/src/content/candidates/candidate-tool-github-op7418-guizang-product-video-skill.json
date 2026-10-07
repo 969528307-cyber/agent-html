@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "guizang-product-video-skill",
+  "summary": "归藏 product video skill：复用真实产品组件和设计语言，用代码制作软件更新宣传片。包含分镜文案、原创配乐、动作音效与视频渲染，支持 Claude Code 和 Codex。",
+  "sourceUrl": "https://github.com/op7418/guizang-product-video-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "op7418",
+    "repo": "guizang-product-video-skill",
+    "fullName": "op7418/guizang-product-video-skill",
+    "stars": 700,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "codepilot",
+      "codex",
+      "hyperframes",
+      "motion-design",
+      "product-video",
+      "release-notes",
+      "skill",
+      "skills",
+      "video-generation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-01T08:46:29Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-07",
+  "lastChecked": "2026-10-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "归藏 product video skill：复用真实产品组件和设计语言，用代码制作软件更新宣传片。包含分镜文案、原创配乐、动作音效与视频渲染，支持 Claude Code 和 Codex。",
+    "Topics: agent-skills, claude-code, codepilot, codex, hyperframes",
+    "GitHub stars: 700",
+    "Last pushed: 2026-10-01"
+  ],
+  "id": "candidate-tool-github-op7418-guizang-product-video-skill",
+  "canonicalKey": "tool:github:op7418/guizang-product-video-skill",
+  "firstDiscoveredAt": "2026-10-07",
+  "lastSeenAt": "2026-10-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-07-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "guizang-product-video-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "归藏 product video skill：复用真实产品组件和设计语言，用代码制作软件更新宣传片。包含分镜文案、原创配乐、动作音效与视频渲染，支持 Claude Code 和 Codex。",
+      "Topics: agent-skills, claude-code, codepilot, codex, hyperframes",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "guizang-product-video-skill",
+  "publishedAt": "2026-10-07"
+}

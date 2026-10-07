@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "invisible_dots",
+  "summary": "Open-source, self-hosted alternative to OpenAI Dots, Grok Bot. Built to be undetectable by anti-bot systems.",
+  "sourceUrl": "https://github.com/feder-cr/invisible_dots",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "feder-cr",
+    "repo": "invisible_dots",
+    "fullName": "feder-cr/invisible_dots",
+    "stars": 31805,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "agentic-ai",
+      "ai-agent",
+      "ai-agents",
+      "ai-assistant",
+      "antidetect-browser",
+      "automation",
+      "autonomous-agents",
+      "browser-automation",
+      "claude-cowork",
+      "computer-use",
+      "computer-use-agent",
+      "llm-agents",
+      "local-first",
+      "manus",
+      "mcp",
+      "open-source-alternative",
+      "playwright",
+      "self-hosted",
+      "stealth-browser"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-07T23:11:57Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-07",
+  "lastChecked": "2026-10-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source, self-hosted alternative to OpenAI Dots, Grok Bot. Built to be undetectable by anti-bot systems.",
+    "Topics: agent-skills, agentic-ai, ai-agent, ai-agents, ai-assistant",
+    "GitHub stars: 31805",
+    "Last pushed: 2026-10-07"
+  ],
+  "id": "candidate-tool-github-feder-cr-invisible-dots",
+  "canonicalKey": "tool:github:feder-cr/invisible_dots",
+  "firstDiscoveredAt": "2026-10-07",
+  "lastSeenAt": "2026-10-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "invisible_dots is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source, self-hosted alternative to OpenAI Dots, Grok Bot. Built to be undetectable by anti-bot systems.",
+      "Topics: agent-skills, agentic-ai, ai-agent, ai-agents, ai-assistant",
+      "GitHub stars: 31805"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "invisible-dots",
+  "publishedAt": "2026-10-07"
+}
