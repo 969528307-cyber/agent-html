@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "artex-ko",
+  "summary": "ARTEX 한국어판 · AI 자율 침투 테스트 프레임워크 현지화 (upstream: Autumn-27/ARTEX, AGPL-3.0)",
+  "sourceUrl": "https://github.com/jiwoochris/artex-ko",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "jiwoochris",
+    "repo": "artex-ko",
+    "fullName": "jiwoochris/artex-ko",
+    "stars": 854,
+    "license": "AGPL-3.0",
+    "topics": [
+      "ai-agent",
+      "autonomous-agents",
+      "blue-team",
+      "cybersecurity",
+      "detection-engineering",
+      "i18n",
+      "korean",
+      "llm",
+      "penetration-testing",
+      "security",
+      "security-research",
+      "security-tools",
+      "sigma-rules",
+      "threat-detection"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-09T12:52:40Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-09",
+  "lastChecked": "2026-10-09",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "ARTEX 한국어판 · AI 자율 침투 테스트 프레임워크 현지화 (upstream: Autumn-27/ARTEX, AGPL-3.0)",
+    "Topics: ai-agent, autonomous-agents, blue-team, cybersecurity, detection-engineering",
+    "GitHub stars: 854",
+    "Last pushed: 2026-10-09"
+  ],
+  "id": "candidate-tool-github-jiwoochris-artex-ko",
+  "canonicalKey": "tool:github:jiwoochris/artex-ko",
+  "firstDiscoveredAt": "2026-10-09",
+  "lastSeenAt": "2026-10-09",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-09-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-09"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "artex-ko is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "ARTEX 한국어판 · AI 자율 침투 테스트 프레임워크 현지화 (upstream: Autumn-27/ARTEX, AGPL-3.0)",
+      "Topics: ai-agent, autonomous-agents, blue-team, cybersecurity, detection-engineering",
+      "GitHub stars: 854"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-09",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "artex-ko",
+  "publishedAt": "2026-10-09"
+}
