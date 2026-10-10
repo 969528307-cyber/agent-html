@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "nanoMuse",
+  "summary": "nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo. On Android, iPhone and iPad, Windows / macOS / Linux and in the browser; you",
+  "sourceUrl": "https://github.com/nano-muse/nanoMuse",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "nano-muse",
+    "repo": "nanoMuse",
+    "fullName": "nano-muse/nanoMuse",
+    "stars": 770,
+    "license": "GPL-3.0",
+    "topics": [
+      "agent-skills",
+      "ai-agent",
+      "android",
+      "computer-use",
+      "cross-device",
+      "desktop-app",
+      "gui-agent",
+      "ios",
+      "linux",
+      "llm",
+      "mcp",
+      "meta-muse",
+      "mobile-agent",
+      "muse",
+      "nanomuse",
+      "openminis",
+      "openmuse",
+      "personal-agent"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-10T16:17:16Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-10",
+  "lastChecked": "2026-10-10",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before an",
+    "Topics: agent-skills, ai-agent, android, computer-use, cross-device",
+    "GitHub stars: 770",
+    "Last pushed: 2026-10-10"
+  ],
+  "id": "candidate-tool-github-nano-muse-nanomuse",
+  "canonicalKey": "tool:github:nano-muse/nanomuse",
+  "firstDiscoveredAt": "2026-10-10",
+  "lastSeenAt": "2026-10-10",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-10-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-10"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "nanoMuse is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before an",
+      "Topics: agent-skills, ai-agent, android, computer-use, cross-device",
+      "GitHub stars: 770"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-10",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nanomuse",
+  "publishedAt": "2026-10-10"
+}

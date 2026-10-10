@@ -1,0 +1,106 @@
+{
+  "type": "tool",
+  "title": "JourniOne-Planning-Skills",
+  "summary": "JourniOne 旅行规划 Skill：从灵感与逐日路线，到带地图、可分享的 Travel Journal，按需衔接酒店与航班。",
+  "sourceUrl": "https://github.com/JourniOne-ai/JourniOne-Planning-Skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "JourniOne-ai",
+    "repo": "JourniOne-Planning-Skills",
+    "fullName": "JourniOne-ai/JourniOne-Planning-Skills",
+    "stars": 738,
+    "license": "",
+    "topics": [
+      "agent-skills",
+      "ai-agent",
+      "itinerary",
+      "journione",
+      "travel-journal",
+      "travel-planning"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-21T18:10:37Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-10",
+  "lastChecked": "2026-10-10",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "JourniOne 旅行规划 Skill：从灵感与逐日路线，到带地图、可分享的 Travel Journal，按需衔接酒店与航班。",
+    "Topics: agent-skills, ai-agent, itinerary, journione, travel-journal",
+    "GitHub stars: 738",
+    "Last pushed: 2026-09-21"
+  ],
+  "id": "candidate-tool-github-journione-ai-journione-planning-skills",
+  "canonicalKey": "tool:github:journione-ai/journione-planning-skills",
+  "firstDiscoveredAt": "2026-10-10",
+  "lastSeenAt": "2026-10-10",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-10-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-10"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "JourniOne-Planning-Skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "JourniOne 旅行规划 Skill：从灵感与逐日路线，到带地图、可分享的 Travel Journal，按需衔接酒店与航班。",
+      "Topics: agent-skills, ai-agent, itinerary, journione, travel-journal",
+      "GitHub stars: 738"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-10",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "journione-planning-skills",
+  "publishedAt": "2026-10-10"
+}
