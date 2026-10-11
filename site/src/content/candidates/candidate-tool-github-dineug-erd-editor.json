@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "erd-editor",
+  "summary": "ERD Editor: design database schemas visually, import SQL DDL, GraphQL, DBML and AML, export DDL and code for 22 languages. Web app, Google Drive, VS Code, IntelliJ, Obsidian, a custom element, and an MCP server that lets coding agents edit diagrams live.",
+  "sourceUrl": "https://github.com/dineug/erd-editor",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "dineug",
+    "repo": "erd-editor",
+    "fullName": "dineug/erd-editor",
+    "stars": 1723,
+    "license": "MIT",
+    "topics": [
+      "code-generation",
+      "data-modeling",
+      "database",
+      "database-design",
+      "database-schema",
+      "dbml",
+      "ddl",
+      "diagram",
+      "entity-relationship-diagram",
+      "erd",
+      "erd-editor",
+      "graphql",
+      "intellij-plugin",
+      "mcp",
+      "mcp-server",
+      "obsidian-plugin",
+      "sql",
+      "typescript",
+      "vscode-extension",
+      "web-components"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-11T15:35:58Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-11",
+  "lastChecked": "2026-10-11",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "ERD Editor: design database schemas visually, import SQL DDL, GraphQL, DBML and AML, export DDL and code for 22 languages. Web app, Google Drive, VS Code, IntelliJ, Obsidian, a custom element, and an ",
+    "Topics: code-generation, data-modeling, database, database-design, database-schema",
+    "GitHub stars: 1723",
+    "Last pushed: 2026-10-11"
+  ],
+  "id": "candidate-tool-github-dineug-erd-editor",
+  "canonicalKey": "tool:github:dineug/erd-editor",
+  "firstDiscoveredAt": "2026-10-11",
+  "lastSeenAt": "2026-10-11",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-11-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-11"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "erd-editor is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "ERD Editor: design database schemas visually, import SQL DDL, GraphQL, DBML and AML, export DDL and code for 22 languages. Web app, Google Drive, VS Code, IntelliJ, Obsidian, a custom element, and an ",
+      "Topics: code-generation, data-modeling, database, database-design, database-schema",
+      "GitHub stars: 1723"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-11",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "erd-editor",
+  "publishedAt": "2026-10-11"
+}
