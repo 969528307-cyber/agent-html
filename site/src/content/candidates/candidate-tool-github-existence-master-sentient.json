@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "Sentient",
+  "summary": "Your personal AI assistant, running on your own computer. Long-running tasks, real memory, proactive help, voice, phones and smart glasses. Any model, local or cloud. No account.",
+  "sourceUrl": "https://github.com/existence-master/Sentient",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "existence-master",
+    "repo": "Sentient",
+    "fullName": "existence-master/Sentient",
+    "stars": 702,
+    "license": "NOASSERTION",
+    "topics": [
+      "agents",
+      "ai-assistant",
+      "artificial-general-intelligence",
+      "artificial-intelligence",
+      "automation",
+      "context",
+      "desktop-app",
+      "llm",
+      "local-first",
+      "mcp",
+      "memory",
+      "ollama",
+      "open-source",
+      "personal-assistant",
+      "personalization",
+      "privacy",
+      "proactive-ai",
+      "self-hosted",
+      "smart-glasses",
+      "voice-assistant"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-12T14:49:29Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-13",
+  "lastChecked": "2026-10-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Your personal AI assistant, running on your own computer. Long-running tasks, real memory, proactive help, voice, phones and smart glasses. Any model, local or cloud. No account.",
+    "Topics: agents, ai-assistant, artificial-general-intelligence, artificial-intelligence, automation",
+    "GitHub stars: 702",
+    "Last pushed: 2026-10-12"
+  ],
+  "id": "candidate-tool-github-existence-master-sentient",
+  "canonicalKey": "tool:github:existence-master/sentient",
+  "firstDiscoveredAt": "2026-10-13",
+  "lastSeenAt": "2026-10-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Sentient is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Your personal AI assistant, running on your own computer. Long-running tasks, real memory, proactive help, voice, phones and smart glasses. Any model, local or cloud. No account.",
+      "Topics: agents, ai-assistant, artificial-general-intelligence, artificial-intelligence, automation",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "sentient",
+  "publishedAt": "2026-10-13"
+}
