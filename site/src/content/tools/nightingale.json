@@ -1,0 +1,69 @@
+{
+  "id": "nightingale",
+  "name": "nightingale",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Open-source, self-hosted alerting for metrics, logs, and databases. Includes a built-in AI agent and MCP server.",
+  "description": "Open-source, self-hosted alerting for metrics, logs, and databases. Includes a built-in AI agent and MCP server.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ccfos/nightingale",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ccfos/nightingale",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ccfos/nightingale#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ccfos/nightingale#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ccfos/nightingale/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Open-source, self-hosted alerting for metrics, logs, and databases. Includes a built-in AI agent and MCP server.",
+    "Topics: alerting, alertmanager, clickhouse, golang, logs",
+    "GitHub stars: 13337",
+    "Last pushed: 2026-10-13"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-10-13T09:44:24Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ccfos/nightingale",
+  "repoUrl": "https://github.com/ccfos/nightingale",
+  "license": "Apache-2.0",
+  "stars": 13337,
+  "lastUpdated": "2026-10-13T09:44:24Z",
+  "lastChecked": "2026-10-13",
+  "publishedAt": "2026-10-13",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

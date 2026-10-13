@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "Meldwork",
+  "summary": "Local-first AI agent workspace for multi-agent collaboration, agent orchestration, scoped permissions, evidence-aware runs, and human-in-the-loop decisions.",
+  "sourceUrl": "https://github.com/Ryder-Sun/Meldwork",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "Ryder-Sun",
+    "repo": "Meldwork",
+    "fullName": "Ryder-Sun/Meldwork",
+    "stars": 732,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-collaboration",
+      "agent-coordination",
+      "agent-orchestration",
+      "agent-workforce",
+      "agentic-workflow",
+      "ai-agent",
+      "ai-agent-workspace",
+      "evidence-aware",
+      "human-in-the-loop",
+      "local-ai",
+      "local-first",
+      "multi-agent",
+      "multi-agent-collaboration",
+      "multi-agent-system"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-09-17T08:23:48Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-13",
+  "lastChecked": "2026-10-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Local-first AI agent workspace for multi-agent collaboration, agent orchestration, scoped permissions, evidence-aware runs, and human-in-the-loop decisions.",
+    "Topics: agent-collaboration, agent-coordination, agent-orchestration, agent-workforce, agentic-workflow",
+    "GitHub stars: 732",
+    "Last pushed: 2026-09-17"
+  ],
+  "id": "candidate-tool-github-ryder-sun-meldwork",
+  "canonicalKey": "tool:github:ryder-sun/meldwork",
+  "firstDiscoveredAt": "2026-10-13",
+  "lastSeenAt": "2026-10-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-13-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Meldwork is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Local-first AI agent workspace for multi-agent collaboration, agent orchestration, scoped permissions, evidence-aware runs, and human-in-the-loop decisions.",
+      "Topics: agent-collaboration, agent-coordination, agent-orchestration, agent-workforce, agentic-workflow",
+      "GitHub stars: 732"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "meldwork",
+  "publishedAt": "2026-10-13"
+}

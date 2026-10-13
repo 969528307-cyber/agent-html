@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "vibe-astock",
+  "summary": "Vibe AStock：A 股短线复盘与跟踪工作台 · 盯盘异动、情绪复盘（连板天梯、题材轮动、明日验证）、AI 复盘与周报、交易日志、盘前提醒，182 个数据端点。支持 Claude Code、Codex、WorkBuddy 订阅或任意模型 API。 | A short-term trading review and tracking workbench for China A-shares.",
+  "sourceUrl": "https://github.com/simonlin1212/vibe-astock",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "simonlin1212",
+    "repo": "vibe-astock",
+    "fullName": "simonlin1212/vibe-astock",
+    "stars": 723,
+    "license": "Apache-2.0",
+    "topics": [
+      "a-share",
+      "a-stock",
+      "ai-agent",
+      "china-stock-market",
+      "claude-code",
+      "codex",
+      "dashboard",
+      "fintech",
+      "llm",
+      "market-sentiment",
+      "mcp",
+      "python",
+      "react",
+      "self-hosted",
+      "stock-market",
+      "trading",
+      "trading-dashboard",
+      "trading-journal",
+      "typescript",
+      "workbuddy"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-11T11:49:00Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-13",
+  "lastChecked": "2026-10-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Vibe AStock：A 股短线复盘与跟踪工作台 · 盯盘异动、情绪复盘（连板天梯、题材轮动、明日验证）、AI 复盘与周报、交易日志、盘前提醒，182 个数据端点。支持 Claude Code、Codex、WorkBuddy 订阅或任意模型 API。 | A short-term trading review and tracking workbench for China A-shares.",
+    "Topics: a-share, a-stock, ai-agent, china-stock-market, claude-code",
+    "GitHub stars: 723",
+    "Last pushed: 2026-10-11"
+  ],
+  "id": "candidate-tool-github-simonlin1212-vibe-astock",
+  "canonicalKey": "tool:github:simonlin1212/vibe-astock",
+  "firstDiscoveredAt": "2026-10-13",
+  "lastSeenAt": "2026-10-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "vibe-astock is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Vibe AStock：A 股短线复盘与跟踪工作台 · 盯盘异动、情绪复盘（连板天梯、题材轮动、明日验证）、AI 复盘与周报、交易日志、盘前提醒，182 个数据端点。支持 Claude Code、Codex、WorkBuddy 订阅或任意模型 API。 | A short-term trading review and tracking workbench for China A-shares.",
+      "Topics: a-share, a-stock, ai-agent, china-stock-market, claude-code",
+      "GitHub stars: 723"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "vibe-astock",
+  "publishedAt": "2026-10-13"
+}

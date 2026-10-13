@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "IncarnaMind",
+  "summary": "IncarnaMind is a free, open-source desktop app for macOS, Windows and Linux where you ask questions about your own documents (PDF, Word, PowerPoint, Excel and more) and write with AI. Every answer cites the exact page, and IncarnaMind checks that each quoted passage is really there.",
+  "sourceUrl": "https://github.com/IncarnaMind/IncarnaMind",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "IncarnaMind",
+    "repo": "IncarnaMind",
+    "fullName": "IncarnaMind/IncarnaMind",
+    "stars": 808,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-assistant",
+      "citations",
+      "deepseek",
+      "desktop-app",
+      "document-qa",
+      "electron",
+      "knowledge-management",
+      "literature-review",
+      "llm",
+      "local-first",
+      "local-llm",
+      "mcp",
+      "note-taking",
+      "notebooklm",
+      "ollama",
+      "pdf",
+      "privacy",
+      "rag",
+      "research-tool",
+      "writing-tool"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-13T23:16:39Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-13",
+  "lastChecked": "2026-10-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "IncarnaMind is a free, open-source desktop app for macOS, Windows and Linux where you ask questions about your own documents (PDF, Word, PowerPoint, Excel and more) and write with AI. Every answer cit",
+    "Topics: ai-assistant, citations, deepseek, desktop-app, document-qa",
+    "GitHub stars: 808",
+    "Last pushed: 2026-10-13"
+  ],
+  "id": "candidate-tool-github-incarnamind-incarnamind",
+  "canonicalKey": "tool:github:incarnamind/incarnamind",
+  "firstDiscoveredAt": "2026-10-13",
+  "lastSeenAt": "2026-10-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "IncarnaMind is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "IncarnaMind is a free, open-source desktop app for macOS, Windows and Linux where you ask questions about your own documents (PDF, Word, PowerPoint, Excel and more) and write with AI. Every answer cit",
+      "Topics: ai-assistant, citations, deepseek, desktop-app, document-qa",
+      "GitHub stars: 808"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "incarnamind",
+  "publishedAt": "2026-10-13",
+  "reviewedAt": "2026-10-13",
+  "reviewedBy": "local-review"
+}
