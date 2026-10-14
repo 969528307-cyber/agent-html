@@ -1,0 +1,69 @@
+{
+  "id": "flyte",
+  "name": "flyte",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Type-safe, distributed orchestration of agents, ML pipelines, and real-time inference on your k8s — in pure Python with async/await, also other languages (rust, go and ts)",
+  "description": "Type-safe, distributed orchestration of agents, ML pipelines, and real-time inference on your k8s — in pure Python with async/await, also other languages (rust, go and ts)",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/flyteorg/flyte",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/flyteorg/flyte",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/flyteorg/flyte#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/flyteorg/flyte#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/flyteorg/flyte/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Type-safe, distributed orchestration of agents, ML pipelines, and real-time inference on your k8s — in pure Python with async/await, also other languages (rust, go and ts)",
+    "Topics: agent-runtime, agents, ai-runtime, kubernetes-cluster, machine-learning",
+    "GitHub stars: 7695",
+    "Last pushed: 2026-10-14"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-10-14T22:02:25Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/flyteorg/flyte",
+  "repoUrl": "https://github.com/flyteorg/flyte",
+  "license": "Apache-2.0",
+  "stars": 7695,
+  "lastUpdated": "2026-10-14T22:02:25Z",
+  "lastChecked": "2026-10-14",
+  "publishedAt": "2026-10-14",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

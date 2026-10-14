@@ -1,0 +1,69 @@
+{
+  "id": "trading-terminal",
+  "name": "trading-terminal",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Self-hosted AI trading terminal for Hyperliquid: chart read in, validated Freqtrade/Nautilus-Trader strategy out, deployed live.",
+  "description": "Self-hosted AI trading terminal for Hyperliquid: chart read in, validated Freqtrade/Nautilus-Trader strategy out, deployed live.",
+  "category": [
+    "agent-app"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Superior-Trade/trading-terminal",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Superior-Trade/trading-terminal",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Superior-Trade/trading-terminal#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Superior-Trade/trading-terminal#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Superior-Trade/trading-terminal/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Self-hosted AI trading terminal for Hyperliquid: chart read in, validated Freqtrade/Nautilus-Trader strategy out, deployed live.",
+    "Topics: ai-agent, freqtrade, hyperliquid, nautilus-trader, self-hosted",
+    "GitHub stars: 720",
+    "Last pushed: 2026-10-09"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-10-09T06:28:15Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Superior-Trade/trading-terminal",
+  "repoUrl": "https://github.com/Superior-Trade/trading-terminal",
+  "license": "Apache-2.0",
+  "stars": 720,
+  "lastUpdated": "2026-10-09T06:28:15Z",
+  "lastChecked": "2026-10-14",
+  "publishedAt": "2026-10-14",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
