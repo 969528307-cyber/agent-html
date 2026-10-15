@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "openmeld",
+  "summary": "The open-source collaboration system for people and AI agents. Share context, coordinate tasks, and work in parallel with your team, cloud agents, Codex, Claude Code, Grok, Grok Bot, OpenCode, Antigravity, and Cursor.",
+  "sourceUrl": "https://github.com/amplifthq/openmeld",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "amplifthq",
+    "repo": "openmeld",
+    "fullName": "amplifthq/openmeld",
+    "stars": 1359,
+    "license": "MIT",
+    "topics": [
+      "agent-client-protocol",
+      "agent-orchestration",
+      "agent-skills",
+      "ai-agents",
+      "claude-code",
+      "codex",
+      "cursor",
+      "grok",
+      "grok-bot",
+      "human-ai-collaboration",
+      "knowledge-base",
+      "mcp",
+      "multi-agent",
+      "opencode",
+      "openmeld",
+      "task-management",
+      "team-collaboration",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-15T17:45:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-15",
+  "lastChecked": "2026-10-15",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The open-source collaboration system for people and AI agents. Share context, coordinate tasks, and work in parallel with your team, cloud agents, Codex, Claude Code, Grok, Grok Bot, OpenCode, Antigra",
+    "Topics: agent-client-protocol, agent-orchestration, agent-skills, ai-agents, claude-code",
+    "GitHub stars: 1359",
+    "Last pushed: 2026-10-15"
+  ],
+  "id": "candidate-tool-github-amplifthq-openmeld",
+  "canonicalKey": "tool:github:amplifthq/openmeld",
+  "firstDiscoveredAt": "2026-10-15",
+  "lastSeenAt": "2026-10-15",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-15-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-15"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "openmeld is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "The open-source collaboration system for people and AI agents. Share context, coordinate tasks, and work in parallel with your team, cloud agents, Codex, Claude Code, Grok, Grok Bot, OpenCode, Antigra",
+      "Topics: agent-client-protocol, agent-orchestration, agent-skills, ai-agents, claude-code",
+      "GitHub stars: 1359"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openmeld",
+  "publishedAt": "2026-10-15"
+}

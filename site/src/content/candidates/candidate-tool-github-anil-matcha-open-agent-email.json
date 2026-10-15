@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "open-agent-email",
+  "summary": "Open-source email infrastructure for AI agents: secure inboxes, REST and MCP APIs, SMTP, human approval workflows, signed webhooks, and Python and TypeScript SDKs. Self-host with Docker and PostgreSQL.",
+  "sourceUrl": "https://github.com/Anil-matcha/open-agent-email",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Anil-matcha",
+    "repo": "open-agent-email",
+    "fullName": "Anil-matcha/open-agent-email",
+    "stars": 2099,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-email",
+      "agentic-ai",
+      "ai-agents",
+      "aws-ses",
+      "developer-tools",
+      "email-api",
+      "email-automation",
+      "email-infrastructure",
+      "fastapi",
+      "human-in-the-loop",
+      "imap",
+      "mcp",
+      "open-source",
+      "python",
+      "rest-api",
+      "sdk",
+      "self-hosted",
+      "smtp",
+      "typescript",
+      "webhooks"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-15T20:08:08Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-15",
+  "lastChecked": "2026-10-15",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source email infrastructure for AI agents: secure inboxes, REST and MCP APIs, SMTP, human approval workflows, signed webhooks, and Python and TypeScript SDKs. Self-host with Docker and PostgreSQL",
+    "Topics: agent-email, agentic-ai, ai-agents, aws-ses, developer-tools",
+    "GitHub stars: 2099",
+    "Last pushed: 2026-10-15"
+  ],
+  "id": "candidate-tool-github-anil-matcha-open-agent-email",
+  "canonicalKey": "tool:github:anil-matcha/open-agent-email",
+  "firstDiscoveredAt": "2026-10-15",
+  "lastSeenAt": "2026-10-15",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-15-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-15"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "open-agent-email is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source email infrastructure for AI agents: secure inboxes, REST and MCP APIs, SMTP, human approval workflows, signed webhooks, and Python and TypeScript SDKs. Self-host with Docker and PostgreSQL",
+      "Topics: agent-email, agentic-ai, ai-agents, aws-ses, developer-tools",
+      "GitHub stars: 2099"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "open-agent-email",
+  "publishedAt": "2026-10-15"
+}

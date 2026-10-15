@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "stickman-video-director",
+  "summary": "AI stickman animation style library & video prompts.｜火柴人动画画风大全：输入话题，生成脚本、动态分镜及配音音效提示词。",
+  "sourceUrl": "https://github.com/kaomei/stickman-video-director",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "kaomei",
+    "repo": "stickman-video-director",
+    "fullName": "kaomei/stickman-video-director",
+    "stars": 2140,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-animation",
+      "ai-video",
+      "animation-prompts",
+      "codex-skill",
+      "content-creation",
+      "gemini",
+      "google-flow",
+      "stick-figure-animation",
+      "stickman-animation",
+      "storyboard",
+      "video-prompts"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-15T13:19:39Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-15",
+  "lastChecked": "2026-10-15",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI stickman animation style library & video prompts.｜火柴人动画画风大全：输入话题，生成脚本、动态分镜及配音音效提示词。",
+    "Topics: agent-skills, ai-animation, ai-video, animation-prompts, codex-skill",
+    "GitHub stars: 2140",
+    "Last pushed: 2026-10-15"
+  ],
+  "id": "candidate-tool-github-kaomei-stickman-video-director",
+  "canonicalKey": "tool:github:kaomei/stickman-video-director",
+  "firstDiscoveredAt": "2026-10-15",
+  "lastSeenAt": "2026-10-15",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-15-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-15"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "stickman-video-director is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "AI stickman animation style library & video prompts.｜火柴人动画画风大全：输入话题，生成脚本、动态分镜及配音音效提示词。",
+      "Topics: agent-skills, ai-animation, ai-video, animation-prompts, codex-skill",
+      "GitHub stars: 2140"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "stickman-video-director",
+  "publishedAt": "2026-10-15"
+}

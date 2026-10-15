@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "Autoloom",
+  "summary": "AI coding with Aegis governance built into execution: baseline-aware changes, evidence-backed delivery. Free desktop client, your choice of model. 将哲科思维融入 AI 开发执行，让变更有依据、交付有证据。用创意编织现实。",
+  "sourceUrl": "https://github.com/GanyuanRan/Autoloom",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "GanyuanRan",
+    "repo": "Autoloom",
+    "fullName": "GanyuanRan/Autoloom",
+    "stars": 800,
+    "license": "NOASSERTION",
+    "topics": [
+      "aegis",
+      "agentic-coding",
+      "ai-agent",
+      "ai-coding",
+      "coding-agent",
+      "deepseek-harness",
+      "desktop-app",
+      "developer-tools",
+      "engineering-governance",
+      "software-development"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-11T17:43:55Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-15",
+  "lastChecked": "2026-10-15",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI coding with Aegis governance built into execution: baseline-aware changes, evidence-backed delivery. Free desktop client, your choice of model. 将哲科思维融入 AI 开发执行，让变更有依据、交付有证据。用创意编织现实。",
+    "Topics: aegis, agentic-coding, ai-agent, ai-coding, coding-agent",
+    "GitHub stars: 800",
+    "Last pushed: 2026-10-11"
+  ],
+  "id": "candidate-tool-github-ganyuanran-autoloom",
+  "canonicalKey": "tool:github:ganyuanran/autoloom",
+  "firstDiscoveredAt": "2026-10-15",
+  "lastSeenAt": "2026-10-15",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-15-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-15"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Autoloom is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "AI coding with Aegis governance built into execution: baseline-aware changes, evidence-backed delivery. Free desktop client, your choice of model. 将哲科思维融入 AI 开发执行，让变更有依据、交付有证据。用创意编织现实。",
+      "Topics: aegis, agentic-coding, ai-agent, ai-coding, coding-agent",
+      "GitHub stars: 800"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "autoloom",
+  "publishedAt": "2026-10-15"
+}

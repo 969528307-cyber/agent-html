@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "modsearch",
+  "summary": "🥇 The strongest free web search plugin for DeepSeek Harness, and the search bridge for every model without native web access. Free, no signup, no API key. Ask the web or X, get structured JSON evidence. | 🥇 全网最强的 DeepSeek Harness 免费联网搜索插件，免费免注册免 API key。为不能联网的模型补上搜索，问网页或 X，拿回结构化 JSON 证据（搜索、抓取、引用）。",
+  "sourceUrl": "https://github.com/liustack/modsearch",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "liustack",
+    "repo": "modsearch",
+    "fullName": "liustack/modsearch",
+    "stars": 703,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "agentic-workflow",
+      "claude-code",
+      "claude-skills",
+      "codex",
+      "cordis",
+      "deepseek",
+      "deepseek-harness",
+      "dsh",
+      "dsh-plugin",
+      "glm",
+      "harness",
+      "harness-engineering",
+      "hermes-agent",
+      "openclaw",
+      "opencode",
+      "pi-agent",
+      "web-fetch",
+      "web-search"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-15T18:43:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-15",
+  "lastChecked": "2026-10-15",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "🥇 The strongest free web search plugin for DeepSeek Harness, and the search bridge for every model without native web access. Free, no signup, no API key. Ask the web or X, get structured JSON eviden",
+    "Topics: agent-skills, agentic-workflow, claude-code, claude-skills, codex",
+    "GitHub stars: 703",
+    "Last pushed: 2026-10-15"
+  ],
+  "id": "candidate-tool-github-liustack-modsearch",
+  "canonicalKey": "tool:github:liustack/modsearch",
+  "firstDiscoveredAt": "2026-10-15",
+  "lastSeenAt": "2026-10-15",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-15-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-15"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "modsearch is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "🥇 The strongest free web search plugin for DeepSeek Harness, and the search bridge for every model without native web access. Free, no signup, no API key. Ask the web or X, get structured JSON eviden",
+      "Topics: agent-skills, agentic-workflow, claude-code, claude-skills, codex",
+      "GitHub stars: 703"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "modsearch",
+  "publishedAt": "2026-10-15"
+}
