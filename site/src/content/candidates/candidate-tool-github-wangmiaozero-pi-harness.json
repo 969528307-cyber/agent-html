@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "pi-harness",
+  "summary": "The operational superset of Pi Coding Agent — everything Pi, plus observability, governance, recovery, evaluation and multi-agent orchestration. Pi Coding Agent 的运维超集——完整继承 Pi 的核心能力，并进一步扩展可观测性、治理、故障恢复、评估和多 Agent 编排。",
+  "sourceUrl": "https://github.com/wangmiaozero/pi-harness",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "wangmiaozero",
+    "repo": "pi-harness",
+    "fullName": "wangmiaozero/pi-harness",
+    "stars": 1017,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent-harness",
+      "agent-observability",
+      "agent-orchestration",
+      "ai-agent",
+      "coding-agent",
+      "desktop-app",
+      "developer-tools",
+      "electron",
+      "llm",
+      "mcp",
+      "multi-agent",
+      "pi",
+      "pi-agent",
+      "pi-coding-agent",
+      "pi-harness",
+      "skills",
+      "typescript",
+      "vue3"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-16T21:08:48Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-16",
+  "lastChecked": "2026-10-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The operational superset of Pi Coding Agent — everything Pi, plus observability, governance, recovery, evaluation and multi-agent orchestration. Pi Coding Agent 的运维超集——完整继承 Pi 的核心能力，并进一步扩展可观测性、治理、故障恢复",
+    "Topics: agent-harness, agent-observability, agent-orchestration, ai-agent, coding-agent",
+    "GitHub stars: 1017",
+    "Last pushed: 2026-10-16"
+  ],
+  "id": "candidate-tool-github-wangmiaozero-pi-harness",
+  "canonicalKey": "tool:github:wangmiaozero/pi-harness",
+  "firstDiscoveredAt": "2026-10-16",
+  "lastSeenAt": "2026-10-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-16-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "pi-harness is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "The operational superset of Pi Coding Agent — everything Pi, plus observability, governance, recovery, evaluation and multi-agent orchestration. Pi Coding Agent 的运维超集——完整继承 Pi 的核心能力，并进一步扩展可观测性、治理、故障恢复",
+      "Topics: agent-harness, agent-observability, agent-orchestration, ai-agent, coding-agent",
+      "GitHub stars: 1017"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pi-harness",
+  "publishedAt": "2026-10-16"
+}

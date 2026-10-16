@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "simutil",
+  "summary": "Utilities for Android emulators, iOS simulators and real devices: launch, stream, control, record and automate them from a desktop app, TUI and CLI",
+  "sourceUrl": "https://github.com/dungngminh/simutil",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "dungngminh",
+    "repo": "simutil",
+    "fullName": "dungngminh/simutil",
+    "stars": 1190,
+    "license": "MIT",
+    "topics": [
+      "adb",
+      "ai-agents",
+      "android",
+      "android-emulator",
+      "cli",
+      "dart",
+      "desktop-app",
+      "developer-tools",
+      "device-streaming",
+      "e2e",
+      "flutter",
+      "ios",
+      "ios-device",
+      "ios-simulator",
+      "mcp",
+      "mcp-server",
+      "mobile-testing",
+      "scrcpy",
+      "screen-mirroring",
+      "xcode"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-16T18:23:14Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-16",
+  "lastChecked": "2026-10-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Utilities for Android emulators, iOS simulators and real devices: launch, stream, control, record and automate them from a desktop app, TUI and CLI",
+    "Topics: adb, ai-agents, android, android-emulator, cli",
+    "GitHub stars: 1190",
+    "Last pushed: 2026-10-16"
+  ],
+  "id": "candidate-tool-github-dungngminh-simutil",
+  "canonicalKey": "tool:github:dungngminh/simutil",
+  "firstDiscoveredAt": "2026-10-16",
+  "lastSeenAt": "2026-10-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-16-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "simutil is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Utilities for Android emulators, iOS simulators and real devices: launch, stream, control, record and automate them from a desktop app, TUI and CLI",
+      "Topics: adb, ai-agents, android, android-emulator, cli",
+      "GitHub stars: 1190"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "simutil",
+  "publishedAt": "2026-10-16"
+}

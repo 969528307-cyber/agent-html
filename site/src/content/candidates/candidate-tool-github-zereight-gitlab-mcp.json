@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "gitlab-mcp",
+  "summary": "MCP server for GitLab: 100+ tools for projects, MRs, issues, pipelines, wikis and more via the GitLab REST/GraphQL API",
+  "sourceUrl": "https://github.com/zereight/gitlab-mcp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "zereight",
+    "repo": "gitlab-mcp",
+    "fullName": "zereight/gitlab-mcp",
+    "stars": 2047,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "claude",
+      "cursor",
+      "devtools",
+      "gitlab",
+      "gitlab-api",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-16T13:05:40Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-16",
+  "lastChecked": "2026-10-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "MCP server for GitLab: 100+ tools for projects, MRs, issues, pipelines, wikis and more via the GitLab REST/GraphQL API",
+    "Topics: ai, claude, cursor, devtools, gitlab",
+    "GitHub stars: 2047",
+    "Last pushed: 2026-10-16"
+  ],
+  "id": "candidate-tool-github-zereight-gitlab-mcp",
+  "canonicalKey": "tool:github:zereight/gitlab-mcp",
+  "firstDiscoveredAt": "2026-10-16",
+  "lastSeenAt": "2026-10-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-16-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "gitlab-mcp is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "MCP server for GitLab: 100+ tools for projects, MRs, issues, pipelines, wikis and more via the GitLab REST/GraphQL API",
+      "Topics: ai, claude, cursor, devtools, gitlab",
+      "GitHub stars: 2047"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "gitlab-mcp",
+  "publishedAt": "2026-10-16"
+}

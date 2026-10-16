@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "zlib",
+  "summary": "A command-line tool for Z-Library. Search, download, send to Kindle, and integrate with AI agents.",
+  "sourceUrl": "https://github.com/heartleo/zlib",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "heartleo",
+    "repo": "zlib",
+    "fullName": "heartleo/zlib",
+    "stars": 788,
+    "license": "MIT",
+    "topics": [
+      "annas-archive",
+      "book",
+      "calibre",
+      "calibre-plugin",
+      "calibre-web",
+      "chatgpt",
+      "claude",
+      "cli",
+      "codex",
+      "command-line",
+      "ebook",
+      "gemini",
+      "go",
+      "golang",
+      "kindle",
+      "koreader",
+      "openai",
+      "tui",
+      "z-library",
+      "zlibrary"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-07T13:05:44Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-16",
+  "lastChecked": "2026-10-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A command-line tool for Z-Library. Search, download, send to Kindle, and integrate with AI agents.",
+    "Topics: annas-archive, book, calibre, calibre-plugin, calibre-web",
+    "GitHub stars: 788",
+    "Last pushed: 2026-10-07"
+  ],
+  "id": "candidate-tool-github-heartleo-zlib",
+  "canonicalKey": "tool:github:heartleo/zlib",
+  "firstDiscoveredAt": "2026-10-16",
+  "lastSeenAt": "2026-10-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-16-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "zlib is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "A command-line tool for Z-Library. Search, download, send to Kindle, and integrate with AI agents.",
+      "Topics: annas-archive, book, calibre, calibre-plugin, calibre-web",
+      "GitHub stars: 788"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "zlib",
+  "publishedAt": "2026-10-16"
+}

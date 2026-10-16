@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "Orbital",
+  "summary": "Context is yours. Agents are replaceable.",
+  "sourceUrl": "https://github.com/zqiren/Orbital",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "zqiren",
+    "repo": "Orbital",
+    "fullName": "zqiren/Orbital",
+    "stars": 818,
+    "license": "GPL-3.0",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "agent-management",
+      "agent-memory",
+      "agent-orchestration",
+      "agents",
+      "ai-agent",
+      "autonomous-agents"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-16T07:18:10Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-16",
+  "lastChecked": "2026-10-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Context is yours. Agents are replaceable.",
+    "Topics: agent, agent-framework, agent-management, agent-memory, agent-orchestration",
+    "GitHub stars: 818",
+    "Last pushed: 2026-10-16"
+  ],
+  "id": "candidate-tool-github-zqiren-orbital",
+  "canonicalKey": "tool:github:zqiren/orbital",
+  "firstDiscoveredAt": "2026-10-16",
+  "lastSeenAt": "2026-10-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-16-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Orbital is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Context is yours. Agents are replaceable.",
+      "Topics: agent, agent-framework, agent-management, agent-memory, agent-orchestration",
+      "GitHub stars: 818"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-16",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "orbital",
+  "publishedAt": "2026-10-16"
+}

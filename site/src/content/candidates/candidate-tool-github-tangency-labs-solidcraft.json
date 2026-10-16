@@ -1,0 +1,109 @@
+{
+  "type": "tool",
+  "title": "solidcraft",
+  "summary": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+  "sourceUrl": "https://github.com/tangency-labs/solidcraft",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "tangency-labs",
+    "repo": "solidcraft",
+    "fullName": "tangency-labs/solidcraft",
+    "stars": 3075,
+    "license": "Apache-2.0",
+    "topics": [
+      "3d-modeling",
+      "brep",
+      "cad",
+      "egui",
+      "mcp",
+      "parametric-cad",
+      "rust",
+      "step",
+      "wasm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-16T22:09:37Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-16",
+  "lastChecked": "2026-10-16",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+    "Topics: 3d-modeling, brep, cad, egui, mcp",
+    "GitHub stars: 3075",
+    "Last pushed: 2026-10-16"
+  ],
+  "id": "candidate-tool-github-tangency-labs-solidcraft",
+  "canonicalKey": "tool:github:tangency-labs/solidcraft",
+  "firstDiscoveredAt": "2026-10-16",
+  "lastSeenAt": "2026-10-16",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-16-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-16"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "solidcraft is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+      "Topics: 3d-modeling, brep, cad, egui, mcp",
+      "GitHub stars: 3075"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "solidcraft",
+  "publishedAt": "2026-10-16",
+  "reviewedAt": "2026-10-16",
+  "reviewedBy": "local-review"
+}
