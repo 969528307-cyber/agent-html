@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "remove-ai-watermarks",
+  "summary": "Remove visible and invisible AI watermarks from images and video, and AI provenance metadata from images, video, and audio. Python library, CLI, and agent skill for SynthID, C2PA, EXIF, IPTC, XMP, and common generative-AI marks.",
+  "sourceUrl": "https://github.com/wiltodelta/remove-ai-watermarks",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "wiltodelta",
+    "repo": "remove-ai-watermarks",
+    "fullName": "wiltodelta/remove-ai-watermarks",
+    "stars": 6038,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skill",
+      "ai-watermark",
+      "c2pa",
+      "cli",
+      "comfyui",
+      "content-credentials",
+      "exif",
+      "gemini",
+      "gemini-watermark-remover",
+      "generative-ai",
+      "image-processing",
+      "metadata",
+      "nano-banana",
+      "provenance",
+      "stable-diffusion",
+      "synthid",
+      "veo",
+      "video-processing",
+      "watermark-removal",
+      "watermark-remover"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-17T21:32:02Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-17",
+  "lastChecked": "2026-10-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Remove visible and invisible AI watermarks from images and video, and AI provenance metadata from images, video, and audio. Python library, CLI, and agent skill for SynthID, C2PA, EXIF, IPTC, XMP, and",
+    "Topics: agent-skill, ai-watermark, c2pa, cli, comfyui",
+    "GitHub stars: 6038",
+    "Last pushed: 2026-10-17"
+  ],
+  "id": "candidate-tool-github-wiltodelta-remove-ai-watermarks",
+  "canonicalKey": "tool:github:wiltodelta/remove-ai-watermarks",
+  "firstDiscoveredAt": "2026-10-17",
+  "lastSeenAt": "2026-10-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-17-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "remove-ai-watermarks is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "Remove visible and invisible AI watermarks from images and video, and AI provenance metadata from images, video, and audio. Python library, CLI, and agent skill for SynthID, C2PA, EXIF, IPTC, XMP, and",
+      "Topics: agent-skill, ai-watermark, c2pa, cli, comfyui",
+      "GitHub stars: 6038"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "remove-ai-watermarks",
+  "publishedAt": "2026-10-17"
+}

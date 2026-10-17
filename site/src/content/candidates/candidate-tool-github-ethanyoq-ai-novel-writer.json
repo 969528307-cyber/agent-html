@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "AI-Novel-Writer",
+  "summary": "AI 小说创作软件：把灵感、角色、世界观、大纲、章节写作、审稿和修稿组织成可控流程；提供 Windows/macOS 桌面版，支持本地和在线模型。AI Novel Writing Software: Organizes inspirations, characters, worldbuilding, outlines, chapter drafting, review, and revision into a controllable workflow. Features desktop apps for Windows/macOS, Ollama integration, and a Dee",
+  "sourceUrl": "https://github.com/EthanYoQ/AI-Novel-Writer",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "EthanYoQ",
+    "repo": "AI-Novel-Writer",
+    "fullName": "EthanYoQ/AI-Novel-Writer",
+    "stars": 1590,
+    "license": "GPL-3.0",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-writing",
+      "aigc",
+      "creative-writing",
+      "deepseek-harness",
+      "dsh-plugin",
+      "electron",
+      "fiction-writing",
+      "generative-ai",
+      "llm",
+      "local-first",
+      "long-form-fiction",
+      "novel-writing",
+      "ollama",
+      "rag",
+      "web-novel",
+      "worldbuilding",
+      "writing-assistant"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-10-17T19:42:04Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-17",
+  "lastChecked": "2026-10-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI 小说创作软件：把灵感、角色、世界观、大纲、章节写作、审稿和修稿组织成可控流程；提供 Windows/macOS 桌面版，支持本地和在线模型。AI Novel Writing Software: Organizes inspirations, characters, worldbuilding, outlines, chapter drafting, review, and revision ",
+    "Topics: ai, ai-agent, ai-writing, aigc, creative-writing",
+    "GitHub stars: 1590",
+    "Last pushed: 2026-10-17"
+  ],
+  "id": "candidate-tool-github-ethanyoq-ai-novel-writer",
+  "canonicalKey": "tool:github:ethanyoq/ai-novel-writer",
+  "firstDiscoveredAt": "2026-10-17",
+  "lastSeenAt": "2026-10-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-17-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "AI-Novel-Writer is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "AI 小说创作软件：把灵感、角色、世界观、大纲、章节写作、审稿和修稿组织成可控流程；提供 Windows/macOS 桌面版，支持本地和在线模型。AI Novel Writing Software: Organizes inspirations, characters, worldbuilding, outlines, chapter drafting, review, and revision ",
+      "Topics: ai, ai-agent, ai-writing, aigc, creative-writing",
+      "GitHub stars: 1590"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ai-novel-writer",
+  "publishedAt": "2026-10-17"
+}

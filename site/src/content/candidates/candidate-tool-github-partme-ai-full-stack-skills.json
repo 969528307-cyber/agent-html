@@ -1,0 +1,106 @@
+{
+  "type": "tool",
+  "title": "full-stack-skills",
+  "summary": "这是一个免费的全栈开发所需的技能市场，提供各种实用的 AI 技能集合，支持多种平台。",
+  "sourceUrl": "https://github.com/partme-ai/full-stack-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "partme-ai",
+    "repo": "full-stack-skills",
+    "fullName": "partme-ai/full-stack-skills",
+    "stars": 700,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "codebuddy",
+      "cursor",
+      "qoder",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-06T04:55:50Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-17",
+  "lastChecked": "2026-10-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "这是一个免费的全栈开发所需的技能市场，提供各种实用的 AI 技能集合，支持多种平台。",
+    "Topics: agent-skills, claude-code, codebuddy, cursor, qoder",
+    "GitHub stars: 700",
+    "Last pushed: 2026-10-06"
+  ],
+  "id": "candidate-tool-github-partme-ai-full-stack-skills",
+  "canonicalKey": "tool:github:partme-ai/full-stack-skills",
+  "firstDiscoveredAt": "2026-10-17",
+  "lastSeenAt": "2026-10-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-17-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "full-stack-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "这是一个免费的全栈开发所需的技能市场，提供各种实用的 AI 技能集合，支持多种平台。",
+      "Topics: agent-skills, claude-code, codebuddy, cursor, qoder",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "full-stack-skills",
+  "publishedAt": "2026-10-17"
+}
