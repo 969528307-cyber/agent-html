@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "thinkrail",
+  "summary": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+  "sourceUrl": "https://github.com/JetBrains/thinkrail",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "JetBrains",
+    "repo": "thinkrail",
+    "fullName": "JetBrains/thinkrail",
+    "stars": 758,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agent-skills",
+      "agentic-ai",
+      "agentic-workflow",
+      "ai-coding",
+      "ai-tools",
+      "pi-agent",
+      "pi-agent-extension",
+      "spec-driven",
+      "spec-driven-coding",
+      "spec-driven-development",
+      "vibe-coding",
+      "vibecoding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-18T20:52:05Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-18",
+  "lastChecked": "2026-10-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+    "Topics: agent, agent-skills, agentic-ai, agentic-workflow, ai-coding",
+    "GitHub stars: 758",
+    "Last pushed: 2026-10-18"
+  ],
+  "id": "candidate-tool-github-jetbrains-thinkrail",
+  "canonicalKey": "tool:github:jetbrains/thinkrail",
+  "firstDiscoveredAt": "2026-10-18",
+  "lastSeenAt": "2026-10-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-18-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "thinkrail is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+      "Topics: agent, agent-skills, agentic-ai, agentic-workflow, ai-coding",
+      "GitHub stars: 758"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "thinkrail",
+  "publishedAt": "2026-10-18"
+}

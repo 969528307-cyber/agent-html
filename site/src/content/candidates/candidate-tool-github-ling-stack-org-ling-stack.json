@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "ling-stack",
+  "summary": "Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together.",
+  "sourceUrl": "https://github.com/ling-stack-org/ling-stack",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "ling-stack-org",
+    "repo": "ling-stack",
+    "fullName": "ling-stack-org/ling-stack",
+    "stars": 768,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "ai-teammates",
+      "ai-workspace",
+      "anthropic",
+      "electron",
+      "llm",
+      "local-first",
+      "mcp",
+      "multi-agent",
+      "openai",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-18T07:18:33Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-18",
+  "lastChecked": "2026-10-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together.",
+    "Topics: ai-agents, ai-teammates, ai-workspace, anthropic, electron",
+    "GitHub stars: 768",
+    "Last pushed: 2026-10-18"
+  ],
+  "id": "candidate-tool-github-ling-stack-org-ling-stack",
+  "canonicalKey": "tool:github:ling-stack-org/ling-stack",
+  "firstDiscoveredAt": "2026-10-18",
+  "lastSeenAt": "2026-10-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-18-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "ling-stack is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Local-first AI teammate workspace. Bring your own models and keep project conversations, tool approvals, and results together.",
+      "Topics: ai-agents, ai-teammates, ai-workspace, anthropic, electron",
+      "GitHub stars: 768"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ling-stack",
+  "publishedAt": "2026-10-18"
+}

@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "Noria",
+  "summary": "An agentic extractor for messaging platforms. Noria receives messages & URLs via chat; scrapes web data to evaluate the content against custom scoring matrices (e.g., jobs, scholarships); and sends a structured summary with a calculated match score directly to the assigned messenger number. ",
+  "sourceUrl": "https://github.com/AhmadHassan-BTed/Noria",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "AhmadHassan-BTed",
+    "repo": "Noria",
+    "fullName": "AhmadHassan-BTed/Noria",
+    "stars": 1107,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "automation",
+      "data-extraction",
+      "event-driven-architecture",
+      "gemini-api",
+      "jina-ai",
+      "llm-pipeline",
+      "puppeteer-stealth",
+      "semantic-analysis",
+      "structured-outputs",
+      "web-scraping",
+      "whatsapp-bot"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-22T12:34:11Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-18",
+  "lastChecked": "2026-10-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "An agentic extractor for messaging platforms. Noria receives messages & URLs via chat; scrapes web data to evaluate the content against custom scoring matrices (e.g., jobs, scholarships); and sends a ",
+    "Topics: ai-agent, automation, data-extraction, event-driven-architecture, gemini-api",
+    "GitHub stars: 1107",
+    "Last pushed: 2026-07-22"
+  ],
+  "id": "candidate-tool-github-ahmadhassan-bted-noria",
+  "canonicalKey": "tool:github:ahmadhassan-bted/noria",
+  "firstDiscoveredAt": "2026-10-18",
+  "lastSeenAt": "2026-10-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-18-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Noria is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "An agentic extractor for messaging platforms. Noria receives messages & URLs via chat; scrapes web data to evaluate the content against custom scoring matrices (e.g., jobs, scholarships); and sends a ",
+      "Topics: ai-agent, automation, data-extraction, event-driven-architecture, gemini-api",
+      "GitHub stars: 1107"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "noria",
+  "publishedAt": "2026-10-18"
+}

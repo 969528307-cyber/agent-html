@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "easyeda-agent",
+  "summary": "嘉立创EDA专业版(EasyEDA Pro)自动化：给 AI harness 装上画板的「手」—— 一套 typed 原理图/PCB 动作，CLI / Agent Skill / stdio MCP 三形态融合接入。承接嘉立创「不以卖板赚钱，以培养中国工程师为己任」 | EasyEDA Pro automation: the hands of your AI harness — typed schematic/PCB actions via CLI, Agent Skill and stdio MCP.",
+  "sourceUrl": "https://github.com/zhoushoujianwork/easyeda-agent",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "zhoushoujianwork",
+    "repo": "easyeda-agent",
+    "fullName": "zhoushoujianwork/easyeda-agent",
+    "stars": 702,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skill",
+      "ai-agent",
+      "claude-code",
+      "dsh-plugin",
+      "easyeda",
+      "eda",
+      "electronics",
+      "golang",
+      "hardware-design",
+      "jlceda",
+      "lceda",
+      "mcp",
+      "mcp-server",
+      "pcb",
+      "pcb-design",
+      "schematic"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-18T05:58:53Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-18",
+  "lastChecked": "2026-10-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "嘉立创EDA专业版(EasyEDA Pro)自动化：给 AI harness 装上画板的「手」—— 一套 typed 原理图/PCB 动作，CLI / Agent Skill / stdio MCP 三形态融合接入。承接嘉立创「不以卖板赚钱，以培养中国工程师为己任」 | EasyEDA Pro automation: the hands of your AI harness — typed sch",
+    "Topics: agent-skill, ai-agent, claude-code, dsh-plugin, easyeda",
+    "GitHub stars: 702",
+    "Last pushed: 2026-10-18"
+  ],
+  "id": "candidate-tool-github-zhoushoujianwork-easyeda-agent",
+  "canonicalKey": "tool:github:zhoushoujianwork/easyeda-agent",
+  "firstDiscoveredAt": "2026-10-18",
+  "lastSeenAt": "2026-10-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-18-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "easyeda-agent is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "嘉立创EDA专业版(EasyEDA Pro)自动化：给 AI harness 装上画板的「手」—— 一套 typed 原理图/PCB 动作，CLI / Agent Skill / stdio MCP 三形态融合接入。承接嘉立创「不以卖板赚钱，以培养中国工程师为己任」 | EasyEDA Pro automation: the hands of your AI harness — typed sch",
+      "Topics: agent-skill, ai-agent, claude-code, dsh-plugin, easyeda",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "easyeda-agent",
+  "publishedAt": "2026-10-18"
+}
