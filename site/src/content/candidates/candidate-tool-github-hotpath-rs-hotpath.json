@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "hotpath",
+  "summary": "Rust profiler for CPU, memory, SQL, HTTP, and async performance, with Prometheus and Grafana support.",
+  "sourceUrl": "https://github.com/hotpath-rs/hotpath",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "hotpath-rs",
+    "repo": "hotpath",
+    "fullName": "hotpath-rs/hotpath",
+    "stars": 1895,
+    "license": "MIT",
+    "topics": [
+      "allocations",
+      "benchmark",
+      "debugging",
+      "grafana",
+      "mcp",
+      "mpsc",
+      "performance",
+      "profiler",
+      "prometheus",
+      "rust"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-19T22:51:50Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-19",
+  "lastChecked": "2026-10-19",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Rust profiler for CPU, memory, SQL, HTTP, and async performance, with Prometheus and Grafana support.",
+    "Topics: allocations, benchmark, debugging, grafana, mcp",
+    "GitHub stars: 1895",
+    "Last pushed: 2026-10-19"
+  ],
+  "id": "candidate-tool-github-hotpath-rs-hotpath",
+  "canonicalKey": "tool:github:hotpath-rs/hotpath",
+  "firstDiscoveredAt": "2026-10-19",
+  "lastSeenAt": "2026-10-19",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-19-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-19"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "hotpath is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Rust profiler for CPU, memory, SQL, HTTP, and async performance, with Prometheus and Grafana support.",
+      "Topics: allocations, benchmark, debugging, grafana, mcp",
+      "GitHub stars: 1895"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-19",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "hotpath",
+  "publishedAt": "2026-10-19"
+}

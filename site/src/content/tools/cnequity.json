@@ -1,0 +1,69 @@
+{
+  "id": "cnequity",
+  "name": "CNEquity",
+  "type": "workflow",
+  "status": "published",
+  "summary": "中国 A 股数据基础设施。55个日更数据集：股票行情、基本面、期货数据、资金面、公告事件、指数行业、宏观与风险。行级溯源、PIT 语义、复权与历史成分内置，MCP 原生。自托管，零注册、零 API Token",
+  "description": "中国 A 股数据基础设施。55个日更数据集：股票行情、基本面、期货数据、资金面、公告事件、指数行业、宏观与风险。行级溯源、PIT 语义、复权与历史成分内置，MCP 原生。自托管，零注册、零 API Token",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/rootSunc/CNEquity",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/rootSunc/CNEquity",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/rootSunc/CNEquity#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/rootSunc/CNEquity#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/rootSunc/CNEquity/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "中国 A 股数据基础设施。55个日更数据集：股票行情、基本面、期货数据、资金面、公告事件、指数行业、宏观与风险。行级溯源、PIT 语义、复权与历史成分内置，MCP 原生。自托管，零注册、零 API Token",
+    "Topics: a-shares, ai-agent, akshare, backtesting, china-equity",
+    "GitHub stars: 731",
+    "Last pushed: 2026-10-18"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-10-18T22:14:13Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/rootSunc/CNEquity",
+  "repoUrl": "https://github.com/rootSunc/CNEquity",
+  "license": "Apache-2.0",
+  "stars": 731,
+  "lastUpdated": "2026-10-18T22:14:13Z",
+  "lastChecked": "2026-10-19",
+  "publishedAt": "2026-10-19",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
