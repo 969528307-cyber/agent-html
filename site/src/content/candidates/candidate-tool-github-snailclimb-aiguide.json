@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "AIGuide",
+  "summary": "AI 应用开发、AI 编程实战与面试指南，涵盖 LLM、Agent、RAG、MCP、Claude Code、Codex 等核心技术与工程实践。",
+  "sourceUrl": "https://github.com/Snailclimb/AIGuide",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Snailclimb",
+    "repo": "AIGuide",
+    "fullName": "Snailclimb/AIGuide",
+    "stars": 700,
+    "license": "",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "claude-code",
+      "codex",
+      "context-engineering",
+      "cursor",
+      "golang",
+      "graphrag",
+      "java",
+      "llm",
+      "mcp",
+      "prompt-engineering",
+      "rag"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-07-07T04:49:00Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-20",
+  "lastChecked": "2026-10-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI 应用开发、AI 编程实战与面试指南，涵盖 LLM、Agent、RAG、MCP、Claude Code、Codex 等核心技术与工程实践。",
+    "Topics: ai, ai-agents, claude-code, codex, context-engineering",
+    "GitHub stars: 700",
+    "Last pushed: 2026-07-07"
+  ],
+  "id": "candidate-tool-github-snailclimb-aiguide",
+  "canonicalKey": "tool:github:snailclimb/aiguide",
+  "firstDiscoveredAt": "2026-10-20",
+  "lastSeenAt": "2026-10-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-20-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "AIGuide is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "AI 应用开发、AI 编程实战与面试指南，涵盖 LLM、Agent、RAG、MCP、Claude Code、Codex 等核心技术与工程实践。",
+      "Topics: ai, ai-agents, claude-code, codex, context-engineering",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "aiguide",
+  "publishedAt": "2026-10-20"
+}

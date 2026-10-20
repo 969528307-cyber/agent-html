@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "last30days-skill-cn",
+  "summary": "给 AI Agent 的中文互联网研究 Skill：检索 8 大平台最近 30 天的讨论，追踪跨平台热点，生成附原始来源的报告，并提供每日全网热榜。支持 Claude Code、Codex、OpenClaw。",
+  "sourceUrl": "https://github.com/Jesseovo/last30days-skill-cn",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Jesseovo",
+    "repo": "last30days-skill-cn",
+    "fullName": "Jesseovo/last30days-skill-cn",
+    "stars": 1925,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "ai-agent",
+      "bilibili",
+      "chinese",
+      "claude-code",
+      "codex",
+      "deep-research",
+      "dsh-plugin",
+      "openclaw",
+      "openclaw-skills",
+      "rss",
+      "social-media",
+      "trending-topics",
+      "web-search",
+      "weibo",
+      "xiaohongshu",
+      "zhihu"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-20T10:14:34Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-20",
+  "lastChecked": "2026-10-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "给 AI Agent 的中文互联网研究 Skill：检索 8 大平台最近 30 天的讨论，追踪跨平台热点，生成附原始来源的报告，并提供每日全网热榜。支持 Claude Code、Codex、OpenClaw。",
+    "Topics: agent-skills, ai-agent, bilibili, chinese, claude-code",
+    "GitHub stars: 1925",
+    "Last pushed: 2026-10-20"
+  ],
+  "id": "candidate-tool-github-jesseovo-last30days-skill-cn",
+  "canonicalKey": "tool:github:jesseovo/last30days-skill-cn",
+  "firstDiscoveredAt": "2026-10-20",
+  "lastSeenAt": "2026-10-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-20-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "last30days-skill-cn is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "给 AI Agent 的中文互联网研究 Skill：检索 8 大平台最近 30 天的讨论，追踪跨平台热点，生成附原始来源的报告，并提供每日全网热榜。支持 Claude Code、Codex、OpenClaw。",
+      "Topics: agent-skills, ai-agent, bilibili, chinese, claude-code",
+      "GitHub stars: 1925"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "last30days-skill-cn",
+  "publishedAt": "2026-10-20"
+}

@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "mcd-saver-strategist",
+  "summary": "麦当劳省钱点餐助手（麦门精算师）｜麦当劳优惠券组合优化 Skill：拉取麦当劳菜单与全部可用优惠券，算出最省的点餐组合，巨无霸套餐 ¥47 → ¥21.9（省 53%）。McDonalds MCP（麦当劳 MCP）coupon optimizer · McDonalds China MCP Server · Agent Skill for WorkBuddy · 麦当劳程序员创意开发大赛参赛作品",
+  "sourceUrl": "https://github.com/hujjun/mcd-saver-strategist",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "hujjun",
+    "repo": "mcd-saver-strategist",
+    "fullName": "hujjun/mcd-saver-strategist",
+    "stars": 804,
+    "license": "MIT",
+    "topics": [
+      "agent-skill",
+      "ai-agent",
+      "coupon-optimizer",
+      "coupons",
+      "deterministic-optimization",
+      "fast-food",
+      "mcd",
+      "mcdonalds",
+      "mcdonalds-mcp",
+      "mcp",
+      "mcp-server",
+      "money-saving",
+      "python",
+      "workbuddy",
+      "workbuddy-skill"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-19T07:58:34Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-20",
+  "lastChecked": "2026-10-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "麦当劳省钱点餐助手（麦门精算师）｜麦当劳优惠券组合优化 Skill：拉取麦当劳菜单与全部可用优惠券，算出最省的点餐组合，巨无霸套餐 ¥47 → ¥21.9（省 53%）。McDonalds MCP（麦当劳 MCP）coupon optimizer · McDonalds China MCP Server · Agent Skill for WorkBuddy · 麦当劳程序员创意开发大赛参赛作品",
+    "Topics: agent-skill, ai-agent, coupon-optimizer, coupons, deterministic-optimization",
+    "GitHub stars: 804",
+    "Last pushed: 2026-10-19"
+  ],
+  "id": "candidate-tool-github-hujjun-mcd-saver-strategist",
+  "canonicalKey": "tool:github:hujjun/mcd-saver-strategist",
+  "firstDiscoveredAt": "2026-10-20",
+  "lastSeenAt": "2026-10-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-20-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "mcd-saver-strategist is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "麦当劳省钱点餐助手（麦门精算师）｜麦当劳优惠券组合优化 Skill：拉取麦当劳菜单与全部可用优惠券，算出最省的点餐组合，巨无霸套餐 ¥47 → ¥21.9（省 53%）。McDonalds MCP（麦当劳 MCP）coupon optimizer · McDonalds China MCP Server · Agent Skill for WorkBuddy · 麦当劳程序员创意开发大赛参赛作品",
+      "Topics: agent-skill, ai-agent, coupon-optimizer, coupons, deterministic-optimization",
+      "GitHub stars: 804"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcd-saver-strategist",
+  "publishedAt": "2026-10-20"
+}

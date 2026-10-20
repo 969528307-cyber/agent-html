@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "mattpocock-skills-zh-CN",
+  "summary": "Matt Pocock skills 的简体中文本地化：人工审核每一次更新，定期同步上游，支持 Claude、Codex 和 DSH 插件。",
+  "sourceUrl": "https://github.com/vinvcn/mattpocock-skills-zh-CN",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "vinvcn",
+    "repo": "mattpocock-skills-zh-CN",
+    "fullName": "vinvcn/mattpocock-skills-zh-CN",
+    "stars": 5134,
+    "license": "MIT",
+    "topics": [
+      "ai-agent",
+      "chinese",
+      "developer-skills",
+      "productivity",
+      "prompt-engineering",
+      "skills",
+      "translation",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-20T00:28:30Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-20",
+  "lastChecked": "2026-10-20",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Matt Pocock skills 的简体中文本地化：人工审核每一次更新，定期同步上游，支持 Claude、Codex 和 DSH 插件。",
+    "Topics: ai-agent, chinese, developer-skills, productivity, prompt-engineering",
+    "GitHub stars: 5134",
+    "Last pushed: 2026-10-20"
+  ],
+  "id": "candidate-tool-github-vinvcn-mattpocock-skills-zh-cn",
+  "canonicalKey": "tool:github:vinvcn/mattpocock-skills-zh-cn",
+  "firstDiscoveredAt": "2026-10-20",
+  "lastSeenAt": "2026-10-20",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-20-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-20"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "mattpocock-skills-zh-CN is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Matt Pocock skills 的简体中文本地化：人工审核每一次更新，定期同步上游，支持 Claude、Codex 和 DSH 插件。",
+      "Topics: ai-agent, chinese, developer-skills, productivity, prompt-engineering",
+      "GitHub stars: 5134"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-20",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mattpocock-skills-zh-cn",
+  "publishedAt": "2026-10-20"
+}
