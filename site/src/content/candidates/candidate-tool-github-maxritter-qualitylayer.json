@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "qualitylayer",
+  "summary": "Plan, build and review software with your coding agents. Work side by side in the App or browser, or use your favourite terminal or IDE.",
+  "sourceUrl": "https://github.com/maxritter/qualitylayer",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "maxritter",
+    "repo": "qualitylayer",
+    "fullName": "maxritter/qualitylayer",
+    "stars": 2097,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "agentic-engineering",
+      "ai-coding",
+      "claude-code",
+      "code-quality",
+      "code-review",
+      "codex",
+      "coding-agents",
+      "developer-tools",
+      "harness-engineering",
+      "human-in-the-loop",
+      "opencode",
+      "persistent-memory",
+      "pi",
+      "qualitylayer",
+      "software-engineering",
+      "spec-driven-development",
+      "tdd",
+      "team-collaboration",
+      "visual-planning"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-21T19:50:30Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-21",
+  "lastChecked": "2026-10-21",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Plan, build and review software with your coding agents. Work side by side in the App or browser, or use your favourite terminal or IDE.",
+    "Topics: agent-skills, agentic-engineering, ai-coding, claude-code, code-quality",
+    "GitHub stars: 2097",
+    "Last pushed: 2026-10-21"
+  ],
+  "id": "candidate-tool-github-maxritter-qualitylayer",
+  "canonicalKey": "tool:github:maxritter/qualitylayer",
+  "firstDiscoveredAt": "2026-10-21",
+  "lastSeenAt": "2026-10-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-21-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-21"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "qualitylayer is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Plan, build and review software with your coding agents. Work side by side in the App or browser, or use your favourite terminal or IDE.",
+      "Topics: agent-skills, agentic-engineering, ai-coding, claude-code, code-quality",
+      "GitHub stars: 2097"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-21",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "qualitylayer",
+  "publishedAt": "2026-10-21"
+}
