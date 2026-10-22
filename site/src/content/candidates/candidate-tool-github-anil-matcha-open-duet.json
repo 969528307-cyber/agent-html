@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "open-duet",
+  "summary": "Open-source, self-hosted alternative to Claude Duet: AI coworkers (named agents) with instructions, memory, routines, their own isolated computer, and your approval before they act. Also an alternative to OpenAI Dots, Meta Muse, Grok Bot, Manus Cue and ChatGPT agent.",
+  "sourceUrl": "https://github.com/Anil-matcha/open-duet",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "Anil-matcha",
+    "repo": "open-duet",
+    "fullName": "Anil-matcha/open-duet",
+    "stars": 6040,
+    "license": "Apache-2.0",
+    "topics": [
+      "agentic-ai",
+      "ai-agent",
+      "ai-assistant",
+      "ai-coworker",
+      "ai-employees",
+      "ai-workspace",
+      "chatgpt-agent",
+      "claude-cowork",
+      "claude-duet",
+      "computer-use",
+      "computer-use-agent",
+      "grok-bot",
+      "manus-cue",
+      "meta-muse",
+      "open-source",
+      "open-source-alternative",
+      "personal-ai-agent",
+      "proactive-agent",
+      "self-hosted",
+      "self-hosted-ai"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-22T19:19:25Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-22",
+  "lastChecked": "2026-10-22",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source, self-hosted alternative to Claude Duet: AI coworkers (named agents) with instructions, memory, routines, their own isolated computer, and your approval before they act. Also an alternativ",
+    "Topics: agentic-ai, ai-agent, ai-assistant, ai-coworker, ai-employees",
+    "GitHub stars: 6040",
+    "Last pushed: 2026-10-22"
+  ],
+  "id": "candidate-tool-github-anil-matcha-open-duet",
+  "canonicalKey": "tool:github:anil-matcha/open-duet",
+  "firstDiscoveredAt": "2026-10-22",
+  "lastSeenAt": "2026-10-22",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-22-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-22"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "open-duet is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Open-source, self-hosted alternative to Claude Duet: AI coworkers (named agents) with instructions, memory, routines, their own isolated computer, and your approval before they act. Also an alternativ",
+      "Topics: agentic-ai, ai-agent, ai-assistant, ai-coworker, ai-employees",
+      "GitHub stars: 6040"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-22",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "open-duet",
+  "publishedAt": "2026-10-22"
+}

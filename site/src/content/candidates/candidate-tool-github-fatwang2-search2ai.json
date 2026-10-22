@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "search2ai",
+  "summary": "Self-hosted search gateway for AI agents. Unified search, news and page extraction with provider fallback. REST API, MCP server and TypeScript library.",
+  "sourceUrl": "https://github.com/fatwang2/search2ai",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "fatwang2",
+    "repo": "search2ai",
+    "fullName": "fatwang2/search2ai",
+    "stars": 1282,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "cloudflare-workers",
+      "hono",
+      "mcp",
+      "mcp-server",
+      "openai-compatible",
+      "search",
+      "search-api",
+      "search-gateway",
+      "search1api",
+      "self-hosted",
+      "tool-calling",
+      "typescript",
+      "web-search"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-22T16:34:05Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-22",
+  "lastChecked": "2026-10-22",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Self-hosted search gateway for AI agents. Unified search, news and page extraction with provider fallback. REST API, MCP server and TypeScript library.",
+    "Topics: ai-agents, cloudflare-workers, hono, mcp, mcp-server",
+    "GitHub stars: 1282",
+    "Last pushed: 2026-10-22"
+  ],
+  "id": "candidate-tool-github-fatwang2-search2ai",
+  "canonicalKey": "tool:github:fatwang2/search2ai",
+  "firstDiscoveredAt": "2026-10-22",
+  "lastSeenAt": "2026-10-22",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-22-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-22"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "search2ai is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Self-hosted search gateway for AI agents. Unified search, news and page extraction with provider fallback. REST API, MCP server and TypeScript library.",
+      "Topics: ai-agents, cloudflare-workers, hono, mcp, mcp-server",
+      "GitHub stars: 1282"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-22",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "search2ai",
+  "publishedAt": "2026-10-22"
+}

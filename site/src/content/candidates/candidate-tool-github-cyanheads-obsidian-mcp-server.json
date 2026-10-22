@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "obsidian-mcp-server",
+  "summary": "Read, write, search, and surgically edit Obsidian vault notes, tags, and frontmatter via MCP. STDIO or Streamable HTTP.",
+  "sourceUrl": "https://github.com/cyanheads/obsidian-mcp-server",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "cyanheads",
+    "repo": "obsidian-mcp-server",
+    "fullName": "cyanheads/obsidian-mcp-server",
+    "stars": 700,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "ai-tools",
+      "bun",
+      "cyanheads",
+      "knowledge-base",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "note-taking",
+      "obsidian",
+      "obsidian-md",
+      "obsidian-vault",
+      "pkm",
+      "stdio",
+      "streamable-http",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-06T05:59:34Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-22",
+  "lastChecked": "2026-10-22",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Read, write, search, and surgically edit Obsidian vault notes, tags, and frontmatter via MCP. STDIO or Streamable HTTP.",
+    "Topics: ai-agents, ai-tools, bun, cyanheads, knowledge-base",
+    "GitHub stars: 700",
+    "Last pushed: 2026-10-06"
+  ],
+  "id": "candidate-tool-github-cyanheads-obsidian-mcp-server",
+  "canonicalKey": "tool:github:cyanheads/obsidian-mcp-server",
+  "firstDiscoveredAt": "2026-10-22",
+  "lastSeenAt": "2026-10-22",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-22-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-22"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "obsidian-mcp-server is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Read, write, search, and surgically edit Obsidian vault notes, tags, and frontmatter via MCP. STDIO or Streamable HTTP.",
+      "Topics: ai-agents, ai-tools, bun, cyanheads, knowledge-base",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-22",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "obsidian-mcp-server",
+  "publishedAt": "2026-10-22"
+}
