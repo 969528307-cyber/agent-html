@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "blender-plugin",
+  "summary": "Scenario for Blender: AI images, video, 3D and PBR materials in the viewport, plus a local MCP server for agents. Blender 5.0+ extension, GPL-3.0-or-later.",
+  "sourceUrl": "https://github.com/scenario-labs/blender-plugin",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "scenario-labs",
+    "repo": "blender-plugin",
+    "fullName": "scenario-labs/blender-plugin",
+    "stars": 769,
+    "license": "GPL-3.0",
+    "topics": [
+      "3d-models",
+      "agentic-ai",
+      "ai-agents",
+      "ai-art",
+      "blender",
+      "blender-addon",
+      "blender-extension",
+      "game-assets",
+      "generative-ai",
+      "image-generation",
+      "mcp",
+      "mcp-server",
+      "pbr",
+      "python",
+      "text-to-3d",
+      "text-to-image",
+      "text-to-video",
+      "textures"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-23T19:12:42Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-23",
+  "lastChecked": "2026-10-23",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Scenario for Blender: AI images, video, 3D and PBR materials in the viewport, plus a local MCP server for agents. Blender 5.0+ extension, GPL-3.0-or-later.",
+    "Topics: 3d-models, agentic-ai, ai-agents, ai-art, blender",
+    "GitHub stars: 769",
+    "Last pushed: 2026-10-23"
+  ],
+  "id": "candidate-tool-github-scenario-labs-blender-plugin",
+  "canonicalKey": "tool:github:scenario-labs/blender-plugin",
+  "firstDiscoveredAt": "2026-10-23",
+  "lastSeenAt": "2026-10-23",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-23-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-23"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "blender-plugin is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Scenario for Blender: AI images, video, 3D and PBR materials in the viewport, plus a local MCP server for agents. Blender 5.0+ extension, GPL-3.0-or-later.",
+      "Topics: 3d-models, agentic-ai, ai-agents, ai-art, blender",
+      "GitHub stars: 769"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-23",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "blender-plugin",
+  "publishedAt": "2026-10-23"
+}

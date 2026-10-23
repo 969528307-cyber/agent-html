@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "Agentic-Bug-Hunter",
+  "summary": "AI-powered bug bounty hunting toolkit that works with or without subscription.",
+  "sourceUrl": "https://github.com/awarexone/Agentic-Bug-Hunter",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "awarexone",
+    "repo": "Agentic-Bug-Hunter",
+    "fullName": "awarexone/Agentic-Bug-Hunter",
+    "stars": 5411,
+    "license": "MIT",
+    "topics": [
+      "agentic-ai",
+      "ai-security",
+      "appsec",
+      "bug-bounty",
+      "bugcrowd",
+      "claude-ai",
+      "claude-code",
+      "ethical-hacking",
+      "graphql-security",
+      "hackerone",
+      "hacking-tool",
+      "llm-security",
+      "mcp",
+      "osint",
+      "penetration-testing",
+      "python",
+      "recon",
+      "red-team",
+      "security-tools",
+      "vulnerability-scanner"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-23T08:02:45Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-23",
+  "lastChecked": "2026-10-23",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI-powered bug bounty hunting toolkit that works with or without subscription.",
+    "Topics: agentic-ai, ai-security, appsec, bug-bounty, bugcrowd",
+    "GitHub stars: 5411",
+    "Last pushed: 2026-10-23"
+  ],
+  "id": "candidate-tool-github-awarexone-agentic-bug-hunter",
+  "canonicalKey": "tool:github:awarexone/agentic-bug-hunter",
+  "firstDiscoveredAt": "2026-10-23",
+  "lastSeenAt": "2026-10-23",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-23-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-23"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Agentic-Bug-Hunter is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "AI-powered bug bounty hunting toolkit that works with or without subscription.",
+      "Topics: agentic-ai, ai-security, appsec, bug-bounty, bugcrowd",
+      "GitHub stars: 5411"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-23",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agentic-bug-hunter",
+  "publishedAt": "2026-10-23"
+}
