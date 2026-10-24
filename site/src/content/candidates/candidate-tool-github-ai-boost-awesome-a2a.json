@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "awesome-a2a",
+  "summary": "Agent2Agent (A2A) – awesome A2A agents, tools, servers & clients, all in one place.",
+  "sourceUrl": "https://github.com/ai-boost/awesome-a2a",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "ai-boost",
+    "repo": "awesome-a2a",
+    "fullName": "ai-boost/awesome-a2a",
+    "stars": 701,
+    "license": "MIT",
+    "topics": [
+      "a2a",
+      "a2a-cli",
+      "a2a-mcp",
+      "a2a-protocol",
+      "a2a-server",
+      "agent",
+      "agent2agent",
+      "mcp"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-24T08:51:51Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-24",
+  "lastChecked": "2026-10-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Agent2Agent (A2A) – awesome A2A agents, tools, servers & clients, all in one place.",
+    "Topics: a2a, a2a-cli, a2a-mcp, a2a-protocol, a2a-server",
+    "GitHub stars: 701",
+    "Last pushed: 2026-10-24"
+  ],
+  "id": "candidate-tool-github-ai-boost-awesome-a2a",
+  "canonicalKey": "tool:github:ai-boost/awesome-a2a",
+  "firstDiscoveredAt": "2026-10-24",
+  "lastSeenAt": "2026-10-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-24-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "awesome-a2a is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Agent2Agent (A2A) – awesome A2A agents, tools, servers & clients, all in one place.",
+      "Topics: a2a, a2a-cli, a2a-mcp, a2a-protocol, a2a-server",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "awesome-a2a",
+  "publishedAt": "2026-10-24"
+}

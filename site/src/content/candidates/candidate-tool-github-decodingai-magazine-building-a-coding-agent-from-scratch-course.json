@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "building-a-coding-agent-from-scratch-course",
+  "summary": "Learn harness engineering by building Claude Code from scratch. Free, open-source course: 8 articles, 6 videos, 1 codebase.",
+  "sourceUrl": "https://github.com/decodingai-magazine/building-a-coding-agent-from-scratch-course",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "decodingai-magazine",
+    "repo": "building-a-coding-agent-from-scratch-course",
+    "fullName": "decodingai-magazine/building-a-coding-agent-from-scratch-course",
+    "stars": 744,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agent",
+      "ai-coding-assistant",
+      "claude-code",
+      "coding-agent",
+      "course",
+      "curated-list",
+      "harness-engineering",
+      "kitaru",
+      "llm-evals",
+      "modal",
+      "opik",
+      "pydantic-ai"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-24T08:43:07Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-24",
+  "lastChecked": "2026-10-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Learn harness engineering by building Claude Code from scratch. Free, open-source course: 8 articles, 6 videos, 1 codebase.",
+    "Topics: ai-agent, ai-coding-assistant, claude-code, coding-agent, course",
+    "GitHub stars: 744",
+    "Last pushed: 2026-10-24"
+  ],
+  "id": "candidate-tool-github-decodingai-magazine-building-a-coding-agent-from-scratch-course",
+  "canonicalKey": "tool:github:decodingai-magazine/building-a-coding-agent-from-scratch-course",
+  "firstDiscoveredAt": "2026-10-24",
+  "lastSeenAt": "2026-10-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-24-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "building-a-coding-agent-from-scratch-course is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "Learn harness engineering by building Claude Code from scratch. Free, open-source course: 8 articles, 6 videos, 1 codebase.",
+      "Topics: ai-agent, ai-coding-assistant, claude-code, coding-agent, course",
+      "GitHub stars: 744"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "building-a-coding-agent-from-scratch-course",
+  "publishedAt": "2026-10-24"
+}
