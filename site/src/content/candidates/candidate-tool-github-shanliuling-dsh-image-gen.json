@@ -1,0 +1,111 @@
+{
+  "type": "tool",
+  "title": "dsh-image-gen",
+  "summary": " 可在对话内生成、编辑、对比图像；内置 500 + 提示词、图库、多模型工作流，支持 ComfyUI。AI image studio for DeepSeek Harness — generate, edit & compare images in chat, with 500+ prompts, gallery, multi-model workflows and ComfyUI.",
+  "sourceUrl": "https://github.com/shanliuling/dsh-image-gen",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "shanliuling",
+    "repo": "dsh-image-gen",
+    "fullName": "shanliuling/dsh-image-gen",
+    "stars": 700,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agent",
+      "ai-image-generation-api",
+      "comfyui",
+      "deepseek",
+      "deepseek-harness",
+      "dsh-plugin",
+      "gemini",
+      "image-generation",
+      "openai",
+      "prompt-library",
+      "seedream"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-25T17:01:43Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-25",
+  "lastChecked": "2026-10-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    " 可在对话内生成、编辑、对比图像；内置 500 + 提示词、图库、多模型工作流，支持 ComfyUI。AI image studio for DeepSeek Harness — generate, edit & compare images in chat, with 500+ prompts, gallery, multi-model workflows and ComfyUI.",
+    "Topics: ai-agent, ai-image-generation-api, comfyui, deepseek, deepseek-harness",
+    "GitHub stars: 700",
+    "Last pushed: 2026-10-25"
+  ],
+  "id": "candidate-tool-github-shanliuling-dsh-image-gen",
+  "canonicalKey": "tool:github:shanliuling/dsh-image-gen",
+  "firstDiscoveredAt": "2026-10-25",
+  "lastSeenAt": "2026-10-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-25-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-25"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "dsh-image-gen is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      " 可在对话内生成、编辑、对比图像；内置 500 + 提示词、图库、多模型工作流，支持 ComfyUI。AI image studio for DeepSeek Harness — generate, edit & compare images in chat, with 500+ prompts, gallery, multi-model workflows and ComfyUI.",
+      "Topics: ai-agent, ai-image-generation-api, comfyui, deepseek, deepseek-harness",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-25",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dsh-image-gen",
+  "publishedAt": "2026-10-25"
+}
