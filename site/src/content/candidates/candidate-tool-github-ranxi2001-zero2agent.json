@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "zero2Agent",
+  "summary": "面向大厂Agent研发岗位求职的agent教程网站，涵盖技术路线与面试八股文",
+  "sourceUrl": "https://github.com/ranxi2001/zero2Agent",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "ranxi2001",
+    "repo": "zero2Agent",
+    "fullName": "ranxi2001/zero2Agent",
+    "stars": 935,
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "langraph",
+      "learning",
+      "llm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-26T04:06:49Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-26",
+  "lastChecked": "2026-10-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "面向大厂Agent研发岗位求职的agent教程网站，涵盖技术路线与面试八股文",
+    "Topics: agent, agent-framework, langraph, learning, llm",
+    "GitHub stars: 935",
+    "Last pushed: 2026-10-26"
+  ],
+  "id": "candidate-tool-github-ranxi2001-zero2agent",
+  "canonicalKey": "tool:github:ranxi2001/zero2agent",
+  "firstDiscoveredAt": "2026-10-26",
+  "lastSeenAt": "2026-10-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-26-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "zero2Agent is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "面向大厂Agent研发岗位求职的agent教程网站，涵盖技术路线与面试八股文",
+      "Topics: agent, agent-framework, langraph, learning, llm",
+      "GitHub stars: 935"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "zero2agent",
+  "publishedAt": "2026-10-26"
+}

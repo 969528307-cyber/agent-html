@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "AutoSwarm-Shadow-Adapter",
+  "summary": "Zero-modification Human-in-the-Loop adapter for OpenOPC's agentic DAG runtime.",
+  "sourceUrl": "https://github.com/AhmadHassan-BTed/AutoSwarm-Shadow-Adapter",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "AhmadHassan-BTed",
+    "repo": "AutoSwarm-Shadow-Adapter",
+    "fullName": "AhmadHassan-BTed/AutoSwarm-Shadow-Adapter",
+    "stars": 3717,
+    "license": "MIT",
+    "topics": [
+      "agentic-ai",
+      "agentic-workflow",
+      "ai-employee",
+      "ai-native",
+      "ai-workforce",
+      "dag-orchestration",
+      "external-agent-adapter",
+      "fastapi",
+      "generative-ai",
+      "hitl",
+      "human-in-the-loop",
+      "human-oversight",
+      "llm",
+      "llm-orchestration",
+      "multi-agent",
+      "openopc",
+      "orchestration",
+      "python",
+      "react",
+      "shadow-mode"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-20T11:56:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-26",
+  "lastChecked": "2026-10-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Zero-modification Human-in-the-Loop adapter for OpenOPC's agentic DAG runtime.",
+    "Topics: agentic-ai, agentic-workflow, ai-employee, ai-native, ai-workforce",
+    "GitHub stars: 3717",
+    "Last pushed: 2026-10-20"
+  ],
+  "id": "candidate-tool-github-ahmadhassan-bted-autoswarm-shadow-adapter",
+  "canonicalKey": "tool:github:ahmadhassan-bted/autoswarm-shadow-adapter",
+  "firstDiscoveredAt": "2026-10-26",
+  "lastSeenAt": "2026-10-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-26-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "AutoSwarm-Shadow-Adapter is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "Zero-modification Human-in-the-Loop adapter for OpenOPC's agentic DAG runtime.",
+      "Topics: agentic-ai, agentic-workflow, ai-employee, ai-native, ai-workforce",
+      "GitHub stars: 3717"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "autoswarm-shadow-adapter",
+  "publishedAt": "2026-10-26"
+}

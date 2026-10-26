@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "agents-universe",
+  "summary": "不是问答机器人，而是能真正干活的数字分身。共享智能体，共享项目上下文，让项目所有成员一起协同工作。同时智能体会像人一样通过资料或者工作抽象和总结经验到项目上下文中",
+  "sourceUrl": "https://github.com/agents-universe/agents-universe",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "agents-universe",
+    "repo": "agents-universe",
+    "fullName": "agents-universe/agents-universe",
+    "stars": 753,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "agent-framework",
+      "agent-orchestration",
+      "agent-skill",
+      "agentic-ai",
+      "ai-agents",
+      "ai-governance",
+      "ai-tools",
+      "deepseek-harness",
+      "harness",
+      "harness-engineering",
+      "harness-framework",
+      "python",
+      "python3",
+      "vue3",
+      "vuejs",
+      "web-application",
+      "webapp",
+      "workbuddy",
+      "workbuddy-alternative"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-25T12:55:53Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-26",
+  "lastChecked": "2026-10-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "不是问答机器人，而是能真正干活的数字分身。共享智能体，共享项目上下文，让项目所有成员一起协同工作。同时智能体会像人一样通过资料或者工作抽象和总结经验到项目上下文中",
+    "Topics: agent, agent-framework, agent-orchestration, agent-skill, agentic-ai",
+    "GitHub stars: 753",
+    "Last pushed: 2026-10-25"
+  ],
+  "id": "candidate-tool-github-agents-universe-agents-universe",
+  "canonicalKey": "tool:github:agents-universe/agents-universe",
+  "firstDiscoveredAt": "2026-10-26",
+  "lastSeenAt": "2026-10-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-26-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "agents-universe is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "不是问答机器人，而是能真正干活的数字分身。共享智能体，共享项目上下文，让项目所有成员一起协同工作。同时智能体会像人一样通过资料或者工作抽象和总结经验到项目上下文中",
+      "Topics: agent, agent-framework, agent-orchestration, agent-skill, agentic-ai",
+      "GitHub stars: 753"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agents-universe",
+  "publishedAt": "2026-10-26"
+}

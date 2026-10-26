@@ -1,0 +1,104 @@
+{
+  "type": "tool",
+  "title": "DS-Bot",
+  "summary": "A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats.",
+  "sourceUrl": "https://github.com/Fei2411/DS-Bot",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "Fei2411",
+    "repo": "DS-Bot",
+    "fullName": "Fei2411/DS-Bot",
+    "stars": 4121,
+    "license": "Apache-2.0",
+    "topics": [
+      "bot",
+      "deepseek-harness",
+      "dsh-plugin",
+      "multi-agent"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-26T17:05:40Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-26",
+  "lastChecked": "2026-10-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats.",
+    "Topics: bot, deepseek-harness, dsh-plugin, multi-agent",
+    "GitHub stars: 4121",
+    "Last pushed: 2026-10-26"
+  ],
+  "id": "candidate-tool-github-fei2411-ds-bot",
+  "canonicalKey": "tool:github:fei2411/ds-bot",
+  "firstDiscoveredAt": "2026-10-26",
+  "lastSeenAt": "2026-10-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-26-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "DS-Bot is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats.",
+      "Topics: bot, deepseek-harness, dsh-plugin, multi-agent",
+      "GitHub stars: 4121"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ds-bot",
+  "publishedAt": "2026-10-26"
+}

@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "trader-skill",
+  "summary": "11 Claude skills that copy the investors you trust, watch the news and Congress, size every trade to your budget, and never place an order without your yes.",
+  "sourceUrl": "https://github.com/Jakeschincariol/trader-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Jakeschincariol",
+    "repo": "trader-skill",
+    "fullName": "Jakeschincariol/trader-skill",
+    "stars": 711,
+    "license": "MIT",
+    "topics": [
+      "13f",
+      "claude",
+      "claude-skills",
+      "investing",
+      "stock-market"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-14T21:13:22Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-26",
+  "lastChecked": "2026-10-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "11 Claude skills that copy the investors you trust, watch the news and Congress, size every trade to your budget, and never place an order without your yes.",
+    "Topics: 13f, claude, claude-skills, investing, stock-market",
+    "GitHub stars: 711",
+    "Last pushed: 2026-10-14"
+  ],
+  "id": "candidate-tool-github-jakeschincariol-trader-skill",
+  "canonicalKey": "tool:github:jakeschincariol/trader-skill",
+  "firstDiscoveredAt": "2026-10-26",
+  "lastSeenAt": "2026-10-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-26-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "trader-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "11 Claude skills that copy the investors you trust, watch the news and Congress, size every trade to your budget, and never place an order without your yes.",
+      "Topics: 13f, claude, claude-skills, investing, stock-market",
+      "GitHub stars: 711"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "trader-skill",
+  "publishedAt": "2026-10-26"
+}

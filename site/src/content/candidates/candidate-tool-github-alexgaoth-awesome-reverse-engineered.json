@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "awesome-reverse-engineered",
+  "summary": "Don't reverse engineer it twice. 16,000+ open-source tools built by reverse engineering closed apps, APIs, devices, protocols, file formats, games and AI tools. Search site + agent skill + MCP server, refreshed nightly.",
+  "sourceUrl": "https://github.com/alexgaoth/awesome-reverse-engineered",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "alexgaoth",
+    "repo": "awesome-reverse-engineered",
+    "fullName": "alexgaoth/awesome-reverse-engineered",
+    "stars": 762,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "awesome",
+      "awesome-list",
+      "claude-code",
+      "decompilation",
+      "file-formats",
+      "game-decompilation",
+      "hacktoberfest",
+      "home-assistant",
+      "interoperability",
+      "iot",
+      "local-control",
+      "open-source",
+      "protocol",
+      "reverse-engineered",
+      "reverse-engineering",
+      "unofficial-api"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-26T20:50:59Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-26",
+  "lastChecked": "2026-10-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Don't reverse engineer it twice. 16,000+ open-source tools built by reverse engineering closed apps, APIs, devices, protocols, file formats, games and AI tools. Search site + agent skill + MCP server,",
+    "Topics: agent-skills, ai-agents, awesome, awesome-list, claude-code",
+    "GitHub stars: 762",
+    "Last pushed: 2026-10-26"
+  ],
+  "id": "candidate-tool-github-alexgaoth-awesome-reverse-engineered",
+  "canonicalKey": "tool:github:alexgaoth/awesome-reverse-engineered",
+  "firstDiscoveredAt": "2026-10-26",
+  "lastSeenAt": "2026-10-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-26-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "awesome-reverse-engineered is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Don't reverse engineer it twice. 16,000+ open-source tools built by reverse engineering closed apps, APIs, devices, protocols, file formats, games and AI tools. Search site + agent skill + MCP server,",
+      "Topics: agent-skills, ai-agents, awesome, awesome-list, claude-code",
+      "GitHub stars: 762"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "awesome-reverse-engineered",
+  "publishedAt": "2026-10-26"
+}

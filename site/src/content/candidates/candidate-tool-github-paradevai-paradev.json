@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "Paradev",
+  "summary": "Paradev (formerly Superset) is an agentic IDE to orchestrate 100+ coding agents in parallel. Run any agent with your own subscription.",
+  "sourceUrl": "https://github.com/ParadevAI/Paradev",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "ParadevAI",
+    "repo": "Paradev",
+    "fullName": "ParadevAI/Paradev",
+    "stars": 15588,
+    "license": "NOASSERTION",
+    "topics": [
+      "ade",
+      "agent",
+      "agent-orchestration",
+      "ai-agents",
+      "ai-coding",
+      "claude-code",
+      "cli",
+      "codex",
+      "coding-agents",
+      "cursor-agent",
+      "developer-tools",
+      "devtools",
+      "ide",
+      "macos",
+      "opencode",
+      "orchestration",
+      "parallel-agents",
+      "terminal",
+      "worktrees",
+      "yc-backed"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-26T22:24:00Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-26",
+  "lastChecked": "2026-10-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Paradev (formerly Superset) is an agentic IDE to orchestrate 100+ coding agents in parallel. Run any agent with your own subscription.",
+    "Topics: ade, agent, agent-orchestration, ai-agents, ai-coding",
+    "GitHub stars: 15588",
+    "Last pushed: 2026-10-26"
+  ],
+  "id": "candidate-tool-github-paradevai-paradev",
+  "canonicalKey": "tool:github:paradevai/paradev",
+  "firstDiscoveredAt": "2026-10-26",
+  "lastSeenAt": "2026-10-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-26-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Paradev is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "Paradev (formerly Superset) is an agentic IDE to orchestrate 100+ coding agents in parallel. Run any agent with your own subscription.",
+      "Topics: ade, agent, agent-orchestration, ai-agents, ai-coding",
+      "GitHub stars: 15588"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "paradev",
+  "publishedAt": "2026-10-26"
+}

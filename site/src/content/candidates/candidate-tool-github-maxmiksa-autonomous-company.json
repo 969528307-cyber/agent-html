@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "Autonomous-Company",
+  "summary": "An autonomous company working 24/7 on your own PC - Windows/Linux/macOS.",
+  "sourceUrl": "https://github.com/MaxMiksa/Autonomous-Company",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "MaxMiksa",
+    "repo": "Autonomous-Company",
+    "fullName": "MaxMiksa/Autonomous-Company",
+    "stars": 3158,
+    "license": "MIT",
+    "topics": [
+      "agentic-workflows",
+      "ai-agents",
+      "autonomous-agents",
+      "claude-code",
+      "codex",
+      "dashboard",
+      "llm",
+      "multi-agent",
+      "self-hosted",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-23T17:56:20Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-26",
+  "lastChecked": "2026-10-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "An autonomous company working 24/7 on your own PC - Windows/Linux/macOS.",
+    "Topics: agentic-workflows, ai-agents, autonomous-agents, claude-code, codex",
+    "GitHub stars: 3158",
+    "Last pushed: 2026-10-23"
+  ],
+  "id": "candidate-tool-github-maxmiksa-autonomous-company",
+  "canonicalKey": "tool:github:maxmiksa/autonomous-company",
+  "firstDiscoveredAt": "2026-10-26",
+  "lastSeenAt": "2026-10-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-26-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Autonomous-Company is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "An autonomous company working 24/7 on your own PC - Windows/Linux/macOS.",
+      "Topics: agentic-workflows, ai-agents, autonomous-agents, claude-code, codex",
+      "GitHub stars: 3158"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "autonomous-company",
+  "publishedAt": "2026-10-26"
+}
