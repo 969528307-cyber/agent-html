@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "dapr-agents",
+  "summary": "Build durable, autonomous, resilient and observable AI agents with built-in workflow orchestration, security, statefulness and telemetry.",
+  "sourceUrl": "https://github.com/dapr/dapr-agents",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "dapr",
+    "repo": "dapr-agents",
+    "fullName": "dapr/dapr-agents",
+    "stars": 767,
+    "license": "Apache-2.0",
+    "topics": [
+      "agentic-workflows",
+      "agents",
+      "agents-as-tools",
+      "agents-llm",
+      "ai-agents",
+      "dapr",
+      "dapr-pubsub",
+      "dapr-state-store",
+      "dapr-workflows",
+      "durable-agents",
+      "durable-execution",
+      "durable-workflows",
+      "llm",
+      "mcp",
+      "multi-agent",
+      "python",
+      "verifiable-ai",
+      "verifiable-execution",
+      "workflows"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-27T21:49:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-28",
+  "lastChecked": "2026-10-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Build durable, autonomous, resilient and observable AI agents with built-in workflow orchestration, security, statefulness and telemetry.",
+    "Topics: agentic-workflows, agents, agents-as-tools, agents-llm, ai-agents",
+    "GitHub stars: 767",
+    "Last pushed: 2026-10-27"
+  ],
+  "id": "candidate-tool-github-dapr-dapr-agents",
+  "canonicalKey": "tool:github:dapr/dapr-agents",
+  "firstDiscoveredAt": "2026-10-28",
+  "lastSeenAt": "2026-10-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-28-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-28"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "dapr-agents is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Build durable, autonomous, resilient and observable AI agents with built-in workflow orchestration, security, statefulness and telemetry.",
+      "Topics: agentic-workflows, agents, agents-as-tools, agents-llm, ai-agents",
+      "GitHub stars: 767"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dapr-agents",
+  "publishedAt": "2026-10-28"
+}
