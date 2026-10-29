@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "bama",
+  "summary": "BAMA: Build Any Mac App. Agent skills to research, clone, design, build, optimize, and test native macOS apps with Swift and SwiftUI.",
+  "sourceUrl": "https://github.com/daveebbelaar/bama",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "daveebbelaar",
+    "repo": "bama",
+    "fullName": "daveebbelaar/bama",
+    "stars": 777,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "app-clone",
+      "claude-code",
+      "claude-code-plugin",
+      "codex",
+      "computer-use",
+      "liquid-glass",
+      "macos",
+      "macos-app",
+      "native-apps",
+      "skills",
+      "swift",
+      "swiftdata",
+      "swiftui"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-29T13:05:44Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-29",
+  "lastChecked": "2026-10-29",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "BAMA: Build Any Mac App. Agent skills to research, clone, design, build, optimize, and test native macOS apps with Swift and SwiftUI.",
+    "Topics: agent-skills, ai-agents, app-clone, claude-code, claude-code-plugin",
+    "GitHub stars: 777",
+    "Last pushed: 2026-10-29"
+  ],
+  "id": "candidate-tool-github-daveebbelaar-bama",
+  "canonicalKey": "tool:github:daveebbelaar/bama",
+  "firstDiscoveredAt": "2026-10-29",
+  "lastSeenAt": "2026-10-29",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-29-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-29"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "bama is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "BAMA: Build Any Mac App. Agent skills to research, clone, design, build, optimize, and test native macOS apps with Swift and SwiftUI.",
+      "Topics: agent-skills, ai-agents, app-clone, claude-code, claude-code-plugin",
+      "GitHub stars: 777"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-29",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "bama",
+  "publishedAt": "2026-10-29"
+}

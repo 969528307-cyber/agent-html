@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "get-job.skill",
+  "summary": "实习.skill — 双非也能拿大厂 offer。帮你改简历、抠面经、准备面试，把真实背景翻译成面试官想要的样子。",
+  "sourceUrl": "https://github.com/agentenatalie/get-job.skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "agentenatalie",
+    "repo": "get-job.skill",
+    "fullName": "agentenatalie/get-job.skill",
+    "stars": 700,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "ai-agent",
+      "claude-skill",
+      "interview-preparation",
+      "job-search",
+      "resume",
+      "resume-builder"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-08-31T16:17:49Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-29",
+  "lastChecked": "2026-10-29",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "实习.skill — 双非也能拿大厂 offer。帮你改简历、抠面经、准备面试，把真实背景翻译成面试官想要的样子。",
+    "Topics: agent-skills, ai-agent, claude-skill, interview-preparation, job-search",
+    "GitHub stars: 700",
+    "Last pushed: 2026-08-31"
+  ],
+  "id": "candidate-tool-github-agentenatalie-get-job-skill",
+  "canonicalKey": "tool:github:agentenatalie/get-job.skill",
+  "firstDiscoveredAt": "2026-10-29",
+  "lastSeenAt": "2026-10-29",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-29-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-29"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "get-job.skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "实习.skill — 双非也能拿大厂 offer。帮你改简历、抠面经、准备面试，把真实背景翻译成面试官想要的样子。",
+      "Topics: agent-skills, ai-agent, claude-skill, interview-preparation, job-search",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-29",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "get-job-skill",
+  "publishedAt": "2026-10-29"
+}
