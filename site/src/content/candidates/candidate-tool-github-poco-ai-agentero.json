@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "Agentero",
+  "summary": "Unified research workspace for humans & agents — PDF Q&A with citations, Vault, writing. 为人与 Agent 协作的科研工作台；补齐 Zotero 时代的人机上下文断点。",
+  "sourceUrl": "https://github.com/poco-ai/Agentero",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "poco-ai",
+    "repo": "Agentero",
+    "fullName": "poco-ai/Agentero",
+    "stars": 1065,
+    "license": "MIT",
+    "topics": [
+      "academic",
+      "ai-agents",
+      "citations",
+      "desktop-app",
+      "knowledge-base",
+      "literature-review",
+      "llm",
+      "mcp",
+      "pdf",
+      "rag",
+      "research",
+      "research-assistant",
+      "tauri",
+      "typescript",
+      "writing-assistant"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-30T16:44:58Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-30",
+  "lastChecked": "2026-10-30",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Unified research workspace for humans & agents — PDF Q&A with citations, Vault, writing. 为人与 Agent 协作的科研工作台；补齐 Zotero 时代的人机上下文断点。",
+    "Topics: academic, ai-agents, citations, desktop-app, knowledge-base",
+    "GitHub stars: 1065",
+    "Last pushed: 2026-10-30"
+  ],
+  "id": "candidate-tool-github-poco-ai-agentero",
+  "canonicalKey": "tool:github:poco-ai/agentero",
+  "firstDiscoveredAt": "2026-10-30",
+  "lastSeenAt": "2026-10-30",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-30-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-30"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Agentero is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Unified research workspace for humans & agents — PDF Q&A with citations, Vault, writing. 为人与 Agent 协作的科研工作台；补齐 Zotero 时代的人机上下文断点。",
+      "Topics: academic, ai-agents, citations, desktop-app, knowledge-base",
+      "GitHub stars: 1065"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-30",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agentero",
+  "publishedAt": "2026-10-30"
+}

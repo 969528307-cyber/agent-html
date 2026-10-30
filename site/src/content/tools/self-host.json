@@ -1,0 +1,69 @@
+{
+  "id": "self-host",
+  "name": "self-host",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Replace the SaaS you pay for. One binary installs and runs self-hosted apps at home, no Docker knowledge needed. Terminal dashboard for you, plain commands for your agent.",
+  "description": "Replace the SaaS you pay for. One binary installs and runs self-hosted apps at home, no Docker knowledge needed. Terminal dashboard for you, plain commands for your agent.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ajnart/self-host",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ajnart/self-host",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ajnart/self-host#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ajnart/self-host#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ajnart/self-host/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Replace the SaaS you pay for. One binary installs and runs self-hosted apps at home, no Docker knowledge needed. Terminal dashboard for you, plain commands for your agent.",
+    "Topics: agent-skills, ai-agents, claude-code, cli, docker-compose",
+    "GitHub stars: 1460",
+    "Last pushed: 2026-10-30"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-10-30T20:02:26Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ajnart/self-host",
+  "repoUrl": "https://github.com/ajnart/self-host",
+  "license": "Apache-2.0",
+  "stars": 1460,
+  "lastUpdated": "2026-10-30T20:02:26Z",
+  "lastChecked": "2026-10-30",
+  "publishedAt": "2026-10-30",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

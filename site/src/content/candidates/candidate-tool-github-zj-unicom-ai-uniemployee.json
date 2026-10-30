@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "UniEmployee",
+  "summary": "面向企业的数字员工构建与运行平台：把专业员工的经验、流程与判断标准，固化为可随时上岗、可配置、可审批、可观测的 AI 数字员工。",
+  "sourceUrl": "https://github.com/zj-unicom-ai/UniEmployee",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "zj-unicom-ai",
+    "repo": "UniEmployee",
+    "fullName": "zj-unicom-ai/UniEmployee",
+    "stars": 703,
+    "license": "MIT",
+    "topics": [
+      "agent-orchestration",
+      "ai-agent",
+      "ai-employee",
+      "ai-platform",
+      "business-process",
+      "digital-employee",
+      "digital-workforce",
+      "enterprise-agents",
+      "enterprise-ai",
+      "human-in-the-loop",
+      "knowledge-graph",
+      "llm",
+      "rag",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-29T01:34:16Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-30",
+  "lastChecked": "2026-10-30",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "面向企业的数字员工构建与运行平台：把专业员工的经验、流程与判断标准，固化为可随时上岗、可配置、可审批、可观测的 AI 数字员工。",
+    "Topics: agent-orchestration, ai-agent, ai-employee, ai-platform, business-process",
+    "GitHub stars: 703",
+    "Last pushed: 2026-10-29"
+  ],
+  "id": "candidate-tool-github-zj-unicom-ai-uniemployee",
+  "canonicalKey": "tool:github:zj-unicom-ai/uniemployee",
+  "firstDiscoveredAt": "2026-10-30",
+  "lastSeenAt": "2026-10-30",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-30-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-30"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "UniEmployee is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "面向企业的数字员工构建与运行平台：把专业员工的经验、流程与判断标准，固化为可随时上岗、可配置、可审批、可观测的 AI 数字员工。",
+      "Topics: agent-orchestration, ai-agent, ai-employee, ai-platform, business-process",
+      "GitHub stars: 703"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-30",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "uniemployee",
+  "publishedAt": "2026-10-30"
+}
