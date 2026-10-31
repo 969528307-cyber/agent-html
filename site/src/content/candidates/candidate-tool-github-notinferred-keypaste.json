@@ -1,0 +1,105 @@
+{
+  "type": "tool",
+  "title": "keypaste",
+  "summary": "A KeePass-compatible password and secrets manager for people who work with AI agents.",
+  "sourceUrl": "https://github.com/notinferred/keypaste",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "notinferred",
+    "repo": "keypaste",
+    "fullName": "notinferred/keypaste",
+    "stars": 703,
+    "license": "AGPL-3.0",
+    "topics": [
+      "dotenv",
+      "keepass",
+      "mcp-server",
+      "password-manager",
+      "secrets-management"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-31T19:35:29Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-10-31",
+  "lastChecked": "2026-10-31",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A KeePass-compatible password and secrets manager for people who work with AI agents.",
+    "Topics: dotenv, keepass, mcp-server, password-manager, secrets-management",
+    "GitHub stars: 703",
+    "Last pushed: 2026-10-31"
+  ],
+  "id": "candidate-tool-github-notinferred-keypaste",
+  "canonicalKey": "tool:github:notinferred/keypaste",
+  "firstDiscoveredAt": "2026-10-31",
+  "lastSeenAt": "2026-10-31",
+  "crawlRuns": [
+    {
+      "runId": "2026-10-31-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-10-31"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "keypaste is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A KeePass-compatible password and secrets manager for people who work with AI agents.",
+      "Topics: dotenv, keepass, mcp-server, password-manager, secrets-management",
+      "GitHub stars: 703"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-10-31",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "keypaste",
+  "publishedAt": "2026-10-31"
+}

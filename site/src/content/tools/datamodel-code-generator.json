@@ -1,0 +1,69 @@
+{
+  "id": "datamodel-code-generator",
+  "name": "datamodel-code-generator",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Generate Pydantic v2 models, dataclasses, TypedDict, and msgspec.Struct from OpenAPI, JSON Schema, GraphQL, Avro, Protobuf, and raw JSON/YAML/CSV.",
+  "description": "Generate Pydantic v2 models, dataclasses, TypedDict, and msgspec.Struct from OpenAPI, JSON Schema, GraphQL, Avro, Protobuf, and raw JSON/YAML/CSV.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/datamodel-code-generator/datamodel-code-generator",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/datamodel-code-generator/datamodel-code-generator",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/datamodel-code-generator/datamodel-code-generator#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/datamodel-code-generator/datamodel-code-generator#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/datamodel-code-generator/datamodel-code-generator/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Generate Pydantic v2 models, dataclasses, TypedDict, and msgspec.Struct from OpenAPI, JSON Schema, GraphQL, Avro, Protobuf, and raw JSON/YAML/CSV.",
+    "Topics: agent-skills, code-generator, csv, dataclass, datamodel",
+    "GitHub stars: 4048",
+    "Last pushed: 2026-10-31"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-10-31T22:31:34Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/datamodel-code-generator/datamodel-code-generator",
+  "repoUrl": "https://github.com/datamodel-code-generator/datamodel-code-generator",
+  "license": "MIT",
+  "stars": 4048,
+  "lastUpdated": "2026-10-31T22:31:34Z",
+  "lastChecked": "2026-10-31",
+  "publishedAt": "2026-10-31",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
