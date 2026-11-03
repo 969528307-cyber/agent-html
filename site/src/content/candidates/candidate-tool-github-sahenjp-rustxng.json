@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "RustXNG",
+  "summary": "Self-hosted metasearch and grounding engine for AI agents, based on SearXNG. Rust, JSON API, optional page text.",
+  "sourceUrl": "https://github.com/sahenjp/RustXNG",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "sahenjp",
+    "repo": "RustXNG",
+    "fullName": "sahenjp/RustXNG",
+    "stars": 715,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agpl",
+      "ai-agents",
+      "grounding",
+      "llm",
+      "mcp",
+      "metasearch",
+      "privacy",
+      "rag",
+      "rust",
+      "search-engine",
+      "searxng",
+      "self-hosted"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-02T23:06:04Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-03",
+  "lastChecked": "2026-11-03",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Self-hosted metasearch and grounding engine for AI agents, based on SearXNG. Rust, JSON API, optional page text.",
+    "Topics: agpl, ai-agents, grounding, llm, mcp",
+    "GitHub stars: 715",
+    "Last pushed: 2026-11-02"
+  ],
+  "id": "candidate-tool-github-sahenjp-rustxng",
+  "canonicalKey": "tool:github:sahenjp/rustxng",
+  "firstDiscoveredAt": "2026-11-03",
+  "lastSeenAt": "2026-11-03",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-03-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-03"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "RustXNG is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Self-hosted metasearch and grounding engine for AI agents, based on SearXNG. Rust, JSON API, optional page text.",
+      "Topics: agpl, ai-agents, grounding, llm, mcp",
+      "GitHub stars: 715"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-03",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "rustxng",
+  "publishedAt": "2026-11-03"
+}
