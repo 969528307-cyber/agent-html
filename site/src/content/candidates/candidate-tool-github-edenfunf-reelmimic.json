@@ -1,0 +1,109 @@
+{
+  "type": "tool",
+  "title": "reelmimic",
+  "summary": "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
+  "sourceUrl": "https://github.com/edenfunf/reelmimic",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "edenfunf",
+    "repo": "reelmimic",
+    "fullName": "edenfunf/reelmimic",
+    "stars": 1769,
+    "license": "MIT",
+    "topics": [
+      "2d-animation",
+      "ai-agents",
+      "ai-video",
+      "animation",
+      "claude-code",
+      "codex",
+      "multi-agent",
+      "style-transfer",
+      "video-generation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-03T14:41:20Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-04",
+  "lastChecked": "2026-11-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
+    "Topics: 2d-animation, ai-agents, ai-video, animation, claude-code",
+    "GitHub stars: 1769",
+    "Last pushed: 2026-11-03"
+  ],
+  "id": "candidate-tool-github-edenfunf-reelmimic",
+  "canonicalKey": "tool:github:edenfunf/reelmimic",
+  "firstDiscoveredAt": "2026-11-04",
+  "lastSeenAt": "2026-11-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-04-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "reelmimic is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
+      "Topics: 2d-animation, ai-agents, ai-video, animation, claude-code",
+      "GitHub stars: 1769"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "reelmimic",
+  "publishedAt": "2026-11-04"
+}

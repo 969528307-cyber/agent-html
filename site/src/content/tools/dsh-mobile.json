@@ -1,0 +1,69 @@
+{
+  "id": "dsh-mobile",
+  "name": "dsh-mobile",
+  "type": "workflow",
+  "status": "published",
+  "summary": "DeepSeek Harness Mobile 是一个面向 DeepSeek Harness 的原生移动端客户端。它通过 dsh-plugin-mobile-gateway 与 Harness 建立 WebSocket 连接，将工作区、会话、实时回复和 Agent 执行轨迹带到 iPhone，同时延续 DeepSeek WebUI 克制、清晰的视觉语言",
+  "description": "DeepSeek Harness Mobile 是一个面向 DeepSeek Harness 的原生移动端客户端。它通过 dsh-plugin-mobile-gateway 与 Harness 建立 WebSocket 连接，将工作区、会话、实时回复和 Agent 执行轨迹带到 iPhone，同时延续 DeepSeek WebUI 克制、清晰的视觉语言",
+  "category": [
+    "agent-app"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/Clarklevis1995/dsh-mobile",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Clarklevis1995/dsh-mobile",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/Clarklevis1995/dsh-mobile#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/Clarklevis1995/dsh-mobile#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/Clarklevis1995/dsh-mobile/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "DeepSeek Harness Mobile 是一个面向 DeepSeek Harness 的原生移动端客户端。它通过 dsh-plugin-mobile-gateway 与 Harness 建立 WebSocket 连接，将工作区、会话、实时回复和 Agent 执行轨迹带到 iPhone，同时延续 DeepSeek WebUI 克制、清晰的视觉语言",
+    "Topics: android, android-app, coding-agent, deepseek, deepseek-harness",
+    "GitHub stars: 717",
+    "Last pushed: 2026-11-03"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-11-03T14:05:53Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/Clarklevis1995/dsh-mobile",
+  "repoUrl": "https://github.com/Clarklevis1995/dsh-mobile",
+  "license": "MIT",
+  "stars": 717,
+  "lastUpdated": "2026-11-03T14:05:53Z",
+  "lastChecked": "2026-11-04",
+  "publishedAt": "2026-11-04",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

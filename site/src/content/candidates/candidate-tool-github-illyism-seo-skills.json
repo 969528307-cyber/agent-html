@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "seo-skills",
+  "summary": "SEO skills for Claude Code, Cursor and Codex: SEO autopilot, title tags, blog refreshes, backlinks, customer journeys, video transcripts and copywriting.",
+  "sourceUrl": "https://github.com/Illyism/seo-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Illyism",
+    "repo": "seo-skills",
+    "fullName": "Illyism/seo-skills",
+    "stars": 700,
+    "license": "",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "ai-seo",
+      "claude-code",
+      "claude-skills",
+      "codex",
+      "content-marketing",
+      "copywriting",
+      "cursor",
+      "generative-engine-optimization",
+      "keyword-research",
+      "link-building",
+      "marketing",
+      "seo",
+      "seo-audit",
+      "seo-automation",
+      "seo-skills",
+      "seo-tools",
+      "skill-md",
+      "technical-seo"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-30T05:45:59Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-04",
+  "lastChecked": "2026-11-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "SEO skills for Claude Code, Cursor and Codex: SEO autopilot, title tags, blog refreshes, backlinks, customer journeys, video transcripts and copywriting.",
+    "Topics: agent-skills, ai-agents, ai-seo, claude-code, claude-skills",
+    "GitHub stars: 700",
+    "Last pushed: 2026-10-30"
+  ],
+  "id": "candidate-tool-github-illyism-seo-skills",
+  "canonicalKey": "tool:github:illyism/seo-skills",
+  "firstDiscoveredAt": "2026-11-04",
+  "lastSeenAt": "2026-11-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-04-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "seo-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "SEO skills for Claude Code, Cursor and Codex: SEO autopilot, title tags, blog refreshes, backlinks, customer journeys, video transcripts and copywriting.",
+      "Topics: agent-skills, ai-agents, ai-seo, claude-code, claude-skills",
+      "GitHub stars: 700"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "seo-skills",
+  "publishedAt": "2026-11-04"
+}

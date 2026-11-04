@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "kensaku",
+  "summary": "Search inside documents, code, and even screenshots - instantly and locally. A free, open-source file launcher with OCR, semantic search, and MCP agent access.",
+  "sourceUrl": "https://github.com/yjid/kensaku",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "yjid",
+    "repo": "kensaku",
+    "fullName": "yjid/kensaku",
+    "stars": 725,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "desktop",
+      "desktop-search",
+      "file-search",
+      "full-text-search",
+      "launcher",
+      "local-first",
+      "mcp",
+      "ocr",
+      "open-source",
+      "privacy",
+      "rust",
+      "search",
+      "semantic-search",
+      "tauri",
+      "windows"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-03T06:48:42Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-04",
+  "lastChecked": "2026-11-04",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Search inside documents, code, and even screenshots - instantly and locally. A free, open-source file launcher with OCR, semantic search, and MCP agent access.",
+    "Topics: ai-agents, desktop, desktop-search, file-search, full-text-search",
+    "GitHub stars: 725",
+    "Last pushed: 2026-11-03"
+  ],
+  "id": "candidate-tool-github-yjid-kensaku",
+  "canonicalKey": "tool:github:yjid/kensaku",
+  "firstDiscoveredAt": "2026-11-04",
+  "lastSeenAt": "2026-11-04",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-04-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-04"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "kensaku is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Search inside documents, code, and even screenshots - instantly and locally. A free, open-source file launcher with OCR, semantic search, and MCP agent access.",
+      "Topics: ai-agents, desktop, desktop-search, file-search, full-text-search",
+      "GitHub stars: 725"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-04",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "kensaku",
+  "publishedAt": "2026-11-04"
+}
