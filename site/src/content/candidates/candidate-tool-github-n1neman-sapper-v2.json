@@ -1,0 +1,103 @@
+{
+  "type": "tool",
+  "title": "sapper-v2",
+  "summary": "Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634 teams · 8h unattended · 1B tokens beat 4.5B). The Nüwa Test: give AIs Create/Language/History, let a civilization grow.",
+  "sourceUrl": "https://github.com/N1nEmAn/sapper-v2",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-framework"
+  ],
+  "githubMetadata": {
+    "owner": "N1nEmAn",
+    "repo": "sapper-v2",
+    "fullName": "N1nEmAn/sapper-v2",
+    "stars": 845,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "autonomous-agents",
+      "claude-code",
+      "ctf",
+      "llm",
+      "multi-agent",
+      "pentest"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-03T12:47:08Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-05",
+  "lastChecked": "2026-11-05",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "candidate",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634 teams · 8h unattended · 1B tokens beat 4.5B). The Nüwa ",
+    "Topics: ai-agents, autonomous-agents, claude-code, ctf, llm",
+    "GitHub stars: 845",
+    "Last pushed: 2026-11-03"
+  ],
+  "id": "candidate-tool-github-n1neman-sapper-v2",
+  "canonicalKey": "tool:github:n1neman/sapper-v2",
+  "firstDiscoveredAt": "2026-11-05",
+  "lastSeenAt": "2026-11-05",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-05-agent-framework",
+      "module": "agent-framework",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-05"
+    }
+  ],
+  "enrichmentDecision": "needs_editor_review",
+  "enrichment": {
+    "decision": "needs_editor_review",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "sapper-v2 is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-framework.",
+      "Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634 teams · 8h unattended · 1B tokens beat 4.5B). The Nüwa ",
+      "Topics: ai-agents, autonomous-agents, claude-code, ctf, llm",
+      "GitHub stars: 845"
+    ],
+    "reasons": [],
+    "riskNotes": [
+      "Security or intentionally vulnerable tooling needs explicit editorial review before publication."
+    ]
+  }
+}

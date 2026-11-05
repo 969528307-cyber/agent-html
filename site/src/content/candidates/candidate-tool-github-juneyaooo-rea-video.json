@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "rea-video",
+  "summary": "逆向一切视频：实拍口播、桌拍、AI 视频、3D、代码动效、混剪，逐镜拆出画面、花字、剪辑和声音是怎么做的，并给出复刻方案。Reverse-engineer any video, shot by shot.",
+  "sourceUrl": "https://github.com/JuneYaooo/rea-video",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "JuneYaooo",
+    "repo": "rea-video",
+    "fullName": "JuneYaooo/rea-video",
+    "stars": 961,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "ai-video",
+      "aigc-detection",
+      "claude-code",
+      "codex",
+      "douyin",
+      "ffmpeg",
+      "prompt-engineering",
+      "remotion",
+      "reverse-engineering",
+      "short-video",
+      "shot-detection",
+      "subtitles",
+      "tiktok",
+      "video-analysis",
+      "video-breakdown",
+      "video-editing",
+      "video-generation",
+      "vlm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-04T15:47:37Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-05",
+  "lastChecked": "2026-11-05",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "逆向一切视频：实拍口播、桌拍、AI 视频、3D、代码动效、混剪，逐镜拆出画面、花字、剪辑和声音是怎么做的，并给出复刻方案。Reverse-engineer any video, shot by shot.",
+    "Topics: agent-skills, ai-video, aigc-detection, claude-code, codex",
+    "GitHub stars: 961",
+    "Last pushed: 2026-11-04"
+  ],
+  "id": "candidate-tool-github-juneyaooo-rea-video",
+  "canonicalKey": "tool:github:juneyaooo/rea-video",
+  "firstDiscoveredAt": "2026-11-05",
+  "lastSeenAt": "2026-11-05",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-05-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-05"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "rea-video is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "逆向一切视频：实拍口播、桌拍、AI 视频、3D、代码动效、混剪，逐镜拆出画面、花字、剪辑和声音是怎么做的，并给出复刻方案。Reverse-engineer any video, shot by shot.",
+      "Topics: agent-skills, ai-video, aigc-detection, claude-code, codex",
+      "GitHub stars: 961"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "rea-video",
+  "publishedAt": "2026-11-05"
+}
