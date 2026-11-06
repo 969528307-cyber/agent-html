@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "pullboard",
+  "summary": "Autonomous development for real products. Governed agents build from specs you approve, follow the rules you set, and nothing merges until another agent proves it. Your decisions, judgement and taste are the bar that work must clear. Declare your vision and let agents build it.",
+  "sourceUrl": "https://github.com/pullboard-dev/pullboard",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "pullboard-dev",
+    "repo": "pullboard",
+    "fullName": "pullboard-dev/pullboard",
+    "stars": 702,
+    "license": "MIT",
+    "topics": [
+      "agentic-coding",
+      "ai-agents",
+      "ai-governance",
+      "autonomous-agents",
+      "claude-code",
+      "cli",
+      "code-review",
+      "codex",
+      "coding-agents",
+      "developer-tools",
+      "git-hooks",
+      "llm",
+      "local-first",
+      "multi-agent",
+      "software-factory",
+      "spec-driven-development",
+      "verification",
+      "vibe-coding"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-28T22:23:00Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-06",
+  "lastChecked": "2026-11-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Autonomous development for real products. Governed agents build from specs you approve, follow the rules you set, and nothing merges until another agent proves it. Your decisions, judgement and taste ",
+    "Topics: agentic-coding, ai-agents, ai-governance, autonomous-agents, claude-code",
+    "GitHub stars: 702",
+    "Last pushed: 2026-10-28"
+  ],
+  "id": "candidate-tool-github-pullboard-dev-pullboard",
+  "canonicalKey": "tool:github:pullboard-dev/pullboard",
+  "firstDiscoveredAt": "2026-11-06",
+  "lastSeenAt": "2026-11-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-06-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-06"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "pullboard is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "Autonomous development for real products. Governed agents build from specs you approve, follow the rules you set, and nothing merges until another agent proves it. Your decisions, judgement and taste ",
+      "Topics: agentic-coding, ai-agents, ai-governance, autonomous-agents, claude-code",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "pullboard",
+  "publishedAt": "2026-11-06"
+}

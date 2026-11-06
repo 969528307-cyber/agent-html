@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "agent-plugin",
+  "summary": "AI video editor for agents. ChatCut plugin and MCP server for Codex, ChatGPT, Claude Code, Cursor, Grok, Gemini CLI, WorkBuddy, Doubao Work and Qwen Work: edit your own footage by chatting, add captions and subtitles, remove silences and filler words, create motion graphics, and export an editable t",
+  "sourceUrl": "https://github.com/ChatCut-Inc/agent-plugin",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "ChatCut-Inc",
+    "repo": "agent-plugin",
+    "fullName": "ChatCut-Inc/agent-plugin",
+    "stars": 1006,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "ai-video-editor",
+      "captions",
+      "chatgpt",
+      "claude-code",
+      "codex",
+      "codex-plugin",
+      "cursor",
+      "gemini-cli",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "motion-graphics",
+      "music-generation",
+      "subtitles",
+      "text-to-speech",
+      "transcription",
+      "video-editing",
+      "video-editor",
+      "video-generation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-05T13:50:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-06",
+  "lastChecked": "2026-11-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI video editor for agents. ChatCut plugin and MCP server for Codex, ChatGPT, Claude Code, Cursor, Grok, Gemini CLI, WorkBuddy, Doubao Work and Qwen Work: edit your own footage by chatting, add captio",
+    "Topics: agent-skills, ai-video-editor, captions, chatgpt, claude-code",
+    "GitHub stars: 1006",
+    "Last pushed: 2026-11-05"
+  ],
+  "id": "candidate-tool-github-chatcut-inc-agent-plugin",
+  "canonicalKey": "tool:github:chatcut-inc/agent-plugin",
+  "firstDiscoveredAt": "2026-11-06",
+  "lastSeenAt": "2026-11-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-06-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-06"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "agent-plugin is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "AI video editor for agents. ChatCut plugin and MCP server for Codex, ChatGPT, Claude Code, Cursor, Grok, Gemini CLI, WorkBuddy, Doubao Work and Qwen Work: edit your own footage by chatting, add captio",
+      "Topics: agent-skills, ai-video-editor, captions, chatgpt, claude-code",
+      "GitHub stars: 1006"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-plugin",
+  "publishedAt": "2026-11-06"
+}

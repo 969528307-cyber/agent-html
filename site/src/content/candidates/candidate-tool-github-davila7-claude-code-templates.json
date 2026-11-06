@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "claude-code-templates",
+  "summary": "Open-source registry and CLI for Claude Code components: agents, commands, skills, hooks, MCPs, settings and mods",
+  "sourceUrl": "https://github.com/davila7/claude-code-templates",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "davila7",
+    "repo": "claude-code-templates",
+    "fullName": "davila7/claude-code-templates",
+    "stars": 33149,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "anthropic",
+      "anthropic-claude",
+      "claude",
+      "claude-code",
+      "claude-code-plugins",
+      "cli",
+      "mcp",
+      "registry"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-05T23:58:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-06",
+  "lastChecked": "2026-11-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source registry and CLI for Claude Code components: agents, commands, skills, hooks, MCPs, settings and mods",
+    "Topics: agent-skills, ai-agents, anthropic, anthropic-claude, claude",
+    "GitHub stars: 33149",
+    "Last pushed: 2026-11-05"
+  ],
+  "id": "candidate-tool-github-davila7-claude-code-templates",
+  "canonicalKey": "tool:github:davila7/claude-code-templates",
+  "firstDiscoveredAt": "2026-11-06",
+  "lastSeenAt": "2026-11-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-06-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-06"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "claude-code-templates is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source registry and CLI for Claude Code components: agents, commands, skills, hooks, MCPs, settings and mods",
+      "Topics: agent-skills, ai-agents, anthropic, anthropic-claude, claude",
+      "GitHub stars: 33149"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "claude-code-templates",
+  "publishedAt": "2026-11-06"
+}
