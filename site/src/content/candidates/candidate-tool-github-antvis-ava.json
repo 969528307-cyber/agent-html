@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "AVA",
+  "summary": "👾 AI-native Visual Analytics framework build for agents.",
+  "sourceUrl": "https://github.com/antvis/AVA",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "antvis",
+    "repo": "AVA",
+    "fullName": "antvis/AVA",
+    "stars": 1610,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "augmented-analytics",
+      "data-analysis",
+      "data-exploration",
+      "data-visualizations",
+      "duckdb",
+      "javascript",
+      "llm",
+      "nodejs",
+      "text-to-sql",
+      "typescript",
+      "visual-analytics"
+    ],
+    "defaultBranch": "ai",
+    "lastPushedAt": "2026-11-06T11:36:02Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-06",
+  "lastChecked": "2026-11-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "👾 AI-native Visual Analytics framework build for agents.",
+    "Topics: agent-skills, ai-agents, augmented-analytics, data-analysis, data-exploration",
+    "GitHub stars: 1610",
+    "Last pushed: 2026-11-06"
+  ],
+  "id": "candidate-tool-github-antvis-ava",
+  "canonicalKey": "tool:github:antvis/ava",
+  "firstDiscoveredAt": "2026-11-06",
+  "lastSeenAt": "2026-11-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-06-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-06"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "AVA is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "👾 AI-native Visual Analytics framework build for agents.",
+      "Topics: agent-skills, ai-agents, augmented-analytics, data-analysis, data-exploration",
+      "GitHub stars: 1610"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ava",
+  "publishedAt": "2026-11-06"
+}

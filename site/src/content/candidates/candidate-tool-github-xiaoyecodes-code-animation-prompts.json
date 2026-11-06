@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "code-animation-prompts",
+  "summary": "341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。",
+  "sourceUrl": "https://github.com/XiaoyeCodes/code-animation-prompts",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "XiaoyeCodes",
+    "repo": "code-animation-prompts",
+    "fullName": "XiaoyeCodes/code-animation-prompts",
+    "stars": 701,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "animation",
+      "claude-code",
+      "codex",
+      "creative-coding",
+      "prompts",
+      "video-generation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-05T07:56:11Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-06",
+  "lastChecked": "2026-11-06",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。",
+    "Topics: agent-skills, animation, claude-code, codex, creative-coding",
+    "GitHub stars: 701",
+    "Last pushed: 2026-11-05"
+  ],
+  "id": "candidate-tool-github-xiaoyecodes-code-animation-prompts",
+  "canonicalKey": "tool:github:xiaoyecodes/code-animation-prompts",
+  "firstDiscoveredAt": "2026-11-06",
+  "lastSeenAt": "2026-11-06",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-06-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-06"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "code-animation-prompts is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。",
+      "Topics: agent-skills, animation, claude-code, codex, creative-coding",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-06",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "code-animation-prompts",
+  "publishedAt": "2026-11-06"
+}
