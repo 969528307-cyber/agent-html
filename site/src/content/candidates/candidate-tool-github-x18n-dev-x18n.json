@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "x18n",
+  "summary": "Universal toolkits for linting, viewing and managing i18n for any frameworks.",
+  "sourceUrl": "https://github.com/x18n-dev/x18n",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "x18n-dev",
+    "repo": "x18n",
+    "fullName": "x18n-dev/x18n",
+    "stars": 702,
+    "license": "MIT",
+    "topics": [
+      "devframe",
+      "i18n",
+      "i18n-tool",
+      "lsp",
+      "lsp-server",
+      "mcp",
+      "vscode-extension"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-06T02:55:45Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-07",
+  "lastChecked": "2026-11-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Universal toolkits for linting, viewing and managing i18n for any frameworks.",
+    "Topics: devframe, i18n, i18n-tool, lsp, lsp-server",
+    "GitHub stars: 702",
+    "Last pushed: 2026-11-06"
+  ],
+  "id": "candidate-tool-github-x18n-dev-x18n",
+  "canonicalKey": "tool:github:x18n-dev/x18n",
+  "firstDiscoveredAt": "2026-11-07",
+  "lastSeenAt": "2026-11-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "x18n is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Universal toolkits for linting, viewing and managing i18n for any frameworks.",
+      "Topics: devframe, i18n, i18n-tool, lsp, lsp-server",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "x18n",
+  "publishedAt": "2026-11-07"
+}

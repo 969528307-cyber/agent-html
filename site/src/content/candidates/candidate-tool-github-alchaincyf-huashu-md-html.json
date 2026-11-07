@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "huashu-md-html",
+  "summary": "md/html 双向流水线 · 三个能力一站式：万物→md / md→精美html / html→md。封装 markitdown + Pandoc + html-to-markdown + trafilatura。4 套反 AI slop 主题。Claude Code skill.",
+  "sourceUrl": "https://github.com/alchaincyf/huashu-md-html",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "alchaincyf",
+    "repo": "huashu-md-html",
+    "fullName": "alchaincyf/huashu-md-html",
+    "stars": 939,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "claude-code-skills",
+      "claude-skills",
+      "codex",
+      "cursor",
+      "document-conversion",
+      "epub",
+      "html-to-markdown",
+      "huashu-skills",
+      "markdown",
+      "openclaw",
+      "pandoc",
+      "pdf",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-13T06:52:29Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-07",
+  "lastChecked": "2026-11-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "md/html 双向流水线 · 三个能力一站式：万物→md / md→精美html / html→md。封装 markitdown + Pandoc + html-to-markdown + trafilatura。4 套反 AI slop 主题。Claude Code skill.",
+    "Topics: agent-skills, claude-code, claude-code-skills, claude-skills, codex",
+    "GitHub stars: 939",
+    "Last pushed: 2026-10-13"
+  ],
+  "id": "candidate-tool-github-alchaincyf-huashu-md-html",
+  "canonicalKey": "tool:github:alchaincyf/huashu-md-html",
+  "firstDiscoveredAt": "2026-11-07",
+  "lastSeenAt": "2026-11-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-07-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "huashu-md-html is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "md/html 双向流水线 · 三个能力一站式：万物→md / md→精美html / html→md。封装 markitdown + Pandoc + html-to-markdown + trafilatura。4 套反 AI slop 主题。Claude Code skill.",
+      "Topics: agent-skills, claude-code, claude-code-skills, claude-skills, codex",
+      "GitHub stars: 939"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "huashu-md-html",
+  "publishedAt": "2026-11-07"
+}

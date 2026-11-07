@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "huashu-art-motion",
+  "summary": "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。",
+  "sourceUrl": "https://github.com/alchaincyf/huashu-art-motion",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "alchaincyf",
+    "repo": "huashu-art-motion",
+    "fullName": "alchaincyf/huashu-art-motion",
+    "stars": 6463,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "animation",
+      "claude-code",
+      "claude-code-skills",
+      "claude-skills",
+      "codex",
+      "explainer-video",
+      "generative-art",
+      "huashu-skills",
+      "motion-graphics",
+      "skills",
+      "video"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-16T17:03:31Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-07",
+  "lastChecked": "2026-11-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。",
+    "Topics: agent-skills, animation, claude-code, claude-code-skills, claude-skills",
+    "GitHub stars: 6463",
+    "Last pushed: 2026-10-16"
+  ],
+  "id": "candidate-tool-github-alchaincyf-huashu-art-motion",
+  "canonicalKey": "tool:github:alchaincyf/huashu-art-motion",
+  "firstDiscoveredAt": "2026-11-07",
+  "lastSeenAt": "2026-11-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-07-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "huashu-art-motion is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。",
+      "Topics: agent-skills, animation, claude-code, claude-code-skills, claude-skills",
+      "GitHub stars: 6463"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "huashu-art-motion",
+  "publishedAt": "2026-11-07"
+}

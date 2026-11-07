@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "guild.xyz",
+  "summary": "Guild.xyz interface (earlier version). Token-gate Discord and Telegram, run points and quests, and manage a community from an AI agent: https://guild.xyz",
+  "sourceUrl": "https://github.com/guildxyz/guild.xyz",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "guildxyz",
+    "repo": "guild.xyz",
+    "fullName": "guildxyz/guild.xyz",
+    "stars": 3478,
+    "license": "",
+    "topics": [
+      "community",
+      "discord",
+      "mcp",
+      "points",
+      "quests",
+      "telegram",
+      "token-gating",
+      "web3"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-07T20:17:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-07",
+  "lastChecked": "2026-11-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Guild.xyz interface (earlier version). Token-gate Discord and Telegram, run points and quests, and manage a community from an AI agent: https://guild.xyz",
+    "Topics: community, discord, mcp, points, quests",
+    "GitHub stars: 3478",
+    "Last pushed: 2026-11-07"
+  ],
+  "id": "candidate-tool-github-guildxyz-guild-xyz",
+  "canonicalKey": "tool:github:guildxyz/guild.xyz",
+  "firstDiscoveredAt": "2026-11-07",
+  "lastSeenAt": "2026-11-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-07-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "guild.xyz is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Guild.xyz interface (earlier version). Token-gate Discord and Telegram, run points and quests, and manage a community from an AI agent: https://guild.xyz",
+      "Topics: community, discord, mcp, points, quests",
+      "GitHub stars: 3478"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "guild-xyz",
+  "publishedAt": "2026-11-07"
+}

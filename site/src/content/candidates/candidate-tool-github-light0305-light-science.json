@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "Light-Science",
+  "summary": "A research workflow skill pack connecting literature, experiments, figures, writing, memory and project coordination.",
+  "sourceUrl": "https://github.com/Light0305/Light-Science",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "Light0305",
+    "repo": "Light-Science",
+    "fullName": "Light0305/Light-Science",
+    "stars": 881,
+    "license": "MIT",
+    "topics": [
+      "academic-writing",
+      "agent-skills",
+      "ai-agent",
+      "ai-skills",
+      "claude-code",
+      "codex",
+      "latex",
+      "literature-review",
+      "llm-skills",
+      "opencode",
+      "paper-writing",
+      "research-tools",
+      "scientific-figures",
+      "scientific-workflow"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-07T07:26:05Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-07",
+  "lastChecked": "2026-11-07",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A research workflow skill pack connecting literature, experiments, figures, writing, memory and project coordination.",
+    "Topics: academic-writing, agent-skills, ai-agent, ai-skills, claude-code",
+    "GitHub stars: 881",
+    "Last pushed: 2026-11-07"
+  ],
+  "id": "candidate-tool-github-light0305-light-science",
+  "canonicalKey": "tool:github:light0305/light-science",
+  "firstDiscoveredAt": "2026-11-07",
+  "lastSeenAt": "2026-11-07",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-07-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-07"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Light-Science is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "A research workflow skill pack connecting literature, experiments, figures, writing, memory and project coordination.",
+      "Topics: academic-writing, agent-skills, ai-agent, ai-skills, claude-code",
+      "GitHub stars: 881"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-07",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "light-science",
+  "publishedAt": "2026-11-07"
+}
