@@ -1,0 +1,69 @@
+{
+  "id": "server",
+  "name": "server",
+  "type": "workflow",
+  "status": "published",
+  "summary": "One local debugging server, one binary: catches errors, dumps, emails, logs, profiles and HTTP from your app in development. Speaks Sentry, Ray, VarDumper, Monolog, SMTP, XHProf. Mock server, Xdebug in the browser, MCP for AI agents.",
+  "description": "One local debugging server, one binary: catches errors, dumps, emails, logs, profiles and HTTP from your app in development. Speaks Sentry, Ray, VarDumper, Monolog, SMTP, XHProf. Mock server, Xdebug in the browser, MCP for AI agents.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/buggregator/server",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/buggregator/server",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/buggregator/server#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/buggregator/server#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/buggregator/server/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "One local debugging server, one binary: catches errors, dumps, emails, logs, profiles and HTTP from your app in development. Speaks Sentry, Ray, VarDumper, Monolog, SMTP, XHProf. Mock server, Xdebug i",
+    "Topics: debugging, developer-tools, email-testing, fake-smtp-server, golang",
+    "GitHub stars: 1077",
+    "Last pushed: 2026-11-09"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-11-09T16:55:25Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/buggregator/server",
+  "repoUrl": "https://github.com/buggregator/server",
+  "license": "MIT",
+  "stars": 1077,
+  "lastUpdated": "2026-11-09T16:55:25Z",
+  "lastChecked": "2026-11-10",
+  "publishedAt": "2026-11-10",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,69 @@
+{
+  "id": "hydra",
+  "name": "hydra",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Internet-scale OpenID Certified™ OpenID Connect and OAuth2.1 provider that integrates with your user management through headless APIs. Solve OIDC/OAuth2 user cases over night. Consume as a service on Ory Network or self-host. Trusted by OpenAI and many others for scale and security. Written in Go.",
+  "description": "Internet-scale OpenID Certified™ OpenID Connect and OAuth2.1 provider that integrates with your user management through headless APIs. Solve OIDC/OAuth2 user cases over night. Consume as a service on Ory Network or self-host. Trusted by OpenAI and many others for scale and security. Written in Go.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/ory/hydra",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ory/hydra",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/ory/hydra#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/ory/hydra#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/ory/hydra/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Internet-scale OpenID Certified™ OpenID Connect and OAuth2.1 provider that integrates with your user management through headless APIs. Solve OIDC/OAuth2 user cases over night. Consume as a service on ",
+    "Topics: authorization, cloud, docker, federation, hydra",
+    "GitHub stars: 17655",
+    "Last pushed: 2026-07-29"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-07-29T09:30:11Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/ory/hydra",
+  "repoUrl": "https://github.com/ory/hydra",
+  "license": "Apache-2.0",
+  "stars": 17655,
+  "lastUpdated": "2026-07-29T09:30:11Z",
+  "lastChecked": "2026-11-10",
+  "publishedAt": "2026-11-10",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

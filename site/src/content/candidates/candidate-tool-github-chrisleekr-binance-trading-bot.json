@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "binance-trading-bot",
+  "summary": "Automated Binance trading bot with pluggable strategies, historical backtesting, a live dashboard, and connect an AI agent over MCP",
+  "sourceUrl": "https://github.com/chrisleekr/binance-trading-bot",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "chrisleekr",
+    "repo": "binance-trading-bot",
+    "fullName": "chrisleekr/binance-trading-bot",
+    "stars": 5601,
+    "license": "Apache-2.0",
+    "topics": [
+      "binance",
+      "binance-api",
+      "binance-api-node",
+      "binance-trading-bot",
+      "bot",
+      "cryptocurrency",
+      "cryptotrading",
+      "grid-trading",
+      "mcp",
+      "technical-analysis-indicators",
+      "trading-bot",
+      "traidingview"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-09T22:41:15Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-10",
+  "lastChecked": "2026-11-10",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Automated Binance trading bot with pluggable strategies, historical backtesting, a live dashboard, and connect an AI agent over MCP",
+    "Topics: binance, binance-api, binance-api-node, binance-trading-bot, bot",
+    "GitHub stars: 5601",
+    "Last pushed: 2026-11-09"
+  ],
+  "id": "candidate-tool-github-chrisleekr-binance-trading-bot",
+  "canonicalKey": "tool:github:chrisleekr/binance-trading-bot",
+  "firstDiscoveredAt": "2026-11-10",
+  "lastSeenAt": "2026-11-10",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-10-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-10"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "binance-trading-bot is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Automated Binance trading bot with pluggable strategies, historical backtesting, a live dashboard, and connect an AI agent over MCP",
+      "Topics: binance, binance-api, binance-api-node, binance-trading-bot, bot",
+      "GitHub stars: 5601"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-10",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "binance-trading-bot",
+  "publishedAt": "2026-11-10"
+}
