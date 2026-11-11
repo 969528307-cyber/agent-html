@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "kraken-cli",
+  "summary": "Trade crypto, tokenized stocks, forex and futures on Kraken from your terminal or your AI agent. Built-in MCP server for Claude, Codex and Cursor, JSON output, and paper trading on live prices.",
+  "sourceUrl": "https://github.com/krakenfx/kraken-cli",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "krakenfx",
+    "repo": "kraken-cli",
+    "fullName": "krakenfx/kraken-cli",
+    "stars": 807,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "algorithmic-trading",
+      "claude",
+      "claude-code",
+      "cli",
+      "codex",
+      "crypto",
+      "cryptocurrency",
+      "cursor",
+      "forex",
+      "futures",
+      "kraken",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "paper-trading",
+      "rust",
+      "trading",
+      "trading-bot"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-29T10:32:10Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-11",
+  "lastChecked": "2026-11-11",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Trade crypto, tokenized stocks, forex and futures on Kraken from your terminal or your AI agent. Built-in MCP server for Claude, Codex and Cursor, JSON output, and paper trading on live prices.",
+    "Topics: ai-agents, algorithmic-trading, claude, claude-code, cli",
+    "GitHub stars: 807",
+    "Last pushed: 2026-10-29"
+  ],
+  "id": "candidate-tool-github-krakenfx-kraken-cli",
+  "canonicalKey": "tool:github:krakenfx/kraken-cli",
+  "firstDiscoveredAt": "2026-11-11",
+  "lastSeenAt": "2026-11-11",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-11-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-11"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "kraken-cli is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Trade crypto, tokenized stocks, forex and futures on Kraken from your terminal or your AI agent. Built-in MCP server for Claude, Codex and Cursor, JSON output, and paper trading on live prices.",
+      "Topics: ai-agents, algorithmic-trading, claude, claude-code, cli",
+      "GitHub stars: 807"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-11",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "kraken-cli",
+  "publishedAt": "2026-11-11"
+}

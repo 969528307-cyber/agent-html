@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "remocn",
+  "summary": "Production-ready animations, transitions, backgrounds, and scenes for Remotion",
+  "sourceUrl": "https://github.com/Remocn/remocn",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Remocn",
+    "repo": "remocn",
+    "fullName": "Remocn/remocn",
+    "stars": 1696,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "claude-code",
+      "demo-video",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "motion-design",
+      "product-demo",
+      "react",
+      "remotion",
+      "shadcn",
+      "video"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-10T15:18:35Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-11",
+  "lastChecked": "2026-11-11",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Production-ready animations, transitions, backgrounds, and scenes for Remotion",
+    "Topics: ai-agents, claude-code, demo-video, mcp, mcp-server",
+    "GitHub stars: 1696",
+    "Last pushed: 2026-11-10"
+  ],
+  "id": "candidate-tool-github-remocn-remocn",
+  "canonicalKey": "tool:github:remocn/remocn",
+  "firstDiscoveredAt": "2026-11-11",
+  "lastSeenAt": "2026-11-11",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-11-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-11"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "remocn is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Production-ready animations, transitions, backgrounds, and scenes for Remotion",
+      "Topics: ai-agents, claude-code, demo-video, mcp, mcp-server",
+      "GitHub stars: 1696"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-11",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "remocn",
+  "publishedAt": "2026-11-11"
+}

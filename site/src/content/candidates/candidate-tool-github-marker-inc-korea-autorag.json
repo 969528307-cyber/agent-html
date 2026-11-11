@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "AutoRAG",
+  "summary": "Your Personal Librarian Agent. Ask anything on your computer, organize files, remember important info and files.",
+  "sourceUrl": "https://github.com/Marker-Inc-Korea/AutoRAG",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Marker-Inc-Korea",
+    "repo": "AutoRAG",
+    "fullName": "Marker-Inc-Korea/AutoRAG",
+    "stars": 5641,
+    "license": "Apache-2.0",
+    "topics": [
+      "agentic-rag",
+      "ai-agents",
+      "document-parser",
+      "embeddings",
+      "hybrid-search",
+      "knowledge-base",
+      "librarian",
+      "llm",
+      "local-first",
+      "mcp",
+      "mcp-server",
+      "memory",
+      "open-source",
+      "rag",
+      "retrieval-augmented-generation",
+      "second-brain",
+      "semantic-search"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-10T18:40:51Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-11",
+  "lastChecked": "2026-11-11",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Your Personal Librarian Agent. Ask anything on your computer, organize files, remember important info and files.",
+    "Topics: agentic-rag, ai-agents, document-parser, embeddings, hybrid-search",
+    "GitHub stars: 5641",
+    "Last pushed: 2026-11-10"
+  ],
+  "id": "candidate-tool-github-marker-inc-korea-autorag",
+  "canonicalKey": "tool:github:marker-inc-korea/autorag",
+  "firstDiscoveredAt": "2026-11-11",
+  "lastSeenAt": "2026-11-11",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-11-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-11"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "AutoRAG is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Your Personal Librarian Agent. Ask anything on your computer, organize files, remember important info and files.",
+      "Topics: agentic-rag, ai-agents, document-parser, embeddings, hybrid-search",
+      "GitHub stars: 5641"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-11",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "autorag",
+  "publishedAt": "2026-11-11"
+}

@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "warpdrive",
+  "summary": "Open-source alternative to Pipedrive, self-hosted business-development CRM",
+  "sourceUrl": "https://github.com/sneg55/warpdrive",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "sneg55",
+    "repo": "warpdrive",
+    "fullName": "sneg55/warpdrive",
+    "stars": 818,
+    "license": "MIT",
+    "topics": [
+      "crm",
+      "docker",
+      "gmail",
+      "mcp",
+      "nextjs",
+      "open-source-crm",
+      "pipedrive-alternative",
+      "postgres",
+      "sales",
+      "sales-dashboard",
+      "self-hosted",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-10T16:24:33Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-11",
+  "lastChecked": "2026-11-11",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source alternative to Pipedrive, self-hosted business-development CRM",
+    "Topics: crm, docker, gmail, mcp, nextjs",
+    "GitHub stars: 818",
+    "Last pushed: 2026-11-10"
+  ],
+  "id": "candidate-tool-github-sneg55-warpdrive",
+  "canonicalKey": "tool:github:sneg55/warpdrive",
+  "firstDiscoveredAt": "2026-11-11",
+  "lastSeenAt": "2026-11-11",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-11-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-11"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "warpdrive is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source alternative to Pipedrive, self-hosted business-development CRM",
+      "Topics: crm, docker, gmail, mcp, nextjs",
+      "GitHub stars: 818"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-11",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "warpdrive",
+  "publishedAt": "2026-11-11"
+}
