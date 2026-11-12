@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "openmotion",
+  "summary": "The open-source full-stack studio for Opus 5.5 motion video. Reverse engineering for any video. Code video with HTML: recreate, edit and render. BYOA + BYOK · Motion.md · Images, Video, Music & Voice.",
+  "sourceUrl": "https://github.com/nexu-io/openmotion",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "nexu-io",
+    "repo": "openmotion",
+    "fullName": "nexu-io/openmotion",
+    "stars": 9525,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "agentic-ai",
+      "ai-agents",
+      "ai-video",
+      "byok",
+      "claude-code",
+      "codex",
+      "deepseek-harness",
+      "dsh-plugin",
+      "generative-ai",
+      "local-first",
+      "mcp",
+      "motion",
+      "motion-graphics",
+      "multimodal",
+      "openmotion",
+      "reverse-engineering",
+      "video-editing",
+      "video-generation",
+      "workbuddy"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-12T01:35:34Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-12",
+  "lastChecked": "2026-11-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The open-source full-stack studio for Opus 5.5 motion video. Reverse engineering for any video. Code video with HTML: recreate, edit and render. BYOA + BYOK · Motion.md · Images, Video, Music & Voice.",
+    "Topics: agent-skills, agentic-ai, ai-agents, ai-video, byok",
+    "GitHub stars: 9525",
+    "Last pushed: 2026-11-12"
+  ],
+  "id": "candidate-tool-github-nexu-io-openmotion",
+  "canonicalKey": "tool:github:nexu-io/openmotion",
+  "firstDiscoveredAt": "2026-11-12",
+  "lastSeenAt": "2026-11-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-12-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "openmotion is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "The open-source full-stack studio for Opus 5.5 motion video. Reverse engineering for any video. Code video with HTML: recreate, edit and render. BYOA + BYOK · Motion.md · Images, Video, Music & Voice.",
+      "Topics: agent-skills, agentic-ai, ai-agents, ai-video, byok",
+      "GitHub stars: 9525"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "openmotion",
+  "publishedAt": "2026-11-12"
+}

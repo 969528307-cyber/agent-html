@@ -1,0 +1,119 @@
+{
+  "type": "tool",
+  "title": "animateicons",
+  "summary": "1,500 free, open source animated icons for React, Vue, Angular and plain JavaScript. Every animation is hand-crafted and tuned to feel smooth, and plays the same in every framework.",
+  "sourceUrl": "https://github.com/Avijit07x/animateicons",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Avijit07x",
+    "repo": "animateicons",
+    "fullName": "Avijit07x/animateicons",
+    "stars": 1527,
+    "license": "MIT",
+    "topics": [
+      "angular",
+      "animated-icons",
+      "animation",
+      "framer-motion",
+      "hugeicons",
+      "icon-library",
+      "icons",
+      "javascript",
+      "lucide-icons",
+      "lucide-react",
+      "mcp-server",
+      "motion",
+      "nextjs",
+      "react",
+      "react-icons",
+      "shadcn",
+      "svg-icons",
+      "svgicon",
+      "vue"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-11T16:03:40Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-12",
+  "lastChecked": "2026-11-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "1,500 free, open source animated icons for React, Vue, Angular and plain JavaScript. Every animation is hand-crafted and tuned to feel smooth, and plays the same in every framework.",
+    "Topics: angular, animated-icons, animation, framer-motion, hugeicons",
+    "GitHub stars: 1527",
+    "Last pushed: 2026-11-11"
+  ],
+  "id": "candidate-tool-github-avijit07x-animateicons",
+  "canonicalKey": "tool:github:avijit07x/animateicons",
+  "firstDiscoveredAt": "2026-11-12",
+  "lastSeenAt": "2026-11-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-12-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "animateicons is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "1,500 free, open source animated icons for React, Vue, Angular and plain JavaScript. Every animation is hand-crafted and tuned to feel smooth, and plays the same in every framework.",
+      "Topics: angular, animated-icons, animation, framer-motion, hugeicons",
+      "GitHub stars: 1527"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "animateicons",
+  "publishedAt": "2026-11-12"
+}

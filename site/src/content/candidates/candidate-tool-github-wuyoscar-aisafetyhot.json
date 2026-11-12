@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "AISafetyHot",
+  "summary": "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
+  "sourceUrl": "https://github.com/wuyoscar/AISafetyHot",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "wuyoscar",
+    "repo": "AISafetyHot",
+    "fullName": "wuyoscar/AISafetyHot",
+    "stars": 2122,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-alignment",
+      "ai-governance",
+      "ai-safety",
+      "arxiv-papers",
+      "daily-papers",
+      "jailbreak",
+      "llm-security",
+      "mcp-server",
+      "news-aggregator",
+      "prompt-injection",
+      "red-teaming",
+      "rss"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-12T00:05:38Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-12",
+  "lastChecked": "2026-11-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
+    "Topics: ai-alignment, ai-governance, ai-safety, arxiv-papers, daily-papers",
+    "GitHub stars: 2122",
+    "Last pushed: 2026-11-12"
+  ],
+  "id": "candidate-tool-github-wuyoscar-aisafetyhot",
+  "canonicalKey": "tool:github:wuyoscar/aisafetyhot",
+  "firstDiscoveredAt": "2026-11-12",
+  "lastSeenAt": "2026-11-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-12-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "AISafetyHot is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "AI Safety HOT: daily AI safety news, papers and incidents in one place — jailbreaks, prompt injection, alignment, evals, governance. Website, daily digest, RSS and MCP.",
+      "Topics: ai-alignment, ai-governance, ai-safety, arxiv-papers, daily-papers",
+      "GitHub stars: 2122"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "aisafetyhot",
+  "publishedAt": "2026-11-12"
+}

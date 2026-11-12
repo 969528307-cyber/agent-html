@@ -1,0 +1,117 @@
+{
+  "type": "tool",
+  "title": "obsidian-skills",
+  "summary": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
+  "sourceUrl": "https://github.com/obsidianmd/obsidian-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "obsidianmd",
+    "repo": "obsidian-skills",
+    "fullName": "obsidianmd/obsidian-skills",
+    "stars": 51716,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "agentskills",
+      "bases",
+      "claude",
+      "clawdbot",
+      "cli",
+      "codex",
+      "defuddle",
+      "hermes",
+      "jsoncanvas",
+      "knap",
+      "markdown",
+      "md",
+      "obsidian",
+      "openclaw",
+      "opencode",
+      "skills"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-11T16:12:33Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-12",
+  "lastChecked": "2026-11-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
+    "Topics: agents, agentskills, bases, claude, clawdbot",
+    "GitHub stars: 51716",
+    "Last pushed: 2026-11-11"
+  ],
+  "id": "candidate-tool-github-obsidianmd-obsidian-skills",
+  "canonicalKey": "tool:github:obsidianmd/obsidian-skills",
+  "firstDiscoveredAt": "2026-11-12",
+  "lastSeenAt": "2026-11-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-12-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "obsidian-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
+      "Topics: agents, agentskills, bases, claude, clawdbot",
+      "GitHub stars: 51716"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "obsidian-skills",
+  "publishedAt": "2026-11-12",
+  "reviewedAt": "2026-11-12",
+  "reviewedBy": "local-review"
+}

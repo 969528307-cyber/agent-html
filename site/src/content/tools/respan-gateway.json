@@ -1,0 +1,69 @@
+{
+  "id": "respan-gateway",
+  "name": "respan-gateway",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Open-source LLM gateway in Rust. One endpoint for OpenAI, Anthropic, Gemini and every other vendor. Any SDK, any model, any tool.",
+  "description": "Open-source LLM gateway in Rust. One endpoint for OpenAI, Anthropic, Gemini and every other vendor. Any SDK, any model, any tool.",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/respanai/respan-gateway",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/respanai/respan-gateway",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/respanai/respan-gateway#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/respanai/respan-gateway#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/respanai/respan-gateway/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Open-source LLM gateway in Rust. One endpoint for OpenAI, Anthropic, Gemini and every other vendor. Any SDK, any model, any tool.",
+    "Topics: ai-agents, ai-gateway, ai-proxy, anthropic, claude-code",
+    "GitHub stars: 758",
+    "Last pushed: 2026-11-11"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-11-11T07:54:15Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/respanai/respan-gateway",
+  "repoUrl": "https://github.com/respanai/respan-gateway",
+  "license": "Apache-2.0",
+  "stars": 758,
+  "lastUpdated": "2026-11-11T07:54:15Z",
+  "lastChecked": "2026-11-12",
+  "publishedAt": "2026-11-12",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

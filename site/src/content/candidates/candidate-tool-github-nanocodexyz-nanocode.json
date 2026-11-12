@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "nanocode",
+  "summary": "SDK for Frontier Embedded Agents.",
+  "sourceUrl": "https://github.com/nanocodexyz/nanocode",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "nanocodexyz",
+    "repo": "nanocode",
+    "fullName": "nanocodexyz/nanocode",
+    "stars": 712,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-sdk",
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "anthropic",
+      "chatgpt",
+      "claude",
+      "claude-code",
+      "code-mode",
+      "codex",
+      "durable-agents",
+      "hermes",
+      "hermes-agent",
+      "llm",
+      "mcp",
+      "openai",
+      "rust",
+      "sdk"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-12T01:14:02Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-12",
+  "lastChecked": "2026-11-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "SDK for Frontier Embedded Agents.",
+    "Topics: agent-sdk, ai, ai-agent, ai-agents, anthropic",
+    "GitHub stars: 712",
+    "Last pushed: 2026-11-12"
+  ],
+  "id": "candidate-tool-github-nanocodexyz-nanocode",
+  "canonicalKey": "tool:github:nanocodexyz/nanocode",
+  "firstDiscoveredAt": "2026-11-12",
+  "lastSeenAt": "2026-11-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-12-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "nanocode is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "SDK for Frontier Embedded Agents.",
+      "Topics: agent-sdk, ai, ai-agent, ai-agents, anthropic",
+      "GitHub stars: 712"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nanocode",
+  "publishedAt": "2026-11-12"
+}

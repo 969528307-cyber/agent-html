@@ -1,0 +1,69 @@
+{
+  "id": "skillevaluator",
+  "name": "SkillEvaluator",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+  "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+  "category": [
+    "skill"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/NVIDIA/SkillEvaluator",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/NVIDIA/SkillEvaluator#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/NVIDIA/SkillEvaluator#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/NVIDIA/SkillEvaluator/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect a",
+    "Topics: agent-evaluation, agent-plugins, agent-security, agent-skills, agentic-ai",
+    "GitHub stars: 704",
+    "Last pushed: 2026-11-11"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-11-11T17:51:08Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/NVIDIA/SkillEvaluator",
+  "repoUrl": "https://github.com/NVIDIA/SkillEvaluator",
+  "license": "Apache-2.0",
+  "stars": 704,
+  "lastUpdated": "2026-11-11T17:51:08Z",
+  "lastChecked": "2026-11-12",
+  "publishedAt": "2026-11-12",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}

@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "respan-gateway",
+  "summary": "Open-source LLM gateway in Rust. One endpoint for OpenAI, Anthropic, Gemini and every other vendor. Any SDK, any model, any tool.",
+  "sourceUrl": "https://github.com/respanai/respan-gateway",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "respanai",
+    "repo": "respan-gateway",
+    "fullName": "respanai/respan-gateway",
+    "stars": 758,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "ai-gateway",
+      "ai-proxy",
+      "anthropic",
+      "claude-code",
+      "gemini",
+      "litellm-alternative",
+      "llm",
+      "llm-gateway",
+      "llm-proxy",
+      "llm-router",
+      "llmops",
+      "mcp",
+      "model-context-protocol",
+      "openai",
+      "openai-proxy",
+      "openrouter-alternative",
+      "realtime",
+      "rust",
+      "self-hosted"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-11T07:54:15Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-12",
+  "lastChecked": "2026-11-12",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source LLM gateway in Rust. One endpoint for OpenAI, Anthropic, Gemini and every other vendor. Any SDK, any model, any tool.",
+    "Topics: ai-agents, ai-gateway, ai-proxy, anthropic, claude-code",
+    "GitHub stars: 758",
+    "Last pushed: 2026-11-11"
+  ],
+  "id": "candidate-tool-github-respanai-respan-gateway",
+  "canonicalKey": "tool:github:respanai/respan-gateway",
+  "firstDiscoveredAt": "2026-11-12",
+  "lastSeenAt": "2026-11-12",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-12-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-12"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "respan-gateway is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source LLM gateway in Rust. One endpoint for OpenAI, Anthropic, Gemini and every other vendor. Any SDK, any model, any tool.",
+      "Topics: ai-agents, ai-gateway, ai-proxy, anthropic, claude-code",
+      "GitHub stars: 758"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-12",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "respan-gateway",
+  "publishedAt": "2026-11-12"
+}
