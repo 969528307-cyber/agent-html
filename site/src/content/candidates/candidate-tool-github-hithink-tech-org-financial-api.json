@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "Financial-API",
+  "summary": "同花顺官方 A股金融数据服务，提供股票实时行情、历史行情、财务报表、指数、板块、涨停等数据，适用于 AI Agent、量化研究和应用开发，支持 API、MCP、CLI 和 Python。Official Tonghuashun (HiThink) A-share financial data service providing real-time and historical stock market data, financial statements, indices, sectors and limit-up data for AI agents, quantitative resear",
+  "sourceUrl": "https://github.com/Hithink-Tech-Org/Financial-API",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Hithink-Tech-Org",
+    "repo": "Financial-API",
+    "fullName": "Hithink-Tech-Org/Financial-API",
+    "stars": 4128,
+    "license": "MIT",
+    "topics": [
+      "a-share",
+      "ai-agent",
+      "china-stock-market",
+      "cli",
+      "duckdb",
+      "financial-data",
+      "mcp",
+      "npm-package",
+      "quantitative-finance",
+      "rest-api"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-12T13:31:02Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-13",
+  "lastChecked": "2026-11-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "同花顺官方 A股金融数据服务，提供股票实时行情、历史行情、财务报表、指数、板块、涨停等数据，适用于 AI Agent、量化研究和应用开发，支持 API、MCP、CLI 和 Python。Official Tonghuashun (HiThink) A-share financial data service providing real-time and historical stock mark",
+    "Topics: a-share, ai-agent, china-stock-market, cli, duckdb",
+    "GitHub stars: 4128",
+    "Last pushed: 2026-11-12"
+  ],
+  "id": "candidate-tool-github-hithink-tech-org-financial-api",
+  "canonicalKey": "tool:github:hithink-tech-org/financial-api",
+  "firstDiscoveredAt": "2026-11-13",
+  "lastSeenAt": "2026-11-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Financial-API is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "同花顺官方 A股金融数据服务，提供股票实时行情、历史行情、财务报表、指数、板块、涨停等数据，适用于 AI Agent、量化研究和应用开发，支持 API、MCP、CLI 和 Python。Official Tonghuashun (HiThink) A-share financial data service providing real-time and historical stock mark",
+      "Topics: a-share, ai-agent, china-stock-market, cli, duckdb",
+      "GitHub stars: 4128"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "financial-api",
+  "publishedAt": "2026-11-13",
+  "reviewedAt": "2026-11-13",
+  "reviewedBy": "local-review"
+}

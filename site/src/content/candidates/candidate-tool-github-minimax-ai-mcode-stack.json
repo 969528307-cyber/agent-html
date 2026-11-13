@@ -1,0 +1,106 @@
+{
+  "type": "tool",
+  "title": "mcode-stack",
+  "summary": "The workflows and skills the MiniMax Code team uses to build MiniMax Code. Open source, install and use.",
+  "sourceUrl": "https://github.com/MiniMax-AI/mcode-stack",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "MiniMax-AI",
+    "repo": "mcode-stack",
+    "fullName": "MiniMax-AI/mcode-stack",
+    "stars": 705,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-coding",
+      "claude-skills",
+      "coding-agent",
+      "harness-engineering",
+      "minimax-code"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-11T08:27:37Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-13",
+  "lastChecked": "2026-11-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The workflows and skills the MiniMax Code team uses to build MiniMax Code. Open source, install and use.",
+    "Topics: agent-skills, ai-coding, claude-skills, coding-agent, harness-engineering",
+    "GitHub stars: 705",
+    "Last pushed: 2026-11-11"
+  ],
+  "id": "candidate-tool-github-minimax-ai-mcode-stack",
+  "canonicalKey": "tool:github:minimax-ai/mcode-stack",
+  "firstDiscoveredAt": "2026-11-13",
+  "lastSeenAt": "2026-11-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-13-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "mcode-stack is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "The workflows and skills the MiniMax Code team uses to build MiniMax Code. Open source, install and use.",
+      "Topics: agent-skills, ai-coding, claude-skills, coding-agent, harness-engineering",
+      "GitHub stars: 705"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "mcode-stack",
+  "publishedAt": "2026-11-13"
+}

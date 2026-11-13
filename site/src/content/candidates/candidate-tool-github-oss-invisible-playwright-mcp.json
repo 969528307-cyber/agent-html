@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "playwright_mcp",
+  "summary": "invisible playwright mcp: Playwright MCP server undetected by anti-bots and captchas: AI agent browses the web on anti-detect stealth Firefox, Python, undetected browser automation, scraping, computer use.",
+  "sourceUrl": "https://github.com/oss-invisible/playwright_mcp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "oss-invisible",
+    "repo": "playwright_mcp",
+    "fullName": "oss-invisible/playwright_mcp",
+    "stars": 879,
+    "license": "MIT",
+    "topics": [
+      "ai-tools",
+      "antidetect-browser",
+      "autonomous-agents",
+      "browser-agent",
+      "browser-automation",
+      "claude-code-plugin",
+      "computer-use",
+      "gemini-cli",
+      "gemini-cli-extension",
+      "job-hunting",
+      "job-search",
+      "llm-agent",
+      "mcp-server",
+      "mcp-tools",
+      "model-context-protocol",
+      "playwright",
+      "stealth-browser",
+      "web-automation",
+      "web-scraping",
+      "webscraping"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-12T23:52:51Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-13",
+  "lastChecked": "2026-11-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "invisible playwright mcp: Playwright MCP server undetected by anti-bots and captchas: AI agent browses the web on anti-detect stealth Firefox, Python, undetected browser automation, scraping, computer",
+    "Topics: ai-tools, antidetect-browser, autonomous-agents, browser-agent, browser-automation",
+    "GitHub stars: 879",
+    "Last pushed: 2026-11-12"
+  ],
+  "id": "candidate-tool-github-oss-invisible-playwright-mcp",
+  "canonicalKey": "tool:github:oss-invisible/playwright_mcp",
+  "firstDiscoveredAt": "2026-11-13",
+  "lastSeenAt": "2026-11-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "playwright_mcp is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "invisible playwright mcp: Playwright MCP server undetected by anti-bots and captchas: AI agent browses the web on anti-detect stealth Firefox, Python, undetected browser automation, scraping, computer",
+      "Topics: ai-tools, antidetect-browser, autonomous-agents, browser-agent, browser-automation",
+      "GitHub stars: 879"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "playwright-mcp",
+  "publishedAt": "2026-11-13",
+  "reviewedAt": "2026-11-13",
+  "reviewedBy": "local-review"
+}

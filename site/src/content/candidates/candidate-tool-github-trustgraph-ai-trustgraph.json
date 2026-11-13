@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "trustgraph",
+  "summary": "The open-source ontology runtime for AI agents.",
+  "sourceUrl": "https://github.com/trustgraph-ai/trustgraph",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "trustgraph-ai",
+    "repo": "trustgraph",
+    "fullName": "trustgraph-ai/trustgraph",
+    "stars": 2911,
+    "license": "Apache-2.0",
+    "topics": [
+      "agentic-ai",
+      "ai-agents",
+      "ai-governance",
+      "context-graph",
+      "explainable-ai",
+      "graphrag",
+      "json-ld",
+      "knowledge-graph",
+      "llm",
+      "mcp",
+      "ontology",
+      "ontology-rag",
+      "open-source",
+      "owl",
+      "prov-o",
+      "rag",
+      "rdf",
+      "semantic-web",
+      "shacl",
+      "sparql"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-12T21:34:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-13",
+  "lastChecked": "2026-11-13",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The open-source ontology runtime for AI agents.",
+    "Topics: agentic-ai, ai-agents, ai-governance, context-graph, explainable-ai",
+    "GitHub stars: 2911",
+    "Last pushed: 2026-11-12"
+  ],
+  "id": "candidate-tool-github-trustgraph-ai-trustgraph",
+  "canonicalKey": "tool:github:trustgraph-ai/trustgraph",
+  "firstDiscoveredAt": "2026-11-13",
+  "lastSeenAt": "2026-11-13",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-13-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-13"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "trustgraph is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "The open-source ontology runtime for AI agents.",
+      "Topics: agentic-ai, ai-agents, ai-governance, context-graph, explainable-ai",
+      "GitHub stars: 2911"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-13",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "trustgraph",
+  "publishedAt": "2026-11-13"
+}
