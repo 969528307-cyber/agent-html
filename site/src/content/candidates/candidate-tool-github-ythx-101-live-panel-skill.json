@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "live-panel-skill",
+  "summary": "Agent skill + renderer: turn one JSON config (or an Excalidraw file) into an animated architecture diagram — terminal-style live panel or pastel infographic — as mp4 or a looping web page. 动态架构图 / agent 架构动图，适配 X 与小红书。",
+  "sourceUrl": "https://github.com/ythx-101/live-panel-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "ythx-101",
+    "repo": "live-panel-skill",
+    "fullName": "ythx-101/live-panel-skill",
+    "stars": 855,
+    "license": "MIT",
+    "topics": [
+      "agent-skill",
+      "ai-agents",
+      "animated-diagram",
+      "architecture-diagram",
+      "chinese",
+      "claude-code",
+      "claude-skills",
+      "codex",
+      "data-visualization",
+      "diagram-as-code",
+      "excalidraw",
+      "ffmpeg",
+      "headless-chrome",
+      "infographic",
+      "json-to-video",
+      "motion-graphics",
+      "mp4",
+      "multi-agent",
+      "python",
+      "xiaohongshu"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-12T18:52:35Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-14",
+  "lastChecked": "2026-11-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Agent skill + renderer: turn one JSON config (or an Excalidraw file) into an animated architecture diagram — terminal-style live panel or pastel infographic — as mp4 or a looping web page. 动态架构图 / age",
+    "Topics: agent-skill, ai-agents, animated-diagram, architecture-diagram, chinese",
+    "GitHub stars: 855",
+    "Last pushed: 2026-11-12"
+  ],
+  "id": "candidate-tool-github-ythx-101-live-panel-skill",
+  "canonicalKey": "tool:github:ythx-101/live-panel-skill",
+  "firstDiscoveredAt": "2026-11-14",
+  "lastSeenAt": "2026-11-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-14-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "live-panel-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Agent skill + renderer: turn one JSON config (or an Excalidraw file) into an animated architecture diagram — terminal-style live panel or pastel infographic — as mp4 or a looping web page. 动态架构图 / age",
+      "Topics: agent-skill, ai-agents, animated-diagram, architecture-diagram, chinese",
+      "GitHub stars: 855"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-14",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "live-panel-skill",
+  "publishedAt": "2026-11-14"
+}

@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "KiCAD-MCP-Server",
+  "summary": "KiCAD MCP is a Model Context Protocol (MCP) implementation that enables Large Language Models (LLMs) like Claude to directly interact with KiCAD for printed circuit board design.",
+  "sourceUrl": "https://github.com/mixelpixx/KiCAD-MCP-Server",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "mixelpixx",
+    "repo": "KiCAD-MCP-Server",
+    "fullName": "mixelpixx/KiCAD-MCP-Server",
+    "stars": 3310,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "claude",
+      "eda",
+      "electronics",
+      "hardware",
+      "kicad",
+      "llm",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "pcb",
+      "pcb-design",
+      "python",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-14T00:05:45Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-14",
+  "lastChecked": "2026-11-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "KiCAD MCP is a Model Context Protocol (MCP) implementation that enables Large Language Models (LLMs) like Claude to directly interact with KiCAD for printed circuit board design.",
+    "Topics: ai, claude, eda, electronics, hardware",
+    "GitHub stars: 3310",
+    "Last pushed: 2026-11-14"
+  ],
+  "id": "candidate-tool-github-mixelpixx-kicad-mcp-server",
+  "canonicalKey": "tool:github:mixelpixx/kicad-mcp-server",
+  "firstDiscoveredAt": "2026-11-14",
+  "lastSeenAt": "2026-11-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-14-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "KiCAD-MCP-Server is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "KiCAD MCP is a Model Context Protocol (MCP) implementation that enables Large Language Models (LLMs) like Claude to directly interact with KiCAD for printed circuit board design.",
+      "Topics: ai, claude, eda, electronics, hardware",
+      "GitHub stars: 3310"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-14",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "kicad-mcp-server",
+  "publishedAt": "2026-11-14"
+}

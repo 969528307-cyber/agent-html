@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "open-artifacts",
+  "summary": "Run Claude Design locally as an Agent Skill — Cursor, Codex, DeepSeek Harness & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best with Opus or Claude.",
+  "sourceUrl": "https://github.com/JimLiu/open-artifacts",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "JimLiu",
+    "repo": "open-artifacts",
+    "fullName": "JimLiu/open-artifacts",
+    "stars": 6420,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent-skills",
+      "claude-artifacts",
+      "claude-code",
+      "claude-dashboard",
+      "claude-data",
+      "claude-design",
+      "claude-docs",
+      "claude-motion",
+      "claude-slides",
+      "claude-whiteboard",
+      "dsh-plugin",
+      "dsh-plugins",
+      "open-artifacts"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-13T22:18:42Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-14",
+  "lastChecked": "2026-11-14",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Run Claude Design locally as an Agent Skill — Cursor, Codex, DeepSeek Harness & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best",
+    "Topics: agent-skills, claude-artifacts, claude-code, claude-dashboard, claude-data",
+    "GitHub stars: 6420",
+    "Last pushed: 2026-11-13"
+  ],
+  "id": "candidate-tool-github-jimliu-open-artifacts",
+  "canonicalKey": "tool:github:jimliu/open-artifacts",
+  "firstDiscoveredAt": "2026-11-14",
+  "lastSeenAt": "2026-11-14",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-14-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-14"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "open-artifacts is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Run Claude Design locally as an Agent Skill — Cursor, Codex, DeepSeek Harness & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best",
+      "Topics: agent-skills, claude-artifacts, claude-code, claude-dashboard, claude-data",
+      "GitHub stars: 6420"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-14",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "open-artifacts",
+  "publishedAt": "2026-11-14"
+}
