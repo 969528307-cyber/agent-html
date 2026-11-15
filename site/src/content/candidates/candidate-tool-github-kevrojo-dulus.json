@@ -1,0 +1,107 @@
+{
+  "type": "tool",
+  "title": "Dulus",
+  "summary": "Dulus Ai — Agentic AI, 100% cache hit rate, Dulus is made to save you money [Gui, Web, Cli, Telegram, 2,000 MCP, 100K Skills . LiteLLM (100+ providers), local models via Ollama, /lang in 34 languages, Mesa Redonda, I create the first utility coin that can be used 100% as AI quota or Fuel, is called ",
+  "sourceUrl": "https://github.com/KevRojo/Dulus",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "cli"
+  ],
+  "githubMetadata": {
+    "owner": "KevRojo",
+    "repo": "Dulus",
+    "fullName": "KevRojo/Dulus",
+    "stars": 709,
+    "license": "GPL-3.0",
+    "topics": [
+      "agent",
+      "ai",
+      "assistant",
+      "claude",
+      "cli",
+      "dulus",
+      "openai"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-12T04:28:39Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-15",
+  "lastChecked": "2026-11-15",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Dulus Ai — Agentic AI, 100% cache hit rate, Dulus is made to save you money [Gui, Web, Cli, Telegram, 2,000 MCP, 100K Skills . LiteLLM (100+ providers), local models via Ollama, /lang in 34 languages,",
+    "Topics: agent, ai, assistant, claude, cli",
+    "GitHub stars: 709",
+    "Last pushed: 2026-11-12"
+  ],
+  "id": "candidate-tool-github-kevrojo-dulus",
+  "canonicalKey": "tool:github:kevrojo/dulus",
+  "firstDiscoveredAt": "2026-11-15",
+  "lastSeenAt": "2026-11-15",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-15-cli",
+      "module": "cli",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-15"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Dulus is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to cli.",
+      "Dulus Ai — Agentic AI, 100% cache hit rate, Dulus is made to save you money [Gui, Web, Cli, Telegram, 2,000 MCP, 100K Skills . LiteLLM (100+ providers), local models via Ollama, /lang in 34 languages,",
+      "Topics: agent, ai, assistant, claude, cli",
+      "GitHub stars: 709"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dulus",
+  "publishedAt": "2026-11-15"
+}

@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "reverse-engineer-marketing",
+  "summary": "Paste a link, get the whole marketing machine behind it: paid ads, organic social, SEO, Reddit, founders, funnel — evidence-cited. CLI, MCP server and a local web app that uses your Claude Code or Codex plan.",
+  "sourceUrl": "https://github.com/dansugc/reverse-engineer-marketing",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "dansugc",
+    "repo": "reverse-engineer-marketing",
+    "fullName": "dansugc/reverse-engineer-marketing",
+    "stars": 710,
+    "license": "MIT",
+    "topics": [
+      "ad-library",
+      "ai-agents",
+      "claude-code",
+      "codex",
+      "competitor-analysis",
+      "growth",
+      "marketing",
+      "mcp",
+      "mcp-server",
+      "reddit",
+      "reverse-engineering",
+      "seo"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-18T19:26:54Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-15",
+  "lastChecked": "2026-11-15",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Paste a link, get the whole marketing machine behind it: paid ads, organic social, SEO, Reddit, founders, funnel — evidence-cited. CLI, MCP server and a local web app that uses your Claude Code or Cod",
+    "Topics: ad-library, ai-agents, claude-code, codex, competitor-analysis",
+    "GitHub stars: 710",
+    "Last pushed: 2026-10-18"
+  ],
+  "id": "candidate-tool-github-dansugc-reverse-engineer-marketing",
+  "canonicalKey": "tool:github:dansugc/reverse-engineer-marketing",
+  "firstDiscoveredAt": "2026-11-15",
+  "lastSeenAt": "2026-11-15",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-15-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-15"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "reverse-engineer-marketing is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Paste a link, get the whole marketing machine behind it: paid ads, organic social, SEO, Reddit, founders, funnel — evidence-cited. CLI, MCP server and a local web app that uses your Claude Code or Cod",
+      "Topics: ad-library, ai-agents, claude-code, codex, competitor-analysis",
+      "GitHub stars: 710"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-15",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "reverse-engineer-marketing",
+  "publishedAt": "2026-11-15"
+}
