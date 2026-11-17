@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "crucible",
+  "summary": "3D engine that AI agents drive",
+  "sourceUrl": "https://github.com/codepawl/crucible",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "codepawl",
+    "repo": "crucible",
+    "fullName": "codepawl/crucible",
+    "stars": 711,
+    "license": "MIT",
+    "topics": [
+      "3d",
+      "3d-engine",
+      "agentic-ai",
+      "ai-agents",
+      "blender",
+      "claude-code",
+      "game-engine",
+      "gaussian-splatting",
+      "gltf",
+      "javascript",
+      "mcp",
+      "mcp-server",
+      "model-context-protocol",
+      "path-tracer",
+      "path-tracing",
+      "pbr",
+      "rendering",
+      "threejs-alternative",
+      "webgl2",
+      "webgpu"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-17T02:33:26Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-17",
+  "lastChecked": "2026-11-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "3D engine that AI agents drive",
+    "Topics: 3d, 3d-engine, agentic-ai, ai-agents, blender",
+    "GitHub stars: 711",
+    "Last pushed: 2026-11-17"
+  ],
+  "id": "candidate-tool-github-codepawl-crucible",
+  "canonicalKey": "tool:github:codepawl/crucible",
+  "firstDiscoveredAt": "2026-11-17",
+  "lastSeenAt": "2026-11-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-17-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "crucible is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "3D engine that AI agents drive",
+      "Topics: 3d, 3d-engine, agentic-ai, ai-agents, blender",
+      "GitHub stars: 711"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "crucible",
+  "publishedAt": "2026-11-17"
+}

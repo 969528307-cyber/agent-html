@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "crawlseo",
+  "summary": "Open-source SEO monitoring. GSC + Site Crawler + Core Web Vitals in one dashboard.",
+  "sourceUrl": "https://github.com/crawlseo/crawlseo",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "crawlseo",
+    "repo": "crawlseo",
+    "fullName": "crawlseo/crawlseo",
+    "stars": 711,
+    "license": "MIT",
+    "topics": [
+      "backlinks",
+      "core-web-vitals",
+      "core-web-vitalsl",
+      "geo",
+      "google-search-console",
+      "keyword-research",
+      "mcp",
+      "nextjs",
+      "open-source",
+      "prisma",
+      "rank-tracker",
+      "self-hosted",
+      "seo",
+      "seo-monitoring",
+      "seo-tools",
+      "shadcn-ui",
+      "site-audit",
+      "site-crawler",
+      "tailwindcss",
+      "typescript"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-02T11:09:52Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-17",
+  "lastChecked": "2026-11-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open-source SEO monitoring. GSC + Site Crawler + Core Web Vitals in one dashboard.",
+    "Topics: backlinks, core-web-vitals, core-web-vitalsl, geo, google-search-console",
+    "GitHub stars: 711",
+    "Last pushed: 2026-11-02"
+  ],
+  "id": "candidate-tool-github-crawlseo-crawlseo",
+  "canonicalKey": "tool:github:crawlseo/crawlseo",
+  "firstDiscoveredAt": "2026-11-17",
+  "lastSeenAt": "2026-11-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-17-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "crawlseo is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open-source SEO monitoring. GSC + Site Crawler + Core Web Vitals in one dashboard.",
+      "Topics: backlinks, core-web-vitals, core-web-vitalsl, geo, google-search-console",
+      "GitHub stars: 711"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "crawlseo",
+  "publishedAt": "2026-11-17"
+}

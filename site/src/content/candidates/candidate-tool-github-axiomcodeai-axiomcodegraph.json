@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "axiomcodegraph",
+  "summary": "Turn any codebase into a knowledge graph grounded in formal methods. Your AI agents get exact answers for any code-related task, ensure correctness, and optimize time and token usage.",
+  "sourceUrl": "https://github.com/AxiomCodeAI/axiomcodegraph",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "AxiomCodeAI",
+    "repo": "axiomcodegraph",
+    "fullName": "AxiomCodeAI/axiomcodegraph",
+    "stars": 717,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-agents",
+      "ai-skills",
+      "antigravity",
+      "ast",
+      "change-impact-analysis",
+      "claude-code",
+      "code-analysis",
+      "code-search",
+      "codegraph",
+      "codex",
+      "cursor",
+      "formal-methods",
+      "gemini",
+      "knowledge-graph",
+      "mcp",
+      "token-optimization",
+      "tree-sitter",
+      "verification-code"
+    ],
+    "defaultBranch": "dev",
+    "lastPushedAt": "2026-11-09T18:25:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-17",
+  "lastChecked": "2026-11-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Turn any codebase into a knowledge graph grounded in formal methods. Your AI agents get exact answers for any code-related task, ensure correctness, and optimize time and token usage.",
+    "Topics: ai-agents, ai-skills, antigravity, ast, change-impact-analysis",
+    "GitHub stars: 717",
+    "Last pushed: 2026-11-09"
+  ],
+  "id": "candidate-tool-github-axiomcodeai-axiomcodegraph",
+  "canonicalKey": "tool:github:axiomcodeai/axiomcodegraph",
+  "firstDiscoveredAt": "2026-11-17",
+  "lastSeenAt": "2026-11-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-17-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "axiomcodegraph is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Turn any codebase into a knowledge graph grounded in formal methods. Your AI agents get exact answers for any code-related task, ensure correctness, and optimize time and token usage.",
+      "Topics: ai-agents, ai-skills, antigravity, ast, change-impact-analysis",
+      "GitHub stars: 717"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "axiomcodegraph",
+  "publishedAt": "2026-11-17"
+}

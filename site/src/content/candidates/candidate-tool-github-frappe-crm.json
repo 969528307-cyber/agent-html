@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "crm",
+  "summary": "Fully featured, open source CRM",
+  "sourceUrl": "https://github.com/frappe/crm",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "frappe",
+    "repo": "crm",
+    "fullName": "frappe/crm",
+    "stars": 3999,
+    "license": "AGPL-3.0",
+    "topics": [
+      "crm",
+      "crm-connections",
+      "crm-platform",
+      "crm-software",
+      "crm-solution",
+      "crm-system",
+      "customer",
+      "frappe",
+      "frappe-app",
+      "javascript",
+      "low-code",
+      "marketing",
+      "mcp",
+      "open-source",
+      "python",
+      "sales",
+      "vue",
+      "vuejs3"
+    ],
+    "defaultBranch": "develop",
+    "lastPushedAt": "2026-11-16T22:58:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-17",
+  "lastChecked": "2026-11-17",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Fully featured, open source CRM",
+    "Topics: crm, crm-connections, crm-platform, crm-software, crm-solution",
+    "GitHub stars: 3999",
+    "Last pushed: 2026-11-16"
+  ],
+  "id": "candidate-tool-github-frappe-crm",
+  "canonicalKey": "tool:github:frappe/crm",
+  "firstDiscoveredAt": "2026-11-17",
+  "lastSeenAt": "2026-11-17",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-17-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-17"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "crm is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Fully featured, open source CRM",
+      "Topics: crm, crm-connections, crm-platform, crm-software, crm-solution",
+      "GitHub stars: 3999"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-17",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "crm",
+  "publishedAt": "2026-11-17"
+}

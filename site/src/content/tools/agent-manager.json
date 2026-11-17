@@ -1,0 +1,69 @@
+{
+  "id": "agent-manager",
+  "name": "agent-manager",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Terminal multiplexer for AI coding agents. Run Claude Code, Codex, OpenCode, Gemini CLI and more side by side in one tmux TUI, with live status, worktrees and diff review. Discord: discord.gg/ecS88An7pF",
+  "description": "Terminal multiplexer for AI coding agents. Run Claude Code, Codex, OpenCode, Gemini CLI and more side by side in one tmux TUI, with live status, worktrees and diff review. Discord: discord.gg/ecS88An7pF",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/wainmann/agent-manager",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/wainmann/agent-manager",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/wainmann/agent-manager#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/wainmann/agent-manager#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/wainmann/agent-manager/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Terminal multiplexer for AI coding agents. Run Claude Code, Codex, OpenCode, Gemini CLI and more side by side in one tmux TUI, with live status, worktrees and diff review. Discord: discord.gg/ecS88An7",
+    "Topics: ai-agents, ai-coding-agents, bubbletea, claude-code, code-review",
+    "GitHub stars: 700",
+    "Last pushed: 2026-11-16"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-11-16T22:46:11Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/wainmann/agent-manager",
+  "repoUrl": "https://github.com/wainmann/agent-manager",
+  "license": "Apache-2.0",
+  "stars": 700,
+  "lastUpdated": "2026-11-16T22:46:11Z",
+  "lastChecked": "2026-11-17",
+  "publishedAt": "2026-11-17",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
