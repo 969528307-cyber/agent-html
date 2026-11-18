@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "movo",
+  "summary": "Turn DeepSeek Harness into a self-hosted enterprise Agent platform with knowledge, deep research, content generation, vibe coding, browser automation, governance, and admin controls.",
+  "sourceUrl": "https://github.com/himovo/movo",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "himovo",
+    "repo": "movo",
+    "fullName": "himovo/movo",
+    "stars": 703,
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "ai-agents",
+      "brower-automation",
+      "dsh-plugin",
+      "enterprise-agents",
+      "mcp",
+      "movo",
+      "rag",
+      "skills",
+      "vibe-coding",
+      "workflow",
+      "workflow-automation"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-17T13:54:19Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-18",
+  "lastChecked": "2026-11-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Turn DeepSeek Harness into a self-hosted enterprise Agent platform with knowledge, deep research, content generation, vibe coding, browser automation, governance, and admin controls.",
+    "Topics: agent, ai-agents, brower-automation, dsh-plugin, enterprise-agents",
+    "GitHub stars: 703",
+    "Last pushed: 2026-11-17"
+  ],
+  "id": "candidate-tool-github-himovo-movo",
+  "canonicalKey": "tool:github:himovo/movo",
+  "firstDiscoveredAt": "2026-11-18",
+  "lastSeenAt": "2026-11-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-18-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "movo is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Turn DeepSeek Harness into a self-hosted enterprise Agent platform with knowledge, deep research, content generation, vibe coding, browser automation, governance, and admin controls.",
+      "Topics: agent, ai-agents, brower-automation, dsh-plugin, enterprise-agents",
+      "GitHub stars: 703"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "movo",
+  "publishedAt": "2026-11-18"
+}

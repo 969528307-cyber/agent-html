@@ -1,0 +1,114 @@
+{
+  "type": "tool",
+  "title": "DSHBox",
+  "summary": "DSHBox — 移动端本地运行和远程操控 DeepSeek Harness。自带终端、文件管理器、浏览器、手机操控等工具，致力打造一站式随身 AI 工作台，免 Root 和 Termux。",
+  "sourceUrl": "https://github.com/WSK-build/DSHBox",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "WSK-build",
+    "repo": "DSHBox",
+    "fullName": "WSK-build/DSHBox",
+    "stars": 710,
+    "license": "GPL-3.0",
+    "topics": [
+      "ai-agent",
+      "android",
+      "android-agent",
+      "android-app",
+      "deepseek-harness",
+      "deepseek-harness-android",
+      "deepseek-harness-mobile",
+      "dsh",
+      "dsh-android",
+      "dsh-android-mobile",
+      "dsh-mobile",
+      "kotlin",
+      "llm",
+      "shizuku"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-16T10:55:44Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-18",
+  "lastChecked": "2026-11-18",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "DSHBox — 移动端本地运行和远程操控 DeepSeek Harness。自带终端、文件管理器、浏览器、手机操控等工具，致力打造一站式随身 AI 工作台，免 Root 和 Termux。",
+    "Topics: ai-agent, android, android-agent, android-app, deepseek-harness",
+    "GitHub stars: 710",
+    "Last pushed: 2026-11-16"
+  ],
+  "id": "candidate-tool-github-wsk-build-dshbox",
+  "canonicalKey": "tool:github:wsk-build/dshbox",
+  "firstDiscoveredAt": "2026-11-18",
+  "lastSeenAt": "2026-11-18",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-18-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-18"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "DSHBox is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "DSHBox — 移动端本地运行和远程操控 DeepSeek Harness。自带终端、文件管理器、浏览器、手机操控等工具，致力打造一站式随身 AI 工作台，免 Root 和 Termux。",
+      "Topics: ai-agent, android, android-agent, android-app, deepseek-harness",
+      "GitHub stars: 710"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-18",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dshbox",
+  "publishedAt": "2026-11-18"
+}

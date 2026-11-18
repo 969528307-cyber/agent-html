@@ -1,0 +1,69 @@
+{
+  "id": "logchef",
+  "name": "logchef",
+  "type": "workflow",
+  "status": "published",
+  "summary": "Lightweight, single-binary log analytics interface for ClickHouse, focused on high-performance querying and visualization",
+  "description": "Lightweight, single-binary log analytics interface for ClickHouse, focused on high-performance querying and visualization",
+  "category": [
+    "mcp"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/mr-karan/logchef",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/mr-karan/logchef",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/mr-karan/logchef#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/mr-karan/logchef#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/mr-karan/logchef/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "Lightweight, single-binary log analytics interface for ClickHouse, focused on high-performance querying and visualization",
+    "Topics: clickhouse, kibana-alternative, log-analytics, logging, mcp",
+    "GitHub stars: 932",
+    "Last pushed: 2026-11-17"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-11-17T21:32:49Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/mr-karan/logchef",
+  "repoUrl": "https://github.com/mr-karan/logchef",
+  "license": "AGPL-3.0",
+  "stars": 932,
+  "lastUpdated": "2026-11-17T21:32:49Z",
+  "lastChecked": "2026-11-18",
+  "publishedAt": "2026-11-18",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
