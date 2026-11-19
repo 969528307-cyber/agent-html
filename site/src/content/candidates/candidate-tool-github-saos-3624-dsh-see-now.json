@@ -1,0 +1,109 @@
+{
+  "type": "tool",
+  "title": "dsh-see-now",
+  "summary": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
+  "sourceUrl": "https://github.com/SAOS-3624/dsh-see-now",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "SAOS-3624",
+    "repo": "dsh-see-now",
+    "fullName": "SAOS-3624/dsh-see-now",
+    "stars": 702,
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agent",
+      "dsh",
+      "dsh-plugin",
+      "ffmpeg",
+      "llm",
+      "realtime",
+      "screen-capture",
+      "token-efficient",
+      "vision"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-18T09:41:36Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-19",
+  "lastChecked": "2026-11-19",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
+    "Topics: ai-agent, dsh, dsh-plugin, ffmpeg, llm",
+    "GitHub stars: 702",
+    "Last pushed: 2026-11-18"
+  ],
+  "id": "candidate-tool-github-saos-3624-dsh-see-now",
+  "canonicalKey": "tool:github:saos-3624/dsh-see-now",
+  "firstDiscoveredAt": "2026-11-19",
+  "lastSeenAt": "2026-11-19",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-19-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-19"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "dsh-see-now is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
+      "Topics: ai-agent, dsh, dsh-plugin, ffmpeg, llm",
+      "GitHub stars: 702"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-19",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "dsh-see-now",
+  "publishedAt": "2026-11-19"
+}

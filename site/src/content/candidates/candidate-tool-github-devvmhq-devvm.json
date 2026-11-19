@@ -1,0 +1,112 @@
+{
+  "type": "tool",
+  "title": "devvm",
+  "summary": "One VM for every project. An isolated sandbox with your project’s toolchain, ready for you or a coding agent to start coding",
+  "sourceUrl": "https://github.com/devvmhq/devvm",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "devvmhq",
+    "repo": "devvm",
+    "fullName": "devvmhq/devvm",
+    "stars": 703,
+    "license": "MIT",
+    "topics": [
+      "coding-agent",
+      "coding-agents",
+      "developer-tools",
+      "development",
+      "lima",
+      "lima-vm",
+      "linux",
+      "sandbox",
+      "sandbox-environment",
+      "ubuntu",
+      "virtual-machine",
+      "vm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-18T22:53:43Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-19",
+  "lastChecked": "2026-11-19",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "One VM for every project. An isolated sandbox with your project’s toolchain, ready for you or a coding agent to start coding",
+    "Topics: coding-agent, coding-agents, developer-tools, development, lima",
+    "GitHub stars: 703",
+    "Last pushed: 2026-11-18"
+  ],
+  "id": "candidate-tool-github-devvmhq-devvm",
+  "canonicalKey": "tool:github:devvmhq/devvm",
+  "firstDiscoveredAt": "2026-11-19",
+  "lastSeenAt": "2026-11-19",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-19-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-19"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "devvm is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "One VM for every project. An isolated sandbox with your project’s toolchain, ready for you or a coding agent to start coding",
+      "Topics: coding-agent, coding-agents, developer-tools, development, lima",
+      "GitHub stars: 703"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-19",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "devvm",
+  "publishedAt": "2026-11-19"
+}
