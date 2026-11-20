@@ -1,0 +1,69 @@
+{
+  "id": "go-music-dl",
+  "name": "go-music-dl",
+  "type": "workflow",
+  "status": "published",
+  "summary": "一个基于 Go 语言的全网音乐搜索与下载工具。支持 CLI 命令行与 Web 服务双模式，内置网易云、QQ、酷狗、Bilibili、汽水音乐等 10+ 个主流平台，支持多源并发搜索与无损音质解析。music-dl交流群：755087923",
+  "description": "一个基于 Go 语言的全网音乐搜索与下载工具。支持 CLI 命令行与 Web 服务双模式，内置网易云、QQ、酷狗、Bilibili、汽水音乐等 10+ 个主流平台，支持多源并发搜索与无损音质解析。music-dl交流群：755087923",
+  "category": [
+    "agent-app"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/guohuiyuan/go-music-dl",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/guohuiyuan/go-music-dl",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/guohuiyuan/go-music-dl#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/guohuiyuan/go-music-dl#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/guohuiyuan/go-music-dl/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "一个基于 Go 语言的全网音乐搜索与下载工具。支持 CLI 命令行与 Web 服务双模式，内置网易云、QQ、酷狗、Bilibili、汽水音乐等 10+ 个主流平台，支持多源并发搜索与无损音质解析。music-dl交流群：755087923",
+    "Topics: ai-agent, apple-music, bilibili, cli, cross-platform",
+    "GitHub stars: 6610",
+    "Last pushed: 2026-11-17"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-11-17T01:25:39Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/guohuiyuan/go-music-dl",
+  "repoUrl": "https://github.com/guohuiyuan/go-music-dl",
+  "license": "AGPL-3.0",
+  "stars": 6610,
+  "lastUpdated": "2026-11-17T01:25:39Z",
+  "lastChecked": "2026-11-20",
+  "publishedAt": "2026-11-20",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
