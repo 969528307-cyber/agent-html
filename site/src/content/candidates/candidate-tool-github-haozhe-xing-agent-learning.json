@@ -1,0 +1,113 @@
+{
+  "type": "tool",
+  "title": "agent_learning",
+  "summary": "A systematic AI Agent development tutorial covering LLM agents, RAG, tool use, memory systems, multi-agent systems, LangChain, LangGraph, MCP, and agentic RL.｜从零开始学 AI Agent 开发 | 系统、全面、实战导向的 Agent 开发教程 | 每日自动追踪 arXiv 最新论文 | Learn AI Agent Development from Scratch",
+  "sourceUrl": "https://github.com/Haozhe-Xing/agent_learning",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Haozhe-Xing",
+    "repo": "agent_learning",
+    "fullName": "Haozhe-Xing/agent_learning",
+    "stars": 748,
+    "license": "MIT",
+    "topics": [
+      "agent-learning",
+      "agentic-workflow",
+      "ai-agent",
+      "ai-agent-tutorial",
+      "dspy",
+      "grpo",
+      "langchain",
+      "large-language-models",
+      "llm",
+      "mcp",
+      "memory-system",
+      "multi-agents",
+      "rag"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-10-24T00:57:30Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-21",
+  "lastChecked": "2026-11-21",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A systematic AI Agent development tutorial covering LLM agents, RAG, tool use, memory systems, multi-agent systems, LangChain, LangGraph, MCP, and agentic RL.｜从零开始学 AI Agent 开发 | 系统、全面、实战导向的 Agent 开发教",
+    "Topics: agent-learning, agentic-workflow, ai-agent, ai-agent-tutorial, dspy",
+    "GitHub stars: 748",
+    "Last pushed: 2026-10-24"
+  ],
+  "id": "candidate-tool-github-haozhe-xing-agent-learning",
+  "canonicalKey": "tool:github:haozhe-xing/agent_learning",
+  "firstDiscoveredAt": "2026-11-21",
+  "lastSeenAt": "2026-11-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-21-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-21"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "agent_learning is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A systematic AI Agent development tutorial covering LLM agents, RAG, tool use, memory systems, multi-agent systems, LangChain, LangGraph, MCP, and agentic RL.｜从零开始学 AI Agent 开发 | 系统、全面、实战导向的 Agent 开发教",
+      "Topics: agent-learning, agentic-workflow, ai-agent, ai-agent-tutorial, dspy",
+      "GitHub stars: 748"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-21",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "agent-learning",
+  "publishedAt": "2026-11-21"
+}

@@ -1,0 +1,106 @@
+{
+  "type": "tool",
+  "title": "flow-mcp",
+  "summary": "Drive Google Flow from Claude, Codex or a local control panel, on Mac or Windows — using your Google AI subscription credits instead of the pay-per-use video API. No browser extension.",
+  "sourceUrl": "https://github.com/GTAI-1/flow-mcp",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "GTAI-1",
+    "repo": "flow-mcp",
+    "fullName": "GTAI-1/flow-mcp",
+    "stars": 711,
+    "license": "",
+    "topics": [
+      "ai-video",
+      "claude",
+      "codex",
+      "google-flow",
+      "mcp",
+      "model-context-protocol"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-15T03:04:50Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-21",
+  "lastChecked": "2026-11-21",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Drive Google Flow from Claude, Codex or a local control panel, on Mac or Windows — using your Google AI subscription credits instead of the pay-per-use video API. No browser extension.",
+    "Topics: ai-video, claude, codex, google-flow, mcp",
+    "GitHub stars: 711",
+    "Last pushed: 2026-11-15"
+  ],
+  "id": "candidate-tool-github-gtai-1-flow-mcp",
+  "canonicalKey": "tool:github:gtai-1/flow-mcp",
+  "firstDiscoveredAt": "2026-11-21",
+  "lastSeenAt": "2026-11-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-21-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-21"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "flow-mcp is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Drive Google Flow from Claude, Codex or a local control panel, on Mac or Windows — using your Google AI subscription credits instead of the pay-per-use video API. No browser extension.",
+      "Topics: ai-video, claude, codex, google-flow, mcp",
+      "GitHub stars: 711"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-21",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "flow-mcp",
+  "publishedAt": "2026-11-21"
+}

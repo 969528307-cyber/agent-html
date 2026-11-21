@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "nota",
+  "summary": "Nota — a free DAW for macOS, Windows and Linux. No subscription, no account — just open it and make music.",
+  "sourceUrl": "https://github.com/nota-daw/nota",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "nota-daw",
+    "repo": "nota",
+    "fullName": "nota-daw/nota",
+    "stars": 721,
+    "license": "AGPL-3.0",
+    "topics": [
+      "audio",
+      "audio-unit",
+      "avalonia",
+      "cpp20",
+      "cross-platform",
+      "daw",
+      "digital-audio-workstation",
+      "dsp",
+      "juce",
+      "linux-audio",
+      "mcp-server",
+      "midi",
+      "music",
+      "music-production",
+      "piano-roll",
+      "plugin-host",
+      "sequencer",
+      "synthesizer",
+      "vst",
+      "vst3"
+    ],
+    "defaultBranch": "develop",
+    "lastPushedAt": "2026-11-20T21:10:32Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-21",
+  "lastChecked": "2026-11-21",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Nota — a free DAW for macOS, Windows and Linux. No subscription, no account — just open it and make music.",
+    "Topics: audio, audio-unit, avalonia, cpp20, cross-platform",
+    "GitHub stars: 721",
+    "Last pushed: 2026-11-20"
+  ],
+  "id": "candidate-tool-github-nota-daw-nota",
+  "canonicalKey": "tool:github:nota-daw/nota",
+  "firstDiscoveredAt": "2026-11-21",
+  "lastSeenAt": "2026-11-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-21-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-21"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "nota is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Nota — a free DAW for macOS, Windows and Linux. No subscription, no account — just open it and make music.",
+      "Topics: audio, audio-unit, avalonia, cpp20, cross-platform",
+      "GitHub stars: 721"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-21",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "nota",
+  "publishedAt": "2026-11-21"
+}

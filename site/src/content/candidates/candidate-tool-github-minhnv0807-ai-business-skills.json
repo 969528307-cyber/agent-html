@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "ai-business-skills",
+  "summary": "138 bilingual AI marketing skills (69 VN + 69 Global) for Claude Code, OpenCode, Codex, VS Code. Four role SOP packs — content, design, performance, leader ops — plus strategy, personal brand, AI avatar, dropshipping, design master, knowledge library. 4 regions (US/EU/SEA/LATAM) + Vietnam 2025-2026.",
+  "sourceUrl": "https://github.com/minhnv0807/ai-business-skills",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "minhnv0807",
+    "repo": "ai-business-skills",
+    "fullName": "minhnv0807/ai-business-skills",
+    "stars": 701,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "ai-avatar",
+      "anthropic",
+      "chatgpt",
+      "claude-code",
+      "claude-plugin",
+      "content-marketing",
+      "copilot",
+      "cursor",
+      "dropshipping",
+      "gemini",
+      "global-marketing",
+      "llm-prompts",
+      "marketing-automation",
+      "marketing-skills",
+      "personal-brand",
+      "prompt-engineering",
+      "tiktok-marketing",
+      "vietnam"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-05T03:22:33Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-21",
+  "lastChecked": "2026-11-21",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "138 bilingual AI marketing skills (69 VN + 69 Global) for Claude Code, OpenCode, Codex, VS Code. Four role SOP packs — content, design, performance, leader ops — plus strategy, personal brand, AI avat",
+    "Topics: agent-skills, ai-agents, ai-avatar, anthropic, chatgpt",
+    "GitHub stars: 701",
+    "Last pushed: 2026-11-05"
+  ],
+  "id": "candidate-tool-github-minhnv0807-ai-business-skills",
+  "canonicalKey": "tool:github:minhnv0807/ai-business-skills",
+  "firstDiscoveredAt": "2026-11-21",
+  "lastSeenAt": "2026-11-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-21-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-21"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "ai-business-skills is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "138 bilingual AI marketing skills (69 VN + 69 Global) for Claude Code, OpenCode, Codex, VS Code. Four role SOP packs — content, design, performance, leader ops — plus strategy, personal brand, AI avat",
+      "Topics: agent-skills, ai-agents, ai-avatar, anthropic, chatgpt",
+      "GitHub stars: 701"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-21",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "ai-business-skills",
+  "publishedAt": "2026-11-21"
+}
