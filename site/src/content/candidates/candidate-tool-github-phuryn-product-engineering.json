@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "product-engineering",
+  "summary": "45 agent skills from shipping three live products: decide what to build, build it with Claude Code or Codex, have a second model review it, release it.",
+  "sourceUrl": "https://github.com/phuryn/product-engineering",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "phuryn",
+    "repo": "product-engineering",
+    "fullName": "phuryn/product-engineering",
+    "stars": 737,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude-code",
+      "claude-code-marketplace",
+      "claude-code-plugins",
+      "claude-skills",
+      "codex",
+      "cursor",
+      "product-engineering",
+      "product-management"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-21T18:34:25Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-21",
+  "lastChecked": "2026-11-21",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "45 agent skills from shipping three live products: decide what to build, build it with Claude Code or Codex, have a second model review it, release it.",
+    "Topics: agent-skills, ai-agents, claude-code, claude-code-marketplace, claude-code-plugins",
+    "GitHub stars: 737",
+    "Last pushed: 2026-11-21"
+  ],
+  "id": "candidate-tool-github-phuryn-product-engineering",
+  "canonicalKey": "tool:github:phuryn/product-engineering",
+  "firstDiscoveredAt": "2026-11-21",
+  "lastSeenAt": "2026-11-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-21-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-21"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "product-engineering is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "45 agent skills from shipping three live products: decide what to build, build it with Claude Code or Codex, have a second model review it, release it.",
+      "Topics: agent-skills, ai-agents, claude-code, claude-code-marketplace, claude-code-plugins",
+      "GitHub stars: 737"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-21",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "product-engineering",
+  "publishedAt": "2026-11-21"
+}

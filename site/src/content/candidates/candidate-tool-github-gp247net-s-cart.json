@@ -1,0 +1,115 @@
+{
+  "type": "tool",
+  "title": "s-cart",
+  "summary": "S-Cart: open-source Laravel e-commerce built on GP247. Multi-vendor, multi-store, MCP-ready",
+  "sourceUrl": "https://github.com/gp247net/s-cart",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "gp247net",
+    "repo": "s-cart",
+    "fullName": "gp247net/s-cart",
+    "stars": 737,
+    "license": "MIT",
+    "topics": [
+      "e-commerce",
+      "ecommerce",
+      "free-shopping-cart",
+      "free-website",
+      "gp247",
+      "laravel",
+      "laravel-ecommerce",
+      "mcp",
+      "multi-seller",
+      "multi-store",
+      "multi-vendor",
+      "s-cart-website-ecommerce",
+      "scart",
+      "scart-ecommerce",
+      "scart-open-source"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-20T15:42:24Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-21",
+  "lastChecked": "2026-11-21",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "S-Cart: open-source Laravel e-commerce built on GP247. Multi-vendor, multi-store, MCP-ready",
+    "Topics: e-commerce, ecommerce, free-shopping-cart, free-website, gp247",
+    "GitHub stars: 737",
+    "Last pushed: 2026-11-20"
+  ],
+  "id": "candidate-tool-github-gp247net-s-cart",
+  "canonicalKey": "tool:github:gp247net/s-cart",
+  "firstDiscoveredAt": "2026-11-21",
+  "lastSeenAt": "2026-11-21",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-21-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-21"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "s-cart is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "S-Cart: open-source Laravel e-commerce built on GP247. Multi-vendor, multi-store, MCP-ready",
+      "Topics: e-commerce, ecommerce, free-shopping-cart, free-website, gp247",
+      "GitHub stars: 737"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-21",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "s-cart",
+  "publishedAt": "2026-11-21"
+}
