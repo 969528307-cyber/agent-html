@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "moemail",
+  "summary": "A cute temporary email service built with NextJS + Cloudflare technology stack 🎉 | 一个基于 NextJS + Cloudflare 技术栈构建的可爱临时邮箱服务🎉  ",
+  "sourceUrl": "https://github.com/beilunyang/moemail",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "beilunyang",
+    "repo": "moemail",
+    "fullName": "beilunyang/moemail",
+    "stars": 2832,
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "cloudflare",
+      "cloudflare-workers",
+      "disposable-email",
+      "email",
+      "mcp",
+      "model-context-protocol",
+      "temp-email",
+      "temp-mail",
+      "temporary-email"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-08-29T10:20:42Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-23",
+  "lastChecked": "2026-11-23",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "A cute temporary email service built with NextJS + Cloudflare technology stack 🎉 | 一个基于 NextJS + Cloudflare 技术栈构建的可爱临时邮箱服务🎉  ",
+    "Topics: ai-agents, cloudflare, cloudflare-workers, disposable-email, email",
+    "GitHub stars: 2832",
+    "Last pushed: 2026-08-29"
+  ],
+  "id": "candidate-tool-github-beilunyang-moemail",
+  "canonicalKey": "tool:github:beilunyang/moemail",
+  "firstDiscoveredAt": "2026-11-23",
+  "lastSeenAt": "2026-11-23",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-23-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-23"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "moemail is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "A cute temporary email service built with NextJS + Cloudflare technology stack 🎉 | 一个基于 NextJS + Cloudflare 技术栈构建的可爱临时邮箱服务🎉  ",
+      "Topics: ai-agents, cloudflare, cloudflare-workers, disposable-email, email",
+      "GitHub stars: 2832"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-23",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "moemail",
+  "publishedAt": "2026-11-23"
+}

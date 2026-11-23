@@ -1,0 +1,118 @@
+{
+  "type": "tool",
+  "title": "cpu-performance-engineering",
+  "summary": "Primary-source reading list for CPU performance engineering, with reproducible C benchmarks and a local MCP server.",
+  "sourceUrl": "https://github.com/usamahz/cpu-performance-engineering",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "usamahz",
+    "repo": "cpu-performance-engineering",
+    "fullName": "usamahz/cpu-performance-engineering",
+    "stars": 1160,
+    "license": "MIT",
+    "topics": [
+      "arm",
+      "awesome-list",
+      "benchmarks",
+      "computer-architecture",
+      "cpu",
+      "edge-ai",
+      "inference",
+      "linux-perf",
+      "low-latency",
+      "mcp-server",
+      "microarchitecture",
+      "optimization",
+      "performance",
+      "performance-engineering",
+      "profiling",
+      "simd",
+      "systems-programming",
+      "x86"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-22T23:38:45Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-23",
+  "lastChecked": "2026-11-23",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Primary-source reading list for CPU performance engineering, with reproducible C benchmarks and a local MCP server.",
+    "Topics: arm, awesome-list, benchmarks, computer-architecture, cpu",
+    "GitHub stars: 1160",
+    "Last pushed: 2026-11-22"
+  ],
+  "id": "candidate-tool-github-usamahz-cpu-performance-engineering",
+  "canonicalKey": "tool:github:usamahz/cpu-performance-engineering",
+  "firstDiscoveredAt": "2026-11-23",
+  "lastSeenAt": "2026-11-23",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-23-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-23"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "cpu-performance-engineering is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Primary-source reading list for CPU performance engineering, with reproducible C benchmarks and a local MCP server.",
+      "Topics: arm, awesome-list, benchmarks, computer-architecture, cpu",
+      "GitHub stars: 1160"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-23",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "cpu-performance-engineering",
+  "publishedAt": "2026-11-23"
+}
