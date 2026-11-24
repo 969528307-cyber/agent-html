@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "kokonutui",
+  "summary": "100+ open-source React components for AI chat and agents. Tailwind CSS, Motion, shadcn/ui. Install with the shadcn CLI or MCP.",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "sdk"
+  ],
+  "githubMetadata": {
+    "owner": "kokonut-labs",
+    "repo": "kokonutui",
+    "fullName": "kokonut-labs/kokonutui",
+    "stars": 2408,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "ai",
+      "ai-components",
+      "ai-sdk",
+      "chat-ui",
+      "components",
+      "framer-motion",
+      "library",
+      "motion",
+      "nextjs",
+      "react",
+      "react-components",
+      "shadcn-registry",
+      "shadcn-ui",
+      "tailwindcss",
+      "vercel"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-21T11:51:50Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-24",
+  "lastChecked": "2026-11-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "100+ open-source React components for AI chat and agents. Tailwind CSS, Motion, shadcn/ui. Install with the shadcn CLI or MCP.",
+    "Topics: agents, ai, ai-components, ai-sdk, chat-ui",
+    "GitHub stars: 2408",
+    "Last pushed: 2026-11-21"
+  ],
+  "id": "candidate-tool-github-kokonut-labs-kokonutui",
+  "canonicalKey": "tool:github:kokonut-labs/kokonutui",
+  "firstDiscoveredAt": "2026-11-24",
+  "lastSeenAt": "2026-11-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-24-sdk",
+      "module": "sdk",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "kokonutui is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to sdk.",
+      "100+ open-source React components for AI chat and agents. Tailwind CSS, Motion, shadcn/ui. Install with the shadcn CLI or MCP.",
+      "Topics: agents, ai, ai-components, ai-sdk, chat-ui",
+      "GitHub stars: 2408"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "kokonutui",
+  "publishedAt": "2026-11-24"
+}

@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "yu-auto-reply",
+  "summary": "基于 Java Spring Boot 的开源 AI 自动回复与多平台消息监控工具，支持通过灵活的配置文件接入多个业务平台，实现 7x24 小时智能客服与自动答疑。系统内置知识星球提问监控与 OpenAI（ChatGPT / GPT-4）自动回答能力，采用中介者模式、工厂模式与策略模式将监控者与回答者彻底解耦，结合 Spring Scheduler 实现多任务定时调度，方便开发者通过实现 Monitor 与 Answerer 接口快速扩展更多社区平台、微信或飞书群聊与主流大模型。同时支持 Docker 容器化部署、Railway 云端一键部署与环境变量动态配置，是学习 Java 后端设计模式与",
+  "sourceUrl": "https://github.com/liyupi/yu-auto-reply",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "liyupi",
+    "repo": "yu-auto-reply",
+    "fullName": "liyupi/yu-auto-reply",
+    "stars": 887,
+    "license": "",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-assistant",
+      "auto-reply",
+      "automation",
+      "backend",
+      "chatbot",
+      "chatgpt",
+      "customer-service",
+      "design-patterns",
+      "developer-tools",
+      "docker",
+      "gpt-4",
+      "java",
+      "llm",
+      "openai",
+      "railway",
+      "scheduler",
+      "spring-boot",
+      "zsxq"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-23T06:16:55Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-24",
+  "lastChecked": "2026-11-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "基于 Java Spring Boot 的开源 AI 自动回复与多平台消息监控工具，支持通过灵活的配置文件接入多个业务平台，实现 7x24 小时智能客服与自动答疑。系统内置知识星球提问监控与 OpenAI（ChatGPT / GPT-4）自动回答能力，采用中介者模式、工厂模式与策略模式将监控者与回答者彻底解耦，结合 Spring Scheduler 实现多任务定时调度，方便开发者通过实现 Moni",
+    "Topics: ai, ai-agent, ai-assistant, auto-reply, automation",
+    "GitHub stars: 887",
+    "Last pushed: 2026-11-23"
+  ],
+  "id": "candidate-tool-github-liyupi-yu-auto-reply",
+  "canonicalKey": "tool:github:liyupi/yu-auto-reply",
+  "firstDiscoveredAt": "2026-11-24",
+  "lastSeenAt": "2026-11-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-24-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "yu-auto-reply is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "基于 Java Spring Boot 的开源 AI 自动回复与多平台消息监控工具，支持通过灵活的配置文件接入多个业务平台，实现 7x24 小时智能客服与自动答疑。系统内置知识星球提问监控与 OpenAI（ChatGPT / GPT-4）自动回答能力，采用中介者模式、工厂模式与策略模式将监控者与回答者彻底解耦，结合 Spring Scheduler 实现多任务定时调度，方便开发者通过实现 Moni",
+      "Topics: ai, ai-agent, ai-assistant, auto-reply, automation",
+      "GitHub stars: 887"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "yu-auto-reply",
+  "publishedAt": "2026-11-24"
+}

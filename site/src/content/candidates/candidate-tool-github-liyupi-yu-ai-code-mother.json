@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "yu-ai-code-mother",
+  "summary": "基于 Spring Boot 3、LangChain4j、LangGraph4j 与 Vue 3 构建的开源企业级 AI 零代码应用生成平台（AI No-Code App Generator），由程序员鱼皮编程导航出品。用户输入自然语言需求即可由 AI 智能体流式生成完整项目代码，支持可视化点选编辑、实时预览、Selenium 自动封面截图、一键云端部署分享与源码下载。架构涵盖 Spring Cloud Alibaba 与 Dubbo 微服务、AI 智能路由、Tool Calling、SSE 响应式推送、MySQL、Redis 与 Caffeine 多级缓存、COS 对象存储、Nginx 反向",
+  "sourceUrl": "https://github.com/liyupi/yu-ai-code-mother",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "liyupi",
+    "repo": "yu-ai-code-mother",
+    "fullName": "liyupi/yu-ai-code-mother",
+    "stars": 1992,
+    "license": "",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "code-generation",
+      "deepseek",
+      "dubbo",
+      "fullstack",
+      "grafana",
+      "java",
+      "langchain4j",
+      "langgraph4j",
+      "microservices",
+      "mysql",
+      "nginx",
+      "no-code",
+      "prometheus",
+      "redis",
+      "spring-boot",
+      "spring-cloud",
+      "sse",
+      "vue3"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-23T07:02:07Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-24",
+  "lastChecked": "2026-11-24",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "基于 Spring Boot 3、LangChain4j、LangGraph4j 与 Vue 3 构建的开源企业级 AI 零代码应用生成平台（AI No-Code App Generator），由程序员鱼皮编程导航出品。用户输入自然语言需求即可由 AI 智能体流式生成完整项目代码，支持可视化点选编辑、实时预览、Selenium 自动封面截图、一键云端部署分享与源码下载。架构涵盖 Spring Cl",
+    "Topics: ai, ai-agent, code-generation, deepseek, dubbo",
+    "GitHub stars: 1992",
+    "Last pushed: 2026-11-23"
+  ],
+  "id": "candidate-tool-github-liyupi-yu-ai-code-mother",
+  "canonicalKey": "tool:github:liyupi/yu-ai-code-mother",
+  "firstDiscoveredAt": "2026-11-24",
+  "lastSeenAt": "2026-11-24",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-24-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-24"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "yu-ai-code-mother is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "基于 Spring Boot 3、LangChain4j、LangGraph4j 与 Vue 3 构建的开源企业级 AI 零代码应用生成平台（AI No-Code App Generator），由程序员鱼皮编程导航出品。用户输入自然语言需求即可由 AI 智能体流式生成完整项目代码，支持可视化点选编辑、实时预览、Selenium 自动封面截图、一键云端部署分享与源码下载。架构涵盖 Spring Cl",
+      "Topics: ai, ai-agent, code-generation, deepseek, dubbo",
+      "GitHub stars: 1992"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-24",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "yu-ai-code-mother",
+  "publishedAt": "2026-11-24"
+}

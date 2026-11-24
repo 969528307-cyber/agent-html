@@ -1,0 +1,69 @@
+{
+  "id": "yu-auto-reply",
+  "name": "yu-auto-reply",
+  "type": "workflow",
+  "status": "published",
+  "summary": "基于 Java Spring Boot 的开源 AI 自动回复与多平台消息监控工具，支持通过灵活的配置文件接入多个业务平台，实现 7x24 小时智能客服与自动答疑。系统内置知识星球提问监控与 OpenAI（ChatGPT / GPT-4）自动回答能力，采用中介者模式、工厂模式与策略模式将监控者与回答者彻底解耦，结合 Spring Scheduler 实现多任务定时调度，方便开发者通过实现 Monitor 与 Answerer 接口快速扩展更多社区平台、微信或飞书群聊与主流大模型。同时支持 Docker 容器化部署、Railway 云端一键部署与环境变量动态配置，是学习 Java 后端设计模式与",
+  "description": "基于 Java Spring Boot 的开源 AI 自动回复与多平台消息监控工具，支持通过灵活的配置文件接入多个业务平台，实现 7x24 小时智能客服与自动答疑。系统内置知识星球提问监控与 OpenAI（ChatGPT / GPT-4）自动回答能力，采用中介者模式、工厂模式与策略模式将监控者与回答者彻底解耦，结合 Spring Scheduler 实现多任务定时调度，方便开发者通过实现 Monitor 与 Answerer 接口快速扩展更多社区平台、微信或飞书群聊与主流大模型。同时支持 Docker 容器化部署、Railway 云端一键部署与环境变量动态配置，是学习 Java 后端设计模式与",
+  "category": [
+    "agent-app"
+  ],
+  "compatibleAgents": [],
+  "officialLinks": [
+    {
+      "label": "Official source",
+      "url": "https://github.com/liyupi/yu-auto-reply",
+      "kind": "source"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/liyupi/yu-auto-reply",
+      "kind": "github"
+    },
+    {
+      "label": "Docs / README",
+      "url": "https://github.com/liyupi/yu-auto-reply#readme",
+      "kind": "docs"
+    },
+    {
+      "label": "Quick start",
+      "url": "https://github.com/liyupi/yu-auto-reply#readme",
+      "kind": "quickstart"
+    },
+    {
+      "label": "Releases",
+      "url": "https://github.com/liyupi/yu-auto-reply/releases",
+      "kind": "releases"
+    }
+  ],
+  "installSummary": "Use the official project links for current install and setup instructions. Generated pages do not mirror commands automatically.",
+  "installSteps": [],
+  "highlights": [
+    "基于 Java Spring Boot 的开源 AI 自动回复与多平台消息监控工具，支持通过灵活的配置文件接入多个业务平台，实现 7x24 小时智能客服与自动答疑。系统内置知识星球提问监控与 OpenAI（ChatGPT / GPT-4）自动回答能力，采用中介者模式、工厂模式与策略模式将监控者与回答者彻底解耦，结合 Spring Scheduler 实现多任务定时调度，方便开发者通过实现 Moni",
+    "Topics: ai, ai-agent, ai-assistant, auto-reply, automation",
+    "GitHub stars: 887",
+    "Last pushed: 2026-11-23"
+  ],
+  "configuration": [],
+  "verificationSteps": [],
+  "securityNotes": [
+    "Generated from source metadata; confirm operational details in the official project before adopting it.",
+    "Review the upstream license, maintenance activity, and issue history before using it in production."
+  ],
+  "maintenanceNotes": [
+    "Source repository last pushed at 2026-11-23T06:16:55Z."
+  ],
+  "requirements": [],
+  "sourceUrl": "https://github.com/liyupi/yu-auto-reply",
+  "repoUrl": "https://github.com/liyupi/yu-auto-reply",
+  "license": "",
+  "stars": 887,
+  "lastUpdated": "2026-11-23T06:16:55Z",
+  "lastChecked": "2026-11-24",
+  "publishedAt": "2026-11-24",
+  "featured": false,
+  "trendingScore": 0,
+  "relatedLearn": [],
+  "relatedSignals": [],
+  "relatedTools": []
+}
