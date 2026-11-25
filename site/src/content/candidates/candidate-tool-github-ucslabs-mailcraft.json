@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "mailcraft",
+  "summary": "MailCraft: an open-source, clean-room mail, calendar and contacts program in pure Rust, for Microsoft 365, Outlook.com and IMAP. Public beta.",
+  "sourceUrl": "https://github.com/UCSLabs/mailcraft",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "UCSLabs",
+    "repo": "mailcraft",
+    "fullName": "UCSLabs/mailcraft",
+    "stars": 909,
+    "license": "Apache-2.0",
+    "topics": [
+      "calendar",
+      "egui",
+      "email-client",
+      "imap",
+      "mcp",
+      "microsoft-graph",
+      "outlook",
+      "rust",
+      "smtp",
+      "wasm"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-25T03:06:55Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-25",
+  "lastChecked": "2026-11-25",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "MailCraft: an open-source, clean-room mail, calendar and contacts program in pure Rust, for Microsoft 365, Outlook.com and IMAP. Public beta.",
+    "Topics: calendar, egui, email-client, imap, mcp",
+    "GitHub stars: 909",
+    "Last pushed: 2026-11-25"
+  ],
+  "id": "candidate-tool-github-ucslabs-mailcraft",
+  "canonicalKey": "tool:github:ucslabs/mailcraft",
+  "firstDiscoveredAt": "2026-11-25",
+  "lastSeenAt": "2026-11-25",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-25-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-25"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "mailcraft is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "MailCraft: an open-source, clean-room mail, calendar and contacts program in pure Rust, for Microsoft 365, Outlook.com and IMAP. Public beta.",
+      "Topics: calendar, egui, email-client, imap, mcp",
+      "GitHub stars: 909"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "publishedAs": "mailcraft",
+  "publishedAt": "2026-11-25",
+  "reviewedAt": "2026-11-25",
+  "reviewedBy": "local-review"
+}
