@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "Aletheore",
+  "summary": "Open source (AGPL-3.0) evidence-grounded repository audit CLI - deterministic scanner, MCP server, live dashboard, and a GitHub Action that posts PR diffs.",
+  "sourceUrl": "https://github.com/Aletheore/Aletheore",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "Aletheore",
+    "repo": "Aletheore",
+    "fullName": "Aletheore/Aletheore",
+    "stars": 735,
+    "license": "AGPL-3.0",
+    "topics": [
+      "agpl-3",
+      "code-review",
+      "dependency-vulnerabilities",
+      "github-actions",
+      "mcp-server",
+      "open-source",
+      "secrets-detection",
+      "static-analysis"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-25T17:35:05Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-26",
+  "lastChecked": "2026-11-26",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open source (AGPL-3.0) evidence-grounded repository audit CLI - deterministic scanner, MCP server, live dashboard, and a GitHub Action that posts PR diffs.",
+    "Topics: agpl-3, code-review, dependency-vulnerabilities, github-actions, mcp-server",
+    "GitHub stars: 735",
+    "Last pushed: 2026-11-25"
+  ],
+  "id": "candidate-tool-github-aletheore-aletheore",
+  "canonicalKey": "tool:github:aletheore/aletheore",
+  "firstDiscoveredAt": "2026-11-26",
+  "lastSeenAt": "2026-11-26",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-26-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-26"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "Aletheore is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "Open source (AGPL-3.0) evidence-grounded repository audit CLI - deterministic scanner, MCP server, live dashboard, and a GitHub Action that posts PR diffs.",
+      "Topics: agpl-3, code-review, dependency-vulnerabilities, github-actions, mcp-server",
+      "GitHub stars: 735"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-26",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "aletheore",
+  "publishedAt": "2026-11-26"
+}
