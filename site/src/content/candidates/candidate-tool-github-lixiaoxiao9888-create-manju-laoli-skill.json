@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "manju-laoli-skill",
+  "summary": "🎬 漫剧老李 · AIGC 短剧/漫剧全流程 Skill（V8.2.0-SLIM）｜1 总控 + 10 子技能 · 四层纵深：五道锁 + I 画风锁 → 剧本 → 资产 → 文武三轨分镜 → 七段式投喂 → C1~C41 质检。53 份规则库 · 场景五宫格 · 站位方案 C+/C++ · 三大打戏引擎 · Seedance 2.5/2.0 · 素材形态 M0/M1/M2（不持有图）。测试版，二次修改整合开源内容。",
+  "sourceUrl": "https://github.com/lixiaoxiao9888-create/manju-laoli-skill",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "agent-app"
+  ],
+  "githubMetadata": {
+    "owner": "lixiaoxiao9888-create",
+    "repo": "manju-laoli-skill",
+    "fullName": "lixiaoxiao9888-create/manju-laoli-skill",
+    "stars": 3248,
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-video",
+      "llm",
+      "openclaw",
+      "prompt-engineering",
+      "screenplay",
+      "seedance",
+      "short-drama",
+      "storyboard"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-26T12:41:43Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-27",
+  "lastChecked": "2026-11-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "🎬 漫剧老李 · AIGC 短剧/漫剧全流程 Skill（V8.2.0-SLIM）｜1 总控 + 10 子技能 · 四层纵深：五道锁 + I 画风锁 → 剧本 → 资产 → 文武三轨分镜 → 七段式投喂 → C1~C41 质检。53 份规则库 · 场景五宫格 · 站位方案 C+/C++ · 三大打戏引擎 · Seedance 2.5/2.0 · 素材形态 M0/M1/M2（不持有图）。测试版，二",
+    "Topics: ai, ai-agent, ai-video, llm, openclaw",
+    "GitHub stars: 3248",
+    "Last pushed: 2026-11-26"
+  ],
+  "id": "candidate-tool-github-lixiaoxiao9888-create-manju-laoli-skill",
+  "canonicalKey": "tool:github:lixiaoxiao9888-create/manju-laoli-skill",
+  "firstDiscoveredAt": "2026-11-27",
+  "lastSeenAt": "2026-11-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-27-agent-app",
+      "module": "agent-app",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-27"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "manju-laoli-skill is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to agent-app.",
+      "🎬 漫剧老李 · AIGC 短剧/漫剧全流程 Skill（V8.2.0-SLIM）｜1 总控 + 10 子技能 · 四层纵深：五道锁 + I 画风锁 → 剧本 → 资产 → 文武三轨分镜 → 七段式投喂 → C1~C41 质检。53 份规则库 · 场景五宫格 · 站位方案 C+/C++ · 三大打戏引擎 · Seedance 2.5/2.0 · 素材形态 M0/M1/M2（不持有图）。测试版，二",
+      "Topics: ai, ai-agent, ai-video, llm, openclaw",
+      "GitHub stars: 3248"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-27",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "manju-laoli-skill",
+  "publishedAt": "2026-11-27"
+}

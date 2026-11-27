@@ -1,0 +1,108 @@
+{
+  "type": "tool",
+  "title": "quietharness",
+  "summary": "QuietHarness：AI 一人公司（OPC）的开源工作系统与 Agent Harness，包含可复用工具、工作流和实操案例。",
+  "sourceUrl": "https://github.com/runesleo/quietharness",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "workflow"
+  ],
+  "githubMetadata": {
+    "owner": "runesleo",
+    "repo": "quietharness",
+    "fullName": "runesleo/quietharness",
+    "stars": 711,
+    "license": "MIT",
+    "topics": [
+      "agent-workflow",
+      "ai-agents",
+      "claude-code",
+      "codex",
+      "cursor",
+      "developer-tools",
+      "llm",
+      "shell"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-27T01:35:14Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-27",
+  "lastChecked": "2026-11-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "QuietHarness：AI 一人公司（OPC）的开源工作系统与 Agent Harness，包含可复用工具、工作流和实操案例。",
+    "Topics: agent-workflow, ai-agents, claude-code, codex, cursor",
+    "GitHub stars: 711",
+    "Last pushed: 2026-11-27"
+  ],
+  "id": "candidate-tool-github-runesleo-quietharness",
+  "canonicalKey": "tool:github:runesleo/quietharness",
+  "firstDiscoveredAt": "2026-11-27",
+  "lastSeenAt": "2026-11-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-27-workflow",
+      "module": "workflow",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-27"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "quietharness is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to workflow.",
+      "QuietHarness：AI 一人公司（OPC）的开源工作系统与 Agent Harness，包含可复用工具、工作流和实操案例。",
+      "Topics: agent-workflow, ai-agents, claude-code, codex, cursor",
+      "GitHub stars: 711"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-27",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "quietharness",
+  "publishedAt": "2026-11-27"
+}

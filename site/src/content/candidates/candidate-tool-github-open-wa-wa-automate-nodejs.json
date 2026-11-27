@@ -1,0 +1,110 @@
+{
+  "type": "tool",
+  "title": "wa-automate-nodejs",
+  "summary": " 💬 🤖  The most reliable tool for chatbots with advanced features. Be sure to 🌟 this repository for updates! ",
+  "sourceUrl": "https://github.com/open-wa/wa-automate-nodejs",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "open-wa",
+    "repo": "wa-automate-nodejs",
+    "fullName": "open-wa/wa-automate-nodejs",
+    "stars": 3684,
+    "license": "NOASSERTION",
+    "topics": [
+      "ai-agents",
+      "api",
+      "chatbots",
+      "chatgpt",
+      "framework",
+      "mcp",
+      "mcp-server",
+      "nodejs",
+      "self-hosted",
+      "typescript"
+    ],
+    "defaultBranch": "master",
+    "lastPushedAt": "2026-11-26T21:01:04Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-27",
+  "lastChecked": "2026-11-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    " 💬 🤖  The most reliable tool for chatbots with advanced features. Be sure to 🌟 this repository for updates! ",
+    "Topics: ai-agents, api, chatbots, chatgpt, framework",
+    "GitHub stars: 3684",
+    "Last pushed: 2026-11-26"
+  ],
+  "id": "candidate-tool-github-open-wa-wa-automate-nodejs",
+  "canonicalKey": "tool:github:open-wa/wa-automate-nodejs",
+  "firstDiscoveredAt": "2026-11-27",
+  "lastSeenAt": "2026-11-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-27-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-27"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "wa-automate-nodejs is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      " 💬 🤖  The most reliable tool for chatbots with advanced features. Be sure to 🌟 this repository for updates! ",
+      "Topics: ai-agents, api, chatbots, chatgpt, framework",
+      "GitHub stars: 3684"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-27",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "wa-automate-nodejs",
+  "publishedAt": "2026-11-27"
+}

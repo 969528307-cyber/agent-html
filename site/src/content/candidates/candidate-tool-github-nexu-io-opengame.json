@@ -1,0 +1,120 @@
+{
+  "type": "tool",
+  "title": "opengame",
+  "summary": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D & mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.",
+  "sourceUrl": "https://github.com/nexu-io/opengame",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "mcp"
+  ],
+  "githubMetadata": {
+    "owner": "nexu-io",
+    "repo": "opengame",
+    "fullName": "nexu-io/opengame",
+    "stars": 1052,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "ai-game-generator",
+      "claude-code",
+      "codex",
+      "deepseek",
+      "deepseek-harness",
+      "dsh",
+      "dsh-plugin",
+      "game-development",
+      "game-engine",
+      "indie-game",
+      "local-first",
+      "mcp",
+      "mini-games",
+      "threejs",
+      "unity",
+      "unreal-engine",
+      "vibe-coding",
+      "wechat-minigame"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-27T02:19:37Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-27",
+  "lastChecked": "2026-11-27",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish",
+    "Topics: agent-skills, ai-agents, ai-game-generator, claude-code, codex",
+    "GitHub stars: 1052",
+    "Last pushed: 2026-11-27"
+  ],
+  "id": "candidate-tool-github-nexu-io-opengame",
+  "canonicalKey": "tool:github:nexu-io/opengame",
+  "firstDiscoveredAt": "2026-11-27",
+  "lastSeenAt": "2026-11-27",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-27-mcp",
+      "module": "mcp",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-27"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "opengame is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to mcp.",
+      "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish",
+      "Topics: agent-skills, ai-agents, ai-game-generator, claude-code, codex",
+      "GitHub stars: 1052"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-27",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "opengame",
+  "publishedAt": "2026-11-27"
+}
