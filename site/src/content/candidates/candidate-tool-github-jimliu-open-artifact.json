@@ -1,0 +1,116 @@
+{
+  "type": "tool",
+  "title": "open-artifact",
+  "summary": "Open, agent- and model-agnostic artifacts, all saved locally as plain files — edit, comment on, and export slides, UI designs, design systems, whiteboards, sheets, dashboards, docs, and motion.",
+  "sourceUrl": "https://github.com/JimLiu/open-artifact",
+  "discoveredFrom": "github",
+  "proposedCategory": [
+    "skill"
+  ],
+  "githubMetadata": {
+    "owner": "JimLiu",
+    "repo": "open-artifact",
+    "fullName": "JimLiu/open-artifact",
+    "stars": 704,
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "artifacts",
+      "claude-artifacts",
+      "claude-code",
+      "claude-design",
+      "codex",
+      "coding-agent",
+      "cursor",
+      "design-tools",
+      "dsh-plugin",
+      "dsh-plugins",
+      "github-copilot",
+      "local-first",
+      "mcp",
+      "mcp-apps"
+    ],
+    "defaultBranch": "main",
+    "lastPushedAt": "2026-11-28T02:01:23Z"
+  },
+  "proposedAgents": [],
+  "discoveredAt": "2026-11-28",
+  "lastChecked": "2026-11-28",
+  "sourceRegistry": {
+    "id": "github-tools-topic-search",
+    "name": "GitHub Tools Topic Search",
+    "type": "github_search",
+    "trustLevel": "high",
+    "refreshInterval": "weekly",
+    "url": "https://api.github.com/search/repositories",
+    "acceptRules": [
+      "github_stars_gte_700",
+      "not_fork",
+      "not_archived",
+      "pushed_within_548_days",
+      "must_have_capability_evidence"
+    ],
+    "rejectRules": [
+      "no_github_metadata",
+      "stale_or_unmaintained",
+      "tutorial_only",
+      "boilerplate_only",
+      "template_only",
+      "example_only"
+    ]
+  },
+  "sourceRegistryId": "github-tools-topic-search",
+  "classificationConfidence": "medium",
+  "status": "published",
+  "reviewScore": {
+    "sourceTrust": 4,
+    "usefulness": 3,
+    "agentRelevance": 4,
+    "verifiability": 4,
+    "freshness": 3,
+    "editorialValue": 3,
+    "permission": 3
+  },
+  "reviewNotes": "Auto-discovered by GitHub topic crawler. Awaiting classification and enrichment.",
+  "extractedSignals": [
+    "Open, agent- and model-agnostic artifacts, all saved locally as plain files — edit, comment on, and export slides, UI designs, design systems, whiteboards, sheets, dashboards, docs, and motion.",
+    "Topics: agent-skills, ai-agents, artifacts, claude-artifacts, claude-code",
+    "GitHub stars: 704",
+    "Last pushed: 2026-11-28"
+  ],
+  "id": "candidate-tool-github-jimliu-open-artifact",
+  "canonicalKey": "tool:github:jimliu/open-artifact",
+  "firstDiscoveredAt": "2026-11-28",
+  "lastSeenAt": "2026-11-28",
+  "crawlRuns": [
+    {
+      "runId": "2026-11-28-skill",
+      "module": "skill",
+      "sourceRegistryId": "github-tools-topic-search",
+      "seenAt": "2026-11-28"
+    }
+  ],
+  "enrichmentDecision": "ready_to_publish",
+  "enrichment": {
+    "decision": "ready_to_publish",
+    "confidence": "medium",
+    "publishType": "tool",
+    "primaryType": "workflow",
+    "whatIsIt": "open-artifact is a workflow automation tool for connecting repeatable agent or app actions.",
+    "helpsWith": [
+      "Relevant to skill.",
+      "Open, agent- and model-agnostic artifacts, all saved locally as plain files — edit, comment on, and export slides, UI designs, design systems, whiteboards, sheets, dashboards, docs, and motion.",
+      "Topics: agent-skills, ai-agents, artifacts, claude-artifacts, claude-code",
+      "GitHub stars: 704"
+    ],
+    "reasons": [
+      "Source, stars, maintenance, capability evidence, and classification are strong enough for a public page."
+    ],
+    "riskNotes": []
+  },
+  "reviewedAt": "2026-11-28",
+  "reviewedBy": "auto-publisher",
+  "publishedAs": "open-artifact",
+  "publishedAt": "2026-11-28"
+}
